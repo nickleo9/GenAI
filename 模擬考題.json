@@ -1,0 +1,2610 @@
+[
+  {
+    "question": "多模態AI (Multimodal AI)有哪些實際應用例子？",
+    "options": [
+      "GPT系列模型的基本工作原理，文本生成、時間序列預測",
+      "GPT-4V、Gemini等能同時處理文本和圖像的模型",
+      "自動生成練習題、個性化學習路徑、智能教學助手",
+      "「扮演資深投資顧問，分析以下股票數據...」"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.3.重要技術概念",
+    "concept": "多模態AI (Multimodal AI)",
+    "number": 1
+  },
+  {
+    "question": "請解釋語言翻譯的定義？",
+    "options": [
+      "AI將文本從一種語言轉換為另一種語言",
+      "能夠處理和生成多種類型數據的大型AI模型",
+      "在提示中為AI賦予特定角色以引導其回應風格和內容",
+      "模仿人腦結構的計算模型，由多層神經元組成"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.1.文字生成工具與應用",
+    "concept": "語言翻譯",
+    "number": 2
+  },
+  {
+    "question": "GAN (生成對抗網絡)有哪些實際應用例子？",
+    "options": [
+      "要求企業明確用戶數據如何被收集和使用，數據只能用於特定合法目的",
+      "歐盟AI法案將AI應用按風險等級分類監管",
+      "根據主題自動生成演講大綱和關鍵點",
+      "圖像生成、風格轉換、深度偽造(Deepfake)、StyleGAN(NVIDIA創立)"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.2.生成模型類型",
+    "concept": "GAN (生成對抗網絡)",
+    "number": 3
+  },
+  {
+    "question": "監督式學習有哪些實際應用例子？",
+    "options": [
+      "GPT-4V、Gemini等能同時處理文本和圖像的模型",
+      "Gamma、Beautiful.ai、Tome等工具可從文本提示生成完整簡報",
+      "垃圾郵件分類、圖像識別、情感分析",
+      "語音識別、手寫識別、機器翻譯，能學習長期依賴關係"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.4.生成式AI技術原理與工具",
+    "concept": "監督式學習",
+    "number": 4
+  },
+  {
+    "question": "生成式AI音樂創作主要使用什麼技術？",
+    "options": [
+      "擴散模型、GAN、Transformer架構和自回歸模型",
+      "卷積神經網路和決策樹算法",
+      "線性回歸和支持向量機",
+      "規則引擎和專家系統"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.4.聲音生成工具與應用",
+    "concept": "音樂生成",
+    "number": 5
+  },
+  {
+    "question": "請解釋角色指派的定義？",
+    "options": [
+      "設計、優化和精煉輸入到生成式AI模型的提示以獲得期望輸出的技術",
+      "OpenAI開發的具有1,750億參數的大型語言模型",
+      "在提示中為AI賦予特定角色以引導其回應風格和內容",
+      "經過大規模文本數據訓練的神經網絡模型，能夠理解和生成人類語言"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.1.Prompt優化能力",
+    "concept": "角色指派",
+    "number": 6
+  },
+  {
+    "question": "請解釋非監督式學習的定義？",
+    "options": [
+      "針對AI技術的專門法律規範",
+      "將數據從一種格式或結構轉換為另一種",
+      "無需標記數據，讓AI自行發現數據中的模式和結構",
+      "創建逼真的數字人物及其動作"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.4.生成式AI技術原理與工具",
+    "concept": "非監督式學習",
+    "number": 7
+  },
+  {
+    "question": "請解釋StyleGAN的定義？",
+    "options": [
+      "保護個人信息不被未授權訪問或使用",
+      "由NVIDIA創立的生成對抗網絡模型",
+      "引導AI模型逐步展示思考過程的提示技術",
+      "模型能夠從新數據不斷學習和適應的能力"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.4.特定模型與技術",
+    "concept": "StyleGAN",
+    "number": 8
+  },
+  {
+    "question": "文本生成有哪些實際應用例子？",
+    "options": [
+      "要求企業明確用戶數據如何被收集和使用，數據只能用於特定合法目的",
+      "自動寫作新聞報導、生成產品描述、創作小說",
+      "訓練數據加密存儲、訪問控制和身份驗證系統",
+      "Siri、Alexa、Google Assistant"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.1.文字生成工具與應用",
+    "concept": "文本生成",
+    "number": 9
+  },
+  {
+    "question": "請解釋Autoregressive Models (自回歸模型)的定義？",
+    "options": [
+      "Runway公司推出的文本到視頻生成模型",
+      "經過大規模文本數據訓練的神經網絡模型，能夠理解和生成人類語言",
+      "專門處理具有網格結構數據(如圖像)的神經網絡",
+      "通過歷史數據預測序列中下一個元素的概率模型"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.2.生成模型類型",
+    "concept": "Autoregressive Models (自回歸模型)",
+    "number": 10
+  },
+  {
+    "question": "Runway Gen-2技術主要用於什麼？",
+    "options": [
+      "文本到視頻生成模型，可從文本描述或圖像生成短視頻",
+      "簡報腳本製作",
+      "個人化AI助手",
+      "Few-Shot Learning"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.4.特定模型與技術",
+    "concept": "Runway Gen-2",
+    "number": 11
+  },
+  {
+    "question": "以下哪項技術符合這個描述：通過標記數據訓練AI模型的方法",
+    "options": [
+      "監督式學習",
+      "Diffusion Models (擴散模型)",
+      "Few-Shot Learning",
+      "文本到圖像生成"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.4.生成式AI技術原理與工具",
+    "concept": "監督式學習",
+    "number": 12
+  },
+  {
+    "question": "以下哪項技術符合這個描述：模型能夠從新數據不斷學習和適應的能力",
+    "options": [
+      "語音合成(TTS)",
+      "數據隱私",
+      "NVIDIA Riva",
+      "持續學習"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.4.自主學習方法和工具",
+    "concept": "持續學習",
+    "number": 13
+  },
+  {
+    "question": "請解釋神經網絡的定義？",
+    "options": [
+      "經過大規模文本數據訓練的神經網絡模型，能夠理解和生成人類語言",
+      "模仿人腦結構的計算模型，由多層神經元組成",
+      "RNN的一種特殊變體，專門設計用於解決長期依賴問題",
+      "保護數據免受損壞、未授權訪問或攻擊"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.3.生成式AI技術術語與標準",
+    "concept": "神經網絡",
+    "number": 14
+  },
+  {
+    "question": "以下哪項技術符合這個描述：保護數據免受損壞、未授權訪問或攻擊",
+    "options": [
+      "就業影響",
+      "RNN (遞迴神經網路)",
+      "資料安全",
+      "遷移學習"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.4.隱私保護和資料安全",
+    "concept": "資料安全",
+    "number": 15
+  },
+  {
+    "question": "請解釋Transformer的定義？",
+    "options": [
+      "創建逼真的數字人物及其動作",
+      "只收集必要的數據的原則",
+      "將數據轉化為視覺圖表以便於理解",
+      "基於自注意力機制的神經網絡架構，能平行處理序列數據"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.1.神經網路主要類型",
+    "concept": "Transformer",
+    "number": 16
+  },
+  {
+    "question": "請解釋LSTM (長短期記憶網絡)的定義？",
+    "options": [
+      "RNN的一種特殊變體，專門設計用於解決長期依賴問題",
+      "將數據從一種格式或結構轉換為另一種",
+      "在提示中為AI賦予特定角色以引導其回應風格和內容",
+      "專門處理序列數據的神經網絡，具有內部記憶功能"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.1.神經網路主要類型",
+    "concept": "LSTM (長短期記憶網絡)",
+    "number": 17
+  },
+  {
+    "question": "半監督式學習有哪些實際應用例子？",
+    "options": [
+      "能生成高度逼真的人臉圖像，用於虛擬人物創建",
+      "Google翻譯、DeepL翻譯、實時會議翻譯",
+      "當獲取標記數據成本高時的圖像分類任務",
+      "GPT-4V、Gemini等能同時處理文本和圖像的模型"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.4.生成式AI技術原理與工具",
+    "concept": "半監督式學習",
+    "number": 18
+  },
+  {
+    "question": "以下哪項技術符合這個描述：將文字轉換為自然語音的技術",
+    "options": [
+      "語音合成(TTS)",
+      "AI倫理",
+      "半監督式學習",
+      "趨勢預測"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.4.聲音生成工具與應用",
+    "concept": "語音合成(TTS)",
+    "number": 19
+  },
+  {
+    "question": "請解釋偏見與公平性的定義？",
+    "options": [
+      "神經網絡學習算法，通過計算損失函數梯度來更新參數",
+      "從文字描述生成相應的圖像",
+      "由NVIDIA創立的生成對抗網絡模型",
+      "確保AI系統不會因數據偏差而產生歧視性結果"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.2.倫理準則和規範",
+    "concept": "偏見與公平性",
+    "number": 20
+  },
+  {
+    "question": "虛擬人物有哪些實際應用例子？",
+    "options": [
+      "Gamma、Beautiful.ai、Tome等工具可從文本提示生成完整簡報",
+      "虛擬主播、數字角色動畫、虛擬演示者",
+      "GPT系列模型的基本工作原理，文本生成、時間序列預測",
+      "根據主題自動生成演講大綱和關鍵點"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.5.影片生成工具與應用",
+    "concept": "虛擬人物",
+    "number": 21
+  },
+  {
+    "question": "請解釋多模態AI (Multimodal AI)的定義？",
+    "options": [
+      "能夠處理和理解多種類型數據的AI系統",
+      "明確AI系統決策的責任方",
+      "利用AI技術創建個性化學習內容、提供智能輔導、自動評估等",
+      "AI生成演講稿或簡報說明文字"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.3.重要技術概念",
+    "concept": "多模態AI (Multimodal AI)",
+    "number": 22
+  },
+  {
+    "question": "請解釋Few-Shot Learning的定義？",
+    "options": [
+      "能夠創建新內容（如文本、圖像、音頻、視頻等）的人工智能技術",
+      "分析歷史數據預測未來趨勢",
+      "在提示中提供幾個示例，幫助模型理解任務模式的技術",
+      "通過獎勵和懲罰機制訓練AI代理作出最佳決策的方法"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.1.Prompt優化能力",
+    "concept": "Few-Shot Learning",
+    "number": 23
+  },
+  {
+    "question": "GDPR有哪些實際應用例子？",
+    "options": [
+      "利用AI生成新的藥物分子結構、輔助醫學影像判讀、生成醫療報告",
+      "AI生成的藝術作品是否受著作權保護，以及權利歸屬問題",
+      "是現代大型語言模型(LLM)如GPT、BERT、LLaMA的基礎架構",
+      "要求企業明確用戶數據如何被收集和使用，數據只能用於特定合法目的"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.3.法律法規",
+    "concept": "GDPR",
+    "number": 24
+  },
+  {
+    "question": "以下哪項技術符合這個描述：設計、優化和精煉輸入到生成式AI模型的提示以獲得期望輸出的技術",
+    "options": [
+      "深度學習",
+      "提示工程(Prompt Engineering)",
+      "非監督式學習",
+      "AI簡報生成"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.1.Prompt優化能力",
+    "concept": "提示工程(Prompt Engineering)",
+    "number": 25
+  },
+  {
+    "question": "以下哪項技術符合這個描述：針對AI技術的專門法律規範",
+    "options": [
+      "StyleGAN",
+      "多語言廣播",
+      "語音合成(TTS)",
+      "AI法案"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.3.法律法規",
+    "concept": "AI法案",
+    "number": 26
+  },
+  {
+    "question": "以下哪項技術符合這個描述：神經網絡學習算法，通過計算損失函數梯度來更新參數",
+    "options": [
+      "反向傳播 (Backpropagation)",
+      "資料清理",
+      "視頻編輯與增強",
+      "生成式AI在教育領域應用"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.3.重要技術概念",
+    "concept": "反向傳播 (Backpropagation)",
+    "number": 27
+  },
+  {
+    "question": "數位落差有哪些實際應用例子？",
+    "options": [
+      "不同地區、年齡層或社會經濟背景對AI技術的獲取差異",
+      "自動生成網頁版面、設計UI元素、生成CSS樣式",
+      "利用AI生成新的藥物分子結構、輔助醫學影像判讀、生成醫療報告",
+      "可以理解圖片並生成描述的模型，如GPT-4V"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.1.社會和個人影響",
+    "concept": "數位落差",
+    "number": 28
+  },
+  {
+    "question": "偏見與公平性有哪些實際應用例子？",
+    "options": [
+      "訓練數據加密存儲、訪問控制和身份驗證系統",
+      "招聘AI系統可能會因為歷史數據中的性別偏見而偏向特定性別",
+      "影像辨識、語音識別、自然語言處理等",
+      "NVIDIA Riva、Google WaveNet、Amazon Polly"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.2.倫理準則和規範",
+    "concept": "偏見與公平性",
+    "number": 29
+  },
+  {
+    "question": "以下哪一項不是GDPR(一般資料保護規則)的核心原則？",
+    "options": [
+      "數據最大化 - 收集所有可能的數據以提高AI效能",
+      "目的限制 - 數據只能用於特定合法目的",
+      "透明度 - 告知用戶數據如何被收集和使用",
+      "數據最小化 - 只收集必要的數據"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.3.法律法規",
+    "concept": "GDPR",
+    "number": 30
+  },
+  {
+    "question": "請解釋反向傳播 (Backpropagation)的定義？",
+    "options": [
+      "神經網絡學習算法，通過計算損失函數梯度來更新參數",
+      "自動創建演示文稿的內容和設計",
+      "無需標記數據，讓AI自行發現數據中的模式和結構",
+      "AI從長文本中提取關鍵信息並生成簡潔摘要"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.3.重要技術概念",
+    "concept": "反向傳播 (Backpropagation)",
+    "number": 31
+  },
+  {
+    "question": "穩健與安全有哪些實際應用例子？",
+    "options": [
+      "是現代大型語言模型(LLM)如GPT、BERT、LLaMA的基礎架構",
+      "醫療AI診斷系統必須在各種數據質量條件下都能可靠運行",
+      "優化ChatGPT提示以獲得更準確的回答，設計特定格式輸出的指令",
+      "利用AI生成新的藥物分子結構、輔助醫學影像判讀、生成醫療報告"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.2.倫理準則和規範",
+    "concept": "穩健與安全",
+    "number": 32
+  },
+  {
+    "question": "請解釋監督式學習的定義？",
+    "options": [
+      "無需標記數據，讓AI自行發現數據中的模式和結構",
+      "AI自動創建文章、報告、故事等文本內容",
+      "通過標記數據訓練AI模型的方法",
+      "AI生成內容的智慧財產權歸屬"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.4.生成式AI技術原理與工具",
+    "concept": "監督式學習",
+    "number": 33
+  },
+  {
+    "question": "以下哪項技術符合這個描述：AI生成內容的智慧財產權歸屬",
+    "options": [
+      "AI法案",
+      "著作權問題",
+      "Autoregressive Models (自回歸模型)",
+      "GDPR"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.3.法律法規",
+    "concept": "著作權問題",
+    "number": 34
+  },
+  {
+    "question": "以下哪項技術符合這個描述：將數據轉化為視覺圖表以便於理解",
+    "options": [
+      "持續學習",
+      "深度學習",
+      "數據視覺化",
+      "簡報腳本製作"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.7.數據分析工具與應用",
+    "concept": "數據視覺化",
+    "number": 35
+  },
+  {
+    "question": "請解釋文本到視頻生成的定義？",
+    "options": [
+      "AI輔助視頻編輯、特效生成等",
+      "NVIDIA開發的語音AI SDK",
+      "從文字描述生成視頻內容",
+      "利用AI進行金融數據分析、風險評估、客戶服務等"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.5.影片生成工具與應用",
+    "concept": "文本到視頻生成",
+    "number": 36
+  },
+  {
+    "question": "文本到視頻生成有哪些實際應用例子？",
+    "options": [
+      "Gamma、Beautiful.ai、Tome等工具可從文本提示生成完整簡報",
+      "圖像生成、異常檢測、數據壓縮，生成效果較平滑",
+      "Runway Gen-2可從文本描述生成短視頻",
+      "自動駕駛事故的責任歸屬問題"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.5.影片生成工具與應用",
+    "concept": "文本到視頻生成",
+    "number": 37
+  },
+  {
+    "question": "以下哪項技術符合這個描述：利用生成式AI技術輔助醫學診斷、藥物研發、醫學圖像分析等",
+    "options": [
+      "圖像修復",
+      "Few-Shot Learning",
+      "音樂生成",
+      "生成式AI在醫療領域應用"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.2.生成式AI應用領域",
+    "concept": "生成式AI在醫療領域應用",
+    "number": 38
+  },
+  {
+    "question": "請解釋遷移學習的定義？",
+    "options": [
+      "保護數據免受損壞、未授權訪問或攻擊",
+      "將一個領域學到的知識應用到另一個相關領域的技術",
+      "從文字描述生成相應的圖像",
+      "生成模型的一種，結合自動編碼器和概率統計"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.4.自主學習方法和工具",
+    "concept": "遷移學習",
+    "number": 39
+  },
+  {
+    "question": "以下哪種提示工程(Prompt Engineering)技術用於引導AI模型逐步思考問題？",
+    "options": [
+      "思考鏈(Chain-of-Thought)",
+      "角色扮演(Role Playing)",
+      "Few-Shot Learning",
+      "Zero-Shot Learning"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.1.Prompt優化能力",
+    "concept": "思考鏈(Chain-of-Thought)",
+    "number": 40
+  },
+  {
+    "question": "以下哪項技術符合這個描述：RNN的一種特殊變體，專門設計用於解決長期依賴問題",
+    "options": [
+      "AI倫理",
+      "StyleGAN",
+      "AI簡報生成",
+      "LSTM (長短期記憶網絡)"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.1.神經網路主要類型",
+    "concept": "LSTM (長短期記憶網絡)",
+    "number": 41
+  },
+  {
+    "question": "以下哪項技術符合這個描述：Runway公司推出的文本到視頻生成模型",
+    "options": [
+      "數據視覺化",
+      "Runway Gen-2",
+      "文本到圖像生成",
+      "多模態大型模型"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.4.特定模型與技術",
+    "concept": "Runway Gen-2",
+    "number": 42
+  },
+  {
+    "question": "AI倫理有哪些實際應用例子？",
+    "options": [
+      "根據主題自動生成演講大綱和關鍵點",
+      "損失函數的值是越小越好，表示模型預測更接近實際值",
+      "文本向量化、特徵縮放、分類變量編碼",
+      "我國人工智慧倫理指南、歐盟可信賴人工智慧倫理準則"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.2.倫理準則和規範",
+    "concept": "AI倫理",
+    "number": 43
+  },
+  {
+    "question": "請解釋就業影響的定義？",
+    "options": [
+      "AI技術對就業市場的變革和挑戰",
+      "在提示中為AI賦予特定角色以引導其回應風格和內容",
+      "針對AI技術的專門法律規範",
+      "保護數據免受損壞、未授權訪問或攻擊"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.1.社會和個人影響",
+    "concept": "就業影響",
+    "number": 44
+  },
+  {
+    "question": "語音合成(TTS)有哪些實際應用例子？",
+    "options": [
+      "NVIDIA Riva、Google WaveNet、Amazon Polly",
+      "可以理解圖片並生成描述的模型，如GPT-4V",
+      "只收集完成特定任務所必需的用戶信息",
+      "自動生成練習題、個性化學習路徑、智能教學助手"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.4.聲音生成工具與應用",
+    "concept": "語音合成(TTS)",
+    "number": 45
+  },
+  {
+    "question": "請解釋自動摘要的定義？",
+    "options": [
+      "模型能夠從新數據不斷學習和適應的能力",
+      "基於自注意力機制的神經網絡架構，能平行處理序列數據",
+      "因科技獲取能力不同而造成的社會不平等",
+      "AI從長文本中提取關鍵信息並生成簡潔摘要"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.1.文字生成工具與應用",
+    "concept": "自動摘要",
+    "number": 46
+  },
+  {
+    "question": "請解釋AI法案的定義？",
+    "options": [
+      "針對AI技術的專門法律規範",
+      "OpenAI開發的具有1,750億參數的大型語言模型",
+      "通過歷史數據預測序列中下一個元素的概率模型",
+      "AI技術對就業市場的變革和挑戰"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.3.法律法規",
+    "concept": "AI法案",
+    "number": 47
+  },
+  {
+    "question": "以下哪項技術符合這個描述：將一張圖片的風格轉換為另一種藝術風格",
+    "options": [
+      "Runway Gen-2",
+      "穩健與安全",
+      "資料前處理",
+      "圖像風格轉換"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.2.圖片生成工具與應用",
+    "concept": "圖像風格轉換",
+    "number": 48
+  },
+  {
+    "question": "請解釋趨勢預測的定義？",
+    "options": [
+      "分析歷史數據預測未來趨勢",
+      "確保AI系統在各種條件下都能穩定運行",
+      "確保AI發展和使用符合道德標準的準則",
+      "能夠處理和理解多種類型數據的AI系統"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.7.數據分析工具與應用",
+    "concept": "趨勢預測",
+    "number": 49
+  },
+  {
+    "question": "持續學習有哪些實際應用例子？",
+    "options": [
+      "銷售預測、市場趨勢分析、股價走勢預測",
+      "醫療AI診斷系統必須在各種數據質量條件下都能可靠運行",
+      "可從文本描述或圖像生成短視頻，用於創意視頻製作",
+      "不斷從用戶反饋中學習的客服AI、適應新語言用法的翻譯系統"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.4.自主學習方法和工具",
+    "concept": "持續學習",
+    "number": 50
+  },
+  {
+    "question": "以下哪項技術符合這個描述：只收集必要的數據的原則",
+    "options": [
+      "文本到圖像生成",
+      "損失函數 (Loss Function)",
+      "資料最小化",
+      "強化學習"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.4.隱私保護和資料安全",
+    "concept": "資料最小化",
+    "number": 51
+  },
+  {
+    "question": "資料轉換有哪些實際應用例子？",
+    "options": [
+      "自動生成數據圖表、儀表板、交互式可視化",
+      "文本向量化、特徵縮放、分類變量編碼",
+      "語音識別、手寫識別、機器翻譯，能學習長期依賴關係",
+      "優化ChatGPT提示以獲得更準確的回答，設計特定格式輸出的指令"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.2.生成式AI資料治理",
+    "concept": "資料轉換",
+    "number": 52
+  },
+  {
+    "question": "以下哪種神經網路類型最適合處理序列數據如文本和音頻？",
+    "options": [
+      "RNN (遞迴神經網路)",
+      "CNN (卷積神經網路)",
+      "MLP (多層感知器)",
+      "GAN (生成對抗網路)"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.1.神經網路主要類型",
+    "concept": "RNN (遞迴神經網路)",
+    "number": 53
+  },
+  {
+    "question": "請解釋多模態的定義？",
+    "options": [
+      "AI輔助視頻編輯、特效生成等",
+      "AI技術對就業市場的變革和挑戰",
+      "修復或增強損壞、低質量的圖像",
+      "能夠處理和理解多種類型輸入（如文本、圖像、音頻等）的AI系統"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.3.生成式AI技術術語與標準",
+    "concept": "多模態",
+    "number": 54
+  },
+  {
+    "question": "請解釋數位落差的定義？",
+    "options": [
+      "因科技獲取能力不同而造成的社會不平等",
+      "NVIDIA開發的語音AI SDK",
+      "AI生成演講稿或簡報說明文字",
+      "利用AI進行金融數據分析、風險評估、客戶服務等"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.1.社會和個人影響",
+    "concept": "數位落差",
+    "number": 55
+  },
+  {
+    "question": "以下哪項技術符合這個描述：保護個人信息不被未授權訪問或使用",
+    "options": [
+      "數據隱私",
+      "Diffusion Models (擴散模型)",
+      "角色指派",
+      "生成式AI在醫療領域應用"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.4.隱私保護和資料安全",
+    "concept": "數據隱私",
+    "number": 56
+  },
+  {
+    "question": "請解釋責任歸屬的定義？",
+    "options": [
+      "AI自動創建文章、報告、故事等文本內容",
+      "明確AI系統決策的責任方",
+      "AI輔助視頻編輯、特效生成等",
+      "AI創作音樂作品的技術"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.2.倫理準則和規範",
+    "concept": "責任歸屬",
+    "number": 57
+  },
+  {
+    "question": "請解釋生成式AI在教育領域應用的定義？",
+    "options": [
+      "預測和生成人類語言的AI模型，通常基於概率統計或神經網絡",
+      "利用AI技術創建個性化學習內容、提供智能輔導、自動評估等",
+      "模仿人腦結構的計算模型，由多層神經元組成",
+      "AI生成多種語言的語音內容"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.2.生成式AI應用領域",
+    "concept": "生成式AI在教育領域應用",
+    "number": 58
+  },
+  {
+    "question": "圖像修復有哪些實際應用例子？",
+    "options": [
+      "自動完成、文本生成、機器翻譯",
+      "AI生成的藝術作品是否受著作權保護，以及權利歸屬問題",
+      "修復舊照片、移除噪點、提高解析度",
+      "自動寫作新聞報導、生成產品描述、創作小說"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.2.圖片生成工具與應用",
+    "concept": "圖像修復",
+    "number": 59
+  },
+  {
+    "question": "請解釋圖像風格轉換的定義？",
+    "options": [
+      "專門處理具有網格結構數據(如圖像)的神經網絡",
+      "只收集必要的數據的原則",
+      "將一張圖片的風格轉換為另一種藝術風格",
+      "確保AI系統不會因數據偏差而產生歧視性結果"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.2.圖片生成工具與應用",
+    "concept": "圖像風格轉換",
+    "number": 60
+  },
+  {
+    "question": "請解釋生成式AI在醫療領域應用的定義？",
+    "options": [
+      "利用生成式AI技術輔助醫學診斷、藥物研發、醫學圖像分析等",
+      "能夠創建新內容（如文本、圖像、音頻、視頻等）的人工智能技術",
+      "預測和生成人類語言的AI模型，通常基於概率統計或神經網絡",
+      "將一張圖片的風格轉換為另一種藝術風格"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.2.生成式AI應用領域",
+    "concept": "生成式AI在醫療領域應用",
+    "number": 61
+  },
+  {
+    "question": "以下哪項技術符合這個描述：AI創作音樂作品的技術",
+    "options": [
+      "音樂生成",
+      "多模態AI (Multimodal AI)",
+      "提示工程(Prompt Engineering)",
+      "StyleGAN"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.4.聲音生成工具與應用",
+    "concept": "音樂生成",
+    "number": 62
+  },
+  {
+    "question": "深度學習有哪些實際應用例子？",
+    "options": [
+      "醫療AI診斷系統必須在各種數據質量條件下都能可靠運行",
+      "可從文本描述或圖像生成短視頻，用於創意視頻製作",
+      "當獲取標記數據成本高時的圖像分類任務",
+      "影像辨識、語音識別、自然語言處理等"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.4.生成式AI技術原理與工具",
+    "concept": "深度學習",
+    "number": 63
+  },
+  {
+    "question": "請解釋Runway Gen-2的定義？",
+    "options": [
+      "Runway公司推出的文本到視頻生成模型",
+      "從文字描述生成相應的圖像",
+      "經過大規模文本數據訓練的神經網絡模型，能夠理解和生成人類語言",
+      "通過標記數據訓練AI模型的方法"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.4.特定模型與技術",
+    "concept": "Runway Gen-2",
+    "number": 64
+  },
+  {
+    "question": "神經網絡有哪些實際應用例子？",
+    "options": [
+      "能生成高度逼真的人臉圖像，用於虛擬人物創建",
+      "訓練數據加密存儲、訪問控制和身份驗證系統",
+      "用於圖像識別、自然語言處理、推薦系統等各種AI應用",
+      "圖像生成、異常檢測、數據壓縮，生成效果較平滑"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.3.生成式AI技術術語與標準",
+    "concept": "神經網絡",
+    "number": 65
+  },
+  {
+    "question": "請解釋網站設計的定義？",
+    "options": [
+      "AI輔助創建網站的視覺和功能設計",
+      "使用AI聊天機器人處理客戶查詢",
+      "基於自注意力機制的神經網絡架構，能平行處理序列數據",
+      "將數據轉化為視覺圖表以便於理解"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.6.程式生成與網站應用",
+    "concept": "網站設計",
+    "number": 66
+  },
+  {
+    "question": "請解釋多語言廣播的定義？",
+    "options": [
+      "自動創建演示文稿的內容和設計",
+      "AI生成多種語言的語音內容",
+      "AI生成演講稿或簡報說明文字",
+      "使用AI聊天機器人處理客戶查詢"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.4.聲音生成工具與應用",
+    "concept": "多語言廣播",
+    "number": 67
+  },
+  {
+    "question": "請解釋簡報腳本製作的定義？",
+    "options": [
+      "由生成器和鑑別器兩個網絡相互競爭學習的深度學習架構",
+      "AI生成內容的智慧財產權歸屬",
+      "AI生成演講稿或簡報說明文字",
+      "利用AI進行金融數據分析、風險評估、客戶服務等"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.3.簡報生成工具與應用",
+    "concept": "簡報腳本製作",
+    "number": 68
+  },
+  {
+    "question": "以下哪項技術符合這個描述：將大型AI模型壓縮或優化以便在本地設備上運行",
+    "options": [
+      "穩健與安全",
+      "責任歸屬",
+      "簡報腳本製作",
+      "小型化和本地化部署"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.3.生成式AI最新發展趨勢",
+    "concept": "小型化和本地化部署",
+    "number": 69
+  },
+  {
+    "question": "請解釋個人化AI助手的定義？",
+    "options": [
+      "通過逐步添加和移除噪聲來生成數據的生成模型",
+      "為用戶提供個性化服務的虛擬助手",
+      "AI生成內容的智慧財產權歸屬",
+      "在提示中提供幾個示例，幫助模型理解任務模式的技術"
+    ],
+    "correct_answer_index": 1,
+    "correct_answer_letter": "B",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.8.聊天機器人工具與應用",
+    "concept": "個人化AI助手",
+    "number": 70
+  },
+  {
+    "question": "責任歸屬有哪些實際應用例子？",
+    "options": [
+      "深度學習中最核心的學習機制，使神經網絡能從數據中學習",
+      "語音識別、手寫識別、機器翻譯，能學習長期依賴關係",
+      "GPT模型生成文章、DALL-E生成圖像、Midjourney創建藝術作品",
+      "自動駕駛事故的責任歸屬問題"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "4.生成式AI倫理法律",
+    "subtopic": "4.2.倫理準則和規範",
+    "concept": "責任歸屬",
+    "number": 71
+  },
+  {
+    "question": "請解釋大型語言模型(LLM)的定義？",
+    "options": [
+      "AI生成多種語言的語音內容",
+      "確保AI系統不會因數據偏差而產生歧視性結果",
+      "預測和生成人類語言的AI模型，通常基於概率統計或神經網絡",
+      "經過大規模文本數據訓練的神經網絡模型，能夠理解和生成人類語言"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "1.生成式AI基礎知識",
+    "subtopic": "1.1.生成式AI基本概念",
+    "concept": "大型語言模型(LLM)",
+    "number": 72
+  },
+  {
+    "question": "以下哪項技術符合這個描述：在將數據輸入AI模型前進行清理、轉換等操作",
+    "options": [
+      "著作權問題",
+      "神經網絡",
+      "資料前處理",
+      "StyleGAN"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.2.生成式AI資料治理",
+    "concept": "資料前處理",
+    "number": 73
+  },
+  {
+    "question": "Few-Shot Learning有哪些實際應用例子？",
+    "options": [
+      "提供幾個問答對作為示例，然後要求模型回答新問題",
+      "AIVA創作古典音樂、Amper Music生成背景音樂",
+      "支持語音識別(ASR)和語音合成(TTS)，用於客服中心、語音助手",
+      "網站客服機器人、訂單查詢助手、問題解答系統"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.1.Prompt優化能力",
+    "concept": "Few-Shot Learning",
+    "number": 74
+  },
+  {
+    "question": "以下哪項技術符合這個描述：能夠處理和理解多種類型數據的AI系統",
+    "options": [
+      "CNN (卷積神經網路)",
+      "著作權問題",
+      "多模態AI (Multimodal AI)",
+      "Runway Gen-2"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.3.重要技術概念",
+    "concept": "多模態AI (Multimodal AI)",
+    "number": 75
+  },
+  {
+    "question": "文本到圖像生成有哪些實際應用例子？",
+    "options": [
+      "DALL-E、Midjourney、Stable Diffusion",
+      "多語言語音助手、國際化廣播系統",
+      "醫療AI診斷系統必須在各種數據質量條件下都能可靠運行",
+      "只收集完成特定任務所必需的用戶信息"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.2.圖片生成工具與應用",
+    "concept": "文本到圖像生成",
+    "number": 76
+  },
+  {
+    "question": "Runway Gen-2有哪些實際應用例子？",
+    "options": [
+      "銷售預測、市場趨勢分析、股價走勢預測",
+      "根據主題自動生成演講大綱和關鍵點",
+      "可從文本描述或圖像生成短視頻，用於創意視頻製作",
+      "「扮演資深投資顧問，分析以下股票數據...」"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.4.特定模型與技術",
+    "concept": "Runway Gen-2",
+    "number": 77
+  },
+  {
+    "question": "視頻編輯與增強有哪些實際應用例子？",
+    "options": [
+      "GitHub Copilot、Amazon CodeWhisperer、ChatGPT生成代碼",
+      "不斷從用戶反饋中學習的客服AI、適應新語言用法的翻譯系統",
+      "自動剪輯、場景轉換效果、視頻上色",
+      "GPT-4V可處理圖像和文本、Gemini支持文本/圖像/音頻/視頻"
+    ],
+    "correct_answer_index": 2,
+    "correct_answer_letter": "C",
+    "topic": "3.生成式AI應用技能",
+    "subtopic": "3.5.影片生成工具與應用",
+    "concept": "視頻編輯與增強",
+    "number": 78
+  },
+  {
+    "question": "請解釋多模態大型模型的定義？",
+    "options": [
+      "歐盟「一般資料保護規則」，保護個人數據隱私的法規",
+      "確保AI系統不會因數據偏差而產生歧視性結果",
+      "AI生成內容的智慧財產權歸屬",
+      "能夠處理和生成多種類型數據的大型AI模型"
+    ],
+    "correct_answer_index": 3,
+    "correct_answer_letter": "D",
+    "topic": "2.生成式AI能力強化",
+    "subtopic": "2.3.生成式AI最新發展趨勢",
+    "concept": "多模態大型模型",
+    "number": 79
+  },
+  {
+    "question": "下列哪個生成對抗網絡(GAN)的架構由兩個主要組件組成？",
+    "options": [
+      "生成器(Generator)和鑑別器(Discriminator)",
+      "編碼器(Encoder)和解碼器(Decoder)",
+      "特徵提取器(Feature Extractor)和分類器(Classifier)",
+      "壓縮器(Compressor)和擴展器(Expander)"
+    ],
+    "correct_answer_index": 0,
+    "correct_answer_letter": "A",
+    "topic": "5.神經網路模型與技術",
+    "subtopic": "5.2.生成模型類型",
+    "concept": "GAN (生成對抗網絡)",
+    "number": 80
+  },
+  
+    {
+        "question": "擴散模型(Diffusion Models)有哪些實際應用例子？",
+        "options": [
+            "圖像生成、異常檢測、數據壓縮，生成效果較平滑",
+            "訓練數據加密存儲、訪問控制和身份驗證系統",
+            "自動剪輯、場景轉換效果、視頻上色",
+            "數據前處理、特徵選擇、資料清理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.2.生成模型類型",
+        "concept": "Diffusion Models",
+        "number": 81
+    },
+    {
+        "question": "以下何種技術為神經網絡的重要組成部分，激活函數用來引入非線性？",
+        "options": ["激活函數 (Activation Function)", "損失函數 (Loss Function)", "卷積操作 (Convolution)", "池化操作 (Pooling)"],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.3.重要技術概念",
+        "concept": "激活函數",
+        "number": 82
+    },
+    {
+        "question": "以下哪項技術可自動將對話轉換成文字？",
+        "options": ["語音辨識(ASR)", "語音合成(TTS)", "語音降噪", "聲音分類"],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "3.生成式AI應用技能",
+        "subtopic": "3.4.聲音生成工具與應用",
+        "concept": "語音辨識",
+        "number": 83
+    },
+    {
+        "question": "AI生成圖像的智慧財產權問題通常歸屬誰？",
+        "options": ["使用AI的人", "開發AI的公司", "AI模型本身", "尚未明確定義"],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "4.生成式AI倫理法律",
+        "subtopic": "4.3.法律法規",
+        "concept": "著作權問題",
+        "number": 84
+    },
+    {
+        "question": "資料清理(Data Cleaning)的主要目的為何？",
+        "options": ["增加數據量", "移除或修正錯誤數據", "增強數據安全性", "降低存儲成本"],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2.生成式AI能力強化",
+        "subtopic": "2.2.生成式AI資料治理",
+        "concept": "資料清理",
+        "number": 85
+    },
+    {
+        "question": "下列哪項屬於生成式AI的核心技術之一？",
+        "options": ["自動駕駛系統", "聊天機器人", "強化學習", "自然語言處理(NLP)"],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1.生成式AI基礎知識",
+        "subtopic": "1.1.生成式AI基本概念",
+        "concept": "自然語言處理(NLP)",
+        "number": 86
+    },
+    {
+        "question": "以下哪項技術可從影片中自動提取關鍵畫面？",
+        "options": ["視頻摘要", "圖像分類", "對象追蹤", "圖像增強"],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "3.生成式AI應用技能",
+        "subtopic": "3.5.影片生成工具與應用",
+        "concept": "視頻摘要",
+        "number": 87
+    },
+    {
+        "question": "什麼技術允許AI僅透過少量數據快速學習新任務？",
+        "options": ["Zero-Shot Learning", "Few-Shot Learning", "One-Shot Learning", "Transfer Learning"],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2.生成式AI能力強化",
+        "subtopic": "2.1.Prompt優化能力",
+        "concept": "Few-Shot Learning",
+        "number": 88
+    },
+    {
+        "question": "將大型模型部署於邊緣設備(如手機)的主要挑戰是什麼？",
+        "options": ["安全性問題", "數據隱私問題", "模型體積和運算量問題", "模型的準確性問題"],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "2.生成式AI能力強化",
+        "subtopic": "2.3.生成式AI最新發展趨勢",
+        "concept": "邊緣部署",
+        "number": 89
+    },
+    {
+        "question": "生成式AI於金融產業的實際應用有哪些？",
+        "options": ["股票走勢預測、信用風險評估、客戶服務自動化", "圖像生成、視頻合成", "音樂創作、語音合成", "網站設計與開發"],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "1.生成式AI基礎知識",
+        "subtopic": "1.2.生成式AI應用領域",
+        "concept": "金融產業應用",
+        "number": 90
+    },
+    {
+      "question": "以下哪項描述最符合人工智慧(AI)的定義？",
+      "options": [
+        "僅在特定領域超越人類智能的計算機系統",
+        "讓計算機執行通常需要人類智能的任務的科學和工程學科",
+        "只能處理數值計算的高性能電腦系統",
+        "只存在於科幻小說中的概念"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.1.生成式AI基本概念",
+      "concept": "人工智慧(AI)",
+      "number": 91
+    },
+    {
+      "question": "機器學習(ML)是人工智慧的一個分支，其核心思想是什麼？",
+      "options": [
+        "讓計算機具有自我意識",
+        "讓計算機能夠在不被明確編程的情況下學習並改進",
+        "完全模擬人腦結構的計算模型",
+        "只是編寫更好的條件語句(if-else)來處理所有可能情況"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.4.生成式AI技術原理與工具",
+      "concept": "機器學習(ML)",
+      "number": 92
+    },
+     
+    {
+      "question": "深度學習與傳統機器學習的主要區別是什麼？",
+      "options": [
+        "深度學習比機器學習更快",
+        "深度學習需要更多的人工干預",
+        "深度學習使用多層神經網絡，能自動提取特徵",
+        "深度學習不需要數據進行訓練"
+      ],
+      "correct_answer_index": 2,
+      "correct_answer_letter": "C",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.4.生成式AI技術原理與工具",
+      "concept": "深度學習(DL)",
+      "number": 93
+    },
+    
+    {
+      "question": "生成式人工智慧(Generative AI)與判別式人工智慧(Discriminative AI)的主要區別是什麼？",
+      "options": [
+        "生成式AI創建新內容，判別式AI對現有數據進行分類",
+        "生成式AI只處理文本，判別式AI處理所有類型的數據",
+        "生成式AI更準確，判別式AI速度更快",
+        "生成式AI不需要訓練，判別式AI需要大量訓練數據"
+      ],
+      "correct_answer_index": 0,
+      "correct_answer_letter": "A",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.1.生成式AI基本概念",
+      "concept": "生成式人工智慧",
+      "number": 94
+    },
+    
+    {
+      "question": "自然語言處理(NLP)技術所面臨的主要挑戰之一是什麼？",
+      "options": [
+        "計算機處理速度不夠快",
+        "人類語言的複雜性、歧義性和文化背景差異",
+        "缺乏足夠的文本數據進行訓練",
+        "自然語言處理只適用於英語"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.3.生成式AI技術術語與標準",
+      "concept": "自然語言處理(NLP)",
+      "number": 95
+    },
+    
+    {
+      "question": "大型語言模型(LLM)的突破性優勢之一是什麼？",
+      "options": [
+        "不需要電腦即可運行",
+        "不需要訓練數據",
+        "具有少樣本學習能力和廣泛的通用性",
+        "完全不會產生錯誤或幻覺"
+      ],
+      "correct_answer_index": 2,
+      "correct_answer_letter": "C",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.1.生成式AI基本概念",
+      "concept": "大型語言模型(LLM)",
+      "number": 96
+    },
+    
+    {
+      "question": "專家系統(Expert System)的主要組成部分包括什麼？",
+      "options": [
+        "神經網絡和遺傳算法",
+        "知識庫和推理引擎",
+        "數據庫和用戶界面",
+        "處理器和內存"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.5.AI歷史發展階段",
+      "concept": "專家系統",
+      "number": 97
+    },
+    
+    {
+      "question": "神經網絡中的「激活函數(Activation Function)」有什麼作用？",
+      "options": [
+        "決定網絡的學習速率",
+        "引入非線性，增強模型表達能力",
+        "減少計算量",
+        "防止過擬合"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.3.重要技術概念",
+      "concept": "激活函數",
+      "number": 98
+    },
+    
+    {
+      "question": "卷積神經網絡(CNN)中的卷積層主要作用是什麼？",
+      "options": [
+        "減少特徵數量",
+        "增加模型深度",
+        "提取空間特徵",
+        "加速計算速度"
+      ],
+      "correct_answer_index": 2,
+      "correct_answer_letter": "C",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.1.神經網路主要類型",
+      "concept": "CNN (卷積神經網路)",
+      "number": 99
+    },
+    
+    {
+      "question": "遞歸神經網絡(RNN)特別適合處理什麼類型的數據？",
+      "options": [
+        "圖像數據",
+        "序列數據(如文本、時間序列)",
+        "表格數據",
+        "3D模型數據"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.1.神經網路主要類型",
+      "concept": "RNN (遞歸神經網絡)",
+      "number": 100
+    },
+    
+    {
+      "question": "Transformer架構的核心創新是什麼機制？",
+      "options": [
+        "卷積運算",
+        "自注意力機制(Self-Attention)",
+        "池化操作",
+        "遞歸結構"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.1.神經網路主要類型",
+      "concept": "Transformer",
+      "number": 101
+    },
+    
+    {
+      "question": "生成對抗網絡(GAN)中「對抗」是指什麼？",
+      "options": [
+        "不同GAN模型之間的競爭",
+        "生成器和判别器之間的博弈過程",
+        "模型與訓練數據的對抗",
+        "開發者之間的競爭"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.2.生成模型類型",
+      "concept": "GAN (生成對抗網絡)",
+      "number": 102
+    },
+    
+    {
+      "question": "變分自編碼器(VAE)與傳統自編碼器相比的主要優勢是什麼？",
+      "options": [
+        "訓練速度更快",
+        "可以生成新的樣本",
+        "模型更小",
+        "不需要訓練數據"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.2.生成模型類型",
+      "concept": "VAE (變分自編碼器)",
+      "number": 103
+    },
+   
+    {
+      "question": "注意力機制(Attention Mechanism)在自然語言處理中的主要貢獻是什麼？",
+      "options": [
+        "減少計算量",
+        "允許模型關注輸入的不同部分，提高處理長序列的能力",
+        "完全消除了遞歸結構的需要",
+        "降低了模型的複雜度"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.3.重要技術概念",
+      "concept": "注意力機制",
+      "number": 104
+    },
+  
+    {
+      "question": "強化學習(RL)中的「獎勵信號(Reward Signal)」扮演什麼角色？",
+      "options": [
+        "僅提供初始訓練數據",
+        "引導代理學習最優策略的反饋機制",
+        "幫助定義環境狀態",
+        "只用於測試階段"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.4.生成式AI技術原理與工具",
+      "concept": "強化學習(RL)",
+      "number": 105
+    },
+   
+    {
+      "question": "遷移學習(Transfer Learning)在實際應用中的主要優勢是什麼？",
+      "options": [
+        "不需要任何訓練數據",
+        "能夠利用預訓練模型的知識，減少新任務所需的數據量和計算資源",
+        "完全消除了過擬合問題",
+        "自動選擇最佳模型架構"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.4.自主學習方法和工具",
+      "concept": "遷移學習",
+      "number": 106
+    },
+  
+    {
+      "question": "聯邦學習(Federated Learning)的主要目的是解決什麼問題？",
+      "options": [
+        "提高模型訓練速度",
+        "保護數據隱私，同時允許多方協作訓練模型",
+        "減少模型大小",
+        "完全消除對中央服務器的需要"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.3.生成式AI最新發展趨勢",
+      "concept": "聯邦學習",
+      "number": 107
+    },
+   
+    {
+      "question": "知識圖譜(Knowledge Graph)如何增強生成式AI系統？",
+      "options": [
+        "僅提高計算速度",
+        "提供結構化知識和實體間關係，增強AI的理解力和生成內容的準確性",
+        "完全替代神經網絡",
+        "僅用於數據存儲"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.2.生成式AI資料治理",
+      "concept": "知識圖譜",
+      "number": 108
+    },
+    
+    {
+      "question": "語意分割(Semantic Segmentation)在圖像處理中的主要目標是什麼？",
+      "options": [
+        "僅識別圖像中的物體",
+        "將圖像中每個像素分類到特定類別",
+        "提高圖像的分辨率",
+        "僅檢測圖像中的邊緣"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "3.生成式AI應用技能",
+      "subtopic": "3.2.圖片生成工具與應用",
+      "concept": "語意分割",
+      "number": 109
+    },
+   
+    {
+      "question": "GPT模型系列的核心架構是基於什麼？",
+      "options": [
+        "卷積神經網絡",
+        "遞歸神經網絡",
+        "Transformer架構",
+        "專家系統"
+      ],
+      "correct_answer_index": 2,
+      "correct_answer_letter": "C",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.4.特定模型與技術",
+      "concept": "GPT",
+      "number": 110
+    },
+  
+    {
+      "question": "BERT與GPT最顯著的架構差異是什麼？",
+      "options": [
+        "BERT使用卷積層而GPT不使用",
+        "BERT是雙向的，可以看到上下文的兩側；GPT是單向的，只能看到左側上下文",
+        "BERT更小，GPT更大",
+        "BERT只能處理英語，GPT支持多種語言"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.4.特定模型與技術",
+      "concept": "BERT",
+      "number": 111
+    },
+    
+    {
+      "question": "擴散模型(Diffusion Model)的基本工作原理是什麼？",
+      "options": [
+        "僅分類數據",
+        "通過逐步添加和移除噪聲來學習數據分布",
+        "僅壓縮數據",
+        "使用對抗方式訓練生成器"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.2.生成模型類型",
+      "concept": "Diffusion Models (擴散模型)",
+      "number": 112
+    },
+   
+    {
+      "question": "零樣本學習(Zero-shot Learning)的主要特點是什麼？",
+      "options": [
+        "需要大量標記數據",
+        "模型能夠在沒有見過特定類別或任務的例子情況下執行",
+        "只適用於圖像處理",
+        "比有監督學習慢"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.1.Prompt優化能力",
+      "concept": "Zero-Shot Learning",
+      "number": 113
+    },
+   
+    {
+      "question": "多模態學習(Multimodal Learning)的核心優勢是什麼？",
+      "options": [
+        "減少計算需求",
+        "能夠整合和理解多種類型的數據(如文本、圖像、音頻)",
+        "無需訓練",
+        "只需要小規模數據集"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.3.重要技術概念",
+      "concept": "多模態學習",
+      "number": 114
+    },
+ 
+    {
+      "question": "自動機器學習(AutoML)的主要目標是什麼？",
+      "options": [
+        "替代人類數據科學家",
+        "自動化機器學習流程中耗時的任務，如特徵工程和超參數調整",
+        "僅優化深度學習模型",
+        "創建更大的模型"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.2.生成式AI資料治理",
+      "concept": "自動機器學習(AutoML)",
+      "number": 115
+    },
+   
+    {
+      "question": "決策樹(Decision Tree)演算法的主要優勢之一是什麼？",
+      "options": [
+        "總是比深度學習更準確",
+        "結果容易解釋，提供清晰的決策路徑",
+        "不需要數據預處理",
+        "適合處理大規模圖像數據"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.4.生成式AI技術原理與工具",
+      "concept": "決策樹",
+      "number": 116
+    },
+    
+    {
+      "question": "長短期記憶網絡(LSTM)主要解決了RNN的什麼問題？",
+      "options": [
+        "計算速度慢",
+        "長期依賴問題(梯度消失或爆炸)",
+        "過於複雜的架構",
+        "無法並行處理"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.1.神經網路主要類型",
+      "concept": "LSTM (長短期記憶網絡)",
+      "number": 117
+    },
+    {
+      "question": "強化學習從人類反饋(RLHF)在大型語言模型訓練中的主要作用是什麼？",
+      "options": [
+        "僅提高計算效率",
+        "使模型生成的內容更符合人類偏好和價值觀",
+        "減少模型大小",
+        "僅用於圖像生成"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.1.Prompt優化能力",
+      "concept": "RLHF",
+      "number": 118
+    },
+    {
+      "question": "因果推理(Causal Inference)與相關性分析的主要區別是什麼？",
+      "options": [
+        "因果推理更簡單",
+        "因果推理試圖理解「為什麼」，而不僅僅是「什麼」",
+        "因果推理不需要數據",
+        "兩者其實是同一概念"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.2.生成式AI資料治理",
+      "concept": "因果推理",
+      "number": 119
+    },
+    {
+      "question": "大規模預訓練模型(Foundation Model)的特點是什麼？",
+      "options": [
+        "只針對特定任務優化",
+        "在大量數據上預訓練，可以適應多種下游任務",
+        "僅適用於文本數據",
+        "比專門模型更小"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.1.生成式AI基本概念",
+      "concept": "大規模預訓練模型",
+      "number": 120
+    },
+    {
+      "question": "文本嵌入(Text Embedding)的主要作用是什麼？",
+      "options": [
+        "僅壓縮文本數據",
+        "將文本轉換為向量表示，捕捉語義關係",
+        "僅改善文本顯示效果",
+        "僅用於機器翻譯"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.3.生成式AI技術術語與標準",
+      "concept": "文本嵌入",
+      "number": 121
+    },
+    {
+      "question": "批量標準化(Batch Normalization)在深度學習中的主要作用是什麼？",
+      "options": [
+        "僅加速訓練",
+        "穩定訓練過程，加速收斂，減輕梯度消失問題",
+        "僅減少模型大小",
+        "完全避免過擬合"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.3.重要技術概念",
+      "concept": "批量標準化",
+      "number": 122
+    },
+    {
+      "question": "端到端學習(End-to-End Learning)的核心理念是什麼？",
+      "options": [
+        "只訓練模型的最後一層",
+        "從原始輸入直接學習到最終輸出，無需手動特徵工程",
+        "僅適用於自動駕駛領域",
+        "只關注訓練速度"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.4.生成式AI技術原理與工具",
+      "concept": "端到端學習",
+      "number": 123
+    },
+    {
+      "question": "過擬合(Overfitting)在機器學習中的主要表現是什麼？",
+      "options": [
+        "模型在訓練數據上表現差",
+        "模型在訓練數據上表現極好，但在新數據上表現差",
+        "模型訓練速度慢",
+        "模型太小，無法捕捉數據特徵"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.4.生成式AI技術原理與工具",
+      "concept": "過擬合",
+      "number": 124
+    },
+    {
+      "question": "掩碼語言模型(Masked Language Model)的預訓練目標是什麼？",
+      "options": [
+        "僅翻譯文本",
+        "預測句子中被隨機掩蓋的單詞",
+        "僅分類文本",
+        "生成全新的文章"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.4.特定模型與技術",
+      "concept": "掩碼語言模型",
+      "number": 125
+    },
+    {
+      "question": "自監督學習(Self-Supervised Learning)如何解決標記數據缺乏的問題？",
+      "options": [
+        "完全忽略無標記數據",
+        "從數據本身自動生成監督信號",
+        "僅使用預訓練模型",
+        "增加人工標記的數據量"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.4.生成式AI技術原理與工具",
+      "concept": "自監督學習",
+      "number": 126
+    },
+    {
+      "question": "模型量化(Model Quantization)的主要目的是什麼？",
+      "options": [
+        "增加模型參數量",
+        "提高模型準確性",
+        "減少模型大小和推理時間，同時儘量保持性能",
+        "僅為了兼容舊硬件"
+      ],
+      "correct_answer_index": 2,
+      "correct_answer_letter": "C",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.3.生成式AI最新發展趨勢",
+      "concept": "模型量化",
+      "number": 127
+    },
+    {
+      "question": "提示工程(Prompt Engineering)對於大型語言模型的重要性在於什麼？",
+      "options": [
+        "可以完全替代模型訓練",
+        "通過精心設計的提示引導模型生成更符合期望的輸出",
+        "僅用於提高訓練速度",
+        "可以徹底消除AI模型的偏見"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.1.Prompt優化能力",
+      "concept": "提示工程(Prompt Engineering)",
+      "number": 128
+    },
+    {
+      "question": "語境學習(In-context Learning)在大型語言模型中的實現方式是什麼？",
+      "options": [
+        "只能通過微調實現",
+        "通過在提示中提供範例來指導模型執行任務",
+        "需要重新訓練整個模型",
+        "僅適用於圖像處理"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.1.Prompt優化能力",
+      "concept": "語境學習",
+      "number": 129
+    },
+    {
+      "question": "參數高效微調(PEFT)的主要優勢是什麼？",
+      "options": [
+        "無需任何參數調整",
+        "僅調整模型的小部分參數，大幅降低計算和存儲需求",
+        "完全替代了預訓練過程",
+        "主要應用於小型模型"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.3.生成式AI最新發展趨勢",
+      "concept": "參數高效微調",
+      "number": 130
+    },
+    {
+      "question": "語義分析(Semantic Analysis)在自然語言處理中的主要目標是什麼？",
+      "options": [
+        "僅檢查語法正確性",
+        "理解文本的含義和上下文關係",
+        "僅分析文本的情感",
+        "僅翻譯文本"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.3.生成式AI技術術語與標準",
+      "concept": "語義分析",
+      "number": 131
+    },
+    {
+      "question": "情感分析(Sentiment Analysis)在商業中的主要應用是什麼？",
+      "options": [
+        "僅用於市場研究",
+        "分析客戶評論、社交媒體內容等，了解公眾對產品或服務的態度",
+        "僅監控競爭對手活動",
+        "僅用於內部員工管理"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "3.生成式AI應用技能",
+      "subtopic": "3.7.數據分析工具與應用",
+      "concept": "情感分析",
+      "number": 132
+    },
+    {
+      "question": "向量數據庫(Vector Database)在生成式AI中的主要作用是什麼？",
+      "options": [
+        "僅存儲原始文本",
+        "高效存儲和檢索嵌入向量，支持語義搜索和檢索增強生成",
+        "僅用於模型訓練",
+        "替代傳統關係型數據庫的所有功能"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.2.生成式AI資料治理",
+      "concept": "向量數據庫",
+      "number": 133
+    },
+    {
+      "question": "生成式推理(Generative Inference)與傳統推理的主要區別是什麼？",
+      "options": [
+        "生成式推理速度更快",
+        "生成式推理能創建新內容，而不僅是對現有數據進行分類或預測",
+        "生成式推理不需要模型",
+        "兩者其實是同一概念"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "1.生成式AI基礎知識",
+      "subtopic": "1.1.生成式AI基本概念",
+      "concept": "生成式推理",
+      "number": 134
+    },
+    {
+      "question": "檢索增強生成(RAG)如何改善大型語言模型的輸出？",
+      "options": [
+        "僅增加模型大小",
+        "結合外部知識源的檢索結果，提供更準確、最新的信息",
+        "完全替代了生成過程",
+        "僅用於縮短回應時間"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.3.生成式AI最新發展趨勢",
+      "concept": "檢索增強生成",
+      "number": 135
+    },
+    {
+      "question": "模型蒸餾(Model Distillation)的主要目的是什麼？",
+      "options": [
+        "增加模型複雜度",
+        "將大型模型的知識轉移到更小的模型中，保持性能同時提高效率",
+        "僅用於圖像處理模型",
+        "完全替代模型訓練過程"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "2.生成式AI能力強化",
+      "subtopic": "2.3.生成式AI最新發展趨勢",
+      "concept": "模型蒸餾",
+      "number": 136
+    },
+    {
+      "question": "跨模態理解(Cross-Modal Understanding)在AI系統中的價值是什麼？",
+      "options": [
+        "僅提高處理速度",
+        "使AI能夠在不同類型的數據(如文本、圖像、音頻)之間建立聯繫和理解",
+        "僅適用於特定領域",
+        "減少模型大小"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.3.重要技術概念",
+      "concept": "跨模態理解",
+      "number": 137
+    },
+    {
+      "question": "對比學習(Contrastive Learning)的基本原理是什麼？",
+      "options": [
+        "僅適用於有監督學習",
+        "通過拉近相似樣本的表示、推開不同樣本的表示來學習有效特徵",
+        "僅用於圖像生成",
+        "完全替代深度學習"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "5.神經網路模型與技術",
+      "subtopic": "5.3.重要技術概念",
+      "concept": "對比學習",
+      "number": 138
+    },
+    {
+      "question": "AI模型中的「幻覺(Hallucination)」問題指的是什麼？",
+      "options": [
+        "模型無法識別圖像",
+        "模型生成看似合理但實際上不準確或虛構的內容",
+        "僅在小型模型中出現的問題",
+        "模型完全無法生成輸出"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "4.生成式AI倫理法律",
+      "subtopic": "4.2.倫理準則和規範",
+      "concept": "AI幻覺問題",
+      "number": 139
+    },
+    {
+      "question": "標記偏差(Annotation Bias)如何影響AI模型？",
+      "options": [
+        "僅影響模型大小",
+        "訓練數據中的人為標記偏見會被模型學習並反映在輸出中",
+        "僅影響模型訓練速度",
+        "不會對AI系統產生任何影響"
+      ],
+      "correct_answer_index": 1,
+      "correct_answer_letter": "B",
+      "topic": "4.生成式AI倫理法律",
+      "subtopic": "4.2.倫理準則和規範",
+      "concept": "標記偏差",
+      "number": 140
+    },
+    
+      {
+        "question": "誰在1950年提出了「圖靈測試」以考驗機器智慧？",
+        "options": [
+          "約翰·麥卡錫",
+          "馬文·明斯基",
+          "艾倫·圖靈",
+          "克勞德·香農"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1950-1970（早期AI發展）",
+        "subtopic": "艾倫·圖靈與圖靈測試",
+        "concept": "圖靈測試：檢驗機器是否具有智能的標準",
+        "number": 141
+      },
+      {
+        "question": "哪一場會議被公認為人工智慧領域誕生的標誌？",
+        "options": [
+          "1966年ELIZA對話程式問世",
+          "1956年達特茅斯會議",
+          "1973年萊特希爾報告提交",
+          "1950年圖靈發表《計算機械與智能》論文"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1950-1970（早期AI發展）",
+        "subtopic": "達特茅斯會議（1956）",
+        "concept": "AI作為獨立學科的誕生",
+        "number": 142
+      },
+      {
+        "question": "「人工智慧」（Artificial Intelligence）這個術語是由誰在1956年提出的？",
+        "options": [
+          "赫伯特·西蒙",
+          "約翰·麥卡錫",
+          "艾倫·圖靈",
+          "馬文·明斯基"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1950-1970（早期AI發展）",
+        "subtopic": "約翰·麥卡錫",
+        "concept": "命名人工智慧（AI）術語",
+        "number": 143
+      },
+      {
+        "question": "約翰·麥卡錫在1958年創造了哪種程式語言以用於人工智慧研究？",
+        "options": [
+          "Prolog",
+          "C 語言",
+          "Lisp",
+          "Fortran"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1950-1970（早期AI發展）",
+        "subtopic": "LISP 程式語言",
+        "concept": "早期AI專用程式語言",
+        "number":144
+      },
+      {
+        "question": "哪一個1960年代的電腦程式能模擬心理醫生與人進行對話？",
+        "options": [
+          "Siri",
+          "ELIZA",
+          "Deep Blue",
+          "Shakey"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1950-1970（早期AI發展）",
+        "subtopic": "ELIZA 對話系統",
+        "concept": "早期自然語言對話模擬",
+        "number": 145
+      },
+      {
+        "question": "明斯基與帕帕特在1969年的著作《感知機》指出了什麼限制，導致當時的神經網路研究陷入停滯？",
+        "options": [
+          "缺乏足夠的資料來訓練模型",
+          "電腦運算速度過慢導致訓練失敗",
+          "單層感知機無法解決非線性問題（如 XOR）",
+          "神經網路硬體成本過高無法推廣"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1950-1970（早期AI發展）",
+        "subtopic": "感知機模型的局限",
+        "concept": "早期神經網路無法處理非線性可分問題",
+        "number": 146
+      },
+      {
+        "question": "1950年代亞瑟·薩繆爾開發了一個能自我學習的程式，成為早期機器學習的里程碑。這個程式學會了玩哪種遊戲？",
+        "options": [
+          "國際象棋",
+          "圍棋",
+          "井字遊戲",
+          "西洋跳棋"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1950-1970（早期AI發展）",
+        "subtopic": "Arthur Samuel 的跳棋程式",
+        "concept": "早期機器學習在遊戲中的應用",
+        "number": 147
+      },
+      {
+        "question": "在人工智慧發展史上，「AI 寒冬」通常指的是什麼？",
+        "options": [
+          "AI 系統在冬季無法運作的現象",
+          "需要在低溫環境下運行的 AI 演算法問題",
+          "研究經費和興趣大幅減少的低潮期",
+          "AI 研究人員在寒冷地區舉行的會議"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1970-1980（第一次AI寒冬）",
+        "subtopic": "AI 寒冬的定義",
+        "concept": "AI 研究資金與熱潮的衰退期",
+        "number": 148
+      },
+      {
+        "question": "1973年哪份報告批評了人工智慧的研究現狀，被視為引發第一次 AI 寒冬的因素之一？",
+        "options": [
+          "國會科技評估報告",
+          "圖靈報告",
+          "ALPAC 報告",
+          "萊特希爾報告"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1970-1980（第一次AI寒冬）",
+        "subtopic": "萊特希爾報告",
+        "concept": "對 AI 進展的批評導致資助縮減",
+        "number": 149
+      },
+      {
+        "question": "下列哪個領域的挫折被認為是1970年代 AI 寒冬的原因之一？",
+        "options": [
+          "加密算法",
+          "電腦繪圖",
+          "資料庫管理",
+          "機器翻譯"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1970-1980（第一次AI寒冬）",
+        "subtopic": "機器翻譯停滯",
+        "concept": "早期 AI 未能實現的目標領域導致信心受挫",
+        "number": 150
+      },
+      {
+        "question": "哪一種 AI 方法在1970年代末開始受到重視，幫助 AI 逐漸走出第一次寒冬並在1980年代取得進展？",
+        "options": [
+          "專家系統",
+          "深度學習",
+          "量子計算",
+          "強化學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "1970-1980（第一次AI寒冬）",
+        "subtopic": "專家系統的興起",
+        "concept": "知識驅動的 AI 策略振興研究",
+        "number": 151
+      },
+      {
+        "question": "哪位學者在1972年出版《計算機做不到的事》，對當時的人工智慧研究提出了嚴厲批評？",
+        "options": [
+          "雷·庫茲韋爾",
+          "艾倫·圖靈",
+          "休伯特·德雷福斯",
+          "馬文·明斯基"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1970-1980（第一次AI寒冬）",
+        "subtopic": "德雷福斯對 AI 的批評",
+        "concept": "對符號 AI 侷限性的哲學質疑",
+        "number": 152
+      },
+      {
+        "question": "1980年代興起的「專家系統」是指什麼？",
+        "options": [
+          "能自我進化的硬體晶片",
+          "模擬人類專家知識與推理的 AI 程式",
+          "擁有超高速運算能力的超級電腦",
+          "專門用於圖形處理的軟體系統"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1980-1990（專家系統與復興期）",
+        "subtopic": "專家系統的定義",
+        "concept": "知識庫與推理機制的 AI 系統",
+        "number": 153
+      },
+      {
+        "question": "以下哪一個是1980年代早期研發的知名專家系統？",
+        "options": [
+          "GPT-3",
+          "深藍",
+          "AlphaGo",
+          "MYCIN"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1980-1990（專家系統與復興期）",
+        "subtopic": "MYCIN 專家系統",
+        "concept": "早期 AI 在醫學診斷中的應用",
+        "number": 154
+      },
+      {
+        "question": "哪個國家在1982年啟動了「第五代電腦」計畫以推動人工智慧技術？",
+        "options": [
+          "美國",
+          "日本",
+          "英國",
+          "法國"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1980-1990（專家系統與復興期）",
+        "subtopic": "日本第五代電腦計畫",
+        "concept": "政府主導的大型 AI 研發計畫",
+        "number": 155
+      },
+      {
+        "question": "專家系統在1980年代末開始走下坡，主要是因為什麼問題？",
+        "options": [
+          "程式語言無法支援大型系統",
+          "缺乏成功應用案例",
+          "電腦處理速度跟不上",
+          "知識獲取困難且維護成本高"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1980-1990（專家系統與復興期）",
+        "subtopic": "專家系統的瓶頸",
+        "concept": "知識工程難題（知識獲取與維護）",
+        "number": 156
+      },
+      {
+        "question": "1986年由 Rumelhart 等人發表的論文讓哪種訓練多層神經網路的演算法受到矚目？",
+        "options": [
+          "支援向量機",
+          "遺傳演算法",
+          "模糊理論",
+          "反向傳播演算法"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1980-1990（專家系統與復興期）",
+        "subtopic": "反向傳播演算法",
+        "concept": "多層神經網路訓練的突破",
+        "number": 157
+      },
+      {
+        "question": "哪位研究者被譽為「專家系統之父」？",
+        "options": [
+          "艾倫·紐威爾",
+          "馬文·明斯基",
+          "約書亞·本吉奧",
+          "愛德華·費根鮑姆"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "1980-1990（專家系統與復興期）",
+        "subtopic": "愛德華·費根鮑姆",
+        "concept": "專家系統領域的先驅人物",
+        "number": 158
+      },
+      {
+        "question": "1980年代末，AI 再度陷入低潮，被稱作第二次 AI 寒冬。以下哪一事件象徵了這一時期的開始？",
+        "options": [
+          "Lisp 工作站市場的崩潰",
+          "IBM Deep Blue 擊敗西洋棋冠軍",
+          "日本終止第五代電腦計畫",
+          "開源機器學習框架大量出現"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "1980-1990（專家系統與復興期）",
+        "subtopic": "第二次 AI 寒冬的開端",
+        "concept": "專家系統商業化挫折（Lisp 機市場崩潰）",
+        "number": 159
+      },
+      {
+        "question": "哪一個 IBM 開發的電腦程式在1997年擊敗了當時的西洋棋世界冠軍？",
+        "options": [
+          "深思號",
+          "AlphaGo",
+          "深藍",
+          "沃森"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1990-2010（深度學習萌芽）",
+        "subtopic": "IBM 深藍",
+        "concept": "AI 在博弈領域的突破",
+        "number": 160
+      },
+      {
+        "question": "1997年發明的長短期記憶（LSTM）網路主要是為了解決循環神經網路的哪項困難？",
+        "options": [
+          "過擬合現象，導致模型在新資料上表現不佳",
+          "梯度消失，使模型難以捕捉長期依賴",
+          "計算資源不足，無法訓練大型網路",
+          "缺乏非監督學習能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1990-2010（深度學習萌芽）",
+        "subtopic": "長短期記憶網路（LSTM）",
+        "concept": "解決 RNN 長期依賴的梯度消失問題",
+        "number": 161
+      },
+      {
+        "question": "Geoffrey Hinton 等人在2006年提出無監督逐層預訓練的方法，成功訓練深層神經網路，這種深度模型被稱為什麼？",
+        "options": [
+          "生成對抗網路",
+          "卷積神經網路",
+          "深度信念網路",
+          "支援向量機"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1990-2010（深度學習萌芽）",
+        "subtopic": "深度信念網路",
+        "concept": "無監督預訓練深化神經網路",
+        "number": 162
+      },
+      {
+        "question": "Yann LeCun 在1990年代末開發的哪個卷積神經網路系統成功用於辨識手寫數字？",
+        "options": [
+          "LeNet-5",
+          "ResNet",
+          "AlexNet",
+          "VGG-16"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "1990-2010（深度學習萌芽）",
+        "subtopic": "LeNet-5",
+        "concept": "卷積網路在手寫字識別上的成功應用",
+        "number": 163
+      },
+      {
+        "question": "2010年開始的哪項競賽及其資料集大幅推動了深度學習在電腦視覺領域的進展？",
+        "options": [
+          "TREC 信息檢索評測",
+          "DARPA 無人車挑戰賽",
+          "ImageNet 視覺識別挑戰賽",
+          "Kaggle 資料科學大賽"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "1990-2010（深度學習萌芽）",
+        "subtopic": "ImageNet 大賽",
+        "concept": "大規模資料集加速深度學習發展",
+        "number": 164
+      },
+      {
+        "question": "1990年代由 Vapnik 等人提出並流行的機器學習演算法是哪一個？",
+        "options": [
+          "K-最近鄰（KNN）",
+          "支援向量機（SVM）",
+          "羅吉斯迴歸",
+          "決策樹"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1990-2010（深度學習萌芽）",
+        "subtopic": "支持向量機 (SVM)",
+        "concept": "深度學習興起前流行的機器學習方法",
+        "number": 165
+      },
+      {
+        "question": "哪三位科學家被並稱為「深度學習三巨頭」，並於2018年共同獲得圖靈獎？",
+        "options": [
+          "約翰·麥卡錫、馬文·明斯基、艾倫·圖靈",
+          "楊立昆、傑弗里·辛頓、約書亞·本吉奧",
+          "伊恩·古德費洛、德米斯·哈薩比斯、李飛飛",
+          "彼得·諾維格、塞巴斯蒂安·特龍、吳恩達"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1990-2010（深度學習萌芽）",
+        "subtopic": "深度學習三巨頭",
+        "concept": "Hinton、LeCun、Bengio 在深度學習上的貢獻",
+        "number": 166
+      },
+      {
+        "question": "2014年，哪位研究生提出了生成對抗網路（GAN）這種新型生成模型？",
+        "options": [
+          "傑弗里·辛頓",
+          "吳恩達",
+          "楊立昆",
+          "伊恩·古德費洛"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "生成對抗網路 (GAN)",
+        "concept": "GAN 的發明者及年份",
+        "number": 167
+      },
+      {
+        "question": "2017年，谷歌提出了使用「自注意力」機制的哪種模型架構，革新了自然語言處理與生成技術？",
+        "options": [
+          "強化學習模型",
+          "卷積神經網路 (CNN)",
+          "RNN 網路",
+          "Transformer 模型"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "Transformer 架構",
+        "concept": "自注意力機制的序列模型",
+        "number": 168
+      },
+      {
+        "question": "在 GPT-3 等模型名稱中，「GPT」代表什麼？",
+        "options": [
+          "Generative Pre-trained Transformer（生成式預訓練轉換模型）",
+          "Global Parallel Transformer",
+          "Graphics Processing Technique",
+          "Generalized Performance Tuning"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "GPT 模型縮寫",
+        "concept": "GPT 的全稱含義",
+        "number": 169
+      },
+      {
+        "question": "OpenAI 的 GPT-3（於2020年發布）以參數規模巨大而知名。GPT-3 大約擁有多少個參數？",
+        "options": [
+          "17.5億",
+          "1750億",
+          "175億",
+          "1750萬"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "GPT-3 模型規模",
+        "concept": "大型語言模型的參數量級",
+        "number": 170
+      },
+      {
+        "question": "ChatGPT 等大型語言模型採用了什麼方法來透過人類反饋微調模型，使其能產生更符合使用者期望的回答？",
+        "options": [
+          "從人類反饋中強化學習（RLHF）",
+          "無監督預訓練",
+          "對抗訓練",
+          "遺傳演算法優化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "人類反饋強化學習 (RLHF)",
+        "concept": "透過人類偏好強化模型行為的技術",
+        "number": 171
+      },
+      {
+        "question": "哪一個由 OpenAI 研發的模型在2022年以能夠根據文字提示生成圖像的能力引發廣泛關注？",
+        "options": [
+          "DALL-E 2",
+          "GPT-2",
+          "AlphaFold",
+          "Midjourney"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "DALL-E 2",
+        "concept": "文本生成圖像模型的突破",
+        "number": 172
+      },
+      {
+        "question": "Stable Diffusion（2022年問世）屬於哪種類型的生成模型？其透過逐步去除隨機噪聲來生成圖像。",
+        "options": [
+          "擴散模型",
+          "強化學習模型",
+          "生成對抗網路",
+          "自迴歸語言模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "擴散模型 (Stable Diffusion)",
+        "concept": "逐步去噪的圖像生成技術",
+        "number": 173
+      },
+      {
+        "question": "DeepMind 公司的 AlphaGo 在2016年實現了什麼重大壯舉，被視為 AI 發展史上的里程碑？",
+        "options": [
+          "贏得美國「危險邏輯」知識問答比賽冠軍",
+          "發現新的數學定理",
+          "擊敗世界冠軍圍棋棋手",
+          "完成首部由 AI 自主創作的小說"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "AlphaGo",
+        "concept": "強化學習在複雜博弈中的突破",
+        "number": 174
+      },
+      {
+        "question": "2018年推出的 BERT 語言模型有別於 GPT 系列模型之處在於什麼？",
+        "options": [
+          "BERT 能夠雙向理解文本上下文",
+          "BERT 採用遞歸神經網路架構",
+          "BERT 能夠像 GPT-3 一樣生成大段文章",
+          "BERT 結合圖像資訊輔助理解"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "2010-至今（生成式AI興起）",
+        "subtopic": "BERT 模型",
+        "concept": "雙向語境的語言模型",
+        "number": 175
+      }
+    ]
+  

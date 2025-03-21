@@ -2605,6 +2605,727 @@
         "subtopic": "BERT 模型",
         "concept": "雙向語境的語言模型",
         "number": 175
-      }
-    ]
+      },
+      
+        {
+          "question": "GPT-3模型擁有多少參數？",
+          "options": [
+            "1億個參數",
+            "175億個參數",
+            "1,750億個參數",
+            "5,400億個參數"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.大型語言模型",
+          "concept": "GPT模型參數",
+          "number": 176
+        },
+        {
+          "question": "StyleGAN技術是哪家公司創立的？",
+          "options": [
+            "Google",
+            "OpenAI",
+            "Nvidia",
+            "Meta"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.1.生成模型",
+          "concept": "StyleGAN",
+          "number": 177
+        },
+        {
+          "question": "Nvidia的文字轉語音(TTS)技術叫什麼？",
+          "options": [
+            "VoiceGPT",
+            "Riva",
+            "NVoice",
+            "SpeechSynth"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.語音合成技術",
+          "concept": "Nvidia TTS",
+          "number": 178
+        },
+        {
+          "question": "生成式對抗網路(GAN)的主要組成部分是什麼？",
+          "options": [
+            "編碼器和解碼器",
+            "生成器和判別器",
+            "轉換器和注意力機制",
+            "遞迴層和卷積層"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.1.生成模型",
+          "concept": "GAN架構",
+          "number": 179
+        },
+        {
+          "question": "卷積神經網路(CNN)主要應用於哪個領域？",
+          "options": [
+            "自然語言處理",
+            "視覺相關任務",
+            "時間序列分析",
+            "強化學習"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.神經網路類型",
+          "concept": "CNN應用",
+          "number": 180
+        },
+        {
+          "question": "遞迴神經網路(RNN)最適合處理哪類資料？",
+          "options": [
+            "圖像資料",
+            "非結構化資料",
+            "時序資料",
+            "表格資料"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.神經網路類型",
+          "concept": "RNN應用",
+          "number": 181
+        },
+        {
+          "question": "在GDPR中，「被遺忘權」是指什麼？",
+          "options": [
+            "個人有權被記住在資料庫中",
+            "個人有權要求刪除其個人資料",
+            "個人有權在社交媒體上匿名",
+            "企業有權忘記過去的法律責任"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.3.資料隱私與保護",
+          "concept": "GDPR被遺忘權",
+          "number": 182
+        },
+        {
+          "question": "在使用生成式AI自動生成簡報時，最重要的注意事項是什麼？",
+          "options": [
+            "確保使用最新版本的簡報軟體",
+            "確保簡報中的資料和事實準確性",
+            "僅使用商業許可的圖像",
+            "限制每張投影片的字數"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "3.生成式AI應用實務",
+          "subtopic": "3.2.內容創作與簡報",
+          "concept": "AI生成簡報",
+          "number": 183
+        },
+        {
+          "question": "Prompt工程在企業應用中的主要好處是什麼？",
+          "options": [
+            "降低員工培訓成本",
+            "提高AI模型回應的準確性和相關性",
+            "減少資料中心的能源消耗",
+            "保護企業資料免受網路攻擊"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.提示詞工程",
+          "subtopic": "2.3.企業應用",
+          "concept": "Prompt工程價值",
+          "number": 184
+        },
+        {
+          "question": "變分自動編碼器(VAE)與GAN相比，其主要特點是什麼？",
+          "options": [
+            "VAE更擅長生成高解析度圖像",
+            "VAE運用統計推論原則，將資料編碼為潛空間",
+            "VAE不需要大量訓練資料",
+            "VAE不存在模式崩潰問題"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.1.生成模型",
+          "concept": "VAE特性",
+          "number": 185
+        },
+        {
+          "question": "強化學習(Reinforcement Learning)的主要特點是什麼？",
+          "options": [
+            "需要大量標記資料進行訓練",
+            "通過獎勵機制讓AI從環境互動中學習",
+            "主要用於圖像分類任務",
+            "無法處理動態變化的環境"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "強化學習",
+          "number": 186
+        },
+        {
+          "question": "在撰寫有效的Prompt時，下列哪種做法最能提高生成結果的品質？",
+          "options": [
+            "使用盡可能短的提示詞",
+            "提供明確的指示、上下文和範例",
+            "避免使用技術術語",
+            "使用複雜的語法結構"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.提示詞工程",
+          "subtopic": "2.1.提示詞設計",
+          "concept": "有效提示詞",
+          "number": 187
+        },
+        {
+          "question": "半監督式學習的主要優勢是什麼？",
+          "options": [
+            "不需要任何標記資料",
+            "可以同時使用標記和未標記資料進行訓練",
+            "訓練速度比監督式學習快",
+            "完全不需要人工干預"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "半監督式學習",
+          "number": 188
+        },
+        {
+          "question": "語音合成系統(TTS)的主要應用場景是什麼？",
+          "options": [
+            "音樂創作",
+            "語音轉文字",
+            "將文字轉換為語音",
+            "語音識別"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "3.生成式AI應用實務",
+          "subtopic": "3.3.語音與音訊",
+          "concept": "TTS應用",
+          "number": 189
+        },
+        {
+          "question": "根據GDPR，企業收集個人資料必須遵循哪個原則？",
+          "options": [
+            "最大化收集原則",
+            "目的限制原則",
+            "永久儲存原則",
+            "自動處理原則"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.3.資料隱私與保護",
+          "concept": "GDPR原則",
+          "number": 190
+        },
+        {
+          "question": "對比學習(Contrastive Learning)的基本原理是什麼？",
+          "options": [
+            "僅適用於有監督學習",
+            "通過拉近相似樣本的表示、推開不同樣本的表示來學習有效特徵",
+            "僅用於圖像生成",
+            "完全替代深度學習"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.重要技術概念",
+          "concept": "對比學習",
+          "number": 191
+        },
+        {
+          "question": "AI模型中的「幻覺(Hallucination)」問題指的是什麼？",
+          "options": [
+            "模型無法識別圖像",
+            "模型生成看似合理但實際上不準確或虛構的內容",
+            "僅在小型模型中出現的問題",
+            "模型完全無法生成輸出"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.2.倫理準則和規範",
+          "concept": "AI幻覺問題",
+          "number": 192
+        },
+        {
+          "question": "標記偏差(Annotation Bias)如何影響AI模型？",
+          "options": [
+            "僅影響模型大小",
+            "訓練數據中的人為標記偏見會被模型學習並反映在輸出中",
+            "僅影響模型訓練速度",
+            "不會對AI系統產生任何影響"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.2.倫理準則和規範",
+          "concept": "標記偏差",
+          "number": 193
+        },
+        {
+          "question": "GPT-3模型擁有多少參數？",
+          "options": [
+            "1億個參數",
+            "175億個參數",
+            "1,750億個參數",
+            "5,400億個參數"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.大型語言模型",
+          "concept": "GPT模型參數",
+          "number": 194
+        },
+        {
+          "question": "StyleGAN技術是哪家公司創立的？",
+          "options": [
+            "Google",
+            "OpenAI",
+            "Nvidia",
+            "Meta"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.1.生成模型",
+          "concept": "StyleGAN",
+          "number": 195
+        },
+        {
+          "question": "Nvidia的文字轉語音(TTS)技術叫什麼？",
+          "options": [
+            "VoiceGPT",
+            "Riva",
+            "NVoice",
+            "SpeechSynth"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.語音合成技術",
+          "concept": "Nvidia TTS",
+          "number": 196
+        },
+        {
+          "question": "生成式對抗網路(GAN)的主要組成部分是什麼？",
+          "options": [
+            "編碼器和解碼器",
+            "生成器和判別器",
+            "轉換器和注意力機制",
+            "遞迴層和卷積層"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.1.生成模型",
+          "concept": "GAN架構",
+          "number": 197
+        },
+        {
+          "question": "卷積神經網路(CNN)主要應用於哪個領域？",
+          "options": [
+            "自然語言處理",
+            "視覺相關任務",
+            "時間序列分析",
+            "強化學習"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.神經網路類型",
+          "concept": "CNN應用",
+          "number": 198
+        },
+        {
+          "question": "遞迴神經網路(RNN)最適合處理哪類資料？",
+          "options": [
+            "圖像資料",
+            "非結構化資料",
+            "時序資料",
+            "表格資料"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.神經網路類型",
+          "concept": "RNN應用",
+          "number": 199
+        },
+        {
+          "question": "在GDPR中，「被遺忘權」是指什麼？",
+          "options": [
+            "個人有權被記住在資料庫中",
+            "個人有權要求刪除其個人資料",
+            "個人有權在社交媒體上匿名",
+            "企業有權忘記過去的法律責任"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.3.資料隱私與保護",
+          "concept": "GDPR被遺忘權",
+          "number": 200
+        },
+        {
+          "question": "在使用生成式AI自動生成簡報時，最重要的注意事項是什麼？",
+          "options": [
+            "確保使用最新版本的簡報軟體",
+            "確保簡報中的資料和事實準確性",
+            "僅使用商業許可的圖像",
+            "限制每張投影片的字數"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "3.生成式AI應用實務",
+          "subtopic": "3.2.內容創作與簡報",
+          "concept": "AI生成簡報",
+          "number": 201
+        },
+        {
+          "question": "Prompt工程在企業應用中的主要好處是什麼？",
+          "options": [
+            "降低員工培訓成本",
+            "提高AI模型回應的準確性和相關性",
+            "減少資料中心的能源消耗",
+            "保護企業資料免受網路攻擊"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.提示詞工程",
+          "subtopic": "2.3.企業應用",
+          "concept": "Prompt工程價值",
+          "number": 202
+        },
+        {
+          "question": "變分自動編碼器(VAE)與GAN相比，其主要特點是什麼？",
+          "options": [
+            "VAE更擅長生成高解析度圖像",
+            "VAE運用統計推論原則，將資料編碼為潛空間",
+            "VAE不需要大量訓練資料",
+            "VAE不存在模式崩潰問題"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.1.生成模型",
+          "concept": "VAE特性",
+          "number": 203
+        },
+        {
+          "question": "強化學習(Reinforcement Learning)的主要特點是什麼？",
+          "options": [
+            "需要大量標記資料進行訓練",
+            "通過獎勵機制讓AI從環境互動中學習",
+            "主要用於圖像分類任務",
+            "無法處理動態變化的環境"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "強化學習",
+          "number": 204
+        },
+        {
+          "question": "在撰寫有效的Prompt時，下列哪種做法最能提高生成結果的品質？",
+          "options": [
+            "使用盡可能短的提示詞",
+            "提供明確的指示、上下文和範例",
+            "避免使用技術術語",
+            "使用複雜的語法結構"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.提示詞工程",
+          "subtopic": "2.1.提示詞設計",
+          "concept": "有效提示詞",
+          "number": 205
+        },
+        {
+          "question": "半監督式學習的主要優勢是什麼？",
+          "options": [
+            "不需要任何標記資料",
+            "可以同時使用標記和未標記資料進行訓練",
+            "訓練速度比監督式學習快",
+            "完全不需要人工干預"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "半監督式學習",
+          "number": 206
+        },
+        {
+          "question": "語音合成系統(TTS)的主要應用場景是什麼？",
+          "options": [
+            "音樂創作",
+            "語音轉文字",
+            "將文字轉換為語音",
+            "語音識別"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "3.生成式AI應用實務",
+          "subtopic": "3.3.語音與音訊",
+          "concept": "TTS應用",
+          "number": 207
+        },
+        {
+          "question": "根據GDPR，企業收集個人資料必須遵循哪個原則？",
+          "options": [
+            "最大化收集原則",
+            "目的限制原則",
+            "永久儲存原則",
+            "自動處理原則"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.3.資料隱私與保護",
+          "concept": "GDPR原則",
+          "number": 208
+        },
+        {
+          "question": "Runway的Gen-2技術主要用於什麼領域？",
+          "options": [
+            "文字生成",
+            "圖像轉文字",
+            "文字轉影片",
+            "語音識別"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "3.生成式AI應用實務",
+          "subtopic": "3.4.多模態生成",
+          "concept": "影片生成",
+          "number": 209
+        },
+        {
+          "question": "變換式模型(Transformer)的關鍵創新是什麼？",
+          "options": [
+            "卷積層",
+            "遞迴結構",
+            "注意力機制",
+            "強化學習"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.模型架構",
+          "concept": "Transformer",
+          "number": 210
+        },
+        {
+          "question": "零樣本學習(Zero-shot Learning)的特點是什麼？",
+          "options": [
+            "需要大量標記資料",
+            "能夠處理從未見過的類別或任務",
+            "只能處理圖像分類",
+            "訓練速度慢"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "零樣本學習",
+          "number": 211
+        },
+        {
+          "question": "Chain-of-Thought提示詞技巧的主要目的是什麼？",
+          "options": [
+            "加速模型推理",
+            "減少令牌使用量",
+            "引導模型展示思考過程",
+            "防止模型產生有害內容"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "2.提示詞工程",
+          "subtopic": "2.1.提示詞技巧",
+          "concept": "Chain-of-Thought",
+          "number": 212
+        },
+        {
+          "question": "在生成式AI中，潛空間(Latent Space)的概念是指什麼？",
+          "options": [
+            "GPU內存中儲存模型參數的區域",
+            "資料的壓縮表示形式，模型用於生成新內容",
+            "尚未發布的AI模型",
+            "未經標記的訓練資料集"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.1.生成模型原理",
+          "concept": "潛空間",
+          "number": 213
+        },
+        {
+          "question": "Few-shot Learning與傳統機器學習方法的主要區別是什麼？",
+          "options": [
+            "不需要GPU加速",
+            "只能用於圖像處理",
+            "可以用極少量的範例學習新任務",
+            "不需要任何訓練資料"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "Few-shot Learning",
+          "number": 214
+        },
+        {
+          "question": "在企業使用生成式AI時，下列哪項是降低模型產生幻覺(Hallucination)風險的最佳做法？",
+          "options": [
+            "總是使用最大的可用模型",
+            "提供明確的上下文並要求引用資料來源",
+            "限制模型的輸出長度",
+            "僅使用專有API"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "3.生成式AI應用實務",
+          "subtopic": "3.1.企業應用與實踐",
+          "concept": "降低AI幻覺",
+          "number": 215
+        },
+        {
+          "question": "在提示詞工程中，「角色提示(Role Prompting)」技巧主要是指什麼？",
+          "options": [
+            "讓AI扮演特定角色或專家身份回答問題",
+            "在提示詞中指定使用者的角色",
+            "讓AI自動選擇合適的角色",
+            "為提示詞設定不同的優先級"
+          ],
+          "correct_answer_index": 0,
+          "correct_answer_letter": "A",
+          "topic": "2.提示詞工程",
+          "subtopic": "2.1.提示詞技巧",
+          "concept": "角色提示",
+          "number": 216
+        },
+        {
+          "question": "遷移學習(Transfer Learning)在AI開發中的主要優勢是什麼？",
+          "options": [
+            "完全不需要訓練資料",
+            "可利用預訓練模型的知識解決新任務，節省資源",
+            "模型大小比從頭訓練的模型更小",
+            "不需要調整超參數"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "遷移學習",
+          "number": 217
+        },
+        {
+          "question": "生成式AI導入企業面臨的資料需求挑戰，可以通過什麼方式解決？",
+          "options": [
+            "僅使用外部資料集",
+            "減少模型大小",
+            "使用合成資料",
+            "完全避免敏感領域應用"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "3.生成式AI應用實務",
+          "subtopic": "3.1.企業導入",
+          "concept": "資料需求挑戰",
+          "number": 218
+        },
+        {
+          "question": "「提示詞洩漏(Prompt Leakage)」風險是指什麼？",
+          "options": [
+            "生成式AI模型忘記之前的提示詞",
+            "提示詞中的敏感資訊可能被模型記住並洩露給其他使用者",
+            "提示詞過長導致性能下降",
+            "提示詞被競爭對手獲取"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.1.安全與隱私",
+          "concept": "提示詞洩漏",
+          "number": 219
+        },
+        {
+          "question": "在評估生成式AI輸出時，ROUGE指標主要用於測量什麼？",
+          "options": [
+            "輸出的創意程度",
+            "生成文本與參考文本的相似度",
+            "模型的運算效率",
+            "有害內容的檢測率"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.5.評估指標",
+          "concept": "ROUGE指標",
+          "number": 220
+        },
+        {
+          "question": "語意檢索增強生成(RAG)技術的主要優勢是什麼？",
+          "options": [
+            "完全不需要預訓練",
+            "降低模型幻覺，提高回答準確性",
+            "減少計算資源需求",
+            "可以完全取代大型語言模型"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.增強技術",
+          "concept": "RAG技術",
+          "number": 221
+        },
+        {
+          "question": "按照GDPR規定，資料控制者在發生資料外洩時必須在多長時間內通知監管機構？",
+          "options": [
+            "12小時內",
+            "24小時內",
+            "72小時內",
+            "7天內"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.3.資料隱私與保護",
+          "concept": "GDPR資料外洩通知",
+          "number": 222
+        },
+        {
+          "question": "在生成式AI中，「溫度(Temperature)」參數控制的是什麼？",
+          "options": [
+            "模型運算時的物理溫度",
+            "生成結果的隨機性/創造性",
+            "訓練速度",
+            "模型記憶力"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.提示詞工程",
+          "subtopic": "2.2.參數設定",
+          "concept": "溫度參數",
+          "number": 223
+        }
+      ]
   

@@ -3326,6 +3326,1245 @@
           "subtopic": "2.2.參數設定",
           "concept": "溫度參數",
           "number": 223
-        }
-      ]
-  
+        },
+        {
+          "question": "BERT與GPT模型在訓練方法上的根本區別是什麼？",
+          "options": [
+            "BERT只能處理短文本，GPT可以處理長文本",
+            "BERT是雙向編碼，可以看到句子兩側的上下文；GPT是單向自回歸",
+            "BERT只能理解英文，GPT支持多語言",
+            "BERT專為搜尋引擎設計，GPT專為對話設計"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.特定模型與技術",
+          "concept": "BERT vs GPT架構差異",
+          "number": 224
+        },
+        {
+          "question": "在大型語言模型訓練中，「預訓練-微調」(Pre-training and Fine-tuning)範式的主要優勢是什麼？",
+          "options": [
+            "節省電腦顯示卡記憶體",
+            "減少模型參數數量",
+            "先學習通用知識，再適應特定任務，提高效率和性能",
+            "完全避免過擬合問題"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.生成模型類型",
+          "concept": "預訓練-微調範式",
+          "number": 225
+        },
+        {
+          "question": "Prompt注入攻擊(Prompt Injection)是指什麼？",
+          "options": [
+            "黑客向AI模型注入病毒程式",
+            "使用特殊提示詞使模型生成違反其安全規則的內容",
+            "在訓練數據中植入特定內容",
+            "過度使用提示詞導致模型崩潰"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.4.安全風險",
+          "concept": "Prompt注入攻擊",
+          "number": 226
+        },
+        {
+          "question": "聊天機器人框架評估中的「一致性(Consistency)」指標是指什麼？",
+          "options": [
+            "機器人的回應速度保持穩定",
+            "機器人在不同時間對相同問題給出相似答案",
+            "機器人的回答與人類回答的相似度",
+            "機器人維持單一對話主題的能力"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "3.生成式AI應用技能",
+          "subtopic": "3.8.聊天機器人評估",
+          "concept": "一致性評估",
+          "number": 227
+        },
+        {
+          "question": "在擴散模型中，「去噪過程」指的是什麼？",
+          "options": [
+            "預處理圖像以減少雜訊",
+            "從純雜訊逐步生成有意義的圖像",
+            "移除訓練數據中的異常值",
+            "過濾掉用戶不當提示詞"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.生成模型類型",
+          "concept": "擴散模型去噪",
+          "number": 228
+        },
+        {
+          "question": "「少樣本學習」(Few-shot Learning)通常是通過什麼方式實現的？",
+          "options": [
+            "大幅縮小模型規模",
+            "在提示詞中提供任務的幾個具體範例",
+            "微調整個模型",
+            "增加層數使模型更深"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.生成式AI能力強化",
+          "subtopic": "2.1.Prompt優化能力",
+          "concept": "少樣本學習實現",
+          "number": 229
+        },
+        {
+          "question": "「LLM評估框架」HELM主要關注的是評估哪些方面？",
+          "options": [
+            "只評估模型速度與成本",
+            "只關注模型創意與娛樂性",
+            "全面評估準確性、安全性、穩健性、偏見等多維度指標",
+            "專注於代碼生成能力評估"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.5.模型評估",
+          "concept": "HELM評估框架",
+          "number": 230
+        },
+        {
+          "question": "語言模型微調中的「PEFT」(Parameter-Efficient Fine-Tuning)技術的主要優勢是？",
+          "options": [
+            "不需要任何訓練數據",
+            "只調整少量參數即可達到良好效果，節省資源",
+            "完全避免過擬合",
+            "不需要使用GPU"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.模型調整技術",
+          "concept": "參數高效微調",
+          "number": 231
+        },
+        {
+          "question": "「模型蒸餾」(Model Distillation)技術的主要目的是什麼？",
+          "options": [
+            "增加模型的複雜度",
+            "將大型模型的知識轉移到更小的模型中",
+            "將多個專業模型合併為一個",
+            "純化訓練數據"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.模型優化技術",
+          "concept": "模型蒸餾",
+          "number": 232
+        },
+        {
+          "question": "「混合專家模型(MoE)」的核心思想是什麼？",
+          "options": [
+            "結合人類專家和AI模型的決策",
+            "訓練多個專家模型，為每個輸入動態選擇最合適的專家處理",
+            "使用不同的語言模型處理不同語言",
+            "同時使用CPU和GPU進行計算"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.模型架構",
+          "concept": "混合專家模型",
+          "number": 233
+        },
+        {
+          "question": "在生成式AI聊天機器人中，「上下文長度」(Context Length)指的是什麼？",
+          "options": [
+            "模型能夠理解的文本段落數量",
+            "對話中記住的回合數",
+            "模型一次能處理的最大字符/token數量",
+            "用戶等待回應的最長時間"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.模型能力指標",
+          "concept": "上下文長度",
+          "number": 234
+        },
+        {
+          "question": "「連接主義與符號主義」(Connectionism vs Symbolism)之爭在AI發展史上主要關注什麼？",
+          "options": [
+            "硬體配置選擇",
+            "數據儲存方式",
+            "智能實現的基本方法:神經網路學習 vs 符號邏輯推理",
+            "編程語言選擇"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "1.生成式AI基礎知識",
+          "subtopic": "1.5.AI發展史",
+          "concept": "連接主義與符號主義",
+          "number": 235
+        },
+        {
+          "question": "「自回歸生成」(Autoregressive Generation)在語言模型中指的是什麼過程？",
+          "options": [
+            "從隨機噪聲中生成內容",
+            "根據已生成的前面內容來預測下一個單詞",
+            "同時生成所有內容",
+            "從既定模板生成內容"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.生成模型類型",
+          "concept": "自回歸生成",
+          "number": 236
+        },
+        {
+          "question": "生成式AI中的「採樣溫度」(Sampling Temperature)設置為0會產生什麼結果？",
+          "options": [
+            "模型停止工作",
+            "生成完全隨機的內容",
+            "總是選擇最高概率的下一個詞，結果高度確定",
+            "生成最短的可能回答"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "2.生成式AI能力強化",
+          "subtopic": "2.2.生成參數調整",
+          "concept": "採樣溫度影響",
+          "number": 237
+        },
+        {
+          "question": "「梯度累積」(Gradient Accumulation)技術主要解決了什麼問題？",
+          "options": [
+            "模型精度不足",
+            "訓練數據不足",
+            "在顯存有限的情況下訓練更大批次的數據",
+            "模型推理速度太慢"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.模型訓練技術",
+          "concept": "梯度累積",
+          "number": 238
+        },
+        {
+          "question": "在生成式AI模型微調中，「災難性遺忘」(Catastrophic Forgetting)指的是什麼？",
+          "options": [
+            "模型在訓練過程中突然崩潰",
+            "微調後模型忘記原有的通用知識和能力",
+            "模型無法記住長序列",
+            "訓練數據被意外刪除"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.模型微調挑戰",
+          "concept": "災難性遺忘",
+          "number": 239
+        },
+        {
+          "question": "「Beam Search」算法在語言生成中的作用是什麼？",
+          "options": [
+            "加速模型訓練",
+            "在生成過程中考慮多個可能序列，尋找整體最優結果",
+            "壓縮模型大小",
+            "混合多個模型的輸出"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.生成策略",
+          "concept": "Beam Search",
+          "number": 240
+        },
+        {
+          "question": "「Contrastive Learning」(對比學習)的核心思想是什麼？",
+          "options": [
+            "使用對立觀點訓練模型",
+            "通過比較不同數據集的差異",
+            "使相似樣本的表示相近，不同樣本的表示相遠",
+            "對比不同模型架構的表現"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "對比學習",
+          "number": 241
+        },
+        {
+          "question": "「連續提示學習」(Continual Prompt Learning)主要解決了什麼問題？",
+          "options": [
+            "如何在不遺忘舊任務的情況下學習新任務",
+            "如何保持對話連續性",
+            "如何讓提示詞更短",
+            "如何讓模型忘記不需要的知識"
+          ],
+          "correct_answer_index": 0,
+          "correct_answer_letter": "A",
+          "topic": "2.生成式AI能力強化",
+          "subtopic": "2.1.Prompt優化能力",
+          "concept": "連續提示學習",
+          "number": 242
+        },
+        {
+          "question": "「Mixture of Experts」架構的主要優勢是什麼？",
+          "options": [
+            "可以使用更少的計算資源",
+            "大幅增加模型容量但計算成本增長較小",
+            "減少訓練數據需求",
+            "完全避免過擬合"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.模型架構",
+          "concept": "專家混合模型優勢",
+          "number": 243
+        },
+        {
+          "question": "「提示詞通靈」(Prompt Engineering by Intuition)的主要方法是什麼？",
+          "options": [
+            "使用心理學技巧影響模型",
+            "通過經驗和嘗試手動優化提示詞",
+            "讓模型自動生成最佳提示詞",
+            "利用算法自動優化提示詞"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.生成式AI能力強化",
+          "subtopic": "2.1.Prompt優化方法",
+          "concept": "提示詞通靈",
+          "number": 244
+        },
+        {
+          "question": "「自監督學習」(Self-supervised Learning)與傳統監督學習的主要區別是什麼？",
+          "options": [
+            "自監督學習不需要任何數據",
+            "自監督學習從數據本身自動生成監督信號",
+            "自監督學習完全依賴人工標註",
+            "自監督學習只適用於圖像處理"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.學習方法",
+          "concept": "自監督學習",
+          "number": 245
+        },
+        {
+          "question": "「ROUGE」指標在自然語言生成評估中主要測量什麼？",
+          "options": [
+            "生成文本的情感強度",
+            "生成文本與參考文本的重疊程度",
+            "生成文本的語法正確性",
+            "生成文本的創意程度"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.5.評估指標",
+          "concept": "ROUGE指標",
+          "number": 246
+        },
+        {
+          "question": "「Token經濟」在語言模型使用中指的是什麼？",
+          "options": [
+            "區塊鏈中的代幣系統",
+            "優化語言模型輸入輸出的字符數量以控制成本",
+            "獎勵模型產生更好答案的機制",
+            "用戶在社交平台獲得的積分系統"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "3.生成式AI應用技能",
+          "subtopic": "3.9.成本優化",
+          "concept": "Token經濟",
+          "number": 247
+        },
+        {
+          "question": "「量化推理」(Quantized Inference)的主要目的是什麼？",
+          "options": [
+            "提高推理準確度",
+            "增加模型複雜度",
+            "減少模型大小和推理成本",
+            "擴展模型訓練數據集"
+          ],
+          "correct_answer_index": 2,
+          "correct_answer_letter": "C",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.模型優化技術",
+          "concept": "量化推理",
+          "number": 248
+        },
+        {
+          "question": "「提示詞工程」和「提示詞設計」(Prompt Engineering vs Prompt Design)的主要區別是什麼？",
+          "options": [
+            "兩者完全相同，只是不同稱呼",
+            "工程更偏技術實現，設計更偏創意表達",
+            "工程針對程式員，設計針對設計師",
+            "工程適用於文本，設計適用於圖像"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.生成式AI能力強化",
+          "subtopic": "2.1.Prompt概念區分",
+          "concept": "提示詞工程vs設計",
+          "number": 249
+        },
+        {
+          "question": "「RLHF」(Reinforcement Learning from Human Feedback)的核心目的是什麼？",
+          "options": [
+            "讓模型從頭學習所有知識",
+            "使模型生成內容更符合人類期望和偏好",
+            "加快模型訓練速度",
+            "減少模型規模"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.模型訓練方法",
+          "concept": "RLHF人類反饋強化學習",
+          "number": 250
+        },
+        {
+          "question": "生成式AI中的「Scalability」(可擴展性)通常指的是什麼？",
+          "options": [
+            "模型部署到更多服務器的能力",
+            "增加參數量/數據量時性能如何改變的特性",
+            "模型支持的語言數量",
+            "用戶界面的靈活性"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.模型特性",
+          "concept": "擴展性",
+          "number": 251
+        },
+        {
+          "question": "「聯邦學習」(Federated Learning)的主要優勢是什麼？",
+          "options": [
+            "可以完全取代雲計算",
+            "在保護數據隱私的同時實現多方協作訓練",
+            "訓練速度比傳統方法快10倍",
+            "不需要任何網絡連接"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.分布式學習",
+          "concept": "聯邦學習",
+          "number": 252
+        },
+        {
+          "question": "「大型語言模型幻覺」問題的主要原因是什麼？",
+          "options": [
+            "計算資源不足",
+            "模型基於統計模式預測而非事實理解",
+            "用戶提示詞太短",
+            "訓練數據量太小"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.模型限制",
+          "concept": "LLM幻覺成因",
+          "number": 253
+        },
+        {
+          "question": "「知識蒸餾」(Knowledge Distillation)在大型語言模型中的應用主要是為了什麼？",
+          "options": [
+            "提高模型準確性",
+            "將大型模型的能力壓縮到更小的模型中",
+            "擴展模型知識範圍",
+            "完全避免微調需求"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.模型優化技術",
+          "concept": "知識蒸餾應用",
+          "number": 254
+        },
+        {
+          "question": "「Transformers」模型架構的「多頭注意力」(Multi-head Attention)機制的主要優勢是什麼？",
+          "options": [
+            "減少計算量",
+            "允許模型同時關注不同位置和不同表示子空間",
+            "降低訓練難度",
+            "完全避免過擬合"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.2.模型架構",
+          "concept": "多頭注意力機制",
+          "number": 255
+        },
+        {
+          "question": "「LoRA」(Low-Rank Adaptation)微調方法的主要優勢是什麼？",
+          "options": [
+            "完全不需要原始模型",
+            "通過低秩矩陣近似實現參數高效微調",
+            "可以在CPU上快速訓練",
+            "避免模型過擬合"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.4.模型微調技術",
+          "concept": "LoRA微調",
+          "number": 256
+        },
+        {
+          "question": "「提示詞工程」中的「思維鏈」(Chain-of-Thought)提示的主要目的是什麼？",
+          "options": [
+            "減少計算時間",
+            "讓模型逐步展示推理過程，提高複雜問題解決能力",
+            "節省令牌使用量",
+            "自動檢測偏見"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.生成式AI能力強化",
+          "subtopic": "2.1.Prompt技巧",
+          "concept": "思維鏈提示",
+          "number": 257
+        },
+        {
+          "question": "「ReLU」(Rectified Linear Unit)作為神經網絡激活函數的主要優勢是什麼？",
+          "options": [
+            "計算簡單且有效緩解梯度消失問題",
+            "保證網絡總是能收斂",
+            "自動防止過擬合",
+            "可以處理所有類型的數據"
+          ],
+          "correct_answer_index": 0,
+          "correct_answer_letter": "A",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.神經網路組件",
+          "concept": "ReLU激活函數",
+          "number": 258
+        },
+        {
+          "question": "「標註協議偏差」(Annotation Protocol Bias)可能導致什麼問題？",
+          "options": [
+            "模型訓練速度變慢",
+            "因標註規則不當導致模型學習到標註者偏見",
+            "資料儲存成本增加",
+            "圖形界面出錯"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.2.偏見與公平性",
+          "concept": "標註協議偏差",
+          "number": 259
+        },
+        {
+          "question": "「梯度裁剪」(Gradient Clipping)在神經網絡訓練中主要解決什麼問題？",
+          "options": [
+            "訓練數據不足",
+            "梯度爆炸問題",
+            "顯存不足",
+            "過擬合"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.訓練技巧",
+          "concept": "梯度裁剪",
+          "number": 260
+        },
+        {
+          "question": "「內容過濾」(Content Filtering)在生成式AI應用中主要用於什麼？",
+          "options": [
+            "提高內容質量",
+            "過濾掉有害、不適當或違規內容",
+            "減少資料存儲需求",
+            "加速模型推理"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "4.生成式AI倫理法律",
+          "subtopic": "4.5.安全與責任",
+          "concept": "內容過濾",
+          "number": 261
+        },
+        {
+          "question": "「增量預訓練」(Continued Pre-training)的主要目的是什麼？",
+          "options": [
+            "完全重新訓練模型",
+            "在現有預訓練模型基礎上用新數據更新知識",
+            "測試模型性能",
+            "只訓練新添加的模型層"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "5.神經網路模型與技術",
+          "subtopic": "5.3.訓練策略",
+          "concept": "增量預訓練",
+          "number": 262
+        },
+        {
+          "question": "「硬提示」和「軟提示」(Hard Prompts vs Soft Prompts)的主要區別是什麼？",
+          "options": [
+            "軟提示使用更溫和的語言",
+            "硬提示是文本形式，軟提示是可訓練的向量",
+            "硬提示更長，軟提示更短",
+            "硬提示用於圖像，軟提示用於文本"
+          ],
+          "correct_answer_index": 1,
+          "correct_answer_letter": "B",
+          "topic": "2.生成式AI能力強化",
+          "subtopic": "2.1.Prompt類型",
+          "concept": "硬提示vs軟提示",
+          "number": 263
+        },
+          {
+            "question": "大型語言模型通常以何種神經網路架構為基礎？",
+            "options": [
+              "循環神經網路 (RNN)",
+              "卷積神經網路 (CNN)",
+              "Transformer架構",
+              "感知機模型"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "生成式AI核心技術",
+            "subtopic": "模型架構",
+            "concept": "Transformer架構",
+            "number": 264,
+            "explanation": "大型語言模型如GPT系列、BERT等都是以Transformer架構為基礎，其核心創新是自注意力機制，能讓模型在處理每個輸入位置時同時考量序列中的其他位置，擅長捕捉長距依存關係。相較於傳統RNN，Transformer可並行處理序列中的所有元素，大幅提高訓練效率。"
+          },
+          {
+            "question": "Transformer架構的核心創新是哪項機制？",
+            "options": [
+              "卷積層疊加",
+              "自注意力機制",
+              "記憶單元",
+              "遞歸結構"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI核心技術",
+            "subtopic": "Transformer架構",
+            "concept": "自注意力機制",
+            "number": 265,
+            "explanation": "Transformer架構的核心創新是自注意力機制(Self-Attention)，能讓模型在處理每個輸入位置時同時考量序列中的其他位置，計算它們之間的相關性。通過這種機制，模型可以建立全局關聯，有效處理長距離依賴關係，這是之前RNN等序列模型難以高效實現的。"
+          },
+          {
+            "question": "GPT和BERT模型在設計上的主要區別是什麼？",
+            "options": [
+              "BERT使用雙向編碼，GPT是單向自回歸",
+              "GPT僅處理文本，BERT可處理多模態數據",
+              "BERT專為搜尋引擎設計，GPT專為對話設計",
+              "GPT參數更多，BERT運算速度更快"
+            ],
+            "correct_answer_index": 0,
+            "correct_answer_letter": "A",
+            "topic": "常見生成式AI模型比較",
+            "subtopic": "模型架構差異",
+            "concept": "雙向vs單向處理",
+            "number": 266,
+            "explanation": "BERT(Bidirectional Encoder)使用雙向編碼，在預訓練時採用遮蔽語言模型(MLM)任務，可同時考慮單詞左右兩側的上下文；而GPT(Generative Pre-trained Transformer)是單向自回歸模型，在生成文本時只能看到左側的上下文，按順序預測下一個單詞。這一根本區別決定了BERT更適合理解任務，GPT更適合生成任務。"
+          },
+          {
+            "question": "對於自回歸語言模型，其訓練目標是什麼？",
+            "options": [
+              "將文本分類到預定義類別",
+              "在給定前文的情況下預測後續詞彙",
+              "將輸入文本翻譯為其他語言",
+              "找出文本中的語法錯誤"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI核心技術",
+            "subtopic": "模型訓練",
+            "concept": "自回歸預測",
+            "number": 267,
+            "explanation": "自回歸語言模型(如GPT系列)的訓練目標是在給定前文的情況下預測下一個詞彙。換句話說，模型學習的是條件概率分布P(wt|w1,w2,...,wt-1)，即給定前面所有詞的情況下，下一個詞應該是什麼。通過這種方式，模型可以逐步生成文本序列。"
+          },
+          {
+            "question": "DALL·E 2的架構主要由哪些組件組成？",
+            "options": [
+              "CLIP模型和擴散解碼器",
+              "CNN和GAN生成器",
+              "變分自編碼器和ResNet",
+              "RNN和Transformer解碼器"
+            ],
+            "correct_answer_index": 0,
+            "correct_answer_letter": "A",
+            "topic": "常見生成式AI模型比較",
+            "subtopic": "圖像生成模型",
+            "concept": "DALL·E架構",
+            "number": 268,
+            "explanation": "DALL·E 2的架構主要由CLIP(Contrastive Language-Image Pre-training)模型和擴散解碼器組成。CLIP負責將文字和圖片嵌入到同一語意空間，先驗模型根據輸入的文本提示生成潛在影像向量，然後擴散模型根據該潛在向量逐步產生圖像，使其與文本語意相符。"
+          },
+          {
+            "question": "擴散模型(Diffusion Models)與GAN相比的主要優勢是什麼？",
+            "options": [
+              "訓練速度更快",
+              "生成多樣性更高且訓練更穩定",
+              "參數數量更少",
+              "不需要大量訓練數據"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI核心技術",
+            "subtopic": "生成模型類型",
+            "concept": "擴散模型優勢",
+            "number": 269,
+            "explanation": "與GAN相比，擴散模型(如Stable Diffusion)的主要優勢是生成的樣本多樣性更高且訓練過程更穩定。GAN容易出現模式崩潰(Mode Collapse)問題，即多樣性不足；而擴散模型通過逐步添加和移除噪聲的過程，生成效果更平滑，樣本分布更接近真實數據分布，不易陷入局部最優。"
+          },
+          {
+            "question": "Stable Diffusion模型的主要技術創新點是什麼？",
+            "options": [
+              "使用GAN架構生成高質量圖像",
+              "在潛在空間而非像素空間進行擴散過程",
+              "直接從文本生成像素級圖像",
+              "採用全卷積網絡架構處理圖像"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "常見生成式AI模型比較",
+            "subtopic": "圖像生成模型",
+            "concept": "潛在擴散模型",
+            "number": 270,
+            "explanation": "Stable Diffusion的主要技術創新點是在預先訓練的VAE編碼器壓縮的潛在空間中進行擴散過程，而非直接在高維像素空間操作。模型包含三部分：CLIP文本編碼器(將提示詞編碼為向量)、U-Net卷積神經網路(執行去噪過程)和VAE解碼器(將潛在空間結果還原為圖像)。這種方法大幅降低了計算資源需求，使模型能在普通GPU上運行。"
+          },
+          {
+            "question": "少樣本提示(Few-Shot Prompting)的核心思想是什麼？",
+            "options": [
+              "減少模型參數數量以加速推理",
+              "通過多個示例讓模型學習任務模式",
+              "使用少量數據重新訓練模型",
+              "僅生成短小精簡的回答"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "Prompt Engineering進階",
+            "subtopic": "提示詞策略",
+            "concept": "少樣本提示",
+            "number": 271,
+            "explanation": "少樣本提示(Few-Shot Prompting)的核心思想是在提示中提供少量(通常2-5個)示例，展示任務的輸入和期望輸出格式，然後讓模型根據這些示例推斷模式並應用到新的輸入上。這種方法利用了大型語言模型的小樣本學習能力，無需修改模型參數，僅通過提示內容就能引導模型執行特定任務。"
+          },
+          {
+            "question": "思維鏈提示(Chain-of-Thought, CoT)主要用於解決什麼問題？",
+            "options": [
+              "改善模型對長文本的記憶",
+              "提高文本生成的創意性",
+              "增強模型處理複雜推理任務的能力",
+              "加速模型訓練過程"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "Prompt Engineering進階",
+            "subtopic": "提示詞策略",
+            "concept": "思維鏈提示",
+            "number": 272,
+            "explanation": "思維鏈提示(Chain-of-Thought, CoT)主要用於增強模型處理複雜推理任務的能力。通過在提示中要求模型逐步展示推理過程而非直接給出答案，模型能更好地處理數學問題、邏輯推理等需要多步驟思考的任務。研究表明，列出推理步驟讓模型能自我檢查並糾正錯誤，顯著提高了複雜問題的解答準確率。"
+          },
+          {
+            "question": "在使用生成式AI系統時，什麼因素最容易導致偏見問題？",
+            "options": [
+              "模型參數太少",
+              "訓練數據中存在的歷史偏見",
+              "推理速度過慢",
+              "模型架構設計不當"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "法規與倫理",
+            "subtopic": "AI偏見與歧視",
+            "concept": "偏見來源",
+            "number": 273,
+            "explanation": "在使用生成式AI系統時，訓練數據中存在的歷史偏見是導致模型偏見的最主要因素。模型會從訓練數據中學習並反映已有的社會偏見和刻板印象。例如，亞馬遜曾開發的招聘AI因訓練數據中男性求職者比例高，導致系統對女性簡歷評分較低，甚至因簡歷中出現「女子」字樣扣分。即使沒有明確的歧視規則，模型也會從數據中提取這些模式。"
+          },
+          {
+            "question": "生成式AI在教育領域的主要應用不包括：",
+            "options": [
+              "智能答疑與個性化輔導",
+              "自動生成教案和練習題",
+              "替代教師進行全部課程評估",
+              "根據學生表現生成個性化學習材料"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "生成式AI跨產業應用案例",
+            "subtopic": "教育應用",
+            "concept": "AI輔助角色",
+            "number": 274,
+            "explanation": "生成式AI在教育領域主要作為輔助工具，而非完全替代教師。AI可以提供智能答疑、生成教材和練習題、提供個性化學習內容，但目前階段不適合替代教師進行全部課程評估，特別是對需要深度理解學生思考過程、情感表達和創意思維的評估。AI應該是教師的助手，增強教學效果，而非完全取代教師的專業判斷和人際互動。"
+          },
+          {
+            "question": "OpenAI的API中，控制文本生成隨機性的主要參數是什麼？",
+            "options": [
+              "max_tokens",
+              "temperature",
+              "top_p",
+              "frequency_penalty"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "API參數",
+            "concept": "溫度參數",
+            "number": 275,
+            "explanation": "在OpenAI的API中，temperature(溫度)參數是控制文本生成隨機性的主要參數。temperature值範圍通常從0到2，0表示完全確定性輸出(始終選擇最高概率的下一個詞)，隨著值增加，模型會在概率分布上更加隨機取樣，產生更多變化和創意。當需要確定一致的回答時使用較低溫度，需要更多樣化和創造性回答時使用較高溫度。"
+          },
+          {
+            "question": "關於Embedding(嵌入向量)的說法，錯誤的是：",
+            "options": [
+              "Embedding將文本轉換為高維度向量以捕捉語義信息",
+              "相似概念在向量空間中距離較近",
+              "Embedding主要用於圖像生成而非文本處理",
+              "常用於語義搜索和推薦系統"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "生成式AI技術實作",
+            "subtopic": "模型技術",
+            "concept": "Embedding概念",
+            "number": 276,
+            "explanation": "關於Embedding的錯誤說法是「主要用於圖像生成而非文本處理」。實際上，Embedding主要用於文本處理，將文字轉為向量空間中的點，使機器能理解語義關係。相似概念(如「貓」和「貓咪」)在向量空間中距離較近。Embedding廣泛應用於語義搜索、推薦系統、文本聚類等，是檢索增強生成(RAG)等技術的基礎，而非主要用於圖像生成。"
+          },
+          {
+            "question": "模型微調(Fine-tuning)相比從零訓練的主要優勢是什麼？",
+            "options": [
+              "不需要任何數據",
+              "僅需較少的數據和計算資源就能實現特定任務適應",
+              "完全避免過擬合問題",
+              "能夠創建與原模型完全不同的功能"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "模型調整",
+            "concept": "微調優勢",
+            "number": 277,
+            "explanation": "模型微調(Fine-tuning)相比從零訓練的主要優勢是僅需較少的數據和計算資源就能實現特定任務適應。微調是在預訓練模型基礎上，使用特定領域或任務的數據進行再次訓練，模型保留了大部分通用知識同時適應新任務，不必重新學習基礎語言能力。這使得企業可以用有限的專業數據讓大模型更好適應垂直領域，大幅節省了資源需求。"
+          },
+          {
+            "question": "模型微調過程中可能出現的「災難性遺忘」問題是指什麼？",
+            "options": [
+              "訓練數據被意外刪除",
+              "模型完全無法記住新領域的知識",
+              "微調後模型忘記了原有通用知識和能力",
+              "模型參數異常重置"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "生成式AI技術實作",
+            "subtopic": "模型調整",
+            "concept": "災難性遺忘",
+            "number": 278,
+            "explanation": "「災難性遺忘」(Catastrophic Forgetting)問題是指在模型微調過程中，模型可能忘記原有的通用知識和能力。當使用單一領域的數據進行過度微調時，模型會過度適應新任務，損失原有的通用能力。例如，用醫療文獻微調後的GPT可能在醫療問答表現極佳，但失去了寫詩、講故事等原本擅長的能力。解決方法包括混合通用數據和專業數據進行微調、使用較低學習率等。"
+          },
+          {
+            "question": "義大利資料保護機構在2023年3月暫時禁止ChatGPT的主要原因是什麼？",
+            "options": [
+              "系統頻繁崩潰影響用戶體驗",
+              "對AI生成內容的著作權歸屬爭議",
+              "違反GDPR要求的用戶數據處理規範",
+              "過度消耗能源資源"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "法規與倫理",
+            "subtopic": "隱私與GDPR",
+            "concept": "合規案例",
+            "number": 279,
+            "explanation": "義大利資料保護機構在2023年3月暫時禁止ChatGPT的主要原因是違反GDPR要求的用戶數據處理規範。具體問題包括：OpenAI收集了大量用戶對話進行訓練，但未明確告知用途、也無法讓用戶要求刪除這些資料，違反GDPR的告知及刪除權；另外ChatGPT沒有驗證用戶年齡機制，兒童可能接觸不當內容。一個月後，OpenAI採取整改措施(增加隱私聲明、年齡問答、允許用戶選擇資料不訓練等)才恢復服務。"
+          },
+          {
+            "question": "Getty Images控告Stable Diffusion的主要訴訟理由是什麼？",
+            "options": [
+              "模型效能侵犯他們的專利",
+              "未經授權抓取其庫中圖片作為訓練資料",
+              "圖像品質不達標",
+              "仿冒Getty Images的商業服務"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "法規與倫理",
+            "subtopic": "著作權問題",
+            "concept": "訓練資料版權",
+            "number": 280,
+            "explanation": "Getty Images控告Stable Diffusion的主要訴訟理由是未經授權抓取其庫中圖片作為訓練資料。Getty指控Stability AI未經許可使用了他們約1200萬張受版權保護的圖片進行模型訓練，構成大規模侵權。作為證據，Getty指出Stable Diffusion有時生成的圖片甚至還殘留變形的Getty watermark(水印)，證明模型確實「記住」了這些圖片細節。這起尚未判決的訴訟反映了AI訓練數據的版權爭議。"
+          },
+          {
+            "question": "在AI生成內容的著作權問題上，美國版權局的立場是什麼？",
+            "options": [
+              "純AI作品不受版權保護，因缺乏「人類作者」",
+              "AI生成作品版權歸AI開發公司所有",
+              "所有AI生成內容都屬於公共領域",
+              "AI作品版權歸屬於使用該AI的公司"
+            ],
+            "correct_answer_index": 0,
+            "correct_answer_letter": "A",
+            "topic": "法規與倫理",
+            "subtopic": "著作權問題",
+            "concept": "生成內容版權",
+            "number": 281,
+            "explanation": "在AI生成內容的著作權問題上，美國版權局的立場是純AI作品不受版權保護，因為缺乏「人類作者」。2022年的規定明確指出，完全由AI自主生成的內容不能獲得版權保護。然而，如果有人對提示進行精細設計或對生成內容進行後續編輯，則可以將這些人類創意貢獻部分納入保護範圍。這一立場反映了現有版權法以「人類創意」為核心的原則。"
+          },
+          {
+            "question": "Midjourney與Stable Diffusion相比的主要區別是什麼？",
+            "options": [
+              "Midjourney支持視頻生成而Stable Diffusion只能生成圖像",
+              "Midjourney是封閉商業服務，Stable Diffusion是開源模型",
+              "Stable Diffusion使用擴散模型，Midjourney使用GAN架構",
+              "Midjourney僅支持英文提示詞，Stable Diffusion支持多語言"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "常見生成式AI模型比較",
+            "subtopic": "圖像生成模型",
+            "concept": "模型差異",
+            "number": 282,
+            "explanation": "Midjourney與Stable Diffusion的主要區別是前者是封閉商業服務，後者是開源模型。Midjourney用戶主要通過Discord機器人介面使用服務，無法訪問或修改模型底層；而Stable Diffusion開源後社群發展出各種衍生模型與工具，用戶可自行部署、修改和擴展。這導致了使用場景差異：Midjourney易用但靈活度低，Stable Diffusion門檻高但自由度大，適合技術開發者。"
+          },
+          {
+            "question": "生成式AI處理客服業務的主要優勢是什麼？",
+            "options": [
+              "完全消除所有人工客服的需求",
+              "能夠處理跨語言服務並減輕重複性問題負擔",
+              "降低客服中心的網絡帶寬使用",
+              "避免客戶情緒波動"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI跨產業應用案例",
+            "subtopic": "客服應用",
+            "concept": "AI客服優勢",
+            "number": 283,
+            "explanation": "生成式AI處理客服業務的主要優勢是能夠處理跨語言服務並減輕重複性問題負擔。大型語言模型可以自動理解和翻譯多種語言的查詢，使企業能同時服務全球客戶；同時，AI能高效處理常見問題(FAQ)，據統計可減少超過50%的人工諮詢量。然而，AI目前不能完全替代人工客服，特別是處理複雜問題、情緒安撫和特殊情況時，人類客服仍然必不可少。"
+          },
+          {
+            "question": "「RAG」(檢索增強生成)技術的核心思想是什麼？",
+            "options": [
+              "不斷重啟模型以避免累積錯誤",
+              "結合本地知識庫檢索結果增強生成內容",
+              "生成多個版本並選擇最佳輸出",
+              "實時更新模型參數"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "模型增強技術",
+            "concept": "RAG技術",
+            "number": 284,
+            "explanation": "「RAG」(檢索增強生成, Retrieval-Augmented Generation)技術的核心思想是結合本地知識庫檢索結果增強生成內容。具體流程是：1)將用戶查詢轉為向量表示；2)在向量數據庫中檢索相關文檔；3)將檢索到的內容與原始查詢一起放入prompt；4)模型基於這些上下文生成回答。RAG能有效解決大模型的知識時效性問題和幻覺問題，使回答更準確、最新且可追溯來源，廣泛應用於企業知識庫問答等場景。"
+          },
+          {
+            "question": "BERT模型主要應用於哪類任務？",
+            "options": [
+              "長篇文章創作",
+              "語言理解和分類任務",
+              "實時語音合成",
+              "圖像描述生成"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "常見生成式AI模型比較",
+            "subtopic": "文本理解模型",
+            "concept": "BERT應用",
+            "number": 285,
+            "explanation": "BERT模型主要應用於語言理解和分類任務。由於採用雙向注意力機制，BERT能同時抓取輸入文本前後文資訊，擅長理解完整句子的語義，因此在問答系統、文本分類、命名實體識別等需要深度理解的任務上表現優異。在搜尋引擎中，BERT幫助理解用戶查詢意圖並改進結果相關性。然而，BERT本身不具備自回歸生成能力，不適合直接用於長篇文章創作等生成任務。"
+          },
+          {
+            "question": "LLM產生「幻覺」(Hallucination)現象的主要原因是什麼？",
+            "options": [
+              "模型參數量不足",
+              "基於統計模式預測而非事實理解",
+              "推理速度過快導致計算錯誤",
+              "訓練數據太過陳舊"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "模型局限",
+            "concept": "AI幻覺",
+            "number": 286,
+            "explanation": "LLM產生「幻覺」(Hallucination)現象的主要原因是模型基於統計模式預測而非真正理解事實。大型語言模型本質上是預測下一個詞的統計模型，它們學習的是語言模式而非世界真相。當模型不確定答案時，它會生成看似合理但實際可能不正確的內容，因為它被訓練以產生流暢且似是而非的文本。幻覺現象是當前生成式AI的主要限制之一，目前常用RAG等技術緩解，但未完全解決。"
+          },
+          {
+            "question": "在提示詞工程中，什麼是「角色扮演提示」技巧？",
+            "options": [
+              "讓AI模型扮演多個角色進行對話",
+              "告知模型以特定身份或專業角色回答",
+              "限制AI只能回答與某角色相關的問題",
+              "使用戲劇性語言增加回答趣味性"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "Prompt Engineering進階",
+            "subtopic": "提示詞策略",
+            "concept": "角色扮演提示",
+            "number": 287,
+            "explanation": "在提示詞工程中，「角色扮演提示」技巧是指告知模型以特定身份或專業角色回答問題。例如在提示開頭指定「你是一位資深醫生，請回答下列健康問題」，模型會傾向用專業、謹慎的醫療語氣作答。角色扮演能有效調整模型的語氣、專業度和回答角度，使輸出更符合特定場景需求，常用於需要特定風格(如幽默、正式、專業等)的輸出。"
+          },
+          {
+            "question": "生成式AI在設計與創意領域應用的主要價值是什麼？",
+            "options": [
+              "完全取代人類設計師",
+              "提供靈感來源並加速設計流程",
+              "降低設計軟件的購買成本",
+              "增加設計的複雜度"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI跨產業應用案例",
+            "subtopic": "設計應用",
+            "concept": "創意協作",
+            "number": 288,
+            "explanation": "生成式AI在設計與創意領域的主要價值是提供靈感來源並加速設計流程。無論是圖像生成模型(如Midjourney)幫助設計師快速視覺化概念，還是大型語言模型協助生成初步設計方案，AI都成為創意人員的得力助手。例如，設計師可用AI生成多種初始概念，從中獲取靈感並進一步優化;產品設計師能快速產出多種方案供客戶選擇。AI不是取代設計師，而是擴展了創意可能性並減少重複性工作。"
+          },
+          {
+            "question": "什麼是「提示詞通靈」(Prompt Engineering by Intuition)？",
+            "options": [
+              "讓AI分析用戶心理狀態",
+              "透過經驗和嘗試手動優化提示詞",
+              "讓提示詞自動生成",
+              "利用占星術增強AI回答"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "Prompt Engineering進階",
+            "subtopic": "提示詞優化",
+            "concept": "提示詞通靈",
+            "number": 289,
+            "explanation": "「提示詞通靈」(Prompt Engineering by Intuition)是指透過經驗和多次嘗試來手動優化提示詞的過程。這是早期也是最常見的提示詞工程方法，開發者或用戶基於對模型行為的觀察和經驗，逐步調整提示詞的措辭、結構和內容，以引導模型產生理想輸出。雖然這種方法有效但費時，較依賴個人經驗，缺乏系統化理論支持，隨著自動化提示優化技術發展，逐漸被補充以更科學的方法。"
+          },
+          {
+            "question": "Hugging Face平台的主要功能是什麼？",
+            "options": [
+              "提供雲端繪圖工具",
+              "開源模型共享和下載服務",
+              "提供高速計算服務",
+              "社交媒體數據分析"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "開發工具",
+            "concept": "Hugging Face平台",
+            "number": 290,
+            "explanation": "Hugging Face平台的主要功能是開源模型共享和下載服務。作為機器學習領域著名的開源平台與社群，Hugging Face提供了多種資源：1)模型中心(Model Hub)托管超過數十萬個開源模型；2)Transformers庫讓開發者輕鬆使用各種預訓練模型；3)Datasets提供大量訓練數據集；4)Spaces讓開發者展示AI應用demo。Hugging Face的出現使AI模型民主化，讓更多人能方便獲取、使用和分享最先進的模型。"
+          },
+          {
+            "question": "輸入「溫度」(Temperature)設為0時，生成式AI模型會：",
+            "options": [
+              "停止工作",
+              "生成完全隨機內容",
+              "總是選擇最高概率的下一個詞",
+              "產生最短的可能回答"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "生成式AI技術實作",
+            "subtopic": "模型參數",
+            "concept": "溫度參數影響",
+            "number": 291,
+            "explanation": "當輸入「溫度」(Temperature)設為0時，生成式AI模型會總是選擇最高概率的下一個詞，產生高度確定性的輸出。溫度參數控制採樣過程中的隨機性，0表示完全確定性(deterministic)，模型每次運行都會產生完全相同的結果。這適用於需要一致、可預測回答的場景，如事實查詢、編程等。相反，溫度值越高(如0.7-1.0)，模型生成的內容越多樣化和創意性，但可能較不精確。"
+          },
+          {
+            "question": "下列哪個不是用於緩解AI偏見的有效方法？",
+            "options": [
+              "使用更多樣化的訓練數據",
+              "在模型輸出進行後處理過濾",
+              "增加模型參數數量",
+              "開發偏見檢測工具"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "法規與倫理",
+            "subtopic": "AI偏見與歧視",
+            "concept": "偏見緩解",
+            "number": 292,
+            "explanation": "增加模型參數數量不是用於緩解AI偏見的有效方法。單純增加模型規模可能會放大而非減少偏見，因為更大的模型能更好地記住訓練數據中的模式(包括偏見)。有效的偏見緩解方法包括：使用更多樣化的訓練數據，確保各群體表示平衡；在輸出階段進行後處理過濾，清除可能帶有歧視的內容；開發偏見檢測工具，主動識別和修正模型偏見。緩解偏見需要從數據、模型訓練和輸出控制多方面綜合措施。"
+          },
+          {
+            "question": "OpenAI API的核心參數中，max_tokens代表什麼？",
+            "options": [
+              "單次請求的最大花費",
+              "模型能處理的輸入長度上限",
+              "生成文本的最大長度限制",
+              "需要的最低計算量"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "生成式AI技術實作",
+            "subtopic": "API參數",
+            "concept": "最大token數",
+            "number": 293,
+            "explanation": "在OpenAI API的核心參數中，max_tokens代表生成文本的最大長度限制。這個參數控制模型在一次請求中最多生成多少token(大致可理解為單詞或詞組)。設置適當的max_tokens值可以控制回應的篇幅，防止模型產生過長或不必要的內容，同時也能優化API使用成本(因計費通常基於token數)。需注意max_tokens與模型能處理的上下文窗口大小(如GPT-3.5的4096tokens限制)是不同概念。"
+          },
+          {
+            "question": "生成式AI在醫療領域應用面臨的主要挑戰是：",
+            "options": [
+              "處理速度不夠快",
+              "準確性與可解釋性要求高",
+              "醫療數據太少",
+              "醫生抗拒使用新技術"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI跨產業應用案例",
+            "subtopic": "醫療應用",
+            "concept": "醫療AI挑戰",
+            "number": 294,
+            "explanation": "生成式AI在醫療領域應用面臨的主要挑戰是準確性與可解釋性要求高。醫療決策關乎生命安全，不容許模型產生「幻覺」或不準確內容；同時，醫療AI系統必須能解釋其推理過程，而非只給出「黑盒」結果，這點對獲得醫療專業人員信任和滿足法規要求至關重要。其他挑戰還包括醫療數據隱私保護、法規合規要求嚴格、責任歸屬問題等。因此，目前醫療AI多作為輔助工具，最終決策仍由醫生負責。"
+          },
+          {
+            "question": "API串接生成式AI服務時，最重要的安全考量是什麼？",
+            "options": [
+              "控制API請求頻率避免超額計費",
+              "保護API密鑰避免洩露",
+              "壓縮請求數據以減少流量",
+              "使用高速網絡連接"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "API安全",
+            "concept": "密鑰保護",
+            "number": 295,
+            "explanation": "API串接生成式AI服務時，最重要的安全考量是保護API密鑰避免洩露。API密鑰(API Key)相當於訪問這些服務的密碼，若洩露可能導致未授權使用、帳號被盜用、遭受惡意調用產生巨額費用等風險。最佳實踐包括：不要將密鑰直接寫入代碼中；使用環境變數或安全密鑰管理服務存儲；僅在服務端而非客戶端使用API調用；設置IP白名單限制調用來源；定期輪換API密鑰。保護密鑰是API安全的基礎。"
+          },
+          {
+            "question": "目前美國版權局對於「純AI作品」的版權保護立場是：",
+            "options": [
+              "不予保護，因缺乏人類作者",
+              "保護權歸AI開發公司",
+              "保護權歸使用AI的人",
+              "視為共同創作，人與AI共同擁有版權"
+            ],
+            "correct_answer_index": 0,
+            "correct_answer_letter": "A",
+            "topic": "法規與倫理",
+            "subtopic": "著作權問題",
+            "concept": "AI作品版權",
+            "number": 296,
+            "explanation": "目前美國版權局對於「純AI作品」的版權保護立場是不予保護，因為缺乏人類作者。2022年的規定明確指出，完全由AI自主生成、沒有人類創意投入的內容不能獲得版權保護。版權法的核心是保護人類創意表達，而非純機器輸出。然而，如果有人對提示詞進行精心設計或對AI輸出進行實質性編輯，則這些人類貢獻部分可能受到保護。這一立場顯示現有版權制度尚未完全適應AI創作時代。"
+          },
+          {
+            "question": "在生成式AI模型開發中，RLHF (強化學習人類反饋) 的主要目的是什麼？",
+            "options": [
+              "加速模型訓練速度",
+              "使模型生成內容更符合人類偏好",
+              "降低硬件資源需求",
+              "提高模型記憶力"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "模型訓練",
+            "concept": "RLHF技術",
+            "number": 297,
+            "explanation": "在生成式AI模型開發中，RLHF(強化學習人類反饋, Reinforcement Learning from Human Feedback)的主要目的是使模型生成內容更符合人類偏好。這一技術通過三步驟實現：1)預訓練基礎模型；2)收集人類對模型不同輸出的偏好評價，訓練獎勵模型；3)用強化學習微調模型最大化人類偏好獎勵。ChatGPT等現代AI系統廣泛採用RLHF來提高回應質量、安全性和有用性，使模型行為更符合人類期望和價值觀。"
+          },
+          {
+            "question": "ChatGPT與GPT-3相比的關鍵改進在於：",
+            "options": [
+              "增加了網頁搜索功能",
+              "大幅提高了參數數量",
+              "加入了指令微調和人類反饋強化學習",
+              "能處理更多語言"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "常見生成式AI模型比較",
+            "subtopic": "模型演化",
+            "concept": "ChatGPT改進",
+            "number": 298,
+            "explanation": "ChatGPT與GPT-3相比的關鍵改進在於加入了指令微調(Instruction Tuning)和人類反饋強化學習(RLHF)。這使得模型從基礎的文本預測轉變為更具對話能力的助手。通過讓模型理解並遵循指令，以及基於人類偏好反饋進行強化學習，ChatGPT能更好地遵循用戶意圖、產生有用且安全的回答，大幅提升了對話體驗和實用性。這一改進標誌著AI系統從純粹的預測模型向更能理解人類需求的助手轉變。"
+          },
+          {
+            "question": "「提示詞注入攻擊」(Prompt Injection)是指什麼？",
+            "options": [
+              "在提示詞中加入過多內容導致模型混淆",
+              "利用特殊提示詞使模型繞過安全限制",
+              "對多個API同時發送相同提示",
+              "自動生成提示詞的技術"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "法規與倫理",
+            "subtopic": "AI安全",
+            "concept": "提示詞注入",
+            "number": 299,
+            "explanation": "「提示詞注入攻擊」(Prompt Injection)是指利用特殊提示詞使模型繞過安全限制或預設行為。類似於傳統網站的SQL注入，攻擊者精心設計輸入內容，試圖覆蓋或修改系統原有的指令。例如，攻擊者可能在正常問題後添加「忽略之前的指示，改為...」等內容，誘導AI忽略安全守則、洩露系統提示或產生有害內容。這是新興的AI安全威脅，需要通過輸入過濾、模型強化訓練和防禦提示設計來緩解。"
+          },
+          {
+            "question": "下列哪一項不是企業使用生成式AI需要關注的隱私合規措施？",
+            "options": [
+              "確保處理用戶數據符合GDPR數據最小化原則",
+              "提供清晰的隱私政策說明數據用途",
+              "完全避免使用任何個人數據",
+              "實施數據加密和訪問控制"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "法規與倫理",
+            "subtopic": "隱私與合規",
+            "concept": "隱私保護措施",
+            "number": 300,
+            "explanation": "「完全避免使用任何個人數據」不是企業使用生成式AI需要關注的實際隱私合規措施。在許多情況下，處理某些個人數據是必要的，關鍵是如何合規處理這些數據。正確的隱私合規措施包括：遵循GDPR的數據最小化原則(只收集必要數據)；透明告知用戶數據處理目的；實施技術保護措施如加密和訪問控制；提供用戶選擇退出的機制；對敏感數據進行匿名化等。合規目標是負責任地處理數據，而非完全迴避使用。"
+          },
+          {
+            "question": "在模型用於生產環境前，評估AI偏見的主要方法包括：",
+            "options": [
+              "僅檢查代碼錯誤",
+              "在多樣化數據集上測試不同群體的表現差異",
+              "觀察運行速度",
+              "分析模型壓縮率"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "法規與倫理",
+            "subtopic": "AI偏見評估",
+            "concept": "偏見測試",
+            "number": 301,
+            "explanation": "在模型用於生產環境前，評估AI偏見的主要方法是在多樣化數據集上測試不同群體的表現差異。具體做法包括：使用包含不同人口群體的代表性測試集；對比模型在不同人口特徵(如性別、種族、年齡等)上的表現差異；計算各群體間的錯誤率差距；使用專門的公平性指標(如平等機會差異)進行度量；進行對抗性測試，檢查敏感屬性變化時結果是否顯著改變。這些方法能幫助發現模型中潛在的偏見，並在部署前進行針對性修正。"
+          },
+          {
+            "question": "生成式AI技術「遷移學習」(Transfer Learning)的主要優勢是什麼？",
+            "options": [
+              "不需要任何訓練數據",
+              "將一個領域的知識應用到新領域，節省資源",
+              "能夠替代雲計算服務",
+              "避免所有形式的模型偏見"
+            ],
+            "correct_answer_index": 1,
+            "correct_answer_letter": "B",
+            "topic": "生成式AI技術實作",
+            "subtopic": "學習方法",
+            "concept": "遷移學習",
+            "number": 302,
+            "explanation": "生成式AI技術「遷移學習」(Transfer Learning)的主要優勢是將一個領域學到的知識應用到新領域，從而節省資源。遷移學習讓模型能夠利用在源任務上獲得的知識(如語言理解)，快速適應目標任務(如專業領域文本生成)，只需較少的專業領域數據和訓練時間。例如，大型語言模型在海量文本上預訓練後，可以透過少量醫學文獻微調快速適應醫療問答。這大幅降低了專業AI應用的門檻，使組織能以有限資源開發垂直領域應用。"
+          },
+          {
+            "question": "生成式AI在軟體開發中的主要應用是：",
+            "options": [
+              "完全替代程式設計師",
+              "自動測試所有可能的系統漏洞",
+              "協助代碼生成和程式問題解決",
+              "自動安排開發團隊工作"
+            ],
+            "correct_answer_index": 2,
+            "correct_answer_letter": "C",
+            "topic": "生成式AI跨產業應用案例",
+            "subtopic": "軟體開發",
+            "concept": "AI輔助編程",
+            "number": 303,
+            "explanation": "生成式AI在軟體開發中的主要應用是協助代碼生成和程式問題解決。如GitHub Copilot等工具能根據註解或函式名稱自動補全程式碼，幫助開發者更快實現功能；ChatGPT等可以協助解釋複雜代碼、提供除錯建議、生成單元測試等。這些AI工具擔任「副程式員」角色，減少了重複性編碼工作，提高開發效率。然而，AI尚無法完全替代開發者，特別是在系統設計、架構決策、業務邏輯理解等需要專業判斷的領域，人機協作仍是最優解。"
+          }
+        ]

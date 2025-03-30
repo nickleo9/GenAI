@@ -910,7 +910,7 @@ function loadQuestions(numQuestions) {
 async function generateAIExplanation(question) {
     const userAnswer = state.userAnswers[state.currentQuestionIndex];
     const prompt = `
-        你是一個專業的生成式AI認證考試輔導老師。請用繁體中文根據以下題目生成詳細的答案解析：
+        你是一個專業的生成式AI認證考試輔導老師。請以150個字以內，用繁體中文根據以下題目生成詳細的答案解析：
         選項: 
         ${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
         正確答案: ${question.correct_answer_letter}

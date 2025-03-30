@@ -205,6 +205,21 @@
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+        #ai-model-select {
+            transition: opacity 0.3s ease-in-out;
+        }
+        
+        #ai-model-select.d-none {
+            opacity: 0;
+            height: 0;
+            overflow: hidden;
+        }
+        
+        #ai-model-select:not(.d-none) {
+            opacity: 1;
+            height: auto;
+        }
+
     </style>
 </head>
 <body>
@@ -243,9 +258,19 @@
                                 <label class="form-check-label" for="database-mode">資料庫解析</label>
                             </div>
                             <div class="form-check">
-                                <input class="form-check-input" type="radio" name="explanation-mode" id="ai-mode" value="ai" disabled>
+                                <input class="form-check-input" type="radio" name="explanation-mode" id="ai-mode" value="ai">
                                 <label class="form-check-label" for="ai-mode">AI生成解析</label>
                             </div>
+                        </div>
+                        <!-- 添加AI模型選擇下拉菜單，預設隱藏 -->
+                        <div id="ai-model-select" class="mt-2 d-none">
+                        <label for="ai-model" class="form-label">選擇AI模型</label>
+                        <select id="ai-model" class="form-select">
+                        <option value="gpt-4o" selected>GPT-4o (預設)</option>
+                        <option value="claude-3.7-sonnet">Claude 3.7 Sonnet</option>
+                        <option value="grok-3">Grok 3</option>
+                        </select>
+                        </div>
                         </div>
                     </div>
                     <div class="col-md-4 d-flex align-items-end">
@@ -508,6 +533,8 @@
             startTime: null,
             timerId: null,
             examDuration: 90, // 考試時長，單位：分鐘
+            explanationMode: 'database',
+            selectedAIModel: 'gpt-4o', // 預設模型
             userData: loadUserData()
         };
         
@@ -547,15 +574,26 @@
             });
             
             // 解析模式選擇
-            document.querySelectorAll('[name="explanation-mode"]').forEach(radio => {
-                radio.addEventListener('change', (e) => {
-                    state.explanationMode = e.target.value;
-                });
-            });
-            
-            // 頁面關閉前自動保存
-            window.addEventListener('beforeunload', () => saveUserData(false));
-        }
+ document.querySelectorAll('[name="explanation-mode"]').forEach(radio => {
+        radio.addEventListener('change', (e) => {
+            state.explanationMode = e.target.value;
+            const aiModelSelect = document.getElementById('ai-model-select');
+            if (state.explanationMode === 'ai') {
+                aiModelSelect.classList.remove('d-none');
+            } else {
+                aiModelSelect.classList.add('d-none');
+            }
+        });
+    });
+
+// AI模型選擇
+document.getElementById('ai-model').addEventListener('change', (e) => {
+    state.selectedAIModel = e.target.value; // 保存當前選擇的模型
+});
+
+// 頁面關閉前自動保存
+window.addEventListener('beforeunload', () => saveUserData(false));
+}
         
         // 載入使用者數據
         function loadUserData() {
@@ -851,14 +889,73 @@ function loadQuestions(numQuestions) {
             
             // 解析內容
             explanationHTML += '<div class="fw-bold mb-2">解析:</div>';
+    // 根據解析模式顯示不同內容
+    if (state.explanationMode === 'database') {
+        // 使用資料庫解析
             explanationHTML += `<div class="highlight">${question.explanation || '無解析'}</div>`;
-            
+            } else if (state.explanationMode === 'ai') {
+                    // 使用AI生成解析
+                    explanationHTML += '<div class="highlight" id="ai-explanation">正在生成解析，請稍候...</div>';
+                    generateAIExplanation(question);
+            }
+
             explanationContent.innerHTML = explanationHTML;
             
             // 顯示主題標籤
             topicBadge.textContent = question.topic || '未分類';
             subtopicBadge.textContent = question.subtopic || '未分類';
         }
+
+// 調用後端API生成AI解析
+async function generateAIExplanation(question) {
+    const userAnswer = state.userAnswers[state.currentQuestionIndex];
+    const prompt = `
+        你是一個專業的生成式AI認證考試輔導老師。請用繁體中文根據以下題目生成詳細的答案解析：
+        題目: ${question.question}
+        選項: 
+        ${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
+        使用者選擇: ${userAnswer}
+        正確答案: ${question.correct_answer_letter}
+        請提供清晰的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。
+    `;
+
+    try {
+        // 顯示加載動畫
+        loadingOverlay.classList.remove('d-none');
+
+        const response = await fetch('http://localhost:5000/api/generate-explanation', {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+            },
+            body: JSON.stringify({
+                model: state.selectedAIModel,
+                prompt: prompt,
+            }),
+        });
+
+        // 隱藏加載動畫
+        loadingOverlay.classList.add('d-none');
+
+        if (!response.ok) {
+            throw new Error(`API請求失敗，狀態碼: ${response.status}`);
+        }
+
+        const data = await response.json();
+        const aiExplanation = data.explanation || '無法生成解析，請稍後再試';
+        document.getElementById('ai-explanation').innerHTML = aiExplanation;
+    } catch (error) {
+        console.error('AI解析生成失敗:', error);
+        // 確保錯誤時也隱藏加載動畫
+        loadingOverlay.classList.add('d-none');
+        document.getElementById('ai-explanation').innerHTML = '解析生成失敗，請檢查網路或稍後再試';
+    }
+}
+
+
+
+
+
         
         // 前往上一題
         function prevQuestion() {

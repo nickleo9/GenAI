@@ -996,125 +996,163 @@ function loadQuestions(numQuestions) {
         }
         
         // 顯示測驗結果
-        function showResult() {
-            const total = state.questions.length;
-            const answered = Object.keys(state.userAnswers).length;
-            const unanswered = total - answered;
-            
-            const percentage = (state.score / total) * 100 || 0;
-            
-            // 生成結果HTML
-            let resultHTML = `
-                <div class="text-center mb-4">
-                    <h3>測驗結果</h3>
-                    <div class="progress my-3">
-                        <div class="progress-bar bg-success" style="width: ${percentage}%">${percentage.toFixed(1)}%</div>
+function showResult() {
+    const total = state.questions.length;
+    const answered = Object.keys(state.userAnswers).length;
+    const unanswered = total - answered;
+    
+    const percentage = (state.score / total) * 100 || 0;
+    
+    // 生成結果HTML (保留原有的基本結果部分)
+    let resultHTML = `
+        <div class="text-center mb-4">
+            <h3>測驗結果</h3>
+            <div class="progress my-3">
+                <div class="progress-bar bg-success" style="width: ${percentage}%">${percentage.toFixed(1)}%</div>
+            </div>
+        </div>
+        
+        <div class="card mb-4">
+            <div class="card-body">
+                <div class="row text-center">
+                    <div class="col-4">
+                        <h4 class="text-primary">${state.score}</h4>
+                        <p>得分</p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text-primary">${total}</h4>
+                        <p>總題數</p>
+                    </div>
+                    <div class="col-4">
+                        <h4 class="text-primary">${percentage.toFixed(1)}%</h4>
+                        <p>正確率</p>
                     </div>
                 </div>
-                
-                <div class="card mb-4">
-                    <div class="card-body">
-                        <div class="row text-center">
-                            <div class="col-4">
-                                <h4 class="text-primary">${state.score}</h4>
-                                <p>得分</p>
-                            </div>
-                            <div class="col-4">
-                                <h4 class="text-primary">${total}</h4>
-                                <p>總題數</p>
-                            </div>
-                            <div class="col-4">
-                                <h4 class="text-primary">${percentage.toFixed(1)}%</h4>
-                                <p>正確率</p>
-                            </div>
-                        </div>
-                    </div>
+            </div>
+        </div>
+        
+        <div class="alert ${percentage >= 70 ? 'alert-success' : 'alert-warning'} mb-4">
+            ${percentage === 100 ? '恭喜！完美通過測驗！' : 
+             percentage >= 70 ? '做得好！達到合格分數。' : 
+             '加油！需要多練習。'}
+        </div>
+    `;
+    
+    // 顯示答題統計
+    resultHTML += `
+        <div class="card mb-4">
+            <div class="card-header bg-info text-white">
+                <h5 class="mb-0">答題統計</h5>
+            </div>
+            <div class="card-body">
+                <p><strong>已答題數:</strong> ${answered}/${total}</p>
+                ${unanswered > 0 ? `<p><strong>未答題數:</strong> ${unanswered}/${total}</p>` : ''}
+                <p><strong>答對題數:</strong> ${state.score}/${answered}</p>
+                <p><strong>答錯題數:</strong> ${answered - state.score}/${answered}</p>
+            </div>
+        </div>
+    `;
+    
+    // 如果有錯題，顯示錯題分析
+    if (state.wrongQuestions.length > 0) {
+        // 按主題分類錯題
+        const topicWrongs = {};
+        state.wrongQuestions.forEach(question => {
+            const topic = question.topic || '未分類';
+            if (!topicWrongs[topic]) {
+                topicWrongs[topic] = [];
+            }
+            topicWrongs[topic].push(question);
+        });
+        
+        resultHTML += `
+            <div class="card mb-4">
+                <div class="card-header bg-danger text-white">
+                    <h5 class="mb-0">錯題分析</h5>
                 </div>
-                
-                <div class="alert ${percentage >= 70 ? 'alert-success' : 'alert-warning'} mb-4">
-                    ${percentage === 100 ? '恭喜！完美通過測驗！' : 
-                     percentage >= 70 ? '做得好！達到合格分數。' : 
-                     '加油！需要多練習。'}
-                </div>
-            `;
-            
-            // 顯示答題統計
+                <div class="card-body">
+        `;
+        
+        // 遍歷每個主題
+        for (const [topic, questions] of Object.entries(topicWrongs)) {
             resultHTML += `
-                <div class="card mb-4">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="mb-0">答題統計</h5>
-                    </div>
-                    <div class="card-body">
-                        <p><strong>已答題數:</strong> ${answered}/${total}</p>
-                        ${unanswered > 0 ? `<p><strong>未答題數:</strong> ${unanswered}/${total}</p>` : ''}
-                        <p><strong>答對題數:</strong> ${state.score}/${answered}</p>
-                        <p><strong>答錯題數:</strong> ${answered - state.score}/${answered}</p>
-                    </div>
-                </div>
+                <div class="mb-4">
+                    <h5 class="border-bottom pb-2">【${topic}】: ${questions.length}題</h5>
             `;
             
-            // 如果有錯題，顯示錯題分析
-            if (state.wrongQuestions.length > 0) {
-                // 按主題分類錯題
-                const topicWrongs = {};
-                state.wrongQuestions.forEach(question => {
-                    const topic = question.topic || '未分類';
-                    if (!topicWrongs[topic]) {
-                        topicWrongs[topic] = [];
-                    }
-                    topicWrongs[topic].push(question);
-                });
+            // 遍歷該主題下的每個錯題
+            questions.forEach((q, index) => {
+                const userAnswerIndex = state.userAnswers[state.questions.indexOf(q)].charCodeAt(0) - 65;
+                const userAnswerText = q.options[userAnswerIndex] || '未作答';
+                
+                // 生成唯一ID用於識別此題
+                const questionId = `wrong-q-${topic.replace(/\s+/g, '-')}-${index}`;
                 
                 resultHTML += `
-                    <div class="card mb-4">
-                        <div class="card-header bg-danger text-white">
-                            <h5 class="mb-0">錯題分析</h5>
+                    <div class="mb-3">
+                        <!-- 可點擊的題目標題 -->
+                        <div class="fw-bold position-relative" 
+                             style="cursor: pointer; padding: 5px; border-radius: 4px;" 
+                             data-bs-toggle="collapse" 
+                             data-bs-target="#${questionId}" 
+                             aria-expanded="false" 
+                             aria-controls="${questionId}">
+                            <div class="d-flex justify-content-between align-items-center">
+                                <div>${index+1}. ${q.question}</div>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
                         </div>
-                        <div class="card-body">
-                `;
-                
-                // 遍歷每個主題
-                for (const [topic, questions] of Object.entries(topicWrongs)) {
-                    resultHTML += `
-                        <div class="mb-4">
-                            <h5 class="border-bottom pb-2">【${topic}】: ${questions.length}題</h5>
-                    `;
-                    
-                    // 遍歷該主題下的每個錯題
-                    questions.forEach((q, index) => {
-                        const userAnswerIndex = state.userAnswers[state.questions.indexOf(q)].charCodeAt(0) - 65;
-                        const userAnswerText = q.options[userAnswerIndex] || '未作答';
                         
-                        resultHTML += `
-                            <div class="mb-3">
-                                <div class="fw-bold">${index+1}. ${q.question}</div>
-                                <div class="ps-3 mt-1">
-                                    <div class="text-danger">您的答案: ${state.userAnswers[state.questions.indexOf(q)]} (${userAnswerText})</div>
-                                    <div class="text-success">正確答案: ${q.correct_answer_letter} (${q.options[q.correct_answer_index]})</div>
-                                    <div class="mt-1">分類: ${q.topic} > ${q.subtopic}</div>
+                        <div class="ps-3 mt-1">
+                            <div class="text-danger">您的答案: ${state.userAnswers[state.questions.indexOf(q)]} (${userAnswerText})</div>
+                            <div class="text-success">正確答案: ${q.correct_answer_letter} (${q.options[q.correct_answer_index]})</div>
+                            <div class="mt-1">分類: ${q.topic} > ${q.subtopic}</div>
+                            
+                            <!-- 可折疊的解析區域 -->
+                            <div class="collapse mt-2" id="${questionId}">
+                                <div class="card card-body bg-light">
+                                    <h6 class="text-primary mb-2">題目解析:</h6>
+                                    ${q.explanation || '無解析'}
                                 </div>
                             </div>
-                        `;
-                    });
-                    
-                    resultHTML += `</div>`;
-                }
-                
-                resultHTML += `
                         </div>
                     </div>
                 `;
-            }
+            });
             
-            // 更新結果內容
-            document.getElementById('result-content').innerHTML = resultHTML;
-            
-            // 顯示結果模態框
-            resultModal.show();
-            
-            // 如果是錯題複習模式，隱藏複習錯題按鈕
-            document.getElementById('review-wrong-btn').style.display = state.mode === 'wrong' ? 'none' : 'block';
+            resultHTML += `</div>`;
         }
+        
+        resultHTML += `
+                </div>
+            </div>
+        `;
+    }
+    
+    // 更新結果內容
+    document.getElementById('result-content').innerHTML = resultHTML;
+    
+    // 添加點擊效果 - 切換箭頭方向
+    document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(item => {
+        item.addEventListener('click', function() {
+            const icon = this.querySelector('i');
+            // 切換箭頭方向
+            if (this.getAttribute('aria-expanded') === 'true') {
+                icon.classList.remove('fa-chevron-up');
+                icon.classList.add('fa-chevron-down');
+            } else {
+                icon.classList.remove('fa-chevron-down');
+                icon.classList.add('fa-chevron-up');
+            }
+        });
+    });
+    
+    // 顯示結果模態框
+    resultModal.show();
+    
+    // 如果是錯題複習模式，隱藏複習錯題按鈕
+    document.getElementById('review-wrong-btn').style.display = state.mode === 'wrong' ? 'none' : 'block';
+}
         
         // 複習錯題
         function reviewWrongQuestions() {

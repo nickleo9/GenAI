@@ -342,111 +342,111 @@
     </div>
     
     <!-- 測驗結果模態框 -->
-    <div class="modal fade" id="result-modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title">測驗結果</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+<div class="modal fade" id="result-modal" tabindex="-1" aria-hidden="true" aria-labelledby="result-modal-title">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-primary text-white">
+                <h5 class="modal-title" id="result-modal-title">測驗結果</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" tabindex="-1"></button>
+            </div>
+            <div class="modal-body">
+                <div id="result-content" class="result-container">
+                    <!-- 結果內容會在JavaScript中動態生成 -->
                 </div>
-                <div class="modal-body">
-                    <div id="result-content" class="result-container">
-                        <!-- 結果內容會在JavaScript中動態生成 -->
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                    <button type="button" class="btn btn-primary" id="review-wrong-btn">複習錯題</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-primary" id="review-wrong-btn">複習錯題</button>
             </div>
         </div>
     </div>
-    
-    <!-- 統計資料模態框 -->
-    <div class="modal fade" id="stats-modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-info text-white">
-                    <h5 class="modal-title">學習統計</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+
+<!-- 統計資料模態框 -->
+<div class="modal fade" id="stats-modal" tabindex="-1" aria-hidden="true" aria-labelledby="stats-modal-title">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h5 class="modal-title" id="stats-modal-title">學習統計</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" tabindex="-1"></button>
+            </div>
+            <div class="modal-body">
+                <div id="stats-content">
+                    <!-- 統計內容會在JavaScript中動態生成 -->
                 </div>
-                <div class="modal-body">
-                    <div id="stats-content">
-                        <!-- 統計內容會在JavaScript中動態生成 -->
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                    <button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button>
-                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                <button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button>
             </div>
         </div>
     </div>
-    
-    <!-- 使用說明模態框 -->
-    <div class="modal fade" id="help-modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-success text-white">
-                    <h5 class="modal-title">使用說明</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body">
-                    <h5>練習模式</h5>
-                    <p>適合日常學習，每題作答後即時顯示答案與解析</p>
-                    <ul>
-                        <li>選擇題目數量 (10/20/40/80題)</li>
-                        <li>點擊「開始測驗」按鈕開始練習</li>
-                        <li>選擇答案後點擊「提交答案」</li>
-                        <li>查看解析後點擊「下一題」繼續</li>
-                    </ul>
-                    
-                    <h5>模擬考試</h5>
-                    <p>模擬真實考試環境，完成所有題目後才顯示結果</p>
-                    <ul>
-                        <li>選擇80題進行完整模擬考</li>
-                        <li>模擬考試時長為90分鐘，系統會自動計時</li>
-                        <li>時間結束時會自動結算成績</li>
-                        <li>剩餘時間少於5分鐘時計時器會變紅提醒</li>
-                        <li>完成所有題目後會顯示成績及錯題分析</li>
-                    </ul>
-                    
-                    <h5>錯題複習</h5>
-                    <p>集中練習之前答錯的題目</p>
-                    <ul>
-                        <li>系統會自動從歷史記錄中提取曾經答錯的題目</li>
-                        <li>針對性強化練習，提高學習效率</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                </div>
+</div>
+
+<!-- 使用說明模態框 -->
+<div class="modal fade" id="help-modal" tabindex="-1" aria-hidden="true" aria-labelledby="help-modal-title">
+    <div class="modal-dialog modal-dialog-centered modal-lg">
+        <div class="modal-content">
+            <div class="modal-header bg-success text-white">
+                <h5 class="modal-title" id="help-modal-title">使用說明</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" tabindex="-1"></button>
+            </div>
+            <div class="modal-body">
+                <h5>練習模式</h5>
+                <p>適合日常學習，每題作答後即時顯示答案與解析</p>
+                <ul>
+                    <li>選擇題目數量 (10/20/40/80題)</li>
+                    <li>點擊「開始測驗」按鈕開始練習</li>
+                    <li>選擇答案後點擊「提交答案」</li>
+                    <li>查看解析後點擊「下一題」繼續</li>
+                </ul>
+                
+                <h5>模擬考試</h5>
+                <p>模擬真實考試環境，完成所有題目後才顯示結果</p>
+                <ul>
+                    <li>選擇80題進行完整模擬考</li>
+                    <li>模擬考試時長為90分鐘，系統會自動計時</li>
+                    <li>時間結束時會自動結算成績</li>
+                    <li>剩餘時間少於5分鐘時計時器會變紅提醒</li>
+                    <li>完成所有題目後會顯示成績及錯題分析</li>
+                </ul>
+                
+                <h5>錯題複習</h5>
+                <p>集中練習之前答錯的題目</p>
+                <ul>
+                    <li>系統會自動從歷史記錄中提取曾經答錯的題目</li>
+                    <li>針對性強化練習，提高學習效率</li>
+                </ul>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
             </div>
         </div>
     </div>
-    
-    <!-- 關於模態框 -->
-    <div class="modal fade" id="about-modal" tabindex="-1" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered">
-            <div class="modal-content">
-                <div class="modal-header bg-dark text-white">
-                    <h5 class="modal-title">關於</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button>
-                </div>
-                <div class="modal-body text-center">
-                    <h4>生成式AI認證單選題練習系統</h4>
-                    <p class="mb-1">版本: 1.0.0</p>
-                    <p class="mb-1">發布日期: 2025年3月18日</p>
-                    <hr>
-                    <p>本系統旨在幫助使用者準備「生成式AI能力認證」考試，提供單選題形式的練習功能，包含即時評分、錯題分析、學習統計等功能，幫助您高效備考。</p>
-                    <p class="mb-0">祝您考試順利！</p>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                </div>
+</div>
+
+<!-- 關於模態框 -->
+<div class="modal fade" id="about-modal" tabindex="-1" aria-hidden="true" aria-labelledby="about-modal-title">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content">
+            <div class="modal-header bg-dark text-white">
+                <h5 class="modal-title" id="about-modal-title">關於</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close" tabindex="-1"></button>
+            </div>
+            <div class="modal-body text-center">
+                <h4>生成式AI認證單選題練習系統</h4>
+                <p class="mb-1">版本: 1.0.0</p>
+                <p class="mb-1">發布日期: 2025年3月18日</p>
+                <hr>
+                <p>本系統旨在幫助使用者準備「生成式AI能力認證」考試，提供單選題形式的練習功能，包含即時評分、錯題分析、學習統計等功能，幫助您高效備考。</p>
+                <p class="mb-0">祝您考試順利！</p>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
             </div>
         </div>
     </div>
+</div>
     
     <!-- 導航按鈕 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
@@ -549,7 +549,32 @@
                 document.getElementById('wrong-btn').disabled = true;
                 document.getElementById('wrong-btn').title = '尚無錯題記錄';
             }
-        }
+// 動態更新模態框的 aria-hidden 和 tabindex
+    const modals = [
+        'result-modal',
+        'stats-modal',
+        'help-modal',
+        'about-modal'
+    ];
+
+    modals.forEach(modalId => {
+        const modalElement = document.getElementById(modalId);
+        modalElement.addEventListener('shown.bs.modal', function () {
+            this.setAttribute('aria-hidden', 'false');
+            const closeButton = this.querySelector('.btn-close');
+            if (closeButton) {
+                closeButton.setAttribute('tabindex', '0');
+            }
+        });
+        modalElement.addEventListener('hidden.bs.modal', function () {
+            this.setAttribute('aria-hidden', 'true');
+            const closeButton = this.querySelector('.btn-close');
+            if (closeButton) {
+                closeButton.setAttribute('tabindex', '-1');
+            }
+        });
+    });
+}
         
         // 附加事件監聽器
         function attachEventListeners() {
@@ -911,11 +936,11 @@ function loadQuestions(numQuestions) {
 async function generateAIExplanation(question) {
     const userAnswer = state.userAnswers[state.currentQuestionIndex];
     const prompt = `
-        你是一個專業的生成式AI認證考試輔導老師。請以150個字以內，用繁體中文根據以下題目生成詳細的答案解析：
+        你是一個專業的生成式AI認證考試輔導老師。請以150個字以內，要完整的，用繁體中文根據以下題目生成詳細的答案解析：
         選項: 
         ${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
         正確答案: ${question.correct_answer_letter}
-        請提供清晰的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。
+        請提供清晰的完整的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。
     `;
 
     try {

@@ -268,7 +268,7 @@
                         <label for="ai-model" class="form-label">選擇AI模型</label>
                         <select id="ai-model" class="form-select">
                         <option value="gpt-4o" selected>GPT-4o (預設)</option>
-                        <option value="claude-3-7-sonnet">Claude 3.7 Sonnet</option>
+                        <option value="claude-3.7-sonnet">Claude 3.7 Sonnet</option>
                         <option value="grok-3">Grok 3</option>
                         </select>
                         </div>
@@ -936,11 +936,11 @@ function loadQuestions(numQuestions) {
 async function generateAIExplanation(question) {
     const userAnswer = state.userAnswers[state.currentQuestionIndex];
     const prompt = `
-        你是一個專業的生成式AI認證考試輔導老師。請以繁體中文生成150字以內的完整答案解析，針對以下題目：
-選項: 
-${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
-正確答案: ${question.correct_answer_letter}
-請提供清晰、簡潔的解釋，說明為什麼正確答案是正確的，其他選項為什麼錯誤，確保內容完整且不超過150字。
+        你是一個專業的生成式AI認證考試輔導老師。請以150個字以內，要完整的，用繁體中文根據以下題目生成詳細的答案解析：
+        選項: 
+        ${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
+        正確答案: ${question.correct_answer_letter}
+        請提供清晰的完整的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。
     `;
 
     try {

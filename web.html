@@ -84,7 +84,11 @@
             padding: 20px;
             margin-top: 20px;
             border-radius: 5px;
-            overflow-y: auto; /* 內容過長時顯示滾動條 */
+            min-height: 150px;
+            max-height: 400px; /* 增加最大高度，給更多空間 */
+            overflow-y: auto; /* 確保滾動條顯示 */
+            overflow-x: hidden; /* 防止水平滾動 */
+            word-wrap: break-word; /* 確保長單詞換行 */
         }
         .correct {
             color: #198754;
@@ -99,7 +103,31 @@
             padding: 10px;
             border-radius: 5px;
             margin: 10px 0;
+            font-size: 1rem;
+            line-height: 1.6;
+            white-space: normal; /* 確保文字正常換行 */
+            word-wrap: break-word; /* 確保長單詞換行 */
+            overflow: visible; /* 防止內容被截斷 */
         }
+        /* 美化滾動條 */
+        .explanation-box::-webkit-scrollbar {
+        width: 8px;
+        }
+
+        .explanation-box::-webkit-scrollbar-track {
+        background: #f1f1f1;
+        border-radius: 5px;
+        }
+
+        .explanation-box::-webkit-scrollbar-thumb {
+        background: #0d6efd;
+        border-radius: 5px;
+        }
+
+        .explanation-box::-webkit-scrollbar-thumb:hover {
+        background: #0b5ed7;
+        }
+        
         .nav-pills .nav-link.active {
             background-color: #0d6efd;
         }
@@ -121,9 +149,11 @@
         
         /* 響應式調整 */
         @media (max-width: 768px) {
-            .question-text {
-                font-size: 1.1rem;
-            }
+        .explanation-box {
+            padding: 15px;
+            min-height: 120px;
+            max-height: 300px; /* 小螢幕上減少最大高度 */
+        }
             .option-label {
                 padding: 8px 12px;
             }

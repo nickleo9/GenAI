@@ -997,6 +997,7 @@ async function generateAIExplanation(question) {
 
         const data = await response.json();
         const aiExplanation = data.explanation || '無法生成解析，請稍後再試';
+        console.log('後端返回的解析內容:', aiExplanation); // 添加日誌
         const paragraphs = aiExplanation.split('\n').map(p => `<p>${p}</p>`).join('');
         document.getElementById('ai-explanation').innerHTML = paragraphs;
     } catch (error) {

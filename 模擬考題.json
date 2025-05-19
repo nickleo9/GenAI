@@ -6766,5 +6766,486 @@
         "concept": "演算法問責",
         "number": 423,
         "explanation": "「演算法問責制」(Algorithmic Accountability)的主要目標是確保能夠解釋、審計AI系統並明確決策責任。隨著AI系統做出越來越多影響人們生活的決策，問責制變得尤為重要，它建立了一個框架，使組織和個人對AI系統的行為和影響負責。問責制的關鍵要素包括：透明度，公開AI系統如何做出決策；可解釋性，能夠以人類可理解的方式解釋AI決策；可審計性，允許第三方檢查和評估系統；明確責任分配，確定誰對系統行為負責；補救機制，為受到負面影響的個人提供申訴和糾正途徑。實施問責制的方法包括：演算法影響評估，評估潛在風險和影響；偏見審計，檢測和糾正不公平模式；可解釋性工具的開發；文檔和報告標準；明確的治理結構和監督機制。全球各地的立法倡議如美國的《演算法問責法案》和歐盟的《人工智能法》都反映了對AI問責制的增長關注，旨在平衡創新與保護公眾免受算法系統潛在傷害。"
+    },
+    {
+        "question": "生成式AI的哪個里程碑標誌著2020年代的多模態生成浪潮？",
+        "options": [
+            "ChatGPT的發布（2022年）",
+            "Transformer模型的提出（2017年）",
+            "DALL-E的推出（2021年）",
+            "GAN的首次提出（2014年）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "歷史",
+        "subtopic": "生成式AI發展",
+        "concept": "多模態生成",
+        "number": 424,
+        "explanation": "DALL-E於2021年推出，是首個大規模文本到圖像生成模型，標誌著多模態生成的開端，推動了2020年代的生成式AI浪潮。ChatGPT（2022年）專注於語言生成，Transformer（2017年）奠定基礎但非多模態，GAN（2014年）主要用於圖像生成。"
+    },
+    {
+        "question": "2014年的哪項技術為後來的圖像生成奠定了基礎？",
+        "options": [
+            "卷積神經網路（CNN）",
+            "生成對抗網路（GAN）",
+            "遞迴神經網路（RNN）",
+            "Transformer"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "歷史",
+        "subtopic": "生成式AI技術",
+        "concept": "GAN",
+        "number": 425,
+        "explanation": "生成對抗網路（GAN）於2014年由Ian Goodfellow提出，通過生成器與判別器的對抗學習，奠定了現代圖像生成的基礎，後續的DALL-E、Stable Diffusion等均受其影響。CNN是分類技術，RNN用於序列數據，Transformer則是2017年的技術。"
+    },
+    {
+        "question": "生成式AI在災害預警中的主要應用是什麼？",
+        "options": [
+            "管理氣象站硬體",
+            "監控數據傳輸速度",
+            "安排救援日程",
+            "自動生成災害風險預測與視覺化地圖"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "應用",
+        "subtopic": "跨領域應用",
+        "concept": "災害預警",
+        "number": 426,
+        "explanation": "生成式AI在災害預警中可自動生成基於歷史數據的風險預測模型，並視覺化為地圖，幫助決策者快速識別高風險區域。管理硬體、監控傳輸、安排日程屬於運營管理，非AI核心應用。"
+    },
+    {
+        "question": "在法律自動化中，生成式AI的最佳用途是什麼？",
+        "options": [
+            "管理法律檔案伺服器",
+            "監控法庭設備狀態",
+            "自動生成合同草稿與合規性分析",
+            "安排律師會議日程"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "應用",
+        "subtopic": "法律",
+        "concept": "自動化",
+        "number": 427,
+        "explanation": "生成式AI在法律領域可自動生成合同草稿並進行合規性分析，節省律師時間並提高準確性。管理伺服器、監控設備、安排日程屬於行政任務，非AI核心優勢。"
+    },
+    {
+        "question": "生成式AI的哪個早期應用出現在2015年左右？",
+        "options": [
+            "文本到視頻生成",
+            "自動生成新聞報導",
+            "圖像超解析度",
+            "多語言對話生成"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "歷史",
+        "subtopic": "早期應用",
+        "concept": "圖像超解析度",
+        "number": 428,
+        "explanation": "圖像超解析度是2015年左右的早期生成式AI應用，利用深度學習將低解析度圖像轉換為高解析度。文本到視頻生成（2024年Sora）、新聞報導生成（2020年代）、多語言對話（2022年ChatGPT）均較晚出現。"
+    },
+    {
+        "question": "生成式AI生成虛假產品評論可能引發什麼倫理問題？",
+        "options": [
+            "硬體過載",
+            "模型訓練時間過長",
+            "誤導消費者並損害市場信任",
+            "數據儲存需求過高"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "倫理",
+        "subtopic": "假內容",
+        "concept": "虛假評論",
+        "number": 429,
+        "explanation": "生成虛假產品評論會誤導消費者，損害市場信任，違反商業倫理。硬體過載、訓練時間、儲存需求屬於技術問題，與倫理無關。"
+    },
+    {
+        "question": "1960年代的哪款AI系統是生成式AI的早期雛形？",
+        "options": [
+            "AlexNet神經網路",
+            "AlphaGo",
+            "Watson問答系統",
+            "ELIZA對話系統"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "歷史",
+        "subtopic": "早期AI",
+        "concept": "ELIZA",
+        "number": 430,
+        "explanation": "ELIZA（1966年）是早期對話系統，模擬心理治療師，通過模式匹配生成回應，是生成式AI的雛形。AlexNet（2012年）、AlphaGo（2016年）、Watson（2011年）均為後期AI系統。"
+    },
+    {
+        "question": "在提示工程中，什麼方法能提升生成式AI輸出的相關性？",
+        "options": [
+            "使用模糊提示詞",
+            "隨機調整提示結構",
+            "減少提示詞數量",
+            "提供具體上下文並指定輸出格式"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "技術",
+        "subtopic": "提示工程",
+        "concept": "提示設計",
+        "number": 431,
+        "explanation": "提供具體上下文並指定輸出格式能引導生成式AI生成更相關的內容。模糊提示、隨機調整、減少詞數均可能降低輸出品質。"
+    },
+    {
+        "question": "生成式AI在零售分析中的主要應用是什麼？",
+        "options": [
+            "管理商店設備效能",
+            "修復監控攝影機錯誤",
+            "自動生成顧客行為預測與促銷方案",
+            "安排庫存盤點日程"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "應用",
+        "subtopic": "零售",
+        "concept": "行為預測",
+        "number": 432,
+        "explanation": "生成式AI在零售分析中可自動生成基於歷史數據的顧客行為預測與促銷方案，優化銷售策略。管理設備、修復攝影機、安排日程屬於運營管理，非AI核心應用。"
+    },
+    {
+        "question": "2017年的哪篇論文推動了生成式AI的語言模型發展？",
+        "options": [
+            "「Generative Adversarial Networks」",
+            "「Deep Reinforcement Learning」",
+            "「Attention is All You Need」",
+            "「Convolutional Neural Networks」"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "歷史",
+        "subtopic": "技術論文",
+        "concept": "Transformer",
+        "number": 433,
+        "explanation": "「Attention is All You Need」（2017年）提出Transformer架構，奠定了現代語言模型（如GPT、BERT）的基礎。GAN論文（2014年）聚焦圖像，深度強化學習與CNN論文與語言模型無直接關聯。"
+    },
+    {
+        "question": "生成式AI的哪個技術在2014年首次提出並影響了後來的圖像生成模型？",
+        "options": [
+            "變分自編碼器（VAE）",
+            "生成對抗網路（GAN）",
+            "Transformer架構",
+            "擴散模型（Diffusion Model）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "歷史",
+        "subtopic": "技術起源",
+        "concept": "GAN",
+        "number": 444,
+        "explanation": "生成對抗網路（GAN）由Ian Goodfellow於2014年提出，通過生成器與鑑別器的對抗訓練，奠定了現代圖像生成技術的基礎，影響了後來的模型如StyleGAN。VAE（2013年）用於數據生成，Transformer（2017年）專注語言，擴散模型（2020年代）較晚出現。"
+    },
+    {
+        "question": "生成式AI在教育領域的主要應用是什麼？",
+        "options": [
+            "自動生成個性化教材與練習題",
+            "管理學校設備維護",
+            "監控學生出勤率",
+            "安排課程時間表"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "應用",
+        "subtopic": "教育",
+        "concept": "個性化學習",
+        "number": 445,
+        "explanation": "生成式AI在教育中可根據學生需求自動生成個性化教材與練習題，提升學習效果。管理設備、監控出勤、安排時間表屬於行政管理，非AI核心應用。"
+    },
+    {
+        "question": "哪個生成式AI模型於2023年首次展示了多模態生成能力？",
+        "options": [
+            "Stable Diffusion",
+            "DALL-E 3",
+            "Google Gemini",
+            "Midjourney V5"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "歷史",
+        "subtopic": "多模態發展",
+        "concept": "多模態生成",
+        "number": 446,
+        "explanation": "Google Gemini於2023年發布，首次展示了多模態生成能力，能處理文本、圖像等多種輸入。Stable Diffusion與Midjourney專注圖像，DALL-E 3雖強大但非多模態焦點。"
+    },
+    {
+        "question": "在生成式AI中，什麼技術用於提升生成的語音自然度？",
+        "options": [
+            "自注意力機制",
+            "WaveNet",
+            "卷積神經網路（CNN）",
+            "長短期記憶網路（LSTM）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "技術",
+        "subtopic": "語音生成",
+        "concept": "WaveNet",
+        "number": 447,
+        "explanation": "WaveNet由DeepMind於2016年提出，通過生成原始音頻波形提升語音自然度，廣泛應用於語音合成。自注意力用於語言模型，CNN用於圖像，LSTM用於序列數據。"
+    },
+    {
+        "question": "生成式AI生成內容的版權歸屬目前的主要爭議是什麼？",
+        "options": [
+            "生成內容是否屬於公共領域",
+            "訓練數據的合法性與創作者權利",
+            "模型參數的所有權",
+            "生成效率的技術標準"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "倫理",
+        "subtopic": "版權",
+        "concept": "訓練數據",
+        "number": 448,
+        "explanation": "生成式AI的版權爭議主要聚焦於訓練數據的合法性與原始創作者的權利，因模型可能使用未經授權的作品進行訓練。公共領域、模型參數、生成效率非核心爭議。"
+    },
+    {
+        "question": "生成式AI在醫療領域的應用包括什麼？",
+        "options": [
+            "生成醫療影像與診斷報告",
+            "管理醫院設備庫存",
+            "監控醫療廢物處理",
+            "安排醫護人員排班"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "應用",
+        "subtopic": "醫療",
+        "concept": "影像生成",
+        "number": 449,
+        "explanation": "生成式AI在醫療中可生成醫療影像（如X光）與診斷報告，輔助醫生診斷。管理庫存、監控廢物、安排排班屬於運營管理，非AI核心應用。"
+    },
+    {
+        "question": "哪個事件標誌著生成式AI進入大眾視野？",
+        "options": [
+            "ChatGPT的發布（2022年）",
+            "DALL-E的推出（2021年）",
+            "BERT的提出（2018年）",
+            "GAN的首次應用（2014年）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "歷史",
+        "subtopic": "大眾化",
+        "concept": "ChatGPT",
+        "number": 450,
+        "explanation": "ChatGPT於2022年發布，因其強大的對話能力迅速進入大眾視野，推動生成式AI普及。DALL-E（2021年）影響較專業領域，BERT（2018年）非生成式，GAN（2014年）為技術起源。"
+    },
+    {
+        "question": "生成式AI在遊戲開發中的應用是什麼？",
+        "options": [
+            "自動生成遊戲關卡與角色設計",
+            "管理遊戲伺服器效能",
+            "監控玩家行為數據",
+            "安排遊戲更新時程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "應用",
+        "subtopic": "遊戲開發",
+        "concept": "關卡生成",
+        "number": 451,
+        "explanation": "生成式AI在遊戲開發中可自動生成關卡與角色設計，提升開發效率與創意。管理伺服器、監控行為、安排時程屬於運營管理，非AI核心應用。"
+    },
+    {
+        "question": "什麼技術用於生成式AI的圖像去噪與細化？",
+        "options": [
+            "生成對抗網路（GAN）",
+            "擴散模型（Diffusion Model）",
+            "自編碼器（Autoencoder）",
+            "強化學習（Reinforcement Learning）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "技術",
+        "subtopic": "圖像生成",
+        "concept": "擴散模型",
+        "number": 452,
+        "explanation": "擴散模型通過逐步去噪生成高品質圖像，廣泛用於Stable Diffusion等模型。GAN生成圖像但不專注去噪，自編碼器用於數據壓縮，強化學習用於決策。"
+    },
+    {
+        "question": "生成式AI在2010年代晚期的哪個進展推動了藝術創作？",
+        "options": [
+            "語音合成的突破",
+            "圖像風格遷移的普及",
+            "文本生成模型的進化",
+            "視頻生成的開源"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "歷史",
+        "subtopic": "藝術應用",
+        "concept": "風格遷移",
+        "number": 453,
+        "explanation": "圖像風格遷移於2010年代晚期（如2015年後）普及，使藝術家能將畫作風格應用於圖像，推動藝術創作。語音合成、文本生成、視頻生成影響其他領域。"
+    },
+    {
+        "question": "生成式AI中，哪個訓練挑戰導致生成對抗網路（GAN）生成內容缺乏多樣性？",
+        "options": [
+            "損失函數過於複雜，難以優化",
+            "鑑別器過強，生成器無法有效學習",
+            "訓練數據過於多樣，模型無法聚焦",
+            "生成器參數過少，表達能力不足"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "技術",
+        "subtopic": "GAN訓練",
+        "concept": "模式崩潰",
+        "number": 454,
+        "explanation": "鑑別器過強會導致生成器陷入模式崩潰（Mode Collapse），僅生成少數重複樣本，缺乏多樣性。損失函數複雜、數據過多樣或參數不足也會影響訓練，但鑑別器過強是模式崩潰的直接原因。"
+    },
+    {
+        "question": "哪個生成式AI技術突破解決了語言模型中的序列依賴限制，推動了生成效率提升？",
+        "options": [
+            "馬爾可夫模型的改進",
+            "長短期記憶網路（LSTM）的優化",
+            "卷積神經網路（CNN）的應用",
+            "Transformer的自注意力機制"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "技術",
+        "subtopic": "語言生成",
+        "concept": "自注意力",
+        "number": 455,
+        "explanation": "Transformer（2017年）引入自注意力機制，平行處理序列數據，解決LSTM的長距離依賴限制，大幅提升生成效率，推動GPT等模型發展。馬爾可夫模型過簡單，CNN用於局部特徵，LSTM改進有限。"
+    },
+    {
+        "question": "生成式AI歷史上，哪個模型首次實現了高效的文本到圖像生成，引發多模態研究熱潮？",
+        "options": [
+            "StyleGAN（2018年）",
+            "VQ-VAE（2017年）",
+            "DALL-E（2021年）",
+            "CLIP（2021年）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "歷史",
+        "subtopic": "多模態生成",
+        "concept": "文本到圖像",
+        "number": 456,
+        "explanation": "DALL-E（2021年）首次實現高效文本到圖像生成，結合文本條件生成高品質圖像，引發多模態研究熱潮。StyleGAN專注無條件圖像生成，VQ-VAE用於壓縮，CLIP為視覺-語言對應模型。"
+    },
+    {
+        "question": "生成式AI在金融領域生成合成數據時，哪個問題最限制其應用？",
+        "options": [
+            "生成數據與真實數據分佈偏差過大",
+            "缺乏足夠的歷史金融數據",
+            "計算資源成本過高",
+            "監管法規對合成數據的限制"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "應用",
+        "subtopic": "金融",
+        "concept": "合成數據",
+        "number": 457,
+        "explanation": "生成合成數據若與真實數據分佈偏差過大，會降低金融模型的可靠性和決策準確性，是主要限制。數據量、法規和成本也具影響，但分佈偏差是核心挑戰。"
+    },
+    {
+        "question": "相較於GAN，擴散模型（Diffusion Model）在生成式AI中的主要優勢是什麼？",
+        "options": [
+            "訓練速度快，易於收斂",
+            "能直接處理多模態數據",
+            "生成過程穩定，無模式崩潰",
+            "模型參數少，計算成本低"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "技術",
+        "subtopic": "圖像生成",
+        "concept": "擴散模型",
+        "number": 458,
+        "explanation": "擴散模型通過逐步去噪生成圖像，過程穩定，避免了GAN的模式崩潰問題，是其主要優勢。訓練速度慢、參數多、非多模態處理是其劣勢。"
+    },
+    {
+        "question": "生成式AI生成的深度偽造（Deepfake）內容引發了哪個倫理問題的廣泛關注？",
+        "options": [
+            "模型訓練的能源消耗",
+            "生成內容的版權歸屬",
+            "數據隱私保護的挑戰",
+            "對社會信任與公信力的威脅"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "倫理",
+        "subtopic": "社會影響",
+        "concept": "深度偽造",
+        "number": 459,
+        "explanation": "深度偽造（Deepfake）生成逼真虛假內容，威脅社會信任與公信力，引發廣泛倫理討論。能源消耗、版權、隱私也重要，但Deepfake對信任的直接影響更突出。"
+    },
+    {
+        "question": "哪個生成式AI技術首次引入逐步精化策略，提升了高解析度圖像生成的穩定性？",
+        "options": [
+            "BigGAN",
+            "Progressive GAN",
+            "StyleGAN",
+            "VQ-VAE-2"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "歷史",
+        "subtopic": "圖像生成",
+        "concept": "逐步精化",
+        "number": 460,
+        "explanation": "Progressive GAN（2017年）首次引入逐步精化，從低解析度逐步生成高解析度圖像，提升穩定性與品質。StyleGAN、BigGAN、VQ-VAE-2在此基礎上改進。"
+    },
+    {
+        "question": "生成式AI在音樂創作中，哪個模型首次實現了基於符號音樂的長篇結構生成？",
+        "options": [
+            "WaveNet",
+            "Jukebox",
+            "MuseNet",
+            "Magenta的Music Transformer"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "應用",
+        "subtopic": "音樂生成",
+        "concept": "符號音樂",
+        "number": 461,
+        "explanation": "Magenta的Music Transformer（2018年）首次實現基於符號音樂（MIDI）的長篇結構生成，處理複雜音樂序列。WaveNet生成音頻波形，Jukebox與MuseNet聚焦音頻生成。"
+    },
+    {
+        "question": "生成式AI中，哪個指標常用於評估生成圖像的多樣性與真實性？",
+        "options": [
+            "均方誤差（MSE）",
+            "峰值信噪比（PSNR）",
+            "Fréchet Inception Distance（FID）",
+            "結構相似性（SSIM）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "技術",
+        "subtopic": "評估指標",
+        "concept": "FID",
+        "number": 462,
+        "explanation": "FID（Fréchet Inception Distance）衡量生成圖像與真實圖像的分佈相似性，廣泛用於評估多樣性與真實性。MSE、PSNR、SSIM主要用於圖像失真或相似性評估。"
+    },
+    {
+        "question": "2010年代末的哪個生成式AI進展推動了從學術研究到商業應用的轉變？",
+        "options": [
+            "擴散模型的理論突破",
+            "多模態模型的整合",
+            "GAN的廣泛應用",
+            "預訓練語言模型的規模化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "歷史",
+        "subtopic": "商業化",
+        "concept": "預訓練模型",
+        "number": 463,
+        "explanation": "預訓練語言模型（如BERT、GPT）在2010年代末規模化，降低應用門檻，推動生成式AI從學術走向商業化。GAN奠定技術基礎，擴散模型與多模態整合較晚出現。"
     }
 ]
+

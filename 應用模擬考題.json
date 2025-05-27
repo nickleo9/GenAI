@@ -1,0 +1,322 @@
+[
+    {
+        "question": "多模態AI (Multimodal AI) 的定義是什麼？",
+        "options": [
+            "AI 將文本從一種語言轉換為另一種語言",
+            "能夠處理和生成多種類型數據（如文本、圖像）的 AI 模型",
+            "模仿人腦結構的計算模型，由多層神經元組成",
+            "專注於單一任務的 AI 系統，如語音識別"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.3.重要技術概念",
+        "concept": "多模態AI (Multimodal AI)",
+        "number": 1,
+        "explanation": "正確答案是「能夠處理和生成多種類型數據（如文本、圖像）的 AI 模型」，這準確描述了多模態 AI 的定義，強調其整合多種數據類型的能力，例如文本和圖像。其他選項不正確的原因如下：選項 A（AI 將文本從一種語言轉換為另一種語言）描述的是語言翻譯，與多模態 AI 無關；選項 C（模仿人腦結構的計算模型，由多層神經元組成）描述的是神經網絡的一般概念，而非多模態 AI；選項 D（專注於單一任務的 AI 系統，如語音識別）描述的是窄 AI，與多模態 AI 的多功能特性不符。"
+    },
+    {
+        "question": "語言翻譯的基本原理是什麼？",
+        "options": [
+            "通過神經網絡將一種語言的文本轉換為另一種語言",
+            "生成逼真的圖像或視頻內容",
+            "從未標記的數據中提取模式",
+            "通過與環境互動學習策略"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "3.生成式AI應用技能",
+        "subtopic": "3.1.文字生成工具與應用",
+        "concept": "語言翻譯",
+        "number": 2,
+        "explanation": "正確答案是「通過神經網絡將一種語言的文本轉換為另一種語言」，這是語言翻譯的核心原理，通常使用神經網絡（如 Transformer）實現。其他選項不正確的原因如下：選項 B（生成逼真的圖像或視頻內容）描述的是生成模型如 GAN 的功能，與語言翻譯無關；選項 C（從未標記的數據中提取模式）描述的是非監督式學習，與語言翻譯無關；選項 D（通過與環境互動學習策略）描述的是強化學習，與語言翻譯無關。"
+    },
+    {
+        "question": "GAN (生成對抗網絡) 的主要功能是什麼？",
+        "options": [
+            "分類圖像或文本數據",
+            "生成新的數據樣本，如圖像或音頻",
+            "預測未來的時間序列數據",
+            "處理多種數據類型，如文本和圖像"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.2.生成模型類型",
+        "concept": "GAN (生成對抗網絡)",
+        "number": 3,
+        "explanation": "正確答案是「生成新的數據樣本，如圖像或音頻」，這是 GAN 的主要功能，通過生成器和判別器的對抗訓練生成逼真數據。其他選項不正確的原因如下：選項 A（分類圖像或文本數據）是監督式學習的任務，與 GAN 無關；選項 C（預測未來的時間序列數據）通常由 RNN 或 LSTM 實現，與 GAN 無關；選項 D（處理多種數據類型，如文本和圖像）描述的是多模態 AI，與 GAN 的生成功能不同。"
+    },
+    {
+        "question": "以下哪個是監督式學習的應用例子？",
+        "options": [
+            "圖像生成",
+            "垃圾郵件分類",
+            "數據叢集",
+            "風格轉換"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "監督式學習",
+        "number": 4,
+        "explanation": "正確答案是「垃圾郵件分類」，這是監督式學習的典型應用，使用標記數據（如「垃圾」或「非垃圾」）訓練模型。其他選項不正確的原因如下：選項 A（圖像生成）屬於生成模型如 GAN；選項 C（數據叢集）屬於非監督式學習，如 K-means；選項 D（風格轉換）也屬於生成模型的應用，與監督式學習無關。"
+    },
+    {
+        "question": "深度學習中的卷積神經網絡（CNN）最適合哪種任務？",
+        "options": [
+            "自然語言生成",
+            "圖像分類",
+            "時間序列分析",
+            "語音合成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "深度學習概念",
+        "concept": "卷積神經網絡（CNN）",
+        "number": 5,
+        "explanation": "正確答案是「圖像分類」，CNN 通過卷積層提取圖像特徵，非常適合圖像相關任務。其他選項不正確的原因如下：選項 A（自然語言生成）通常使用 Transformer 或 RNN；選項 C（時間序列分析）通常使用 RNN 或 LSTM；選項 D（語音合成）通常使用其他模型如 WaveNet，CNN 並非主要選擇。"
+    },
+    {
+        "question": "生成式 AI 在教育領域的應用包括什麼？",
+        "options": [
+            "自動生成個性化學習材料",
+            "預測股票價格",
+            "控制自動駕駛汽車",
+            "分析金融風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用",
+        "number": 6,
+        "explanation": "正確答案是「自動生成個性化學習材料」，這是生成式 AI 在教育領域的典型應用，能根據學生需求生成教材或練習題。其他選項不正確的原因如下：選項 B（預測股票價格）屬於預測性 AI，與生成式 AI 無關；選項 C（控制自動駕駛汽車）屬於感知 AI；選項 D（分析金融風險）屬於預測性分析，與生成式 AI 無關。"
+    },
+    {
+        "question": "No Code 平台的主要優勢是什麼？",
+        "options": [
+            "需要高級程式設計技能",
+            "允許非技術人員開發應用",
+            "僅適用於 AI 模型訓練",
+            "提高模型訓練速度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code 平台與工具",
+        "concept": "No Code 平台",
+        "number": 7,
+        "explanation": "正確答案是「允許非技術人員開發應用」，這是 No Code 平台的主要優勢，降低技術門檻。其他選項不正確的原因如下：選項 A（需要高級程式設計技能）與 No Code 理念相反；選項 C（僅適用於 AI 模型訓練）錯誤，No Code 平台應用範圍更廣；選項 D（提高模型訓練速度）與 No Code 無關。"
+    },
+    {
+        "question": "以下哪個是生成式 AI 的工具？",
+        "options": [
+            "Excel",
+            "DALL-E",
+            "Power BI",
+            "SQL Server"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 工具",
+        "number": 8,
+        "explanation": "正確答案是「DALL-E」，這是一款生成式 AI 工具，能生成圖像。其他選項不正確的原因如下：選項 A（Excel）是電子表格軟體；選項 C（Power BI）是資料視覺化工具；選項 D（SQL Server）是資料庫管理系統，均非生成式 AI 工具。"
+    },
+    {
+        "question": "生成式 AI 導入時的風險包括什麼？",
+        "options": [
+            "資料隱私、模型偏見、倫理問題",
+            "硬體成本過高",
+            "團隊缺乏程式設計技能",
+            "市場競爭壓力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入與風險管理",
+        "concept": "風險管理",
+        "number": 9,
+        "explanation": "正確答案是「資料隱私、模型偏見、倫理問題」，這些是生成式 AI 導入時的主要風險。其他選項不正確的原因如下：選項 B（硬體成本過高）屬於經濟考量；選項 C（團隊缺乏程式設計技能）屬於人力資源問題；選項 D（市場競爭壓力）屬於商業策略，均非直接風險。"
+    },
+    {
+        "question": "Transformer 模型的核心技術是什麼？",
+        "options": [
+            "卷積層",
+            "注意力機制（Attention Mechanism）",
+            "遞迴層",
+            "池化層"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.3.重要技術概念",
+        "concept": "Transformer 模型",
+        "number": 10,
+        "explanation": "正確答案是「注意力機制（Attention Mechanism）」，這是 Transformer 模型的核心技術，用於處理序列數據的依賴關係。其他選項不正確的原因如下：選項 A（卷積層）用於 CNN；選項 C（遞迴層）用於 RNN；選項 D（池化層）用於 CNN，均非 Transformer 的核心。"
+    },
+    {
+        "question": "以下哪個是多模態 AI 的應用例子？",
+        "options": [
+            "語音識別",
+            "GPT-4V 處理文本和圖像",
+            "垃圾郵件過濾",
+            "時間序列預測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.3.重要技術概念",
+        "concept": "多模態AI (Multimodal AI)",
+        "number": 11,
+        "explanation": "正確答案是「GPT-4V 處理文本和圖像」，這是多模態 AI 的典型應用，能同時處理多種數據類型。其他選項不正確的原因如下：選項 A（語音識別）是單模態應用；選項 C（垃圾郵件過濾）是監督式學習應用；選項 D（時間序列預測）通常使用 RNN，與多模態無關。"
+    },
+    {
+        "question": "生成式 AI 在醫療領域的應用是什麼？",
+        "options": [
+            "自動生成醫療報告",
+            "預測天氣變化",
+            "控制智能家居",
+            "分析市場趨勢"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用",
+        "number": 12,
+        "explanation": "正確答案是「自動生成醫療報告」，這是生成式 AI 在醫療領域的應用，能生成診斷報告或建議。其他選項不正確的原因如下：選項 B（預測天氣變化）屬於預測性 AI；選項 C（控制智能家居）屬於自動化系統；選項 D（分析市場趨勢）屬於數據分析，均非生成式 AI 應用。"
+    },
+    {
+        "question": "資料清洗的主要目的是什麼？",
+        "options": [
+            "移除數據中的錯誤或缺失值",
+            "將數據轉換為圖表",
+            "選擇合適的模型",
+            "分割訓練和測試數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "資料清洗",
+        "number": 13,
+        "explanation": "正確答案是「移除數據中的錯誤或缺失值」，這是資料清洗的主要目的，確保數據質量。其他選項不正確的原因如下：選項 B（將數據轉換為圖表）屬於資料視覺化；選項 C（選擇合適的模型）屬於建模階段；選項 D（分割訓練和測試數據）屬於數據準備階段，均非資料清洗。"
+    },
+    {
+        "question": "以下哪個是非監督式學習的例子？",
+        "options": [
+            "圖像分類",
+            "客戶分群",
+            "語言翻譯",
+            "垃圾郵件檢測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "非監督式學習",
+        "number": 14,
+        "explanation": "正確答案是「客戶分群」，這是非監督式學習的應用，使用未標記數據進行叢集。其他選項不正確的原因如下：選項 A（圖像分類）、選項 C（語言翻譯）、選項 D（垃圾郵件檢測）均屬於監督式學習，需要標記數據。"
+    },
+    {
+        "question": "生成式 AI 的倫理問題包括什麼？",
+        "options": [
+            "資料隱私、知識產權、模型偏見",
+            "硬體設備成本",
+            "程式設計語言選擇",
+            "市場競爭策略"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入與風險管理",
+        "concept": "倫理問題",
+        "number": 15,
+        "explanation": "正確答案是「資料隱私、知識產權、模型偏見」，這些是生成式 AI 的主要倫理問題。其他選項不正確的原因如下：選項 B（硬體設備成本）屬於經濟考量；選項 C（程式設計語言選擇）屬於技術實現；選項 D（市場競爭策略）屬於商業層面，均與倫理無關。"
+    },
+    {
+        "question": "以下哪個是 GAN 的實際應用？",
+        "options": [
+            "圖像風格轉換",
+            "語音識別",
+            "垃圾郵件分類",
+            "時間序列預測"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.2.生成模型類型",
+        "concept": "GAN (生成對抗網絡)",
+        "number": 16,
+        "explanation": "正確答案是「圖像風格轉換」，這是 GAN 的典型應用，如將照片轉換為畫作風格。其他選項不正確的原因如下：選項 B（語音識別）屬於感知 AI；選項 C（垃圾郵件分類）屬於監督式學習；選項 D（時間序列預測）屬於預測性模型，均非 GAN 應用。"
+    },
+    {
+        "question": "特徵縮放（Feature Scaling）的作用是什麼？",
+        "options": [
+            "將特徵值調整到相同範圍",
+            "生成新的數據樣本",
+            "分割數據集",
+            "選擇模型參數"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "特徵縮放",
+        "number": 17,
+        "explanation": "正確答案是「將特徵值調整到相同範圍」，特徵縮放確保不同特徵在模型訓練中具有相似的影響力。其他選項不正確的原因如下：選項 B（生成新的數據樣本）屬於生成模型；選項 C（分割數據集）屬於數據準備；選項 D（選擇模型參數）屬於模型調優，均非特徵縮放的作用。"
+    },
+    {
+        "question": "以下哪個是 No Code 平台的例子？",
+        "options": [
+            "Python",
+            "Bubble",
+            "TensorFlow",
+            "R"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code 平台與工具",
+        "concept": "No Code 平台",
+        "number": 18,
+        "explanation": "正確答案是「Bubble」，這是一款 No Code 平台，允許無程式設計經驗的使用者開發應用。其他選項不正確的原因如下：選項 A（Python）、選項 C（TensorFlow）、選項 D（R）均為程式設計語言或框架，需要編碼能力。"
+    },
+    {
+        "question": "生成式 AI 在商業領域的應用是什麼？",
+        "options": [
+            "自動生成行銷文案",
+            "預測天氣模式",
+            "語音識別",
+            "圖像分類"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用",
+        "number": 19,
+        "explanation": "正確答案是「自動生成行銷文案」，這是生成式 AI 在商業領域的應用，能生成廣告內容或文案。其他選項不正確的原因如下：選項 B（預測天氣模式）屬於預測性 AI；選項 C（語音識別）屬於感知 AI；選項 D（圖像分類）屬於監督式學習，均非生成式 AI 應用。"
+    },
+    {
+        "question": "過擬合（Overfitting）的特徵是什麼？",
+        "options": [
+            "模型在訓練數據上表現好，但在測試數據上表現差",
+            "模型在訓練和測試數據上都表現好",
+            "模型無法學習任何模式",
+            "模型訓練時間過長"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "過擬合",
+        "number": 20,
+        "explanation": "正確答案是「模型在訓練數據上表現好，但在測試數據上表現差」，這是過擬合的定義，模型過於適應訓練數據，泛化能力差。其他選項不正確的原因如下：選項 B（模型在訓練和測試數據上都表現好）是理想情況；選項 C（模型無法學習任何模式）是欠擬合；選項 D（模型訓練時間過長）與過擬合無關。"
+    }
+]

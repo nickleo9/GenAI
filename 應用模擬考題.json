@@ -318,5 +318,325 @@
         "concept": "過擬合",
         "number": 20,
         "explanation": "正確答案是「模型在訓練數據上表現好，但在測試數據上表現差」，這是過擬合的定義，模型過於適應訓練數據，泛化能力差。其他選項不正確的原因如下：選項 B（模型在訓練和測試數據上都表現好）是理想情況；選項 C（模型無法學習任何模式）是欠擬合；選項 D（模型訓練時間過長）與過擬合無關。"
+    },
+    {
+        "question": "人工智慧（AI）與機器學習（ML）的關係是什麼？",
+        "options": [
+            "機器學習是人工智慧的一個子領域",
+            "人工智慧是機器學習的一個分支",
+            "兩者完全獨立，互不相關",
+            "人工智慧僅限於深度學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "人工智慧概念",
+        "concept": "AI 與 ML 關係",
+        "number": 21,
+        "explanation": "正確答案是「機器學習是人工智慧的一個子領域」。人工智慧是一個廣泛的概念，涵蓋模擬人類智能的技術，而機器學習是實現 AI 的重要方法之一，專注於從數據中學習。選項 B 顛倒了兩者的關係；選項 C 忽略了它們的關聯；選項 D 太狹隘，AI 不僅限於深度學習。"
+    },
+    {
+        "question": "以下哪個是 AI 應用中最常見的數據類型？",
+        "options": [
+            "結構化數據",
+            "硬體規格數據",
+            "隨機雜訊數據",
+            "程式碼片段"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "數據類型",
+        "number": 22,
+        "explanation": "正確答案是「結構化數據」，如表格、數據庫中的數據，是 AI 應用中最常見的類型，易於處理和分析。選項 B（硬體規格數據）不屬於 AI 核心數據；選項 C（隨機雜訊數據）無意義；選項 D（程式碼片段）是工具而非數據。"
+    },
+    {
+        "question": "什麼是生成式 AI 的典型應用？",
+        "options": [
+            "生成圖像或文本",
+            "分類電子郵件",
+            "預測股票價格",
+            "識別語音指令"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用",
+        "number": 23,
+        "explanation": "正確答案是「生成圖像或文本」，生成式 AI 擅長創造新內容，如 DALL-E 生成圖像或 GPT 生成文本。選項 B 是分類任務，屬於監督式學習；選項 C 是預測任務；選項 D 是感知任務，都不是生成式 AI 的重點。"
+    },
+    {
+        "question": "以下哪個技術是生成對抗網絡（GAN）的基礎？",
+        "options": [
+            "生成器與判別器競爭",
+            "單一神經網絡訓練",
+            "監督式標記數據",
+            "決策樹分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.2.生成模型類型",
+        "concept": "GAN 原理",
+        "number": 24,
+        "explanation": "正確答案是「生成器與判別器競爭」，GAN 的核心是生成器製造數據，判別器評估真假，兩者對抗進步。選項 B 太簡單，GAN 不是單一網絡；選項 C 是監督式學習特徵，GAN 是生成模型；選項 D 是傳統機器學習方法，與 GAN 無關。"
+    },
+    {
+        "question": "監督式學習的訓練過程中需要什麼？",
+        "options": [
+            "帶標籤的數據集",
+            "未標記的數據集",
+            "隨機生成的數據",
+            "硬體加速設備"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "監督式學習",
+        "number": 25,
+        "explanation": "正確答案是「帶標籤的數據集」，監督式學習依賴輸入和對應輸出（標籤）來訓練模型。選項 B 適用於非監督式學習；選項 C 無意義；選項 D 是硬體需求，不是訓練核心。"
+    },
+    {
+        "question": "以下哪個工具專注於自然語言生成？",
+        "options": [
+            "BERT",
+            "GPT-3",
+            "YOLO",
+            "ResNet"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "自然語言生成工具",
+        "number": 26,
+        "explanation": "正確答案是「GPT-3」，它專為生成自然語言設計，如對話、文章等。選項 A（BERT）主要用於理解而非生成；選項 C（YOLO）和 D（ResNet）是圖像處理工具，與語言無關。"
+    },
+    {
+        "question": "資料清洗的主要目的是什麼？",
+        "options": [
+            "提高數據質量",
+            "增加數據量",
+            "加速模型訓練",
+            "生成新數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "資料清洗",
+        "number": 27,
+        "explanation": "正確答案是「提高數據質量」，資料清洗去除錯誤、重複或缺失值，確保模型輸入可靠。選項 B 不是清洗目標；選項 C 是間接結果；選項 D 是生成式 AI 的功能，不是清洗目的。"
+    },
+    {
+        "question": "什麼是過擬合（Overfitting）的徵兆？",
+        "options": [
+            "訓練數據表現好，測試數據表現差",
+            "訓練和測試數據都表現差",
+            "模型訓練時間過長",
+            "數據量不足"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "過擬合",
+        "number": 28,
+        "explanation": "正確答案是「訓練數據表現好，測試數據表現差」，過擬合指模型過於適應訓練數據，無法泛化。選項 B 是欠擬合；選項 C 和 D 可能是原因，但不是直接徵兆。"
+    },
+    {
+        "question": "以下哪個是 No Code 平台的優勢？",
+        "options": [
+            "快速開發應用",
+            "需要高級程式技能",
+            "專注於硬體優化",
+            "僅限於 AI 模型訓練"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code 平台與工具",
+        "concept": "No Code 優勢",
+        "number": 29,
+        "explanation": "正確答案是「快速開發應用」，No Code 平台通過簡單界面讓非專業人士也能快速創建應用。選項 B 與 No Code 相反；選項 C 和 D 與其功能無關。"
+    },
+    {
+        "question": "生成式 AI 在教育領域的應用可能是什麼？",
+        "options": [
+            "自動生成教材內容",
+            "預測學生分數",
+            "識別學生出勤",
+            "分析學校預算"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用",
+        "number": 30,
+        "explanation": "正確答案是「自動生成教材內容」，生成式 AI 可創作學習材料或練習題。選項 B 是預測任務；選項 C 是感知任務；選項 D 是數據分析，都不是生成式 AI 的典型應用。"
+    },
+    {
+        "question": "什麼是深度學習的核心技術？",
+        "options": [
+            "多層神經網絡",
+            "單一決策樹",
+            "線性回歸模型",
+            "隨機森林"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "深度學習概念",
+        "concept": "深度學習技術",
+        "number": 31,
+        "explanation": "正確答案是「多層神經網絡」，深度學習依賴多層結構提取複雜特徵。選項 B、C、D 屬於傳統機器學習，無法處理深度學習的複雜任務。"
+    },
+    {
+        "question": "以下哪個是生成式 AI 的挑戰？",
+        "options": [
+            "生成內容可能缺乏原創性",
+            "需要大量標籤數據",
+            "僅適用於圖像處理",
+            "訓練速度過快"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入與風險管理",
+        "concept": "生成式 AI 挑戰",
+        "number": 32,
+        "explanation": "正確答案是「生成內容可能缺乏原創性」，生成式 AI 有時會重複訓練數據模式。選項 B 是監督式學習需求；選項 C 太局限；選項 D 不現實，訓練通常耗時。"
+    },
+    {
+        "question": "什麼是強化學習的關鍵元素？",
+        "options": [
+            "獎勵機制",
+            "標籤數據",
+            "特徵工程",
+            "資料清洗"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "強化學習",
+        "number": 33,
+        "explanation": "正確答案是「獎勵機制」，強化學習通過獎勵引導 AI 學習最佳策略。選項 B 是監督式學習特徵；選項 C 和 D 是資料科學步驟，與強化學習無直接關係。"
+    },
+    {
+        "question": "以下哪個是 Transformer 模型的特點？",
+        "options": [
+            "基於注意力機制",
+            "僅使用卷積層",
+            "需要少量數據訓練",
+            "專為圖像設計"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.3.重要技術概念",
+        "concept": "Transformer 特點",
+        "number": 34,
+        "explanation": "正確答案是「基於注意力機制」，Transformer 用注意力取代循環結構，適用於 NLP。選項 B 是 CNN 特徵；選項 C 不正確，它需要大量數據；選項 D 錯誤，它主要用於語言處理。"
+    },
+    {
+        "question": "生成式 AI 的資料來源通常是什麼？",
+        "options": [
+            "大規模未標記數據",
+            "少量標記數據",
+            "隨機生成的數據",
+            "硬體性能數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "資料來源",
+        "number": 35,
+        "explanation": "正確答案是「大規模未標記數據」，生成式 AI 如 GAN 或 GPT 依賴大量未標記數據學習模式。選項 B 是監督式學習需求；選項 C 無意義；選項 D 與資料來源無關。"
+    },
+    {
+        "question": "什麼是多模態 AI 的目標？",
+        "options": [
+            "整合多種數據類型",
+            "提高單一數據處理速度",
+            "減少模型參數",
+            "簡化訓練流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "5.神經網路模型與技術",
+        "subtopic": "5.3.重要技術概念",
+        "concept": "多模態 AI",
+        "number": 36,
+        "explanation": "正確答案是「整合多種數據類型」，多模態 AI 處理文本、圖像等數據，提供全面分析。選項 B、C、D 不是其核心目標，更多是技術優化方向。"
+    },
+    {
+        "question": "以下哪個是 Low Code 平台的應用場景？",
+        "options": [
+            "快速開發業務應用",
+            "訓練複雜 AI 模型",
+            "分析大規模數據集",
+            "優化硬體性能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code 平台與工具",
+        "concept": "Low Code 應用",
+        "number": 37,
+        "explanation": "正確答案是「快速開發業務應用」，Low Code 平台簡化開發流程，適合業務需求。選項 B、C、D 屬於其他領域，與 Low Code 無直接關聯。"
+    },
+    {
+        "question": "生成式 AI 在醫療領域的潛在應用是什麼？",
+        "options": [
+            "生成醫療影像",
+            "預測疾病發病率",
+            "識別醫療設備故障",
+            "分析醫院財務數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用",
+        "number": 38,
+        "explanation": "正確答案是「生成醫療影像」，生成式 AI 可創建模擬影像用於研究或訓練。選項 B 是預測任務；選項 C 是感知任務；選項 D 是數據分析，都不是生成式應用。"
+    },
+    {
+        "question": "什麼是特徵提取（Feature Extraction）的目的？",
+        "options": [
+            "從數據中提取有意義的信息",
+            "增加數據集的大小",
+            "加速模型訓練時間",
+            "生成隨機特徵"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "特徵提取",
+        "number": 39,
+        "explanation": "正確答案是「從數據中提取有意義的信息」，特徵提取將原始數據轉化為模型可用的特徵。選項 B 無關；選項 C 是間接效果；選項 D 無意義。"
+    },
+    {
+        "question": "以下哪個是生成式 AI 的倫理考量？",
+        "options": [
+            "生成虛假信息",
+            "提高訓練效率",
+            "減少硬體成本",
+            "加速資料收集"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入與風險管理",
+        "concept": "倫理問題",
+        "number": 40,
+        "explanation": "正確答案是「生成虛假信息」，生成式 AI 可能被用於製造假新聞或偽造內容，是重大倫理問題。選項 B、C、D 是技術或經濟考量，與倫理無關。"
     }
 ]

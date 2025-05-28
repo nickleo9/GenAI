@@ -4,7 +4,7 @@
 <link rel="icon" href="data:,">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>多題庫AI認證練習系統</title>
+    <title>iPAS AI應用規劃師專業練習系統</title>
     <!-- Bootstrap CSS -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome Icons -->
@@ -14,10 +14,11 @@
         body {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             font-family: 'Microsoft JhengHei', Arial, sans-serif;
-            padding: 10px; 
-            padding-bottom: 0; /* 移除底部padding，改用其他方法 */
+            padding: 10px;
+            padding-bottom: 0;
             min-height: 100vh;
-            margin-bottom: 200px; /* 使用margin-bottom替代 */
+            margin-bottom: 120px;
+            overflow-x: hidden;
         }
         
         .main-container {
@@ -25,19 +26,12 @@
             border-radius: 20px;
             box-shadow: 0 20px 40px rgba(0, 0, 0, 0.1);
             margin: 10px auto;
-            margin-bottom: 200px !important; /* 強制大底部間距 */
+            margin-bottom: 130px;
             max-width: 95%;
             width: 100%;
             backdrop-filter: blur(10px);
-            min-height: calc(100vh - 300px);
-        }
-        
-        /* 在最後添加一個巨大的空白區域 */
-        .main-container::after {
-            content: '';
-            display: block;
-            height: 200px; /* 200px的空白區域 */
-            width: 100%;
+            min-height: calc(100vh - 250px);
+            padding-bottom: 40px;
         }
         
         .quiz-header {
@@ -57,7 +51,7 @@
             left: -50%;
             width: 200%;
             height: 200%;
-            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/><circle cx="90" cy="10" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="10" cy="90" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="60" cy="30" r="1" fill="rgba(255,255,255,0.1)"/></svg>');
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="20" cy="20" r="2" fill="rgba(255,255,255,0.1)"/><circle cx="80" cy="40" r="1" fill="rgba(255,255,255,0.1)"/><circle cx="40" cy="80" r="1.5" fill="rgba(255,255,255,0.1)"/></svg>');
             animation: float 20s ease-in-out infinite;
             pointer-events: none;
         }
@@ -74,69 +68,74 @@
             z-index: 2;
         }
         
-        .quiz-header p {
-            font-size: 0.9rem;
-            margin-bottom: 0;
-            position: relative;
-            z-index: 2;
-            opacity: 0.9;
+        .quiz-status {
+            position: absolute;
+            top: 10px;
+            right: 20px;
+            background: rgba(255, 255, 255, 0.9);
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 0.8rem;
+            font-weight: bold;
+            z-index: 3;
         }
         
-        .quiz-container {
-            background-color: #fff;
-            border-radius: 10px;
-            box-shadow: 0 0 15px rgba(0, 0, 0, 0.1);
-            padding: 20px;
-            margin: 20px;
+        .quiz-status.active {
+            background: #28a745;
+            color: white;
+            animation: pulse 2s infinite;
+        }
+        
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.05); }
         }
         
         .database-selector {
             background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
             border-radius: 15px;
-            padding: 15px; /* 減少內距 */
-            margin: 15px; /* 調整外距 */
+            padding: 20px;
+            margin: 20px;
             color: white;
+            transition: all 0.3s ease;
         }
         
-        .database-selector h3 {
-            font-size: 1.3rem; /* 調整標題大小 */
-            margin-bottom: 15px;
+        .database-selector.disabled {
+            opacity: 0.5;
+            pointer-events: none;
+            filter: grayscale(70%);
+            position: relative;
+        }
+        
+        .database-selector.disabled::after {
+            content: '🔒 測驗進行中，無法切換題庫';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 10px 20px;
+            border-radius: 10px;
+            font-weight: bold;
+            z-index: 10;
         }
         
         .database-card {
             background: rgba(255, 255, 255, 0.2);
             border: 2px solid rgba(255, 255, 255, 0.3);
             border-radius: 12px;
-            padding: 15px; /* 減少內距 */
-            margin: 8px 0; /* 減少間距 */
+            padding: 20px;
+            margin: 10px 0;
             cursor: pointer;
             transition: all 0.3s ease;
             backdrop-filter: blur(5px);
         }
         
-        .database-card i {
-            font-size: 2.2rem; /* 稍微縮小圖標 */
-            margin-bottom: 10px;
-        }
-        
-        .database-card h5 {
-            font-size: 1.1rem;
-            margin-bottom: 8px;
-        }
-        
-        .database-card p {
-            font-size: 0.85rem;
-            margin-bottom: 5px;
-        }
-        
-        .database-card small {
-            font-size: 0.75rem;
-        }
-        
-        .database-card:hover {
+        .database-card:hover:not(.disabled) {
             background: rgba(255, 255, 255, 0.3);
             border-color: rgba(255, 255, 255, 0.6);
-            transform: translateY(-2px);
+            transform: translateY(-3px);
         }
         
         .database-card.selected {
@@ -145,7 +144,15 @@
             box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
         }
         
-        /* 選項卡片美化 */
+        .quiz-container {
+            background-color: #fff;
+            border-radius: 15px;
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+            padding: 25px;
+            margin: 20px;
+            margin-bottom: 40px;
+        }
+        
         .option-label {
             display: block;
             border: 2px solid #e1e8ed;
@@ -219,8 +226,93 @@
             display: none;
         }
         
+        .explanation-box {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-left: 5px solid #007bff;
+            padding: 25px;
+            margin-top: 20px;
+            border-radius: 12px;
+            min-height: 150px;
+            max-height: 500px;
+            overflow-y: auto;
+            word-wrap: break-word;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .explanation-box::-webkit-scrollbar {
+            width: 8px;
+        }
+        
+        .explanation-box::-webkit-scrollbar-track {
+            background: #f1f1f1;
+            border-radius: 5px;
+        }
+        
+        .explanation-box::-webkit-scrollbar-thumb {
+            background: #007bff;
+            border-radius: 5px;
+        }
+        
+        .explanation-box::-webkit-scrollbar-thumb:hover {
+            background: #0056b3;
+        }
+        
+        .bottom-nav {
+            position: fixed;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.98));
+            backdrop-filter: blur(20px);
+            border-top: 1px solid rgba(0, 0, 0, 0.1);
+            z-index: 1040;
+            padding: 20px 0;
+            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
+        }
+        
+        .btn {
+            border-radius: 12px;
+            font-weight: 600;
+            padding: 12px 8px;
+            transition: all 0.3s ease;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+            border: none;
+            font-size: 0.85rem;
+            min-height: 45px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        
+        .btn:hover:not(:disabled) {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+        }
+        
+        .progress {
+            height: 12px;
+            margin-bottom: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        
+        .progress-bar {
+            background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
+            transition: width 0.5s ease;
+        }
+        
+        .badge-custom {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            font-size: 0.9rem;
+            padding: 8px 15px;
+            border-radius: 20px;
+            margin: 5px;
+        }
+        
         .timer {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             font-weight: bold;
             color: #FF5722;
             background: rgba(255, 255, 255, 0.9);
@@ -238,19 +330,6 @@
             0% { opacity: 1; }
             50% { opacity: 0.5; }
             100% { opacity: 1; }
-        }
-        
-        .explanation-box {
-            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
-            border-left: 5px solid #007bff;
-            padding: 25px;
-            margin-top: 20px;
-            border-radius: 12px;
-            min-height: 150px;
-            max-height: 500px;
-            overflow-y: auto;
-            word-wrap: break-word;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         
         .correct {
@@ -275,107 +354,25 @@
             border-left: 4px solid #ffc107;
         }
         
-        .ai-generation-panel {
-            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
-            border-radius: 15px;
-            padding: 15px;
-            margin: 15px 15px 80px 15px;
-            color: white;
-            display: none;
-            position: relative;
-            overflow: hidden;
-            box-shadow: 0 8px 32px rgba(255, 107, 107, 0.3);
-        }
-        
-        .ai-generation-panel::before {
-            content: '🤖';
-            position: absolute;
-            top: 15px;
-            right: 20px;
-            font-size: 2rem;
-            opacity: 0.4;
-            animation: robot-move 3s ease-in-out infinite;
-        }
-        
-        @keyframes robot-move {
-            0%, 100% { transform: rotate(0deg) scale(1); }
-            25% { transform: rotate(-5deg) scale(1.1); }
-            75% { transform: rotate(5deg) scale(0.9); }
-        }
-        
-        .ai-generation-panel h4 {
-            font-size: 1.2rem;
-            margin-bottom: 15px;
-            position: relative;
-            z-index: 2;
-        }
-        
-        .topic-input-group {
-            background: rgba(255, 255, 255, 0.2);
+        .nav-brand {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white !important;
+            font-weight: bold;
             border-radius: 10px;
-            padding: 12px;
-            margin: 8px 0;
-            backdrop-filter: blur(5px);
-            border: 1px solid rgba(255, 255, 255, 0.3);
-            transition: all 0.3s ease;
+            padding: 8px 16px !important;
         }
         
-        .topic-input-group:hover {
-            background: rgba(255, 255, 255, 0.25);
-            border-color: rgba(255, 255, 255, 0.5);
+        .settings-panel {
+            background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+            border-radius: 15px;
+            padding: 25px;
+            margin: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
         }
         
-        .topic-input-group textarea,
-        .topic-input-group select {
-            background: rgba(255, 255, 255, 0.9) !important;
-            border: 1px solid rgba(255, 255, 255, 0.5) !important;
-            color: #333 !important;
-        }
-        
-        .topic-input-group textarea:focus,
-        .topic-input-group select:focus {
-            background: rgba(255, 255, 255, 1) !important;
-            border-color: #007bff !important;
-            box-shadow: 0 0 10px rgba(0, 123, 255, 0.3) !important;
-        }
-        
-        /* 設定面板美化 */
-        .setting-group {
-            height: 100%;
-            display: flex;
-            flex-direction: column;
-        }
-        
-        .setting-label {
-            font-weight: 600;
-            color: #2c3e50;
-            margin-bottom: 12px;
-            font-size: 0.95rem;
-            display: flex;
-            align-items: center;
-        }
-        
-        .custom-select {
-            border: 2px solid #e1e8ed;
-            border-radius: 12px;
-            padding: 12px 16px;
-            font-size: 0.9rem;
-            transition: all 0.3s ease;
-            background: linear-gradient(145deg, #f8f9fa, #ffffff);
-        }
-        
-        .custom-select:focus {
-            border-color: #667eea;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1);
-            outline: none;
-        }
-        
-        /* 模式按鈕組 */
-        .mode-buttons {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            flex-grow: 1;
+        .settings-panel.disabled {
+            opacity: 0.6;
+            pointer-events: none;
         }
         
         .mode-btn {
@@ -385,20 +382,13 @@
             padding: 12px 16px;
             cursor: pointer;
             transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            text-align: left;
-            font-size: 0.9rem;
-            flex-grow: 1;
-            position: relative;
-            overflow: hidden;
+            margin: 5px;
+            font-weight: 600;
         }
         
         .mode-btn:hover {
             border-color: #667eea;
             transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
         }
         
         .mode-btn.active {
@@ -408,513 +398,21 @@
             box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
         }
         
-        .mode-btn i {
-            font-size: 1.1rem;
-            width: 20px;
-            text-align: center;
-        }
-        
-        .mode-btn span {
-            font-weight: 600;
-            display: block;
-        }
-        
-        .mode-btn small {
-            opacity: 0.8;
-            font-size: 0.75rem;
-            display: block;
-            margin-left: auto;
-        }
-        
-        /* 自定義單選按鈕組 */
-        .custom-radio-group {
-            display: flex;
-            flex-direction: column;
-            gap: 8px;
-            flex-grow: 1;
-        }
-        
-        .custom-radio-group input[type="radio"] {
-            display: none;
-        }
-        
-        .custom-radio-label {
-            background: linear-gradient(145deg, #ffffff, #f8f9fa);
-            border: 2px solid #e1e8ed;
-            border-radius: 12px;
-            padding: 12px 16px;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            display: flex;
-            align-items: center;
-            gap: 10px;
-            font-size: 0.9rem;
-            position: relative;
-            flex-grow: 1;
-        }
-        
-        .custom-radio-label:hover {
-            border-color: #667eea;
-            transform: translateY(-1px);
-            box-shadow: 0 4px 12px rgba(102, 126, 234, 0.15);
-        }
-        
-        .custom-radio-group input[type="radio"]:checked + .custom-radio-label {
-            background: linear-gradient(135deg, #ffd89b, #19547b);
-            border-color: #f39c12;
-            color: white;
-            box-shadow: 0 4px 15px rgba(243, 156, 18, 0.3);
-        }
-        
-        .custom-radio-label i {
-            font-size: 1.1rem;
-            width: 20px;
-            text-align: center;
-        }
-        
-        .custom-radio-label span {
-            font-weight: 600;
-            display: block;
-        }
-        
-        .custom-radio-label small {
-            opacity: 0.8;
-            font-size: 0.75rem;
-            display: block;
-            margin-left: auto;
-        }
-        
-        .ai-model-dropdown {
-            background: rgba(255, 255, 255, 0.95);
-            border: 2px solid #e1e8ed;
-            border-radius: 12px;
-            padding: 12px;
-            margin-top: 8px;
-            animation: slideDown 0.3s ease;
-            backdrop-filter: blur(5px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-            display: none; /* 預設隱藏 */
-        }
-        
-        .ai-model-dropdown.show {
-            display: block !important;
-        }
-        
-        .ai-model-dropdown select {
-            background: white !important;
-            border: 2px solid #dee2e6 !important;
-            border-radius: 8px !important;
-            padding: 8px 12px !important;
-            color: #333 !important;
-            font-size: 0.9rem !important;
-        }
-        
-        .ai-model-dropdown select:focus {
-            border-color: #667eea !important;
-            box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.1) !important;
-            outline: none !important;
-        }
-        
-        .ai-model-dropdown label {
-            color: #2c3e50 !important;
-            font-weight: 600 !important;
-            margin-bottom: 8px !important;
-            display: block !important;
-        }
-        
-        @keyframes slideDown {
-            from {
-                opacity: 0;
-                transform: translateY(-10px);
-            }
-            to {
-                opacity: 1;
-                transform: translateY(0);
-            }
-        }
-        
-        /* 開始測驗按鈕 */
-        .start-quiz-btn {
-            width: 100%;
-            height: 60px;
-            background: linear-gradient(135deg, #ff6b6b, #ee5a24);
-            border: none;
-            border-radius: 15px;
-            color: white;
-            font-weight: bold;
-            font-size: 1.1rem;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            transition: all 0.3s ease;
-            box-shadow: 0 6px 20px rgba(255, 107, 107, 0.3);
-            margin-bottom: 12px;
-        }
-        
-        .start-quiz-btn::before {
-            content: '🚀';
-            position: absolute;
-            top: 50%;
-            left: -30px;
-            transform: translateY(-50%);
-            font-size: 1.5rem;
-            animation: rocket 2s ease-in-out infinite;
-        }
-        
-        @keyframes rocket {
-            0%, 100% { left: -30px; opacity: 0; }
-            50% { left: 15px; opacity: 1; }
-        }
-        
-        .start-quiz-btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 8px 25px rgba(255, 107, 107, 0.4);
-        }
-        
-        .start-quiz-btn:hover:not(:disabled)::before {
-            animation-duration: 0.5s;
-        }
-        
-        .start-quiz-btn:disabled {
-            background: linear-gradient(135deg, #bdc3c7, #95a5a6);
-            cursor: not-allowed;
-            box-shadow: none;
-        }
-        
-        .start-quiz-btn:disabled::before {
-            display: none;
-        }
-        
-        .btn-content {
-            position: relative;
-            z-index: 2;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            gap: 10px;
-        }
-        
-        .btn-shine {
-            position: absolute;
-            top: 0;
-            left: -100%;
-            width: 100%;
-            height: 100%;
-            background: linear-gradient(90deg, transparent, rgba(255,255,255,0.3), transparent);
-            transition: left 0.5s;
-        }
-        
-        .start-quiz-btn:hover:not(:disabled) .btn-shine {
-            left: 100%;
-        }
-        
-        /* 計時器顯示 */
-        .timer-display {
-            background: linear-gradient(135deg, #f8f9fa, #e9ecef);
-            border: 2px solid #dee2e6;
-            border-radius: 12px;
-            padding: 10px 16px;
-            text-align: center;
-            font-size: 0.9rem;
-            color: #6c757d;
-            font-weight: 500;
-        }
-        
-        .timer-display.active {
-            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
-            border-color: #ffc107;
-            color: #856404;
-        }
-        
-        .timer-display.warning {
-            background: linear-gradient(135deg, #f8d7da, #f5c6cb);
-            border-color: #dc3545;
-            color: #721c24;
-            animation: pulse 1s infinite;
-        }
-        
-        @keyframes pulse {
-            0% { transform: scale(1); }
-            50% { transform: scale(1.02); }
-            100% { transform: scale(1); }
-        }
-        
-        /* 底部導航美化 */
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.98));
-            backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            padding: 20px 0; /* 增加內部間距 */
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1); /* 增加陰影 */
-        }
-        
-        .bottom-nav .container-fluid {
-            max-width: 1200px;
-            margin: 0 auto;
-            padding: 0 20px;
-        }
-        
-        /* 底部導航按鈕樣式優化 */
-        .bottom-nav .btn {
-            border-radius: 12px;
-            font-weight: 600;
-            padding: 12px 8px; /* 調整內距 */
-            transition: all 0.3s ease;
-            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
-            border: none;
-            font-size: 0.85rem;
-            min-height: 45px; /* 確保按鈕高度一致 */
-            display: flex;
-            align-items: center;
-            justify-content: center;
-        }
-        
-        .bottom-nav .btn:hover:not(:disabled) {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
-        }
-        
-        .bottom-nav .btn:disabled {
-            opacity: 0.5;
-            transform: none;
-            box-shadow: none;
-        }
-        
-        .bottom-nav .btn-secondary {
+        .back-to-selection {
             background: linear-gradient(135deg, #6c757d, #495057);
             color: white;
-        }
-        
-        .bottom-nav .btn-primary {
-            background: linear-gradient(135deg, #007bff, #0056b3);
-            color: white;
-        }
-        
-        .bottom-nav .btn-warning {
-            background: linear-gradient(135deg, #ffc107, #e0a800);
-            color: #212529;
-            font-weight: 700;
-        }
-        
-        .bottom-nav .btn-info {
-            background: linear-gradient(135deg, #17a2b8, #138496);
-            color: white;
-        }
-        
-        /* 手機端按鈕文字隱藏優化 */
-        @media (max-width: 576px) {
-            .bottom-nav .btn {
-                padding: 10px 5px;
-                font-size: 0.8rem;
-            }
-            
-            .bottom-nav .btn i {
-                font-size: 1.1rem;
-            }
-        }
-        
-        /* 確保內容不會被底部導航遮住 */
-        .quiz-container:last-of-type {
-            margin-bottom: 40px;
-        }
-        
-        /* 響應式調整 - 更激進的底部間距 */
-        @media (max-width: 768px) {
-            body {
-                padding: 5px;
-                margin-bottom: 250px; /* 手機端更大底部間距 */
-            }
-            
-            .main-container {
-                margin: 5px auto;
-                margin-bottom: 250px !important;
-                border-radius: 15px;
-                max-width: 98%;
-                min-height: calc(100vh - 360px);
-            }
-            
-            .main-container::after {
-                height: 250px; /* 手機端更大空白區域 */
-            }
-            
-            body::after {
-                height: 200px; /* 手機端更大底部空白 */
-            }
-            
-            .quiz-header {
-                padding: 15px;
-                border-radius: 15px 15px 0 0;
-            }
-            
-            .quiz-header h1 {
-                font-size: 1.5rem;
-            }
-            
-            .database-selector, .quiz-container, .ai-generation-panel {
-                margin: 10px;
-                margin-bottom: 80px !important; /* 強制底部間距 */
-                padding: 12px;
-                padding-bottom: 40px !important; /* 額外內部間距 */
-            }
-            
-            .database-card {
-                padding: 12px;
-                margin: 6px 0;
-            }
-            
-            .database-card i {
-                font-size: 2rem;
-            }
-            
-            .bottom-nav {
-                padding: 15px 0;
-                z-index: 99999 !important;
-            }
-            
-            .bottom-nav .btn {
-                padding: 10px 12px;
-                font-size: 0.8rem;
-            }
-            
-            .bottom-nav .container-fluid {
-                padding: 0 10px;
-            }
-            
-            #quiz-container {
-                padding-bottom: 200px !important; /* 手機端巨大底部間距 */
-                margin-bottom: 150px !important;
-            }
-            
-            #settings-panel {
-                margin-bottom: 180px !important; /* 手機端設定面板巨大底部間距 */
-                padding-bottom: 80px !important;
-            }
-            
-            .ai-model-dropdown {
-                margin-bottom: 60px !important;
-            }
-        }
-        
-        @media (max-width: 576px) {
-            .main-container {
-                max-width: 100%;
-                margin: 0;
-                margin-bottom: 300px !important;
-                border-radius: 0;
-            }
-            
-            .main-container::after {
-                height: 300px; /* 超小螢幕最大空白區域 */
-            }
-            
-            .quiz-header {
-                border-radius: 0;
-            }
-            
-            body {
-                padding: 0;
-                margin-bottom: 300px; /* 超小螢幕最大底部間距 */
-            }
-            
-            body::after {
-                height: 250px; /* 超小螢幕最大底部空白 */
-            }
-            
-            .quiz-container, .ai-generation-panel {
-                margin-bottom: 120px !important;
-                padding-bottom: 60px !important;
-            }
-            
-            #settings-panel {
-                margin-bottom: 200px !important;
-                padding-bottom: 100px !important;
-            }
-            
-            .ai-model-dropdown {
-                margin-bottom: 80px !important;
-            }
-        }
-        
-        /* 底部導航高度和定位 */
-        .bottom-nav {
-            position: fixed !important;
-            bottom: 0 !important;
-            left: 0;
-            right: 0;
-            background: linear-gradient(145deg, rgba(255, 255, 255, 0.98), rgba(248, 249, 250, 0.98));
-            backdrop-filter: blur(20px);
-            border-top: 1px solid rgba(0, 0, 0, 0.1);
-            z-index: 9999 !important; /* 超高層級 */
-            padding: 20px 0;
-            box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
-            height: 80px;
-            width: 100%;
-            min-height: 80px; /* 確保最小高度 */
-        }
-        
-        /* 確保頁面有足夠的底部空間給固定導航 */
-        html {
-            scroll-padding-bottom: 100px;
-        }
-        
-        body {
-            scroll-padding-bottom: 100px;
-        }
-        
-        /* 為頁面添加底部空白區域 */
-        body::after {
-            content: '';
-            display: block;
-            height: 150px; /* 巨大的底部空白 */
-            width: 100%;
-        }
-        
-        .badge-custom {
-            background: linear-gradient(45deg, #667eea, #764ba2);
-            color: white;
-            font-size: 0.9rem;
-            padding: 8px 15px;
-            border-radius: 20px;
-            margin: 5px;
-        }
-        
-        .progress {
-            height: 12px;
-            margin-bottom: 20px;
+            border: none;
             border-radius: 10px;
-            overflow: hidden;
-            box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+            padding: 8px 16px;
+            font-size: 0.85rem;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            margin-bottom: 15px;
         }
         
-        .progress-bar {
-            background: linear-gradient(45deg, #4facfe 0%, #00f2fe 100%);
-            transition: width 0.5s ease;
-        }
-        
-        .bottom-nav {
-            position: fixed;
-            bottom: 0;
-            left: 0;
-            right: 0;
-            background: linear-gradient(45deg, rgba(255, 255, 255, 0.95), rgba(248, 249, 250, 0.95));
-            backdrop-filter: blur(10px);
-            box-shadow: 0 -2px 20px rgba(0, 0, 0, 0.1);
-            z-index: 1000;
-            padding: 15px 0;
-        }
-        
-        .stats-card {
-            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
-            color: white;
-            border-radius: 15px;
-            padding: 20px;
-            margin: 10px 0;
-            text-align: center;
+        .back-to-selection:hover {
+            transform: translateY(-1px);
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
         }
         
         .overlay {
@@ -928,6 +426,7 @@
             justify-content: center;
             align-items: center;
             z-index: 2000;
+            flex-direction: column;
         }
         
         .loader {
@@ -937,6 +436,7 @@
             width: 60px;
             height: 60px;
             animation: spin 1s linear infinite;
+            margin-bottom: 20px;
         }
         
         @keyframes spin {
@@ -944,209 +444,411 @@
             100% { transform: rotate(360deg); }
         }
         
+        .loading-text {
+            color: white;
+            font-size: 1.2rem;
+            font-weight: bold;
+        }
+        
         @media (max-width: 768px) {
+            body {
+                margin-bottom: 130px;
+            }
+            
             .main-container {
-                margin: 10px;
+                margin: 5px auto;
+                margin-bottom: 140px;
                 border-radius: 15px;
+                max-width: 98%;
+                padding-bottom: 50px;
             }
             
             .quiz-header {
-                padding: 20px;
+                padding: 15px;
                 border-radius: 15px 15px 0 0;
             }
             
-            .database-selector, .quiz-container {
+            .database-selector, .quiz-container, .settings-panel {
                 margin: 10px;
                 padding: 15px;
+                margin-bottom: 20px;
+            }
+            
+            .database-card {
+                padding: 15px;
+                margin: 8px 0;
             }
         }
-        
-        .fade-in {
-            animation: fadeIn 0.5s ease-in;
-        }
-        
-        @keyframes fadeIn {
-            from { opacity: 0; transform: translateY(20px); }
-            to { opacity: 1; transform: translateY(0); }
-        }
     </style>
+
+    <script>
+        // 載入題庫資料
+        let quizData = {
+            'generative-ai': [],
+            'ipas': []
+        };
+
+        async function loadQuizDatabases() {
+            try {
+                console.log('🔍 開始載入題庫...');
+                
+                // 載入生成式AI題庫
+                try {
+                    const response1 = await fetch('./模擬考題.json');
+                    if (response1.ok) {
+                        const data1 = await response1.json();
+                        if (Array.isArray(data1) && data1.length > 0) {
+                            quizData['generative-ai'] = data1;
+                            console.log('✅ 生成式AI題庫已載入:', quizData['generative-ai'].length + '題');
+                        } else {
+                            throw new Error('題庫格式錯誤或為空');
+                        }
+                    } else {
+                        throw new Error(`HTTP ${response1.status}`);
+                    }
+                } catch (error) {
+                    console.warn('⚠️ 生成式AI題庫載入失敗:', error.message);
+                    quizData['generative-ai'] = [];
+                }
+                
+                // 載入iPAS題庫
+                try {
+                    const response2 = await fetch('./應用模擬考題.json');
+                    if (response2.ok) {
+                        const data2 = await response2.json();
+                        if (Array.isArray(data2) && data2.length > 0) {
+                            quizData['ipas'] = data2;
+                            console.log('✅ iPAS題庫已載入:', quizData['ipas'].length + '題');
+                        } else {
+                            throw new Error('題庫格式錯誤或為空');
+                        }
+                    } else {
+                        throw new Error(`HTTP ${response2.status}`);
+                    }
+                } catch (error) {
+                    console.warn('⚠️ iPAS題庫載入失敗:', error.message);
+                    quizData['ipas'] = [];
+                }
+                
+                // 檢查是否需要生成示例數據
+                if (quizData['ipas'].length === 0 && quizData['generative-ai'].length === 0) {
+                    console.log('📝 兩個題庫都載入失敗，生成示例題庫...');
+                    quizData['ipas'] = generateSampleQuestions();
+                    quizData['generative-ai'] = generateSampleAIQuestions();
+                    
+                    // 顯示提示訊息
+                    setTimeout(() => {
+                        if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showAlert) {
+                            iPASQuizApp.showAlert('題庫檔案未找到，已載入示例題目供測試！\n請確保 模擬考題.json 和 應用模擬考題.json 在正確位置。', 'warning');
+                        } else {
+                            alert('題庫檔案未找到，已載入示例題目供測試！\n請確保 模擬考題.json 和 應用模擬考題.json 在正確位置。');
+                        }
+                    }, 1000);
+                } else if (quizData['ipas'].length === 0) {
+                    console.log('📝 iPAS題庫載入失敗，生成示例iPAS題庫...');
+                    quizData['ipas'] = generateSampleQuestions();
+                } else if (quizData['generative-ai'].length === 0) {
+                    console.log('📝 生成式AI題庫載入失敗，生成示例AI題庫...');
+                    quizData['generative-ai'] = generateSampleAIQuestions();
+                }
+                
+                console.log('📚 題庫載入完成');
+                console.log('📊 載入狀態:', {
+                    'iPAS題庫': quizData['ipas'].length + '題',
+                    '生成式AI題庫': quizData['generative-ai'].length + '題'
+                });
+                
+            } catch (error) {
+                console.error('❌ 題庫載入發生嚴重錯誤:', error);
+                // 確保至少有一些題目可用
+                quizData['ipas'] = generateSampleQuestions();
+                quizData['generative-ai'] = generateSampleAIQuestions();
+                
+                setTimeout(() => {
+                    if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showAlert) {
+                        iPASQuizApp.showAlert('題庫載入失敗，已載入示例題目！', 'error');
+                    } else {
+                        alert('題庫載入失敗，已載入示例題目！');
+                    }
+                }, 1000);
+            }
+        }
+
+        // 生成示例iPAS題目
+        function generateSampleQuestions() {
+            return [
+                {
+                    question: "根據經濟部iPAS認證標準，AI應用規劃師需要具備哪項核心能力？",
+                    options: [
+                        "程式設計與演算法開發",
+                        "AI技術應用與商業價值評估",
+                        "硬體設備維護與管理",
+                        "資料庫管理與網路安全"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "AI應用規劃師主要負責評估AI技術的商業應用價值，規劃AI專案的實施策略，而非純技術開發工作。",
+                    topic: "AI應用規劃",
+                    subtopic: "核心能力"
+                },
+                {
+                    question: "在AI專案規劃階段，以下哪個步驟最為重要？",
+                    options: [
+                        "選擇最先進的AI技術",
+                        "確保充足的硬體資源",
+                        "明確定義問題與目標",
+                        "招募更多技術人員"
+                    ],
+                    correct_answer_letter: "C",
+                    correct_answer_index: 2,
+                    explanation: "明確定義問題與目標是AI專案成功的基礎，只有清楚了解要解決什麼問題，才能選擇適合的技術方案。",
+                    topic: "專案管理",
+                    subtopic: "需求分析"
+                },
+                {
+                    question: "機器學習模型的「過度擬合」(Overfitting)會導致什麼問題？",
+                    options: [
+                        "訓練時間過長",
+                        "模型在新資料上表現不佳",
+                        "記憶體使用過多",
+                        "計算成本過高"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "過度擬合指模型過度學習訓練資料的細節，導致在未見過的新資料上泛化能力差，預測準確性下降。",
+                    topic: "機器學習",
+                    subtopic: "模型評估"
+                },
+                {
+                    question: "AI專案的ROI（投資報酬率）評估應該考慮哪些主要因素？",
+                    options: [
+                        "只考慮技術開發成本",
+                        "技術成本、人力成本、維護成本與預期效益",
+                        "只考慮軟體授權費用",
+                        "只考慮硬體採購成本"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "完整的ROI評估需要考慮所有相關成本（技術、人力、維護）以及預期的商業效益，才能做出正確的投資決策。",
+                    topic: "商業分析",
+                    subtopic: "成本效益分析"
+                },
+                {
+                    question: "在AI專案中，資料治理（Data Governance）的主要目的是什麼？",
+                    options: [
+                        "增加資料的數量",
+                        "確保資料的品質、安全性和合規性",
+                        "減少資料的儲存成本",
+                        "加快資料的處理速度"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "資料治理的核心是建立框架來管理資料的品質、安全性、隱私保護和法規遵循，確保AI專案使用高品質且合規的資料。",
+                    topic: "資料管理",
+                    subtopic: "資料治理"
+                }
+            ];
+        }
+
+        // 生成示例生成式AI題目
+        function generateSampleAIQuestions() {
+            return [
+                {
+                    question: "生成式AI的主要特徵是什麼？",
+                    options: [
+                        "只能分析現有資料",
+                        "能夠創造新的內容或資料",
+                        "只能處理數值型資料",
+                        "只能執行分類任務"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "生成式AI的核心特徵是能夠學習資料的分布並生成新的、類似的內容，如文字、圖像、音樂等。",
+                    topic: "生成式AI基礎",
+                    subtopic: "基本概念"
+                },
+                {
+                    question: "GPT模型中的'T'代表什麼？",
+                    options: [
+                        "Training（訓練）",
+                        "Transformer（轉換器）",
+                        "Testing（測試）",
+                        "Technology（技術）"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "GPT代表Generative Pre-trained Transformer，其中T指的是Transformer架構，這是GPT模型的核心技術基礎。",
+                    topic: "大型語言模型",
+                    subtopic: "GPT系列"
+                },
+                {
+                    question: "Prompt Engineering的主要目的是什麼？",
+                    options: [
+                        "提高模型的運算速度",
+                        "優化輸入指令以獲得更好的輸出結果",
+                        "減少模型的參數數量",
+                        "降低模型的記憶體使用"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "Prompt Engineering是設計和優化輸入提示詞的技術，目的是引導AI模型產生更準確、更符合需求的回應。",
+                    topic: "提示工程",
+                    subtopic: "基本原理"
+                }
+            ];
+        }
+
+        // 頁面載入時自動載入題庫
+        document.addEventListener('DOMContentLoaded', loadQuizDatabases);
+    </script>
 </head>
 <body>
+    <!-- 頂部導航 -->
+    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+        <div class="container-fluid">
+            <a class="navbar-brand nav-brand" href="#">
+                <i class="fas fa-graduation-cap me-2"></i>iPAS AI應用規劃師
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="save-btn">
+                            <i class="fas fa-save me-1"></i>儲存進度
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="export-btn">
+                            <i class="fas fa-download me-1"></i>匯出錯題
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="stats-btn">
+                            <i class="fas fa-chart-bar me-1"></i>學習統計
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="help-btn">
+                            <i class="fas fa-question-circle me-1"></i>使用說明
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <div style="height: 70px;"></div> <!-- 導航欄間距 -->
+
     <div class="main-container">
+        <!-- 測驗狀態指示器 -->
+        <div id="quiz-status" class="quiz-status" style="display: none;">
+            <i class="fas fa-lock me-1"></i>測驗進行中
+        </div>
+        
         <div class="quiz-header">
-            <h1><i class="fas fa-brain me-3"></i>多題庫AI認證練習系統</h1>
-            <p class="mb-0">支援生成式AI認證 & iPAS AI應用規劃師 & AI智能出題</p>
+            <h1><i class="fas fa-brain me-3"></i>iPAS AI應用規劃師專業練習系統</h1>
+            <p class="mb-0">經濟部產業人才能力鑑定 - 8月考試衝刺專用</p>
         </div>
         
         <!-- 題庫選擇區 -->
-        <div class="database-selector">
-            <h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇題庫類型</h3>
+        <div class="database-selector" id="database-selector">
+            <h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇練習題庫</h3>
             <div class="row">
-                <div class="col-md-4">
+                <div class="col-md-6">
+                    <div class="database-card" data-type="ipas">
+                        <div class="text-center">
+                            <i class="fas fa-star fa-3x mb-3" style="color: #ffd700;"></i>
+                            <h5>iPAS AI應用規劃師</h5>
+                            <p class="mb-2">經濟部產業人才能力鑑定</p>
+                            <small>⭐ 主要考試題庫 - 重點練習</small>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
                     <div class="database-card" data-type="generative-ai">
                         <div class="text-center">
                             <i class="fas fa-robot fa-3x mb-3"></i>
                             <h5>生成式AI認證</h5>
                             <p class="mb-2">資策會生成式AI能力認證</p>
-                            <small>原有題庫 - 檔案: 模擬考題.json</small>
+                            <small>輔助練習 - 補強基礎知識</small>
                         </div>
                     </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="database-card" data-type="ipas">
-                        <div class="text-center">
-                            <i class="fas fa-certificate fa-3x mb-3"></i>
-                            <h5>iPAS AI應用規劃師</h5>
-                            <p class="mb-2">經濟部產業人才能力鑑定</p>
-                            <small>新增題庫 - 檔案: 應用模擬考題.json</small>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-md-4">
-                    <div class="database-card" data-type="ai-generated">
-                        <div class="text-center">
-                            <i class="fas fa-magic fa-3x mb-3"></i>
-                            <h5>AI智能出題</h5>
-                            <p class="mb-2">根據指定主題生成題目</p>
-                            <small>動態生成 - 多種AI模型支援</small>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- AI出題面板 -->
-        <div class="ai-generation-panel" id="ai-panel">
-            <h4><i class="fas fa-wand-magic-sparkles me-2"></i>AI智能出題設定</h4>
-            <div class="topic-input-group">
-                <label class="form-label"><strong>請輸入出題主題或領域：</strong></label>
-                <textarea id="ai-topic" class="form-control" rows="3" 
-                    placeholder="例如：機器學習基礎概念、深度學習、自然語言處理、電腦視覺、AI倫理與治理...&#10;可以描述具體的知識點或應用場景"></textarea>
-                <div class="mt-3">
-                    <label class="form-label"><strong>選擇AI模型：</strong></label>
-                    <select id="ai-generation-model" class="form-select">
-                        <option value="gpt-4o">GPT-4o (推薦)</option>
-                        <option value="claude-3.7-sonnet">Claude 3.7 Sonnet</option>
-                        <option value="grok-3">Grok 3</option>
-                    </select>
-                </div>
-                <div class="mt-3">
-                    <label class="form-label"><strong>題目數量：</strong></label>
-                    <select id="ai-question-count" class="form-select">
-                        <option value="5">5題 (快速測試)</option>
-                        <option value="10" selected>10題 (標準練習)</option>
-                        <option value="15">15題 (深度練習)</option>
-                        <option value="20">20題 (完整測驗)</option>
-                    </select>
                 </div>
             </div>
         </div>
         
         <!-- 設定面板 -->
-        <div id="settings-panel" class="quiz-container">
+        <div id="settings-panel" class="settings-panel">
             <div class="card border-0 shadow-sm">
                 <div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                     <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5>
                 </div>
                 <div class="card-body p-4">
                     <div class="row g-4">
-                        <!-- 題目數量 -->
                         <div class="col-lg-3 col-md-6">
-                            <div class="setting-group">
-                                <label class="setting-label">
-                                    <i class="fas fa-list-ol me-2 text-primary"></i>題目數量
-                                </label>
-                                <select id="question-count" class="form-select custom-select">
-                                    <option value="10">10題 - 快速練習</option>
-                                    <option value="20">20題 - 標準練習</option>
-                                    <option value="40">40題 - 加強練習</option>
-                                    <option value="60">60題 - iPAS標準</option>
-                                    <option value="80">80題 - 完整測驗</option>
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-list-ol me-2 text-primary"></i>題目數量
+                            </label>
+                            <select id="question-count" class="form-select">
+                                <option value="10">10題 - 快速練習</option>
+                                <option value="20">20題 - 標準練習</option>
+                                <option value="40">40題 - 加強練習</option>
+                                <option value="60" selected>60題 - iPAS標準</option>
+                                <option value="80">80題 - 完整測驗</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-play-circle me-2 text-success"></i>練習模式
+                            </label>
+                            <div class="d-flex flex-wrap gap-1">
+                                <button class="mode-btn active" data-mode="practice">
+                                    <i class="fas fa-book me-1"></i>練習模式
+                                </button>
+                                <button class="mode-btn" data-mode="exam">
+                                    <i class="fas fa-clock me-1"></i>模擬考試
+                                </button>
+                                <button class="mode-btn" data-mode="wrong" id="wrong-btn" disabled>
+                                    <i class="fas fa-redo me-1"></i>錯題複習
+                                </button>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-lightbulb me-2 text-warning"></i>解析模式
+                            </label>
+                            <div class="mb-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="explanation-mode" id="database-mode" value="database" checked>
+                                    <label class="form-check-label" for="database-mode">資料庫解析</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="explanation-mode" id="ai-mode" value="ai">
+                                    <label class="form-check-label" for="ai-mode">AI生成解析</label>
+                                </div>
+                            </div>
+                            <div id="ai-model-select" class="d-none">
+                                <select id="ai-model" class="form-select form-select-sm">
+                                    <option value="gpt-4o" selected>GPT-4o (推薦)</option>
+                                    <option value="claude-3.7-sonnet">Claude 3.7 Sonnet</option>
+                                    <option value="grok-3">Grok 3</option>
                                 </select>
                             </div>
                         </div>
-
-                        <!-- 練習模式 -->
+                        
                         <div class="col-lg-3 col-md-6">
-                            <div class="setting-group">
-                                <label class="setting-label">
-                                    <i class="fas fa-play-circle me-2 text-success"></i>練習模式
-                                </label>
-                                <div class="mode-buttons">
-                                    <button class="mode-btn active" data-mode="practice">
-                                        <i class="fas fa-book"></i>
-                                        <span>練習模式</span>
-                                        <small>即時反饋</small>
-                                    </button>
-                                    <button class="mode-btn" data-mode="exam">
-                                        <i class="fas fa-clock"></i>
-                                        <span>模擬考試</span>
-                                        <small>計時測驗</small>
-                                    </button>
-                                    <button class="mode-btn" data-mode="wrong" id="wrong-btn">
-                                        <i class="fas fa-redo"></i>
-                                        <span>錯題複習</span>
-                                        <small>針對弱點</small>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 解析模式 -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="setting-group">
-                                <label class="setting-label">
-                                    <i class="fas fa-lightbulb me-2 text-warning"></i>解析模式
-                                </label>
-                                <div class="explanation-mode-container">
-                                    <div class="custom-radio-group">
-                                        <input type="radio" id="database-mode" name="explanation-mode" value="database" checked>
-                                        <label for="database-mode" class="custom-radio-label">
-                                            <i class="fas fa-database"></i>
-                                            <span>資料庫解析</span>
-                                            <small>內建標準解答</small>
-                                        </label>
-                                        
-                                        <input type="radio" id="ai-mode" name="explanation-mode" value="ai">
-                                        <label for="ai-mode" class="custom-radio-label">
-                                            <i class="fas fa-robot"></i>
-                                            <span>AI生成解析</span>
-                                            <small>智能詳細說明</small>
-                                        </label>
-                                    </div>
-                                    
-                                    <!-- AI模型選擇下拉選單 -->
-                                    <div id="ai-model-select" class="ai-model-dropdown mt-2">
-                                        <label class="form-label mb-2" style="color: #2c3e50; font-size: 0.85rem;">
-                                            <i class="fas fa-brain me-1"></i>選擇AI模型
-                                        </label>
-                                        <select id="ai-model" class="form-select form-select-sm">
-                                            <option value="gpt-4o" selected>🤖 GPT-4o (推薦)</option>
-                                            <option value="claude-3.7-sonnet">🧠 Claude 3.7 Sonnet</option>
-                                            <option value="grok-3">⚡ Grok 3</option>
-                                        </select>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
-                        <!-- 開始測驗 -->
-                        <div class="col-lg-3 col-md-6">
-                            <div class="setting-group">
-                                <label class="setting-label">
-                                    <i class="fas fa-rocket me-2 text-danger"></i>準備就緒
-                                </label>
-                                <button id="start-btn" class="start-quiz-btn" disabled>
-                                    <div class="btn-content">
-                                        <i class="fas fa-play"></i>
-                                        <span>開始測驗</span>
-                                    </div>
-                                    <div class="btn-shine"></div>
-                                </button>
-                                <div id="timer" class="timer-display">
-                                    <i class="fas fa-hourglass-half me-2"></i>
-                                    <span>請先選擇題庫</span>
-                                </div>
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-rocket me-2 text-danger"></i>準備就緒
+                            </label>
+                            <button id="start-btn" class="btn btn-danger w-100 mb-2" disabled>
+                                <i class="fas fa-play me-2"></i>開始練習
+                            </button>
+                            <div id="timer" class="timer text-center">
+                                <i class="fas fa-clock me-2"></i>請先選擇題庫
                             </div>
                         </div>
                     </div>
@@ -1154,21 +856,26 @@
             </div>
         </div>
         
-        <!-- 問題卡片 -->
-        <div id="quiz-container" class="quiz-container d-none fade-in">
+        <!-- 問題區域 -->
+        <div id="quiz-container" class="quiz-container d-none">
+            <!-- 返回選擇按鈕 -->
+            <button id="back-to-selection" class="back-to-selection">
+                <i class="fas fa-arrow-left me-2"></i>返回題庫選擇
+            </button>
+            
             <div class="progress mb-3">
                 <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
             </div>
             
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h5 id="question-number" class="mb-0">問題 1/10</h5>
+                <h5 id="question-number" class="mb-0">問題 1/60</h5>
                 <div class="d-flex gap-2">
-                    <span id="database-badge" class="badge-custom">題庫</span>
-                    <span id="stats-display" class="badge badge-info">得分: 0/0 (0%)</span>
+                    <span id="database-badge" class="badge-custom">iPAS題庫</span>
+                    <span id="stats-display" class="badge bg-info">得分: 0/0 (0%)</span>
                 </div>
             </div>
             
-            <h4 id="question-text" class="question-text mb-4">請點擊「開始測驗」開始練習</h4>
+            <h4 id="question-text" class="mb-4">載入題目中...</h4>
             
             <div id="options-container" class="mb-4">
                 <!-- 選項會在JavaScript中動態生成 -->
@@ -1182,54 +889,58 @@
                     <span id="subtopic-badge" class="badge bg-info"></span>
                 </div>
             </div>
-            
-            <!-- 底部空白區域，防止被導航欄遮住 -->
-            <div style="height: 60px;"></div>
         </div>
         
         <!-- 底部導航 -->
         <div class="bottom-nav" id="bottom-navigation">
             <div class="container-fluid">
                 <div class="row justify-content-between align-items-center">
-                    <div class="col-3">
+                    <div class="col-2">
                         <button id="prev-btn" class="btn btn-secondary w-100" disabled>
                             <i class="fas fa-arrow-left me-1"></i> 
                             <span class="d-none d-sm-inline">上一題</span>
                         </button>
                     </div>
-                    <div class="col-3">
+                    <div class="col-2">
                         <button id="submit-btn" class="btn btn-primary w-100" disabled>
                             <i class="fas fa-check me-1"></i> 
                             <span class="d-none d-sm-inline">提交</span>
                         </button>
                     </div>
-                    <div class="col-3">
+                    <div class="col-2">
                         <button id="next-btn" class="btn btn-warning w-100" disabled>
                             <span class="d-none d-sm-inline">下一題</span>
                             <i class="fas fa-arrow-right ms-1"></i>
                         </button>
                     </div>
-                    <div class="col-3">
-                        <button id="stats-btn" class="btn btn-info w-100">
-                            <i class="fas fa-chart-bar me-1"></i> 
-                            <span class="d-none d-sm-inline">統計</span>
+                    <div class="col-2">
+                        <button id="finish-btn" class="btn btn-success w-100" disabled>
+                            <i class="fas fa-flag-checkered me-1"></i> 
+                            <span class="d-none d-sm-inline">完成</span>
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button id="review-btn" class="btn btn-info w-100" disabled>
+                            <i class="fas fa-eye me-1"></i> 
+                            <span class="d-none d-sm-inline">複習</span>
                         </button>
                     </div>
                 </div>
             </div>
         </div>
     </div>
-    
-    <!-- 結果模態框 -->
+
+    <!-- 模態框 -->
+    <!-- 測驗結果模態框 -->
     <div class="modal fade" id="result-modal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-primary text-white">
                     <h5 class="modal-title">測驗結果</h5>
                     <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
                 <div class="modal-body">
-                    <div id="result-content"></div>
+                    <div id="result-content" style="max-height: 70vh; overflow-y: auto;"></div>
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
@@ -1238,10 +949,10 @@
             </div>
         </div>
     </div>
-    
-    <!-- 統計模態框 -->
+
+    <!-- 統計資料模態框 -->
     <div class="modal fade" id="stats-modal" tabindex="-1">
-        <div class="modal-dialog modal-lg">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
             <div class="modal-content">
                 <div class="modal-header bg-info text-white">
                     <h5 class="modal-title">學習統計</h5>
@@ -1252,1049 +963,1248 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                    <button type="button" class="btn btn-danger" id="reset-stats-btn">重置統計</button>
+                    <button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button>
                 </div>
             </div>
         </div>
     </div>
-    
+
+    <!-- 使用說明模態框 -->
+    <div class="modal fade" id="help-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">iPAS考試準備指南</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h5><i class="fas fa-target me-2 text-primary"></i>8月考試準備策略</h5>
+                    <div class="alert alert-info">
+                        <strong>考試資訊：</strong>iPAS AI應用規劃師初級認證，建議準備時間：4-6週
+                    </div>
+                    
+                    <h6>📚 練習模式建議</h6>
+                    <ul>
+                        <li><strong>每日練習：</strong>20-40題維持手感</li>
+                        <li><strong>週末模擬：</strong>60題完整測驗</li>
+                        <li><strong>考前衝刺：</strong>錯題複習模式</li>
+                    </ul>
+                    
+                    <h6>🎯 重點題型</h6>
+                    <ul>
+                        <li>AI技術應用與商業價值評估</li>
+                        <li>專案規劃與管理流程</li>
+                        <li>數據分析與模型評估</li>
+                        <li>倫理與風險管理</li>
+                    </ul>
+                    
+                    <h6>⏱️ 模擬考試建議</h6>
+                    <ul>
+                        <li>選擇60題標準模式</li>
+                        <li>嚴格控制答題時間</li>
+                        <li>目標正確率：70%以上</li>
+                    </ul>
+                    
+                    <h6>📊 使用統計功能</h6>
+                    <ul>
+                        <li>定期檢查學習統計</li>
+                        <li>重點關注薄弱主題</li>
+                        <li>匯出錯題進行紙本複習</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
     <!-- 加載遮罩 -->
     <div id="loading-overlay" class="overlay d-none">
-        <div class="text-center text-white">
-            <div class="loader mb-3"></div>
-            <h5>正在處理中...</h5>
-            <p id="loading-text">請稍候</p>
-        </div>
+        <div class="loader"></div>
+        <div id="loading-text" class="loading-text">處理中...</div>
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
-        // 全域變數
-        let quizData = {};
-        let aiGeneratedQuestions = [];
-        let selectedDatabase = null;
-        
-        // 應用狀態
-        let state = {
-            questions: [],
-            currentQuestionIndex: 0,
-            userAnswers: {},
-            score: 0,
-            wrongQuestions: [],
-            mode: 'practice',
-            explanationMode: 'database',
-            selectedAIModel: 'gpt-4o',
-            timerRunning: false,
-            startTime: null,
-            timerId: null,
-            examDuration: 90,
-            userData: loadUserData(),
-            currentDatabase: null
-        };
-        
-        // DOM元素
-        const elements = {
-            databaseCards: document.querySelectorAll('.database-card'),
-            aiPanel: document.getElementById('ai-panel'),
-            startBtn: document.getElementById('start-btn'),
-            prevBtn: document.getElementById('prev-btn'),
-            submitBtn: document.getElementById('submit-btn'),
-            nextBtn: document.getElementById('next-btn'),
-            statsBtn: document.getElementById('stats-btn'),
-            quizContainer: document.getElementById('quiz-container'),
-            loadingOverlay: document.getElementById('loading-overlay'),
-            loadingText: document.getElementById('loading-text'),
-            databaseBadge: document.getElementById('database-badge'),
-            questionNumber: document.getElementById('question-number'),
-            questionText: document.getElementById('question-text'),
-            optionsContainer: document.getElementById('options-container'),
-            explanationBox: document.getElementById('explanation-box'),
-            explanationContent: document.getElementById('explanation-content'),
-            timerElement: document.getElementById('timer'),
-            statsDisplay: document.getElementById('stats-display'),
-            progressBar: document.getElementById('progress-bar')
-        };
-        
-        // 模態框
-        const resultModal = new bootstrap.Modal(document.getElementById('result-modal'));
-        const statsModal = new bootstrap.Modal(document.getElementById('stats-modal'));
-        
-        // 初始化
-        function init() {
-            attachEventListeners();
-            loadQuizDatabases();
-        }
-        
-        // 事件監聽器
-        function attachEventListeners() {
-            // 題庫選擇
-            elements.databaseCards.forEach(card => {
-                card.addEventListener('click', () => selectDatabase(card.dataset.type));
-            });
+        // 全域狀態管理
+        const iPASQuizApp = {
+            // 應用狀態
+            state: {
+                isQuizActive: false,
+                selectedDatabase: null,
+                currentMode: 'practice',
+                explanationMode: 'database',
+                selectedAIModel: 'gpt-4o',
+                questions: [],
+                currentQuestionIndex: 0,
+                userAnswers: {},
+                score: 0,
+                wrongQuestions: [],
+                startTime: null,
+                isTimerRunning: false,
+                examDuration: 90, // 分鐘
+                timerId: null,
+                userData: null // 稍後在 init 中初始化
+            },
             
-            // 按鈕事件
-            elements.startBtn.addEventListener('click', startQuiz);
-            elements.prevBtn.addEventListener('click', prevQuestion);
-            elements.submitBtn.addEventListener('click', submitAnswer);
-            elements.nextBtn.addEventListener('click', nextQuestion);
-            elements.statsBtn.addEventListener('click', showStatistics);
+            // DOM 元素
+            elements: {
+                databaseSelector: document.getElementById('database-selector'),
+                databaseCards: document.querySelectorAll('.database-card'),
+                settingsPanel: document.getElementById('settings-panel'),
+                quizContainer: document.getElementById('quiz-container'),
+                startBtn: document.getElementById('start-btn'),
+                backBtn: document.getElementById('back-to-selection'),
+                prevBtn: document.getElementById('prev-btn'),
+                submitBtn: document.getElementById('submit-btn'),
+                nextBtn: document.getElementById('next-btn'),
+                finishBtn: document.getElementById('finish-btn'),
+                reviewBtn: document.getElementById('review-btn'),
+                quizStatus: document.getElementById('quiz-status'),
+                timerElement: document.getElementById('timer'),
+                questionNumber: document.getElementById('question-number'),
+                questionText: document.getElementById('question-text'),
+                optionsContainer: document.getElementById('options-container'),
+                explanationBox: document.getElementById('explanation-box'),
+                explanationContent: document.getElementById('explanation-content'),
+                progressBar: document.getElementById('progress-bar'),
+                statsDisplay: document.getElementById('stats-display'),
+                topicBadge: document.getElementById('topic-badge'),
+                subtopicBadge: document.getElementById('subtopic-badge'),
+                loadingOverlay: document.getElementById('loading-overlay'),
+                loadingText: document.getElementById('loading-text')
+            },
             
-            // 模式選擇
-            document.querySelectorAll('.mode-btn').forEach(btn => {
-                btn.addEventListener('click', (e) => {
-                    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    state.mode = btn.dataset.mode;
-                });
-            });
+            // 模態框
+            modals: {
+                result: new bootstrap.Modal(document.getElementById('result-modal')),
+                stats: new bootstrap.Modal(document.getElementById('stats-modal')),
+                help: new bootstrap.Modal(document.getElementById('help-modal'))
+            },
             
-            // 解析模式
-            document.querySelectorAll('[name="explanation-mode"]').forEach(radio => {
-                radio.addEventListener('change', (e) => {
-                    state.explanationMode = e.target.value;
-                    const aiModelDropdown = document.getElementById('ai-model-select');
-                    
-                    if (state.explanationMode === 'ai') {
-                        aiModelDropdown.classList.remove('d-none');
-                        aiModelDropdown.classList.add('show');
-                        aiModelDropdown.style.display = 'block';
-                        console.log('AI模式開啟，顯示模型選擇');
-                    } else {
-                        aiModelDropdown.classList.add('d-none');
-                        aiModelDropdown.classList.remove('show');
-                        aiModelDropdown.style.display = 'none';
-                        console.log('資料庫模式，隱藏模型選擇');
+            // 初始化
+            init() {
+                // 初始化用戶數據
+                this.state.userData = this.loadUserData();
+                this.attachEventListeners();
+                this.updateWrongButtonState();
+                console.log('🚀 iPAS AI應用規劃師練習系統已初始化');
+            },
+            
+            // 載入使用者數據
+            loadUserData() {
+                try {
+                    const data = localStorage.getItem('iPASQuizUserData');
+                    return data ? JSON.parse(data) : {
+                        correct: [],
+                        incorrect: [],
+                        history: [],
+                        databaseStats: {}
+                    };
+                } catch (error) {
+                    console.error('載入使用者數據錯誤:', error);
+                    return {
+                        correct: [],
+                        incorrect: [],
+                        history: [],
+                        databaseStats: {}
+                    };
+                }
+            },
+            
+            // 保存使用者數據
+            saveUserData(showMessage = false) {
+                try {
+                    localStorage.setItem('iPASQuizUserData', JSON.stringify(this.state.userData));
+                    if (showMessage) {
+                        this.showAlert('學習數據已儲存', 'success');
                     }
+                    return true;
+                } catch (error) {
+                    console.error('保存使用者數據錯誤:', error);
+                    if (showMessage) {
+                        this.showAlert('儲存失敗: ' + error.message, 'error');
+                    }
+                    return false;
+                }
+            },
+            
+            // 事件監聽器
+            attachEventListeners() {
+                // 題庫選擇
+                this.elements.databaseCards.forEach(card => {
+                    card.addEventListener('click', (e) => {
+                        if (this.state.isQuizActive) {
+                            this.showAlert('測驗進行中，無法切換題庫！', 'warning');
+                            return;
+                        }
+                        this.selectDatabase(card.dataset.type);
+                    });
                 });
-            });
+                
+                // 按鈕事件
+                this.elements.startBtn.addEventListener('click', () => this.startQuiz());
+                this.elements.backBtn.addEventListener('click', () => this.backToSelection());
+                this.elements.prevBtn.addEventListener('click', () => this.prevQuestion());
+                this.elements.submitBtn.addEventListener('click', () => this.submitAnswer());
+                this.elements.nextBtn.addEventListener('click', () => this.nextQuestion());
+                this.elements.finishBtn.addEventListener('click', () => this.finishQuiz());
+                this.elements.reviewBtn.addEventListener('click', () => this.reviewCurrentQuestion());
+                
+                // 導航按鈕
+                document.getElementById('save-btn').addEventListener('click', () => this.saveUserData(true));
+                document.getElementById('export-btn').addEventListener('click', () => this.exportWrongQuestions());
+                document.getElementById('stats-btn').addEventListener('click', () => this.showStatistics());
+                document.getElementById('help-btn').addEventListener('click', () => this.modals.help.show());
+                
+                // 模式選擇
+                document.querySelectorAll('.mode-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        if (this.state.isQuizActive) {
+                            this.showAlert('測驗進行中，無法更改模式！', 'warning');
+                            return;
+                        }
+                        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        this.state.currentMode = btn.dataset.mode;
+                    });
+                });
+                
+                // 解析模式選擇
+                document.querySelectorAll('[name="explanation-mode"]').forEach(radio => {
+                    radio.addEventListener('change', (e) => {
+                        this.state.explanationMode = e.target.value;
+                        const aiModelSelect = document.getElementById('ai-model-select');
+                        if (this.state.explanationMode === 'ai') {
+                            aiModelSelect.classList.remove('d-none');
+                        } else {
+                            aiModelSelect.classList.add('d-none');
+                        }
+                    });
+                });
+                
+                // AI模型選擇
+                document.getElementById('ai-model').addEventListener('change', (e) => {
+                    this.state.selectedAIModel = e.target.value;
+                });
+                
+                // 模態框按鈕
+                document.getElementById('review-wrong-btn').addEventListener('click', () => this.reviewWrongQuestions());
+                document.getElementById('reset-stats-btn').addEventListener('click', () => this.resetProgress());
+                
+                // 頁面關閉前自動保存
+                window.addEventListener('beforeunload', () => this.saveUserData(false));
+            },
             
-            // AI模型選擇
-            document.getElementById('ai-model').addEventListener('change', (e) => {
-                state.selectedAIModel = e.target.value;
-            });
+            // 選擇題庫
+            selectDatabase(type) {
+                this.elements.databaseCards.forEach(card => card.classList.remove('selected'));
+                
+                const selectedCard = document.querySelector(`[data-type="${type}"]`);
+                selectedCard.classList.add('selected');
+                
+                this.state.selectedDatabase = type;
+                this.updateDatabaseUI(type);
+                this.elements.startBtn.disabled = false;
+                
+                console.log(`✅ 已選擇題庫: ${type}`);
+            },
             
-            document.getElementById('ai-generation-model').addEventListener('change', (e) => {
-                state.selectedAIModel = e.target.value;
-            });
-        }
-        
-        // 載入題庫資料
-        async function loadQuizDatabases() {
-            try {
-                // 載入生成式AI題庫
-                try {
-                    const response1 = await fetch('模擬考題.json');
-                    quizData['generative-ai'] = await response1.json();
-                    console.log('生成式AI題庫已載入:', quizData['generative-ai'].length + '題');
-                } catch (error) {
-                    console.warn('生成式AI題庫載入失敗:', error);
-                    quizData['generative-ai'] = [];
+            // 更新題庫UI
+            updateDatabaseUI(type) {
+                const databaseNames = {
+                    'generative-ai': '生成式AI認證',
+                    'ipas': 'iPAS AI應用規劃師'
+                };
+                
+                const selectedName = databaseNames[type] || type;
+                this.elements.timerElement.querySelector('span') ?
+                    this.elements.timerElement.querySelector('span').textContent = `已選擇：${selectedName}` :
+                    this.elements.timerElement.innerHTML = `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
+                
+                // 根據題庫調整推薦設定
+                if (type === 'ipas') {
+                    document.getElementById('question-count').value = '60';
+                    // 建議使用練習模式準備考試
+                    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+                    document.querySelector('[data-mode="practice"]').classList.add('active');
+                    this.state.currentMode = 'practice';
+                }
+            },
+            
+            // 開始測驗
+            startQuiz() {
+                if (!this.state.selectedDatabase) {
+                    this.showAlert('請先選擇題庫！', 'warning');
+                    return;
                 }
                 
-                // 載入iPAS AI應用規劃師題庫
-                try {
-                    const response2 = await fetch('應用模擬考題.json');
-                    quizData['ipas'] = await response2.json();
-                    console.log('iPAS題庫已載入:', quizData['ipas'].length + '題');
-                } catch (error) {
-                    console.warn('iPAS題庫載入失敗:', error);
-                    quizData['ipas'] = [];
+                this.showLoading('準備測驗中...');
+                
+                // 設定測驗狀態
+                this.state.isQuizActive = true;
+                this.lockInterface();
+                
+                // 載入題目
+                const questionCount = parseInt(document.getElementById('question-count').value);
+                
+                setTimeout(() => {
+                    if (this.loadQuestions(questionCount)) {
+                        // 重置測驗狀態
+                        this.state.currentQuestionIndex = 0;
+                        this.state.userAnswers = {};
+                        this.state.score = 0;
+                        this.state.wrongQuestions = [];
+                        this.state.startTime = new Date();
+                        
+                        // 切換UI
+                        this.elements.settingsPanel.classList.add('d-none');
+                        this.elements.quizContainer.classList.remove('d-none');
+                        this.elements.quizStatus.style.display = 'block';
+                        this.elements.quizStatus.classList.add('active');
+                        
+                        // 顯示第一題
+                        this.displayQuestion();
+                        
+                        // 啟動計時器
+                        if (this.state.currentMode === 'exam') {
+                            this.startTimer();
+                        }
+                        
+                        this.hideLoading();
+                        console.log('✅ 測驗已開始');
+                    } else {
+                        this.hideLoading();
+                        this.state.isQuizActive = false;
+                        this.unlockInterface();
+                    }
+                }, 500);
+            },
+            
+            // 鎖定介面
+            lockInterface() {
+                this.elements.databaseSelector.classList.add('disabled');
+                this.elements.settingsPanel.classList.add('disabled');
+                this.elements.databaseCards.forEach(card => card.classList.add('disabled'));
+            },
+            
+            // 解鎖介面
+            unlockInterface() {
+                this.elements.databaseSelector.classList.remove('disabled');
+                this.elements.settingsPanel.classList.remove('disabled');
+                this.elements.databaseCards.forEach(card => card.classList.remove('disabled'));
+            },
+            
+            // 載入題目
+            loadQuestions(count) {
+                const currentQuizData = quizData[this.state.selectedDatabase];
+                
+                if (!currentQuizData || currentQuizData.length === 0) {
+                    this.showAlert(`${this.state.selectedDatabase === 'ipas' ? 'iPAS' : '生成式AI'}題庫尚未載入或為空！`, 'error');
+                    return false;
                 }
                 
-                console.log('所有題庫載入完成');
-            } catch (error) {
-                console.error('題庫載入發生錯誤:', error);
-                alert('題庫載入失敗，請檢查檔案是否存在！');
-            }
-        }
-        
-        // 選擇題庫
-        function selectDatabase(type) {
-            // 移除所有選中狀態
-            elements.databaseCards.forEach(card => card.classList.remove('selected'));
-            
-            // 選中當前題庫
-            const selectedCard = document.querySelector(`[data-type="${type}"]`);
-            selectedCard.classList.add('selected');
-            
-            selectedDatabase = type;
-            state.currentDatabase = type;
-            
-            // 更新UI
-            updateDatabaseUI(type);
-            
-            // 啟用開始按鈕
-            elements.startBtn.disabled = false;
-        }
-        
-        // 根據選擇的題庫更新UI
-        function updateDatabaseUI(type) {
-            const aiPanel = elements.aiPanel;
-            const questionCountSelect = document.getElementById('question-count');
-            
-            if (type === 'ai-generated') {
-                // 顯示AI出題面板
-                aiPanel.style.display = 'block';
-                elements.databaseBadge.textContent = 'AI智能出題';
-                elements.databaseBadge.className = 'badge-custom';
-                elements.timerElement.textContent = '請設定出題主題';
+                // 隨機排序題目
+                const shuffledQuestions = [...currentQuizData].sort(() => Math.random() - 0.5);
                 
-                // 調整題目數量選項
-                questionCountSelect.innerHTML = `
-                    <option value="5">5題</option>
-                    <option value="10" selected>10題</option>
-                    <option value="15">15題</option>
-                    <option value="20">20題</option>
+                // 挑選指定數量題目
+                this.state.questions = shuffledQuestions.slice(0, Math.min(count, shuffledQuestions.length));
+                
+                // 重新編號題目
+                this.state.questions.forEach((q, index) => q.number = index + 1);
+                
+                return true;
+            },
+            
+            // 顯示當前問題
+            displayQuestion() {
+                if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
+                    this.finishQuiz();
+                    return false;
+                }
+                
+                const question = this.state.questions[this.state.currentQuestionIndex];
+                
+                // 更新問題資訊
+                this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
+                this.elements.questionText.textContent = question.question;
+                
+                // 生成選項
+                this.elements.optionsContainer.innerHTML = '';
+                question.options.forEach((option, index) => {
+                    const letter = String.fromCharCode(65 + index);
+                    const optionHTML = `
+                        <div class="form-check mb-2">
+                            <input class="option-input" type="radio" name="quiz-option" id="option-${letter}" value="${letter}">
+                            <label class="option-label" for="option-${letter}">
+                                ${letter}. ${option}
+                            </label>
+                        </div>
+                    `;
+                    this.elements.optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
+                });
+                
+                // 恢復之前的答案
+                if (this.state.currentQuestionIndex in this.state.userAnswers) {
+                    const previousAnswer = this.state.userAnswers[this.state.currentQuestionIndex];
+                    const answerInput = document.getElementById(`option-${previousAnswer.answer}`);
+                    if (answerInput) {
+                        answerInput.checked = true;
+                    }
+                    
+                    if (this.state.currentMode !== 'exam') {
+                        this.showExplanation(question, previousAnswer.answer, previousAnswer.isCorrect);
+                        document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
+                            input.disabled = true;
+                        });
+                    }
+                }
+                
+                // 更新進度條
+                const progress = ((this.state.currentQuestionIndex + 1) / this.state.questions.length) * 100;
+                this.elements.progressBar.style.width = `${progress}%`;
+                
+                // 更新按鈕狀態
+                this.updateButtonStates();
+                
+                // 更新統計
+                this.updateStats();
+                
+                // 隱藏解析（如果未回答）
+                if (!(this.state.currentQuestionIndex in this.state.userAnswers)) {
+                    this.elements.explanationBox.classList.add('d-none');
+                }
+                
+                return true;
+            },
+            
+            // 提交答案
+            submitAnswer() {
+                const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
+                if (!selectedOption) {
+                    this.showAlert('請選擇一個答案！', 'warning');
+                    return false;
+                }
+                
+                const question = this.state.questions[this.state.currentQuestionIndex];
+                const userAnswer = selectedOption.value;
+                const isCorrect = userAnswer === question.correct_answer_letter;
+                
+                // 記錄答案
+                this.state.userAnswers[this.state.currentQuestionIndex] = {
+                    answer: userAnswer,
+                    isCorrect: isCorrect,
+                    timestamp: new Date()
+                };
+                
+                // 更新分數
+                if (isCorrect) {
+                    this.state.score++;
+                    // 更新用戶數據
+                    if (!this.state.userData.correct.includes(question.question)) {
+                        this.state.userData.correct.push(question.question);
+                    }
+                    const incorrectIndex = this.state.userData.incorrect.indexOf(question.question);
+                    if (incorrectIndex !== -1) {
+                        this.state.userData.incorrect.splice(incorrectIndex, 1);
+                    }
+                } else {
+                    this.state.wrongQuestions.push(question);
+                    if (!this.state.userData.incorrect.includes(question.question)) {
+                        this.state.userData.incorrect.push(question.question);
+                    }
+                    const correctIndex = this.state.userData.correct.indexOf(question.question);
+                    if (correctIndex !== -1) {
+                        this.state.userData.correct.splice(correctIndex, 1);
+                    }
+                }
+                
+                // 記錄歷史
+                const historyEntry = {
+                    timestamp: new Date().toISOString(),
+                    database: this.state.selectedDatabase,
+                    question: question.question,
+                    options: question.options,
+                    user_answer: userAnswer,
+                    correct_answer_letter: question.correct_answer_letter,
+                    correct_answer_index: question.correct_answer_index,
+                    is_correct: isCorrect,
+                    topic: question.topic,
+                    subtopic: question.subtopic,
+                    explanation: question.explanation
+                };
+                this.state.userData.history.push(historyEntry);
+                
+                // 顯示解析
+                if (this.state.currentMode === 'practice' || this.state.currentMode === 'wrong') {
+                    this.showExplanation(question, userAnswer, isCorrect);
+                    // 禁用選項
+                    document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
+                        input.disabled = true;
+                    });
+                }
+                
+                // 更新統計與按鈕狀態
+                this.updateStats();
+                this.updateButtonStates();
+                this.updateWrongButtonState();
+                
+                // 保存用戶資料
+                this.saveUserData(false);
+                
+                return true;
+            },
+            
+            // 顯示解析
+            showExplanation(question, userAnswer, isCorrect) {
+                this.elements.explanationBox.classList.remove('d-none');
+                
+                const resultClass = isCorrect ? 'correct' : 'incorrect';
+                const resultIcon = isCorrect ? '✅' : '❌';
+                const resultText = isCorrect ? '答對了！' : `答錯了！正確答案是 ${question.correct_answer_letter}`;
+                
+                let explanationHTML = `
+                    <div class="${resultClass} mb-3">
+                        ${resultIcon} ${resultText}
+                    </div>
+                    <div class="fw-bold mb-2">解析:</div>
                 `;
                 
-            } else {
-                // 隱藏AI出題面板
-                aiPanel.style.display = 'none';
-                
-                if (type === 'generative-ai') {
-                    elements.databaseBadge.textContent = '生成式AI認證';
-                    elements.databaseBadge.className = 'badge bg-primary';
-                    elements.timerElement.textContent = '生成式AI題庫已選擇';
-                    
-                    // 標準題目數量選項
-                    questionCountSelect.innerHTML = `
-                        <option value="10">10題</option>
-                        <option value="20">20題</option>
-                        <option value="40">40題</option>
-                        <option value="80">80題</option>
-                    `;
-                    
-                } else if (type === 'ipas') {
-                    elements.databaseBadge.textContent = 'iPAS AI應用規劃師';
-                    elements.databaseBadge.className = 'badge bg-success';
-                    elements.timerElement.textContent = 'iPAS題庫已選擇';
-                    
-                    // iPAS專用題目數量（建議60題標準）
-                    questionCountSelect.innerHTML = `
-                        <option value="10">10題</option>
-                        <option value="20">20題</option>
-                        <option value="40">40題</option>
-                        <option value="60" selected>60題 (iPAS標準)</option>
-                        <option value="80">80題</option>
-                    `;
+                if (this.state.explanationMode === 'database') {
+                    explanationHTML += `<div class="highlight">${question.explanation || '無解析'}</div>`;
+                } else if (this.state.explanationMode === 'ai') {
+                    explanationHTML += '<div class="highlight" id="ai-explanation">正在生成解析，請稍候...</div>';
+                    this.generateAIExplanation(question, userAnswer);
                 }
-            }
-        }
-        
-        // 開始測驗
-        async function startQuiz() {
-            if (!selectedDatabase) {
-                alert('請先選擇題庫類型！');
-                return;
-            }
-            
-            showLoading('正在準備測驗...');
-            
-            try {
-                let numQuestions;
                 
-                if (selectedDatabase === 'ai-generated') {
-                    // AI出題模式
-                    const topic = document.getElementById('ai-topic').value.trim();
-                    if (!topic) {
-                        hideLoading();
-                        alert('請輸入出題主題！');
-                        return;
+                this.elements.explanationContent.innerHTML = explanationHTML;
+                
+                // 顯示主題標籤
+                this.elements.topicBadge.textContent = question.topic || '未分類';
+                this.elements.subtopicBadge.textContent = question.subtopic || '未分類';
+            },
+            
+            // AI生成解析
+            async generateAIExplanation(question, userAnswer) {
+                try {
+                    this.showLoading('AI正在生成解析...');
+                    
+                    const prompt = `
+                    你是一個專業的iPAS AI應用規劃師認證考試輔導老師。請用繁體中文根據以下題目生成詳細的答案解析（150字以內）：
+                    
+                    題目：${question.question}
+                    選項: 
+                    ${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
+                    正確答案: ${question.correct_answer_letter}
+                    用戶答案: ${userAnswer}
+                    
+                    請提供清晰完整的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。重點關注AI應用規劃的商業價值與實務考量。
+                    `;
+
+                    const response = await fetch('https://back-9qb9.onrender.com/api/generate-explanation', {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json',
+                        },
+                        body: JSON.stringify({
+                            model: this.state.selectedAIModel,
+                            prompt: prompt,
+                        }),
+                    });
+
+                    this.hideLoading();
+
+                    if (!response.ok) {
+                        throw new Error(`API請求失敗: ${response.status}`);
+                    }
+
+                    const data = await response.json();
+                    const aiExplanation = data.explanation || '無法生成解析，請稍後再試';
+                    const paragraphs = aiExplanation.split('\n').map(p => `<p>${p}</p>`).join('');
+                    
+                    const explanationElement = document.getElementById('ai-explanation');
+                    if (explanationElement) {
+                        explanationElement.innerHTML = paragraphs;
                     }
                     
-                    numQuestions = parseInt(document.getElementById('ai-question-count').value);
-                    const aiModel = document.getElementById('ai-generation-model').value;
-                    
-                    updateLoadingText('AI正在生成題目，請稍候...');
-                    
-                    // 呼叫AI生成題目
-                    const success = await generateAIQuestions(topic, numQuestions, aiModel);
-                    if (!success) {
-                        hideLoading();
-                        return;
+                } catch (error) {
+                    console.error('AI解析生成失敗:', error);
+                    this.hideLoading();
+                    const explanationElement = document.getElementById('ai-explanation');
+                    if (explanationElement) {
+                        explanationElement.innerHTML = '解析生成失敗，請檢查網路或稍後再試';
                     }
-                    
-                    state.questions = aiGeneratedQuestions.slice();
-                    
+                }
+            },
+            
+            // 下一題
+            nextQuestion() {
+                if (this.state.currentQuestionIndex < this.state.questions.length - 1) {
+                    this.state.currentQuestionIndex++;
+                    this.displayQuestion();
                 } else {
-                    // 使用現有題庫
-                    numQuestions = parseInt(document.getElementById('question-count').value);
-                    
-                    if (!loadQuestions(numQuestions)) {
-                        hideLoading();
+                    this.finishQuiz();
+                }
+            },
+            
+            // 上一題
+            prevQuestion() {
+                if (this.state.currentQuestionIndex > 0 && this.state.currentMode !== 'exam') {
+                    this.state.currentQuestionIndex--;
+                    this.displayQuestion();
+                }
+            },
+            
+            // 返回題庫選擇
+            backToSelection() {
+                if (this.state.isQuizActive) {
+                    const confirmBack = confirm('確定要放棄當前測驗並返回題庫選擇嗎？\n進度將不會被保存。');
+                    if (!confirmBack) {
                         return;
                     }
                 }
                 
                 // 重置測驗狀態
-                state.currentQuestionIndex = 0;
-                state.userAnswers = {};
-                state.score = 0;
-                state.wrongQuestions = [];
+                this.state.isQuizActive = false;
+                this.unlockInterface();
+                this.stopTimer();
                 
-                // 顯示問題區域
-                elements.quizContainer.classList.remove('d-none');
+                // 切換UI
+                this.elements.quizContainer.classList.add('d-none');
+                this.elements.settingsPanel.classList.remove('d-none');
+                this.elements.quizStatus.style.display = 'none';
+                this.elements.quizStatus.classList.remove('active');
                 
-                // 顯示第一題
-                displayQuestion();
+                console.log('🔙 已返回題庫選擇');
+            },
+            
+            // 完成測驗
+            finishQuiz() {
+                this.stopTimer();
+                this.showResult();
                 
-                // 更新按鈕狀態
-                elements.submitBtn.disabled = false;
-                elements.nextBtn.disabled = true;
-                elements.prevBtn.disabled = true;
+                // 重置狀態
+                this.state.isQuizActive = false;
+                this.unlockInterface();
+            },
+            
+            // 顯示結果
+            showResult() {
+                const total = this.state.questions.length;
+                const answered = Object.keys(this.state.userAnswers).length;
+                const score = this.state.score;
+                const percentage = (score / total * 100).toFixed(1);
                 
-                // 如果是考試模式，啟動計時器
-                if (state.mode === 'exam') {
-                    startTimer();
-                } else {
-                    updateTimerDisplay('練習模式');
-                }
+                const endTime = new Date();
+                const duration = Math.round((endTime - this.state.startTime) / 1000 / 60);
                 
-                hideLoading();
-                
-            } catch (error) {
-                console.error('開始測驗失敗:', error);
-                hideLoading();
-                alert('測驗啟動失敗，請重試！');
-            }
-        }
-        
-        // AI生成題目
-        async function generateAIQuestions(topic, count, model) {
-            try {
-                const prompt = `
-                請根據以下主題生成 ${count} 道繁體中文的選擇題，用於AI相關認證考試練習：
-
-                主題：${topic}
-
-                要求：
-                1. 每題包含4個選項(A、B、C、D)
-                2. 題目難度適中，適合初中級程度
-                3. 包含詳細的答案解析
-                4. 返回JSON格式，結構如下：
-                [
-                  {
-                    "question": "題目內容",
-                    "options": ["選項A", "選項B", "選項C", "選項D"],
-                    "correct_answer_letter": "A",
-                    "correct_answer_index": 0,
-                    "explanation": "詳細解析",
-                    "topic": "主題",
-                    "subtopic": "子主題"
-                  }
-                ]
-
-                請確保題目具有教育價值，涵蓋該主題的重要概念。
-                `;
-
-                const response = await fetch('https://back-9qb9.onrender.com/api/generate-questions', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        model: model,
-                        prompt: prompt,
-                        count: count
-                    }),
-                });
-
-                if (!response.ok) {
-                    throw new Error(`API請求失敗: ${response.status}`);
-                }
-
-                const data = await response.json();
-                
-                if (data.questions && Array.isArray(data.questions)) {
-                    aiGeneratedQuestions = data.questions.map((q, index) => ({
-                        ...q,
-                        number: index + 1
-                    }));
+                let resultHTML = `
+                    <div class="text-center mb-4">
+                        <h3>📊 測驗結果</h3>
+                        <div class="progress my-3" style="height: 25px;">
+                            <div class="progress-bar ${percentage >= 70 ? 'bg-success' : 'bg-warning'}" style="width: ${percentage}%">
+                                ${percentage}%
+                            </div>
+                        </div>
+                    </div>
                     
-                    console.log('AI生成題目成功:', aiGeneratedQuestions.length + '題');
-                    return true;
-                } else {
-                    throw new Error('AI返回的資料格式不正確');
-                }
-                
-            } catch (error) {
-                console.error('AI生成題目失敗:', error);
-                alert('AI生成題目失敗：' + error.message);
-                return false;
-            }
-        }
-        
-        // 載入題目（從現有題庫）
-        function loadQuestions(numQuestions) {
-            const currentQuizData = quizData[selectedDatabase];
-            
-            if (!currentQuizData || currentQuizData.length === 0) {
-                alert(`${selectedDatabase === 'generative-ai' ? '生成式AI' : 'iPAS'}題庫尚未載入或為空！`);
-                return false;
-            }
-            
-            // 隨機排序題目
-            const shuffledQuestions = [...currentQuizData].sort(() => Math.random() - 0.5);
-            
-            // 挑選指定數量題目
-            state.questions = shuffledQuestions.slice(0, Math.min(numQuestions, shuffledQuestions.length));
-            
-            // 重新編號題目
-            state.questions.forEach((q, index) => q.number = index + 1);
-            
-            return true;
-        }
-        
-        // 顯示當前問題
-        function displayQuestion() {
-            if (!state.questions || state.currentQuestionIndex >= state.questions.length) {
-                finishQuiz();
-                return false;
-            }
-            
-            const question = state.questions[state.currentQuestionIndex];
-            
-            // 更新問題文字
-            elements.questionNumber.textContent = `問題 ${question.number}/${state.questions.length}`;
-            elements.questionText.textContent = question.question;
-            
-            // 更新選項
-            elements.optionsContainer.innerHTML = '';
-            for (let i = 0; i < question.options.length; i++) {
-                const letter = String.fromCharCode(65 + i);
-                
-                const optionDiv = document.createElement('div');
-                optionDiv.className = 'form-check mb-2';
-                
-                const input = document.createElement('input');
-                input.className = 'option-input form-check-input';
-                input.type = 'radio';
-                input.name = 'quiz-option';
-                input.id = `option-${letter}`;
-                input.value = letter;
-                
-                const label = document.createElement('label');
-                label.className = 'option-label';
-                label.htmlFor = `option-${letter}`;
-                label.textContent = `${letter}. ${question.options[i]}`;
-                
-                optionDiv.appendChild(input);
-                optionDiv.appendChild(label);
-                elements.optionsContainer.appendChild(optionDiv);
-                
-                // 如果已經回答過這題，選中之前的選擇
-                if (state.currentQuestionIndex in state.userAnswers) {
-                    if (state.userAnswers[state.currentQuestionIndex] === letter) {
-                        input.checked = true;
-                    }
-                    if (state.mode !== 'exam') {
-                        input.disabled = true;
-                        elements.submitBtn.disabled = true;
-                        elements.nextBtn.disabled = false;
-                    }
-                }
-            }
-            
-            // 顯示解析（如果已回答且非考試模式）
-            if (state.mode !== 'exam' && state.currentQuestionIndex in state.userAnswers) {
-                const userAnswer = state.userAnswers[state.currentQuestionIndex];
-                const isCorrect = userAnswer === question.correct_answer_letter;
-                showExplanation(isCorrect);
-            } else {
-                elements.explanationBox.classList.add('d-none');
-            }
-            
-            // 更新進度條
-            const progress = ((state.currentQuestionIndex + 1) / state.questions.length) * 100;
-            elements.progressBar.style.width = `${progress}%`;
-            
-            // 更新統計信息
-            updateStats();
-            
-            // 更新按鈕狀態
-            elements.prevBtn.disabled = state.currentQuestionIndex === 0 || state.mode === 'exam';
-            
-            return true;
-        }
-        
-        // 提交答案
-        function submitAnswer() {
-            const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
-            if (!selectedOption) {
-                alert('請選擇一個答案');
-                return false;
-            }
-            
-            const question = state.questions[state.currentQuestionIndex];
-            const userAnswer = selectedOption.value;
-            
-            // 記錄答案
-            state.userAnswers[state.currentQuestionIndex] = userAnswer;
-            
-            // 檢查是否正確
-            const isCorrect = userAnswer === question.correct_answer_letter;
-            
-            // 更新分數與錯題
-            if (isCorrect) {
-                state.score += 1;
-                // 更新用戶數據
-                if (!state.userData.correct.includes(question.question)) {
-                    state.userData.correct.push(question.question);
-                }
-                const incorrectIndex = state.userData.incorrect.indexOf(question.question);
-                if (incorrectIndex !== -1) {
-                    state.userData.incorrect.splice(incorrectIndex, 1);
-                }
-            } else {
-                state.wrongQuestions.push(question);
-                if (!state.userData.incorrect.includes(question.question)) {
-                    state.userData.incorrect.push(question.question);
-                }
-                const correctIndex = state.userData.correct.indexOf(question.question);
-                if (correctIndex !== -1) {
-                    state.userData.correct.splice(correctIndex, 1);
-                }
-            }
-            
-            // 記錄歷史
-            const historyEntry = {
-                timestamp: new Date().toISOString(),
-                database: state.currentDatabase,
-                question: question.question,
-                options: question.options,
-                user_answer: userAnswer,
-                correct_answer_letter: question.correct_answer_letter,
-                correct_answer_index: question.correct_answer_index,
-                is_correct: isCorrect,
-                topic: question.topic,
-                subtopic: question.subtopic,
-                explanation: question.explanation
-            };
-            state.userData.history.push(historyEntry);
-            
-            // 顯示解析
-            if (state.mode === 'practice' || state.mode === 'wrong') {
-                showExplanation(isCorrect);
-            } else {
-                elements.explanationBox.classList.remove('d-none');
-                elements.explanationContent.innerHTML = '<div class="alert alert-info">考試模式不顯示解析，完成後可查看結果。</div>';
-            }
-            
-            // 更新統計
-            updateStats();
-            
-            // 更新按鈕狀態
-            elements.submitBtn.disabled = true;
-            elements.nextBtn.disabled = false;
-            
-            // 禁用選項（考試模式除外）
-            if (state.mode !== 'exam') {
-                const options = document.querySelectorAll('input[name="quiz-option"]');
-                options.forEach(option => option.disabled = true);
-            }
-            
-            // 保存用戶資料
-            saveUserData(false);
-            
-            return true;
-        }
-        
-        // 顯示解析
-        function showExplanation(isCorrect) {
-            const question = state.questions[state.currentQuestionIndex];
-            elements.explanationBox.classList.remove('d-none');
-            
-            let explanationHTML = '';
-            if (isCorrect) {
-                explanationHTML += '<div class="correct mb-3">✅ 答對了！</div>';
-            } else {
-                explanationHTML += `<div class="incorrect mb-3">❌ 答錯了！正確答案是: ${question.correct_answer_letter}</div>`;
-            }
-            
-            explanationHTML += '<div class="fw-bold mb-2">解析:</div>';
-            
-            if (state.explanationMode === 'database') {
-                explanationHTML += `<div class="highlight">${question.explanation || '無解析'}</div>`;
-            } else if (state.explanationMode === 'ai') {
-                explanationHTML += '<div class="highlight" id="ai-explanation">正在生成解析，請稍候...</div>';
-                generateAIExplanation(question);
-            }
-            
-            elements.explanationContent.innerHTML = explanationHTML;
-            
-            // 顯示主題標籤
-            document.getElementById('topic-badge').textContent = question.topic || '未分類';
-            document.getElementById('subtopic-badge').textContent = question.subtopic || '未分類';
-        }
-        
-        // AI生成解析
-        async function generateAIExplanation(question) {
-            try {
-                showLoading('AI正在生成解析...');
-                
-                const userAnswer = state.userAnswers[state.currentQuestionIndex];
-                const prompt = `
-                你是一個專業的AI認證考試輔導老師。請用繁體中文根據以下題目生成詳細的答案解析（150字以內）：
-                
-                題目：${question.question}
-                選項: 
-                ${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
-                正確答案: ${question.correct_answer_letter}
-                用戶答案: ${userAnswer}
-                
-                請提供清晰完整的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。
-                `;
-
-                const response = await fetch('https://back-9qb9.onrender.com/api/generate-explanation', {
-                    method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
-                    body: JSON.stringify({
-                        model: state.selectedAIModel,
-                        prompt: prompt,
-                    }),
-                });
-
-                hideLoading();
-
-                if (!response.ok) {
-                    throw new Error(`API請求失敗: ${response.status}`);
-                }
-
-                const data = await response.json();
-                const aiExplanation = data.explanation || '無法生成解析，請稍後再試';
-                const paragraphs = aiExplanation.split('\n').map(p => `<p>${p}</p>`).join('');
-                
-                const explanationElement = document.getElementById('ai-explanation');
-                if (explanationElement) {
-                    explanationElement.innerHTML = paragraphs;
-                }
-                
-            } catch (error) {
-                console.error('AI解析生成失敗:', error);
-                hideLoading();
-                const explanationElement = document.getElementById('ai-explanation');
-                if (explanationElement) {
-                    explanationElement.innerHTML = '解析生成失敗，請檢查網路或稍後再試';
-                }
-            }
-        }
-        
-        // 下一題
-        function nextQuestion() {
-            state.currentQuestionIndex += 1;
-            
-            if (state.currentQuestionIndex >= state.questions.length) {
-                finishQuiz();
-                return;
-            }
-            
-            displayQuestion();
-            
-            if (state.currentQuestionIndex in state.userAnswers) {
-                elements.submitBtn.disabled = true;
-                elements.nextBtn.disabled = false;
-            } else {
-                elements.submitBtn.disabled = false;
-                elements.nextBtn.disabled = true;
-                
-                const options = document.querySelectorAll('input[name="quiz-option"]');
-                options.forEach(option => {
-                    option.disabled = false;
-                    option.checked = false;
-                });
-            }
-            
-            if (!(state.currentQuestionIndex in state.userAnswers)) {
-                elements.explanationBox.classList.add('d-none');
-            }
-        }
-        
-        // 上一題
-        function prevQuestion() {
-            if (state.currentQuestionIndex <= 0 || state.mode === 'exam') {
-                return;
-            }
-            
-            state.currentQuestionIndex -= 1;
-            displayQuestion();
-        }
-        
-        // 更新統計
-        function updateStats() {
-            const answered = Object.keys(state.userAnswers).length;
-            const total = state.questions.length;
-            
-            if (total > 0) {
-                const percentage = answered > 0 ? (state.score / answered) * 100 : 0;
-                elements.statsDisplay.textContent = `得分: ${state.score}/${answered} (${percentage.toFixed(1)}%)`;
-            } else {
-                elements.statsDisplay.textContent = "得分: 0/0 (0%)";
-            }
-        }
-        
-        // 結束測驗
-        function finishQuiz() {
-            stopTimer();
-            showResult();
-        }
-        
-        // 顯示結果
-        function showResult() {
-            const total = state.questions.length;
-            const answered = Object.keys(state.userAnswers).length;
-            const percentage = (state.score / total) * 100 || 0;
-            
-            let resultHTML = `
-                <div class="text-center mb-4">
-                    <h3>測驗結果</h3>
-                    <div class="progress my-3" style="height: 25px;">
-                        <div class="progress-bar bg-success" style="width: ${percentage}%">
-                            ${percentage.toFixed(1)}%
+                    <div class="row text-center mb-4">
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-primary">${score}</h4>
+                                    <small>得分</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-info">${total}</h4>
+                                    <small>總題數</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-warning">${percentage}%</h4>
+                                    <small>正確率</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-secondary">${duration}分</h4>
+                                    <small>用時</small>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                </div>
-                
-                <div class="stats-card mb-4">
-                    <div class="row text-center">
-                        <div class="col-3">
-                            <h4>${state.score}</h4>
-                            <p>得分</p>
-                        </div>
-                        <div class="col-3">
-                            <h4>${total}</h4>
-                            <p>總題數</p>
-                        </div>
-                        <div class="col-3">
-                            <h4>${percentage.toFixed(1)}%</h4>
-                            <p>正確率</p>
-                        </div>
-                        <div class="col-3">
-                            <h4>${state.currentDatabase === 'generative-ai' ? '生成式AI' : 
-                                  state.currentDatabase === 'ipas' ? 'iPAS' : 'AI出題'}</h4>
-                            <p>題庫</p>
-                        </div>
+                    
+                    <div class="alert ${percentage >= 70 ? 'alert-success' : 'alert-warning'} mb-4">
+                        <h5 class="alert-heading">
+                            ${percentage >= 70 ? '🎉 恭喜通過！' : '💪 繼續努力！'}
+                        </h5>
+                        <p class="mb-0">
+                            ${percentage >= 70 ? 
+                                '達到iPAS合格標準(70%)，考試準備良好！' : 
+                                '距離合格標準還需要加強，建議多加練習錯題。'}
+                        </p>
                     </div>
-                </div>
-                
-                <div class="alert ${percentage >= 70 ? 'alert-success' : 'alert-warning'} mb-4">
-                    ${percentage === 100 ? '🎉 恭喜！完美通過測驗！' : 
-                     percentage >= 70 ? '👍 做得好！達到合格分數。' : 
-                     '💪 加油！需要多練習。'}
-                </div>
-            `;
-            
-            // 錯題分析
-            if (state.wrongQuestions.length > 0) {
-                resultHTML += `
-                    <div class="card">
-                        <div class="card-header bg-danger text-white">
-                            <h5 class="mb-0">錯題分析 (${state.wrongQuestions.length}題)</h5>
-                        </div>
-                        <div class="card-body" style="max-height: 400px; overflow-y: auto;">
                 `;
                 
-                state.wrongQuestions.forEach((q, index) => {
-                    const userAnswerIndex = state.userAnswers[state.questions.indexOf(q)].charCodeAt(0) - 65;
-                    const userAnswerText = q.options[userAnswerIndex] || '未作答';
+                // 錯題分析
+                if (this.state.wrongQuestions.length > 0) {
+                    const topicWrongs = {};
+                    this.state.wrongQuestions.forEach(question => {
+                        const topic = question.topic || '未分類';
+                        if (!topicWrongs[topic]) {
+                            topicWrongs[topic] = [];
+                        }
+                        topicWrongs[topic].push(question);
+                    });
                     
                     resultHTML += `
-                        <div class="mb-3 pb-3 border-bottom">
-                            <div class="fw-bold">${index + 1}. ${q.question}</div>
-                            <div class="text-danger mt-1">您的答案: ${state.userAnswers[state.questions.indexOf(q)]} (${userAnswerText})</div>
-                            <div class="text-success">正確答案: ${q.correct_answer_letter} (${q.options[q.correct_answer_index]})</div>
-                            <div class="text-muted mt-1">主題: ${q.topic} > ${q.subtopic}</div>
+                        <div class="card">
+                            <div class="card-header bg-danger text-white">
+                                <h5 class="mb-0">❌ 錯題分析 (${this.state.wrongQuestions.length}題)</h5>
+                            </div>
+                            <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                    `;
+                    
+                    for (const [topic, questions] of Object.entries(topicWrongs)) {
+                        resultHTML += `
+                            <div class="mb-4">
+                                <h6 class="border-bottom pb-2">【${topic}】: ${questions.length}題</h6>
+                        `;
+                        
+                        questions.forEach((q, index) => {
+                            const userAnswerIndex = this.state.userAnswers[this.state.questions.indexOf(q)].answer.charCodeAt(0) - 65;
+                            const userAnswerText = q.options[userAnswerIndex] || '未作答';
+                            const questionId = `wrong-q-${topic.replace(/\s+/g, '-')}-${index}`;
+                            
+                            resultHTML += `
+                                <div class="mb-3">
+                                    <div class="fw-bold position-relative" 
+                                         style="cursor: pointer; padding: 5px; border-radius: 4px;" 
+                                         data-bs-toggle="collapse" 
+                                         data-bs-target="#${questionId}">
+                                        <div class="d-flex justify-content-between align-items-center">
+                                            <div>${index+1}. ${q.question}</div>
+                                            <i class="fas fa-chevron-down"></i>
+                                        </div>
+                                    </div>
+                                    <div class="ps-3 mt-1">
+                                        <div class="text-danger">您的答案: ${this.state.userAnswers[this.state.questions.indexOf(q)].answer} (${userAnswerText})</div>
+                                        <div class="text-success">正確答案: ${q.correct_answer_letter} (${q.options[q.correct_answer_index]})</div>
+                                        <div class="collapse mt-2" id="${questionId}">
+                                            <div class="card card-body bg-light">
+                                                <h6 class="text-primary mb-2">題目解析:</h6>
+                                                ${q.explanation || '無解析'}
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            `;
+                        });
+                        
+                        resultHTML += `</div>`;
+                    }
+                    
+                    resultHTML += `
+                            </div>
                         </div>
+                    `;
+                }
+                
+                document.getElementById('result-content').innerHTML = resultHTML;
+                
+                // 添加折疊效果
+                document.querySelectorAll('[data-bs-toggle="collapse"]').forEach(item => {
+                    item.addEventListener('click', function() {
+                        const icon = this.querySelector('i');
+                        if (this.getAttribute('aria-expanded') === 'true') {
+                            icon.classList.remove('fa-chevron-up');
+                            icon.classList.add('fa-chevron-down');
+                        } else {
+                            icon.classList.remove('fa-chevron-down');
+                            icon.classList.add('fa-chevron-up');
+                        }
+                    });
+                });
+                
+                this.modals.result.show();
+                
+                // 隱藏複習錯題按鈕（如果是錯題模式）
+                document.getElementById('review-wrong-btn').style.display = this.state.currentMode === 'wrong' ? 'none' : 'block';
+            },
+            
+            // 複習錯題
+            reviewWrongQuestions() {
+                if (this.state.wrongQuestions.length === 0) {
+                    this.showAlert('沒有錯題需要複習', 'info');
+                    return;
+                }
+                
+                this.modals.result.hide();
+                
+                // 設置為錯題模式
+                this.state.mode = 'wrong';
+                document.querySelectorAll('.mode-btn').forEach(btn => {
+                    btn.classList.remove('active');
+                    if (btn.dataset.mode === 'wrong') {
+                        btn.classList.add('active');
+                    }
+                });
+                
+                // 重新開始錯題測驗
+                this.state.questions = this.state.wrongQuestions.slice();
+                this.state.currentQuestionIndex = 0;
+                this.state.score = 0;
+                this.state.userAnswers = {};
+                this.state.wrongQuestions = [];
+                
+                this.state.questions.forEach((q, index) => {
+                    q.number = index + 1;
+                });
+                
+                this.displayQuestion();
+                this.updateButtonStates();
+                
+                this.showAlert('開始複習錯題', 'success');
+            },
+            
+            // 更新按鈕狀態
+            updateButtonStates() {
+                const hasAnswered = this.state.currentQuestionIndex in this.state.userAnswers;
+                const isFirstQuestion = this.state.currentQuestionIndex === 0;
+                const isLastQuestion = this.state.currentQuestionIndex === this.state.questions.length - 1;
+                
+                this.elements.prevBtn.disabled = isFirstQuestion || this.state.currentMode === 'exam';
+                this.elements.submitBtn.disabled = hasAnswered;
+                this.elements.nextBtn.disabled = !hasAnswered || isLastQuestion;
+                this.elements.finishBtn.disabled = !hasAnswered && !isLastQuestion;
+                this.elements.reviewBtn.disabled = !hasAnswered;
+            },
+            
+            // 更新統計
+            updateStats() {
+                const answered = Object.keys(this.state.userAnswers).length;
+                const total = this.state.questions.length;
+                const percentage = answered > 0 ? (this.state.score / answered * 100).toFixed(1) : 0;
+                
+                this.elements.statsDisplay.textContent = `得分: ${this.state.score}/${answered} (${percentage}%)`;
+            },
+            
+            // 更新錯題按鈕狀態
+            updateWrongButtonState() {
+                const wrongBtn = document.getElementById('wrong-btn');
+                const hasWrongQuestions = this.state.userData.incorrect && this.state.userData.incorrect.length > 0;
+                
+                wrongBtn.disabled = !hasWrongQuestions;
+                wrongBtn.title = hasWrongQuestions ? '複習錯題' : '尚無錯題記錄';
+            },
+            
+            // 複習當前題目
+            reviewCurrentQuestion() {
+                // 重新顯示當前題目的解析
+                if (this.state.currentQuestionIndex in this.state.userAnswers) {
+                    const question = this.state.questions[this.state.currentQuestionIndex];
+                    const userAnswerData = this.state.userAnswers[this.state.currentQuestionIndex];
+                    this.showExplanation(question, userAnswerData.answer, userAnswerData.isCorrect);
+                }
+            },
+            
+            // 統計功能
+            showStatistics() {
+                const correctCount = this.state.userData.correct ? this.state.userData.correct.length : 0;
+                const incorrectCount = this.state.userData.incorrect ? this.state.userData.incorrect.length : 0;
+                const totalAnswered = correctCount + incorrectCount;
+                const accuracy = totalAnswered > 0 ? (correctCount / totalAnswered) * 100 : 0;
+                
+                // 分析各題庫統計
+                const databaseStats = {};
+                (this.state.userData.history || []).forEach(entry => {
+                    const db = entry.database || '未知';
+                    if (!databaseStats[db]) {
+                        databaseStats[db] = { correct: 0, total: 0 };
+                    }
+                    databaseStats[db].total += 1;
+                    if (entry.is_correct) {
+                        databaseStats[db].correct += 1;
+                    }
+                });
+                
+                // 主題分析
+                const topicStats = {};
+                (this.state.userData.history || []).forEach(entry => {
+                    const topic = entry.topic || '未分類';
+                    if (!topicStats[topic]) {
+                        topicStats[topic] = { correct: 0, total: 0 };
+                    }
+                    topicStats[topic].total += 1;
+                    if (entry.is_correct) {
+                        topicStats[topic].correct += 1;
+                    }
+                });
+                
+                let statsHTML = `
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body text-center">
+                                    <h4>${correctCount}</h4>
+                                    <p class="mb-0">答對題數</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-danger text-white">
+                                <div class="card-body text-center">
+                                    <h4>${incorrectCount}</h4>
+                                    <p class="mb-0">答錯題數</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">整體表現</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>總答題數:</strong> ${totalAnswered}</p>
+                                    <p><strong>整體正確率:</strong> ${accuracy.toFixed(1)}%</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar ${accuracy >= 70 ? 'bg-success' : 'bg-warning'}" style="width: ${accuracy}%">
+                                            ${accuracy.toFixed(1)}%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">各題庫表現</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>題庫</th>
+                                            <th>正確率</th>
+                                            <th>正確/總數</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+                
+                const databaseNames = {
+                    'generative-ai': '生成式AI認證',
+                    'ipas': 'iPAS AI應用規劃師'
+                };
+                
+                Object.keys(databaseStats).forEach(db => {
+                    const stats = databaseStats[db];
+                    const dbAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+                    const dbName = databaseNames[db] || db;
+                    
+                    statsHTML += `
+                        <tr>
+                            <td>${dbName}</td>
+                            <td>
+                                <div class="progress" style="height: 15px;">
+                                    <div class="progress-bar ${dbAccuracy < 60 ? 'bg-danger' : dbAccuracy < 80 ? 'bg-warning' : 'bg-success'}" 
+                                         style="width: ${dbAccuracy}%;"></div>
+                                </div>
+                                ${dbAccuracy.toFixed(1)}%
+                            </td>
+                            <td>${stats.correct}/${stats.total}</td>
+                        </tr>
                     `;
                 });
                 
-                resultHTML += `
-                        </div>
-                    </div>
-                `;
-            }
-            
-            document.getElementById('result-content').innerHTML = resultHTML;
-            resultModal.show();
-        }
-        
-        // 顯示統計
-        function showStatistics() {
-            const correctCount = state.userData.correct ? state.userData.correct.length : 0;
-            const incorrectCount = state.userData.incorrect ? state.userData.incorrect.length : 0;
-            const totalAnswered = correctCount + incorrectCount;
-            const accuracy = totalAnswered > 0 ? (correctCount / totalAnswered) * 100 : 0;
-            
-            // 分析各題庫統計
-            const databaseStats = {};
-            (state.userData.history || []).forEach(entry => {
-                const db = entry.database || '未知';
-                if (!databaseStats[db]) {
-                    databaseStats[db] = { correct: 0, total: 0 };
+                if (Object.keys(databaseStats).length === 0) {
+                    statsHTML += '<tr><td colspan="3" class="text-center">尚未有練習記錄</td></tr>';
                 }
-                databaseStats[db].total += 1;
-                if (entry.is_correct) {
-                    databaseStats[db].correct += 1;
-                }
-            });
-            
-            let statsHTML = `
-                <div class="stats-card mb-4">
-                    <h5 class="mb-3">總體統計</h5>
-                    <div class="row">
-                        <div class="col-6">
-                            <div><strong>正確題數:</strong> ${correctCount}</div>
-                            <div><strong>錯誤題數:</strong> ${incorrectCount}</div>
-                            <div><strong>總答題數:</strong> ${totalAnswered}</div>
-                            <div><strong>整體正確率:</strong> ${accuracy.toFixed(1)}%</div>
-                        </div>
-                        <div class="col-6">
-                            <div class="progress" style="height: 30px;">
-                                <div class="progress-bar" style="width: ${accuracy}%">${accuracy.toFixed(1)}%</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="card">
-                    <div class="card-header bg-info text-white">
-                        <h5 class="mb-0">各題庫表現</h5>
-                    </div>
-                    <div class="card-body">
-                        <div class="table-responsive">
-                            <table class="table">
-                                <thead>
-                                    <tr>
-                                        <th>題庫</th>
-                                        <th>正確率</th>
-                                        <th>正確/總數</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-            `;
-            
-            const databaseNames = {
-                'generative-ai': '生成式AI認證',
-                'ipas': 'iPAS AI應用規劃師',
-                'ai-generated': 'AI智能出題'
-            };
-            
-            Object.keys(databaseStats).forEach(db => {
-                const stats = databaseStats[db];
-                const dbAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
-                const dbName = databaseNames[db] || db;
                 
                 statsHTML += `
-                    <tr>
-                        <td>${dbName}</td>
-                        <td>
-                            <div class="progress" style="height: 10px;">
-                                <div class="progress-bar ${dbAccuracy < 60 ? 'bg-danger' : dbAccuracy < 80 ? 'bg-warning' : 'bg-success'}" 
-                                     style="width: ${dbAccuracy}%;"></div>
+                                    </tbody>
+                                </table>
                             </div>
-                            ${dbAccuracy.toFixed(1)}%
-                        </td>
-                        <td>${stats.correct}/${stats.total}</td>
-                    </tr>
-                `;
-            });
-            
-            if (Object.keys(databaseStats).length === 0) {
-                statsHTML += '<tr><td colspan="3" class="text-center">尚未有練習記錄</td></tr>';
-            }
-            
-            statsHTML += `
-                                </tbody>
-                            </table>
                         </div>
                     </div>
-                </div>
-            `;
-            
-            document.getElementById('stats-content').innerHTML = statsHTML;
-            statsModal.show();
-        }
-        
-        // 計時器相關
-        function startTimer() {
-            state.timerRunning = true;
-            state.startTime = new Date();
-            updateTimer();
-        }
-        
-        function stopTimer() {
-            state.timerRunning = false;
-            if (state.timerId) {
-                clearTimeout(state.timerId);
-                state.timerId = null;
-            }
-        }
-        
-        function updateTimer() {
-            if (!state.timerRunning) return;
-            
-            const currentTime = new Date();
-            const elapsedSeconds = Math.floor((currentTime - state.startTime) / 1000);
-            const remainingSeconds = (state.examDuration * 60) - elapsedSeconds;
-            
-            if (remainingSeconds <= 0) {
-                updateTimerDisplay('00:00');
-                elements.timerElement.classList.add('warning');
-                stopTimer();
-                alert('時間到！考試結束。');
-                finishQuiz();
-                return;
-            }
-            
-            const minutes = Math.floor(remainingSeconds / 60);
-            const seconds = remainingSeconds % 60;
-            const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
-            
-            updateTimerDisplay(timeString);
-            
-            if (minutes < 5) {
-                elements.timerElement.classList.add('warning');
-            } else {
-                elements.timerElement.classList.remove('warning');
-            }
-            
-            state.timerId = setTimeout(updateTimer, 1000);
-        }
-        
-        function updateTimerDisplay(timeString) {
-            elements.timerElement.textContent = `剩餘時間: ${timeString}`;
-        }
-        
-        // 工具函數
-        function showLoading(text = '處理中...') {
-            elements.loadingOverlay.classList.remove('d-none');
-            elements.loadingText.textContent = text;
-        }
-        
-        function hideLoading() {
-            elements.loadingOverlay.classList.add('d-none');
-        }
-        
-        function updateLoadingText(text) {
-            elements.loadingText.textContent = text;
-        }
-        
-        // 用戶數據管理
-        function loadUserData() {
-            try {
-                const data = localStorage.getItem('multiQuizUserData');
-                return data ? JSON.parse(data) : {
-                    correct: [],
-                    incorrect: [],
-                    history: []
-                };
-            } catch (error) {
-                console.error('載入用戶數據錯誤:', error);
-                return {
-                    correct: [],
-                    incorrect: [],
-                    history: []
-                };
-            }
-        }
-        
-        function saveUserData(showMessage = false) {
-            try {
-                localStorage.setItem('multiQuizUserData', JSON.stringify(state.userData));
-                if (showMessage) {
-                    alert('學習數據已儲存');
+                    
+                    <div class="card">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">主題分析</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>主題</th>
+                                            <th>正確率</th>
+                                            <th>建議</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+                
+                Object.keys(topicStats).forEach(topic => {
+                    const stats = topicStats[topic];
+                    const topicAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+                    let suggestion = '';
+                    
+                    if (topicAccuracy < 60) {
+                        suggestion = '🔴 重點加強';
+                    } else if (topicAccuracy < 80) {
+                        suggestion = '🟡 持續練習';
+                    } else {
+                        suggestion = '🟢 表現良好';
+                    }
+                    
+                    statsHTML += `
+                        <tr>
+                            <td>${topic}</td>
+                            <td>
+                                <div class="progress" style="height: 15px;">
+                                    <div class="progress-bar ${topicAccuracy < 60 ? 'bg-danger' : topicAccuracy < 80 ? 'bg-warning' : 'bg-success'}" 
+                                         style="width: ${topicAccuracy}%;"></div>
+                                </div>
+                                ${topicAccuracy.toFixed(1)}%
+                            </td>
+                            <td>${suggestion}</td>
+                        </tr>
+                    `;
+                });
+                
+                if (Object.keys(topicStats).length === 0) {
+                    statsHTML += '<tr><td colspan="3" class="text-center">尚未有練習記錄</td></tr>';
                 }
-                return true;
-            } catch (error) {
-                console.error('保存用戶數據錯誤:', error);
-                if (showMessage) {
-                    alert('儲存失敗: ' + error.message);
+                
+                statsHTML += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('stats-content').innerHTML = statsHTML;
+                this.modals.stats.show();
+            },
+            
+            // 匯出錯題
+            exportWrongQuestions() {
+                if (!this.state.userData.incorrect || this.state.userData.incorrect.length === 0) {
+                    this.showAlert('目前沒有錯題記錄', 'info');
+                    return;
                 }
-                return false;
-            }
-        }
-        
-        // 重置統計按鈕事件
-        document.getElementById('reset-stats-btn').addEventListener('click', () => {
-            if (confirm('確定要重置所有學習進度嗎？此操作不可逆。')) {
-                state.userData = {
-                    correct: [],
-                    incorrect: [],
-                    history: []
+                
+                let exportText = "iPAS AI應用規劃師認證考試錯題集\n";
+                exportText += `匯出時間: ${new Date().toLocaleString()}\n`;
+                exportText += `總錯題數: ${this.state.userData.incorrect.length}\n\n`;
+                exportText += "="*50 + "\n\n";
+                
+                const incorrectQuestions = this.state.userData.incorrect;
+                const questionData = {};
+                
+                // 從歷史記錄中尋找對應的錯題詳細資訊
+                (this.state.userData.history || []).forEach(entry => {
+                    if (incorrectQuestions.includes(entry.question) && !questionData[entry.question]) {
+                        questionData[entry.question] = entry;
+                    }
+                });
+                
+                // 生成錯題內容
+                incorrectQuestions.forEach((questionText, i) => {
+                    exportText += `【題目 ${i+1}】\n${questionText}\n\n`;
+                    
+                    if (questionData[questionText]) {
+                        const data = questionData[questionText];
+                        
+                        // 寫入選項
+                        const options = data.options || [];
+                        if (options.length > 0) {
+                            exportText += "選項:\n";
+                            options.forEach((option, j) => {
+                                exportText += `${String.fromCharCode(65+j)}. ${option}\n`;
+                            });
+                            exportText += "\n";
+                        }
+                        
+                        exportText += `正確答案: ${data.correct_answer_letter || '未知'}\n`;
+                        exportText += `您的答案: ${data.user_answer || '未知'}\n`;
+                        exportText += `題庫來源: ${data.database === 'ipas' ? 'iPAS AI應用規劃師' : '生成式AI認證'}\n`;
+                        exportText += `主題分類: ${data.topic || '未分類'} > ${data.subtopic || '未分類'}\n`;
+                        
+                        if (data.explanation) {
+                            exportText += `解析: ${data.explanation}\n`;
+                        }
+                    }
+                    
+                    exportText += "\n" + "-".repeat(50) + "\n\n";
+                });
+                
+                exportText += "\n建議復習重點:\n";
+                exportText += "1. 重點關注答錯率高的主題\n";
+                exportText += "2. 理解題目背後的商業邏輯\n";
+                exportText += "3. 加強AI應用規劃的實務知識\n";
+                exportText += "4. 定期回顧錯題，避免重複犯錯\n";
+                
+                // 創建下載連結
+                const filename = `iPAS_AI應用規劃師_錯題集_${new Date().toISOString().slice(0,19).replace(/[-:T]/g, '')}.txt`;
+                const blob = new Blob([exportText], { type: 'text/plain;charset=utf-8' });
+                
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = filename;
+                a.style.display = 'none';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                this.showAlert(`錯題已匯出至 ${filename}`, 'success');
+            },
+            
+            // 重置學習進度
+            resetProgress() {
+                if (confirm('確定要重置所有學習進度嗎？此操作不可逆。\n\n將清除：\n- 所有答題記錄\n- 錯題統計\n- 學習歷史')) {
+                    this.state.userData = {
+                        correct: [],
+                        incorrect: [],
+                        history: [],
+                        databaseStats: {}
+                    };
+                    this.saveUserData();
+                    this.updateWrongButtonState();
+                    this.modals.stats.hide();
+                    this.showAlert('學習進度已重置', 'success');
+                }
+            },
+            
+            // 計時器功能
+            startTimer() {
+                this.state.isTimerRunning = true;
+                this.state.startTime = new Date();
+                this.updateTimer();
+            },
+            
+            stopTimer() {
+                this.state.isTimerRunning = false;
+                if (this.state.timerId) {
+                    clearTimeout(this.state.timerId);
+                    this.state.timerId = null;
+                }
+            },
+            
+            updateTimer() {
+                if (!this.state.isTimerRunning) {
+                    return;
+                }
+                
+                const currentTime = new Date();
+                const elapsedSeconds = Math.floor((currentTime - this.state.startTime) / 1000);
+                const remainingSeconds = (this.state.examDuration * 60) - elapsedSeconds;
+                
+                if (remainingSeconds <= 0) {
+                    this.updateTimerDisplay('00:00');
+                    this.elements.timerElement.classList.add('warning');
+                    this.stopTimer();
+                    this.showAlert('時間到！考試結束。', 'warning');
+                    this.finishQuiz();
+                    return;
+                }
+                
+                const minutes = Math.floor(remainingSeconds / 60);
+                const seconds = remainingSeconds % 60;
+                const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                this.updateTimerDisplay(timeString);
+                
+                if (minutes < 5) {
+                    this.elements.timerElement.classList.add('warning');
+                } else {
+                    this.elements.timerElement.classList.remove('warning');
+                }
+                
+                this.state.timerId = setTimeout(() => this.updateTimer(), 1000);
+            },
+            
+            updateTimerDisplay(timeString) {
+                this.elements.timerElement.innerHTML = `<i class="fas fa-clock me-2"></i>剩餘時間: ${timeString}`;
+            },
+            
+            // 顯示提示訊息
+            showAlert(message, type = 'info') {
+                const alertTypes = {
+                    'success': 'alert-success',
+                    'error': 'alert-danger', 
+                    'warning': 'alert-warning',
+                    'info': 'alert-info'
                 };
-                saveUserData();
-                alert('學習進度已重置');
-                statsModal.hide();
+                
+                const alertClass = alertTypes[type] || 'alert-info';
+                const iconMap = {
+                    'success': 'fa-check-circle',
+                    'error': 'fa-exclamation-triangle',
+                    'warning': 'fa-exclamation-triangle', 
+                    'info': 'fa-info-circle'
+                };
+                const icon = iconMap[type] || 'fa-info-circle';
+                
+                // 創建提示元素
+                const alertDiv = document.createElement('div');
+                alertDiv.className = `alert ${alertClass} alert-dismissible fade show position-fixed`;
+                alertDiv.style.cssText = `
+                    top: 100px; 
+                    right: 20px; 
+                    z-index: 9999; 
+                    min-width: 300px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                `;
+                alertDiv.innerHTML = `
+                    <i class="fas ${icon} me-2"></i>${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                
+                document.body.appendChild(alertDiv);
+                
+                // 自動移除
+                setTimeout(() => {
+                    if (alertDiv.parentNode) {
+                        alertDiv.remove();
+                    }
+                }, 5000);
+            },
+            
+            // 顯示加載動畫
+            showLoading(text = '處理中...') {
+                this.elements.loadingText.textContent = text;
+                this.elements.loadingOverlay.classList.remove('d-none');
+            },
+            
+            // 隱藏加載動畫
+            hideLoading() {
+                this.elements.loadingOverlay.classList.add('d-none');
             }
-        });
+        };
         
-        // 複習錯題按鈕事件
-        document.getElementById('review-wrong-btn').addEventListener('click', () => {
-            if (state.wrongQuestions.length === 0) {
-                alert('沒有錯題需要複習');
-                return;
-            }
-            
-            resultModal.hide();
-            
-            // 設置為錯題模式
-            state.mode = 'wrong';
-            document.querySelectorAll('.mode-btn').forEach(btn => {
-                btn.classList.remove('active');
-                if (btn.dataset.mode === 'wrong') {
-                    btn.classList.add('active');
-                }
-            });
-            
-            // 將錯題作為新的題目集
-            state.questions = state.wrongQuestions.slice();
-            state.currentQuestionIndex = 0;
-            state.score = 0;
-            state.userAnswers = {};
-            state.wrongQuestions = [];
-            
-            // 重新編號
-            state.questions.forEach((q, index) => {
-                q.number = index + 1;
-            });
-            
-            // 開始複習
-            displayQuestion();
-            
-            // 更新按鈕狀態
-            elements.submitBtn.disabled = false;
-            elements.nextBtn.disabled = true;
-            
-            alert('開始複習錯題');
-        });
-        
-        // 確保底部導航始終固定
-        function ensureBottomNavFixed() {
-            const bottomNav = document.querySelector('.bottom-nav');
-            if (bottomNav) {
-                bottomNav.style.position = 'fixed';
-                bottomNav.style.bottom = '0';
-                bottomNav.style.left = '0';
-                bottomNav.style.right = '0';
-                bottomNav.style.zIndex = '1050';
-                bottomNav.style.width = '100%';
-            }
-        }
-        
-        // 頁面載入完成後初始化
+        // 初始化應用
         document.addEventListener('DOMContentLoaded', () => {
-            init();
-            ensureBottomNavFixed(); // 確保底部導航固定
-            
-            // 監聽滾動事件，確保導航欄始終固定
-            window.addEventListener('scroll', ensureBottomNavFixed);
-            window.addEventListener('resize', ensureBottomNavFixed);
-        });
-        
-        // 頁面關閉前自動保存
-        window.addEventListener('beforeunload', () => {
-            saveUserData(false);
+            iPASQuizApp.init();
         });
     </script>
 </body>

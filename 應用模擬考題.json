@@ -958,5 +958,325 @@
         "concept": "AI倫理風險",
         "number": 60,
         "explanation": "正確答案是「生成虛假或誤導資訊」。生成式AI可能被用於製造假新聞、深偽內容或其他誤導性資訊，這是最重要的倫理考量。"
+    },
+    {
+        "question": "以下哪一項最能精確描述「分析型 AI」的應用目標？",
+        "options": [
+            "A. 根據提示詞生成多種素材",
+            "B. 模擬人類專家的決策過程",
+            "C. 洞悉數據模式並提供有價值的見解",
+            "D. 透過與環境互動學習最佳行動策略"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "人工智慧概念",
+        "concept": "AI的定義與分類",
+        "number": 61,
+        "explanation": "分析型 AI的主要目標是洞悉數據模式，分析和處理大量數據，以提供有價值的見解 [1]。"
+    },
+    {
+        "question": "為了提升AI系統的「透明性」，下列哪種措施是合適的？",
+        "options": [
+            "A. 僅對內部員工進行透明性說明",
+            "B. 不需對外揭露任何有關AI系統的資訊",
+            "C. 將所有AI系統資訊保密",
+            "D. 規劃透過發布報告、技術文件或網站揭露AI系統的相關資訊"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "人工智慧概念",
+        "concept": "AI治理概念",
+        "number": 62,
+        "explanation": "提升AI系統透明性的一個重要措施是規劃透過發布報告、技術文件或網站揭露AI系統的相關資訊 [2]。"
+    },
+    {
+        "question": "以下哪種資料類型「不」具有清晰且固定的結構，通常以文件形式儲存？",
+        "options": [
+            "A. 結構化數據",
+            "B. 半結構化數據",
+            "C. 非結構化數據",
+            "D. 數值型資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料處理與分析概念",
+        "concept": "資料基本概念與來源",
+        "number": 63,
+        "explanation": "半結構化數據具有一定結構標籤，但格式靈活，無需嚴格遵循固定架構，通常以文件形式儲存，例如XML、JSON、CSV等 [3]。"
+    },
+    {
+        "question": "在資料清洗過程中，處理「錯誤值」的主要目的是什麼？",
+        "options": [
+            "A. 消除數據中的遺缺值",
+            "B. 確保數據的完整性",
+            "C. 檢測並修正不符合合理範圍或明顯錯誤的值",
+            "D. 移除數據中的重複記錄"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料處理與分析概念",
+        "concept": "資料整理與分析流程",
+        "number": 64,
+        "explanation": "錯誤值處理是指檢測並修正數據中不符合合理範圍或存在明顯錯誤的值，例如年齡出現負數 [4]。"
+    },
+    {
+        "question": "數據「正規化/標準化」的主要目的是什麼？",
+        "options": [
+            "A. 將數據轉換為離散的區間或類別",
+            "B. 減少數據的維度或體積",
+            "C. 將數值數據縮放到特定範圍，以消除不同變數之間的單位影響",
+            "D. 處理數據中的遺缺值"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料處理與分析概念",
+        "concept": "資料整理與分析流程",
+        "number": 65,
+        "explanation": "數據正規化/標準化是將數值數據縮放到特定範圍，以消除不同變數之間的單位影響，使數據在模型中具有可比性 [5]。"
+    },
+    {
+        "question": "關於「標準差」的敘述，下列何者正確？",
+        "options": [
+            "A. 標準差越大，數據的分散程度越小",
+            "B. 標準差越小，數據的分散程度越大",
+            "C. 標準差常用來衡量一組數據的分散程度",
+            "D. 標準差不受極端值影響"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料處理與分析概念",
+        "concept": "資料整理與分析流程",
+        "number": 66,
+        "explanation": "標準差是用來衡量一組數據的分散程度，標準差越大，數據的分散程度越大，反之亦然 [6]。它會受極端值影響 [7]。"
+    },
+    {
+        "question": "機器學習的「目的」是什麼？",
+        "options": [
+            "A. 完全取代人類的智慧勞動",
+            "B. 透過數據訓練模型，使機器具備預測與分類能力",
+            "C. 僅專注於處理結構化數據",
+            "D. 不需依賴數據，直接執行任務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "機器學習基本原理",
+        "number": 67,
+        "explanation": "機器學習是一種透過數據訓練模型，使機器具備預測與分類能力的技術 [8-10]。"
+    },
+    {
+        "question": "哪一種機器學習方法主要應用於「分類」與「迴歸」任務，並透過帶有標記的訓練數據來訓練模型？",
+        "options": [
+            "A. 非監督式學習",
+            "B. 強化學習",
+            "C. 半監督式學習",
+            "D. 監督式學習"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "常見的機器學習模型",
+        "number": 68,
+        "explanation": "監督式學習主要應用於分類與迴歸任務，透過帶有標記的訓練數據來訓練模型 [11, 12]。"
+    },
+    {
+        "question": "強化學習的「三個核心要素」不包含下列哪一項？",
+        "options": [
+            "A. 代理（Agent）",
+            "B. 環境（Environment）",
+            "C. 獎勵（Reward）",
+            "D. 數據清洗（Data Cleaning）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "常見的機器學習模型",
+        "number": 69,
+        "explanation": "強化學習的三個核心要素是代理、環境和獎勵 [13]。數據清洗是機器學習數據處理的步驟，與強化學習的核心要素無關。"
+    },
+    {
+        "question": "生成式 AI 的主要目標是什麼？",
+        "options": [
+            "A. 學習數據特徵與目標標記之間的條件概率",
+            "B. 根據龐大的數據集訓練模型，生成多樣且創新的內容",
+            "C. 透過分析數據尋找分類邊界",
+            "D. 執行如分類、預測等任務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 概念",
+        "concept": "鑑別式 AI 與生成式 AI 的基本原理",
+        "number": 70,
+        "explanation": "生成式 AI 的主要目標是根據龐大的數據集訓練模型，生成多樣且創新的內容 [14]。選項A、C、D是鑑別式AI的目標或特性。"
+    },
+    {
+        "question": "生成式 AI 與鑑別式 AI 的整合，在「數據增強」方面的主要價值是什麼？",
+        "options": [
+            "A. 降低模型的計算成本",
+            "B. 解決數據稀缺、數據不平衡等問題",
+            "C. 僅提升模型在特定場景的表現",
+            "D. 完全取代真實數據的收集"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 概念",
+        "concept": "鑑別式 AI 與生成式 AI 的整合應用",
+        "number": 71,
+        "explanation": "生成式 AI 的數據生成能力與鑑別式 AI 的分類預測能力相輔相成，能夠創造出多樣化且逼真的數據樣本，解決數據稀缺、數據不平衡等問題 [15]。"
+    },
+    {
+        "question": "關於 No Code 平台，下列敘述何者正確？",
+        "options": [
+            "A. 主要面向具有深厚技術背景的開發者",
+            "B. 透過視覺化介面和拖放操作，使用者無需編寫程式碼即可快速開發應用",
+            "C. 結合視覺化開發工具與程式碼擴充功能",
+            "D. 主要用於開發高彈性功能的複雜應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的基本概念",
+        "number": 72,
+        "explanation": "No Code 平台透過視覺化介面和拖放操作，讓使用者無需編寫程式碼即可快速開發應用 [16, 17]。"
+    },
+    {
+        "question": "生成式 AI 結合 No Code 和 Low Code 平台，以下何者是其帶來的優勢？",
+        "options": [
+            "A. 僅能用於自動化程式碼生成",
+            "B. 降低了對資料隱私和安全性的要求",
+            "C. 實現自動化、智慧化開發與應用，如自動生成程式碼、模板設計優化等",
+            "D. 增加開發流程的複雜度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的優勢與限制",
+        "number": 73,
+        "explanation": "生成式 AI 結合 No Code 和 Low Code 平台，能實現自動化、智慧化開發與應用，例如自動生成程式碼、模板設計優化、數據分析與決策、AI驅動的UI/UX設計等 [17]。"
+    },
+    {
+        "question": "生成式 AI 技術進化中，「多模態生成」是指什麼？",
+        "options": [
+            "A. 僅限於生成單一語言的文本內容",
+            "B. 將文本、圖像、音訊等多種模態結合，開創更多應用場景",
+            "C. 僅支援生成預訓練模型中的內容",
+            "D. 專注於優化模型壓縮與量化技術"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 市場價值與趨勢",
+        "number": 74,
+        "explanation": "多模態生成是指將文本、圖像、音訊等多種模態結合，開創了更多應用場景，例如Midjourney、DALL-E [18]。"
+    },
+    {
+        "question": "善用生成式 AI 工具時，關鍵技術之一是「Prompt 工程」。其主要目的是什麼？",
+        "options": [
+            "A. 限制 AI 生成內容的隨機性",
+            "B. 控制生成內容的溫度參數",
+            "C. 透過調整輸入提示詞，以指定和優化期望完成的任務",
+            "D. 選擇生成機率最高的前 K 個選項"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "如何善用生成式 AI 工具",
+        "number": 75,
+        "explanation": "提示工程（Prompt Engineering）是指使用者會持續並反覆地針對輸入提示進行調整，以指定他們期望完成的任務，直到任務解決為止 [14]。"
+    },
+    {
+        "question": "企業導入生成式 AI 時，在「需求與現狀評估」階段，應首先明確什麼？",
+        "options": [
+            "A. 企業內部是否有足夠的技術人才",
+            "B. 硬體與系統架構是否完善",
+            "C. 自身的業務痛點與現有營運模式的挑戰",
+            "D. 試點應用的範圍"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入評估",
+        "number": 76,
+        "explanation": "企業導入生成式 AI，首先需明確自身需求與業務痛點，深入分析現有營運模式與挑戰 [19]。"
+    },
+    {
+        "question": "在評估生成式 AI 方案的財務可行性時，計算投資回報率（ROI）應從哪兩個層面進行深入分析？",
+        "options": [
+            "A. 技術成熟度與市場規模",
+            "B. 成本與收益",
+            "C. 人力資源與硬體設施",
+            "D. 預測準確度與模型複雜度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入規劃",
+        "number": 77,
+        "explanation": "計算投資回報率（ROI）應從成本與收益兩個層面進行深入分析 [20]。"
+    },
+    {
+        "question": "為了保護生成式 AI 訓練數據的「資料隱私與安全」，以下哪種做法是建議的？",
+        "options": [
+            "A. 將所有訓練數據公開化",
+            "B. 不對數據進行任何加密或匿名化處理",
+            "C. 採用匿名化、加密技術及訪問控制等措施",
+            "D. 僅依賴於模型自身的安全性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 風險管理",
+        "number": 78,
+        "explanation": "為減少訓練數據洩漏等風險，企業應採用匿名化、加密技術及訪問控制等措施，並定期進行安全審查和漏洞檢測 [21]。"
+    },
+    {
+        "question": "企業透過購買保險或與外部合作夥伴簽署協議，將部分或全部風險責任轉移給第三方，這屬於哪種風險管理策略？",
+        "options": [
+            "A. 風險緩解",
+            "B. 風險迴避",
+            "C. 風險接受",
+            "D. 風險轉移"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 風險管理",
+        "number": 79,
+        "explanation": "風險轉移是透過購買保險或與外部合作夥伴簽署協議，將部分或全部風險責任轉移給第三方 [22, 23]。"
+    },
+    {
+        "question": "以下哪一個不是人工智慧在「交通」領域的應用實例？",
+        "options": [
+            "A. 自動駕駛汽車的精準控制",
+            "B. 交通流量預測",
+            "C. 偵測異常交通模式",
+            "D. 藥物分子結構模擬"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "人工智慧概念",
+        "concept": "AI應用領域與架構",
+        "number": 80,
+        "explanation": "藥物分子結構模擬是AI在醫療保健領域的應用 [24]，而非交通領域。"
     }
 ]

@@ -638,5 +638,325 @@
         "concept": "倫理問題",
         "number": 40,
         "explanation": "正確答案是「生成虛假信息」，生成式 AI 可能被用於製造假新聞或偽造內容，是重大倫理問題。選項 B、C、D 是技術或經濟考量，與倫理無關。"
+    },
+    {
+        "question": "根據歐盟AI Act，公司內部員工臉部辨識打卡系統屬於哪種風險等級？",
+        "options": [
+            "禁止風險",
+            "高風險",
+            "有限風險",
+            "最小風險"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI法規與倫理",
+        "concept": "歐盟AI Act風險分類",
+        "number": 41,
+        "explanation": "正確答案是「高風險」。即使臉部辨識系統僅限於公司內部使用，只要用於勞工管理或控制出勤與評估，根據EU AI Act仍屬於高風險系統。"
+    },
+    {
+        "question": "隨機森林(Random Forest)演算法的主要優點是什麼？",
+        "options": [
+            "只需要一棵決策樹",
+            "透過集成學習提高準確性",
+            "無法處理缺失值",
+            "只能用於回歸問題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習演算法",
+        "concept": "隨機森林",
+        "number": 42,
+        "explanation": "正確答案是「透過集成學習提高準確性」。隨機森林是集成學習方法，結合多顆決策樹來降低過擬合並提高預測準確性。"
+    },
+    {
+        "question": "以下何者不是評估資料變異性的指標？",
+        "options": [
+            "標準差",
+            "全距",
+            "中位數",
+            "變異數"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "變異性指標",
+        "number": 43,
+        "explanation": "正確答案是「中位數」。中位數是集中趨勢的指標，表示資料的中間位置，不是用來評估變異性的指標。"
+    },
+    {
+        "question": "RAG(Retrieval-Augmented Generation)相比於微調(Fine-tuning)的主要優勢是什麼？",
+        "options": [
+            "需要重新訓練模型",
+            "處理時間較快",
+            "記憶能力較差",
+            "成本較高"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 技術原理",
+        "concept": "RAG技術",
+        "number": 44,
+        "explanation": "正確答案是「處理時間較快」。RAG無需重新訓練模型，只需建構檢索資料庫，因此比微調更快速。"
+    },
+    {
+        "question": "以下何者不是提示工程(Prompt Engineering)的技術？",
+        "options": [
+            "零樣本學習",
+            "少樣本學習",
+            "思維鏈",
+            "AutoML"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "提示工程技術",
+        "concept": "提示工程方法",
+        "number": 45,
+        "explanation": "正確答案是「AutoML」。AutoML是自動化機器學習，屬於ML工程領域，與提示工程無直接關聯。"
+    },
+    {
+        "question": "TAIDE是什麼？",
+        "options": [
+            "美國開發的語言模型",
+            "台灣開發的大型語言模型",
+            "歐盟的AI法規",
+            "中國的AI技術標準"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "本土AI模型",
+        "number": 46,
+        "explanation": "正確答案是「台灣開發的大型語言模型」。TAIDE(Taiwan AI Dialogue Engine)是台灣數位發展部推動的在地大型語言模型。"
+    },
+    {
+        "question": "什麼是資料飄移(Data Drift)？",
+        "options": [
+            "資料存儲位置改變",
+            "輸入資料特徵分布隨時間變動",
+            "資料格式轉換",
+            "資料備份過程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入與風險管理",
+        "concept": "資料品質管理",
+        "number": 47,
+        "explanation": "正確答案是「輸入資料特徵分布隨時間變動」。資料飄移指輸入資料特徵的統計分布隨時間變動，而這種變化未被模型學習到。"
+    },
+    {
+        "question": "CNN(卷積神經網路)主要應用於哪個領域？",
+        "options": [
+            "自然語言處理",
+            "圖像識別",
+            "語音合成",
+            "時間序列預測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "深度學習",
+        "concept": "卷積神經網路",
+        "number": 48,
+        "explanation": "正確答案是「圖像識別」。CNN特別適用於處理具有網格狀結構的資料，如圖像，在電腦視覺領域表現優異。"
+    },
+    {
+        "question": "以下何者是生成音樂的AI工具？",
+        "options": [
+            "Sora",
+            "DALL-E",
+            "Suno AI",
+            "ChatGPT"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI音樂生成工具",
+        "number": 49,
+        "explanation": "正確答案是「Suno AI」。Suno AI是專門的音樂創作平台，用戶可透過文字提示快速創作高品質原創歌曲。"
+    },
+    {
+        "question": "什麼是提示注入攻擊(Prompt Injection)？",
+        "options": [
+            "增加提示詞長度",
+            "操控AI模型偏離原本任務",
+            "提高模型準確率",
+            "優化提示詞結構"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入與風險管理",
+        "concept": "AI安全風險",
+        "number": 50,
+        "explanation": "正確答案是「操控AI模型偏離原本任務」。提示注入攻擊是對AI語言模型輸入提示語的操控攻擊，讓模型偏離原本的任務或回應策略。"
+    },
+    {
+        "question": "AI模型的泛化能力是指什麼？",
+        "options": [
+            "處理大量資料的能力",
+            "應用到未見過新資料的能力",
+            "快速訓練的能力",
+            "節省記憶體的能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習基礎",
+        "concept": "泛化能力",
+        "number": 51,
+        "explanation": "正確答案是「應用到未見過新資料的能力」。泛化能力是指AI模型將訓練期間學到的知識，應用到未曾見過的新資料或新情境中並表現良好的能力。"
+    },
+    {
+        "question": "CLIP模型的核心原理是什麼？",
+        "options": [
+            "只處理文字資料",
+            "只處理圖像資料",
+            "將圖片與文字映射到同一嵌入空間",
+            "專門用於語音識別"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 技術原理",
+        "concept": "多模態模型",
+        "number": 52,
+        "explanation": "正確答案是「將圖片與文字映射到同一嵌入空間」。CLIP是OpenAI的多模態模型，能夠將圖片與文字映射到同一向量空間，實現跨模態理解。"
+    },
+    {
+        "question": "半監督學習的特點是什麼？",
+        "options": [
+            "只使用有標籤資料",
+            "只使用無標籤資料",
+            "同時使用有標籤和無標籤資料",
+            "不需要任何資料"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習演算法",
+        "concept": "半監督學習",
+        "number": 53,
+        "explanation": "正確答案是「同時使用有標籤和無標籤資料」。半監督學習結合少量有標籤資料和大量無標籤資料進行訓練，在標籤資料稀少時特別有用。"
+    },
+    {
+        "question": "以下何者不是AI Agent的核心功能？",
+        "options": [
+            "感知環境",
+            "決策制定",
+            "執行任務",
+            "發明新技術"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI Agent",
+        "number": 54,
+        "explanation": "正確答案是「發明新技術」。AI Agent具備感知、決策與執行任務能力，核心目的是完成任務、達成目標，而不是進行原創性發明。"
+    },
+    {
+        "question": "Transformer模型中自注意力機制的核心原理是什麼？",
+        "options": [
+            "只關注前一個詞",
+            "每個詞都能看到整個序列",
+            "隨機關注某些詞",
+            "只關注句子開頭"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "深度學習",
+        "concept": "Transformer架構",
+        "number": 55,
+        "explanation": "正確答案是「每個詞都能看到整個序列」。自注意力機制讓序列中的每個詞都能關注到整個序列的所有位置，有效捕捉長距離依賴關係。"
+    },
+    {
+        "question": "以下何者不是資料集的內在特性？",
+        "options": [
+            "資料大小",
+            "資料的多樣性",
+            "資料收集時間",
+            "資料的特徵數量"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "資料集特性",
+        "number": 56,
+        "explanation": "正確答案是「資料收集時間」。資料收集時間屬於資料的來源背景或時序資訊，不是資料集的內在特性，而是外在的元資料。"
+    },
+    {
+        "question": "NotebookLM主要用於什麼功能？",
+        "options": [
+            "程式碼生成",
+            "圖像生成",
+            "生成重點摘要與知識整理",
+            "音樂創作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI工具應用",
+        "number": 57,
+        "explanation": "正確答案是「生成重點摘要與知識整理」。NotebookLM是Google推出的AI工具，適合用於生成重點摘要和模擬人物對話式知識整理。"
+    },
+    {
+        "question": "金融業運用AI時最需要重視的法規指引是什麼？",
+        "options": [
+            "資料隱私保護",
+            "演算法透明度",
+            "風險管理",
+            "以上皆是"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI法規與倫理",
+        "concept": "金融AI應用規範",
+        "number": 58,
+        "explanation": "正確答案是「以上皆是」。金融業運用AI需要同時考慮資料隱私保護、演算法透明度和風險管理等多個面向的法規要求。"
+    },
+    {
+        "question": "過擬合(Overfitting)的主要特徵是什麼？",
+        "options": [
+            "訓練準確率低，測試準確率高",
+            "訓練準確率高，測試準確率低",
+            "訓練和測試準確率都很高",
+            "訓練和測試準確率都很低"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習基礎",
+        "concept": "過擬合",
+        "number": 59,
+        "explanation": "正確答案是「訓練準確率高，測試準確率低」。過擬合指模型在訓練資料上表現很好，但在新的測試資料上表現較差，缺乏泛化能力。"
+    },
+    {
+        "question": "生成式AI在創作內容時最需要考慮的倫理問題是什麼？",
+        "options": [
+            "計算成本過高",
+            "生成虛假或誤導資訊",
+            "訓練時間太長",
+            "硬體需求太高"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入與風險管理",
+        "concept": "AI倫理風險",
+        "number": 60,
+        "explanation": "正確答案是「生成虛假或誤導資訊」。生成式AI可能被用於製造假新聞、深偽內容或其他誤導性資訊，這是最重要的倫理考量。"
     }
 ]

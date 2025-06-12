@@ -1278,5 +1278,806 @@
         "concept": "AI應用領域與架構",
         "number": 80,
         "explanation": "藥物分子結構模擬是AI在醫療保健領域的應用 [24]，而非交通領域。"
+    },
+    {
+        "question": "關於 AI，下列敘述何者正確？",
+        "options": [
+            "AI 僅能處理結構化數據的分析",
+            "AI 涵蓋多種專業領域與技術",
+            "AI 系統只能在學術研究中應用",
+            "AI 無法應用於金融領域"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "人工智慧概念",
+        "concept": "AI的定義與應用範圍",
+        "number": 81,
+        "explanation": "正確答案是「AI 涵蓋多種專業領域與技術」。AI是一個廣泛的領域，涵蓋機器學習、深度學習、自然語言處理、電腦視覺等多個技術領域，並可應用於金融、醫療、教育、交通等各行各業。"
+    },
+    {
+        "question": "下列何者最適合訓練電腦下圍棋、自動駕駛等動態重複地互動的問題？",
+        "options": [
+            "監督式學習（Supervised Learning）",
+            "非監督式學習（Unsupervised Learning）",
+            "半監督式學習（Semi-supervised Learning）",
+            "強化學習（Reinforcement Learning）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "強化學習",
+        "number": 82,
+        "explanation": "正確答案是「強化學習（Reinforcement Learning）」。強化學習特別適合需要與環境動態互動、透過試錯學習最佳策略的問題，如下圍棋、自動駕駛等場景。"
+    },
+    {
+        "question": "深度學習模型中，下列哪一項通常用來降低過擬合（Overfitting）問題？",
+        "options": [
+            "增加訓練數據量",
+            "增加模型的複雜度",
+            "增加學習率",
+            "增加正則化項"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "深度學習概念",
+        "concept": "過擬合防止技術",
+        "number": 83,
+        "explanation": "正確答案是「增加正則化項」。正則化項（如L1、L2正則化、Dropout等）是深度學習中常用的防止過擬合技術，透過在損失函數中加入懲罰項來限制模型複雜度。"
+    },
+    {
+        "question": "在 AI 治理中，下列何者是國際合作的重要性？",
+        "options": [
+            "統一 AI 發展標準",
+            "避免 AI 技術的濫用",
+            "促進 AI 技術的轉移",
+            "以上皆是"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI法規與倫理",
+        "concept": "AI治理與國際合作",
+        "number": 84,
+        "explanation": "正確答案是「以上皆是」。AI治理的國際合作涵蓋統一發展標準、防止技術濫用、促進技術轉移等多個面向，需要各國共同努力建立完善的治理框架。"
+    },
+    {
+        "question": "若要設計一個能夠辨識並過濾垃圾郵件的系統，應該選擇下列哪一種機器學習演算法以實現最佳效果？",
+        "options": [
+            "監督式學習（Supervised Learning）",
+            "非監督式學習（Unsupervised Learning）",
+            "半監督式學習（Semi-supervised Learning）",
+            "強化學習（Reinforcement Learning）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "監督式學習應用",
+        "number": 85,
+        "explanation": "正確答案是「監督式學習（Supervised Learning）」。垃圾郵件分類是典型的二元分類問題，需要使用已標記為「垃圾」或「正常」的郵件數據來訓練模型，屬於監督式學習的應用。"
+    },
+    {
+        "question": "假設某國正在考慮使用 AI 技術來進行社會信用評分，並根據年齡、缺陷、種族等特徵來評定個人的信用；同時，該國計劃在公眾場所使用遠程生物辨識系統進行執法，目的在於提高社會秩序和安全。上述 AI 應用可能會引發對隱私和個人權利的重大關注，根據歐盟《人工智慧法》（Artificial Intelligence Act, AIA）的風險分級，這類應用屬於哪一風險等級？",
+        "options": [
+            "不可接受風險",
+            "高風險",
+            "有限風險",
+            "小或低風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI法規與倫理",
+        "concept": "歐盟AI法案風險分類",
+        "number": 86,
+        "explanation": "正確答案是「不可接受風險」。根據歐盟AI法案，基於種族、年齡、殘疾等敏感特徵的社會信用評分系統，以及在公共場所進行遠程生物辨識的執法應用，都屬於不可接受風險等級，原則上被禁止使用。"
+    },
+    {
+        "question": "下列何者非大數據時代資料的特性？",
+        "options": [
+            "資料量大",
+            "資料變動速度快",
+            "資料多樣性",
+            "資料存儲位置固定"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "大數據特性",
+        "number": 87,
+        "explanation": "正確答案是「資料存儲位置固定」。大數據的特性通常用「3V」或「5V」來描述：Volume（量大）、Velocity（速度快）、Variety（多樣性）、Veracity（真實性）、Value（價值）。資料存儲位置固定並非大數據的特性。"
+    },
+    {
+        "question": "關於 K 平均法（K-means），下列敘述何者「不」正確？",
+        "options": [
+            "希望找出 k 個互不交集的群集",
+            "不同的起始群集中心，可能會造成不同的分群結果",
+            "容易受雜訊與離群值（Outlier）影響其群集中心",
+            "可以處理類別型資料"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習演算法",
+        "concept": "K-means聚類演算法",
+        "number": 88,
+        "explanation": "正確答案是「可以處理類別型資料」。K-means演算法基於歐氏距離計算，主要適用於數值型資料，無法直接處理類別型（categorical）資料。類別型資料需要先進行編碼轉換或使用其他適合的聚類方法。"
+    },
+    {
+        "question": "下列哪一種資料類型不屬於非結構化資料？",
+        "options": [
+            "X 光醫學影像",
+            "監控錄影畫面",
+            "客服電話錄音",
+            "組織內部的關係型資料庫記錄"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "資料類型分類",
+        "number": 89,
+        "explanation": "正確答案是「組織內部的關係型資料庫記錄」。關係型資料庫記錄具有明確的表格結構、欄位定義和資料型態，屬於結構化資料。而影像、影片、音訊等都是非結構化資料。"
+    },
+    {
+        "question": "下列資料型態，何者最常用來儲存員工年齡、員工年資、貨品銷售量等資料？",
+        "options": [
+            "文字型（Text）",
+            "數值型（Numeric）",
+            "日期型（Date）",
+            "布林型（Boolean）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "資料型態",
+        "number": 90,
+        "explanation": "正確答案是「數值型（Numeric）」。員工年齡、員工年資、貨品銷售量等都是可以進行數學運算的數字資料，因此使用數值型資料型態來儲存最為適當。"
+    },
+    {
+        "question": "在品質管理中，若一產品的生產過程中標準差顯著偏大，通常意味著什麼？",
+        "options": [
+            "資料點高度集中，產品質量穩定",
+            "生產過程波動大，產品品質不穩定",
+            "資料無法反映產品實際狀況",
+            "中位數數值高，品質良率較高"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "統計指標應用",
+        "number": 91,
+        "explanation": "正確答案是「生產過程波動大，產品品質不穩定」。標準差是衡量資料分散程度的指標，標準差大表示資料點分散程度高，在品質管理中意味著生產過程變異大、品質不穩定。"
+    },
+    {
+        "question": "在檢視資料品質時，可參考資料的變異程度及資料的集中趨勢。下列何者不屬於資料集中趨勢衡量的方法？",
+        "options": [
+            "平均數（Mean）",
+            "中位數（Median）",
+            "眾數（Mode）",
+            "標準差（Standard Deviation）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "統計描述指標",
+        "number": 92,
+        "explanation": "正確答案是「標準差（Standard Deviation）」。標準差是衡量資料變異程度（分散程度）的指標，而平均數、中位數、眾數都是衡量資料集中趨勢的方法。"
+    },
+    {
+        "question": "某醫院研究特定心血管疾病的成因，收集了 50 名病患與 150 名正常人的年齡、血壓、血型等三項屬性變數。此研究適合使用下列哪一種機器學習模型來建立？",
+        "options": [
+            "決策樹（Decision Tree）",
+            "線性廻歸（Linear Regression）",
+            "基於密度之含噪空間聚類法（Density-Based Spatial Clustering of Application with Noise, DBSCAN）",
+            "K-means 聚類（K-means Clustering）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習演算法",
+        "concept": "分類問題模型選擇",
+        "number": 93,
+        "explanation": "正確答案是「決策樹（Decision Tree）」。這是一個二元分類問題（病患vs正常人），決策樹適合處理這類有明確標籤的分類問題，且能處理混合型特徵（數值型如年齡血壓，類別型如血型）。"
+    },
+    {
+        "question": "銀行想建立聊天機器人，可透過下列哪一種領域技術來達成？",
+        "options": [
+            "資料庫管理技術",
+            "機器學習與自然語言處理",
+            "網頁開發技術",
+            "網路安全技術"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI應用領域",
+        "concept": "自然語言處理應用",
+        "number": 94,
+        "explanation": "正確答案是「機器學習與自然語言處理」。聊天機器人需要理解使用者的自然語言輸入並產生適當回應，這需要結合自然語言處理技術和機器學習技術來實現。"
+    },
+    {
+        "question": "線性迴歸模型最適合解決哪種類型的問題？",
+        "options": [
+            "圖像分類",
+            "銷售額預測",
+            "聚類分析",
+            "遊戲策略學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習演算法",
+        "concept": "線性迴歸應用",
+        "number": 95,
+        "explanation": "正確答案是「銷售額預測」。線性迴歸是用於預測連續數值的監督式學習方法，適合銷售額這類數值預測問題。其他選項：圖像分類屬於分類問題，聚類分析屬於非監督式學習，遊戲策略學習屬於強化學習。"
+    },
+    {
+        "question": "請問下列何者不是常見的特徵選取技術或方法？",
+        "options": [
+            "皮爾森積差相關分析（Pearson Correlation）",
+            "主成分分析（Principal Components Analysis, PCA）",
+            "迴歸分析（Regression Analysis）",
+            "隨機森林（Random Forest）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料科學分析",
+        "concept": "特徵選取技術",
+        "number": 96,
+        "explanation": "正確答案是「迴歸分析（Regression Analysis）」。迴歸分析是一種建模技術而非特徵選取方法。其他選項都是特徵選取技術：皮爾森相關分析用於評估特徵間相關性，PCA用於降維，隨機森林可提供特徵重要性評分。"
+    },
+    {
+        "question": "交叉驗證的主要目的是什麼？",
+        "options": [
+            "提高模型的訓練速度",
+            "驗證數據是否線性可分",
+            "減少模型的過擬合風險",
+            "測試模型的容錯能力"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "模型驗證技術",
+        "number": 97,
+        "explanation": "正確答案是「減少模型的過擬合風險」。交叉驗證透過將資料分割成多個子集，輪流作為訓練集和驗證集，能更可靠地評估模型性能並降低過擬合風險。"
+    },
+    {
+        "question": "神經網路與傳統機器學習模型的主要區別是什麼？",
+        "options": [
+            "神經網路無法處理非線性數據",
+            "神經網路透過多層結構學習複雜特徵",
+            "神經網路只適用於迴歸問題",
+            "神經網路不需要大量數據支持"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "深度學習概念",
+        "concept": "神經網路特性",
+        "number": 98,
+        "explanation": "正確答案是「神經網路透過多層結構學習複雜特徵」。神經網路的多層架構能夠自動學習複雜的特徵表示，這是其相較於傳統機器學習模型的主要優勢。"
+    },
+    {
+        "question": "下列關於生成對抗網路（GAN）的描述正確的是哪一項？",
+        "options": [
+            "GAN 由生成器和鑑別器組成",
+            "GAN 僅用於分類問題",
+            "GAN 的結果始終高度可解釋",
+            "GAN 不能生成高品質的數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "深度學習概念",
+        "concept": "生成對抗網路",
+        "number": 99,
+        "explanation": "正確答案是「GAN 由生成器和鑑別器組成」。GAN包含兩個神經網路：生成器負責生成數據，鑑別器負責判斷數據真偽，兩者透過對抗訓練不斷改進。"
+    },
+    {
+        "question": "在下列哪一種應用領域中，生成式 AI 最有可能被使用來創建新的圖像或影片內容？",
+        "options": [
+            "產品品質檢測",
+            "醫學影像分析",
+            "監控系統",
+            "虛擬現實圖像"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "生成式AI應用",
+        "concept": "生成式AI應用領域",
+        "number": 100,
+        "explanation": "正確答案是「虛擬現實圖像」。生成式AI在創建新的視覺內容方面表現優異，特別適合虛擬現實環境中需要大量創新圖像內容的應用。其他選項主要涉及分析或檢測任務。"
+    },
+    {
+        "question": "關於目前生成式 AI 的主要應用，不包括下列哪一項？",
+        "options": [
+            "創建合成數據樣本",
+            "模擬數據分佈",
+            "分類醫學影像",
+            "生成文本"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "生成式AI應用",
+        "concept": "生成式AI vs鑑別式AI",
+        "number": 101,
+        "explanation": "正確答案是「分類醫學影像」。分類醫學影像屬於鑑別式AI的應用，而創建合成數據、模擬數據分佈、生成文本都是生成式AI的典型應用。"
+    },
+    {
+        "question": "下列哪項是生成式 AI 支援鑑別式 AI 的典型案例？",
+        "options": [
+            "模擬交通場景以訓練自動駕駛模型",
+            "使用 CNN 對腫瘤分類",
+            "使用 SVM 分析風險",
+            "創建更好的分類演算法"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "生成式AI應用",
+        "concept": "生成式AI與鑑別式AI整合",
+        "number": 102,
+        "explanation": "正確答案是「模擬交通場景以訓練自動駕駛模型」。這是生成式AI為鑑別式AI提供訓練數據的典型例子，透過生成多樣化的交通場景來增強自動駕駛模型的訓練效果。"
+    },
+    {
+        "question": "關於自然語言處理（NLP）核心技術，下列敘述何者不正確？",
+        "options": [
+            "語音識別技術將語音轉換為文本，並用於語音助理和語音輸入",
+            "自然語言生成技術可以生成自然流暢的文本，用於聊天機器人和自動文案生成",
+            "語意分析技術理解文本的語意，並主要用於語音識別和機器翻譯",
+            "機器翻譯技術自動翻譯文本，促進多語言支援和全球溝通"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "自然語言處理",
+        "concept": "NLP核心技術",
+        "number": 103,
+        "explanation": "正確答案是「語意分析技術理解文本的語意，並主要用於語音識別和機器翻譯」。語意分析主要用於理解文本的語意內容，而非語音識別。語音識別是將語音轉文字，機器翻譯則是語言間的轉換。"
+    },
+    {
+        "question": "關於「負責任的 AI」，下列敘述何者較為正確？",
+        "options": [
+            "AI 系統的開發者對 AI 系統的行為負責",
+            "AI 系統的使用者對 AI 系統的結果負責",
+            "AI 系統本身對其行為負責",
+            "政府對 AI 系統的發展負責"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI法規與倫理",
+        "concept": "負責任的AI",
+        "number": 104,
+        "explanation": "正確答案是「AI 系統的開發者對 AI 系統的行為負責」。在負責任的AI概念中，開發者應對其設計和開發的AI系統行為負主要責任，包括確保系統的安全性、公平性和透明性。"
+    },
+    {
+        "question": "關於生成式 AI 的基本原理，下列敘述何者較正確？",
+        "options": [
+            "生成式 AI 通過分析大量數據來生成新數據，模擬數據分佈以創造與訓練數據相似的結果",
+            "生成式 AI 主要通過預定義的規則來進行數據處理和分類",
+            "生成式 AI 專注於數據分類和迴歸預測，幫助識別已知數據中的模式",
+            "生成式 AI 通過自動化的方式清洗數據，提升數據分析的準確性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "生成式AI概念",
+        "concept": "生成式AI基本原理",
+        "number": 105,
+        "explanation": "正確答案是「生成式 AI 通過分析大量數據來生成新數據，模擬數據分佈以創造與訓練數據相似的結果」。這準確描述了生成式AI的核心原理：學習數據分佈並生成新的、相似的數據樣本。"
+    },
+    {
+        "question": "下列何者最能表達 No Code / Low Code 平台的主要特色？",
+        "options": [
+            "需要撰寫大量程式碼",
+            "運用模板快速建立應用程式",
+            "僅供專業開發人員使用",
+            "只能製作靜態網站"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code平台",
+        "concept": "No Code / Low Code特色",
+        "number": 106,
+        "explanation": "正確答案是「運用模板快速建立應用程式」。No Code / Low Code平台的主要特色是透過視覺化界面、拖放操作和預建模板，讓使用者能快速開發應用程式，無需或只需少量程式碼。"
+    },
+    {
+        "question": "關於 No Code AI 工具，下列敘述何者最為準確？",
+        "options": [
+            "已經完全取代傳統的 AI 開發模式",
+            "只適用於大型企業",
+            "是一種降低 AI 技術複雜性和開發成本的新興方法",
+            "工具都具有完全相同的功能和性能"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code平台",
+        "concept": "No Code AI工具特性",
+        "number": 107,
+        "explanation": "正確答案是「是一種降低 AI 技術複雜性和開發成本的新興方法」。No Code AI工具的主要價值在於降低AI應用的技術門檻，讓非技術背景的使用者也能開發AI應用。"
+    },
+    {
+        "question": "下列哪種情況，選擇 Low Code 平台可能比 No Code 平台更為適合？",
+        "options": [
+            "需要非技術人員快速進行開發與應用",
+            "應用需求簡單，無需自訂功能",
+            "需要較複雜的業務邏輯並使用自訂整合功能",
+            "預算和時間極度有限"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code平台",
+        "concept": "Low Code vs No Code選擇",
+        "number": 108,
+        "explanation": "正確答案是「需要較複雜的業務邏輯並使用自訂整合功能」。Low Code平台允許一定程度的程式碼客製化，更適合需要複雜業務邏輯和客製化功能的應用場景。"
+    },
+    {
+        "question": "關於生成式 AI 與 No Code / Low Code 平台的應用，下列何者最不適合？",
+        "options": [
+            "自動生成程式碼",
+            "自動化生成行銷文案",
+            "快速開發個人化 App",
+            "自動化生成法律判決"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式AI應用限制",
+        "concept": "AI應用倫理考量",
+        "number": 109,
+        "explanation": "正確答案是「自動化生成法律判決」。法律判決涉及重大的法律後果和人權問題，需要專業法律知識、案例分析和人類判斷，不適合完全交由AI自動化生成。"
+    },
+    {
+        "question": "關於 No Code / Low Code 平台，下列敘述何者較正確？",
+        "options": [
+            "兩者完全相同",
+            "Low Code 平台不需要任何程式設計知識",
+            "Low Code 平台更適合開發靈活且可擴展的解決方案",
+            "No Code 平台可以無限客製化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code平台",
+        "concept": "平台特性比較",
+        "number": 110,
+        "explanation": "正確答案是「Low Code 平台更適合開發靈活且可擴展的解決方案」。Low Code平台允許部分程式碼客製化，因此比No Code平台更具靈活性和可擴展性。"
+    },
+    {
+        "question": "使用 Low-Code 平台進行開發時，企業應特別留意下列哪一項潛在風險？",
+        "options": [
+            "可能造成企業內部敏感資料的洩露",
+            "難以進行大規模的應用擴展和維護",
+            "開發成本將大幅增加",
+            "可能有未經 IT 部門管理的應用程式擴散"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No Code / Low Code平台",
+        "concept": "Low Code風險管理",
+        "number": 111,
+        "explanation": "正確答案是「可能有未經 IT 部門管理的應用程式擴散」。Low Code平台容易讓非IT人員開發應用，可能導致「影子IT」問題，即未經正式IT治理的應用程式在企業內擴散。"
+    },
+    {
+        "question": "下列哪一種技術方案適用於改善客戶體驗？",
+        "options": [
+            "智慧排程系統",
+            "消費行為洞察模型",
+            "預測性維護工具",
+            "自然語言處理（NLP）和生成式回應模組"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式AI應用場景",
+        "concept": "客戶體驗改善",
+        "number": 112,
+        "explanation": "正確答案是「自然語言處理（NLP）和生成式回應模組」。這種技術組合能直接改善客戶與系統的互動體驗，提供更自然、智慧的客服對話體驗。"
+    },
+    {
+        "question": "下列哪一項技術是生成式 AI 的基礎？",
+        "options": [
+            "決策樹模型",
+            "聚類演算法",
+            "生成對抗網路",
+            "隨機森林技術"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式AI技術基礎",
+        "concept": "生成式AI核心技術",
+        "number": 113,
+        "explanation": "正確答案是「生成對抗網路」。生成對抗網路（GAN）是生成式AI的重要基礎技術之一，透過生成器和判別器的對抗訓練來生成高品質數據。"
+    },
+    {
+        "question": "能使用 DALL·E-2 生成各式逼真的圖片，最關鍵的應用技術為何？",
+        "options": [
+            "卷積神經網絡（CNN）",
+            "生成對抗網絡（GAN）",
+            "擴散模型（Diffusion Model）",
+            "自然語言處理（NLP）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "圖像生成技術",
+        "concept": "DALL-E技術原理",
+        "number": 114,
+        "explanation": "正確答案是「擴散模型（Diffusion Model）」。DALL-E 2使用擴散模型作為核心技術，透過逐步去噪的過程生成高品質圖像。"
+    },
+    {
+        "question": "下列何者不是生成式 AI 核心技術？",
+        "options": [
+            "Variational Autoencoders（VAE）",
+            "Generative Adversarial Networks（GAN）",
+            "Visual Geometry Group（VGG）",
+            "Autoregressive Models（AR Model）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式AI技術分類",
+        "concept": "生成式AI技術識別",
+        "number": 115,
+        "explanation": "正確答案是「Visual Geometry Group（VGG）」。VGG是一種卷積神經網路架構，主要用於圖像分類等鑑別任務，而非生成式AI的核心技術。"
+    },
+    {
+        "question": "使用生成式 AI 技術或工具生成內容時，應採取下列哪一項措施以確保內容品質？",
+        "options": [
+            "使用內容直接進行學術報告",
+            "適當標注引用來源",
+            "減少人工參與的審查過程",
+            "排除所有生成的資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式AI使用規範",
+        "concept": "內容品質控制",
+        "number": 116,
+        "explanation": "正確答案是「適當標注引用來源」。使用生成式AI生成內容時，應明確標示內容來源，確保透明度和學術誠信。"
+    },
+    {
+        "question": "下列哪一項不是生成式 AI 工具在使用體驗方面的優化方向？",
+        "options": [
+            "提供更直觀的操作設計",
+            "支援自然語言指令",
+            "提供智慧化的參數調整建議",
+            "限制使用者自訂生成內容"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "使用者體驗設計",
+        "concept": "AI工具體驗優化",
+        "number": 117,
+        "explanation": "正確答案是「限制使用者自訂生成內容」。優化使用體驗應該是增加使用者的自由度和客製化能力，而非限制使用者自訂內容。"
+    },
+    {
+        "question": "學校教師如何引導學生正確使用生成式 AI 工具？",
+        "options": [
+            "不應使用 AI 工具於教學場域",
+            "無限制地使用 AI 工具",
+            "訂立清晰的使用規範並進行說明",
+            "僅鼓勵學生利用 AI 完成課堂作業"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "教育場域AI應用",
+        "concept": "AI工具教育指導",
+        "number": 118,
+        "explanation": "正確答案是「訂立清晰的使用規範並進行說明」。教師應制定明確的AI使用規範，教導學生正確、負責任地使用AI工具，而非完全禁止或無限制使用。"
+    },
+    {
+        "question": "企業若要有效支援生成式 AI 的運行，內部 IT 環境最需要具備下列何種條件？",
+        "options": [
+            "提供更多的辦公設備，以提升員工生產力",
+            "精簡企業內部流程，以加速決策效率",
+            "擁有高效能運算資源與彈性儲存空間，以支援 AI 模型訓練與推理",
+            "增加部門之間的交流機會，以促進跨部門合作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "AI基礎設施",
+        "concept": "AI運行環境需求",
+        "number": 119,
+        "explanation": "正確答案是「擁有高效能運算資源與彈性儲存空間，以支援 AI 模型訓練與推理」。生成式AI需要大量計算資源和儲存空間來進行模型訓練和推理運算。"
+    },
+    {
+        "question": "A 企業想要實現客服自動化，希望透過 AI 理解客戶發送的文本訊息，並根據文本內容調用相對應的圖片和影片進行回覆，A 企業應該選擇哪一種模型？",
+        "options": [
+            "強化學習模型",
+            "多模態模型",
+            "圖像分類模型",
+            "單模態大語言模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "多模態AI應用",
+        "concept": "客服自動化解決方案",
+        "number": 120,
+        "explanation": "正確答案是「多模態模型」。需要同時處理文本輸入並產生圖片、影片回應，這需要能夠跨越多種模態（文本、圖像、視頻）的多模態AI模型。"
+    },
+    {
+        "question": "下列哪一種情境最能展現提示工程（Prompt Engineering）的價值？",
+        "options": [
+            "使用者輸入一個模糊的問題，AI 給出一個非常確定的答案",
+            "使用者輸入一個非常具體的問題，AI 給出一個相關但不完全符合的答案",
+            "使用者輸入一個精準有架構的問題，AI 生成符合架構的答案",
+            "使用者輸入一個簡單的問題，AI 給出一個非常複雜的答案"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "提示工程技術",
+        "concept": "提示工程價值體現",
+        "number": 121,
+        "explanation": "正確答案是「使用者輸入一個精準有架構的問題，AI 生成符合架構的答案」。提示工程的價值在於透過精心設計的提示詞，引導AI產生更符合需求和結構化的回應。"
+    },
+    {
+        "question": "下列敘述何者最能反映生成式 AI 在圖像生成領域的發展趨勢？",
+        "options": [
+            "生成式 AI 目前僅能生成基於簡單算法的低解析度圖像，且無法應用於高解析度或細節豐富的圖像創建",
+            "隨著生成式 AI 技術的進步，圖像不僅風格多樣，且逼真度顯著提升，並可處理更複雜的圖像生成任務",
+            "生成式 AI 技術目的為加快生成速度，可生成靜態圖像，無法生成動態圖像",
+            "生成式 AI 在圖像生成方面的發展主要集中於圖像風格轉換，無涉及其他類型的視覺內容生成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "圖像生成技術發展",
+        "concept": "生成式AI發展趨勢",
+        "number": 122,
+        "explanation": "正確答案是「隨著生成式 AI 技術的進步，圖像不僅風格多樣，且逼真度顯著提升，並可處理更複雜的圖像生成任務」。這準確反映了當前生成式AI在圖像生成領域的快速發展和能力提升。"
+    },
+    {
+        "question": "關於生成式 AI，下列 A~E 敘述哪些正確？A. 生成的內容不會帶有偏見 B. 具有高度準確性，不會有虛假信息 C. 生成內容的準確性，建議需要經過人類審核 D. 每次生成的內容都可能不同 E. 生成式 AI 具有高度安全性，不會導致數據外流",
+        "options": [
+            "C、D",
+            "A、C、D",
+            "A、B、D、E",
+            "A、C、D、E"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式AI特性與限制",
+        "concept": "生成式AI正確認知",
+        "number": 123,
+        "explanation": "正確答案是「C、D」。C項正確：生成內容需要人類審核確保準確性；D項正確：生成式AI每次可能產生不同結果。A、B、E項都是錯誤的，生成式AI可能帶有偏見、產生虛假信息，且存在安全風險。"
+    },
+    {
+        "question": "一家跨國企業計劃在財務部門導入生成式 AI，並結合自動化系統進行報告產出。導入此系統後，最有可能實現的效益為何？",
+        "options": [
+            "增加財務收益",
+            "顯著提升報告準確性並減少人工錯誤",
+            "加速市場推廣活動並提高銷售業績",
+            "提高品牌曝光度並增強客戶關係管理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "企業AI導入效益",
+        "concept": "財務部門AI應用",
+        "number": 124,
+        "explanation": "正確答案是「顯著提升報告準確性並減少人工錯誤」。在財務部門導入生成式AI主要能自動化報告生成流程，減少人為錯誤，提升工作效率和準確性。"
+    },
+    {
+        "question": "在生成式 AI 導入過程中，資料安全與隱私保護的哪一方面是最重要的考量？",
+        "options": [
+            "設定目標優先級",
+            "增強客服回饋（反饋）能力",
+            "資料視覺化能力",
+            "權限控管與合規要求"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "AI導入風險管理",
+        "concept": "資料安全與隱私保護",
+        "number": 125,
+        "explanation": "正確答案是「權限控管與合規要求」。在導入生成式AI時，確保適當的權限控制和符合相關法規要求是資料安全與隱私保護的核心考量。"
+    },
+    {
+        "question": "若企業將資料安全管理外包給第三方服務供應商，屬於哪種風險應對策略？",
+        "options": [
+            "風險緩解",
+            "風險轉移",
+            "風險接受",
+            "風險規避"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "風險管理策略",
+        "concept": "風險應對方法",
+        "number": 126,
+        "explanation": "正確答案是「風險轉移」。將資料安全管理外包給第三方是將風險責任轉移給外部專業服務提供商的策略。"
+    },
+    {
+        "question": "在生成式 AI 的風險管理中，下列哪一項屬於倫理風險？",
+        "options": [
+            "AI 生成的內容可能帶有偏見或歧視",
+            "系統運行中斷可能導致企業業務受到影響",
+            "因資料需求增加而引起的存儲成本上升",
+            "員工培訓成本增加"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "AI倫理風險",
+        "concept": "倫理風險識別",
+        "number": 127,
+        "explanation": "正確答案是「AI 生成的內容可能帶有偏見或歧視」。這是典型的倫理風險，涉及公平性和社會責任問題。其他選項屬於營運風險或經濟風險。"
+    },
+    {
+        "question": "在企業導入 AI 的實施/營運階段，為持續發揮導入 AI 的價值，下列步驟的正確排序應為何？A. AI 價值擴散 B.上線部署 C.模型監控與優化",
+        "options": [
+            "ACB",
+            "ABC",
+            "BAC",
+            "BCA"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "AI導入流程",
+        "concept": "AI實施階段管理",
+        "number": 128,
+        "explanation": "正確答案是「BCA」。正確順序應為：B.上線部署 → C.模型監控與優化 → A.AI價值擴散。先部署系統，然後持續監控優化，最後擴散應用價值。"
+    },
+    {
+        "question": "在管理生成式 AI 系統的隱私風險時，下列哪一種技術最能確保數據使用的安全性？",
+        "options": [
+            "強化學習（Reinforcement Learning）",
+            "深度學習（Deep Learning）",
+            "零信任架構（Zero Trust Architecture）",
+            "注意力機制（Attention Mechanism）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "隱私風險管理",
+        "concept": "安全架構技術",
+        "number": 129,
+        "explanation": "正確答案是「零信任架構（Zero Trust Architecture）」。零信任架構假設網路內外都不可信任，需要持續驗證和授權，是現代數據安全的重要架構。"
+    },
+    {
+        "question": "在驗證生成式 AI 應用的概念驗證（Proof of Concept, POC）時，若企業希望確保模型生成的公平性，最適合採用哪種評估策略？",
+        "options": [
+            "壓力測試（Stress Testing）",
+            "對抗性測試（Adversarial Testing）",
+            "偏差檢測（Bias Detection）",
+            "延遲測試（Latency Testing）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "AI模型評估",
+        "concept": "公平性評估方法",
+        "number": 130,
+        "explanation": "正確答案是「偏差檢測（Bias Detection）」。要確保模型生成的公平性，需要透過偏差檢測技術來識別和評估模型是否存在對特定群體的歧視或偏見。"
     }
 ]
+

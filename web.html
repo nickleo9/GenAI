@@ -449,6 +449,35 @@
             font-size: 1.2rem;
             font-weight: bold;
         }
+
+        /* 新增：複習模式選擇樣式 */
+        .review-modes {
+            background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
+            border: 2px solid #28a745;
+            border-radius: 12px;
+            padding: 15px;
+            margin: 10px 0;
+        }
+
+        .review-mode-item {
+            background: rgba(255, 255, 255, 0.8);
+            border: 1px solid #28a745;
+            border-radius: 8px;
+            padding: 10px 15px;
+            margin: 5px 0;
+            cursor: pointer;
+            transition: all 0.3s ease;
+        }
+
+        .review-mode-item:hover {
+            background: rgba(40, 167, 69, 0.1);
+            transform: translateX(5px);
+        }
+
+        .review-mode-item.selected {
+            background: #28a745;
+            color: white;
+        }
         
         @media (max-width: 768px) {
             body {
@@ -811,9 +840,26 @@
                                 <button class="mode-btn" data-mode="exam">
                                     <i class="fas fa-clock me-1"></i>模擬考試
                                 </button>
-                                <button class="mode-btn" data-mode="wrong" id="wrong-btn" disabled>
-                                    <i class="fas fa-redo me-1"></i>錯題複習
-                                </button>
+                            </div>
+                            <!-- 新增：複習模式選擇區 -->
+                            <div class="review-modes mt-2" id="review-modes-section" style="display: none;">
+                                <h6 class="mb-2"><i class="fas fa-redo me-2"></i>複習模式選擇</h6>
+                                <div class="review-mode-item" data-review-mode="wrong" id="review-wrong-mode">
+                                    <i class="fas fa-times-circle me-2"></i>錯題複習
+                                    <small class="d-block text-muted">複習之前答錯的題目</small>
+                                </div>
+                                <div class="review-mode-item" data-review-mode="all" id="review-all-mode">
+                                    <i class="fas fa-list me-2"></i>全題複習
+                                    <small class="d-block text-muted">系統性複習所有題目</small>
+                                </div>
+                                <div class="review-mode-item" data-review-mode="topic" id="review-topic-mode">
+                                    <i class="fas fa-tags me-2"></i>主題複習
+                                    <small class="d-block text-muted">按主題分類複習</small>
+                                </div>
+                                <div class="review-mode-item" data-review-mode="random" id="review-random-mode">
+                                    <i class="fas fa-random me-2"></i>隨機複習
+                                    <small class="d-block text-muted">隨機順序複習</small>
+                                </div>
                             </div>
                         </div>
                         
@@ -846,6 +892,9 @@
                             </label>
                             <button id="start-btn" class="btn btn-danger w-100 mb-2" disabled>
                                 <i class="fas fa-play me-2"></i>開始練習
+                            </button>
+                            <button id="review-btn-main" class="btn btn-success w-100 mb-2" disabled style="display: none;">
+                                <i class="fas fa-redo me-2"></i>開始複習
                             </button>
                             <div id="timer" class="timer text-center">
                                 <i class="fas fa-clock me-2"></i>請先選擇題庫
@@ -920,9 +969,9 @@
                         </button>
                     </div>
                     <div class="col-2">
-                        <button id="review-btn" class="btn btn-info w-100" disabled>
-                            <i class="fas fa-eye me-1"></i> 
-                            <span class="d-none d-sm-inline">複習</span>
+                        <button id="explanation-btn" class="btn btn-info w-100" disabled>
+                            <i class="fas fa-lightbulb me-1"></i> 
+                            <span class="d-none d-sm-inline">查看解析</span>
                         </button>
                     </div>
                 </div>
@@ -983,7 +1032,15 @@
                         <strong>考試資訊：</strong>iPAS AI應用規劃師初級認證，建議準備時間：4-6週
                     </div>
                     
-                    <h6>📚 練習模式建議</h6>
+                    <h6>📚 複習模式使用建議</h6>
+                    <ul>
+                        <li><strong>錯題複習：</strong>重點攻克薄弱環節</li>
+                        <li><strong>全題複習：</strong>系統性回顧所有內容</li>
+                        <li><strong>主題複習：</strong>針對特定領域加強</li>
+                        <li><strong>隨機複習：</strong>模擬考試隨機出題</li>
+                    </ul>
+                    
+                    <h6>📋 練習模式建議</h6>
                     <ul>
                         <li><strong>每日練習：</strong>20-40題維持手感</li>
                         <li><strong>週末模擬：</strong>60題完整測驗</li>
@@ -1034,6 +1091,7 @@
                 isQuizActive: false,
                 selectedDatabase: null,
                 currentMode: 'practice',
+                selectedReviewMode: null, // 新增：複習模式選擇
                 explanationMode: 'database',
                 selectedAIModel: 'gpt-4o',
                 questions: [],
@@ -1055,12 +1113,14 @@
                 settingsPanel: document.getElementById('settings-panel'),
                 quizContainer: document.getElementById('quiz-container'),
                 startBtn: document.getElementById('start-btn'),
+                reviewBtnMain: document.getElementById('review-btn-main'), // 新增：主要複習按鈕
+                reviewModesSection: document.getElementById('review-modes-section'), // 新增：複習模式選擇區
                 backBtn: document.getElementById('back-to-selection'),
                 prevBtn: document.getElementById('prev-btn'),
                 submitBtn: document.getElementById('submit-btn'),
                 nextBtn: document.getElementById('next-btn'),
                 finishBtn: document.getElementById('finish-btn'),
-                reviewBtn: document.getElementById('review-btn'),
+                explanationBtn: document.getElementById('explanation-btn'), // 修改：解析按鈕
                 quizStatus: document.getElementById('quiz-status'),
                 timerElement: document.getElementById('timer'),
                 questionNumber: document.getElementById('question-number'),
@@ -1088,7 +1148,7 @@
                 // 初始化用戶數據
                 this.state.userData = this.loadUserData();
                 this.attachEventListeners();
-                this.updateWrongButtonState();
+                this.updateReviewButtonState();
                 console.log('🚀 iPAS AI應用規劃師練習系統已初始化');
             },
             
@@ -1145,12 +1205,24 @@
                 
                 // 按鈕事件
                 this.elements.startBtn.addEventListener('click', () => this.startQuiz());
+                this.elements.reviewBtnMain.addEventListener('click', () => this.startReview()); // 新增：複習按鈕
                 this.elements.backBtn.addEventListener('click', () => this.backToSelection());
                 this.elements.prevBtn.addEventListener('click', () => this.prevQuestion());
                 this.elements.submitBtn.addEventListener('click', () => this.submitAnswer());
                 this.elements.nextBtn.addEventListener('click', () => this.nextQuestion());
                 this.elements.finishBtn.addEventListener('click', () => this.finishQuiz());
-                this.elements.reviewBtn.addEventListener('click', () => this.reviewCurrentQuestion());
+                this.elements.explanationBtn.addEventListener('click', () => this.showCurrentExplanation()); // 修改：查看解析按鈕
+                
+                // 複習模式選擇事件（新增）
+                document.querySelectorAll('.review-mode-item').forEach(item => {
+                    item.addEventListener('click', (e) => {
+                        if (this.state.isQuizActive) {
+                            this.showAlert('測驗進行中，無法更改複習模式！', 'warning');
+                            return;
+                        }
+                        this.selectReviewMode(item.dataset.reviewMode);
+                    });
+                });
                 
                 // 導航按鈕
                 document.getElementById('save-btn').addEventListener('click', () => this.saveUserData(true));
@@ -1168,6 +1240,7 @@
                         document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
                         btn.classList.add('active');
                         this.state.currentMode = btn.dataset.mode;
+                        this.updateModeUI();
                     });
                 });
                 
@@ -1197,6 +1270,138 @@
                 window.addEventListener('beforeunload', () => this.saveUserData(false));
             },
             
+            // 新增：選擇複習模式
+            selectReviewMode(mode) {
+                // 移除之前的選中狀態
+                document.querySelectorAll('.review-mode-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+                
+                // 設定新的選中狀態
+                const selectedItem = document.querySelector(`[data-review-mode="${mode}"]`);
+                if (selectedItem) {
+                    selectedItem.classList.add('selected');
+                    this.state.selectedReviewMode = mode;
+                    
+                    // 檢查是否可以啟用複習按鈕
+                    this.updateReviewButtonState();
+                    
+                    console.log(`✅ 已選擇複習模式: ${mode}`);
+                }
+            },
+            
+            // 新增：更新模式UI
+            updateModeUI() {
+                // 根據模式顯示/隱藏複習選項
+                if (this.state.currentMode === 'practice' || this.state.currentMode === 'exam') {
+                    this.elements.reviewModesSection.style.display = 'none';
+                    this.elements.startBtn.style.display = 'block';
+                    this.elements.reviewBtnMain.style.display = 'none';
+                }
+            },
+            
+            // 新增：開始複習
+            startReview() {
+                if (!this.state.selectedDatabase) {
+                    this.showAlert('請先選擇題庫！', 'warning');
+                    return;
+                }
+                
+                if (!this.state.selectedReviewMode) {
+                    this.showAlert('請選擇複習模式！', 'warning');
+                    return;
+                }
+                
+                this.showLoading('準備複習模式...');
+                
+                // 設定複習狀態
+                this.state.isQuizActive = true;
+                this.state.currentMode = 'review';
+                this.lockInterface();
+                
+                setTimeout(() => {
+                    if (this.loadReviewQuestions()) {
+                        // 重置測驗狀態
+                        this.state.currentQuestionIndex = 0;
+                        this.state.userAnswers = {};
+                        this.state.score = 0;
+                        this.state.wrongQuestions = [];
+                        this.state.startTime = new Date();
+                        
+                        // 切換UI
+                        this.elements.settingsPanel.classList.add('d-none');
+                        this.elements.quizContainer.classList.remove('d-none');
+                        this.elements.quizStatus.style.display = 'block';
+                        this.elements.quizStatus.classList.add('active');
+                        this.elements.quizStatus.innerHTML = '<i class="fas fa-redo me-1"></i>複習進行中';
+                        
+                        // 顯示第一題
+                        this.displayQuestion();
+                        
+                        this.hideLoading();
+                        console.log('✅ 複習已開始');
+                    } else {
+                        this.hideLoading();
+                        this.state.isQuizActive = false;
+                        this.unlockInterface();
+                    }
+                }, 500);
+            },
+            
+            // 新增：載入複習題目
+            loadReviewQuestions() {
+                const currentQuizData = quizData[this.state.selectedDatabase];
+                
+                if (!currentQuizData || currentQuizData.length === 0) {
+                    this.showAlert(`${this.state.selectedDatabase === 'ipas' ? 'iPAS' : '生成式AI'}題庫尚未載入或為空！`, 'error');
+                    return false;
+                }
+                
+                let questionsToReview = [];
+                const questionCount = parseInt(document.getElementById('question-count').value);
+                
+                switch (this.state.selectedReviewMode) {
+                    case 'wrong':
+                        // 錯題複習：只選擇答錯的題目
+                        const incorrectQuestions = this.state.userData.incorrect || [];
+                        questionsToReview = currentQuizData.filter(q => 
+                            incorrectQuestions.includes(q.question)
+                        );
+                        if (questionsToReview.length === 0) {
+                            this.showAlert('目前沒有錯題記錄，請先進行練習！', 'info');
+                            return false;
+                        }
+                        break;
+                        
+                    case 'all':
+                        // 全題複習：按順序選擇
+                        questionsToReview = currentQuizData.slice(0, Math.min(questionCount, currentQuizData.length));
+                        break;
+                        
+                    case 'topic':
+                        // 主題複習：按主題分組（暫時簡化為隨機選擇）
+                        questionsToReview = [...currentQuizData].sort(() => Math.random() - 0.5)
+                            .slice(0, Math.min(questionCount, currentQuizData.length));
+                        break;
+                        
+                    case 'random':
+                        // 隨機複習：隨機排序選擇
+                        questionsToReview = [...currentQuizData].sort(() => Math.random() - 0.5)
+                            .slice(0, Math.min(questionCount, currentQuizData.length));
+                        break;
+                        
+                    default:
+                        this.showAlert('未知的複習模式！', 'error');
+                        return false;
+                }
+                
+                // 重新編號題目
+                this.state.questions = questionsToReview;
+                this.state.questions.forEach((q, index) => q.number = index + 1);
+                
+                return true;
+            },
+            
             // 選擇題庫
             selectDatabase(type) {
                 this.elements.databaseCards.forEach(card => card.classList.remove('selected'));
@@ -1207,6 +1412,7 @@
                 this.state.selectedDatabase = type;
                 this.updateDatabaseUI(type);
                 this.elements.startBtn.disabled = false;
+                this.updateReviewButtonState(); // 更新複習按鈕狀態
                 
                 console.log(`✅ 已選擇題庫: ${type}`);
             },
@@ -1231,6 +1437,39 @@
                     document.querySelector('[data-mode="practice"]').classList.add('active');
                     this.state.currentMode = 'practice';
                 }
+            },
+            
+            // 修改：更新複習按鈕狀態
+            updateReviewButtonState() {
+                const hasWrongQuestions = this.state.userData.incorrect && this.state.userData.incorrect.length > 0;
+                const hasSelectedDatabase = this.state.selectedDatabase !== null;
+                
+                // 顯示複習模式選擇區
+                if (hasSelectedDatabase) {
+                    this.elements.reviewModesSection.style.display = 'block';
+                    this.elements.startBtn.style.display = 'block';
+                    this.elements.reviewBtnMain.style.display = 'block';
+                } else {
+                    this.elements.reviewModesSection.style.display = 'none';
+                    this.elements.reviewBtnMain.style.display = 'none';
+                }
+                
+                // 更新錯題複習選項的可用狀態
+                const wrongModeItem = document.getElementById('review-wrong-mode');
+                if (wrongModeItem) {
+                    if (hasWrongQuestions) {
+                        wrongModeItem.style.opacity = '1';
+                        wrongModeItem.style.pointerEvents = 'auto';
+                        wrongModeItem.title = '複習之前答錯的題目';
+                    } else {
+                        wrongModeItem.style.opacity = '0.5';
+                        wrongModeItem.style.pointerEvents = 'none';
+                        wrongModeItem.title = '尚無錯題記錄';
+                    }
+                }
+                
+                // 更新主要複習按鈕狀態
+                this.elements.reviewBtnMain.disabled = !hasSelectedDatabase;
             },
             
             // 開始測驗
@@ -1437,7 +1676,7 @@
                 this.state.userData.history.push(historyEntry);
                 
                 // 顯示解析
-                if (this.state.currentMode === 'practice' || this.state.currentMode === 'wrong') {
+                if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
                     this.showExplanation(question, userAnswer, isCorrect);
                     // 禁用選項
                     document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
@@ -1448,7 +1687,7 @@
                 // 更新統計與按鈕狀態
                 this.updateStats();
                 this.updateButtonStates();
-                this.updateWrongButtonState();
+                this.updateReviewButtonState();
                 
                 // 保存用戶資料
                 this.saveUserData(false);
@@ -1483,6 +1722,20 @@
                 // 顯示主題標籤
                 this.elements.topicBadge.textContent = question.topic || '未分類';
                 this.elements.subtopicBadge.textContent = question.subtopic || '未分類';
+            },
+            
+            // 新增：查看當前解析
+            showCurrentExplanation() {
+                if (this.state.currentQuestionIndex in this.state.userAnswers) {
+                    // 如果已回答，重新顯示解析
+                    const question = this.state.questions[this.state.currentQuestionIndex];
+                    const userAnswerData = this.state.userAnswers[this.state.currentQuestionIndex];
+                    this.showExplanation(question, userAnswerData.answer, userAnswerData.isCorrect);
+                    this.showAlert('已顯示當前題目解析', 'info');
+                } else {
+                    // 如果未回答，提供學習建議
+                    this.showAlert('建議先回答題目再查看解析，這樣學習效果更好！', 'info');
+                }
             },
             
             // AI生成解析
@@ -1601,7 +1854,7 @@
                 
                 let resultHTML = `
                     <div class="text-center mb-4">
-                        <h3>📊 測驗結果</h3>
+                        <h3>📊 ${this.state.currentMode === 'review' ? '複習' : '測驗'}結果</h3>
                         <div class="progress my-3" style="height: 25px;">
                             <div class="progress-bar ${percentage >= 70 ? 'bg-success' : 'bg-warning'}" style="width: ${percentage}%">
                                 ${percentage}%
@@ -1739,7 +1992,8 @@
                 this.modals.result.show();
                 
                 // 隱藏複習錯題按鈕（如果是錯題模式）
-                document.getElementById('review-wrong-btn').style.display = this.state.currentMode === 'wrong' ? 'none' : 'block';
+                document.getElementById('review-wrong-btn').style.display = 
+                    (this.state.currentMode === 'review' && this.state.selectedReviewMode === 'wrong') ? 'none' : 'block';
             },
             
             // 複習錯題
@@ -1751,14 +2005,9 @@
                 
                 this.modals.result.hide();
                 
-                // 設置為錯題模式
-                this.state.mode = 'wrong';
-                document.querySelectorAll('.mode-btn').forEach(btn => {
-                    btn.classList.remove('active');
-                    if (btn.dataset.mode === 'wrong') {
-                        btn.classList.add('active');
-                    }
-                });
+                // 修正：設置為錯題複習模式
+                this.state.currentMode = 'review';
+                this.state.selectedReviewMode = 'wrong';
                 
                 // 重新開始錯題測驗
                 this.state.questions = this.state.wrongQuestions.slice();
@@ -1787,7 +2036,7 @@
                 this.elements.submitBtn.disabled = hasAnswered;
                 this.elements.nextBtn.disabled = !hasAnswered || isLastQuestion;
                 this.elements.finishBtn.disabled = !hasAnswered && !isLastQuestion;
-                this.elements.reviewBtn.disabled = !hasAnswered;
+                this.elements.explanationBtn.disabled = !hasAnswered; // 修改：解析按鈕邏輯
             },
             
             // 更新統計
@@ -1797,25 +2046,6 @@
                 const percentage = answered > 0 ? (this.state.score / answered * 100).toFixed(1) : 0;
                 
                 this.elements.statsDisplay.textContent = `得分: ${this.state.score}/${answered} (${percentage}%)`;
-            },
-            
-            // 更新錯題按鈕狀態
-            updateWrongButtonState() {
-                const wrongBtn = document.getElementById('wrong-btn');
-                const hasWrongQuestions = this.state.userData.incorrect && this.state.userData.incorrect.length > 0;
-                
-                wrongBtn.disabled = !hasWrongQuestions;
-                wrongBtn.title = hasWrongQuestions ? '複習錯題' : '尚無錯題記錄';
-            },
-            
-            // 複習當前題目
-            reviewCurrentQuestion() {
-                // 重新顯示當前題目的解析
-                if (this.state.currentQuestionIndex in this.state.userAnswers) {
-                    const question = this.state.questions[this.state.currentQuestionIndex];
-                    const userAnswerData = this.state.userAnswers[this.state.currentQuestionIndex];
-                    this.showExplanation(question, userAnswerData.answer, userAnswerData.isCorrect);
-                }
             },
             
             // 統計功能
@@ -2089,7 +2319,7 @@
                         databaseStats: {}
                     };
                     this.saveUserData();
-                    this.updateWrongButtonState();
+                    this.updateReviewButtonState();
                     this.modals.stats.hide();
                     this.showAlert('學習進度已重置', 'success');
                 }

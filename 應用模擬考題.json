@@ -2078,6 +2078,646 @@
         "concept": "公平性評估方法",
         "number": 130,
         "explanation": "正確答案是「偏差檢測（Bias Detection）」。要確保模型生成的公平性，需要透過偏差檢測技術來識別和評估模型是否存在對特定群體的歧視或偏見。"
+    },
+    {
+        "question": "你是AI設計師，需快速為客戶生成高品質商業短片，下列哪個工具最適合用於AI影片生成？",
+        "options": [
+            "Sora",
+            "Midjourney", 
+            "Google AI Studio",
+            "Cutout.pro"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI影片生成工具",
+        "number": 131,
+        "explanation": "Sora 是目前熱門且快速的AI影片生成工具，特別適合需要短時間產出影片的商業應用。"
+    },
+    {
+        "question": "台灣在2024年推動 AI 人才培育，哪一措施能讓高中生及早接觸AI專業知識？",
+        "options": [
+            "開設AI科技專班",
+            "推行工讀實習",
+            "引進外國教師", 
+            "設立免費AI講座"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "AI人才培育政策",
+        "concept": "台灣AI教育政策",
+        "number": 132,
+        "explanation": "台灣已於高中開設AI科技專班，強化學生AI基礎訓練，使年輕世代能及早接觸AI產業。"
+    },
+    {
+        "question": "如果你是行銷企劃，需要分析大量資料並產出行銷報告，2025年最熱門的AI搜尋助理會是？",
+        "options": [
+            "MyEdit",
+            "Perplexity AI",
+            "Midjourney", 
+            "Shop AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃", 
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI搜尋分析工具",
+        "number": 133,
+        "explanation": "Perplexity AI 以強大搜尋整合能力聞名，是行銷和資料分析專家最受歡迎的AI問答助理之一。"
+    },
+    {
+        "question": "2025年，全世界AI公司競爭激烈，下列哪家公司在AI晶片市場市佔率大幅領先？",
+        "options": [
+            "Meta",
+            "AMD",
+            "NVIDIA",
+            "OpenAI"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI產業發展",
+        "concept": "AI晶片市場",
+        "number": 134,
+        "explanation": "NVIDIA 在AI晶片市場擁有高達92%的市占率，是目前全球AI硬體領域的領頭羊。"
+    },
+    {
+        "question": "台灣政府2024年啟動新計畫，助力AI島建設，重點聚焦於哪個面向？",
+        "options": [
+            "僅AI法規",
+            "擴大AI產業投資",
+            "僅鼓勵學術發展",
+            "僅出口AI硬體"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "台灣AI政策發展",
+        "concept": "AI島建設計畫",
+        "number": 135,
+        "explanation": "台灣重點在於大規模擴大AI產業投資，如新十大建設計畫帶動產業鏈發展及科技升級。"
+    },
+    {
+        "question": "如果醫院要導入AI輔助診斷系統，下列何者為生成式AI較佳的實際應用領域？",
+        "options": [
+            "病理影像分析",
+            "收銀管理",
+            "人事排班",
+            "警衛巡邏"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "醫療AI應用",
+        "number": 136,
+        "explanation": "生成式AI在病理影像分析上可準確協助醫生快速診斷疾病，提高醫療效率與準確性。"
+    },
+    {
+        "question": "2025年AI預測模型發展，哪一趨勢被認為可促進創新與多元應用？",
+        "options": [
+            "單一學科應用",
+            "跨領域融合",
+            "小型封閉式模型",
+            "以復古技術為主"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI技術發展趨勢",
+        "concept": "多模態AI發展",
+        "number": 137,
+        "explanation": "跨領域融合多模態AI模型可促進創新，並產生新的應用場景，是現今發展主流。"
+    },
+    {
+        "question": "你是一名老師，要輔導學生用AI生成學習內容，下列哪一款生成式AI工具適合設計練習題？",
+        "options": [
+            "Cutout.pro",
+            "Shop AI",
+            "ChatGPT",
+            "Sora"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "教育AI應用工具",
+        "number": 138,
+        "explanation": "ChatGPT 可根據老師輸入的指令生成各種學習練習題，是目前教育應用極佳的生成式AI工具。"
+    },
+    {
+        "question": "iPAS AI應用規劃師考試重視哪一項生成式AI導入企業的核心步驟？",
+        "options": [
+            "完全照搬國外經驗",
+            "需求分析與規劃",
+            "僅聘請AI工程師",
+            "只部署軟體"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "AI導入流程管理",
+        "number": 139,
+        "explanation": "iPAS 強調以實際需求為核心，完整執行需求分析與規劃，才能落實AI成功導入。"
+    },
+    {
+        "question": "現今全球AI在商業競爭最顯著的發展趨勢包含：",
+        "options": [
+            "僅注重硬體升級",
+            "追求資料閉鎖",
+            "加強軟硬體整合與投資",
+            "只開發聊天機器人"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI產業發展",
+        "concept": "AI商業發展趨勢",
+        "number": 140,
+        "explanation": "現今趨勢為軟、硬體系統協同發展與大規模投資，才能在AI產業競爭中取勝。"
+    },
+    {
+        "question": "一家台灣中小企業工廠想要提升作業自動化與生產效率，若只熟悉Excel，他們最適合導入下列哪一種生成式AI工具來自動產出營運數據分析報表？",
+        "options": [
+            "Microsoft Copilot",
+            "OpenAI Sora",
+            "GitMind",
+            "Midjourney"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "企業辦公自動化AI工具",
+        "number": 141,
+        "explanation": "Microsoft Copilot能直接在Excel等Office軟體內提供數據分析、報表自動生成與智能推薦，適合熟悉Excel的企業初步導入。"
+    },
+    {
+        "question": "在2025年的AI最新應用下，醫院希望減輕醫師診斷負擔、提升病例紀錄自動化，最適合使用下列哪一類AI技術？",
+        "options": [
+            "自然語言處理（NLP）醫療助理",
+            "AI繪圖生成工具",
+            "推薦引擎",
+            "機器視覺檢測"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "醫療NLP應用",
+        "number": 142,
+        "explanation": "醫療NLP助理可自動記錄醫囑、摘要病例、辨識內容，有效減輕醫師文書負擔，應用於智慧醫療潮流。"
+    },
+    {
+        "question": "假設你是一位小學老師，希望用AI幫助學生寫作練習與個別化意見反饋，2025年最適合的AI工具是？",
+        "options": [
+            "ChatGPT",
+            "Sora",
+            "Candy.ai",
+            "Maia 100"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "教育寫作輔助AI",
+        "number": 143,
+        "explanation": "最受校園應用的ChatGPT（或類似AI寫作產生器）可為學生提供寫作建議及互動回饋。"
+    },
+    {
+        "question": "2025最新iPAS AI應用規劃師消息指出，哪一天將舉辦下半年度『中級能力鑑定』考試？",
+        "options": [
+            "2025/08/16",
+            "2025/11/08",
+            "2025/06/01",
+            "2025/09/30"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "iPAS考試資訊",
+        "concept": "證照考試時程",
+        "number": 144,
+        "explanation": "官方最新公告顯示，2025年iPAS AI應用規劃師「中級能力鑑定」於2025/11/08舉行。"
+    },
+    {
+        "question": "2025年哪一家全球大廠自行開發的Maia 100 AI晶片，專門為雲端AI運算而設計，強調軟硬體協同？",
+        "options": [
+            "Microsoft",
+            "NVIDIA",
+            "Meta",
+            "Google"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI硬體發展",
+        "concept": "AI晶片技術",
+        "number": 145,
+        "explanation": "Microsoft於2024年推出自研Maia 100加速器，目標強化Azure雲端AI大規模運算能力。"
+    },
+    {
+        "question": "你在台灣經營電商，想用AI提高商品問答、客服自動回覆效率，下列哪個生成式AI工具在2025年特別適合此應用？",
+        "options": [
+            "Otter.ai",
+            "ChatGPT",
+            "Grammarly",
+            "Midjourney"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "電商客服AI應用",
+        "number": 146,
+        "explanation": "ChatGPT支援中英文、能即時生成客服回應，正為2025年台灣電商廣泛採用。"
+    },
+    {
+        "question": "全球AI歷史上，哪個模型的問世讓生成式AI熱潮進入大眾市場，開啟AI應用新紀元？",
+        "options": [
+            "Bard",
+            "Midjourney",
+            "GPT-3",
+            "DALL·E"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI發展歷史",
+        "concept": "生成式AI里程碑",
+        "number": 147,
+        "explanation": "GPT-3的誕生大幅推進生成式AI的大眾普及與應用，成為AI領域劃時代的模型。"
+    },
+    {
+        "question": "你是一家台灣IC設計公司的AI規畫師，2025年根據工研院預測，產業最關注的核心應用趨勢是什麼？",
+        "options": [
+            "聊天機器人",
+            "個性化教育",
+            "AI驅動晶片與垂直整合方案",
+            "社交媒體自動行銷"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "台灣AI產業發展",
+        "concept": "IC設計AI應用",
+        "number": 148,
+        "explanation": "台灣IC產業2025年最關注AI晶片創新，並推動應用與垂直整合，以保持產業競爭優勢。"
+    },
+    {
+        "question": "2025年，哪一項生成式AI被企業評選為提升人員筆記整理與會議記錄自動化首選？",
+        "options": [
+            "Midjourney",
+            "ChatGPT",
+            "Otter.ai",
+            "Sora"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "會議記錄自動化AI",
+        "number": 149,
+        "explanation": "Otter.ai強大的語音轉文字、會議摘要紀錄自動化，是2025年企業會議常用工具之一。"
+    },
+    {
+        "question": "2025年有關台灣AI大會議，若企業想瞭解AI最新產業解決方案、技術趨勢與交流機會，最重要的參加活動是下列哪一個？",
+        "options": [
+            "AI TAIWAN 未來商務展",
+            "ChatGPT論壇",
+            "iPAS線上演習",
+            "國際AI模型大賽"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "AI產業活動",
+        "concept": "台灣AI產業交流",
+        "number": 150,
+        "explanation": "AI TAIWAN未來商務展為台灣年度最重要AI產業盛會，聚焦產業落地、解決方案與國際趨勢交流。"
+    },
+    {
+        "question": "2025年，一間台灣的製造業中小企業希望提升產線效率、降低人力成本，現場主管建議導入AI自動檢測產品瑕疵。最合適導入哪一類AI應用？",
+        "options": [
+            "電腦視覺解決方案",
+            "語音辨識AI",
+            "聊天機器人客服",
+            "自然語言生成AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "製造業AI應用",
+        "number": 151,
+        "explanation": "製造業檢測產品瑕疵，多運用電腦視覺AI讀取影像數據來辨識瑕疵或不良品，提高效率與精準度。"
+    },
+    {
+        "question": "教師欲輔導國中生善用生成式AI閱讀英文文章並寫心得，該使用哪一類AI應用工具最有效？",
+        "options": [
+            "機器人手臂模擬器",
+            "AI翻譯與文本生成平台",
+            "自動化排程管理系統",
+            "舊式搜尋引擎"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "教育AI輔助工具",
+        "number": 152,
+        "explanation": "生成式AI可協助學生進行英文翻譯、摘要與文章生成，快速輔助閱讀與撰寫心得。"
+    },
+    {
+        "question": "台灣數位轉型推進調查中，哪一項被視為導入AI最大的挑戰？",
+        "options": [
+            "AI演算法選擇困難",
+            "電腦硬體太貴",
+            "缺乏數位轉型準備",
+            "政府補助政策少"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "AI導入挑戰",
+        "number": 153,
+        "explanation": "調查顯示，許多產業在AI導入初期，最大挑戰並非技術本身，而是缺乏數位轉型的整體準備。"
+    },
+    {
+        "question": "全球AI產業2025年發展趨勢中，哪個領域展現出較大創新與商機？",
+        "options": [
+            "家用廚具升級",
+            "生成式AI與語言模型應用",
+            "戶外登山運動",
+            "傳統手工藝品"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI產業發展",
+        "concept": "AI商業趨勢",
+        "number": 154,
+        "explanation": "全球AI產業報告指出，生成式AI及大型語言模型（如OpenAI、Google Gemini）是近年最受矚目的發展方向。"
+    },
+    {
+        "question": "醫院為提升病患診療效率，若希望用AI協助醫生生成病歷摘要，該用到哪項AI應用？",
+        "options": [
+            "醫學影像辨識AI",
+            "文本生成AI模型",
+            "語音辨識自動出診單",
+            "手寫辨識AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "醫療文本生成AI",
+        "number": 155,
+        "explanation": "生成式AI（自然語言處理）能根據醫療紀錄自動生成功能完整、語意通順的病歷摘要，顯著提高醫療效率。"
+    },
+    {
+        "question": "iPAS AI應用規劃師證照目前受到哪些產業的高度重視？",
+        "options": [
+            "餐飲服務業",
+            "智慧製造與資訊科技業",
+            "家政服務業",
+            "觀光旅遊產業"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "iPAS證照價值",
+        "concept": "AI人才需求產業",
+        "number": 156,
+        "explanation": "智慧製造、資訊科技等產業數位轉型需求強烈，帶動企業高度重視AI應用人才與iPAS證照認證。"
+    },
+    {
+        "question": "如果銀行希望利用生成式AI強化客戶線上諮詢體驗，下列哪種應用最合適？",
+        "options": [
+            "智能客服系統",
+            "智能通勤管控",
+            "工業自動化監控",
+            "虛擬金融講座"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "金融客服AI應用",
+        "number": 157,
+        "explanation": "生成式AI可透過智能客服，理解客戶問題並即時給予回應，有效提升線上銀行服務品質。"
+    },
+    {
+        "question": "2024年以來，哪個國家/地區推出自研大型語言模型，用於政務、醫療與教育等多樣應用？",
+        "options": [
+            "台灣",
+            "美國",
+            "中國",
+            "印度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "國際AI發展",
+        "concept": "各國AI模型發展",
+        "number": 158,
+        "explanation": "中國推出多個自研大型語言模型，應用於政務、醫療、教育等領域，積極推動AI產業自主化。"
+    },
+    {
+        "question": "你是一名市場行銷經理，想分析社群上的消費者反饋與熱議話題，最適合使用哪種AI技術？",
+        "options": [
+            "自然語言處理情感分析",
+            "AI圖像增強技術",
+            "自動生成圖表工具",
+            "體感互動識別技術"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "市場分析AI應用",
+        "number": 159,
+        "explanation": "自然語言處理（NLP）中的情感分析技術，可快速分析社群文本、理解用戶情緒與討論趨勢。"
+    },
+    {
+        "question": "2023年後，生成式AI（如圖像生成、文本自動生成）迅速席捲下列哪個生活領域？",
+        "options": [
+            "服裝搭配與時尚設計",
+            "城市交通號誌管制",
+            "傳統農村灌溉方式",
+            "健身器材維修"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生活創意AI應用",
+        "number": 160,
+        "explanation": "生成式AI圖像與文本生成已廣泛應用於時尚設計、服飾搭配等生活創意產業，讓創意流程更高效。"
+    },
+    {
+        "question": "如果你是一位台灣的中小企業老闆，希望提升辦公室自動化，2025年你最適合選擇哪一類生成式AI工具？",
+        "options": [
+            "圖像生成AI",
+            "商業管理AI助手",
+            "醫療診斷AI",
+            "語音辨識AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "辦公自動化AI工具",
+        "number": 161,
+        "explanation": "商業管理AI助手結合生成式AI，能自動合成會議記錄、做簡報、處理郵件，是中小企業數位轉型的首選。"
+    },
+    {
+        "question": "台灣在2024-2025 AI產業的核心國際競爭力最主要來自哪一項？",
+        "options": [
+            "AI軟體開發人力",
+            "半導體與AI伺服器產業",
+            "AI行銷平台",
+            "生成式音樂AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "台灣AI產業發展",
+        "concept": "台灣AI競爭優勢",
+        "number": 162,
+        "explanation": "台灣全球近九成AI伺服器來自本地製造，加上半導體供應鏈完備，是AI產業的關鍵優勢。"
+    },
+    {
+        "question": "2025年iPAS AI應用規劃師考試若想加強應用案例學習，下列哪個管道最直接？",
+        "options": [
+            "YouTube 影音課程",
+            "官方網站的產業案例專區",
+            "Google搜尋外文資料",
+            "Facebook社團經驗談"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "iPAS學習資源",
+        "concept": "證照備考資源",
+        "number": 163,
+        "explanation": "iPAS官網提供標竿產業AI規劃與應用案例合集，是最官方且即時的備考資源。"
+    },
+    {
+        "question": "假設你是製造業工程師，要進行AI缺陷檢測自動化，最合適採用哪個AI技術？",
+        "options": [
+            "自然語言處理",
+            "聲音辨識AI",
+            "電腦視覺",
+            "智慧客服機器人"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "工業AI檢測技術",
+        "number": 164,
+        "explanation": "缺陷檢測以「電腦視覺」AI模型分析產品影像，實現自動化檢驗。"
+    },
+    {
+        "question": "2025年全球AI浪潮下，下列哪一產業「醫療、製造、金融、農業」中，哪個領域正大量導入智慧客服生成式AI改善服務？",
+        "options": [
+            "醫療",
+            "製造",
+            "金融",
+            "農業"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "產業AI客服應用",
+        "number": 165,
+        "explanation": "金融業因24小時服務與高查詢量，最早大規模導入生成式AI智慧客服。"
+    },
+    {
+        "question": "生成式AI首次在圖像創作廣泛流行的重大技術突破，出現在下列哪一年？",
+        "options": [
+            "2016",
+            "2019",
+            "2021",
+            "2023"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI發展歷史",
+        "concept": "圖像生成AI里程碑",
+        "number": 166,
+        "explanation": "2021年Stable Diffusion、DALL-E等圖像生成AI迅速普及，掀起應用熱潮。"
+    },
+    {
+        "question": "根據2025年AI發展趨勢，下列何項生成式AI應用最適合「教育輔導」場域？",
+        "options": [
+            "自動化工廠巡檢",
+            "學習測驗題庫自動產生",
+            "電商推薦系統",
+            "即時氣象分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "教育AI輔導應用",
+        "number": 167,
+        "explanation": "生成式AI可自動依據課綱與學生程度產出專屬練習題，有助個人化輔導。"
+    },
+    {
+        "question": "如果你是旅居歐洲的台灣導遊，希望用AI即時協助翻譯與介紹，何種AI工具最適合？",
+        "options": [
+            "AI繪圖軟體",
+            "語音轉文字AI",
+            "多語言生成式AI助手",
+            "語音合成音樂AI"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多語言AI翻譯工具",
+        "number": 168,
+        "explanation": "多語言生成式AI助手可即時聽說翻譯並生成客製化導覽內容，是旅遊服務的創新工具。"
+    },
+    {
+        "question": "如果你是內容行銷企劃，需要每月推出多篇主題專欄文章，下列哪種AI工具最適合高效製作？",
+        "options": [
+            "RAG文件搜尋生成AI",
+            "自動化財務分析AI",
+            "AI人臉辨識軟體",
+            "生物數據分析AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用與規劃",
+        "subtopic": "生成式 AI 技術原理",
+        "concept": "RAG內容生成技術",
+        "number": 169,
+        "explanation": "RAG（Retrieval-Augmented Generation）能大量檢索資料並進行高品質文本生成，最適合內容行銷快速產製。"
+    },
+    {
+        "question": "2025年AI發展重點趨勢中，開放源碼大模型的崛起主要帶來什麼改變？",
+        "options": [
+            "模型收費昂貴",
+            "開發社群自主快速創新",
+            "僅特定公司壟斷市場",
+            "AI倫理風險降低"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI技術發展趨勢",
+        "concept": "開源AI模型發展",
+        "number": 170,
+        "explanation": "開放源碼大模型（如Llama、Mistral）促使全球AI社群共同參與與創新，大幅降低進入門檻。"
     }
 ]
 

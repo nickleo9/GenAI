@@ -450,7 +450,7 @@
             font-weight: bold;
         }
 
-        /* 新增：複習模式選擇樣式 */
+        /* 複習模式選擇樣式 */
         .review-modes {
             background: linear-gradient(135deg, #e8f5e8, #f0f8f0);
             border: 2px solid #28a745;
@@ -841,7 +841,7 @@
                                     <i class="fas fa-clock me-1"></i>模擬考試
                                 </button>
                             </div>
-                            <!-- 新增：複習模式選擇區 -->
+                            <!-- 複習模式選擇區 -->
                             <div class="review-modes mt-2" id="review-modes-section" style="display: none;">
                                 <h6 class="mb-2"><i class="fas fa-redo me-2"></i>複習模式選擇</h6>
                                 <div class="review-mode-item" data-review-mode="wrong" id="review-wrong-mode">
@@ -993,7 +993,12 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                    <button type="button" class="btn btn-primary" id="review-wrong-btn">複習錯題</button>
+                    <button type="button" class="btn btn-success" id="restart-quiz-btn">
+                        <i class="fas fa-redo me-1"></i>重新測驗
+                    </button>
+                    <button type="button" class="btn btn-primary" id="review-wrong-btn">
+                        <i class="fas fa-times-circle me-1"></i>複習錯題
+                    </button>
                 </div>
             </div>
         </div>
@@ -1091,19 +1096,20 @@
                 isQuizActive: false,
                 selectedDatabase: null,
                 currentMode: 'practice',
-                selectedReviewMode: null, // 新增：複習模式選擇
+                selectedReviewMode: null,
                 explanationMode: 'database',
                 selectedAIModel: 'gpt-4o',
                 questions: [],
                 currentQuestionIndex: 0,
                 userAnswers: {},
+                questionMapping: {}, // 新增：用於存儲題目的選項隨機化映射
                 score: 0,
                 wrongQuestions: [],
                 startTime: null,
                 isTimerRunning: false,
                 examDuration: 90, // 分鐘
                 timerId: null,
-                userData: null // 稍後在 init 中初始化
+                userData: null
             },
             
             // DOM 元素
@@ -1113,14 +1119,14 @@
                 settingsPanel: document.getElementById('settings-panel'),
                 quizContainer: document.getElementById('quiz-container'),
                 startBtn: document.getElementById('start-btn'),
-                reviewBtnMain: document.getElementById('review-btn-main'), // 新增：主要複習按鈕
-                reviewModesSection: document.getElementById('review-modes-section'), // 新增：複習模式選擇區
+                reviewBtnMain: document.getElementById('review-btn-main'),
+                reviewModesSection: document.getElementById('review-modes-section'),
                 backBtn: document.getElementById('back-to-selection'),
                 prevBtn: document.getElementById('prev-btn'),
                 submitBtn: document.getElementById('submit-btn'),
                 nextBtn: document.getElementById('next-btn'),
                 finishBtn: document.getElementById('finish-btn'),
-                explanationBtn: document.getElementById('explanation-btn'), // 修改：解析按鈕
+                explanationBtn: document.getElementById('explanation-btn'),
                 quizStatus: document.getElementById('quiz-status'),
                 timerElement: document.getElementById('timer'),
                 questionNumber: document.getElementById('question-number'),
@@ -1145,7 +1151,6 @@
             
             // 初始化
             init() {
-                // 初始化用戶數據
                 this.state.userData = this.loadUserData();
                 this.attachEventListeners();
                 this.updateReviewButtonState();
@@ -1205,15 +1210,15 @@
                 
                 // 按鈕事件
                 this.elements.startBtn.addEventListener('click', () => this.startQuiz());
-                this.elements.reviewBtnMain.addEventListener('click', () => this.startReview()); // 新增：複習按鈕
+                this.elements.reviewBtnMain.addEventListener('click', () => this.startReview());
                 this.elements.backBtn.addEventListener('click', () => this.backToSelection());
                 this.elements.prevBtn.addEventListener('click', () => this.prevQuestion());
                 this.elements.submitBtn.addEventListener('click', () => this.submitAnswer());
                 this.elements.nextBtn.addEventListener('click', () => this.nextQuestion());
                 this.elements.finishBtn.addEventListener('click', () => this.finishQuiz());
-                this.elements.explanationBtn.addEventListener('click', () => this.showCurrentExplanation()); // 修改：查看解析按鈕
+                this.elements.explanationBtn.addEventListener('click', () => this.showCurrentExplanation());
                 
-                // 複習模式選擇事件（新增）
+                // 複習模式選擇事件
                 document.querySelectorAll('.review-mode-item').forEach(item => {
                     item.addEventListener('click', (e) => {
                         if (this.state.isQuizActive) {
@@ -1264,35 +1269,30 @@
                 
                 // 模態框按鈕
                 document.getElementById('review-wrong-btn').addEventListener('click', () => this.reviewWrongQuestions());
+                document.getElementById('restart-quiz-btn').addEventListener('click', () => this.restartQuiz());
                 document.getElementById('reset-stats-btn').addEventListener('click', () => this.resetProgress());
                 
                 // 頁面關閉前自動保存
                 window.addEventListener('beforeunload', () => this.saveUserData(false));
             },
             
-            // 新增：選擇複習模式
+            // 選擇複習模式
             selectReviewMode(mode) {
-                // 移除之前的選中狀態
                 document.querySelectorAll('.review-mode-item').forEach(item => {
                     item.classList.remove('selected');
                 });
                 
-                // 設定新的選中狀態
                 const selectedItem = document.querySelector(`[data-review-mode="${mode}"]`);
                 if (selectedItem) {
                     selectedItem.classList.add('selected');
                     this.state.selectedReviewMode = mode;
-                    
-                    // 檢查是否可以啟用複習按鈕
                     this.updateReviewButtonState();
-                    
                     console.log(`✅ 已選擇複習模式: ${mode}`);
                 }
             },
             
-            // 新增：更新模式UI
+            // 更新模式UI
             updateModeUI() {
-                // 根據模式顯示/隱藏複習選項
                 if (this.state.currentMode === 'practice' || this.state.currentMode === 'exam') {
                     this.elements.reviewModesSection.style.display = 'none';
                     this.elements.startBtn.style.display = 'block';
@@ -1300,7 +1300,7 @@
                 }
             },
             
-            // 新增：開始複習
+            // 開始複習
             startReview() {
                 if (!this.state.selectedDatabase) {
                     this.showAlert('請先選擇題庫！', 'warning');
@@ -1314,30 +1314,26 @@
                 
                 this.showLoading('準備複習模式...');
                 
-                // 設定複習狀態
                 this.state.isQuizActive = true;
                 this.state.currentMode = 'review';
                 this.lockInterface();
                 
                 setTimeout(() => {
                     if (this.loadReviewQuestions()) {
-                        // 重置測驗狀態
                         this.state.currentQuestionIndex = 0;
                         this.state.userAnswers = {};
+                        this.state.questionMapping = {}; // 重置選項映射
                         this.state.score = 0;
                         this.state.wrongQuestions = [];
                         this.state.startTime = new Date();
                         
-                        // 切換UI
                         this.elements.settingsPanel.classList.add('d-none');
                         this.elements.quizContainer.classList.remove('d-none');
                         this.elements.quizStatus.style.display = 'block';
                         this.elements.quizStatus.classList.add('active');
                         this.elements.quizStatus.innerHTML = '<i class="fas fa-redo me-1"></i>複習進行中';
                         
-                        // 顯示第一題
                         this.displayQuestion();
-                        
                         this.hideLoading();
                         console.log('✅ 複習已開始');
                     } else {
@@ -1348,7 +1344,7 @@
                 }, 500);
             },
             
-            // 新增：載入複習題目
+            // 載入複習題目
             loadReviewQuestions() {
                 const currentQuizData = quizData[this.state.selectedDatabase];
                 
@@ -1362,7 +1358,6 @@
                 
                 switch (this.state.selectedReviewMode) {
                     case 'wrong':
-                        // 錯題複習：只選擇答錯的題目
                         const incorrectQuestions = this.state.userData.incorrect || [];
                         questionsToReview = currentQuizData.filter(q => 
                             incorrectQuestions.includes(q.question)
@@ -1374,18 +1369,11 @@
                         break;
                         
                     case 'all':
-                        // 全題複習：按順序選擇
                         questionsToReview = currentQuizData.slice(0, Math.min(questionCount, currentQuizData.length));
                         break;
                         
                     case 'topic':
-                        // 主題複習：按主題分組（暫時簡化為隨機選擇）
-                        questionsToReview = [...currentQuizData].sort(() => Math.random() - 0.5)
-                            .slice(0, Math.min(questionCount, currentQuizData.length));
-                        break;
-                        
                     case 'random':
-                        // 隨機複習：隨機排序選擇
                         questionsToReview = [...currentQuizData].sort(() => Math.random() - 0.5)
                             .slice(0, Math.min(questionCount, currentQuizData.length));
                         break;
@@ -1395,7 +1383,6 @@
                         return false;
                 }
                 
-                // 重新編號題目
                 this.state.questions = questionsToReview;
                 this.state.questions.forEach((q, index) => q.number = index + 1);
                 
@@ -1412,7 +1399,7 @@
                 this.state.selectedDatabase = type;
                 this.updateDatabaseUI(type);
                 this.elements.startBtn.disabled = false;
-                this.updateReviewButtonState(); // 更新複習按鈕狀態
+                this.updateReviewButtonState();
                 
                 console.log(`✅ 已選擇題庫: ${type}`);
             },
@@ -1425,26 +1412,21 @@
                 };
                 
                 const selectedName = databaseNames[type] || type;
-                this.elements.timerElement.querySelector('span') ?
-                    this.elements.timerElement.querySelector('span').textContent = `已選擇：${selectedName}` :
-                    this.elements.timerElement.innerHTML = `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
+                this.elements.timerElement.innerHTML = `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
                 
-                // 根據題庫調整推薦設定
                 if (type === 'ipas') {
                     document.getElementById('question-count').value = '60';
-                    // 建議使用練習模式準備考試
                     document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
                     document.querySelector('[data-mode="practice"]').classList.add('active');
                     this.state.currentMode = 'practice';
                 }
             },
             
-            // 修改：更新複習按鈕狀態
+            // 更新複習按鈕狀態
             updateReviewButtonState() {
                 const hasWrongQuestions = this.state.userData.incorrect && this.state.userData.incorrect.length > 0;
                 const hasSelectedDatabase = this.state.selectedDatabase !== null;
                 
-                // 顯示複習模式選擇區
                 if (hasSelectedDatabase) {
                     this.elements.reviewModesSection.style.display = 'block';
                     this.elements.startBtn.style.display = 'block';
@@ -1454,7 +1436,6 @@
                     this.elements.reviewBtnMain.style.display = 'none';
                 }
                 
-                // 更新錯題複習選項的可用狀態
                 const wrongModeItem = document.getElementById('review-wrong-mode');
                 if (wrongModeItem) {
                     if (hasWrongQuestions) {
@@ -1468,7 +1449,6 @@
                     }
                 }
                 
-                // 更新主要複習按鈕狀態
                 this.elements.reviewBtnMain.disabled = !hasSelectedDatabase;
             },
             
@@ -1481,32 +1461,27 @@
                 
                 this.showLoading('準備測驗中...');
                 
-                // 設定測驗狀態
                 this.state.isQuizActive = true;
                 this.lockInterface();
                 
-                // 載入題目
                 const questionCount = parseInt(document.getElementById('question-count').value);
                 
                 setTimeout(() => {
                     if (this.loadQuestions(questionCount)) {
-                        // 重置測驗狀態
                         this.state.currentQuestionIndex = 0;
                         this.state.userAnswers = {};
+                        this.state.questionMapping = {}; // 重置選項映射
                         this.state.score = 0;
                         this.state.wrongQuestions = [];
                         this.state.startTime = new Date();
                         
-                        // 切換UI
                         this.elements.settingsPanel.classList.add('d-none');
                         this.elements.quizContainer.classList.remove('d-none');
                         this.elements.quizStatus.style.display = 'block';
                         this.elements.quizStatus.classList.add('active');
                         
-                        // 顯示第一題
                         this.displayQuestion();
                         
-                        // 啟動計時器
                         if (this.state.currentMode === 'exam') {
                             this.startTimer();
                         }
@@ -1546,75 +1521,91 @@
                 
                 // 隨機排序題目
                 const shuffledQuestions = [...currentQuizData].sort(() => Math.random() - 0.5);
-                
-                // 挑選指定數量題目
                 this.state.questions = shuffledQuestions.slice(0, Math.min(count, shuffledQuestions.length));
-                
-                // 重新編號題目
                 this.state.questions.forEach((q, index) => q.number = index + 1);
                 
                 return true;
             },
             
-// 在 displayQuestion 函數中添加選項隨機化
-displayQuestion() {
-    if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
-        this.finishQuiz();
-        return false;
-    }
-    
-    const question = this.state.questions[this.state.currentQuestionIndex];
-    
-    // 更新問題資訊
-    this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
-    this.elements.questionText.textContent = question.question;
-    
-    // 創建選項隨機化映射
-    const optionsWithIndex = question.options.map((option, index) => ({
-        text: option,
-        originalIndex: index,
-        isCorrect: index === question.correct_answer_index
-    }));
-    
-    // 隨機排序選項
-    const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
-    
-    // 生成隨機選項
-    this.elements.optionsContainer.innerHTML = '';
-    shuffledOptions.forEach((option, displayIndex) => {
-        const letter = String.fromCharCode(65 + displayIndex);
-        const optionHTML = `
-            <div class="form-check mb-2">
-                <input class="option-input" type="radio" name="quiz-option" 
-                       id="option-${letter}" value="${letter}" 
-                       data-original-index="${option.originalIndex}">
-                <label class="option-label" for="option-${letter}">
-                    ${letter}. ${option.text}
-                </label>
-            </div>
-        `;
-        this.elements.optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
-        
-        // 記錄新的正確答案位置
-        if (option.isCorrect) {
-            question.randomized_correct_letter = letter;
-        }
-    });
-    
-    // 恢復之前的答案（需要調整邏輯以適應隨機選項）
-    if (this.state.currentQuestionIndex in this.state.userAnswers) {
-        const previousAnswer = this.state.userAnswers[this.state.currentQuestionIndex];
-        // 這裡需要根據原始索引找到新的字母位置
-        const originalIndex = previousAnswer.originalIndex;
-        const newOption = shuffledOptions.find(opt => opt.originalIndex === originalIndex);
-        if (newOption) {
-            const newLetter = String.fromCharCode(65 + shuffledOptions.indexOf(newOption));
-            const answerInput = document.getElementById(`option-${newLetter}`);
-            if (answerInput) {
-                answerInput.checked = true;
-            }
-        }
-    }
+            // 顯示題目（修復版本）
+            displayQuestion() {
+                if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
+                    this.finishQuiz();
+                    return false;
+                }
+                
+                const question = this.state.questions[this.state.currentQuestionIndex];
+                const questionId = this.state.currentQuestionIndex;
+                
+                // 更新問題資訊
+                this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
+                this.elements.questionText.textContent = question.question;
+                
+                // 檢查是否已經有選項映射，如果沒有則創建
+                if (!this.state.questionMapping[questionId]) {
+                    // 創建選項隨機化映射
+                    const optionsWithIndex = question.options.map((option, index) => ({
+                        text: option,
+                        originalIndex: index,
+                        isCorrect: index === question.correct_answer_index
+                    }));
+                    
+                    // 隨機排序選項
+                    const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
+                    
+                    // 儲存映射關係
+                    this.state.questionMapping[questionId] = {
+                        shuffledOptions: shuffledOptions,
+                        correctLetter: null
+                    };
+                    
+                    // 找到正確答案的新字母
+                    shuffledOptions.forEach((option, index) => {
+                        if (option.isCorrect) {
+                            this.state.questionMapping[questionId].correctLetter = String.fromCharCode(65 + index);
+                        }
+                    });
+                }
+                
+                // 使用已存在的映射生成選項
+                const mapping = this.state.questionMapping[questionId];
+                this.elements.optionsContainer.innerHTML = '';
+                
+                mapping.shuffledOptions.forEach((option, displayIndex) => {
+                    const letter = String.fromCharCode(65 + displayIndex);
+                    const optionHTML = `
+                        <div class="form-check mb-2">
+                            <input class="option-input" type="radio" name="quiz-option" 
+                                   id="option-${letter}" value="${letter}" 
+                                   data-original-index="${option.originalIndex}">
+                            <label class="option-label" for="option-${letter}">
+                                ${letter}. ${option.text}
+                            </label>
+                        </div>
+                    `;
+                    this.elements.optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
+                });
+                
+                // 恢復之前的答案
+                if (this.state.currentQuestionIndex in this.state.userAnswers) {
+                    const previousAnswer = this.state.userAnswers[this.state.currentQuestionIndex];
+                    const answerInput = document.getElementById(`option-${previousAnswer.answer}`);
+                    if (answerInput) {
+                        answerInput.checked = true;
+                    }
+                    
+                    // 如果已回答，禁用選項並顯示解析
+                    document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
+                        input.disabled = true;
+                    });
+                    
+                    if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
+                        this.showExplanation(question, previousAnswer.answer, previousAnswer.isCorrect);
+                    }
+                } else {
+                    // 如果未回答，隱藏解析
+                    this.elements.explanationBox.classList.add('d-none');
+                }
                 
                 // 更新進度條
                 const progress = ((this.state.currentQuestionIndex + 1) / this.state.questions.length) * 100;
@@ -1622,43 +1613,37 @@ displayQuestion() {
                 
                 // 更新按鈕狀態
                 this.updateButtonStates();
-                
-                // 更新統計
                 this.updateStats();
-                
-                // 隱藏解析（如果未回答）
-                if (!(this.state.currentQuestionIndex in this.state.userAnswers)) {
-                    this.elements.explanationBox.classList.add('d-none');
-                }
                 
                 return true;
             },
             
-            // 提交答案
-submitAnswer() {
-    const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
-    if (!selectedOption) {
-        this.showAlert('請選擇一個答案！', 'warning');
-        return false;
-    }
-    
-    const question = this.state.questions[this.state.currentQuestionIndex];
-    const userAnswerLetter = selectedOption.value;
-    const originalIndex = parseInt(selectedOption.dataset.originalIndex);
-    const isCorrect = originalIndex === question.correct_answer_index;
-    
-    // 記錄答案（保存原始索引以便恢復）
-    this.state.userAnswers[this.state.currentQuestionIndex] = {
-        answer: userAnswerLetter,
-        originalIndex: originalIndex,
-        isCorrect: isCorrect,
-        timestamp: new Date()
-    };
+            // 提交答案（修復版本）
+            submitAnswer() {
+                const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
+                if (!selectedOption) {
+                    this.showAlert('請選擇一個答案！', 'warning');
+                    return false;
+                }
+                
+                const question = this.state.questions[this.state.currentQuestionIndex];
+                const questionId = this.state.currentQuestionIndex;
+                const userAnswerLetter = selectedOption.value;
+                const originalIndex = parseInt(selectedOption.dataset.originalIndex);
+                const mapping = this.state.questionMapping[questionId];
+                const isCorrect = originalIndex === question.correct_answer_index;
+                
+                // 記錄答案
+                this.state.userAnswers[this.state.currentQuestionIndex] = {
+                    answer: userAnswerLetter,
+                    originalIndex: originalIndex,
+                    isCorrect: isCorrect,
+                    timestamp: new Date()
+                };
                 
                 // 更新分數
                 if (isCorrect) {
                     this.state.score++;
-                    // 更新用戶數據
                     if (!this.state.userData.correct.includes(question.question)) {
                         this.state.userData.correct.push(question.question);
                     }
@@ -1684,7 +1669,7 @@ submitAnswer() {
                     question: question.question,
                     options: question.options,
                     user_answer: userAnswerLetter,
-                    correct_answer_letter: question.correct_answer_letter,
+                    correct_answer_letter: mapping.correctLetter,
                     correct_answer_index: question.correct_answer_index,
                     is_correct: isCorrect,
                     topic: question.topic,
@@ -1695,31 +1680,31 @@ submitAnswer() {
                 
                 // 顯示解析
                 if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
-                    this.showExplanation(question, userAnswer, isCorrect);
-                    // 禁用選項
+                    this.showExplanation(question, userAnswerLetter, isCorrect);
                     document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
                         input.disabled = true;
                     });
                 }
                 
-                // 更新統計與按鈕狀態
                 this.updateStats();
                 this.updateButtonStates();
                 this.updateReviewButtonState();
-                
-                // 保存用戶資料
                 this.saveUserData(false);
                 
                 return true;
             },
             
             // 顯示解析
-            showExplanation(question, userAnswer, isCorrect) {
+            showExplanation(question, userAnswerLetter, isCorrect) {
                 this.elements.explanationBox.classList.remove('d-none');
+                
+                const questionId = this.state.currentQuestionIndex;
+                const mapping = this.state.questionMapping[questionId];
+                const correctAnswerLetter = mapping.correctLetter;
                 
                 const resultClass = isCorrect ? 'correct' : 'incorrect';
                 const resultIcon = isCorrect ? '✅' : '❌';
-                const resultText = isCorrect ? '答對了！' : `答錯了！正確答案是 ${question.correct_answer_letter}`;
+                const resultText = isCorrect ? '答對了！' : `答錯了！正確答案是 ${correctAnswerLetter}`;
                 
                 let explanationHTML = `
                     <div class="${resultClass} mb-3">
@@ -1732,34 +1717,35 @@ submitAnswer() {
                     explanationHTML += `<div class="highlight">${question.explanation || '無解析'}</div>`;
                 } else if (this.state.explanationMode === 'ai') {
                     explanationHTML += '<div class="highlight" id="ai-explanation">正在生成解析，請稍候...</div>';
-                    this.generateAIExplanation(question, userAnswer);
+                    this.generateAIExplanation(question, userAnswerLetter);
                 }
                 
                 this.elements.explanationContent.innerHTML = explanationHTML;
                 
-                // 顯示主題標籤
                 this.elements.topicBadge.textContent = question.topic || '未分類';
                 this.elements.subtopicBadge.textContent = question.subtopic || '未分類';
             },
             
-            // 新增：查看當前解析
+            // 查看當前解析
             showCurrentExplanation() {
                 if (this.state.currentQuestionIndex in this.state.userAnswers) {
-                    // 如果已回答，重新顯示解析
                     const question = this.state.questions[this.state.currentQuestionIndex];
                     const userAnswerData = this.state.userAnswers[this.state.currentQuestionIndex];
                     this.showExplanation(question, userAnswerData.answer, userAnswerData.isCorrect);
                     this.showAlert('已顯示當前題目解析', 'info');
                 } else {
-                    // 如果未回答，提供學習建議
                     this.showAlert('建議先回答題目再查看解析，這樣學習效果更好！', 'info');
                 }
             },
             
             // AI生成解析
-            async generateAIExplanation(question, userAnswer) {
+            async generateAIExplanation(question, userAnswerLetter) {
                 try {
                     this.showLoading('AI正在生成解析...');
+                    
+                    const questionId = this.state.currentQuestionIndex;
+                    const mapping = this.state.questionMapping[questionId];
+                    const correctAnswerLetter = mapping.correctLetter;
                     
                     const prompt = `
                     你是一個專業的iPAS AI應用規劃師認證考試輔導老師。請用繁體中文根據以下題目生成詳細的答案解析（150字以內）：
@@ -1767,12 +1753,13 @@ submitAnswer() {
                     題目：${question.question}
                     選項: 
                     ${question.options.map((opt, i) => `${String.fromCharCode(65 + i)}. ${opt}`).join('\n')}
-                    正確答案: ${question.correct_answer_letter}
-                    用戶答案: ${userAnswer}
+                    正確答案: ${correctAnswerLetter}
+                    用戶答案: ${userAnswerLetter}
                     
                     請提供清晰完整的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。重點關注AI應用規劃的商業價值與實務考量。
                     `;
 
+                    // 注意：這裡的API端點可能需要根據實際情況調整
                     const response = await fetch('https://back-9qb9.onrender.com/api/generate-explanation', {
                         method: 'POST',
                         headers: {
@@ -1836,12 +1823,10 @@ submitAnswer() {
                     }
                 }
                 
-                // 重置測驗狀態
                 this.state.isQuizActive = false;
                 this.unlockInterface();
                 this.stopTimer();
                 
-                // 切換UI
                 this.elements.quizContainer.classList.add('d-none');
                 this.elements.settingsPanel.classList.remove('d-none');
                 this.elements.quizStatus.style.display = 'none';
@@ -1855,7 +1840,6 @@ submitAnswer() {
                 this.stopTimer();
                 this.showResult();
                 
-                // 重置狀態
                 this.state.isQuizActive = false;
                 this.unlockInterface();
             },
@@ -1953,28 +1937,64 @@ submitAnswer() {
                         `;
                         
                         questions.forEach((q, index) => {
-                            const userAnswerIndex = this.state.userAnswers[this.state.questions.indexOf(q)].answer.charCodeAt(0) - 65;
-                            const userAnswerText = q.options[userAnswerIndex] || '未作答';
-                            const questionId = `wrong-q-${topic.replace(/\s+/g, '-')}-${index}`;
+                            const questionOriginalIndex = this.state.questions.indexOf(q);
+                            const userAnswerData = this.state.userAnswers[questionOriginalIndex];
+                            const questionMapping = this.state.questionMapping[questionOriginalIndex];
+                            const questionIndex = `wrong-q-${topic.replace(/\s+/g, '-')}-${index}`;
+                            
+                            // 獲取用戶實際看到的選項文字
+                            let userAnswerText = '未作答';
+                            let correctAnswerLetter = q.correct_answer_letter || 'A';
+                            let correctAnswerText = q.options[q.correct_answer_index] || '未知';
+                            
+                            if (userAnswerData && questionMapping) {
+                                // 找到用戶選擇的選項在隨機化後的實際文字
+                                const userSelectedOption = questionMapping.shuffledOptions.find(opt => 
+                                    opt.originalIndex === userAnswerData.originalIndex
+                                );
+                                if (userSelectedOption) {
+                                    userAnswerText = userSelectedOption.text;
+                                }
+                                
+                                // 使用隨機化後的正確答案字母
+                                correctAnswerLetter = questionMapping.correctLetter || q.correct_answer_letter;
+                                correctAnswerText = q.options[q.correct_answer_index];
+                            } else {
+                                // 如果沒有映射資料，使用原始資料
+                                userAnswerText = userAnswerData ? q.options[userAnswerData.originalIndex] : '未作答';
+                            }
                             
                             resultHTML += `
                                 <div class="mb-3">
                                     <div class="fw-bold position-relative" 
                                          style="cursor: pointer; padding: 5px; border-radius: 4px;" 
                                          data-bs-toggle="collapse" 
-                                         data-bs-target="#${questionId}">
+                                         data-bs-target="#${questionIndex}">
                                         <div class="d-flex justify-content-between align-items-center">
                                             <div>${index+1}. ${q.question}</div>
                                             <i class="fas fa-chevron-down"></i>
                                         </div>
                                     </div>
                                     <div class="ps-3 mt-1">
-                                        <div class="text-danger">您的答案: ${this.state.userAnswers[this.state.questions.indexOf(q)].answer} (${userAnswerText})</div>
-                                        <div class="text-success">正確答案: ${q.correct_answer_letter} (${q.options[q.correct_answer_index]})</div>
-                                        <div class="collapse mt-2" id="${questionId}">
+                                        <div class="text-danger">您的答案: ${userAnswerData ? userAnswerData.answer : '未作答'} (${userAnswerText})</div>
+                                        <div class="text-success">正確答案: ${correctAnswerLetter} (${correctAnswerText})</div>
+                                        <div class="collapse mt-2" id="${questionIndex}">
                                             <div class="card card-body bg-light">
                                                 <h6 class="text-primary mb-2">題目解析:</h6>
                                                 ${q.explanation || '無解析'}
+                                                <div class="mt-2">
+                                                    <small class="text-muted">
+                                                        <strong>所有選項:</strong><br>
+                                                        ${questionMapping ? 
+                                                            questionMapping.shuffledOptions.map((opt, idx) => 
+                                                                `${String.fromCharCode(65 + idx)}. ${opt.text}`
+                                                            ).join('<br>') :
+                                                            q.options.map((opt, idx) => 
+                                                                `${String.fromCharCode(65 + idx)}. ${opt}`
+                                                            ).join('<br>')
+                                                        }
+                                                    </small>
+                                                </div>
                                             </div>
                                         </div>
                                     </div>
@@ -2009,9 +2029,24 @@ submitAnswer() {
                 
                 this.modals.result.show();
                 
-                // 隱藏複習錯題按鈕（如果是錯題模式）
-                document.getElementById('review-wrong-btn').style.display = 
-                    (this.state.currentMode === 'review' && this.state.selectedReviewMode === 'wrong') ? 'none' : 'block';
+                // 按鈕顯示邏輯
+                const restartBtn = document.getElementById('restart-quiz-btn');
+                const reviewWrongBtn = document.getElementById('review-wrong-btn');
+                
+                // 重新測驗按鈕始終顯示
+                restartBtn.style.display = 'block';
+                
+                // 複習錯題按鈕的顯示邏輯
+                if (this.state.currentMode === 'review' && this.state.selectedReviewMode === 'wrong') {
+                    // 如果是錯題複習模式，隱藏複習錯題按鈕
+                    reviewWrongBtn.style.display = 'none';
+                } else if (this.state.wrongQuestions.length === 0) {
+                    // 如果沒有錯題，隱藏複習錯題按鈕
+                    reviewWrongBtn.style.display = 'none';
+                } else {
+                    // 其他情況顯示複習錯題按鈕
+                    reviewWrongBtn.style.display = 'block';
+                }
             },
             
             // 複習錯題
@@ -2023,7 +2058,7 @@ submitAnswer() {
                 
                 this.modals.result.hide();
                 
-                // 修正：設置為錯題複習模式
+                // 設置為錯題複習模式
                 this.state.currentMode = 'review';
                 this.state.selectedReviewMode = 'wrong';
                 
@@ -2032,6 +2067,7 @@ submitAnswer() {
                 this.state.currentQuestionIndex = 0;
                 this.state.score = 0;
                 this.state.userAnswers = {};
+                this.state.questionMapping = {}; // 重置選項映射
                 this.state.wrongQuestions = [];
                 
                 this.state.questions.forEach((q, index) => {
@@ -2044,6 +2080,51 @@ submitAnswer() {
                 this.showAlert('開始複習錯題', 'success');
             },
             
+            // 新增：重新測驗功能
+            restartQuiz() {
+                this.modals.result.hide();
+                
+                // 重置測驗狀態但保持題庫選擇
+                this.state.isQuizActive = false;
+                this.state.currentQuestionIndex = 0;
+                this.state.userAnswers = {};
+                this.state.questionMapping = {};
+                this.state.score = 0;
+                this.state.wrongQuestions = [];
+                this.state.questions = [];
+                this.state.startTime = null;
+                
+                // 停止計時器
+                this.stopTimer();
+                
+                // 解鎖介面
+                this.unlockInterface();
+                
+                // 切換回設定面板
+                this.elements.quizContainer.classList.add('d-none');
+                this.elements.settingsPanel.classList.remove('d-none');
+                this.elements.quizStatus.style.display = 'none';
+                this.elements.quizStatus.classList.remove('active');
+                
+                // 重置複習模式選擇（如果有選中的話）
+                document.querySelectorAll('.review-mode-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+                this.state.selectedReviewMode = null;
+                
+                // 確保開始按鈕可用（如果已選擇題庫）
+                if (this.state.selectedDatabase) {
+                    this.elements.startBtn.disabled = false;
+                    // 更新計時器顯示
+                    this.updateDatabaseUI(this.state.selectedDatabase);
+                }
+                
+                // 顯示提示訊息
+                this.showAlert('可以重新選擇題目數量和測驗設定了！', 'success');
+                
+                console.log('🔄 已重置測驗，可重新開始');
+            },
+            
             // 更新按鈕狀態
             updateButtonStates() {
                 const hasAnswered = this.state.currentQuestionIndex in this.state.userAnswers;
@@ -2054,7 +2135,7 @@ submitAnswer() {
                 this.elements.submitBtn.disabled = hasAnswered;
                 this.elements.nextBtn.disabled = !hasAnswered || isLastQuestion;
                 this.elements.finishBtn.disabled = !hasAnswered && !isLastQuestion;
-                this.elements.explanationBtn.disabled = !hasAnswered; // 修改：解析按鈕邏輯
+                this.elements.explanationBtn.disabled = !hasAnswered;
             },
             
             // 更新統計
@@ -2264,7 +2345,7 @@ submitAnswer() {
                 let exportText = "iPAS AI應用規劃師認證考試錯題集\n";
                 exportText += `匯出時間: ${new Date().toLocaleString()}\n`;
                 exportText += `總錯題數: ${this.state.userData.incorrect.length}\n\n`;
-                exportText += "="*50 + "\n\n";
+                exportText += "=".repeat(50) + "\n\n";
                 
                 const incorrectQuestions = this.state.userData.incorrect;
                 const questionData = {};

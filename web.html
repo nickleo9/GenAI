@@ -1556,49 +1556,65 @@
                 return true;
             },
             
-            // 顯示當前問題
-            displayQuestion() {
-                if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
-                    this.finishQuiz();
-                    return false;
-                }
-                
-                const question = this.state.questions[this.state.currentQuestionIndex];
-                
-                // 更新問題資訊
-                this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
-                this.elements.questionText.textContent = question.question;
-                
-                // 生成選項
-                this.elements.optionsContainer.innerHTML = '';
-                question.options.forEach((option, index) => {
-                    const letter = String.fromCharCode(65 + index);
-                    const optionHTML = `
-                        <div class="form-check mb-2">
-                            <input class="option-input" type="radio" name="quiz-option" id="option-${letter}" value="${letter}">
-                            <label class="option-label" for="option-${letter}">
-                                ${letter}. ${option}
-                            </label>
-                        </div>
-                    `;
-                    this.elements.optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
-                });
-                
-                // 恢復之前的答案
-                if (this.state.currentQuestionIndex in this.state.userAnswers) {
-                    const previousAnswer = this.state.userAnswers[this.state.currentQuestionIndex];
-                    const answerInput = document.getElementById(`option-${previousAnswer.answer}`);
-                    if (answerInput) {
-                        answerInput.checked = true;
-                    }
-                    
-                    if (this.state.currentMode !== 'exam') {
-                        this.showExplanation(question, previousAnswer.answer, previousAnswer.isCorrect);
-                        document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
-                            input.disabled = true;
-                        });
-                    }
-                }
+// 在 displayQuestion 函數中添加選項隨機化
+displayQuestion() {
+    if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
+        this.finishQuiz();
+        return false;
+    }
+    
+    const question = this.state.questions[this.state.currentQuestionIndex];
+    
+    // 更新問題資訊
+    this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
+    this.elements.questionText.textContent = question.question;
+    
+    // 創建選項隨機化映射
+    const optionsWithIndex = question.options.map((option, index) => ({
+        text: option,
+        originalIndex: index,
+        isCorrect: index === question.correct_answer_index
+    }));
+    
+    // 隨機排序選項
+    const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
+    
+    // 生成隨機選項
+    this.elements.optionsContainer.innerHTML = '';
+    shuffledOptions.forEach((option, displayIndex) => {
+        const letter = String.fromCharCode(65 + displayIndex);
+        const optionHTML = `
+            <div class="form-check mb-2">
+                <input class="option-input" type="radio" name="quiz-option" 
+                       id="option-${letter}" value="${letter}" 
+                       data-original-index="${option.originalIndex}">
+                <label class="option-label" for="option-${letter}">
+                    ${letter}. ${option.text}
+                </label>
+            </div>
+        `;
+        this.elements.optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
+        
+        // 記錄新的正確答案位置
+        if (option.isCorrect) {
+            question.randomized_correct_letter = letter;
+        }
+    });
+    
+    // 恢復之前的答案（需要調整邏輯以適應隨機選項）
+    if (this.state.currentQuestionIndex in this.state.userAnswers) {
+        const previousAnswer = this.state.userAnswers[this.state.currentQuestionIndex];
+        // 這裡需要根據原始索引找到新的字母位置
+        const originalIndex = previousAnswer.originalIndex;
+        const newOption = shuffledOptions.find(opt => opt.originalIndex === originalIndex);
+        if (newOption) {
+            const newLetter = String.fromCharCode(65 + shuffledOptions.indexOf(newOption));
+            const answerInput = document.getElementById(`option-${newLetter}`);
+            if (answerInput) {
+                answerInput.checked = true;
+            }
+        }
+    }
                 
                 // 更新進度條
                 const progress = ((this.state.currentQuestionIndex + 1) / this.state.questions.length) * 100;
@@ -1619,23 +1635,25 @@
             },
             
             // 提交答案
-            submitAnswer() {
-                const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
-                if (!selectedOption) {
-                    this.showAlert('請選擇一個答案！', 'warning');
-                    return false;
-                }
-                
-                const question = this.state.questions[this.state.currentQuestionIndex];
-                const userAnswer = selectedOption.value;
-                const isCorrect = userAnswer === question.correct_answer_letter;
-                
-                // 記錄答案
-                this.state.userAnswers[this.state.currentQuestionIndex] = {
-                    answer: userAnswer,
-                    isCorrect: isCorrect,
-                    timestamp: new Date()
-                };
+submitAnswer() {
+    const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
+    if (!selectedOption) {
+        this.showAlert('請選擇一個答案！', 'warning');
+        return false;
+    }
+    
+    const question = this.state.questions[this.state.currentQuestionIndex];
+    const userAnswerLetter = selectedOption.value;
+    const originalIndex = parseInt(selectedOption.dataset.originalIndex);
+    const isCorrect = originalIndex === question.correct_answer_index;
+    
+    // 記錄答案（保存原始索引以便恢復）
+    this.state.userAnswers[this.state.currentQuestionIndex] = {
+        answer: userAnswerLetter,
+        originalIndex: originalIndex,
+        isCorrect: isCorrect,
+        timestamp: new Date()
+    };
                 
                 // 更新分數
                 if (isCorrect) {
@@ -1665,7 +1683,7 @@
                     database: this.state.selectedDatabase,
                     question: question.question,
                     options: question.options,
-                    user_answer: userAnswer,
+                    user_answer: userAnswerLetter,
                     correct_answer_letter: question.correct_answer_letter,
                     correct_answer_index: question.correct_answer_index,
                     is_correct: isCorrect,

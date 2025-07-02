@@ -2888,5 +2888,175 @@
         "explanation": "2014年Ian Goodfellow發表了生成對抗網絡（GAN），開啟了生成式AI重要發展。",
         "number": 180,
         "date": "2025-07-02"
+    },
+    {
+        "question": "如果你是一家台灣的智慧工廠管理師，想提升產線效率並即時監控機器故障，2025年最建議採用下列哪種生成式AI工具？",
+        "options": [
+            "邊緣運算結合生成式AI監控方案",
+            "語音聊天機器人",
+            "文件自動翻譯平台",
+            "虛擬實境學習平台"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工廠自動化",
+        "concept": "AI生產監控",
+        "explanation": "邊緣運算結合生成式AI工具能即時分析機器狀況，準確預測、警示故障，是智慧工廠效率提升的最佳選擇。",
+        "number": 181,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "2024年OpenAI推出的Sora平台最適合哪一種日常生活應用？",
+        "options": [
+            "即時語音轉文字",
+            "協助用戶生成短影音內容",
+            "自動文件分類",
+            "智慧家庭控制"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "多媒體AI應用",
+        "concept": "生成式影音AI",
+        "explanation": "Sora專為生成短影片設計，讓用戶快速產出創意影音，廣泛應用於內容創作與社群媒體。",
+        "number": 182,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "作為一名台灣中小企業主，想要自動回覆客戶諮詢並串接LINE，下列何者是最合適的方案？",
+        "options": [
+            "生成式AI寫作工具",
+            "社群媒體數據分析",
+            "AI客服對話機器人服務",
+            "智慧工廠內部管理系統"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "客服自動化",
+        "concept": "AI聊天機器人",
+        "explanation": "AI客服對話機器人已能串連LINE等社群，讓企業即時回覆，自動處理常見問題，提升用戶體驗。",
+        "number": 183,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "在2025年，台灣學生若想用生成式AI做科學報告，根據iPAS最新建議，應培養哪項能力？",
+        "options": [
+            "AI軟硬體安裝技巧",
+            "有效提示工程（Prompt Engineering）能力",
+            "資安法律知識",
+            "傳統報告寫作能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI教育應用",
+        "subtopic": "提示工程",
+        "concept": "Prompt Engineering",
+        "explanation": "iPAS與產業建議學生發展提示工程能力，能精確引導AI生成所需內容，是未來必備技能。",
+        "number": 184,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "若你是醫院管理師，計畫以AI提升病歷自動化分析，下列哪項技術最適合？",
+        "options": [
+            "生成式語言模型（LLM）",
+            "電腦視覺辨識",
+            "機器人流程自動化（RPA）",
+            "語音助理系統"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI在醫療領域應用",
+        "subtopic": "自然語言處理",
+        "concept": "生成式語言模型",
+        "explanation": "LLM能理解並總結大量文字病歷，可協助自動生成醫療報告，提升醫護效率與精度。",
+        "number": 185,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "全球哪家科技巨頭在2024年導入AI助手Copilot，加速辦公自動化，深受商業用戶青睞？",
+        "options": [
+            "Google",
+            "OpenAI",
+            "Microsoft",
+            "Amazon"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI工具與產業趨勢",
+        "subtopic": "辦公自動化",
+        "concept": "AI協作助理",
+        "explanation": "Microsoft於Office 365整合Copilot，全面自動化會議記錄、郵件處理，強化辦公生產力。",
+        "number": 186,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "AI歷史上首次提出深度學習（Deep Learning）劃時代架構的是哪一年？",
+        "options": [
+            "2006年",
+            "2012年",
+            "1998年",
+            "2018年"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "深度學習歷史",
+        "concept": "深度信念網路（DBN）",
+        "explanation": "2006年Hinton等人提出深度信念網路，標誌深度學習元年，為AI發展奠基。",
+        "number": 187,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "2024年台灣政府發布智慧城市推動方案，優先導入何種AI技術強化交通管理？",
+        "options": [
+            "生成式影音內容AI",
+            "AI影像辨識路口流量",
+            "語言大模型客服系統",
+            "AI寫作自動校稿"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI科技台灣發展",
+        "subtopic": "智慧交通",
+        "concept": "影像辨識",
+        "explanation": "政府重點推AI影像辨識分析交通流量，實現信號智慧調控與事故預警。",
+        "number": 188,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "2025年國際AI論壇中特別強調生成式AI應優先考慮哪一項倫理原則？",
+        "options": [
+            "商業機密保護",
+            "生成內容公平與偏見避免",
+            "自動化程度高低",
+            "運算資源分配"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "生成式AI倫理",
+        "concept": "公平性評估",
+        "explanation": "論壇呼籲業界重視生成式AI的內容公平，避免系統性偏見，建立可解釋與審查機制。",
+        "number": 189,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "根據2024年iPAS AI 應用規劃師考試公告，下列有關AI工具題型描述何者正確？",
+        "options": [
+            "僅考AI歷史發展",
+            "涵蓋最新AI工具操作情境",
+            "僅考理論不含實作",
+            "只出現單選題不含應用題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "iPAS考試與證照",
+        "subtopic": "考題趨勢",
+        "concept": "AI工具應用能力",
+        "explanation": "2024年iPAS明確強化AI工具在生活、產業應用題型，不再僅侷限理論與歷史。",
+        "number": 190,
+        "date": "2025-07-02"
     }
 ]

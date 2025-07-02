@@ -2083,7 +2083,7 @@
         "question": "你是AI設計師，需快速為客戶生成高品質商業短片，下列哪個工具最適合用於AI影片生成？",
         "options": [
             "Sora",
-            "Midjourney", 
+            "Midjourney",
             "Google AI Studio",
             "Cutout.pro"
         ],
@@ -2100,7 +2100,7 @@
         "options": [
             "開設AI科技專班",
             "推行工讀實習",
-            "引進外國教師", 
+            "引進外國教師",
             "設立免費AI講座"
         ],
         "correct_answer_index": 0,
@@ -2116,12 +2116,12 @@
         "options": [
             "MyEdit",
             "Perplexity AI",
-            "Midjourney", 
+            "Midjourney",
             "Shop AI"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式 AI 應用與規劃", 
+        "topic": "生成式 AI 應用與規劃",
         "subtopic": "生成式 AI 應用領域與工具使用",
         "concept": "AI搜尋分析工具",
         "number": 133,
@@ -2718,6 +2718,175 @@
         "concept": "開源AI模型發展",
         "number": 170,
         "explanation": "開放源碼大模型（如Llama、Mistral）促使全球AI社群共同參與與創新，大幅降低進入門檻。"
+    },
+    {
+        "question": "一家台灣金融業公司希望提升客戶的線上諮詢與自動回覆服務，推薦下列哪一種生成式AI應用最適合？",
+        "options": [
+            "聊天型AI客服系統",
+            "臉部辨識門禁系統",
+            "AI醫療影像診斷",
+            "AI物流路線優化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生活金融應用",
+        "concept": "生成式聊天機器人",
+        "explanation": "聊天型AI客服系統可24小時自動回應客戶問題，是金融業日常服務數位轉型的重要工具。",
+        "number": 171,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "如果你是一名國小老師，想利用AI協助學生進行科學實驗觀察紀錄，可以選用下列哪種AI工具？",
+        "options": [
+            "AI自動生成實驗記錄助手",
+            "AI股票分析系統",
+            "產業製程AI優化方案",
+            "AI健身動作指導"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "生成式AI導學",
+        "explanation": "AI自動生成實驗記錄助手可根據學生聲音、影像等輸入自動生成實驗內容紀錄，提升教學效率。",
+        "number": 172,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "2023年，哪款生成式AI圖片工具一度引領藝術創作者潮流，並被許多設計公司在商業專案採用？",
+        "options": [
+            "Midjourney",
+            "Bert",
+            "ChatGPT-4",
+            "AlphaGo"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "生成式AI工具",
+        "concept": "text-to-image（文生圖）",
+        "explanation": "Midjourney是以文字生成圖片為主要特色的生成式AI，近年在設計及創意產業廣泛應用。",
+        "number": 173,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "在2024年開發出的AI工具中，哪一種技術幫助企業快速整理並分析大量合約文本資料？",
+        "options": [
+            "生成式自然語言處理模型",
+            "AI聲音辨識系統",
+            "AI自動駕駛演算法",
+            "電腦視覺瑕疵檢測"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "文本資料處理",
+        "concept": "自然語言理解與生成",
+        "explanation": "生成式自然語言處理模型能簡單、高效地解析大量文字資料並進行摘要與合約條款分析。",
+        "number": 174,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "假設你是工廠自動化工程師，欲提升產線良率，常會搭配下列哪一種AI技術？",
+        "options": [
+            "電腦視覺瑕疵檢查",
+            "語音合成技術",
+            "聊天機器人客服",
+            "AI音樂生成"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "電腦視覺",
+        "concept": "瑕疵檢測",
+        "explanation": "電腦視覺AI可即時偵測產線產品缺陷，大幅提升製造品質與效率。",
+        "number": 175,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "iPAS AI應用規劃師考試在台灣的主管機關目前為哪一個？",
+        "options": [
+            "經濟部",
+            "教育部",
+            "衛福部",
+            "勞動部"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "iPAS AI應用規劃師考試",
+        "subtopic": "考試資訊",
+        "concept": "主管機關",
+        "explanation": "iPAS考試由台灣經濟部主導，針對產業人才的AI應用能力評鑑。",
+        "number": 176,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "2022年全世界最大的AI上市公司之一，由於積極推動大型語言模型平台而聲名大噪的是哪一家？",
+        "options": [
+            "OpenAI",
+            "Amazon",
+            "Meta",
+            "Google"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI科技發展與產業動態",
+        "subtopic": "國際AI公司",
+        "concept": "大型語言模型發展",
+        "explanation": "OpenAI推出ChatGPT與各類大型語言模型，影響全球AI發展趨勢。",
+        "number": 177,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "小張在台灣經營電商，想要快速優化產品描述與廣告文案，建議他使用哪一類AI工具？",
+        "options": [
+            "文本生成AI平台",
+            "圖像分割演算法",
+            "語音合成軟體",
+            "AI醫療輔助診斷"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "電商產業",
+        "concept": "自動文案產生",
+        "explanation": "文本生成AI平台可依據產品特性快速產生多樣且具吸引力的商品文案。",
+        "number": 178,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "2024年5月，美國某大型科技公司宣布其生成式AI整合套件進軍教育市場，提升老師備課效率，這家公司是下列哪一家？",
+        "options": [
+            "Google",
+            "Wistron",
+            "Foxconn",
+            "Asus"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI科技發展與產業動態",
+        "subtopic": "全球AI推廣",
+        "concept": "AI賦能教育",
+        "explanation": "Google於2024年推出多項生成式AI教育工具，幫助全球教師提高教學和備課效率。",
+        "number": 179,
+        "date": "2025-07-02"
+    },
+    {
+        "question": "生成式AI的技術起源可追溯至2014年發表的一項關鍵技術，請問這是指哪一種模型？",
+        "options": [
+            "生成對抗網絡（GAN）",
+            "卷積神經網絡",
+            "RNN循環神經網絡",
+            "SVM支持向量機"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI技術史",
+        "subtopic": "關鍵技術發展",
+        "concept": "GAN生成式對抗網絡",
+        "explanation": "2014年Ian Goodfellow發表了生成對抗網絡（GAN），開啟了生成式AI重要發展。",
+        "number": 180,
+        "date": "2025-07-02"
     }
 ]
-

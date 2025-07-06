@@ -1930,13 +1930,338 @@
             },
             
             // 完成測驗
-            finishQuiz() {
-                this.stopTimer();
-                this.showResult();
-                
-                this.state.isQuizActive = false;
-                this.unlockInterface();
-            },
+// === 方案一：直接跳轉到 Google Form ===
+// 在您的 iPASQuizApp 中修改 finishQuiz 函數
+
+finishQuiz() {
+    this.stopTimer();
+    
+    // 檢查是否為首次用戶
+    const isFirstTime = !localStorage.getItem('iPAS_hasCompletedSurvey');
+    
+    if (isFirstTime) {
+        this.showFirstTimeSurveyPrompt();
+    } else {
+        this.showReturningUserChoice();
+    }
+},
+
+// 首次用戶問卷提示
+showFirstTimeSurveyPrompt() {
+    const modal = `
+    <div class="modal fade" id="firstTimeSurveyModal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">🎉 測驗完成！</h5>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-trophy fa-4x text-warning mb-3"></i>
+                        <h4>恭喜完成首次測驗！</h4>
+                        <p class="text-muted">您的成績即將揭曉</p>
+                    </div>
+                    
+                    <div class="alert alert-info">
+                        <h6>🎁 完成3分鐘問卷，立即獲得：</h6>
+                        <ul class="list-unstyled mb-0">
+                            <li>📊 詳細測驗成績分析</li>
+                            <li>🤖 AI個人化學習建議</li>
+                            <li>📱 LINE Bot專屬錯題提醒</li>
+                            <li>💎 7天進階功能免費體驗</li>
+                        </ul>
+                    </div>
+                    
+                    <p class="small text-muted">
+                        ⏱️ 預計時間：3-4分鐘<br>
+                        📊 完成問卷後立即顯示詳細結果
+                    </p>
+                </div>
+                <div class="modal-footer justify-content-center">
+                    <button type="button" class="btn btn-primary btn-lg px-4" id="startSurveyBtn">
+                        <i class="fas fa-gift me-2"></i>填寫問卷獲得獎勵
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    
+    document.body.insertAdjacentHTML('beforeend', modal);
+    const surveyModal = new bootstrap.Modal(document.getElementById('firstTimeSurveyModal'));
+    surveyModal.show();
+    
+    // 問卷按鈕點擊事件
+    document.getElementById('startSurveyBtn').addEventListener('click', () => {
+        // 儲存當前測驗結果到 localStorage（問卷完成後使用）
+        this.saveCurrentTestResults();
+        
+        // 跳轉到 Google Form
+        const surveyUrl = 'https://forms.gle/HYTfAB42zcWmBBmU8'; // 替換為您的 Google Form 連結
+        window.open(surveyUrl, '_blank');
+        
+        // 顯示等待訊息
+        surveyModal.hide();
+        this.showWaitingForSurveyMessage();
+    });
+},
+
+// 回流用戶選擇
+showReturningUserChoice() {
+    const modal = `
+    <div class="modal fade" id="returningUserModal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">🎊 又見面了！</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body text-center">
+                    <div class="mb-4">
+                        <i class="fas fa-star fa-3x text-warning mb-3"></i>
+                        <h5>感謝您持續使用我們的系統</h5>
+                    </div>
+                    
+                    <div class="row">
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 border-primary">
+                                <div class="card-body">
+                                    <h6>✨ 填寫1分鐘問卷</h6>
+                                    <p class="small text-muted">獲得詳細分析報告</p>
+                                    <button class="btn btn-primary btn-sm" id="quickSurveyBtn">
+                                        填寫問卷
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-3">
+                            <div class="card h-100 border-secondary">
+                                <div class="card-body">
+                                    <h6>⚡ 直接查看結果</h6>
+                                    <p class="small text-muted">快速瀏覽答題結果</p>
+                                    <button class="btn btn-secondary btn-sm" id="skipSurveyBtn">
+                                        查看結果
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    
+    document.body.insertAdjacentHTML('beforeend', modal);
+    const returningModal = new bootstrap.Modal(document.getElementById('returningUserModal'));
+    returningModal.show();
+    
+    // 填寫問卷按鈕
+    document.getElementById('quickSurveyBtn').addEventListener('click', () => {
+        this.saveCurrentTestResults();
+        const quickSurveyUrl = 'https://forms.gle/zajunb9Z2qZXHBro9'; // 替換為快速問卷連結
+        window.open(quickSurveyUrl, '_blank');
+        returningModal.hide();
+        this.showWaitingForSurveyMessage();
+    });
+    
+    // 跳過問卷按鈕
+    document.getElementById('skipSurveyBtn').addEventListener('click', () => {
+        returningModal.hide();
+        this.showResult(); // 直接顯示基本結果
+    });
+},
+
+// 儲存當前測驗結果
+saveCurrentTestResults() {
+    const testResults = {
+        score: this.state.score,
+        totalQuestions: this.state.questions.length,
+        accuracy: (this.state.score / this.state.questions.length * 100).toFixed(1),
+        wrongQuestions: this.state.wrongQuestions,
+        testMode: this.state.currentMode,
+        database: this.state.selectedDatabase,
+        timestamp: new Date().toISOString(),
+        timeTaken: this.calculateTimeTaken()
+    };
+    
+    localStorage.setItem('iPAS_pendingResults', JSON.stringify(testResults));
+},
+
+// 顯示等待訊息
+showWaitingForSurveyMessage() {
+    const waitingModal = `
+    <div class="modal fade" id="waitingModal" tabindex="-1" data-bs-backdrop="static">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-body text-center py-5">
+                    <div class="spinner-border text-primary mb-3" role="status">
+                        <span class="visually-hidden">Loading...</span>
+                    </div>
+                    <h5>正在準備您的專屬分析...</h5>
+                    <p class="text-muted">
+                        問卷完成後，系統將自動為您推送：<br>
+                        📊 詳細成績分析 + 🎯 學習建議 + 📱 LINE提醒
+                    </p>
+                    <button class="btn btn-outline-secondary mt-3" id="checkResultsBtn">
+                        檢查問卷是否完成
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>`;
+    
+    document.body.insertAdjacentHTML('beforeend', waitingModal);
+    const waitingModalInstance = new bootstrap.Modal(document.getElementById('waitingModal'));
+    waitingModalInstance.show();
+    
+    // 檢查結果按鈕
+    document.getElementById('checkResultsBtn').addEventListener('click', () => {
+        this.checkSurveyCompletion();
+    });
+},
+
+// 檢查問卷完成狀態
+checkSurveyCompletion() {
+    // 這裡可以通過 API 檢查問卷是否完成
+    // 或者簡單地詢問用戶
+    const completed = confirm('您已經完成問卷了嗎？\n\n點擊「確定」查看詳細結果\n點擊「取消」繼續等待');
+    
+    if (completed) {
+        // 標記問卷已完成
+        localStorage.setItem('iPAS_hasCompletedSurvey', 'true');
+        
+        // 關閉等待Modal
+        const waitingModal = bootstrap.Modal.getInstance(document.getElementById('waitingModal'));
+        waitingModal.hide();
+        
+        // 顯示詳細結果
+        this.showDetailedResult();
+        
+        // 觸發 LINE Bot 通知（如果有設定）
+        this.triggerLineNotification();
+    }
+},
+
+// 顯示詳細結果（問卷完成後）
+showDetailedResult() {
+    // 從 localStorage 獲取測驗結果
+    const savedResults = JSON.parse(localStorage.getItem('iPAS_pendingResults') || '{}');
+    
+    // 顯示增強版結果（包含問卷獎勵內容）
+    this.showEnhancedResultModal(savedResults);
+    
+    // 清除暫存的結果
+    localStorage.removeItem('iPAS_pendingResults');
+},
+
+// 增強版結果顯示
+showEnhancedResultModal(results) {
+    let resultHTML = `
+        <div class="text-center mb-4">
+            <h3>🎉 完整測驗分析報告</h3>
+            <div class="alert alert-success">
+                <i class="fas fa-gift me-2"></i>
+                感謝完成問卷！您已獲得所有獎勵內容
+            </div>
+        </div>
+        
+        <div class="row text-center mb-4">
+            <div class="col-3">
+                <div class="card border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="text-primary">${results.score || this.state.score}</h4>
+                        <small>得分</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="text-info">${results.totalQuestions || this.state.questions.length}</h4>
+                        <small>總題數</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="text-warning">${results.accuracy || 0}%</h4>
+                        <small>正確率</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-3">
+                <div class="card border-0 bg-light">
+                    <div class="card-body">
+                        <h4 class="text-secondary">${this.calculateTimeTaken()}分</h4>
+                        <small>用時</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        <div class="alert alert-info mb-4">
+            <h5 class="alert-heading">🎁 您已獲得的獎勵：</h5>
+            <ul class="mb-0">
+                <li>📊 下方詳細錯題分析</li>
+                <li>🤖 AI個人化學習建議（即將發送至信箱）</li>
+                <li>📱 LINE Bot錯題提醒已啟動</li>
+                <li>💎 7天進階功能已開通</li>
+            </ul>
+        </div>
+    `;
+    
+    // 繼續顯示錯題分析等內容...
+    if (this.state.wrongQuestions.length > 0) {
+        resultHTML += this.generateWrongQuestionsAnalysis();
+    }
+    
+    document.getElementById('result-content').innerHTML = resultHTML;
+    this.modals.result.show();
+},
+
+// 觸發 LINE 通知
+triggerLineNotification() {
+    // 這裡整合您的 n8n webhook 或 LINE Bot API
+    const notificationData = {
+        userId: localStorage.getItem('lineUserId'), // 如果有的話
+        testScore: this.state.score,
+        accuracy: (this.state.score / this.state.questions.length * 100).toFixed(1),
+        wrongTopics: this.getWrongTopics(),
+        surveyCompleted: true,
+        timestamp: new Date().toISOString()
+    };
+    
+    // 發送到您的 webhook
+    // fetch('YOUR_N8N_WEBHOOK_URL', {
+    //     method: 'POST',
+    //     headers: { 'Content-Type': 'application/json' },
+    //     body: JSON.stringify(notificationData)
+    // });
+    
+    console.log('LINE 通知資料:', notificationData);
+},
+
+// 計算用時
+calculateTimeTaken() {
+    if (this.state.startTime) {
+        const duration = Math.round((new Date() - this.state.startTime) / 1000 / 60);
+        return duration;
+    }
+    return 0;
+},
+
+// 獲取錯誤主題
+getWrongTopics() {
+    const topics = {};
+    this.state.wrongQuestions.forEach(q => {
+        const topic = q.topic || '未分類';
+        topics[topic] = (topics[topic] || 0) + 1;
+    });
+    return Object.keys(topics);
+},
+
+
+            
             
             // 顯示結果
             showResult() {

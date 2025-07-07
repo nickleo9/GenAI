@@ -1615,26 +1615,48 @@
                 document.getElementById('checkResultsBtn').addEventListener('click', () => this.checkSurveyCompletion());
             },
 
-            checkSurveyCompletion() {
-                localStorage.setItem('iPAS_hasCompletedSurvey', 'true');
-                const waitingModalEl = document.getElementById('waitingModal');
-                const waitingModal = bootstrap.Modal.getInstance(waitingModalEl);
-                
-                if (waitingModalEl) {
-                    waitingModalEl.addEventListener('hidden.bs.modal', () => {
-                        this.showDetailedResult();
-                        document.getElementById('result-modal').focus();
-                    }, { once: true });
-                }
+checkSurveyCompletion() {
+    // 標記問卷已完成
+    localStorage.setItem('iPAS_hasCompletedSurvey', 'true');
+    
+    const waitingModalEl = document.getElementById('waitingModal');
+    const waitingModal = bootstrap.Modal.getInstance(waitingModalEl);
 
-                if (waitingModal) {
-                    waitingModal.hide();
-                } else {
-                    this.showDetailedResult(); // Fallback
-                }
-                
-                this.triggerLineNotification();
-            },
+    // 監聽 Modal 完全隱藏後的事件
+    if (waitingModalEl) {
+        waitingModalEl.addEventListener('hidden.bs.modal', () => {
+            // 1. 顯示詳細結果的 Modal
+            this.showDetailedResult();
+            
+            // 2. 將焦點轉移到新的、可見的 Modal 上
+            //    這樣可以確保焦點永遠在使用者看得到的地方
+            const resultModalEl = document.getElementById('result-modal');
+            if (resultModalEl) {
+                resultModalEl.focus();
+            }
+
+            // 3. 觸發後續的通知（如果需要）
+            this.triggerLineNotification();
+            
+            // 4. 清理，移除動態新增的 Modal 元素，避免重複
+            const firstTimeModal = document.getElementById('firstTimeSurveyModal');
+            const returningUserModal = document.getElementById('returningUserModal');
+            if(firstTimeModal) firstTimeModal.remove();
+            if(returningUserModal) returningUserModal.remove();
+            waitingModalEl.remove();
+
+        }, { once: true }); // 使用 { once: true } 確保這個監聽器只會執行一次
+    }
+
+    // 觸發隱藏 Modal 的動作
+    if (waitingModal) {
+        waitingModal.hide();
+    } else {
+        // Fallback: 如果 waitingModal 不存在，直接執行後續操作
+        this.showDetailedResult();
+        this.triggerLineNotification();
+    }
+},
 
             showDetailedResult() {
                 const savedResults = JSON.parse(localStorage.getItem('iPAS_pendingResults') || '{}');

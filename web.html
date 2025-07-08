@@ -1814,7 +1814,7 @@
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
                 
                 // 載入問卷HTML
-                this.loadSurveyHTML();
+                this.loadSurveyWithRetry('mandatorySurveyContainer');
                 
                 // 顯示modal
                 const modal = new bootstrap.Modal(document.getElementById('mandatorySurveyModal'));
@@ -1914,7 +1914,7 @@
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
                 
                 // 載入問卷HTML
-                this.loadSurveyHTML();
+                this.loadSurveyWithRetry('optionalSurveyContainer');
                 
                 // 顯示modal
                 const modal = new bootstrap.Modal(document.getElementById('optionalSurveyModal'));
@@ -1922,8 +1922,13 @@
             },
 
             // 載入問卷HTML
-            loadSurveyHTML() {
-                const container = document.getElementById('surveyContainer');
+loadSurveyHTML(containerId = 'surveyContainer') {
+    const container = document.getElementById(containerId);
+    
+    if (!container) {
+        console.error(`❌ 找不到容器: ${containerId}`);
+        return;
+    }
                 
                 // 插入完整問卷HTML
                 container.innerHTML = `
@@ -2807,6 +2812,59 @@
                 wrongQuestionsHTML += `</div></div>`;
                 return wrongQuestionsHTML;
             },
+
+// 3. 新增：清理函數
+cleanupSurveyModal(modalId) {
+    // 移除舊modal
+    const existingModal = document.getElementById(modalId);
+    if (existingModal) {
+        // 如果modal正在顯示，先關閉它
+        const modalInstance = bootstrap.Modal.getInstance(existingModal);
+        if (modalInstance) {
+            modalInstance.hide();
+        }
+        existingModal.remove();
+    }
+    
+    // 清理可能殘留的backdrop
+    const backdrops = document.querySelectorAll('.modal-backdrop');
+    backdrops.forEach(backdrop => backdrop.remove());
+    
+    // 重置body的modal狀態
+    document.body.classList.remove('modal-open');
+    document.body.style.removeProperty('padding-right');
+},
+
+// 4. 新增：帶重試機制的問卷載入函數
+loadSurveyWithRetry(containerId, maxRetries = 3) {
+    let retryCount = 0;
+    
+    const attemptLoad = () => {
+        const container = document.getElementById(containerId);
+        
+        if (container) {
+            console.log(`✅ 容器找到，載入問卷到: ${containerId}`);
+            this.loadSurveyHTML(containerId);
+        } else {
+            retryCount++;
+            console.warn(`⚠️ 容器未找到 (${retryCount}/${maxRetries}): ${containerId}`);
+            
+            if (retryCount < maxRetries) {
+                // 使用 requestAnimationFrame 確保DOM更新完成
+                requestAnimationFrame(() => {
+                    setTimeout(attemptLoad, 10);
+                });
+            } else {
+                console.error(`❌ 無法載入問卷容器: ${containerId}`);
+                this.showAlert('問卷載入失敗，請重新嘗試', 'error');
+            }
+        }
+    };
+    
+    // 立即嘗試載入
+    attemptLoad();
+},
+
             
             // 複習錯題
             reviewWrongQuestions() {

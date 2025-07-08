@@ -1,0 +1,161 @@
+<!-- full_survey.html -->
+<div class="container py-4">
+    <div class="survey-container">
+        <!-- 問卷標題 -->
+        <div class="survey-header">
+            <h1><i class="fas fa-brain me-3"></i>🎯 iPAS AI應用規劃師 - 專業學習需求調查</h1>
+            <p class="mb-0 fs-5">🎉 恭喜完成測驗！您的成績即將揭曉</p>
+            <p class="mt-2">為了提供最適合的學習建議，請幫助我們了解您的需求</p>
+        </div>
+
+        <div class="survey-content">
+            <!-- 獎勵說明 -->
+            <div class="reward-box">
+                <h5 class="mb-3">🎁 完成問卷立即獲得：</h5>
+                <div class="row">
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li><i class="fas fa-gem text-primary me-2"></i>詳細測驗成績分析報告</li>
+                            <li><i class="fas fa-robot text-primary me-2"></i>AI個人化學習建議</li>
+                        </ul>
+                    </div>
+                    <div class="col-md-6">
+                        <ul class="list-unstyled">
+                            <li><i class="fab fa-line text-success me-2"></i>LINE Bot專屬錯題提醒</li>
+                            <li><i class="fas fa-star text-warning me-2"></i>7天進階功能免費體驗</li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="text-center mt-3">
+                    <small class="text-muted">⏱️ 預計時間：3-4分鐘　📊 您的測驗結果將在填寫完成後顯示</small>
+                </div>
+            </div>
+
+            <!-- 進度條 (此為靜態展示，動態功能需由JS控制) -->
+            <div class="progress-indicator mb-4">
+                <div class="progress-bar" id="surveyProgressBar" style="width: 5%"></div>
+            </div>
+
+            <form id="embeddedSurveyForm">
+                <!-- 第一部分：背景資訊 -->
+                <div class="section-header">
+                    <h3><i class="fas fa-user-circle me-2"></i>📊 第一部分：背景資訊</h3>
+                    <p class="mb-0">幫助我們了解您的學習背景</p>
+                </div>
+
+                <!-- 問題1：身份背景 -->
+                <div class="question-card">
+                    <div class="question-title">1. 您的身份背景？<span class="required-indicator">*</span></div>
+                    <div class="options-container">
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="identity" id="identity1" value="🎓 學生（大學/研究所）" required><label class="survey-form-check-label" for="identity1">🎓 學生（大學/研究所）</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="identity" id="identity2" value="💼 職場新人（1-3年經驗）" required><label class="survey-form-check-label" for="identity2">💼 職場新人（1-3年經驗）</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="identity" id="identity3" value="🏢 中階專業人士（3-8年經驗）" required><label class="survey-form-check-label" for="identity3">🏢 中階專業人士（3-8年經驗）</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="identity" id="identity4" value="👔 資深主管（8年以上經驗）" required><label class="survey-form-check-label" for="identity4">👔 資深主管（8年以上經驗）</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="identity" id="identity5" value="🏭 企業培訓負責人" required><label class="survey-form-check-label" for="identity5">🏭 企業培訓負責人</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="identity" id="identity6" value="🚀 創業者/自由工作者" required><label class="survey-form-check-label" for="identity6">🚀 創業者/自由工作者</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="identity" id="identity7" value="🔄 轉職準備中" required><label class="survey-form-check-label" for="identity7">🔄 轉職準備中</label></div>
+                    </div>
+                </div>
+
+                <!-- 問題2：準備目標 -->
+                <div class="question-card">
+                    <div class="question-title">2. 您準備iPAS認證的主要目標？<span class="required-indicator">*</span></div>
+                    <div class="options-container">
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="goal" id="goal1" value="💰 爭取加薪或升職機會" required><label class="survey-form-check-label" for="goal1">💰 爭取加薪或升職機會</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="goal" id="goal2" value="🔄 轉入AI/科技相關領域" required><label class="survey-form-check-label" for="goal2">🔄 轉入AI/科技相關領域</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="goal" id="goal3" value="🏢 公司要求或內部培訓需求" required><label class="survey-form-check-label" for="goal3">🏢 公司要求或內部培訓需求</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="goal" id="goal4" value="📈 提升專業技能競爭力" required><label class="survey-form-check-label" for="goal4">📈 提升專業技能競爭力</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="goal" id="goal5" value="🎯 創業或接案所需技能" required><label class="survey-form-check-label" for="goal5">🎯 創業或接案所需技能</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="goal" id="goal6" value="📚 純個人興趣和學習成長" required><label class="survey-form-check-label" for="goal6">📚 純個人興趣和學習成長</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="goal" id="goal7" value="other" required><label class="survey-form-check-label" for="goal7">📝 其他</label></div>
+                        <div class="mt-2" id="goalOtherInput" style="display: none;"><input type="text" class="survey-text-input" name="goal_other" placeholder="請說明您的其他目標..."></div>
+                    </div>
+                </div>
+                
+                <!-- 第二部分：測驗體驗 -->
+                <div class="section-header">
+                    <h3><i class="fas fa-gamepad me-2"></i>🎮 第二部分：測驗體驗</h3>
+                    <p class="mb-0">幫助我們改善系統品質</p>
+                </div>
+                
+                <!-- 問題3：滿意度評分 -->
+                <div class="question-card">
+                    <div class="question-title">3. 對這次測驗體驗的整體滿意度？<span class="required-indicator">*</span></div>
+                    <div class="rating-container flex-wrap">
+                        <span class="text-muted small">非常不滿意</span>
+                        <div class="d-flex gap-1">
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat1" value="1" required><label for="sat1">1</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat2" value="2" required><label for="sat2">2</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat3" value="3" required><label for="sat3">3</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat4" value="4" required><label for="sat4">4</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat5" value="5" required><label for="sat5">5</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat6" value="6" required><label for="sat6">6</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat7" value="7" required><label for="sat7">7</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat8" value="8" required><label for="sat8">8</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat9" value="9" required><label for="sat9">9</label></div>
+                            <div class="rating-item"><input type="radio" name="satisfaction" id="sat10" value="10" required><label for="sat10">10</label></div>
+                        </div>
+                        <span class="text-muted small">非常滿意</span>
+                    </div>
+                </div>
+
+                <!-- 問題4：最喜歡功能 -->
+                <div class="question-card">
+                    <div class="question-title">4. 以下功能中，您最喜歡哪3項？（最多選3項）<span class="required-indicator">*</span></div>
+                    <div class="checkbox-grid">
+                        <div class="checkbox-item"><input class="form-check-input" type="checkbox" name="favorite_features" id="feature1" value="🎯 iPAS官方題庫完整覆蓋"><label class="form-check-label" for="feature1">🎯 iPAS官方題庫完整覆蓋</label></div>
+                        <div class="checkbox-item"><input class="form-check-input" type="checkbox" name="favorite_features" id="feature2" value="📱 手機友善的操作介面"><label class="form-check-label" for="feature2">📱 手機友善的操作介面</label></div>
+                        <div class="checkbox-item"><input class="form-check-input" type="checkbox" name="favorite_features" id="feature3" value="📊 即時的答題統計分析"><label class="form-check-label" for="feature3">📊 即時的答題統計分析</label></div>
+                        <div class="checkbox-item"><input class="form-check-input" type="checkbox" name="favorite_features" id="feature4" value="💡 詳細的題目解析說明"><label class="form-check-label" for="feature4">💡 詳細的題目解析說明</label></div>
+                        <div class="checkbox-item"><input class="form-check-input" type="checkbox" name="favorite_features" id="feature5" value="🔄 錯題重複練習功能"><label class="form-check-label" for="feature5">🔄 錯題重複練習功能</label></div>
+                        <div class="checkbox-item"><input class="form-check-input" type="checkbox" name="favorite_features" id="feature6" value="⏱️ 模擬考試計時訓練"><label class="form-check-label" for="feature6">⏱️ 模擬考試計時訓練</label></div>
+                    </div>
+                    <small class="text-muted" id="favorite_features_msg">請選擇最多3項功能</small>
+                </div>
+                
+                <!-- 第三部分：進階功能需求 -->
+                <div class="section-header">
+                    <h3><i class="fas fa-gem me-2"></i>💎 第三部分：進階功能需求</h3>
+                    <p class="mb-0">了解您對付費功能的需求</p>
+                </div>
+
+                <!-- 問題5：價格範圍 -->
+                <div class="question-card">
+                    <div class="question-title">5. 如果有完整版功能，您認為合理的月費範圍？<span class="required-indicator">*</span></div>
+                    <div class="alert alert-info mb-3"><small>參考：坊間AI培訓課程約 $8,000-15,000</small></div>
+                    <div class="options-container">
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="price_range" id="price1" value="🆓 希望保持免費" required><label class="survey-form-check-label" for="price1">🆓 希望保持免費</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="price_range" id="price2" value="💰 $199-399（學生/新鮮人價位）" required><label class="survey-form-check-label" for="price2">💰 $199-399（學生/新鮮人價位）</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="price_range" id="price3" value="💼 $400-699（上班族標準價位）" required><label class="survey-form-check-label" for="price3">💼 $400-699（上班族標準價位）</label></div>
+                        <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="price_range" id="price4" value="💎 $700-999（專業人士價位）" required><label class="survey-form-check-label" for="price4">💎 $700-999（專業人士價位）</label></div>
+                    </div>
+                </div>
+
+                <!-- 第四部分：聯繫資訊 -->
+                <div class="section-header">
+                    <h3><i class="fas fa-envelope me-2"></i>📮 第四部分：聯繫資訊（選填）</h3>
+                    <p class="mb-0">獲得更多學習資源和優惠通知</p>
+                </div>
+
+                <!-- 問題6：LINE ID (UID) -->
+                <div class="question-card">
+                    <div class="question-title">6. LINE User ID（選填）</div>
+                    <p class="text-muted mb-3"><small>提供您的 User ID (非自訂ID) 可獲得專屬錯題提醒和學習建議。此為U開頭的33位字串，我們將透過教學引導您取得。</small></p>
+                    <input type="text" class="survey-text-input" name="line_user_id" placeholder="請輸入您的LINE User ID (U...)" pattern="^U[0-9a-f]{32}$" title="請輸入U開頭的33位字串">
+                </div>
+                
+                <!-- 提交區域 -->
+                <div class="submit-section">
+                    <h4 class="mb-3">🎊 感謝您的寶貴意見！</h4>
+                    <p class="mb-4">完成提交後，系統將立即為您顯示詳細的測驗分析結果</p>
+                    <button type="submit" class="btn-submit" id="submitFullSurveyBtn">
+                        <i class="fas fa-paper-plane me-2"></i>提交問卷並查看測驗結果
+                    </button>
+                    <div class="mt-3">
+                        <small class="text-light">提交後將自動返回測驗系統並顯示您的專屬分析報告</small>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+</div>

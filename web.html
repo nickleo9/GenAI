@@ -9,7 +9,6 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
     <style>
         body {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
@@ -310,7 +309,6 @@
     </style>
 
     <script>
-        // 載入題庫資料
         let quizData = { 'generative-ai': [], 'ipas': [] };
         async function loadQuizDatabases() {
             try {
@@ -331,7 +329,6 @@
     </script>
 </head>
 <body>
-    <!-- 頂部導航 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
             <a class="navbar-brand nav-brand" href="#"><i class="fas fa-graduation-cap me-2"></i>iPAS AI應用規劃師</a>
@@ -346,52 +343,18 @@
             </div>
         </div>
     </nav>
-
     <div style="height: 70px;"></div>
-
     <div class="main-container">
         <div id="quiz-status" class="quiz-status" style="display: none;"><i class="fas fa-lock me-1"></i>測驗進行中</div>
         <div class="quiz-header"><h1><i class="fas fa-brain me-3"></i>iPAS AI應用規劃師專業練習系統</h1><p class="mb-0">經濟部產業人才能力鑑定 - 考試衝刺專用</p></div>
-        
-        <div class="database-selector" id="database-selector">
-            <h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇練習題庫</h3>
-            <div class="row">
-                <div class="col-md-6"><div class="database-card" data-type="ipas"><div class="text-center"><i class="fas fa-star fa-3x mb-3" style="color: #ffd700;"></i><h5>iPAS AI應用規劃師</h5><p class="mb-2">經濟部產業人才能力鑑定</p><small>⭐ 主要考試題庫 - 重點練習</small></div></div></div>
-                <div class="col-md-6"><div class="database-card" data-type="generative-ai"><div class="text-center"><i class="fas fa-robot fa-3x mb-3"></i><h5>生成式AI認證</h5><p class="mb-2">資策會生成式AI能力認證</p><small>輔助練習 - 補強基礎知識</small></div></div></div>
-            </div>
-        </div>
-        
-        <div id="settings-panel" class="settings-panel">
-            <div class="card border-0 shadow-sm">
-                <div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5></div>
-                <div class="card-body p-4">
-                    <div class="row g-4 align-items-end">
-                        <div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-list-ol me-2 text-primary"></i>題目數量</label><select id="question-count" class="form-select"><option value="10">10題</option><option value="20">20題</option><option value="40">40題</option><option value="60" selected>60題</option><option value="80">80題</option></select></div>
-                        <div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-play-circle me-2 text-success"></i>練習模式</label><div class="d-flex flex-wrap gap-1"><button class="mode-btn active" data-mode="practice"><i class="fas fa-book me-1"></i>練習</button><button class="mode-btn" data-mode="exam"><i class="fas fa-clock me-1"></i>考試</button></div></div>
-                        <div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-redo me-2 text-info"></i>複習</label><button id="review-btn-main" class="btn btn-info w-100" disabled><i class="fas fa-redo me-2"></i>錯題複習</button></div>
-                        <div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-rocket me-2 text-danger"></i>準備就緒</label><button id="start-btn" class="btn btn-danger w-100" disabled><i class="fas fa-play me-2"></i>開始練習</button></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <div id="quiz-container" class="quiz-container d-none">
-            <button id="back-to-selection" class="back-to-selection"><i class="fas fa-arrow-left me-2"></i>返回題庫選擇</button>
-            <div class="progress mb-3"><div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div></div>
-            <div class="d-flex justify-content-between align-items-center mb-4"><h5 id="question-number" class="mb-0"></h5><div id="timer" class="timer"></div><span id="stats-display" class="badge bg-info"></span></div>
-            <h4 id="question-text" class="mb-4"></h4><div id="options-container" class="mb-4"></div>
-            <div id="explanation-box" class="explanation-box d-none"><h5 class="mb-3"><i class="fas fa-lightbulb me-2"></i>答案解析</h5><div id="explanation-content"></div></div>
-        </div>
-        
-        <div class="bottom-nav" id="bottom-navigation">
-            <div class="container-fluid"><div class="row justify-content-center g-2"><div class="col-auto"><button id="prev-btn" class="btn btn-secondary" disabled><i class="fas fa-arrow-left me-1 d-sm-none"></i><span class="d-none d-sm-inline">上一題</span></button></div><div class="col-auto"><button id="submit-btn" class="btn btn-primary" disabled><i class="fas fa-check me-1 d-sm-none"></i><span class="d-none d-sm-inline">提交</span></button></div><div class="col-auto"><button id="explanation-btn" class="btn btn-info" disabled><i class="fas fa-lightbulb me-1 d-sm-none"></i><span class="d-none d-sm-inline">查看解析</span></button></div><div class="col-auto"><button id="next-btn" class="btn btn-warning" disabled><span class="d-none d-sm-inline">下一題</span><i class="fas fa-arrow-right ms-1 d-sm-none"></i></button></div><div class="col-auto"><button id="finish-btn" class="btn btn-success" disabled><i class="fas fa-flag-checkered me-1 d-sm-none"></i><span class="d-none d-sm-inline">完成測驗</span></button></div></div></div>
-        </div>
+        <div class="database-selector" id="database-selector"><h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇練習題庫</h3><div class="row"><div class="col-md-6"><div class="database-card" data-type="ipas"><div class="text-center"><i class="fas fa-star fa-3x mb-3" style="color: #ffd700;"></i><h5>iPAS AI應用規劃師</h5><p class="mb-2">經濟部產業人才能力鑑定</p><small>⭐ 主要考試題庫 - 重點練習</small></div></div></div><div class="col-md-6"><div class="database-card" data-type="generative-ai"><div class="text-center"><i class="fas fa-robot fa-3x mb-3"></i><h5>生成式AI認證</h5><p class="mb-2">資策會生成式AI能力認證</p><small>輔助練習 - 補強基礎知識</small></div></div></div></div></div>
+        <div id="settings-panel" class="settings-panel"><div class="card border-0 shadow-sm"><div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5></div><div class="card-body p-4"><div class="row g-4 align-items-end"><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-list-ol me-2 text-primary"></i>題目數量</label><select id="question-count" class="form-select"><option value="10">10題</option><option value="20">20題</option><option value="40">40題</option><option value="60" selected>60題</option><option value="80">80題</option></select></div><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-play-circle me-2 text-success"></i>練習模式</label><div class="d-flex flex-wrap gap-1"><button class="mode-btn active" data-mode="practice"><i class="fas fa-book me-1"></i>練習</button><button class="mode-btn" data-mode="exam"><i class="fas fa-clock me-1"></i>考試</button></div></div><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-redo me-2 text-info"></i>複習</label><button id="review-btn-main" class="btn btn-info w-100" disabled><i class="fas fa-redo me-2"></i>錯題複習</button></div><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-rocket me-2 text-danger"></i>準備就緒</label><button id="start-btn" class="btn btn-danger w-100" disabled><i class="fas fa-play me-2"></i>開始練習</button></div></div></div></div></div>
+        <div id="quiz-container" class="quiz-container d-none"><button id="back-to-selection" class="back-to-selection"><i class="fas fa-arrow-left me-2"></i>返回題庫選擇</button><div class="progress mb-3"><div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div></div><div class="d-flex justify-content-between align-items-center mb-4"><h5 id="question-number" class="mb-0"></h5><div id="timer" class="timer"></div><span id="stats-display" class="badge bg-info"></span></div><h4 id="question-text" class="mb-4"></h4><div id="options-container" class="mb-4"></div><div id="explanation-box" class="explanation-box d-none"><h5 class="mb-3"><i class="fas fa-lightbulb me-2"></i>答案解析</h5><div id="explanation-content"></div></div></div>
+        <div class="bottom-nav" id="bottom-navigation"><div class="container-fluid"><div class="row justify-content-center g-2"><div class="col-auto"><button id="prev-btn" class="btn btn-secondary" disabled><i class="fas fa-arrow-left me-1 d-sm-none"></i><span class="d-none d-sm-inline">上一題</span></button></div><div class="col-auto"><button id="submit-btn" class="btn btn-primary" disabled><i class="fas fa-check me-1 d-sm-none"></i><span class="d-none d-sm-inline">提交</span></button></div><div class="col-auto"><button id="explanation-btn" class="btn btn-info" disabled><i class="fas fa-lightbulb me-1 d-sm-none"></i><span class="d-none d-sm-inline">查看解析</span></button></div><div class="col-auto"><button id="next-btn" class="btn btn-warning" disabled><span class="d-none d-sm-inline">下一題</span><i class="fas fa-arrow-right ms-1 d-sm-none"></i></button></div><div class="col-auto"><button id="finish-btn" class="btn btn-success" disabled><i class="fas fa-flag-checkered me-1 d-sm-none"></i><span class="d-none d-sm-inline">完成測驗</span></button></div></div></div></div>
     </div>
-
-    <!-- 模態框 -->
-    <div class="modal fade" id="result-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"><div class="modal-content"><div class="modal-header bg-primary text-white"><h5 class="modal-title">測驗結果</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div id="result-content" style="max-height: 70vh; overflow-y: auto;"></div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button><button type="button" class="btn btn-success" id="restart-quiz-btn"><i class="fas fa-redo me-1"></i>重新測驗</button><button type="button" class="btn btn-primary" id="review-wrong-btn-modal"><i class="fas fa-times-circle me-1"></i>複習錯題</button></div></div></div></div>
+    <div class="modal fade" id="result-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg"><div class="modal-content"><div class="modal-header bg-primary text-white"><h5 class="modal-title">測驗結果</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div id="result-content" style="max-height: 70vh; overflow-y: auto;"></div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button><button type="button" class="btn btn-success" id="restart-quiz-btn"><i class="fas fa-redo me-1"></i>重新測驗</button><button type="button" class="btn btn-primary" id="review-wrong-btn"><i class="fas fa-times-circle me-1"></i>複習錯題</button></div></div></div></div>
     <div class="modal fade" id="stats-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header bg-info text-white"><h5 class="modal-title">學習統計</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div id="stats-content"></div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button><button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button></div></div></div></div>
-    <div class="modal fade" id="help-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">iPAS考試準備指南</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body">... 使用說明內容 ...</div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button></div></div></div></div>
+    <div class="modal fade" id="help-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">iPAS考試準備指南</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><p>版本：3.2.0 (外部問卷模組 + 錯誤修復版)</p></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button></div></div></div></div>
     <div id="loading-overlay" class="overlay d-none"><div class="loader"></div><div id="loading-text" class="loading-text">處理中...</div></div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
@@ -423,7 +386,7 @@
             },
             
             attachEventListeners() {
-                this.elements.databaseCards.forEach(card => card.addEventListener('click', (e) => { if (!this.state.isQuizActive) this.selectDatabase(card.dataset.type); }));
+                this.elements.databaseCards.forEach(card => card.addEventListener('click', () => { if (!this.state.isQuizActive) this.selectDatabase(card.dataset.type); }));
                 this.elements.startBtn.addEventListener('click', () => this.startQuiz());
                 this.elements.reviewBtnMain.addEventListener('click', () => this.startReview());
                 this.elements.backBtn.addEventListener('click', () => this.backToSelection());
@@ -436,15 +399,19 @@
                 document.getElementById('stats-btn').addEventListener('click', () => this.modals.stats.show());
                 document.getElementById('help-btn').addEventListener('click', () => this.modals.help.show());
                 document.querySelectorAll('.mode-btn').forEach(btn => btn.addEventListener('click', () => { if (!this.state.isQuizActive) { document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active')); btn.classList.add('active'); this.state.currentMode = btn.dataset.mode; }}));
-                document.getElementById('review-wrong-btn-modal').addEventListener('click', () => this.reviewWrongQuestions());
+                document.getElementById('review-wrong-btn').addEventListener('click', () => this.reviewWrongQuestions());
                 document.getElementById('restart-quiz-btn').addEventListener('click', () => this.restartQuiz());
                 document.getElementById('reset-stats-btn').addEventListener('click', () => this.resetProgress());
                 window.addEventListener('beforeunload', () => this.saveUserData());
             },
 
             saveUserData(showMessage = false) {
-                localStorage.setItem('iPASQuizUserData', JSON.stringify(this.state.userData));
-                if (showMessage) this.showAlert('進度已儲存', 'success');
+                try {
+                    localStorage.setItem('iPASQuizUserData', JSON.stringify(this.state.userData));
+                    if (showMessage) this.showAlert('進度已儲存', 'success');
+                } catch (e) {
+                    console.error("儲存失敗:", e);
+                }
             },
 
             updateReviewButtonState() {
@@ -468,7 +435,9 @@
             },
 
             startReview() {
-                const incorrectQuestions = this.state.userData.incorrect.map(qText => quizData.ipas.find(q => q.question === qText) || quizData['generative-ai'].find(q => q.question === qText)).filter(Boolean);
+                const incorrectQuestions = this.state.userData.incorrect
+                    .map(qText => (quizData.ipas.find(q => q.question === qText) || quizData['generative-ai'].find(q => q.question === qText)))
+                    .filter(Boolean);
                 if (incorrectQuestions.length === 0) return this.showAlert('沒有錯題可供複習', 'info');
                 this.state.questions = incorrectQuestions;
                 this.state.currentMode = 'review';
@@ -551,6 +520,7 @@
                 this.elements.submitBtn.disabled = answered;
                 this.elements.nextBtn.disabled = !answered || this.state.currentQuestionIndex === this.state.questions.length - 1;
                 this.elements.explanationBtn.disabled = !answered;
+                this.elements.finishBtn.disabled = false;
             },
 
             _cleanupModal(modalId) {
@@ -563,7 +533,8 @@
             },
             
             finishQuiz() {
-                this.stopTimer();
+                if (this.state.timerId) this.stopTimer();
+                this.state.isQuizActive = false;
                 this.state.currentTestResults = this.calculateTestResults();
                 if (!this.state.surveyCompleted) {
                     this.showMandatorySurvey();
@@ -575,13 +546,13 @@
             calculateTestResults() {
                 const total = this.state.questions.length, score = this.state.score, accuracy = total > 0 ? (score / total) : 0;
                 const duration = this.state.startTime ? Math.round((new Date() - this.state.startTime) / 60000) : 0;
-                return { score, total, accuracy, duration, timestamp: new Date().toISOString() };
+                return { score, total, accuracy, duration, wrongTopics: this.state.wrongQuestions.map(q => q.topic || '未分類'), timestamp: new Date().toISOString() };
             },
             
             showResultChoice() {
                 const modalId = 'resultChoiceModal';
                 this._cleanupModal(modalId);
-                const modalHTML = `<div class="modal fade" id="${modalId}" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">🎊 測驗完成！</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body text-center p-4"><div class="row"><div class="col-md-6 mb-3"><div class="card h-100 border-primary shadow-sm"><div class="card-body d-flex flex-column justify-content-center"><i class="fas fa-chart-line fa-3x text-primary mb-3"></i><h5>直接查看結果</h5><p class="text-muted small">立即顯示本次測驗基本分析</p><button class="btn btn-primary mt-auto" id="directResultBtn"><i class="fas fa-eye me-2"></i>查看結果</button></div></div></div><div class="col-md-6 mb-3"><div class="card h-100 border-warning shadow-sm"><div class="card-body d-flex flex-column justify-content-center"><i class="fas fa-clipboard-list fa-3x text-warning mb-3"></i><h5>快速回饋 (30秒)</h5><p class="text-muted small">幫助我們改善，並獲得進階分析</p><button class="btn btn-warning mt-auto" id="surveyFeedbackBtn"><i class="fas fa-edit me-2"></i>填寫回饋</button></div></div></div></div></div></div></div></div>`;
+                const modalHTML = `<div class="modal fade" id="${modalId}" tabindex="-1"><div class="modal-dialog modal-dialog-centered"><div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">🎊 測驗完成！</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal" aria-label="Close"></button></div><div class="modal-body text-center p-4"><div class="row"><div class="col-md-6 mb-3"><div class="card h-100 border-primary shadow-sm"><div class="card-body d-flex flex-column justify-content-center"><i class="fas fa-chart-line fa-3x text-primary mb-3"></i><h5>直接查看結果</h5><p class="text-muted small">立即顯示本次測驗基本分析</p><button class="btn btn-primary mt-auto" id="directResultBtn"><i class="fas fa-eye me-2"></i>查看結果</button></div></div></div><div class="col-md-6 mb-3"><div class="card h-100 border-warning shadow-sm"><div class="card-body d-flex flex-column justify-content-center"><i class="fas fa-clipboard-list fa-3x text-warning mb-3"></i><h5>快速回饋 (30秒)</h5><p class="text-muted small">幫助我們改善，並獲得進階分析</p><button class="btn btn-warning mt-auto" id="surveyFeedbackBtn"><i class="fas fa-edit me-2"></i>填寫回饋</button></div></div></div></div></div></div></div></div>`;
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
                 const modalEl = document.getElementById(modalId);
                 const modal = new bootstrap.Modal(modalEl);
@@ -594,7 +565,7 @@
             async showOptionalSurvey() {
                 const modalId = 'optionalSurveyModal';
                 this._cleanupModal(modalId);
-                const modalHTML = `<div class="modal fade" id="${modalId}" tabindex="-1" data-bs-backdrop="static"><div class="modal-dialog modal-fullscreen"><div class="modal-content"><div id="quickSurveyContainer" style="height: 100vh; overflow-y: auto;"></div></div></div></div>`;
+                const modalHTML = `<div class="modal fade" id="${modalId}" tabindex="-1" data-bs-backdrop="static"><div class="modal-dialog modal-fullscreen"><div class="modal-content"><div id="quickSurveyContainer" style="height: 100vh; overflow-y: auto;"><div class="d-flex justify-content-center align-items-center h-100"><div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div></div></div></div></div></div>`;
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
                 try {
                     const response = await fetch('./quick_survey.html');
@@ -623,7 +594,7 @@
             async showMandatorySurvey() {
                 const modalId = 'mandatorySurveyModal';
                 this._cleanupModal(modalId);
-                const modalHTML = `<div class="modal fade" id="${modalId}" tabindex="-1" data-bs-backdrop="static"><div class="modal-dialog modal-fullscreen"><div class="modal-content"><div id="surveyContainer" style="height: 100vh; overflow-y: auto;"></div></div></div></div>`;
+                const modalHTML = `<div class="modal fade" id="${modalId}" tabindex="-1" data-bs-backdrop="static"><div class="modal-dialog modal-fullscreen"><div class="modal-content"><div id="surveyContainer" style="height: 100vh; overflow-y: auto;"><div class="d-flex justify-content-center align-items-center h-100"><div class="spinner-border" role="status"><span class="visually-hidden">Loading...</span></div></div></div></div></div></div>`;
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
                 try {
                     const response = await fetch('./full_survey.html');
@@ -636,15 +607,10 @@
             
             initializeEmbeddedSurvey() {
                 document.getElementById('embeddedSurveyForm').addEventListener('submit', e => { e.preventDefault(); this.handleSurveySubmit(); });
-                // Add checkbox limit logic
                 document.querySelectorAll('input[name="favorite_features"]').forEach(checkbox => {
                     checkbox.addEventListener('change', () => {
                         const checked = document.querySelectorAll('input[name="favorite_features"]:checked');
-                        if (checked.length >= 3) {
-                            document.querySelectorAll('input[name="favorite_features"]:not(:checked)').forEach(cb => cb.disabled = true);
-                        } else {
-                            document.querySelectorAll('input[name="favorite_features"]:not(:checked)').forEach(cb => cb.disabled = false);
-                        }
+                        document.querySelectorAll('input[name="favorite_features"]:not(:checked)').forEach(cb => cb.disabled = checked.length >= 3);
                     });
                 });
             },
@@ -701,7 +667,7 @@
             },
 
             _generateWrongQuestionsHTML() {
-                let html = `<div class="card mt-4"><div class="card-header bg-danger text-white"><h5 class="mb-0">❌ 錯題分析 (${this.state.wrongQuestions.length}題)</h5></div><div class="list-group list-group-flush">`;
+                let html = `<div class="card mt-4"><div class="card-header bg-danger text-white"><h5 class="mb-0">❌ 錯題分析 (${this.state.wrongQuestions.length}題)</h5></div><div class="list-group list-group-flush" style="max-height: 200px; overflow-y: auto;">`;
                 this.state.wrongQuestions.forEach(q => {
                     html += `<div class="list-group-item">${q.question} <span class="badge bg-secondary float-end">${q.topic || '未分類'}</span></div>`;
                 });
@@ -710,12 +676,12 @@
             
             reviewWrongQuestions() { this.modals.result.hide(); this.startReview(); },
             restartQuiz() { this.modals.result.hide(); this.backToSelection(); },
-            resetProgress() { if (confirm('確定重置所有進度？')) { localStorage.removeItem('iPASQuizUserData'); this.state.userData = { incorrect: [] }; this.modals.stats.hide(); this.updateReviewButtonState(); this.showAlert('進度已重置', 'success'); } },
-            backToSelection() { this.state.isQuizActive = false; this.stopTimer(); this.elements.quizContainer.classList.add('d-none'); this.elements.settingsPanel.classList.remove('d-none'); },
+            resetProgress() { if (confirm('確定重置所有進度？')) { localStorage.clear(); this.state.userData = { incorrect: [] }; this.state.surveyCompleted = false; this.modals.stats.hide(); this.updateReviewButtonState(); this.showAlert('進度已重置', 'success'); } },
+            backToSelection() { this.state.isQuizActive = false; if (this.state.timerId) this.stopTimer(); this.elements.quizContainer.classList.add('d-none'); this.elements.settingsPanel.classList.remove('d-none'); },
             nextQuestion() { if(this.state.currentQuestionIndex < this.state.questions.length - 1) { this.state.currentQuestionIndex++; this.displayQuestion(); } },
-            prevQuestion() { if(this.state.currentQuestionIndex > 0) { this.state.currentQuestionIndex--; this.displayQuestion(); } },
-            startTimer() { /* 保持不變 */ },
-            stopTimer() { /* 保持不變 */ },
+            prevQuestion() { if(this.state.currentQuestionIndex > 0 && this.state.currentMode !== 'exam') { this.state.currentQuestionIndex--; this.displayQuestion(); } },
+            startTimer() { this.state.timerId = setInterval(() => { const elapsed = Math.floor((new Date() - this.state.startTime) / 1000); this.elements.timer.textContent = `考試時間: ${Math.floor(elapsed/60)}:${(elapsed%60).toString().padStart(2, '0')}`; }, 1000); },
+            stopTimer() { clearInterval(this.state.timerId); this.state.timerId = null; },
             showAlert(message, type = 'info') { const alertDiv = document.createElement('div'); alertDiv.className = `alert alert-${type} alert-dismissible fade show position-fixed`; alertDiv.style.cssText = `top: 80px; right: 20px; z-index: 9999;`; alertDiv.innerHTML = `${message}<button type="button" class="btn-close" data-bs-dismiss="alert"></button>`; document.body.appendChild(alertDiv); setTimeout(() => alertDiv.remove(), 5000); },
             showSubmittingState(buttonId, text) { const btn = document.getElementById(buttonId); if (btn) { btn.disabled = true; btn.innerHTML = `<i class="fas fa-spinner fa-spin me-2"></i>${text}`; } }
         };

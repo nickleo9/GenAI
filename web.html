@@ -1814,7 +1814,7 @@
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
                 
                 // 載入問卷HTML
-                this.loadSurveyWithRetry('mandatorySurveyContainer');
+                thry('mandatorySurveyContainer');
                 
                 // 顯示modal
                 const modal = new bootstrap.Modal(document.getElementById('mandatorySurveyModal'));
@@ -1914,7 +1914,7 @@
                 document.body.insertAdjacentHTML('beforeend', modalHTML);
                 
                 // 載入問卷HTML
-                this.loadSurveyWithRetry('optionalSurveyContainer');
+                this.loadSurveyWithRetry('surveyContainer');
                 
                 // 顯示modal
                 const modal = new bootstrap.Modal(document.getElementById('optionalSurveyModal'));

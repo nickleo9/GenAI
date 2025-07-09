@@ -1230,7 +1230,7 @@
                     </ul>
                     <ul>
                         <li>開發者：ZN Studio</li>
-                        <li>版本：2.0.0 (問卷整合版)</li>
+                        <li>版本：2.1.0 (外部問卷版)</li>
                         <li>本系統由本人獨立設計與開發，專為iPAS AI應用規劃師考試設計</li>
                     </ul>
                 </div>
@@ -1320,7 +1320,7 @@
                 this.state.userData = this.loadUserData();
                 this.attachEventListeners();
                 this.updateReviewButtonState();
-                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.0.0 問卷整合版)');
+                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.1.0 外部問卷版)');
             },
             
             // 載入使用者數據
@@ -1747,7 +1747,7 @@
                 console.log('🔙 已返回題庫選擇');
             },
             
-            // === 新增問卷流程函式 ===
+            // === 修改後的問卷流程函式 ===
             finishQuiz() {
                 this.stopTimer();
                 this.state.currentTestResults = this.calculateTestResults();
@@ -1756,7 +1756,7 @@
                 const isFirstTime = !this.state.surveyCompleted;
                 
                 if (isFirstTime) {
-                    console.log('🆕 首次測驗，顯示強制問卷');
+                    console.log('🆕 首次測驗，顯示強制完整問卷');
                     this.showMandatorySurvey();
                 } else {
                     console.log('🔄 非首次測驗，顯示選擇');
@@ -1788,37 +1788,49 @@
                 };
             },
 
-            // 顯示強制問卷 (首次)
-            showMandatorySurvey() {
-                const modalHTML = `
-                <div class="modal fade" id="mandatorySurveyModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content">
-                            <div class="modal-header bg-primary text-white">
-                                <h5 class="modal-title">🎉 測驗完成！請填寫回饋問卷</h5>
-                            </div>
-                            <div class="modal-body p-0">
-                                <div id="surveyContainer" style="height: calc(100vh - 120px); overflow-y: auto;">
-                                    <!-- 問卷HTML將在這裡插入 -->
+            // 顯示強制問卷 (首次) - 載入 full_survey.html
+            async showMandatorySurvey() {
+                try {
+                    const modalHTML = `
+                    <div class="modal fade" id="mandatorySurveyModal" tabindex="-1" data-bs-backdrop="static" data-bs-keyboard="false">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary text-white">
+                                    <h5 class="modal-title">🎉 測驗完成！請填寫回饋問卷</h5>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <div id="surveyContainer" style="height: calc(100vh - 120px); overflow-y: auto;">
+                                        <div class="text-center p-4">
+                                            <div class="spinner-border text-primary" role="status">
+                                                <span class="visually-hidden">載入中...</span>
+                                            </div>
+                                            <p class="mt-2">載入問卷中...</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>`;
-                
-                // 移除舊的modal
-                const existingModal = document.getElementById('mandatorySurveyModal');
-                if (existingModal) existingModal.remove();
-                
-                // 插入新modal
-                document.body.insertAdjacentHTML('beforeend', modalHTML);
-                
-                // 載入問卷HTML
-                thry('mandatorySurveyContainer');
-                
-                // 顯示modal
-                const modal = new bootstrap.Modal(document.getElementById('mandatorySurveyModal'));
-                modal.show();
+                    </div>`;
+                    
+                    // 移除舊的modal
+                    const existingModal = document.getElementById('mandatorySurveyModal');
+                    if (existingModal) existingModal.remove();
+                    
+                    // 插入新modal
+                    document.body.insertAdjacentHTML('beforeend', modalHTML);
+                    
+                    // 顯示modal
+                    const modal = new bootstrap.Modal(document.getElementById('mandatorySurveyModal'));
+                    modal.show();
+                    
+                    // 載入外部問卷HTML
+                    await this.loadExternalSurvey('full_survey.html', 'surveyContainer');
+                    
+                } catch (error) {
+                    console.error('❌ 載入強制問卷失敗:', error);
+                    this.showAlert('問卷載入失敗，將直接顯示結果', 'error');
+                    this.showResult();
+                }
             },
 
             // 顯示結果選擇 (非首次)
@@ -1849,7 +1861,7 @@
                                         <div class="card h-100 border-warning">
                                             <div class="card-body">
                                                 <i class="fas fa-clipboard-list fa-3x text-warning mb-3"></i>
-                                                <h5>填寫問卷回饋</h5>
+                                                <h5>填寫快速問卷</h5>
                                                 <p class="text-muted">幫助我們改善系統</p>
                                                 <button class="btn btn-warning" id="surveyFeedbackBtn">
                                                     <i class="fas fa-edit me-2"></i>填寫問卷
@@ -1887,580 +1899,127 @@
                 modal.show();
             },
 
-            // 顯示可選問卷 (非首次)
-            showOptionalSurvey() {
-                const modalHTML = `
-                <div class="modal fade" id="optionalSurveyModal" tabindex="-1" data-bs-backdrop="static">
-                    <div class="modal-dialog modal-fullscreen">
-                        <div class="modal-content">
-                            <div class="modal-header bg-warning text-dark">
-                                <h5 class="modal-title">📝 問卷回饋（感謝您的寶貴意見）</h5>
-                                <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
-                            </div>
-                            <div class="modal-body p-0">
-                                <div id="surveyContainer" style="height: calc(100vh - 120px); overflow-y: auto;">
-                                    <!-- 問卷HTML將在這裡插入 -->
+            // 顯示可選問卷 (非首次) - 載入 quick_survey.html
+            async showOptionalSurvey() {
+                try {
+                    const modalHTML = `
+                    <div class="modal fade" id="optionalSurveyModal" tabindex="-1" data-bs-backdrop="static">
+                        <div class="modal-dialog modal-fullscreen">
+                            <div class="modal-content">
+                                <div class="modal-header bg-warning text-dark">
+                                    <h5 class="modal-title">📝 問卷回饋（感謝您的寶貴意見）</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                                </div>
+                                <div class="modal-body p-0">
+                                    <div id="surveyContainer" style="height: calc(100vh - 120px); overflow-y: auto;">
+                                        <div class="text-center p-4">
+                                            <div class="spinner-border text-warning" role="status">
+                                                <span class="visually-hidden">載入中...</span>
+                                            </div>
+                                            <p class="mt-2">載入問卷中...</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
-                </div>`;
-                
-                // 移除舊modal
-                const existingModal = document.getElementById('optionalSurveyModal');
-                if (existingModal) existingModal.remove();
-                
-                // 插入新modal
-                document.body.insertAdjacentHTML('beforeend', modalHTML);
-                
-                // 載入問卷HTML
-                this.loadSurveyWithRetry('surveyContainer');
-                
-                // 顯示modal
-                const modal = new bootstrap.Modal(document.getElementById('optionalSurveyModal'));
-                modal.show();
+                    </div>`;
+                    
+                    // 移除舊modal
+                    const existingModal = document.getElementById('optionalSurveyModal');
+                    if (existingModal) existingModal.remove();
+                    
+                    // 插入新modal
+                    document.body.insertAdjacentHTML('beforeend', modalHTML);
+                    
+                    // 顯示modal
+                    const modal = new bootstrap.Modal(document.getElementById('optionalSurveyModal'));
+                    modal.show();
+                    
+                    // 載入外部問卷HTML
+                    await this.loadExternalSurvey('quick_survey.html', 'surveyContainer');
+                    
+                } catch (error) {
+                    console.error('❌ 載入可選問卷失敗:', error);
+                    this.showAlert('問卷載入失敗，將直接顯示結果', 'error');
+                    this.showResult();
+                }
             },
 
-            // 載入問卷HTML
-loadSurveyHTML(containerId = 'surveyContainer') {
-    const container = document.getElementById(containerId);
-    
-    if (!container) {
-        console.error(`❌ 找不到容器: ${containerId}`);
-        return;
-    }
-                
-                // 插入完整問卷HTML
-                container.innerHTML = `
-                    <div class="container">
-                        <div class="survey-container">
-                            <!-- 問卷標題 -->
-                            <div class="survey-header">
-                                <h1><i class="fas fa-brain me-3"></i>🎯 iPAS AI應用規劃師 - 專業學習需求調查</h1>
-                                <p class="mb-0 fs-5">🎉 恭喜完成測驗！您的成績即將揭曉</p>
-                                <p class="mt-2">為了提供最適合的學習建議，請幫助我們了解您的需求</p>
+            // 載入外部問卷HTML文件
+            async loadExternalSurvey(fileName, containerId) {
+                try {
+                    console.log(`📄 開始載入外部問卷: ${fileName}`);
+                    
+                    const response = await fetch(`./${fileName}`);
+                    if (!response.ok) {
+                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+                    }
+                    
+                    const htmlContent = await response.text();
+                    const container = document.getElementById(containerId);
+                    
+                    if (!container) {
+                        throw new Error(`找不到容器: ${containerId}`);
+                    }
+                    
+                    // 將HTML內容插入容器
+                    container.innerHTML = htmlContent;
+                    
+                    // 初始化問卷功能
+                    this.initializeExternalSurvey();
+                    
+                    console.log(`✅ 外部問卷載入成功: ${fileName}`);
+                    
+                } catch (error) {
+                    console.error(`❌ 載入外部問卷失敗 (${fileName}):`, error);
+                    
+                    // 顯示錯誤訊息
+                    const container = document.getElementById(containerId);
+                    if (container) {
+                        container.innerHTML = `
+                            <div class="alert alert-danger m-4">
+                                <h5 class="alert-heading">❌ 問卷載入失敗</h5>
+                                <p>無法載入問卷文件 ${fileName}，請檢查文件是否存在。</p>
+                                <hr>
+                                <button class="btn btn-primary" onclick="iPASQuizApp.showResult()">
+                                    <i class="fas fa-eye me-2"></i>直接查看測驗結果
+                                </button>
                             </div>
-
-                            <div class="survey-content">
-                                <!-- 獎勵說明 -->
-                                <div class="reward-box">
-                                    <h5 class="mb-3">🎁 完成問卷立即獲得：</h5>
-                                    <div class="row">
-                                        <div class="col-md-6">
-                                            <ul class="list-unstyled">
-                                                <li>💎 詳細測驗成績分析報告</li>
-                                                <li>🤖 AI個人化學習建議</li>
-                                            </ul>
-                                        </div>
-                                        <div class="col-md-6">
-                                            <ul class="list-unstyled">
-                                                <li>📱 LINE Bot專屬錯題提醒</li>
-                                                <li>🎯 7天進階功能免費體驗</li>
-                                            </ul>
-                                        </div>
-                                    </div>
-                                    <div class="text-center mt-3">
-                                        <small class="text-muted">⏱️ 預計時間：3-4分鐘　📊 您的測驗結果將在填寫完成後顯示</small>
-                                    </div>
-                                </div>
-
-                                <!-- 進度條 -->
-                                <div class="progress-indicator">
-                                    <div class="progress-bar" id="surveyProgressBar" style="width: 0%"></div>
-                                </div>
-
-                                <form id="embeddedSurveyForm">
-                                    <!-- 第一部分：背景資訊 -->
-                                    <div class="section-header">
-                                        <h3><i class="fas fa-user-circle me-2"></i>📊 第一部分：背景資訊</h3>
-                                        <p class="mb-0">幫助我們了解您的學習背景</p>
-                                    </div>
-
-                                    <!-- 問題1：身份背景 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            1. 您的身份背景？<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="options-container">
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="identity" id="identity1" value="🎓 學生（大學/研究所）" required>
-                                                <label class="survey-form-check-label" for="identity1">🎓 學生（大學/研究所）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="identity" id="identity2" value="💼 職場新人（1-3年經驗）" required>
-                                                <label class="survey-form-check-label" for="identity2">💼 職場新人（1-3年經驗）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="identity" id="identity3" value="🏢 中階專業人士（3-8年經驗）" required>
-                                                <label class="survey-form-check-label" for="identity3">🏢 中階專業人士（3-8年經驗）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="identity" id="identity4" value="👔 資深主管（8年以上經驗）" required>
-                                                <label class="survey-form-check-label" for="identity4">👔 資深主管（8年以上經驗）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="identity" id="identity5" value="🏭 企業培訓負責人" required>
-                                                <label class="survey-form-check-label" for="identity5">🏭 企業培訓負責人</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="identity" id="identity6" value="🚀 創業者/自由工作者" required>
-                                                <label class="survey-form-check-label" for="identity6">🚀 創業者/自由工作者</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="identity" id="identity7" value="🔄 轉職準備中" required>
-                                                <label class="survey-form-check-label" for="identity7">🔄 轉職準備中</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 問題2：準備目標 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            2. 您準備iPAS認證的主要目標？<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="options-container">
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="goal" id="goal1" value="💰 爭取加薪或升職機會" required>
-                                                <label class="survey-form-check-label" for="goal1">💰 爭取加薪或升職機會</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="goal" id="goal2" value="🔄 轉入AI/科技相關領域" required>
-                                                <label class="survey-form-check-label" for="goal2">🔄 轉入AI/科技相關領域</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="goal" id="goal3" value="🏢 公司要求或內部培訓需求" required>
-                                                <label class="survey-form-check-label" for="goal3">🏢 公司要求或內部培訓需求</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="goal" id="goal4" value="📈 提升專業技能競爭力" required>
-                                                <label class="survey-form-check-label" for="goal4">📈 提升專業技能競爭力</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="goal" id="goal5" value="🎯 創業或接案所需技能" required>
-                                                <label class="survey-form-check-label" for="goal5">🎯 創業或接案所需技能</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="goal" id="goal6" value="📚 純個人興趣和學習成長" required>
-                                                <label class="survey-form-check-label" for="goal6">📚 純個人興趣和學習成長</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="goal" id="goal7" value="other" required>
-                                                <label class="survey-form-check-label" for="goal7">📝 其他</label>
-                                            </div>
-                                            <div class="mt-2" id="goalOtherInput" style="display: none;">
-                                                <input type="text" class="survey-text-input" name="goal_other" placeholder="請說明您的其他目標...">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 問題3：時間規劃 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            3. 您計劃何時通過認證？<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="options-container">
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="timeline" id="timeline1" value="🚀 1個月內（緊急）" required>
-                                                <label class="survey-form-check-label" for="timeline1">🚀 1個月內（緊急）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="timeline" id="timeline2" value="📅 2-3個月（積極準備）" required>
-                                                <label class="survey-form-check-label" for="timeline2">📅 2-3個月（積極準備）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="timeline" id="timeline3" value="📆 4-6個月（穩定學習）" required>
-                                                <label class="survey-form-check-label" for="timeline3">📆 4-6個月（穩定學習）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="timeline" id="timeline4" value="🌱 6個月以上（長期規劃）" required>
-                                                <label class="survey-form-check-label" for="timeline4">🌱 6個月以上（長期規劃）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="timeline" id="timeline5" value="other" required>
-                                                <label class="survey-form-check-label" for="timeline5">📝 其他</label>
-                                            </div>
-                                            <div class="mt-2" id="timelineOtherInput" style="display: none;">
-                                                <input type="text" class="survey-text-input" name="timeline_other" placeholder="請說明您的其他時間規劃...">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 第二部分：測驗體驗 -->
-                                    <div class="section-header">
-                                        <h3><i class="fas fa-gamepad me-2"></i>🎮 第二部分：測驗體驗</h3>
-                                        <p class="mb-0">幫助我們改善系統品質</p>
-                                    </div>
-
-                                    <!-- 問題4：滿意度評分 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            4. 對這次測驗體驗的整體滿意度？<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="rating-container">
-                                            <span class="text-muted">非常不滿意</span>
-                                            <div class="d-flex gap-2">
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat1" value="1" required>
-                                                    <label for="sat1">1</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat2" value="2" required>
-                                                    <label for="sat2">2</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat3" value="3" required>
-                                                    <label for="sat3">3</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat4" value="4" required>
-                                                    <label for="sat4">4</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat5" value="5" required>
-                                                    <label for="sat5">5</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat6" value="6" required>
-                                                    <label for="sat6">6</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat7" value="7" required>
-                                                    <label for="sat7">7</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat8" value="8" required>
-                                                    <label for="sat8">8</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat9" value="9" required>
-                                                    <label for="sat9">9</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="satisfaction" id="sat10" value="10" required>
-                                                    <label for="sat10">10</label>
-                                                </div>
-                                            </div>
-                                            <span class="text-muted">非常滿意</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- 問題5：最喜歡功能 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            5. 以下功能中，您最喜歡哪3項？（最多選3項）<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="checkbox-grid">
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="favorite_features" id="feature1" value="🎯 iPAS官方題庫完整覆蓋">
-                                                <label class="form-check-label" for="feature1">🎯 iPAS官方題庫完整覆蓋</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="favorite_features" id="feature2" value="📱 手機友善的操作介面">
-                                                <label class="form-check-label" for="feature2">📱 手機友善的操作介面</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="favorite_features" id="feature3" value="📊 即時的答題統計分析">
-                                                <label class="form-check-label" for="feature3">📊 即時的答題統計分析</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="favorite_features" id="feature4" value="💡 詳細的題目解析說明">
-                                                <label class="form-check-label" for="feature4">💡 詳細的題目解析說明</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="favorite_features" id="feature5" value="🔄 錯題重複練習功能">
-                                                <label class="form-check-label" for="feature5">🔄 錯題重複練習功能</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="favorite_features" id="feature6" value="⏱️ 模擬考試計時訓練">
-                                                <label class="form-check-label" for="feature6">⏱️ 模擬考試計時訓練</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="favorite_features" id="feature7" value="📈 學習進度視覺化追蹤">
-                                                <label class="form-check-label" for="feature7">📈 學習進度視覺化追蹤</label>
-                                            </div>
-                                        </div>
-                                        <small class="text-muted">請選擇最多3項功能</small>
-                                    </div>
-
-                                    <!-- 第三部分：進階功能需求 -->
-                                    <div class="section-header">
-                                        <h3><i class="fas fa-gem me-2"></i>💎 第三部分：進階功能需求</h3>
-                                        <p class="mb-0">了解您對付費功能的需求</p>
-                                    </div>
-
-                                    <!-- 問題6：付費意願場景 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            6. 什麼情況下您會考慮付費升級？<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="options-container">
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment1" value="🧠 需要AI深度解析幫助理解" required>
-                                                <label class="survey-form-check-label" for="payment1">🧠 需要AI深度解析幫助理解</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment2" value="⏰ 考試逼近需要高效衝刺工具" required>
-                                                <label class="survey-form-check-label" for="payment2">⏰ 考試逼近需要高效衝刺工具</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment3" value="📄 想要完整學習資料PDF下載" required>
-                                                <label class="survey-form-check-label" for="payment3">📄 想要完整學習資料PDF下載</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment4" value="👥 希望加入專屬學習社群" required>
-                                                <label class="survey-form-check-label" for="payment4">👥 希望加入專屬學習社群</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment5" value="🎯 免費功能不夠，需要完整體驗" required>
-                                                <label class="survey-form-check-label" for="payment5">🎯 免費功能不夠，需要完整體驗</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment6" value="💼 公司願意支付學習費用" required>
-                                                <label class="survey-form-check-label" for="payment6">💼 公司願意支付學習費用</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment7" value="🚫 目前不會考慮付費" required>
-                                                <label class="survey-form-check-label" for="payment7">🚫 目前不會考慮付費</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment8" value="other" required>
-                                                <label class="survey-form-check-label" for="payment8">📝 其他</label>
-                                            </div>
-                                            <div class="mt-2" id="paymentOtherInput" style="display: none;">
-                                                <input type="text" class="survey-text-input" name="payment_scenario_other" placeholder="請說明您考慮付費的其他情況...">
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 問題7：價格範圍 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            7. 如果有完整版功能，您認為合理的月費範圍？<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="alert alert-info mb-3">
-                                            <small>參考：坊間AI培訓課程約 $8,000-15,000</small>
-                                        </div>
-                                        <div class="options-container">
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="price_range" id="price1" value="🆓 希望保持免費" required>
-                                                <label class="survey-form-check-label" for="price1">🆓 希望保持免費</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="price_range" id="price2" value="💰 $199-399（學生/新鮮人價位）" required>
-                                                <label class="survey-form-check-label" for="price2">💰 $199-399（學生/新鮮人價位）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="price_range" id="price3" value="💼 $400-699（上班族標準價位）" required>
-                                                <label class="survey-form-check-label" for="price3">💼 $400-699（上班族標準價位）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="price_range" id="price4" value="💎 $700-999（專業人士價位）" required>
-                                                <label class="survey-form-check-label" for="price4">💎 $700-999（專業人士價位）</label>
-                                            </div>
-                                            <div class="survey-form-check">
-                                                <input class="survey-form-check-input" type="radio" name="price_range" id="price5" value="🏢 $1000以上（企業級價位）" required>
-                                                <label class="survey-form-check-label" for="price5">🏢 $1000以上（企業級價位）</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 問題8：付費功能需求 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            8. 以下付費功能中，您最需要哪3項？（最多選3項）<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="checkbox-grid">
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium1" value="🤖 GPT-4智能解題分析">
-                                                <label class="form-check-label" for="premium1">🤖 GPT-4智能解題分析</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium2" value="🆕 每日最新AI題目更新">
-                                                <label class="form-check-label" for="premium2">🆕 每日最新AI題目更新</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium3" value="📄 錯題整理PDF報告">
-                                                <label class="form-check-label" for="premium3">📄 錯題整理PDF報告</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium4" value="📊 詳細學習數據分析">
-                                                <label class="form-check-label" for="premium4">📊 詳細學習數據分析</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium5" value="👥 考生討論社群功能">
-                                                <label class="form-check-label" for="premium5">👥 考生討論社群功能</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium6" value="📱 LINE Bot個人化提醒">
-                                                <label class="form-check-label" for="premium6">📱 LINE Bot個人化提醒</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium7" value="🎯 無限次模擬考試">
-                                                <label class="form-check-label" for="premium7">🎯 無限次模擬考試</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="premium_features" id="premium8" value="💬 專家一對一問答">
-                                                <label class="form-check-label" for="premium8">💬 專家一對一問答</label>
-                                            </div>
-                                        </div>
-                                        <small class="text-muted">請選擇最多3項功能</small>
-                                    </div>
-
-                                    <!-- 第四部分：推薦評價 -->
-                                    <div class="section-header">
-                                        <h3><i class="fas fa-star me-2"></i>🌟 第四部分：推薦評價</h3>
-                                        <p class="mb-0">您的推薦是我們最大的動力</p>
-                                    </div>
-
-                                    <!-- 問題9：推薦意願 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            9. 您推薦朋友使用這個系統的可能性？<span class="required-indicator">*</span>
-                                        </div>
-                                        <div class="rating-container">
-                                            <span class="text-muted">絕對不會推薦</span>
-                                            <div class="d-flex gap-2">
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps0" value="0" required>
-                                                    <label for="nps0">0</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps1" value="1" required>
-                                                    <label for="nps1">1</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps2" value="2" required>
-                                                    <label for="nps2">2</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps3" value="3" required>
-                                                    <label for="nps3">3</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps4" value="4" required>
-                                                    <label for="nps4">4</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps5" value="5" required>
-                                                    <label for="nps5">5</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps6" value="6" required>
-                                                    <label for="nps6">6</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps7" value="7" required>
-                                                    <label for="nps7">7</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps8" value="8" required>
-                                                    <label for="nps8">8</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps9" value="9" required>
-                                                    <label for="nps9">9</label>
-                                                </div>
-                                                <div class="rating-item">
-                                                    <input type="radio" name="nps" id="nps10" value="10" required>
-                                                    <label for="nps10">10</label>
-                                                </div>
-                                            </div>
-                                            <span class="text-muted">一定會推薦</span>
-                                        </div>
-                                    </div>
-
-                                    <!-- 問題10：推薦理由 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            10. 簡單說明您推薦（或不推薦）的原因？
-                                        </div>
-                                        <p class="text-muted mb-3">您的意見對我們非常重要（50字以內）</p>
-                                        <textarea class="survey-text-input" name="recommendation_reason" rows="3" maxlength="50" placeholder="請簡單描述您的想法..."></textarea>
-                                        <small class="text-muted">字數限制：50字</small>
-                                    </div>
-
-                                    <!-- 第五部分：聯繫資訊 -->
-                                    <div class="section-header">
-                                        <h3><i class="fas fa-envelope me-2"></i>📮 第五部分：聯繫資訊（選填）</h3>
-                                        <p class="mb-0">獲得更多學習資源和優惠通知</p>
-                                    </div>
-
-                                    <!-- 問題11：LINE ID -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            11. LINE ID（選填）
-                                        </div>
-                                        <p class="text-muted mb-3">提供LINE ID可獲得專屬錯題提醒和學習建議</p>
-                                        <input type="text" class="survey-text-input" name="line_id" placeholder="請輸入您的LINE ID">
-                                    </div>
-
-                                    <!-- 問題12：參與意願 -->
-                                    <div class="question-card">
-                                        <div class="question-title">
-                                            12. 您是否願意參與以下活動？（可複選）
-                                        </div>
-                                        <div class="checkbox-grid">
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="participation" id="participate1" value="🎁 接收系統更新和優惠通知">
-                                                <label class="form-check-label" for="participate1">🎁 接收系統更新和優惠通知</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="participation" id="participate2" value="🧪 參與新功能搶先測試">
-                                                <label class="form-check-label" for="participate2">🧪 參與新功能搶先測試</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="participation" id="participate3" value="💬 參與深度訪談（有精美禮品）">
-                                                <label class="form-check-label" for="participate3">💬 參與深度訪談（有精美禮品）</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="participation" id="participate4" value="👥 加入考生學習交流群組">
-                                                <label class="form-check-label" for="participate4">👥 加入考生學習交流群組</label>
-                                            </div>
-                                            <div class="checkbox-item">
-                                                <input class="form-check-input" type="checkbox" name="participation" id="participate5" value="🚫 暫時不需要額外聯繫">
-                                                <label class="form-check-label" for="participate5">🚫 暫時不需要額外聯繫</label>
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <!-- 提交區域 -->
-                                    <div class="submit-section">
-                                        <h4 class="mb-3">🎊 感謝您的寶貴意見！</h4>
-                                        <p class="mb-4">完成提交後，系統將立即為您顯示詳細的測驗分析結果</p>
-                                        <button type="submit" class="btn-submit" id="submitBtn">
-                                            <i class="fas fa-paper-plane me-2"></i>提交問卷並查看測驗結果
-                                        </button>
-                                        <div class="mt-3">
-                                            <small class="text-light">提交後將自動返回測驗系統並顯示您的專屬分析報告</small>
-                                        </div>
-                                    </div>
-                                </form>
-                            </div>
-                        </div>
-                    </div>
-                `;
-                
-                // 初始化問卷功能
-                this.initializeEmbeddedSurvey();
+                        `;
+                    }
+                    throw error;
+                }
             },
 
-            // 初始化嵌入式問卷
-            initializeEmbeddedSurvey() {
-                // 綁定提交事件
-                const form = document.getElementById('embeddedSurveyForm');
+            // 初始化外部問卷功能
+            initializeExternalSurvey() {
+                // 尋找問卷表單
+                const form = document.querySelector('#embeddedSurveyForm, #quickSurveyForm');
                 if (form) {
                     form.addEventListener('submit', (e) => {
                         e.preventDefault();
-                        this.handleSurveySubmit();
+                        this.handleSurveySubmit(form);
                     });
                 }
                 
                 // 設置問卷互動邏輯
                 this.setupSurveyInteractions();
+                
+                console.log('📋 外部問卷功能已初始化');
             },
 
             // 設置問卷互動邏輯
             setupSurveyInteractions() {
+                // 跳過快速問卷的按鈕
+                const skipBtn = document.getElementById('skip-quick-survey');
+                if (skipBtn) {
+                    skipBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.closeSurveyModal();
+                        this.showResult();
+                    });
+                }
+                
                 // 複選框限制邏輯
                 const favoriteFeatures = document.querySelectorAll('input[name="favorite_features"]');
                 favoriteFeatures.forEach(checkbox => {
@@ -2491,18 +2050,25 @@ loadSurveyHTML(containerId = 'surveyContainer') {
                 });
 
                 // 其他選項顯示/隱藏邏輯
+                this.setupOtherInputs();
+            },
+
+            // 設置其他選項輸入框
+            setupOtherInputs() {
                 // 準備目標的其他選項
                 const goalRadios = document.querySelectorAll('input[name="goal"]');
                 goalRadios.forEach(radio => {
                     radio.addEventListener('change', () => {
                         const otherInput = document.getElementById('goalOtherInput');
-                        if (radio.value === 'other' && radio.checked) {
-                            otherInput.style.display = 'block';
-                            otherInput.querySelector('input').required = true;
-                        } else if (radio.checked) {
-                            otherInput.style.display = 'none';
-                            otherInput.querySelector('input').required = false;
-                            otherInput.querySelector('input').value = '';
+                        if (otherInput) {
+                            if (radio.value === 'other' && radio.checked) {
+                                otherInput.style.display = 'block';
+                                otherInput.querySelector('input').required = true;
+                            } else if (radio.checked) {
+                                otherInput.style.display = 'none';
+                                otherInput.querySelector('input').required = false;
+                                otherInput.querySelector('input').value = '';
+                            }
                         }
                     });
                 });
@@ -2512,13 +2078,15 @@ loadSurveyHTML(containerId = 'surveyContainer') {
                 timelineRadios.forEach(radio => {
                     radio.addEventListener('change', () => {
                         const otherInput = document.getElementById('timelineOtherInput');
-                        if (radio.value === 'other' && radio.checked) {
-                            otherInput.style.display = 'block';
-                            otherInput.querySelector('input').required = true;
-                        } else if (radio.checked) {
-                            otherInput.style.display = 'none';
-                            otherInput.querySelector('input').required = false;
-                            otherInput.querySelector('input').value = '';
+                        if (otherInput) {
+                            if (radio.value === 'other' && radio.checked) {
+                                otherInput.style.display = 'block';
+                                otherInput.querySelector('input').required = true;
+                            } else if (radio.checked) {
+                                otherInput.style.display = 'none';
+                                otherInput.querySelector('input').required = false;
+                                otherInput.querySelector('input').value = '';
+                            }
                         }
                     });
                 });
@@ -2528,23 +2096,25 @@ loadSurveyHTML(containerId = 'surveyContainer') {
                 paymentRadios.forEach(radio => {
                     radio.addEventListener('change', () => {
                         const otherInput = document.getElementById('paymentOtherInput');
-                        if (radio.value === 'other' && radio.checked) {
-                            otherInput.style.display = 'block';
-                            otherInput.querySelector('input').required = true;
-                        } else if (radio.checked) {
-                            otherInput.style.display = 'none';
-                            otherInput.querySelector('input').required = false;
-                            otherInput.querySelector('input').value = '';
+                        if (otherInput) {
+                            if (radio.value === 'other' && radio.checked) {
+                                otherInput.style.display = 'block';
+                                otherInput.querySelector('input').required = true;
+                            } else if (radio.checked) {
+                                otherInput.style.display = 'none';
+                                otherInput.querySelector('input').required = false;
+                                otherInput.querySelector('input').value = '';
+                            }
                         }
                     });
                 });
             },
 
             // 處理問卷提交
-            async handleSurveySubmit() {
+            async handleSurveySubmit(form) {
                 try {
                     // 收集問卷數據
-                    const surveyData = this.collectSurveyData();
+                    const surveyData = this.collectSurveyData(form);
                     
                     // 合併測驗數據
                     const completeData = {
@@ -2597,33 +2167,48 @@ loadSurveyHTML(containerId = 'surveyContainer') {
             },
 
             // 收集問卷數據
-            collectSurveyData() {
-                const form = document.getElementById('embeddedSurveyForm');
+            collectSurveyData(form) {
                 const formData = new FormData(form);
                 
-                return {
-                    timestamp: new Date().toISOString(),
-                    identity: formData.get('identity'),
-                    goal: formData.get('goal'),
-                    goal_other: formData.get('goal_other') || null,
-                    timeline: formData.get('timeline'),
-                    timeline_other: formData.get('timeline_other') || null,
-                    satisfaction: parseInt(formData.get('satisfaction')),
-                    favorite_features: formData.getAll('favorite_features'),
-                    payment_scenario: formData.get('payment_scenario'),
-                    payment_scenario_other: formData.get('payment_scenario_other') || null,
-                    price_range: formData.get('price_range'),
-                    premium_features: formData.getAll('premium_features'),
-                    nps: parseInt(formData.get('nps')),
-                    recommendation_reason: formData.get('recommendation_reason'),
-                    line_id: formData.get('line_id'),
-                    participation: formData.getAll('participation')
-                };
+                // 判斷是完整問卷還是快速問卷
+                const isFullSurvey = form.id === 'embeddedSurveyForm';
+                
+                if (isFullSurvey) {
+                    return {
+                        timestamp: new Date().toISOString(),
+                        survey_type: 'full',
+                        identity: formData.get('identity'),
+                        goal: formData.get('goal'),
+                        goal_other: formData.get('goal_other') || null,
+                        timeline: formData.get('timeline'),
+                        timeline_other: formData.get('timeline_other') || null,
+                        satisfaction: parseInt(formData.get('satisfaction')),
+                        favorite_features: formData.getAll('favorite_features'),
+                        payment_scenario: formData.get('payment_scenario'),
+                        payment_scenario_other: formData.get('payment_scenario_other') || null,
+                        price_range: formData.get('price_range'),
+                        premium_features: formData.getAll('premium_features'),
+                        nps: parseInt(formData.get('nps')),
+                        recommendation_reason: formData.get('recommendation_reason'),
+                        line_id: formData.get('line_id'),
+                        participation: formData.getAll('participation')
+                    };
+                } else {
+                    return {
+                        timestamp: new Date().toISOString(),
+                        survey_type: 'quick',
+                        feeling: formData.get('feeling'),
+                        difficulty: formData.get('difficulty'),
+                        ai_tutor_interest: formData.get('ai_tutor_interest'),
+                        recommendation_score: formData.get('recommendation_score'),
+                        suggestion: formData.get('suggestion')
+                    };
+                }
             },
 
             // 顯示提交中狀態
             showSubmittingState() {
-                const submitBtn = document.querySelector('#embeddedSurveyForm button[type="submit"]');
+                const submitBtn = document.querySelector('form button[type="submit"]');
                 if (submitBtn) {
                     submitBtn.disabled = true;
                     submitBtn.innerHTML = '<i class="fas fa-spinner fa-spin me-2"></i>提交中...';
@@ -2812,59 +2397,6 @@ loadSurveyHTML(containerId = 'surveyContainer') {
                 wrongQuestionsHTML += `</div></div>`;
                 return wrongQuestionsHTML;
             },
-
-// 3. 新增：清理函數
-cleanupSurveyModal(modalId) {
-    // 移除舊modal
-    const existingModal = document.getElementById(modalId);
-    if (existingModal) {
-        // 如果modal正在顯示，先關閉它
-        const modalInstance = bootstrap.Modal.getInstance(existingModal);
-        if (modalInstance) {
-            modalInstance.hide();
-        }
-        existingModal.remove();
-    }
-    
-    // 清理可能殘留的backdrop
-    const backdrops = document.querySelectorAll('.modal-backdrop');
-    backdrops.forEach(backdrop => backdrop.remove());
-    
-    // 重置body的modal狀態
-    document.body.classList.remove('modal-open');
-    document.body.style.removeProperty('padding-right');
-},
-
-// 4. 新增：帶重試機制的問卷載入函數
-loadSurveyWithRetry(containerId, maxRetries = 3) {
-    let retryCount = 0;
-    
-    const attemptLoad = () => {
-        const container = document.getElementById(containerId);
-        
-        if (container) {
-            console.log(`✅ 容器找到，載入問卷到: ${containerId}`);
-            this.loadSurveyHTML(containerId);
-        } else {
-            retryCount++;
-            console.warn(`⚠️ 容器未找到 (${retryCount}/${maxRetries}): ${containerId}`);
-            
-            if (retryCount < maxRetries) {
-                // 使用 requestAnimationFrame 確保DOM更新完成
-                requestAnimationFrame(() => {
-                    setTimeout(attemptLoad, 10);
-                });
-            } else {
-                console.error(`❌ 無法載入問卷容器: ${containerId}`);
-                this.showAlert('問卷載入失敗，請重新嘗試', 'error');
-            }
-        }
-    };
-    
-    // 立即嘗試載入
-    attemptLoad();
-},
-
             
             // 複習錯題
             reviewWrongQuestions() {

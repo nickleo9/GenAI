@@ -1223,6 +1223,38 @@
         </div>
     </div>
 
+
+<!-- === 新增：主題選擇模態框 === -->
+<div class="modal fade" id="topic-selection-modal" tabindex="-1">
+    <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+            <div class="modal-header bg-info text-white">
+                <h5 class="modal-title"><i class="fas fa-tags me-2"></i>選擇複習主題</h5>
+                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+            </div>
+            <div class="modal-body">
+                <p>請選擇您想要複習的主題（可複選）：</p>
+                <div class="mb-3">
+                    <button id="select-all-topics-btn" class="btn btn-sm btn-outline-primary">全選</button>
+                    <button id="deselect-all-topics-btn" class="btn btn-sm btn-outline-secondary">取消全選</button>
+                </div>
+                <div id="topic-list-container" style="max-height: 50vh; overflow-y: auto;">
+                    <!-- 主題列表將由 JavaScript 動態生成 -->
+                </div>
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                <button type="button" class="btn btn-primary" id="confirm-topic-selection-btn">
+                    <i class="fas fa-check me-1"></i>確認選擇
+                </button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
     <!-- 統計資料模態框 -->
     <div class="modal fade" id="stats-modal" tabindex="-1">
         <div class="modal-dialog modal-dialog-centered modal-lg">
@@ -1329,6 +1361,7 @@
                 selectedDatabase: null,
                 currentMode: 'practice',
                 selectedReviewMode: null,
+                selectedTopicsForReview: [], // <<< 新增：存放選擇的主題
                 explanationMode: 'database',
                 selectedAIModel: 'gpt-4o',
                 questions: [],
@@ -1384,7 +1417,8 @@
             modals: {
                 result: new bootstrap.Modal(document.getElementById('result-modal')),
                 stats: new bootstrap.Modal(document.getElementById('stats-modal')),
-                help: new bootstrap.Modal(document.getElementById('help-modal'))
+                help: new bootstrap.Modal(document.getElementById('help-modal')),
+                topicSelection: new bootstrap.Modal(document.getElementById('topic-selection-modal')) // <<< 新增：主題選擇模態框
             },
             
             // 初始化
@@ -1445,6 +1479,12 @@
                         this.selectDatabase(card.dataset.type);
                     });
                 });
+
+
+                document.getElementById('confirm-topic-selection-btn').addEventListener('click', () => this.confirmTopicSelection());
+                document.getElementById('select-all-topics-btn').addEventListener('click', () => this.toggleAllTopics(true));
+                document.getElementById('deselect-all-topics-btn').addEventListener('click', () => this.toggleAllTopics(false));
+
                 
                 // 按鈕事件
                 this.elements.startBtn.addEventListener('click', () => this.startQuiz());
@@ -1463,7 +1503,13 @@
                             this.showAlert('測驗進行中，無法更改複習模式！', 'warning');
                             return;
                         }
-                        this.selectReviewMode(item.dataset.reviewMode);
+                        const mode = item.dataset.reviewMode;
+                        this.selectReviewMode(mode); // 無論如何都先設定模式
+
+                        // 如果是主題複習，則打開選擇視窗
+                        if (mode === 'topic') {
+                            this.openTopicSelectionModal();
+                        }
                     });
                 });
                 
@@ -1550,6 +1596,15 @@
                     return;
                 }
                 
+
+    // <<< 新增檢查：如果是主題複習，必須已選擇主題 >>>
+     if (this.state.selectedReviewMode === 'topic' && (!this.state.selectedTopicsForReview ||this.state.selectedTopicsForReview.length === 0)) {
+                    this.showAlert('請先點擊「主題複習」按鈕來選擇要複習的主題！', 'warning');
+                    this.openTopicSelectionModal(); // 直接幫用戶打開選擇視窗
+                return;
+                }
+
+
                 this.showLoading('準備複習模式...');
                 
                 this.state.isQuizActive = true;
@@ -1610,7 +1665,25 @@
                         questionsToReview = currentQuizData.slice(0, Math.min(questionCount, currentQuizData.length));
                         break;
                         
-                    case 'topic':
+        case 'topic':
+            const selectedTopics = this.state.selectedTopicsForReview;
+            if (!selectedTopics || selectedTopics.length === 0) {
+                this.showAlert('錯誤：未找到選擇的主題。請重新選擇。', 'error');
+                return false;
+            }
+            // 根據選擇的主題篩選題目
+            questionsToReview = currentQuizData.filter(q => selectedTopics.includes(q.topic || '未分類'));
+            
+            if (questionsToReview.length === 0) {
+                this.showAlert(`在您選擇的主題中找不到任何題目。`, 'info');
+                return false;
+            }
+            // 隨機排序並取指定數量
+            questionsToReview = questionsToReview.sort(() => Math.random() - 0.5)
+                .slice(0, Math.min(questionCount, questionsToReview.length));
+            break;
+
+
                     case 'random':
                         questionsToReview = [...currentQuizData].sort(() => Math.random() - 0.5)
                             .slice(0, Math.min(questionCount, currentQuizData.length));
@@ -1627,20 +1700,7 @@
                 return true;
             },
             
-            // 選擇題庫
-            selectDatabase(type) {
-                this.elements.databaseCards.forEach(card => card.classList.remove('selected'));
-                
-                const selectedCard = document.querySelector(`[data-type="${type}"]`);
-                selectedCard.classList.add('selected');
-                
-                this.state.selectedDatabase = type;
-                this.updateDatabaseUI(type);
-                this.elements.startBtn.disabled = false;
-                this.updateReviewButtonState();
-                
-                console.log(`✅ 已選擇題庫: ${type}`);
-            },
+
             
             // 更新題庫UI
             updateDatabaseUI(type) {
@@ -1690,6 +1750,91 @@
                 this.elements.reviewBtnMain.disabled = !hasSelectedDatabase;
             },
             
+
+
+
+// 在 iPASQuizApp 物件中新增以下函式
+
+// <<< 新增函式 1 >>>
+openTopicSelectionModal() {
+    if (!this.state.selectedDatabase) {
+        this.showAlert('請先選擇題庫！', 'warning');
+        return;
+    }
+
+    const currentQuizData = quizData[this.state.selectedDatabase];
+    if (!currentQuizData || currentQuizData.length === 0) {
+        this.showAlert('此題庫無題目可供選擇主題！', 'error');
+        return;
+    }
+
+    // 取得所有不重複的主題
+    const allTopics = currentQuizData.map(q => q.topic || '未分類');
+    const uniqueTopics = [...new Set(allTopics)].sort(); // 排序讓列表更整潔
+
+    const container = document.getElementById('topic-list-container');
+    container.innerHTML = ''; // 清空舊列表
+
+    uniqueTopics.forEach((topic, index) => {
+        const isChecked = this.state.selectedTopicsForReview.includes(topic) ? 'checked' : '';
+        const topicHTML = `
+            <div class="form-check">
+                <input class="form-check-input" type="checkbox" value="${topic}" id="topic-check-${index}" ${isChecked}>
+                <label class="form-check-label" for="topic-check-${index}">
+                    ${topic}
+                </label>
+            </div>
+        `;
+        container.insertAdjacentHTML('beforeend', topicHTML);
+    });
+
+    this.modals.topicSelection.show();
+},
+
+// <<< 新增函式 2 >>>
+confirmTopicSelection() {
+    const selectedCheckboxes = document.querySelectorAll('#topic-list-container input[type="checkbox"]:checked');
+    this.state.selectedTopicsForReview = Array.from(selectedCheckboxes).map(cb => cb.value);
+
+    if (this.state.selectedTopicsForReview.length === 0) {
+        this.showAlert('您尚未選擇任何主題！', 'warning');
+        return;
+    }
+
+    this.modals.topicSelection.hide();
+    this.showAlert(`已選擇 ${this.state.selectedTopicsForReview.length} 個主題，請點擊「開始複習」`, 'success');
+    this.updateReviewButtonState();
+},
+
+// <<< 新增函式 3 >>>
+toggleAllTopics(select) {
+    const checkboxes = document.querySelectorAll('#topic-list-container input[type="checkbox"]');
+    checkboxes.forEach(checkbox => {
+        checkbox.checked = select;
+    });
+},
+
+// <<< 新增函式 4 >>>
+// 修改 selectDatabase 函式，切換題庫時清空已選主題
+selectDatabase(type) {
+    this.elements.databaseCards.forEach(card => card.classList.remove('selected'));
+    
+    const selectedCard = document.querySelector(`[data-type="${type}"]`);
+    selectedCard.classList.add('selected');
+    
+    this.state.selectedDatabase = type;
+    this.state.selectedTopicsForReview = []; // <<< 新增這行：清空已選主題
+    this.updateDatabaseUI(type);
+    this.elements.startBtn.disabled = false;
+    this.updateReviewButtonState();
+    
+    console.log(`✅ 已選擇題庫: ${type}`);
+},
+
+
+
+
+
             // 開始測驗
             startQuiz() {
                 if (!this.state.selectedDatabase) {

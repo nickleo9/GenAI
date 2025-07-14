@@ -2744,18 +2744,33 @@ async handleSurveySubmit(form) {
                         line_id: formData.get('line_id'),
                         participation: formData.getAll('participation')
                     };
-                } else {
-                    return {
-                        timestamp: new Date().toISOString(),
-                        survey_type: 'quick',
-                        feeling: formData.get('feeling'),
-                        difficulty: formData.get('difficulty'),
-                        ai_tutor_interest: formData.get('ai_tutor_interest'),
-                        recommendation_score: formData.get('recommendation_score'),
-                        suggestion: formData.get('suggestion')
-                    };
-                }
-            },
+   } else {
+        // 快速回饋問卷 (quick_survey.html) 的邏輯
+        // [!!] 核心修改處：使用新的 name 屬性來獲取數據 [!!]
+        return {
+            timestamp: new Date().toISOString(),
+            survey_type: 'quick',
+            
+            // ✅ 修改: 使用新的 'difficulty_level'
+            difficulty_level: formData.get('difficulty_level'),
+            
+            // (這個不變)
+            difficulty: formData.get('difficulty'),
+            
+            // ✅ 新增: 獲取新加入的 'favorite_feature'
+            favorite_feature: formData.get('favorite_feature'),
+
+            // ✅ 修改: 使用新的 'new_feature_request'
+            new_feature_request: formData.get('new_feature_request'),
+            
+            // (這個不變)
+            recommendation_score: formData.get('recommendation_score'),
+            
+            // (這個不變)
+            suggestion: formData.get('suggestion')
+        };
+    }
+},
 
             // 顯示提交中狀態
             showSubmittingState() {

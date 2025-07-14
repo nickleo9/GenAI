@@ -2614,31 +2614,32 @@ selectDatabase(type) {
             },
 
             // 處理問卷提交
-            async handleSurveySubmit(form) {
-                try {
-                    // 收集問卷數據
-                    const surveyData = this.collectSurveyData(form);
-                    
-                    // 合併測驗數據
-                    const completeData = {
-                        ...surveyData,
-                        test_score: this.state.currentTestResults.score,
-                        test_total: this.state.currentTestResults.total,
-                        test_accuracy: this.state.currentTestResults.accuracy,
-                        test_duration: this.state.currentTestResults.duration,
-                        wrong_topics: this.state.currentTestResults.wrongTopics,
-                        test_mode: this.state.currentTestResults.mode,
-                        database_type: this.state.currentTestResults.database,
-                        // 新增：確保數據完整性
-                        user_agent: navigator.userAgent,
-                        page_url: window.location.href
-                    };
-                    
-                    console.log('📤 提交問卷數據:', completeData);
-                    
-                    // 顯示提交中狀態
-                    this.showSubmittingState();
-                    
+// 處理問卷提交
+async handleSurveySubmit(form) {
+    try {
+        // 收集問卷數據
+        const surveyData = this.collectSurveyData(form);
+        
+        // 合併測驗數據
+        const completeData = {
+            ...surveyData,
+            test_score: this.state.currentTestResults.score,
+            test_total: this.state.currentTestResults.total,
+            test_accuracy: this.state.currentTestResults.accuracy,
+            test_duration: this.state.currentTestResults.duration,
+            wrong_topics: this.state.currentTestResults.wrongTopics,
+            test_mode: this.state.currentTestResults.mode,
+            database_type: this.state.currentTestResults.database,
+            // 新增：確保數據完整性
+            user_agent: navigator.userAgent,
+            page_url: window.location.href
+        };
+        
+        console.log('📤 提交問卷數據:', completeData);
+        
+        // 顯示提交中狀態
+        this.showSubmittingState();
+        
         // ✅ 修改後的fetch請求
         const response = await fetch(this.state.webhookUrl, {
             method: 'POST',
@@ -2678,21 +2679,22 @@ selectDatabase(type) {
         }
         
         console.log('✅ 解析成功:', result);
-                        
-                        // 標記問卷已完成
-                        localStorage.setItem('iPAS_survey_completed', 'true');
-                        this.state.surveyCompleted = true;
-                        
-                        // 關閉問卷modal
-                        this.closeSurveyModal();
-                        
-                        // 顯示測驗結果
-                        this.showEnhancedResult(completeData);
-                        
-                    } else {
-                        throw new Error(`HTTP ${response.status}: ${response.statusText}`);
-                    }
-                    
+        
+        // ✅ 檢查回應狀態
+        if (result.status === 'success') {
+            // 標記問卷已完成
+            localStorage.setItem('iPAS_survey_completed', 'true');
+            this.state.surveyCompleted = true;
+            
+            // 關閉問卷modal
+            this.closeSurveyModal();
+            
+            // 顯示增強結果
+            this.showEnhancedResult(completeData);
+        } else {
+            throw new Error(result.message || '提交失敗');
+        }
+        
     } catch (error) {
         console.error('❌ 問卷提交失敗:', error);
         

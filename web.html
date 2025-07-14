@@ -1380,7 +1380,7 @@
                 surveyCompleted: localStorage.getItem('iPAS_survey_completed') === 'true',
                 surveyData: null,
                 currentTestResults: null,
-                webhookUrl: 'https://nickleo9.zeabur.app/webhook/ipas-survey'
+                webhookUrl: 'https://nickleo9.zeabur.app/webhook-test/ipas-survey'
             },
             
             // DOM 元素
@@ -2629,6 +2629,9 @@ selectDatabase(type) {
                         wrong_topics: this.state.currentTestResults.wrongTopics,
                         test_mode: this.state.currentTestResults.mode,
                         database_type: this.state.currentTestResults.database
+                        // 新增：確保數據完整性
+                        user_agent: navigator.userAgent,
+                        page_url: window.location.href
                     };
                     
                     console.log('📤 提交問卷數據:', completeData);
@@ -2636,18 +2639,45 @@ selectDatabase(type) {
                     // 顯示提交中狀態
                     this.showSubmittingState();
                     
-                    // 提交到n8n
-                    const response = await fetch(this.state.webhookUrl, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json',
-                        },
-                        body: JSON.stringify(completeData)
-                    });
-                    
-                    if (response.ok) {
-                        const result = await response.json();
-                        console.log('✅ 問卷提交成功:', result);
+        // ✅ 修改後的fetch請求
+        const response = await fetch(this.state.webhookUrl, {
+            method: 'POST',
+            headers: {
+                'Content-Type': 'application/json',
+                'Accept': 'application/json'
+            },
+            body: JSON.stringify(completeData)
+        });
+        
+        console.log('📥 收到回應狀態:', response.status);
+        console.log('📥 回應標頭:', response.headers);
+        
+        // ✅ 改進的回應處理
+        if (!response.ok) {
+            throw new Error(`HTTP ${response.status}: ${response.statusText}`);
+        }
+        
+        // 檢查回應內容類型
+        const contentType = response.headers.get('content-type');
+        if (!contentType || !contentType.includes('application/json')) {
+            throw new Error(`期望JSON回應，但收到: ${contentType}`);
+        }
+        
+        // 獲取回應文字以進行調試
+        const responseText = await response.text();
+        console.log('📥 原始回應內容:', responseText);
+        
+        // 嘗試解析JSON
+        let result;
+        try {
+            result = JSON.parse(responseText);
+        } catch (parseError) {
+            console.error('❌ JSON解析失敗:', parseError);
+            console.error('❌ 原始回應:', responseText);
+            throw new Error(`無法解析伺服器回應: ${parseError.message}`);
+        }
+        
+        console.log('✅ 解析成功:', result);
                         
                         // 標記問卷已完成
                         localStorage.setItem('iPAS_survey_completed', 'true');
@@ -2663,11 +2693,27 @@ selectDatabase(type) {
                         throw new Error(`HTTP ${response.status}: ${response.statusText}`);
                     }
                     
-                } catch (error) {
-                    console.error('❌ 問卷提交失敗:', error);
-                    this.showAlert('問卷提交失敗，請檢查網路連線後重試', 'error');
-                }
-            },
+    } catch (error) {
+        console.error('❌ 問卷提交失敗:', error);
+        
+        // 提供詳細錯誤資訊
+        let errorMessage = '問卷提交失敗';
+        if (error.message.includes('Failed to fetch')) {
+            errorMessage = '網路連線問題，請檢查網路後重試';
+        } else if (error.message.includes('JSON')) {
+            errorMessage = '伺服器回應格式錯誤，請稍後重試';
+        } else {
+            errorMessage = error.message;
+        }
+        
+        this.showAlert(errorMessage, 'error');
+        
+        // 提供重試選項
+        if (confirm('是否要重試提交問卷？')) {
+            setTimeout(() => this.handleSurveySubmit(form), 1000);
+        }
+    }
+},
 
             // 收集問卷數據
             collectSurveyData(form) {

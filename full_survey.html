@@ -152,18 +152,49 @@
             box-shadow: 0 0 0 3px rgba(66, 133, 244, 0.1);
         }
         
-        .rating-container {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            gap: 10px;
-            padding: 15px;
+        .rating-section {
             background: white;
-            border-radius: 10px;
+            border-radius: 15px;
+            padding: 20px;
+            border: 2px solid #e0e0e0;
+        }
+        
+        .rating-labels {
+            display: flex;
+            justify-content: space-between;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+        
+        .rating-label-left {
+            color: #e74c3c;
+            font-size: 14px;
+        }
+        
+        .rating-label-right {
+            color: #27ae60;
+            font-size: 14px;
+        }
+        
+        .rating-scale {
+            display: flex;
+            justify-content: space-between;
+            gap: 5px;
+            margin-bottom: 15px;
+            overflow-x: auto;
+            padding: 10px 0;
+        }
+        
+        .rating-hint {
+            text-align: center;
+            padding-top: 10px;
+            border-top: 1px solid #f0f0f0;
         }
         
         .rating-item {
             position: relative;
+            flex-shrink: 0;
+            min-width: 35px;
         }
         
         .rating-item input {
@@ -172,21 +203,29 @@
         
         .rating-item label {
             display: block;
-            width: 40px;
-            height: 40px;
+            width: 35px;
+            height: 35px;
             border: 2px solid #e0e0e0;
             border-radius: 50%;
             text-align: center;
-            line-height: 36px;
+            line-height: 31px;
             cursor: pointer;
             transition: all 0.3s ease;
             font-weight: 600;
+            font-size: 14px;
+            background: white;
         }
         
         .rating-item input:checked + label {
             background: #4285f4;
             color: white;
             border-color: #4285f4;
+            transform: scale(1.1);
+        }
+        
+        .rating-item label:hover {
+            border-color: #4285f4;
+            background: #f0f4ff;
         }
         
         .checkbox-grid {
@@ -250,8 +289,32 @@
                 grid-template-columns: 1fr;
             }
             
-            .rating-container {
+            .rating-scale {
+                gap: 3px;
+                justify-content: center;
                 flex-wrap: wrap;
+            }
+            
+            .rating-item {
+                min-width: 30px;
+            }
+            
+            .rating-item label {
+                width: 30px;
+                height: 30px;
+                line-height: 26px;
+                font-size: 12px;
+            }
+            
+            .rating-labels {
+                font-size: 12px;
+                text-align: center;
+                flex-direction: column;
+                gap: 5px;
+            }
+            
+            .rating-hint {
+                font-size: 11px;
             }
         }
     </style>
@@ -356,9 +419,12 @@
                     <!-- 問題4：滿意度評分 -->
                     <div class="question-card">
                         <div class="question-title">4. 對這次測驗體驗的整體滿意度？<span class="required-indicator">*</span></div>
-                        <div class="rating-container flex-wrap">
-                            <span class="text-muted small">非常不滿意</span>
-                            <div class="d-flex gap-1">
+                        <div class="rating-section">
+                            <div class="rating-labels">
+                                <span class="rating-label-left">😞 非常不滿意</span>
+                                <span class="rating-label-right">😊 非常滿意</span>
+                            </div>
+                            <div class="rating-scale">
                                 <div class="rating-item"><input type="radio" name="satisfaction" id="sat1" value="1" required><label for="sat1">1</label></div>
                                 <div class="rating-item"><input type="radio" name="satisfaction" id="sat2" value="2" required><label for="sat2">2</label></div>
                                 <div class="rating-item"><input type="radio" name="satisfaction" id="sat3" value="3" required><label for="sat3">3</label></div>
@@ -370,7 +436,9 @@
                                 <div class="rating-item"><input type="radio" name="satisfaction" id="sat9" value="9" required><label for="sat9">9</label></div>
                                 <div class="rating-item"><input type="radio" name="satisfaction" id="sat10" value="10" required><label for="sat10">10</label></div>
                             </div>
-                            <span class="text-muted small">非常滿意</span>
+                            <div class="rating-hint">
+                                <small class="text-muted">1 = 非常不滿意　｜　10 = 非常滿意</small>
+                            </div>
                         </div>
                     </div>
 
@@ -400,7 +468,7 @@
                         <div class="question-title">6. 什麼情況下您會考慮使用付費功能？<span class="required-indicator">*</span></div>
                         <div class="options-container">
                             <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment1" value="🧠 需要AI深度解析幫助理解" required><label class="survey-form-check-label" for="payment1">🧠 需要AI深度解析幫助理解</label></div>
-                            <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="payment" id="payment2" value="⏰ 考試逼近需要高效衝刺工具" required><label class="survey-form-check-label" for="payment2">⏰ 考試逼近需要高效衝刺工具</label></div>
+                            <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment2" value="⏰ 考試逼近需要高效衝刺工具" required><label class="survey-form-check-label" for="payment2">⏰ 考試逼近需要高效衝刺工具</label></div>
                             <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment3" value="📄 想要完整學習資料PDF下載" required><label class="survey-form-check-label" for="payment3">📄 想要完整學習資料PDF下載</label></div>
                             <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment4" value="👥 希望加入專屬學習社群" required><label class="survey-form-check-label" for="payment4">👥 希望加入專屬學習社群</label></div>
                             <div class="survey-form-check"><input class="survey-form-check-input" type="radio" name="payment_scenario" id="payment5" value="🎯 免費功能不夠，需要完整體驗" required><label class="survey-form-check-label" for="payment5">🎯 免費功能不夠，需要完整體驗</label></div>
@@ -450,9 +518,12 @@
                     <!-- 問題9：NPS推薦分數 -->
                     <div class="question-card">
                         <div class="question-title">9. 您會推薦這個學習系統給朋友或同事嗎？<span class="required-indicator">*</span></div>
-                        <div class="rating-container flex-wrap">
-                            <span class="text-muted small">完全不會推薦</span>
-                            <div class="d-flex gap-1">
+                        <div class="rating-section">
+                            <div class="rating-labels">
+                                <span class="rating-label-left">😞 完全不會推薦</span>
+                                <span class="rating-label-right">😍 非常願意推薦</span>
+                            </div>
+                            <div class="rating-scale">
                                 <div class="rating-item"><input type="radio" name="nps_score" id="nps0" value="0" required><label for="nps0">0</label></div>
                                 <div class="rating-item"><input type="radio" name="nps_score" id="nps1" value="1" required><label for="nps1">1</label></div>
                                 <div class="rating-item"><input type="radio" name="nps_score" id="nps2" value="2" required><label for="nps2">2</label></div>
@@ -465,7 +536,9 @@
                                 <div class="rating-item"><input type="radio" name="nps_score" id="nps9" value="9" required><label for="nps9">9</label></div>
                                 <div class="rating-item"><input type="radio" name="nps_score" id="nps10" value="10" required><label for="nps10">10</label></div>
                             </div>
-                            <span class="text-muted small">非常願意推薦</span>
+                            <div class="rating-hint">
+                                <small class="text-muted">0 = 完全不會推薦　｜　10 = 非常願意推薦</small>
+                            </div>
                         </div>
                     </div>
 

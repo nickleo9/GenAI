@@ -2887,6 +2887,32 @@
                 const totalAnswered = correctCount + incorrectCount;
                 const accuracy = totalAnswered > 0 ? (correctCount / totalAnswered) * 100 : 0;
                 
+                // 分析各題庫統計
+                const databaseStats = {};
+                (this.state.userData.history || []).forEach(entry => {
+                    const db = entry.database || '未知';
+                    if (!databaseStats[db]) {
+                        databaseStats[db] = { correct: 0, total: 0 };
+                    }
+                    databaseStats[db].total += 1;
+                    if (entry.is_correct) {
+                        databaseStats[db].correct += 1;
+                    }
+                });
+                
+                // 主題分析
+                const topicStats = {};
+                (this.state.userData.history || []).forEach(entry => {
+                    const topic = entry.topic || '未分類';
+                    if (!topicStats[topic]) {
+                        topicStats[topic] = { correct: 0, total: 0 };
+                    }
+                    topicStats[topic].total += 1;
+                    if (entry.is_correct) {
+                        topicStats[topic].correct += 1;
+                    }
+                });
+                
                 let statsHTML = `
                     <div class="row mb-4">
                         <div class="col-md-6">
@@ -2928,13 +2954,113 @@
                         </div>
                     </div>
                     
-                    <div class="alert alert-info">
-                        <h6 class="alert-heading">🎯 學習建議</h6>
-                        <p class="mb-0">
-                            ${accuracy >= 80 ? '表現優秀！繼續保持，可以挑戰更困難的題目。' : 
-                              accuracy >= 70 ? '接近通過標準，建議加強錯題複習。' : 
-                              '需要加強基礎概念，建議系統性複習各主題。'}
-                        </p>
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">各題庫表現</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>題庫</th>
+                                            <th>正確率</th>
+                                            <th>正確/總數</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+                
+                const databaseNames = {
+                    'generative-ai': '生成式AI認證',
+                    'ipas': 'iPAS AI應用規劃師'
+                };
+                
+                Object.keys(databaseStats).forEach(db => {
+                    const stats = databaseStats[db];
+                    const dbAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+                    const dbName = databaseNames[db] || db;
+                    
+                    statsHTML += `
+                        <tr>
+                            <td>${dbName}</td>
+                            <td>
+                                <div class="progress" style="height: 15px;">
+                                    <div class="progress-bar ${dbAccuracy < 60 ? 'bg-danger' : dbAccuracy < 80 ? 'bg-warning' : 'bg-success'}" 
+                                         style="width: ${dbAccuracy}%;"></div>
+                                </div>
+                                ${dbAccuracy.toFixed(1)}%
+                            </td>
+                            <td>${stats.correct}/${stats.total}</td>
+                        </tr>
+                    `;
+                });
+                
+                if (Object.keys(databaseStats).length === 0) {
+                    statsHTML += '<tr><td colspan="3" class="text-center">尚未有練習記錄</td></tr>';
+                }
+                
+                statsHTML += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">主題分析</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>主題</th>
+                                            <th>正確率</th>
+                                            <th>建議</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+                
+                Object.keys(topicStats).forEach(topic => {
+                    const stats = topicStats[topic];
+                    const topicAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+                    let suggestion = '';
+                    
+                    if (topicAccuracy < 60) {
+                        suggestion = '🔴 重點加強';
+                    } else if (topicAccuracy < 80) {
+                        suggestion = '🟡 持續練習';
+                    } else {
+                        suggestion = '🟢 表現良好';
+                    }
+                    
+                    statsHTML += `
+                        <tr>
+                            <td>${topic}</td>
+                            <td>
+                                <div class="progress" style="height: 15px;">
+                                    <div class="progress-bar ${topicAccuracy < 60 ? 'bg-danger' : topicAccuracy < 80 ? 'bg-warning' : 'bg-success'}" 
+                                         style="width: ${topicAccuracy}%;"></div>
+                                </div>
+                                ${topicAccuracy.toFixed(1)}%
+                            </td>
+                            <td>${suggestion}</td>
+                        </tr>
+                    `;
+                });
+                
+                if (Object.keys(topicStats).length === 0) {
+                    statsHTML += '<tr><td colspan="3" class="text-center">尚未有練習記錄</td></tr>';
+                }
+                
+                statsHTML += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
                     </div>
                 `;
                 

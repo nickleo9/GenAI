@@ -3069,17 +3069,137 @@ async handleSurveySubmit(form) {
             },
             
             // 更新按鈕狀態
-            updateButtonStates() {
-                const hasAnswered = this.state.currentQuestionIndex in this.state.userAnswers;
-                const isFirst = this.state.currentQuestionIndex === 0;
-                const isLast = this.state.currentQuestionIndex === this.state.questions.length - 1;
-                
-                this.elements.prevBtn.disabled = isFirst || this.state.currentMode === 'exam';
-                this.elements.submitBtn.disabled = hasAnswered;
-                this.elements.nextBtn.disabled = !hasAnswered || isLast;
-                this.elements.finishBtn.disabled = !hasAnswered && !isLast;
-                this.elements.explanationBtn.disabled = !hasAnswered;
-            },
+// 🎯 改善的 updateButtonStates 函數
+updateButtonStates() {
+    const hasAnswered = this.state.currentQuestionIndex in this.state.userAnswers;
+    const isFirst = this.state.currentQuestionIndex === 0;
+    const isLast = this.state.currentQuestionIndex === this.state.questions.length - 1;
+    
+    // 計算完成按鈕啟用邏輯
+    const finishEnabled = this.calculateFinishButtonState();
+    
+    this.elements.prevBtn.disabled = isFirst || this.state.currentMode === 'exam';
+    this.elements.submitBtn.disabled = hasAnswered;
+    this.elements.nextBtn.disabled = !hasAnswered || isLast;
+    this.elements.finishBtn.disabled = !finishEnabled; // 🎯 新邏輯
+    this.elements.explanationBtn.disabled = !hasAnswered;
+    
+    // 🎯 更新完成按鈕的提示文字
+    this.updateFinishButtonText();
+},
+
+// 🎯 新增：計算完成按鈕狀態的專門函數
+calculateFinishButtonState() {
+    const totalQuestions = this.state.questions.length;
+    const answeredCount = Object.keys(this.state.userAnswers).length;
+    const isLastQuestion = this.state.currentQuestionIndex === totalQuestions - 1;
+    const hasAnsweredCurrent = this.state.currentQuestionIndex in this.state.userAnswers;
+    
+    switch (this.state.currentMode) {
+        case 'exam': // 模擬考試模式
+            // 必須回答所有題目，或者時間到了
+            return answeredCount === totalQuestions || !this.state.isTimerRunning;
+            
+        case 'practice': // 練習模式
+            // 至少回答50%的題目
+            const practiceMinimum = Math.ceil(totalQuestions * 0.5);
+            return answeredCount >= practiceMinimum;
+            
+        case 'review': // 複習模式  
+            // 至少回答30%的題目 (複習比較寬鬆)
+            const reviewMinimum = Math.ceil(totalQuestions * 0.3);
+            return answeredCount >= reviewMinimum;
+            
+        default:
+            return false;
+    }
+},
+
+// 🎯 新增：更新完成按鈕文字和提示
+updateFinishButtonText() {
+    const totalQuestions = this.state.questions.length;
+    const answeredCount = Object.keys(this.state.userAnswers).length;
+    const finishBtn = this.elements.finishBtn;
+    
+    if (finishBtn.disabled) {
+        let requiredCount;
+        let modeText;
+        
+        switch (this.state.currentMode) {
+            case 'exam':
+                requiredCount = totalQuestions;
+                modeText = '模擬考試需回答所有題目';
+                break;
+            case 'practice':
+                requiredCount = Math.ceil(totalQuestions * 0.5);
+                modeText = '練習模式需回答至少50%';
+                break;
+            case 'review':
+                requiredCount = Math.ceil(totalQuestions * 0.3);
+                modeText = '複習模式需回答至少30%';
+                break;
+            default:
+                requiredCount = totalQuestions;
+                modeText = '需回答更多題目';
+        }
+        
+        finishBtn.title = `${modeText} (${answeredCount}/${requiredCount})`;
+        
+        // ✅ 修正：保持原本的按鈕格式和icon
+        finishBtn.innerHTML = `
+            <i class="fas fa-flag-checkered me-1"></i> 
+            <span class="d-none d-sm-inline">完成 (${answeredCount}/${requiredCount})</span>
+        `;
+    } else {
+        finishBtn.title = '可以完成測驗了！';
+        
+        // ✅ 修正：保持原本的按鈕格式和icon
+        finishBtn.innerHTML = `
+            <i class="fas fa-flag-checkered me-1"></i> 
+            <span class="d-none d-sm-inline">完成測驗</span>
+        `;
+    }
+},
+
+// 🎯 改善的 finishQuiz 函數 - 增加確認對話框
+finishQuiz() {
+    const totalQuestions = this.state.questions.length;
+    const answeredCount = Object.keys(this.state.userAnswers).length;
+    const unansweredCount = totalQuestions - answeredCount;
+    
+    // 🎯 如果還有未回答的題目，顯示確認對話框
+    if (unansweredCount > 0) {
+        const confirmMessage = `
+還有 ${unansweredCount} 題未回答，確定要完成測驗嗎？
+
+已回答：${answeredCount}/${totalQuestions} 題
+未回答的題目將視為答錯。
+
+是否確定要完成測驗？
+        `.trim();
+        
+        if (!confirm(confirmMessage)) {
+            return; // 用戶取消，不完成測驗
+        }
+    }
+    
+    // 原本的完成邏輯
+    this.stopTimer();
+    this.state.currentTestResults = this.calculateTestResults();
+    this.state.isQuizActive = false;
+    this.unlockInterface();
+    
+    // 檢查是否為首次測驗
+    const isFirstTime = !this.state.surveyCompleted;
+    
+    if (isFirstTime) {
+        console.log('🆕 首次測驗，顯示強制完整問卷');
+        this.showMandatorySurvey();
+    } else {
+        console.log('🔄 非首次測驗，顯示選擇');
+        this.showResultChoice();
+    }
+},
             
             // 更新統計顯示
             updateStats() {

@@ -3058,5 +3058,175 @@
         "explanation": "2024年iPAS明確強化AI工具在生活、產業應用題型，不再僅侷限理論與歷史。",
         "number": 190,
         "date": "2025-07-02"
+    },
+    {
+        "question": "如果你是一位台灣的醫療影像診斷師，需要利用AI輔助診斷肺部X光，建議你首選哪一類型的AI技術？",
+        "options": [
+            "生成式深度學習模型",
+            "強化學習系統",
+            "電腦視覺模型",
+            "推薦系統AI"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "電腦視覺",
+        "concept": "醫療影像分析",
+        "explanation": "電腦視覺模型如CNN能自動解析醫療影像，擅長辨識X光結果，協助醫生快速診斷。",
+        "number": 191,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "2024年，哪一項新興生成式AI技術協助台灣製造業自動化生產流程優化？",
+        "options": [
+            "推理型AI",
+            "生成式AI流程設計工具",
+            "語音合成AI",
+            "圖像風格轉換器"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產業自動化",
+        "concept": "流程自動化",
+        "explanation": "生成式AI流程設計工具可根據生產需求自動生成最佳化流程，大幅提升產線效率。",
+        "number": 192,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "iPAS AI應用規劃師認證考試，強調哪項能力？",
+        "options": [
+            "AI硬體規劃",
+            "AI模型訓練",
+            "AI應用場景規劃與實踐",
+            "專利撰寫"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "iPAS考試內容",
+        "subtopic": "職能與能力",
+        "concept": "應用規劃",
+        "explanation": "iPAS認證強調將AI技術落地於實際場景，因此測驗重點在應用規劃與實踐能力。",
+        "number": 193,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "2023年，哪個知名公司推出了主要針對商務簡報自動產生內容的生成式AI工具？",
+        "options": [
+            "Salesforce",
+            "Google",
+            "OpenAI",
+            "Microsoft"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "最新AI工具",
+        "subtopic": "辦公自動化",
+        "concept": "內容自動生成",
+        "explanation": "Microsoft的Copilot能協助PowerPoint、自動生成商務簡報內容，已在企業界大量應用。",
+        "number": 194,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "教師在台灣推動AI素養教育時，常用哪種類型的生成式AI來協助設計互動教材？",
+        "options": [
+            "語言生成模型",
+            "圖像辨識系統",
+            "機器翻譯工具",
+            "行為預測AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育科技",
+        "concept": "AI教材生成",
+        "explanation": "語言生成模型（如ChatGPT）可自動產生教學內容、測驗題目，協助教師設計互動式課程。",
+        "number": 195,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "2024年，哪個產業在全球導入生成式AI以虛擬設計和數位分身應用取得重大突破？",
+        "options": [
+            "時尚設計",
+            "半導體製造",
+            "農業",
+            "零售行業"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI各領域應用",
+        "subtopic": "時尚與設計",
+        "concept": "數位分身",
+        "explanation": "時尚設計產業運用生成式AI做服裝虛擬設計、個人化數位分身，提高設計創新與效率。",
+        "number": 196,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "2022年生成式AI在繪畫競賽中首次戰勝人類藝術家，引發關於什麼議題的討論？",
+        "options": [
+            "模型壓縮",
+            "版權與倫理",
+            "數據標註",
+            "語音辨識"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "產權與合規",
+        "concept": "AI作品版權",
+        "explanation": "生成式AI作品獲獎後，引發社會對於AI創作所有權與版權問題的熱烈討論與法律探討。",
+        "number": 197,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "2024年，台灣某飯店業者希望提升客服AI的自然對話體驗，建議使用何種AI模型？",
+        "options": [
+            "圖像生成型",
+            "強化學習型",
+            "文生文大型語言模型",
+            "資料壓縮模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "自然語言處理",
+        "concept": "語言生成模型",
+        "explanation": "大型語言模型（如ChatGPT）擅長理解並產生自然語言，提供類人對話體驗，適合用於客服。",
+        "number": 198,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "哪一個是2024年AI科技對永續發展作出貢獻的最新應用實例？",
+        "options": [
+            "垃圾分類影像辨識系統",
+            "即時語音翻譯耳機",
+            "汽車自動駕駛系統",
+            "家庭智能助理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI應用與永續發展",
+        "subtopic": "環保科技",
+        "concept": "環境AI",
+        "explanation": "垃圾分類影像辨識系統能協助城市高效資源回收與分類，有助於推動永續發展目標SDGs。",
+        "number": 199,
+        "date": "2025-07-25"
+    },
+    {
+        "question": "關於生成式AI發展歷程，下列何者為最早實現文字自動生成的主要突破？",
+        "options": [
+            "GPT-2問世",
+            "GANs提出",
+            "Transformer架構發表",
+            "DeepDream圖片生成"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI歷史",
+        "subtopic": "自然語言生成",
+        "concept": "Transformer模型",
+        "explanation": "Transformer於2017年提出，其架構徹底革新了文字自動生成技術，是生成式AI歷史上的突破。",
+        "number": 200,
+        "date": "2025-07-25"
     }
 ]

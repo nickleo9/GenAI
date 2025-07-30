@@ -3228,5 +3228,175 @@
         "explanation": "Transformer於2017年提出，其架構徹底革新了文字自動生成技術，是生成式AI歷史上的突破。",
         "number": 200,
         "date": "2025-07-25"
+    },
+    {
+        "question": "如果你是台灣一家智慧醫院的資訊主管，希望利用生成式AI優化醫療服務，以下哪個AI工具組合最適合用來協助病歷摘要、語音轉錄與智能問答？",
+        "options": [
+            "GPT-4 + Whisper + Gemini",
+            "Gemini + Stable Diffusion + Midjourney",
+            "GPT-5 + Copilot + DALL-E 3",
+            "Claude 3 + Viso Suite + Sora"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI在各領域的應用",
+        "subtopic": "醫療AI",
+        "concept": "任務導向AI工具選擇",
+        "explanation": "GPT-4擅長文字摘要，Whisper專精於語音轉文字，Gemini能協助智能問答，三者合作可有效提升醫療智能化服務。",
+        "number": 201,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "2025年夏天即將發布的OpenAI GPT-5，據稱會在哪些能力面提升最多？",
+        "options": [
+            "主要提升圖像解析與生成",
+            "重點提升推理能力、記憶與適應性",
+            "專注於遊戲AI決策優化",
+            "強化數據儲存與加密"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "大型語言模型",
+        "concept": "模型能力升級",
+        "explanation": "根據2025新知，GPT-5將聚焦於邏輯推理、記憶結構與適應多場景等面向，比起僅限於圖像或遊戲決策更具突破性。",
+        "number": 202,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "如果你是n8n使用者，想要把AI文本生成自動化並結合Google Sheets記錄資料，下列哪一組工作流程設定最正確？",
+        "options": [
+            "n8n + Stable Diffusion + Google Sheets",
+            "n8n + Gemini API + Google Drive",
+            "n8n + OpenAI API + Google Sheets",
+            "n8n + Midjourney + AppSheet"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自動化與串接",
+        "concept": "AI與自動化平台集成",
+        "explanation": "n8n可串接OpenAI API做文本生成，再自動寫入Google Sheets，是目前最常見且實用的資料自動化組合。",
+        "number": 203,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "關於iPAS AI應用規劃師考試，下列哪一項說法正確？",
+        "options": [
+            "全部題型皆為專業性問答題",
+            "重點涵蓋AI工具選擇、產業應用、規劃實務與法規倫理",
+            "僅測驗圖像生成AI相關知識",
+            "只考AI運算理論"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "iPAS認證",
+        "subtopic": "考試範圍",
+        "concept": "跨域應用能力",
+        "explanation": "iPAS不僅考察理論，更強調工具應用、產規劃流程與產業實作、AI倫理與法規，屬於跨領域整合型考試。",
+        "number": 204,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "假設你是智慧零售業者，要實現AI驅動的個人化行銷，生活化應用下可以使用哪些2025最新AI組合？",
+        "options": [
+            "Claude 3 生成圖片給客戶",
+            "利用Gemini做客戶旅程預測+ChatGPT生成溝通內容",
+            "僅用Stable Diffusion設計包裝",
+            "Midjourney輔助定價策略"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI在各領域的應用",
+        "subtopic": "智慧零售",
+        "concept": "AI行銷自動化",
+        "explanation": "Gemini具預測能力，ChatGPT則能產生溝通文字，結合可針對不同使用者做個人化行銷，契合零售AI應用需求。",
+        "number": 205,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "身為台灣工程師，若要研發下一代節能AI運算硬體，適合參考哪些全球趨勢？",
+        "options": [
+            "優先聚焦於AI量子運算生成動畫",
+            "結合AI資料中心與核能、綠能減碳方案",
+            "關注語音AI家電自動化",
+            "只考慮超導體運算速度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI科技台灣與全球發展",
+        "subtopic": "綠色AI解決方案",
+        "concept": "AI運算能源挑戰",
+        "explanation": "2025國際大廠如微軟、Google都致力AI資料中心與清潔能源結合，助力AI運算邁向永續，是台灣工程師研發方向。",
+        "number": 206,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "如果家庭主婦／夫計劃規劃暑期親子旅遊，下列哪個AI工具最能協助自動搜尋、比價並安排行程？",
+        "options": [
+            "Midjourney",
+            "DALL-E 3",
+            "Trip Planner AI",
+            "ChatGPT Code Interpreter"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生活智能",
+        "concept": "AI自動化規劃應用",
+        "explanation": "專門的旅遊規劃AI可自動搜尋比價並規劃行程，相較於僅能做圖片生成的工具更適合實際生活情境。",
+        "number": 207,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "下列哪個提示詞更適合請生成式AI協助產出『醫療產業週報』內容？",
+        "options": [
+            "請搜尋最新AI技術名詞",
+            "生成圖像醫療案例",
+            "總結2025年7月醫療AI產業新聞並條列三點重點",
+            "列舉AI繪圖工具"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "提示工程",
+        "subtopic": "文本生成",
+        "concept": "精確提示詞設計",
+        "explanation": "有效的提示詞需明確告知任務、範圍以及預期產出型態，才能讓AI生成對應產業的實用內容。",
+        "number": 208,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "App Script在企業流程自動化中最適合做什麼？",
+        "options": [
+            "建立企業官網動畫",
+            "自動批次整理Google Sheets資料",
+            "產生高畫質圖像素材",
+            "專注聊天機器人劇本撰寫"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與自動化",
+        "subtopic": "程式腳本應用",
+        "concept": "企業資料處理",
+        "explanation": "App Script長於Google服務自動化，協助企業批次處理雲端文件與數據流，極大提升管理效率。",
+        "number": 209,
+        "date": "2025-07-30"
+    },
+    {
+        "question": "何者關於生成式AI技術源流的歷史描述為真？",
+        "options": [
+            "生成對抗網路（GAN）技術於2014年正式提出",
+            "大型語言模型市場最早起源於1990年代",
+            "BERT是首個生成式AI模型",
+            "Stable Diffusion是第一個非結構文本生成工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "技術發展史",
+        "concept": "生成式AI關鍵技術里程碑",
+        "explanation": "GAN由Ian Goodfellow於2014年發明，是生成式AI發展的重要歷史事件，而BERT為預訓練語言模型，並非首創生成式架構。",
+        "number": 210,
+        "date": "2025-07-30"
     }
 ]

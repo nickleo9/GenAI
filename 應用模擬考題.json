@@ -3398,5 +3398,175 @@
         "explanation": "GAN由Ian Goodfellow於2014年發明，是生成式AI發展的重要歷史事件，而BERT為預訓練語言模型，並非首創生成式架構。",
         "number": 210,
         "date": "2025-07-30"
+    },
+    {
+        "question": "若您為台灣中小型製造業老闆，想快速導入AI來優化產線生產排程，哪種AI工具最適合以無需程式碼(N0-Code)方式實現？",
+        "options": [
+            "AI自動排程平台 (如Microsoft Power Automate AI Builder)",
+            "純手動EXCEL排程",
+            "區塊鏈供應鏈監控",
+            "大數據可視化儀表板"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產線自動化",
+        "concept": "No-Code平台整合",
+        "explanation": "無程式碼AI自動排程平台能讓非工程師快速上手，直接結合生產設備資料進行智慧排程決策。",
+        "number": 211,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "全球AI發展史上，下列何者為標誌生成式AI進入大眾應用與創新時代的里程碑？",
+        "options": [
+            "ImageNet大賽啟動(2012)",
+            "深藍電腦擊敗西洋棋世界冠軍(1997)",
+            "ChatGPT推出(2022)",
+            "AlphaGo打敗圍棋世界冠軍(2016)"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "AI歷史里程碑",
+        "concept": "生成式AI突破",
+        "explanation": "ChatGPT的問世掀起了生成式AI全面融入各領域的風潮，大幅擴展AI應用界限。",
+        "number": 212,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "2025年台灣教育領域教師若要利用AI協助設計個別化學習內容，以下何種提示詞最可能觸發最佳成果？",
+        "options": [
+            "請產生一般化數學題庫內容",
+            "根據學生A的歷年成績與興趣，推薦三種個人化學習路徑並生成相應教材",
+            "列舉所有台灣高中數學課本主題",
+            "告訴我目前有哪些AI相關教材"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育科技",
+        "concept": "提示工程",
+        "explanation": "越具體帶有個人化資料的提示詞，越能誘發生成式AI產生適切的專屬內容。",
+        "number": 213,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "在2025年AI最新應用中，家庭主婦/夫若要規劃跨國旅遊行程，下列哪種AI工具最適合自動整合行程、預訂與翻譯？",
+        "options": [
+            "n8n自動化流程工具整合AI機票搜尋、飯店預訂與翻譯API",
+            "手動Word行程規劃",
+            "簡單Email溝通訂購酒店",
+            "純依靠Google地圖手動查資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生活應用",
+        "concept": "自動化流程",
+        "explanation": "n8n結合多種線上AI服務，自動整合並優化跨國旅遊規劃流程。",
+        "number": 214,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "假設您為台灣企業AI應用規劃師，2025年要執行智慧製造專案，以下哪種提示詞較適合做為生成式AI專案規劃輸入？",
+        "options": [
+            "列出台灣製造業AI導入常見困難",
+            "請根據我們廠內的設備維護歷史資料，自動生成減少產線停機建議及預測性維護方案",
+            "介紹台灣智慧製造產業現況",
+            "搜尋製造業新聞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "智慧製造",
+        "concept": "提示工程應用",
+        "explanation": "具體提供廠內實際數據，才能充分發揮AI自動產生決策方案的優勢。",
+        "number": 215,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "你是一名銀行數據分析師，想利用生成式AI提升客戶理財諮詢自動化，下列哪種做法最能善用AI？",
+        "options": [
+            "開發自動生成理財建議書的AI助手並結合客戶歷史行為分析",
+            "請同仁手動彙整理財建議",
+            "以電話逐一聯繫客戶做諮詢",
+            "僅在官網公布單一投資產品資訊"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "金融科技",
+        "concept": "智慧諮詢",
+        "explanation": "AI可根據數據快速生成專屬理財建議，提升效率與個人化程度。",
+        "number": 216,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "2025年全球哪些產業因生成式AI而發生最明顯的流程自動化革命？",
+        "options": [
+            "醫療、零售、製造、金融",
+            "交通、餐飲、農業、演藝",
+            "體育、觀光、建築、運輸",
+            "漁業、林業、工藝、陶瓷"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI產業應用",
+        "subtopic": "跨產業影響",
+        "concept": "流程自動化",
+        "explanation": "醫療、零售、製造、金融這些產業最早導入生成式AI自動化，極大提升效率並創造新商業模式。",
+        "number": 217,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "以下關於2025年AGI（通用人工智慧）在台灣與全球的發展趨勢，何者正確？",
+        "options": [
+            "全球業界普遍認定AGI已經完全實現",
+            "產官學界對AGI實現仍保持觀察與審慎樂觀態度，尚處初步階段",
+            "台灣禁止任何AGI技術研發",
+            "AGI不可應用於任何產業場域"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與趨勢",
+        "subtopic": "AGI應用",
+        "concept": "未來趨勢",
+        "explanation": "2025年產官學界普遍認為正在積極研發AGI，但距離完全實現仍需時間。",
+        "number": 218,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "下列哪一項有關於n8n這類AI自動化工具的應用描述為'錯誤'？",
+        "options": [
+            "能自動整合多種第三方API數據並執行流程",
+            "完全不需自己設計任何邏輯或步驟",
+            "可用於自動化重複日常工作",
+            "用拖拉方式串接常見AI服務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自動化應用",
+        "concept": "流程自動化原理",
+        "explanation": "n8n雖強調無程式碼，但仍須設計流程步驟，不能完全不用規劃邏輯。",
+        "number": 219,
+        "date": "2025-07-31"
+    },
+    {
+        "question": "關於iPAS AI應用規劃師認證，以下哪一項描述最為'正確'？",
+        "options": [
+            "iPAS僅限國外企業報考",
+            "認證內容涵蓋AI技術理論、產業應用、法規倫理及專案規劃",
+            "iPAS主力為電腦硬體維修人員設計",
+            "認證僅針對傳統工廠自動化內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "iPAS認證",
+        "subtopic": "考試內容",
+        "concept": "國際AI認證",
+        "explanation": "iPAS認證包括AI理論、跨域應用、合規風險與專案執行，非只針對單一職類或產業。",
+        "number": 220,
+        "date": "2025-07-31"
     }
 ]

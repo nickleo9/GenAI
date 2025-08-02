@@ -3738,5 +3738,175 @@
         "explanation": "只有前三個提示詞明確要求生成具體操作性內容，第四個僅為片段詩句無法構成具體流程。",
         "number": 230,
         "date": "2025-08-01"
+    },
+    {
+        "question": "如果你是一位台灣的健康管理顧問，想幫助長輩自動追蹤血糖和睡眠狀態，利用AI提升生活品質，適合結合哪種生成式AI技術與常用裝置？",
+        "options": [
+            "生成式AI與智慧手錶結合，建立個人化健康報告",
+            "只用NLP模型分析書面問卷",
+            "依賴CNN處理醫院X光影像",
+            "僅用生成式AI協助安排飲食菜單"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "健康照護",
+        "concept": "個人化建議與自動化數據分析",
+        "explanation": "生成式AI可根據智慧手錶收集到的健康數據自動產生分析報告與建議，有效實現個人化健康管理。",
+        "number": 231,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "2025年最廣受中小企業歡迎的AI自動化工具組合，下列哪一組最能快速無程式設計地上線聊天機器人與行銷活動？",
+        "options": [
+            "n8n + GPT-5 + Notion API",
+            "PyTorch + Flask + SQL",
+            "傳統CRM系統 + FTP",
+            "TensorFlow +手寫API整合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI工具",
+        "subtopic": "No Code/Low Code應用",
+        "concept": "平台整合與自動化流程",
+        "explanation": "n8n等No Code平台搭配生成式AI模型（如GPT-5）及外部API，讓企業快速自動化部署聊天機器人與行銷活動。",
+        "number": 232,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "家庭主婦/夫若要設計智慧家庭旅遊計劃，並希望自動整合交通、餐廳與親子景點資訊，建議怎麼規劃生成式AI的應用？",
+        "options": [
+            "利用AI行程規劃工具輸入成員需求，產生個性化行程",
+            "直接下載現成行程表，不做調整",
+            "手動搜尋各網站資訊並人工彙整",
+            "僅用天氣App預測旅遊天氣"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "日常生活應用",
+        "concept": "智慧推薦與自動化規劃",
+        "explanation": "利用生成式AI行程規劃工具，可根據家庭成員需求自動彙整資訊與路線，節省大量人工查找時間。",
+        "number": 233,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "如果你是中小企業的人資專員，2025想結合AI工具提升招募效率，以下哪個組合最能達到“主動篩選”與“推薦人才”需求？",
+        "options": [
+            "ChatGPT模型結合人才庫API進行履歷篩選與智能推薦",
+            "單獨用Outlook處理郵件",
+            "傳統Excel人工比對篩選",
+            "只用人力資源管理系統(無AI模組)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "生成式AI與HR應用",
+        "concept": "智能推薦系統",
+        "explanation": "生成式AI可協助主動分析履歷，並根據職缺條件自動推薦最合適人才，顯著提升招募效率。",
+        "number": 234,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "Vibe Coding 是一種結合生成式AI自動輔助程式開發的方式，作為2025年AI工程師，若要快速推動一個零售自動結帳專案，第一步最適合的提示詞作法為？",
+        "options": [
+            "描述希望的顧客互動流程與輸入資料特性",
+            "僅輸入產品庫存清單",
+            "只給AI一行程式碼讓其自動完善",
+            "直接複製現成open source架構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "軟體開發",
+        "concept": "提示詞工程（Prompt Engineering）",
+        "explanation": "描述明確的需求和資料特性，讓AI模型能依照預期自動產生有效的解決方案。",
+        "number": 235,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "以下哪一個生成式AI技術或模型最適合「醫療影像」自動檢測腫瘤異常、提供輔助診斷？",
+        "options": [
+            "CNN（卷積神經網路）",
+            "NLP自然語言處理",
+            "GAN生成對抗網路",
+            "RNN遞迴神經網路"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "醫療應用",
+        "concept": "電腦視覺",
+        "explanation": "CNN 特別擅長從圖像中辨識模式，因此被廣泛應用於醫療影像自動分析。",
+        "number": 236,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "2025年台灣製造業導入AI的最佳策略為何？",
+        "options": [
+            "從數據蒐集與標註開始，再逐步建構專屬AI模型",
+            "直接購買國外成品系統，不做本地調整",
+            "完全不重視員工AI素養提升",
+            "跳過資料整理，直接部署AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "製造業",
+        "concept": "數據治理與客製化模型建構",
+        "explanation": "正確導入AI要由數據整理與客製化訓練開始，才能充分發揮產業優勢。",
+        "number": 237,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "有關生成式AI提示詞寫法，哪一組較能讓AI生成完整且正確的政策報告書？",
+        "options": [
+            "以\"請根據過去五年全球AI法規趨勢，撰寫台灣AI倫理政策報告\"為Prompt",
+            "輸入\"寫報告\"",
+            "只貼上法規連結網址",
+            "僅輸入\"政策\"二字"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞設計",
+        "concept": "提示工程（Prompt Engineering）",
+        "explanation": "描述越明確的需求，AI生成結果越精準，能依據條件產生完整政策報告。",
+        "number": 238,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "下列哪一個不是2025年台灣發展AI的重要方向？",
+        "options": [
+            "棄用AI法規推動自律發展",
+            "推動AI產業關鍵技術研發",
+            "強化AI倫理與治理制度",
+            "促進AI跨域應用發展"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI發展趨勢",
+        "subtopic": "台灣AI政策",
+        "concept": "AI倫理與法規",
+        "explanation": "2025年台灣政府強調AI法規及產業治理，絕非\"棄用AI法規推動自律發展\"。",
+        "number": 239,
+        "date": "2025-08-02"
+    },
+    {
+        "question": "哪一項是iPAS AI應用規劃師考試時應該注意的合規性主題？",
+        "options": [
+            "AI決策過程的可解釋性",
+            "模型效能僅憑直覺判斷",
+            "只著重於系統外觀美觀",
+            "AI模型越複雜越好"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "合規性與解釋性",
+        "concept": "AI倫理原則",
+        "explanation": "AI決策過程的可解釋性是保證負責任和合規應用的核心議題。",
+        "number": 240,
+        "date": "2025-08-02"
     }
 ]

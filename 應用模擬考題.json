@@ -3908,5 +3908,175 @@
         "explanation": "AI決策過程的可解釋性是保證負責任和合規應用的核心議題。",
         "number": 240,
         "date": "2025-08-02"
+    },
+    {
+        "question": "假如你是一位台灣的中小企業主，希望用AI提升客服效率，下列哪一種工具最適合快速自動生成中英文多語回應？",
+        "options": [
+            "ChatGPT API搭配no-code平台整合使用",
+            "僅用Google翻譯工具自動回覆",
+            "傳統即時訊息回覆機器人（無AI）",
+            "用Excel公式設計自動回覆模板"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "客服自動化",
+        "concept": "AI實務整合",
+        "explanation": "ChatGPT等生成式AI工具支援多語言回應，透過API和no-code平台能快速上線又容易調整，大幅提升客服自動化的彈性和效率。",
+        "number": 241,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "2025年生成式AI在全球教育領域的應用，最主要的沉浸式應用場景是什麼？",
+        "options": [
+            "製作桌上宣傳小卡",
+            "AI生成個人化學習內容與互動式教學助教",
+            "傳統網頁Q&A論壇",
+            "紙本作業自動閱卷"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI各領域應用",
+        "subtopic": "教育",
+        "concept": "AI沉浸式教學",
+        "explanation": "生成式AI主要創新點在於可針對學生需求產生個人化教材，同時扮演互動助教，提供主動回饋，提升教學沉浸感。",
+        "number": 242,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "以下關於AI發展歷程的敘述，何者正確？",
+        "options": [
+            "AI發展始於1997年深藍打敗卡斯帕羅夫才被世人關注",
+            "生成式AI概念最早出現於2022年ChatGPT問世後",
+            "1956年達特茅斯會議被公認為AI正式誕生",
+            "GAN（生成對抗網絡）於2010年首次被提出"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "AI歷史",
+        "concept": "重大里程碑",
+        "explanation": "1956年達特茅斯會議被普遍公認為AI誕生的起點，會議提出人工智慧作為正式學術領域。",
+        "number": 243,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "2025年台灣有廠商想快速打造AI醫療諮詢服務，適合用哪種no-code/low-code結合生成式AI的平台？",
+        "options": [
+            "手動寫Python模型",
+            "n8n流程自動化搭配OpenAI API",
+            "自製HTML靜態網頁",
+            "Photoshop自動化腳本"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "no-code應用",
+        "concept": "AI工具串接",
+        "explanation": "n8n等no-code流程自動化平台搭配就緒的生成式AI API能大幅縮短開發時程，友善給非程式背景者快速整合AI醫療諮詢服務。",
+        "number": 244,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "家庭主婦/夫想規劃親子旅遊AI行程，下列哪個提示詞最適合交給AI生成行程建議？",
+        "options": [
+            "請列出附近所有旅遊景點",
+            "請幫我設計一個親子友善、包含室內外活動的一日台北旅遊行程",
+            "我需要一張地圖",
+            "推薦一間早餐店"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "Prompt撰寫",
+        "explanation": "越具體的提示詞能讓AI產生有針對性的行程，B選項適合生成式AI輸出優化建議與細節流程。",
+        "number": 245,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "如果餐飲新創需要優化訂單流程並串接多種AI（語音點餐、推薦菜單、庫存預測），哪個平台適合整合與自動化？",
+        "options": [
+            "Excel自動計算",
+            "n8n自動化工作流搭配各AI API",
+            "Line群組聊天機器人單一功能",
+            "紙本點餐單"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "流程自動化",
+        "concept": "系統整合",
+        "explanation": "n8n等自動化工作流工具可協助企業串聯多種AI服務，讓流程銜接更自動化，效率高。",
+        "number": 246,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "2025年AI在台灣產業競爭最新趨勢，何者為非？",
+        "options": [
+            "產業傾向AI工具結合現場感測器提升效率",
+            "生成式AI僅應用於文書處理無法影響實體產業",
+            "AI應用正向製造業、醫療等領域擴展",
+            "企業尋求自動化流程與智慧決策輔助工具"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI各領域應用",
+        "subtopic": "產業趨勢",
+        "concept": "產業變革",
+        "explanation": "生成式AI已進入醫療、製造、零售等產業，不只侷限於文書處理，B選項錯誤。",
+        "number": 247,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "一位工程師準備利用Vibe Coding協助研發財務報表自動分析，下列哪個提示詞最適合自動化這項任務？",
+        "options": [
+            "請畫彩色圖表",
+            "分析這份財務報表，摘要所有重點並產出圖表",
+            "AI怎麼用？",
+            "生成一份年終報告"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "提示工程",
+        "concept": "任務自動化",
+        "explanation": "明確、具體地描述任務內容的提示詞更能引導AI正確產出，B選項最為清楚且包含需求。",
+        "number": 248,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "以下哪一項不是2024–2025全球主要AI科技公司（如OpenAI, Google, Meta）的重點發展範疇？",
+        "options": [
+            "提升生成式AI模型的多模態能力",
+            "開發容易被濫用的未審查自動化工具",
+            "強化AI在商業決策的輔助價值",
+            "投入AI倫理與風險管控研究"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "技術治理",
+        "concept": "AI風險管理",
+        "explanation": "主流AI公司會加強倫理審查與管控，避免開發容易違規或濫用的工具，B為錯誤選項。",
+        "number": 249,
+        "date": "2025-08-03"
+    },
+    {
+        "question": "下列何者為iPAS AI應用規劃師考試2025年最新規劃重點？",
+        "options": [
+            "僅考人工智慧基礎歷史年表",
+            "強化生成式AI技術應用實例與規劃能力",
+            "只針對程式設計能力做評估",
+            "無需涉獵AI工具應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "iPAS規劃與政策",
+        "subtopic": "考試趨勢",
+        "concept": "AI應用能力",
+        "explanation": "近年iPAS考試重視實務應用與生成式AI規劃能力，B選項為最新考查方向。",
+        "number": 250,
+        "date": "2025-08-03"
     }
 ]

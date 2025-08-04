@@ -4078,5 +4078,175 @@
         "explanation": "近年iPAS考試重視實務應用與生成式AI規劃能力，B選項為最新考查方向。",
         "number": 250,
         "date": "2025-08-03"
+    },
+    {
+        "question": "如果您是一位國中數學老師，要用生成式AI協助學生製作互動學習教案，下列哪一項提示詞最適合協助AI生成包含步驟分解且具體的數學習題練習？",
+        "options": [
+            "請生成有解答的數學練習題，並說明思路",
+            "請分解每個學習重點並自動產生習題詳解與講解",
+            "請生成數學題並標註解法",
+            "請列出相關數學主題並產生隨機難度練習題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "提示工程",
+        "explanation": "B選項最明確要求AI『分解每個學習重點』與自動產生『詳解與講解』，符合互動學習教案的需求，其他選項未同時兼具分解與詳解。",
+        "number": 251,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "2025年，家庭主婦/夫要自動化家庭旅遊規劃活動，選擇下列哪種AI工具組合最即時、能低技術門檻整合並自動發送任務通知？",
+        "options": [
+            "用ChatGPT單獨生成行程、手動發送Email",
+            "用n8n串接ChatGPT與Google Calendar自動推送提醒",
+            "用AppSheet生成行程表後複製到Line群組",
+            "用Canva設計行程單後以PDF寄送"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code流程應用",
+        "concept": "自動化流程整合",
+        "explanation": "B選項利用n8n串接ChatGPT與Google Calendar能夠低程式門檻自動推送通知，是最即時且能實現自動化分配任務的方案。",
+        "number": 252,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "一間台灣中小型製造工廠，預計2025年導入AI進行品管檢測，下列哪兩種機器學習模型最適合用於缺失影像辨識應用？",
+        "options": [
+            "RNN與GAN",
+            "CNN與GAN",
+            "DALL-E與CNN",
+            "SVM與RNN"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "電腦視覺",
+        "concept": "深度學習模型應用",
+        "explanation": "CNN適合做影像分類，GAN可產生偽造圖像用於補充數據，兩者均普遍應用於品檢影像分析與強化模型。",
+        "number": 253,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "如果你是補習班英語老師，想用AI協助學生聽說讀寫的沉浸式學習提升，哪種生成式AI工具組合操作方式最推薦？",
+        "options": [
+            "使用語音轉文字API生成口說練習題",
+            "用ChatGPT指定角色對談模式製作實用對話情境",
+            "用Google Bard製作文法填充練習題",
+            "用Midjourney生成新聞插圖當閱讀教材"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自然語言處理",
+        "concept": "對話生成應用",
+        "explanation": "B選項可讓AI模擬多種角色環境提供學生實境練習最全面的英語聽說讀寫訓練體驗。",
+        "number": 254,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "以下關於No Code/Low Code 結合生成式AI的敘述，何者正確？",
+        "options": [
+            "No Code/Low Code 僅限技術人員開發AI應用",
+            "No Code/Low Code 主要依賴於機器學習專案部署",
+            "No Code/Low Code 降低AI應用門檻並加速業務流程自動化",
+            "No Code/Low Code 不支援串接外部AI服務API"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "No Code / Low Code 概念",
+        "subtopic": "平台優勢",
+        "concept": "自動化與可接入性",
+        "explanation": "No Code/Low Code 讓非技術使用者也能開發AI應用，支援串接各種API與自動化。",
+        "number": 255,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "若你是金融業主管，2025年在規劃導入生成式AI時，首要關注的風險管理優先步驟為何？",
+        "options": [
+            "直接部署模型至產線",
+            "先進行資料匿名化與隱私合規性評估",
+            "只檢查技術穩定性不管合規性",
+            "單純優化提示詞以增加表現"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "風險管理",
+        "concept": "資料隱私與合規",
+        "explanation": "金管與資訊安全強調資料脫敏與隱私評估應為導入AI第一步，其它動作需以隱私合規為前提。",
+        "number": 256,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "關於生成式AI與鑑別式AI，下列哪一項對兩者的定義描述最符合現行學界標準？",
+        "options": [
+            "生成式AI主要做分類，鑑別式AI用於生成資料",
+            "生成式AI可生成新內容，鑑別式AI專注於資料區分",
+            "生成式AI與鑑別式AI皆以生成資料為主要功能",
+            "生成式AI僅用於推薦，鑑別式AI僅用於翻譯"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI的定義與分類",
+        "concept": "生成式與鑑別式",
+        "explanation": "生成式AI能創建新資料（如圖文），鑑別式AI則用於分類、區辨既有資料，兩者功能明顯不同。",
+        "number": 257,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "2025年一位自媒體經營者，若要批次自動生成影片腳本、封面設計及上傳排程，下列哪種AI流程最為高效？",
+        "options": [
+            "利用Midjourney設計封面，人工手寫腳本，上傳手動進行",
+            "用ChatGPT自動批次產生腳本，n8n串接Canva與YouTube API排程自動發佈",
+            "僅用YouTube自動排程功能，封面腳本人工製作",
+            "用Excel規劃內容日曆，再人工剪貼腳本封面"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自媒體內容產製",
+        "concept": "流程自動化",
+        "explanation": "ChatGPT生成腳本、n8n整合Canva及YouTube API能實現內容產製到發布全流程自動化，是高效作法。",
+        "number": 258,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "下列哪一個提示詞最具體且最適合協助設計師以Midjourney產生風格化現代建築手繪圖？",
+        "options": [
+            "請產生現代風格建築設計圖",
+            "請產生水彩手繪現代建築圖",
+            "請產生清新色調現代建築插畫",
+            "請用低飽和復古手繪風現代建築圖"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "影像生成提示技巧",
+        "concept": "提示工程",
+        "explanation": "D選項『低飽和復古手繪風現代建築圖』描述明確詳盡，包含色調及風格，最能精準指引AI生成成果。",
+        "number": 259,
+        "date": "2025-08-04"
+    },
+    {
+        "question": "iPAS AI應用規劃師考試近年標準趨勢，以下哪一點並非2025年主要政策重點？",
+        "options": [
+            "鼓勵跨領域AI應用與整合能力",
+            "要求高度資訊安全與隱私管理知識",
+            "只著重於單一領域AI模型開發技能",
+            "強調AI倫理與風險治理意識"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "iPAS應試趨勢",
+        "subtopic": "考試重點",
+        "concept": "跨領域與治理",
+        "explanation": "2025iPAS強調跨域整合、風險治理與倫理，僅專注單一技能不符合最新考試主題重點。",
+        "number": 260,
+        "date": "2025-08-04"
     }
 ]

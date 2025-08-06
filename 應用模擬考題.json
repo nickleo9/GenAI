@@ -4418,5 +4418,175 @@
         "explanation": "提供雙方辯論情境及AI自動重點摘要，能協助老師設計出最完整、互動且教學導向的辯論課。",
         "number": 270,
         "date": "2025-08-05"
+    },
+    {
+        "question": "假設你是一位台灣財富管理顧問，想運用2025年最先進的生成式AI來自動化產生個人化理財計劃，你應優先選用哪種平台？",
+        "options": [
+            "結合No Code平臺與AI輔助機器學習模板",
+            "只用傳統的數據可視化軟體進行建模",
+            "純手動Excel規劃與人力諮詢結合",
+            "僅依賴AI客服平台回覆客戶諮詢"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code的優勢與運用",
+        "concept": "企業數位轉型與AI工具選用",
+        "explanation": "2025年生成式AI與No Code平台密切結合，能自動生成理財策略並減少程式門檻，是數位轉型首選。",
+        "number": 271,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "如果你是大學國文老師，想快速設計個人化教學方案並同步追蹤學生學習進度，以下何種AI組合應用效率最高？",
+        "options": [
+            "Only利用生成式AI生成教案，不需任何LMS平台",
+            "將生成式AI與智慧學習管理系統結合應用",
+            "只用傳統Word準備教案，自行記錄進度",
+            "純用虛擬教學影片自動化教學"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育領域應用與工具",
+        "concept": "個人化教學與AI平台整合",
+        "explanation": "結合生成式AI與LMS可自動產生教案、追蹤進度，才適合高效個人化教學。",
+        "number": 272,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "假設你準備帶領一家台灣製造業公司進行AI導入規劃，關於導入No Code/Low Code平台時，何者屬於正確評估項目？",
+        "options": [
+            "僅評估介面顏色與設計風格是否吸引人",
+            "考慮技術支援、資料安全與系統整合能力",
+            "只檢視價格是否低於同業平均",
+            "完全依照廠商行銷話術決定導入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "AI平台導入評估",
+        "concept": "數位轉型採購標準",
+        "explanation": "導入AI平台需全面評估支援、整合、資安與效益，不能僅看表面因素或價格。",
+        "number": 273,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "2025年台灣多個產業廣泛導入生成式AI，下列哪個領域應用情境最常見？",
+        "options": [
+            "手動小批量生產流程指導",
+            "自動生成銷售預測與庫存建議報告",
+            "人工逐一電話客服回覆",
+            "完全依靠人員現場評估消費趨勢"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產業自動化應用",
+        "concept": "AI提升工作效率",
+        "explanation": "AI可自動生成預測與建議報告，快速且精準，已大規模在各產業普及應用。",
+        "number": 274,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "你是資安顧問，客戶想用2025年新型AI工具來偵測內部威脅，何者最合適？",
+        "options": [
+            "僅依靠傳統入侵偵測系統不更新",
+            "應用AI自動威脅分析與異常辨識模型",
+            "選擇人力輪流檢查所有日志紀錄",
+            "設置靜態密碼不定期更改即可"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "資安與自動異常偵測",
+        "concept": "生成式AI強化風險管理",
+        "explanation": "生成式AI能有效辨識資安異常並主動警示，不應只用傳統或人力巡查。",
+        "number": 275,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "如果你是國際自媒體經營者，想結合RAG（Retrieval Augmented Generation）優化內容製作，哪種提示詞最可提升產出精準度？",
+        "options": [
+            "請依最新數據與趨勢結合，摘要並具體化回應",
+            "請隨意產生內容，不必檢查資料真實性",
+            "請生成與主題相關的主觀評論即可",
+            "請僅根據模糊指令，自由發揮產出內容"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "內容生成與提示詞設計",
+        "concept": "提示工程與RAG應用",
+        "explanation": "將最新趨勢與明確需求結合於提示詞，可發揮RAG產生內容的最大精準度。",
+        "number": 276,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "下列關於AI歷史發展的描述，何者正確？",
+        "options": [
+            "AI在1956年開始於達特茅斯會議首次正式命名與提出",
+            "AI於2010年由Google首次提出並商業化",
+            "AI於2005年在巴西成為國家發展核心科技",
+            "AI最早於1985年Windows作業系統上市後被大眾認識"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI的定義與歷史",
+        "concept": "人工智慧演進",
+        "explanation": "1956年達特茅斯會議首次提出AI概念，也是AI歷史的經典起點。",
+        "number": 277,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "如果你是n8n自動流程設計師，要整合生成式AI生成報價單，再自動寄送並記錄在Google Sheets，哪種流程設計最優？",
+        "options": [
+            "生成報價單後自動寄出，再同步寫入Google Sheets",
+            "僅產生報價單，需手動寄送與記錄",
+            "報價單生成以後全部流程手動處理",
+            "寄送報價單前需額外請人工校對所有資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI工具整合",
+        "subtopic": "自動化與流程優化",
+        "concept": "Low Code應用結合",
+        "explanation": "n8n支援串接AI產出報價單，自動寄送及同步Google Sheets，有效節省時間成本。",
+        "number": 278,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "作為高中數學老師，你要運用2025年生成式AI協助設計互動式數學遊戲，下列哪種提示詞對產生內容最合適？",
+        "options": [
+            "請根據數學難度設計能分級互動的遊戲題型",
+            "請產生無須規劃互動的數學描述內容",
+            "請製作單一選擇題型無需互動設計",
+            "請只產生靜態數學公式不需範例"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自然語言處理應用",
+        "concept": "提示工程與互動應用",
+        "explanation": "分級互動提示詞能讓AI產出動態且適用不同學生程度的遊戲內容。",
+        "number": 279,
+        "date": "2025-08-06"
+    },
+    {
+        "question": "2025年iPAS AI應用規劃師考試重點，何者最不符合其評分要點？",
+        "options": [
+            "重視AI基礎理論與工具應用能力",
+            "要求結合理論、實作與商業案例",
+            "只需背誦歷史定義無需規劃能力",
+            "納入倫理、安全、產業案例分析"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理與應用規劃",
+        "subtopic": "考試內容規劃",
+        "concept": "iPAS評核重點",
+        "explanation": "iPAS強調實務規劃與應用能力，僅背誦定義無法反映真實解決問題能力。",
+        "number": 280,
+        "date": "2025-08-06"
     }
 ]

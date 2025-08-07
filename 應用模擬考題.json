@@ -4588,5 +4588,175 @@
         "explanation": "iPAS強調實務規劃與應用能力，僅背誦定義無法反映真實解決問題能力。",
         "number": 280,
         "date": "2025-08-06"
+    },
+    {
+        "question": "如果你是台灣一家電子製造業的生產線主管，想在產線上導入最新AI提升「預測維護」與「生產品質」，下列哪一種AI應用組合最具效率與普及性？",
+        "options": [
+            "結合No Code自動預警平台與圖像辨識生成式AI",
+            "導入CNN自然語言生成模型與RAG記憶擴充工具",
+            "部署GAN自動生成維修報告與LSTM時序數據預測",
+            "選用Expert System決策引擎搭配傳統回歸預測模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "製造業應用",
+        "concept": "生成式AI、No Code/Low Code",
+        "explanation": "近年No Code自動預警平台結合圖像辨識生成式AI能快速達成產線數據監控、異常預測，是2025最新導入主流，且不必深厚AI程式背景。",
+        "number": 281,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "你是自媒體經營者，打算在新頻道推出內容創作自動化，下列哪種2025年最新生成式AI工具組合最適合實作『影片腳本 + 導演提示詞』一次完成？",
+        "options": [
+            "Stable Diffusion文本生成模型搭配Google表單",
+            "ChatGPT-4o結合Runway Gen-3影片AI生成器",
+            "Midjourney圖像編輯AI與Notion任務管理AI",
+            "Claude 3 Sonnet與Google翻譯API串連"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI工具",
+        "subtopic": "多媒體內容生成",
+        "concept": "多模態生成工具整合",
+        "explanation": "ChatGPT-4o在文字、腳本生成上具優勢，Runway Gen-3則可將腳本直接變成影片，方便全自動自媒體製作，是2025年熱門AI內容流程。",
+        "number": 282,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "關於2025年AI全球發展趨勢，哪一項描述是錯誤的？",
+        "options": [
+            "AGI預計在2025年底形成，能橫跨多領域主動學習與決策",
+            "全球主要企業皆已大規模部署生成式AI落地於商業流程",
+            "生成式AI democratization（民主化）趨勢大幅下降",
+            "台灣綜合學術研究、產業創新等指標已穩居亞洲領先地位"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI歷史與趨勢",
+        "subtopic": "2025全球產業趨勢",
+        "concept": "全球化、民主化、落地應用",
+        "explanation": "2025生成式AI democratization反而大幅提升，No Code/Low Code工具普及促使AI進一步民主化並進入各產業。",
+        "number": 283,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "你是一位國中數學老師，想設計AI協作學習教案，哪一組Prompt設計最能引發學生獨立思考並融入生成式AI？",
+        "options": [
+            "請AI生成講義內容並完成所有解題步驟",
+            "請AI產生互動式練習題並給練習填答後即時解說提示",
+            "請AI呈現單一解答並不給過程引導",
+            "請AI限制只能列出題型名稱不給詳細內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育AI導入",
+        "concept": "提示工程、交互學習",
+        "explanation": "互動式練習題搭配即時解說，能用生成式AI引導學生思考，提升AI助教的沉浸式教學效果。",
+        "number": 284,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "如果你是設計師要使用2025最新版Midjourney進行AI繪圖，以下哪一句Prompt能生成『未來城市夜景』視覺敘述最精準？",
+        "options": [
+            "\"Futuristic city night view, vibrant neon lights, flying cars, digital billboards, bustling streets\"",
+            "\"City landscape, many buildings, lights on, full of cars, busy scenery\"",
+            "\"Modern city, night theme, buildings illuminated, with vehicles moving\"",
+            "\"Urban area, nighttime, lights shining, some skyscrapers, traffic visible\""
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "提示工程",
+        "subtopic": "創意視覺生成",
+        "concept": "Prompt設計、細節敘述",
+        "explanation": "包含具體元素（neon lights、flying cars、digital billboards）且敘述詳盡，最能調動Midjourney AI生成細膩未來感畫面。",
+        "number": 285,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "你是一名要做AI自動化流程的行政主管，下列哪一種n8n整合方案最能優化『AI回應表單自動歸檔』且減少人為錯誤？",
+        "options": [
+            "n8n定時整理雲端表單資料後自動發送郵件審核",
+            "n8n串接AI服務，表單提交自動分類並歸檔標記，無須人工比對",
+            "n8n結合手動標註後才進入分類程序",
+            "n8n自動備份但分類靠Excel手動分頁"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No Code / Low Code",
+        "subtopic": "自動化平台運用",
+        "concept": "流程整合、生成式AI分類",
+        "explanation": "n8n與生成式AI結合能直接自動化分類歸檔，無需再經人工核對，有效減少錯誤率並強化自動化管理。",
+        "number": 286,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "關於台灣2025最新AI產業發展，根據官方公開趨勢，下列哪項敘述正確？",
+        "options": [
+            "台灣AI技術專利主要來自運動健康領域",
+            "政府與企業積極整合AI資源，提升產業競爭力",
+            "AI學術發表數排行明顯落後亞洲鄰國",
+            "全台AI教育政策以高中生AI基礎普及為唯一核心"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI產業趨勢與法規",
+        "subtopic": "台灣AI產業發展",
+        "concept": "競爭力提升、政策整合",
+        "explanation": "2025官報明確指出台灣AI產學整合與資源匯聚是拉升世界競爭力的主要動因，並非局限於單一領域或教育階層。",
+        "number": 287,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "以下哪一條提示詞適用於讓生成式AI協助資工系學生學習Python中『資料隱私與管理』主題？",
+        "options": [
+            "請根據資安法規給出Python保存資料的最佳安全實踐與代碼範例",
+            "請生成Python中任意一個檔案處理範例，不須提及資安或隱私",
+            "請解釋Python所有內建排序函式的語法結構",
+            "請列舉Python如何安裝機器學習相關套件"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料安全與隱私",
+        "concept": "資料保護、法規遵循",
+        "explanation": "結合資安法規說明與Python示例，才能讓AI協助學生學會實用且合規的資料隱私管理。",
+        "number": 288,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "關於AI倫理與風險管理，以下哪些做法可強化2025 AI系統可解釋性與社會信任？",
+        "options": [
+            "要求AI模型維持完全黑箱操作提升極致效能",
+            "建立多層次測試與可追蹤機制，以及合法資料標記",
+            "僅仰賴開放原始碼社群進行漏洞檢查",
+            "將AI應用完全交由外包廠商自行設計與監控"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "AI倫理與可解釋性",
+        "concept": "風險管理、多層驗證",
+        "explanation": "多層驗證、可追蹤與合法資料來源是提升AI信任的國際主流，黑箱與無控管方法將降低可靠度。",
+        "number": 289,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "你是想參加2025 iPAS AI應用規劃師考試的考生，選擇何種複習策略對應最新題型趨勢最有效？",
+        "options": [
+            "只複習AI技術原理，不看歷屆試題與應用案例",
+            "規劃跨領域題庫演練，聚焦產業AI實際應用與Prompt工程",
+            "只背誦法律條文與基礎資料清理流程",
+            "僅記憶AI歷史名詞及經典人物"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "iPAS認證與考試趨勢",
+        "subtopic": "AI導入與應用題型",
+        "concept": "場景分析、Prompt應用",
+        "explanation": "最新題型強調場景分析與跨域應用，Prompt工程與真實產業案例演練最符合iPAS考試趨勢及職場需求。",
+        "number": 290,
+        "date": "2025-08-07"
     }
 ]

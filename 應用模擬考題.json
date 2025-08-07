@@ -4758,5 +4758,175 @@
         "explanation": "最新題型強調場景分析與跨域應用，Prompt工程與真實產業案例演練最符合iPAS考試趨勢及職場需求。",
         "number": 290,
         "date": "2025-08-07"
+    },
+    {
+        "question": "如果你是台灣某智慧製造工廠的產線主管，想要提升產線自動化和減少生產設備故障停機時間，下列哪一種AI工具的導入規劃方案最合適？",
+        "options": [
+            "引進生成式AI製造自動提示系統結合預測性維護模組",
+            "利用No Code RAG管理平台連接數位分身模組進行異常預警",
+            "全面採用純監督式學習模型優化現有ERP系統資訊流",
+            "導入自然語言處理模型於直播客服系統協助產線排程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "智慧製造",
+        "concept": "RAG整合應用",
+        "explanation": "生成式AI搭配預測性維護可有效提升機台維運效率，主動提示問題並協助產線預防停機，是2025產線AI自動化的最新主流方案。",
+        "number": 291,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "假如你是一名補習班國中英文老師，想設計個性化線上練習題庫，下列哪一種生成式AI提示詞下法，能最有效創造不同程度學生專屬題目？",
+        "options": [
+            "根據學生答題正確率，生成A2~B2難度英文閱讀和配套習題。",
+            "根據學生答題數量，生成B1~C1難度英文閱讀及解釋。",
+            "依據學生上課時間，生成B2難度英文習題和實作任務。",
+            "依據學生喜好主題，生成A2難度英文新聞稿及詞彙表。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "提示工程與生成式AI",
+        "subtopic": "教育科技",
+        "concept": "個人化提示詞設計",
+        "explanation": "根據正確率動態調整難度並補充閱讀及配套習題，有助分眾個人化教學，是當前補教界導入生成式AI教安的關鍵做法。",
+        "number": 292,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "全球AI浪潮中，下列哪個2025年AI應用發展現象最正確？",
+        "options": [
+            "絕大多數醫療AI集中於自動開立處方箋與批量化診斷",
+            "製造業AI應用偏向高度個人化生產線與適應性微調",
+            "金融產業廣泛採用生成式AI進行合規監理自動化",
+            "教育領域AI主流在於全自動教學系統取代真人老師"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "產業發展趨勢",
+        "concept": "產業落地應用",
+        "explanation": "金融產業導入生成式AI提升法遵監理、風險預警及詐騙偵測，在2025年成為全球主流的關鍵發展。",
+        "number": 293,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "若一個行動App開發新創希望用No Code工具快速部署輕量AI客服，下列做法何者最可行？",
+        "options": [
+            "用AppSheet建立表單與RAG模板串接",
+            "以n8n工作流連接生成式AI API自動回應",
+            "使用Google Apps Script製作前端AI對話模組",
+            "直接租用深度學習雲主機訓練自家大型語言模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No Code/Low Code AI應用",
+        "subtopic": "流程自動化",
+        "concept": "n8n與生成式AI結合",
+        "explanation": "n8n可快速透過流程連接生成式AI API自動回應，為新創低成本部署AI客服的主流No Code解決方案。",
+        "number": 294,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "下列哪一項為2025年台灣智慧城市專案最有可能主打的生成式AI應用？",
+        "options": [
+            "公開數據平台自動匯出統計圖表",
+            "智慧交通生成式AI動態路線規劃與預測擁塞",
+            "機關單位考勤自動生成統計月報",
+            "智能街道自然語言即時通報市政案件"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI在台灣應用",
+        "subtopic": "智慧城市",
+        "concept": "生成式AI交通預測",
+        "explanation": "智慧交通以生成式AI做動態路徑及擁塞預測，已成台灣2025智城建設主流亮點，擴大AI民生落地效果。",
+        "number": 295,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "過去AI發展歷程中，哪一次事件最促成2020後生成式AI快速興起？",
+        "options": [
+            "2015年ImageNet競賽CNN模型大幅提升影像辨識準確率",
+            "2017年Transformer論文發表顛覆NLP技術框架",
+            "2012年深度強化學習首次擊敗職業圍棋選手",
+            "2019年BERT模型公開即席捲搜尋引擎應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI歷史發展",
+        "subtopic": "模型變革",
+        "concept": "生成式AI技術突破",
+        "explanation": "Transformer架構於2017年提出後徹底改變了NLP技術，直接促成GPT、生成式AI的出現與繁榮。",
+        "number": 296,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "你是國際電商公司AI專案負責人，需自動化多國語言客服，下列何者為最佳實踐？",
+        "options": [
+            "用多語言T5變換模型進行客服詞彙搬移",
+            "結合大型語言模型與提示詞調教進行多語智能問答",
+            "利用批次翻譯API與SLACK訊息篩選模板組成",
+            "建立知識圖譜整合自動回覆選單"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "全球電商",
+        "concept": "多語言大型語言模型",
+        "explanation": "結合大型語言模型與Prompt Engineering可大幅提升多語跨域客戶服務的即時性與體驗。",
+        "number": 297,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "你負責規劃學校生成式AI教學平台，下列哪個模型評估步驟是正確的？",
+        "options": [
+            "先導入模型，測試產出內容再確認數據隱私",
+            "先設計評分標準，搜集範例實測，判斷生成內容可靠度與偏誤風險",
+            "直接分析教師滿意度，若偏高即繼續擴大導入",
+            "請廠商交付成果，依使用次數決定續約"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估",
+        "subtopic": "模型評估",
+        "concept": "內容品質與偏誤檢查",
+        "explanation": "正確評估應設評分標準，搜集範例，綜合判斷生成品質與偏誤風險，為iPAS重要考點。",
+        "number": 298,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "導入生成式AI於企業用戶管理時，以下哪種提示詞較能確保系統輸出合乎資料隱私與規範？",
+        "options": [
+            "生成客戶對話記錄自動歸屬部門報告",
+            "僅限匿名化客戶資料生成用戶體驗分析報告",
+            "自動總結所有客服內容作為教育訓練素材",
+            "導出用戶行為全紀錄於數據倉儲供分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私",
+        "concept": "提示詞規範設計",
+        "explanation": "匿名化數據才能保障用戶隱私，合於GDPR等數據保護規範，屬iPAS熱門出題方向。",
+        "number": 299,
+        "date": "2025-08-07"
+    },
+    {
+        "question": "關於No Code/Low Code生成式AI平台，2025以下敘述何者為非？",
+        "options": [
+            "極大降低產業應用開發門檻，非技術人員也能快速導入AI",
+            "可自動產生程式碼執行高度複雜運算任務，完全取代傳統軟體工程師",
+            "便於結合API或流程自動化工具，彈性部署多元AI應用場景",
+            "通常支援視覺化拖拉與多樣模板搭建，加速企業導入AI進程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No Code/Low Code平台",
+        "subtopic": "技術應用限制",
+        "concept": "開發邊界認知",
+        "explanation": "No Code/Low Code雖降低門檻但無法完全取代深度工程師，仍有複雜運算或客製需求需工程人員參與。",
+        "number": 300,
+        "date": "2025-08-07"
     }
 ]

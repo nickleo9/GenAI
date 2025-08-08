@@ -4928,5 +4928,175 @@
         "explanation": "No Code/Low Code雖降低門檻但無法完全取代深度工程師，仍有複雜運算或客製需求需工程人員參與。",
         "number": 300,
         "date": "2025-08-07"
+    },
+    {
+        "question": "如果你是台灣一間新創的中小型製造工廠主管，預計今年下半年開始導入AI協助產線優化，哪一種策略最適合提升自動化與生產品質？",
+        "options": [
+            "結合生成式AI與No Code平台進行流程自動化與數據分析",
+            "僅採用傳統自動化機械設備無須AI介入",
+            "只購買現成ERP系統不進行客製化整合",
+            "集中投資於雲端備份數據與資料安全防護"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "製造業自動化",
+        "concept": "生成式AI與No Code融合應用",
+        "explanation": "生成式AI搭配No Code平台有助於中小企業以低技術門檻自動化流程並快速調教模型，遠優於僅用傳統自動化或僅做ERP數據收集。",
+        "number": 301,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "如果你是一名高中英文老師，想要用2025年最新AI工具協助學生分級閱讀與訂製互動教案，最適合用哪一種提示詞（prompt）？",
+        "options": [
+            "\"依照CEFR分級標準，生成多版本互動英文故事內容\"",
+            "\"請直接翻譯所有指定文章為英文\"",
+            "\"產生一份包含單字、文法解析的測驗題庫\"",
+            "\"請生成一篇100字以內的英文短文\""
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育",
+        "concept": "提示工程",
+        "explanation": "提示詞設計需明確規範任務與標準，讓AI根據CEFR分級並可互動式生成，最符教學需求。",
+        "number": 302,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "全球哪一類AI應用在2025年預計將大量改變商業服務模式？",
+        "options": [
+            "生成式AI虛擬角色與智慧客服方案",
+            "資料中心實體硬體設備管理技術",
+            "舊版機器學習推論平台",
+            "傳統人工撰寫問答資料庫"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "商業應用",
+        "concept": "生成式AI客製服務",
+        "explanation": "虛擬角色與智慧客服是2025年最能驅動商業變革的AI應用之一，遠超過僅管理資料中心。",
+        "number": 303,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "下列哪一項屬於2025年台灣政府與產官學常見推動的AI導入重點？",
+        "options": [
+            "產業導向AI加值、重視技術本土化及跨國合作",
+            "著重單一企業自主研發忽略安全監管",
+            "全面禁止生成式AI於各產業應用",
+            "以傳統演算法全面取代生成式AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理與法規",
+        "subtopic": "台灣AI產業",
+        "concept": "本土化與跨界合作",
+        "explanation": "台灣政府當前AI策略為技術本土化、產業協作與與國際合作，不是全數禁止或單打獨鬥。",
+        "number": 304,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "2025年最新AI工具下列何者可協助自媒體主自動產製內容並判斷SEO優化方向？",
+        "options": [
+            "結合ChatGPT+AI SEO工具進行關鍵字產出、標題優化",
+            "僅用傳統排版軟體設計版面",
+            "只仰賴社群平台手動模式發文",
+            "使用Excel定期統計瀏覽人數"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自媒體行銷",
+        "concept": "AI內容產製與SEO整合",
+        "explanation": "生成式AI結合SEO工具自動生成內容與關鍵字優化，是2025年內容行銷的重要趨勢。",
+        "number": 305,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "關於2025年No Code/Low Code平台與生成式AI結合的優勢，下列何者最為正確？",
+        "options": [
+            "降低AI應用門檻，並加速自動產生客製化工作流程",
+            "僅能應用於影像辨識，無法進行自動化流程",
+            "反而會限制企業資料自主管理彈性",
+            "只能用於簡單表單建立，無法加入AI功能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code",
+        "subtopic": "生成式AI融合",
+        "concept": "低程式碼AI加速應用",
+        "explanation": "No Code/Low Code平台能快速整合生成式AI，大幅降低技術門檻，支持自動化與多種AI應用。",
+        "number": 306,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "台灣iPAS AI應用規劃師考試中，關於生成式AI風險管理最常見的要求為？",
+        "options": [
+            "建立多層次稽核與資料安全防護機制",
+            "僅加強模型微調參數最佳化",
+            "單純依靠服務商自動備份數據",
+            "所有任務皆外包給第三方AI廠商"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "AI風險管理",
+        "concept": "安全審核與資料防護",
+        "explanation": "稽核機制與資料防護是iPAS考試針對風險管理的核心重點。",
+        "number": 307,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "下列何者不是人工智慧（AI）歷史發展上的重大里程碑？",
+        "options": [
+            "2025年台灣全面普及No Code AI自動生成教案系統",
+            "1956年達特茅斯會議開啟AI學科",
+            "1997年深藍戰勝西洋棋冠軍卡斯帕羅夫",
+            "2022年ChatGPT催生生成式AI爆發式發展"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概論",
+        "subtopic": "AI歷史",
+        "concept": "AI重大事件",
+        "explanation": "2025年台灣No Code教案系統尚非國際公認AI發展重大歷程，其餘三項均為AI史上的正式里程碑。",
+        "number": 308,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "SOP自動化導入AI時，哪種prompt能讓RAG（Retrieve-Augment-Generate）架構下的生成模型正確根據本地文件產出回應？",
+        "options": [
+            "\"根據提供之文件資訊，回答下列流程問題\"",
+            "\"請直接生成一份隨機自動化SOP範例\"",
+            "\"無須參考附件資訊，自行發揮回答\"",
+            "\"以你訓練資料推測最佳流程\""
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "RAG架構",
+        "concept": "檢索增強生成提示詞設計",
+        "explanation": "必須明確指示AI根據本地文件資訊作答，才能正確落實RAG架構優勢。",
+        "number": 309,
+        "date": "2025-08-08"
+    },
+    {
+        "question": "n8n在2025年生成式AI應用自動化場域中，最適合以下哪種任務？",
+        "options": [
+            "串接多種AI API自動化跨平台流程",
+            "單純人工操作多個AI工具窗口",
+            "僅用於定期產生靜態PDF報告",
+            "完全依賴內建模板不進行客製流程設定"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code",
+        "subtopic": "流程自動化",
+        "concept": "AI API流程串接",
+        "explanation": "n8n可自動串接AI API，達到跨平台與任務自動化，是生成式AI應用的重要工具。",
+        "number": 310,
+        "date": "2025-08-08"
     }
 ]

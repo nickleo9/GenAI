@@ -320,10 +320,23 @@
             border-radius: 25px;
         }
         
+        .timer.exam-mode {
+            background: linear-gradient(135deg, #e3f2fd 0%, #bbdefb 100%);
+            border: 2px solid #2196f3;
+            color: #1976d2;
+            animation: pulse-exam 2s infinite;
+        }
+        
+        @keyframes pulse-exam {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.02); }
+        }
+        
         .timer.warning {
             color: #dc3545;
             animation: blink 1s infinite;
             background: rgba(255, 0, 0, 0.1);
+            border: 2px solid #dc3545;
         }
         
         @keyframes blink {
@@ -1344,6 +1357,31 @@
                     this.elements.startBtn.style.display = 'block';
                     this.elements.reviewBtnMain.style.display = 'none';
                 }
+                
+                // 根據模式更新計時器顯示
+                this.updateTimerForMode();
+            },
+            
+            // 新增：根據模式更新計時器顯示
+            updateTimerForMode() {
+                if (!this.state.selectedDatabase) return;
+                
+                const databaseNames = {
+                    'generative-ai': '生成式AI認證',
+                    'ipas': 'iPAS AI應用規劃師'
+                };
+                
+                const selectedName = databaseNames[this.state.selectedDatabase] || this.state.selectedDatabase;
+                
+                if (this.state.currentMode === 'exam') {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>${selectedName} | 考試時間：${this.state.examDuration}分鐘`;
+                    this.elements.timerElement.classList.add('exam-mode');
+                } else {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
+                    this.elements.timerElement.classList.remove('exam-mode');
+                }
             },
             
             // 開始複習
@@ -1479,7 +1517,17 @@
                 };
                 
                 const selectedName = databaseNames[type] || type;
-                this.elements.timerElement.innerHTML = `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
+                
+                // 使用新的 updateTimerForMode 方法來更新計時器顯示
+                if (this.state.currentMode === 'exam') {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>${selectedName} | 考試時間：${this.state.examDuration}分鐘`;
+                    this.elements.timerElement.classList.add('exam-mode');
+                } else {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
+                    this.elements.timerElement.classList.remove('exam-mode');
+                }
                 
                 if (type === 'ipas') {
                     document.getElementById('question-count').value = '60';
@@ -1579,6 +1627,23 @@
                 if (!this.state.selectedDatabase) {
                     this.showAlert('請先選擇題庫！', 'warning');
                     return;
+                }
+                
+                // 如果是考試模式，加入確認機制
+                if (this.state.currentMode === 'exam') {
+                    const confirmStart = confirm(
+                        '確定要開始模擬考試嗎？\n\n' +
+                        '⚠️ 重要提醒：\n' +
+                        '• 考試時間：90分鐘\n' +
+                        '• 一旦開始無法暫停或重置\n' +
+                        '• 無法返回題庫選擇\n' +
+                        '• 時間到將自動交卷\n\n' +
+                        '請確認您已準備就緒！'
+                    );
+                    
+                    if (!confirmStart) {
+                        return;
+                    }
                 }
                 
                 this.showLoading('準備測驗中...');
@@ -2002,6 +2067,12 @@
             
             // 返回題庫選擇
             backToSelection() {
+                // 考試模式下不允許返回
+                if (this.state.currentMode === 'exam' && this.state.isQuizActive) {
+                    this.showAlert('考試進行中，無法返回題庫選擇！', 'error');
+                    return;
+                }
+                
                 if (this.state.isQuizActive) {
                     const confirmBack = confirm('確定要放棄當前測驗並返回題庫選擇嗎？\n進度將不會被保存。');
                     if (!confirmBack) {
@@ -2027,7 +2098,7 @@
                 const answeredCount = Object.keys(this.state.userAnswers).length;
                 const unansweredCount = totalQuestions - answeredCount;
                 
-                if (unansweredCount > 0) {
+                if (unansweredCount > 0 && this.state.currentMode !== 'exam') {
                     const confirmMessage = `
 還有 ${unansweredCount} 題未回答，確定要完成測驗嗎？
 
@@ -2612,7 +2683,7 @@
                     this.updateTimerDisplay('00:00');
                     this.elements.timerElement.classList.add('warning');
                     this.stopTimer();
-                    this.showAlert('時間到！考試結束。', 'warning');
+                    this.showAlert('⏰ 考試時間結束！系統將自動交卷並計算成績。', 'warning');
                     this.finishQuiz();
                     return;
                 }

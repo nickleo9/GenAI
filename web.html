@@ -536,74 +536,6 @@
             border-color: #4caf50;
         }
         
-        /* 題號導航面板樣式 */
-        .question-nav-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
-            gap: 10px;
-            max-height: 60vh;
-            overflow-y: auto;
-            padding: 5px;
-        }
-
-        .question-nav-item {
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            padding: 8px;
-            border: 1px solid #dee2e6;
-            border-radius: 8px;
-            cursor: pointer;
-            transition: all 0.2s ease;
-            position: relative;
-            background-color: #f8f9fa;
-        }
-        
-        .question-nav-item:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 4px 8px rgba(0,0,0,0.1);
-        }
-
-        .question-nav-item.answered {
-            background-color: #d1e7dd; /* 淺綠色 */
-            border-color: #28a745;
-        }
-
-        .question-nav-item.current {
-            border-color: #0d6efd;
-            background-color: #cce5ff;
-            border-width: 2px;
-            font-weight: bold;
-        }
-        
-        .question-nav-item .mark-icon {
-            position: absolute;
-            top: 5px;
-            right: 5px;
-            color: #6c757d; /* 預設灰色 */
-            font-size: 1rem;
-            cursor: pointer;
-            transition: color 0.3s, transform 0.3s;
-        }
-
-        .question-nav-item .mark-icon:hover {
-            transform: scale(1.2);
-        }
-
-        .question-nav-item.marked .mark-icon {
-            color: #ffc107; /* 標記後變黃色 */
-            animation: pulse-mark 1.5s infinite;
-        }
-        
-        @keyframes pulse-mark {
-            0%, 100% { transform: scale(1); }
-            50% { transform: scale(1.2); }
-        }
-
-        .question-nav-item .question-number {
-            font-size: 1.1rem;
-        }
-        
         @media (max-width: 768px) {
             body {
                 margin-bottom: 130px;
@@ -645,11 +577,223 @@
     </style>
 
     <script>
-        // 載入題庫資料 (此處省略以節省空間，與前一版相同)
-        let quizData = { 'generative-ai': [], 'ipas': [] };
-        async function loadQuizDatabases() { try { const r1 = await fetch('./模擬考題.json'); if (r1.ok) { const d1 = await r1.json(); if (Array.isArray(d1) && d1.length > 0) quizData['generative-ai'] = d1; } const r2 = await fetch('./應用模擬考題.json'); if (r2.ok) { const d2 = await r2.json(); if (Array.isArray(d2) && d2.length > 0) quizData['ipas'] = d2; } if (quizData.ipas.length === 0 && quizData['generative-ai'].length === 0) { quizData.ipas = generateSampleQuestions(); quizData['generative-ai'] = generateSampleAIQuestions(); setTimeout(() => alert('題庫檔案未找到，已載入示例題目供測試！'), 1000); } else if (quizData.ipas.length === 0) { quizData.ipas = generateSampleQuestions(); } else if (quizData['generative-ai'].length === 0) { quizData['generative-ai'] = generateSampleAIQuestions(); } } catch (e) { quizData.ipas = generateSampleQuestions(); quizData['generative-ai'] = generateSampleAIQuestions(); setTimeout(() => alert('題庫載入失敗，已載入示例題目！'), 1000); } }
-        function generateSampleQuestions() { return [{"question":"根據經濟部iPAS認證標準，AI應用規劃師需要具備哪項核心能力？","options":["程式設計與演算法開發","AI技術應用與商業價值評估","硬體設備維護與管理","資料庫管理與網路安全"],"correct_answer_letter":"B","correct_answer_index":1,"explanation":"AI應用規劃師主要負責評估AI技術的商業應用價值，規劃AI專案的實施策略，而非純技術開發工作。","topic":"AI應用規劃","subtopic":"核心能力"}];}
-        function generateSampleAIQuestions() { return [{"question":"生成式AI的主要特徵是什麼？","options":["只能分析現有資料","能夠創造新的內容或資料","只能處理數值型資料","只能執行分類任務"],"correct_answer_letter":"B","correct_answer_index":1,"explanation":"生成式AI的核心特徵是能夠學習資料的分布並生成新的、類似的內容，如文字、圖像、音樂等。","topic":"生成式AI基礎","subtopic":"基本概念"}];}
+        // 載入題庫資料
+        let quizData = {
+            'generative-ai': [],
+            'ipas': []
+        };
+
+        async function loadQuizDatabases() {
+            try {
+                console.log('🔍 開始載入題庫...');
+                
+                // 載入生成式AI題庫
+                try {
+                    const response1 = await fetch('./模擬考題.json');
+                    if (response1.ok) {
+                        const data1 = await response1.json();
+                        if (Array.isArray(data1) && data1.length > 0) {
+                            quizData['generative-ai'] = data1;
+                            console.log('✅ 生成式AI題庫已載入:', quizData['generative-ai'].length + '題');
+                        } else {
+                            throw new Error('題庫格式錯誤或為空');
+                        }
+                    } else {
+                        throw new Error(`HTTP ${response1.status}`);
+                    }
+                } catch (error) {
+                    console.warn('⚠️ 生成式AI題庫載入失敗:', error.message);
+                    quizData['generative-ai'] = [];
+                }
+                
+                // 載入iPAS題庫
+                try {
+                    const response2 = await fetch('./應用模擬考題.json');
+                    if (response2.ok) {
+                        const data2 = await response2.json();
+                        if (Array.isArray(data2) && data2.length > 0) {
+                            quizData['ipas'] = data2;
+                            console.log('✅ iPAS題庫已載入:', quizData['ipas'].length + '題');
+                        } else {
+                            throw new Error('題庫格式錯誤或為空');
+                        }
+                    } else {
+                        throw new Error(`HTTP ${response2.status}`);
+                    }
+                } catch (error) {
+                    console.warn('⚠️ iPAS題庫載入失敗:', error.message);
+                    quizData['ipas'] = [];
+                }
+                
+                // 檢查是否需要生成示例數據
+                if (quizData['ipas'].length === 0 && quizData['generative-ai'].length === 0) {
+                    console.log('📝 兩個題庫都載入失敗，生成示例題庫...');
+                    quizData['ipas'] = generateSampleQuestions();
+                    quizData['generative-ai'] = generateSampleAIQuestions();
+                    
+                    // 顯示提示訊息
+                    setTimeout(() => {
+                        if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showAlert) {
+                            iPASQuizApp.showAlert('題庫檔案未找到，已載入示例題目供測試！\n請確保 模擬考題.json 和 應用模擬考題.json 在正確位置。', 'warning');
+                        } else {
+                            alert('題庫檔案未找到，已載入示例題目供測試！\n請確保 模擬考題.json 和 應用模擬考題.json 在正確位置。');
+                        }
+                    }, 1000);
+                } else if (quizData['ipas'].length === 0) {
+                    console.log('📝 iPAS題庫載入失敗，生成示例iPAS題庫...');
+                    quizData['ipas'] = generateSampleQuestions();
+                } else if (quizData['generative-ai'].length === 0) {
+                    console.log('📝 生成式AI題庫載入失敗，生成示例AI題庫...');
+                    quizData['generative-ai'] = generateSampleAIQuestions();
+                }
+                
+                console.log('📚 題庫載入完成');
+                console.log('📊 載入狀態:', {
+                    'iPAS題庫': quizData['ipas'].length + '題',
+                    '生成式AI題庫': quizData['generative-ai'].length + '題'
+                });
+                
+            } catch (error) {
+                console.error('❌ 題庫載入發生嚴重錯誤:', error);
+                // 確保至少有一些題目可用
+                quizData['ipas'] = generateSampleQuestions();
+                quizData['generative-ai'] = generateSampleAIQuestions();
+                
+                setTimeout(() => {
+                    if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showAlert) {
+                        iPASQuizApp.showAlert('題庫載入失敗，已載入示例題目！', 'error');
+                    } else {
+                        alert('題庫載入失敗，已載入示例題目！');
+                    }
+                }, 1000);
+            }
+        }
+
+        // 生成示例iPAS題目
+        function generateSampleQuestions() {
+            return [
+                {
+                    question: "根據經濟部iPAS認證標準，AI應用規劃師需要具備哪項核心能力？",
+                    options: [
+                        "程式設計與演算法開發",
+                        "AI技術應用與商業價值評估",
+                        "硬體設備維護與管理",
+                        "資料庫管理與網路安全"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "AI應用規劃師主要負責評估AI技術的商業應用價值，規劃AI專案的實施策略，而非純技術開發工作。",
+                    topic: "AI應用規劃",
+                    subtopic: "核心能力"
+                },
+                {
+                    question: "在AI專案規劃階段，以下哪個步驟最為重要？",
+                    options: [
+                        "選擇最先進的AI技術",
+                        "確保充足的硬體資源",
+                        "明確定義問題與目標",
+                        "招募更多技術人員"
+                    ],
+                    correct_answer_letter: "C",
+                    correct_answer_index: 2,
+                    explanation: "明確定義問題與目標是AI專案成功的基礎，只有清楚了解要解決什麼問題，才能選擇適合的技術方案。",
+                    topic: "專案管理",
+                    subtopic: "需求分析"
+                },
+                {
+                    question: "機器學習模型的「過度擬合」(Overfitting)會導致什麼問題？",
+                    options: [
+                        "訓練時間過長",
+                        "模型在新資料上表現不佳",
+                        "記憶體使用過多",
+                        "計算成本過高"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "過度擬合指模型過度學習訓練資料的細節，導致在未見過的新資料上泛化能力差，預測準確性下降。",
+                    topic: "機器學習",
+                    subtopic: "模型評估"
+                },
+                {
+                    question: "AI專案的ROI（投資報酬率）評估應該考慮哪些主要因素？",
+                    options: [
+                        "只考慮技術開發成本",
+                        "技術成本、人力成本、維護成本與預期效益",
+                        "只考慮軟體授權費用",
+                        "只考慮硬體採購成本"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "完整的ROI評估需要考慮所有相關成本（技術、人力、維護）以及預期的商業效益，才能做出正確的投資決策。",
+                    topic: "商業分析",
+                    subtopic: "成本效益分析"
+                },
+                {
+                    question: "在AI專案中，資料治理（Data Governance）的主要目的是什麼？",
+                    options: [
+                        "增加資料的數量",
+                        "確保資料的品質、安全性和合規性",
+                        "減少資料的儲存成本",
+                        "加快資料的處理速度"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "資料治理的核心是建立框架來管理資料的品質、安全性、隱私保護和法規遵循，確保AI專案使用高品質且合規的資料。",
+                    topic: "資料管理",
+                    subtopic: "資料治理"
+                }
+            ];
+        }
+
+        // 生成示例生成式AI題目
+        function generateSampleAIQuestions() {
+            return [
+                {
+                    question: "生成式AI的主要特徵是什麼？",
+                    options: [
+                        "只能分析現有資料",
+                        "能夠創造新的內容或資料",
+                        "只能處理數值型資料",
+                        "只能執行分類任務"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "生成式AI的核心特徵是能夠學習資料的分布並生成新的、類似的內容，如文字、圖像、音樂等。",
+                    topic: "生成式AI基礎",
+                    subtopic: "基本概念"
+                },
+                {
+                    question: "GPT模型中的'T'代表什麼？",
+                    options: [
+                        "Training（訓練）",
+                        "Transformer（轉換器）",
+                        "Testing（測試）",
+                        "Technology（技術）"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "GPT代表Generative Pre-trained Transformer，其中T指的是Transformer架構，這是GPT模型的核心技術基礎。",
+                    topic: "大型語言模型",
+                    subtopic: "GPT系列"
+                },
+                {
+                    question: "Prompt Engineering的主要目的是什麼？",
+                    options: [
+                        "提高模型的運算速度",
+                        "優化輸入指令以獲得更好的輸出結果",
+                        "減少模型的參數數量",
+                        "降低模型的記憶體使用"
+                    ],
+                    correct_answer_letter: "B",
+                    correct_answer_index: 1,
+                    explanation: "Prompt Engineering是設計和優化輸入提示詞的技術，目的是引導AI模型產生更準確、更符合需求的回應。",
+                    topic: "提示工程",
+                    subtopic: "基本原理"
+                }
+            ];
+        }
+
+        // 頁面載入時自動載入題庫
         document.addEventListener('DOMContentLoaded', loadQuizDatabases);
     </script>
 </head>
@@ -657,396 +801,2063 @@
     <!-- 頂部導航 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
         <div class="container-fluid">
-            <a class="navbar-brand nav-brand" href="#"><i class="fas fa-graduation-cap me-2"></i>iPAS AI應用規劃師</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"><span class="navbar-toggler-icon"></span></button>
+            <a class="navbar-brand nav-brand" href="#">
+                <i class="fas fa-graduation-cap me-2"></i>iPAS AI應用規劃師
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    <li class="nav-item"><a class="nav-link" href="#" id="save-btn"><i class="fas fa-save me-1"></i>儲存進度</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" id="export-btn"><i class="fas fa-download me-1"></i>匯出錯題</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" id="stats-btn"><i class="fas fa-chart-bar me-1"></i>學習統計</a></li>
-                    <li class="nav-item"><a class="nav-link" href="#" id="help-btn"><i class="fas fa-question-circle me-1"></i>使用說明</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="save-btn">
+                            <i class="fas fa-save me-1"></i>儲存進度
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="export-btn">
+                            <i class="fas fa-download me-1"></i>匯出錯題
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="stats-btn">
+                            <i class="fas fa-chart-bar me-1"></i>學習統計
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#" id="help-btn">
+                            <i class="fas fa-question-circle me-1"></i>使用說明
+                        </a>
+                    </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <div style="height: 70px;"></div>
+    <div style="height: 70px;"></div> <!-- 導航欄間距 -->
 
     <div class="main-container">
-        <div id="quiz-status" class="quiz-status" style="display: none;"><i class="fas fa-lock me-1"></i>測驗進行中</div>
+        <!-- 測驗狀態指示器 -->
+        <div id="quiz-status" class="quiz-status" style="display: none;">
+            <i class="fas fa-lock me-1"></i>測驗進行中
+        </div>
+        
         <div class="quiz-header">
             <h1><i class="fas fa-brain me-3"></i>iPAS AI應用規劃師專業練習系統</h1>
             <p class="mb-0">經濟部產業人才能力鑑定 - 考試衝刺專用</p>
         </div>
         
+        <!-- 題庫選擇區 -->
         <div class="database-selector" id="database-selector">
             <h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇練習題庫</h3>
             <div class="row">
-                <div class="col-md-6"><div class="database-card" data-type="ipas"><div class="text-center"><i class="fas fa-star fa-3x mb-3" style="color: #ffd700;"></i><h5>iPAS AI應用規劃師</h5><p class="mb-2">經濟部產業人才能力鑑定</p><small>⭐ 主要考試題庫 - 重點練習</small></div><div class="exam-specs ipas mt-3"><strong>📋 官方考試規範：</strong><br>• 總題數：100題單選題<br>• 科目一：人工智慧基礎概論（約50題）<br>• 科目二：生成式AI應用與規劃（約50題）<br>• 考試時間：每科75分鐘（總計150分鐘）<br>• 及格標準：平均70分，單科不低於60分</div></div></div>
-                <div class="col-md-6"><div class="database-card" data-type="generative-ai"><div class="text-center"><i class="fas fa-robot fa-3x mb-3"></i><h5>資策會生成式AI認證</h5><p class="mb-2">資策會生成式AI能力認證</p><small>輔助練習 - 補強基礎知識</small></div><div class="exam-specs iii mt-3"><strong>📋 官方考試規範：</strong><br>• 總題數：80題選擇題<br>• 考試時間：90分鐘<br>• 及格標準：70分及格（可錯24題）<br>• 考試方式：電腦測驗，題庫隨機抽取</div></div></div>
+                <div class="col-md-6">
+                    <div class="database-card" data-type="ipas">
+                        <div class="text-center">
+                            <i class="fas fa-star fa-3x mb-3" style="color: #ffd700;"></i>
+                            <h5>iPAS AI應用規劃師</h5>
+                            <p class="mb-2">經濟部產業人才能力鑑定</p>
+                            <small>⭐ 主要考試題庫 - 重點練習</small>
+                        </div>
+                        <div class="exam-specs ipas mt-3">
+                            <strong>📋 官方考試規範：</strong><br>
+                            • 總題數：100題單選題<br>
+                            • 科目一：人工智慧基礎概論（約50題）<br>
+                            • 科目二：生成式AI應用與規劃（約50題）<br>
+                            • 考試時間：每科75分鐘（總計150分鐘）<br>
+                            • 及格標準：平均70分，單科不低於60分
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6">
+                    <div class="database-card" data-type="generative-ai">
+                        <div class="text-center">
+                            <i class="fas fa-robot fa-3x mb-3"></i>
+                            <h5>資策會生成式AI認證</h5>
+                            <p class="mb-2">資策會生成式AI能力認證</p>
+                            <small>輔助練習 - 補強基礎知識</small>
+                        </div>
+                        <div class="exam-specs iii mt-3">
+                            <strong>📋 官方考試規範：</strong><br>
+                            • 總題數：80題選擇題<br>
+                            • 考試時間：90分鐘<br>
+                            • 及格標準：70分及格（可錯24題）<br>
+                            • 考試方式：電腦測驗，題庫隨機抽取
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
         
+        <!-- 設定面板 -->
         <div id="settings-panel" class="settings-panel">
-            <div class="card border-0 shadow-sm"><div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);"><h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5></div><div class="card-body p-4"><div class="row g-4"><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-list-ol me-2 text-primary"></i>題目數量</label><select id="question-count" class="form-select"><option value="10">10題</option><option value="20">20題</option><option value="40">40題</option><option value="50">50題</option><option value="80">80題</option><option value="100" selected>100題</option></select></div><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-play-circle me-2 text-success"></i>練習模式</label><div class="d-flex flex-wrap gap-1"><button class="mode-btn active" data-mode="practice"><i class="fas fa-book me-1"></i>練習模式</button><button class="mode-btn" data-mode="exam"><i class="fas fa-clock me-1"></i>模擬考試</button></div></div><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-lightbulb me-2 text-warning"></i>解析模式</label><div class="mb-2"><div class="form-check form-check-inline"><input class="form-check-input" type="radio" name="explanation-mode" id="database-mode" value="database" checked><label class="form-check-label" for="database-mode">資料庫解析</label></div></div></div><div class="col-lg-3 col-md-6"><label class="form-label fw-bold"><i class="fas fa-rocket me-2 text-danger"></i>準備就緒</label><button id="start-btn" class="btn btn-danger w-100 mb-2" disabled><i class="fas fa-play me-2"></i>開始練習</button><div id="timer" class="timer text-center"><i class="fas fa-clock me-2"></i>請先選擇題庫</div></div></div></div></div>
+            <div class="card border-0 shadow-sm">
+                <div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                    <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5>
+                </div>
+                <div class="card-body p-4">
+                    <div class="row g-4">
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-list-ol me-2 text-primary"></i>題目數量
+                            </label>
+                            <select id="question-count" class="form-select">
+                                <option value="10">10題 - 快速練習</option>
+                                <option value="20">20題 - 標準練習</option>
+                                <option value="40">40題 - 加強練習</option>
+                                <option value="50">50題 - 單科標準</option>
+                                <option value="80">80題 - 資策會標準</option>
+                                <option value="100" selected>100題 - iPAS標準</option>
+                            </select>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-play-circle me-2 text-success"></i>練習模式
+                            </label>
+                            <div class="d-flex flex-wrap gap-1">
+                                <button class="mode-btn active" data-mode="practice">
+                                    <i class="fas fa-book me-1"></i>練習模式
+                                </button>
+                                <button class="mode-btn" data-mode="exam">
+                                    <i class="fas fa-clock me-1"></i>模擬考試
+                                </button>
+                            </div>
+                            <!-- 複習模式選擇區 -->
+                            <div class="review-modes mt-2" id="review-modes-section" style="display: none;">
+                                <h6 class="mb-2"><i class="fas fa-redo me-2"></i>複習模式選擇</h6>
+                                <div class="review-mode-item" data-review-mode="wrong" id="review-wrong-mode">
+                                    <i class="fas fa-times-circle me-2"></i>錯題複習
+                                    <small class="d-block text-muted">複習之前答錯的題目</small>
+                                </div>
+                                <div class="review-mode-item" data-review-mode="all" id="review-all-mode">
+                                    <i class="fas fa-list me-2"></i>全題複習
+                                    <small class="d-block text-muted">系統性複習所有題目</small>
+                                </div>
+                                <div class="review-mode-item" data-review-mode="topic" id="review-topic-mode">
+                                    <i class="fas fa-tags me-2"></i>主題複習
+                                    <small class="d-block text-muted">按主題分類複習</small>
+                                </div>
+                                <div class="review-mode-item" data-review-mode="random" id="review-random-mode">
+                                    <i class="fas fa-random me-2"></i>隨機複習
+                                    <small class="d-block text-muted">隨機順序複習</small>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-lightbulb me-2 text-warning"></i>解析模式
+                            </label>
+                            <div class="mb-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" type="radio" name="explanation-mode" id="database-mode" value="database" checked>
+                                    <label class="form-check-label" for="database-mode">資料庫解析</label>
+                                </div>
+                                <div class="form-check form-check-inline" style="display: none;">
+                                    <input class="form-check-input" type="radio" name="explanation-mode" id="ai-mode" value="ai">
+                                    <label class="form-check-label" for="ai-mode">AI生成解析</label>
+                                </div>
+                            </div>
+                            <div id="ai-model-select" class="d-none">
+                                <select id="ai-model" class="form-select form-select-sm">
+                                    <option value="gpt-4o" selected>GPT-4o (推薦)</option>
+                                    <option value="claude-3.7-sonnet">Claude 3.7 Sonnet</option>
+                                    <option value="grok-3">Grok 3</option>
+                                </select>
+                            </div>
+                        </div>
+                        
+                        <div class="col-lg-3 col-md-6">
+                            <label class="form-label fw-bold">
+                                <i class="fas fa-rocket me-2 text-danger"></i>準備就緒
+                            </label>
+                            <button id="start-btn" class="btn btn-danger w-100 mb-2" disabled>
+                                <i class="fas fa-play me-2"></i>開始練習
+                            </button>
+                            <button id="review-btn-main" class="btn btn-success w-100 mb-2" disabled style="display: none;">
+                                <i class="fas fa-redo me-2"></i>開始複習
+                            </button>
+                            <div id="timer" class="timer text-center">
+                                <i class="fas fa-clock me-2"></i>請先選擇題庫
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
         
+        <!-- 問題區域 -->
         <div id="quiz-container" class="quiz-container d-none">
-            <div id="quiz-timer-display" class="quiz-timer-display" style="display: none;"><i class="fas fa-clock me-2"></i>剩餘時間: --:--</div>
-            <button id="back-to-selection" class="back-to-selection"><i class="fas fa-arrow-left me-2"></i>返回題庫選擇</button>
-            <div class="progress mb-3"><div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div></div>
-            <div class="d-flex justify-content-between align-items-center mb-4"><h5 id="question-number" class="mb-0"></h5><div class="d-flex gap-2"><span id="database-badge" class="badge-custom"></span><span id="stats-display" class="badge bg-info"></span></div></div>
-            <h4 id="question-text" class="mb-4"></h4><div id="options-container" class="mb-4"></div>
-            <div id="explanation-box" class="explanation-box d-none"><h5 class="mb-3"><i class="fas fa-lightbulb me-2"></i>答案解析</h5><div id="explanation-content"></div></div>
+            <!-- 考試計時器 - 在測驗進行時顯示 -->
+            <div id="quiz-timer-display" class="quiz-timer-display" style="display: none;">
+                <i class="fas fa-clock me-2"></i>剩餘時間: --:--
+            </div>
+            
+            <!-- 返回選擇按鈕 -->
+            <button id="back-to-selection" class="back-to-selection">
+                <i class="fas fa-arrow-left me-2"></i>返回題庫選擇
+            </button>
+            
+            <div class="progress mb-3">
+                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
+            </div>
+            
+            <div class="d-flex justify-content-between align-items-center mb-4">
+                <h5 id="question-number" class="mb-0">問題 1/100</h5>
+                <div class="d-flex gap-2">
+                    <span id="database-badge" class="badge-custom">iPAS題庫</span>
+                    <span id="stats-display" class="badge bg-info">得分: 0/0 (0%)</span>
+                </div>
+            </div>
+            
+            <h4 id="question-text" class="mb-4">載入題目中...</h4>
+            
+            <div id="options-container" class="mb-4">
+                <!-- 選項會在JavaScript中動態生成 -->
+            </div>
+            
+            <div id="explanation-box" class="explanation-box d-none">
+                <h5 class="mb-3"><i class="fas fa-lightbulb me-2"></i>答案解析</h5>
+                <div id="explanation-content"></div>
+                <div class="mt-3">
+                    <span id="topic-badge" class="badge bg-secondary me-2"></span>
+                    <span id="subtopic-badge" class="badge bg-info"></span>
+                </div>
+            </div>
         </div>
         
+        <!-- 底部導航 -->
         <div class="bottom-nav" id="bottom-navigation">
-            <div class="container-fluid"><div class="row justify-content-between align-items-center"><div class="col-2"><button id="prev-btn" class="btn btn-secondary w-100" disabled><i class="fas fa-arrow-left me-1"></i> <span class="d-none d-sm-inline">上一題</span></button></div><div class="col-2"><button id="submit-btn" class="btn btn-primary w-100" disabled><i class="fas fa-check me-1"></i> <span class="d-none d-sm-inline">提交</span></button></div><div class="col-2"><button id="next-btn" class="btn btn-warning w-100" disabled><span class="d-none d-sm-inline">下一題</span><i class="fas fa-arrow-right ms-1"></i></button></div><div class="col-2"><button id="finish-btn" class="btn btn-success w-100" disabled><i class="fas fa-flag-checkered me-1"></i> <span class="d-none d-sm-inline">完成</span></button></div><div class="col-2"><button id="show-questions-btn" class="btn btn-info w-100" disabled><i class="fas fa-th me-1"></i> <span class="d-none d-sm-inline">顯示題號</span></button></div></div></div>
+            <div class="container-fluid">
+                <div class="row justify-content-between align-items-center">
+                    <div class="col-2">
+                        <button id="prev-btn" class="btn btn-secondary w-100" disabled>
+                            <i class="fas fa-arrow-left me-1"></i> 
+                            <span class="d-none d-sm-inline">上一題</span>
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button id="submit-btn" class="btn btn-primary w-100" disabled>
+                            <i class="fas fa-check me-1"></i> 
+                            <span class="d-none d-sm-inline">提交</span>
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button id="next-btn" class="btn btn-warning w-100" disabled>
+                            <span class="d-none d-sm-inline">下一題</span>
+                            <i class="fas fa-arrow-right ms-1"></i>
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button id="finish-btn" class="btn btn-success w-100" disabled>
+                            <i class="fas fa-flag-checkered me-1"></i> 
+                            <span class="d-none d-sm-inline">完成</span>
+                        </button>
+                    </div>
+                    <div class="col-2">
+                        <button id="explanation-btn" class="btn btn-info w-100" disabled>
+                            <i class="fas fa-lightbulb me-1"></i> 
+                            <span class="d-none d-sm-inline">查看解析</span>
+                        </button>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
     <!-- 模態框 -->
-    <div class="modal fade" id="result-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header bg-primary text-white"><h5 class="modal-title">測驗結果</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div id="result-content"></div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button><button type="button" class="btn btn-success" id="restart-quiz-btn"><i class="fas fa-redo me-1"></i>重新測驗</button><button type="button" class="btn btn-primary" id="review-wrong-btn"><i class="fas fa-times-circle me-1"></i>複習錯題</button></div></div></div></div>
-    <div class="modal fade" id="topic-selection-modal" tabindex="-1"></div>
-    <div class="modal fade" id="question-nav-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header bg-dark text-white"><h5 class="modal-title"><i class="fas fa-th me-2"></i>題目導覽</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div class="d-flex justify-content-start align-items-center mb-3 gap-3 flex-wrap"><span class="badge bg-success"><i class="fas fa-check-circle me-1"></i>已回答</span><span class="badge bg-warning text-dark"><i class="fas fa-flag me-1"></i>已標記</span><span class="badge bg-primary"><i class="fas fa-eye me-1"></i>目前題目</span><span class="badge bg-light text-dark border">未回答</span></div><div id="question-nav-grid" class="question-nav-grid"></div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button></div></div></div></div>
-    <div class="modal fade" id="stats-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header bg-info text-white"><h5 class="modal-title">學習統計</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><div id="stats-content"></div></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button><button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button></div></div></div></div>
-    <div class="modal fade" id="help-modal" tabindex="-1"><div class="modal-dialog modal-dialog-centered modal-lg"><div class="modal-content"><div class="modal-header bg-success text-white"><h5 class="modal-title">iPAS考試準備指南</h5><button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button></div><div class="modal-body"><h5><i class="fas fa-target me-2 text-primary"></i>考試準備策略</h5><div class="alert alert-info"><strong>考試資訊：</strong>iPAS AI應用規劃師初級認證</div><h6>📚 複習模式建議</h6><ul><li><strong>錯題複習：</strong>重點攻克薄弱環節</li></ul><h6>🎯 重點題型</h6><ul><li>AI技術應用與商業價值評估</li></ul><ul><li>開發者：ZN Studio</li><li>版本：2.3.2 (穩定版)</li></ul></div><div class="modal-footer"><button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button></div></div></div></div>
+    <!-- 測驗結果模態框 -->
+    <div class="modal fade" id="result-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">測驗結果</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="result-content" style="max-height: 70vh; overflow-y: auto;"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-success" id="restart-quiz-btn">
+                        <i class="fas fa-redo me-1"></i>重新測驗
+                    </button>
+                    <button type="button" class="btn btn-primary" id="review-wrong-btn">
+                        <i class="fas fa-times-circle me-1"></i>複習錯題
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
 
-    <div id="loading-overlay" class="overlay d-none"><div class="loader"></div><div id="loading-text" class="loading-text"></div></div>
+    <!-- 主題選擇模態框 -->
+    <div class="modal fade" id="topic-selection-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title"><i class="fas fa-tags me-2"></i>選擇複習主題</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>請選擇您想要複習的主題（可複選）：</p>
+                    <div class="mb-3">
+                        <button id="select-all-topics-btn" class="btn btn-sm btn-outline-primary">全選</button>
+                        <button id="deselect-all-topics-btn" class="btn btn-sm btn-outline-secondary">取消全選</button>
+                    </div>
+                    <div id="topic-list-container" style="max-height: 50vh; overflow-y: auto;">
+                        <!-- 主題列表將由 JavaScript 動態生成 -->
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-primary" id="confirm-topic-selection-btn">
+                        <i class="fas fa-check me-1"></i>確認選擇
+                    </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 統計資料模態框 -->
+    <div class="modal fade" id="stats-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-info text-white">
+                    <h5 class="modal-title">學習統計</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <div id="stats-content"></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 使用說明模態框 -->
+    <div class="modal fade" id="help-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header bg-success text-white">
+                    <h5 class="modal-title">iPAS考試準備指南</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <h5><i class="fas fa-target me-2 text-primary"></i>考試準備策略</h5>
+                    <div class="alert alert-info">
+                        <strong>考試資訊：</strong>iPAS AI應用規劃師初級認證，建議準備時間：4-6週
+                    </div>
+                    
+                    <h6>📚 複習模式使用建議</h6>
+                    <ul>
+                        <li><strong>錯題複習：</strong>重點攻克薄弱環節</li>
+                        <li><strong>全題複習：</strong>系統性回顧所有內容</li>
+                        <li><strong>主題複習：</strong>針對特定領域加強</li>
+                        <li><strong>隨機複習：</strong>模擬考試隨機出題</li>
+                    </ul>
+                    
+                    <h6>📋 練習模式建議</h6>
+                    <ul>
+                        <li><strong>每日練習：</strong>20-50題維持手感</li>
+                        <li><strong>週末模擬：</strong>100題完整測驗</li>
+                        <li><strong>考前衝刺：</strong>錯題複習模式</li>
+                    </ul>
+                    
+                    <h6>🎯 重點題型</h6>
+                    <ul>
+                        <li>AI技術應用與商業價值評估</li>
+                        <li>專案規劃與管理流程</li>
+                        <li>數據分析與模型評估</li>
+                        <li>倫理與風險管理</li>
+                    </ul>
+                    
+                    <h6>⏱️ 模擬考試建議</h6>
+                    <ul>
+                        <li><strong>iPAS模式：</strong>選擇100題標準模式，每科75分鐘</li>
+                        <li><strong>資策會模式：</strong>選擇80題，90分鐘</li>
+                        <li>嚴格控制答題時間</li>
+                        <li>目標正確率：70%以上</li>
+                    </ul>
+                    
+                    <h6>📊 使用統計功能</h6>
+                    <ul>
+                        <li>定期檢查學習統計</li>
+                        <li>重點關注薄弱主題</li>
+                        <li>匯出錯題進行紙本複習</li>
+                    </ul>
+                    
+                    <ul>
+                        <li>開發者：ZN Studio</li>
+                        <li>版本：2.2.0 (官方規範版)</li>
+                        <li>本系統由本人獨立設計與開發，專為iPAS AI應用規劃師考試設計</li>
+                    </ul>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 加載遮罩 -->
+    <div id="loading-overlay" class="overlay d-none">
+        <div class="loader"></div>
+        <div id="loading-text" class="loading-text">處理中...</div>
+    </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
     <script>
+        // 全域狀態管理
         const iPASQuizApp = {
+            // 應用狀態
             state: {
-                isQuizActive: false, selectedDatabase: null, currentMode: 'practice',
-                questions: [], currentQuestionIndex: 0, userAnswers: {}, markedQuestions: [],
-                questionMapping: {}, score: 0, wrongQuestions: [], startTime: null,
-                isTimerRunning: false, timerId: null, userData: null
+                isQuizActive: false,
+                selectedDatabase: null,
+                currentMode: 'practice',
+                selectedReviewMode: null,
+                selectedTopicsForReview: [],
+                explanationMode: 'database',
+                selectedAIModel: 'gpt-4o',
+                questions: [],
+                currentQuestionIndex: 0,
+                userAnswers: {},
+                questionMapping: {}, // 用於存儲題目的選項隨機化映射
+                score: 0,
+                wrongQuestions: [],
+                startTime: null,
+                isTimerRunning: false,
+                examDuration: 150, // iPAS: 150分鐘 (兩科各75分鐘)
+                timerId: null,
+                userData: null
             },
-            elements: {},
-            modals: {},
+            
+            // DOM 元素
+            elements: {
+                databaseSelector: document.getElementById('database-selector'),
+                databaseCards: document.querySelectorAll('.database-card'),
+                settingsPanel: document.getElementById('settings-panel'),
+                quizContainer: document.getElementById('quiz-container'),
+                startBtn: document.getElementById('start-btn'),
+                reviewBtnMain: document.getElementById('review-btn-main'),
+                reviewModesSection: document.getElementById('review-modes-section'),
+                backBtn: document.getElementById('back-to-selection'),
+                prevBtn: document.getElementById('prev-btn'),
+                submitBtn: document.getElementById('submit-btn'),
+                nextBtn: document.getElementById('next-btn'),
+                finishBtn: document.getElementById('finish-btn'),
+                explanationBtn: document.getElementById('explanation-btn'),
+                quizStatus: document.getElementById('quiz-status'),
+                timerElement: document.getElementById('timer'),
+                quizTimerDisplay: document.getElementById('quiz-timer-display'),
+                questionNumber: document.getElementById('question-number'),
+                questionText: document.getElementById('question-text'),
+                optionsContainer: document.getElementById('options-container'),
+                explanationBox: document.getElementById('explanation-box'),
+                explanationContent: document.getElementById('explanation-content'),
+                progressBar: document.getElementById('progress-bar'),
+                statsDisplay: document.getElementById('stats-display'),
+                topicBadge: document.getElementById('topic-badge'),
+                subtopicBadge: document.getElementById('subtopic-badge'),
+                loadingOverlay: document.getElementById('loading-overlay'),
+                loadingText: document.getElementById('loading-text')
+            },
+            
+            // 模態框
+            modals: {
+                result: new bootstrap.Modal(document.getElementById('result-modal')),
+                stats: new bootstrap.Modal(document.getElementById('stats-modal')),
+                help: new bootstrap.Modal(document.getElementById('help-modal')),
+                topicSelection: new bootstrap.Modal(document.getElementById('topic-selection-modal'))
+            },
+            
+            // 考試規範配置
             examConfigs: {
-                'ipas': { name: 'iPAS AI應用規劃師', defaultQuestions: 100, duration: 150 },
-                'generative-ai': { name: '資策會生成式AI認證', defaultQuestions: 80, duration: 90 }
+                'ipas': {
+                    name: 'iPAS AI應用規劃師',
+                    defaultQuestions: 100,
+                    duration: 150, // 兩科各75分鐘
+                    passingScore: 70,
+                    description: '100題 | 150分鐘 | 70分及格 | 單科不低於60分'
+                },
+                'generative-ai': {
+                    name: '資策會生成式AI認證',
+                    defaultQuestions: 80,
+                    duration: 90,
+                    passingScore: 70,
+                    description: '80題 | 90分鐘 | 70分及格'
+                }
             },
-
+            
+            // 初始化
             init() {
-                this.elements = {
-                    databaseSelector: document.getElementById('database-selector'),
-                    databaseCards: document.querySelectorAll('.database-card'),
-                    settingsPanel: document.getElementById('settings-panel'),
-                    quizContainer: document.getElementById('quiz-container'),
-                    startBtn: document.getElementById('start-btn'),
-                    backBtn: document.getElementById('back-to-selection'),
-                    prevBtn: document.getElementById('prev-btn'),
-                    submitBtn: document.getElementById('submit-btn'),
-                    nextBtn: document.getElementById('next-btn'),
-                    finishBtn: document.getElementById('finish-btn'),
-                    showQuestionsBtn: document.getElementById('show-questions-btn'),
-                    quizStatus: document.getElementById('quiz-status'),
-                    quizTimerDisplay: document.getElementById('quiz-timer-display'),
-                    questionNumber: document.getElementById('question-number'),
-                    databaseBadge: document.getElementById('database-badge'),
-                    statsDisplay: document.getElementById('stats-display'),
-                    questionText: document.getElementById('question-text'),
-                    optionsContainer: document.getElementById('options-container'),
-                    explanationBox: document.getElementById('explanation-box'),
-                    explanationContent: document.getElementById('explanation-content'),
-                    progressBar: document.getElementById('progress-bar'),
-                    loadingOverlay: document.getElementById('loading-overlay'),
-                    loadingText: document.getElementById('loading-text'),
-                    timerElement: document.getElementById('timer')
-                };
-                this.modals = {
-                    result: new bootstrap.Modal(document.getElementById('result-modal')),
-                    stats: new bootstrap.Modal(document.getElementById('stats-modal')),
-                    help: new bootstrap.Modal(document.getElementById('help-modal')),
-                    questionNav: new bootstrap.Modal(document.getElementById('question-nav-modal'))
-                };
                 this.state.userData = this.loadUserData();
                 this.attachEventListeners();
-                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.3.2 穩定版)');
+                this.updateReviewButtonState();
+                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.2.0 官方規範版)');
             },
-
+            
+            // 載入使用者數據
+            loadUserData() {
+                try {
+                    const data = localStorage.getItem('iPASQuizUserData');
+                    return data ? JSON.parse(data) : {
+                        correct: [],
+                        incorrect: [],
+                        history: [],
+                        databaseStats: {}
+                    };
+                } catch (error) {
+                    console.error('載入使用者數據錯誤:', error);
+                    return {
+                        correct: [],
+                        incorrect: [],
+                        history: [],
+                        databaseStats: {}
+                    };
+                }
+            },
+            
+            // 保存使用者數據
+            saveUserData(showMessage = false) {
+                try {
+                    localStorage.setItem('iPASQuizUserData', JSON.stringify(this.state.userData));
+                    if (showMessage) {
+                        this.showAlert('學習數據已儲存', 'success');
+                    }
+                    return true;
+                } catch (error) {
+                    console.error('保存使用者數據錯誤:', error);
+                    if (showMessage) {
+                        this.showAlert('儲存失敗: ' + error.message, 'error');
+                    }
+                    return false;
+                }
+            },
+            
+            // 事件監聽器
             attachEventListeners() {
-                this.elements.databaseCards.forEach(card => card.addEventListener('click', () => this.selectDatabase(card.dataset.type)));
+                // 題庫選擇
+                this.elements.databaseCards.forEach(card => {
+                    card.addEventListener('click', (e) => {
+                        if (this.state.isQuizActive) {
+                            this.showAlert('測驗進行中，無法切換題庫！', 'warning');
+                            return;
+                        }
+                        this.selectDatabase(card.dataset.type);
+                    });
+                });
+
+                document.getElementById('confirm-topic-selection-btn').addEventListener('click', () => this.confirmTopicSelection());
+                document.getElementById('select-all-topics-btn').addEventListener('click', () => this.toggleAllTopics(true));
+                document.getElementById('deselect-all-topics-btn').addEventListener('click', () => this.toggleAllTopics(false));
+
+                // 按鈕事件
                 this.elements.startBtn.addEventListener('click', () => this.startQuiz());
+                this.elements.reviewBtnMain.addEventListener('click', () => this.startReview());
                 this.elements.backBtn.addEventListener('click', () => this.backToSelection());
                 this.elements.prevBtn.addEventListener('click', () => this.prevQuestion());
                 this.elements.submitBtn.addEventListener('click', () => this.submitAnswer());
                 this.elements.nextBtn.addEventListener('click', () => this.nextQuestion());
                 this.elements.finishBtn.addEventListener('click', () => this.finishQuiz());
-                this.elements.showQuestionsBtn.addEventListener('click', () => this.openQuestionNavModal());
-                document.querySelectorAll('.mode-btn').forEach(btn => btn.addEventListener('click', () => {
-                    if (this.state.isQuizActive) return;
-                    document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
-                    btn.classList.add('active');
-                    this.state.currentMode = btn.dataset.mode;
-                }));
+                this.elements.explanationBtn.addEventListener('click', () => this.showCurrentExplanation());
+                
+                // 複習模式選擇事件
+                document.querySelectorAll('.review-mode-item').forEach(item => {
+                    item.addEventListener('click', (e) => {
+                        if (this.state.isQuizActive) {
+                            this.showAlert('測驗進行中，無法更改複習模式！', 'warning');
+                            return;
+                        }
+                        const mode = item.dataset.reviewMode;
+                        this.selectReviewMode(mode);
+
+                        // 如果是主題複習，則打開選擇視窗
+                        if (mode === 'topic') {
+                            this.openTopicSelectionModal();
+                        }
+                    });
+                });
+                
+                // 導航按鈕
                 document.getElementById('save-btn').addEventListener('click', () => this.saveUserData(true));
                 document.getElementById('export-btn').addEventListener('click', () => this.exportWrongQuestions());
                 document.getElementById('stats-btn').addEventListener('click', () => this.showStatistics());
                 document.getElementById('help-btn').addEventListener('click', () => this.modals.help.show());
-                document.getElementById('restart-quiz-btn').addEventListener('click', () => this.restartQuiz());
+                
+                // 模式選擇
+                document.querySelectorAll('.mode-btn').forEach(btn => {
+                    btn.addEventListener('click', () => {
+                        if (this.state.isQuizActive) {
+                            this.showAlert('測驗進行中，無法更改模式！', 'warning');
+                            return;
+                        }
+                        document.querySelectorAll('.mode-btn').forEach(b => b.classList.remove('active'));
+                        btn.classList.add('active');
+                        this.state.currentMode = btn.dataset.mode;
+                        this.updateModeUI();
+                    });
+                });
+                
+                // 解析模式選擇
+                document.querySelectorAll('[name="explanation-mode"]').forEach(radio => {
+                    radio.addEventListener('change', (e) => {
+                        this.state.explanationMode = e.target.value;
+                        const aiModelSelect = document.getElementById('ai-model-select');
+                        if (this.state.explanationMode === 'ai') {
+                            aiModelSelect.classList.remove('d-none');
+                        } else {
+                            aiModelSelect.classList.add('d-none');
+                        }
+                    });
+                });
+                
+                // AI模型選擇
+                document.getElementById('ai-model').addEventListener('change', (e) => {
+                    this.state.selectedAIModel = e.target.value;
+                });
+                
+                // 模態框按鈕
                 document.getElementById('review-wrong-btn').addEventListener('click', () => this.reviewWrongQuestions());
+                document.getElementById('restart-quiz-btn').addEventListener('click', () => this.restartQuiz());
                 document.getElementById('reset-stats-btn').addEventListener('click', () => this.resetProgress());
-                window.addEventListener('beforeunload', () => { if (this.state.isQuizActive) this.saveUserData(); });
+                
+                // 頁面關閉前自動保存
+                window.addEventListener('beforeunload', () => this.saveUserData(false));
             },
-
-            loadUserData() {
-                try {
-                    const data = localStorage.getItem('iPASQuizUserData');
-                    return data ? JSON.parse(data) : { correct: [], incorrect: [], history: [] };
-                } catch (error) { return { correct: [], incorrect: [], history: [] }; }
+            
+            // 選擇複習模式
+            selectReviewMode(mode) {
+                document.querySelectorAll('.review-mode-item').forEach(item => {
+                    item.classList.remove('selected');
+                });
+                
+                const selectedItem = document.querySelector(`[data-review-mode="${mode}"]`);
+                if (selectedItem) {
+                    selectedItem.classList.add('selected');
+                    this.state.selectedReviewMode = mode;
+                    this.updateReviewButtonState();
+                    console.log(`✅ 已選擇複習模式: ${mode}`);
+                }
             },
+            
+            // 更新模式UI
+            updateModeUI() {
+                if (this.state.currentMode === 'practice' || this.state.currentMode === 'exam') {
+                    this.elements.reviewModesSection.style.display = 'none';
+                    this.elements.startBtn.style.display = 'block';
+                    this.elements.reviewBtnMain.style.display = 'none';
+                }
+                
+                // 根據模式更新計時器顯示
+                this.updateTimerForMode();
+            },
+            
+            // 根據模式更新計時器顯示
+            updateTimerForMode() {
+                if (!this.state.selectedDatabase) return;
+                
+                const config = this.examConfigs[this.state.selectedDatabase];
+                if (!config) return;
+                
+                if (this.state.currentMode === 'exam') {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>${config.name} | 考試時間：${config.duration}分鐘`;
+                    this.elements.timerElement.classList.add('exam-mode');
+                } else {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>已選擇：${config.name}`;
+                    this.elements.timerElement.classList.remove('exam-mode');
+                }
+            },
+            
+            // 開始複習
+            startReview() {
+                if (!this.state.selectedDatabase) {
+                    this.showAlert('請先選擇題庫！', 'warning');
+                    return;
+                }
+                
+                if (!this.state.selectedReviewMode) {
+                    this.showAlert('請選擇複習模式！', 'warning');
+                    return;
+                }
+                
+                if (this.state.selectedReviewMode === 'topic' && (!this.state.selectedTopicsForReview || this.state.selectedTopicsForReview.length === 0)) {
+                    this.showAlert('請先點擊「主題複習」按鈕來選擇要複習的主題！', 'warning');
+                    this.openTopicSelectionModal();
+                    return;
+                }
 
-            saveUserData(showMessage = false) {
-                // ... (內容不變)
+                this.showLoading('準備複習模式...');
+                
+                this.state.isQuizActive = true;
+                this.state.currentMode = 'review';
+                this.lockInterface();
+                
+                setTimeout(() => {
+                    if (this.loadReviewQuestions()) {
+                        this.state.currentQuestionIndex = 0;
+                        this.state.userAnswers = {};
+                        this.state.questionMapping = {};
+                        this.state.score = 0;
+                        this.state.wrongQuestions = [];
+                        this.state.startTime = new Date();
+                        
+                        this.elements.settingsPanel.classList.add('d-none');
+                        this.elements.quizContainer.classList.remove('d-none');
+                        this.elements.quizStatus.style.display = 'block';
+                        this.elements.quizStatus.classList.add('active');
+                        this.elements.quizStatus.innerHTML = '<i class="fas fa-redo me-1"></i>複習進行中';
+                        
+                        this.displayQuestion();
+                        this.hideLoading();
+                        console.log('✅ 複習已開始');
+                    } else {
+                        this.hideLoading();
+                        this.state.isQuizActive = false;
+                        this.unlockInterface();
+                    }
+                }, 500);
+            },
+            
+            // 載入複習題目
+            loadReviewQuestions() {
+                const currentQuizData = quizData[this.state.selectedDatabase];
+                
+                if (!currentQuizData || currentQuizData.length === 0) {
+                    this.showAlert(`${this.examConfigs[this.state.selectedDatabase]?.name || this.state.selectedDatabase}題庫尚未載入或為空！`, 'error');
+                    return false;
+                }
+                
+                let questionsToReview = [];
+                const questionCount = parseInt(document.getElementById('question-count').value);
+                
+                switch (this.state.selectedReviewMode) {
+                    case 'wrong':
+                        const incorrectQuestions = this.state.userData.incorrect || [];
+                        questionsToReview = currentQuizData.filter(q => 
+                            incorrectQuestions.includes(q.question)
+                        );
+                        if (questionsToReview.length === 0) {
+                            this.showAlert('目前沒有錯題記錄，請先進行練習！', 'info');
+                            return false;
+                        }
+                        break;
+                        
+                    case 'all':
+                        questionsToReview = currentQuizData.slice(0, Math.min(questionCount, currentQuizData.length));
+                        break;
+                        
+                    case 'topic':
+                        const selectedTopics = this.state.selectedTopicsForReview;
+                        if (!selectedTopics || selectedTopics.length === 0) {
+                            this.showAlert('錯誤：未找到選擇的主題。請重新選擇。', 'error');
+                            return false;
+                        }
+                        questionsToReview = currentQuizData.filter(q => selectedTopics.includes(q.topic || '未分類'));
+                        
+                        if (questionsToReview.length === 0) {
+                            this.showAlert(`在您選擇的主題中找不到任何題目。`, 'info');
+                            return false;
+                        }
+                        questionsToReview = questionsToReview.sort(() => Math.random() - 0.5)
+                            .slice(0, Math.min(questionCount, questionsToReview.length));
+                        break;
+
+                    case 'random':
+                        questionsToReview = [...currentQuizData].sort(() => Math.random() - 0.5)
+                            .slice(0, Math.min(questionCount, currentQuizData.length));
+                        break;
+                        
+                    default:
+                        this.showAlert('未知的複習模式！', 'error');
+                        return false;
+                }
+                
+                this.state.questions = questionsToReview;
+                this.state.questions.forEach((q, index) => q.number = index + 1);
+                
+                return true;
             },
 
             selectDatabase(type) {
-                if (this.state.isQuizActive) return;
                 this.elements.databaseCards.forEach(card => card.classList.remove('selected'));
-                document.querySelector(`[data-type="${type}"]`).classList.add('selected');
-                this.state.selectedDatabase = type;
-                document.getElementById('question-count').value = this.examConfigs[type].defaultQuestions;
-                this.elements.startBtn.disabled = false;
-            },
-
-            startQuiz() {
-                if (!this.state.selectedDatabase) { this.showAlert('請先選擇題庫！', 'warning'); return; }
-                this.showLoading('準備測驗中...');
                 
-                setTimeout(() => {
-                    const questionCount = parseInt(document.getElementById('question-count').value);
-                    const currentQuizData = quizData[this.state.selectedDatabase];
-                    if (!currentQuizData || currentQuizData.length === 0) {
-                        this.showAlert(`${this.examConfigs[this.state.selectedDatabase].name}題庫為空！`, 'error');
-                        this.hideLoading();
-                        return;
+                const selectedCard = document.querySelector(`[data-type="${type}"]`);
+                selectedCard.classList.add('selected');
+                
+                this.state.selectedDatabase = type;
+                this.state.selectedTopicsForReview = [];
+                this.updateDatabaseUI(type);
+                this.elements.startBtn.disabled = false;
+                this.updateReviewButtonState();
+                
+                console.log(`✅ 已選擇題庫: ${type}`);
+            },
+            
+            // 更新題庫UI
+            updateDatabaseUI(type) {
+                const config = this.examConfigs[type];
+                if (!config) return;
+                
+                // 更新考試時間
+                this.state.examDuration = config.duration;
+                
+                // 更新預設題目數量
+                document.getElementById('question-count').value = config.defaultQuestions;
+                
+                // 使用新的 updateTimerForMode 方法來更新計時器顯示
+                if (this.state.currentMode === 'exam') {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>${config.name} | 考試時間：${config.duration}分鐘`;
+                    this.elements.timerElement.classList.add('exam-mode');
+                } else {
+                    this.elements.timerElement.innerHTML = 
+                        `<i class="fas fa-clock me-2"></i>已選擇：${config.name}`;
+                    this.elements.timerElement.classList.remove('exam-mode');
+                }
+                
+                // 如果是iPAS，設定為練習模式
+                if (type === 'ipas') {
+                    document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
+                    document.querySelector('[data-mode="practice"]').classList.add('active');
+                    this.state.currentMode = 'practice';
+                }
+            },
+            
+            // 更新複習按鈕狀態
+            updateReviewButtonState() {
+                const hasWrongQuestions = this.state.userData.incorrect && this.state.userData.incorrect.length > 0;
+                const hasSelectedDatabase = this.state.selectedDatabase !== null;
+                
+                if (hasSelectedDatabase) {
+                    this.elements.reviewModesSection.style.display = 'block';
+                    this.elements.startBtn.style.display = 'block';
+                    this.elements.reviewBtnMain.style.display = 'block';
+                } else {
+                    this.elements.reviewModesSection.style.display = 'none';
+                    this.elements.reviewBtnMain.style.display = 'none';
+                }
+                
+                const wrongModeItem = document.getElementById('review-wrong-mode');
+                if (wrongModeItem) {
+                    if (hasWrongQuestions) {
+                        wrongModeItem.style.opacity = '1';
+                        wrongModeItem.style.pointerEvents = 'auto';
+                        wrongModeItem.title = '複習之前答錯的題目';
+                    } else {
+                        wrongModeItem.style.opacity = '0.5';
+                        wrongModeItem.style.pointerEvents = 'none';
+                        wrongModeItem.title = '尚無錯題記錄';
                     }
-                    const shuffled = [...currentQuizData].sort(() => 0.5 - Math.random());
-                    this.state.questions = shuffled.slice(0, questionCount);
-                    
-                    this.state.isQuizActive = true;
-                    this.state.currentQuestionIndex = 0;
-                    this.state.userAnswers = {};
-                    this.state.questionMapping = {};
-                    this.state.markedQuestions = [];
-                    this.state.score = 0;
-                    this.state.wrongQuestions = [];
-                    this.state.startTime = new Date();
-
-                    this.elements.settingsPanel.style.display = 'none';
-                    this.elements.databaseSelector.classList.add('disabled');
-                    this.elements.quizContainer.classList.remove('d-none');
-                    this.elements.quizStatus.style.display = 'block';
-                    
-                    if (this.state.currentMode === 'exam') {
-                        // 【修正】確保計時器啟動
-                        this.startTimer();
-                    }
-
-                    this.displayQuestion();
-                    this.hideLoading();
-                }, 500);
+                }
+                
+                this.elements.reviewBtnMain.disabled = !hasSelectedDatabase;
             },
 
-            displayQuestion() {
-                const qIndex = this.state.currentQuestionIndex;
-                const question = this.state.questions[qIndex];
-
-                this.elements.questionNumber.textContent = `問題 ${qIndex + 1}/${this.state.questions.length}`;
-                this.elements.databaseBadge.textContent = this.examConfigs[this.state.selectedDatabase].name;
-                this.elements.questionText.textContent = question.question;
-
-                if (!this.state.questionMapping[qIndex]) {
-                    const options = question.options.map((opt, i) => ({ text: opt, originalIndex: i }));
-                    this.state.questionMapping[qIndex] = [...options].sort(() => 0.5 - Math.random());
+            openTopicSelectionModal() {
+                if (!this.state.selectedDatabase) {
+                    this.showAlert('請先選擇題庫！', 'warning');
+                    return;
                 }
 
-                this.elements.optionsContainer.innerHTML = this.state.questionMapping[qIndex].map((opt, i) => {
-                    const letter = String.fromCharCode(65 + i);
-                    const isChecked = this.state.userAnswers[qIndex]?.answer === letter ? 'checked' : '';
-                    return `<div class="form-check mb-2"><input class="option-input" type="radio" name="quiz-option" id="option-${letter}" value="${letter}" data-original-index="${opt.originalIndex}" ${isChecked}><label class="option-label" for="option-${letter}">${letter}. ${opt.text}</label></div>`;
-                }).join('');
+                const currentQuizData = quizData[this.state.selectedDatabase];
+                if (!currentQuizData || currentQuizData.length === 0) {
+                    this.showAlert('此題庫無題目可供選擇主題！', 'error');
+                    return;
+                }
 
-                if (this.state.userAnswers[qIndex] && this.state.currentMode !== 'exam') {
-                    this.showExplanation(question, this.state.userAnswers[qIndex].answer, this.state.userAnswers[qIndex].isCorrect);
+                const allTopics = currentQuizData.map(q => q.topic || '未分類');
+                const uniqueTopics = [...new Set(allTopics)].sort();
+
+                const container = document.getElementById('topic-list-container');
+                container.innerHTML = '';
+
+                uniqueTopics.forEach((topic, index) => {
+                    const isChecked = this.state.selectedTopicsForReview.includes(topic) ? 'checked' : '';
+                    const topicHTML = `
+                        <div class="form-check">
+                            <input class="form-check-input" type="checkbox" value="${topic}" id="topic-check-${index}" ${isChecked}>
+                            <label class="form-check-label" for="topic-check-${index}">
+                                ${topic}
+                            </label>
+                        </div>
+                    `;
+                    container.insertAdjacentHTML('beforeend', topicHTML);
+                });
+
+                this.modals.topicSelection.show();
+            },
+
+            confirmTopicSelection() {
+                const selectedCheckboxes = document.querySelectorAll('#topic-list-container input[type="checkbox"]:checked');
+                this.state.selectedTopicsForReview = Array.from(selectedCheckboxes).map(cb => cb.value);
+
+                if (this.state.selectedTopicsForReview.length === 0) {
+                    this.showAlert('您尚未選擇任何主題！', 'warning');
+                    return;
+                }
+
+                this.modals.topicSelection.hide();
+                this.showAlert(`已選擇 ${this.state.selectedTopicsForReview.length} 個主題，請點擊「開始複習」`, 'success');
+                this.updateReviewButtonState();
+            },
+
+            toggleAllTopics(select) {
+                const checkboxes = document.querySelectorAll('#topic-list-container input[type="checkbox"]');
+                checkboxes.forEach(checkbox => {
+                    checkbox.checked = select;
+                });
+            },
+            
+            // 開始測驗
+            startQuiz() {
+                if (!this.state.selectedDatabase) {
+                    this.showAlert('請先選擇題庫！', 'warning');
+                    return;
+                }
+                
+                const config = this.examConfigs[this.state.selectedDatabase];
+                
+                // 如果是考試模式，加入確認機制
+                if (this.state.currentMode === 'exam') {
+                    const confirmStart = confirm(
+                        `確定要開始${config.name}模擬考試嗎？\n\n` +
+                        '⚠️ 重要提醒：\n' +
+                        `• 考試時間：${config.duration}分鐘\n` +
+                        '• 一旦開始無法暫停或重置\n' +
+                        '• 無法返回題庫選擇\n' +
+                        '• 時間到將自動交卷\n\n' +
+                        '請確認您已準備就緒！'
+                    );
+                    
+                    if (!confirmStart) {
+                        return;
+                    }
+                }
+                
+                this.showLoading('準備測驗中...');
+                
+                this.state.isQuizActive = true;
+                this.lockInterface();
+                
+                const questionCount = parseInt(document.getElementById('question-count').value);
+                
+                setTimeout(() => {
+                    if (this.loadQuestions(questionCount)) {
+                        this.state.currentQuestionIndex = 0;
+                        this.state.userAnswers = {};
+                        this.state.questionMapping = {};
+                        this.state.score = 0;
+                        this.state.wrongQuestions = [];
+                        this.state.startTime = new Date();
+                        
+                        this.elements.settingsPanel.classList.add('d-none');
+                        this.elements.quizContainer.classList.remove('d-none');
+                        this.elements.quizStatus.style.display = 'block';
+                        this.elements.quizStatus.classList.add('active');
+                        
+                        this.displayQuestion();
+                        
+                        if (this.state.currentMode === 'exam') {
+                            this.startTimer();
+                        }
+                        
+                        this.hideLoading();
+                        console.log('✅ 測驗已開始');
+                    } else {
+                        this.hideLoading();
+                        this.state.isQuizActive = false;
+                        this.unlockInterface();
+                    }
+                }, 500);
+            },
+            
+            // 鎖定介面
+            lockInterface() {
+                this.elements.databaseSelector.classList.add('disabled');
+                this.elements.settingsPanel.classList.add('disabled');
+                this.elements.databaseCards.forEach(card => card.classList.add('disabled'));
+            },
+            
+            // 解鎖介面
+            unlockInterface() {
+                this.elements.databaseSelector.classList.remove('disabled');
+                this.elements.settingsPanel.classList.remove('disabled');
+                this.elements.databaseCards.forEach(card => card.classList.remove('disabled'));
+            },
+            
+            // 載入題目
+            loadQuestions(count) {
+                const currentQuizData = quizData[this.state.selectedDatabase];
+                const config = this.examConfigs[this.state.selectedDatabase];
+                
+                if (!currentQuizData || currentQuizData.length === 0) {
+                    this.showAlert(`${config?.name || this.state.selectedDatabase}題庫尚未載入或為空！`, 'error');
+                    return false;
+                }
+                
+                const shuffledQuestions = [...currentQuizData].sort(() => Math.random() - 0.5);
+                this.state.questions = shuffledQuestions.slice(0, Math.min(count, shuffledQuestions.length));
+                this.state.questions.forEach((q, index) => q.number = index + 1);
+                
+                return true;
+            },
+            
+            // 顯示題目
+            displayQuestion() {
+                if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
+                    this.finishQuiz();
+                    return false;
+                }
+                
+                const question = this.state.questions[this.state.currentQuestionIndex];
+                const questionId = this.state.currentQuestionIndex;
+                
+                this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
+                this.elements.questionText.textContent = question.question;
+                
+                if (!this.state.questionMapping[questionId]) {
+                    const optionsWithIndex = question.options.map((option, index) => ({
+                        text: option,
+                        originalIndex: index,
+                        isCorrect: index === question.correct_answer_index
+                    }));
+                    
+                    const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
+                    
+                    this.state.questionMapping[questionId] = {
+                        shuffledOptions: shuffledOptions,
+                        correctLetter: null
+                    };
+                    
+                    shuffledOptions.forEach((option, index) => {
+                        if (option.isCorrect) {
+                            this.state.questionMapping[questionId].correctLetter = String.fromCharCode(65 + index);
+                        }
+                    });
+                }
+                
+                const mapping = this.state.questionMapping[questionId];
+                this.elements.optionsContainer.innerHTML = '';
+                
+                mapping.shuffledOptions.forEach((option, displayIndex) => {
+                    const letter = String.fromCharCode(65 + displayIndex);
+                    const optionHTML = `
+                        <div class="form-check mb-2">
+                            <input class="option-input" type="radio" name="quiz-option" 
+                                   id="option-${letter}" value="${letter}" 
+                                   data-original-index="${option.originalIndex}">
+                            <label class="option-label" for="option-${letter}">
+                                ${letter}. ${option.text}
+                            </label>
+                        </div>
+                    `;
+                    this.elements.optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
+                });
+                
+                if (this.state.currentQuestionIndex in this.state.userAnswers) {
+                    const previousAnswer = this.state.userAnswers[this.state.currentQuestionIndex];
+                    const answerInput = document.getElementById(`option-${previousAnswer.answer}`);
+                    if (answerInput) {
+                        answerInput.checked = true;
+                    }
+                    
+                    document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
+                        input.disabled = true;
+                    });
+                    
+                    if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
+                        this.showExplanation(question, previousAnswer.answer, previousAnswer.isCorrect);
+                    }
                 } else {
                     this.elements.explanationBox.classList.add('d-none');
                 }
-                this.updateStats();
-                this.updateButtonStates();
-            },
-
-            submitAnswer() {
-                const selectedOption = this.elements.optionsContainer.querySelector('input[name="quiz-option"]:checked');
-                if (!selectedOption) { this.showAlert('請選擇一個答案！', 'warning'); return; }
-
-                const qIndex = this.state.currentQuestionIndex;
-                const question = this.state.questions[qIndex];
                 
-                // 【修正】確保錯題記錄的唯一性
-                const existingWrongIndex = this.state.wrongQuestions.findIndex(q => q.question === question.question);
-                if (existingWrongIndex > -1) {
-                    this.state.wrongQuestions.splice(existingWrongIndex, 1);
+                const progress = ((this.state.currentQuestionIndex + 1) / this.state.questions.length) * 100;
+                this.elements.progressBar.style.width = `${progress}%`;
+                
+                this.updateButtonStates();
+                this.updateStats();
+                
+                return true;
+            },
+            
+            // 提交答案
+            submitAnswer() {
+                const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
+                if (!selectedOption) {
+                    this.showAlert('請選擇一個答案！', 'warning');
+                    return false;
                 }
-                if (this.state.userAnswers[qIndex]?.isCorrect) {
-                    this.state.score--;
-                }
-
+                
+                const question = this.state.questions[this.state.currentQuestionIndex];
+                const questionId = this.state.currentQuestionIndex;
                 const userAnswerLetter = selectedOption.value;
                 const originalIndex = parseInt(selectedOption.dataset.originalIndex);
+                const mapping = this.state.questionMapping[questionId];
                 const isCorrect = originalIndex === question.correct_answer_index;
-
-                this.state.userAnswers[qIndex] = { answer: userAnswerLetter, originalIndex, isCorrect };
-
+                
+                this.state.userAnswers[this.state.currentQuestionIndex] = {
+                    answer: userAnswerLetter,
+                    originalIndex: originalIndex,
+                    isCorrect: isCorrect,
+                    timestamp: new Date()
+                };
+                
                 if (isCorrect) {
                     this.state.score++;
+                    if (!this.state.userData.correct.includes(question.question)) {
+                        this.state.userData.correct.push(question.question);
+                    }
+                    const incorrectIndex = this.state.userData.incorrect.indexOf(question.question);
+                    if (incorrectIndex !== -1) {
+                        this.state.userData.incorrect.splice(incorrectIndex, 1);
+                    }
                 } else {
                     this.state.wrongQuestions.push(question);
+                    if (!this.state.userData.incorrect.includes(question.question)) {
+                        this.state.userData.incorrect.push(question.question);
+                    }
+                    const correctIndex = this.state.userData.correct.indexOf(question.question);
+                    if (correctIndex !== -1) {
+                        this.state.userData.correct.splice(correctIndex, 1);
+                    }
                 }
-
-                if (this.state.currentMode === 'exam') {
-                    this.showAlert(`第 ${qIndex + 1} 題答案已記錄`, 'info');
-                } else {
+                
+                const historyEntry = {
+                    timestamp: new Date().toISOString(),
+                    database: this.state.selectedDatabase,
+                    question: question.question,
+                    options: question.options,
+                    user_answer: userAnswerLetter,
+                    correct_answer_letter: mapping.correctLetter,
+                    correct_answer_index: question.correct_answer_index,
+                    is_correct: isCorrect,
+                    topic: question.topic,
+                    subtopic: question.subtopic,
+                    explanation: question.explanation
+                };
+                this.state.userData.history.push(historyEntry);
+                
+                if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
                     this.showExplanation(question, userAnswerLetter, isCorrect);
+                    document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
+                        input.disabled = true;
+                    });
                 }
                 
                 this.updateStats();
                 this.updateButtonStates();
-                this.saveUserData();
+                this.updateReviewButtonState();
+                this.saveUserData(false);
+                
+                return true;
             },
-
+            
+            // 顯示解析
             showExplanation(question, userAnswerLetter, isCorrect) {
                 this.elements.explanationBox.classList.remove('d-none');
-                const correctLetter = this.getCorrectLetterForCurrentQuestion();
+                
+                const questionId = this.state.currentQuestionIndex;
+                const mapping = this.state.questionMapping[questionId];
+                const correctAnswerLetter = mapping.correctLetter;
+                
                 const resultClass = isCorrect ? 'correct' : 'incorrect';
                 const resultIcon = isCorrect ? '✅' : '❌';
-                const resultText = isCorrect ? '答對了！' : `答錯了！正確答案是 ${correctLetter}`;
-                this.elements.explanationContent.innerHTML = `<div class="${resultClass} mb-3">${resultIcon} ${resultText}</div><div class="fw-bold mb-2">解析:</div><div class="highlight">${question.explanation || '無解析'}</div>`;
-            },
-            
-            getCorrectLetterForCurrentQuestion() {
-                const qIndex = this.state.currentQuestionIndex;
-                if(!this.state.questions[qIndex]) return '?';
-                const question = this.state.questions[qIndex];
-                const mapping = this.state.questionMapping[qIndex];
-                const correctOption = mapping.find(opt => opt.originalIndex === question.correct_answer_index);
-                const displayIndex = mapping.indexOf(correctOption);
-                return String.fromCharCode(65 + displayIndex);
-            },
-            
-            updateButtonStates() {
-                const isFirst = this.state.currentQuestionIndex === 0;
-                const isLast = this.state.currentQuestionIndex === this.state.questions.length - 1;
-                this.elements.prevBtn.disabled = isFirst;
-                this.elements.nextBtn.disabled = isLast;
-                this.elements.submitBtn.disabled = false;
-                this.elements.showQuestionsBtn.disabled = !this.state.isQuizActive;
-                this.elements.finishBtn.disabled = Object.keys(this.state.userAnswers).length !== this.state.questions.length;
-            },
-
-            updateStats() {
-                const answeredCount = Object.keys(this.state.userAnswers).length;
-                const accuracy = answeredCount > 0 ? (this.state.score / answeredCount * 100).toFixed(1) : 0;
-                this.elements.statsDisplay.textContent = `得分: ${this.state.score}/${answeredCount} (${accuracy}%)`;
-                const progress = (answeredCount / this.state.questions.length) * 100;
-                this.elements.progressBar.style.width = `${progress}%`;
-            },
-
-            nextQuestion() { if (this.state.currentQuestionIndex < this.state.questions.length - 1) { this.state.currentQuestionIndex++; this.displayQuestion(); } },
-            prevQuestion() { if (this.state.currentQuestionIndex > 0) { this.state.currentQuestionIndex--; this.displayQuestion(); } },
-
-            finishQuiz() { /* ... (內容不變) ... */ },
-            showResult() { /* ... (內容不變) ... */ },
-            backToSelection() {
-                if (this.state.isQuizActive && !confirm('確定放棄當前測驗？')) return;
-                this.stopTimer();
-                this.state.isQuizActive = false;
-                this.elements.quizContainer.classList.add('d-none');
-                this.elements.settingsPanel.style.display = 'block';
-                this.elements.databaseSelector.classList.remove('disabled');
-                this.elements.quizStatus.style.display = 'none';
-            },
-            restartQuiz() { this.modals.result.hide(); this.backToSelection(); },
-
-            startTimer() {
-                this.stopTimer(); // 先清除舊的計時器
-                this.state.isTimerRunning = true;
-                this.elements.quizTimerDisplay.style.display = 'block';
-                const duration = this.examConfigs[this.state.selectedDatabase].duration * 60;
+                const resultText = isCorrect ? '答對了！' : `答錯了！正確答案是 ${correctAnswerLetter}`;
                 
-                const update = () => {
-                    const elapsed = Math.floor((new Date() - this.state.startTime) / 1000);
-                    const remaining = duration - elapsed;
-                    if (remaining <= 0) {
-                        this.stopTimer();
-                        this.showAlert('時間到，自動交卷！', 'warning');
-                        this.finishQuiz();
+                let explanationHTML = `
+                    <div class="${resultClass} mb-3">
+                        ${resultIcon} ${resultText}
+                    </div>
+                    <div class="fw-bold mb-2">解析:</div>
+                `;
+                
+                if (this.state.explanationMode === 'database') {
+                    explanationHTML += `<div class="highlight">${question.explanation || '無解析'}</div>`;
+                } else if (this.state.explanationMode === 'ai') {
+                    explanationHTML += '<div class="highlight" id="ai-explanation">正在生成解析，請稍候...</div>';
+                    this.generateAIExplanation(question, userAnswerLetter);
+                }
+                
+                this.elements.explanationContent.innerHTML = explanationHTML;
+                
+                this.elements.topicBadge.textContent = question.topic || '未分類';
+                this.elements.subtopicBadge.textContent = question.subtopic || '未分類';
+            },
+            
+            // 查看當前解析
+            showCurrentExplanation() {
+                if (this.state.currentQuestionIndex in this.state.userAnswers) {
+                    const question = this.state.questions[this.state.currentQuestionIndex];
+                    const userAnswerData = this.state.userAnswers[this.state.currentQuestionIndex];
+                    this.showExplanation(question, userAnswerData.answer, userAnswerData.isCorrect);
+                    this.showAlert('已顯示當前題目解析', 'info');
+                } else {
+                    this.showAlert('建議先回答題目再查看解析，這樣學習效果更好！', 'info');
+                }
+            },
+            
+            // AI生成解析
+            async generateAIExplanation(question, userAnswerLetter) {
+                try {
+                    this.showLoading('AI正在生成解析...');
+                    
+                    const questionId = this.state.currentQuestionIndex;
+                    const mapping = this.state.questionMapping[questionId];
+                    const correctAnswerLetter = mapping ? mapping.correctLetter : question.correct_answer_letter;
+                    
+                    let optionsText = '';
+                    if (mapping && mapping.shuffledOptions) {
+                        optionsText = mapping.shuffledOptions.map((opt, idx) => 
+                            `${String.fromCharCode(65 + idx)}. ${opt.text}`
+                        ).join('\n');
+                    } else {
+                        optionsText = question.options.map((opt, i) => 
+                            `${String.fromCharCode(65 + i)}. ${opt}`
+                        ).join('\n');
+                    }
+                    
+                    const prompt = `
+                    你是一個專業的iPAS AI應用規劃師認證考試輔導老師。請用繁體中文根據以下題目生成詳細的答案解析（150字以內）：
+                    
+                    題目：${question.question}
+                    選項（按用戶看到的順序）: 
+                    ${optionsText}
+                    正確答案: ${correctAnswerLetter}
+                    用戶答案: ${userAnswerLetter}
+                    
+                    請提供清晰完整的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。重點關注AI應用規劃的商業價值與實務考量。
+                    `;
+
+                    let aiExplanation = null;
+                    
+                    try {
+                        const response = await fetch('https://back-9qb9.onrender.com/api/generate-explanation', {
+                            method: 'POST',
+                            headers: {
+                                'Content-Type': 'application/json',
+                            },
+                            body: JSON.stringify({
+                                model: this.state.selectedAIModel,
+                                prompt: prompt,
+                            }),
+                            timeout: 10000
+                        });
+
+                        if (response.ok) {
+                            const data = await response.json();
+                            aiExplanation = data.explanation || data.response || data.answer;
+                        }
+                    } catch (error) {
+                        console.warn('自定義API失敗，嘗試其他方案:', error);
+                    }
+                    
+                    if (!aiExplanation) {
+                        aiExplanation = this.generateMockAIExplanation(question, userAnswerLetter, correctAnswerLetter, mapping);
+                    }
+                    
+                    this.hideLoading();
+                    
+                    const explanationElement = document.getElementById('ai-explanation');
+                    if (explanationElement && aiExplanation) {
+                        const paragraphs = aiExplanation.split('\n').filter(p => p.trim()).map(p => `<p>${p.trim()}</p>`).join('');
+                        explanationElement.innerHTML = paragraphs;
+                        
+                        const aiLabel = document.createElement('div');
+                        aiLabel.className = 'text-muted small mt-2';
+                        aiLabel.innerHTML = '<i class="fas fa-robot me-1"></i>AI生成解析';
+                        explanationElement.appendChild(aiLabel);
+                    } else {
+                        this.fallbackToDatabaseExplanation();
+                    }
+                    
+                } catch (error) {
+                    console.error('AI解析生成失敗:', error);
+                    this.hideLoading();
+                    this.fallbackToDatabaseExplanation();
+                }
+            },
+            
+            // 生成模擬AI解析
+            generateMockAIExplanation(question, userAnswerLetter, correctAnswerLetter, mapping) {
+                const isCorrect = userAnswerLetter === correctAnswerLetter;
+                const topic = question.topic || 'AI應用規劃';
+                const correctOptionText = mapping ? 
+                    mapping.shuffledOptions.find(opt => opt.isCorrect)?.text || question.options[question.correct_answer_index] :
+                    question.options[question.correct_answer_index];
+                
+                let explanation = '';
+                
+                if (isCorrect) {
+                    explanation = `✅ 回答正確！\n\n`;
+                } else {
+                    explanation = `❌ 此題答錯了，正確答案是 ${correctAnswerLetter}。\n\n`;
+                }
+                
+                if (topic.includes('AI應用') || topic.includes('規劃')) {
+                    explanation += `在AI應用規劃領域，「${correctOptionText}」是最佳選擇，因為：\n\n`;
+                    explanation += `1. 符合iPAS認證對AI應用規劃師的核心能力要求\n`;
+                    explanation += `2. 反映了業界最佳實務和商業考量\n`;
+                    explanation += `3. 有助於確保AI專案的成功實施和價值實現\n\n`;
+                } else if (topic.includes('機器學習') || topic.includes('模型')) {
+                    explanation += `從技術角度來看，「${correctOptionText}」是正確答案，因為：\n\n`;
+                    explanation += `1. 這是機器學習領域的重要概念\n`;
+                    explanation += `2. 直接影響模型的實際應用效果\n`;
+                    explanation += `3. 是AI專案評估的關鍵指標\n\n`;
+                } else {
+                    explanation += `「${correctOptionText}」是正確答案，這個選項：\n\n`;
+                    explanation += `1. 符合AI應用規劃的基本原則\n`;
+                    explanation += `2. 體現了商業價值和實務考量\n`;
+                    explanation += `3. 是iPAS認證考試的重點內容\n\n`;
+                }
+                
+                explanation += `建議進一步複習相關的${topic}知識點，加強對AI應用規劃實務的理解。`;
+                
+                return explanation;
+            },
+            
+            // 回退到資料庫解析
+            fallbackToDatabaseExplanation() {
+                const explanationElement = document.getElementById('ai-explanation');
+                if (explanationElement) {
+                    const question = this.state.questions[this.state.currentQuestionIndex];
+                    const databaseExplanation = question.explanation || '此題目暫無詳細解析。';
+                    
+                    explanationElement.innerHTML = `
+                        <div class="alert alert-warning">
+                            <i class="fas fa-exclamation-triangle me-2"></i>
+                            AI解析服務暫時不可用，已切換至資料庫解析
+                        </div>
+                        <div>${databaseExplanation}</div>
+                        <div class="text-muted small mt-2">
+                            <i class="fas fa-database me-1"></i>資料庫解析
+                        </div>
+                    `;
+                }
+            },
+            
+            // 下一題
+            nextQuestion() {
+                if (this.state.currentQuestionIndex < this.state.questions.length - 1) {
+                    this.state.currentQuestionIndex++;
+                    this.displayQuestion();
+                } else {
+                    this.finishQuiz();
+                }
+            },
+            
+            // 上一題
+            prevQuestion() {
+                if (this.state.currentQuestionIndex > 0 && this.state.currentMode !== 'exam') {
+                    this.state.currentQuestionIndex--;
+                    this.displayQuestion();
+                }
+            },
+            
+            // 返回題庫選擇
+            backToSelection() {
+                // 考試模式下不允許返回
+                if (this.state.currentMode === 'exam' && this.state.isQuizActive) {
+                    this.showAlert('考試進行中，無法返回題庫選擇！', 'error');
+                    return;
+                }
+                
+                if (this.state.isQuizActive) {
+                    const confirmBack = confirm('確定要放棄當前測驗並返回題庫選擇嗎？\n進度將不會被保存。');
+                    if (!confirmBack) {
                         return;
                     }
-                    const minutes = Math.floor(remaining / 60).toString().padStart(2, '0');
-                    const seconds = (remaining % 60).toString().padStart(2, '0');
-                    this.elements.quizTimerDisplay.innerHTML = `<i class="fas fa-clock me-2"></i>${minutes}:${seconds}`;
-                    if (remaining < 300) this.elements.quizTimerDisplay.classList.add('warning');
-                };
-                update();
-                this.state.timerId = setInterval(update, 1000);
+                }
+                
+                this.state.isQuizActive = false;
+                this.unlockInterface();
+                this.stopTimer();
+                
+                this.elements.quizContainer.classList.add('d-none');
+                this.elements.settingsPanel.classList.remove('d-none');
+                this.elements.quizStatus.style.display = 'none';
+                this.elements.quizStatus.classList.remove('active');
+                
+                console.log('🔙 已返回題庫選擇');
+            },
+            
+            // 完成測驗
+            finishQuiz() {
+                const totalQuestions = this.state.questions.length;
+                const answeredCount = Object.keys(this.state.userAnswers).length;
+                const unansweredCount = totalQuestions - answeredCount;
+                
+                if (unansweredCount > 0 && this.state.currentMode !== 'exam') {
+                    const confirmMessage = `
+還有 ${unansweredCount} 題未回答，確定要完成測驗嗎？
+
+已回答：${answeredCount}/${totalQuestions} 題
+未回答的題目將視為答錯。
+
+是否確定要完成測驗？
+                    `.trim();
+                    
+                    if (!confirm(confirmMessage)) {
+                        return;
+                    }
+                }
+                
+                this.stopTimer();
+                this.state.isQuizActive = false;
+                this.unlockInterface();
+                this.showResult();
+            },
+            
+            // 顯示結果
+            showResult() {
+                const total = this.state.questions.length;
+                const score = this.state.score;
+                const percentage = total > 0 ? (score / total * 100).toFixed(1) : 0;
+                const duration = this.calculateTimeTaken();
+                
+                let resultHTML = `
+                    <div class="text-center mb-4">
+                        <h3>📊 ${this.state.currentMode === 'review' ? '複習' : '測驗'}結果</h3>
+                        <div class="progress my-3" style="height: 25px;">
+                            <div class="progress-bar ${percentage >= 70 ? 'bg-success' : 'bg-warning'}" 
+                                 style="width: ${percentage}%">${percentage}%</div>
+                        </div>
+                    </div>
+                    <div class="row text-center mb-4">
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-primary">${score}</h4>
+                                    <small>得分</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-info">${total}</h4>
+                                    <small>總題數</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-warning">${percentage}%</h4>
+                                    <small>正確率</small>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-3">
+                            <div class="card border-0 bg-light">
+                                <div class="card-body">
+                                    <h4 class="text-secondary">${duration}分</h4>
+                                    <small>用時</small>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="alert ${percentage >= 70 ? 'alert-success' : 'alert-warning'} mb-4">
+                        <h5 class="alert-heading">${percentage >= 70 ? '🎉 恭喜通過！' : '💪 繼續努力！'}</h5>
+                        <p class="mb-0">${percentage >= 70 ? '達到官方合格標準(70%)，考試準備良好！' : '距離合格標準還需要加強，建議多加練習錯題。'}</p>
+                    </div>
+                `;
+                
+                if (this.state.wrongQuestions.length > 0) {
+                    resultHTML += this._generateWrongQuestionsHTML();
+                }
+                
+                document.getElementById('result-content').innerHTML = resultHTML;
+                this.modals.result.show();
+            },
+
+            // 計算測驗時間
+            calculateTimeTaken() {
+                if (this.state.startTime) {
+                    return Math.round((new Date() - this.state.startTime) / 1000 / 60);
+                }
+                return 0;
+            },
+
+            // 產生錯題分析HTML
+            _generateWrongQuestionsHTML() {
+                let wrongQuestionsHTML = `
+                    <div class="card mt-4">
+                        <div class="card-header bg-danger text-white">
+                            <h5 class="mb-0">❌ 錯題分析 (${this.state.wrongQuestions.length}題)</h5>
+                        </div>
+                        <div class="card-body" style="max-height: 400px; overflow-y: auto;">
+                `;
+                
+                const topicWrongs = {};
+                this.state.wrongQuestions.forEach(q => {
+                    const topic = q.topic || '未分類';
+                    if (!topicWrongs[topic]) topicWrongs[topic] = [];
+                    topicWrongs[topic].push(q);
+                });
+
+                for (const [topic, questions] of Object.entries(topicWrongs)) {
+                    wrongQuestionsHTML += `<div class="mb-4"><h6 class="border-bottom pb-2">【${topic}】: ${questions.length}題</h6>`;
+                    questions.forEach((q, index) => {
+                        const qOriginalIndex = this.state.questions.indexOf(q);
+                        const userAnswerData = this.state.userAnswers[qOriginalIndex];
+                        const qMapping = this.state.questionMapping[qOriginalIndex];
+                        const qId = `wrong-q-detail-${topic.replace(/\s+/g, '-')}-${index}`;
+                        
+                        let userAnswerText = '未作答', correctAnswerLetter = q.correct_answer_letter, correctAnswerText = q.options[q.correct_answer_index];
+
+                        if (userAnswerData && qMapping) {
+                            const userSelectedOpt = qMapping.shuffledOptions.find(opt => 
+                                opt.originalIndex === userAnswerData.originalIndex
+                            );
+                            if (userSelectedOpt) userAnswerText = userSelectedOpt.text;
+                            correctAnswerLetter = qMapping.correctLetter;
+                        } else if (userAnswerData) {
+                            userAnswerText = q.options[userAnswerData.originalIndex] || '未知';
+                        }
+                        
+                        wrongQuestionsHTML += `
+                            <div class="mb-3">
+                                <a class="fw-bold text-decoration-none text-dark" data-bs-toggle="collapse" href="#${qId}">
+                                    ${index+1}. ${q.question}
+                                </a>
+                                <div class="ps-3 mt-1">
+                                    <div class="text-danger">您的答案: ${userAnswerData ? userAnswerData.answer : '未作答'} (${userAnswerText})</div>
+                                    <div class="text-success">正確答案: ${correctAnswerLetter} (${correctAnswerText})</div>
+                                    <div class="collapse mt-2" id="${qId}">
+                                        <div class="card card-body bg-light">
+                                            <h6 class="text-primary mb-2">題目解析:</h6>
+                                            ${q.explanation || '無解析'}
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        `;
+                    });
+                    wrongQuestionsHTML += `</div>`;
+                }
+                wrongQuestionsHTML += `</div></div>`;
+                return wrongQuestionsHTML;
+            },
+            
+            // 複習錯題
+            reviewWrongQuestions() {
+                if (this.state.wrongQuestions.length === 0) {
+                    this.showAlert('沒有錯題需要複習', 'info');
+                    return;
+                }
+                
+                this.modals.result.hide();
+                this.state.currentMode = 'review';
+                this.state.selectedReviewMode = 'wrong';
+                
+                this.state.questions = [...this.state.wrongQuestions];
+                this.state.currentQuestionIndex = 0;
+                this.state.score = 0;
+                this.state.userAnswers = {};
+                this.state.questionMapping = {};
+                this.state.wrongQuestions = [];
+                
+                this.state.questions.forEach((q, index) => q.number = index + 1);
+                
+                this.displayQuestion();
+                this.updateButtonStates();
+                this.showAlert('開始複習錯題', 'success');
+            },
+            
+            // 重新測驗
+            restartQuiz() {
+                this.modals.result.hide();
+                this.state.isQuizActive = false;
+                this.stopTimer();
+                this.unlockInterface();
+                this.elements.quizContainer.classList.add('d-none');
+                this.elements.settingsPanel.classList.remove('d-none');
+                this.elements.quizStatus.style.display = 'none';
+                this.elements.quizStatus.classList.remove('active');
+                
+                this.state.currentQuestionIndex = 0;
+                this.state.userAnswers = {};
+                this.state.questionMapping = {};
+                this.state.score = 0;
+                this.state.wrongQuestions = [];
+                this.state.questions = [];
+                this.state.startTime = null;
+                
+                if (this.state.selectedDatabase) this.elements.startBtn.disabled = false;
+                this.showAlert('可以重新選擇題目數量和測驗設定了！', 'success');
+            },
+            
+            // 更新按鈕狀態
+            updateButtonStates() {
+                const hasAnswered = this.state.currentQuestionIndex in this.state.userAnswers;
+                const isFirst = this.state.currentQuestionIndex === 0;
+                const isLast = this.state.currentQuestionIndex === this.state.questions.length - 1;
+                
+                const finishEnabled = this.calculateFinishButtonState();
+                
+                this.elements.prevBtn.disabled = isFirst || this.state.currentMode === 'exam';
+                this.elements.submitBtn.disabled = hasAnswered;
+                this.elements.nextBtn.disabled = !hasAnswered || isLast;
+                this.elements.finishBtn.disabled = !finishEnabled;
+                this.elements.explanationBtn.disabled = !hasAnswered;
+                
+                this.updateFinishButtonText();
+            },
+
+            // 計算完成按鈕狀態
+            calculateFinishButtonState() {
+                const totalQuestions = this.state.questions.length;
+                const answeredCount = Object.keys(this.state.userAnswers).length;
+                
+                switch (this.state.currentMode) {
+                    case 'exam':
+                        return answeredCount === totalQuestions || !this.state.isTimerRunning;
+                    case 'practice':
+                        const practiceMinimum = Math.ceil(totalQuestions * 0.5);
+                        return answeredCount >= practiceMinimum;
+                    case 'review':
+                        const reviewMinimum = Math.ceil(totalQuestions * 0.3);
+                        return answeredCount >= reviewMinimum;
+                    default:
+                        return false;
+                }
+            },
+
+            // 更新完成按鈕文字
+            updateFinishButtonText() {
+                const totalQuestions = this.state.questions.length;
+                const answeredCount = Object.keys(this.state.userAnswers).length;
+                const finishBtn = this.elements.finishBtn;
+                
+                if (finishBtn.disabled) {
+                    let requiredCount;
+                    let modeText;
+                    
+                    switch (this.state.currentMode) {
+                        case 'exam':
+                            requiredCount = totalQuestions;
+                            modeText = '模擬考試需回答所有題目';
+                            break;
+                        case 'practice':
+                            requiredCount = Math.ceil(totalQuestions * 0.5);
+                            modeText = '練習模式需回答至少50%';
+                            break;
+                        case 'review':
+                            requiredCount = Math.ceil(totalQuestions * 0.3);
+                            modeText = '複習模式需回答至少30%';
+                            break;
+                        default:
+                            requiredCount = totalQuestions;
+                            modeText = '需回答更多題目';
+                    }
+                    
+                    finishBtn.title = `${modeText} (${answeredCount}/${requiredCount})`;
+                    finishBtn.innerHTML = `
+                        <i class="fas fa-flag-checkered me-1"></i> 
+                        <span class="d-none d-sm-inline">完成 (${answeredCount}/${requiredCount})</span>
+                    `;
+                } else {
+                    finishBtn.title = '可以完成測驗了！';
+                    finishBtn.innerHTML = `
+                        <i class="fas fa-flag-checkered me-1"></i> 
+                        <span class="d-none d-sm-inline">完成測驗</span>
+                    `;
+                }
+            },
+            
+            // 更新統計顯示
+            updateStats() {
+                const answered = Object.keys(this.state.userAnswers).length;
+                const percentage = answered > 0 ? (this.state.score / answered * 100).toFixed(1) : 0;
+                this.elements.statsDisplay.textContent = `得分: ${this.state.score}/${answered} (${percentage}%)`;
+            },
+            
+            // 顯示統計資料
+            showStatistics() {
+                const correctCount = this.state.userData.correct ? this.state.userData.correct.length : 0;
+                const incorrectCount = this.state.userData.incorrect ? this.state.userData.incorrect.length : 0;
+                const totalAnswered = correctCount + incorrectCount;
+                const accuracy = totalAnswered > 0 ? (correctCount / totalAnswered) * 100 : 0;
+                
+                const databaseStats = {};
+                (this.state.userData.history || []).forEach(entry => {
+                    const db = entry.database || '未知';
+                    if (!databaseStats[db]) {
+                        databaseStats[db] = { correct: 0, total: 0 };
+                    }
+                    databaseStats[db].total += 1;
+                    if (entry.is_correct) {
+                        databaseStats[db].correct += 1;
+                    }
+                });
+                
+                const topicStats = {};
+                (this.state.userData.history || []).forEach(entry => {
+                    const topic = entry.topic || '未分類';
+                    if (!topicStats[topic]) {
+                        topicStats[topic] = { correct: 0, total: 0 };
+                    }
+                    topicStats[topic].total += 1;
+                    if (entry.is_correct) {
+                        topicStats[topic].correct += 1;
+                    }
+                });
+                
+                let statsHTML = `
+                    <div class="row mb-4">
+                        <div class="col-md-6">
+                            <div class="card bg-primary text-white">
+                                <div class="card-body text-center">
+                                    <h4>${correctCount}</h4>
+                                    <p class="mb-0">答對題數</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="card bg-danger text-white">
+                                <div class="card-body text-center">
+                                    <h4>${incorrectCount}</h4>
+                                    <p class="mb-0">答錯題數</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header bg-success text-white">
+                            <h5 class="mb-0">整體表現</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <p><strong>總答題數:</strong> ${totalAnswered}</p>
+                                    <p><strong>整體正確率:</strong> ${accuracy.toFixed(1)}%</p>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="progress" style="height: 30px;">
+                                        <div class="progress-bar ${accuracy >= 70 ? 'bg-success' : 'bg-warning'}" style="width: ${accuracy}%">
+                                            ${accuracy.toFixed(1)}%
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card mb-4">
+                        <div class="card-header bg-info text-white">
+                            <h5 class="mb-0">各題庫表現</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>題庫</th>
+                                            <th>正確率</th>
+                                            <th>正確/總數</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+                
+                Object.keys(databaseStats).forEach(db => {
+                    const stats = databaseStats[db];
+                    const dbAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+                    const config = this.examConfigs[db];
+                    const dbName = config ? config.name : db;
+                    
+                    statsHTML += `
+                        <tr>
+                            <td>${dbName}</td>
+                            <td>
+                                <div class="progress" style="height: 15px;">
+                                    <div class="progress-bar ${dbAccuracy < 60 ? 'bg-danger' : dbAccuracy < 80 ? 'bg-warning' : 'bg-success'}" 
+                                         style="width: ${dbAccuracy}%;"></div>
+                                </div>
+                                ${dbAccuracy.toFixed(1)}%
+                            </td>
+                            <td>${stats.correct}/${stats.total}</td>
+                        </tr>
+                    `;
+                });
+                
+                if (Object.keys(databaseStats).length === 0) {
+                    statsHTML += '<tr><td colspan="3" class="text-center">尚未有練習記錄</td></tr>';
+                }
+                
+                statsHTML += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="card">
+                        <div class="card-header bg-warning text-dark">
+                            <h5 class="mb-0">主題分析</h5>
+                        </div>
+                        <div class="card-body">
+                            <div class="table-responsive">
+                                <table class="table">
+                                    <thead>
+                                        <tr>
+                                            <th>主題</th>
+                                            <th>正確率</th>
+                                            <th>建議</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                `;
+                
+                Object.keys(topicStats).forEach(topic => {
+                    const stats = topicStats[topic];
+                    const topicAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
+                    let suggestion = '';
+                    
+                    if (topicAccuracy < 60) {
+                        suggestion = '🔴 重點加強';
+                    } else if (topicAccuracy < 80) {
+                        suggestion = '🟡 持續練習';
+                    } else {
+                        suggestion = '🟢 表現良好';
+                    }
+                    
+                    statsHTML += `
+                        <tr>
+                            <td>${topic}</td>
+                            <td>
+                                <div class="progress" style="height: 15px;">
+                                    <div class="progress-bar ${topicAccuracy < 60 ? 'bg-danger' : topicAccuracy < 80 ? 'bg-warning' : 'bg-success'}" 
+                                         style="width: ${topicAccuracy}%;"></div>
+                                </div>
+                                ${topicAccuracy.toFixed(1)}%
+                            </td>
+                            <td>${suggestion}</td>
+                        </tr>
+                    `;
+                });
+                
+                if (Object.keys(topicStats).length === 0) {
+                    statsHTML += '<tr><td colspan="3" class="text-center">尚未有練習記錄</td></tr>';
+                }
+                
+                statsHTML += `
+                                    </tbody>
+                                </table>
+                            </div>
+                        </div>
+                    </div>
+                `;
+                
+                document.getElementById('stats-content').innerHTML = statsHTML;
+                this.modals.stats.show();
+            },
+            
+            // 匯出錯題
+            exportWrongQuestions() {
+                if (!this.state.userData.incorrect || this.state.userData.incorrect.length === 0) {
+                    this.showAlert('目前沒有錯題記錄', 'info');
+                    return;
+                }
+                
+                let exportText = "iPAS AI應用規劃師認證考試錯題集\n";
+                exportText += `匯出時間: ${new Date().toLocaleString()}\n`;
+                exportText += `總錯題數: ${this.state.userData.incorrect.length}\n\n`;
+                exportText += "=".repeat(50) + "\n\n";
+                
+                const incorrectQuestions = this.state.userData.incorrect;
+                const questionData = {};
+                
+                (this.state.userData.history || []).forEach(entry => {
+                    if (incorrectQuestions.includes(entry.question) && !questionData[entry.question]) {
+                        questionData[entry.question] = entry;
+                    }
+                });
+                
+                incorrectQuestions.forEach((questionText, i) => {
+                    exportText += `【題目 ${i+1}】\n${questionText}\n\n`;
+                    
+                    if (questionData[questionText]) {
+                        const data = questionData[questionText];
+                        
+                        const options = data.options || [];
+                        if (options.length > 0) {
+                            exportText += "選項:\n";
+                            options.forEach((option, j) => {
+                                exportText += `${String.fromCharCode(65+j)}. ${option}\n`;
+                            });
+                            exportText += "\n";
+                        }
+                        
+                        exportText += `正確答案: ${data.correct_answer_letter || '未知'}\n`;
+                        exportText += `您的答案: ${data.user_answer || '未知'}\n`;
+                        const config = this.examConfigs[data.database];
+                        exportText += `題庫來源: ${config ? config.name : data.database}\n`;
+                        exportText += `主題分類: ${data.topic || '未分類'} > ${data.subtopic || '未分類'}\n`;
+                        
+                        if (data.explanation) {
+                            exportText += `解析: ${data.explanation}\n`;
+                        }
+                    }
+                    
+                    exportText += "\n" + "-".repeat(50) + "\n\n";
+                });
+                
+                exportText += "\n建議復習重點:\n";
+                exportText += "1. 重點關注答錯率高的主題\n";
+                exportText += "2. 理解題目背後的商業邏輯\n";
+                exportText += "3. 加強AI應用規劃的實務知識\n";
+                exportText += "4. 定期回顧錯題，避免重複犯錯\n";
+                
+                const filename = `iPAS_AI應用規劃師_錯題集_${new Date().toISOString().slice(0,19).replace(/[-:T]/g, '')}.txt`;
+                const blob = new Blob([exportText], { type: 'text/plain;charset=utf-8' });
+                
+                const a = document.createElement('a');
+                a.href = URL.createObjectURL(blob);
+                a.download = filename;
+                a.style.display = 'none';
+                document.body.appendChild(a);
+                a.click();
+                document.body.removeChild(a);
+                
+                this.showAlert(`錯題已匯出至 ${filename}`, 'success');
+            },
+            
+            // 重置學習進度
+            resetProgress() {
+                if (confirm('確定要重置所有學習進度嗎？此操作不可逆。\n\n將清除：\n- 所有答題記錄\n- 錯題統計\n- 學習歷史')) {
+                    this.state.userData = {
+                        correct: [],
+                        incorrect: [],
+                        history: [],
+                        databaseStats: {}
+                    };
+                    this.saveUserData();
+                    this.updateReviewButtonState();
+                    this.modals.stats.hide();
+                    this.showAlert('學習進度已重置', 'success');
+                }
+            },
+            
+            // 計時器功能
+            startTimer() {
+                this.state.isTimerRunning = true;
+                this.state.startTime = new Date();
+                this.elements.quizTimerDisplay.style.display = 'block';
+                this.updateTimer();
             },
             
             stopTimer() {
-                clearInterval(this.state.timerId);
                 this.state.isTimerRunning = false;
                 this.elements.quizTimerDisplay.style.display = 'none';
-                this.elements.quizTimerDisplay.classList.remove('warning');
+                if (this.state.timerId) {
+                    clearTimeout(this.state.timerId);
+                    this.state.timerId = null;
+                }
             },
-
-            openQuestionNavModal() {
-                const grid = document.getElementById('question-nav-grid');
-                grid.innerHTML = this.state.questions.map((_, i) => {
-                    let classes = 'question-nav-item';
-                    if (i === this.state.currentQuestionIndex) classes += ' current';
-                    if (this.state.userAnswers[i]) classes += ' answered';
-                    if (this.state.markedQuestions.includes(i)) classes += ' marked';
-                    return `<div class="${classes}" data-index="${i}"><span class="question-number">${i + 1}</span><i class="fas fa-flag mark-icon"></i></div>`;
-                }).join('');
-
-                grid.querySelectorAll('.question-nav-item').forEach(item => {
-                    item.addEventListener('click', () => this.jumpToQuestion(parseInt(item.dataset.index)));
-                    item.querySelector('.mark-icon').addEventListener('click', e => { e.stopPropagation(); this.toggleMarkQuestion(parseInt(item.dataset.index)); });
-                });
-                this.modals.questionNav.show();
-            },
-
-            jumpToQuestion(index) { this.state.currentQuestionIndex = index; this.displayQuestion(); this.modals.questionNav.hide(); },
-            toggleMarkQuestion(index) { const mIdx = this.state.markedQuestions.indexOf(index); if (mIdx > -1) this.state.markedQuestions.splice(mIdx, 1); else this.state.markedQuestions.push(index); this.openQuestionNavModal(); },
             
+            updateTimer() {
+                if (!this.state.isTimerRunning) {
+                    return;
+                }
+                
+                const currentTime = new Date();
+                const elapsedSeconds = Math.floor((currentTime - this.state.startTime) / 1000);
+                const remainingSeconds = (this.state.examDuration * 60) - elapsedSeconds;
+                
+                if (remainingSeconds <= 0) {
+                    this.updateTimerDisplay('00:00');
+                    this.elements.quizTimerDisplay.classList.add('warning');
+                    this.stopTimer();
+                    this.showAlert('⏰ 考試時間結束！系統將自動交卷並計算成績。', 'warning');
+                    this.finishQuiz();
+                    return;
+                }
+                
+                const minutes = Math.floor(remainingSeconds / 60);
+                const seconds = remainingSeconds % 60;
+                const timeString = `${minutes.toString().padStart(2, '0')}:${seconds.toString().padStart(2, '0')}`;
+                
+                this.updateTimerDisplay(timeString);
+                
+                if (minutes < 5) {
+                    this.elements.quizTimerDisplay.classList.add('warning');
+                } else {
+                    this.elements.quizTimerDisplay.classList.remove('warning');
+                }
+                
+                this.state.timerId = setTimeout(() => this.updateTimer(), 1000);
+            },
+            
+            updateTimerDisplay(timeString) {
+                this.elements.quizTimerDisplay.innerHTML = `<i class="fas fa-clock me-2"></i>剩餘時間: ${timeString}`;
+            },
+            
+            // 顯示提示訊息
             showAlert(message, type = 'info') {
-                const alertContainer = document.body;
+                const alertTypes = {
+                    'success': 'alert-success',
+                    'error': 'alert-danger', 
+                    'warning': 'alert-warning',
+                    'info': 'alert-info'
+                };
+                
+                const alertClass = alertTypes[type] || 'alert-info';
+                const iconMap = {
+                    'success': 'fa-check-circle',
+                    'error': 'fa-exclamation-triangle',
+                    'warning': 'fa-exclamation-triangle', 
+                    'info': 'fa-info-circle'
+                };
+                const icon = iconMap[type] || 'fa-info-circle';
+                
                 const alertDiv = document.createElement('div');
-                alertDiv.className = `alert alert-${type} alert-dismissible fade show`;
-                alertDiv.style.position = 'fixed';
-                alertDiv.style.top = '20px';
-                alertDiv.style.right = '20px';
-                alertDiv.style.zIndex = '2050';
-                alertDiv.innerHTML = `${message}<button type="button" class="btn-close" data-bs-dismiss="alert"></button>`;
-                alertContainer.appendChild(alertDiv);
-                setTimeout(() => bootstrap.Alert.getOrCreateInstance(alertDiv)?.close(), 2000);
+                alertDiv.className = `alert ${alertClass} alert-dismissible fade show position-fixed`;
+                alertDiv.style.cssText = `
+                    top: 100px; 
+                    right: 20px; 
+                    z-index: 9999; 
+                    min-width: 300px;
+                    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+                `;
+                alertDiv.innerHTML = `
+                    <i class="fas ${icon} me-2"></i>${message}
+                    <button type="button" class="btn-close" data-bs-dismiss="alert"></button>
+                `;
+                
+                document.body.appendChild(alertDiv);
+                
+                setTimeout(() => {
+                    if (alertDiv.parentNode) {
+                        alertDiv.remove();
+                    }
+                }, 5000);
             },
-
-            showLoading(text) { this.elements.loadingText.textContent = text; this.elements.loadingOverlay.classList.remove('d-none'); },
-            hideLoading() { this.elements.loadingOverlay.classList.add('d-none'); },
             
-            // 以下函式暫時保留簡化版，您若需要可從舊版複製回來
-            exportWrongQuestions(){this.showAlert('此功能暫未實現','info');},
-            showStatistics(){this.showAlert('此功能暫未實現','info');},
-            reviewWrongQuestions(){this.showAlert('此功能暫未實現','info');},
-            resetProgress(){this.showAlert('此功能暫未實現','info');}
+            // 顯示加載動畫
+            showLoading(text = '處理中...') {
+                this.elements.loadingText.textContent = text;
+                this.elements.loadingOverlay.classList.remove('d-none');
+            },
+            
+            // 隱藏加載動畫
+            hideLoading() {
+                this.elements.loadingOverlay.classList.add('d-none');
+            }
         };
         
-        document.addEventListener('DOMContentLoaded', () => { iPASQuizApp.init(); });
+        // 初始化應用
+        document.addEventListener('DOMContentLoaded', () => {
+            iPASQuizApp.init();
+        });
     </script>
 </body>
 </html>

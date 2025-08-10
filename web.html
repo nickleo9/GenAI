@@ -153,6 +153,30 @@
             margin-bottom: 40px;
         }
         
+        /* 計時器樣式 - 確保在測驗中顯示 */
+        .quiz-timer-display {
+            position: fixed;
+            top: 80px;
+            right: 20px;
+            background: linear-gradient(135deg, #ff6b6b, #ee5a5a);
+            color: white;
+            padding: 15px 20px;
+            border-radius: 25px;
+            font-size: 1.2rem;
+            font-weight: bold;
+            z-index: 1050;
+            box-shadow: 0 4px 15px rgba(255, 107, 107, 0.3);
+            border: 2px solid rgba(255, 255, 255, 0.2);
+            min-width: 200px;
+            text-align: center;
+        }
+        
+        .quiz-timer-display.warning {
+            background: linear-gradient(135deg, #dc3545, #c82333);
+            animation: blink 1s infinite;
+            border-color: #dc3545;
+        }
+        
         .option-label {
             display: block;
             border: 2px solid #e1e8ed;
@@ -492,6 +516,26 @@
             color: white;
         }
         
+        /* 考試規範資訊 */
+        .exam-specs {
+            background: linear-gradient(135deg, #fff3cd, #ffeaa7);
+            border: 2px solid #ffc107;
+            border-radius: 10px;
+            padding: 15px;
+            margin: 10px 0;
+            font-size: 0.9rem;
+        }
+        
+        .exam-specs.ipas {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            border-color: #2196f3;
+        }
+        
+        .exam-specs.iii {
+            background: linear-gradient(135deg, #e8f5e8, #c8e6c9);
+            border-color: #4caf50;
+        }
+        
         @media (max-width: 768px) {
             body {
                 margin-bottom: 130px;
@@ -519,6 +563,15 @@
             .database-card {
                 padding: 15px;
                 margin: 8px 0;
+            }
+            
+            .quiz-timer-display {
+                position: fixed;
+                top: 70px;
+                right: 10px;
+                font-size: 1rem;
+                padding: 10px 15px;
+                min-width: 160px;
             }
         }
     </style>
@@ -806,15 +859,30 @@
                             <p class="mb-2">經濟部產業人才能力鑑定</p>
                             <small>⭐ 主要考試題庫 - 重點練習</small>
                         </div>
+                        <div class="exam-specs ipas mt-3">
+                            <strong>📋 官方考試規範：</strong><br>
+                            • 總題數：100題單選題<br>
+                            • 科目一：人工智慧基礎概論（約50題）<br>
+                            • 科目二：生成式AI應用與規劃（約50題）<br>
+                            • 考試時間：每科75分鐘（總計150分鐘）<br>
+                            • 及格標準：平均70分，單科不低於60分
+                        </div>
                     </div>
                 </div>
                 <div class="col-md-6">
                     <div class="database-card" data-type="generative-ai">
                         <div class="text-center">
                             <i class="fas fa-robot fa-3x mb-3"></i>
-                            <h5>生成式AI認證</h5>
+                            <h5>資策會生成式AI認證</h5>
                             <p class="mb-2">資策會生成式AI能力認證</p>
                             <small>輔助練習 - 補強基礎知識</small>
+                        </div>
+                        <div class="exam-specs iii mt-3">
+                            <strong>📋 官方考試規範：</strong><br>
+                            • 總題數：80題選擇題<br>
+                            • 考試時間：90分鐘<br>
+                            • 及格標準：70分及格（可錯24題）<br>
+                            • 考試方式：電腦測驗，題庫隨機抽取
                         </div>
                     </div>
                 </div>
@@ -837,8 +905,9 @@
                                 <option value="10">10題 - 快速練習</option>
                                 <option value="20">20題 - 標準練習</option>
                                 <option value="40">40題 - 加強練習</option>
-                                <option value="60" selected>60題 - iPAS標準</option>
-                                <option value="80">80題 - 完整測驗</option>
+                                <option value="50">50題 - 單科標準</option>
+                                <option value="80">80題 - 資策會標準</option>
+                                <option value="100" selected>100題 - iPAS標準</option>
                             </select>
                         </div>
                         
@@ -920,6 +989,11 @@
         
         <!-- 問題區域 -->
         <div id="quiz-container" class="quiz-container d-none">
+            <!-- 考試計時器 - 在測驗進行時顯示 -->
+            <div id="quiz-timer-display" class="quiz-timer-display" style="display: none;">
+                <i class="fas fa-clock me-2"></i>剩餘時間: --:--
+            </div>
+            
             <!-- 返回選擇按鈕 -->
             <button id="back-to-selection" class="back-to-selection">
                 <i class="fas fa-arrow-left me-2"></i>返回題庫選擇
@@ -930,7 +1004,7 @@
             </div>
             
             <div class="d-flex justify-content-between align-items-center mb-4">
-                <h5 id="question-number" class="mb-0">問題 1/60</h5>
+                <h5 id="question-number" class="mb-0">問題 1/100</h5>
                 <div class="d-flex gap-2">
                     <span id="database-badge" class="badge-custom">iPAS題庫</span>
                     <span id="stats-display" class="badge bg-info">得分: 0/0 (0%)</span>
@@ -1088,8 +1162,8 @@
                     
                     <h6>📋 練習模式建議</h6>
                     <ul>
-                        <li><strong>每日練習：</strong>20-40題維持手感</li>
-                        <li><strong>週末模擬：</strong>60題完整測驗</li>
+                        <li><strong>每日練習：</strong>20-50題維持手感</li>
+                        <li><strong>週末模擬：</strong>100題完整測驗</li>
                         <li><strong>考前衝刺：</strong>錯題複習模式</li>
                     </ul>
                     
@@ -1103,7 +1177,8 @@
                     
                     <h6>⏱️ 模擬考試建議</h6>
                     <ul>
-                        <li>選擇60題標準模式</li>
+                        <li><strong>iPAS模式：</strong>選擇100題標準模式，每科75分鐘</li>
+                        <li><strong>資策會模式：</strong>選擇80題，90分鐘</li>
                         <li>嚴格控制答題時間</li>
                         <li>目標正確率：70%以上</li>
                     </ul>
@@ -1117,7 +1192,7 @@
                     
                     <ul>
                         <li>開發者：ZN Studio</li>
-                        <li>版本：2.1.0 (簡化版)</li>
+                        <li>版本：2.2.0 (官方規範版)</li>
                         <li>本系統由本人獨立設計與開發，專為iPAS AI應用規劃師考試設計</li>
                     </ul>
                 </div>
@@ -1155,7 +1230,7 @@
                 wrongQuestions: [],
                 startTime: null,
                 isTimerRunning: false,
-                examDuration: 90, // 分鐘
+                examDuration: 150, // iPAS: 150分鐘 (兩科各75分鐘)
                 timerId: null,
                 userData: null
             },
@@ -1177,6 +1252,7 @@
                 explanationBtn: document.getElementById('explanation-btn'),
                 quizStatus: document.getElementById('quiz-status'),
                 timerElement: document.getElementById('timer'),
+                quizTimerDisplay: document.getElementById('quiz-timer-display'),
                 questionNumber: document.getElementById('question-number'),
                 questionText: document.getElementById('question-text'),
                 optionsContainer: document.getElementById('options-container'),
@@ -1198,12 +1274,30 @@
                 topicSelection: new bootstrap.Modal(document.getElementById('topic-selection-modal'))
             },
             
+            // 考試規範配置
+            examConfigs: {
+                'ipas': {
+                    name: 'iPAS AI應用規劃師',
+                    defaultQuestions: 100,
+                    duration: 150, // 兩科各75分鐘
+                    passingScore: 70,
+                    description: '100題 | 150分鐘 | 70分及格 | 單科不低於60分'
+                },
+                'generative-ai': {
+                    name: '資策會生成式AI認證',
+                    defaultQuestions: 80,
+                    duration: 90,
+                    passingScore: 70,
+                    description: '80題 | 90分鐘 | 70分及格'
+                }
+            },
+            
             // 初始化
             init() {
                 this.state.userData = this.loadUserData();
                 this.attachEventListeners();
                 this.updateReviewButtonState();
-                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.1.0 簡化版)');
+                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.2.0 官方規範版)');
             },
             
             // 載入使用者數據
@@ -1362,24 +1456,20 @@
                 this.updateTimerForMode();
             },
             
-            // 新增：根據模式更新計時器顯示
+            // 根據模式更新計時器顯示
             updateTimerForMode() {
                 if (!this.state.selectedDatabase) return;
                 
-                const databaseNames = {
-                    'generative-ai': '生成式AI認證',
-                    'ipas': 'iPAS AI應用規劃師'
-                };
-                
-                const selectedName = databaseNames[this.state.selectedDatabase] || this.state.selectedDatabase;
+                const config = this.examConfigs[this.state.selectedDatabase];
+                if (!config) return;
                 
                 if (this.state.currentMode === 'exam') {
                     this.elements.timerElement.innerHTML = 
-                        `<i class="fas fa-clock me-2"></i>${selectedName} | 考試時間：${this.state.examDuration}分鐘`;
+                        `<i class="fas fa-clock me-2"></i>${config.name} | 考試時間：${config.duration}分鐘`;
                     this.elements.timerElement.classList.add('exam-mode');
                 } else {
                     this.elements.timerElement.innerHTML = 
-                        `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
+                        `<i class="fas fa-clock me-2"></i>已選擇：${config.name}`;
                     this.elements.timerElement.classList.remove('exam-mode');
                 }
             },
@@ -1439,7 +1529,7 @@
                 const currentQuizData = quizData[this.state.selectedDatabase];
                 
                 if (!currentQuizData || currentQuizData.length === 0) {
-                    this.showAlert(`${this.state.selectedDatabase === 'ipas' ? 'iPAS' : '生成式AI'}題庫尚未載入或為空！`, 'error');
+                    this.showAlert(`${this.examConfigs[this.state.selectedDatabase]?.name || this.state.selectedDatabase}題庫尚未載入或為空！`, 'error');
                     return false;
                 }
                 
@@ -1511,26 +1601,28 @@
             
             // 更新題庫UI
             updateDatabaseUI(type) {
-                const databaseNames = {
-                    'generative-ai': '生成式AI認證',
-                    'ipas': 'iPAS AI應用規劃師'
-                };
+                const config = this.examConfigs[type];
+                if (!config) return;
                 
-                const selectedName = databaseNames[type] || type;
+                // 更新考試時間
+                this.state.examDuration = config.duration;
+                
+                // 更新預設題目數量
+                document.getElementById('question-count').value = config.defaultQuestions;
                 
                 // 使用新的 updateTimerForMode 方法來更新計時器顯示
                 if (this.state.currentMode === 'exam') {
                     this.elements.timerElement.innerHTML = 
-                        `<i class="fas fa-clock me-2"></i>${selectedName} | 考試時間：${this.state.examDuration}分鐘`;
+                        `<i class="fas fa-clock me-2"></i>${config.name} | 考試時間：${config.duration}分鐘`;
                     this.elements.timerElement.classList.add('exam-mode');
                 } else {
                     this.elements.timerElement.innerHTML = 
-                        `<i class="fas fa-clock me-2"></i>已選擇：${selectedName}`;
+                        `<i class="fas fa-clock me-2"></i>已選擇：${config.name}`;
                     this.elements.timerElement.classList.remove('exam-mode');
                 }
                 
+                // 如果是iPAS，設定為練習模式
                 if (type === 'ipas') {
-                    document.getElementById('question-count').value = '60';
                     document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
                     document.querySelector('[data-mode="practice"]').classList.add('active');
                     this.state.currentMode = 'practice';
@@ -1629,12 +1721,14 @@
                     return;
                 }
                 
+                const config = this.examConfigs[this.state.selectedDatabase];
+                
                 // 如果是考試模式，加入確認機制
                 if (this.state.currentMode === 'exam') {
                     const confirmStart = confirm(
-                        '確定要開始模擬考試嗎？\n\n' +
+                        `確定要開始${config.name}模擬考試嗎？\n\n` +
                         '⚠️ 重要提醒：\n' +
-                        '• 考試時間：90分鐘\n' +
+                        `• 考試時間：${config.duration}分鐘\n` +
                         '• 一旦開始無法暫停或重置\n' +
                         '• 無法返回題庫選擇\n' +
                         '• 時間到將自動交卷\n\n' +
@@ -1700,9 +1794,10 @@
             // 載入題目
             loadQuestions(count) {
                 const currentQuizData = quizData[this.state.selectedDatabase];
+                const config = this.examConfigs[this.state.selectedDatabase];
                 
                 if (!currentQuizData || currentQuizData.length === 0) {
-                    this.showAlert(`${this.state.selectedDatabase === 'ipas' ? 'iPAS' : '生成式AI'}題庫尚未載入或為空！`, 'error');
+                    this.showAlert(`${config?.name || this.state.selectedDatabase}題庫尚未載入或為空！`, 'error');
                     return false;
                 }
                 
@@ -2170,7 +2265,7 @@
                     </div>
                     <div class="alert ${percentage >= 70 ? 'alert-success' : 'alert-warning'} mb-4">
                         <h5 class="alert-heading">${percentage >= 70 ? '🎉 恭喜通過！' : '💪 繼續努力！'}</h5>
-                        <p class="mb-0">${percentage >= 70 ? '達到iPAS合格標準(70%)，考試準備良好！' : '距離合格標準還需要加強，建議多加練習錯題。'}</p>
+                        <p class="mb-0">${percentage >= 70 ? '達到官方合格標準(70%)，考試準備良好！' : '距離合格標準還需要加強，建議多加練習錯題。'}</p>
                     </div>
                 `;
                 
@@ -2473,15 +2568,11 @@
                                     <tbody>
                 `;
                 
-                const databaseNames = {
-                    'generative-ai': '生成式AI認證',
-                    'ipas': 'iPAS AI應用規劃師'
-                };
-                
                 Object.keys(databaseStats).forEach(db => {
                     const stats = databaseStats[db];
                     const dbAccuracy = stats.total > 0 ? (stats.correct / stats.total) * 100 : 0;
-                    const dbName = databaseNames[db] || db;
+                    const config = this.examConfigs[db];
+                    const dbName = config ? config.name : db;
                     
                     statsHTML += `
                         <tr>
@@ -2608,7 +2699,8 @@
                         
                         exportText += `正確答案: ${data.correct_answer_letter || '未知'}\n`;
                         exportText += `您的答案: ${data.user_answer || '未知'}\n`;
-                        exportText += `題庫來源: ${data.database === 'ipas' ? 'iPAS AI應用規劃師' : '生成式AI認證'}\n`;
+                        const config = this.examConfigs[data.database];
+                        exportText += `題庫來源: ${config ? config.name : data.database}\n`;
                         exportText += `主題分類: ${data.topic || '未分類'} > ${data.subtopic || '未分類'}\n`;
                         
                         if (data.explanation) {
@@ -2659,11 +2751,13 @@
             startTimer() {
                 this.state.isTimerRunning = true;
                 this.state.startTime = new Date();
+                this.elements.quizTimerDisplay.style.display = 'block';
                 this.updateTimer();
             },
             
             stopTimer() {
                 this.state.isTimerRunning = false;
+                this.elements.quizTimerDisplay.style.display = 'none';
                 if (this.state.timerId) {
                     clearTimeout(this.state.timerId);
                     this.state.timerId = null;
@@ -2681,7 +2775,7 @@
                 
                 if (remainingSeconds <= 0) {
                     this.updateTimerDisplay('00:00');
-                    this.elements.timerElement.classList.add('warning');
+                    this.elements.quizTimerDisplay.classList.add('warning');
                     this.stopTimer();
                     this.showAlert('⏰ 考試時間結束！系統將自動交卷並計算成績。', 'warning');
                     this.finishQuiz();
@@ -2695,16 +2789,16 @@
                 this.updateTimerDisplay(timeString);
                 
                 if (minutes < 5) {
-                    this.elements.timerElement.classList.add('warning');
+                    this.elements.quizTimerDisplay.classList.add('warning');
                 } else {
-                    this.elements.timerElement.classList.remove('warning');
+                    this.elements.quizTimerDisplay.classList.remove('warning');
                 }
                 
                 this.state.timerId = setTimeout(() => this.updateTimer(), 1000);
             },
             
             updateTimerDisplay(timeString) {
-                this.elements.timerElement.innerHTML = `<i class="fas fa-clock me-2"></i>剩餘時間: ${timeString}`;
+                this.elements.quizTimerDisplay.innerHTML = `<i class="fas fa-clock me-2"></i>剩餘時間: ${timeString}`;
             },
             
             // 顯示提示訊息

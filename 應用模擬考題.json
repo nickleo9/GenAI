@@ -11038,5 +11038,175 @@
         "explanation": "有效的提示詞需具體描述需求對象及用途，‘生成分級閱讀題組’才能針對不同班級產生個別化教案，是正確應用方式。",
         "number": 680,
         "date": "2025-08-10"
+    },
+    {
+        "question": "如果你是台灣某家中小型製造企業的產線主管，想利用生成式AI減少品質檢驗錯誤，下列哪一項應用設計最符合2025年產業趨勢？",
+        "options": [
+            "導入影像生成模型自動標註瑕疵照片並產生報告",
+            "使用RAG架構將同業案例自動摘要後置於管理儀表板",
+            "應用自然語言生成工具自動生成品質檢驗SOP文件",
+            "設置圖像辨識模型做即時產線異常自動通報與分析"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "製造業AI應用",
+        "concept": "圖像辨識、異常檢測",
+        "explanation": "2025年台灣產線智慧化趨勢，重點應用在即時異常自動通報，圖像辨識AI是核心，選項D最符合趨勢。",
+        "number": 681,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "作為自媒體經營者，欲提升短影音腳本的多樣性與效率，現今最新生成式AI工具組合中，何者最佳？",
+        "options": [
+            "Claude 3 與 GPT-4o 自動產生腳本及摘要，再用 HeyGen 做虛擬配音",
+            "僅用Gemini全自動生成影片腳本與配音",
+            "用Copilot X 提示產生腳本，Inpaint直接合成配音",
+            "利用N8N串連圖像轉文字，直接做影片配樂"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自媒體AI工具",
+        "concept": "AI工具整合運用",
+        "explanation": "最新潮流是多模態AI組合運用，Claude 3/GPT-4o生成語言，HeyGen負責虛擬配音，形成高效率內容生產鏈。",
+        "number": 682,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "2025年台灣iPAS認證考試強調產業實務導入規劃。若你要在物流業推廣無人倉儲，AI導入評估的第一步應為何？",
+        "options": [
+            "進行法規風險與數據隱私評估",
+            "直接導入無人搬運AI設備並部署",
+            "先建立現有倉儲數據集進行資料前處理",
+            "購買現成自動化管理平台後串接AI模組"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入流程",
+        "concept": "資料處理與分析流程",
+        "explanation": "AI導入首要是資料前處理，確保資料完整性、正確性後才進行部署與風險評估。",
+        "number": 683,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "如果你是高中地理老師，要用生成式AI協助學生規劃台灣永續城市教案，下列哪一個Prompt（提示詞）主題較適合使用？",
+        "options": [
+            "請依據聯合國SDGs設計台灣永續城市教案並產生學生活動表單",
+            "設計關於都市化的教案並自動評量學生成果",
+            "寫一個地理考題並給出範例答案",
+            "根據台灣都會區產生10個有趣旅遊行程介紹"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育AI應用",
+        "concept": "提示詞設計（Prompt Engineering）",
+        "explanation": "結合SDGs與生成式AI讓教案具國際趨勢與在地連結，選項A最為完整且應用面廣。",
+        "number": 684,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "下列何者不是No Code／Low Code平台搭配生成式AI工具的常見風險？",
+        "options": [
+            "生成內容未經驗證導致資訊錯誤",
+            "程式碼整合出現資安漏洞",
+            "高度依賴模型模板限制客製彈性",
+            "產生模型過深學習過度之問題"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "No Code / Low Code",
+        "subtopic": "平台風險管理",
+        "concept": "AI風險控管",
+        "explanation": "過度學習是深度學習模型訓練問題，與No Code/Low Code平台搭配生成式AI風險關聯低，故為不正確選項。",
+        "number": 685,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "2022年哪一項關鍵事件標誌生成式AI大規模商業化並普及至各產業應用？",
+        "options": [
+            "深藍擊敗卡斯帕羅夫",
+            "ChatGPT發表並開放大眾使用",
+            "AlphaGo擊敗李世乭",
+            "GAN（生成對抗網絡）首度發表"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI歷史與發展",
+        "concept": "生成式AI歷史事件",
+        "explanation": "2022年ChatGPT發表，帶動生成式AI爆炸性成長，改變產業生態，商業普及顯著。",
+        "number": 686,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "作為設計工程師，欲以生成式AI進行跨國廣告設計，下列哪個提示詞最能精準指引AI產生多元但文化適切的廣告素材？",
+        "options": [
+            "生成台灣及歐洲市場均適用的廣告海報，色調輕快，附加本地元素",
+            "產生結合全球元素的單一廣告設計方案",
+            "設計最新潮流且國際化風格的廣告海報",
+            "自動產生適合各國民眾的廣告文案模板"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "設計與提示詞工程",
+        "concept": "提示工程（Prompt Engineering）",
+        "explanation": "有效的提示詞需兼顧區域文化與視覺引導，A說明最為具體、操作性最高。",
+        "number": 687,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "2025年以來，生成式AI導入政府中介服務時最佳的初步規劃步驟為何？",
+        "options": [
+            "優先強化資料隱私保護措施及評估法規遵循",
+            "立即將辦公自動化改寫為AI自動回應模式",
+            "導入自動流程引擎後再建立API串接規範",
+            "先聘請技術人員執行AI模型整體佈署"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "隱私合規、AI治理",
+        "explanation": "公部門AI推展首重隱私、法規合規，有助後續安全推展AI應用。",
+        "number": 688,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "假設你是一名高中資訊老師，欲善用Google Apps Script與生成式AI工具協助學校行政，下列最合理的自動化整合方案是？",
+        "options": [
+            "用Apps Script串接AI，自動產生學生聯絡簿與批閱建議",
+            "用AI自動生成每週校園新聞稿，手動發信傳遞",
+            "利用n8n整合Google Tasks與Outlook行事曆，以通知教職員",
+            "用Apps Script導入AI，集中教師課表並自動派送提醒信"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育AI整合",
+        "concept": "Google Apps Script應用",
+        "explanation": "D方案將Apps Script與AI整合自動派送教師課程資訊，有效提升校務行政效率。",
+        "number": 689,
+        "date": "2025-08-11"
+    },
+    {
+        "question": "如果你在保險業負責做客戶需求自動化分析，2025年主流生成式AI最適合引導模型學習提示詞為下列何者？",
+        "options": [
+            "請分析客戶過往保單紀錄並產生精準理賠建議，重點整理成條列",
+            "深入解析每份保單，再自動產出總結性行銷郵件",
+            "自動產生所有保單細節列表，不需附加建議",
+            "產生每月保單續約提醒簡訊，內容固定格式"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "金融業AI應用",
+        "concept": "提示詞設計（Prompt Engineering）",
+        "explanation": "A提示設計明確、有條理，能引導AI生成具備實務價值的建議與資訊摘要。",
+        "number": 690,
+        "date": "2025-08-11"
     }
 ]

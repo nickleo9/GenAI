@@ -1,16 +1,16 @@
 <!DOCTYPE html>
+
 <html lang="zh-TW">
 <head>
-<link rel="icon" href="data:,">
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>iPAS AI應用規劃師專業練習系統</title>
-    <!-- Bootstrap CSS -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Font Awesome Icons -->
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
-
-    <style>
+<link href="data:," rel="icon"/>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>iPAS AI應用規劃師專業練習系統</title>
+<!-- Bootstrap CSS -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/css/bootstrap.min.css" rel="stylesheet"/>
+<!-- Font Awesome Icons -->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet"/>
+<style>
         body {
             background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
             font-family: 'Microsoft JhengHei', Arial, sans-serif;
@@ -575,8 +575,7 @@
             }
         }
     </style>
-
-    <script>
+<script>
         // 載入題庫資料
         let quizData = {
             'generative-ai': [],
@@ -798,419 +797,388 @@
     </script>
 </head>
 <body>
-    <!-- 頂部導航 -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
-        <div class="container-fluid">
-            <a class="navbar-brand nav-brand" href="#">
-                <i class="fas fa-graduation-cap me-2"></i>iPAS AI應用規劃師
+<!-- 頂部導航 -->
+<nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
+<div class="container-fluid">
+<a class="navbar-brand nav-brand" href="#">
+<i class="fas fa-graduation-cap me-2"></i>iPAS AI應用規劃師
             </a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav ms-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="save-btn">
-                            <i class="fas fa-save me-1"></i>儲存進度
+<button class="navbar-toggler" data-bs-target="#navbarNav" data-bs-toggle="collapse" type="button">
+<span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarNav">
+<ul class="navbar-nav ms-auto">
+<li class="nav-item">
+<a class="nav-link" href="#" id="save-btn">
+<i class="fas fa-save me-1"></i>儲存進度
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="export-btn">
-                            <i class="fas fa-download me-1"></i>匯出錯題
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" id="export-btn">
+<i class="fas fa-download me-1"></i>匯出錯題
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="stats-btn">
-                            <i class="fas fa-chart-bar me-1"></i>學習統計
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" id="stats-btn">
+<i class="fas fa-chart-bar me-1"></i>學習統計
                         </a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="#" id="help-btn">
-                            <i class="fas fa-question-circle me-1"></i>使用說明
+</li>
+<li class="nav-item">
+<a class="nav-link" href="#" id="help-btn">
+<i class="fas fa-question-circle me-1"></i>使用說明
                         </a>
-                    </li>
-                </ul>
-            </div>
+</li>
+</ul>
+</div>
+</div>
+</nav>
+<div style="height: 70px;"></div> <!-- 導航欄間距 -->
+<div class="main-container">
+<!-- 測驗狀態指示器 -->
+<div class="quiz-status" id="quiz-status" style="display: none;">
+<i class="fas fa-lock me-1"></i>測驗進行中
         </div>
-    </nav>
-
-    <div style="height: 70px;"></div> <!-- 導航欄間距 -->
-
-    <div class="main-container">
-        <!-- 測驗狀態指示器 -->
-        <div id="quiz-status" class="quiz-status" style="display: none;">
-            <i class="fas fa-lock me-1"></i>測驗進行中
-        </div>
-        
-        <div class="quiz-header">
-            <h1><i class="fas fa-brain me-3"></i>iPAS AI應用規劃師專業練習系統</h1>
-            <p class="mb-0">經濟部產業人才能力鑑定 - 考試衝刺專用</p>
-        </div>
-        
-        <!-- 題庫選擇區 -->
-        <div class="database-selector" id="database-selector">
-            <h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇練習題庫</h3>
-            <div class="row">
-                <div class="col-md-6">
-                    <div class="database-card" data-type="ipas">
-                        <div class="text-center">
-                            <i class="fas fa-star fa-3x mb-3" style="color: #ffd700;"></i>
-                            <h5>iPAS AI應用規劃師</h5>
-                            <p class="mb-2">經濟部產業人才能力鑑定</p>
-                            <small>⭐ 主要考試題庫 - 重點練習</small>
-                        </div>
-                        <div class="exam-specs ipas mt-3">
-                            <strong>📋 官方考試規範：</strong><br>
-                            • 總題數：100題單選題<br>
-                            • 科目一：人工智慧基礎概論（約50題）<br>
-                            • 科目二：生成式AI應用與規劃（約50題）<br>
-                            • 考試時間：每科75分鐘（總計150分鐘）<br>
+<div class="quiz-header">
+<h1><i class="fas fa-brain me-3"></i>iPAS AI應用規劃師專業練習系統</h1>
+<p class="mb-0">經濟部產業人才能力鑑定 - 考試衝刺專用</p>
+</div>
+<!-- 題庫選擇區 -->
+<div class="database-selector" id="database-selector">
+<h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇練習題庫</h3>
+<div class="row">
+<div class="col-md-6">
+<div class="database-card" data-type="ipas">
+<div class="text-center">
+<i class="fas fa-star fa-3x mb-3" style="color: #ffd700;"></i>
+<h5>iPAS AI應用規劃師</h5>
+<p class="mb-2">經濟部產業人才能力鑑定</p>
+<small>⭐ 主要考試題庫 - 重點練習</small>
+</div>
+<div class="exam-specs ipas mt-3">
+<strong>📋 官方考試規範：</strong><br/>
+                            • 總題數：100題單選題<br/>
+                            • 科目一：人工智慧基礎概論（約50題）<br/>
+                            • 科目二：生成式AI應用與規劃（約50題）<br/>
+                            • 考試時間：每科75分鐘（總計150分鐘）<br/>
                             • 及格標準：平均70分，單科不低於60分
                         </div>
-                    </div>
-                </div>
-                <div class="col-md-6">
-                    <div class="database-card" data-type="generative-ai">
-                        <div class="text-center">
-                            <i class="fas fa-robot fa-3x mb-3"></i>
-                            <h5>資策會生成式AI認證</h5>
-                            <p class="mb-2">資策會生成式AI能力認證</p>
-                            <small>輔助練習 - 補強基礎知識</small>
-                        </div>
-                        <div class="exam-specs iii mt-3">
-                            <strong>📋 官方考試規範：</strong><br>
-                            • 總題數：80題選擇題<br>
-                            • 考試時間：90分鐘<br>
-                            • 及格標準：70分及格（可錯24題）<br>
+</div>
+</div>
+<div class="col-md-6">
+<div class="database-card" data-type="generative-ai">
+<div class="text-center">
+<i class="fas fa-robot fa-3x mb-3"></i>
+<h5>資策會生成式AI認證</h5>
+<p class="mb-2">資策會生成式AI能力認證</p>
+<small>輔助練習 - 補強基礎知識</small>
+</div>
+<div class="exam-specs iii mt-3">
+<strong>📋 官方考試規範：</strong><br/>
+                            • 總題數：80題選擇題<br/>
+                            • 考試時間：90分鐘<br/>
+                            • 及格標準：70分及格（可錯24題）<br/>
                             • 考試方式：電腦測驗，題庫隨機抽取
                         </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        
-        <!-- 設定面板 -->
-        <div id="settings-panel" class="settings-panel">
-            <div class="card border-0 shadow-sm">
-                <div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
-                    <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5>
-                </div>
-                <div class="card-body p-4">
-                    <div class="row g-4">
-                        <div class="col-lg-3 col-md-6">
-                            <label class="form-label fw-bold">
-                                <i class="fas fa-list-ol me-2 text-primary"></i>題目數量
+</div>
+</div>
+</div>
+</div>
+<!-- 設定面板 -->
+<div class="settings-panel" id="settings-panel">
+<div class="card border-0 shadow-sm">
+<div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+<h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5>
+</div>
+<div class="card-body p-4">
+<div class="row g-4">
+<div class="col-lg-3 col-md-6">
+<label class="form-label fw-bold">
+<i class="fas fa-list-ol me-2 text-primary"></i>題目數量
                             </label>
-                            <select id="question-count" class="form-select">
-                                <option value="10">10題 - 快速練習</option>
-                                <option value="20">20題 - 標準練習</option>
-                                <option value="40">40題 - 加強練習</option>
-                                <option value="50">50題 - 單科標準</option>
-                                <option value="80">80題 - 資策會標準</option>
-                                <option value="100" selected>100題 - iPAS標準</option>
-                            </select>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6">
-                            <label class="form-label fw-bold">
-                                <i class="fas fa-play-circle me-2 text-success"></i>練習模式
+<select class="form-select" id="question-count">
+<option value="10">10題 - 快速練習</option>
+<option value="20">20題 - 標準練習</option>
+<option value="40">40題 - 加強練習</option>
+<option value="50">50題 - 單科標準</option>
+<option value="80">80題 - 資策會標準</option>
+<option selected="" value="100">100題 - iPAS標準</option>
+</select>
+</div>
+<div class="col-lg-3 col-md-6">
+<label class="form-label fw-bold">
+<i class="fas fa-play-circle me-2 text-success"></i>練習模式
                             </label>
-                            <div class="d-flex flex-wrap gap-1">
-                                <button class="mode-btn active" data-mode="practice">
-                                    <i class="fas fa-book me-1"></i>練習模式
+<div class="d-flex flex-wrap gap-1">
+<button class="mode-btn active" data-mode="practice">
+<i class="fas fa-book me-1"></i>練習模式
                                 </button>
-                                <button class="mode-btn" data-mode="exam">
-                                    <i class="fas fa-clock me-1"></i>模擬考試
+<button class="mode-btn" data-mode="exam">
+<i class="fas fa-clock me-1"></i>模擬考試
                                 </button>
-                            </div>
-                            <!-- 複習模式選擇區 -->
-                            <div class="review-modes mt-2" id="review-modes-section" style="display: none;">
-                                <h6 class="mb-2"><i class="fas fa-redo me-2"></i>複習模式選擇</h6>
-                                <div class="review-mode-item" data-review-mode="wrong" id="review-wrong-mode">
-                                    <i class="fas fa-times-circle me-2"></i>錯題複習
+</div>
+<!-- 複習模式選擇區 -->
+<div class="review-modes mt-2" id="review-modes-section" style="display: none;">
+<h6 class="mb-2"><i class="fas fa-redo me-2"></i>複習模式選擇</h6>
+<div class="review-mode-item" data-review-mode="wrong" id="review-wrong-mode">
+<i class="fas fa-times-circle me-2"></i>錯題複習
                                     <small class="d-block text-muted">複習之前答錯的題目</small>
-                                </div>
-                                <div class="review-mode-item" data-review-mode="all" id="review-all-mode">
-                                    <i class="fas fa-list me-2"></i>全題複習
+</div>
+<div class="review-mode-item" data-review-mode="all" id="review-all-mode">
+<i class="fas fa-list me-2"></i>全題複習
                                     <small class="d-block text-muted">系統性複習所有題目</small>
-                                </div>
-                                <div class="review-mode-item" data-review-mode="topic" id="review-topic-mode">
-                                    <i class="fas fa-tags me-2"></i>主題複習
+</div>
+<div class="review-mode-item" data-review-mode="topic" id="review-topic-mode">
+<i class="fas fa-tags me-2"></i>主題複習
                                     <small class="d-block text-muted">按主題分類複習</small>
-                                </div>
-                                <div class="review-mode-item" data-review-mode="random" id="review-random-mode">
-                                    <i class="fas fa-random me-2"></i>隨機複習
+</div>
+<div class="review-mode-item" data-review-mode="random" id="review-random-mode">
+<i class="fas fa-random me-2"></i>隨機複習
                                     <small class="d-block text-muted">隨機順序複習</small>
-                                </div>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6">
-                            <label class="form-label fw-bold">
-                                <i class="fas fa-lightbulb me-2 text-warning"></i>解析模式
+</div>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<label class="form-label fw-bold">
+<i class="fas fa-lightbulb me-2 text-warning"></i>解析模式
                             </label>
-                            <div class="mb-2">
-                                <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="explanation-mode" id="database-mode" value="database" checked>
-                                    <label class="form-check-label" for="database-mode">資料庫解析</label>
-                                </div>
-                                <div class="form-check form-check-inline" style="display: none;">
-                                    <input class="form-check-input" type="radio" name="explanation-mode" id="ai-mode" value="ai">
-                                    <label class="form-check-label" for="ai-mode">AI生成解析</label>
-                                </div>
-                            </div>
-                            <div id="ai-model-select" class="d-none">
-                                <select id="ai-model" class="form-select form-select-sm">
-                                    <option value="gpt-4o" selected>GPT-4o (推薦)</option>
-                                    <option value="claude-3.7-sonnet">Claude 3.7 Sonnet</option>
-                                    <option value="grok-3">Grok 3</option>
-                                </select>
-                            </div>
-                        </div>
-                        
-                        <div class="col-lg-3 col-md-6">
-                            <label class="form-label fw-bold">
-                                <i class="fas fa-rocket me-2 text-danger"></i>準備就緒
+<div class="mb-2">
+<div class="form-check form-check-inline">
+<input checked="" class="form-check-input" id="database-mode" name="explanation-mode" type="radio" value="database"/>
+<label class="form-check-label" for="database-mode">資料庫解析</label>
+</div>
+<div class="form-check form-check-inline" style="display: none;">
+<input class="form-check-input" id="ai-mode" name="explanation-mode" type="radio" value="ai"/>
+<label class="form-check-label" for="ai-mode">AI生成解析</label>
+</div>
+</div>
+<div class="d-none" id="ai-model-select">
+<select class="form-select form-select-sm" id="ai-model">
+<option selected="" value="gpt-4o">GPT-4o (推薦)</option>
+<option value="claude-3.7-sonnet">Claude 3.7 Sonnet</option>
+<option value="grok-3">Grok 3</option>
+</select>
+</div>
+</div>
+<div class="col-lg-3 col-md-6">
+<label class="form-label fw-bold">
+<i class="fas fa-rocket me-2 text-danger"></i>準備就緒
                             </label>
-                            <button id="start-btn" class="btn btn-danger w-100 mb-2" disabled>
-                                <i class="fas fa-play me-2"></i>開始練習
+<button class="btn btn-danger w-100 mb-2" disabled="" id="start-btn">
+<i class="fas fa-play me-2"></i>開始練習
                             </button>
-                            <button id="review-btn-main" class="btn btn-success w-100 mb-2" disabled style="display: none;">
-                                <i class="fas fa-redo me-2"></i>開始複習
+<button class="btn btn-success w-100 mb-2" disabled="" id="review-btn-main" style="display: none;">
+<i class="fas fa-redo me-2"></i>開始複習
                             </button>
-                            <div id="timer" class="timer text-center">
-                                <i class="fas fa-clock me-2"></i>請先選擇題庫
+<div class="timer text-center" id="timer">
+<i class="fas fa-clock me-2"></i>請先選擇題庫
                             </div>
-                        </div>
-                    </div>
-                </div>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 問題區域 -->
+<div class="quiz-container d-none" id="quiz-container">
+<!-- 考試計時器 - 在測驗進行時顯示 -->
+<div class="quiz-timer-display" id="quiz-timer-display" style="display: none;">
+<i class="fas fa-clock me-2"></i>剩餘時間: --:--
             </div>
-        </div>
-        
-        <!-- 問題區域 -->
-        <div id="quiz-container" class="quiz-container d-none">
-            <!-- 考試計時器 - 在測驗進行時顯示 -->
-            <div id="quiz-timer-display" class="quiz-timer-display" style="display: none;">
-                <i class="fas fa-clock me-2"></i>剩餘時間: --:--
-            </div>
-            
-            <!-- 返回選擇按鈕 -->
-            <button id="back-to-selection" class="back-to-selection">
-                <i class="fas fa-arrow-left me-2"></i>返回題庫選擇
+<!-- 返回選擇按鈕 -->
+<button class="back-to-selection" id="back-to-selection">
+<i class="fas fa-arrow-left me-2"></i>返回題庫選擇
             </button>
-            
-            <div class="progress mb-3">
-                <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
-            </div>
-            
-            <div class="d-flex justify-content-between align-items-center mb-4">
-                <h5 id="question-number" class="mb-0">問題 1/100</h5>
-                <div class="d-flex gap-2">
-                    <span id="database-badge" class="badge-custom">iPAS題庫</span>
-                    <span id="stats-display" class="badge bg-info">得分: 0/0 (0%)</span>
-                </div>
-            </div>
-            
-            <h4 id="question-text" class="mb-4">載入題目中...</h4>
-            
-            <div id="options-container" class="mb-4">
-                <!-- 選項會在JavaScript中動態生成 -->
-            </div>
-            
-            <div id="explanation-box" class="explanation-box d-none">
-                <h5 class="mb-3"><i class="fas fa-lightbulb me-2"></i>答案解析</h5>
-                <div id="explanation-content"></div>
-                <div class="mt-3">
-                    <span id="topic-badge" class="badge bg-secondary me-2"></span>
-                    <span id="subtopic-badge" class="badge bg-info"></span>
-                </div>
-            </div>
-        </div>
-        
-        <!-- 底部導航 -->
-        <div class="bottom-nav" id="bottom-navigation">
-            <div class="container-fluid">
-                <div class="row justify-content-between align-items-center">
-                    <div class="col-2">
-                        <button id="prev-btn" class="btn btn-secondary w-100" disabled>
-                            <i class="fas fa-arrow-left me-1"></i> 
-                            <span class="d-none d-sm-inline">上一題</span>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button id="submit-btn" class="btn btn-primary w-100" disabled>
-                            <i class="fas fa-check me-1"></i> 
-                            <span class="d-none d-sm-inline">提交</span>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button id="next-btn" class="btn btn-warning w-100" disabled>
-                            <span class="d-none d-sm-inline">下一題</span>
-                            <i class="fas fa-arrow-right ms-1"></i>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button id="finish-btn" class="btn btn-success w-100" disabled>
-                            <i class="fas fa-flag-checkered me-1"></i> 
-                            <span class="d-none d-sm-inline">完成</span>
-                        </button>
-                    </div>
-                    <div class="col-2">
-                        <button id="explanation-btn" class="btn btn-info w-100" disabled>
-                            <i class="fas fa-lightbulb me-1"></i> 
-                            <span class="d-none d-sm-inline">查看解析</span>
-                        </button>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 模態框 -->
-    <!-- 測驗結果模態框 -->
-    <div class="modal fade" id="result-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-primary text-white">
-                    <h5 class="modal-title">測驗結果</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="result-content" style="max-height: 70vh; overflow-y: auto;"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                    <button type="button" class="btn btn-success" id="restart-quiz-btn">
-                        <i class="fas fa-redo me-1"></i>重新測驗
+<div class="progress mb-3">
+<div class="progress-bar" id="progress-bar" role="progressbar" style="width: 0%"></div>
+</div>
+<div class="d-flex justify-content-between align-items-center mb-4">
+<h5 class="mb-0" id="question-number">問題 1/100</h5>
+<div class="d-flex gap-2">
+<span class="badge-custom" id="database-badge">iPAS題庫</span>
+<span class="badge bg-info" id="stats-display">得分: 0/0 (0%)</span>
+</div>
+</div>
+<h4 class="mb-4" id="question-text">載入題目中...</h4>
+<div class="mb-4" id="options-container">
+<!-- 選項會在JavaScript中動態生成 -->
+</div>
+<div class="explanation-box d-none" id="explanation-box">
+<h5 class="mb-3"><i class="fas fa-lightbulb me-2"></i>答案解析</h5>
+<div id="explanation-content"></div>
+<div class="mt-3">
+<span class="badge bg-secondary me-2" id="topic-badge"></span>
+<span class="badge bg-info" id="subtopic-badge"></span>
+</div>
+</div>
+</div>
+<!-- 底部導航 -->
+<div class="bottom-nav" id="bottom-navigation">
+<div class="container-fluid">
+<div class="row justify-content-between align-items-center">
+<div class="col-2">
+<button class="btn btn-secondary w-100" disabled="" id="prev-btn">
+<i class="fas fa-arrow-left me-1"></i>
+<span class="d-none d-sm-inline">上一題</span>
+</button>
+</div>
+<div class="col-2">
+<button class="btn btn-primary w-100" disabled="" id="submit-btn">
+<i class="fas fa-check me-1"></i>
+<span class="d-none d-sm-inline">提交</span>
+</button>
+</div>
+<div class="col-2">
+<button class="btn btn-warning w-100" disabled="" id="next-btn">
+<span class="d-none d-sm-inline">下一題</span>
+<i class="fas fa-arrow-right ms-1"></i>
+</button>
+</div>
+<div class="col-2">
+<button class="btn btn-success w-100" disabled="" id="finish-btn">
+<i class="fas fa-flag-checkered me-1"></i>
+<span class="d-none d-sm-inline">完成</span>
+</button>
+</div>
+<div class="col-2">
+<button class="btn btn-info w-100" disabled="" id="explanation-btn" onclick="openQuestionOverview()">題號總覽</button>
+</div>
+</div>
+</div>
+</div>
+</div>
+<!-- 模態框 -->
+<!-- 測驗結果模態框 -->
+<div class="modal fade" id="result-modal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-primary text-white">
+<h5 class="modal-title">測驗結果</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div id="result-content" style="max-height: 70vh; overflow-y: auto;"></div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" type="button">關閉</button>
+<button class="btn btn-success" id="restart-quiz-btn" type="button">
+<i class="fas fa-redo me-1"></i>重新測驗
                     </button>
-                    <button type="button" class="btn btn-primary" id="review-wrong-btn">
-                        <i class="fas fa-times-circle me-1"></i>複習錯題
+<button class="btn btn-primary" id="review-wrong-btn" type="button">
+<i class="fas fa-times-circle me-1"></i>複習錯題
                     </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 主題選擇模態框 -->
-    <div class="modal fade" id="topic-selection-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
-            <div class="modal-content">
-                <div class="modal-header bg-info text-white">
-                    <h5 class="modal-title"><i class="fas fa-tags me-2"></i>選擇複習主題</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <p>請選擇您想要複習的主題（可複選）：</p>
-                    <div class="mb-3">
-                        <button id="select-all-topics-btn" class="btn btn-sm btn-outline-primary">全選</button>
-                        <button id="deselect-all-topics-btn" class="btn btn-sm btn-outline-secondary">取消全選</button>
-                    </div>
-                    <div id="topic-list-container" style="max-height: 50vh; overflow-y: auto;">
-                        <!-- 主題列表將由 JavaScript 動態生成 -->
-                    </div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
-                    <button type="button" class="btn btn-primary" id="confirm-topic-selection-btn">
-                        <i class="fas fa-check me-1"></i>確認選擇
+</div>
+</div>
+</div>
+</div>
+<!-- 主題選擇模態框 -->
+<div class="modal fade" id="topic-selection-modal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+<div class="modal-content">
+<div class="modal-header bg-info text-white">
+<h5 class="modal-title"><i class="fas fa-tags me-2"></i>選擇複習主題</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<p>請選擇您想要複習的主題（可複選）：</p>
+<div class="mb-3">
+<button class="btn btn-sm btn-outline-primary" id="select-all-topics-btn">全選</button>
+<button class="btn btn-sm btn-outline-secondary" id="deselect-all-topics-btn">取消全選</button>
+</div>
+<div id="topic-list-container" style="max-height: 50vh; overflow-y: auto;">
+<!-- 主題列表將由 JavaScript 動態生成 -->
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" type="button">取消</button>
+<button class="btn btn-primary" id="confirm-topic-selection-btn" type="button">
+<i class="fas fa-check me-1"></i>確認選擇
                     </button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 統計資料模態框 -->
-    <div class="modal fade" id="stats-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-info text-white">
-                    <h5 class="modal-title">學習統計</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <div id="stats-content"></div>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                    <button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 使用說明模態框 -->
-    <div class="modal fade" id="help-modal" tabindex="-1">
-        <div class="modal-dialog modal-dialog-centered modal-lg">
-            <div class="modal-content">
-                <div class="modal-header bg-success text-white">
-                    <h5 class="modal-title">iPAS考試準備指南</h5>
-                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-                </div>
-                <div class="modal-body">
-                    <h5><i class="fas fa-target me-2 text-primary"></i>考試準備策略</h5>
-                    <div class="alert alert-info">
-                        <strong>考試資訊：</strong>iPAS AI應用規劃師初級認證，建議準備時間：4-6週
+</div>
+</div>
+</div>
+</div>
+<!-- 統計資料模態框 -->
+<div class="modal fade" id="stats-modal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-info text-white">
+<h5 class="modal-title">學習統計</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div id="stats-content"></div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" type="button">關閉</button>
+<button class="btn btn-danger" id="reset-stats-btn" type="button">重置學習進度</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 使用說明模態框 -->
+<div class="modal fade" id="help-modal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-success text-white">
+<h5 class="modal-title">iPAS考試準備指南</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<h5><i class="fas fa-target me-2 text-primary"></i>考試準備策略</h5>
+<div class="alert alert-info">
+<strong>考試資訊：</strong>iPAS AI應用規劃師初級認證，建議準備時間：4-6週
                     </div>
-                    
-                    <h6>📚 複習模式使用建議</h6>
-                    <ul>
-                        <li><strong>錯題複習：</strong>重點攻克薄弱環節</li>
-                        <li><strong>全題複習：</strong>系統性回顧所有內容</li>
-                        <li><strong>主題複習：</strong>針對特定領域加強</li>
-                        <li><strong>隨機複習：</strong>模擬考試隨機出題</li>
-                    </ul>
-                    
-                    <h6>📋 練習模式建議</h6>
-                    <ul>
-                        <li><strong>每日練習：</strong>20-50題維持手感</li>
-                        <li><strong>週末模擬：</strong>100題完整測驗</li>
-                        <li><strong>考前衝刺：</strong>錯題複習模式</li>
-                    </ul>
-                    
-                    <h6>🎯 重點題型</h6>
-                    <ul>
-                        <li>AI技術應用與商業價值評估</li>
-                        <li>專案規劃與管理流程</li>
-                        <li>數據分析與模型評估</li>
-                        <li>倫理與風險管理</li>
-                    </ul>
-                    
-                    <h6>⏱️ 模擬考試建議</h6>
-                    <ul>
-                        <li><strong>iPAS模式：</strong>選擇100題標準模式，每科75分鐘</li>
-                        <li><strong>資策會模式：</strong>選擇80題，90分鐘</li>
-                        <li>嚴格控制答題時間</li>
-                        <li>目標正確率：70%以上</li>
-                    </ul>
-                    
-                    <h6>📊 使用統計功能</h6>
-                    <ul>
-                        <li>定期檢查學習統計</li>
-                        <li>重點關注薄弱主題</li>
-                        <li>匯出錯題進行紙本複習</li>
-                    </ul>
-                    
-                    <ul>
-                        <li>開發者：ZN Studio</li>
-                        <li>版本：2.2.0 (官方規範版)</li>
-                        <li>本系統由本人獨立設計與開發，專為iPAS AI應用規劃師考試設計</li>
-                    </ul>
-                </div>
-                <div class="modal-footer">
-                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- 加載遮罩 -->
-    <div id="loading-overlay" class="overlay d-none">
-        <div class="loader"></div>
-        <div id="loading-text" class="loading-text">處理中...</div>
-    </div>
-
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-    <script>
+<h6>📚 複習模式使用建議</h6>
+<ul>
+<li><strong>錯題複習：</strong>重點攻克薄弱環節</li>
+<li><strong>全題複習：</strong>系統性回顧所有內容</li>
+<li><strong>主題複習：</strong>針對特定領域加強</li>
+<li><strong>隨機複習：</strong>模擬考試隨機出題</li>
+</ul>
+<h6>📋 練習模式建議</h6>
+<ul>
+<li><strong>每日練習：</strong>20-50題維持手感</li>
+<li><strong>週末模擬：</strong>100題完整測驗</li>
+<li><strong>考前衝刺：</strong>錯題複習模式</li>
+</ul>
+<h6>🎯 重點題型</h6>
+<ul>
+<li>AI技術應用與商業價值評估</li>
+<li>專案規劃與管理流程</li>
+<li>數據分析與模型評估</li>
+<li>倫理與風險管理</li>
+</ul>
+<h6>⏱️ 模擬考試建議</h6>
+<ul>
+<li><strong>iPAS模式：</strong>選擇100題標準模式，每科75分鐘</li>
+<li><strong>資策會模式：</strong>選擇80題，90分鐘</li>
+<li>嚴格控制答題時間</li>
+<li>目標正確率：70%以上</li>
+</ul>
+<h6>📊 使用統計功能</h6>
+<ul>
+<li>定期檢查學習統計</li>
+<li>重點關注薄弱主題</li>
+<li>匯出錯題進行紙本複習</li>
+</ul>
+<ul>
+<li>開發者：ZN Studio</li>
+<li>版本：2.2.0 (官方規範版)</li>
+<li>本系統由本人獨立設計與開發，專為iPAS AI應用規劃師考試設計</li>
+</ul>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" type="button">關閉</button>
+</div>
+</div>
+</div>
+</div>
+<!-- 加載遮罩 -->
+<div class="overlay d-none" id="loading-overlay">
+<div class="loader"></div>
+<div class="loading-text" id="loading-text">處理中...</div>
+</div>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
+<script>
         // 全域狀態管理
         const iPASQuizApp = {
             // 應用狀態
@@ -2859,5 +2827,100 @@
             iPASQuizApp.init();
         });
     </script>
+
+<!-- 題號總覽 Modal -->
+<div class="modal fade" id="question-overview-modal" tabindex="-1">
+<div class="modal-dialog modal-dialog-centered modal-lg">
+<div class="modal-content">
+<div class="modal-header bg-info text-white">
+<h5 class="modal-title"><i class="fas fa-list-ol me-2"></i>題號總覽</h5>
+<button class="btn-close btn-close-white" data-bs-dismiss="modal" type="button"></button>
+</div>
+<div class="modal-body">
+<div class="d-flex flex-wrap gap-2" id="question-overview-container"></div>
+<div class="form-check mt-3">
+<input class="form-check-input" id="show-marked-only" type="checkbox"/>
+<label class="form-check-label" for="show-marked-only">只顯示標記題</label>
+</div>
+</div>
+<div class="modal-footer">
+<button class="btn btn-secondary" data-bs-dismiss="modal" type="button">關閉</button>
+</div>
+</div>
+</div>
+</div>
+
+<script>
+if (!iPASQuizApp.state.markedQuestions) iPASQuizApp.state.markedQuestions = new Set();
+
+const overviewModal = new bootstrap.Modal(document.getElementById('question-overview-modal'));
+const overviewContainer = document.getElementById('question-overview-container');
+const showMarkedOnly = document.getElementById('show-marked-only');
+
+function renderQuestionOverview() {
+  overviewContainer.innerHTML = '';
+  const markedOnly = showMarkedOnly.checked;
+  const questions = iPASQuizApp.state.questions || [];
+  questions.forEach((q, idx) => {
+    const qNum = idx + 1;
+    if (markedOnly && !iPASQuizApp.state.markedQuestions.has(qNum)) return;
+
+    const btn = document.createElement('button');
+    btn.className = 'btn btn-outline-primary position-relative';
+    btn.textContent = qNum;
+    if (qNum === iPASQuizApp.state.currentQuestionIndex + 1) {
+      btn.classList.add('btn-primary', 'text-white');
+    }
+    btn.onclick = () => {
+      iPASQuizApp.state.currentQuestionIndex = idx;
+      iPASQuizApp.displayQuestion();
+      if (iPASQuizApp.state.mode === 'practice' && iPASQuizApp.state.answered[qNum]) {
+        document.getElementById('explanation-box').style.display = 'block';
+      } else {
+        document.getElementById('explanation-box').style.display = 'none';
+      }
+      overviewModal.hide();
+    };
+
+    const markBtn = document.createElement('span');
+    markBtn.innerHTML = '<i class="fas fa-question"></i>';
+    markBtn.className = 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark';
+    if (!iPASQuizApp.state.markedQuestions.has(qNum)) markBtn.style.opacity = 0.3;
+    markBtn.onclick = (e) => {
+      e.stopPropagation();
+      if (iPASQuizApp.state.markedQuestions.has(qNum)) {
+        iPASQuizApp.state.markedQuestions.delete(qNum);
+      } else {
+        iPASQuizApp.state.markedQuestions.add(qNum);
+      }
+      renderQuestionOverview();
+    };
+
+    btn.appendChild(markBtn);
+    overviewContainer.appendChild(btn);
+  });
+}
+
+showMarkedOnly.addEventListener('change', renderQuestionOverview);
+
+function openQuestionOverview() {
+  renderQuestionOverview();
+  overviewModal.show();
+}
+
+// 修改 submitAnswer 邏輯：練習模式不自動顯示解析
+const originalSubmitAnswer = iPASQuizApp.submitAnswer;
+iPASQuizApp.submitAnswer = function(selectedOption) {
+  const prevIncorrectCount = iPASQuizApp.state.incorrectQuestions.length;
+  originalSubmitAnswer.call(this, selectedOption);
+  if (iPASQuizApp.state.mode === 'practice') {
+    document.getElementById('explanation-box').style.display = 'none';
+  }
+  // 避免重複記錄錯題
+  if (iPASQuizApp.state.incorrectQuestions.length > prevIncorrectCount) {
+    iPASQuizApp.state.incorrectQuestions = [...new Set(iPASQuizApp.state.incorrectQuestions)];
+  }
+};
+</script>
 </body>
 </html>

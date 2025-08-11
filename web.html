@@ -1909,92 +1909,65 @@
             // 顯示題目
 displayQuestion() {
                 if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
-                    this.finishQuiz();
+                    this.finishQuiz(); // 如果題目超出範圍，則結束
                     return false;
                 }
                 
                 const question = this.state.questions[this.state.currentQuestionIndex];
                 const questionId = this.state.currentQuestionIndex;
-                const hasAnswered = questionId in this.state.userAnswers;
+                const userAnswer = this.state.userAnswers[questionId];
+                const isPracticeOrReview = this.state.currentMode === 'practice' || this.state.currentMode === 'review';
 
                 this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
                 this.elements.questionText.textContent = question.question;
                 
-                // 產生隨機選項（如果尚未產生）
+                // 確保選項映射存在
                 if (!this.state.questionMapping[questionId]) {
-                    const optionsWithIndex = question.options.map((option, index) => ({
-                        text: option,
-                        originalIndex: index,
-                        isCorrect: index === question.correct_answer_index
-                    }));
+                    const optionsWithIndex = question.options.map((option, index) => ({ text: option, originalIndex: index }));
                     const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
-                    this.state.questionMapping[questionId] = {
-                        shuffledOptions: shuffledOptions,
-                        correctLetter: null
-                    };
-                    shuffledOptions.forEach((option, index) => {
-                        if (option.isCorrect) {
-                            this.state.questionMapping[questionId].correctLetter = String.fromCharCode(65 + index);
-                        }
-                    });
+                    this.state.questionMapping[questionId] = { shuffledOptions: shuffledOptions };
                 }
                 
                 // 渲染選項
                 const mapping = this.state.questionMapping[questionId];
-                this.elements.optionsContainer.innerHTML = '';
-                mapping.shuffledOptions.forEach((option, displayIndex) => {
+                this.elements.optionsContainer.innerHTML = mapping.shuffledOptions.map((option, displayIndex) => {
                     const letter = String.fromCharCode(65 + displayIndex);
-                    const optionHTML = `
-                        <div class="form-check mb-2">
-                            <input class="option-input" type="radio" name="quiz-option" 
-                                   id="option-${letter}" value="${letter}" 
-                                   data-original-index="${option.originalIndex}">
-                            <label class="option-label" for="option-${letter}">
-                                ${letter}. ${option.text}
-                            </label>
-                        </div>
-                    `;
-                    this.elements.optionsContainer.insertAdjacentHTML('beforeend', optionHTML);
-                });
+                    return `<div class="form-check mb-2">
+                                <input class="option-input" type="radio" name="quiz-option" id="option-${letter}" value="${letter}" data-original-index="${option.originalIndex}">
+                                <label class="option-label" for="option-${letter}">${letter}. ${option.text}</label>
+                            </div>`;
+                }).join('');
                 
-                // 根據作答狀態更新UI
+                // 預設UI狀態
                 this.elements.explanationBox.classList.add('d-none');
                 this.elements.modifyAnswerBtn.classList.add('d-none');
                 document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = false);
 
-                if (hasAnswered) {
-                    const previousAnswer = this.state.userAnswers[questionId];
-                    const answerInput = document.getElementById(`option-${previousAnswer.answer}`);
-                    if (answerInput) {
-                        answerInput.checked = true;
-                    }
-                    
-                    document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
+                // 如果有作答記錄
+                if (userAnswer) {
+                    const answerInput = document.getElementById(`option-${userAnswer.answer}`);
+                    if (answerInput) answerInput.checked = true;
 
-                    // 在練習/複習模式下，顯示解析和修改答案按鈕
-                    if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
-                        const isCorrect = previousAnswer.originalIndex === question.correct_answer_index;
-                        this.showExplanation(question, previousAnswer.answer, isCorrect);
+                    // 只有在「練習/複習模式」下才鎖定選項並顯示解析
+                    if (isPracticeOrReview) {
+                        document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
+                        const isCorrect = userAnswer.originalIndex === question.correct_answer_index;
+                        this.showExplanation(question, userAnswer.answer, isCorrect);
                         this.elements.modifyAnswerBtn.classList.remove('d-none');
                     }
                 }
                 
                 // 更新標記按鈕狀態
-                if (this.state.markedQuestions.includes(questionId)) {
-                    this.elements.markReviewBtn.classList.add('active');
-                    this.elements.markReviewBtn.innerHTML = '<i class="fas fa-flag"></i> 已標記';
-                } else {
-                    this.elements.markReviewBtn.classList.remove('active');
-                    this.elements.markReviewBtn.innerHTML = '<i class="fas fa-flag"></i> 標記此題';
-                }
-
+                const isMarked = this.state.markedQuestions.includes(questionId);
+                this.elements.markReviewBtn.classList.toggle('active', isMarked);
+                this.elements.markReviewBtn.innerHTML = `<i class="fas fa-flag"></i> ${isMarked ? '已標記' : '標記此題'}`;
+                
                 // 更新進度條
-                const progress = ((Object.keys(this.state.userAnswers).length) / this.state.questions.length) * 100;
+                const progress = (Object.keys(this.state.userAnswers).length / this.state.questions.length) * 100;
                 this.elements.progressBar.style.width = `${progress}%`;
                 
                 this.updateButtonStates();
                 this.updateStats();
-                
                 return true;
             },
             
@@ -2009,36 +1982,27 @@ submitAnswer() {
                 
                 const question = this.state.questions[this.state.currentQuestionIndex];
                 const questionId = this.state.currentQuestionIndex;
-                const userAnswerLetter = selectedOption.value;
-                const originalIndex = parseInt(selectedOption.dataset.originalIndex);
                 
                 // 儲存或更新答案
                 this.state.userAnswers[questionId] = {
-                    answer: userAnswerLetter,
-                    originalIndex: originalIndex,
+                    answer: selectedOption.value,
+                    originalIndex: parseInt(selectedOption.dataset.originalIndex),
                     timestamp: new Date()
                 };
                 
-                // 禁用選項
-                document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
-                    input.disabled = true;
-                });
+                this.showAlert(`第 ${question.number} 題答案已提交`, 'success');
 
-                // 在練習或複習模式下，立即顯示解析
+                // 在練習或複習模式下，顯示解析並鎖定選項
                 if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
-                    const isCorrect = originalIndex === question.correct_answer_index;
-                    this.showExplanation(question, userAnswerLetter, isCorrect);
+                    document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
+                    const isCorrect = this.state.userAnswers[questionId].originalIndex === question.correct_answer_index;
+                    this.showExplanation(question, this.state.userAnswers[questionId].answer, isCorrect);
                     this.elements.modifyAnswerBtn.classList.remove('d-none');
                 }
                 
                 this.updateStats();
                 this.updateButtonStates();
-                
-                // 在考試模式下，提交後自動跳到下一題
-                if (this.state.currentMode === 'exam') {
-                    setTimeout(() => this.nextQuestion(), 300);
-                }
-
+                this.saveUserData();
                 return true;
             },
             
@@ -2216,12 +2180,13 @@ submitAnswer() {
             },
             
             // 下一題
-            nextQuestion() {
+nextQuestion() {
                 if (this.state.currentQuestionIndex < this.state.questions.length - 1) {
                     this.state.currentQuestionIndex++;
                     this.displayQuestion();
                 } else {
-                    this.finishQuiz();
+                    // 如果已經是最後一題，則提示用戶手動點擊完成
+                    this.showAlert('已經是最後一題了！請點擊「完成」按鈕來結束測驗。', 'info');
                 }
             },
             
@@ -2472,14 +2437,14 @@ updateButtonStates() {
                 const isLast = this.state.currentQuestionIndex === this.state.questions.length - 1;
                 const isPracticeOrReview = this.state.currentMode === 'practice' || this.state.currentMode === 'review';
 
-                // 上一題：在第一題或考試模式時禁用
-                this.elements.prevBtn.disabled = isFirst || this.state.currentMode === 'exam';
-
+                // 上一題：只要不是第一題，就可用
+                this.elements.prevBtn.disabled = isFirst;
+                
                 // 提交：在練習/複習模式下，答過就禁用。考試模式下恆定可用。
                 this.elements.submitBtn.disabled = hasAnswered && isPracticeOrReview;
 
-                // 下一題：在練習/複習模式下，必須答過才能按。在考試模式下，隨時可按（除非是最後一題）。
-                this.elements.nextBtn.disabled = isLast || (isPracticeOrReview && !hasAnswered);
+                // 下一題：只要不是最後一題，就可用
+                this.elements.nextBtn.disabled = isLast;
 
                 // 完成：恆定可用
                 this.elements.finishBtn.disabled = false;
@@ -2617,7 +2582,8 @@ updateButtonStates() {
             calculateFinalResults() {
                 this.state.score = 0;
                 this.state.wrongQuestions = [];
-                this.state.userData.history = this.state.userData.history || [];
+                const sessionCorrectQuestions = new Set();
+                const sessionIncorrectQuestions = new Set();
 
                 this.state.questions.forEach((question, index) => {
                     const userAnswerData = this.state.userAnswers[index];
@@ -2625,25 +2591,13 @@ updateButtonStates() {
                     
                     if (isCorrect) {
                         this.state.score++;
-                        if (!this.state.userData.correct.includes(question.question)) {
-                            this.state.userData.correct.push(question.question);
-                        }
-                        const incorrectIndex = this.state.userData.incorrect.indexOf(question.question);
-                        if (incorrectIndex > -1) {
-                            this.state.userData.incorrect.splice(incorrectIndex, 1);
-                        }
+                        sessionCorrectQuestions.add(question.question);
                     } else {
                         this.state.wrongQuestions.push(question);
-                        if (!this.state.userData.incorrect.includes(question.question)) {
-                            this.state.userData.incorrect.push(question.question);
-                        }
-                        const correctIndex = this.state.userData.correct.indexOf(question.question);
-                        if (correctIndex > -1) {
-                            this.state.userData.correct.splice(correctIndex, 1);
-                        }
+                        sessionIncorrectQuestions.add(question.question);
                     }
 
-                    // 記錄歷史，不論對錯
+                    // 記錄本次作答歷史
                     if (userAnswerData) {
                          const mapping = this.state.questionMapping[index];
                          const historyEntry = {
@@ -2652,7 +2606,7 @@ updateButtonStates() {
                             question: question.question,
                             options: question.options,
                             user_answer: userAnswerData.answer,
-                            correct_answer_letter: mapping.correctLetter,
+                            correct_answer_letter: mapping ? mapping.correctLetter : 'N/A',
                             is_correct: isCorrect,
                             topic: question.topic,
                             subtopic: question.subtopic,
@@ -2661,6 +2615,12 @@ updateButtonStates() {
                         this.state.userData.history.push(historyEntry);
                     }
                 });
+
+                // 更新全域的對錯題記錄
+                // 1. 將本次答對的題目，從全域錯題中移除
+                this.state.userData.incorrect = (this.state.userData.incorrect || []).filter(q => !sessionCorrectQuestions.has(q));
+                // 2. 將本次答錯的題目，加入全域錯題中 (去重)
+                this.state.userData.incorrect = [...new Set([...(this.state.userData.incorrect || []), ...sessionIncorrectQuestions])];
             },
 
             
@@ -3061,4 +3021,5 @@ updateStats() {
     </script>
 </body>
 </html>
+
 

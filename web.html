@@ -1,5 +1,4 @@
 <!DOCTYPE html>
-
 <html lang="zh-TW">
 <head>
 <link href="data:," rel="icon"/>
@@ -20,6 +19,8 @@
             margin-bottom: 120px;
             overflow-x: hidden;
         }
+        
+
         
         .main-container {
             background-color: rgba(255, 255, 255, 0.95);
@@ -797,6 +798,8 @@
     </script>
 </head>
 <body>
+
+
 <!-- 頂部導航 -->
 <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
 <div class="container-fluid">
@@ -1160,8 +1163,19 @@
 <li>重點關注薄弱主題</li>
 <li>匯出錯題進行紙本複習</li>
 </ul>
+
+<div class="alert alert-info mt-4">
+<h6 class="alert-heading"><i class="fas fa-user-tie me-2"></i>開發者資訊</h6>
+<p class="mb-1"><strong>Nick Chang</strong></p>
+<p class="mb-1"><i class="fas fa-envelope me-2"></i>nickleo051216@gmail.com</p>
+<p class="mb-1"><i class="fas fa-phone me-2"></i>0932-684-051</p>
+<p class="mb-1"><i class="fas fa-globe me-2"></i>個人網站：<a href="https://portaly.cc/zn.studio" target="_blank" class="text-decoration-none">ZN Studio</a></p>
+<p class="mb-1"><i class="fab fa-threads me-2"></i>Threads：<a href="https://www.threads.com/@nickai216" target="_blank" class="text-decoration-none">@nickai216</a></p>
+<p class="mb-1"><i class="fas fa-comments me-2"></i>Line 社群：<a href="https://reurl.cc/1OZNAY" target="_blank" class="text-decoration-none">https://reurl.cc/1OZNAY</a></p>
+<p class="mb-0"><i class="fas fa-comment me-2"></i>Line：<a href="https://lin.ee/Faz0doj" target="_blank" class="text-decoration-none">https://lin.ee/Faz0doj</a></p>
+</div>
+
 <ul>
-<li>開發者：ZN Studio</li>
 <li>版本：2.2.0 (官方規範版)</li>
 <li>本系統由本人獨立設計與開發，專為iPAS AI應用規劃師考試設計</li>
 </ul>
@@ -1196,6 +1210,8 @@
                 questionMapping: {}, // 用於存儲題目的選項隨機化映射
                 score: 0,
                 wrongQuestions: [],
+                incorrectQuestions: [], // 新增：初始化錯題陣列
+                markedQuestions: new Set(), // 新增：標記題目
                 startTime: null,
                 isTimerRunning: false,
                 examDuration: 150, // iPAS: 150分鐘 (兩科各75分鐘)
@@ -1888,6 +1904,17 @@
                     }
                 } else {
                     this.state.wrongQuestions.push(question);
+                    
+                    // 確保 incorrectQuestions 是陣列
+                    if (!Array.isArray(this.state.incorrectQuestions)) {
+                        this.state.incorrectQuestions = [];
+                    }
+                    
+                    // 避免重複添加錯題
+                    if (!this.state.incorrectQuestions.some(q => q.question === question.question)) {
+                        this.state.incorrectQuestions.push(question);
+                    }
+                    
                     if (!this.state.userData.incorrect.includes(question.question)) {
                         this.state.userData.incorrect.push(question.question);
                     }
@@ -2851,75 +2878,105 @@
 </div>
 
 <script>
-if (!iPASQuizApp.state.markedQuestions) iPASQuizApp.state.markedQuestions = new Set();
-
+// 修正題號總覽功能
 const overviewModal = new bootstrap.Modal(document.getElementById('question-overview-modal'));
 const overviewContainer = document.getElementById('question-overview-container');
 const showMarkedOnly = document.getElementById('show-marked-only');
 
 function renderQuestionOverview() {
-  overviewContainer.innerHTML = '';
-  const markedOnly = showMarkedOnly.checked;
-  const questions = iPASQuizApp.state.questions || [];
-  questions.forEach((q, idx) => {
-    const qNum = idx + 1;
-    if (markedOnly && !iPASQuizApp.state.markedQuestions.has(qNum)) return;
+    overviewContainer.innerHTML = '';
+    const markedOnly = showMarkedOnly.checked;
+    const questions = iPASQuizApp.state.questions || [];
+    
+    questions.forEach((q, idx) => {
+        const qNum = idx + 1;
+        if (markedOnly && !iPASQuizApp.state.markedQuestions.has(qNum)) return;
 
-    const btn = document.createElement('button');
-    btn.className = 'btn btn-outline-primary position-relative';
-    btn.textContent = qNum;
-    if (qNum === iPASQuizApp.state.currentQuestionIndex + 1) {
-      btn.classList.add('btn-primary', 'text-white');
+        const btn = document.createElement('button');
+        btn.className = 'btn btn-outline-primary position-relative me-2 mb-2';
+        btn.textContent = qNum;
+        btn.style.width = '50px';
+        btn.style.height = '50px';
+        
+        // 目前題目標記
+        if (qNum === iPASQuizApp.state.currentQuestionIndex + 1) {
+            btn.classList.remove('btn-outline-primary');
+            btn.classList.add('btn-primary', 'text-white');
+        }
+        
+        // 已回答題目標記
+        if (iPASQuizApp.state.userAnswers[idx]) {
+            btn.classList.add('border-success');
+            btn.style.borderWidth = '2px';
+        }
+        
+        btn.onclick = () => {
+            iPASQuizApp.state.currentQuestionIndex = idx;
+            iPASQuizApp.displayQuestion();
+            overviewModal.hide();
+        };
+
+        // 標記按鈕
+        const markBtn = document.createElement('span');
+        markBtn.innerHTML = '<i class="fas fa-bookmark"></i>';
+        markBtn.className = 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark';
+        markBtn.style.fontSize = '0.6rem';
+        markBtn.style.cursor = 'pointer';
+        
+        if (!iPASQuizApp.state.markedQuestions.has(qNum)) {
+            markBtn.style.opacity = '0.3';
+        }
+        
+        markBtn.onclick = (e) => {
+            e.stopPropagation();
+            if (iPASQuizApp.state.markedQuestions.has(qNum)) {
+                iPASQuizApp.state.markedQuestions.delete(qNum);
+            } else {
+                iPASQuizApp.state.markedQuestions.add(qNum);
+            }
+            renderQuestionOverview();
+        };
+
+        btn.appendChild(markBtn);
+        overviewContainer.appendChild(btn);
+    });
+    
+    if (overviewContainer.children.length === 0) {
+        overviewContainer.innerHTML = '<p class="text-muted text-center">沒有找到符合條件的題目</p>';
     }
-    btn.onclick = () => {
-      iPASQuizApp.state.currentQuestionIndex = idx;
-      iPASQuizApp.displayQuestion();
-      if (iPASQuizApp.state.mode === 'practice' && iPASQuizApp.state.answered[qNum]) {
-        document.getElementById('explanation-box').style.display = 'block';
-      } else {
-        document.getElementById('explanation-box').style.display = 'none';
-      }
-      overviewModal.hide();
-    };
-
-    const markBtn = document.createElement('span');
-    markBtn.innerHTML = '<i class="fas fa-question"></i>';
-    markBtn.className = 'position-absolute top-0 start-100 translate-middle badge rounded-pill bg-warning text-dark';
-    if (!iPASQuizApp.state.markedQuestions.has(qNum)) markBtn.style.opacity = 0.3;
-    markBtn.onclick = (e) => {
-      e.stopPropagation();
-      if (iPASQuizApp.state.markedQuestions.has(qNum)) {
-        iPASQuizApp.state.markedQuestions.delete(qNum);
-      } else {
-        iPASQuizApp.state.markedQuestions.add(qNum);
-      }
-      renderQuestionOverview();
-    };
-
-    btn.appendChild(markBtn);
-    overviewContainer.appendChild(btn);
-  });
 }
 
 showMarkedOnly.addEventListener('change', renderQuestionOverview);
 
 function openQuestionOverview() {
-  renderQuestionOverview();
-  overviewModal.show();
+    renderQuestionOverview();
+    overviewModal.show();
 }
 
-// 修改 submitAnswer 邏輯：練習模式不自動顯示解析
+// 修正 submitAnswer 函數 - 確保正確初始化錯題陣列
 const originalSubmitAnswer = iPASQuizApp.submitAnswer;
-iPASQuizApp.submitAnswer = function(selectedOption) {
-  const prevIncorrectCount = iPASQuizApp.state.incorrectQuestions.length;
-  originalSubmitAnswer.call(this, selectedOption);
-  if (iPASQuizApp.state.mode === 'practice') {
-    document.getElementById('explanation-box').style.display = 'none';
-  }
-  // 避免重複記錄錯題
-  if (iPASQuizApp.state.incorrectQuestions.length > prevIncorrectCount) {
-    iPASQuizApp.state.incorrectQuestions = [...new Set(iPASQuizApp.state.incorrectQuestions)];
-  }
+iPASQuizApp.submitAnswer = function() {
+    // 確保 incorrectQuestions 陣列已初始化
+    if (!Array.isArray(this.state.incorrectQuestions)) {
+        this.state.incorrectQuestions = [];
+    }
+    
+    const prevIncorrectCount = this.state.incorrectQuestions.length;
+    const result = originalSubmitAnswer.call(this);
+    
+    // 練習模式下不自動顯示解析，需手動點擊
+    if (this.state.currentMode === 'practice' && result) {
+        this.elements.explanationBox.classList.add('d-none');
+    }
+    
+    // 避免重複記錄錯題
+    if (this.state.incorrectQuestions.length > prevIncorrectCount) {
+        this.state.incorrectQuestions = this.state.incorrectQuestions.filter((item, index, self) => 
+            index === self.findIndex(t => t.question === item.question)
+        );
+    }
+    
+    return result;
 };
 </script>
 </body>

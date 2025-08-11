@@ -1909,7 +1909,7 @@
             // 顯示題目
 displayQuestion() {
                 if (!this.state.questions || this.state.currentQuestionIndex >= this.state.questions.length) {
-                    this.finishQuiz(); // 如果題目超出範圍，則結束
+                    this.finishQuiz();
                     return false;
                 }
                 
@@ -1921,14 +1921,25 @@ displayQuestion() {
                 this.elements.questionNumber.textContent = `問題 ${question.number}/${this.state.questions.length}`;
                 this.elements.questionText.textContent = question.question;
                 
-                // 確保選項映射存在
+                // 【核心修正點】確保在隨機化時，計算並儲存正確答案的新字母
                 if (!this.state.questionMapping[questionId]) {
-                    const optionsWithIndex = question.options.map((option, index) => ({ text: option, originalIndex: index }));
+                    const optionsWithIndex = question.options.map((option, index) => ({
+                        text: option,
+                        originalIndex: index,
+                        isCorrect: index === question.correct_answer_index // 加上這行來標記哪個是正確選項
+                    }));
+                    
                     const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
-                    this.state.questionMapping[questionId] = { shuffledOptions: shuffledOptions };
+
+                    // 找到正確選項在新的隨機數組中的位置，並轉換為字母
+                    const correctLetter = String.fromCharCode(65 + shuffledOptions.findIndex(opt => opt.isCorrect));
+
+                    this.state.questionMapping[questionId] = {
+                        shuffledOptions: shuffledOptions,
+                        correctLetter: correctLetter // 把計算好的正確字母存起來
+                    };
                 }
                 
-                // 渲染選項
                 const mapping = this.state.questionMapping[questionId];
                 this.elements.optionsContainer.innerHTML = mapping.shuffledOptions.map((option, displayIndex) => {
                     const letter = String.fromCharCode(65 + displayIndex);
@@ -1938,17 +1949,14 @@ displayQuestion() {
                             </div>`;
                 }).join('');
                 
-                // 預設UI狀態
                 this.elements.explanationBox.classList.add('d-none');
                 this.elements.modifyAnswerBtn.classList.add('d-none');
                 document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = false);
 
-                // 如果有作答記錄
                 if (userAnswer) {
                     const answerInput = document.getElementById(`option-${userAnswer.answer}`);
                     if (answerInput) answerInput.checked = true;
 
-                    // 只有在「練習/複習模式」下才鎖定選項並顯示解析
                     if (isPracticeOrReview) {
                         document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
                         const isCorrect = userAnswer.originalIndex === question.correct_answer_index;
@@ -1957,12 +1965,10 @@ displayQuestion() {
                     }
                 }
                 
-                // 更新標記按鈕狀態
                 const isMarked = this.state.markedQuestions.includes(questionId);
                 this.elements.markReviewBtn.classList.toggle('active', isMarked);
                 this.elements.markReviewBtn.innerHTML = `<i class="fas fa-flag"></i> ${isMarked ? '已標記' : '標記此題'}`;
                 
-                // 更新進度條
                 const progress = (Object.keys(this.state.userAnswers).length / this.state.questions.length) * 100;
                 this.elements.progressBar.style.width = `${progress}%`;
                 
@@ -2191,8 +2197,8 @@ nextQuestion() {
             },
             
             // 上一題
-            prevQuestion() {
-                if (this.state.currentQuestionIndex > 0 && this.state.currentMode !== 'exam') {
+prevQuestion() {
+                if (this.state.currentQuestionIndex > 0) {
                     this.state.currentQuestionIndex--;
                     this.displayQuestion();
                 }
@@ -3021,5 +3027,6 @@ updateStats() {
     </script>
 </body>
 </html>
+
 
 

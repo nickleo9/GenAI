@@ -11208,5 +11208,175 @@
         "explanation": "A提示設計明確、有條理，能引導AI生成具備實務價值的建議與資訊摘要。",
         "number": 690,
         "date": "2025-08-11"
+    },
+    {
+        "question": "如果你是一家台北新開幕的連鎖咖啡店經理，會用以下哪種生成式AI工具來自動化行銷文案與社群貼文的日常產出？",
+        "options": [
+            "選用具備圖文多模態生成功能的AI工具，如Notion AI",
+            "使用傳統表格軟體人力分工手動輸出",
+            "改用RAG僅針對語音生成能力的平台",
+            "採用專門醫療領域報告生成的AI工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "行銷應用",
+        "concept": "多模態生成",
+        "explanation": "具備圖文多模態生成功能的AI工具（如Notion AI）能有效協助商業用戶快速產出社群文案與多型態內容，特別適合零售與餐飲業的行銷需求。",
+        "number": 691,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "一間大型製造業欲自動監控產線異常，即時通知維修團隊。選下列最符合生成式AI結合No-code/Low-code平台導入流程自動化的方案為？",
+        "options": [
+            "手動以Excel統計記錄每小時異常",
+            "AI模型偵測異常後，透過n8n平台自動發送通知",
+            "AI生成簡報，等會議時播報異常",
+            "員工用E-mail群發維修提醒"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "智慧製造",
+        "concept": "No-Code/Low-Code整合",
+        "explanation": "n8n等No-code/Low-code工具結合AI模型，可將異常偵測流程與通知機制完全自動化，大幅提升效率和即時反應能力。",
+        "number": 692,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "2025年，全球主要國家AI技術競爭中，台灣推動AI產業鏈升級重點措施為何？",
+        "options": [
+            "專注於單一演算法模型突破",
+            "只強調國內人才輸出",
+            "整合AI產業鏈與補助策略結合",
+            "全面停止國際AI合作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI科技台灣",
+        "subtopic": "產業發展政策",
+        "concept": "產業鏈整合",
+        "explanation": "台灣AI發展政策聚焦在產業鏈技術整合、補助協作及擴展策略結盟，提升國際競爭力。",
+        "number": 693,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "一位線上英文補習班老師欲設計個人化教學計畫，以下哪一個選項是生成式AI提示詞最佳實作？",
+        "options": [
+            "請產生適合所有學生的通用練習題",
+            "請產生自訂程度與學習障礙點的個人化練習題",
+            "請產生僅適合英文母語者的題庫",
+            "請產生已公開大量考古題的複製版本"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "提示工程",
+        "explanation": "根據學生的程度及學習瓶頸設計個人化題目，是生成式AI導入個別差異教學中的最佳實踐。",
+        "number": 694,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "iPAS AI應用規劃師認證強調哪種跨領域應用能力？",
+        "options": [
+            "僅專精單一機器學習模型評估",
+            "能將AI與業務流程規劃結合",
+            "只需學會AI程式編碼",
+            "只理解AI硬體架構"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "跨領域整合",
+        "concept": "流程規劃",
+        "explanation": "iPAS強調AI與業務整合規劃能力，需能針對實際情境設計可落地AI解決方案。",
+        "number": 695,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "下面哪個是2025最新AI工具在協助金融機構數據合規管理的正確做法？",
+        "options": [
+            "利用生成式AI自動標註敏感資料並產生合規報告",
+            "人工手動審查所有數據日誌",
+            "仰賴通用公用雲無加密措施",
+            "僅採用靜態PDF報告人工分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "金融應用",
+        "concept": "數據治理",
+        "explanation": "先進AI工具可自動標註敏感訊息、產生合規報告，加速數據管理與流程自動化並符合法規。",
+        "number": 696,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "下列有關No Code / Low Code平台應用限制的敘述，哪一項最正確？",
+        "options": [
+            "所有企業需求都可零代碼實現，不需任何IT支援",
+            "大型複雜系統須結合傳統程式設計或專業IT人力協作",
+            "只要購買訂閱即可解決全部安全疑慮",
+            "No Code/Low Code平台不接受任何外部API擴充"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "平台限制",
+        "explanation": "No Code/Low Code平台雖提升開發效率，但大型複雜系統仍可能需專業IT人員參與擴充與維護。",
+        "number": 697,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "假設你是企業HR主管，欲利用AI提升員工訓練成效，正確的提示詞設計是哪一個？",
+        "options": [
+            "生成所有員工皆適用的一般教材",
+            "自動產生根據部門任務不同的分眾訓練教材",
+            "參考國外未經翻譯的教材直接引用",
+            "建議由主管每週自行手寫教材"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "人資訓練應用",
+        "concept": "提示工程",
+        "explanation": "依據不同部門任務，自動產生分眾教材，能最大化員工訓練AI輔助價值，是生成式AI的實務應用。",
+        "number": 698,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "下列哪一項是生成式AI導入評估時，風險管理最常見的挑戰？",
+        "options": [
+            "模型難以持續提升準確性",
+            "提示詞過度冗長導致效能下降",
+            "生成內容可能誤用或侵犯資料隱私",
+            "只能產出圖像，不能用於語音"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "風險管理",
+        "concept": "隱私保護",
+        "explanation": "生成式AI需嚴格控管資料隱私與內容誤用風險，否則可能造成法規與品牌問題。",
+        "number": 699,
+        "date": "2025-08-12"
+    },
+    {
+        "question": "生成式AI在設計領域應用時，哪一項下提示詞方式較容易獲得高品質創意輸出？",
+        "options": [
+            "描述畫面風格、色彩搭配及情境細節形成具體需求",
+            "單純下達我要圖片即可",
+            "只要求生成標題",
+            "僅輸入預設範本，不加任何說明"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "設計應用",
+        "concept": "提示工程",
+        "explanation": "描述準確的畫面風格、色彩、情境等細節有助AI生成更專業且創意的設計稿，提示詞設計愈精細愈有助提升成果。",
+        "number": 700,
+        "date": "2025-08-12"
     }
 ]

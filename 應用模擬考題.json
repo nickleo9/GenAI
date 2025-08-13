@@ -11378,5 +11378,175 @@
         "explanation": "描述準確的畫面風格、色彩、情境等細節有助AI生成更專業且創意的設計稿，提示詞設計愈精細愈有助提升成果。",
         "number": 700,
         "date": "2025-08-12"
+    },
+    {
+        "question": "假如你是臺灣中型製造業的生產主管，希望利用2025年最先進的AI工具提升生產效率，以下哪項解決方案最具代表性且符合全球新趨勢？",
+        "options": [
+            "採用結合AI agent自主排程的自動化流程平台",
+            "僅以AI生成圖像監控進行現場品管",
+            "使用傳統機器學習模型預測材料需求",
+            "專注於AI驅動的語音辨識進行操作教學"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "智慧製造",
+        "concept": "Agentic AI",
+        "explanation": "2025年智慧製造趨勢強調agent型AI可自動分析現場狀況並主動調度資源，突破傳統監控，實現端到端的生產效益最佳化。",
+        "number": 701,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "假如你是高中新創英語教師，欲利用生成式AI設計沉浸式互動教案，下列哪一句提示詞最能獲得專業且強調分層教學的結果？",
+        "options": [
+            "生成英文教案，包含口說練習",
+            "請用沉浸式分層設計生成互動式英文教案，全程英語對話",
+            "設計分層英文互動教材",
+            "請生成教材，著重口語能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "提示工程",
+        "concept": "多層次分層提示詞",
+        "explanation": "明確指示“沉浸式”、“分層”與“全程英語對話”會使生成式AI理解需求，更精準回應教育目的。",
+        "number": 702,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "如果你是地理資訊工程師，希望以低程式碼平台整合最新AI生成式技術來建立災害預警系統，較適合的組合是？",
+        "options": [
+            "直接利用深度學習API搭建系統",
+            "採用No Code平台，搭配Agentic AI模型及自動流程設計",
+            "內嵌GAN網路於GIS專屬軟體",
+            "只利用傳統決策樹建構警報模組"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No Code / Low Code 應用",
+        "subtopic": "低/無程式碼災害應用",
+        "concept": "No Code結合Agentic AI",
+        "explanation": "用No Code結合Agentic AI可在無須大量程式的情境下快速建置並優化決策流程，符合現今實務需求。",
+        "number": 703,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "2025年，全球AI技術競賽中，以下哪一項說法最正確？",
+        "options": [
+            "中國AI論文數量和影響力雙雙強於美國",
+            "美國在AI論文質量與引用影響力居領先地位",
+            "英國專利數和論文影響力均超越歐美",
+            "台灣掌握AI晶片製造但論文產出領先全球"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "全球AI技術發展",
+        "concept": "AI科技發展指標",
+        "explanation": "雖中國論文量大，但美國AI論文在質量與影響力(引用)方面仍處於領先地位。",
+        "number": 704,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "假設你為國際旅館自媒體經營者，想即時產生各國語言旅遊資訊影片腳本，應優先選用哪種生成式AI工具組合？",
+        "options": [
+            "僅用語音轉文字進行影片腳本撰寫",
+            "結合多語言大語言模型與影像生成平台",
+            "僅使用傳統翻譯API配合影片剪輯軟體",
+            "全程使用No Code拖拉式影像製作流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自媒體內容創作",
+        "concept": "多語言AI生成組合",
+        "explanation": "2025年內容創作需涵蓋腳本生成及多語言轉換，語言大模型配合影像生成平台能同時滿足腳本及視覺需求。",
+        "number": 705,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "若你是企業人資主管，規劃使用AI進行員工職能分析，下列哪種運用AI的說法正確？",
+        "options": [
+            "只能用AI進行量化考核資料的歸檔",
+            "能利用生成式AI自動分群及預測培訓需求",
+            "只適合以AI進行履歷篩選並自動派遣面試",
+            "AI只可生成統一測驗題而無法個別分析職能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "人力資源管理",
+        "concept": "生成式AI於職能預測",
+        "explanation": "AI不僅能作量化作業，更可在大數據下自動彙整分析員工職能特徵，做分群和人才培訓預測。",
+        "number": 706,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "有關生成式AI導入企業風險管理評估，何者敘述不正確？",
+        "options": [
+            "資料隱私保護為導入生成式AI的重要一環",
+            "生成式AI模型需監控輸出結果以防偏誤風險",
+            "生成式AI的應用不需顧慮倫理規範",
+            "模型更新與外洩防護同步為必要管理重點"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "風險管理",
+        "concept": "AI應用倫理",
+        "explanation": "導入生成式AI時要重視倫理規範，錯誤答案C違背AI實務落地基本規定。",
+        "number": 707,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "如果你是社區家庭主婦，想用AI輔助擬定全年家庭旅遊與財務規劃，2025年較推薦哪種生活解決方案？",
+        "options": [
+            "利用生成式AI助手協助行程規劃與收支預算建議",
+            "僅用線上手動表格記錄旅遊與消費",
+            "只依賴傳統理財報告書進行規劃",
+            "以單一日曆工具手動分配時間與開支"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "家庭生活應用",
+        "concept": "AI生活助手",
+        "explanation": "生成式AI助手已能自動彙整資訊、給出行程及理財建議，遠優於僅用手動或靜態工具。",
+        "number": 708,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "2025年，哪一種機器學習模型最適合用於即時語音辨識與字幕自動產生的AI應用？",
+        "options": [
+            "卷積神經網絡（CNN）",
+            "標準生成對抗網絡（GAN）",
+            "長短期記憶網絡（LSTM/GRU）",
+            "決策樹模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "語音與序列數據",
+        "concept": "序列模型",
+        "explanation": "LSTM與GRU等序列模型專為長時間依賴關係處理設計，最適合語音分析與字幕生成。",
+        "number": 709,
+        "date": "2025-08-13"
+    },
+    {
+        "question": "你作為iPAS AI應用規劃師考生，想應用n8n於企業內部流程自動化，下列哪一種整合方式最能體現生成式AI優勢？",
+        "options": [
+            "用n8n串接大語言模型自動生成郵件回覆及報告摘要",
+            "全程靠n8n與傳統RPA工具做簡單批次檔案搬移",
+            "採用n8n僅將資料自動備份至雲端",
+            "利用n8n打造單純手動流程操作平台"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "流程自動化",
+        "concept": "AI自動化工作流",
+        "explanation": "n8n搭配生成式AI，可自動完成回覆、彙整分析等高價值任務，不只限於單純資料流動。",
+        "number": 710,
+        "date": "2025-08-13"
     }
 ]

@@ -11718,5 +11718,175 @@
         "explanation": "組合本地專屬AI平台、親子互動與理財規劃機器人，能完整解決多元需求，實現AI全方位協助。",
         "number": 720,
         "date": "2025-08-14"
+    },
+    {
+        "question": "如果你是台灣一家中型零售公司資訊部主管，欲導入生成式AI優化庫存預測，同時要求無需寫程式，以下哪種組合最能達到需求？",
+        "options": [
+            "no code平台結合自訂ChatGPT API，進行自然語言數據分析報告",
+            "傳統Python機器學習框架與資料庫自動化腳本，自行開發庫存模型",
+            "雲端ERP串接開源AI模型，手動比對預測與銷售紀錄",
+            "純依賴Excel巨集與現有自動化公式，定期人工作業驗證結果"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code的運用",
+        "concept": "無程式碼平台結合AI",
+        "explanation": "no code平台能免除寫程式門檻，結合生成式AI API可快速產生預測與報告，用於商業部署效率最高。",
+        "number": 721,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "身為社群媒體內容設計師，需以生成式AI快速產出多語行銷貼文，最有效的提示詞設計方式為何？",
+        "options": [
+            "請產生一段吸引消費者的文案，限40字",
+            "請根據台灣市場慣用語氣，針對產品特色產生貼文（含emoji），並分別翻譯成繁中及英文",
+            "幫忙創作一則促銷文案，加入適量優惠資訊",
+            "協助產生產品介紹文，內容要有創意"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "多語言市場適應與精準提示詞設計",
+        "explanation": "精確揭示市場特性、答題語系與風格要求，能提升AI生成內容的品質與針對性。",
+        "number": 722,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "2025年，若醫院資訊部專案欲利用AI協助門診分流與預約排程，下列何種AI應用最為適切？",
+        "options": [
+            "部署文字辨識AI自動審核醫療診斷書",
+            "導入生成式AI客服機器人針對患者症狀自動分流與掛號建議",
+            "運用語音辨識取代醫師錄音檔案",
+            "採用圖像生成AI為醫病溝通製作教學圖片"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI在各領域的應用",
+        "subtopic": "醫療智能輔助",
+        "concept": "生成式AI結合患者互動",
+        "explanation": "生成式AI可作為智慧客服，有效自動分流症狀及掛號建議，減輕人力壓力。",
+        "number": 723,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "假設你為補習班數學老師，打算提升教案效率與個人化程度，若運用生成式AI製作互動式作業，下列哪一種操作最有效？",
+        "options": [
+            "反覆請AI產生選擇題型作業至滿意為止",
+            "指示AI參考台灣108課綱，依學生程度分層設計題組並給予即時解析",
+            "請AI翻譯國外數學題目成繁體中文",
+            "要求AI進行考卷批改但不參考學生答題分數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育教學應用",
+        "concept": "個人化教學生成與自動分層",
+        "explanation": "參考課綱與學生程度分層，能提升教案效度及學習成效，並自動生成多層級內容。",
+        "number": 724,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "近年來台灣AI產業快速發展，根據國科會與多項產業報告，2025年台灣AI最顯著的競爭優勢是什麼？",
+        "options": [
+            "開放原始碼程式與社群貢獻",
+            "生成式AI與硬體供應鏈整合能力",
+            "政府AI監管與審核政策完善度",
+            "市場對外國AI平台依賴度降低"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI科技台灣與企業趨勢",
+        "subtopic": "AI產業發展動態",
+        "concept": "產業應用結合技術創新",
+        "explanation": "硬體與生成式AI的垂直整合是台灣2025最大競爭優勢，促進多元應用。",
+        "number": 725,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "我是國外分公司的HR主管，要導入AI提升跨境人才招募效率，建議結合哪一種AI應用流程？",
+        "options": [
+            "用AI自動篩選履歷並進行初步中文溝通測試",
+            "利用生成式AI設計面試情境並生成多語面試問答腳本，結合自動化評分",
+            "採用AI偵測HR文件版型一致性",
+            "用AI生成行銷用履歷範本郵件群發"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "人力資源應用",
+        "concept": "多語面試腳本與自動評分",
+        "explanation": "生成式AI能快速建立面試腳本、多語對話情境並自動評分，有助提升跨境招募效率。",
+        "number": 726,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "有關AI歷史，以下何者描述正確？",
+        "options": [
+            "1997年AlphaGo擊敗卡斯帕羅夫象徵AI棋藝突破",
+            "2022年GPT-3正式推出並實現主流化應用",
+            "1956年“達特茅斯會議”定義人工智慧研究起點",
+            "2025年AI成為全球第六大產業分類"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI歷史大事記",
+        "concept": "AI起源與重要發展",
+        "explanation": "1956年達特茅斯會議啟動AI學科，是公認的人工智慧歷史起點。",
+        "number": 727,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "當一家餐飲業者希望導入n8n整合AI自動回覆LINE顧客查詢菜單，下列自動化流程哪一項最適合？",
+        "options": [
+            "n8n串接生成式AI，自動解析菜單問題並主動推播新菜訊息",
+            "n8n只自動過濾垃圾郵件至指定信箱",
+            "n8n生成顧客名單以供行銷投放但不回覆菜單",
+            "n8n協助統計每日營運數據，不回應客戶查詢"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "流程自動化與系統整合",
+        "concept": "n8n與生成式AI結合應用",
+        "explanation": "n8n與生成式AI可自動回應顧客查詢，提供即時互動和菜單資訊。",
+        "number": 728,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "下列哪個選項最正確描述生成對抗網路（GAN）在2025年生成式AI應用的關鍵角色？",
+        "options": [
+            "GAN專用於語音辨識資料增強，不涉及圖像生成",
+            "GAN可用於合成高品質圖像與偽造媒體，並推動數位內容創新",
+            "GAN目前僅在傳統機器學習研發中有限應用",
+            "GAN只能用於推薦系統客戶分群"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "深度學習模型應用",
+        "concept": "生成對抗網路（GAN）",
+        "explanation": "GAN可合成高品質影像與仿真數位內容，是內容生成與創新重點。",
+        "number": 729,
+        "date": "2025-08-14"
+    },
+    {
+        "question": "關於 iPAS AI應用規劃師認證考試，下列何者「不是」考試內容之一？",
+        "options": [
+            "AI應用與規劃概論與產業案例分析",
+            "資料處理流程與數據分析理論",
+            "AI倫理、合規與風險管理",
+            "醫學檢驗師專業知識與技能操作"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "iPAS考試資訊",
+        "subtopic": "考科內容與範圍",
+        "concept": "考科鑑別",
+        "explanation": "iPAS AI應用規劃師不涉及醫學檢驗師領域，其餘皆屬考科內容。",
+        "number": 730,
+        "date": "2025-08-14"
     }
 ]

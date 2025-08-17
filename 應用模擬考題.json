@@ -12228,5 +12228,175 @@
         "explanation": "未來iPAS考試趨勢強調實務應用與情境整合，而非單一選擇背誦題。",
         "number": 750,
         "date": "2025-08-16"
+    },
+    {
+        "question": "假如你是一家台灣連鎖超商的營運主管，想要預測每日商品補貨數量、降低人力成本，2025年會推薦使用下列哪種生成式 AI 工具流程？",
+        "options": [
+            "利用生成式AI與No Code工具自動生成補貨預測報表並推播通知分店經理",
+            "用生成式AI製作網頁，人工整理Excel再手動發送各分店",
+            "透過Low Code AI工具協助客服與倉庫溝通補貨事宜",
+            "用傳統AI自行撰寫Python爬蟲取得庫存，再人工分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code運用",
+        "concept": "自動化作業流程",
+        "explanation": "以No Code等視覺化低程式門檻的方式，串聯AI生成報表和自動推播，最符合現今數位流程自動化潮流且大幅減少人為錯誤。",
+        "number": 751,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "2025年資訊系碩士生想撰寫AI科研論文，為生成摘要及文獻回顧部分，下列哪種提示詞最容易提升生成式AI準確度？",
+        "options": [
+            "請總結近三年AI技術發展，附帶重要研究分段摘要",
+            "請快速列出所有AI工程師常用語言介紹",
+            "簡單說明AI在物理、化學運算領域的理論",
+            "僅以一句話描述AI簡史"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "高訊息量提示設計",
+        "explanation": "明確限定時序、主題與摘要方式，可顯著提高生成內容的學術嚴謹度與相關性。",
+        "number": 752,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "如果你是線上國中英文老師，準備課堂互動遊戲且希望自動產生不同年級難度的題目，適合運用哪類AI工具？",
+        "options": [
+            "採用含教育應用API的生成式AI平台如Khanmigo自動出題",
+            "使用Excel公式人工設計題目分數",
+            "於YouTube搜尋他人遊戲教學影片",
+            "手動查閱教科書而後自製Word檔"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育AI應用",
+        "concept": "自動化教材生成",
+        "explanation": "教育類生成式AI平台支援題型差異化，且兼顧互動式內容生成，大幅提高備課效率。",
+        "number": 753,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "台灣某科技公司規劃2025年導入n8n串接生成式AI，以下哪一情境最可能發揮n8n結合AI的最大效益？",
+        "options": [
+            "自動抓取每日郵件內容，由生成式AI自動摘要且傳送到Slack團隊頻道",
+            "手動下載郵件附件再上傳到公司內網",
+            "用AI批量轉檔PDF至DOC，不做內容解析",
+            "利用AI製作靜態網站，不與現有工具整合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI自動化協作",
+        "concept": "n8n-流程自動化整合",
+        "explanation": "n8n最適合串接不同服務，讓AI自動摘要與訊息推播，大幅簡化繁瑣資訊流流程，提升團隊反應速度。",
+        "number": 754,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "你是一名金融科技公司決策者，欲導入生成式AI協助風險控管，下列哪一步最能降低模型倫理風險？",
+        "options": [
+            "設計並驗證數據隱私與模型偏誤檢查措施",
+            "定期手動重訓模型不作結果比對",
+            "僅依靠內部歷史資料不更新外部資訊",
+            "完全放任AI自動決策不人工審查"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "隱私及風險管理",
+        "concept": "模型偏誤／數據安全",
+        "explanation": "生成式AI必須建立隱私保護與偏誤檢查機制，並通過多層次驗證，才能有效控管模型風險。",
+        "number": 755,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "若你是台灣中小製造業PM，預計推行AI檢測產品瑕疵並希望迅速部署，哪個方案可用低程式門檻落地？",
+        "options": [
+            "利用Low Code平台整合AI視覺辨識模板直接部署",
+            "完全手動建置深度學習模型與硬體自組伺服器",
+            "僅用AI生成原型圖而無實際檢測流程",
+            "單純請外包設計UI但無串接現場數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Low Code應用",
+        "concept": "工業AI視覺整合",
+        "explanation": "採Low Code平台結合生成式AI模組，可快速且低門檻導入現場自動檢測流程，適合中小規模製造業。",
+        "number": 756,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "你是一家自媒體經營者，想結合Google Apps Script與生成式AI進行內容自動整理，最常見用途是什麼？",
+        "options": [
+            "定時將生成式AI產生的文章自動上傳與分類於Google Sheet歸檔",
+            "用AI手動將內容轉貼到社群平台",
+            "每次手動複製貼上文本到自家官網",
+            "Google Apps Script僅用於日曆排程，無法與AI連接"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "平台整合應用",
+        "concept": "Google Apps Script x AI自動化",
+        "explanation": "Apps Script結合AI自動產生並歸檔內容至Sheet，是內容創作者高效管理大量資料的重要應用場景。",
+        "number": 757,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "關於生成式AI與鑑別式AI整合應用，下列敘述哪個最貼近實際生活場景？",
+        "options": [
+            "用鑑別式AI先檢查原始資料後，再由生成式AI自動產生個人化旅遊行程建議",
+            "純用生成式AI自動生成影片素材無分類審核",
+            "鑑別式AI僅分析語音但無結合生成內容",
+            "兩者都只做單一任務，無合併應用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧技術與模型",
+        "subtopic": "AI技術融合",
+        "concept": "生成式X鑑別式AI協作",
+        "explanation": "先利用鑑別式AI把關資料品質，生成式AI再自動產生個人化內容，這是目前實務中最常見且有效的協同模式。",
+        "number": 758,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "2025年台灣企業推動員工AI能力教育，下列哪項舉措最能推動AI跨領域實用落地？",
+        "options": [
+            "開設No Code快速生成式AI應用設計與資料安全基礎課程",
+            "只進行AI簡史理論講座，不進行案例實作",
+            "請外部IT單位遠端協助解題不培訓內部",
+            "僅推廣一套AI工具不鼓勵各部門實驗"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "企業導入AI",
+        "concept": "跨領域AI素養教育",
+        "explanation": "快速上手No/Low Code應用能讓非技術部門直接理解、落實AI於實際流程與工作場景。",
+        "number": 759,
+        "date": "2025-08-17"
+    },
+    {
+        "question": "在2022年生成式AI爆發的導火線為何重大歷史事件？",
+        "options": [
+            "ChatGPT公開推廣並引領全球生成式AI技術熱潮",
+            "AlphaGo擊敗李世乭奪得圍棋世界冠軍",
+            "IBM深藍Deep Blue擊敗世界西洋棋冠軍卡斯帕洛夫",
+            "亞馬遜首次布局AI智能倉庫自動分揀系統"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧歷史與發展",
+        "subtopic": "重大里程碑",
+        "concept": "生成式AI技術爆發",
+        "explanation": "2022年OpenAI發表ChatGPT，揭開了生成式AI在全球學界和產業界的高速普及與應用序幕。",
+        "number": 760,
+        "date": "2025-08-17"
     }
 ]

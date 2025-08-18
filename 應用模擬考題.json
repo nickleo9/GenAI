@@ -12398,5 +12398,175 @@
         "explanation": "2022年OpenAI發表ChatGPT，揭開了生成式AI在全球學界和產業界的高速普及與應用序幕。",
         "number": 760,
         "date": "2025-08-17"
+    },
+    {
+        "question": "如果你是一家台灣服飾設計公司主管，想用AI輔助自動化設計流程，以下哪一種提示詞最能幫助AI快速生成具時尚趨勢的春夏服飾草圖？",
+        "options": [
+            "請協助設計一組符合2025台灣流行元素的春夏女裝草圖，風格以輕盈休閒為主。",
+            "請設計一組男女皆可穿著的衣服草圖，要具有未來感並融入台灣夜市文化。",
+            "請列出2025年最受歡迎服飾款式，並生成每一款簡單服飾圖。",
+            "請協助創作一系列有台灣特色的服裝插圖，主題不拘，越多元越好。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "精確提示詞設計",
+        "explanation": "選項A明確定義設計內容、時序、目標市場，有助於AI準確生成具趨勢性的設計草圖。",
+        "number": 761,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "一位國高中數學老師，要運用2025年生成式AI協助教學與備課，下列哪個AI工具最有助於批改學生作業並給予個別回饋？",
+        "options": [
+            "利用AI文生圖工具產生數學教具插圖",
+            "應用AI自動批改系統判讀解題步驟",
+            "用AI語音助手對課堂進行即時翻譯",
+            "採用AI寫作機器人制定出作業題目"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "AI 教學輔助",
+        "explanation": "B選項直接應用AI自動批改及個別回饋功能，最符合老師教學備課所需。",
+        "number": 762,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "你是一間跨國物流公司的IT工程師，若需實現貨件追蹤、客服自動回覆與流程自動串接，應如何結合n8n與生成式AI？",
+        "options": [
+            "用n8n自動收集資料，AI自動生成圖像，回傳用戶。",
+            "利用n8n串接CRM與AI對話系統，讓AI自動回應查詢並更新物流狀況。",
+            "AI產生合約，n8n協助合約電子簽名流程。",
+            "用n8n定時傳送AI產生的產品型錄至客戶郵箱。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "RPA/自動化流程",
+        "concept": "AI工具整合",
+        "explanation": "B選項展現n8n和生成式AI的協作，串接自動回覆與物流追蹤，是實務應用最佳組合。",
+        "number": 763,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "2025年，台灣政府AI應用發展的重點領域之一是什麼？",
+        "options": [
+            "開發只用於娛樂的AI聊天機器人",
+            "推動生成式AI於智慧製造和醫療產業應用",
+            "著重AI於短期投資決策自動生成",
+            "主要推動AI在繪畫工具產業發展"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI科技台灣現況",
+        "subtopic": "產業應用",
+        "concept": "產業推動重點",
+        "explanation": "政府推動重點以智慧製造與醫療應用為主，B為正確答案，其他選項不符政策方向。",
+        "number": 764,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "iPAS AI應用規劃師考試中，有關資料來源的判斷，下列何者為非？",
+        "options": [
+            "資料來源須具有合法性",
+            "可自由擷取任意公開資訊",
+            "需重視原始資料的隱私保護",
+            "應確認來源具備可信度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料來源",
+        "concept": "資料合法性",
+        "explanation": "B選項不正確，資料來源須合法且注意隱私，不能隨意擷取任何公開資訊。",
+        "number": 765,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "如果你是台灣科技業自媒體編輯，想提升YouTube影片腳本產出效率，建議可運用哪一組AI工具與提示設計？",
+        "options": [
+            "Midjourney繪製影片每一幕，Stable Diffusion寫出分鏡稿",
+            "ChatGPT生成腳本，Claude4優化語氣，Bard協助標題發想",
+            "Copilot自動剪輯影片，Google Gemini寫音樂配樂",
+            "Bard快速產生教師用教案，Midjourney設計影片場景"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用領域與工具",
+        "subtopic": "內容創作",
+        "concept": "多工具協作",
+        "explanation": "B組合能結合腳本生成、語氣優化及標題發想，是提升腳本產製效率的最佳AI工具使用法。",
+        "number": 766,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "下列哪一項最能說明2025年生成式AI技術的主要突破？",
+        "options": [
+            "AI多模態輸入（文字、圖片、聲音）整合應用",
+            "AI專注於單一文本資料生成",
+            "強化AI單一語言能力",
+            "減少AI跨平台相容性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "多模態AI",
+        "concept": "AI多模態融合",
+        "explanation": "A選項正確說明多模態融合是2025年生成式AI最大技術進展之一，其餘選項為退步或單一應用。",
+        "number": 767,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "導入生成式AI時，以下哪一項屬於風險管理的正確做法？",
+        "options": [
+            "完全信賴AI生成內容結果",
+            "每次生成都存檔，定期追蹤結果偏誤",
+            "隨時更換AI公司提供之模型",
+            "無須設定生成內容規範"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "風險管理",
+        "concept": "偏誤追蹤",
+        "explanation": "B選項落實定期追蹤和審核，是風險管理的重要步驟。A與D皆不符合治理要求，C則無法解決偏誤。",
+        "number": 768,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "初學者若欲運用Apps Script提升辦公室自動化，以下哪一類任務最適合實施？",
+        "options": [
+            "將大量Google表單自動整理成統計圖表",
+            "自動運算所有機器學習模型超參數",
+            "協助生成高品質動畫電影分鏡腳本",
+            "使用Apps Script大規模訓練深度學習模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code 概念",
+        "subtopic": "辦公自動化",
+        "concept": "流程自動化",
+        "explanation": "Apps Script最常見用法是Google服務間自動化，如自動整理表單和生成統計，A最適合初學者。",
+        "number": 769,
+        "date": "2025-08-18"
+    },
+    {
+        "question": "以下何者為生成式AI與鑑別式AI整合應用的一個例子？",
+        "options": [
+            "用生成式AI自動產生商業報告，鑑別式AI辨別異常內容",
+            "兩種AI同時獨立產生相異文章",
+            "只讓生成式AI產生未分類的單句內容",
+            "鑑別式AI生成即時會議紀錄，生成式AI判斷資料正確性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式AI與生成式AI概念",
+        "subtopic": "整合應用",
+        "concept": "AI互補性",
+        "explanation": "A選項體現鑑別式AI負責檢查生成內容，是兩者協作的實務應用。",
+        "number": 770,
+        "date": "2025-08-18"
     }
 ]

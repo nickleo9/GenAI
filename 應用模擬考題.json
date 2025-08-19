@@ -12568,5 +12568,175 @@
         "explanation": "A選項體現鑑別式AI負責檢查生成內容，是兩者協作的實務應用。",
         "number": 770,
         "date": "2025-08-18"
+    },
+    {
+        "question": "如果你是一位剛進入台灣科技新創產業的主管，希望帶領團隊利用生成式AI優化產品設計流程，下列哪一個提示詞較適合指導AI協助創新？",
+        "options": [
+            "請協助設計新產品的外觀並同時考量材料創新",
+            "請以提升成本效益為目標設計產品流程",
+            "請提出數種產品設計方案並評估其市場趨勢",
+            "請生成多元產品設計並增加流程自動化考量"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "生成式AI提示設計",
+        "explanation": "選項D同時結合多元產品設計與自動化流程，是現階段生成式AI在創新和流程規劃協助上的最佳實踐。",
+        "number": 771,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "假設你是2025年某家國際電動車公司的工程主管，想利用No Code/Low Code平台自動化內部報表，以下哪項描述屬於這類工具的限制？",
+        "options": [
+            "免程式碼即可大幅降低初期採用門檻",
+            "所有複雜邏輯皆可無障礙設計開發",
+            "對高度客製化功能的支持有限",
+            "能夠直接整合各種即時IoT數據源"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "No code / Low code 概念",
+        "subtopic": "優勢與限制",
+        "concept": "平台功能限制",
+        "explanation": "No Code/Low Code 工具雖便捷，但對於高客製化或複雜邏輯的支援仍有限，通常需寫程式補齊。",
+        "number": 772,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "2025年最新的生成式AI工具在台灣醫療領域的應用情境，下列哪一個最能體現其優勢？",
+        "options": [
+            "協助記錄病患基本資料並自動化排程",
+            "生成個人化健康諮詢並即時回應醫護問題",
+            "自動生成範本醫療報告並人工複查",
+            "協助藥劑師統計藥品庫存數據"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "各領域應用",
+        "concept": "智慧醫療",
+        "explanation": "生成式AI能夠根據患者需求與資料快速產生個人化健康建議並即時支援醫護，是智慧醫療趨勢。",
+        "number": 773,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "如果一名高中地理老師希望透過AI自動產生專題教案，以下哪一個提示語設計能最直接讓生成式AI產生融入地理概念且貼近學生生活的教案內容？",
+        "options": [
+            "請根據高中地理課綱產生一份教案",
+            "生成一份以環保議題為主題的地理教案",
+            "請設計一份結合台灣在地地理與生活應用的教案",
+            "產生一份台灣各縣市地形的介紹教學簡報"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "提示語設計",
+        "explanation": "C選項最明確強調生活應用及地理融合，能引導AI生成貼近學生經驗的教案。",
+        "number": 774,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "針對2025年AI科技的快速迭代，下列哪一項最符合企業在生成式AI導入規劃中應進行的風險評估重點？",
+        "options": [
+            "僅需考慮資料隱私安全是否有符合法規",
+            "需全面評估模型偏誤與決策透明性",
+            "只需檢查生成內容有無產出錯誤數據",
+            "專注於成本效益與自動化提升程度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "風險多面向評估",
+        "explanation": "AI導入須全方位考慮，如偏誤、透明性、合法合規，僅關注單一面向不足以進行完善規劃。",
+        "number": 775,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "如果你是自媒體經營者，欲製作影音短片內容腳本，以下哪個生成式AI工具最適合快速自動生成影片分鏡腳本？",
+        "options": [
+            "ChatGPT",
+            "RunwayML",
+            "Excel Copilot",
+            "Looker Studio"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "媒體應用",
+        "concept": "影音AI工具選擇",
+        "explanation": "RunwayML在多媒體創作、影片分鏡腳本生成方面功能最強大且實用。",
+        "number": 776,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "假設你是大型企業的資料治理主管，欲導入生成式AI協助內部合規審查，提示詞設計哪一句最具體且精確？",
+        "options": [
+            "請分析內部所有合規文件並摘要重點",
+            "請針對最新國際法規更新篩選相關遵循項目",
+            "針對台灣地區法規自動歸納需注意的規範及對應修正建議",
+            "提出合規審查流程自動化建議報告"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "合規審查",
+        "concept": "AI法規遵循",
+        "explanation": "選項C明確聚焦台灣法規，列舉需注意重點與修正建議，可產生高精度分析成果。",
+        "number": 777,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "你是一家餐飲連鎖企業的行銷主管，期望利用生成式AI工具協助自動產生促銷文案，以下哪一個AI工具最適合？",
+        "options": [
+            "Notion AI",
+            "Midjourney",
+            "Figma",
+            "Excel Copilot"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "行銷應用",
+        "concept": "文案生成AI工具判斷",
+        "explanation": "Notion AI 以多語言與多文體自動生成文案著稱，非常符合行銷需求。",
+        "number": 778,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "2025年台灣AI應用發展中，哪一項政策最能協助促進AI產業人才的永續培育？",
+        "options": [
+            "推動全國AI製造業自動化專案",
+            "擴大全民AI數位素養教育計劃",
+            "加強企業跨國AI合作標準制定",
+            "增設AI資安風險控管法規"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI科技台灣與全球發展",
+        "subtopic": "產業策略",
+        "concept": "AI人才培育政策",
+        "explanation": "全民AI數位素養教育能根本提升國家AI人才儲備，對產業永續發展助益最大。",
+        "number": 779,
+        "date": "2025-08-19"
+    },
+    {
+        "question": "若你是金融科技公司工程師，打算使用n8n做資料自動串接與簡報自動產出，下列哪種情境最適合優先導入n8n？",
+        "options": [
+            "需即時監控交易資訊並自動轉發給多組人員",
+            "僅需每月批次製作報表並人工傳送",
+            "每日人工整合不同系統資料再手動簡報",
+            "需分析客戶行為資料並給出自動推播建議"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No code / Low code 概念",
+        "subtopic": "工具串接",
+        "concept": "自動化流程設計",
+        "explanation": "n8n在自動化即時資料監控與串接上最為強大，能有效減少人工干擾與延遲。",
+        "number": 780,
+        "date": "2025-08-19"
     }
 ]

@@ -12738,5 +12738,175 @@
         "explanation": "n8n在自動化即時資料監控與串接上最為強大，能有效減少人工干擾與延遲。",
         "number": 780,
         "date": "2025-08-19"
+    },
+    {
+        "question": "如果你是一位台灣中小企業的主管，要導入生成式AI做自動客服系統，下列哪種工具最能幫助你以最低代碼方式快速部署並整合各種頻道？",
+        "options": [
+            "使用n8n串接API並結合 ChatGPT 進行對話任務自動回應。",
+            "用Python自寫一個大型語言模型部署於本機伺服器。",
+            "下載Stable Diffusion並自行設計客服工作流。",
+            "購買機器學習硬體設備佈建私有雲訓練客服模型。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "低代碼AI導入方法",
+        "explanation": "n8n是一個開源自動化平台，可低代碼整合API和ChatGPT，讓企業迅速搭建跨平台AI客服系統。",
+        "number": 781,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "你是高中地理老師，希望協助學生以生成式AI自動產生不同地形的圖像輔助課堂教案製作，下列哪一個提示詞最有機會達到目的？",
+        "options": [
+            "請產生山谷、湖泊、平原和高原的真實影像圖。",
+            "請跳過地形描述直接給我歷史教材。",
+            "請產生數字化學習統計表格。",
+            "只要給我一份旅遊路線不需要圖像。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示工程應用",
+        "explanation": "針對教學情境，應明確要求生成具體地理圖像內容，才能協助學生理解各地形特色。",
+        "number": 782,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "如果你是金融業大數據分析師，想善用AI協助偵測異常交易行為以提升資安，哪一種機器學習模型設計最合適？",
+        "options": [
+            "採用自編碼器(Autoencoder)進行非監督異常檢測。",
+            "採用卷積神經網路(CNN)進行圖像分析。",
+            "採用生成對抗網路(GAN)生成人工數據。",
+            "採用聚類模型做情緒分析。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "常見的機器學習模型",
+        "concept": "異常偵測模型",
+        "explanation": "自編碼器特別適用於高維度數據的異常檢測，能有效找出不尋常的金融交易。",
+        "number": 783,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "2025年最新AI應用發展中，下列哪一個工具最適合協助內容創作者（自媒體）進行多語言影片字幕生成與翻譯？",
+        "options": [
+            "用OpenAI Whisper模型做自動語音辨識與字幕生成。",
+            "使用Excel中的自動翻譯功能處理影片。",
+            "手動逐字聽寫後請Google搜尋單字。",
+            "下載影像處理App做文字辨識。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "多語言AI應用",
+        "explanation": "OpenAI Whisper支援多語言語音辨識與字幕生成，廣泛被2025自媒體產業採用。",
+        "number": 784,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "2025年台灣生技產業導入AI第一步，哪種資料整理方式對GenAI模型訓練成效最為關鍵？",
+        "options": [
+            "將結構化醫藥數據標準化處理。",
+            "僅匯入未經處理的音訊記錄。",
+            "隨意丟入官網下載的網頁內容。",
+            "只考慮未結構化社群媒體貼文。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料品質對模型影響",
+        "explanation": "結構化且標準化的資料能有效提升AI模型訓練的準確度與效益。",
+        "number": 785,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "如果你是一家製造業生產線的經理希望透過生成式AI優化品質檢測程序，哪一個組合應用最能提升自動化與準確性？",
+        "options": [
+            "結合視覺AI模型與自動化工作流工具例如n8n，做到異常瑕疵自動通知。",
+            "單純用Excel記錄每日生產數據。",
+            "每日手動巡檢後拍照存檔。",
+            "利用簡報軟體分析瑕疵統計。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "AI與自動化整合",
+        "explanation": "用AI影像辨識結合n8n自動化能及時將生產異常報告推播，降低人工干預，提高效率。",
+        "number": 786,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "針對資料隱私與安全，下列哪一個做法最符合2025年AI治理與法規趨勢？",
+        "options": [
+            "採用資料去識別化並評估風險，符合AI治理規範。",
+            "將所有用戶資料連同ID直接上傳公有雲。",
+            "只要模型準確就不需考慮資料安全。",
+            "任意將公司內部資料用於外部AI競賽。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "資料去識別化與隱私保護",
+        "explanation": "去識別化與風險評估是AI治理和資料安全的重要原則，符合法規發展趨勢。",
+        "number": 787,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "歷史上哪一個事件被公認為現代深度學習發展的關鍵里程碑？",
+        "options": [
+            "2012年AlexNet在ImageNet圖像分類比賽取得重大突破。",
+            "2001年資料探勘競賽推廣支持向量機。",
+            "1997年Kasparov與Deep Blue象棋對弈。",
+            "1956年達特茅斯會議提出AI一詞。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "機器學習基本原理",
+        "concept": "深度學習歷史發展",
+        "explanation": "2012年AlexNet在ImageNet競賽中打敗傳統方法，被認為是深度學習革命的重要起點。",
+        "number": 788,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "如果你是教學輔導老師，想用AI工具協助學生建立定制複習題庫，下列哪個平台最能降低技術門檻並彈性生成多元題目？",
+        "options": [
+            "運用No Code平台如Quizizz，結合ChatGPT自動生成多樣化題目。",
+            "僅用word編輯器手動輸入所有試題。",
+            "請學生自行爬蟲抓取網路問答貼文。",
+            "用Excel手動製作試題表單。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "生成式AI教育應用",
+        "explanation": "No Code平台配合生成式AI能有效降低技術門檻，彈性產出多元化、個人化的教學內容。",
+        "number": 789,
+        "date": "2025-08-20"
+    },
+    {
+        "question": "2025年關於iPAS AI應用規劃師考試，根據最新指引，下列哪一個職能重點最需具備？",
+        "options": [
+            "能規劃生成式AI工具導入流程並評估其風險。",
+            "只需熟悉AI演算法數學推導即可。",
+            "主要練習AI程式語法撰寫技術。",
+            "以管理階層經驗為主不涉足技術應用。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "iPAS AI職能規劃",
+        "explanation": "iPAS AI應用規劃師需能夠規劃AI導入且能評估相關風險，反映產業需求與認證職能基準。",
+        "number": 790,
+        "date": "2025-08-20"
     }
 ]

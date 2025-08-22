@@ -13078,5 +13078,175 @@
         "explanation": "鑑別式AI適合判斷真偽，與生成式AI做結合，能同時達到識別與產生解釋的功能，是產業最佳實踐。",
         "number": 800,
         "date": "2025-08-21"
+    },
+    {
+        "question": "如果你是一位台灣製造業廠長，想在工廠尋找異常機台並提前排程維修，最有效率的生成式AI應用規劃是什麼？",
+        "options": [
+            "建立結合電腦視覺與時間序列資料預測的AI方案",
+            "手動記錄維修通知與現場巡檢系統",
+            "僅依靠感測器數值超標自動停機警報",
+            "每週紙本統計機台故障資訊並回報"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI應用領域與常見工具",
+        "concept": "跨模態AI應用",
+        "explanation": "現代工廠可結合影像辨識AI與時間序列預測，透過資料預測異常，較傳統或單一監控方式更主動有效。",
+        "number": 801,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "2025年你是一位台灣國中英文老師，需要快速製作多樣主題教案並因材施教。哪一種生成式AI工具組合最適合？",
+        "options": [
+            "以ChatGPT設計教案，Copilot輔助題目整理",
+            "僅使用定期教材PDF解讀工具",
+            "僅利用作文自動批改系統",
+            "全程手動編寫教案不搭配AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式AI工具",
+        "concept": "AI工具組合應用",
+        "explanation": "結合ChatGPT與Copilot可涵蓋教案設計與題目產生，提升教學效率和互動性。",
+        "number": 802,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "如果你是家庭主婦/夫，需規劃2025年暑假家庭國內旅遊行程與活動預算，最適合使用下列哪組規劃AI工具？",
+        "options": [
+            "Bard生成旅遊計畫，Gemini協助景點推薦，Tableau整合預算分析",
+            "用試算表人工輸入景點與費用",
+            "詢問旅行社完全手動規劃",
+            "依親友建議紙筆列出旅遊清單"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式AI工具",
+        "concept": "生活應用AI工具規劃",
+        "explanation": "多工具協同如Bard、Gemini與Tableau可針對計畫、推薦、預算分析達到最佳效果。",
+        "number": 803,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "你是台灣金融業主管，要帶領團隊迅速建立法遵報告和市場趨勢預測，2025年應用下列哪種AI工具及平台最合適？",
+        "options": [
+            "應用自動報告生成AI與AutoML預測平台",
+            "全部手動產出且不借助AI",
+            "僅透過Excel圖表人工分析",
+            "單純委外資料分析無內部自動化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI應用領域與常見工具",
+        "concept": "企業級AI導入",
+        "explanation": "自動化報告生成及AutoML能大幅提升報告效率與市場趨勢分析精度。",
+        "number": 804,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "針對『n8n』這個自動化平台，下列何種結合方式能最有效率協助電商客服於2025年處理大量顧客問答？",
+        "options": [
+            "結合n8n自動分發AI客服、串接FAQ生成與自訂回應流程",
+            "獨自使用人工回覆系統不借助n8n",
+            "透過n8n僅做商品出貨通知作業",
+            "n8n自訂工作流程但不串接生成式AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No code / Low code",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "自動化x生成式AI",
+        "explanation": "結合n8n與生成式AI使客服自動化，能即時依問題內容自訂回應流程，提升效率。",
+        "number": 805,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "2025年哪一項運用Apps Script最適合幫中小企業自動化日常行政流程管理？",
+        "options": [
+            "設計Google Sheet自動填表、寄信與任務提醒",
+            "僅用紙本記錄並手動提醒",
+            "純粹依賴傳統人事管理系統",
+            "全部作業人工執行無自動程序"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No code / Low code",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "API串接與自動化",
+        "explanation": "Apps Script可實現跨平台流程自動化，如自動填表、寄信與提醒，有效提升行政效率。",
+        "number": 806,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "2025年台灣各大醫院希望透過AI提升診斷效率，最合適的沉浸式AI應用規劃是？",
+        "options": [
+            "將醫療影像結合生成式AI自動判讀並依歷史案例提供建議",
+            "僅依賴醫生手動診斷及紙本參考資料",
+            "用傳統資訊系統管理病患資料",
+            "定期人工比對手寫病例紀錄"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI應用領域與常見工具",
+        "concept": "醫療生成式AI應用",
+        "explanation": "影像結合生成式AI判讀能顯著提升診斷效率且降低錯誤。",
+        "number": 807,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "你是2025年的自媒體經營者，需快速產出高互動內容並分析觀眾族群，最適合搭配哪組AI工具？",
+        "options": [
+            "利用生成式影片AI、描述強化工具和觀眾分析平台",
+            "僅以人工撰寫貼文分析數據",
+            "依賴單一平台發佈不應用AI",
+            "完全不分析觀眾數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI應用領域與常見工具",
+        "concept": "自媒體AI工具組合",
+        "explanation": "結合生成式影片與分析工具更能兼顧內容創作與行銷效果分析。",
+        "number": 808,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "關於提示詞工程 (prompt engineering) 的最佳實踐，下列哪一個寫法最適合2025年設計複雜數據分析任務？",
+        "options": [
+            "明確指定目標、資料來源、回應格式、分析步驟",
+            "僅告知AI做數據分析",
+            "只說明資料型態不專述步驟",
+            "讓AI自由發揮不限定方向"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示工程實務",
+        "explanation": "良好的提示詞需指明目標、資料、步驟與回應格式，便於AI產生精確結果。",
+        "number": 809,
+        "date": "2025-08-22"
+    },
+    {
+        "question": "2025年，以下哪一項屬於將鑑別式AI與生成式AI整合於零售行業典型應用？",
+        "options": [
+            "運用鑑別式AI辨識VIP顧客，生成式AI自動提供專屬優惠內容",
+            "僅以生成式AI自動產生商品描述",
+            "全程由人工辨識顧客並設計促銷",
+            "僅用鑑別式AI預測商品銷售量"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式AI與生成式AI",
+        "subtopic": "整合應用",
+        "concept": "AI協同應用",
+        "explanation": "鑑別式用於識別目標客群，生成式負責個人化訊息，兩者協同提升零售產能與體驗。",
+        "number": 810,
+        "date": "2025-08-22"
     }
 ]

@@ -13928,5 +13928,175 @@
         "explanation": "AI民主化強調降低使用門檻，增進技術普及與跨領域協作，嚴格專利限制則與民主化精神相違。",
         "number": 850,
         "date": "2025-08-25"
+    },
+    {
+        "question": "關於 No Code / Low Code 平台，下列何者正確描述其主要優勢？",
+        "options": [
+            "A. 降低開發門檻，讓非專業人員可快速構建應用程式",
+            "B. 完全無需輸入任何程式碼即可滿足複雜系統需求",
+            "C. 只適用於小型專案，不支援企業級應用",
+            "D. 開發速度慢但系統更穩定可靠"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "No Code / Low Code 平台優勢",
+        "explanation": "No Code / Low Code 平台主要優勢是讓非技術人員能快速建立業務應用，減少對傳統程式碼撰寫的依賴，增加開發彈性與效率。但它不代表所有複雜需求都能無程式碼實現，支援範圍依平台而異。",
+        "number": 851,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "生成式 AI 在客服聊天機器人領域的典型應用是？",
+        "options": [
+            "A. 使用預設模板回應客戶查詢，無需自然語言理解",
+            "B. 透過自然語言處理技術理解及生成多輪對話",
+            "C. 主要基於統計式規則匹配提升回應準確率",
+            "D. 僅用於非即時的客服郵件分類與回覆"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具",
+        "concept": "自然語言處理與聊天機器人",
+        "explanation": "生成式 AI 結合自然語言處理（NLP）技術，可生成符合語境的語句，實現流暢自然的多輪對話，是客服機器人的核心技術。",
+        "number": 852,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "導入生成式 AI 須評估的關鍵環節不包括下列哪一項？",
+        "options": [
+            "A. AI 模型效能與資料來源的合法性",
+            "B. 用戶介面設計的美觀程度",
+            "C. 系統與現有業務流程的整合度",
+            "D. 資料隱私保護與合規性要求"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入評估重點",
+        "explanation": "有效導入生成式 AI 需優先考慮模型適用度、資料的合法合規性，及對現有系統和流程的影響，介面美觀雖重要但屬次要考量。",
+        "number": 853,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "以下哪種提示詞設計最能提升生成式 AI 文本產出的精準度？",
+        "options": [
+            "A. 簡短且含糊的指令，留給 AI 較大創作空間",
+            "B. 明確且具體的上下文與目標描述",
+            "C. 利用多義詞增強語意多樣性",
+            "D. 全部使用專業術語，避免通用詞彙"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具",
+        "concept": "提示詞工程",
+        "explanation": "提示詞工程講求清晰、具體的訊息，以引導生成式 AI 輸出符合預期內容，提高精準度與實用性。",
+        "number": 854,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "下列關於 No Code / Low Code 在企業數位轉型中的角色，何者最恰當？",
+        "options": [
+            "A. 可迅速推動業務流程自動化，降低IT負擔",
+            "B. 僅限於前端介面開發，無法處理後端資料庫",
+            "C. 只適用於短期試驗，無法長期維護",
+            "D. 需要高深程式設計技能支援"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "企業數位轉型應用",
+        "explanation": "No Code / Low Code 平台能加速業務數位化與自動化，減輕IT人員負擔，促進快速迭代，支援企業轉型。",
+        "number": 855,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "生成式 AI 在內容產出工具中，以下哪種技術最能協助創造高質感影像？",
+        "options": [
+            "A. 卷積神經網絡 (CNN) 用於特徵抽取",
+            "B. 生成對抗網絡 (GAN) 用於圖像生成",
+            "C. 支持向量機 (SVM) 用於分類任務",
+            "D. 決策樹用於決策分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具",
+        "concept": "影像生成技術",
+        "explanation": "生成對抗網絡 (GAN) 是生成式 AI 主流技術，能在高維空間中創造逼真的圖像與影片內容。",
+        "number": 856,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "在生成式 AI 導入評估過程中，下列評估指標何者最能反映模型的實務效益？",
+        "options": [
+            "A. 模型的訓練時間長短",
+            "B. 模型生成內容的準確率與相關性",
+            "C. 模型的參數數量與複雜度",
+            "D. 模型採用的演算法類型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "效益評估指標",
+        "explanation": "評估生成式 AI 模型最重要的是其輸出內容的準確性和適用性，用以驗證模型是否滿足業務需求，其他指標則為技術面參考。",
+        "number": 857,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "針對生成式 AI 在醫療領域的應用，合理的導入規劃策略應包括？",
+        "options": [
+            "A. 強化數據隱私與合規性監控機制",
+            "B. 完全依賴自動生成報告，減少人工審核",
+            "C. 目的為取代醫療人員進行診斷決策",
+            "D. 忽略數據質量專注模型複雜度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "特定應用領域規劃",
+        "explanation": "醫療領域高度敏感且規範嚴格，生成式 AI 導入需重視數據隱私與合規，且保持人工專業判斷，避免完全自動化決策。",
+        "number": 858,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "下列關於生成式 AI 與鑑別式 AI 差異的正確敘述為？",
+        "options": [
+            "A. 生成式 AI 主要用於辨認資料歸屬類別",
+            "B. 鑑別式 AI 著重於預測輸入的類別標籤",
+            "C. 生成式 AI 無法產生新內容，只能分類",
+            "D. 鑑別式 AI 擅長自動生成文本和圖像"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "基礎原理比較",
+        "concept": "鑑別式與生成式 AI 差異",
+        "explanation": "鑑別式 AI 專注於區分輸入資料的類別標籤，而生成式 AI 則可創造新的數據樣本，如文本、圖像等，兩者功能不同但互補。",
+        "number": 859,
+        "date": "2025-08-25"
+    },
+    {
+        "question": "使用 Low Code 工具設計 AI 驅動流程時，下列何者為最佳實踐？",
+        "options": [
+            "A. 將業務邏輯全部寫進自定義程式碼中",
+            "B. 善用平台內建組件並搭配適度的程式碼擴展",
+            "C. 只依賴視覺化拖拉元素，無需測試",
+            "D. 忽略資料管理與版本控制以提升效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "Low Code 實務開發策略",
+        "explanation": "Low Code 最佳實務是結合組件化視覺設計與適度自定義程式碼擴充，兼顧開發效率與系統彈性，且重視測試與版本控管。",
+        "number": 860,
+        "date": "2025-08-25"
     }
 ]

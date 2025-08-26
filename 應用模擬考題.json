@@ -15288,5 +15288,175 @@
         "explanation": "高階No Code/Low Code平台允許終端使用者透過拖拉介面，組合多種預訓練AI模型和數據處理流程，進行靈活且快速的應用創建，減少對開發者程式撰寫的依賴。",
         "number": 930,
         "date": "2025-08-26"
+    },
+    {
+        "question": "公司欲快速建置一個可後續擴充內部ERP整合的問卷系統，最適合的開發策略為何？",
+        "options": [
+            "完全使用No Code平台，後期視需求再開發自訂功能",
+            "全手寫後端API及前端介面以求最大自由度",
+            "採用Low Code平台，主要用視覺化流程並局部自定義程式碼",
+            "直接購買現成商業問卷工具以迅速上線"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code優勢",
+        "explanation": "Low Code平台結合視覺化流程和部分程式碼，自由度高且開發快速，適合需要擴充整合的系統。",
+        "number": 931,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "以下何者最能代表Low Code平台的核心優勢？",
+        "options": [
+            "完全不需撰寫程式碼即可完成所有系統開發",
+            "僅限於靜態頁面與簡單資料處理功能",
+            "透過可視化拖拉與少量自訂程式碼達成複雜應用建置",
+            "需專業開發人員全程撰寫大部分程式碼"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code基本原理",
+        "explanation": "Low Code平台以視覺化開發為主，並允許少量自定義程式碼，介於No Code與全手寫編碼間。",
+        "number": 932,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "關於生成式AI於影像內容創造的應用，下列敘述何者最正確？",
+        "options": [
+            "生成式AI僅用於文本生成，無法產生圖像或影片內容",
+            "生成式AI可用於設計新產品外觀與動畫製作",
+            "生成式AI只能處理結構化數據，不適合多媒體內容",
+            "生成式AI應用只侷限於學術研究領域"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多媒體生成",
+        "explanation": "生成式AI已廣泛應用於圖像與動畫等多媒體領域，能設計產品外觀和視覺動態。",
+        "number": 933,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "在評估導入生成式AI工具時，何者為首要考量之一？",
+        "options": [
+            "僅關注工具是否免費或開源",
+            "所選工具是否符合組織資料安全與隱私政策",
+            "採用最新最熱門的平台即可，即使無法整合既有系統",
+            "只需確保執行效能，無需評估數據品質"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "資料隱私與安全",
+        "explanation": "符合資料安全與隱私政策是導入生成式AI工具時不可或缺的首要考慮因素。",
+        "number": 934,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "下列何者為生成式AI導入過程中，風險管理不應忽略的事項？",
+        "options": [
+            "模型訓練資料的偏差可能導致結果不公正",
+            "使用生成式AI必定能自動通過合規審查",
+            "導入即代表100%符合所有相關法規",
+            "不需對生成內容進行後續驗證和監督"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "偏差與公平性",
+        "explanation": "訓練資料偏差可能造成生成內容不公，需嚴格風險管理與審核機制。",
+        "number": 935,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "下列哪一種情境最適合使用No Code平台進行AI應用開發？",
+        "options": [
+            "需要高度自訂複雜邏輯與介面設計",
+            "快速構建簡單、無須客製化的內部流程自動化",
+            "專案涉及多數後端資料庫操作與異質系統串接",
+            "企業要求深入優化AI模型參數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code應用適用情境",
+        "explanation": "No Code平台適合快速搭建簡單且少自訂需求的應用，如基礎流程自動化。",
+        "number": 936,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "生成式AI應用於客服機器人時，下列哪種技術最為關鍵？",
+        "options": [
+            "文字資料庫管理",
+            "強化學習與自然語言處理（NLP）",
+            "網頁設計與響應式佈局",
+            "網路安全防護策略"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "自然語言處理",
+        "explanation": "自然語言處理與強化學習技術使客服機器人能理解並回應用戶問題。",
+        "number": 937,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "以下哪項為生成式AI平台中「Low Code」相較於「No Code」最明顯的優勢？",
+        "options": [
+            "允許在視覺化操作基礎上，自訂業務邏輯與特殊演算法",
+            "適合完全無程式背景的業務人員使用",
+            "僅能執行標準流程，無法擴展功能",
+            "不適合整合外部資料與系統，功能有限"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code擴充性",
+        "explanation": "Low Code平台可自由擴充自訂邏輯與演算法，功能較No Code更靈活。",
+        "number": 938,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "企業在規劃生成式AI應用導入前，最重要的初步評估包含？",
+        "options": [
+            "無需考慮AI技術對組織文化影響",
+            "分析目標場景的業務價值與實現可行性",
+            "只需評估工具的市場佔有率",
+            "立即著手模型訓練，忽略資料準備"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入初步評估",
+        "explanation": "評估業務價值及實現可行性有助於有效規劃生成式AI應用導入。",
+        "number": 939,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "下列何者屬於生成式AI導入後，必須持續監控的重點？",
+        "options": [
+            "模型輸出是否偏離預期並導致不符規範之內容",
+            "模型一經導入後，便無需再調整與監督",
+            "只需確認硬體環境正常運作即可",
+            "放任用戶自行判斷生成內容之正確性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "模型監控",
+        "explanation": "持續監控生成式AI模型輸出避免偏差和不當內容是風險管理的重要步驟。",
+        "number": 940,
+        "date": "2025-08-26"
     }
 ]

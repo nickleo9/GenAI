@@ -15628,5 +15628,175 @@
         "explanation": "結合生成式AI產出內容與鑑別式AI審核能提高客服效率與準確度，同時避免生成式模型因誤判帶來的風險，符合理想實務。",
         "number": 950,
         "date": "2025-08-26"
+    },
+    {
+        "question": "在運用生成式AI於企業資訊系統整合時，下列哪一項最能提升多模態生成式AI的應用價值？",
+        "options": [
+            "結合文字與圖像資料進行跨媒體內容創造，提升多樣化輸出效果",
+            "純粹基於文本數據訓練模型，以保證文字生成的專業度與一致性",
+            "依賴手工審核取代AI自動生成內容，減少誤差與偏見風險",
+            "將AI結果完全自動寫入系統，無需人工介入，迅速實現流程自動化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態生成式AI",
+        "explanation": "多模態生成式AI結合文字、圖像、音訊等多種數據類型，可以創造跨媒體內容，增加企業應用的豐富度與多樣性，這是提升生成式AI價值的核心方式。",
+        "number": 951,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "關於No Code與Low Code平台的區別，下列敘述何者正確？",
+        "options": [
+            "No Code主要依賴視覺化拖拉介面，不需撰寫程式碼，Low Code則允許少量程式碼擴充功能",
+            "Low Code完全不允許程式碼介入，主要面向非技術人員使用",
+            "No Code平台提供最高自定義化能力，適合複雜企業系統開發",
+            "Low Code僅適用於簡單的自動化工作流程，無法支持大數據處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code/Low Code平台特性",
+        "explanation": "No Code平台著重在無程式碼開發，適合非技術人員，而Low Code則允許部分程式碼介入以提升靈活度與擴展性，是兩者主要區別。",
+        "number": 952,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "在導入生成式AI的評估過程中，下列哪一項不是必須重點評估的風險？",
+        "options": [
+            "生成內容可能出現偏誤或誤導，需要建立嚴格審核機制",
+            "依賴AI模型可能導致人力技能退化，應設計人機協同流程",
+            "生成式AI自動更新模型可以完全避免政策法規變更的影響",
+            "資料隱私與安全風險需符合個人資料保護規範，防止敏感信息外洩"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "風險管理",
+        "explanation": "模型自動更新無法完全避免外部政策和法規的影響，企業仍需持續評估風險與合規性，這點不是完全被生成式AI技術自己解決的。",
+        "number": 953,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "在設計提示詞（Prompt Engineering）以提高生成式AI產出質量時，下列策略何者更有效？",
+        "options": [
+            "使用簡短且泛化的提示詞，以增加模型輸出的多樣性",
+            "設計具體且詳細的提示詞，明確指導模型產出目標內容",
+            "避免在提示詞中使用專有名詞，以免模型認知混淆",
+            "只使用英文字母和數字提示，確保提示詞兼容性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示詞工程",
+        "explanation": "具體且詳盡的提示詞能夠引導AI生成更精確的內容，是提升生成品質的關鍵策略，而過度簡短且泛化的提示詞易導致結果不穩定。",
+        "number": 954,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "下列哪個專有名詞最精確描述了針對AI生成內容在搜尋引擎結果頁面（SERP）中優化排名的方法？",
+        "options": [
+            "Natural Language Processing (NLP)",
+            "Generative Engine Optimization (GEO)",
+            "Data Augmentation (DA)",
+            "Reinforcement Learning (RL)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "Generative Engine Optimization",
+        "explanation": "Generative Engine Optimization（GEO）專指優化生成式AI內容在搜尋引擎結果頁面（SERP）中的展現和排名，是新興的SEO策略。",
+        "number": 955,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "在利用生成式AI工具進行企業內容創建時，下列哪一種方法對維護內容質量最為重要？",
+        "options": [
+            "依賴生成AI的自動化批次產出，提升內容量產速度",
+            "採用人工審核機制搭配AI生成，確保內容的準確性與合規性",
+            "完全信任AI內容輸出，不進行任何後續修改或校正",
+            "忽略生成內容的多樣性，重複使用已驗證的模板"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "人機協同",
+        "explanation": "結合人工審核和生成式AI的自動產出，可以有效確保內容品質與符合倫理規範，避免偏誤與不當資訊。",
+        "number": 956,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "關於No Code平台的優勢，下列敘述何者不正確？",
+        "options": [
+            "能快速部署應用，減少開發時間與成本",
+            "適合非技術人員進行基本流程自動化",
+            "支援無限制複雜邏輯及大型企業系統高度客製化",
+            "降低程式開發門檻，促進跨部門協作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "平台優勢與限制",
+        "explanation": "No Code平台適合快速、簡單的應用開發，對於複雜邏輯及大型系統客製化的支援有限，這需要Low Code或傳統開發方式介入。",
+        "number": 957,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "以下哪些陳述正確描述生成式AI導入過程中的成本效益評估？",
+        "options": [
+            "僅需考慮平台一次性購買費用，忽略運行與維護成本",
+            "應考量平台授權、系統維護、培訓及長期運營的綜合花費",
+            "只要初期投資低，長期效益必然可觀，因此成本不需詳細分析",
+            "生成式AI可完全替代人工工作，故不需預留人工成本預算"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "成本效益分析",
+        "explanation": "導入生成式AI需全面衡量初期授權費、系統維護費用、員工培訓與長期運營成本，確保投資回報最大化。",
+        "number": 958,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "生成式AI在風險管理中，為防止系統被惡意利用，下列哪種措施最為適當？",
+        "options": [
+            "設置即時監控與異常偵測，預防釣魚郵件與詐騙生成",
+            "放寬審核規範，快速產出大量內容以增加市場佔有率",
+            "減少技術更新頻率，維持系統穩定但忽略新威脅",
+            "完全依賴使用者自行辨識內容安全性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "安全與攻擊風險控管",
+        "explanation": "即時監控與異常偵測是防範生成式AI系統被惡意利用（如製作釣魚郵件）的關鍵措施，降低安全風險。",
+        "number": 959,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "在生成式AI應用於多媒體創作時，何者最能顯著提升跨領域整合效果？",
+        "options": [
+            "只專注於單一媒體類別的深度優化，忽視其他媒材融合",
+            "結合自動文本生成和影像生成，實現故事內容與視覺呈現同步",
+            "避免使用多種AI模型合作，減少系統複雜性",
+            "採用基於規則的模板創作，取代AI協助"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多媒體生成",
+        "explanation": "將文本生成和影像生成結合，有助於製作更具整體感和吸引力的內容，是多媒體創作領域的有效策略。",
+        "number": 960,
+        "date": "2025-08-26"
     }
 ]

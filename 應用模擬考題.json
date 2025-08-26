@@ -15118,5 +15118,175 @@
         "explanation": "Low Code 最佳實務是結合組件化視覺設計與適度自定義程式碼擴充，兼顧開發效率與系統彈性，且重視測試與版本控管。",
         "number": 920,
         "date": "2025-08-26"
+    },
+    {
+        "question": "關於No Code/Low Code平台在生成式AI開發中的特性，下列何者正確？",
+        "options": [
+            "必須撰寫程式碼配置AI模型細節",
+            "透過視覺化介面拖拉組件來快速建構模型",
+            "只能應用於前端網頁設計，無法整合後端AI服務",
+            "專屬於特定業界且僅開放內部人員使用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code概念",
+        "concept": "No Code/Low Code平台特性",
+        "explanation": "No Code/Low Code平台允許非技術用戶透過圖形化拖拉組件來建構機器學習與AI模型，無需手寫複雜程式碼，從而縮短開發時間並降低技術門檻。",
+        "number": 921,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "下列何者為2025年No Code/Low Code平台在企業中推動生成式AI應用的主要優勢？",
+        "options": [
+            "開發成本顯著降低，約減少60%",
+            "必須依賴專業機器學習工程師進行模型微調",
+            "開發周期由數個月縮短至數天",
+            "只能部署於本地端，無法使用雲端服務"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code概念",
+        "concept": "No Code/Low Code優勢",
+        "explanation": "2025年市場研究顯示，No Code/Low Code平台可降低約60%開發成本，且開發周期顯著縮短，從數月縮短至數天，極大提升業務敏捷性與市場反應速度。",
+        "number": 922,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "下列哪個生成式AI應用工具，常搭配No Code/Low Code平台，使非技術用戶能建立AI模型？",
+        "options": [
+            "Google AutoML",
+            "TensorFlow手寫程式碼庫",
+            "Microsoft Azure Machine Learning Studio",
+            "PyTorch自訂神經網路"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用工具",
+        "concept": "主流無代碼AI開發平台",
+        "explanation": "Google AutoML與Microsoft Azure Machine Learning Studio提供無代碼/低代碼的介面，讓非技術背景者亦可快速建立與訓練AI模型。相較而言，TensorFlow和PyTorch較倚賴手寫程式碼，屬於較高技術門檻。",
+        "number": 923,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "在導入生成式AI應用時，評估風險管理最重要的項目包含哪些？",
+        "options": [
+            "數據隱私與合規性審核",
+            "模型效能及偏誤監控",
+            "硬體設備品牌及價格",
+            "使用者介面設計時尚度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估與風險管理",
+        "concept": "AI導入風險評估要點",
+        "explanation": "導入生成式AI時，須嚴格評估數據隱私與合規性，以免觸犯法律規範，同時需持續監控模型效能與偏誤，確保AI結果品質及公正性。硬體品牌及UI時尚度影響較小。",
+        "number": 924,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "以下哪種應用場景最適合使用No Code/Low Code平台結合生成式AI技術？",
+        "options": [
+            "金融公司開發客戶洞察儀表板",
+            "需要從零編寫複雜影像辨識演算法",
+            "線上教學平台建立進度追蹤工具",
+            "自行設計底層深度學習網路架構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code概念",
+        "concept": "No Code/Low Code實際應用領域",
+        "explanation": "No Code/Low Code平台廣泛應用於金融分析儀表板、教育課務管理等場景，能快速交付客製化工具。需要自行撰寫複雜演算法或底層架構通常超出無代碼平台能力。",
+        "number": 925,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "2025年生成式AI導入規劃中，以下何者為最佳實踐策略？",
+        "options": [
+            "優先選擇開放原始碼框架，自行開發所有模型",
+            "結合No Code平台與現有系統，分階段推進AI應用",
+            "忽略數據品質，專注快速部署",
+            "全面使用高階AI專家寫程式完成所有AI需求"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估與風險管理",
+        "concept": "生成式AI分階段導入策略",
+        "explanation": "結合No Code平台且與現有企業系統整合，以分階段方式漸進推行，是最符合當前企業應用生成式AI的實務策略，有效降低風險並提升成功率。",
+        "number": 926,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "以下何者不是生成式AI在No Code/Low Code平台上常見的模型類型？",
+        "options": [
+            "文本生成模型（如GPT系列）",
+            "結構化資料預測模型",
+            "自動駕駛車用感測器融合模型",
+            "圖像生成模型（如DALL·E）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用工具",
+        "concept": "生成式AI模型類型",
+        "explanation": "文本生成、結構化資料預測與圖像生成模型皆廣泛搭配No Code平台應用；而高度整合複雜硬體感測器數據的自動駕駛模型，多依賴專業深度開發，不適用一般無代碼平台。",
+        "number": 927,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "對於生成式AI應用工具的導入評估，下列哪項指標最重要？",
+        "options": [
+            "使用者人數及活躍度",
+            "模型生成內容的合規性與倫理風險",
+            "程式碼行數多寡",
+            "雲端平台品牌知名度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估與風險管理",
+        "concept": "生成式AI風險管理指標",
+        "explanation": "模型生成內容若不符合合規性與倫理標準，可能導致法令違規及商譽損害，故此為導入評估最重要指標之一。使用人數及品牌雖重要，但非首要風險指標。",
+        "number": 928,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "下列關於2025年No Code/Low Code平台的市場趨勢描述，哪項正確？",
+        "options": [
+            "大型企業中，75%的企業將至少使用4個低代碼工具",
+            "生成式AI應用完全無法透過No Code平台實現",
+            "低代碼平台市場在2025年將大幅萎縮",
+            "絕大多數應用開發仍以傳統手寫程式碼為主"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code概念",
+        "concept": "2025年市場趨勢",
+        "explanation": "市場研究明確指出到2025年，75%的大型企業將使用至少4個低代碼工具來加速開發。相反地，生成式AI與No Code融合理論被認為是趨勢，低代碼市場持續成長。",
+        "number": 929,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "在生成式AI與No Code/Low Code結合的環境中，以下哪項描繪最符合技術特性？",
+        "options": [
+            "不需要資料預處理，AI模型直接產生業務解決方案",
+            "使用者可以拖拉組合大量預訓練AI模型與數據管道",
+            "只能搭配單一AI引擎，不支援多模型整合",
+            "高度依賴手寫Python程式來編列工作流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code概念",
+        "concept": "生成式AI與No Code平台技術融合",
+        "explanation": "高階No Code/Low Code平台允許終端使用者透過拖拉介面，組合多種預訓練AI模型和數據處理流程，進行靈活且快速的應用創建，減少對開發者程式撰寫的依賴。",
+        "number": 930,
+        "date": "2025-08-26"
     }
 ]

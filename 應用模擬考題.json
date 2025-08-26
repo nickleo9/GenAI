@@ -14608,5 +14608,175 @@
         "explanation": "AI民主化強調降低使用門檻，增進技術普及與跨領域協作，嚴格專利限制則與民主化精神相違。",
         "number": 890,
         "date": "2025-08-25"
+    },
+    {
+        "question": "假設你是一位台灣中型製造業工廠主管，希望提升設備的預測性維護與產品品質管理，以下哪一種生成式AI應用最適合結合n8n自動化工具進行全面規劃？",
+        "options": [
+            "結合ChatGPT API與n8n自動檢查設備日誌與生成維修報告",
+            "使用Midjourney產生產品設計草圖，並由n8n自動存檔歸檔",
+            "結合Whisper模型自動轉錄會議紀要並由n8n寄發電子郵件",
+            "使用D-ID製作產品介紹影片後由n8n自動發布到YouTube"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI流程自動化",
+        "concept": "n8n生成式AI自動化整合",
+        "explanation": "ChatGPT能針對設備日誌與維修規則自動生成維修報告，n8n則可自動化資料串接、通知與歸檔流程，提升工廠數位轉型與維護效率。",
+        "number": 891,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "如果你是高中地理老師，為了提升學生互動提示工程課程設計，以下哪一組提示詞最能運用生成式AI產生生活化教案內容？",
+        "options": [
+            "請提供一份以台灣颱風地理為主題的互動遊戲教案設計",
+            "請列出台灣主要河流全名及流向清單不要解釋",
+            "請將台灣地形區分列出簡要介紹即可",
+            "給我一份包含台灣行政區地圖的課堂PPT檔"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程教學",
+        "concept": "互動式生成型提示設計",
+        "explanation": "以生活場景結合地理知識互動遊戲的提示工程，可讓AI產出多元、沉浸式且具教學創意的教案，最契合生成式AI應用精神。",
+        "number": 892,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "關於2025年最受矚目的生成式AI商業應用趨勢，以下哪一項描述正確？",
+        "options": [
+            "多數產業正積極將生成式AI融入No Code/Low Code平台，以加速內部流程與自動化應用開發",
+            "僅有頂級科技公司正在測試生成式AI，尚未進入一般產業應用",
+            "所有生成式AI應用均需自行編寫高複雜度程式碼整合系統",
+            "台灣地區目前禁止將生成式AI導入零售業及醫療產業"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI商業應用趨勢",
+        "concept": "No Code/Low Code生成式AI整合",
+        "explanation": "2025全球產業正積極透過No Code/Low Code平台進行AI整合，加快轉型，並降低導入技術門檻。",
+        "number": 893,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "作為自媒體經營者，若要開發個人內容推薦助理，以下哪一組AI工具與應用方式最能有效幫助快速產製與發佈內容？",
+        "options": [
+            "使用ChatGPT自動生成文章、Notion AI產出草稿，串接Zapier自動發文",
+            "運用Whisper轉錄影片，人工整理後手動發佈",
+            "採用Midjourney創造形象圖，再手動社群發佈",
+            "利用Stable Diffusion產圖，Word備註再上傳平台"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自媒體自動化生產",
+        "concept": "內容生成與自動發佈",
+        "explanation": "整合ChatGPT、Notion AI與自動化發佈管道，可讓內容製作到發布全流程自動化，是自媒體經營最佳策略。",
+        "number": 894,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "關於iPAS AI應用規劃師考試內容，下列哪個敘述正確？",
+        "options": [
+            "考試內容涵蓋AI基礎、生成式AI應用、流程設計、倫理與風險管理",
+            "僅考演算法數學，不包含產業應用",
+            "不會出現生成式AI規劃相關題目",
+            "主要考程式語言編寫能力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "iPAS考試實務",
+        "subtopic": "考試內容規範",
+        "concept": "考題範圍理解",
+        "explanation": "iPAS AI應用規劃師強調應用場景、規劃能力、流程整合及倫理導入，並非單純技術面出發。",
+        "number": 895,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "某醫療機構欲利用AI進行疾病風險預測，下列哪一種組合最能使技術與資料安全兼備？",
+        "options": [
+            "採用權威醫療數據合作，並落實GDPR規範與強化AI模型準確性",
+            "僅靠生成式AI自動生成假數據資料庫模型",
+            "採用開放網路資料，無需特別強化隱私",
+            "僅使用非結構化資料，毋須顧慮個資規範"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "GDPR數據安全應用",
+        "explanation": "醫療AI應用須同時確保數據權威性與資料隱私、法規合規性，確保技術和安全並重。",
+        "number": 896,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "如果你是中小企業主管，為員工規劃流程自動化並降低資訊流失，最合理的沉浸式實踐組合是？",
+        "options": [
+            "用n8n整合Gmail/Drive/AI API自動傳送、分類、備份，公司內建權限控管",
+            "人工每日整理信件，由主管審核後再交給IT部門人工上傳",
+            "僅採用excel管理文件，定期Email手動分發",
+            "直接將文件公開分享至任何公開雲端，不設權限"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "中小企業流程自動化",
+        "concept": "n8n跨平台AI串接",
+        "explanation": "n8n可串接AI API與Google服務，打造權限分層且自動化的資訊管理流程，減少人為錯誤與資安風險。",
+        "number": 897,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "有關AI歷史重大事件，以下哪一項描述 BEST 配合iPAS出題原則？",
+        "options": [
+            "1997年IBM深藍首次戰勝圍棋世界冠軍象徵人機競賽新里程碑",
+            "1956年達特茅斯會議首次提出『人工智慧』一詞定義AI學科基礎",
+            "2022年GPT-3發表引起媒體及教育界關注AI倫理議題",
+            "2016年AlphaGo擊敗李世乭推動深度學習創新發展"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI歷史與定義",
+        "concept": "AI科學起源",
+        "explanation": "1956年達特茅斯會議首次正式提出AI（Artificial Intelligence）並建立學術分支，是所有AI相關發展根基。",
+        "number": 898,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "作為App Script開發者，若要提升校園智能行政自動化，下列哪一種Script應用最符合合理規劃？",
+        "options": [
+            "利用Apps Script自動彙整Google Form回應，生成分析報告並發送各單位",
+            "利用Apps Script替換教師考卷全部內容為指定關鍵字",
+            "每小時強制備份所有帳戶全部郵件內容，不分權限",
+            "利用Apps Script隨機發送未經驗證的成績公佈郵件"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "行政流程自動化",
+        "concept": "Apps Script智能報表",
+        "explanation": "Apps Script可將Google Form回覆資料自動彙整、分析與自動分發，實現智慧行政流程最佳作法。",
+        "number": 899,
+        "date": "2025-08-26"
+    },
+    {
+        "question": "以下關於生成式AI導入流程的提示詞設計何者最適合作為跨部門協作的啟動語？",
+        "options": [
+            "請協助設計可同時支援產銷/客服/財務部門的AI流程優化解決方案",
+            "請給我一份客服常見詢問清單",
+            "請產生一個財務部門報表格式範本",
+            "請產生一個客服部門SOP文件"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入規劃",
+        "subtopic": "跨部門導入協作",
+        "concept": "跨部門整合提示詞設計",
+        "explanation": "協助多部門流程優化與整合、符合跨部門合作需求的提示詞是協作導入生成式AI時的最佳切入點。",
+        "number": 900,
+        "date": "2025-08-26"
     }
 ]

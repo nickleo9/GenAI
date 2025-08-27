@@ -636,7 +636,10 @@
         // 載入題庫資料
         let quizData = {
             'generative-ai': [],
-            'ipas': []
+            'ipas': [],
+            'ai-basis': [],
+            'ai-application': [],
+            'ipas-combined': []
         };
 
         async function loadQuizDatabases() {
@@ -662,14 +665,14 @@
                     quizData['generative-ai'] = [];
                 }
                 
-                // 載入iPAS題庫
+                // 載入人工智慧基礎概論題庫 (daily_answers_apply.json)
                 try {
-                    const response2 = await fetch('./應用模擬考題.json');
+                    const response2 = await fetch('./daily_answers_apply.json');
                     if (response2.ok) {
                         const data2 = await response2.json();
                         if (Array.isArray(data2) && data2.length > 0) {
-                            quizData['ipas'] = data2;
-                            console.log('✅ iPAS題庫已載入:', quizData['ipas'].length + '題');
+                            quizData['ai-basis'] = data2;
+                            console.log('✅ 人工智慧基礎概論題庫已載入:', quizData['ai-basis'].length + '題');
                         } else {
                             throw new Error('題庫格式錯誤或為空');
                         }
@@ -677,8 +680,52 @@
                         throw new Error(`HTTP ${response2.status}`);
                     }
                 } catch (error) {
-                    console.warn('⚠️ iPAS題庫載入失敗:', error.message);
+                    console.warn('⚠️ 人工智慧基礎概論題庫載入失敗:', error.message);
+                    quizData['ai-basis'] = [];
+                }
+                
+                // 載入生成式AI應用與規劃題庫 (daily_answers_basis.json)
+                try {
+                    const response3 = await fetch('./daily_answers_basis.json');
+                    if (response3.ok) {
+                        const data3 = await response3.json();
+                        if (Array.isArray(data3) && data3.length > 0) {
+                            quizData['ai-application'] = data3;
+                            console.log('✅ 生成式AI應用與規劃題庫已載入:', quizData['ai-application'].length + '題');
+                        } else {
+                            throw new Error('題庫格式錯誤或為空');
+                        }
+                    } else {
+                        throw new Error(`HTTP ${response3.status}`);
+                    }
+                } catch (error) {
+                    console.warn('⚠️ 生成式AI應用與規劃題庫載入失敗:', error.message);
+                    quizData['ai-application'] = [];
+                }
+                
+                // 載入原iPAS題庫 (保持向後兼容)
+                try {
+                    const response4 = await fetch('./應用模擬考題.json');
+                    if (response4.ok) {
+                        const data4 = await response4.json();
+                        if (Array.isArray(data4) && data4.length > 0) {
+                            quizData['ipas'] = data4;
+                            console.log('✅ 原iPAS題庫已載入:', quizData['ipas'].length + '題');
+                        } else {
+                            throw new Error('題庫格式錯誤或為空');
+                        }
+                    } else {
+                        throw new Error(`HTTP ${response4.status}`);
+                    }
+                } catch (error) {
+                    console.warn('⚠️ 原iPAS題庫載入失敗:', error.message);
                     quizData['ipas'] = [];
+                }
+                
+                // 建立綜合考題 (合併兩個新題庫)
+                if (quizData['ai-basis'].length > 0 || quizData['ai-application'].length > 0) {
+                    quizData['ipas-combined'] = [...quizData['ai-basis'], ...quizData['ai-application']];
+                    console.log('✅ 綜合考題已建立:', quizData['ipas-combined'].length + '題');
                 }
                 
                 // 檢查是否需要生成示例數據
@@ -1292,6 +1339,37 @@
         </div>
     </div>
 
+    <!-- iPAS子項目選擇模態框 -->
+    <div class="modal fade" id="ipas-subject-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content">
+                <div class="modal-header bg-warning text-dark">
+                    <h5 class="modal-title"><i class="fas fa-star me-2"></i>選擇iPAS考試科目</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p class="text-center mb-4">請選擇您要練習的iPAS AI應用規劃師科目：</p>
+                    <div class="d-grid gap-3">
+                        <button type="button" class="btn btn-outline-primary btn-lg ipas-subject-btn" data-subject="ai-basis">
+                            <i class="fas fa-brain me-2"></i>人工智慧基礎概論
+                            <small class="d-block text-muted mt-1">AI基礎理論與概念</small>
+                        </button>
+                        <button type="button" class="btn btn-outline-success btn-lg ipas-subject-btn" data-subject="ai-application">
+                            <i class="fas fa-cogs me-2"></i>生成式AI應用與規劃
+                            <small class="d-block text-muted mt-1">實務應用與規劃策略</small>
+                        </button>
+                        <button type="button" class="btn btn-outline-info btn-lg ipas-subject-btn" data-subject="ipas-combined">
+                            <i class="fas fa-layer-group me-2"></i>綜合考題
+                            <small class="d-block text-muted mt-1">兩科目混合練習</small>
+                        </button>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">取消</button>
+                </div>
+            </div>
+        </div>
+    </div>
     
     <!-- 加載遮罩 -->
     <div id="loading-overlay" class="overlay d-none">
@@ -1365,7 +1443,8 @@
                 stats: new bootstrap.Modal(document.getElementById('stats-modal')),
                 help: new bootstrap.Modal(document.getElementById('help-modal')),
                 topicSelection: new bootstrap.Modal(document.getElementById('topic-selection-modal')),
-                overview: new bootstrap.Modal(document.getElementById('overview-modal')) // 新增
+                overview: new bootstrap.Modal(document.getElementById('overview-modal')),
+                ipasSubject: new bootstrap.Modal(document.getElementById('ipas-subject-modal')) // iPAS子項目選擇
             },
             
             // 考試規範配置
@@ -1376,6 +1455,27 @@
                     duration: 150, // 兩科各75分鐘
                     passingScore: 70,
                     description: '100題 | 150分鐘 | 70分及格 | 單科不低於60分'
+                },
+                'ai-basis': {
+                    name: '人工智慧基礎概論',
+                    defaultQuestions: 10,
+                    duration: 75,
+                    passingScore: 60,
+                    description: '10題 | 75分鐘 | 60分及格'
+                },
+                'ai-application': {
+                    name: '生成式AI應用與規劃',
+                    defaultQuestions: 10,
+                    duration: 75,
+                    passingScore: 60,
+                    description: '10題 | 75分鐘 | 60分及格'
+                },
+                'ipas-combined': {
+                    name: 'iPAS綜合考題',
+                    defaultQuestions: 20,
+                    duration: 150,
+                    passingScore: 70,
+                    description: '20題 | 150分鐘 | 70分及格'
                 },
                 'generative-ai': {
                     name: '資策會生成式AI認證',
@@ -1441,13 +1541,29 @@
                             this.showAlert('測驗進行中，無法切換題庫！', 'warning');
                             return;
                         }
-                        this.selectDatabase(card.dataset.type);
+                        
+                        const cardType = card.dataset.type;
+                        if (cardType === 'ipas') {
+                            // 顯示iPAS子項目選擇模態框
+                            this.modals.ipasSubject.show();
+                        } else {
+                            this.selectDatabase(cardType);
+                        }
                     });
                 });
 
                 document.getElementById('confirm-topic-selection-btn').addEventListener('click', () => this.confirmTopicSelection());
                 document.getElementById('select-all-topics-btn').addEventListener('click', () => this.toggleAllTopics(true));
                 document.getElementById('deselect-all-topics-btn').addEventListener('click', () => this.toggleAllTopics(false));
+
+                // iPAS子項目選擇按鈕事件
+                document.querySelectorAll('.ipas-subject-btn').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        const subject = e.currentTarget.dataset.subject;
+                        this.selectDatabase(subject);
+                        this.modals.ipasSubject.hide();
+                    });
+                });
 
                 // 按鈕事件
                 this.elements.startBtn.addEventListener('click', () => this.startQuiz());
@@ -1684,10 +1800,17 @@
             selectDatabase(type) {
                 this.elements.databaseCards.forEach(card => card.classList.remove('selected'));
                 
-                const selectedCard = document.querySelector(`[data-type="${type}"]`);
-                selectedCard.classList.add('selected');
+                // 為iPAS相關的子科目，選中iPAS主卡
+                if (['ai-basis', 'ai-application', 'ipas-combined'].includes(type)) {
+                    const iPASCard = document.querySelector(`[data-type="ipas"]`);
+                    if (iPASCard) iPASCard.classList.add('selected');
+                } else {
+                    const selectedCard = document.querySelector(`[data-type="${type}"]`);
+                    if (selectedCard) selectedCard.classList.add('selected');
+                }
                 
                 this.state.selectedDatabase = type;
+                this.state.selectedIPASSubject = type;
                 this.state.selectedTopicsForReview = [];
                 this.updateDatabaseUI(type);
                 this.elements.startBtn.disabled = false;
@@ -1718,8 +1841,8 @@
                     this.elements.timerElement.classList.remove('exam-mode');
                 }
                 
-                // 如果是iPAS，設定為練習模式
-                if (type === 'ipas') {
+                // 如果是iPAS相關，設定為練習模式
+                if (['ipas', 'ai-basis', 'ai-application', 'ipas-combined'].includes(type)) {
                     document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
                     document.querySelector('[data-mode="practice"]').classList.add('active');
                     this.state.currentMode = 'practice';
@@ -3027,6 +3150,7 @@ updateStats() {
     </script>
 </body>
 </html>
+
 
 
 

@@ -1,0 +1,162 @@
+[
+    {
+        "number": 1,
+        "question": "什麼是人工智慧（AI）？",
+        "options": [
+            "一種專門用於網頁設計的軟體",
+            "讓機器模仿人類智慧行為的技術",
+            "用於儲存資料的硬體設備",
+            "一種程式語言的名稱"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "1.AI基礎概念",
+        "subtopic": "1.1.人工智慧定義",
+        "concept": "人工智慧基本概念",
+        "explanation": "人工智慧（AI）是指讓機器模仿人類智慧行為的技術，包括學習、推理、感知和決策等能力。它不是軟體、硬體或程式語言，而是一個技術領域。"
+    },
+    {
+        "number": 2,
+        "question": "機器學習（Machine Learning）的主要特點是什麼？",
+        "options": [
+            "需要人工編寫所有規則",
+            "透過資料自動學習和改進效能",
+            "只能處理文字資料",
+            "不需要任何資料輸入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2.機器學習基礎",
+        "subtopic": "2.1.機器學習概念",
+        "concept": "機器學習定義",
+        "explanation": "機器學習的主要特點是能夠透過資料自動學習和改進效能，而不需要明確程式化每個細節。系統能從經驗中學習並提高準確性。"
+    },
+    {
+        "number": 3,
+        "question": "深度學習（Deep Learning）是什麼？",
+        "options": [
+            "一種資料儲存技術",
+            "基於神經網絡的機器學習方法",
+            "一種網路安全技術",
+            "專門用於遊戲開發的技術"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2.機器學習基礎",
+        "subtopic": "2.2.深度學習",
+        "concept": "深度學習基本概念",
+        "explanation": "深度學習是基於神經網絡的機器學習方法，使用多層神經網絡來模仿人腦的學習過程，特別適合處理複雜的模式識別任務。"
+    },
+    {
+        "number": 4,
+        "question": "自然語言處理（NLP）的主要目標是什麼？",
+        "options": [
+            "讓電腦能夠理解和處理人類語言",
+            "創造新的程式語言",
+            "提高網路連接速度",
+            "設計使用者介面"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "3.AI應用領域",
+        "subtopic": "3.1.自然語言處理",
+        "concept": "NLP基本目標",
+        "explanation": "自然語言處理（NLP）的主要目標是讓電腦能夠理解、解釋和生成人類語言，包括文字理解、語言翻譯、情感分析等應用。"
+    },
+    {
+        "number": 5,
+        "question": "什麼是大型語言模型（LLM）？",
+        "options": [
+            "一種硬體設備",
+            "用大量文本資料訓練的AI模型",
+            "一種資料庫管理系統",
+            "網頁開發框架"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "3.AI應用領域",
+        "subtopic": "3.2.語言模型",
+        "concept": "大型語言模型",
+        "explanation": "大型語言模型（LLM）是用大量文本資料訓練的AI模型，能夠理解和生成人類語言，如GPT、BERT等都是知名的LLM。"
+    },
+    {
+        "number": 6,
+        "question": "監督式學習的特點是什麼？",
+        "options": [
+            "不需要標記資料",
+            "使用標記資料進行訓練",
+            "只能處理圖像資料",
+            "不需要訓練過程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2.機器學習基礎",
+        "subtopic": "2.3.學習類型",
+        "concept": "監督式學習",
+        "explanation": "監督式學習的特點是使用標記資料進行訓練，即訓練資料包含輸入和對應的正確輸出，模型學習輸入和輸出之間的對應關係。"
+    },
+    {
+        "number": 7,
+        "question": "什麼是神經網絡？",
+        "options": [
+            "一種網路通訊協定",
+            "模擬人腦神經元的計算模型",
+            "一種資料壓縮技術",
+            "電腦硬體的一部分"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "4.神經網絡基礎",
+        "subtopic": "4.1.神經網絡概念",
+        "concept": "神經網絡定義",
+        "explanation": "神經網絡是模擬人腦神經元的計算模型，由多個相互連接的節點組成，能夠學習複雜的模式並進行預測或分類。"
+    },
+    {
+        "number": 8,
+        "question": "什麼是訓練資料？",
+        "options": [
+            "用於測試模型效能的資料",
+            "用於教導AI模型的資料集",
+            "用於儲存結果的檔案",
+            "用於系統備份的資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2.機器學習基礎",
+        "subtopic": "2.4.資料概念",
+        "concept": "訓練資料",
+        "explanation": "訓練資料是用於教導AI模型的資料集，模型透過學習這些資料中的模式來建立預測能力。訓練資料的品質直接影響模型的效能。"
+    },
+    {
+        "number": 9,
+        "question": "什麼是過擬合（Overfitting）？",
+        "options": [
+            "模型在訓練資料上表現很好，但在新資料上表現不佳",
+            "模型訓練時間太長",
+            "模型使用的資料太少",
+            "模型無法收斂"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "2.機器學習基礎",
+        "subtopic": "2.5.模型問題",
+        "concept": "過擬合",
+        "explanation": "過擬合是指模型在訓練資料上表現很好，但在新的、未見過的資料上表現不佳，這表示模型記住了訓練資料的細節而非學到了通用的模式。"
+    },
+    {
+        "number": 10,
+        "question": "什麼是特徵（Feature）？",
+        "options": [
+            "AI模型的輸出結果",
+            "用於訓練模型的輸入變數或屬性",
+            "模型的準確率指標",
+            "資料儲存的格式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "2.機器學習基礎",
+        "subtopic": "2.4.資料概念",
+        "concept": "特徵工程",
+        "explanation": "特徵是用於訓練模型的輸入變數或屬性，例如在預測房價時，房屋的面積、位置、房間數等都是特徵。好的特徵選擇對模型效能至關重要。"
+    }
+]

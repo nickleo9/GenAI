@@ -158,5 +158,175 @@
         "subtopic": "5.10.智慧客服",
         "concept": "對話式AI系統",
         "explanation": "AI客服系統需要整合語音識別（理解客戶語音）、自然語言處理（理解意圖和內容）和語音合成（產生回應語音），形成完整的對話式AI解決方案，提供自然流暢的客戶服務體驗。"
+    },
+    {
+        "question": "在生成式AI應用中，No Code / Low Code平台的主要優勢為何？",
+        "options": [
+            "需要撰寫大量程式碼，以確保客製化",
+            "運用模板快速建立應用程式，降低技術門檻",
+            "只能供專業開發人員使用",
+            "僅能製作靜態網站，適用範圍有限"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 優勢",
+        "explanation": "No Code / Low Code平台的主要特色是利用模板快速建置應用程式，降低技術開發門檻，使非專業開發者也能參與。",
+        "number": 11,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "在生成式AI導入評估規劃中，下列何者不是企業應優先考量的重點？",
+        "options": [
+            "資料品質與隱私保護",
+            "AI工具的品牌知名度",
+            "導入後的運維與擴展性",
+            "與現有流程系統的整合能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估重點",
+        "explanation": "企業導入生成式AI應重視資料品質、隱私、運維擴展性及與現有系統整合，品牌知名度雖重要但非首要評估點。",
+        "number": 12,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "以下關於生成式AI應用領域的敘述，何者正確？",
+        "options": [
+            "生成式AI主要應用於學術研究，少於產業場景。",
+            "醫療、金融與設計是生成式AI目前最具代表性的應用領域。",
+            "生成式AI無法協助金融個人化理財服務。",
+            "藝術設計領域尚未有生成式AI的實際應用。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用場景",
+        "explanation": "生成式AI在醫療健康、金融服務及藝術設計領域有突破性應用，如醫學影像診斷、個人理財建議及AI設計工具。",
+        "number": 13,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "關於提示詞（Prompt）在生成式AI中的正確使用技巧，下列何項說法最為適當？",
+        "options": [
+            "提示詞越長越詳細，AI生成結果一定越準確。",
+            "使用具體、明確且結構化的提示詞通常能獲得更佳結果。",
+            "提示詞中使用模糊及抽象詞彙能促使AI生成多樣內容。",
+            "提示詞不影響生成式AI的輸出品質。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示詞應用",
+        "explanation": "提示詞設計講求具體、明確與結構化，有助於提升生成內容的準確度和相關性。",
+        "number": 14,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "在No Code AI工具的應用上，下列敘述何者不正確？",
+        "options": [
+            "No Code AI工具已完全取代傳統AI開發模式。",
+            "No Code AI是降低AI技術複雜性及開發成本的方式。",
+            "No Code工具適合快速試驗與小規模應用。",
+            "No Code AI工具功能與性能存在差異。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 限制",
+        "explanation": "No Code AI工具尚未完全取代傳統開發，主要是輔助非專業用戶降低技術門檻。",
+        "number": 15,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "在生成式AI導入評估中，下列哪項風險是使用Low Code平台時企業應特別注意的？",
+        "options": [
+            "開發成本會大幅上升",
+            "企業內部敏感資料可能洩露",
+            "平台功能固定且無法擴展",
+            "AI生成內容無法合規審核"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "使用Low Code平台可能造成敏感資料洩露，因部分應用未經IT部門管理，需加強資安控管。",
+        "number": 16,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "下列有關2025年生成式AI趨勢的敘述，何者最正確？",
+        "options": [
+            "生成式AI市場規模預估不到100億美元。",
+            "生成式AI主要集中在少數科技巨頭企業使用。",
+            "生成式AI已在超過70%組織中導入，成為主流技術。",
+            "生成式AI技術發展停滯，未見顯著突破。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "趨勢分析",
+        "explanation": "2025年約有70%以上組織導入生成式AI，成為企業提升生產力與流程重塑的主力技術。",
+        "number": 17,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "在生成式AI的應用規劃中，『多模態AI』指的是什麼概念？",
+        "options": [
+            "只處理文字輸入和輸出",
+            "能夠同時處理文字、圖像、語音等多種數據類型",
+            "只專注於圖像生成任務",
+            "限制於單一應用領域的AI模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態AI",
+        "explanation": "多模態AI是指能同時處理文字、圖像、語音等多種數據類型的人工智慧系統，提升跨領域應用能力。",
+        "number": 18,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "以下哪一項描述最能代表『AI Agent』在2025年AI發展趨勢中的角色？",
+        "options": [
+            "僅作為基礎數據整理工具存在",
+            "具備自主決策能力，可執行複雜任務",
+            "專門用於語音辨識的小型模組",
+            "不適合企業應用，僅限學術研究"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "AI Agent",
+        "explanation": "AI Agent是具備自主決策能力的智能系統，能執行跨任務操作，成為未來AI重要發展方向。",
+        "number": 19,
+        "date": "2025-08-28"
+    },
+    {
+        "question": "在生成式AI應用中，以下哪一項關鍵指標對評估AI導入效果最有助益？",
+        "options": [
+            "AI平台的品牌形象",
+            "生成內容的準確率與實用性",
+            "開發團隊成員數量",
+            "使用者界面的顏色設計"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入效果評估",
+        "explanation": "評估生成式AI導入效果主要依據生成內容的準確度與實用性，這決定了AI對業務價值的貢獻。",
+        "number": 20,
+        "date": "2025-08-28"
     }
 ]

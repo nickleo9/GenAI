@@ -9418,5 +9418,192 @@
         "explanation": "生成式AI能即時對話並給予改善建議，非常適合外語學習者突破傳統工具侷限，提高口說與互動能力；其他選項功能較單一且互動性不足。",
         "number": 570,
         "date": "2025-08-31"
+    },
+    {
+        "question": "如果你是一位台灣中學英文老師，想利用生成式AI協助學生快速製作閱讀理解教案，你會推薦下列哪種AI工具？",
+        "options": [
+            "A. 使用基於大語言模型的文本生成工具，如ChatGPT進行教案草擬",
+            "B. 使用影像生成AI，例如DALL·E來設計教案圖片",
+            "C. 使用no-code流程自動化平台，連接各種API整合素材",
+            "D. 利用資料隱私保護工具確保學生成績不外洩"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "生成模型",
+        "explanation": "以文本生成為核心的教案製作，選擇基於大語言模型的生成式AI文本工具如ChatGPT能快速生產富有邏輯與語境的教案內容，最適合英文老師需求。",
+        "number": 571,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "在2025年最新AI發展趨勢報告中，企業最常將生成式AI應用於哪些領域？",
+        "options": [
+            "A. 客戶服務與市場行銷佔比約44%，研發次之",
+            "B. 主要用於內部數據安全保密及合規監控",
+            "C. 以提升製造生產線效率為主",
+            "D. 主要針對金融風險評估與信用決策"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 的企業應用領域",
+        "explanation": "2025年調查指出，生成式AI在企業內最大應用落在客戶服務及市場行銷領域，佔比超過40%，主要用於提升客戶體驗與廣告文案自動化。",
+        "number": 572,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "以一位研發工程師的角度，若要用Vibe Coding 專注於生成式AI模型優化，下列哪項流程描述較為適合？",
+        "options": [
+            "A. 從資料預處理開始，逐步用機器學習模型調整，最後生成模型輸出",
+            "B. 先撰寫完整程式碼，然後無需數據調整直接訓練模型",
+            "C. 僅依賴No code工具完成所有開發，避免編碼複雜度",
+            "D. 以模型鑑別為核心，排除生成模型的應用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習基本原理",
+        "concept": "機器學習開發流程",
+        "explanation": "研發工程師進行生成式AI優化，必須從數據收集、預處理開始，經由持續調整和驗證模型性能，才能達成高品質輸出。",
+        "number": 573,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "家庭主婦要規劃一次全家旅遊行程，擬定天氣、餐飲、住宿及交通細節時，最適合利用哪種AI工具？",
+        "options": [
+            "A. 多模態生成式AI，自動生成行程規劃與建議文本",
+            "B. 自然語言處理工具只用於篩選新聞旅遊資訊",
+            "C. 傳統數據分析模型不含生成能力",
+            "D. 只用鑑別式AI檢查旅遊資訊真偽"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "多模態生成式AI",
+        "explanation": "多模態生成式AI能同時處理文字、圖片等多種數據，產生完整且客製化的旅遊行程建議，非常適合家庭主婦做全方位規劃。",
+        "number": 574,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "2025年iPAS AI應用規劃師初級考試中，關於生成式AI應用的考點重點包含下列哪一項？",
+        "options": [
+            "A. 無碼（No Code）/低碼（Low Code）工具的基本概念與優劣",
+            "B. 只考自然語言處理的基本理論，不考應用",
+            "C. 較為關注唯有核心算法細節，不包含產品應用",
+            "D. 主要關注AI硬體設備規格與性能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "No Code / Low Code 概念",
+        "explanation": "2025年iPAS AI應用規劃師考試強調生成式AI中No Code及Low Code工具的實務應用，幫助考生了解快速導入及限制，提升實作能力。",
+        "number": 575,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "一家台灣製造工廠希望導入AI提升生產效率，經費有限且不具備專業程式人員，建議優先採用下列哪種方案？",
+        "options": [
+            "A. 使用低碼（Low Code）平台結合生成式AI自動化流程",
+            "B. 專注於建立自訂鑑別式模式自行調整",
+            "C. 投資大量進階程式研發打造自營AI系統",
+            "D. 完全不使用AI，全面人工監控數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 優勢",
+        "explanation": "低碼平台可以快速整合生成式AI技術且操作不需大量程式能力，對經費有限且無專業程式員工製造工廠最為適合。",
+        "number": 576,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "假如你是台灣AI科技公司的主管，想要利用AI提升員工的工作效率和專業技能，應當如何規劃AI導入？",
+        "options": [
+            "A. 評估生成式AI工具的實用性並推展專業培訓合併組織流程",
+            "B. 集中力量於硬體設備購買以提升計算資源",
+            "C. 強行要求員工自行摸索使用各種工具",
+            "D. 全面採用鑑別式AI剔除生成式AI應用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "AI導入規劃策略",
+        "explanation": "主管應根據業務需求，評估生成式AI實際應用場景，並結合員工訓練與工作流程重組，推動AI帶動組織效能提升。",
+        "number": 577,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "你是自媒體內容創作者，想用生成式AI提高產量，但又避免產出與他人重複相似內容，應該如何下提示詞（prompt）比較合適？",
+        "options": [
+            "A. 在提示詞中加入要求創造獨特見解並避免複製已知資料",
+            "B. 只輸入簡短標題關鍵字，不描述風格或內容細節",
+            "C. 直接使用已公開文章片段做為提示基礎",
+            "D. 完全不設定提示詞，交由AI自由生成"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞設計",
+        "explanation": "透過提示詞明確要求生成獨特且非重複內容，是確保生成式AI創作品質與原創性的有效方式。",
+        "number": 578,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "n8n是一款流程自動化工具，若要結合生成式AI應用提升客戶服務，自動回覆訊息及資料記錄，下列哪報描述較正確？",
+        "options": [
+            "A. n8n可作為流程架構整合生成式AI API並自動處理用戶互動",
+            "B. n8n主要功能是資料視覺化，不支援AI整合",
+            "C. n8n為純AI訓練平台，不涉及流程自動化",
+            "D. n8n無法和外部工具如ChatGPT連結"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "工作流程自動化",
+        "explanation": "n8n是一款開源流程自動化工具，可結合生成式AI服務API實現客服自動回覆、訊息記錄及後續數據處理。",
+        "number": 579,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "以Google 2025年最新生成式AI技術Gemini為例，下列敘述何者錯誤？",
+        "options": [
+            "A. Gemini 不再支援早期Vertex AI SDK，轉至Gen AI SDK",
+            "B. Gemini專注於鑑別式AI，不涉生成能力",
+            "C. Gemini擴充模型多模態能力，支援文字與視覺內容生成",
+            "D. Gemini設計目的是加強生成式AI應用生態建置"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 技術發展",
+        "concept": "生成式 AI 新技術",
+        "explanation": "Gemini是Google專為生成式AI設計的新世代模型，擴充多模態生成能力，並由早期Vertex AI SDK轉向Gen AI SDK支援，非僅鑑別式模型。",
+        "number": 580,
+        "date": "2025-09-07"
+    },
+    {
+        "question": "歷史上人工智慧的演變中，何者為生成式AI的關鍵技術突破？",
+        "options": [
+            "A. 2014年Ian Goodfellow提出生成對抗網絡（GAN）",
+            "B. 1956年達特茅斯會議首次提出數據隱私保護",
+            "C. 1997年深藍戰勝國際象棋世界冠軍強化生成能力",
+            "D. 1986年提出的專家系統取代所有生成任務"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "生成式 AI 概念",
+        "concept": "生成對抗網絡",
+        "explanation": "GAN於2014年由Ian Goodfellow提出，為生成式AI提供了革命性的方法，透過對抗過程產生逼真數據，是生成模型技術發展的里程碑。",
+        "number": 581,
+        "date": "2025-09-07"
     }
 ]

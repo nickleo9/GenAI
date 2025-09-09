@@ -668,5 +668,175 @@
         "explanation": "現階段生成式AI模型規模和能力持續指數級提升，尤其推理和上下文管理有改進，但複雜邏輯推理仍是難點。AGI未完全實現，且現有技術並非停止進展。",
         "number": 40,
         "date": "2025-09-06"
+    },
+    {
+        "question": "Which of the following best describes a core advantage of No Code / Low Code platforms in generative AI application planning?",
+        "options": [
+            "They eliminate the need for any AI model validation and testing processes.",
+            "They enable domain experts to develop AI solutions without deep programming expertise.",
+            "They guarantee full control over AI algorithmic customization and source code.",
+            "They restrict the deployment of AI models exclusively to cloud environments."
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的優勢",
+        "explanation": "No Code/Low Code platforms empower domain experts to build AI applications without extensive coding, speeding up development and democratizing AI use while still requiring validation and deployment planning.",
+        "number": 41,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "In which generative AI application field is controlling content authenticity and source transparency particularly critical?",
+        "options": [
+            "Automated manufacturing and robotic process automation",
+            "Creative content generation, including text, images, and multimedia",
+            "Predictive maintenance in industrial IoT systems",
+            "Supply chain optimization using AI-driven analytics"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 的內容真實性",
+        "explanation": "Generative AI’s use in creative content demands strict transparency to prevent copyright infringement and abuse, ensuring IP ownership and authenticity.",
+        "number": 42,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "When evaluating generative AI tools for enterprise deployment, which factor is MOST crucial for managing risk?",
+        "options": [
+            "Ensuring the tool provides free updates for life",
+            "Analyzing data privacy compliance and associated intellectual property risks",
+            "Choosing tools with the most extensive feature list, regardless of security",
+            "Prioritizing open-source tools to avoid vendor lock-in without assessing stability"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "Risk management requires focusing on data privacy, IP rights, and compliance to avoid legal and operational risks when deploying AI.",
+        "number": 43,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "Which of the following is a key consideration when planning the deployment of a generative AI application in a regulated industry?",
+        "options": [
+            "Deploying as quickly as possible to gain competitive advantage, ignoring validation",
+            "Conducting ongoing model monitoring and having clear documentation for audit trails",
+            "Outsourcing all AI-related planning to third parties with no internal oversight",
+            "Using only proprietary AI models without evaluating explainability or fairness"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "持續監控與合規",
+        "explanation": "Deployments in regulated sectors require ongoing validation, monitoring, and documentation to comply with regulations and mitigate risk.",
+        "number": 44,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "A business executive wants to leverage generative AI for customer interaction automation but has limited technical staff. Which strategy aligns best with No Code / Low Code principles?",
+        "options": [
+            "Hire a full AI research team to code bespoke solutions",
+            "Use a No Code platform that integrates pre-built AI workflows for conversational agents",
+            "Outsource to a consultancy for manual chatbot scriptwriting without AI involvement",
+            "Invest solely in traditional CRM software upgrades without AI capabilities"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 在業務自動化",
+        "explanation": "Using No Code platforms with AI workflows suits executives with limited technical resources, enabling rapid AI-prototype development and deployment.",
+        "number": 45,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "Which aspect of AI deployment evaluation is critical to ensuring trustworthiness in generative AI outputs?",
+        "options": [
+            "Verifying that outputs comply with ethical guidelines, fairness, and bias mitigation",
+            "Maximizing the number of model parameters without performance testing",
+            "Prioritizing aesthetic appeal of generated content over accuracy",
+            "Limiting user feedback collection to prevent feature requests"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "倫理與偏誤管理",
+        "explanation": "Ethical compliance, fairness, and bias mitigation are fundamental for trustworthy generative AI applications to prevent harm and support acceptance.",
+        "number": 46,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "When planning generative AI applications for intellectual property (IP) sensitive environments, what approach should planners prioritize?",
+        "options": [
+            "Encouraging unrestricted sharing of AI-generated content without attribution",
+            "Developing transparent IP strategies that clarify ownership and usage rights",
+            "Ignoring licensing issues to accelerate innovation speed",
+            "Allowing all generated AI content to be freely commercialized without constraints"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "智慧財產權管理",
+        "explanation": "Transparent IP strategies addressing ownership and licensing rights are essential to leverage AI-generated content while protecting innovation incentives.",
+        "number": 47,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "In the context of AI deployment risk management, what is the MOST effective way to address model drift in generative AI systems?",
+        "options": [
+            "Releasing updated models only after system failures occur",
+            "Implementing continuous monitoring and retraining based on data changes",
+            "Disregarding data evolution as generative AI models are static post-deployment",
+            "Relying exclusively on manual user feedback without automation"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "模型漂移管理",
+        "explanation": "Continuous monitoring and retraining are critical to mitigate risk from model drift, maintaining accuracy and relevance over time.",
+        "number": 48,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "Which tool feature is MOST important when selecting a generative AI platform for rapid prototyping and iterative development?",
+        "options": [
+            "Integrated version control and collaborative workflows for team-based planning",
+            "Requirement of extensive coding knowledge for all users",
+            "Lack of customization options to maintain simplicity",
+            "Closed-source environment preventing user modification"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "快速原型開發工具",
+        "explanation": "Collaborative and iterative development benefits from version control and teamwork capabilities, aiding agile AI planning.",
+        "number": 49,
+        "date": "2025-09-09"
+    },
+    {
+        "question": "What is a strategic advantage of integrating generative AI into net-zero carbon planning frameworks, as seen in industry certifications?",
+        "options": [
+            "Generative AI can autonomously enforce regulatory compliance without human input",
+            "It enables scalable scenario generation and predictive insights to optimize sustainability strategies",
+            "AI completely replaces expert insight, eliminating the need for domain specialists",
+            "It reduces the need for data collection by guessing outcomes based on assumptions"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式AI與永續規劃",
+        "explanation": "Generative AI supports complex scenario modeling and forecasting in sustainability planning, enhancing strategic decision-making without replacing expert judgment.",
+        "number": 50,
+        "date": "2025-09-09"
     }
 ]

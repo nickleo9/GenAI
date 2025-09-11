@@ -838,5 +838,175 @@
         "explanation": "Generative AI supports complex scenario modeling and forecasting in sustainability planning, enhancing strategic decision-making without replacing expert judgment.",
         "number": 50,
         "date": "2025-09-09"
+    },
+    {
+        "question": "在No Code / Low Code平台中，何種設計優勢使其最適合快速原型開發並降低技術門檻？",
+        "options": [
+            "允許使用者撰寫完整自定義程式碼以提升擴展性",
+            "提供拖拉式圖形界面以便利非程式設計師操作",
+            "僅能使用預設模組，無法調整商業邏輯",
+            "需求大量後端工程師支援以確保系統穩定性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code概念",
+        "concept": "拖拉式界面與低技術門檻",
+        "explanation": "No Code / Low Code平台著重零或低程式碼的視覺化開發方式，透過拖拉元件和圖形介面，降低非程式設計師的入門門檻，使快速原型和應用部署成為可能。選項A違反No Code理念，C過於限制，D不符低碼理念。",
+        "number": 51,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "針對生成式AI在企業中的導入評估，下列何者最符合「技術可行性」層面判斷？",
+        "options": [
+            "企業是否有足夠市場需求支持生成式AI服務",
+            "企業內部是否具備高性能運算資源如GPU",
+            "是否有專業團隊進行生成式AI倫理風險管理",
+            "企業是否規劃完整的員工培訓課程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估與規劃",
+        "concept": "運算資源可用性",
+        "explanation": "技術可行性專注於內部技術資源與環境，例如GPU、高效伺服器等硬體條件，這是生成式AI運行的基本需求，而其他選項屬商業可行性或組織管理層面。",
+        "number": 52,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "下列哪種生成式AI工具最適合在行動裝置中快速回應並處理輕量語言任務？",
+        "options": [
+            "Gemini Ultra，提供高度複雜推理功能",
+            "Gemini Pro，兼具多元任務和高品質語處理",
+            "Gemini Nano，專為輕量級裝置優化",
+            "OpenAI GPT-4，加強運算資源需求較高"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "模型規模與設備適配性",
+        "explanation": "Gemini Nano版本專為資源受限設備開發，優化速度與效能，適合手機、平板等行動端要求；Ultra與Pro則適合大型或專業場景。",
+        "number": 53,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "關於生成式AI在藝術設計領域的應用，下列敘述何者更精確？",
+        "options": [
+            "生成式AI只能輔助完成高品質藝術品，無法自主創作",
+            "Midjourney 可以根據文字描述直接產生多風格圖像",
+            "生成式AI取代人類藝術家，無需指令即可創作",
+            "生成式AI繪圖需使用者編寫複雜程式碼控制風格"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "文本轉圖像生成功能",
+        "explanation": "Midjourney是一款廣受使用的圖像生成工具，利用自然語言文字指令即可創造多種風格的圖像，降低藝術創作門檻。",
+        "number": 54,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "在生成式AI導入過程中，哪一風險管理策略最能有效防止模型「幻覺」(Hallucination)現象？",
+        "options": [
+            "限制模型輸出字數以減少錯誤資訊",
+            "強化監督式學習，提高模型準確度",
+            "完全透明化模型內部運算流程",
+            "適時整合人工審核與多數據源交叉驗證"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "複合審核及數據交叉驗證",
+        "explanation": "模型幻覺指生成錯誤、無根據資訊，最有效對策是結合人工審核和多數據驗證，減少誤導風險；單純限制字數或透明化雖具輔助，但不可單獨依賴。",
+        "number": 55,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "在Low Code環境中，下列何種限制最可能削弱系統的靈活性與可擴展性？",
+        "options": [
+            "僅能調用預先定義的UI組件模板",
+            "支持外掛API接口以擴展第三方服務",
+            "可視化流程設計支持自訂業務邏輯",
+            "內置版本管理和自動化部署功能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code概念",
+        "concept": "模組化與自定義能力限制",
+        "explanation": "若只能使用固定模板組件，無法自由定制業務流程及界面，會大幅降低系統彈性和長期可擴展性；其他選項均提升靈活度。",
+        "number": 56,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "選擇生成式AI工具時，若重視影音內容高品質生成與特效製作，哪類工具最適合？",
+        "options": [
+            "Runway Gen-3，專注影片生成與特效",
+            "Stable Diffusion，針對圖像生成優化",
+            "Code Llama，適合軟體生成與分析",
+            "ChatGPT，主攻文本和對話處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "影音特效生成專用工具",
+        "explanation": "Runway Gen-3聚焦影片生成與特效創作，為影音內容製作提供核心技術，其他選項則聚焦文字或靜態圖像生成。",
+        "number": 57,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "在生成式AI導入評估中，針對「商業可行性」層面，下列何者判斷指標錯誤？",
+        "options": [
+            "評估目標市場容量與客戶接受度",
+            "確定生成式AI是否能降低企業運營成本",
+            "評估企業是否有足夠內部GPU運算資源",
+            "評估生成式AI帶來的新增業務模式與收入潛力"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估與規劃",
+        "concept": "商業指標與技術資源區分",
+        "explanation": "選項C屬於技術可行性判斷，不屬於商業可行性範疇，商業可行性關注市場、成本及營收潛力等商業策略指標。",
+        "number": 58,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "以下哪種方法最適合降低生成式AI導入後的數據隱私洩露風險？",
+        "options": [
+            "允許模型存取所有內部敏感數據以提升精準度",
+            "實施數據脫敏與最小權限準入策略",
+            "完全限制生成式AI模型對外部系統的API介面",
+            "持續增加數據量以涵蓋所有潛在風險點"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "數據脫敏與存取控制",
+        "explanation": "數據脫敏與最小權限是降低生成式AI數據洩露風險的關鍵措施，保護敏感資訊不被模型過度存取，其他選項過度或無效管理。",
+        "number": 59,
+        "date": "2025-09-11"
+    },
+    {
+        "question": "針對生成式AI助手在金融投資分析中應用，下列哪種模型版本最可能符合「中型任務與多場景應用」需求？",
+        "options": [
+            "Gemini Ultra ，適合深度科研與複雜演算法",
+            "Gemini Nano ，專注輕量快速回應",
+            "Gemini Pro ，全方位語言處理能力平衡",
+            "OpenAI Codex ，專精程式碼生成領域"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "模型規模與任務需求匹配",
+        "explanation": "Gemini Pro版本介於Ultra與Nano之間，適合廣泛語言任務，包含金融投資報告分析與客服，符合多場景中型任務需求。",
+        "number": 60,
+        "date": "2025-09-11"
     }
 ]

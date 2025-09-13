@@ -1008,5 +1008,175 @@
         "explanation": "Gemini Pro版本介於Ultra與Nano之間，適合廣泛語言任務，包含金融投資報告分析與客服，符合多場景中型任務需求。",
         "number": 60,
         "date": "2025-09-11"
+    },
+    {
+        "question": "在企業引入生成式AI協助市場分析時，下列哪種提示詞設計最能提升預測的精確度？",
+        "options": [
+            "使用具體且結構化的描述詞彙和範例作為提示",
+            "使用模糊且概括性的自然語言提示指令",
+            "使用大量複雜的專有名詞隨機拼接提示",
+            "完全依賴AI自動生成提示詞無需人工修改"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "提示詞優化",
+        "explanation": "具體且結構化的提示詞可以幫助生成式AI準確理解需求，從而提升預測結果的精確度；模糊或隨機的提示容易導致結果不穩定或偏差。",
+        "number": 61,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "關於No Code與Low Code平台的比較，下列敘述何者正確？",
+        "options": [
+            "No Code平台允許完全不寫程式，Low Code平台則可部分自訂程式碼",
+            "不管是No Code還是Low Code平台，均需大量手動撰寫程式碼",
+            "Low Code平台完全無法編輯底層程式碼，No Code則可以",
+            "No Code平台主要用於硬體控制，Low Code則用於數據分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "平台差異",
+        "explanation": "No Code平台強調完全不需撰寫程式碼，透過拖拉拽與視覺化工具完成應用開發；Low Code平台則在此基礎上允許用戶撰寫少量程式碼以實現更客製化功能。",
+        "number": 62,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "企業在導入生成式AI系統前，最重要的風險管理考量是什麼？",
+        "options": [
+            "確保數據隱私和符合相關法規要求",
+            "完全放任AI系統自動決策無人監督",
+            "忽略模型偏誤和倫理風險",
+            "只關注短期成本節省而非長期安全性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "導入前風險評估",
+        "explanation": "數據隱私保護與法規遵守是生成式AI導入關鍵風險管理項目，避免企業因數據外洩及不合規操作而面臨法律及品牌損失。",
+        "number": 63,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "使用No Code平台開發生成式AI應用時，下列何者為主要的限制？",
+        "options": [
+            "無法完全自訂底層算法和複雜邏輯運算",
+            "必須撰寫大量程式碼才能完成簡單功能",
+            "開發速度較傳統手寫代碼慢",
+            "平台只支援單一作業系統限制移動性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "平台限制",
+        "explanation": "No Code平台雖提升開發效率並降低門檻，但受限無法完全控制底層算法與複雜運算過程，限制進階應用開發的彈性。",
+        "number": 64,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "下列哪一項不是生成式AI導入後持續優化時應評估的KPI指標？",
+        "options": [
+            "用戶互動滿意度",
+            "系統回應速度",
+            "金融投資市場匯率",
+            "錯誤率與偏差監控"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "績效評估",
+        "concept": "KPI選擇",
+        "explanation": "金融投資市場匯率非生成式AI系統性能和效益評估指標；用戶滿意度、回應速度與錯誤率監控才是相關評估指標。",
+        "number": 65,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "生成式AI中，Serverless架構的主要優勢為何？",
+        "options": [
+            "彈性調度資源且無需管理伺服器硬體",
+            "必須自行管理底層硬體和網路拓撲",
+            "只能用於本地端環境無法雲端部署",
+            "開發成本高且開發者需掌握全棧技術"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "架構設計",
+        "concept": "Serverless",
+        "explanation": "Serverless架構允許開發者專注於程式編寫而無需管理底層伺服器，能根據需求彈性調度計算資源，提升開發效率與成本效益。",
+        "number": 66,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "在生成式AI中，API整合的最大商業價值是什麼？",
+        "options": [
+            "將多個異質系統和服務無縫結合以提高自動化水準",
+            "強制所有系統必須由同一供應商提供",
+            "限制AI模型只能讀取靜態資料不支援實時更新",
+            "減少數據安全性管控導致資訊外洩風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "系統整合",
+        "concept": "API整合",
+        "explanation": "API整合使不同系統和服務可彼此通信協作，提升自動化和數據即時運用能力，釋放商業價值與效率提升潛力。",
+        "number": 67,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "以下哪一項不是生成式AI應用中常見的倫理風險？",
+        "options": [
+            "模型偏見導致決策不公平",
+            "數據隱私洩露風險增加",
+            "生成模組使企業營運成本降低",
+            "非授權內容生成引起版權爭議"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "倫理風險",
+        "concept": "AI倫理",
+        "explanation": "企業營運成本降低屬於正面效益，不是倫理風險；其他選項均為生成式AI可能涉及的倫理與法律風險問題。",
+        "number": 68,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "以下哪一種應用場景最適合採用Low Code平台輔助生成式AI開發？",
+        "options": [
+            "需要高度定制的金融風控模型應用",
+            "短期內快速部署簡單客服聊天機器人",
+            "硬體微控制器韌體的底層優化程式",
+            "大型分布式計算系統的核心算法設計"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "平台選擇",
+        "concept": "應用場景匹配",
+        "explanation": "Low Code平台適合快速部署偏向標準化或簡單邏輯的應用，如客服聊天機器人；對於需高度定制或底層硬體優化則較不適用。",
+        "number": 69,
+        "date": "2025-09-13"
+    },
+    {
+        "question": "生成式AI導入後欲確保系統長期穩定性，下列哪項措施較有效？",
+        "options": [
+            "持續進行模型誤差監控與數據更新訓練",
+            "一旦部署完成，將系統設為封閉不做修改",
+            "完全依賴人工判斷而忽略自動化評估",
+            "禁止用戶回饋，以避免變更系統行為"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "系統優化",
+        "concept": "績效監控",
+        "explanation": "生成式AI系統需持續監控評估模型誤差及定期更新數據訓練，確保系統持續反映真實環境和業務需求，保持穩定與準確。",
+        "number": 70,
+        "date": "2025-09-13"
     }
 ]

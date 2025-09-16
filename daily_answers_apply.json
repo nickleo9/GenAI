@@ -1178,5 +1178,175 @@
         "explanation": "生成式AI系統需持續監控評估模型誤差及定期更新數據訓練，確保系統持續反映真實環境和業務需求，保持穩定與準確。",
         "number": 70,
         "date": "2025-09-13"
+    },
+    {
+        "question": "下列何者最能準確描述No Code與Low Code平台的核心差異？",
+        "options": [
+            "No Code需撰寫程式碼，Low Code完全無需撰寫程式碼",
+            "No Code以視覺化元件和設定為主，Low Code允許部分程式碼撰寫以自定義邏輯",
+            "Low Code不支援外部API呼叫，No Code支援",
+            "No Code主要供技術人員使用，Low Code適合業務人員"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code概念",
+        "concept": "No Code與Low Code差異",
+        "explanation": "No Code平台透過視覺化元件和設定實現應用開發，不需撰寫程式碼，適合非技術背景使用者；Low Code在視覺化開發基礎上允許程式碼編輯以實現自訂邏輯與API整合，適用具備基礎技術的人員。",
+        "number": 71,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "生成式AI的No Code平台中，哪種模組最可能負責將自然語言需求轉換為系統流程與前後端界面？",
+        "options": [
+            "AI UI/UX 導師",
+            "設計即服務",
+            "自然語言生成應用",
+            "模組化服務市集"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "自然語言生成",
+        "explanation": "自然語言生成應用通過語意解析，將使用者以自然語言表達的需求自動轉化為具體的應用架構與流程，促進開發自動化。",
+        "number": 72,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "某企業使用Low Code平台開發內部審核流程，需要在特定步驟加入複雜條件判斷，下列何者策略最適合？",
+        "options": [
+            "完全依賴No Code拖拉元件",
+            "全程手寫程式碼實現複雜邏輯",
+            "在必要處使用Low Code平台中程式區塊編寫驗證邏輯",
+            "只用現成套件無自訂開發"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code概念",
+        "concept": "程式區塊自訂邏輯",
+        "explanation": "Low Code平台允許透過拖拉組件快速開發，並在關鍵步驟使用輔助程式碼編輯器撰寫複雜驗證，兼顧開發效率與靈活度。",
+        "number": 73,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "在生成式AI導入評估中，下列何項風險是Low Code平台特別需關注的？",
+        "options": [
+            "完全無法擴展應用功能",
+            "使用者無法直接撰寫程式碼",
+            "可能導致企業內部敏感數據外洩",
+            "開發速度過於緩慢"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入風險管理",
+        "concept": "數據安全風險",
+        "explanation": "Low Code平台開發者多為非IT專業人員，缺乏嚴格IT控管易導致安全控制不足與敏感數據外洩，須加強風險管理。",
+        "number": 74,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "生成式AI在企業No Code平台中，AI UI/UX導師的主要角色是？",
+        "options": [
+            "自動生成API介面文件",
+            "結合大型語言模型與設計規範，提供設計建議與原型產出",
+            "完全替代設計師角色",
+            "僅負責後台資料儲存與視覺化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "AI UI/UX導師",
+        "explanation": "AI UI/UX導師利用大型語言模型與設計標準，給予設計優化建議和Figma原型產出，提升設計效率與品質。",
+        "number": 75,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "生成式AI工具在No Code/Low Code平台上的主要優勢不包括？",
+        "options": [
+            "降低開發門檻使非專業人員參與",
+            "實現快速原型開發與迭代",
+            "完全免除資料安全風險",
+            "提升跨部門協作效率"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code優勢與限制",
+        "concept": "資料安全",
+        "explanation": "No Code/Low Code平台提高開發效率且易用，但資料安全風險依然存在，須嚴密評估與管理，無法完全免除。",
+        "number": 76,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "生成式AI應用在文本產生領域最合適的工具是？",
+        "options": [
+            "視覺化流程開發工具",
+            "大型語言模型API",
+            "資料庫管理系統",
+            "自動化報表生成軟體"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "大型語言模型",
+        "explanation": "文本生成依賴大型語言模型API，如GPT系列，能根據輸入自動生成高品質文本，是生成式AI的基礎工具。",
+        "number": 77,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "生成式AI導入評估中，何種措施最有效降低業務持續性風險？",
+        "options": [
+            "僅依賴AI模型產出結果",
+            "建立多重驗證與結果審核機制",
+            "限制AI應用於非關鍵領域",
+            "取消所有人工干預"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入風險管理",
+        "concept": "風險管理",
+        "explanation": "多重驗證與人工審核能避免AI錯誤導致業務失誤，提升系統穩定性與風控能力，是有效風險控管措施。",
+        "number": 78,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "關於模組化服務市集在生成式AI No Code平台的功能，下列敘述何者正確？",
+        "options": [
+            "收錄多種通用模組，使用者可自由組合擴展功能",
+            "僅限於前端介面設計無後端支援",
+            "每個模組只能用於指定業務場景",
+            "需要使用者自行寫程式整合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "模組化服務市集",
+        "explanation": "模組化服務市集提供通用功能模組，如報名和調查，使用者可以組合運用擴展應用功能，提升開發效率與彈性。",
+        "number": 79,
+        "date": "2025-09-16"
+    },
+    {
+        "question": "企業選擇No Code/Low Code平台時，最應優先重視的標準是？",
+        "options": [
+            "唯一價格最低的平台",
+            "功能豐富且支持自訂開發擴展的彈性",
+            "只支持單一AI模型的限制性平台",
+            "純文字輸入，無視覺介面"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "平台選擇標準",
+        "explanation": "企業應衡量平台是否功能豐富且支持自訂開發，保障生成式AI應用的彈性與適應快速變化的業務場景，非單純價格因素。",
+        "number": 80,
+        "date": "2025-09-16"
     }
 ]

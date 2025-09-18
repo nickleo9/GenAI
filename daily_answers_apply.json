@@ -1348,5 +1348,175 @@
         "explanation": "企業應衡量平台是否功能豐富且支持自訂開發，保障生成式AI應用的彈性與適應快速變化的業務場景，非單純價格因素。",
         "number": 80,
         "date": "2025-09-16"
+    },
+    {
+        "question": "在無須撰寫程式碼即可構建應用流程的No Code平台中，以下哪項限制最常見於生活中快速部署的智能家居系統？",
+        "options": [
+            "缺乏彈性調整特定自定義功能的能力",
+            "需深入理解程式語言語法方能使用",
+            "無法利用視覺化拖拉介面進行開發",
+            "強制使用複雜的命令列介面"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 平台限制",
+        "explanation": "No Code平台提供快速開發界面，但通常在自訂彈性上有限，無法滿足高度特定的功能需求，是智能家居快速部署的常見限制。",
+        "number": 81,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "哪種情況最適合採用Low Code平台，而非完全No Code方案，以規劃企業智慧客服機器人？",
+        "options": [
+            "需整合外部API與自訂驗證程式碼的流程",
+            "單純拖拉元件建立靜態網頁",
+            "僅使用預設模板無需自訂功能",
+            "只用圖形化介面配置簡單問答"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code應用場景",
+        "explanation": "Low Code允許部分程式碼編寫，適合需複雜整合與自訂流程的智慧客服，超越純No Code限制。",
+        "number": 82,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "下列哪個專有名詞最符合生成式AI中，透過給模型設計問題描述與限制條件，來引導生成結果的技巧？",
+        "options": [
+            "提示詞工程（Prompt Engineering）",
+            "強化學習（Reinforcement Learning）",
+            "特徵擷取（Feature Extraction）",
+            "過擬合（Overfitting）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "提示詞工程",
+        "explanation": "提示詞工程是設計與優化輸入指令，引導生成式AI產出精確結果的核心技術。",
+        "number": 83,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "在生成式AI應用於生活場景（如旅遊規劃助手）時，下列哪項工具因具備大規模文字與影像生成能力而最適合？",
+        "options": [
+            "多模態生成模型（Multimodal Generative Models）",
+            "Label Propagation工具",
+            "隨機森林分類器",
+            "決策樹回歸器"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "多模態生成模型",
+        "explanation": "多模態生成模型可同時處理文字與影像輸入，適合旅遊助手這類多元資料生成應用。",
+        "number": 84,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "企業在導入生成式AI技術時，最重要的風險評估指標通常不包含哪一項？",
+        "options": [
+            "資料隱私與保護合規性風險",
+            "團隊員工個人社交媒體影響力",
+            "生成內容的偏見與不精確風險",
+            "系統運行穩定性與安全漏洞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI導入評估",
+        "concept": "風險管理",
+        "explanation": "員工社交媒體影響力不屬於生成式AI導入的風險評估指標，企業更關注資料隱私與系統安全等問題。",
+        "number": 85,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "在評估生成式AI導入策略時，哪種方法最能協助企業理解技術對現有流程的影響？",
+        "options": [
+            "流程映射與差距分析",
+            "隨機抽樣測試",
+            "單點故障對照",
+            "設備成本比對"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI導入評估",
+        "concept": "流程評估方法",
+        "explanation": "流程映射和差距分析幫助企業理解現有流程與新技術的差異與影響，是評估導入策略關鍵方法。",
+        "number": 86,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "生活中使用生成式AI編寫腳本時，何者是優化提示詞以獲得精確且上下文相關回應的核心策略？",
+        "options": [
+            "提供清楚具體的指令與範例",
+            "隨機更換詞彙並避免上下文",
+            "縮短輸入提示至最少文字",
+            "完全不給任何提示讓模型自由發揮"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "提示詞優化",
+        "explanation": "明確且具體的提示詞含指令與範例，是生成式AI能產生精確且符合需求答案的關鍵。",
+        "number": 87,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "對於生活化智能應用，若欲降低生成式AI模型潛在偏見帶來的風險，下列做法何者為最佳？",
+        "options": [
+            "建立多元且有代表性的訓練數據",
+            "限制模型只回應簡單問題",
+            "避免讓模型接觸網路數據",
+            "將決策權100%交由模型自動判斷"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI風險管理",
+        "concept": "偏見風險降低",
+        "explanation": "多元且有代表性的訓練數據能降低模型偏見風險，使AI回應更公平且準確。",
+        "number": 88,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "假設一個零程式碼平台設計家庭健康管理APP時遇到訪客身份驗證需求，下列哪種工具特性最能提升此階段的安全性？",
+        "options": [
+            "內建OAuth協議整合",
+            "僅用靜態頁面展示資料",
+            "不需使用者登入即可訪問所有功能",
+            "限制APP只支援單一設備"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "安全性提升",
+        "explanation": "OAuth協議可提供安全、標準化的身份驗證機制，大幅提升無程式碼平台的安全性。",
+        "number": 89,
+        "date": "2025-09-18"
+    },
+    {
+        "question": "生成式AI的風險管理中，何者為確保產品符合倫理規範的常見實務？",
+        "options": [
+            "建立AI倫理審查委員會並定期審核",
+            "完全不透露任何系統決策邏輯",
+            "依賴使用者自行判斷AI輸出是否適當",
+            "快速部署並忽略其潛在社會影響"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI風險管理",
+        "concept": "倫理規範管理",
+        "explanation": "設立AI倫理審查委員會並定期審核，有助確保AI產品符合法規及社會道德標準。",
+        "number": 90,
+        "date": "2025-09-18"
     }
 ]

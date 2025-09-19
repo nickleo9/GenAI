@@ -1858,5 +1858,175 @@
         "explanation": "AI治理特別重視系統決策的透明度，要求模型能解釋其決策過程，讓使用者理解背後的依據。",
         "number": 110,
         "date": "2025-09-17"
+    },
+    {
+        "question": "在生成式AI的訓練流程中，哪一階段主要是透過對抗過程提升模型的創造力？",
+        "options": [
+            "預訓練階段中模型與判別器進行對抗訓練以強化生成能力",
+            "微調階段中使用監督資料對模型參數進行精細調整",
+            "資料清洗階段中剔除冗餘與異常數據以確保訓練資料品質",
+            "模型驗證階段中評估生成內容的多樣性與準確性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI訓練流程",
+        "concept": "生成對抗網路(GAN)",
+        "explanation": "生成對抗網路(GAN)的訓練階段包含生成器與判別器的對抗過程，此過程能促使模型產出更加創新且接近真實的內容，這是提升生成能力的關鍵。",
+        "number": 111,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "以下哪一項不屬於機器學習中的監督式學習特徵？",
+        "options": [
+            "模型根據有標籤的資料訓練以預測結果",
+            "學習過程需使用輸入與對應的正確輸出",
+            "利用未標籤資料自動發現數據結構",
+            "通常應用於分類與回歸問題"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "監督式學習",
+        "concept": "學習類型辨識",
+        "explanation": "監督式學習是依靠標籤資料來指導學習過程，而非監督式學習則會利用未標籤資料去探索隱藏數據模式，故利用未標籤資料自動發現數據結構不屬於監督式學習。",
+        "number": 112,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "在AI治理中，關於資料隱私的最佳實踐，下列敘述何者正確？",
+        "options": [
+            "數據匿名化可降低個人資訊識別風險",
+            "數據儲存應盡量避免加密以提升處理速度",
+            "數據分享時不需獲得當事人同意",
+            "只在開發階段才考慮資料安全性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料匿名化",
+        "explanation": "資料匿名化能有效刪除或遮蔽個人敏感資訊，減少個資被識別風險，是保障資料隱私的關鍵措施。",
+        "number": 113,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "在資料分析流程中，下列哪一步驟主要目的為處理缺失值與離群值以提升分析精度？",
+        "options": [
+            "資料收集階段",
+            "資料清洗階段",
+            "模型訓練階段",
+            "結果視覺化階段"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗階段專注於剔除錯誤、無效、缺失或異常資料，以確保後續分析和模型訓練的數據品質與可靠性。",
+        "number": 114,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的主要差異在於？",
+        "options": [
+            "鑑別式AI專注於判斷資料類別，生成式AI專注於產生新資料",
+            "鑑別式AI生成新內容，生成式AI進行資料分類",
+            "鑑別式AI無法處理影像資料，生成式AI專攻語言處理",
+            "兩者皆為同一種AI模型，只是命名不同"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式與生成式AI",
+        "subtopic": "模型原理",
+        "concept": "鑑別式與生成式區別",
+        "explanation": "鑑別式AI旨在識別資料的分類或屬性，生成式AI則擅長根據學習產生新穎創造的資料，例如圖像、文字等。",
+        "number": 115,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "下列哪一種機器學習模型最適合用於時間序列資料的預測？",
+        "options": [
+            "隨機森林(Random Forest)",
+            "遞迴神經網路(Recurrent Neural Network, RNN)",
+            "支持向量機(Support Vector Machine, SVM)",
+            "K近鄰演算法(K-Nearest Neighbors, KNN)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "模型選擇",
+        "concept": "時間序列預測",
+        "explanation": "遞迴神經網路(RNN)因擅長處理序列資料，能捕捉時間依賴性，故為時間序列預測的理想模型。",
+        "number": 116,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "在AI系統架構中，哪一項技術最直接影響資料隱私與安全？",
+        "options": [
+            "加密技術與存取控制",
+            "深度學習的批次訓練",
+            "資料可視化技術",
+            "強化學習的回饋調整"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私安全",
+        "concept": "資料加密",
+        "explanation": "加密與存取控制是保護資料不被未授權取用的關鍵技術，直接保障資料隱私與安全。",
+        "number": 117,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "在多模態AI技術中，下列敘述何者最貼切？",
+        "options": [
+            "同時融合文字、圖像、語音等多種資料模式進行學習與推理",
+            "只專注於單一類型資料如文字的深度學習訓練",
+            "僅使用結構化數據處理精確分類任務",
+            "主要用於資料加密與匿名化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態學習",
+        "concept": "多模態融合",
+        "explanation": "多模態AI能整合多種資料型態資訊，以提升模型對複雜任務的理解與創造能力。",
+        "number": 118,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "在生成式AI應用中，『微調 (fine-tuning)』階段的主要作用是？",
+        "options": [
+            "利用大量未標註資料進行初步模型訓練",
+            "針對特定任務調整預訓練模型參數",
+            "清洗資料以去除異常與缺失值",
+            "建立模型架構設計與定義"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "微調技術",
+        "concept": "模型微調",
+        "explanation": "微調階段通常是在預訓練模型基礎上，針對特定應用或任務進行參數調整，以提升實際效果。",
+        "number": 119,
+        "date": "2025-09-19"
+    },
+    {
+        "question": "在資料分析方法中，探索性資料分析(Exploratory Data Analysis, EDA)的主要目標是？",
+        "options": [
+            "驗證假設的統計檢定",
+            "系統性蒐集與整理資料",
+            "視覺化呈現資料分布以發掘內在結構",
+            "建立機器學習預測模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料分析方法",
+        "concept": "探索性資料分析",
+        "explanation": "EDA重點在於用視覺化與統計方法理解資料的分布與結構，發現規律與異常，為後續分析鋪路。",
+        "number": 120,
+        "date": "2025-09-19"
     }
 ]

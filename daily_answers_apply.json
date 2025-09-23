@@ -1518,5 +1518,175 @@
         "explanation": "設立AI倫理審查委員會並定期審核，有助確保AI產品符合法規及社會道德標準。",
         "number": 90,
         "date": "2025-09-18"
+    },
+    {
+        "question": "某企業希望利用生成式AI快速設計客戶風險評估模型，團隊非程式背景且需自訂複雜審核規則，下列何者平台最合適？",
+        "options": [
+            "完全No Code平台",
+            "傳統全程手寫程式開發",
+            "Low Code平台",
+            "只使用現成商業套件"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code概念",
+        "concept": "平台選擇",
+        "explanation": "Low Code平台允許非技術用戶與開發者協作，支持部分代碼擴展自訂複雜邏輯，比完全No Code更靈活，適合包含複雜規則需求。",
+        "number": 91,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "生成式AI應用於醫療診斷輔助時，下列哪項為最重要的導入風險評估？",
+        "options": [
+            "資料隱私和合規風險",
+            "使用者背景差異影響準確度",
+            "計算資源成本超支",
+            "使用者操作界面複雜度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "風險管理",
+        "explanation": "醫療行業對資料隱私和合規要求極高，違反規範可能導致法律責任與信譽損失，是首要風險。",
+        "number": 92,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "No Code平台的最大優勢不包括下列何項？",
+        "options": [
+            "減少專業程式碼撰寫",
+            "快速上線新應用",
+            "支持深度自訂複雜業務邏輯",
+            "使非技術人員能參與產品開發"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code概念",
+        "concept": "平台特色",
+        "explanation": "No Code平台透過拖拉介面快速構建，但不適合複雜邏輯的深度自訂，該功能更屬於Low Code平台。",
+        "number": 93,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "企業導入生成式AI後應避免哪種流程風險？",
+        "options": [
+            "人工審核環節不足導致錯誤擴散",
+            "無法達到運算效率提升",
+            "員工技術門檻過高",
+            "使用者體驗不佳"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入風險管理",
+        "concept": "流程風險",
+        "explanation": "缺乏足夠人工審核易造成AI產出錯誤信息擴散，企業應設置適當審核保障質量。",
+        "number": 94,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "下列何者不屬於生成式AI導入的風險管理策略？",
+        "options": [
+            "風險接受與制定應急方案",
+            "風險迴避暫停使用高風險技術",
+            "完全忽視模型偏差問題",
+            "風險轉移透過保險或外包合作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入風險管理",
+        "concept": "風險策略",
+        "explanation": "忽視模型偏差會加深不公平與錯誤判斷，屬於不當風險管理行為必須防範。",
+        "number": 95,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "生成式AI常見的應用場景不包括？",
+        "options": [
+            "內容自動生成和文本摘要",
+            "專利法規撰寫律師專用領域",
+            "客戶服務自動回應與互動",
+            "金融反洗錢監控系統配合AI分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "應用場景",
+        "explanation": "律師專利法規撰寫屬高專業領域，雖有輔助AI工具，但不屬生成式AI的典型且普遍應用場景。",
+        "number": 96,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "下列關於推理模型(Reasoning Model)的敘述，何者正確？",
+        "options": [
+            "主要依賴強化學習訓練",
+            "具備多步邏輯推理與結構化輸出",
+            "只能做靜態判斷，不具備解釋性",
+            "不適合生成式AI架構中使用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "推理模型",
+        "explanation": "推理模型強調多步邏輯推理，支持結構化輸出，是生成式AI融合推理能力的重要組件。",
+        "number": 97,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "在生成式AI的數據收集中，企業最需關注何項？",
+        "options": [
+            "計算速度",
+            "數據來源合法性與隱私合規",
+            "用戶界面設計感受",
+            "模型選擇與參數調整"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "資料隱私",
+        "explanation": "數據來源的合法性及合乎隱私法規是生成式AI應用的重要前提，避免引發法律風險。",
+        "number": 98,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "No Code平台與Low Code平台相比，哪項是Low Code細膩優勢？",
+        "options": [
+            "無需寫程式碼完成所有需求",
+            "支持複雜邏輯且允許程式碼整合",
+            "限制非技術人員使用",
+            "只能用於行銷類應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code概念",
+        "concept": "平台優勢",
+        "explanation": "Low Code不僅提供視覺化開發，還允許少量程式碼整合以支持複雜業務邏輯，是相較No Code的細膩優勢。",
+        "number": 99,
+        "date": "2025-09-23"
+    },
+    {
+        "question": "當企業法規環境急劇變化時，生成式AI應採取何種策略較妥？",
+        "options": [
+            "採取風險迴避，暫停相關AI部署",
+            "一味擴大應用範圍不調整",
+            "解除所有風險管理規則實驗",
+            "忽略外部事件堅持原方案"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入風險管理",
+        "concept": "風險因應",
+        "explanation": "面對劇變的法規風險，暫停並評估調整生成式AI應用，有利於防範法律及營運重大風險。",
+        "number": 100,
+        "date": "2025-09-23"
     }
 ]

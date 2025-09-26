@@ -2368,5 +2368,175 @@
         "explanation": "跨境傳輸資料若未遵守各地法律，可能引發法律風險，違反資料治理與隱私保護原則，不符合規要求。",
         "number": 140,
         "date": "2025-09-24"
+    },
+    {
+        "question": "在2025年生成式AI技術中，何者為數據微調（fine-tuning）階段的主要目標？",
+        "options": [
+            "提升模型在特定任務上的性能與多樣性",
+            "增加模型的參數總量以提升表達能力",
+            "以無監督學習方式重建訓練數據集",
+            "專注於模型結構減枝與壓縮"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型訓練與微調",
+        "concept": "生成式AI微調",
+        "explanation": "微調階段主要透過調整參數及數據多樣性，使模型在特定應用場景如語言或影像生成表現更佳，而非僅增加參數或無監督重建。",
+        "number": 141,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "下列何者最符合「物理AI」的定義與應用？",
+        "options": [
+            "在物理世界中具備自主行動與規劃能力的AI系統",
+            "純粹基於軟體推論的語言生成模型",
+            "用於數據清洗和預處理的自動化軟體工具",
+            "專注於提升模型推理速度的硬體加速架構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "AI分支與分類",
+        "concept": "物理AI",
+        "explanation": "物理AI指的是AI系統延伸至物理世界的應用，具備自主動作與規劃能力，常見於機器人與自動化設備。",
+        "number": 142,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "在資料隱私與安全的AI治理中，何者最能有效減少模型洩漏敏感資訊的風險？",
+        "options": [
+            "採用生成對抗網路(GAN)技術強化數據生成",
+            "實施差分隱私機制，保障個人資料不被識別",
+            "增加數據量以提高模型泛化能力",
+            "使用全監督式機器學習模型以減少誤差"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "差分隱私",
+        "explanation": "差分隱私透過添加隨機干擾，有效防止模型在訓練階段洩露敏感個人資訊，提升數據保護。",
+        "number": 143,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "鑑別式AI與生成式AI主要差異在於：",
+        "options": [
+            "鑑別式AI專注於辨識輸入資料的類別，生成式AI則能創造新資料",
+            "生成式AI只能用於語音處理，鑑別式AI則用在影像分析",
+            "鑑別式AI需要大規模標記資料，生成式AI不需要任何資料",
+            "生成式AI是無監督學習，鑑別式AI是人為監控"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式AI與生成式AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式AI差異",
+        "explanation": "鑑別式AI著重於分類、辨識輸入資料是否屬於某類別，而生成式AI則能創造新樣本如影像或文字。",
+        "number": 144,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "資料分析流程中，何者為正確的步驟順序？",
+        "options": [
+            "資料清洗 → 建模 → 資料探索 → 數據蒐集",
+            "數據蒐集 → 資料清洗 → 資料探索 → 建模",
+            "建模 → 數據蒐集 → 資料清洗 → 資料探索",
+            "資料探索 → 建模 → 數據蒐集 → 資料清洗"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料分析流程順序",
+        "explanation": "標準分析流程為先蒐集數據，再清洗，接著進行探索性分析，最後建構模型以達成應用目標。",
+        "number": 145,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "以下哪一項不屬於常見的機器學習模型？",
+        "options": [
+            "支援向量機(SVM)",
+            "卷積神經網路(CNN)",
+            "決策樹(Decision Tree)",
+            "基因演算法(Genetic Algorithm)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見模型",
+        "concept": "機器學習模型分類",
+        "explanation": "基因演算法屬於啟發式演算法，並非機器學習模型。其餘三者均為典型監督及深度學習模型。",
+        "number": 146,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "AI治理中，何者是強調AI系統決策過程透明且可解釋的核心概念？",
+        "options": [
+            "生成對抗網路 (GAN)",
+            "模型可解釋性 (Explainable AI)",
+            "深度強化學習 (Deep Reinforcement Learning)",
+            "轉移學習 (Transfer Learning)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "AI倫理與法規",
+        "concept": "模型可解釋性",
+        "explanation": "可解釋性AI著重於讓使用者及開發者理解模型如何做出決策，提高系統的公正性與可控性。",
+        "number": 147,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "在2025年AI應用中，「AI智能體(Agentic AI)」的特點是什麼？",
+        "options": [
+            "專注於資料蒐集與訓練模型的自動化流程",
+            "具備增強執行能力，自動化做出決策及行動",
+            "僅用於語音識別和語言理解的深度學習系統",
+            "以人類專家知識為主導的半監督模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI發展趨勢",
+        "concept": "智能體AI",
+        "explanation": "智能體AI在2025年受注目，強調AI系統具備主動決策和行動能力，提升自動化整體智能水平。",
+        "number": 148,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "在資料整理中，何種方法最適合用於揭示資料中的潛在群組結構？",
+        "options": [
+            "線性迴歸分析",
+            "分群分析 (Clustering)",
+            "主成分分析 (PCA)",
+            "決策樹分類"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料探索方法",
+        "concept": "分群分析",
+        "explanation": "分群分析是無監督學習方法，用以辨識資料中相似群組，適合揭示結構而非做預測。",
+        "number": 149,
+        "date": "2025-09-26"
+    },
+    {
+        "question": "當使用視覺轉換器(Vision Transformer)於影像辨識時，下列何項是其主要優勢？",
+        "options": [
+            "透過卷積運算自動找出局部特徵",
+            "利用自注意力機制捕捉全域上下文資訊",
+            "僅適用於序列文字的特徵擷取",
+            "專注於強化資料隱私保護技術"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "視覺轉換器 (ViT)",
+        "concept": "自注意力機制",
+        "explanation": "視覺轉換器利用自注意力機制能跨越影像全區域捕捉資訊，優於傳統卷積網路局部感受野限制。",
+        "number": 150,
+        "date": "2025-09-26"
     }
 ]

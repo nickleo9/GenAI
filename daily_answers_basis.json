@@ -2538,5 +2538,175 @@
         "explanation": "視覺轉換器利用自注意力機制能跨越影像全區域捕捉資訊，優於傳統卷積網路局部感受野限制。",
         "number": 150,
         "date": "2025-09-26"
+    },
+    {
+        "question": "在生成式人工智慧（Generative AI）中，哪一項是其主要運作原理？",
+        "options": [
+            "直接學習資料模式並生成類似輸出內容",
+            "透過監督學習分類既有資料標籤",
+            "利用強化學習調整決策策略",
+            "僅基於規則系統進行輸出生成"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI原理",
+        "concept": "生成模型",
+        "explanation": "生成式AI主要透過學習大量資料中的內在分布特徵，生成與訓練數據相似但非複製的內容，這是其運作的核心原理。",
+        "number": 151,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "下列關於AI治理的描述，何者正確？",
+        "options": [
+            "AI治理僅關注技術層面的安全與應用效能",
+            "AI治理涵蓋法規、倫理與風險管理等多層面議題",
+            "AI治理是指企業內部技術的自主監控策略",
+            "AI治理主要集中在資料加密與存取控制措施"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理",
+        "concept": "多層面治理",
+        "explanation": "AI治理是一個跨領域的概念，涵蓋技術、法律、倫理、風險評估與管理，是確保AI安全、透明與可信賴的完整框架。",
+        "number": 152,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "關於監督式學習與非監督式學習的差異，下列何者描述錯誤？",
+        "options": [
+            "監督式學習需要標籤資料來指導模型訓練",
+            "非監督式學習通常用於發現資料內在結構",
+            "監督式學習適合用於聚類與降維任務",
+            "非監督式學習不依賴資料標籤"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "學習類型區分",
+        "concept": "監督與非監督",
+        "explanation": "監督式學習通常用於分類與回歸，不適用於聚類與降維，這是非監督式學習的主要任務，因此監督式學習適用於聚類與降維的說法是錯誤的。",
+        "number": 153,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "在資料整理流程中，針對遺漏值的處理下列哪種方法最不適合？",
+        "options": [
+            "利用平均值替代缺失數據",
+            "透過刪除包含遺漏值的整筆資料",
+            "用隨機森林填補遺漏值",
+            "將缺失資料視為正常數據保留"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料清洗",
+        "concept": "缺失值處理",
+        "explanation": "將缺失資料視為正常數據保留通常會導致模型誤判與扭曲，故這種方法最不適合用於處理遺漏值。",
+        "number": 154,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "下列何者最準確描述鑑別式AI與生成式AI的主要差異？",
+        "options": [
+            "鑑別式AI僅處理圖像資料；生成式AI專注自然語言",
+            "鑑別式AI判斷輸入資料屬性；生成式AI創建新資料",
+            "鑑別式AI依靠無標籤資料；生成式AI依賴標籤資料",
+            "鑑別式AI使用強化學習；生成式AI不使用學習方法"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "模型區分",
+        "explanation": "鑑別式AI主要用來判斷輸入是否屬於某類別，而生成式AI則致力於創造新的數據內容，是兩者最核心的差異點。",
+        "number": 155,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "在機器學習模型中，哪一種模型最適合用於圖像分類且能有效捕捉空間特徵？",
+        "options": [
+            "長短期記憶網絡 (LSTM)",
+            "卷積神經網絡 (CNN)",
+            "決策樹 (Decision Tree)",
+            "貝葉斯分類器 (Naive Bayes)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "模型選擇",
+        "concept": "CNN",
+        "explanation": "卷積神經網絡(CNN)以其卷積層設計專門捕捉圖像的空間結構特徵，成為圖像分類任務的主要模型。",
+        "number": 156,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "資料隱私保護法規中，何種技術被廣泛用於確保數據匿名而不影響資料分析效果？",
+        "options": [
+            "同態加密 (Homomorphic Encryption)",
+            "差分隱私 (Differential Privacy)",
+            "區塊鏈技術 (Blockchain)",
+            "資料壓縮演算法 (Data Compression)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "差分隱私",
+        "explanation": "差分隱私技術可以在保護個體數據隱私的同時，允許進行有效的統計分析，是現今資料隱私保護重要方法之一。",
+        "number": 157,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "針對人工智慧中探索性資料分析(EDA)，下列何者不是主要目標？",
+        "options": [
+            "識別資料中的模式與異常點",
+            "對資料進行初步視覺化分析",
+            "生成可用於訓練的標籤資料",
+            "了解變數間的關聯性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料分析流程",
+        "concept": "EDA",
+        "explanation": "探索性資料分析主要是用來發現資料特性與規律，不包含生成標籤資料，標籤生成通常是人工標註或其他方法完成。",
+        "number": 158,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "微軟Copilot作為AI工具的核心功能是什麼？",
+        "options": [
+            "透過強化學習自動完成決策過程",
+            "利用生成式AI技術輔助內容創作與程式碼撰寫",
+            "以監督式學習持續調整模型參數",
+            "搭建區塊鏈網絡保障資料安全"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "AI工具應用",
+        "concept": "協助工具",
+        "explanation": "微軟Copilot主要利用生成式AI來輔助用戶進行自然語言或程式碼的生成與建議，提高創作與工作效率。",
+        "number": 159,
+        "date": "2025-09-29"
+    },
+    {
+        "question": "以下哪一項不是資料清洗在機器學習中的正確做法？",
+        "options": [
+            "刪除所有重複數據以避免冗餘",
+            "以統計方法填補數據中的空缺值",
+            "保留高比例缺失值的原始資料作分析",
+            "檢查並修正異常值以提升模型效能"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料清洗",
+        "concept": "數據品質管理",
+        "explanation": "保留缺失值過多且未經處理的資料會影響模型的準確性及泛化能力，因而不宜直接保留下來。",
+        "number": 160,
+        "date": "2025-09-29"
     }
 ]

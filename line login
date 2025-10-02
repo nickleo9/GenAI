@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>登入處理中...</title>
+</head>
+<body>
+    <h3>⏳ 正在處理登入...</h3>
+    <script>
+    // 取得 URL 參數
+    const urlParams = new URLSearchParams(window.location.search);
+    const code = urlParams.get('code');
+    const state = urlParams.get('state');
+    
+    // 驗證 state（防偽造攻擊）
+    const savedState = localStorage.getItem('line_login_state');
+    if (state !== savedState) {
+        alert('登入驗證失敗！');
+        window.location.href = '/';
+    }
+    
+    // 將 code 傳送到你的 n8n
+    fetch('https://nickleo9.zeabur.app/webhook/line-login', {
+        method: 'POST',
+        headers: {'Content-Type': 'application/json'},
+        body: JSON.stringify({
+            code: code,
+            redirect_uri: 'https://znstudio216.com/login-callback.html'
+        })
+    })
+    .then(res => res.json())
+    .then(data => {
+        // 儲存用戶資料
+        localStorage.setItem('ipas_user_data', JSON.stringify(data.user));
+        
+        // 跳轉回首頁
+        window.location.href = '/';
+    })
+    .catch(error => {
+        alert('登入失敗：' + error);
+        window.location.href = '/';
+    });
+    </script>
+</body>
+</html>

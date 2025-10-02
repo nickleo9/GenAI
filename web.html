@@ -912,6 +912,24 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
+                    
+    <!-- ✨ 新增：登入區塊 START -->
+    <li class="nav-item" id="login-nav-item">
+        <a class="nav-link" href="#" id="nav-login-btn">
+            <i class="fas fa-sign-in-alt me-1"></i>登入
+        </a>
+    </li>
+    <li class="nav-item d-none" id="user-nav-item">
+        <div class="d-flex align-items-center">
+            <img id="nav-user-avatar" src="" class="rounded-circle me-2" width="32" height="32" alt="頭像">
+            <span id="nav-user-name" class="text-dark me-3"></span>
+            <a class="nav-link" href="#" id="nav-logout-btn">
+                <i class="fas fa-sign-out-alt me-1"></i>登出
+            </a>
+        </div>
+    </li>
+    <!-- ✨ 新增：登入區塊 END -->
+                    
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="save-btn">
                             <i class="fas fa-save me-1"></i>儲存進度
@@ -949,6 +967,44 @@
             <h1><i class="fas fa-brain me-3"></i>iPAS AI應用規劃師專業練習系統</h1>
             <p class="mb-0">經濟部產業人才能力鑑定 - 考試衝刺專用</p>
         </div>
+         <!-- ✨ 新增：會員登入區塊 START -->
+    <div class="login-section" id="login-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 30px; margin: 20px; text-align: center;">
+        <h4 class="text-white mb-4">
+            <i class="fas fa-user-circle me-2"></i>會員專屬功能
+        </h4>
+        <p class="text-white mb-4">登入後即可雲端同步學習進度、查看排行榜、接收 Line 每日推播！</p>
+        
+        <div class="d-flex justify-content-center gap-3 flex-wrap">
+            <button id="line-login-btn" class="btn btn-success btn-lg px-4">
+                <i class="fab fa-line me-2"></i>使用 Line 登入
+            </button>
+            <button id="google-login-btn" class="btn btn-light btn-lg px-4">
+                <i class="fab fa-google me-2"></i>使用 Google 登入
+            </button>
+        </div>
+    </div>
+    
+    <!-- 登入後顯示的區塊 -->
+    <div class="user-welcome d-none" id="user-welcome" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); border-radius: 15px; padding: 25px; margin: 20px;">
+        <div class="d-flex align-items-center justify-content-between flex-wrap">
+            <div class="d-flex align-items-center">
+                <img id="user-avatar" src="" alt="頭像" class="rounded-circle me-3" width="60" height="60">
+                <div>
+                    <h5 class="mb-1">
+                        <i class="fas fa-check-circle text-success me-2"></i>
+                        歡迎回來，<span id="user-name">載入中...</span>！
+                    </h5>
+                    <small class="text-muted">
+                        <i class="fas fa-calendar-alt me-1"></i>最後登入：<span id="last-login">剛剛</span>
+                    </small>
+                </div>
+            </div>
+            <button id="logout-btn" class="btn btn-outline-danger">
+                <i class="fas fa-sign-out-alt me-2"></i>登出
+            </button>
+        </div>
+    </div>
+    <!-- ✨ 新增：會員登入區塊 END -->
         
         <!-- 題庫選擇區 -->
         <div class="database-selector" id="database-selector">
@@ -3147,9 +3203,170 @@ updateStats() {
         document.addEventListener('DOMContentLoaded', () => {
             iPASQuizApp.init();
         });
+        
+        </script>  <!-- ← 這裡結束上一個 script -->
+    <!-- ✨ 新增：登入功能 JavaScript START -->
+    <script>
+        // ==================== 登入管理系統 ====================
+        const LoginManager = {
+            // Line Login 設定
+            LINE_CHANNEL_ID: '2008218944',  // ⚠️ 記得替換
+            LINE_CALLBACK_URL: 'https://znstudio216.com/login-callback.html',
+            
+            // n8n Webhook URL
+            N8N_WEBHOOK_URL: 'https://nickleo9.zeabur.app/webhook/line-login',  // ⚠️ 記得替換
+            
+            // 初始化
+            init() {
+                this.attachEventListeners();
+                this.checkLoginStatus();
+            },
+            
+            // 綁定事件
+            attachEventListeners() {
+                // Line 登入按鈕
+                const lineLoginBtn = document.getElementById('line-login-btn');
+                if (lineLoginBtn) {
+                    lineLoginBtn.addEventListener('click', () => this.lineLogin());
+                }
+                
+                // 導航欄登入按鈕（如果有的話）
+                const navLoginBtn = document.getElementById('nav-login-btn');
+                if (navLoginBtn) {
+                    navLoginBtn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.lineLogin();
+                    });
+                }
+                
+                // Google 登入按鈕（暫時禁用，之後實作）
+                const googleLoginBtn = document.getElementById('google-login-btn');
+                if (googleLoginBtn) {
+                    googleLoginBtn.addEventListener('click', () => {
+                        alert('Google 登入功能即將推出！\n目前請使用 Line 登入 😊');
+                    });
+                }
+                
+                // 登出按鈕
+                document.querySelectorAll('[id$="logout-btn"]').forEach(btn => {
+                    btn.addEventListener('click', (e) => {
+                        e.preventDefault();
+                        this.logout();
+                    });
+                });
+            },
+            
+            // Line 登入
+            lineLogin() {
+                const state = this.generateRandomString(32);
+                const nonce = this.generateRandomString(32);
+                
+                // 儲存 state 用於驗證
+                localStorage.setItem('line_login_state', state);
+                
+                // 建立 Line Login URL
+                const lineLoginUrl = `https://access.line.me/oauth2/v2.1/authorize?` +
+                    `response_type=code` +
+                    `&client_id=${this.LINE_CHANNEL_ID}` +
+                    `&redirect_uri=${encodeURIComponent(this.LINE_CALLBACK_URL)}` +
+                    `&state=${state}` +
+                    `&scope=profile%20openid%20email` +
+                    `&nonce=${nonce}`;
+                
+                console.log('🔗 跳轉到 Line 登入頁面...');
+                window.location.href = lineLoginUrl;
+            },
+            
+            // 檢查登入狀態
+            checkLoginStatus() {
+                const userData = localStorage.getItem('ipas_user_data');
+                if (userData) {
+                    try {
+                        const user = JSON.parse(userData);
+                        this.showUserInfo(user);
+                        console.log('✅ 用戶已登入:', user.displayName);
+                    } catch (error) {
+                        console.error('❌ 用戶資料解析失敗:', error);
+                        localStorage.removeItem('ipas_user_data');
+                    }
+                } else {
+                    this.showLoginButton();
+                }
+            },
+            
+            // 顯示用戶資訊
+            showUserInfo(user) {
+                // 隱藏登入區塊
+                const loginSection = document.getElementById('login-section');
+                if (loginSection) loginSection.classList.add('d-none');
+                
+                const loginNavItem = document.getElementById('login-nav-item');
+                if (loginNavItem) loginNavItem.classList.add('d-none');
+                
+                // 顯示用戶資訊區塊
+                const userWelcome = document.getElementById('user-welcome');
+                if (userWelcome) {
+                    userWelcome.classList.remove('d-none');
+                    document.getElementById('user-avatar').src = user.pictureUrl || 'https://via.placeholder.com/60';
+                    document.getElementById('user-name').textContent = user.displayName || '使用者';
+                    
+                    const lastLogin = new Date().toLocaleString('zh-TW');
+                    document.getElementById('last-login').textContent = lastLogin;
+                }
+                
+                // 導航欄顯示用戶資訊
+                const userNavItem = document.getElementById('user-nav-item');
+                if (userNavItem) {
+                    userNavItem.classList.remove('d-none');
+                    document.getElementById('nav-user-avatar').src = user.pictureUrl || 'https://via.placeholder.com/32';
+                    document.getElementById('nav-user-name').textContent = user.displayName || '使用者';
+                }
+            },
+            
+            // 顯示登入按鈕
+            showLoginButton() {
+                const loginSection = document.getElementById('login-section');
+                if (loginSection) loginSection.classList.remove('d-none');
+                
+                const loginNavItem = document.getElementById('login-nav-item');
+                if (loginNavItem) loginNavItem.classList.remove('d-none');
+                
+                const userWelcome = document.getElementById('user-welcome');
+                if (userWelcome) userWelcome.classList.add('d-none');
+                
+                const userNavItem = document.getElementById('user-nav-item');
+                if (userNavItem) userNavItem.classList.add('d-none');
+            },
+            
+            // 登出
+            logout() {
+                if (confirm('確定要登出嗎？\n您的學習進度將保存在雲端。')) {
+                    localStorage.removeItem('ipas_user_data');
+                    console.log('👋 用戶已登出');
+                    location.reload();
+                }
+            },
+            
+            // 生成隨機字串
+            generateRandomString(length) {
+                const chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+                let result = '';
+                for (let i = 0; i < length; i++) {
+                    result += chars.charAt(Math.floor(Math.random() * chars.length));
+                }
+                return result;
+            }
+        };
+        
+        // 頁面載入完成後初始化登入管理
+        document.addEventListener('DOMContentLoaded', () => {
+            LoginManager.init();
+        });
     </script>
+    <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 
 
 

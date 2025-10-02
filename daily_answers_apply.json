@@ -2198,5 +2198,175 @@
         "explanation": "RAG 技術將檢索步驟結合生成式 AI，利用即時資料輔助回答，能顯著提升企業應用的準確度。",
         "number": 130,
         "date": "2025-10-02"
+    },
+    {
+        "question": "哪一項最佳體現了 No Code 平台於跨部門協作專案中的主要優勢？",
+        "options": [
+            "可降低溝通門檻並提升原型開發效率",
+            "可強化程式碼複用以推動敏捷開發流程",
+            "可自動調整演算法以優化決策推理結構",
+            "可將測試流程完全外包給第三方單位"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "No Code 跨部門協作",
+        "explanation": "No Code 平台讓非技術人員可直接參與專案，降低溝通與協作門檻，快速實現原型。",
+        "number": 131,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "根據2025年新一代生成式AI風險管理指引，下列何者最適合評估訓練資料集帶來的偏誤？",
+        "options": [
+            "執行定期回溯式敏感詞彙篩選流程",
+            "引進資料來源多元化與公平性評測機制",
+            "針對結果進行自我學習最小化訓練過擬合",
+            "優化提示詞語意以減少模型泛化風險"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資料偏誤評估",
+        "explanation": "資料來源多元與公平性評測，可有效預防偏誤，使模型更具一般化能力。",
+        "number": 132,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "在醫療影像診斷生成式AI導入評估流程中，下列哪項屬於最重要的初始步驟？",
+        "options": [
+            "建立私有模型監控管理機制",
+            "界定臨床問題並精確設定使用情境",
+            "整合垂直產業雲端數據資料池",
+            "加強後端異常資料修正文檔維護"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "使用情境界定",
+        "explanation": "準確界定使用情境有助於後續需求分析與風險評估，為整體策略規劃基石。",
+        "number": 133,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "有關生成式AI提示詞設計，下列哪一個描述最正確？",
+        "options": [
+            "提示詞應僅含模型處理關鍵詞以減少語境干擾",
+            "提示詞需具體說明任務、角色和範例以提高一致性",
+            "提示詞必須嚴格限制在單一語意空間以保守結果",
+            "提示詞須經常自動更新以配合語言模型自我學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "提示詞設計原則",
+        "explanation": "具體的提示詞包含任務、角色和範例，有助於產出高一致性且明確的回應。",
+        "number": 134,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "關於RAG（Retrieval-Augmented Generation）生成式AI應用架構，以下敘述何者正確？",
+        "options": [
+            "RAG專注於強化多模態間的同步嵌入向量生成",
+            "RAG利用檢索外部資訊以增強模型內容輸出準確度",
+            "RAG只適用於特定領域的小型封閉資料集推理",
+            "RAG必須依賴零樣本學習來去除資料雜訊影響"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "RAG應用架構",
+        "explanation": "RAG架構會自動檢索外部資料，輔助生成更正確和具即時性的內容。",
+        "number": 135,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "下列關於生成式AI應用導入時之『可解釋性』重要性敘述，何者為非？",
+        "options": [
+            "有助於使用者理解模型判斷依據",
+            "為提升監管合規提供依據與佐證",
+            "增加AI系統基礎設施可擴展彈性",
+            "促使不同利害關係人有效協作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "AI可解釋性",
+        "explanation": "可解釋性重點在於理解與信任，而非基礎設施可擴展彈性。",
+        "number": 136,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "2025年最新No Code AI工具多強調彈性的『模組化設計』，其主要目的是？",
+        "options": [
+            "降低核心AI演算法訓練複雜度",
+            "方便用戶快速組合並重用功能元件",
+            "強化資料標註過程的自動化效率",
+            "確保生成內容具備專有知識產權"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "模組化設計",
+        "explanation": "模組化設計，讓用戶無需編碼即可靈活組合功能元件，迅速搭建應用。",
+        "number": 137,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "下列何者不屬於生成式AI導入評估規劃常見考量？",
+        "options": [
+            "評估用戶資料安全政策有效性",
+            "設定專案財務可行性評估指標",
+            "檢查模型對外溝通行銷策略包裝",
+            "進行模型產製內容品質追蹤"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入評估規劃",
+        "explanation": "外溝通行銷為後續推廣環節，並非導入評估規劃之核心考量。",
+        "number": 138,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "下列哪一項是生成式AI應用於企業知識管理時，常見的低效提示詞設計問題？",
+        "options": [
+            "提示詞過於籠統無法明確指令行為",
+            "提示詞過於精簡導致模型計算過載",
+            "提示詞只強調任務流程忽略輸出內容",
+            "提示詞涵蓋多重內容未限縮知識結構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "提示詞常見問題",
+        "explanation": "籠統的提示詞會讓AI無法掌握行為目標，降低知識萃取與管理效率。",
+        "number": 139,
+        "date": "2025-10-02"
+    },
+    {
+        "question": "以下哪個2025年生成式AI工具特點有助於提升內容產製協作之透明性？",
+        "options": [
+            "全面客製自動標註語句人格特質",
+            "支援多人即時共同編輯與審核追蹤",
+            "自動內嵌第三方行銷訊息回報率",
+            "強制加密儲存每段生成過程日誌"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "協作透明性",
+        "explanation": "多人即時協作與審核追蹤能提升內容產製與決策過程的透明度。",
+        "number": 140,
+        "date": "2025-10-02"
     }
 ]

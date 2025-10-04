@@ -2368,5 +2368,175 @@
         "explanation": "多人即時協作與審核追蹤能提升內容產製與決策過程的透明度。",
         "number": 140,
         "date": "2025-10-02"
+    },
+    {
+        "question": "以下何者「不是」No Code平台的主要特點？",
+        "options": [
+            "可協助用戶開發AI應用程式免寫程式碼",
+            "所有流程皆需依靠程式專業人員修改底層邏輯",
+            "支援拖拉介面設計及自動部署機制",
+            "通常整合常見API以提供擴展功能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No code / Low code 概念",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台特點",
+        "explanation": "正確答案是B，No Code 平台的特點即是讓非專業程式人員可直接利用拖拉及圖形化介面完成系統開發，因此不是所有流程都要依賴底層程式設計。",
+        "number": 141,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "有關生成式AI在設計產業的應用，下列何者「最為貼切」？",
+        "options": [
+            "自動生成3D建模並可根據指令調整材質",
+            "系統僅提供靜態API串接功能",
+            "所有模型只能處理音訊數據",
+            "全程僅以自動分類圖片類別為主"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用領域與工具使用",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "跨產業應用",
+        "explanation": "A項正確，生成式AI能自動生成3D建模且可根據提示調整細節，在設計產業十分實用。",
+        "number": 142,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "在Prompt（提示詞）設計時，何者「最具備提升生成內容精準度」？",
+        "options": [
+            "採用單一關鍵字且無背景描述",
+            "明確描述需求細節與具體場景",
+            "避免提供任何限制條件或目標",
+            "隨意排列語意結構不考慮語境"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用領域與工具使用",
+        "subtopic": "提示詞工程",
+        "concept": "提示詞設計",
+        "explanation": "B為正確答案，明確描述細節及場景能讓AI產生更精準且貼合需求的內容。",
+        "number": 143,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "評估導入生成式AI時，下列哪一項「最需優先考量」？",
+        "options": [
+            "外部供應商提供的軟體主題色",
+            "組織資料安全與隱私保護政策",
+            "單一部門未來半年財報走向",
+            "外包工程師上班打卡時數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "資料安全與隱私",
+        "explanation": "B為正解，資料安全與隱私為生成式AI導入初期首要重點，尤以企業資料敏感度較高情境下。",
+        "number": 144,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "以下關於Low Code解決方案的「主要優勢」說明，何者正確？",
+        "options": [
+            "可大幅延長專案交付日程降低效率",
+            "適合複雜流程自動化提升組織敏捷性",
+            "僅能用於靜態頁面展示資料不支援互動",
+            "須完全拋棄程式開發人力無法協同作業"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No code / Low code 概念",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "方案優劣",
+        "explanation": "Low Code可協助加速複雜流程的自動化，是組織求取敏捷性的一大利器。",
+        "number": 145,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "生成式AI的落地應用規劃中，下列哪個流程「對降低導入風險最有效」？",
+        "options": [
+            "完全跳過現有系統整合程序",
+            "評估風險後制訂相應管理措施",
+            "僅依據過去案例複製流程模板",
+            "專注於單一團隊意見忽略全局"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "風險預防",
+        "explanation": "有效的風險評估並針對結果制定管理措施，是導入任何AI工具時防範損失的關鍵步驟。",
+        "number": 146,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "生成式AI語言模型像GPT，於工程應用時最常用來做什麼？",
+        "options": [
+            "即時控制硬體驅動與電路佈局",
+            "自動化產生技術文檔或程式碼",
+            "制定網站色彩配色規範與分色",
+            "單純運行靜態圖片優化壓縮"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用領域與工具使用",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "程式自動化",
+        "explanation": "B正確，GPT等生成式AI常用於生成程式碼、自動文件整理等提升工程效率的用途。",
+        "number": 147,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "生成式AI工具的導入規劃若不包含以下哪一項，最容易導致運作失敗？",
+        "options": [
+            "需求分析與跨部門溝通機制",
+            "導入可量化的效果追蹤指標",
+            "停留在技術選型未深化流程整合",
+            "持續教育內部用戶提示詞設計"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "導入規劃",
+        "explanation": "若只有技術選型但未將AI整合進現有流程，導致應用無法發揮，最易造成導入失敗。",
+        "number": 148,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "下列有關生成式AI工具的說明，哪一項「正確」？",
+        "options": [
+            "所有生成式AI工具皆僅供個人用戶無法企業部署",
+            "常見工具如Midjourney和Notion AI皆可用於多元創作",
+            "生成式AI僅能處理結構化資料不能自動摘要非結構文本",
+            "所有生成式AI平台皆不可與自家資料庫連動作分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用領域與工具使用",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "應用情境",
+        "explanation": "像Midjourney能生成藝術圖像，Notion AI則能自動摘要、寫作及規劃，滿足多元創作需求。",
+        "number": 149,
+        "date": "2025-10-04"
+    },
+    {
+        "question": "關於生成式AI導入風險管理，下列何者「不是」常見建議措施？",
+        "options": [
+            "建立明確AI倫理管理規範",
+            "落實產品使用者資料匿名化",
+            "規劃全面性多層安全防護機制",
+            "完全忽視潛在模型輸出偏見"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "風險管理措施",
+        "explanation": "完全忽視模型偏見是一大風險，重視輸出品質與倫理性才是最佳實踐。",
+        "number": 150,
+        "date": "2025-10-04"
     }
 ]

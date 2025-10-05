@@ -10115,5 +10115,175 @@
         "explanation": "人工智慧基礎概論科目涵蓋AI定義、分類與鑑別式、生成式AI等基礎知識，是iPAS初級考試的重要範圍。",
         "number": 611,
         "date": "2025-09-28"
+    },
+    {
+        "question": "如果你是台灣一間中型製造工廠的主管，想利用生成式AI提高產品設計效率並結合資料分析，哪項策略最適合納入2025年的AI應用規劃中？",
+        "options": [
+            "A. 利用生成式AI設計多版本產品樣式，再利用鑑別式AI判斷可行性與市場反應",
+            "B. 單一使用鑑別式AI進行質量監控，放棄生成式AI設計部分以降低風險",
+            "C. 全面採用No Code平台自行開發內部AI工具，避免外部 AI 平台介入數據",
+            "D. 只依賴外部雲端AI服務，不建立內部資料清理與分析流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "企業AI策略",
+        "concept": "生成式與鑑別式AI整合應用",
+        "explanation": "結合生成式AI產生多版本設計，利用鑑別式AI評估可行性及市場反應，是2025年台灣產業AI應用的趨勢，能兼顧創新與品質。",
+        "number": 612,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "如果你是自媒體內容創作者，在2025年想利用AI工具提升創作效率，下列哪種工具最適合同時進行文本生成與圖片設計？",
+        "options": [
+            "A. 只使用鑑別式AI，專注於內容審核及校對",
+            "B. 使用生成式AI平台，結合文字生成與圖像創作工具",
+            "C. 使用No Code工具純粹進行基礎數據分析",
+            "D. 只依賴傳統文案軟體，不使用AI功能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工具整合應用",
+        "concept": "文本與圖像生成工具",
+        "explanation": "2025年許多生成式AI平台提供多模態支持，可同時處理文字和圖像創作，提升自媒體創作效率與品質。",
+        "number": 613,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "根據 2025 年AI技術投資趨勢，台灣科技公司在全球AI生態系統中的重要角色是什麼？",
+        "options": [
+            "A. 專注AI演算法核心研發，忽略AI基建硬體發展",
+            "B. 推動AI基建軟硬體整合，串聯國際半導體與系統大廠",
+            "C. 僅提供AI應用工具的代工，無法參與上游技術開發",
+            "D. 拒絕跨國合作，專注國內AI市場"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI基礎設施與全球合作",
+        "subtopic": "產業合作策略",
+        "concept": "AI硬體與基建整合",
+        "explanation": "2025年台灣在全球AI產業鏈中，透過與英偉達等國際伙伴合作，強化AI基建硬體整合，提升國際競爭力。",
+        "number": 614,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "如果你是學校國文老師，想運用AI協助學生創作現代詩，下列哪項生成式AI的提示詞設計較適合？",
+        "options": [
+            "A. 請寫一篇古典詩，風格嚴謹且不使用現代詞彙",
+            "B. 幫我寫一首關於都市生活的現代詩，運用象徵與隱喻，風格自由",
+            "C. 創作一段五言絕句，不能有任何新創意",
+            "D. 直接下載現成詩句，不需要生成新的內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "提示詞設計",
+        "explanation": "透過具有明確主題與風格指引的提示詞，可以有效引導生成式AI產生符合需求的創意文本，適用於現代詩教學。",
+        "number": 615,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "作為一位AI應用規劃師，在考量企業導入生成式AI時，哪項風險管理措施最重要且符合2025年iPAS考試精神？",
+        "options": [
+            "A. 忽略資料隱私，快速部署生成式AI以取得市場先機",
+            "B. 建立完善資料治理機制與模型效能監控流程",
+            "C. 僅使用開源模型，不設定企業數據安全目標",
+            "D. 依賴單一AI供應商，無定期評估風險"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "風險管理",
+        "concept": "資料隱私與治理",
+        "explanation": "依照iPAS能力鑑定要求，企業應兼顧生成式AI導入的技術效能與資料安全，建立完整資料治理和監控程序。",
+        "number": 616,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "如果你是家庭主婦，想利用AI工具規劃一次國內親子旅遊，下列哪個AI工具或功能最有助於生成行程與預算規劃？",
+        "options": [
+            "A. 使用自然語言生成AI，提供根據季節和地點生成旅遊行程建議",
+            "B. 只用電子表格，手動輸入所有行程與費用",
+            "C. 使用鑑別式AI只評估過去旅遊品質，無法生成新行程",
+            "D. 視訊會議軟體協助溝通旅遊計劃"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生活應用",
+        "concept": "生成式AI行程規劃",
+        "explanation": "生成式AI可根據使用者需求，自動生成個人化旅遊行程和預算規劃，提高家庭計畫效率與質量。",
+        "number": 617,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "綜合2025年AI發展趨勢，iPAS AI應用規劃師考試中最可能增加的新評量重點是什麼？",
+        "options": [
+            "A. 生成式AI模型調教與數據倫理的結合實務能力",
+            "B. 僅限鑑別式AI分類模型理論知識",
+            "C. 純程式設計與演算法實作題目",
+            "D. 對AI硬體電路設計的專業技能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "iPAS AI應用規劃師考試",
+        "subtopic": "能力鑑定重點",
+        "concept": "生成式AI與倫理",
+        "explanation": "2025年iPAS考試更加重視生成式AI技術結合倫理與風險管理的實務應用，反映產業需求。",
+        "number": 618,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "某企業要將n8n無代碼流程自動化工具與Google Apps Script整合，目的是什麼？",
+        "options": [
+            "A. 利用n8n串接多種服務，自動化工作流程，Apps Script補強Google應用整合和自訂功能",
+            "B. 只使用Apps Script進行圖像生成，不需n8n",
+            "C. 使用n8n替代所有雲端服務API，不需Apps Script",
+            "D. 只利用Google Apps Script管理硬體設備"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "AI工具應用",
+        "subtopic": "流程自動化",
+        "concept": "n8n與Apps Script整合",
+        "explanation": "n8n強調多服務流程串接與自動化，Apps Script則能針對Google生態系統內訂製腳本，兩者結合優化效率。",
+        "number": 619,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "2025年，英偉達與日本富士通合作推動AI基礎設施，關鍵技術焦點為何？",
+        "options": [
+            "A. 集中發展超高能耗算力，忽略節能需求",
+            "B. 建立節能且高效的AI運算堆疊與資料中心綠色基建",
+            "C. 只開發軟體系統，硬體交由第三方解決",
+            "D. 重點發展消費性智能硬體，忽略雲端運算"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "C",
+        "topic": "AI基礎設施與全球合作",
+        "subtopic": "節能與效率",
+        "concept": "AI基建節能技術",
+        "explanation": "合作聚焦提升AI基建的運算效率與節能，回應全球數據中心高電力需求與永續發展趨勢。",
+        "number": 620,
+        "date": "2025-10-05"
+    },
+    {
+        "question": "如果你是數學補習班老師，想利用生成式AI協助製作教案，下列哪種提示詞使用最能有效生成數學解題步驟？",
+        "options": [
+            "A. 請列出這道代數題的詳細計算過程，步驟清楚且簡明",
+            "B. 請生成一篇綜合性哲學文本，不涉及數學內容",
+            "C. 描述數學歷史人物的生平事蹟，不涉及具體計算",
+            "D. 請給出隨機文本，不含任何數字"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "提示詞設計",
+        "explanation": "清楚且具體的提示詞能引導生成式AI輸出符合教學需求的數學解題步驟與解析，有助補教教案準備。",
+        "number": 621,
+        "date": "2025-10-05"
     }
 ]

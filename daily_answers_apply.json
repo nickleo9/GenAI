@@ -2538,5 +2538,175 @@
         "explanation": "完全忽視模型偏見是一大風險，重視輸出品質與倫理性才是最佳實踐。",
         "number": 150,
         "date": "2025-10-04"
+    },
+    {
+        "question": "企業導入生成式AI解決方案時，下列何者為主要的前期評估要點？",
+        "options": [
+            "現有流程與資料成熟度",
+            "競品工具價格比較",
+            "單一模型的準確率",
+            "個別員工的AI經驗"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "生成式AI導入評估",
+        "explanation": "在企業導入生成式AI前，需首先評估現有流程與資料成熟度，作為後續AI應用可行性的基礎。",
+        "number": 151,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "No Code平台於AI應用開發中之最大優勢為何？",
+        "options": [
+            "減少資料標註人力需求",
+            "降低開發技術門檻",
+            "提升模型參數彈性",
+            "增強資料隱私保障"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 基本概念",
+        "concept": "No Code / Low Code 優勢",
+        "explanation": "No Code平台可讓非技術人員也能設計AI應用，降低開發技術門檻是其主要優勢之一。",
+        "number": 152,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "關於生成式AI應用中的提示詞工程（Prompt Engineering），下列何者為正確？",
+        "options": [
+            "提示詞長度越短越準確",
+            "多層次引導可提升輸出品質",
+            "限制語言僅用英文最適合",
+            "調整模型參數比改寫提示更有效"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "提示工程",
+        "explanation": "多層次引導與明確的語境設定通常能顯著提升生成式AI的輸出品質。",
+        "number": 153,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "生成式AI導入流程中，關鍵的風險控管措施為何？",
+        "options": [
+            "僅憑初期技術測試結果",
+            "建立模型輸出結果審查機制",
+            "交由單一AI供應商決策",
+            "全面開放用戶自定義權限"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "AI風險控管",
+        "explanation": "建立模型輸出結果審查機制，可有效防止內容風險與不當產出，是AI導入關鍵的風險控管措施。",
+        "number": 154,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "下列哪一項最能說明Low Code工具於AI專案中的侷限？",
+        "options": [
+            "只能處理結構化資料",
+            "彈性不足，客製化受限",
+            "無法連接雲端資料來源",
+            "完全不支持API整合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 限制",
+        "concept": "Low Code 限制",
+        "explanation": "Low Code工具雖然減少撰寫程式碼，但限制在於彈性與客製化功能不如純程式設計。",
+        "number": 155,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "哪一項屬於生成式AI常見的應用領域？",
+        "options": [
+            "自動輸入感測數據",
+            "內容自動生成與摘要",
+            "定義獨特硬體協定",
+            "檢查網絡封包安全"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "生成式AI應用",
+        "explanation": "生成式AI最常用於內容自動生成與摘要，如圖像、文字、影音等內容創作。",
+        "number": 156,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "若企業評選生成式AI工具時想兼顧法規遵循，首要考慮為？",
+        "options": [
+            "工具操作流程說明詳盡",
+            "供應商是否具專責資料治理政策",
+            "平台能否匿名產出模型",
+            "支援多種檔案格式匯入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "AI法遵治理",
+        "explanation": "供應商是否具備完善且透明的資料治理與合法合規政策，乃首要考慮重點。",
+        "number": 157,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "下列何者不是生成式AI風險管理的核心重點？",
+        "options": [
+            "模型偏誤監控",
+            "資安漏洞預防",
+            "運算速度提升",
+            "個資保護強化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "AI風險管理",
+        "explanation": "生成式AI風險管理著重於偏誤預防、資安與個資保護，運算速度提升並非其核心。",
+        "number": 158,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "以下關於生成式AI常見工具的描述，何者為正確？",
+        "options": [
+            "DALL-E專注於自動語音辨識",
+            "Midjourney主要產生圖像內容",
+            "ChatGPT用於即時資料串接",
+            "Stable Diffusion為語音生成工具"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具應用",
+        "concept": "AI應用工具",
+        "explanation": "Midjourney是一款專門用於圖像生成的生成式AI工具，主要應用於創意設計領域。",
+        "number": 159,
+        "date": "2025-10-07"
+    },
+    {
+        "question": "有關生成式AI導入後續監控，下列何者為適當方法？",
+        "options": [
+            "每年僅檢查一次輸出結果",
+            "即時監測異常輸出並修正",
+            "完全仰賴用戶回饋意見",
+            "僅在模型異常才重新測試"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "AI導入監控",
+        "explanation": "即時監控生成式AI輸出，配合異常修正，是維持AI效果與安全的重要手段。",
+        "number": 160,
+        "date": "2025-10-07"
     }
 ]

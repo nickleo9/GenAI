@@ -2708,5 +2708,175 @@
         "explanation": "即時監控生成式AI輸出，配合異常修正，是維持AI效果與安全的重要手段。",
         "number": 160,
         "date": "2025-10-07"
+    },
+    {
+        "question": "有關No Code / Low Code平台的優勢，下列哪一項敘述最正確？",
+        "options": [
+            "可以幫助無程式背景者快速建立AI應用",
+            "只能讓專業工程師進行深度優化與整合",
+            "完全不需要進行任何設定即可部署AI服務",
+            "僅適用於生成式AI而無法應用於資料分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台特性",
+        "explanation": "No Code / Low Code平台強調讓無程式背景的使用者也能輕鬆建立AI應用，降低技術門檻，快速迭代。",
+        "number": 161,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "關於生成式AI在醫療領域的應用，何者為非？",
+        "options": [
+            "可用於自動生成臨床報告內容以提升效率",
+            "可協助合成高維仿真醫療影像作為訓練樣本",
+            "可取代醫師進行所有最終診斷與決策過程",
+            "可輔助醫學問答平台提升回覆精確度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "醫療應用限制",
+        "explanation": "生成式AI能協助自動化流程與提升數據品質，但無法完全取代醫師做最終診斷與決策。",
+        "number": 162,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "對於生成式AI工具導入企業決策時，需優先考量哪一面向的風險？",
+        "options": [
+            "模型產生偏見內容的機率",
+            "硬體資源是否能及時擴充",
+            "行銷宣傳管道是否足夠",
+            "員工對AI工具的學習興趣"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "倫理風險",
+        "explanation": "生成式AI可能產生偏見或歧視內容，因此風險管控須納入內容審查與倫理機制。",
+        "number": 163,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "下列哪一個Prompt設計原則可幫助提升生成式AI的有效性？",
+        "options": [
+            "提問內容需極致簡略且模糊",
+            "描述要求需明確並聚焦目標",
+            "設計多個無關任務於同一提示",
+            "盡量避免指明數據範圍或格式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "Prompt優化",
+        "explanation": "提示詞工程建議明確描述需求與目標，使生成式AI產出更精確的結果。",
+        "number": 164,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "下列哪一項AI應用屬於No Code / Low Code工具與生成式AI結合的最佳實踐？",
+        "options": [
+            "在無需程式碼設計的介面下自動化商業流程與報表產製",
+            "自行撰寫複雜演算法來提升搜尋效率",
+            "僅透過手動操作進行重複性資料搬移",
+            "只提供伺服器硬體升級但無AI自動化整合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "應用組合",
+        "explanation": "最佳實踐為透過No Code / Low Code介面，結合生成式AI自動化流程與報表產生，減少人力成本。",
+        "number": 165,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "假若企業欲導入生成式AI工具，評估流程正確順序何者為是？",
+        "options": [
+            "確定目標、風險評估、需求確認、工具選型",
+            "需求確認、確定目標、風險評估、工具選型",
+            "工具選型、需求確認、確定目標、風險評估",
+            "風險評估、工具選型、確定目標、需求確認"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入流程",
+        "explanation": "評估順序為需求確認、確定目標、風險評估，最後依需求挑選合適工具。",
+        "number": 166,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "以下何者最符合Generator-Discriminator架構生成式AI模型的描述？",
+        "options": [
+            "僅依賴語料庫進行結果生成與比對",
+            "將資料速率最大化以提高輸出",
+            "結合產生者與判別者進行對抗學習",
+            "只需生成器，無需判別器判斷有效性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "對抗生成架構",
+        "explanation": "Generator-Discriminator即產生者與判斷者對抗學習，是生成對抗網路（GAN）基本架構。",
+        "number": 167,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "在導入生成式AI系統時，以下哪一項可有效管理AI產出的法律風險？",
+        "options": [
+            "實施持續性的AI模型公平稽核流程",
+            "僅依賴AI自我檢查產出內容真偽",
+            "完全關閉所有外部第三方API接口",
+            "讓所有指令都僅由不具名帳號執行"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "合規管理",
+        "explanation": "持續性AI模型公平稽核與合規流程，有助於管理法律風險與內容合規性。",
+        "number": 168,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "若需要提高生成式AI對特定主題的內容產出精度，最佳的Prompt工程作法為何？",
+        "options": [
+            "提出清楚情境與指定知識範圍限制",
+            "給予多個互不相關的目標範疇",
+            "要求模型盡量提供冗長模糊的回答",
+            "完全不指定目標領域讓AI自由發揮"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "內容精確性",
+        "explanation": "明確設定情境和知識範圍有助於生成式AI聚焦內容，提高主題產出精度。",
+        "number": 169,
+        "date": "2025-10-09"
+    },
+    {
+        "question": "以下關於RAG(Retrieval-Augmented Generation)技術的敘述，何者正確？",
+        "options": [
+            "先檢索相關資料再結合生成式模型產出答案",
+            "僅依賴預先訓練模型進行內容生成",
+            "只進行資料檢索無法生成新內容",
+            "完全不適合企業應用知識文件查詢"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "RAG技術",
+        "explanation": "RAG結合資料檢索與生成式模型，能依據檢索結果生成符合需求的內容，適合知識文件應用。",
+        "number": 170,
+        "date": "2025-10-09"
     }
 ]

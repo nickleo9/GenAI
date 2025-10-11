@@ -2878,5 +2878,175 @@
         "explanation": "RAG結合資料檢索與生成式模型，能依據檢索結果生成符合需求的內容，適合知識文件應用。",
         "number": 170,
         "date": "2025-10-09"
+    },
+    {
+        "question": "關於 No Code 平台在企業導入生成式 AI，何者正確？",
+        "options": [
+            "可大幅降低初學門檻並加速原型開發流程",
+            "可完全涵蓋所有生成式 AI 技術應用細節",
+            "常需自建複雜基礎架構才能部署",
+            "通常僅能用於資料清洗不支援自動化流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "No Code 平台優勢",
+        "explanation": "No Code 平台能大幅降低進入門檻，有助非技術背景者開發原型，且可加速企業生成式 AI 應用實現。",
+        "number": 171,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "下列有關低程式碼（Low Code）與提示工程（Prompt Engineering）的描述，何者為非？",
+        "options": [
+            "Low Code 可協助簡化 AI 提示設計流程",
+            "Prompt Engineering 需完整掌握模型端 API 細節",
+            "兩者皆可讓非程式人員參與生成式 AI 導入",
+            "Low Code 主要不著重於自然語言互動"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "提示工程",
+        "explanation": "Prompt Engineering 專注於提示設計，並不需要必然掌握所有 API 細節，通常聚焦於如何最佳引導模型產生理想內容。",
+        "number": 172,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "在金融業導入生成式 AI 評估流程時，何者為主要風險考量？",
+        "options": [
+            "模型回應速度相對較快",
+            "生成內容可能造成合規疑慮",
+            "使用者需求收斂速度太快",
+            "生成模型皆無法彈性擴展"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "金融業極度重視合規，生成式 AI 產生的不當內容可能產生法規風險，因此內容審查與驗證尤其重要。",
+        "number": 173,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "以下哪一項最適合作為企業初步導入生成式 AI 前的規劃步驟？",
+        "options": [
+            "直接部署生產級 AI 模型",
+            "進行資料敏感度與用例需求盤點",
+            "聘請專職提示工程顧問",
+            "優先建立深度學習訓練群集"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入評估",
+        "explanation": "企業先進行資料與用例盤點，能協助精確評估生成式 AI 的實際需求與風險，是規劃前的基礎步驟。",
+        "number": 174,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "針對企業合併使用鑑別式與生成式 AI，以下敘述何者正確？",
+        "options": [
+            "僅能對文本資料進行混合應用場景設計",
+            "可支援異常偵測後自動生成對應建議",
+            "模型整合會嚴重增加運算延遲",
+            "僅適用於圖像分類任務整合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "混合應用",
+        "explanation": "鑑別式 AI 用於偵測，如異常偵測後由生成式 AI 自動產生對應文字建議，是常見的商業整合場景。",
+        "number": 175,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "下列何者為善用生成式 AI 工具製作自定義知識助手的有效技巧？",
+        "options": [
+            "忽略企業知識庫準確性",
+            "建立多輪提示短語並持續優化",
+            "不考慮邊界條件設定",
+            "永遠只用預設提示不加調整"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示工程",
+        "explanation": "建立多輪提示短語並優化，能讓知識助手更精準對齊需求，是生成式 AI 實用關鍵。",
+        "number": 176,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "於生成式 AI 工具導入後，建議定期執行哪些評估作業？",
+        "options": [
+            "僅驗證介面美觀程度",
+            "監管輸出內容正確性與偏誤情形",
+            "定期切換不同開發語言",
+            "只關注伺服器運算效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "模型評估",
+        "explanation": "生成式 AI 工具導入後，應定期監控輸出內容的正確性及偏誤，才可確保應用品質。",
+        "number": 177,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "No Code／Low Code 平台下，哪一個限制最需注意？",
+        "options": [
+            "無法輕易擴展進階自定義功能",
+            "始終需要深度 AI 專業知識支持",
+            "絕對無法與外部 API 串接",
+            "常常無法與資料庫同步"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "平台限制",
+        "explanation": "No Code／Low Code 平台彈性有限，面對進階自定義需求時常無法滿足完整企業應用。",
+        "number": 178,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "有關RAG（Retrieval-Augmented Generation）架構應用於企業知識庫的優勢，何者描述正確？",
+        "options": [
+            "生成內容可自動驗證知識來源正確與否",
+            "能即時結合資料檢索與動態內容生成",
+            "只適用於靜態資料查詢使用情境",
+            "必須仰賴全人工標註才能運作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "RAG 應用",
+        "explanation": "RAG 架構結合資訊檢索與內容生成，能針對即時知識需求，動態回應，完善強化企業知識應用。",
+        "number": 179,
+        "date": "2025-10-11"
+    },
+    {
+        "question": "涉及員工資料之生成式 AI 應用部署，第一優先考量下列哪一項？",
+        "options": [
+            "介面設計需符合人體工學",
+            "保障個資安全與合規性要求",
+            "多語言互動能力需非常完整",
+            "工具支援的輸出格式多樣"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "資安治理",
+        "explanation": "使用者或員工資料在生成式 AI 應用中首先需確保隱私與法規遵循，這是合規部署的首要條件。",
+        "number": 180,
+        "date": "2025-10-11"
     }
 ]

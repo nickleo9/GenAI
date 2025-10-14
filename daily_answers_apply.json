@@ -3048,5 +3048,175 @@
         "explanation": "使用者或員工資料在生成式 AI 應用中首先需確保隱私與法規遵循，這是合規部署的首要條件。",
         "number": 180,
         "date": "2025-10-11"
+    },
+    {
+        "question": "下列哪一項最佳反映No Code平台在AI應用上的主要優勢？",
+        "options": [
+            "促進非技術用戶快速原型設計",
+            "強化演算法自訂與超參數調整彈性",
+            "提升專案AI模型轉換效率",
+            "降低AI資料標註所需時間"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code平台",
+        "explanation": "No Code平台允許非技術背景使用者在無需撰寫程式碼的情況下，自行設計AI原型與簡易應用，大幅加快需求驗證流程。",
+        "number": 181,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "生成式AI應用於法務合約的審查自動化，其關鍵導入評估指標之一是什麼？",
+        "options": [
+            "AI產生條款的新穎性指標",
+            "文檔資料的機密性維護程度",
+            "生成文本的部署週期長度",
+            "模型自主學習的超參數靈敏度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "導入評估指標",
+        "explanation": "在法務自動化中，維護合約內容的機密性至關重要，因此資料敏感性與機密性維護是核心評估指標之一。",
+        "number": 182,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "下列哪一項不是目前常見生成式AI風險？",
+        "options": [
+            "虛假資訊生成",
+            "隱藏數據來源追蹤",
+            "未授權內容再利用",
+            "模型產生偏見輸出"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "AI風險識別",
+        "explanation": "生成式AI常見風險包括虛假資訊、未授權再利用及偏見輸出，「隱藏數據來源追蹤」不是常見風險。",
+        "number": 183,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "應用生成式AI協助醫療影像診斷規劃時，下列哪項最適合作為提示詞主要設計原則？",
+        "options": [
+            "要求模型產出詳細且帶有價值判斷分析",
+            "力求用詞簡單不限定專業術語",
+            "聚焦領域專業上下文明確輸入需求",
+            "優先使用多語言切換提高多樣性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "專業提示詞設計",
+        "explanation": "生成式AI在醫療領域應聚焦專業上需求，設計提示詞需明確界定上下文並使用領域語言，以確保產出精確且可解釋。",
+        "number": 184,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "在Low Code平台導入企業用Chatbot時，以下哪一點符合最佳導入規劃流程？",
+        "options": [
+            "直接部署無需驗證對話情境",
+            "僅依賴現成公版模組範疇",
+            "先行需求釐清後，載入特定知識資料",
+            "完全交由終端用戶自由定義內容"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "導入規劃流程",
+        "explanation": "導入流程最佳做法是先需求釐清，確定企業內部知識需求與任務後，載入相關知識庫以確保Chatbot精準回應。",
+        "number": 185,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "下列選項，何者提示詞較有助於生成式AI提升特定產業專業文本產出正確性？",
+        "options": [
+            "請產生一份報告",
+            "請依據醫療指引產生一份專業報告",
+            "請產生一份不具體的文件",
+            "請隨意撰寫有關主題的說明"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "提升生成精確性",
+        "explanation": "清楚指定產業與資料來源，如「依據醫療指引」，可大大提升AI產出內容的相關性與精確性。",
+        "number": 186,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "何種No Code/Low Code工具最適合中小企業導入AI客服流程？",
+        "options": [
+            "僅專注於模型訓練的開發環境",
+            "以視覺流程搭建並支援API串接的平台",
+            "依賴大量自訂程式語言的平台",
+            "僅供線下部署的封閉型環境"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的常用工具",
+        "concept": "工具選用",
+        "explanation": "支援視覺流程搭建及API串接的平台有助於無程式設計背景的企業快速實現AI客服流程。",
+        "number": 187,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "欲管理生成式AI可能造成的商業合規風險，哪一項不是實用策略？",
+        "options": [
+            "建立明確模型訓練資料回朔機制",
+            "規定所有內容皆須經過人工審核",
+            "實施內容檢核並導入風險回報機制",
+            "完全開放外部資料來源自動納入訓練"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "合規風險管理",
+        "explanation": "完全開放外部資料納入訓練會增加風險，不屬於常用且合適的風險管理或合規策略。",
+        "number": 188,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "在AI文案創作中，哪一項提示詞設定對於強化AI內容一致性與風格最有效？",
+        "options": [
+            "以簡單句產生多樣風格文字",
+            "依照品牌手冊標準統一語氣撰寫",
+            "隨意選擇不同語體進行編撰",
+            "根據任務隨機調整表述風格"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "內容一致性提示詞",
+        "explanation": "依照品牌手冊標準撰寫可確保產出內容在風格與表達上一致，有助於品牌形象維護。",
+        "number": 189,
+        "date": "2025-10-14"
+    },
+    {
+        "question": "哪項為導入生成式AI至產線優化時常見的初期誤區？",
+        "options": [
+            "僅使用標準化資料進行訓練",
+            "高估生成式AI自動解決例外狀況能力",
+            "先進行流程盤點與需求分析",
+            "評估高敏感度資料之隱私保護"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "導入誤區",
+        "explanation": "高估AI自動解決產線例外情況的能力導致流程規劃時易忽略人工檢核與實際操作挑戰，屬於導入初期常見誤區。",
+        "number": 190,
+        "date": "2025-10-14"
     }
 ]

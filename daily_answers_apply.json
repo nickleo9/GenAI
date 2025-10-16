@@ -3218,5 +3218,175 @@
         "explanation": "高估AI自動解決產線例外情況的能力導致流程規劃時易忽略人工檢核與實際操作挑戰，屬於導入初期常見誤區。",
         "number": 190,
         "date": "2025-10-14"
+    },
+    {
+        "question": "以下哪一項不是導入生成式AI into企業流程自動化的優點？",
+        "options": [
+            "大量減少人工作業並降低錯誤率",
+            "即時提升部門協作的透明度",
+            "可完全消除組織內所有資料孤島",
+            "有效提升流程彈性與應對速度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "流程自動化",
+        "explanation": "生成式AI雖能大幅減少人工作業、提高透明度與彈性，但無法完全消除流程中的資料孤島，仍需配合資料整合措施。",
+        "number": 191,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "No Code / Low Code平台最大優勢是什麼？",
+        "options": [
+            "可讓非專業開發者建立AI應用",
+            "強化資料治理並確保零部落格錯誤",
+            "提升純手動腳本撰寫的彈性",
+            "降低伺服器維運的人力投入"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "民主化開發",
+        "explanation": "No Code / Low Code 平台的最大價值是大幅降低開發門檻，讓非IT專業的員工也能設計AI流程。",
+        "number": 192,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "關於生成式AI導入時的風險評估，下列敘述何者正確？",
+        "options": [
+            "只需評估資料品質即可確保AI安全",
+            "必須包含模型偏見、資訊外洩及合規等多面因素",
+            "僅須考慮產線效能提升與ROI",
+            "只需要專注在IT部署成本分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "全方位風險評估",
+        "explanation": "生成式AI導入時需同時考慮合規、偏見、資訊安全等多個角度，單一層面不足以全面控管風險。",
+        "number": 193,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "Prompt Engineering最常見的應用場景為何？",
+        "options": [
+            "資料安全監督模型",
+            "設計更具方向性的AI指令以提升回答品質",
+            "僅用於輸入控制參數",
+            "用於偵測模型的執行效能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "提示工程",
+        "explanation": "Prompt Engineering是透過設計AI指令去引導生成優質內容，是強化AI應用的主要工程技巧。",
+        "number": 194,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "使用No Code AI工具製作行銷海報，下列哪一項屬於其限制？",
+        "options": [
+            "職員無需程式能力即可上手",
+            "預設模板可能限制細緻客製化",
+            "每一張設計都能自動符合品牌規範",
+            "無須考慮授權版權問題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "工具限制",
+        "explanation": "No Code工具雖易於上手，但其預設模板可能導致客製化程度有限，難滿足特殊需求。",
+        "number": 195,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "下列關於生成式AI常見工具的描述，哪一項是錯誤的？",
+        "options": [
+            "ChatGPT能協助自動生成商業信件內容",
+            "Midjourney專注於AI圖像創作",
+            "Google Bard主要應用於開發者API建置",
+            "Runway可製作影片生成與影像編輯"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "AI工具認知",
+        "explanation": "Google Bard主要為對話型生成模型，不以開發API建置為主要功能；C選項敘述錯誤。",
+        "number": 196,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "下列哪一項最能反映No Code / Low Code平台導入後的潛在隱憂？",
+        "options": [
+            "可增加企業的IT靈活性",
+            "可能產生技術債與維運困難",
+            "促進跨部門資料流通",
+            "提升用戶自助服務效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "潛在風險",
+        "explanation": "No Code / Low Code的廣泛採用可能導致技術債增加，維運整合亦為重要管理議題。",
+        "number": 197,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "企業欲導入生成式AI系統時，應建立哪些先備條件？",
+        "options": [
+            "僅需完善的AI部署硬體設備",
+            "必須有充足且高品質的訓練數據",
+            "只要有AI開發團隊即可",
+            "只需主管同意導入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "數據基礎",
+        "explanation": "成功導入生成式AI，需建構高品質且充足的資料，否則生成內容易出現偏誤。",
+        "number": 198,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "下列哪一個Prompt較能誘發AI模型進行深入分析？",
+        "options": [
+            "請輸出公司年度報告的摘要",
+            "請比較2023與2024年報告差異並評估原因",
+            "請列出2023年主要成果",
+            "請轉換文字為表格格式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "提示詞設計",
+        "explanation": "B選項提示明確要求AI進行資料比對與原因評估，有利於產生具深度的分析內容。",
+        "number": 199,
+        "date": "2025-10-16"
+    },
+    {
+        "question": "下列哪一個選項最適合作為生成式AI系統風險管理的起點？",
+        "options": [
+            "持續監控AI對話內容",
+            "設計完善的資料分級與存取權限",
+            "集中分配計算資源",
+            "只依賴終端用戶回饋"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "風險控管基礎",
+        "explanation": "雖然監控對話與權限管理皆重要，但起點為正確集中分配與設定資源環境，提供有效監控依據。",
+        "number": 200,
+        "date": "2025-10-16"
     }
 ]

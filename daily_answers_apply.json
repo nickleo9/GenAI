@@ -3388,5 +3388,175 @@
         "explanation": "雖然監控對話與權限管理皆重要，但起點為正確集中分配與設定資源環境，提供有效監控依據。",
         "number": 200,
         "date": "2025-10-16"
+    },
+    {
+        "question": "以下哪一個是No Code平台的主要優勢？",
+        "options": [
+            "可以讓無程式基礎的用戶快速建置AI應用",
+            "只能被IT工程師使用生成式AI模型",
+            "無法與外部資料庫連結",
+            "僅支援固定的AI模型運算"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code優勢",
+        "explanation": "No Code平台主要優勢在於讓沒有程式背景的人也能方便地建置AI應用，降低技術門檻。",
+        "number": 201,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "在規劃導入生成式AI時，『風險管理』第一步通常應該做什麼？",
+        "options": [
+            "先選定技術合作夥伴",
+            "進行需求與預期效益評估",
+            "直接部署最新AI生成工具",
+            "僅關注資安相關法規"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入流程",
+        "explanation": "風險管理應始於需求與預期效益的評估，這有助於後續的規劃與合適調整。",
+        "number": 202,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "下列何者較適合於自動生成商業簡報內容？",
+        "options": [
+            "監督式學習模型",
+            "數據預處理平台",
+            "生成式文本AI工具",
+            "分類型鑑別式AI"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "生成式AI工具",
+        "explanation": "生成式文本AI工具如ChatGPT、Copilot能根據指令自動生成商業簡報內容。",
+        "number": 203,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "何者屬於Generative AI導入規劃中的『誘導型提示詞』應用場景？",
+        "options": [
+            "用於監控基礎設施維運數據",
+            "提醒用戶完成特定流程並自動生成文字回饋",
+            "分析現有流程缺陷並回報管理層",
+            "自動匯出資料庫結構圖"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "提示工程",
+        "explanation": "誘導型提示詞能引導用戶互動並讓AI主動產生後續內容，如自動生成使用者回饋。",
+        "number": 204,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "下列哪一項不是Low Code開發的限制？",
+        "options": [
+            "需要額外學習新平台操作介面",
+            "可能難以高度客製複雜應用",
+            "弱於處理大規模資料分析需求",
+            "容易產生巨量程式碼文本"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "Low Code限制",
+        "explanation": "Low Code或No Code平台設計是為了簡化程式碼，因此不會產生巨量程式碼文本。",
+        "number": 205,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "導入生成式AI應用時，何者為主要考核指標？",
+        "options": [
+            "用戶數量的精確分析",
+            "模型生成品質和回應速度",
+            "工具費用及品牌知名度",
+            "AI模型開發人數多寡"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "評估指標",
+        "explanation": "生成品質和反應速度直接影響使用者體驗，是導入成效最重要的指標之一。",
+        "number": 206,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "下列何者關於『生成式AI自動化標註』說明正確？",
+        "options": [
+            "僅適用於圖片數據",
+            "能大量減少人工建立訓練資料的工作量",
+            "無法保證任何資料安全",
+            "只可處理結構化數據"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域",
+        "concept": "自動化標註",
+        "explanation": "生成式AI自動化標註能有效減少人工處理與建立訓練資料的時間與成本。",
+        "number": 207,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "下列哪一個最可能是生成式AI風險管理所需注意事項？",
+        "options": [
+            "數據可擴展性最佳化",
+            "AI生成內容的原創性與版權問題",
+            "AI系統接口風格一致性",
+            "自動化流程中介面美觀"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險管理",
+        "explanation": "生成式 AI 生成新內容時，原創性和版權是重要的風險管理議題，需特別關注。",
+        "number": 208,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "Prompt Engineering（提示工程）中，何者屬於提升AI回答準確性的作法？",
+        "options": [
+            "以模糊語句下達指令",
+            "分步拆解複雜問題為具體提問",
+            "隨意輸入英文或其他語言",
+            "只給單一關鍵詞刺激AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用工具與提示詞",
+        "concept": "提示工程",
+        "explanation": "將複雜問題分步拆解為多個具體提示，可以讓AI更準確理解並給出合適解答。",
+        "number": 209,
+        "date": "2025-10-18"
+    },
+    {
+        "question": "2025年新推出應用RAG（Retrieval-Augmented Generation）架構主要目的是？",
+        "options": [
+            "單純提升API反應速度",
+            "結合大語言模型與搜尋引擎動態引入外部知識",
+            "直接以靜態數據進行生成",
+            "優化AI的視覺辨識效能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "RAG",
+        "explanation": "RAG架構能讓AI模型在生成內容時即時引入外部資料，提升回應的正確性與時效性。",
+        "number": 210,
+        "date": "2025-10-18"
     }
 ]

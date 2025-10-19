@@ -1990,8 +1990,26 @@
                 });
             },
             
-            // 開始測驗
-            startQuiz() {
+// 開始測驗
+async startQuiz() {
+    // ========== 新增：會員狀態檢查 ==========
+    const userData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+    let isPaid = false;
+    
+    if (userData.userId) {
+        const status = await LoginManager.checkMemberStatus(userData.userId);
+        isPaid = status.isPaid;
+    }
+    
+    // 檢查使用次數限制
+    if (!UsageManager.canUseSystem(isPaid)) {
+        this.showAlert('今日免費練習已達5次限制！請升級付費會員享受無限制練習。', 'warning');
+        return;
+    }
+    
+    // 增加使用次數
+    UsageManager.incrementUsage();
+    
                 if (!this.state.selectedDatabase) {
                     this.showAlert('請先選擇題庫！', 'warning');
                     return;
@@ -3208,6 +3226,27 @@ updateStats() {
     <!-- ✨ 新增：登入功能 JavaScript START -->
     <script>
         // ==================== 登入管理系統 ====================
+
+        const UsageManager = {
+    checkDailyUsage() {
+        const today = new Date().toDateString();
+        const usageKey = `daily_usage_${today}`;
+        return parseInt(localStorage.getItem(usageKey) || '0');
+    },
+    
+    incrementUsage() {
+        const today = new Date().toDateString();
+        const usageKey = `daily_usage_${today}`;
+        const currentUsage = this.checkDailyUsage();
+        localStorage.setItem(usageKey, (currentUsage + 1).toString());
+    },
+    
+    canUseSystem(isPaidMember) {
+        if (isPaidMember) return true;
+        return this.checkDailyUsage() < 5;
+    }
+};
+        
         const LoginManager = {
             // Line Login 設定
             LINE_CHANNEL_ID: '2008218944',  // ⚠️ 記得替換
@@ -3215,12 +3254,28 @@ updateStats() {
             
             // n8n Webhook URL
             N8N_WEBHOOK_URL: 'https://nickleo9.zeabur.app/webhook/line-login',  // ⚠️ 記得替換
+
+
+                async checkMemberStatus(userId) {
+        try {
+            const response = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ userId: userId })
+            });
+            return await response.json();
+        } catch (error) {
+            return { isPaid: false, memberLevel: '免費會員' };
+        }
+    },
             
             // 初始化
             init() {
                 this.attachEventListeners();
                 this.checkLoginStatus();
             },
+
+            
             
             // 綁定事件
             attachEventListeners() {
@@ -3293,45 +3348,7 @@ updateStats() {
                     this.showLoginButton();
                 }
             },
-
-           // 在 LoginManager 中新增檢查會員狀態的函數
-async checkMemberStatus(userId) {
-  try {
-    const response = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
-      method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
-      body: JSON.stringify({ userId: userId })
-    });
-    return await response.json();
-  } catch (error) {
-    console.log('查詢會員狀態失敗');
-    return { isPaid: false, memberLevel: '免費會員' };
-  }
-},
-            // 使用次數管理
-const UsageManager = {
-  checkDailyUsage() {
-    const today = new Date().toDateString();
-    const usageKey = `daily_usage_${today}`;
-    return parseInt(localStorage.getItem(usageKey) || '0');
-  }
-  
-  incrementUsage() {
-    const today = new Date().toDateString();
-    const usageKey = `daily_usage_${today}`;
-    const currentUsage = this.checkDailyUsage();
-    localStorage.setItem(usageKey, (currentUsage + 1).toString());
-  },
-  
-  canUseSystem(isPaidMember) {
-    if (isPaidMember) return true;
-    return this.checkDailyUsage() < 5;
-  }
-};
-
-
-
-            
+     
             // 顯示用戶資訊
             showUserInfo(user) {
                 // 隱藏登入區塊
@@ -3404,6 +3421,7 @@ const UsageManager = {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 
 
 

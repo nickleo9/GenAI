@@ -5,40 +5,74 @@
 </head>
 <body>
     <h3>⏳ 正在處理登入...</h3>
-    <script>
-    // 取得 URL 參數
-    const urlParams = new URLSearchParams(window.location.search);
-    const code = urlParams.get('code');
-    const state = urlParams.get('state');
+    <div id="status">請稍候...</div>
     
-    // 驗證 state（防偽造攻擊）
-    const savedState = localStorage.getItem('line_login_state');
-    if (state !== savedState) {
-        alert('登入驗證失敗！');
-        window.location.href = '/';
+    <script>
+    async function handleLogin() {
+        const statusDiv = document.getElementById('status');
+        
+        try {
+            // 取得 URL 參數
+            const urlParams = new URLSearchParams(window.location.search);
+            const code = urlParams.get('code');
+            const state = urlParams.get('state');
+            
+            if (!code) {
+                throw new Error('未收到授權碼');
+            }
+            
+            // 驗證 state（防偽造攻擊）
+            const savedState = localStorage.getItem('line_login_state');
+            if (state !== savedState) {
+                throw new Error('登入驗證失敗');
+            }
+            
+            statusDiv.textContent = '正在驗證身份...';
+            
+            // 將 code 傳送到你的 n8n
+            const response = await fetch('https://nickleo9.zeabur.app/webhook/line-login', {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                body: JSON.stringify({
+                    code: code,
+                    redirect_uri: 'https://znstudio216.com/login-callback.html'
+                })
+            });
+            
+            if (!response.ok) {
+                throw new Error(`HTTP ${response.status}`);
+            }
+            
+            const data = await response.json();
+            console.log('n8n 回應:', data);
+            
+            if (data.status === 'success' && data.user) {
+                // 儲存用戶資料
+                localStorage.setItem('ipas_user_data', JSON.stringify(data.user));
+                localStorage.removeItem('line_login_state');
+                
+                statusDiv.textContent = '登入成功！正在跳轉...';
+                
+                // 跳轉回測驗頁面
+                setTimeout(() => {
+                    window.location.href = '/web.html';  // 修正：明確指向測驗頁面
+                }, 1000);
+            } else {
+                throw new Error('登入失敗');
+            }
+            
+        } catch (error) {
+            console.error('登入錯誤:', error);
+            statusDiv.textContent = '登入失敗：' + error.message + '，3秒後返回...';
+            
+            setTimeout(() => {
+                window.location.href = '/web.html';  // 修正：跳轉到正確頁面
+            }, 3000);
+        }
     }
     
-    // 將 code 傳送到你的 n8n
-    fetch('https://nickleo9.zeabur.app/webhook/line-login', {
-        method: 'POST',
-        headers: {'Content-Type': 'application/json'},
-        body: JSON.stringify({
-            code: code,
-            redirect_uri: 'https://znstudio216.com/login-callback.html'
-        })
-    })
-    .then(res => res.json())
-    .then(data => {
-        // 儲存用戶資料
-        localStorage.setItem('ipas_user_data', JSON.stringify(data.user));
-        
-        // 跳轉回首頁
-        window.location.href = '/';
-    })
-    .catch(error => {
-        alert('登入失敗：' + error);
-        window.location.href = '/';
-    });
+    // 執行登入處理
+    handleLogin();
     </script>
 </body>
 </html>

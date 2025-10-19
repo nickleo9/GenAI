@@ -3362,7 +3362,7 @@ updateStats() {
                 const userWelcome = document.getElementById('user-welcome');
                 if (userWelcome) {
                     userWelcome.classList.remove('d-none');
-                    document.getElementById('user-avatar').src = user.pictureUrl || 'https://via.placeholder.com/60';
+                    document.getElementById('user-avatar').src = user.pictureUrl || 'https://placehold.co/60';
                     document.getElementById('user-name').textContent = user.displayName || '使用者';
                     
                     const lastLogin = new Date().toLocaleString('zh-TW');
@@ -3373,7 +3373,7 @@ updateStats() {
                 const userNavItem = document.getElementById('user-nav-item');
                 if (userNavItem) {
                     userNavItem.classList.remove('d-none');
-                    document.getElementById('nav-user-avatar').src = user.pictureUrl || 'https://via.placeholder.com/32';
+                    document.getElementById('nav-user-avatar').src = user.pictureUrl || 'https://placehold.co/32';
                     document.getElementById('nav-user-name').textContent = user.displayName || '使用者';
                 }
             },
@@ -3421,6 +3421,7 @@ updateStats() {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 
 
 

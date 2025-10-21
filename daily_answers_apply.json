@@ -3558,5 +3558,175 @@
         "explanation": "RAG架構能讓AI模型在生成內容時即時引入外部資料，提升回應的正確性與時效性。",
         "number": 210,
         "date": "2025-10-18"
+    },
+    {
+        "question": "下列何者「不是」No Code平台在企業導入生成式AI時的主要優勢？",
+        "options": [
+            "減少開發所需的程式技能門檻",
+            "加快MVP的開發與試行流程",
+            "能確保生成式AI工具完全無資安風險",
+            "促進跨部門協作與流程自動化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "No Code工具風險管理",
+        "explanation": "No Code平台能降低技能門檻，加快開發速度並促進協作，但無法保證完全無資安風險。",
+        "number": 211,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "在生成式AI導入評估時，哪一種場景最適合使用Low Code解決方案？",
+        "options": [
+            "前端全自動化產品視覺設計",
+            "技術團隊資源有限但需快速驗證概念",
+            "需要大量硬體設備進行深度學習推理",
+            "已建立大型專屬深度學習資料湖"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "Low Code導入場景",
+        "explanation": "Low Code最適合於技術資源有限且須快速驗證概念的場合，可快速上線原型。",
+        "number": 212,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "關於生成式AI風險管理，下列哪一項描述「正確」？",
+        "options": [
+            "生成式AI模型只要訓練過就不會出現偏見",
+            "若缺乏輸入資料保護措施，機密資訊可能外洩",
+            "生成式AI輸出的內容地預設均可商業化使用",
+            "所有平台都強制提供輸出結果的審查工具"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資安與隱私風險",
+        "explanation": "缺乏輸入資料保護措施可能導致敏感或機密資訊外洩，因此資料管理極其重要。",
+        "number": 213,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "下列哪一種提示工程的策略最能提高生成式AI生成具體專業內容的正確率？",
+        "options": [
+            "只輸入簡短問題並期待最佳結果",
+            "提供明確範例及上下文背景說明",
+            "持續重複同一請求以確保一致性",
+            "避免提供具體要求以保持彈性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "提示工程 Prompt Engineering",
+        "explanation": "提供範例和明確上下文能有效引導AI生成更精確的內容，提高專業度與正確率。",
+        "number": 214,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "企業評估導入生成式AI時，何者「不是」常見的計畫步驟之一？",
+        "options": [
+            "進行需求與用例分析",
+            "直接跳過測試與驗證階段",
+            "評估資料來源及匿名化需求",
+            "規劃AI結果的評估與追蹤指標"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "導入計畫流程",
+        "explanation": "完整計畫需包含測試與驗證階段，不能直接省略，否則無法掌握風險。",
+        "number": 215,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "生成式AI在醫療領域的應用，下列敘述何者錯誤？",
+        "options": [
+            "可協助醫師生成個人化患者報告",
+            "能自動編寫醫療知識交流會議摘要",
+            "完全不會產生患者隱私洩漏問題",
+            "支持醫療影像分析報告自動產生"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "產業應用與隱私",
+        "explanation": "即使醫療生成式AI帶來多種創新，但仍存在患者資料被洩漏等隱私風險。",
+        "number": 216,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "導入生成式AI時，以下那些流程最有助於降低模型幻覺的風險？",
+        "options": [
+            "全部依靠預設模型產出內容",
+            "將結果與權威來源交叉驗證",
+            "避免設定輸入提示推敲結果",
+            "減少資料來源多樣化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "模型幻覺防範措施",
+        "explanation": "將生成內容與可信權威來源交叉驗證，可以大幅降低模型產生幻覺錯誤的風險。",
+        "number": 217,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "下列哪項非屬生成式AI在行銷領域的常見應用？",
+        "options": [
+            "自動生成產品說明文案",
+            "即時生成聊天機器人對話內容",
+            "以AI演算預測客戶購買意圖",
+            "自動生成社群媒體貼文圖片"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "行銷應用與限制",
+        "explanation": "用AI預測購買意圖多為監督式學習，並非直接依靠生成式AI模型輸出結果。",
+        "number": 218,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "以下關於提示詞設計的選項，哪一個最能提升生成式AI對多步驟問題的回應精確性？",
+        "options": [
+            "提示詞直接要求最終答案結果",
+            "引導AI逐步回推每階段過程",
+            "完全不限定回覆格式結構",
+            "要求AI產生最大化多樣答案"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "Chain-of-Thought Prompting",
+        "explanation": "鼓勵AI分步驟逐步推理，有助於提升多階段複雜問題的解題精度與邏輯性。",
+        "number": 219,
+        "date": "2025-10-21"
+    },
+    {
+        "question": "為導入大型語言模型做知識擴展，企業最適合採取什麼整合方案？",
+        "options": [
+            "完全仰賴模型訓練初始知識庫",
+            "借助外部API動態串接權威資料庫",
+            "每日更新語言模型內嵌參數設定",
+            "僅開放內部匿名資料作為唯一來源"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "RAG 知識擴展",
+        "explanation": "動態結合外部權威資料庫，能彈性擴增AI知識及提升答案時效性及正確度。",
+        "number": 220,
+        "date": "2025-10-21"
     }
 ]

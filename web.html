@@ -2871,7 +2871,8 @@ updateStats() {
                     topicStats[topic].total += 1;
                     if (entry.is_correct) {
                         topicStats[topic].correct += 1;
-                    },
+                    }
+                    });
 
 
 
@@ -2901,8 +2902,9 @@ async syncPracticeRecord() {
         return {
             q_index: parseInt(index),
             user_answer: answer.answer,
+            user_original_index: answer.originalIndex, // 增加原始索引
             is_correct: isCorrect,
-            time: answer.timestamp // 如果你有記錄作答時間
+            time: answer.timestamp.toISOString() // 如果你有記錄作答時間
         };
     });
 
@@ -3501,6 +3503,7 @@ async syncPracticeRecord() {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 
 
 

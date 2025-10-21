@@ -1,62 +1,343 @@
 <!DOCTYPE html>
-<html>
+<html lang="zh-TW">
 <head>
-    <title>登入處理中...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LINE Login 處理中 | ZN Studio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft JhengHei', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #00B900;
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 30px auto;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .success {
+            color: #00B900;
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .error {
+            color: #dc3545;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .info {
+            color: #666;
+            margin-top: 20px;
+            font-size: 14px;
+            line-height: 1.6;
+        }
+
+        .user-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .user-info.show {
+            display: block;
+        }
+
+        .user-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .user-info h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .user-info .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #00B900;
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .user-info .badge.free {
+            background: #6c757d;
+        }
+
+        .payment-notice {
+            background: #fff3cd;
+            border: 2px solid #ffc107;
+            padding: 15px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .payment-notice.show {
+            display: block;
+        }
+
+        .payment-notice p {
+            color: #856404;
+            margin-bottom: 15px;
+        }
+
+        .btn {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #00B900;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s;
+        }
+
+        .btn:hover {
+            background: #009100;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(0,185,0,0.3);
+        }
+
+        .btn.payment {
+            background: #ffc107;
+            color: #333;
+        }
+
+        .btn.payment:hover {
+            background: #ffb300;
+        }
+
+        .creator {
+            margin-top: 30px;
+            padding-top: 20px;
+            border-top: 1px solid #eee;
+            font-size: 12px;
+            color: #888;
+            line-height: 1.8;
+        }
+
+        .creator a {
+            color: #667eea;
+            text-decoration: none;
+        }
+
+        .creator a:hover {
+            text-decoration: underline;
+        }
+
+        .debug {
+            background: #f8f9fa;
+            padding: 15px;
+            border-radius: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+            color: #666;
+            text-align: left;
+            display: none;
+        }
+
+        .debug.show {
+            display: block;
+        }
+    </style>
 </head>
 <body>
-    <h3>正在處理登入...</h3>
-    <div id="status">請稍候...</div>
-    
+    <div class="container">
+        <h2>LINE Login 處理中</h2>
+        <div class="loader" id="loader"></div>
+        <div id="message">正在驗證您的登入資訊...</div>
+
+        <div class="user-info" id="userInfo">
+            <img id="userPicture" src="" alt="用戶頭像">
+            <h3 id="userName"></h3>
+            <span class="badge" id="memberBadge"></span>
+        </div>
+
+        <div class="payment-notice" id="paymentNotice">
+            <p>✨ 升級為付費會員，享受更多功能！</p>
+            <a href="https://portaly.cc/zn.studio" class="btn payment">立即升級</a>
+        </div>
+
+        <div class="info" id="debug"></div>
+
+        <div class="creator">
+            <strong>Nick Chang</strong><br>
+            📧 <a href="mailto:nickleo051216@gmail.com">nickleo051216@gmail.com</a><br>
+            📱 0932-684-051<br>
+            🌐 <a href="https://portaly.cc/zn.studio" target="_blank">ZN Studio</a><br>
+            💬 <a href="https://www.threads.com/@nickai216" target="_blank">@nickai216 on Threads</a><br>
+            📱 <a href="https://lin.ee/Faz0doj" target="_blank">Line OA</a>
+        </div>
+    </div>
+
     <script>
-    async function handleLogin() {
-        const statusDiv = document.getElementById('status');
-        
-        try {
-            const urlParams = new URLSearchParams(window.location.search);
-            const code = urlParams.get('code');
-            const state = urlParams.get('state');
-            
-            if (!code) {
-                throw new Error('未收到授權碼');
-            }
-            
-            const savedState = localStorage.getItem('line_login_state');
-            if (state !== savedState) {
-                throw new Error('登入驗證失敗');
-            }
-            
-            statusDiv.textContent = '正在驗證身份...';
-            
-            const response = await fetch('https://nickleo9.zeabur.app/webhook/line-login', {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({
-                    code: code,
-                    redirect_uri: 'https://nickleo9.github.io/GenAI/login-callback.html'
-                })
-            });
-            
-            const data = await response.json();
-            
-            if (data.status === 'success' && data.user) {
-                localStorage.setItem('ipas_user_data', JSON.stringify(data.user));
-                localStorage.removeItem('line_login_state');
-                
-                statusDiv.textContent = '登入成功！正在跳轉...';
-                window.location.href = '/GenAI/web.html'; // 跳轉回測驗頁面
-            } else {
-                throw new Error('登入失敗');
-            }
-            
-        } catch (error) {
-            statusDiv.textContent = '登入失敗：' + error.message;
-            setTimeout(() => {
-                window.location.href = '/GenAI/web.html';
-            }, 3000);
+        // 從 URL 取得 LINE 回傳的參數
+        const urlParams = new URLSearchParams(window.location.search);
+        const code = urlParams.get('code');
+        const state = urlParams.get('state');
+        const error = urlParams.get('error');
+        const errorDescription = urlParams.get('error_description');
+
+        const messageDiv = document.getElementById('message');
+        const debugDiv = document.getElementById('debug');
+        const loaderDiv = document.getElementById('loader');
+        const userInfoDiv = document.getElementById('userInfo');
+        const paymentNoticeDiv = document.getElementById('paymentNotice');
+
+        // 顯示除錯資訊（開發時可用）
+        debugDiv.innerHTML = `
+            <strong>除錯資訊：</strong><br>
+            Code: ${code ? '✓ 已取得' : '✗ 未取得'}<br>
+            State: ${state ? '✓ 已取得' : '✗ 未取得'}
+        `;
+
+        // 檢查是否有錯誤
+        if (error) {
+            loaderDiv.style.display = 'none';
+            messageDiv.className = 'error';
+            messageDiv.innerHTML = `❌ 登入失敗<br>${errorDescription || error}`;
+        } else if (code && state) {
+            // 發送到你的 n8n webhook
+            sendToWebhook(code, state);
+        } else {
+            loaderDiv.style.display = 'none';
+            messageDiv.className = 'error';
+            messageDiv.innerHTML = '❌ 缺少必要的參數';
         }
-    }
-    
-    handleLogin();
+
+        async function sendToWebhook(code, state) {
+            try {
+                // 你的 n8n webhook URL
+                const webhookUrl = 'https://nickleo9.zeabur.app/webhook/line-login';
+                
+                messageDiv.innerHTML = '正在驗證並建立您的會員資料...';
+
+                const response = await fetch(webhookUrl, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        code: code,
+                        state: state,
+                        timestamp: new Date().toISOString()
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`HTTP error! status: ${response.status}`);
+                }
+
+                const data = await response.json();
+                console.log('Response:', data);
+                
+                // 隱藏載入動畫
+                loaderDiv.style.display = 'none';
+                
+                if (data.status === 'success') {
+                    messageDiv.className = 'success';
+                    messageDiv.innerHTML = '✓ 登入成功！';
+
+                    // 顯示用戶資訊
+                    displayUserInfo(data.user);
+
+                    // 檢查是否需要付費
+                    if (data.needPayment) {
+                        paymentNoticeDiv.classList.add('show');
+                        messageDiv.innerHTML += '<br><small>您目前是一般會員</small>';
+                    } else {
+                        // 付費會員，3秒後導向首頁
+                        messageDiv.innerHTML += '<br><small>正在導向...</small>';
+                        setTimeout(() => {
+                            window.location.href = '/'; // 改成你的首頁
+                        }, 3000);
+                    }
+                } else {
+                    throw new Error(data.message || '未知錯誤');
+                }
+
+            } catch (error) {
+                console.error('Error:', error);
+                loaderDiv.style.display = 'none';
+                messageDiv.className = 'error';
+                messageDiv.innerHTML = `❌ 發生錯誤<br>${error.message}`;
+                debugDiv.classList.add('show');
+                debugDiv.innerHTML += `<br><br><strong>錯誤詳情：</strong><br>${error.toString()}`;
+            }
+        }
+
+        function displayUserInfo(user) {
+            if (!user) return;
+
+            userInfoDiv.classList.add('show');
+            
+            const userPicture = document.getElementById('userPicture');
+            const userName = document.getElementById('userName');
+            const memberBadge = document.getElementById('memberBadge');
+
+            if (user.pictureUrl) {
+                userPicture.src = user.pictureUrl;
+            } else {
+                userPicture.style.display = 'none';
+            }
+
+            userName.textContent = user.displayName || '訪客';
+            memberBadge.textContent = user.memberLevel || '會員';
+            
+            // 根據會員等級設定樣式
+            if (user.memberLevel === '付費會員') {
+                memberBadge.classList.remove('free');
+            } else {
+                memberBadge.classList.add('free');
+            }
+        }
     </script>
 </body>
 </html>

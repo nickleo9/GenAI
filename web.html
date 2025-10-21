@@ -3293,8 +3293,10 @@ const topicStats = {};
     },   // <-- 這是 syncPracticeRecord 函式的結束
 
 async updateWrongQuestions() {
-    const userData = this.getUserData();
-    if (!userData || !userData.userId) {
+    const userData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+    const userId = userData.userId;
+    
+    if (!userId) {
         console.log('⚠️ 未登入,不記錄錯題');
         return;
     }
@@ -3308,7 +3310,7 @@ async updateWrongQuestions() {
         console.log('📤 開始更新錯題集...');
         
         const wrongQuestionsData = {
-            userId: userData.userId,
+            userId: userId,
             databaseType: this.state.selectedDatabase,
             answers: this.state.userAnswers,
             questions: this.state.questions,
@@ -3542,6 +3544,7 @@ async updateWrongQuestions() {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 
 
 

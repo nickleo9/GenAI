@@ -2446,6 +2446,7 @@ finishQuiz() {
                 this.stopTimer();
                 this.state.isQuizActive = false;
                 this.unlockInterface();
+                this.syncPracticeRecord(); //新增同步函數
                 this.showResult();
                 this.saveUserData(true);
                 this.updateReviewButtonState();
@@ -2870,7 +2871,86 @@ updateStats() {
                     topicStats[topic].total += 1;
                     if (entry.is_correct) {
                         topicStats[topic].correct += 1;
-                    }
+                    },
+
+
+
+// ✨✨✨ 新增數據同步核心函數 ✨✨✨
+async syncPracticeRecord() {
+    const userData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+    const lineUserId = userData.userId;
+
+    if (!lineUserId) {
+        this.showAlert('❌ 警告：未登入，記錄將不會上傳雲端！', 'warning');
+        return;
+    }
+
+    if (this.state.questions.length === 0) {
+        return;
+    }
+    
+    // 1. 組裝要傳送的資料
+    const totalQuestions = this.state.questions.length;
+    const answeredCount = Object.keys(this.state.userAnswers).length;
+
+    // 將 answers 轉換為 n8n Code 節點期望的格式
+    const answersData = Object.keys(this.state.userAnswers).map(index => {
+        const q = this.state.questions[index];
+        const answer = this.state.userAnswers[index];
+        const isCorrect = answer.originalIndex === q.correct_answer_index;
+        return {
+            q_index: parseInt(index),
+            user_answer: answer.answer,
+            is_correct: isCorrect,
+            time: answer.timestamp // 如果你有記錄作答時間
+        };
+    });
+
+    const accuracy = totalQuestions > 0 ? (this.state.score / totalQuestions * 100).toFixed(2) : 0;
+
+    const syncPayload = {
+        userId: lineUserId,
+        databaseType: this.state.selectedDatabase,
+        questionCount: totalQuestions,
+        startTime: this.state.startTime ? this.state.startTime.toISOString() : new Date().toISOString(),
+        endTime: new Date().toISOString(),
+        score: this.state.score,
+        accuracy: parseFloat(accuracy),
+        answers: answersData, // 傳送整理後的答案陣列
+        markedQuestions: this.state.markedQuestions // 傳送標記的題目
+    };
+
+    // 2. 設定 n8n Webhook URL
+    // ⚠️ 請務必替換成你的 n8n save-practice-record Webhook URL
+    const webhookUrl = 'https://nickleo9.zeabur.app/webhook/save-practice-record'; 
+
+    this.showLoading('同步練習記錄中...');
+
+    try {
+        const response = await fetch(webhookUrl, {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify(syncPayload)
+        });
+
+        this.hideLoading();
+        
+        if (response.ok) {
+            const result = await response.json();
+            this.showAlert(`✅ 記錄同步成功！分數: ${syncPayload.score}/${syncPayload.questionCount} (${syncPayload.accuracy}%)`, 'success');
+            console.log('✅ Supabase 同步結果:', result);
+        } else {
+            this.showAlert('⚠️ 雲端同步失敗，請檢查網路或後台服務。', 'error');
+            console.error('❌ Supabase 同步錯誤:', response.status, await response.text());
+        }
+
+    } catch (error) {
+        this.hideLoading();
+        this.showAlert('🚨 網路錯誤，練習記錄未上傳。', 'error');
+        console.error('🚨 網路錯誤:', error);
+    }
+}
+// ✨✨✨ 結束新增 ✨✨✨
                 });
                 
                 let statsHTML = `
@@ -3421,6 +3501,7 @@ updateStats() {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 
 
 

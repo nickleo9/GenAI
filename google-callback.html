@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <title>Google 登入處理中...</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- 載入 Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Inter', 'Arial', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <style>
+        .spinner {
+            border-top-color: #3b82f6;
+            animation: spin 1s linear infinite;
+        }
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
+    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full text-center">
+        <div class="loading-container">
+            <!-- 藍色旋轉指示器 -->
+            <div class="spinner w-12 h-12 border-4 border-gray-200 rounded-full mx-auto mb-4"></div>
+            <h3 class="text-xl font-semibold text-gray-800 mb-2">正在處理 Google 登入...</h3>
+            <p class="text-gray-500 mb-6">請稍候，我們正在為您設定帳戶資料。</p>
+            <div id="status" class="text-sm font-medium text-blue-600">驗證中...</div>
+        </div>
+    </div>
+    
+    <script>
+    // 請替換成您在 n8n 中設定的 Webhook URL
+    const N8N_PROCESSING_WEBHOOK = 'https://nickleo9.zeabur.app/webhook/google-login';
+    
+    async function handleGoogleLoginCallback() {
+        const statusDiv = document.getElementById('status');
+        
+        try {
+            // 1. 從 URL Hash 取得參數 (Supabase 在客戶端登入成功後會這樣回傳)
+            const urlParams = new URLSearchParams(window.location.hash.substring(1));
+            const accessToken = urlParams.get('access_token');
+            const refreshToken = urlParams.get('refresh_token');
+            const expiresIn = urlParams.get('expires_in'); // 可選：token 過期時間
+            
+            if (!accessToken) {
+                // 如果沒有 accessToken，可能是登入失敗或用戶取消
+                const errorDesc = urlParams.get('error_description') || '登入流程未完成或發生錯誤';
+                throw new Error(errorDesc);
+            }
+            
+            statusDiv.textContent = '身份驗證成功，正在同步資料到會員系統...';
+            
+            // 2. 將 Token POST 到 n8n Webhook 進行後端資料庫（Google Sheets）的儲存
+            const response = await fetch(N8N_PROCESSING_WEBHOOK, {
+                method: 'POST',
+                headers: {'Content-Type': 'application/json'},
+                // 注意：這裡我們將 Supabase 的 token 傳給 n8n，讓 n8n 負責用 Supabase SDK/API 取得用戶資料並儲存到 Google Sheets
+                body: JSON.stringify({
+                    access_token: accessToken,
+                    refresh_token: refreshToken,
+                    expires_in: expiresIn,
+                    login_type: 'google'
+                })
+            });
+            
+            const data = await response.json();
+            
+            // 假設 n8n 成功處理後，會回傳 status: 'success' 和用戶資料
+            if (response.ok && data.status === 'success' && data.user_data) {
+                // 3. 儲存用戶資料到 localStorage
+                localStorage.setItem('user_data', JSON.stringify({
+                    ...data.user_data,
+                    login_type: 'google'
+                }));
+                
+                statusDiv.textContent = '✨ 登入成功！正在跳轉主頁...';
+                
+                // 4. 跳轉回主頁面
+                setTimeout(() => {
+                    // 請根據您的專案路徑調整
+                    window.location.href = '/GenAI/web.html'; 
+                }, 1500);
+            } else {
+                // 處理 n8n Webhook 返回的錯誤
+                const errorMsg = data.message || '後端同步資料失敗。';
+                throw new Error(errorMsg);
+            }
+            
+        } catch (error) {
+            statusDiv.textContent = '❌ 登入失敗：' + error.message;
+            console.error('Google 登入錯誤:', error);
+            
+            // 錯誤發生後，3秒後跳轉回主頁
+            setTimeout(() => {
+                 window.location.href = '/GenAI/web.html'; 
+            }, 3000);
+        }
+    }
+    
+    // 立即執行登入處理
+    document.addEventListener('DOMContentLoaded', handleGoogleLoginCallback);
+    </script>
+</body>
+</html>

@@ -1,116 +1,303 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
 <head>
-    <title>Google 登入處理中...</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- 載入 Tailwind CSS -->
-    <script src="https://cdn.tailwindcss.com"></script>
-    <script>
-        tailwind.config = {
-            theme: {
-                extend: {
-                    fontFamily: {
-                        sans: ['Inter', 'Arial', 'sans-serif'],
-                    },
-                }
-            }
-        }
-    </script>
+    <title>Google 登入處理中 | ZN Studio</title>
     <style>
-        .spinner {
-            border-top-color: #3b82f6;
-            animation: spin 1s linear infinite;
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
         }
+
+        body {
+            font-family: 'Segoe UI', 'Microsoft JhengHei', Tahoma, Geneva, Verdana, sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+        }
+
+        .container {
+            background: white;
+            padding: 50px 40px;
+            border-radius: 20px;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            text-align: center;
+            max-width: 450px;
+            width: 90%;
+        }
+
+        h2 {
+            color: #333;
+            margin-bottom: 20px;
+            font-size: 28px;
+        }
+
+        .loader {
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #4285F4; /* Google Blue */
+            border-radius: 50%;
+            width: 60px;
+            height: 60px;
+            animation: spin 1s linear infinite;
+            margin: 30px auto;
+        }
+
         @keyframes spin {
             0% { transform: rotate(0deg); }
             100% { transform: rotate(360deg); }
         }
+
+        .success {
+            color: #34A853; /* Google Green */
+            font-size: 24px;
+            margin: 20px 0;
+            font-weight: bold;
+        }
+
+        .error {
+            color: #dc3545;
+            font-size: 18px;
+            margin: 20px 0;
+        }
+
+        .user-info {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+            display: none;
+        }
+
+        .user-info.show {
+            display: block;
+        }
+
+        .user-info img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-bottom: 10px;
+        }
+
+        .user-info h3 {
+            color: #333;
+            margin: 10px 0;
+        }
+
+        .user-info .badge {
+            display: inline-block;
+            padding: 5px 15px;
+            background: #4285F4; /* Google Blue */
+            color: white;
+            border-radius: 20px;
+            font-size: 14px;
+            margin-top: 10px;
+        }
+
+        .user-info .badge.paid {
+            background: #FBBC05; /* Google Yellow */
+            color: #333;
+        }
+
+        .btn.redirect {
+            display: inline-block;
+            padding: 12px 30px;
+            background: #667eea;
+            color: white;
+            text-decoration: none;
+            border-radius: 25px;
+            font-weight: bold;
+            margin-top: 10px;
+            transition: all 0.3s;
+            border: none;
+            cursor: pointer;
+        }
+
+        .btn.redirect:hover {
+            background: #5568d3;
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(102, 126, 234, 0.3);
+        }
+
+        .countdown {
+            font-size: 18px;
+            color: #667eea;
+            margin-top: 15px;
+            font-weight: bold;
+        }
     </style>
 </head>
-<body class="bg-gray-50 flex items-center justify-center min-h-screen p-4">
-    <div class="bg-white p-8 rounded-xl shadow-2xl max-w-sm w-full text-center">
-        <div class="loading-container">
-            <!-- 藍色旋轉指示器 -->
-            <div class="spinner w-12 h-12 border-4 border-gray-200 rounded-full mx-auto mb-4"></div>
-            <h3 class="text-xl font-semibold text-gray-800 mb-2">正在處理 Google 登入...</h3>
-            <p class="text-gray-500 mb-6">請稍候，我們正在為您設定帳戶資料。</p>
-            <div id="status" class="text-sm font-medium text-blue-600">驗證中...</div>
+<body>
+    <div class="container">
+        <h2>Google 登入處理中</h2>
+        <div class="loader" id="loader"></div>
+        <div id="message">正在從 Supabase 驗證身份...</div>
+
+        <div class="user-info" id="userInfo">
+            <img id="userPicture" src="https://placehold.co/80" alt="用戶頭像">
+            <h3 id="userName"></h3>
+            <span class="badge" id="memberBadge"></span>
         </div>
+
+        <div class="countdown" id="countdown"></div>
+
+        <button class="btn redirect" id="manualRedirect" style="display: none;">
+            立即返回測驗系統
+        </button>
+
     </div>
-    
+
     <script>
-    // 💡 小提醒：這是您在 n8n 中處理 Supabase Token 的 Webhook URL
-    const N8N_PROCESSING_WEBHOOK = 'https://nickleo9.zeabur.app/webhook/google-login';
-    
-    /**
-     * 處理 Google 登入回調函式。
-     * 1. 從 URL 雜湊 (#hash) 取得 Supabase 傳來的 Access Token。
-     * 2. 將 Token POST 給 n8n Webhook。
-     * 3. 接收 n8n 返回的會員資料，並儲存到瀏覽器。
-     * 4. 跳轉回主頁。
-     */
-    async function handleGoogleLoginCallback() {
-        const statusDiv = document.getElementById('status');
+        // 設定返回的目標頁面 URL
+        const REDIRECT_URL = '/GenAI/web.html';
+        // 你的 n8n Google 登入 Webhook URL (這個 URL 會處理 token 交換和資料同步)
+        const N8N_GOOGLE_WEBHOOK_URL = 'https://nickleo9.zeabur.app/webhook/google-login';
         
-        try {
-            // 從 URL Hash 取得 Access Token
-            const urlParams = new URLSearchParams(window.location.hash.substring(1));
-            const accessToken = urlParams.get('access_token');
-            const refreshToken = urlParams.get('refresh_token');
-            
-            if (!accessToken) {
-                const errorDesc = urlParams.get('error_description') || '登入流程未完成或發生錯誤';
-                throw new Error(errorDesc);
-            }
-            
-            statusDiv.textContent = '身份驗證成功，正在同步資料到會員系統...';
-            
-            // 將 Token 發送給 n8n
-            const response = await fetch(N8N_PROCESSING_WEBHOOK, {
-                method: 'POST',
-                headers: {'Content-Type': 'application/json'},
-                body: JSON.stringify({
-                    access_token: accessToken,
-                    refresh_token: refreshToken,
-                    login_type: 'google'
-                })
-            });
-            
-            const data = await response.json();
-            
-            if (response.ok && data.status === 'success' && data.user_data) {
-                // 儲存用戶資料到 localStorage 的 'user_data' 鍵中
-                localStorage.setItem('user_data', JSON.stringify({
-                    ...data.user_data,
-                    login_type: 'google',
-                    member_level: data.user_data.member_level || '免費會員' // 確保有等級資訊
-                }));
-                
-                statusDiv.textContent = '✨ 登入成功！正在跳轉主頁...';
-                
-                // 跳轉回主頁面 (web.html)
-                setTimeout(() => {
-                    window.location.href = window.location.origin + '/GenAI/web.html'; 
-                }, 1500);
-            } else {
-                const errorMsg = data.message || '後端同步資料失敗。';
-                throw new Error(errorMsg);
-            }
-            
-        } catch (error) {
-            statusDiv.textContent = '❌ 登入失敗：' + error.message;
-            console.error('Google 登入錯誤:', error);
-            
-            // 錯誤發生後，3秒後跳轉回主頁
-            setTimeout(() => {
-                 window.location.href = window.location.origin + '/GenAI/web.html'; 
-            }, 3000);
+        const messageDiv = document.getElementById('message');
+        const loaderDiv = document.getElementById('loader');
+        const userInfoDiv = document.getElementById('userInfo');
+        const countdownDiv = document.getElementById('countdown');
+        const manualRedirectBtn = document.getElementById('manualRedirect');
+
+        // 從 URL #hash 取得參數 (Supabase 返回的方式)
+        const urlParams = new URLSearchParams(window.location.hash.substring(1));
+        const accessToken = urlParams.get('access_token');
+        const refreshToken = urlParams.get('refresh_token');
+        const errorCode = urlParams.get('error');
+
+        manualRedirectBtn.addEventListener('click', () => redirectToMain());
+
+        // 核心邏輯
+        if (errorCode) {
+            handleError(`Google 登入失敗: ${urlParams.get('error_description') || errorCode}`);
+        } else if (accessToken) {
+            sendTokenToWebhook(accessToken, refreshToken);
+        } else {
+            handleError('❌ 未收到登入憑證 (Access Token)');
         }
-    }
-    
-    // 立即執行登入處理
-    document.addEventListener('DOMContentLoaded', handleGoogleLoginCallback);
+
+
+        // 步驟 1: 將 Token POST 給 n8n 進行後端處理
+        async function sendTokenToWebhook(access_token, refresh_token) {
+            try {
+                messageDiv.innerHTML = '正在同步資料到雲端...';
+                
+                // 由於 Supabase 登入成功後，Token 會儲存在前端，這裡直接將 Token 傳給 n8n
+                const response = await fetch(N8N_GOOGLE_WEBHOOK_URL, {
+                    method: 'POST',
+                    headers: {
+                        'Content-Type': 'application/json',
+                    },
+                    body: JSON.stringify({
+                        access_token: access_token,
+                        refresh_token: refresh_token,
+                        login_type: 'google' 
+                    })
+                });
+
+                if (!response.ok) {
+                    throw new Error(`Webhook 處理失敗，狀態碼: ${response.status}`);
+                }
+
+                const data = await response.json();
+                
+                // 隱藏載入動畫
+                loaderDiv.style.display = 'none';
+
+                if (data.status === 'success' && data.user_data) {
+                    
+                    // 修正關鍵：將 n8n 返回的用戶資料存入 localStorage
+                    // 這裡的 key 必須是 'user_data' 才能被主程式的 LoginManager 識別
+                    localStorage.setItem('user_data', JSON.stringify({
+                        userId: data.user_data.google_id, // 使用 google_id 作為通用 userId
+                        displayName: data.user_data.name,
+                        name: data.user_data.name, // 為了兼容 Line/Google 兩種結構
+                        avatar: data.user_data.avatar || 'https://placehold.co/60',
+                        member_level: data.user_data.member_level,
+                        login_type: 'google',
+                        last_login: new Date().toLocaleString('zh-TW')
+                    }));
+
+                    messageDiv.className = 'success';
+                    messageDiv.innerHTML = '✓ Google 登入成功！';
+                    
+                    // 顯示用戶資訊
+                    displayUserInfo(data.user_data);
+
+                    // 2秒後自動跳轉
+                    startCountdown(2);
+                } else {
+                    throw new Error(data.message || 'n8n 服務端返回錯誤');
+                }
+
+            } catch (error) {
+                console.error('❌ Google 登入處理錯誤:', error);
+                handleError(`資料同步錯誤: ${error.message}`);
+            }
+        }
+
+
+        // 顯示用戶資訊
+        function displayUserInfo(user) {
+            if (!user) return;
+
+            userInfoDiv.classList.add('show');
+            
+            const userPicture = document.getElementById('userPicture');
+            const userName = document.getElementById('userName');
+            const memberBadge = document.getElementById('memberBadge');
+            const memberLevel = user.member_level || '免費會員';
+
+            userPicture.src = user.avatar || 'https://placehold.co/80';
+            userName.textContent = user.name || user.email || '使用者';
+            memberBadge.textContent = memberLevel;
+            
+            // 根據會員等級設定樣式
+            if (memberLevel.includes('付費')) {
+                memberBadge.classList.add('paid');
+            } else {
+                memberBadge.classList.remove('paid');
+            }
+        }
+        
+        // 錯誤處理
+        function handleError(msg) {
+            loaderDiv.style.display = 'none';
+            messageDiv.className = 'error';
+            messageDiv.innerHTML = msg;
+            showManualRedirect();
+        }
+
+        // 倒數計時與自動跳轉
+        function startCountdown(seconds) {
+            let remaining = seconds;
+            countdownDiv.style.display = 'block';
+            
+            const interval = setInterval(() => {
+                countdownDiv.innerHTML = `⏱️ ${remaining} 秒後自動跳轉...`;
+                remaining--;
+                
+                if (remaining < 0) {
+                    clearInterval(interval);
+                    redirectToMain();
+                }
+            }, 1000);
+
+            showManualRedirect();
+        }
+
+        function showManualRedirect() {
+            manualRedirectBtn.style.display = 'inline-block';
+        }
+
+        function redirectToMain() {
+            window.location.href = REDIRECT_URL;
+        }
+
     </script>
 </body>
 </html>

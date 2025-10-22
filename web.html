@@ -993,9 +993,11 @@
                     <h5 class="mb-1">
                         <i class="fas fa-check-circle text-success me-2"></i>
                         歡迎回來，<span id="user-name">載入中...</span>！
+                        <span id="user-level-badge" class="badge bg-primary ms-2" style="font-size: 0.8rem;">載入中...</span>
                     </h5>
                     <small class="text-muted">
                         <i class="fas fa-calendar-alt me-1"></i>最後登入：<span id="last-login">剛剛</span>
+                        <span class="ms-3"><i class="fas fa-sign-in-alt me-1"></i>登入方式: <span id="login-method">Line</span></span>
                     </small>
                 </div>
             </div>
@@ -1322,15 +1324,15 @@
                     <ul>
                         <li><strong>錯題複習：</strong>重點攻克薄弱環節</li>
                         <li><strong>全題複習：</strong>系統性回顧所有內容</li>
-                        <li><strong>主題複習：</strong>針對特定領域加強</li>
-                        <li><strong>隨機複習：</strong>模擬考試隨機出題</li>
+                        <li><strong>主題複習：：</strong>針對特定領域加強</li>
+                        <li><strong>隨機複習：：</strong>模擬考試隨機出題</li>
                     </ul>
                     
                     <h6>📋 練習模式建議</h6>
                     <ul>
                         <li><strong>每日練習：</strong>20-50題維持手感</li>
-                        <li><strong>週末模擬：</strong>100題完整測驗</li>
-                        <li><strong>考前衝刺：</strong>錯題複習模式</li>
+                        <li><strong>週末模擬：：</strong>100題完整測驗</li>
+                        <li><strong>考前衝刺：：</strong>錯題複習模式</li>
                     </ul>
                     
                     <h6>🎯 重點題型</h6>
@@ -1343,8 +1345,8 @@
                     
                     <h6>⏱️ 模擬考試建議</h6>
                     <ul>
-                        <li><strong>iPAS模式：</strong>選擇100題標準模式，每科75分鐘</li>
-                        <li><strong>資策會模式：</strong>選擇80題，90分鐘</li>
+                        <li><strong>iPAS模式：：</strong>選擇100題標準模式，每科75分鐘</li>
+                        <li><strong>資策會模式：：</strong>選擇80題，90分鐘</li>
                         <li>嚴格控制答題時間</li>
                         <li>目標正確率：70%以上</li>
                     </ul>
@@ -1547,7 +1549,7 @@
                 this.state.userData = this.loadUserData();
                 this.attachEventListeners();
                 this.updateReviewButtonState();
-                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.3.0 題號總覽版)');
+                console.log('🚀 iPAS AI應用規劃師練習系統已初始化 (v2.3.1 登入整合版)');
             },
             
             // 載入使用者數據
@@ -1993,11 +1995,15 @@
 // 開始測驗
 async startQuiz() {
     // ========== 新增：會員狀態檢查 ==========
-    const userData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+    // 優先從新的 user_data 取得 userId
+    const generalUserData = JSON.parse(localStorage.getItem('user_data') || '{}');
+    const lineUserData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+    const userId = generalUserData.google_id || generalUserData.userId || lineUserData.userId;
+    
     let isPaid = false;
     
-    if (userData.userId) {
-        const status = await LoginManager.checkMemberStatus(userData.userId);
+    if (userId) {
+        const status = await LoginManager.checkMemberStatus(userId);
         isPaid = status.isPaid;
     }
     
@@ -3219,10 +3225,11 @@ const topicStats = {};
             },
 // ✨✨✨ 新增數據同步核心函數 ✨✨✨
     async syncPracticeRecord() {
-        const userData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
-        const lineUserId = userData.userId;
+        const generalUserData = JSON.parse(localStorage.getItem('user_data') || '{}');
+        const lineUserData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+        const userId = generalUserData.google_id || generalUserData.userId || lineUserData.userId;
 
-        if (!lineUserId) {
+        if (!userId) {
             this.showAlert('❌ 警告：未登入，記錄將不會上傳雲端！', 'warning');
             return;
         }
@@ -3251,7 +3258,7 @@ const topicStats = {};
         const accuracy = totalQuestions > 0 ? (this.state.score / totalQuestions * 100).toFixed(2) : 0;
 
         const syncPayload = {
-            userId: lineUserId,
+            userId: userId, // 使用通用 userId
             databaseType: this.state.selectedDatabase,
             questionCount: totalQuestions,
             startTime: this.state.startTime ? this.state.startTime.toISOString() : new Date().toISOString(),
@@ -3293,8 +3300,9 @@ const topicStats = {};
     },   // <-- 這是 syncPracticeRecord 函式的結束
 
 async updateWrongQuestions() {
-    const userData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
-    const userId = userData.userId;
+    const generalUserData = JSON.parse(localStorage.getItem('user_data') || '{}');
+    const lineUserData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+    const userId = generalUserData.google_id || generalUserData.userId || lineUserData.userId;
     
     if (!userId) {
         console.log('⚠️ 未登入,不記錄錯題');
@@ -3348,7 +3356,7 @@ async updateWrongQuestions() {
         </script>  <!-- ← 這裡結束上一個 script -->
     <!-- ✨ 新增：登入功能 JavaScript START -->
     <script>
-        // ==================== 登入管理系統 ====================
+        // ==================== 登入管理系統 (LoginManager) ====================
 
         const UsageManager = {
     checkDailyUsage() {
@@ -3375,6 +3383,11 @@ async updateWrongQuestions() {
             LINE_CHANNEL_ID: '2008218944',  // ⚠️ 記得替換
             LINE_CALLBACK_URL: 'https://nickleo9.github.io/GenAI/login-callback.html',
             
+            // Supabase Google Login 設定 (新增)
+            // *** 請確保您已經將這些佔位符替換為您的真實專案值 ***
+            SUPABASE_URL: 'https://naftwmajxuoauokuwpaz.supabase.co', // 您的 Supabase 專案 URL
+            SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hZnR3bWFqeHVvYXVva3V3cGF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA5OTgxNTgsImV4cCI6MjA3NjU3NDE1OH0.zf-eKQVC5PCFFC_ZucGNbFsc8n4627rRxZQ2A0S4FM4', // 您的 Supabase Anon Key
+
             // n8n Webhook URL
             N8N_WEBHOOK_URL: 'https://nickleo9.zeabur.app/webhook/line-login',  // ⚠️ 記得替換
 
@@ -3408,21 +3421,20 @@ async updateWrongQuestions() {
                     lineLoginBtn.addEventListener('click', () => this.lineLogin());
                 }
                 
-                // 導航欄登入按鈕（如果有的話）
+                // 導航欄登入按鈕
                 const navLoginBtn = document.getElementById('nav-login-btn');
                 if (navLoginBtn) {
                     navLoginBtn.addEventListener('click', (e) => {
                         e.preventDefault();
-                        this.lineLogin();
+                        // 點擊導航欄登入時，跳轉到登入區塊
+                        document.getElementById('login-section').scrollIntoView({ behavior: 'smooth' });
                     });
                 }
                 
-                // Google 登入按鈕（暫時禁用，之後實作）
+                // Google 登入按鈕 (實作 Google Login)
                 const googleLoginBtn = document.getElementById('google-login-btn');
                 if (googleLoginBtn) {
-                    googleLoginBtn.addEventListener('click', () => {
-                        alert('Google 登入功能即將推出！\n目前請使用 Line 登入 😊');
-                    });
+                    googleLoginBtn.addEventListener('click', () => this.googleLogin());
                 }
                 
                 // 登出按鈕
@@ -3455,24 +3467,64 @@ async updateWrongQuestions() {
                 window.location.href = lineLoginUrl;
             },
             
-            // 檢查登入狀態
-            checkLoginStatus() {
-                const userData = localStorage.getItem('ipas_user_data');
-                if (userData) {
-                    try {
-                        const user = JSON.parse(userData);
-                        this.showUserInfo(user);
-                        console.log('✅ 用戶已登入:', user.displayName);
-                    } catch (error) {
-                        console.error('❌ 用戶資料解析失敗:', error);
-                        localStorage.removeItem('ipas_user_data');
-                    }
-                } else {
-                    this.showLoginButton();
+            // Google 登入 (新增)
+            googleLogin() {
+                // 由於用戶已經手動填寫了正確的 URL 和 KEY，我們直接移除錯誤檢查
+                // 以便讓登入程序順利啟動
+                
+                try {
+                    // Supabase 的 Google OAuth URL
+                    const redirectUrl = `${this.SUPABASE_URL}/auth/v1/authorize?` +
+                        `provider=google&` +
+                        // 確保回調 URL 指向我們建立的 google-callback.html
+                        `redirect_to=${encodeURIComponent(window.location.origin + '/GenAI/google-callback.html')}`;
+                    
+                    iPASQuizApp.showAlert('正在跳轉 Google 登入...', 'info');
+                    window.location.href = redirectUrl;
+                } catch (error) {
+                    console.error('Google 登入錯誤:', error);
+                    iPASQuizApp.showAlert('Google 登入發生錯誤，請稍後再試', 'error');
                 }
             },
+            
+            // 檢查登入狀態 (更新，檢查 Google/General 優先)
+            checkLoginStatus() {
+                // 1. 檢查 Google/General 登入 (由 google-callback.html 儲存，優先)
+                const generalUserData = localStorage.getItem('user_data');
+                // 2. 檢查 Line 登入 (原有的 ipas_user_data)
+                const lineUserData = localStorage.getItem('ipas_user_data');
+                
+                let user = null;
+                
+                if (generalUserData) {
+                    try {
+                        user = JSON.parse(generalUserData);
+                        user.login_type = user.login_type || 'google'; // 確保有 login_type
+                        this.showUserInfo(user);
+                        console.log('✅ 用戶已登入 (General/Google):', user.name || user.email);
+                        return;
+                    } catch (error) {
+                        console.error('❌ General 用戶資料解析失敗:', error);
+                        localStorage.removeItem('user_data');
+                    }
+                } else if (lineUserData) {
+                     try {
+                        user = JSON.parse(lineUserData);
+                        user.login_type = 'line'; // 標記為 Line 登入
+                        this.showUserInfo(user);
+                        console.log('✅ 用戶已登入 (Line):', user.displayName);
+                        return;
+                    } catch (error) {
+                        console.error('❌ Line 用戶資料解析失敗:', error);
+                        localStorage.removeItem('ipas_user_data');
+                    }
+                }
+                
+                // 未登入
+                this.showLoginButton();
+            },
      
-            // 顯示用戶資訊
+            // 顯示用戶資訊 (更新，兼容 Line 和 Google 的資料結構)
             showUserInfo(user) {
                 // 隱藏登入區塊
                 const loginSection = document.getElementById('login-section');
@@ -3481,23 +3533,37 @@ async updateWrongQuestions() {
                 const loginNavItem = document.getElementById('login-nav-item');
                 if (loginNavItem) loginNavItem.classList.add('d-none');
                 
+                // 決定顯示名稱、頭像、登入方式
+                const displayName = user.displayName || user.name || user.email || '使用者';
+                const pictureUrl = user.pictureUrl || user.avatar || 'https://placehold.co/60';
+                const loginType = user.login_type === 'google' ? 'Google' : 'Line';
+                const memberLevel = user.member_level || '免費會員';
+                
                 // 顯示用戶資訊區塊
                 const userWelcome = document.getElementById('user-welcome');
                 if (userWelcome) {
                     userWelcome.classList.remove('d-none');
-                    document.getElementById('user-avatar').src = user.pictureUrl || 'https://placehold.co/60';
-                    document.getElementById('user-name').textContent = user.displayName || '使用者';
+                    document.getElementById('user-avatar').src = pictureUrl;
+                    document.getElementById('user-name').textContent = displayName;
+                    document.getElementById('login-method').textContent = loginType;
                     
                     const lastLogin = new Date().toLocaleString('zh-TW');
                     document.getElementById('last-login').textContent = lastLogin;
+                    
+                    // 顯示會員等級
+                    const levelSpan = document.getElementById('user-level-badge'); 
+                    if (levelSpan) {
+                        levelSpan.textContent = memberLevel;
+                        levelSpan.className = `badge ${memberLevel.includes('付費') ? 'bg-warning text-dark' : 'bg-primary'} ms-2`
+                    }
                 }
                 
                 // 導航欄顯示用戶資訊
                 const userNavItem = document.getElementById('user-nav-item');
                 if (userNavItem) {
                     userNavItem.classList.remove('d-none');
-                    document.getElementById('nav-user-avatar').src = user.pictureUrl || 'https://placehold.co/32';
-                    document.getElementById('nav-user-name').textContent = user.displayName || '使用者';
+                    document.getElementById('nav-user-avatar').src = pictureUrl;
+                    document.getElementById('nav-user-name').textContent = displayName;
                 }
             },
             
@@ -3516,10 +3582,11 @@ async updateWrongQuestions() {
                 if (userNavItem) userNavItem.classList.add('d-none');
             },
             
-            // 登出
+            // 登出 (更新，移除所有用戶數據)
             logout() {
                 if (confirm('確定要登出嗎？\n您的學習進度將保存在雲端。')) {
-                    localStorage.removeItem('ipas_user_data');
+                    localStorage.removeItem('ipas_user_data'); // Line 舊數據
+                    localStorage.removeItem('user_data'); // Google/General 新數據
                     console.log('👋 用戶已登出');
                     location.reload();
                 }
@@ -3544,18 +3611,3 @@ async updateWrongQuestions() {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-

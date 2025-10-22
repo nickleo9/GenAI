@@ -211,7 +211,7 @@
                if (data.status === 'success' && data.user_data) {
 
     // 🎯 修正點 1：定義一個變數來處理網址
-    let avatarUrl = data.user_data.avatar || data.user_data.pictureUrl ;
+    let avatarUrl = data.avatar || data.pictureUrl ;
     
     // 🎯 修正點 2：強制將 http:// 轉為 https://
     // 這是解決瀏覽器 Mixed Content Error 的關鍵！
@@ -222,15 +222,15 @@
                     // 修正關鍵：將 n8n 返回的用戶資料存入 localStorage
                     // 這裡的 key 必須是 'user_data' 才能被主程式的 LoginManager 識別
                     localStorage.setItem('user_data', JSON.stringify({
-                        userId: data.user_data.google_id, // 使用 google_id 作為通用 userId
-                        displayName: data.user_data.name,
-                        name: data.user_data.name, // 為了兼容 Line/Google 兩種結構
+                        userId: data.google_id, // 使用 google_id 作為通用 userId
+                        displayName: data.name,
+                        name: data.name, // 為了兼容 Line/Google 兩種結構
                         
 // 💡 使用修正後的 avatarUrl 變數
         avatar: avatarUrl, 
         pictureUrl: avatarUrl,
                         
-                        member_level: data.user_data.member_level,
+                        member_level: data.member_level,
                         login_type: 'google',
                         last_login: new Date().toLocaleString('zh-TW')
                     }));
@@ -239,7 +239,7 @@
                     messageDiv.innerHTML = '✓ Google 登入成功！';
                     
                     // 顯示用戶資訊
-                    displayUserInfo(data.user_data);
+                    displayUserInfo(data);
 
                     // 2秒後自動跳轉
                     startCountdown(2);
@@ -265,7 +265,7 @@
             const memberBadge = document.getElementById('memberBadge');
             const memberLevel = user.member_level || '免費會員';
 
-            userPicture.src = user.avatar || 'https://placehold.co/80';
+            userPicture.src = user.avatar ;
             userName.textContent = user.name || user.email || '使用者';
             memberBadge.textContent = memberLevel;
             

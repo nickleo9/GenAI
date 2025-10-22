@@ -40,59 +40,60 @@
     </div>
     
     <script>
-    // 請替換成您在 n8n 中設定的 Webhook URL
+    // 💡 小提醒：這是您在 n8n 中處理 Supabase Token 的 Webhook URL
     const N8N_PROCESSING_WEBHOOK = 'https://nickleo9.zeabur.app/webhook/google-login';
     
+    /**
+     * 處理 Google 登入回調函式。
+     * 1. 從 URL 雜湊 (#hash) 取得 Supabase 傳來的 Access Token。
+     * 2. 將 Token POST 給 n8n Webhook。
+     * 3. 接收 n8n 返回的會員資料，並儲存到瀏覽器。
+     * 4. 跳轉回主頁。
+     */
     async function handleGoogleLoginCallback() {
         const statusDiv = document.getElementById('status');
         
         try {
-            // 1. 從 URL Hash 取得參數 (Supabase 在客戶端登入成功後會這樣回傳)
+            // 從 URL Hash 取得 Access Token
             const urlParams = new URLSearchParams(window.location.hash.substring(1));
             const accessToken = urlParams.get('access_token');
             const refreshToken = urlParams.get('refresh_token');
-            const expiresIn = urlParams.get('expires_in'); // 可選：token 過期時間
             
             if (!accessToken) {
-                // 如果沒有 accessToken，可能是登入失敗或用戶取消
                 const errorDesc = urlParams.get('error_description') || '登入流程未完成或發生錯誤';
                 throw new Error(errorDesc);
             }
             
             statusDiv.textContent = '身份驗證成功，正在同步資料到會員系統...';
             
-            // 2. 將 Token POST 到 n8n Webhook 進行後端資料庫（Google Sheets）的儲存
+            // 將 Token 發送給 n8n
             const response = await fetch(N8N_PROCESSING_WEBHOOK, {
                 method: 'POST',
                 headers: {'Content-Type': 'application/json'},
-                // 注意：這裡我們將 Supabase 的 token 傳給 n8n，讓 n8n 負責用 Supabase SDK/API 取得用戶資料並儲存到 Google Sheets
                 body: JSON.stringify({
                     access_token: accessToken,
                     refresh_token: refreshToken,
-                    expires_in: expiresIn,
                     login_type: 'google'
                 })
             });
             
             const data = await response.json();
             
-            // 假設 n8n 成功處理後，會回傳 status: 'success' 和用戶資料
             if (response.ok && data.status === 'success' && data.user_data) {
-                // 3. 儲存用戶資料到 localStorage
+                // 儲存用戶資料到 localStorage 的 'user_data' 鍵中
                 localStorage.setItem('user_data', JSON.stringify({
                     ...data.user_data,
-                    login_type: 'google'
+                    login_type: 'google',
+                    member_level: data.user_data.member_level || '免費會員' // 確保有等級資訊
                 }));
                 
                 statusDiv.textContent = '✨ 登入成功！正在跳轉主頁...';
                 
-                // 4. 跳轉回主頁面
+                // 跳轉回主頁面 (web.html)
                 setTimeout(() => {
-                    // 請根據您的專案路徑調整
-                    window.location.href = '/GenAI/web.html'; 
+                    window.location.href = window.location.origin + '/GenAI/web.html'; 
                 }, 1500);
             } else {
-                // 處理 n8n Webhook 返回的錯誤
                 const errorMsg = data.message || '後端同步資料失敗。';
                 throw new Error(errorMsg);
             }
@@ -103,7 +104,7 @@
             
             // 錯誤發生後，3秒後跳轉回主頁
             setTimeout(() => {
-                 window.location.href = '/GenAI/web.html'; 
+                 window.location.href = window.location.origin + '/GenAI/web.html'; 
             }, 3000);
         }
     }

@@ -217,6 +217,7 @@
                         displayName: data.user_data.name,
                         name: data.user_data.name, // 為了兼容 Line/Google 兩種結構
                         avatar: data.user_data.avatar || 'https://placehold.co/60',
+                        pictureUrl: data.user_data.avatar || 'https://placehold.co/60',
                         member_level: data.user_data.member_level,
                         login_type: 'google',
                         last_login: new Date().toLocaleString('zh-TW')

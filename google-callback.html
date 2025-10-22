@@ -129,6 +129,23 @@
             margin-top: 15px;
             font-weight: bold;
         }
+
+        .debug-info {
+            background: #f8f9fa;
+            border: 1px solid #ddd;
+            border-radius: 5px;
+            padding: 10px;
+            margin-top: 20px;
+            font-size: 12px;
+            text-align: left;
+            max-height: 200px;
+            overflow-y: auto;
+            display: none;
+        }
+
+        .debug-info.show {
+            display: block;
+        }
     </style>
 </head>
 <body>
@@ -149,6 +166,9 @@
             立即返回測驗系統
         </button>
 
+        <!-- Debug 資訊區塊 (開發時可開啟) -->
+        <div class="debug-info" id="debugInfo"></div>
+
     </div>
 
     <script>
@@ -162,6 +182,7 @@
         const userInfoDiv = document.getElementById('userInfo');
         const countdownDiv = document.getElementById('countdown');
         const manualRedirectBtn = document.getElementById('manualRedirect');
+        const debugInfoDiv = document.getElementById('debugInfo');
 
         // 從 URL #hash 取得參數 (Supabase 返回的方式)
         const urlParams = new URLSearchParams(window.location.hash.substring(1));
@@ -170,6 +191,19 @@
         const errorCode = urlParams.get('error');
 
         manualRedirectBtn.addEventListener('click', () => redirectToMain());
+
+        // Debug 函數 (開發時可用)
+        function logDebug(message, data = null) {
+            console.log(message, data);
+            const timestamp = new Date().toLocaleTimeString('zh-TW');
+            const logEntry = `[${timestamp}] ${message}`;
+            debugInfoDiv.innerHTML += `<div>${logEntry}</div>`;
+            if (data) {
+                debugInfoDiv.innerHTML += `<pre>${JSON.stringify(data, null, 2)}</pre>`;
+            }
+            // 開發時取消此行註解以顯示 debug 資訊
+            // debugInfoDiv.classList.add('show');
+        }
 
         // 核心邏輯
         if (errorCode) {
@@ -185,8 +219,9 @@
         async function sendTokenToWebhook(access_token, refresh_token) {
             try {
                 messageDiv.innerHTML = '正在同步資料到雲端...';
+                logDebug('開始發送 Token 到 n8n');
                 
-                // 由於 Supabase 登入成功後，Token 會儲存在前端，這裡直接將 Token 傳給 n8n
+                // 由於 Supabase 登入成功後,Token 會儲存在前端,這裡直接將 Token 傳給 n8n
                 const response = await fetch(N8N_GOOGLE_WEBHOOK_URL, {
                     method: 'POST',
                     headers: {
@@ -200,46 +235,51 @@
                 });
 
                 if (!response.ok) {
-                    throw new Error(`Webhook 處理失敗，狀態碼: ${response.status}`);
+                    throw new Error(`Webhook 處理失敗,狀態碼: ${response.status}`);
                 }
 
                 const data = await response.json();
+                logDebug('n8n 回應資料:', data);
                 
                 // 隱藏載入動畫
                 loaderDiv.style.display = 'none';
 
-               if (data.status === 'success' && data.user_data) {
-
-    // 🎯 修正點 1：定義一個變數來處理網址
-    let avatarUrl = data.avatar || data.pictureUrl ;
-    
-    // 🎯 修正點 2：強制將 http:// 轉為 https://
-    // 這是解決瀏覽器 Mixed Content Error 的關鍵！
-    if (avatarUrl.startsWith('http://')) {
-        avatarUrl = avatarUrl.replace('http://', 'https://');
-    }
+                if (data.status === 'success') {
                     
-                    // 修正關鍵：將 n8n 返回的用戶資料存入 localStorage
+                    // 🎯 關鍵修正:正確處理頭像 URL
+                    // 優先使用 pictureUrl,其次是 avatar,最後提供預設值
+                    let avatarUrl = data.pictureUrl || data.avatar || 'https://placehold.co/80';
+                    
+                    logDebug('原始 avatarUrl:', avatarUrl);
+                    
+                    // 🎯 安全檢查:確保 avatarUrl 存在且為字串後才進行操作
+                    if (avatarUrl && typeof avatarUrl === 'string' && avatarUrl.startsWith('http://')) {
+                        avatarUrl = avatarUrl.replace('http://', 'https://');
+                        logDebug('已轉換為 HTTPS:', avatarUrl);
+                    }
+                    
+                    // 修正關鍵:將 n8n 返回的用戶資料存入 localStorage
                     // 這裡的 key 必須是 'user_data' 才能被主程式的 LoginManager 識別
-                    localStorage.setItem('user_data', JSON.stringify({
-                        userId: data.google_id, // 使用 google_id 作為通用 userId
-                        displayName: data.name,
-                        name: data.name, // 為了兼容 Line/Google 兩種結構
-                        
-// 💡 使用修正後的 avatarUrl 變數
-        avatar: avatarUrl, 
-        pictureUrl: avatarUrl,
-                        
-                        member_level: data.member_level,
+                    const userData = {
+                        userId: data.Google_user_id || data.google_id, // 使用 Google_user_id 或 google_id
+                        displayName: data.displayName || data.name,
+                        name: data.displayName || data.name, // 為了兼容 Line/Google 兩種結構
+                        email: data.email,
+                        avatar: avatarUrl, 
+                        pictureUrl: avatarUrl,
+                        member_level: data.member_level || '免費會員',
                         login_type: 'google',
                         last_login: new Date().toLocaleString('zh-TW')
-                    }));
+                    };
+
+                    logDebug('準備儲存的用戶資料:', userData);
+                    localStorage.setItem('user_data', JSON.stringify(userData));
 
                     messageDiv.className = 'success';
-                    messageDiv.innerHTML = '✓ Google 登入成功！';
+                    messageDiv.innerHTML = '✓ Google 登入成功!';
                     
                     // 顯示用戶資訊
-                    displayUserInfo(data);
+                    displayUserInfo(userData);
 
                     // 2秒後自動跳轉
                     startCountdown(2);
@@ -249,6 +289,7 @@
 
             } catch (error) {
                 console.error('❌ Google 登入處理錯誤:', error);
+                logDebug('錯誤詳情:', error);
                 handleError(`資料同步錯誤: ${error.message}`);
             }
         }
@@ -265,8 +306,8 @@
             const memberBadge = document.getElementById('memberBadge');
             const memberLevel = user.member_level || '免費會員';
 
-            userPicture.src = user.avatar ;
-            userName.textContent = user.name || user.email || '使用者';
+            userPicture.src = user.pictureUrl || user.avatar || 'https://placehold.co/80';
+            userName.textContent = user.displayName || user.name || user.email || '使用者';
             memberBadge.textContent = memberLevel;
             
             // 根據會員等級設定樣式
@@ -275,6 +316,8 @@
             } else {
                 memberBadge.classList.remove('paid');
             }
+
+            logDebug('用戶資訊已顯示');
         }
         
         // 錯誤處理
@@ -283,6 +326,7 @@
             messageDiv.className = 'error';
             messageDiv.innerHTML = msg;
             showManualRedirect();
+            logDebug('錯誤:', msg);
         }
 
         // 倒數計時與自動跳轉
@@ -308,6 +352,7 @@
         }
 
         function redirectToMain() {
+            logDebug('準備跳轉到:', REDIRECT_URL);
             window.location.href = REDIRECT_URL;
         }
 

@@ -258,16 +258,21 @@
                         logDebug('已轉換為 HTTPS:', avatarUrl);
                     }
                     
-                    // 修正關鍵:將 n8n 返回的用戶資料存入 localStorage
-                    // 這裡的 key 必須是 'user_data' 才能被主程式的 LoginManager 識別
+                    // 🔥 關鍵修正:資料結構必須完全匹配 web.html 的 showUserInfo 期望
                     const userData = {
-                        userId: data.Google_user_id || data.google_id, // 使用 Google_user_id 或 google_id
-                        displayName: data.displayName || data.name,
-                        name: data.displayName || data.name, // 為了兼容 Line/Google 兩種結構
-                        email: data.email,
-                        avatar: avatarUrl, 
+                        // 核心欄位 (web.html showUserInfo 會使用)
+                        displayName: data.displayName || data.email?.split('@')[0] || '使用者',
+                        name: data.displayName || data.email?.split('@')[0] || '使用者',
                         pictureUrl: avatarUrl,
+                        avatar: avatarUrl,
+                        
+                        // 識別與會員欄位
+                        userId: data.Google_user_id || data.google_id,
+                        google_id: data.Google_user_id || data.google_id,
+                        email: data.email,
                         member_level: data.member_level || '免費會員',
+                        
+                        // 元資料
                         login_type: 'google',
                         last_login: new Date().toLocaleString('zh-TW')
                     };

@@ -211,7 +211,7 @@
                if (data.status === 'success' && data.user_data) {
 
     // 🎯 修正點 1：定義一個變數來處理網址
-    let avatarUrl = data.user_data.avatar || data.user_data.pictureUrl || 'https://placehold.co/60';
+    let avatarUrl = data.user_data.avatar || data.user_data.pictureUrl ;
     
     // 🎯 修正點 2：強制將 http:// 轉為 https://
     // 這是解決瀏覽器 Mixed Content Error 的關鍵！

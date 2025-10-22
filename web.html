@@ -3537,7 +3537,7 @@ async updateWrongQuestions() {
                 
                 // 決定顯示名稱、頭像、登入方式
                 const displayName = user.displayName || user.name || user.email || '使用者';
-                const pictureUrl = user.pictureUrl || user.avatar || 'https://placehold.co/60';
+                const pictureUrl = user.pictureUrl || user.avatar ;
                 const loginType = user.login_type === 'google' ? 'Google' : 'Line';
                 const memberLevel = user.member_level || '免費會員';
                 
@@ -3613,4 +3613,5 @@ async updateWrongQuestions() {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 

@@ -1101,11 +1101,6 @@
                         <i class="fas fa-check-circle text-success me-2"></i>
                         歡迎回來，<span id="user-name">載入中...</span>！
                         <span id="user-level-badge" class="badge bg-primary ms-2" style="font-size: 0.8rem;">載入中...</span>
-                    <!-- 🔥 新增:升級按鈕 (小版本,只對免費會員顯示) -->
-                    <button id="upgrade-btn-small" class="btn btn-sm btn-gradient-premium ms-2" style="display: none;" onclick="openUpgradeModal()">
-                        <i class="fas fa-crown me-1"></i>升級 VIP
-                    </button>
-            
                     </h5>
                     <small class="text-muted">
                         <i class="fas fa-calendar-alt me-1"></i>最後登入：<span id="last-login">剛剛</span>
@@ -3717,20 +3712,17 @@ async updateWrongQuestions() {
     const isPaid = memberLevel.includes('付費');
     
     // 取得所有升級相關元素
-    const upgradeBtnSmall = document.getElementById('upgrade-btn-small');
     const upgradeBtnLarge = document.getElementById('upgrade-btn-large');
     const freeMemberNotice = document.getElementById('free-member-notice');
     const navUpgradeItem = document.getElementById('nav-upgrade-item');
     
     if (!isPaid) {
         // 免費會員:顯示所有升級入口
-        if (upgradeBtnSmall) upgradeBtnSmall.style.display = 'inline-block';
         if (upgradeBtnLarge) upgradeBtnLarge.style.display = 'inline-block';
         if (freeMemberNotice) freeMemberNotice.style.display = 'block';
         if (navUpgradeItem) navUpgradeItem.style.display = 'block';
     } else {
         // 付費會員:隱藏所有升級入口
-        if (upgradeBtnSmall) upgradeBtnSmall.style.display = 'none';
         if (upgradeBtnLarge) upgradeBtnLarge.style.display = 'none';
         if (freeMemberNotice) freeMemberNotice.style.display = 'none';
         if (navUpgradeItem) navUpgradeItem.style.display = 'none';
@@ -4136,6 +4128,7 @@ function checkFeatureAccess(feature) {
     
 </body>
 </html>
+
 
 
 

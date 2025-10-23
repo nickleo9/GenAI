@@ -3728,5 +3728,175 @@
         "explanation": "動態結合外部權威資料庫，能彈性擴增AI知識及提升答案時效性及正確度。",
         "number": 220,
         "date": "2025-10-21"
+    },
+    {
+        "question": "以下哪一項最能體現No Code平台運用在生成式AI流程自動化的優勢？",
+        "options": [
+            "可讓非技術人員建構AI流程且快速部署",
+            "只能由桌面端批次執行AI任務流程",
+            "需仰賴資深工程師手動撰寫大量程式",
+            "僅支援固定模板且無法客製化模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "流程自動化",
+        "explanation": "No Code平台讓非技術人員也能拖拉式設計並部署AI流程，降低技術門檻並加速應用落地。",
+        "number": 221,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "當規劃企業引進多模態生成式AI工具時，首要考量下列哪一點？",
+        "options": [
+            "模型能與現有系統API無縫整合",
+            "模型生成速度比其他工具快",
+            "模型具備多語言輸出能力",
+            "模型能大幅降低圖形運算資源"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "企業導入規劃",
+        "explanation": "評估生成式AI工具首先需考慮與現有企業資訊系統（如API）的整合性，以確保導入順利。",
+        "number": 222,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "在提示工程中，下列哪個設計方式較能明確提升生成式AI回應品質？",
+        "options": [
+            "提示偏向開放性敘述且資訊量少",
+            "提示具有明確指令與範例案例",
+            "提示僅列出單一問題且無關聯背景",
+            "提示過度依賴系統默認參數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "Prompt Engineering",
+        "explanation": "有效提示通常具體明確且包含範例，有助於AI模型更針對用戶需求輸出最佳結果。",
+        "number": 223,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "何者非屬低代碼（Low Code）AI應用開發常見的限制？",
+        "options": [
+            "可擴展性受限難以滿足複雜需求",
+            "資料安全性標準自動完全滿足",
+            "自訂功能彈性有時受限於平台",
+            "深度客製需要外部程式整合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台限制",
+        "explanation": "低代碼平台不會自動完全滿足所有資料安全標準，這點仍需用戶特別管理與確認。",
+        "number": 224,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "下列哪個風險最常見於生成式AI導入企業系統過程？",
+        "options": [
+            "生成內容過於一致導致創新不足",
+            "模型黑箱決策難以追蹤來源",
+            "硬體設備更新不及時造成延遲",
+            "人為干預生成流程過度直接"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入風險管理",
+        "concept": "模型可解釋性",
+        "explanation": "AI模型決策難以追蹤其決策來源（黑箱問題）是導入生成式AI時企業常見的風險。",
+        "number": 225,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "若要導入生成式AI於醫療領域，最應優先滿足哪一項需求？",
+        "options": [
+            "支援高畫質文字生成",
+            "符合醫療法規資料合規",
+            "能自動即時回應患者提問",
+            "具備高效生成多語病歷能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "產業合規",
+        "explanation": "醫療產業必須優先確保AI工具及資料處理符合法規，保障病患隱私。",
+        "number": 226,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "使用生成式AI自動化企業流程時，下列哪一項是目標指標之一？",
+        "options": [
+            "僅提升單一部門工作量",
+            "降低跨部門溝通錯誤率",
+            "增加例外狀況的人為干預次數",
+            "使流程完全不需要監督"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工 具使用",
+        "concept": "流程自動化",
+        "explanation": "自動化目標之一是透過AI降低部門間溝通錯誤率，提升整體運作效率。",
+        "number": 227,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "下列哪種情境最適合運用生成式AI平台優化產品行銷文案？",
+        "options": [
+            "需批量產製多樣化行銷文字且具個性化",
+            "需大量統一風格且文案內容無變化",
+            "需手動逐段編輯行銷內容確保準確",
+            "需完全由設計師進行內容審查"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工 具使用",
+        "concept": "商業自動化",
+        "explanation": "生成式AI可大量自動產生多元、個性化文案，最適合需要快速大量輸出行銷內容。",
+        "number": 228,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "何者不是生成式AI工具平台如Notion AI的常見應用範疇？",
+        "options": [
+            "自動化個人知識整理",
+            "語義搜尋強化搜尋體驗",
+            "企業財務會計自動結帳",
+            "團隊協作紀錄自動化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工 具使用",
+        "concept": "工具應用範圍",
+        "explanation": "財務會計自動結帳需高度合規稽核，現今生成式AI平台普遍並不直接支援此類嚴謹用途。",
+        "number": 229,
+        "date": "2025-10-23"
+    },
+    {
+        "question": "有關生成式AI系統導入效益預測，下列敘述何者正確？",
+        "options": [
+            "系統導入後能即時產生巨大效率提升且無須人類監控",
+            "預期效益須依現有數據流程設計合理評估並預留調整空間",
+            "導入初期需一次性全功能涵蓋，後續無需再調整模組",
+            "所有產業導入效益等同，無需評估各產業適用性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "效益評估",
+        "explanation": "正確的導入評估應依據實際數據、現有流程規劃合理預期效益，並預留未來調整的空間。",
+        "number": 230,
+        "date": "2025-10-23"
     }
 ]

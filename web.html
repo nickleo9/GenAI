@@ -3461,7 +3461,8 @@ async updateWrongQuestions() {
                     `&redirect_uri=${encodeURIComponent(this.LINE_CALLBACK_URL)}` +
                     `&state=${state}` +
                     `&scope=profile%20openid%20email` +
-                    `&nonce=${nonce}`;
+                    `&nonce=${nonce}` +
+                    `&prompt=consent`; 
                 
                 console.log('🔗 跳轉到 Line 登入頁面...');
                 window.location.href = lineLoginUrl;
@@ -3613,5 +3614,6 @@ async updateWrongQuestions() {
     <!-- ✨ 新增：登入功能 JavaScript END -->
 </body>
 </html>
+
 
 

@@ -3898,5 +3898,175 @@
         "explanation": "正確的導入評估應依據實際數據、現有流程規劃合理預期效益，並預留未來調整的空間。",
         "number": 230,
         "date": "2025-10-23"
+    },
+    {
+        "question": "在規劃導入 No Code／Low Code 平台以善用生成式 AI 工具時，下列何者最能提升企業開發效率與創新能力？",
+        "options": [
+            "將流程自動化與多部門知識整合可同時降低迭代時間與降低程式碼維護負擔",
+            "僅透過外部協力廠商實作以減少內部學習投入",
+            "完全採用傳統手動程式編寫以維持安全控管",
+            "僅聚焦於AI介面優化，忽略原有資料串接"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台整合與運用",
+        "explanation": "將流程自動化並整合多部門知識，能同時減少開發維護成本與加速創新，是No Code/Low Code平台的最大效益。",
+        "number": 231,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "關於生成式AI導入時的提示詞工程（Prompt Engineering）策略，下列哪一項最佳化方法最能確保模型回應精確與高效？",
+        "options": [
+            "採用長篇冗餘描述增加訊息豐富度",
+            "逐步迭代調整提示詞以細緻引導內容生成",
+            "忽略背景知識設定僅輸入核心議題",
+            "使用單一固定格式避免內容變異"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "提示詞工程",
+        "explanation": "逐步調整提示詞與反覆實驗，可提升生成式AI的內容準確度與回應精度，是專業提示工程的核心策略。",
+        "number": 232,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "企業評估導入生成式AI系統時，哪一項專有名詞描述了AI生成內容與事實資料的即時串接，能有效降低內容幻覺？",
+        "options": [
+            "Zero-shot 推理",
+            "RAG（Retrieval-Augmented Generation）",
+            "微調（Fine-tuning）",
+            "黑盒測試（Black-box Testing）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "RAG",
+        "explanation": "RAG指結合檢索與生成式AI技術，將最新事實資料即時導入生成過程，有效降低內容產生幻覺。",
+        "number": 233,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "有關 No Code 平台在法律事務自動化應用，下列哪一項敘述正確？",
+        "options": [
+            "無需程式背景即可整合法律知識庫並設計合約審閱機制",
+            "一定需要專業開發人員負責全流程自動化",
+            "只能做簡單資料增刪查修，無法支援法律規則判斷",
+            "需將合約內容全部交由外部審查，無法實現內部自動審核"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "產業應用",
+        "explanation": "No Code平台無需程式專業即可架構法律知識流，並自動化合約規則驗證，提高事務效率。",
+        "number": 234,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "下列何者為導入生成式AI於客服自動化，最適合的首要風險管理步驟？",
+        "options": [
+            "直接部屬至所有客戶端提升AI覆蓋率",
+            "建立多層次管控與內容審查流程保障回應品質",
+            "忽略敏感訊息處理主攻問答效率提升",
+            "外包風險評估僅專注工具性能指標"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "導入風險管理",
+        "explanation": "首要風險管理步驟應以分層內容審查、回應質量把關為核心，並建構安全控管機制。",
+        "number": 235,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "現今生成式AI設計內容產生時，何種評估指標最重視語境相關性而非語言流暢度？",
+        "options": [
+            "句法正確度分數（Syntactic Accuracy）",
+            "語境符合度分數（Contextual Relevance）",
+            "生成字數均勻性指標（Output Length Fairness）",
+            "生成語法多樣性指標（Syntactic Diversity）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "模型評估",
+        "explanation": "語境符合度是衡量生成內容是否切合主題核心的關鍵指標，優於僅以流暢性為主。",
+        "number": 236,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "下列哪一種生成式AI應用最仰賴多模態（Multimodal）技術整合以提升服務品質？",
+        "options": [
+            "文字摘要工具僅自純文字內容生成",
+            "智慧醫療診斷同時結合影像與報告資料",
+            "傳統網頁設計採靜態圖文模板",
+            "財務報表自動分析僅計算結構化數字"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態AI",
+        "explanation": "結合影像與文本資料的多模態AI，能顯著提升智慧醫療診斷品質與準確率。",
+        "number": 237,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "有關 No Code 平台的限制說明，下列哪一項敘述正確？",
+        "options": [
+            "多數平台對複雜邏輯處理能力有限難以應對高度客製化需求",
+            "No Code工具無法支援任何外部API串接",
+            "所有No Code平台皆內建先進深度學習演算法",
+            "用戶無法自訂現有UI元件或流程節點"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "系統擴展性",
+        "explanation": "多數No Code平台雖便於應用創建，但針對複雜客製邏輯處理仍不如傳統開發有彈性。",
+        "number": 238,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "導入生成式AI工具到金融產業時，最重要的資料隱私保護措施為何？",
+        "options": [
+            "開放所有員工自由access數據集",
+            "採用資料匿名化、分層存取與權限控管",
+            "僅透過單一內部主機集中處理業務",
+            "直接連結外部公共API以便自動學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "資料安全",
+        "explanation": "資料匿名化與分層權限設計，是金融產業導入生成式AI時防止敏感資料外洩的重要保障。",
+        "number": 239,
+        "date": "2025-10-25"
+    },
+    {
+        "question": "下列哪一項屬於生成式AI風險管理策略中，適合提前減低對企業經營負面影響的重點措施？",
+        "options": [
+            "部署即時審查與持續監控AI輸出內容",
+            "只有召開危機處理會議不用事前規劃",
+            "帶入全部無篩選外部資料源即時推薦",
+            "讓AI自主學習後獨立運行生產環節"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險防範",
+        "explanation": "即時審查及對AI內容進行監控，有助於提早發現潛在風險並即時反應，降低企業損失。",
+        "number": 240,
+        "date": "2025-10-25"
     }
 ]

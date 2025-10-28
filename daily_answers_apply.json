@@ -4068,5 +4068,175 @@
         "explanation": "即時審查及對AI內容進行監控，有助於提早發現潛在風險並即時反應，降低企業損失。",
         "number": 240,
         "date": "2025-10-25"
+    },
+    {
+        "question": "關於No Code平台導入生成式AI的限制，下列何者為正確？",
+        "options": [
+            "擴充複雜度有限並影響定製能力",
+            "容易突破企業資安規範",
+            "可靈活整合專有AI模型架構",
+            "沒有跨雲服務兼容的問題"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台擴展性",
+        "explanation": "No Code平台雖然降低開發門檻，但在高度定製和複雜應用場景下，擴充複雜度有限，是其主要限制。",
+        "number": 241,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "下列哪一句不是在生成式AI提示工程中建議使用的提示詞設計方法？",
+        "options": [
+            "分步驟逐步説明任務目標",
+            "提示中多舉例促進精確生成",
+            "隨意縮短提示保持靈活",
+            "採取明確輸出格式說明"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞最佳實踐",
+        "explanation": "有效的提示詞需要明確、詳盡且具有指導性，隨意縮短容易造成輸出偏離目標。",
+        "number": 242,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "有關企業在生成式AI專案導入評估時的第一步，何者為是？",
+        "options": [
+            "先盤點相關法律與規範",
+            "評估現有資料可用性及質量",
+            "制定績效追蹤機制",
+            "引入自動化部署流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入流程",
+        "explanation": "導入AI前，需先確保企業內部資料可用性與質量，這是決定AI模型是否可行的關鍵。",
+        "number": 243,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "下列哪一項是低代碼生成式AI工具的主要優點？",
+        "options": [
+            "可大幅降低自動化應用進階設計難度",
+            "能完全取代傳統工程團隊帳號",
+            "可直接接管API接口所有權限",
+            "可免除數據治理所有流程風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "工具優勢",
+        "explanation": "低代碼工具降低UI設計門檻，使非技術人員能在有限技術支援下，建置自動化AI應用。",
+        "number": 244,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "考量生成式AI導入企業流程時，下列何者通常應優先設置？",
+        "options": [
+            "即時監控模型API的實時響應",
+            "建立資料匿名化與加密管理機制",
+            "將所有數據集中於單一資料庫",
+            "移除所有外部API日誌紀錄功能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "資料保護",
+        "explanation": "在AI導入階段，保障資料隱私及合規性，應優先進行資料匿名化與加密管理。",
+        "number": 245,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "以下關於生成式AI生成假新聞的風險，下列敘述何者為非？",
+        "options": [
+            "模型產生內容時難以主動識別虛假信源",
+            "若部署不當可能助長錯誤資訊擴散",
+            "模型可自動審查鑑別所有意圖不明內容",
+            "模型輸出需監測，防止內容誤導社會"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "內容風險",
+        "explanation": "生成式AI缺乏主動審查能力，內容識別須配合額外監控與人工驗證。",
+        "number": 246,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "企業選用生成式AI內容產生工具時，一般應採取何種方式來控管資安？",
+        "options": [
+            "主管單位手動審查API每一次請求",
+            "限制資料存取權於必要人員或部門",
+            "開放所有應用程式對外連結能力",
+            "優先選擇開放原始碼解決方案不用審查"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資安控管",
+        "explanation": "應控管API及數據存取僅授予需求部門，確保公司營運與資料安全。",
+        "number": 247,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "RAG（Retrieval-Augmented Generation）在生成式AI應用中的主要目的為何？",
+        "options": [
+            "增加模型訓練自動化指令集靈活性",
+            "結合外部檢索提升答案參考可信度",
+            "強化數據聚合以提高產出速度",
+            "優化低代碼平台的界面自訂能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "RAG",
+        "explanation": "RAG結合外部檢索資料來源，輔助生成內容，保障模型產出的即時性與準確性。",
+        "number": 248,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "下列哪一項最能說明蘋果公司近期發佈的本地端生成式AI（On-device AI）優勢？",
+        "options": [
+            "模型訓練維持在雲端實施",
+            "用戶數據可全程留存在本地設備",
+            "所有演算法均需遠端核查機制",
+            "需持續連接外部API資訊來源"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "本地端AI",
+        "explanation": "本地端生成式AI大幅提升用戶數據隱私，資料及運算都可在本地設備完成，減少外洩風險。",
+        "number": 249,
+        "date": "2025-10-28"
+    },
+    {
+        "question": "以下哪個名詞用於描述以無需程式碼的方式配置AI模組，並可快速切換多種功能？",
+        "options": [
+            "MLOps整合架構平台",
+            "Zero-shot Prompting介面",
+            "拖拉式AI模組組合器",
+            "指標驅動虛擬化部署"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "無程式碼配置",
+        "explanation": "「拖拉式AI模組組合器」即是指藉由拖拉配置方式，讓使用者無需程式設計即可拼裝多元AI應用。",
+        "number": 250,
+        "date": "2025-10-28"
     }
 ]

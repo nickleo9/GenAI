@@ -4238,5 +4238,175 @@
         "explanation": "「拖拉式AI模組組合器」即是指藉由拖拉配置方式，讓使用者無需程式設計即可拼裝多元AI應用。",
         "number": 250,
         "date": "2025-10-28"
+    },
+    {
+        "question": "以下哪一項最適合描述No Code平台在企業應用中的主要限制？",
+        "options": [
+            "無法支援高度客製化需求且延展性有限",
+            "易於整合AI插件無資料安全疑慮",
+            "可完全取代傳統程式設計與工程師",
+            "能自動優化組織內部AI決策流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台彈性與限制",
+        "explanation": "No Code 平台雖然降低技術門檻，但在高度客製化與複雜商業邏輯上限制較大，無法像傳統開發一樣自由彈性。",
+        "number": 251,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "低程式碼（Low Code）解決方案提供下列哪一項最顯著的優勢？",
+        "options": [
+            "大幅簡化數據治理的自動化審核機制",
+            "有效縮短AI工具導入與迭代週期",
+            "自動生成專業級的AI模型技術報告",
+            "全面解決企業內的AI資料質量問題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "開發效率",
+        "explanation": "Low Code 平台強調縮短開發與上線週期，協助企業更快試錯和部署AI工具。",
+        "number": 252,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "有關生成式AI導入初期的『風險評估』，正確的敘述為何？",
+        "options": [
+            "僅需依賴技術功效評估即可滿足",
+            "應包含資料來源合法性與模型偏誤檢驗",
+            "只需考慮用戶體驗設計及可用性",
+            "重點在於選用開源模型架構即可"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "風險管理",
+        "explanation": "風險評估需同時考慮資料合法性與模型潛在偏誤，以降低AI導入之相關風險。",
+        "number": 253,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "下列何者為『生成式AI提示詞工程（Prompt Engineering）』典型的最佳實作？",
+        "options": [
+            "反覆優化語境與對話格式以提升生成品質",
+            "簡化所有用語以減少計算成本",
+            "儘量使用短指令讓AI節省運算資源",
+            "避免給AI足夠上下文以模糊生成邊界"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "常見工具與領域應用",
+        "concept": "提示詞工程",
+        "explanation": "優化提示詞的語境能有效提升生成式AI的答覆品質與精準度。",
+        "number": 254,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "針對生成式AI導入企業後『持續效益評估』，推薦採用下列哪種方式？",
+        "options": [
+            "單次專案驗收後即停止所有成效追蹤",
+            "定期以關鍵績效指標（KPI）量化生成效益",
+            "以用戶主觀滿意度問卷作為唯一依據",
+            "選用最昂貴商用模型即可確保效果"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "績效追蹤",
+        "explanation": "持續以KPI等可量化指標追蹤生成式AI應用成效，有助於確保投資報酬與調整方向。",
+        "number": 255,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "在採用無程式碼（No Code）AI開發平台時，下列敘述何者正確？",
+        "options": [
+            "適合資料完整且高度標準化的自動化需求",
+            "適用於需要深度AI模型微調的技術場景",
+            "能夠解決所有AI倫理與透明度議題",
+            "僅適合資安敏感性極高的金融領域部署"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的應用場景",
+        "concept": "適用性分析",
+        "explanation": "No Code 平台特別適合數據已結構化、流程標準的自動化業務，而非技術複雜度高的場景。",
+        "number": 256,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "以下哪一項最貼近2025年生成式AI在廣告行銷產業的應用發展趨勢？",
+        "options": [
+            "完全仰賴靜態模板自動化推播內容",
+            "以多模態AI實現即時互動與個人化生成",
+            "僅依賴文本自動產生單一廣告語句",
+            "每次執行全人工校對方能確保成效"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "應用領域",
+        "concept": "多模態AI",
+        "explanation": "2025年廣告行銷應用強調多模態AI（如圖像、語音、文字），以達到個人化與實時互動效果。",
+        "number": 257,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "下列關於生成式AI模型選型規劃的說明，何者錯誤？",
+        "options": [
+            "需考量應用需求與內部人員AI素養",
+            "需衡量模型調教彈性與維護難度",
+            "價格與法規合規性並非選型要素",
+            "可根據資安風險選擇專屬模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "導入評估規劃",
+        "concept": "模型選型考量",
+        "explanation": "除了需求與素養，模型材料端成本與法規合規性同等重要，不可忽略。",
+        "number": 258,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "生成式AI部署於組織內時，下列何者為常見的資安隱憂？",
+        "options": [
+            "過度依賴人工標註以致效能降低",
+            "Prompt Injection攻擊導致敏感資料洩露",
+            "API成本上升產生預算控管困難",
+            "自動化工作流程過於標準缺乏彈性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI風險管理",
+        "concept": "資安風險",
+        "explanation": "Prompt Injection為新興的AI安全威脅，可能導致組織敏感資料通過生成式AI外洩。",
+        "number": 259,
+        "date": "2025-10-30"
+    },
+    {
+        "question": "關於Fine-tuning與RAG在企業導入生成式AI的應用比較，下列敘述何者正確？",
+        "options": [
+            "Fine-tuning適用動態資料即時提取場景",
+            "RAG主要強化外部知識即時檢索能力",
+            "Fine-tuning僅針對API回應速度優化",
+            "RAG無法將外部知識結合生成內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "常見工具與應用",
+        "concept": "Fine-tuning與RAG",
+        "explanation": "RAG（檢索增強生成）特別著重於結合外部動態知識，提高生成內容的即時相關性。",
+        "number": 260,
+        "date": "2025-10-30"
     }
 ]

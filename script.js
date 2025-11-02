@@ -977,20 +977,32 @@ displayQuestion() {
                                 <label class="option-label" for="option-${letter}">${letter}. ${option.text}</label>
                             </div>`;
                 }).join('');
-                
+
                 this.elements.explanationBox.classList.add('d-none');
                 this.elements.modifyAnswerBtn.classList.add('d-none');
+                this.elements.submitBtn.classList.add('d-none'); // 隱藏提交按鈕
                 document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = false);
+
+                // 🔥 新增：為選項添加自動暫存功能
+                document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
+                    input.addEventListener('change', () => this.autoSaveAnswer());
+                });
 
                 if (userAnswer) {
                     const answerInput = document.getElementById(`option-${userAnswer.answer}`);
                     if (answerInput) answerInput.checked = true;
 
                     if (isPracticeOrReview) {
-                        document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
-                        const isCorrect = userAnswer.originalIndex === question.correct_answer_index;
-                        this.showExplanation(question, userAnswer.answer, isCorrect);
-                        this.elements.modifyAnswerBtn.classList.remove('d-none');
+                        // 練習/複習模式：顯示「查看解析」按鈕
+                        this.elements.submitBtn.classList.remove('d-none');
+                        this.elements.submitBtn.innerHTML = '<i class="fas fa-eye me-1"></i>查看解析';
+                        this.elements.submitBtn.onclick = () => {
+                            const isCorrect = userAnswer.originalIndex === question.correct_answer_index;
+                            this.showExplanation(question, userAnswer.answer, isCorrect);
+                            document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
+                            this.elements.modifyAnswerBtn.classList.remove('d-none');
+                            this.elements.submitBtn.classList.add('d-none');
+                        };
                     }
                 }
                 
@@ -1005,40 +1017,50 @@ displayQuestion() {
                 this.updateStats();
                 return true;
             },
-            
-            
-            // 提交答案
-submitAnswer() {
+
+            // 🔥 新增：自動暫存答案（選擇選項時自動觸發）
+            autoSaveAnswer() {
                 const selectedOption = document.querySelector('input[name="quiz-option"]:checked');
                 if (!selectedOption) {
-                    this.showAlert('請選擇一個答案！', 'warning');
                     return false;
                 }
-                
+
                 const question = this.state.questions[this.state.currentQuestionIndex];
                 const questionId = this.state.currentQuestionIndex;
-                
-                // 儲存或更新答案
+                const isPracticeOrReview = this.state.currentMode === 'practice' || this.state.currentMode === 'review';
+
+                // 儲存或更新答案（暫存）
                 this.state.userAnswers[questionId] = {
                     answer: selectedOption.value,
                     originalIndex: parseInt(selectedOption.dataset.originalIndex),
                     timestamp: new Date()
                 };
-                
-                this.showAlert(`第 ${question.number} 題答案已提交`, 'success');
 
-                // 在練習或複習模式下，顯示解析並鎖定選項
-                if (this.state.currentMode === 'practice' || this.state.currentMode === 'review') {
-                    document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
-                    const isCorrect = this.state.userAnswers[questionId].originalIndex === question.correct_answer_index;
-                    this.showExplanation(question, this.state.userAnswers[questionId].answer, isCorrect);
-                    this.elements.modifyAnswerBtn.classList.remove('d-none');
+                // 靜默保存，不顯示提示（自動暫存）
+                // this.showAlert(`答案已自動保存`, 'success');
+
+                // 練習/複習模式：顯示「查看解析」按鈕
+                if (isPracticeOrReview) {
+                    this.elements.submitBtn.classList.remove('d-none');
+                    this.elements.submitBtn.innerHTML = '<i class="fas fa-eye me-1"></i>查看解析';
+                    this.elements.submitBtn.onclick = () => {
+                        const isCorrect = this.state.userAnswers[questionId].originalIndex === question.correct_answer_index;
+                        this.showExplanation(question, this.state.userAnswers[questionId].answer, isCorrect);
+                        document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = true);
+                        this.elements.modifyAnswerBtn.classList.remove('d-none');
+                        this.elements.submitBtn.classList.add('d-none');
+                    };
                 }
-                
+
                 this.updateStats();
                 this.updateButtonStates();
                 this.saveUserData();
                 return true;
+            },
+
+            // 提交答案（保留舊函數以兼容性，但改為調用 autoSaveAnswer）
+submitAnswer() {
+                return this.autoSaveAnswer();
             },
             
             // 顯示解析
@@ -1265,16 +1287,24 @@ finishQuiz() {
                 const totalQuestions = this.state.questions.length;
                 const answeredCount = Object.keys(this.state.userAnswers).length;
                 const unansweredCount = totalQuestions - answeredCount;
-                
+
+                // 🔥 改進：無論是否有未答題目，都顯示確認框
+                let confirmMessage = '確定要完成測驗嗎？\n\n';
+                confirmMessage += `📊 已作答：${answeredCount} / ${totalQuestions} 題\n`;
+
                 if (unansweredCount > 0) {
-                    if (!confirm(`還有 ${unansweredCount} 題未回答（將視為答錯），確定要完成測驗嗎？`)) {
-                        return;
-                    }
+                    confirmMessage += `⚠️ 未作答：${unansweredCount} 題（將視為答錯）\n`;
+                }
+
+                confirmMessage += '\n⚠️ 完成後將無法修改答案！';
+
+                if (!confirm(confirmMessage)) {
+                    return;
                 }
 
                 // 核心修改：在顯示結果前，根據最終答案計算分數和錯題
                 this.calculateFinalResults();
-                
+
                 this.stopTimer();
                 this.state.isQuizActive = false;
                 this.unlockInterface();
@@ -1552,12 +1582,17 @@ updateButtonStates() {
             enableAnswerModification() {
                 this.elements.explanationBox.classList.add('d-none');
                 this.elements.modifyAnswerBtn.classList.add('d-none');
+                this.elements.submitBtn.classList.add('d-none'); // 隱藏解析按鈕
                 document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
                     input.disabled = false;
                 });
-                this.elements.submitBtn.disabled = false;
-                this.elements.nextBtn.disabled = true;
-                this.showAlert('您可以修改答案了，修改後請重新提交。', 'info');
+
+                // 🔥 重新添加自動暫存事件監聽器
+                document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
+                    input.addEventListener('change', () => this.autoSaveAnswer());
+                });
+
+                this.showAlert('您可以修改答案了，選擇新答案後會自動保存。', 'info');
             },
 
             // 新增：標記/取消標記題目

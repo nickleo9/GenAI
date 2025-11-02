@@ -2188,12 +2188,29 @@ async updateWrongQuestions() {
     
     try {
         console.log('📤 開始更新錯題集...');
-        
+
+                // 🔥 關鍵修正:把打亂後的正確答案加到每個題目上
+        const questionsWithCorrectMapping = this.state.questions.map((q, index) => {
+            const mapping = this.state.questionMapping[index];
+            return {
+                ...q,
+                // 保留原始資料
+                original_correct_answer_letter: q.correct_answer_letter,
+                original_correct_answer_index: q.correct_answer_index,
+                // 🔥 加上打亂後的正確答案
+                correct_answer_letter: mapping ? mapping.correctLetter : q.correct_answer_letter,
+                // 也可以加上打亂後的選項順序(可選)
+                shuffled_options: mapping ? mapping.shuffledOptions.map(opt => opt.text) : q.options
+            };
+        });
+            
+            
+            
         const wrongQuestionsData = {
             userId: userId,
             databaseType: this.state.selectedDatabase,
             answers: this.state.userAnswers,
-            questions: this.state.questions,
+            questions: questionsWithCorrectMapping, // ✅ 使用修正後的題目資料
             timestamp: new Date().toISOString()
         };
         
@@ -2578,3 +2595,4 @@ function checkFeatureAccess(feature) {
 // 🔥 付費升級功能 JavaScript END
 
         
+

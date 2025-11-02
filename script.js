@@ -520,7 +520,12 @@
                 document.getElementById('review-wrong-btn').addEventListener('click', () => this.reviewWrongQuestions());
                 document.getElementById('restart-quiz-btn').addEventListener('click', () => this.restartQuiz());
                 document.getElementById('reset-stats-btn').addEventListener('click', () => this.resetProgress());
-                
+
+                // 🔥 新增：結果模態框關閉時返回首頁
+                document.getElementById('result-modal').addEventListener('hidden.bs.modal', () => {
+                    this.backToSelection();
+                });
+
                 // 頁面關閉前自動保存
                 window.addEventListener('beforeunload', () => this.saveUserData(false));
             },

@@ -1506,9 +1506,15 @@ updateButtonStates() {
 
                 // 上一題：只要不是第一題，就可用
                 this.elements.prevBtn.disabled = isFirst;
-                
-                // 提交：在練習/複習模式下，答過就禁用。考試模式下恆定可用。
-                this.elements.submitBtn.disabled = hasAnswered && isPracticeOrReview;
+
+                // 🔥 修正：提交按鈕現在是「查看解析」按鈕，在練習模式下應該啟用
+                // 練習/複習模式：如果已作答，按鈕顯示為「查看解析」且啟用
+                // 考試模式：按鈕隱藏
+                if (isPracticeOrReview && hasAnswered) {
+                    this.elements.submitBtn.disabled = false; // 啟用「查看解析」按鈕
+                } else {
+                    this.elements.submitBtn.disabled = true;
+                }
 
                 // 下一題：只要不是最後一題，就可用
                 this.elements.nextBtn.disabled = isLast;

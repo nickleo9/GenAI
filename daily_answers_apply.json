@@ -4748,5 +4748,175 @@
         "explanation": "最佳實踐是根據情境優化並細緻設計提示詞，使AI輸出更精確可靠。",
         "number": 280,
         "date": "2025-11-04"
+    },
+    {
+        "question": "在企業導入生成式AI規劃的初期，『Prompt Engineering』何者為首要考量的重點？",
+        "options": [
+            "確保提示詞明確減少理解歧異",
+            "對提示詞語意進行非監督式檢查",
+            "縮短提示內容以節省模型推論資源",
+            "提示詞盡量以日常口語呈現"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "提示工程",
+        "explanation": "有效的提示詞設計應確保語意明確，避免模型產生不精確或偏離需求的內容，這是導入初期提升效能的關鍵。",
+        "number": 281,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "下列何者是No Code/Low Code平台在生成式AI專案中，最常見的限制？",
+        "options": [
+            "難以實現複雜任務的彈性調整",
+            "資料集增大時可擴展性最強",
+            "允許高度客製化複雜API整合",
+            "可直接取代資安專家的細部設定"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "No Code平台限制",
+        "explanation": "No Code/Low Code工具便利但彈性有限，對於進階或複雜功能常有技術障礙。",
+        "number": 282,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "下列關於生成式AI工具導入企業知識管理的描述，何者正確？",
+        "options": [
+            "能根據現場語音紀錄自動生成會議紀要",
+            "只能產生結構化資料無法理解非結構化資訊",
+            "無法依照特定產業領域調校知識分類邏輯",
+            "限定輸出格式為純文字不支援多媒體整合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "企業知識管理",
+        "explanation": "生成式AI能根據會議或文件內容，自動生成摘要與紀要，提升知識管理效率。",
+        "number": 283,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "下列哪一項『提示詞設計』策略，最有助於提升生成式AI內容的客製符合度？",
+        "options": [
+            "使用帶有情境設定的多層提示",
+            "僅提供簡短的關鍵詞作為輸入",
+            "忽略用戶目標專注語料訓練資料",
+            "大量重複同義詞增加隨機性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "情境式指令設計",
+        "explanation": "多層且有情境設定的提示能讓AI更理解上下文，因此更能精準地回應需求。",
+        "number": 284,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "關於生成式AI的『風險管理』規劃，下列敘述何者正確？",
+        "options": [
+            "需定期檢查模型輸出內容的偏誤風險",
+            "導入後模型產生的資安風險可自動排除",
+            "風險評估僅需於初始部署時進行一次",
+            "強化提示詞即可完全解決資料隱私問題"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "風險評估",
+        "explanation": "生成式AI風險評估是持續性的，必須定期檢查內容的偏誤與潛在問題。",
+        "number": 285,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "下列有關No Code/Low Code平台的陳述，何者不正確？",
+        "options": [
+            "大幅降低AI應用開發門檻",
+            "允許技術門檻較低的使用者快速上手",
+            "可輕易整合所有專有演算法",
+            "適用於原型開發與簡易流程自動化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台應用範圍",
+        "explanation": "No Code/Low Code平台對於某些專有或進階演算法整合仍有限並非完全適用。",
+        "number": 286,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "何者為生成式AI在醫療影像領域中近期主要的應用趨勢？",
+        "options": [
+            "僅進行靜態圖像壓縮",
+            "協助自動生成影像診斷初稿",
+            "專注於數字化卷宗備份",
+            "限制於傳統病名標記預測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "醫療生成式AI應用",
+        "explanation": "AI正被廣泛用於自動生成診斷初稿，輔助醫生提升效率及正確率。",
+        "number": 287,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "就企業導入生成式AI流程的規劃重點，下列何者為非？",
+        "options": [
+            "全面蒐集資料來源與業務流程",
+            "建立多元角色的需求盤點機制",
+            "授權所有員工自行設定AI機制",
+            "完善資料治理與權限管控"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "企業導入規劃",
+        "explanation": "企業應有資訊安全管控，不應完全開放所有員工設定AI，須依法與內規規範。",
+        "number": 288,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "生成式AI於客戶服務的導入時，為提升系統表現，最關鍵的Prompt設計是哪一種？",
+        "options": [
+            "要求模型自定回應語調",
+            "指明回應需符合品牌語氣",
+            "提示僅提供簡單數字選項",
+            "明確規範輸入不得有專有詞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "品牌語調設計",
+        "explanation": "加入品牌語調提示有利於AI產生貼近企業形象的回應，強化顧客服務體驗。",
+        "number": 289,
+        "date": "2025-11-06"
+    },
+    {
+        "question": "2025年最新生成式AI平台，在文本生成領域的創新重點聚焦於？",
+        "options": [
+            "僅支援單語言短篇小說自動編輯",
+            "實現多模態跨語言混合創作生成",
+            "專注於文件穩定批次自動傳輸",
+            "只允許結構化表單內容生產"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "多模態混合生成",
+        "explanation": "最新平台已能結合多語言與多模態，進行創新文本、影像或聲音等多重內容生成。",
+        "number": 290,
+        "date": "2025-11-06"
     }
 ]

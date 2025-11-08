@@ -4918,5 +4918,175 @@
         "explanation": "最新平台已能結合多語言與多模態，進行創新文本、影像或聲音等多重內容生成。",
         "number": 290,
         "date": "2025-11-06"
+    },
+    {
+        "question": "下列哪一個選項最適合形容No Code工具導入於企業生成式AI工作流時的關鍵優勢？",
+        "options": [
+            "快速原型開發降低初始投入成本",
+            "強化深度學習模型參數調整能力",
+            "集中自動化模型部署與維運流程",
+            "提升大規模語言模型安全認證"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 基本概念",
+        "concept": "No Code 企業應用",
+        "explanation": "No Code平台最大的優勢在於能夠快速建立原型，降低企業在前期導入AI應用時的成本與技術門檻。",
+        "number": 291,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "在生成式AI行銷內容自動化流程中，哪一種提示詞工程技巧能針對不同客群展現最大彈性？",
+        "options": [
+            "單點聚焦提示詞",
+            "多輪動態提示詞",
+            "類神經權重調整",
+            "卷積交錯提示詞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "多輪動態提示設計",
+        "explanation": "多輪動態提示詞設計能根據不同情境隨時調整，靈活對應各族群與情境需求，適合行銷內容生成。",
+        "number": 292,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "在導入生成式AI時，對於企業資料安全風險的評估，何者為非？",
+        "options": [
+            "定期檢查模型參數的權限分層",
+            "只需加密使用者端連線請求",
+            "建置分級的存取權限與稽核紀錄",
+            "重視資料敏感性與匿名化處理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "資料安全風險評估",
+        "explanation": "僅加密使用者端連線是不夠的，資料本身、存取權限與稽核同樣十分重要。",
+        "number": 293,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "以下哪一個不是No Code / Low Code生成式AI解決方案的限制？",
+        "options": [
+            "模型自訂化能力有限",
+            "依賴平台固定架構",
+            "原始程式碼調整彈性低",
+            "大幅提高開發者配置選項"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 限制",
+        "concept": "平台限制",
+        "explanation": "No Code / Low Code平台通常降低了開發彈性，並不會提高配置選項；相反地，開發彈性與可調整性受到限制。",
+        "number": 294,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "選擇生成式AI工具時，企業最需要考慮哪項特性以利系統整合？",
+        "options": [
+            "可視化指令設計效率",
+            "多API支援的互通能力",
+            "工具內部資料分層深度",
+            "單模型訓練資料量極高"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具選擇",
+        "concept": "系統整合互通",
+        "explanation": "多API支援表示平台能與其他系統或工具整合，為企業部署生成式AI時最重要的考量之一。",
+        "number": 295,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "關於RAG（Retrieval Augmented Generation）在應用規劃時的優勢描述，哪一項正確？",
+        "options": [
+            "可減少外部知識擴充性限制",
+            "容易產生幻覺資訊與遺漏",
+            "完全避開原始知識庫設計",
+            "強化本地端模型數值運算"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "RAG應用優勢",
+        "explanation": "RAG技術能即時檢索外部知識，擴大AI生成資訊的正確性與涵蓋度，有效突破擴充性限制。",
+        "number": 296,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "下列哪一項最能體現生成式AI在法律文件審查流程的應用優勢？",
+        "options": [
+            "使法條自動摘要能力大幅提升",
+            "促成邏輯驗證規則強制一致",
+            "僅可做事後審核結果修正",
+            "大量減低電子簽章驗證需求"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "法規文件自動處理",
+        "explanation": "生成式AI在法律領域能夠幫助自動條列、摘要與梳理法條，加速審查與增強資訊掌握。",
+        "number": 297,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "關於Prompt Chaining（提示串連）技術，下列描述何者正確？",
+        "options": [
+            "能將多階段任務拆分為獨立步驟",
+            "提示詞只適用於單一任務流程",
+            "僅限於圖像生成型AI工具應用",
+            "完全仰賴用戶自由輸入內容"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "提示串連",
+        "explanation": "Prompt Chaining可將複雜任務拆分成有邏輯的階段與步驟，逐步提高生成式AI的表現精度。",
+        "number": 298,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "企業評估導入生成式AI過程中，下面哪一項不是風險管理必須關注的重點？",
+        "options": [
+            "資訊流通與權限配置",
+            "提示詞最佳化流程建構",
+            "合規要求與法遵稽核",
+            "模型可能出現有害生成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "導入風險評估",
+        "explanation": "提示詞最佳化是技術優化項目，並不是企業風險控管的核心內容。",
+        "number": 299,
+        "date": "2025-11-08"
+    },
+    {
+        "question": "關於生成式AI內建自訂資料來源能力與應用範圍的敘述，何者為誤？",
+        "options": [
+            "可直接連結企業知識庫進行內容生成",
+            "所有模型皆需外部API輔助查看資料",
+            "部分工具支持CSV、JSON等格式同步",
+            "能用內嵌查詢讓數據即時參照"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具特性",
+        "concept": "自訂資料來源",
+        "explanation": "並非所有生成式AI模型都需要外部API輔助，也有許多工具支援資料直接同步查詢。",
+        "number": 300,
+        "date": "2025-11-08"
     }
 ]

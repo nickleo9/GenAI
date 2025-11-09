@@ -10795,5 +10795,175 @@
         "explanation": "n8n可作為整合平台，連結生成式AI產生的文本結果與企業客服系統，實現自動化的智能回應及客戶資料管理，提升效率與品質。",
         "number": 651,
         "date": "2025-10-26"
+    },
+    {
+        "question": "如果你是台灣某製造工廠主管，想導入2025年主流生成式AI工具來優化生產線監控與維護，以下哪種AI工具最適合？",
+        "options": [
+            "使用多模態AI Gemini 1.5進行視覺與聲音資料分析，實時預測設備異常",
+            "部署ChatGPT進行客戶服務自動回應，提升用戶體驗",
+            "利用Stable Diffusion 3生成市場推廣圖片，增加品牌曝光",
+            "使用GitHub Copilot X自動撰寫工廠管理報告"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態AI應用",
+        "concept": "工業應用中的多模態AI",
+        "explanation": "Gemini 1.5是2025年Google DeepMind推出的多模態AI模型，可結合視覺與聲音數據，適合監控設備狀態和提前預測故障，符合製造業生產線監控需求。其他選項則較偏向行銷或客服用途，不符合題意。",
+        "number": 652,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "作為一位高中英文老師，想利用生成式AI協助學生進行英文寫作練習並獲得即時回饋，哪種AI應用最符合你的需求？",
+        "options": [
+            "使用GPT-4進行文章內容生成和語法建議",
+            "利用Stable Diffusion製作圖像輔助英文單字記憶",
+            "部署Claude 3協助評分學生作文的公平性",
+            "使用GitHub Copilot X輔助學生寫程式作業"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育領域的生成式AI應用",
+        "concept": "自然語言處理及寫作輔助",
+        "explanation": "GPT-4具備強大的語言理解與生成能力，非常適合用於英文寫作輔助與語法校正。Stable Diffusion和Copilot X與英文寫作無直接關聯，Claude 3雖可評分但不如GPT-4實務。",
+        "number": 653,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "2025年台灣金融業廣泛導入生成式AI，以下哪項是最常見的應用？",
+        "options": [
+            "智能客服服務與內部行政自動化",
+            "採用GAN技術創作金融品牌視覺藝術",
+            "結合AI自動撰寫報告提升分析效率",
+            "運用AI自主交易系統進行股票買賣"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "金融業應用",
+        "concept": "生成式AI在企業流程的應用",
+        "explanation": "根據2025年調查，台灣約有48%的金融業生成式AI應用為智能客服與內部行政自動化，這是最普遍也最實際的用途。其他選項雖可能存在，但比例較低或技術尚未成熟。",
+        "number": 654,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "假如你是自媒體經營者，在2025年利用生成式AI提升影片內容創作效率，下列哪種工具最適合？",
+        "options": [
+            "Sora，用於從文字提示生成高品質影片素材",
+            "Claude 3，用於文字校正與編輯腳本",
+            "Stable Diffusion 3，用於生成封面圖片與海報",
+            "GitHub Copilot X，用於編寫自動剪輯程式碼"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具介紹",
+        "concept": "文本轉視頻生成",
+        "explanation": "Sora是OpenAI於2025年推出的先進文字轉影片生成工具，非常適合自媒體創作者提升影片素材產出效率。Stable Diffusion 3是圖片生成工具，Claude 3聚焦文字，Copilot X是程式碼協助工具。",
+        "number": 655,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "在製定企業生成式AI導入規劃時，哪一項步驟最能確保AI系統符合2025年台灣政府與國際AI治理規範？",
+        "options": [
+            "進行風險評估與偏誤檢測以符合倫理和合規要求",
+            "優先升級硬體，以提升AI推理速度與精度",
+            "增加AI系統參數數量以強化性能",
+            "擴大AI工具種類，嘗試多種AI模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "AI治理與風險管理",
+        "concept": "倫理合規與風險控管",
+        "explanation": "2025年的AI治理強調倫理合規與偏誤管理，只有透過風險評估與檢測，能保障AI應用符合法規及社會期待，升級硬體或擴大模型未必解決此問題。",
+        "number": 656,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "如果你是軟體工程師，想利用2025年最新AI工具自動化程式開發流程，下列哪一選項最合適？",
+        "options": [
+            "GitHub Copilot X提供代碼規劃、撰寫與測試自動化",
+            "Midjourney v6用於生成開發相關圖片",
+            "Stable Diffusion 3協助產生程式碼範例",
+            "Claude 3用於寫作技術文件說明"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "程式碼生成代理",
+        "concept": "AI輔助軟體開發",
+        "explanation": "GitHub Copilot X是2025年領先的自動程式設計代理工具，可以自動規劃、撰寫並測試代碼，顯著提高程式開發效率，其他選項則與程式開發自動化關聯度較低。",
+        "number": 657,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "面對2025年生成式AI系統的大量應用，主管如何運用AI提高團隊生產力並降低錯誤風險？",
+        "options": [
+            "導入AI輔助決策系統並結合持續風險監控機制",
+            "讓團隊完全依賴AI自動完成所有專案任務",
+            "頻繁更換AI工具以嘗試各類新技術提升效率",
+            "減少AI使用，避免模型偏誤干擾工作流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "組織管理與風險控管",
+        "concept": "AI輔助管理與風險防範",
+        "explanation": "主管應理性運用AI輔助決策，結合風險監控保護業務，避免完全依賴AI並盲目更換工具。減少AI使用未必提升績效，需平衡效率與風險。",
+        "number": 658,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "下列哪一項描述正確區分鑑別式AI與生成式AI的主要差異？",
+        "options": [
+            "鑑別式AI專注判斷輸入資料屬性，生成式AI創建新數據內容",
+            "鑑別式AI生成新內容，生成式AI做分類任務",
+            "鑑別式AI必須有監督學習，生成式AI只需無監督學習",
+            "鑑別式AI使用深度學習，生成式AI不依賴神經網路"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "AI模型基礎原理",
+        "explanation": "鑑別式AI專注於辨識輸入的屬性或分類，而生成式AI則能產生新的資料（如文本或圖片）。兩者皆可使用監督學習和深度學習，第三及第四選項錯誤。",
+        "number": 659,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "若使用者想在國外旅行途中不受限制地使用生成式AI生成行程建議及多語言對話，應選擇下列哪項AI應用？",
+        "options": [
+            "部署具備多語言離線推理功能且隱私保護的本地化AI應用",
+            "使用僅支持英文的網路連接生成式AI雲服務",
+            "全程依賴雲端服務且無離線模式的生成式AI工具",
+            "在線上平台使用多個專門針對旅遊的AI聊天機器人"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生活應用場景",
+        "concept": "本地化AI與隱私保護",
+        "explanation": "具備多語言且能離線推理的本地化AI應用，能在無網路或國外限制下使用，保障隱私且支援多語種；其他方案多依賴網路，旅行中可能受限。",
+        "number": 660,
+        "date": "2025-11-09"
+    },
+    {
+        "question": "你是補習班數學老師，想協助學生用AI工具製作教案並生成練習題，下列哪種提示詞較適合使用生成式AI？",
+        "options": [
+            "請生成三個難度由淺入深的代數方程練習題，並附解題步驟說明",
+            "產生數學公式圖片用於PPT投影片展示",
+            "自動校正學生提交的作文語法錯誤",
+            "創作數學相關的創意短篇故事，用於激勵學生"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教學與學習應用",
+        "concept": "提示詞設計與應用",
+        "explanation": "明確請求難度分級且附解題步驟的練習題提示詞，更能利用生成式AI協助教案與練習設計，其他選項雖有助教學，但與數學教案生成用途不符。",
+        "number": 661,
+        "date": "2025-11-09"
     }
 ]

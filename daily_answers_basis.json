@@ -5088,5 +5088,175 @@
         "explanation": "結構化資料指有固定格式與欄位的數據，如資料庫表格、交易記錄及時間序列感測器數據，影像屬非結構化資料。",
         "number": 300,
         "date": "2025-11-07"
+    },
+    {
+        "question": "在機器學習中，何者最能描述 \"監督學習\" 的基本特徵？",
+        "options": [
+            "模型以標記好的輸入和輸出資料進行訓練，以預測未知資料的輸出",
+            "模型依據資料的內在結構，自動從無標記資料中學習特徵模式",
+            "模型與環境互動，根據獎勵信號學習最佳策略",
+            "模型利用少量標記資料，結合大量無標記資料共同學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "監督學習",
+        "concept": "監督學習定義",
+        "explanation": "監督學習是透過已知輸入和對應標記輸出訓練模型，使其學會預測新輸入資料的正確輸出。",
+        "number": 301,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "在資料處理流程中，「ETL」的主要目的為何？",
+        "options": [
+            "抽取資料、轉換格式、再將資料載入目標資料庫",
+            "建立資料模型，進行初步統計分析與視覺化",
+            "辨識資料異常與清理噪聲",
+            "保護資料隱私，防止未授權存取"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL代表抽取(Extract)、轉換(Transform)、載入(Load)，是資料整合的關鍵步驟。",
+        "number": 302,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "關於鑑別式AI與生成式AI的差異，下列何者正確？",
+        "options": [
+            "鑑別式AI專注於判斷資料類別，生成式AI則能直接創造新內容",
+            "鑑別式AI能生成影像與文字，生成式AI只能判斷資料分類",
+            "鑑別式AI與生成式AI均只用於數據分類任務",
+            "生成式AI不需要資料訓練，鑑別式AI則需要大量資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式 vs 生成式AI",
+        "explanation": "鑑別式模型主要用於分類任務，生成式模型則專注於生成圖像、文字等新穎內容。",
+        "number": 303,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "在資料隱私與安全領域，以下哪項技術最適合用於分散式學習，且不直接分享原始資料？",
+        "options": [
+            "聯邦學習將模型訓練分散在多個設備上，只分享模型參數",
+            "集中式資料庫中儲存加密的用戶資料",
+            "匿名化技術將資料標記從原始值轉成隨機碼",
+            "使用強化學習在中央伺服器優化決策"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習透過分散式計算，保護使用者資料隱私，僅同步模型更新參數。",
+        "number": 304,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "在深度學習中，Transformer模型的主要挑戰不包括以下何項？",
+        "options": [
+            "計算資源耗費巨大",
+            "梯度消失與爆炸問題",
+            "資料隱私保護措施不足",
+            "模型對長距離依賴的解釋能力有限"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "Transformer技術痛點",
+        "explanation": "Transformer挑戰主要包括計算資源需求與梯度問題，但資料隱私保護並非其技術核心的限制。",
+        "number": 305,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "在人工智慧治理的觀點中，何謂「Human on loop」？",
+        "options": [
+            "完全自動化系統中，無需人類干預",
+            "人工監督與介入模型決策流程，確保合規性",
+            "利用人類數據訓練AI模型",
+            "透過人類專家評估AI模型性能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "Human on loop定義",
+        "explanation": "Human on loop指人類在AI系統決策中持續監督與介入以降低風險。",
+        "number": 306,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "以下哪一種正則化技術主要透過使模型權重變成零來控制模型複雜度？",
+        "options": [
+            "L1正則化",
+            "L2正則化",
+            "Dropout技術",
+            "早停法(Early stopping)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化效果",
+        "explanation": "L1正則化透過加強權重稀疏，使部分權重收斂為零達到特徵選擇與模型簡化。",
+        "number": 307,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "在人工智慧數據分析中，何者最能說明「關聯式資料」的特性？",
+        "options": [
+            "資料間具有明確且結構化的關聯，如關聯式資料庫",
+            "資料無明確結構，常用於非結構化資料分析",
+            "資料完全獨立，無任何彼此關聯",
+            "資料依時間順序排列，適合時間序列分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "關聯式資料定義",
+        "explanation": "關聯式資料是指資料之間存在結構化的關係，通常以表格形式儲存。",
+        "number": 308,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "在生成式AI回應語境一致性的技術挑戰中，下列何者不是主要因素？",
+        "options": [
+            "模型生成內容與上下文連貫性不足",
+            "語言模組理解多輪對話意圖困難",
+            "資料標註過於嚴格導致過擬合",
+            "生成模型難以捕捉細微語意變化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式AI挑戰",
+        "concept": "語境一致性問題",
+        "explanation": "生成式AI回應語境一致性常因模型理解和語意捕捉問題，不是因為資料標註過嚴。",
+        "number": 309,
+        "date": "2025-11-10"
+    },
+    {
+        "question": "下列何者最精確描述「RAG（檢索增強生成）」的作用？",
+        "options": [
+            "結合資料檢索功能，提升生成模型的知識準確度",
+            "利用生成模型直接提取原始資料特徵進行分類",
+            "依賴人工規則定義資料整合的產生策略",
+            "透過監督學習調整生成模型的權重參數"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "RAG技術",
+        "explanation": "RAG結合外部檢索資料與生成模型，增加回應中的事實性和準確度。",
+        "number": 310,
+        "date": "2025-11-10"
     }
 ]

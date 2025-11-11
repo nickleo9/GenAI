@@ -5088,5 +5088,175 @@
         "explanation": "並非所有生成式AI模型都需要外部API輔助，也有許多工具支援資料直接同步查詢。",
         "number": 300,
         "date": "2025-11-08"
+    },
+    {
+        "question": "下列關於No Code與Low Code平台在生成式AI導入中的描述，何者正確？",
+        "options": [
+            "No Code 平台完全不需要程式碼，Low Code 則可能需少量程式碼支援複雜行為。",
+            "No Code 平台專為技術人員設計，Low Code 給非技術人員使用。",
+            "Low Code 平台無法進行自動化工作流設計。",
+            "No Code 平台僅適用於AI數據分析，Low Code 適用於圖像生成。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No code與Low code比較",
+        "explanation": "No Code平台讓非程式人員用拖曳方式實現功能，不需寫任何程式碼；Low Code則可利用少量程式碼輔助複雜需求，是兩者的主要差異。",
+        "number": 301,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "2025年企業導入生成式AI前，最需要評估下列哪一項？",
+        "options": [
+            "僅評估AI工具品牌知名度。",
+            "評估AI與現有業務流程、數據安全策略的整合度。",
+            "僅評估AI模型的參數大小。",
+            "僅考慮工具的用戶界面顏色喜好。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "導入評估重點",
+        "explanation": "企業導入AI前須重視其對現有流程的整合性與數據安全問題，這是生成式AI落地應用最關鍵的評估要素。",
+        "number": 302,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "下列哪一個是2025年最受推薦的文本生成AI工具？",
+        "options": [
+            "Stable Diffusion",
+            "Midjourney",
+            "ChatGPT",
+            "Suno AI"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具",
+        "concept": "主流生成式AI工具",
+        "explanation": "ChatGPT在2025年依然是文本生成領域的主流推薦，支援廣泛的產業應用且表現強勁。",
+        "number": 303,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "有關No Code/Low Code平台協作趨勢，下列敘述何者正確？",
+        "options": [
+            "2025年已無法支援多人同時協作。",
+            "高度工作流設計與團隊共享為主流發展。",
+            "僅允許個人獨立開發不可群組合作。",
+            "僅適用於影像生成不能用於文本工作。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "團隊協作特性",
+        "explanation": "隨著AI應用升級，No Code/Low Code平台朝團隊共享和複雜工作流方向發展，成為解決企業協作需求的新趨勢。",
+        "number": 304,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "關於生成式AI導入風險評估，下列敘述何者為非？",
+        "options": [
+            "需考量模型產生內容的合規性與安全性。",
+            "資訊安全與資料外洩風險是評估重點。",
+            "僅需檢查AI服務廠商的名單即可。",
+            "數據來源合法、版權合規需事前稽核。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入風險管理",
+        "concept": "應用風險評估",
+        "explanation": "風險評估需多面向進行，僅檢查供應商名單無法涵蓋內容合規性及資訊安全等要素，是錯誤做法。",
+        "number": 305,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "有關2025年影像生成工具下列說明何者正確？",
+        "options": [
+            "Runway Gen-2專精於音樂生成。",
+            "Stable Diffusion支援本地部署且開源。",
+            "Midjourney只可用於企業測試，未提供開放申請。",
+            "DALL-E 3專注於即時翻譯任務。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具",
+        "concept": "影像生成主流工具",
+        "explanation": "Stable Diffusion為開源且支援本地端部署的影像生成工具，彈性高，便於企業定制。",
+        "number": 306,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "實務中，AI提示詞工程的設計要點為何？",
+        "options": [
+            "提示詞應明確聚焦，加上範例限制語境。",
+            "提示詞應盡量模糊方便AI自我探索。",
+            "大量拷貝範例無需針對任務調整即可達最佳效果。",
+            "只須輸入問題，不需要任何上下文描述。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具",
+        "concept": "提示工程",
+        "explanation": "有效提示詞設計須明確且語境明晰，必要時可舉例幫助AI精準理解目標、優化回答品質。",
+        "number": 307,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "下列關於生成式AI導入公部門時，何種考量常為優先因素？",
+        "options": [
+            "僅看工具需要多少GPU計算資源。",
+            "著重於資訊透明、資料主權及隱私保護。",
+            "只依據外國機構部署案例判斷。",
+            "優先以介面美觀決定是否採用。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "產業領域評估重點",
+        "explanation": "公部門導入AI時，資料主權、隱私與資訊透明度是最重要的評估要素，必須符合法規與社會期望。",
+        "number": 308,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "何者為2025年生成式AI音樂創作推薦的主流平台？",
+        "options": [
+            "DALL-E 3",
+            "Runway Gen-2",
+            "Suno AI",
+            "Midjourney"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具",
+        "concept": "音樂聲音生成工具",
+        "explanation": "Suno AI成為2025年音樂生成與創意表現主要推薦平台，功能完整且用戶反饋良好。",
+        "number": 309,
+        "date": "2025-11-11"
+    },
+    {
+        "question": "下列有關生成式AI與鑑別式AI基本原理的比較，何者正確？",
+        "options": [
+            "鑑別式AI主要用於創造新資料內容。",
+            "生成式AI只能負責資料分類與標籤。",
+            "生成式AI能生成新內容，鑑別式AI則僅判斷類別。",
+            "兩者皆無法處理真實場景應用問題。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI技術與模型",
+        "concept": "生成式AI與鑑別式AI區分",
+        "explanation": "生成式AI可產生新內容如圖像、文本等；鑑別式AI僅能分類或判斷資料所屬，無法創造新內容。",
+        "number": 310,
+        "date": "2025-11-11"
     }
 ]

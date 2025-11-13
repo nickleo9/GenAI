@@ -5258,5 +5258,175 @@
         "explanation": "生成式AI可產生新內容如圖像、文本等；鑑別式AI僅能分類或判斷資料所屬，無法創造新內容。",
         "number": 310,
         "date": "2025-11-11"
+    },
+    {
+        "question": "下列關於2025年No Code平台的敘述，何者正確？",
+        "options": [
+            "主要利用模板和拖拉功能，低程式背景也能快速建立應用。",
+            "需具備中階程式設計能力以撰寫客製化流程。",
+            "必須整合複雜業務邏輯方能實現部署。",
+            "僅適合技術人員執行大規模自動化專案。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code平台特點",
+        "explanation": "No Code平台強調可視化、模板化，自助拖拉布局，適合無程式基礎者，能迅速部署簡單應用。",
+        "number": 311,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "下列有關生成式AI『DeepSeek-R1』模型的說明，何者有誤？",
+        "options": [
+            "架構創新可降低AI研發門檻。",
+            "適用於產業技術轉型與升級。",
+            "訓練成本僅約56萬美元。",
+            "可提升技術轉型的效率與質量。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具發展",
+        "concept": "DeepSeek-R1應用",
+        "explanation": "DeepSeek-R1 模型的訓練成本約為 560 萬美元，約數字為 560 萬而非 56 萬， C 項有誤。",
+        "number": 312,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "下列何者非No Code與Low Code整合生成式AI應用的優點？",
+        "options": [
+            "加速開發與修改流程，促進專案部署。",
+            "作業全數自動化，完全不需人工介入。",
+            "可視化整合AI工具提升非技術部門產能。",
+            "降低企業採用門檻，有助跨部門協作。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 優勢",
+        "concept": "平台自動化極限",
+        "explanation": "No Code/Low Code自動化雖強，但仍有部分需人工參與，B項敘述過度誇大，非實際優點。",
+        "number": 313,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "Gemini系列（2025）最新Nano Banana 2發布，主要帶來哪項進展？",
+        "options": [
+            "支援單一語言內容生成，提升計算效能。",
+            "新技術整合多模態，增強跨場景內容生成力。",
+            "不再提供視覺生成能力，而專注文本處理。",
+            "只做輔助搜尋引擎優化，不支援商用應用。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具趨勢",
+        "concept": "多模態能力",
+        "explanation": "Nano Banana 2 強調多模態與跨場景內容生成，進一步拓展應用深度與廣度。",
+        "number": 314,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "導入生成式AI於企業生產流程時，最適當初步評估要點為何？",
+        "options": [
+            "僅評估硬體採購成本即可。",
+            "全面考慮業務流程需求與現有IT架構配合度。",
+            "只需確認AI能協助資料儲存與備份。",
+            "無需關注資料隱私與資安合規。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "導入評估原則",
+        "explanation": "應全面評估業務需求、現有IT配合度、資料流程等，確保方案相符且落地可行。",
+        "number": 315,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "哪一項屬於2025年常見的AI應用領域？",
+        "options": [
+            "純硬體驅動需求預測",
+            "行銷文案即時生成與自動部署",
+            "被動式監控不參與決策建議",
+            "傳統手機遊戲圖形加密"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "行銷自動化",
+        "explanation": "AI可輔助行銷文案自動生成並自動化推播，是目前典型應用領域之一。",
+        "number": 316,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "關於生成式AI代碼自動生成與安全檢查，下列何者為是？",
+        "options": [
+            "AI生成的程式碼完全無需人工審查即可上線。",
+            "最佳實踐應將自動生成與人工安全審查結合使用。",
+            "不建議搭配AI工具於代碼部署階段。",
+            "通常不建議生成式AI進行自學習優化。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "生成代碼品質保障",
+        "explanation": "自動與人工審查搭配，能確保輸出安全與可維護性，是業界建議。",
+        "number": 317,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "下列何者最能描述Lovable平台相較於傳統開發方式的差異？",
+        "options": [
+            "需以傳統手動部署為主，有多層審核機制。",
+            "主要透過氛圍編碼及自動部署，極致簡化開發程序。",
+            "不支援視覺化編輯與自動化流程。",
+            "須仰賴大量人工介入以防錯誤。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具",
+        "concept": "氛圍編碼與自動部署",
+        "explanation": "Lovable強調氛圍編碼、自動部署，高效簡化開發流程並減少人為錯誤。",
+        "number": 318,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "具備哪一項，最能反映No Code/Low Code平台與AI深度結合的新趨勢？",
+        "options": [
+            "平台僅提供靜態模板，不支援OAS流程變動。",
+            "與多模態生成AI緊密耦合，推動業務流程智能化。",
+            "強調手動資料輸入與單一管理工具。",
+            "平台孤立於AI工具之外，無法相互協作。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 趨勢",
+        "concept": "AI智能化整合",
+        "explanation": "No Code/Low Code平台正與生成式AI深度結合實現智能業務流程，是重要新趨勢。",
+        "number": 319,
+        "date": "2025-11-13"
+    },
+    {
+        "question": "企業導入生成式AI風險管理主要強調什麼？",
+        "options": [
+            "提升資安防護與建立合規使用規章",
+            "忽略資訊安全以降低初期開發門檻",
+            "單純強調收費模式不涉及倫理議題",
+            "禁止導入AI避免權責不明造成問題"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "合規與資安",
+        "explanation": "風險管理核心是資安與合規，保障企業與客戶權益，是導入關鍵步驟。",
+        "number": 320,
+        "date": "2025-11-13"
     }
 ]

@@ -5428,5 +5428,175 @@
         "explanation": "風險管理核心是資安與合規，保障企業與客戶權益，是導入關鍵步驟。",
         "number": 320,
         "date": "2025-11-13"
+    },
+    {
+        "question": "關於2025年最新No Code/Low Code工具的應用限制，下列何者為真？",
+        "options": [
+            "No Code平台僅適用於高度結構化的重複故作業務流程",
+            "No Code平台讓使用者能完全自訂AI演算法細節",
+            "No Code工具僅適合程式開發人員應用",
+            "No Code工具只能進行圖像相關網頁開發"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "No Code開發限制",
+        "explanation": "No Code平台目前主要針對重複、結構化流程的自動化，無法做到極度複雜的AI演算法客製。",
+        "number": 321,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "下列哪一項並非2025年生成式AI導入評估的重要步驟？",
+        "options": [
+            "評估企業現有數據治理架構",
+            "確認生成式AI與現有IT系統的相容性",
+            "僅考量AI模型產生的即時反應速度",
+            "明確盤點AI應用的合規與風險因子"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入評估流程",
+        "explanation": "導入AI的評估需多方考量，單一關注速度無法完整評估導入成效與風險，會忽略現有資訊架構與法遵考量。",
+        "number": 322,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "當企業導入生成式AI打造自動化客服應用時，最適當的Prompt Engineering策略為何？",
+        "options": [
+            "設計模糊且廣泛的語句以提升AI彈性表現",
+            "結合具體範例與限制條件以精確引導輸出答案",
+            "採用高度抽象詞彙以避免AI模型受到限制",
+            "依賴單一句子指令即可涵蓋多數場景"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "提示工程",
+        "explanation": "在實際應用中，清楚的上下文、限制條件和範例，有助提高生成內容的品質與一致性。",
+        "number": 323,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "2025年主流AI協作模式的變革，最關鍵進展為何？",
+        "options": [
+            "AI能獨立替代理人決策但無法與人溝通",
+            "人機協作實現多步驟複雜流程自動化",
+            "協作模式依賴單一部門的專業判斷",
+            "AI協作僅限於單純資料輸入錯誤修正"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域",
+        "concept": "AI協作生產力",
+        "explanation": "生成式AI已進化到可支援多步驟、跨部門複雜工作任務的協作，提高工作自動化與效率。",
+        "number": 324,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "下列何者不是生成式AI導入風險管理的正確做法？",
+        "options": [
+            "建立敏感資料的存取及使用規範",
+            "定期檢查模型的合規性與偏誤",
+            "只關注運算效能而忽略資料外洩風險",
+            "設置AI產出內容的審核與回饋機制"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險控制策略",
+        "explanation": "只重視效能而不考慮資訊安全、隱私風險，無法有效規避生成式AI導入潛在危害。",
+        "number": 325,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "以下關於No Code與Low Code平台的敘述，何者正確？",
+        "options": [
+            "No Code平台專為程式開發人員設計，強調客製化",
+            "Low Code平台可保留程式碼彈性，適合具備技術背景者",
+            "No Code平台允許進階AI模型細部手動調整",
+            "Low Code平台僅提供完全圖形化設計介面"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平臺差異",
+        "explanation": "Low Code平台允許一定程度的程式碼編輯與自訂，適合有技術基礎但追求快速開發的用戶。",
+        "number": 326,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "關於2025年生成式AI產業導入趨勢，下列敘述何者有誤？",
+        "options": [
+            "AI Agent逐漸從對話式工具進化為多智能體決策平台",
+            "Agentic AI將於多產業流程中實現智慧閉環",
+            "產業僅需投入大量運算資源即可保證AI成效",
+            "智能體商店將帶動應用生態系發展"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入趨勢",
+        "explanation": "僅投入大量運算資源無法保證成效，需配合策略規劃、流程優化和產業需求。",
+        "number": 327,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "下列何者為2025年生成式AI導入的典型生活應用案例？",
+        "options": [
+            "以AI執行高股價預測並立刻自動下單股票",
+            "用生成式AI即時生成行銷文案並自動佈局社群",
+            "全面以AI取代專業律師進行判決書撰寫",
+            "依靠AI模型進行單一資料校正而忽略原始數據品質"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域",
+        "concept": "產業落地場景",
+        "explanation": "生成式AI在行銷文案自動化、社群內容部署屬於典型應用場景，並可提升行銷效率與創意多樣性。",
+        "number": 328,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "下列Prompt設計，哪一個可最有效提升醫療AI自動診斷建議的可信度？",
+        "options": [
+            "僅給模型大量未結構化影像資料",
+            "結合明確患者基本資料及影像描述進行多模態提示設計",
+            "只列舉常見症狀讓AI直接診斷",
+            "避免提供臨床背景避免AI過度擬合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "提示工程",
+        "explanation": "多模態且結合文本、影像及關鍵資料的Prompt能讓AI輸出更貼近實際臨床需求與專業要求。",
+        "number": 329,
+        "date": "2025-11-15"
+    },
+    {
+        "question": "下列何者最能體現AI數據治理在生成式AI導入中的核心角色？",
+        "options": [
+            "重視模型效率而不理會資料溯源",
+            "確保數據完整性與可追蹤性支持解釋性",
+            "僅要求AI模型每秒回應增快",
+            "完全忽略原始資料品質"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "數據治理",
+        "explanation": "AI數據治理除要求數據完整可靠，還需可追蹤以利後續解釋、監管和風險控管。",
+        "number": 330,
+        "date": "2025-11-15"
     }
 ]

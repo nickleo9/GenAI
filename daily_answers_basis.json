@@ -5598,5 +5598,175 @@
         "explanation": "GAN架構包括生成器與判別器雙模型對抗訓練，互相競爭推動生成器產生逼真數據，是生成式AI常用方法。",
         "number": 330,
         "date": "2025-11-14"
+    },
+    {
+        "question": "在機器學習中，哪一種學習類型主要依賴已標記的資料進行模型訓練？",
+        "options": [
+            "非監督學習主要處理未標記資料，透過資料內在結構學習",
+            "強化學習依據環境回饋進行決策學習，不需預先標記資料",
+            "監督學習使用標記資料，透過輸入與輸出關係優化模型參數",
+            "生成式學習結合標記與未標記資料進行模型訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習的三大類型",
+        "concept": "監督學習",
+        "explanation": "監督學習是透過訓練集中輸入與對應輸出（標記資料）來訓練模型，使模型能預測新資料的標籤。非監督學習不使用標記資料，強化學習則依靠與環境互動的回饋信號。",
+        "number": 331,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "以下何者最能描述\"黑箱問題\"在 XAI（可解釋性人工智慧）中的挑戰？",
+        "options": [
+            "模型解釋過於簡單，無法充分反映複雜決策過程",
+            "模型決策過程不透明，難以理解其內部運作機制",
+            "模型過於透明，造成資料隱私被過度暴露",
+            "模型訓練速度太快，導致結果準確率下降"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "XAI 黒箱",
+        "concept": "可解釋性AI與黑箱問題",
+        "explanation": "黑箱問題指的是AI模型的內部決策過程不透明，無法被用戶及開發者深入理解，這對於許多需解釋性和信任的應用場景如醫療與金融帶來挑戰。",
+        "number": 332,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "在資料處理流程中，ETL指的是哪三個過程的正確排序？",
+        "options": [
+            "抽取、轉換、載入",
+            "轉換、抽取、載入",
+            "載入、抽取、轉換",
+            "載入、轉換、抽取"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL過程依序是從來源系統抽取資料（Extract）、對資料進行清洗與轉換（Transform）、最後將資料載入目標系統（Load），是資料分析核心流程。",
+        "number": 333,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "ReLU激活函數在深度學習中面臨哪種常見問題？",
+        "options": [
+            "梯度消失，在反向傳播時梯度長期接近零",
+            "梯度爆炸，造成權重更新過大不穩定",
+            "活性神經元過少導致模型無法收斂",
+            "訓練速度過慢不適用於大模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習挑戰",
+        "concept": "ReLU/梯度消失/梯度爆炸",
+        "explanation": "ReLU激活函數可能出現梯度消失問題，部分神經元輸出恒為零，導致權重無法更新，使模型學習停滯。梯度爆炸則常見於其他激活函數或RNN中。",
+        "number": 334,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "在生成式AI系統中，哪個技術被用來增強模型回答的語境一致性與可靠性？",
+        "options": [
+            "One-Hot Encoding編碼技術用於提升數據表達",
+            "RAG（檢索增強生成）技術結合外部知識庫",
+            "剪枝技術用於模型參數減少",
+            "LIME方法進行結果可解釋性分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI技術",
+        "concept": "RAG",
+        "explanation": "RAG（Retrieval-Augmented Generation）技術通過結合生成模型與檢索外部資料庫，提升生成回答的準確性和語境一致性，避免模型產生錯誤信息。",
+        "number": 335,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "資料分群方法中，哪種技術最符合\"叢集\"的定義？",
+        "options": [
+            "根據預先標記的類別進行分類決策",
+            "利用無標記資料分析內在結構來分組資料",
+            "透過強化學習提升分群效率",
+            "依據監督信號調整分群結果"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "叢集",
+        "explanation": "叢集是無監督學習方法，透過資料間相似性或距離量度，自動將資料分群，無需使用預先標記的類別信息。",
+        "number": 336,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "下列何者不是用於控制模型複雜度的正規化技術？",
+        "options": [
+            "L1正則化透過稀疏化參數提升模型泛化能力",
+            "L2正則化懲罰大權重減少過擬合風險",
+            "One-Hot Encoding用以轉換分類特徵",
+            "剪枝技術透過刪除不重要權重簡化模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "正規化及特徵工程",
+        "concept": "正規化 L1、L2",
+        "explanation": "One-Hot Encoding是將類別數據轉為數值向量的編碼方法，並非正規化技術。正規化主要指L1、L2等懲罰項用於限制模型權重大小，控制複雜度。",
+        "number": 337,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "在AI治理中，‘‘監理沙盒‘‘主要用於何種目的？",
+        "options": [
+            "真實環境中實施並強化監管法規",
+            "開放合規審查給所有相關利益方參與",
+            "在控制環境中測試新技術與政策效果",
+            "透過數據匿名化保護使用者隱私"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "治理實務",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是為新技術或政策提供一個受控的試驗環境，以便觀察其效果並降低可能的風險，促進具創新性的AI技術發展與合規管理。",
+        "number": 338,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "在強化學習領域中，Q-Learning的深度版本稱為？",
+        "options": [
+            "Deep Q-Learning結合神經網絡提高策略學習效率",
+            "Hierarchical Q-Learning將Q表分層管理",
+            "Bayesian Q-Learning利用貝氏更新提升精度",
+            "Extended Q-Learning增強探索範圍及深度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "Deep Q-Learning",
+        "explanation": "Deep Q-Learning是Q-Learning的深度學習版本，使用深度神經網絡來逼近狀態-行動值函數，能處理高維度狀態空間，提升學習效率與能力。",
+        "number": 339,
+        "date": "2025-11-17"
+    },
+    {
+        "question": "在生成式AI與鑑別式AI的應用整合中，何者是正確的敘述？",
+        "options": [
+            "鑑別式AI專注於生成新數據，常見於內容創作",
+            "生成式AI以判斷輸入是否屬於特定類別為主",
+            "兩者可藉由生成式模型生產資料，鑑別式模型驗證品質",
+            "兩者獨立且不具整合應用價值"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "鑑別式與生成式AI整合",
+        "explanation": "生成式AI主要用於產生新內容，如文本、圖片；鑑別式AI則判斷資料屬性或真假。兩者可結合，生成式負責創作，鑑別式負責評估與驗證，提升應用品質。",
+        "number": 340,
+        "date": "2025-11-17"
     }
 ]

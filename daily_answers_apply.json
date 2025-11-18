@@ -5598,5 +5598,175 @@
         "explanation": "AI數據治理除要求數據完整可靠，還需可追蹤以利後續解釋、監管和風險控管。",
         "number": 330,
         "date": "2025-11-15"
+    },
+    {
+        "question": "關於2025年生成式AI平台的No Code/Low Code應用，下列哪項敘述正確？",
+        "options": [
+            "No Code平台能讓無程式基礎者設計自動化App與流程",
+            "No Code平台不支援傳統ERP等系統整合",
+            "Low Code平台主要僅應用於AI影像辨識",
+            "No Code平台不適合任何企業進行流程自動化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "平台特性",
+        "explanation": "No Code平台讓非技術人員經由拖拉方式快速建構自動化App與流程，降低企業數位轉型門檻。",
+        "number": 331,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "在導入生成式AI作為企業流程自動化時，需做哪些初步評估？",
+        "options": [
+            "僅技術評估、資安備援與經濟法規",
+            "需求分析、技術評估、成本效益、資料與系統整合",
+            "僅流程調查與人員訓練",
+            "只需法規遵循與ROI評估"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估",
+        "explanation": "企業導入AI需針對業務痛點進行需求分析，同時評估技術適合度、導入成本、系統整合與資料可用性等。",
+        "number": 332,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "何者不是2025主流企業導入的生成式AI應用工具？",
+        "options": [
+            "ChatGPT Enterprise",
+            "Google Gemini",
+            "Copilot Studio",
+            "Raspberry Pi"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "工具辨識",
+        "explanation": "Raspberry Pi為硬體微型電腦，並非常用生成式AI工具，前述三項才是現行主流AI平台。",
+        "number": 333,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "下列哪一項最能代表No Code/Low Code平台的風險與限制？",
+        "options": [
+            "完全支援核心AI模型訓練",
+            "適用於複雜運算與高擴展性需求",
+            "多數僅適用於標準場景與模組應用，靈活度有限",
+            "能強化AI數據隱私與安全治理"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "平台限制",
+        "explanation": "No Code/Low Code平台主要優勢在於簡易、模組化，但對複雜、高度客製化場景較難支持。",
+        "number": 334,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "下列何者不是企業導入生成式AI時應考慮的風險管理重點？",
+        "options": [
+            "資料隱私",
+            "模型偏見",
+            "數位永續",
+            "系統合規"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "風險管理",
+        "explanation": "雖然數位永續是趨勢，但直接落實於導入過程中的風險管理並不同等於資料安全、偏見與法規合規性等。",
+        "number": 335,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "關於提示詞工程（Prompt Engineering），下列敘述哪一項正確？",
+        "options": [
+            "提示詞設計僅需輸入簡短關鍵詞即可達最佳結果",
+            "情境設定可幫助AI模型更精準理解任務需求",
+            "提示詞工程僅適用於圖像生成任務",
+            "無需針對輸出結果進行提示詞迭代優化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞優化",
+        "explanation": "明確設置情境、角色背景能顯著提升生成式AI產出內容的相關性與準確性。",
+        "number": 336,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "企業想利用生成式AI整合RPA自動化文件處理，下列最適合搭配的工具是？",
+        "options": [
+            "Windows Notepad",
+            "Google Gemini Workspace",
+            "Photoshop Legacy",
+            "Hugging Face模型倉庫"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "工具應用",
+        "explanation": "Google Gemini可與辦公應用整合，實現自動文件處理、流程自動化，非常適合企業主流程數位轉型。",
+        "number": 337,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "導入ChatGPT Enterprise時，如需確保資料安全與合規性，下列哪項最重要？",
+        "options": [
+            "公開雲均為最佳選擇",
+            "需評估平台是否提供企業級資安與監控機制",
+            "所有AI平台預設都合規",
+            "僅考慮AI模型效能即可"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "資料安全與合規",
+        "explanation": "企業級AI平台需具備資安與隱私保護，符合資料在地儲存、權限控管，以及合規稽核能力。",
+        "number": 338,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "根據2025趨勢，生成式AI主要結合下列何種技能以提升商業價值？",
+        "options": [
+            "僅仰賴前端開發語言",
+            "整合數據洞察分析、AI Agent作業與多模態處理",
+            "偏重傳統流程改善，不涉及數據",
+            "只關注硬體架構設計"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域",
+        "concept": "主流程應用",
+        "explanation": "生成式AI需結合AI Agent、數據分析和多模態處理，提升企業自動化與專業決策能力。",
+        "number": 339,
+        "date": "2025-11-18"
+    },
+    {
+        "question": "下列哪一個主流程應用場域最適合導入生成式AI與No Code平台？",
+        "options": [
+            "即時高頻能源監控程式庫編譯",
+            "複雜金融市場即時交易核心開發",
+            "標準化合約文件自動生成與審閱",
+            "高階自駕車嵌入式控制軟體設計"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "主流程自動化",
+        "explanation": "標準化合約及常見文書作業自動生成屬於No Code/Low Code平台及生成式AI極強適用場景，可顯著提升效率。",
+        "number": 340,
+        "date": "2025-11-18"
     }
 ]

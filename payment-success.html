@@ -1,0 +1,330 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>付費成功 - iPAS AI 鑑定練習系統</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-family: 'Noto Sans TC', sans-serif;
+        }
+
+        .success-container {
+            background: white;
+            border-radius: 20px;
+            padding: 50px;
+            text-align: center;
+            box-shadow: 0 20px 60px rgba(0,0,0,0.3);
+            max-width: 600px;
+            margin: 20px;
+        }
+
+        .success-icon {
+            font-size: 80px;
+            color: #28a745;
+            margin-bottom: 30px;
+            animation: successPulse 1.5s ease-in-out infinite;
+        }
+
+        @keyframes successPulse {
+            0%, 100% { transform: scale(1); }
+            50% { transform: scale(1.1); }
+        }
+
+        .loading-spinner {
+            display: inline-block;
+            width: 50px;
+            height: 50px;
+            border: 5px solid #f3f3f3;
+            border-top: 5px solid #667eea;
+            border-radius: 50%;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .countdown {
+            font-size: 48px;
+            font-weight: bold;
+            color: #667eea;
+            margin: 20px 0;
+        }
+
+        .feature-badge {
+            display: inline-block;
+            background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+            color: white;
+            padding: 8px 16px;
+            border-radius: 20px;
+            margin: 5px;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body>
+    <div class="success-container">
+        <!-- 驗證中狀態 -->
+        <div id="verifying-section">
+            <div class="loading-spinner"></div>
+            <h3 class="mt-4">正在驗證您的付款...</h3>
+            <p class="text-muted">請稍候,我們正在確認您的交易</p>
+        </div>
+
+        <!-- 成功狀態 -->
+        <div id="success-section" style="display: none;">
+            <i class="fas fa-check-circle success-icon"></i>
+            <h1 class="mb-3">🎉 付費成功!</h1>
+            <h4 class="text-muted mb-4">恭喜您升級為付費會員</h4>
+
+            <!-- 解鎖功能列表 -->
+            <div class="my-4">
+                <h5 class="mb-3">✨ 已解鎖專屬功能</h5>
+                <div class="feature-badge">
+                    <i class="fas fa-clipboard-check me-1"></i> 模擬考試模式
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-cloud me-1"></i> 雲端同步進度
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-file-download me-1"></i> 錯題集匯出
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-brain me-1"></i> AI 弱點分析
+                </div>
+                <div class="feature-badge">
+                    <i class="fas fa-headset me-1"></i> 優先客服
+                </div>
+            </div>
+
+            <!-- 會員資訊 -->
+            <div class="alert alert-info mt-4">
+                <h6><i class="fas fa-info-circle me-2"></i>會員方案資訊</h6>
+                <p class="mb-1">方案:<span id="plan-type">載入中...</span></p>
+                <p class="mb-1">有效期限:<span id="expiry-date">載入中...</span></p>
+                <p class="mb-0">訂單編號:<span id="order-id">載入中...</span></p>
+            </div>
+
+            <!-- 倒數計時跳轉 -->
+            <div class="mt-4">
+                <p class="text-muted">
+                    <i class="fas fa-clock me-2"></i>
+                    <span id="countdown" class="countdown">5</span> 秒後自動跳轉回首頁
+                </p>
+                <button class="btn btn-primary btn-lg" onclick="redirectToHome()">
+                    <i class="fas fa-home me-2"></i>立即開始使用
+                </button>
+            </div>
+        </div>
+
+        <!-- 失敗狀態 -->
+        <div id="error-section" style="display: none;">
+            <i class="fas fa-times-circle text-danger" style="font-size: 80px; margin-bottom: 30px;"></i>
+            <h2 class="mb-3">付款驗證失敗</h2>
+            <p class="text-muted mb-4">很抱歉,無法驗證您的付款</p>
+            
+            <div class="alert alert-danger">
+                <i class="fas fa-exclamation-triangle me-2"></i>
+                <span id="error-message">請聯繫客服處理</span>
+            </div>
+
+            <button class="btn btn-primary" onclick="location.href='web.html'">
+                <i class="fas fa-arrow-left me-2"></i>返回首頁
+            </button>
+        </div>
+
+        <!-- 製作者資訊 -->
+        <div class="mt-5 pt-4 border-top">
+            <small class="text-muted">
+                <strong>Nick Chang</strong> | nickleo051216@gmail.com | 0932-684-051<br>
+                <a href="https://portaly.cc/zn.studio" target="_blank" class="text-decoration-none">
+                    <i class="fas fa-globe me-1"></i>ZN Studio
+                </a> | 
+                <a href="https://www.threads.com/@nickai216" target="_blank" class="text-decoration-none">
+                    <i class="fab fa-threads me-1"></i>@nickai216
+                </a>
+            </small>
+        </div>
+    </div>
+
+    <script>
+        // ==================== 付費成功處理邏輯 ====================
+        
+        const PaymentSuccessHandler = {
+            // n8n Webhook URL (用於驗證付款並更新會員等級)
+            N8N_VERIFY_URL: 'https://nickleo9.zeabur.app/webhook/verify-payment',
+            
+            init() {
+                console.log('🎉 付費成功頁面載入');
+                this.getPaymentInfo();
+                this.verifyPayment();
+            },
+
+            // 從 URL 取得付款資訊
+            getPaymentInfo() {
+                const urlParams = new URLSearchParams(window.location.search);
+                
+                return {
+                    // 綠界 ECPay 回傳參數
+                    merchantTradeNo: urlParams.get('MerchantTradeNo'),  // 訂單編號
+                    tradeNo: urlParams.get('TradeNo'),                  // 綠界交易編號
+                    paymentType: urlParams.get('PaymentType'),          // 付款方式
+                    tradeAmt: urlParams.get('TradeAmt'),                // 交易金額
+                    paymentDate: urlParams.get('PaymentDate'),          // 付款時間
+                    rtnCode: urlParams.get('RtnCode'),                  // 交易狀態 (1=成功)
+                    rtnMsg: urlParams.get('RtnMsg'),                    // 交易訊息
+                    
+                    // NewebPay 回傳參數 (備用)
+                    status: urlParams.get('Status'),                    // 付款狀態
+                    message: urlParams.get('Message'),                  // 付款訊息
+                    result: urlParams.get('Result'),                    // 付款結果
+                    
+                    // 自訂參數
+                    userId: urlParams.get('userId'),                    // 用戶 ID
+                    planType: urlParams.get('planType'),                // 方案類型 (monthly/yearly)
+                    customField1: urlParams.get('CustomField1'),        // 自訂欄位
+                };
+            },
+
+            // 驗證付款並更新會員等級
+            async verifyPayment() {
+                try {
+                    const paymentInfo = this.getPaymentInfo();
+                    const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
+                    const lineData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+                    
+                    // 取得用戶 ID (優先使用 URL 參數,再從 localStorage 取得)
+                    const userId = paymentInfo.userId || 
+                                   userData.line_user_id || 
+                                   lineData.userId;
+
+                    if (!userId) {
+                        throw new Error('找不到用戶 ID');
+                    }
+
+                    console.log('📡 發送付款驗證請求...', {
+                        userId: userId,
+                        paymentInfo: paymentInfo
+                    });
+
+                    // 呼叫 n8n Webhook 驗證付款
+                    const response = await fetch(this.N8N_VERIFY_URL, {
+                        method: 'POST',
+                        headers: {
+                            'Content-Type': 'application/json'
+                        },
+                        body: JSON.stringify({
+                            userId: userId,
+                            merchantTradeNo: paymentInfo.merchantTradeNo,
+                            tradeNo: paymentInfo.tradeNo,
+                            tradeAmt: paymentInfo.tradeAmt,
+                            rtnCode: paymentInfo.rtnCode,
+                            planType: paymentInfo.planType || 'monthly',
+                            paymentDate: paymentInfo.paymentDate || new Date().toISOString(),
+                            paymentType: paymentInfo.paymentType || 'unknown'
+                        })
+                    });
+
+                    if (!response.ok) {
+                        throw new Error('驗證請求失敗');
+                    }
+
+                    const result = await response.json();
+                    console.log('✅ 驗證成功:', result);
+
+                    // 更新 localStorage 中的會員等級
+                    if (userData.line_user_id) {
+                        userData.member_level = '付費會員';
+                        localStorage.setItem('user_data', JSON.stringify(userData));
+                    }
+                    
+                    if (lineData.userId) {
+                        lineData.memberLevel = '付費會員';
+                        localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
+                    }
+
+                    // 顯示成功畫面
+                    this.showSuccess(result, paymentInfo);
+
+                } catch (error) {
+                    console.error('❌ 付款驗證失敗:', error);
+                    this.showError(error.message);
+                }
+            },
+
+            // 顯示成功畫面
+            showSuccess(result, paymentInfo) {
+                document.getElementById('verifying-section').style.display = 'none';
+                document.getElementById('success-section').style.display = 'block';
+
+                // 填入會員方案資訊
+                const planNames = {
+                    'monthly': '月費會員 ($199/月)',
+                    'yearly': '年費會員 ($1,999/年)'
+                };
+                
+                const expiryDate = new Date();
+                if (paymentInfo.planType === 'yearly') {
+                    expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+                } else {
+                    expiryDate.setMonth(expiryDate.getMonth() + 1);
+                }
+
+                document.getElementById('plan-type').textContent = planNames[paymentInfo.planType] || '月費會員';
+                document.getElementById('expiry-date').textContent = expiryDate.toLocaleDateString('zh-TW');
+                document.getElementById('order-id').textContent = paymentInfo.merchantTradeNo || '系統處理中';
+
+                // 開始倒數計時
+                this.startCountdown();
+            },
+
+            // 顯示錯誤畫面
+            showError(errorMessage) {
+                document.getElementById('verifying-section').style.display = 'none';
+                document.getElementById('error-section').style.display = 'block';
+                document.getElementById('error-message').textContent = errorMessage;
+            },
+
+            // 倒數計時跳轉
+            startCountdown() {
+                let seconds = 5;
+                const countdownElement = document.getElementById('countdown');
+
+                const timer = setInterval(() => {
+                    seconds--;
+                    countdownElement.textContent = seconds;
+
+                    if (seconds <= 0) {
+                        clearInterval(timer);
+                        this.redirectToHome();
+                    }
+                }, 1000);
+            },
+
+            // 跳轉回首頁
+            redirectToHome() {
+                window.location.href = 'web.html';
+            }
+        };
+
+        // 全域函數供按鈕使用
+        function redirectToHome() {
+            PaymentSuccessHandler.redirectToHome();
+        }
+
+        // 頁面載入後初始化
+        document.addEventListener('DOMContentLoaded', () => {
+            PaymentSuccessHandler.init();
+        });
+    </script>
+</body>
+</html>

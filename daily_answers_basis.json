@@ -5768,5 +5768,175 @@
         "explanation": "生成式AI主要用於產生新內容，如文本、圖片；鑑別式AI則判斷資料屬性或真假。兩者可結合，生成式負責創作，鑑別式負責評估與驗證，提升應用品質。",
         "number": 340,
         "date": "2025-11-17"
+    },
+    {
+        "question": "在資料整理與分析流程中，哪一項步驟是確保資料隱私與安全的主要措施？",
+        "options": [
+            "資料加密與身份驗證",
+            "資料視覺化呈現",
+            "特徵工程與資料清理",
+            "模型訓練與評估"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料保護技術",
+        "explanation": "資料加密與身份驗證是維護資料隱私與安全的關鍵技術，確保資料在傳輸和存儲過程中不被未授權訪問。",
+        "number": 341,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "以下對監督學習、非監督學習及強化學習三種機器學習類型，下列哪一描述不正確？",
+        "options": [
+            "監督學習依賴標註資料進行模式學習",
+            "非監督學習用於資料分群與降維",
+            "強化學習主要用於生成式模型訓練",
+            "強化學習透過獎勵機制優化策略"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "機器學習類型",
+        "explanation": "強化學習主要是通過環境互動和獎勵信號來優化決策策略，不特定用於生成式模型訓練，該敘述錯誤。",
+        "number": 342,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "在AI治理架構中，『Human on loop』與『Human in loop』的主要差異為？",
+        "options": [
+            "Human on loop 表示人工完全自動化無干預",
+            "Human in loop 強調人工在模型決策過程中干預",
+            "Human on loop 為人工監督模型決策過程",
+            "Human in loop 表示人工監聽模型輸入數據"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "人機協作",
+        "concept": "人工監督",
+        "explanation": "'Human on loop' 指人工監督模型決策，而非完全自動，強調人類介入以確保模型行為符合倫理與法律標準。",
+        "number": 343,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "下列哪一項不是資料清理流程中常見的步驟？",
+        "options": [
+            "處理缺失值",
+            "特徵工程",
+            "資料正規化",
+            "資料加密"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清理",
+        "explanation": "資料加密屬於資料安全措施，並非資料清理過程中的常見步驟。",
+        "number": 344,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "生成式AI與鑑別式AI在基本原理上，哪一項敘述正確？",
+        "options": [
+            "生成式AI用於判別資料分布是否合理",
+            "鑑別式AI負責生成新樣本數據",
+            "鑑別式AI學習輸入資料的條件機率分布",
+            "生成式AI生成類似但不同於訓練資料的新數據"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成模型",
+        "explanation": "生成式AI透過學習資料分布，生成新的相似資料，鑑別式AI則專注於區分不同類別。",
+        "number": 345,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "在機器學習模型中，L1正則化與L2正則化的差別主要在於什麼？",
+        "options": [
+            "L1使模型參數更稀疏，L2促使參數趨近零但不為零",
+            "L1會使所有參數均成零，L2只減小參數大小",
+            "L1和L2都是為了增加模型複雜度",
+            "L1不影響模型複雜度，L2提高複雜度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型正則化",
+        "concept": "正則化技術",
+        "explanation": "L1正則化透過Lasso效果促使參數為零，促進稀疏性；L2正則化透過Ridge效果減小參數但不完全為零。",
+        "number": 346,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "以下哪一項AI治理策略最能對抗模型幻覺與風險？",
+        "options": [
+            "設計封閉式模型",
+            "實施監理沙盒與敏捷治理",
+            "放寬監管以促進創新",
+            "嚴格禁止使用生成式AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "風險管理",
+        "concept": "敏捷治理",
+        "explanation": "監理沙盒結合敏捷治理，有助於在受控環境下評估和調整AI模型風險，平衡創新與安全。",
+        "number": 347,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "哪一種資料結構類型最適合用於聯邦學習以保障資料隱私？",
+        "options": [
+            "集中的結構化資料庫",
+            "分散式非關聯式資料",
+            "純文本資料集",
+            "公共開放數據集"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習透過分散式資料保持每個端點資料私密性，非關聯式分布式結構符合其架構需求。",
+        "number": 348,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "下列何者不是鑑別式 AI 模型常見的特性？",
+        "options": [
+            "直接學習p(y|x)條件機率",
+            "通常用於分類任務",
+            "生成真實且多樣的新資料",
+            "模型通常能較好地處理監督學習"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "模型特性",
+        "concept": "鑑別模型",
+        "explanation": "鑑別式模型用於判別資料屬於哪個類別，並不負責生成新資料，這是生成式模型的功能。",
+        "number": 349,
+        "date": "2025-11-19"
+    },
+    {
+        "question": "在資料分析中，ETL流程的正確順序是？",
+        "options": [
+            "抽取、轉換、載入",
+            "載入、抽取、轉換",
+            "轉換、抽取、載入",
+            "轉換、載入、抽取"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL代表資料抽取(Extract)、轉換(Transform)、載入(Load)，是資料整合的標準流程順序。",
+        "number": 350,
+        "date": "2025-11-19"
     }
 ]

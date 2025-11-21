@@ -5938,5 +5938,175 @@
         "explanation": "ETL代表資料抽取(Extract)、轉換(Transform)、載入(Load)，是資料整合的標準流程順序。",
         "number": 350,
         "date": "2025-11-19"
+    },
+    {
+        "question": "在資料整理與分析流程中，哪一個步驟最關鍵於確保資料隱私與安全？",
+        "options": [
+            "資料清理時刪除重複與錯誤數據",
+            "資料加密與匿名化處理",
+            "資料轉換為適當格式",
+            "數據視覺化以方便理解"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料隱私保護",
+        "explanation": "在資料整理與分析流程中，資料加密與匿名化處理是保護個人資訊隱私與防止資料外洩的關鍵措施，能有效保障資料在使用或轉移過程中的安全。",
+        "number": 351,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "下列哪一種機器學習類型主要透過標註資料來訓練模型？",
+        "options": [
+            "非監督學習專注發現資料內在結構",
+            "監督學習使用標註資料進行訓練",
+            "強化學習依賴環境回饋強化行為",
+            "半監督學習完全不使用標註資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習",
+        "explanation": "監督學習使用帶有標籤的訓練資料，模型根據輸入對應的標籤學習預測規則，是機器學習中最常見的類型。",
+        "number": 352,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "鑑別式AI模型和生成式AI模型的主要區別在於？",
+        "options": [
+            "鑑別式模型專注於分辨類別，生成式模型能產生新數據",
+            "鑑別式模型擅長生成文本，生成式模型專注分類",
+            "鑑別式模型只用於監督學習，生成式只用於非監督學習",
+            "兩者功能相同，僅名稱不同"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "模型區別",
+        "explanation": "鑑別式模型著重於辨識輸入資料的類別，而生成式模型能夠根據資料生成新的樣本，是兩種核心AI模型的主要差異。",
+        "number": 353,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "根據最新AI治理概念，下列何者較適合確保AI模型決策透明且可解釋？",
+        "options": [
+            "建立複雜深層神經網絡以提升準確率",
+            "導入Human on loop，即人工監督干預",
+            "強化資料收集量以增強模型表現",
+            "完全自動化決策過程提高效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI 治理概念",
+        "subtopic": "模型監管與透明性",
+        "concept": "人工監督",
+        "explanation": "Human on loop指人在AI流程中保持監督，能介入與調整決策，增進模型的透明度及可解釋性，是AI治理中重要的措施。",
+        "number": 354,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "哪一項特徵工程技術主要是將類別資料轉換成二進制向量以利機器學習？",
+        "options": [
+            "Label Encoding",
+            "One-Hot Encoding",
+            "Normalization",
+            "TF-IDF"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "特徵編碼",
+        "explanation": "One-Hot Encoding將類別變數轉成多個二進制向量，每一個類別對應一個維度，消除了類別間的順序假設，常用於機器學習模型。",
+        "number": 355,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "在機器學習中使用L1正則化的主要效果是？",
+        "options": [
+            "減少權重值但不會變為零",
+            "強制某些權重趨近零形成稀疏模型",
+            "增加模型複雜度以提升擬合程度",
+            "用於提升深層模型的非線性能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "模型正則化",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會將部分權重推向零，達到特徵選擇的效果，有助於模型簡化和防止過擬合。",
+        "number": 356,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "生成式AI保持回應語境一致性的挑戰主要是因為？",
+        "options": [
+            "模型缺乏足夠訓練資料",
+            "無法理解用戶的語言語意",
+            "標準訓練流程忽略上下文連續性",
+            "生成最多字元數有限制"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "語境一致性",
+        "concept": "語境保持",
+        "explanation": "生成式AI主要挑戰在於如何有效管理和整合多輪對話上下文，標準訓練流程往往對長距依賴不足，導致回應與語境不完全一致。",
+        "number": 357,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "監理沙盒的目的是什麼？",
+        "options": [
+            "快速推動AI技術市場化且免除所有監管",
+            "提供企業實驗新AI技術的安全法律環境",
+            "限制AI系統使用於特定產業中",
+            "將AI決策權完全交付給人工操作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI 治理概念",
+        "subtopic": "監管與合規",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是政府設立的法規實驗環境，讓企業能在受控、安全的條件下測試創新技術，以兼顧創新與風險管控。",
+        "number": 358,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "關聯式資料庫與非關聯式資料庫的最大差異在於？",
+        "options": [
+            "關聯式資料庫不支持交易，非關聯式支持",
+            "關聯式資料庫利用結構化表格存儲資料，非關聯式則是不定結構或文件儲存",
+            "非關聯式資料庫只用於小型資料集",
+            "非關聯式資料庫只能處理文字型資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料庫分類",
+        "explanation": "關聯式資料庫以行列表格方式結構化資料，適合複雜查詢；非關聯式資料庫則使用彈性資料模型，如文件、鍵值，支援大規模與非結構化資料。",
+        "number": 359,
+        "date": "2025-11-21"
+    },
+    {
+        "question": "Which of the following AI governance practices aligns with the EU's AI regulation principles cited by Taiwan's innovation labs?",
+        "options": [
+            "Emphasize fully autonomous AI decision-making without human oversight",
+            "Implement transparency, accountability, and risk management in AI deployment",
+            "Prioritize commercial AI development speed over ethical considerations",
+            "Use proprietary black-box models to protect intellectual property"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI 治理概念",
+        "subtopic": "國際法規參考",
+        "concept": "AI監理框架",
+        "explanation": "依歐盟AI法規精神，AI治理應強調透明度、問責與風險管理，以維護使用者權益和系統安全，台灣相關創新實驗室也採納此規範。",
+        "number": 360,
+        "date": "2025-11-21"
     }
 ]

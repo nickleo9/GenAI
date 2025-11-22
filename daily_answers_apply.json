@@ -5938,5 +5938,175 @@
         "explanation": "合理的AI應用部署策略應根據終端硬件的能效、計算能力和目標場景，選擇合適的模型設計與壓縮方法。",
         "number": 350,
         "date": "2025-11-20"
+    },
+    {
+        "question": "在台灣iPAS AI應用規劃師認證中，關於No Code與Low Code平台，下列何者最準確描述其核心差異？",
+        "options": [
+            "No Code平台強調完全無程式碼且以元件拖拉介面運作；Low Code需少量程式碼且針對開發者優化",
+            "No Code需撰寫少量程式碼且適合技術工程師；Low Code完全無需撰寫程式碼供非技術人員使用",
+            "No Code平台需透過API串接實現功能；Low Code完全離線作業不依賴網路",
+            "No Code平台以快速上線為優先，無法自訂複雜邏輯；Low Code無限制可高度自訂所有流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code基礎",
+        "concept": "No Code與Low Code核心區別",
+        "explanation": "No Code核心在於完全無程式碼，透過拖拉元件和視覺化設定完成開發；Low Code需撰寫少量程式碼，適合具開發背景者，可用於高度自訂與複雜流程。",
+        "number": 351,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "iPAS AI應用規劃師在生成式AI導入評估規劃中，評估風險時哪項是最應優先考量的關鍵？",
+        "options": [
+            "生成式模型的訓練數據大小",
+            "法規遵循與倫理風險",
+            "平台開發商的技術支援",
+            "API串接的便利性與速度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "倫理與法規風險管理",
+        "explanation": "生成式AI實際落地應用必須首重合規、倫理及法規風險，以避免法律責任和社會爭議，此為評估首要項目。",
+        "number": 352,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "下列哪種生成式AI應用場景最能展現『無程式碼』(No Code)工具的優勢？",
+        "options": [
+            "利用Python撰寫自訂深度學習模型",
+            "建置包含第三方API整合的業務流程自動化",
+            "針對多模態資料進行底層神經網絡架構設計",
+            "開發需大量客製化邏輯的企業級軟體"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI常見應用",
+        "concept": "No Code在業務自動化場景應用",
+        "explanation": "No Code平台通常透過元件與設定快速搭建流程，尤其適於第三方API串接與業務自動化，例如Slack與Google Sheets整合。",
+        "number": 353,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "針對AI應用規劃師的生成式AI工具實務，下列哪個敘述錯誤？",
+        "options": [
+            "可透過No Code工具完成自然語言處理模型應用",
+            "圖形接口讓非程式設計師快速構建AI應用",
+            "所有生成式AI工具都必須由開發者撰寫API串接程式碼",
+            "Low Code能平衡高度自訂與快速開發效率"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工具實務",
+        "concept": "生成式AI工具整合特性",
+        "explanation": "隨著No Code及Low Code平臺發展，不一定需撰寫API程式碼即可整合生成式AI服務，透過視覺化設定與元件實現。",
+        "number": 354,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "iPAS AI應用規劃師認證中，生成式AI模型的主流預訓練方式中，GPT系列採用何種架構？",
+        "options": [
+            "雙向預訓練方法",
+            "自迴歸生成方式（單向預訓練）",
+            "無監督學習聚類分析",
+            "強化學習無模型策略"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式模型理論",
+        "concept": "GPT生成模型架構",
+        "explanation": "GPT系列以自迴歸生成方式進行單向預訓練，專注於文本生成任務，對話式AI亦如此設計。",
+        "number": 355,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "在No Code/Low Code平台中，關於自動化部署與維護，下列何者為正確描述？",
+        "options": [
+            "No Code平台通常無法自動化部署，需手動上線",
+            "Low Code平台支援CI/CD，可與Git或DevOps工具串接",
+            "無程式碼平台僅適用於原型設計，無法正式部署",
+            "Low Code無法支援跨部門團隊協作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code運作機制",
+        "concept": "自動化部署流水線",
+        "explanation": "許多Low Code平臺支援CI/CD及與Git或DevOps串接，實現一鍵快速且可靠部署。",
+        "number": 356,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "關於生成式AI在業務流程優化中最常用的技術，下列何者最不符合？",
+        "options": [
+            "結構化資料回歸預測模型",
+            "聚類演算法進行客戶分群",
+            "無監督多模態生成模型",
+            "手寫程式實現流程自動化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI常見應用",
+        "concept": "生成式AI流程優化",
+        "explanation": "現代生成式AI多結合No Code/Low Code自動化工具完成流程優化，傳統手寫程式除非必要，一般不作為首選。",
+        "number": 357,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "iPAS AI應用規劃師認證涉及生成式AI導入評估，哪個項目不是導入初期應重點分析的？",
+        "options": [
+            "業務需求與流程適配性",
+            "資料隱私與安全性",
+            "使用者介面設計美觀性",
+            "合規與倫理審查"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "風險與需求評估",
+        "explanation": "生成式AI導入初期應著重技術適配、資料安全、合規與倫理，介面美觀則非首要評估項。",
+        "number": 358,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "在iPAS AI應用規劃師考題中，下列關於No Code平台的限制，何者最貼近實務？",
+        "options": [
+            "不支援任何API串接必須使用內建元件",
+            "難以處理複雜邏輯與條件流程",
+            "無法跨部門協作與版本控管",
+            "開發效率遠低於傳統程式碼撰寫"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code限制",
+        "concept": "No Code平台缺點",
+        "explanation": "No Code平台在複雜邏輯與高度客製流程有限制，通常適合較簡單工作流程；其他選項均不符合No Code優勢。",
+        "number": 359,
+        "date": "2025-11-22"
+    },
+    {
+        "question": "以下關於生成式AI工具實務中將AI與No Code平台整合的最佳做法是？",
+        "options": [
+            "以大量手寫代碼控制整個AI模型流程",
+            "透過AI節點自動化接入並優化工作流程",
+            "直接使用傳統SQL指令管理數據",
+            "完全依賴第三方AI無需任何自定義流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工具實務",
+        "concept": "生成式AI與No Code整合",
+        "explanation": "整合生成式AI與No Code工具時，常利用AI節點來串接模型與自動化工作流程，減少手動干預，提高效率。",
+        "number": 360,
+        "date": "2025-11-22"
     }
 ]

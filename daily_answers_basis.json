@@ -6108,5 +6108,175 @@
         "explanation": "依歐盟AI法規精神，AI治理應強調透明度、問責與風險管理，以維護使用者權益和系統安全，台灣相關創新實驗室也採納此規範。",
         "number": 360,
         "date": "2025-11-21"
+    },
+    {
+        "question": "在生成式AI與鑑別式AI的應用區分中，下列敘述何者正確？",
+        "options": [
+            "生成式AI主要用於資料分類和預測，而鑑別式AI則著重內容生成與多樣化回應。",
+            "鑑別式AI透過判別數據的類別以決策，生成式AI則生成新的數據樣本以模擬真實資料分布。",
+            "兩種AI皆以相同方式生成新資訊，主要差別在於訓練資料是否標記化。",
+            "生成式AI無法用於自然語言處理，鑑別式AI才是此領域的核心技術。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI與鑑別式AI原理",
+        "concept": "生成與鑑別模型差異",
+        "explanation": "鑑別式AI專注於判斷輸入資料的類別或真偽，屬於分類及識別；生成式AI則致力於根據學習到的資料分布生成新資料樣本，兩者功能和目的不同。",
+        "number": 361,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "在人工智慧治理（AI Governance）中，哪一項最能保障資料隱私與安全？",
+        "options": [
+            "公開所有訓練數據以增加模型透明度。",
+            "實施聯邦學習，使資料不離開本地裝置。",
+            "只對外公開模型架構，不透露訓練過程。",
+            "禁用所有含個人身份的數據標籤。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習匿名保障",
+        "explanation": "聯邦學習允許模型在多個本地設備上分散訓練數據，避免資料集中與外洩，提升隱私和安全性，是現代AI治理的重要技術。",
+        "number": 362,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "在資料整理與分析流程中，ETL代表什麼過程？",
+        "options": [
+            "資料萃取、轉換及裝載的標準流程。",
+            "特徵擴增、訓練及測試的模型建置步驟。",
+            "編碼、標準化與分類的數據預處理技術。",
+            "事件追蹤、統計及報告的分析方法。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL是資料工程中的核心流程，分別指資料抽取（Extract）、轉換（Transform）及裝載（Load），用於將數據由來源轉換到數據倉庫。",
+        "number": 363,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "以下哪一個屬於機器學習中特徵數值編碼方法？",
+        "options": [
+            "One-Hot Encoding",
+            "LIME",
+            "剪枝（Pruning）",
+            "Q-Learning"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型與技術",
+        "concept": "特徵工程",
+        "explanation": "One-Hot Encoding是將類別變數轉換成二進制向量的特徵工程技術，常用於機器學習前的數據預處理。",
+        "number": 364,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "在監督式學習中，若目標是預測房價，下列損失函數中哪一項最適合用於模型訓練？",
+        "options": [
+            "均方誤差（MSE）",
+            "交叉熵損失（Cross-Entropy Loss）",
+            "鉸鏈損失（Hinge Loss）",
+            "對比損失（Contrastive Loss）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "監督學習與損失函數",
+        "concept": "回歸損失函數",
+        "explanation": "均方誤差適用於迴歸任務，如預測房價，通過計算預測值與真實值的平方差衡量預測誤差大小。",
+        "number": 365,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "關於模型正則化技術L1與L2，下列敘述何者錯誤？",
+        "options": [
+            "L1正則化易導致部分權重收斂為零，具有稀疏化效果。",
+            "L2正則化主要透過懲罰大權重抑制過擬合，不會導致權重為零。",
+            "L2正則化會提升權重的絕對值以擴大模型能力。",
+            "兩者都是控制模型複雜度的常見正則化方法。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1與L2正則化差異",
+        "explanation": "L2正則化會懲罰權重過大，使其收斂到較小值，不會提升權重絕對值，其目的為減少過擬合並促進模型泛化。",
+        "number": 366,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "在AI的數據來源中，「關聯式資料庫」與「非關聯式資料庫」的主要差異為何？",
+        "options": [
+            "關聯式資料庫使用鍵值對存儲數據，非關聯式採用表格結構。",
+            "非關聯式資料庫不支持數據關聯，關聯式資料庫支援多表連接。",
+            "關聯式資料庫結構固定，而非關聯式資料庫結構靈活，適應多樣數據格式。",
+            "非關聯式資料庫比關聯式資料庫更適合結構化數據儲存。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料庫類型差異",
+        "explanation": "關聯式資料庫有嚴格的表格結構和模式，而非關聯式資料庫結構較靈活，能夠支持多樣且半結構化甚至無結構的資料格式。",
+        "number": 367,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "在強化學習中，Q-Learning 的主要目標是什麼？",
+        "options": [
+            "建立環境模型以預測下一步輸出。",
+            "最大化累積回報以學習最佳行動策略。",
+            "生成多樣化的數據樣本以增強訓練。",
+            "優化輸入特徵以降低維度。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習方法",
+        "concept": "Q-Learning基本原理",
+        "explanation": "Q-Learning是一種無模型的強化學習方法，通過學習行動價值函數來指導智能體採取能最大化未來累積報酬的策略。",
+        "number": 368,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "下列關於「Human on loop」的描述，何者最貼切？",
+        "options": [
+            "完全由人工決策，無需AI介入。",
+            "人工全程參與決策流程，不信任AI自主運作。",
+            "人工監督並在必要時介入模型決策以確保安全與準確。",
+            "AI自動運作，只有在故障時才通知人工干預。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "人工監督機制",
+        "concept": "Human on loop定義",
+        "explanation": "Human on loop指在AI系統運作中持續有人工監督，如若AI決策存在風險或誤判時，人工介入干預以保障系統可靠性。",
+        "number": 369,
+        "date": "2025-11-24"
+    },
+    {
+        "question": "為提升生成式AI回應的語境一致性，下列哪一項技術較常被採用？",
+        "options": [
+            "剪枝（Pruning）以減少模型參數。",
+            "提示工程（Prompt Engineering）以引導模型生成。",
+            "批次推論以優化執行速度。",
+            "One-Hot Encoding作為輸入特徵表示。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞設計",
+        "concept": "提示工程應用",
+        "explanation": "提示工程透過設計精確的輸入指令，引導生成式AI產生符合上下文語境且語意一致的回應，是提升生成品質重要手段。",
+        "number": 370,
+        "date": "2025-11-24"
     }
 ]

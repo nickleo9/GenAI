@@ -6448,5 +6448,175 @@
         "explanation": "生成式AI創造新數據，而鑑別式AI用於區分真偽及評估生成內容的可信度，兩者可協同工作提高系統整體效能。",
         "number": 380,
         "date": "2025-11-26"
+    },
+    {
+        "question": "在2025年AI技術趨勢中，哪種學習方式強調AI代理從環境中透過試誤獲得最佳策略？",
+        "options": [
+            "監督學習透過標註數據進行訓練",
+            "非監督學習自動發現數據內在結構",
+            "強化學習從反饋訊號中學習行動策略",
+            "生成式學習自主創造資料增強模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "強化學習",
+        "explanation": "強化學習允許AI代理透過與環境互動獲得獎勵或懲罰反饋，從而學習最佳決策策略，符合2025年強化學習趨勢。",
+        "number": 381,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "以下哪一項最能描述生成式AI在2025年應用中的特點？",
+        "options": [
+            "僅限於文本生成，無法處理影像數據",
+            "能同時處理文本、語音及多模態資料",
+            "依賴完全監督式學習且無法自我微調",
+            "只適用於固定範圍的資料類型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態生成",
+        "concept": "生成式AI",
+        "explanation": "2025年的生成式AI技術已經擴展到多模態領域，如文本、語音和影像等，超越單一資料類型限制。",
+        "number": 382,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "AI治理中，以下哪一項最能體現資料隱私保護的重要措施？",
+        "options": [
+            "資料去識別化確保個資不被追蹤",
+            "全面公開所有訓練數據以提升透明度",
+            "不限制數據存取權限方便開發",
+            "僅由AI系統自動決定數據使用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料去識別化",
+        "explanation": "去識別化是一項關鍵的隱私保護技術，透過刪除個人識別資訊來保障用戶隱私，符合AI治理最佳實務。",
+        "number": 383,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "在資料處理流程中，ETL代表什麼過程？",
+        "options": [
+            "提取、轉換、加載資料",
+            "建立、轉發、轉錄資料",
+            "嵌入、訓練、連接資料",
+            "編輯、運算、分析資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL指的是Extract(提取)、Transform(轉換)、Load(加載)三個步驟，是資料處理中常用的標準流程。",
+        "number": 384,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "哪種機器學習模型最適合用於結構化影像辨識任務？",
+        "options": [
+            "回歸分析模型",
+            "卷積神經網絡（CNN）",
+            "決策樹分類器",
+            "生成對抗網絡（GAN）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "CNN",
+        "explanation": "卷積神經網絡（CNN）專門設計用於影像資料的特徵提取和分類，是影像辨識任務的主流模型。",
+        "number": 385,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "鑑別式AI模型與生成式AI模型最大的差異是？",
+        "options": [
+            "鑑別式AI能生成新數據，生成式AI只能分類",
+            "生成式AI直接預測標籤，鑑別式AI生成內容",
+            "鑑別式AI判斷輸入屬於哪類，生成式AI創造新資料",
+            "兩者模型結構完全相同，僅訓練數據不同"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式AI差異",
+        "explanation": "鑑別式AI專注於分類和判斷輸入資料類別，生成式AI則強調創造或合成新的資料內容。",
+        "number": 386,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "針對機器學習中偏差與變異的權衡，下列敘述何者正確？",
+        "options": [
+            "降低偏差通常會提升變異，可能導致過擬合",
+            "降低變異必然會增加偏差，導致模型欠擬合",
+            "降低偏差同時降低變異，模型表現必然提升",
+            "偏差與變異無關，彼此可以獨立調整"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型優化",
+        "concept": "偏差-變異權衡",
+        "explanation": "在機器學習中，降低偏差往往會增加模型複雜度，導致變異升高，形成過擬合問題，是模型優化中必須考量的權衡。",
+        "number": 387,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "RAG(Retrieval-Augmented Generation)技術主要整合了哪兩個核心元素？",
+        "options": [
+            "關聯規則與分類器",
+            "檢索系統與生成模型",
+            "強化學習與監督學習",
+            "生成對抗網絡與遞歸神經網絡"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程與模型整合",
+        "concept": "RAG技術",
+        "explanation": "RAG結合了檢索系統（用於搜尋相關信息）與生成模型（用於生成回答），提升生成內容的準確性與豐富度。",
+        "number": 388,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "在AI應用中，'Human on loop' 的定義是？",
+        "options": [
+            "完全由AI系統自主決策無人工介入",
+            "人類直接監督與干預AI決策過程",
+            "人工完全負責決策，無AI輔助",
+            "AI與人類決策分開獨立執行"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "Human on loop",
+        "explanation": "'Human on loop'指的是在AI系統運作中，人類持續介入並監督AI決策過程，以確保結果符合倫理與安全標準。",
+        "number": 389,
+        "date": "2025-11-28"
+    },
+    {
+        "question": "關於深度學習模型中梯度消失與梯度爆炸問題，下列敘述何者正確？",
+        "options": [
+            "ReLU激活函數能有效減少梯度消失問題",
+            "梯度爆炸問題常見於淺層神經網絡",
+            "梯度消失是由於權重更新過大導致",
+            "梯度爆炸會使權重逐漸接近零"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習問題",
+        "concept": "梯度消失與爆炸",
+        "explanation": "ReLU激活函數因其非線性且導數穩定，常用來解決梯度消失問題，提升深度神經網絡訓練效率。",
+        "number": 390,
+        "date": "2025-11-28"
     }
 ]

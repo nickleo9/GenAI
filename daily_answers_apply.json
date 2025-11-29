@@ -6278,5 +6278,175 @@
         "explanation": "以目標驅動的AI導入策略應聚焦於明確設立可量化的KPI，才能確實評估效益與迭代優化落地成果。",
         "number": 370,
         "date": "2025-11-25"
+    },
+    {
+        "question": "在AI應用專案中，導入 No code / Low code 平台的主要優勢為何？",
+        "options": [
+            "可以降低技術門檻，快速部署AI功能",
+            "能夠全面自動優化所有資料結構",
+            "能實現AI完全無人監管的自學操作",
+            "可直接消滅所有模型偏誤與錯誤率"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台優勢",
+        "explanation": "No code / Low code 平台使得非技術用戶也可以輕易地設計與部署AI應用，從而降低技術門檻並加快專案推進速度。",
+        "number": 371,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "下列哪一項最能準確描述生成式AI在創意產業的實際應用？",
+        "options": [
+            "完全無需人工審查即可發布廣告內容",
+            "透過AI快速生成多種設計稿供選擇",
+            "由AI直接進行法律合規裁決",
+            "自動將原始素材還原為原始資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "產業應用",
+        "explanation": "生成式AI能夠根據提示詞在短時間內產生大量多樣化的設計方案，協助創意產業提升效率與創新。",
+        "number": 372,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "何者屬於生成式AI應用導入前應積極評估的項目？",
+        "options": [
+            "使用者友善介面設計導向",
+            "現有流程自動化程度與資料品質",
+            "模型永久免維護與自動最佳化",
+            "即時自我檢測並解決法律糾紛"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "流程評估",
+        "explanation": "導入生成式AI前必須檢視現有流程的自動化程度和資料品質，以確保AI系統可順利整合並發揮效益。",
+        "number": 373,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "在生成式AI提示詞設計上，以下哪一個做法較能產生高品質結果？",
+        "options": [
+            "用極簡短提示詞，任何語意皆可自動理解",
+            "明確描述需求內容與期望產出細節",
+            "輸入大量隨機關鍵字組合作為提示",
+            "只給與AI一個主題名稱不加限制"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "善用生成式 AI 工具",
+        "concept": "提示詞優化",
+        "explanation": "充份且明確地描述需求和期望，有助於AI產生更貼近使用者需求且具備精確細節的內容。",
+        "number": 374,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "對於生成式AI工具導入企業的主要風險，下列何者正確？",
+        "options": [
+            "可確保所有輸出皆無智慧財產爭議",
+            "容易產生關鍵資訊外洩與內容偏誤",
+            "必須完全替代原有IT團隊所有職責",
+            "能夠取代所有決策並自動執行"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險辨識",
+        "explanation": "生成式AI工具導入時可能導致資料洩漏、智慧財產爭議及產生有偏見或不準確的結果，是主要風險。",
+        "number": 375,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "現今最新的No code生成式AI平臺應用通常包含哪些特性？",
+        "options": [
+            "僅支援靜態網頁內容生成",
+            "具備拖拉式介面與自動部署流程",
+            "限定須具備深度程式設計能力",
+            "僅能手動整合外部API資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台功能",
+        "explanation": "現代No code生成式AI平臺強調易用性，多數支援拖拉式操作和自動部署，讓用戶無需編碼即可完成應用開發。",
+        "number": 376,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "關於生成式AI在客服自動化的應用，何者敘述較為精確？",
+        "options": [
+            "能全自動偵測所有語意陷阱與詐騙行為",
+            "可根據歷史對話適當提供個人化回覆",
+            "自動濾除所有非法用語且無需審查",
+            "可以完全取代人工智慧型問答流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "智慧客服",
+        "explanation": "生成式AI可以參考歷史對話紀錄，進行個人化回覆，但仍需人工監督以避免誤判或冒犯。",
+        "number": 377,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "有關No code / Low code生成式AI導入的限制，下列哪一項正確？",
+        "options": [
+            "可以輕易處理任何規模複雜企業系統整合",
+            "難以處理極客製化或高度專業流程需求",
+            "能完全消除企業資安管理負擔",
+            "能保障所有資料與決策的即時正確性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台瓶頸",
+        "explanation": "No code / Low code平臺難以涵蓋極高客製化或複雜流程的系統整合，對於特殊需求以外的應用最為有效。",
+        "number": 378,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "在目前生成式AI領域常見的“多模型整合”應用，是指什麼？",
+        "options": [
+            "單一大型模型橫跨所有任務的執行",
+            "結合多種專精模型協同完成複雜任務",
+            "以單一數據源持續微調同一模型",
+            "依使用者需求自適應推論深度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "模型整合",
+        "explanation": "多模型整合指的是針對不同功能需求，結合多個AI模型彼此協作，增強專案執行效能和覆蓋範圍。",
+        "number": 379,
+        "date": "2025-11-29"
+    },
+    {
+        "question": "何種概念能協助企業有效評估生成式AI導入效果與品質？",
+        "options": [
+            "僅憑團隊主觀感受設計評估標準",
+            "透過關鍵指標與多面向成效量測",
+            "以歷史經驗法則預測未來效益",
+            "只考慮單一模型的演算法複雜度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "成效評價",
+        "explanation": "成效評價需建立客觀、結構化的關鍵績效指標，從多方數據來評量生成式AI應用的實際影響與品質。",
+        "number": 380,
+        "date": "2025-11-29"
     }
 ]

@@ -6448,5 +6448,175 @@
         "explanation": "成效評價需建立客觀、結構化的關鍵績效指標，從多方數據來評量生成式AI應用的實際影響與品質。",
         "number": 380,
         "date": "2025-11-29"
+    },
+    {
+        "question": "下列何者最適合作為企業內部非技術部門人員快速部署AI自動化工作流程的工具？",
+        "options": [
+            "無代碼平台（No Code Platform）",
+            "專屬開發語言（Proprietary Coding Language）",
+            "深度自訂低代碼平台（Full Customization Low Code Platform）",
+            "命令列終端機工具（Command Line Interface Tool）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台適用性",
+        "explanation": "無代碼平台為非技術用戶設計，透過拖拉與視覺化操作即可部署AI自動化流程，是企業民主化數位轉型的首選。",
+        "number": 381,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "選擇生成式AI No Code 平台進行應用開發的主要限制為下列何者？",
+        "options": [
+            "自訂程度較受平台功能限制",
+            "需具備高階程式能力",
+            "無法與雲端服務整合",
+            "僅適用於大型資料庫管理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平臺限制",
+        "explanation": "No Code平台自訂彈性有限，複雜功能或流程需仰賴平台現有模組，難以實現細緻客製化。",
+        "number": 382,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "下列哪一項不屬於2025最新生成式AI導入評估規劃的建議步驟？",
+        "options": [
+            "先確立商業目標再選定AI工具",
+            "強調數據隱私與資安考量",
+            "忽略現有系統整合性分析",
+            "評估導入效益與成本回收時間"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "導入規劃",
+        "explanation": "忽略與現有系統整合會導致落地困難，正確步驟應評估系統整合性。",
+        "number": 383,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "2025年金融產業於數位轉型時導入AI No-Code平台的主要優勢為何？",
+        "options": [
+            "大幅縮減開發時程並快速推出MVP",
+            "全面淘汰高階IT專業人才",
+            "強制標準化所有部門流程設計",
+            "減少資料來源與資料清理需求"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "開發效率",
+        "explanation": "No Code平台可將MVP部署時程從數百小時縮短至幾小時，加速金融產業的數位轉型。",
+        "number": 384,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "針對跨部門數位協作需求，下列何種平台最具備整合性及易用性的特點？",
+        "options": [
+            "全視覺化低代碼平台",
+            "傳統物件導向編輯器",
+            "開放原始碼資料探勘工具",
+            "嵌入式製程控制系統"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "協作整合",
+        "explanation": "全視覺化的低代碼平台結合拖拉、組件與少量程式能力，最易協作整合。",
+        "number": 385,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "下列何者正確敘述2025年No Code / Low Code平台與生成式AI的應用關係？",
+        "options": [
+            "生成式AI可提升平台自動化流程設計能力",
+            "生成式AI僅用於資料儲存與查詢",
+            "兩者不支持智慧化介面自動生成",
+            "生成式AI無法納入UI/UX設計流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "整合應用",
+        "explanation": "生成式AI能賦能No Code/Low Code平台，使自動化流程及智慧介面生成成為現實。",
+        "number": 386,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "關於生成式AI平台導入風險，下列何者敘述正確？",
+        "options": [
+            "資料隱私保護需納入導入初期設計考量",
+            "平台無需關注專案技術債",
+            "平台安全機制僅限於用戶認證",
+            "合規性評估由AI自動完成"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "資料隱私管理",
+        "explanation": "平台導入初期即需關注資料隱私問題，確保符合法規要求與企業資安政策。",
+        "number": 387,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "企業在選擇低代碼平台（Low Code）時，應優先考量下列哪項特性？",
+        "options": [
+            "支持複雜需求擴充與深度整合",
+            "取消所有原有資訊架構",
+            "限制用戶僅能建置靜態網站",
+            "阻擋所有外部API接入"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台彈性",
+        "explanation": "低代碼平台設計重點在於可擴充及支援複雜需求整合與深度自訂功能。",
+        "number": 388,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "關於2025年生成式AI提示詞工程（Prompt Engineering），下列何者最為正確？",
+        "options": [
+            "使用具體描述性語句可提升結果精準度",
+            "僅可使用英文進行提示詞設計",
+            "提示詞內容長度不影響AI產出",
+            "多用抽象詞彙可減少語意誤解"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞使用",
+        "explanation": "明確、具體描述能提升生成式AI理解與產出結果的精準度。",
+        "number": 389,
+        "date": "2025-12-02"
+    },
+    {
+        "question": "若企業需打造可視化自主更新網站及即時行銷文案，應優先考慮何種平台？",
+        "options": [
+            "具備AI輔助設計的No Code平台",
+            "僅限編譯語法的傳統IDE",
+            "主打批次處理的排程管理系統",
+            "封閉式資料採集工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "平台選型",
+        "explanation": "結合AI輔助設計的No Code平台為企業行銷自動化及網頁自主管理的最佳選擇。",
+        "number": 390,
+        "date": "2025-12-02"
     }
 ]

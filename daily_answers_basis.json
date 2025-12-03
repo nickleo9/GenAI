@@ -6788,5 +6788,175 @@
         "explanation": "RAG結合檢索技術與生成模型，能動態引用相關上下文資訊，提升生成內容的語境連貫性和準確度。",
         "number": 400,
         "date": "2025-12-01"
+    },
+    {
+        "question": "在生成式AI中，哪一項技術能有效提升模型生成內容與上下文的一致性？",
+        "options": [
+            "RAG（檢索增強生成技術）",
+            "LIME（模型可解釋手法）",
+            "Q-Learning（強化學習方法）",
+            "KNN（鄰近算法）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式模型",
+        "concept": "RAG",
+        "explanation": "RAG（Retrieval-Augmented Generation）技術結合了檢索系統與生成模型，能有效提升模型生成時的語境一致性，減少生成錯誤或偏離主題的內容。",
+        "number": 401,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "以下哪種機器學習類型主要依賴標記資料進行模型訓練？",
+        "options": [
+            "非監督學習",
+            "監督學習",
+            "強化學習",
+            "自監督學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "學習類型",
+        "concept": "監督學習",
+        "explanation": "監督學習依賴標記（有標籤）資料來訓練模型，目標是讓模型從輸入資料中學習預測對應的標籤。",
+        "number": 402,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "在AI資料處理流程中，哪一個階段最主要負責確保資料格式一致且去除異常？",
+        "options": [
+            "資料收集",
+            "資料清理",
+            "資料分析",
+            "資料視覺化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理",
+        "concept": "資料清理",
+        "explanation": "資料清理階段的目標是將收集來的資料格式統一、剔除錯誤或異常值，以確保後續分析的準確性與可靠性。",
+        "number": 403,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "在鑑別式AI與生成式AI中，下列敘述何者正確？",
+        "options": [
+            "鑑別式AI專注於生成新內容，生成式AI用於分類任務。",
+            "鑑別式AI用於判別資料是否屬於某類；生成式AI則生成新資料。",
+            "生成式AI無法與鑑別式AI結合應用於實務場景。",
+            "鑑別式AI和生成式AI都是只用於自然語言處理，不適用於影像分析。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本概念",
+        "concept": "鑑別式與生成式定義",
+        "explanation": "鑑別式AI主要是判斷輸入數據屬於哪一類（分類、辨識），而生成式AI則以創造新數據為目標，兩者可結合於多種應用場景中。",
+        "number": 404,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "何者最符合AI治理中“Human on Loop”的定義？",
+        "options": [
+            "使用AI自動決策，完全不需人類干預",
+            "人工進行監督與干預以確保模型決策的合規性",
+            "將AI訓練過程完全交由機器自動完成",
+            "利用AI生成式模型替代所有人工工作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "人機協同",
+        "concept": "Human on Loop",
+        "explanation": "Human on Loop 指的是在AI系統運作中有人類監督和干預，確保決策過程透明且符合法規。",
+        "number": 405,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "在機器學習中，L1正則化推動模型權重收斂至零的主要原因為何？",
+        "options": [
+            "促使所有權重等比例收縮，防止過擬合",
+            "引入稀疏性，讓一些特徵權重變成零，達到特徵選擇效果",
+            "增加模型複雜度，提升泛化能力",
+            "完全禁止權重更新，固定模型參數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化能引入稀疏性約束，讓部分權重變成零，達到特徵壓縮與選擇的效果，有助於減少過擬合。",
+        "number": 406,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "下列何者不屬於生成式AI的典型應用範圍？",
+        "options": [
+            "文本自動生成",
+            "圖像合成與修改",
+            "數據分類及標記",
+            "音頻及視頻內容創作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "應用範圍",
+        "concept": "生成式AI應用",
+        "explanation": "數據分類及標記屬於鑑別式AI的典型任務，生成式AI主要用於創建新內容，如文本、影像和多媒體生成。",
+        "number": 407,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "在資料隱私與安全中，哪個技術最適合在不共享原始資料情況下進行分散式學習？",
+        "options": [
+            "深度增強學習",
+            "聯邦學習",
+            "微調技術",
+            "強化學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私保護",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許多個節點在本地訓練模型，只共享模型參數而非原始數據，提升資料隱私安全。",
+        "number": 408,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "在機器學習中，哪一項模型通常用於解決時間序列資料處理問題？",
+        "options": [
+            "VAE（變分自編碼器）",
+            "RNN（循環神經網絡）",
+            "貝氏分類器",
+            "KNN（鄰近法）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "模型應用",
+        "concept": "RNN",
+        "explanation": "RNN適合處理序列數據，尤其是時間序列與語言資料，因為其設計能捕捉時間維度上的依賴關係。",
+        "number": 409,
+        "date": "2025-12-03"
+    },
+    {
+        "question": "在AI治理中，監理沙盒(監管實驗室)的主要功能為何？",
+        "options": [
+            "完全放寬監管規則，促進自由開發",
+            "提供受控環境測試創新AI技術以防範風險",
+            "限定AI系統必須採用生成式模型",
+            "禁止所有強化學習技術應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "監管框架",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒提供一個可控的實驗環境，允許企業測試創新技術並評估風險，為後續正式監管制定基礎。",
+        "number": 410,
+        "date": "2025-12-03"
     }
 ]

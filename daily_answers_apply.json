@@ -6788,5 +6788,175 @@
         "explanation": "RAG（Retrieval-Augmented Generation）能即時檢索本地知識庫資料，並與生成式模型融合給出更準確與最新回應，是企業知識型AI應用常見架構。",
         "number": 400,
         "date": "2025-12-04"
+    },
+    {
+        "question": "在No Code/Low Code平台中，實現企業自動化的最大優勢是下列何者？",
+        "options": [
+            "無須程式基礎即可快速構建流程",
+            "可自行訓練深度學習模型以提升AI性能",
+            "主要專注於GPU資源最佳化分配",
+            "支援自動生成多語言API端點"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 基本概念",
+        "concept": "平台自動化優勢",
+        "explanation": "No Code/Low Code平台強調無須程式知識也能快速自動化，是推動企業數位轉型的核心助力。",
+        "number": 401,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "下列哪一項最符合生成式AI應用於客戶服務中心的創新做法？",
+        "options": [
+            "根據用戶輸入自動生成客製化回應建議",
+            "集中於知識檢索並生成一致性報告",
+            "採用批次資料增強對話流暢度",
+            "僅聚焦於通話錄音自動分類存檔"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域",
+        "concept": "客服生成式AI應用",
+        "explanation": "生成式AI能根據自然語言即時產生個人化回覆，大幅提升客服效率與用戶體驗。",
+        "number": 402,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "針對生成式AI風險管理，下列何者為錯誤的敘述？",
+        "options": [
+            "需針對資料偏誤進行評估與監控",
+            "應定期審查生成內容以防止不當資訊擴散",
+            "只有模型訓練階段需要風險控管措施",
+            "風險評估涵蓋資訊安全與隱私測試"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險識別與控管",
+        "explanation": "風險控管不僅在訓練階段，還需持續監控部署與應用階段。",
+        "number": 403,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "在導入生成式AI工具時，以下哪個步驟較不屬於系統導入評估規劃程序？",
+        "options": [
+            "確定業務需求與AI目標對應",
+            "分析現有數據結構與來源",
+            "只針對外部API使用頻率記錄",
+            "進行法律與合規性評估"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入評估流程",
+        "explanation": "單純記錄外部API使用率與系統導入關聯性較低，無法達成全方位評估。",
+        "number": 404,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "使用No Code/Low Code 平台時，通常遇到的限制是什麼？",
+        "options": [
+            "高度客製需求難以支援",
+            "程式執行效率自動最佳化",
+            "AI模型自動升級且無須人為管理",
+            "支持即時運算複雜視覺任務"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 優勢與限制",
+        "concept": "平台限制",
+        "explanation": "No Code/Low Code平台受限於預設組件，難以處理高度或特殊客製需求。",
+        "number": 405,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "生成式AI在金融產業應用時，何者較適合提示詞設計來減少誤判風險？",
+        "options": [
+            "使用明確限制與條件導引生成",
+            "給予模型完全自由生成所有內容",
+            "以隨機噪音控制訊息產生",
+            "執行模型多重自評循環"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI 提示工程",
+        "concept": "提示詞設計",
+        "explanation": "明確限制與導引能有效減少生成AI偏誤與誤判，尤其在金融應用中至關重要。",
+        "number": 406,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "下列哪一個是2025年主流生成式AI工具進行跨語言內容生成常見的功能？",
+        "options": [
+            "全自動語言偵測與同步翻譯生成",
+            "僅支援靜態資料格式批次轉換",
+            "僅能處理先行嵌入的單語輸入",
+            "限制僅於單一國家API網路使用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "跨語言生成",
+        "explanation": "最新主流工具多具備即時語言偵測及雙向生成，支援廣泛多語應用場景。",
+        "number": 407,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "何者屬於評估生成式AI導入時，應優先考慮的法律風險？",
+        "options": [
+            "模型開發原始碼開放程度",
+            "資料來源合法性與用戶隱私規範",
+            "前端UI設計美學趨勢影響",
+            "多平台API效能壓力測試"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI 導入規劃",
+        "concept": "法律與隱私風險",
+        "explanation": "資料的合法取得與隱私保護是企業AI導入的法律風險重中之重。",
+        "number": 408,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "下列何者『不是』常見生成式AI在行銷領域的應用？",
+        "options": [
+            "根據用戶偏好自動生成廣告素材",
+            "分析產業財報自動生成法規摘要",
+            "設計個人化行銷郵件內容生成",
+            "即時生成社群平台互動貼文"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "行銷應用區分",
+        "explanation": "自動生成法規摘要多為法律應用，非行銷領域主流運用。",
+        "number": 409,
+        "date": "2025-12-06"
+    },
+    {
+        "question": "關於RAG（Retrieval Augmented Generation）模型，下列敘述何者正確？",
+        "options": [
+            "僅將具體資料嵌入到自然語言中生成答案",
+            "結合外部知識檢索與生成式模型產生回答",
+            "依賴單一資料來源與微調模型訓練",
+            "專為處理影像數據量身打造"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI技術",
+        "concept": "RAG原理",
+        "explanation": "RAG模型綜合外部檢索技術與生成能力，讓回應更準確與具備上下文。",
+        "number": 410,
+        "date": "2025-12-06"
     }
 ]

@@ -6958,5 +6958,175 @@
         "explanation": "RAG模型綜合外部檢索技術與生成能力，讓回應更準確與具備上下文。",
         "number": 410,
         "date": "2025-12-06"
+    },
+    {
+        "question": "在2025年最新的No Code/Low Code平台中，以下哪項特性最能提升非技術人員的生成式AI應用設計效率？",
+        "options": [
+            "支持多種生成式AI模型插件，且能根據業務流程自動化整合",
+            "限制用戶只能輸入預設模板的提示詞，防止錯誤輸入",
+            "以線性代碼編輯器為主，強調手動調整每行程式碼",
+            "只支援文本生成功能，不包含圖片或多媒體擴展"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code",
+        "subtopic": "平台設計與整合",
+        "concept": "生成式AI工具整合與自動化",
+        "explanation": "2025年主流No Code/Low Code平台多強調支持多元生成式AI模型插件，並能依業務流程自動串接與自動化，提高非技術背景使用者的應用設計效率與靈活度。",
+        "number": 411,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "在生成式AI工具中，像Google Gemini 2.5 Pro相比ChatGPT-5的最大優勢是什麼？",
+        "options": [
+            "處理多模態資料（文字、影像、程式碼）並即時結合網路搜索結果",
+            "擁有更高的日本語文法正確率與自然度",
+            "專注於長文推敲與資料總結能力的提升",
+            "完全免費、開源並無需付費升級"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用及工具",
+        "subtopic": "多模態及即時性",
+        "concept": "多模態混合與即時資訊整合",
+        "explanation": "Google Gemini 2.5 Pro的顯著特點是支援文字、圖片、程式碼等多模態資訊，同時可即時整合Google搜尋引擎資訊，這是其相比ChatGPT-5的主要優勢。",
+        "number": 412,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "在AI導入規劃中，下列哪項步驟最適合用來評估生成式AI對企業數據安全的潛在風險？",
+        "options": [
+            "針對生成AI供應商的資料加密與訪問控制機制進行審查",
+            "只依賴企業內部的安全政策而不考慮AI工具的安全設計",
+            "忽略使用者端的風險，集中評估AI算法準確性",
+            "在導入後才開始進行風險事件的回顧和修正"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "導入評估規劃",
+        "subtopic": "風險管理",
+        "concept": "資料安全風險評估",
+        "explanation": "全面審查AI供應商的加密與訪問控制是確保企業數據安全的關鍵步驟，2025年生成式AI導入即重視供應商安全設計，而非事後補救。",
+        "number": 413,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "針對生成式AI中提示詞(prompt)設計的最佳實務，下列何者最不符合2025年主流技術建議？",
+        "options": [
+            "使用清晰且具體的上下文描述以引導生成結果",
+            "在提示詞中使用模糊詞彙以增加生成內容的多樣性",
+            "結合條件限制避免產出不適當或無關的回應",
+            "根據任務需求逐步優化提示詞結構和表達"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "提示詞用法",
+        "subtopic": "有效提示詞設計",
+        "concept": "提示詞清晰度與精確引導",
+        "explanation": "2025年提示詞設計強調精確且具體的內容引導，避免使用模糊或不確定的用詞，因其會降低生成結果的品質與相關性。",
+        "number": 414,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "下列何者最準確描述No Code/Low Code平台在生成式AI導入過程中的優勢？",
+        "options": [
+            "能讓企業內部非技術人員快速建立自動化AI流程，降低研發成本",
+            "完全依賴技術團隊手寫代碼，確保系統唯一性和安全性",
+            "僅限於文本生成，不支援其他媒體或複雜邏輯應用",
+            "不需要任何風險評估及安全檢查即可直接部署"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code",
+        "subtopic": "企業導入效益",
+        "concept": "降低技術門檻與快速開發",
+        "explanation": "No Code/Low Code允許非專業技術背景人員以視覺化流程快速構建AI應用，大幅降低成本及縮短導入時間，是2025年企業推廣的主流策略。",
+        "number": 415,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "在2025年的生成式AI風險管理策略中，若企業擬提升模型可解釋性以應對監管需求，最佳措施為何？",
+        "options": [
+            "整合可追蹤的決策流程與多階段輸入輸出記錄系統",
+            "放棄深度學習模型，僅使用規則型AI系統",
+            "減少訓練資料量，以降低模型複雜度",
+            "完全信任供應商模型的黑箱能力，不做監控"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "風險管理",
+        "subtopic": "模型可解釋性",
+        "concept": "透明度與監管合規",
+        "explanation": "2025年企業為滿足透明化與監管合規需求，會採用多階段輸入輸出追蹤與決策流程記錄，提升模型可追蹤與解釋能力。",
+        "number": 416,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "Claude 3相較於ChatGPT-5最突出的主要優勢為何？",
+        "options": [
+            "提供更細膩的長文理解與專業報告總結能力",
+            "強化互動式對話與資訊搜尋整合功能",
+            "支援更多種語言的即時翻譯服務",
+            "完全免費且適用於所有行業領域"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用及工具",
+        "subtopic": "文章理解與總結",
+        "concept": "文本理解與精準總結",
+        "explanation": "Claude 3以長文理解及專業報告撰寫著稱，著重於長文推敲與多層次資訊組織，比ChatGPT-5在這方面更受評價。",
+        "number": 417,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "以下哪一項是生成式AI專案導入初期最重要的評估指標？",
+        "options": [
+            "業務需求與使用場景的明確定義與優先順序",
+            "忽略使用者接受度，優先實施最新AI技術",
+            "直接進行大規模生產環境測試，無需先行評估",
+            "依賴廠商宣傳資訊做決策，不做內部評估"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "導入評估規劃",
+        "subtopic": "需求評估",
+        "concept": "需求分析與場景定義",
+        "explanation": "有效的AI導入需從明確定義業務需求與適用場景開始，確保資源投入得當與穩定推進，是首要步驟。",
+        "number": 418,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "在提示詞工程中，使用反向提示（negative prompt）主要用於什麼目的？",
+        "options": [
+            "排除或限制生成內容中的不想要元素",
+            "加強生成文本的描述性細節與情感表達",
+            "提升模型預測下一詞的準確率",
+            "測試模型在極端輸入下的穩定性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "提示詞用法",
+        "subtopic": "提示詞優化",
+        "concept": "反向提示的意義與運用",
+        "explanation": "反向提示用來指定模型避免生成特定內容或元素，是提升生成品質及避免失誤常用的技巧。",
+        "number": 419,
+        "date": "2025-12-09"
+    },
+    {
+        "question": "下列生成式AI專有名詞中，哪一個是指用於描述輸入文本以指導AI生成結果的技術？",
+        "options": [
+            "提示詞（Prompt）",
+            "微調（Fine-tuning）",
+            "遷移學習（Transfer Learning）",
+            "生成對抗網路（GAN）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "專有名詞",
+        "subtopic": "生成式AI基礎術語",
+        "concept": "提示詞定義與功能",
+        "explanation": "提示詞是指導AI生成內容的輸入文本，通過設計提示詞能有效影響輸出結果，是生成式AI中核心技術之一。",
+        "number": 420,
+        "date": "2025-12-09"
     }
 ]

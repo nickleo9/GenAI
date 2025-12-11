@@ -7128,5 +7128,175 @@
         "explanation": "提示詞是指導AI生成內容的輸入文本，通過設計提示詞能有效影響輸出結果，是生成式AI中核心技術之一。",
         "number": 420,
         "date": "2025-12-09"
+    },
+    {
+        "question": "下列何者最能說明2025年台灣產業導入生成式AI視覺檢測的主要優勢？",
+        "options": [
+            "能大幅提升品質瑕疵識別速度與準確率，減少人工誤判",
+            "僅能處理定型化瑕疵，對新型缺陷反應緩慢",
+            "大幅增加人力需求，需專職人員監控每一流程",
+            "僅適用於資訊產業，對製造業貢獻有限"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產業應用",
+        "concept": "AI視覺檢測",
+        "explanation": "生成式AI視覺檢測能快速且精確地判斷生產瑕疵，顯著提升效率並降低錯誤率。",
+        "number": 421,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "下列哪一項敘述為No code / Low code平台的主要優勢？",
+        "options": [
+            "全面移除工程人員，所有複雜邏輯皆可自動產生",
+            "降低非AI專業者應用AI工具的門檻，加速部署",
+            "只能建立靜態型應用，不支援互動式功能",
+            "嚴重限制擴展性且無法結合AI應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code概念",
+        "concept": "平台優勢",
+        "explanation": "No/Low code平台讓非技術人員也能設計AI應用，加速推廣與商業化，並降低進入門檻。",
+        "number": 422,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "以下對於生成式AI風險管理的描述，何者正確？",
+        "options": [
+            "只需考量模型效能，不會涉入資料隱私與合法性",
+            "需整合資料安全、透明度與偏誤控管等多重準則",
+            "僅在人力資源系統實施風險評估，其他領域不需管理",
+            "所有資料皆可任意導入，無資料治理疑慮"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入風險管理",
+        "concept": "風險管理",
+        "explanation": "AI風險管理必須同時納入隱私、合法性、偏誤與透明度等控制機制，確保合規運作。",
+        "number": 423,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "企業導入生成式AI知識管理平台時，最重要的提示詞設計原則為何？",
+        "options": [
+            "盡量簡短，避免上下文描述",
+            "使用精確領域上下文條件，以確保查詢結果正確",
+            "常更換提示語以分散模型重複回答",
+            "僅用通用語句，避免業務特定術語"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Prompt工程",
+        "concept": "提示詞設計",
+        "explanation": "在業務知識應用中，需明確定義上下文，有助於得到精確且可用的回覆。",
+        "number": 424,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "下列有關AI Agent（智能代理）在企業場景應用的優勢何者正確？",
+        "options": [
+            "主要用於資料蒐集，並無協助人力自動化的功能",
+            "能自動處理重複性瑣事，提升人力資源效益",
+            "無法支援跨部門工作流程整合",
+            "僅支援靜態問答，缺乏自主學習與優化能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI Agent",
+        "concept": "智能代理應用",
+        "explanation": "AI Agent能自動處理重複工序並有學習優化能力，是企業提升效率的重要利器。",
+        "number": 425,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "關於RAG（Retrieval-Augmented Generation）技術，下列何者正確？",
+        "options": [
+            "RAG僅能生成圖片，不具資料查詢能力",
+            "RAG融合檢索技術與生成模型，提升回應正確率",
+            "RAG只適用於語音轉文字，不可互動查詢",
+            "RAG完全無法結合企業私有知識庫"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "專有名詞應用",
+        "concept": "RAG（檢索增強生成）",
+        "explanation": "RAG技術結合檢索與生成，運用於企業知識庫能顯著提高語意準確性。",
+        "number": 426,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "何者為導入生成式AI時需優先評估的關鍵風險項目？",
+        "options": [
+            "系統響應速度為唯一重要指標",
+            "資料是否合法、來源是否可信與隱私保護機制",
+            "僅評估模型名稱，不須關注內容合規性",
+            "完全不用考慮使用記錄與操作軌跡"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入評估",
+        "concept": "資料合法合規",
+        "explanation": "生成式AI必須審查資料來源與隱私，以符合法規並降低企業風險。",
+        "number": 427,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "下列何者非2025年台灣企業常採用的生成式AI應用場域？",
+        "options": [
+            "自動化行銷內容生成",
+            "電商客服智能化",
+            "新型智慧冷凍食品製造管理",
+            "製造產線瑕疵自動辨識"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產業應用",
+        "concept": "場域應用",
+        "explanation": "冷凍食品智慧製造尚非主流場域，製造、客服及行銷才為實務常見應用。",
+        "number": 428,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "以下有關低程式碼（Low code）平台的說明，何者正確？",
+        "options": [
+            "僅有視覺化編輯介面，不可擴充自訂功能模組",
+            "允許部分自訂程式碼，兼具彈性與易用性",
+            "限制部署規模，僅適用個人或小型工作",
+            "只支援傳統辦公自動化，不涵蓋AI應用場景"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code平台",
+        "concept": "平台彈性",
+        "explanation": "低程式碼平台通常提供可視化工具並支援部分自訂開發，兼具效率和彈性。",
+        "number": 429,
+        "date": "2025-12-11"
+    },
+    {
+        "question": "企業在生成式AI應用導入規劃階段，如何有效確保模型回應透明與合規？",
+        "options": [
+            "僅須檢查硬體設備符合規格",
+            "建立明確的答案來源追蹤與審核流程",
+            "交給第三方全權處理，無需內部參與",
+            "只要系統可自動回應，便達到合規標準"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入規劃",
+        "concept": "回應透明合規",
+        "explanation": "合規透明需設計明確的來源追蹤及審核，杜絕錯誤與不當資訊自動進入業務流程。",
+        "number": 430,
+        "date": "2025-12-11"
     }
 ]

@@ -7298,5 +7298,175 @@
         "explanation": "RNN經常面臨梯度消失與梯度爆炸問題，影響長序列資料的有效學習，需要透過技術如LSTM或GRU來減輕此問題。",
         "number": 430,
         "date": "2025-12-08"
+    },
+    {
+        "question": "在人工智慧治理中，何者最能體現「Human on loop」的概念？",
+        "options": [
+            "AI 系統完全自主作決策，無需人員干預",
+            "人類參與監督機器決策過程，適時介入調整",
+            "人類設計演算法但完全不干涉執行階段",
+            "模型訓練階段完全由自動化系統負責"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指的是人在機器決策過程中持續參與監督，並在必要時介入，避免完全由AI自主決策所可能帶來的風險。",
+        "number": 431,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "在資料前處理流程中，以下哪項處理正確描述了「One-Hot Encoding」的應用？",
+        "options": [
+            "將連續數值正規化至0到1之間",
+            "將類別資料轉換為二進位向量表示方式",
+            "利用主成分分析降維至較低維度",
+            "填補缺失值以平均值或中位數替代"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding是將類別變量轉成二進位向量的方式，使模型能有效處理非數值型類別資料。",
+        "number": 432,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "在生成式AI模型中，Transformer架構最大的技術痛點是？",
+        "options": [
+            "計算量龐大且容易導致梯度消失",
+            "對圖片處理能力有限，無法處理多模態",
+            "容易因訓練樣本不平衡導致過擬合",
+            "缺乏自動學習語境一致性的能力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "Transformer",
+        "concept": "Transformer模型技術痛點",
+        "explanation": "Transformer架構在處理大規模語言模型時計算成本非常高且存在梯度消失問題，影響訓練效率。",
+        "number": 433,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "在機器學習中，監督學習與非監督學習的最大差異是？",
+        "options": [
+            "監督學習使用有標記的資料，非監督學習使用無標記資料",
+            "監督學習只用於回歸，非監督學習只用於分類",
+            "監督學習可自動調整模型結構，非監督學習無法",
+            "非監督學習需要人類持續監督模型表現"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督與非監督學習",
+        "explanation": "監督學習依賴帶標籤的訓練資料來學習映射關係，而非監督學習則基於無標籤資料進行數據模式探索。",
+        "number": 434,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "在生成式AI整合應用中，下列哪一項最能代表鑑別式AI與生成式AI合作的典型場景？",
+        "options": [
+            "鑑別式AI自動生成文本，生成式AI負責分類文件",
+            "生成式AI創建內容，鑑別式AI評估內容真實性",
+            "鑑別式AI與生成式AI分別獨立完成不同任務，無合作",
+            "生成式AI用於數據清洗，鑑別式AI用於模型微調"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式與生成式AI整合",
+        "concept": "整合應用",
+        "explanation": "生成式AI負責內容創造，鑑別式AI則用來辨識和判別內容是否真實，有效改善生成內容的質量與可靠性。",
+        "number": 435,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "以下關於資料隱私與安全的敘述，何者最符合現代AI應用的要求？",
+        "options": [
+            "所有資料均應公開透明以促進模型訓練效果",
+            "個人資料加密並遵循最少資料原則進行收集",
+            "資料安全僅需在資料儲存階段進行加密",
+            "匿名化處理後資料可以解除所有安全監管"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料隱私保護",
+        "explanation": "在AI應用中，對個人資料加密並遵循最少資料原則可以最大限度保護用戶隱私，同時達到法律規範要求。",
+        "number": 436,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "貝氏分類器在以下哪種情境下最適合使用？",
+        "options": [
+            "複雜的多類非線性分類問題且訓練資料多時",
+            "資料具有獨立特徵且需快速分類的簡單問題",
+            "需要高精度回歸分析以預測連續變數",
+            "強化學習中用於策略優化的決策過程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "貝氏分類器",
+        "explanation": "貝氏分類器假設特徵條件獨立，適用於簡單的分類問題，特別是在資料量不大且需要快速決策時效果良好。",
+        "number": 437,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "在資料分析流程中，ETL的功能不包含下列哪一項？",
+        "options": [
+            "資料提取（Extract）",
+            "資料清洗與轉換（Transform）",
+            "模型訓練與評估（Learn）",
+            "資料載入（Load）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL指資料的提取、轉換與載入，不包括模型訓練，後者屬於機器學習階段工作。",
+        "number": 438,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "關於強化學習中的Q-Learning，下列敘述何者正確？",
+        "options": [
+            "Q-Learning需要預先定義所有狀態轉移概率",
+            "Q-Learning屬於非監督學習方法",
+            "Q-Learning透過學習行動價值函數以指導決策",
+            "Q-Learning無法應用於動態環境"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning屬於強化學習，通過更新行動價值函數來學習最佳行動策略，無需預先定義狀態轉移概率。",
+        "number": 439,
+        "date": "2025-12-12"
+    },
+    {
+        "question": "在生成式AI回應語境一致性的挑戰中，以下哪項方法最有助於改善連貫性？",
+        "options": [
+            "增加生成模型的參數量以提升容量",
+            "使用RAG（檢索增強生成）技術以結合外部知識",
+            "僅依靠預訓練語料庫進行自我推演",
+            "強化生成模型的圖像識別能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI基本原理",
+        "concept": "生成式AI回應語境一致性",
+        "explanation": "RAG結合檢索系統和生成模型，補充外部資訊來源，有助於生成語境更加一致和準確的回答。",
+        "number": 440,
+        "date": "2025-12-12"
     }
 ]

@@ -7298,5 +7298,175 @@
         "explanation": "合規透明需設計明確的來源追蹤及審核，杜絕錯誤與不當資訊自動進入業務流程。",
         "number": 430,
         "date": "2025-12-11"
+    },
+    {
+        "question": "在2025年企業導入生成式AI的No Code / Low Code流程設計時，下列哪一個特性最能說明Agentic AI（代理型AI）相較於傳統LLM模型的差異核心？",
+        "options": [
+            "Agentic AI能透過單一提示詞最佳化靜態回應，主要減少API請求遲滯",
+            "Agentic AI可執行多步驟自主決策並結合外部工具，提升流程自動化能力",
+            "Agentic AI專注於合成資料強化模型透明度，改善低效知識傳遞",
+            "Agentic AI僅用於資料集註釋任務，對應不需特別設計提示規則"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Agentic AI架構",
+        "concept": "自主決策與工具整合",
+        "explanation": "Agentic AI可設計多步決策、與外部API整合，自動執行系列任務，顯著差異於單輪對話的傳統LLM，這是No Code/Low Code流程設計不可或缺的一環。",
+        "number": 431,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "在設計No Code生成式AI知識庫時，針對『提示詞注入攻擊』的隱私保護，哪項隔離技術最能降低資訊洩漏風險？",
+        "options": [
+            "利用Few-shot提示嵌入專有知識，但不特別定義角色",
+            "採用多層Role-Playing和Guardrail提示，隔離使用者輸入驗證安全",
+            "全面使用合成資料訓練，忽略即時使用者輸入監控",
+            "優化Chain-of-Thought策略分解，專注任務推理結果"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "提示工程",
+        "concept": "防止Prompt Injection",
+        "explanation": "多層Role-Playing（情境角色定義）及Guardrail提示，可以有效隔離惡意輸入並驗證輸出，防止敏感或機密資訊洩漏，是當前AI隱私防護的主流。",
+        "number": 432,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "2025年台灣企業實施生成式AI時，DeepSeek與MedLM這兩款主流工具的最大應用差異為何？",
+        "options": [
+            "DeepSeek用於多模態商業決策，MedLM專於分子藥物設計二者依賴低碼自定義提示",
+            "DeepSeek強在開源語言大模型突破，MedLM則針對醫學影像診斷適配臨床助理",
+            "DeepSeek注重安全合成資料擴增，MedLM聚焦跨語系語意保密",
+            "DeepSeek側重聲音影像辨識，MedLM則只處理純文字生成應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "常用工具比較",
+        "concept": "領域專屬AI模型",
+        "explanation": "DeepSeek強調開源、商業通用，MedLM是專門針對醫學影像的AI模型，No/Low Code平台在醫療領域最佳化時多採優化MedLM。",
+        "number": 433,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "關於Composite AI（組合式AI）與Agentic AI在台灣2025年企業AI自動化落地的主要風險區別，何者最符合產業趨勢？",
+        "options": [
+            "組合式AI專注LLM自身優化，Agentic AI需要多模型協同以防資料偏差",
+            "組合式AI結合多模態及傳統規則系統，Agentic AI則著重自主多步任務執行所面臨決策偏誤風險",
+            "組合式AI著重節能減碳，Agentic AI限制僅用於安全合成介面",
+            "組合式AI僅處理文字資料，Agentic AI專於生成影像，風險來源一致"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code系統架構",
+        "concept": "協作型AI的倫理挑戰",
+        "explanation": "Composite AI注重多系統、規則與生成模型整合風險管理，Agentic AI則需著重決策治理與倫理偏差防控。",
+        "number": 434,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "企業導入後量子密碼學（PQC）於Low-Code AI提示流程時，下述關於其安全核心，下列何者正確？",
+        "options": [
+            "PQC只針對已生成內容保護隱私，傳統加密方法更適合No Code情境",
+            "PQC設計可抵抗量子運算破解LLM權重，保障AI代理安全訊息傳輸",
+            "PQC僅用來處理跨語言輸入，傳統加密則聚焦合成數據管理",
+            "PQC僅支援Chain-of-Thought推理效率，傳統加密方法可防止跨域生成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI風險管理",
+        "subtopic": "最新技術應用",
+        "concept": "後量子加密與AI安全",
+        "explanation": "PQC擁有抵抗未來量子計算破解模型權重與提示內容的能力，是確保Agentic AI與Low-Code平台安全傳輸的最新主流解決方向。",
+        "number": 435,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "台灣零售品牌利用合成資料（Synthetic Data）訓練生成式AI於Low Code平台時，須額外注重哪一項核心風險？",
+        "options": [
+            "合成資料只用於資安運維，2026年預估企業普及率75%，主要風險為計算成本不足",
+            "合成資料模擬真實息行為資料，易遭遇再識別攻擊與資料偏誤放大風險",
+            "合成資料僅聚焦物流管理應用，成長率遠高於B2C行為預測",
+            "合成資料適合多語知識傳遞，倫理風險顯著低於傳統訓練"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險規劃",
+        "concept": "Synthetic Data倫理與隱私風險",
+        "explanation": "2026年75%的企業會用合成客戶行為資料驅動AI決策，需特別留意合成資料的再鑑別攻擊與原生偏差放大問題。",
+        "number": 436,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "在No-Code平台上實作主動式客服（Proactive Customer Service）AI，以下何者最能說明與反應式客服模式核心倫理差異？",
+        "options": [
+            "主動式使用Zero-Shot預測需求，反應式則仰賴Few-Shot本地化回應",
+            "主動式持續提示工程學習預測需求，需以Guardrail防止過度推斷，反應式僅限單輪互動",
+            "主動式客服強化多模態資料，反應式僅支援知識庫查詢",
+            "主動式客服僅適用於電商產業，反應式客服適合所有產業"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "主動預測與隱私倫理",
+        "explanation": "主動式客服需持續優化提示詞以個人化預測需求，增加對用戶隱私的推斷與侵入風險，必須善用隱私Guardrail監管。",
+        "number": 437,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "2025年AI治理平台與虛假資訊安全於No Code知識庫導入時，哪一項區分最正確？",
+        "options": [
+            "治理平台專注Few-Shot導入，虛假資訊安全用Zero-Shot做驗證",
+            "治理平台全面監控整合，虛假資訊安全聚焦Hallucination與Deepfake偵測",
+            "治理平台支援量子加密資訊，虛假資訊安全僅針對錯誤翻譯檢測",
+            "治理平台生成合成資料為主，虛假資訊安全只強調角色扮演機制"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI風險管理",
+        "subtopic": "知識庫治理與安全",
+        "concept": "全生命週期監控與內容真偽驗證",
+        "explanation": "治理平台負責從開發到部署的全週期合法合規監控，虛假資訊安全專注於識別和預防生成內容中的誤導和偽造現象。",
+        "number": 438,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "2025年娛樂產業導入多模態生成式AI（Multimodal AI）時，與單模態LLM在提示工程設計上的最大區別為？",
+        "options": [
+            "多模態AI主要是文字與影像處理，單模態LLM強化語音內容辨識",
+            "多模態AI可即時整合語音、圖像、行為數據，需要跨模態個性化提示詞設計",
+            "多模態AI依靠節能運算硬體，單模態LLM專注合成大數據處理",
+            "多模態AI全面採用MedLM模型，單模態只用於零售分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "最新技術應用",
+        "concept": "跨模態提示工程",
+        "explanation": "多模態AI需同時處理語音、影像、文字等多樣資料，提示詞設計也需反映多模態需求，相較於單模態模型有更高個性化與複雜性。",
+        "number": 439,
+        "date": "2025-12-13"
+    },
+    {
+        "question": "針對A2A（AI-to-AI）自動代理互動，2025年Low Code Agent平台最大倫理規劃挑戰為何？",
+        "options": [
+            "A2A專用Chain-of-Thought調解交涉，人類-AI則只允許單輪互動",
+            "A2A可能陷入混亂決策循環，需要特殊治理機制防範偏誤放大，區分於人-AI提示的可控穩定性",
+            "A2A全面支援跨語音加密傳輸，人類-AI溝通方式限制於文字",
+            "A2A僅用於製造自動化決策，人-AI互動適用多模態娛樂"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI風險管理",
+        "subtopic": "Agentic AI應用",
+        "concept": "AI代理決策混亂與倫理挑戰",
+        "explanation": "AI間互動（A2A）若無治理框架，可能陷入無限決策循環，導致偏差判斷放大，不像人-AI互動有明確政策控制，需特別設計專屬規則。",
+        "number": 440,
+        "date": "2025-12-13"
     }
 ]

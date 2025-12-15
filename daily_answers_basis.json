@@ -7468,5 +7468,175 @@
         "explanation": "RAG結合檢索系統和生成模型，補充外部資訊來源，有助於生成語境更加一致和準確的回答。",
         "number": 440,
         "date": "2025-12-12"
+    },
+    {
+        "question": "在資料處理流程中，何者最能確保資料在轉換過程中的隱私性與安全性？",
+        "options": [
+            "使用端對端加密並實施存取權限控管",
+            "僅采用資料去標識化技術移除個人資訊",
+            "限制資料訪問但不加密資料傳輸過程",
+            "在資料分析後才進行資料安全審核"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料隱私保護措施",
+        "explanation": "端對端加密連同嚴格的存取權限控管，可以在資料整個處理流程中最大限度保障資料隱私與安全，避免未授權存取或中途攔截。",
+        "number": 441,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "關於機器學習中監督學習與強化學習的比較，下列敘述何者正確？",
+        "options": [
+            "監督學習依賴標註資料，強化學習依靠行為回饋調整策略",
+            "強化學習需大規模標註資料，監督學習無需標註資料",
+            "兩者皆面向無標註資料的自動聚類任務",
+            "監督學習主要用於遊戲策略，強化學習主要用於文字辨識"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習與強化學習",
+        "explanation": "監督學習需要大量標註資料作為訓練依據，而強化學習透過環境回饋（獎懲信號）來調整行為策略，兩者本質與應用場景不同。",
+        "number": 442,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "在生成式AI與鑑別式AI的區別中，下列哪項描述最符合鑑別式AI的核心功能？",
+        "options": [
+            "生成新數據樣本以模擬真實資料分布",
+            "判斷輸入數據屬於哪一類別或是否真實",
+            "同時產生內容並評估內容真實性",
+            "利用模型生成對抗樣本來提升安全"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式AI功能",
+        "explanation": "鑑別式AI核心在於辨識資料或判斷類別，與生成式AI不同，後者專注於創造新的數據樣本。",
+        "number": 443,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "在機器學習模型中，為何正規化（如L1與L2）能有效控制模型複雜度？",
+        "options": [
+            "透過加入懲罰項限制權重幅度避免過度擬合",
+            "直接刪除不重要的特徵資料削減維度",
+            "提升模型非線性能力強化預測準確度",
+            "增加模型深度與層數以提升表達能力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "正規化技術",
+        "explanation": "正規化透過懲罰模型權重大小，限制模型複雜度，降低過度擬合風險，提高泛化能力。",
+        "number": 444,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "資料整理與分析流程的ETL中，下列哪一項敘述最恰當？",
+        "options": [
+            "提取資料、轉換格式、最後載入目標庫",
+            "載入資料、轉換格式、然後提取精華",
+            "先轉換資料、載入資料、再提取所需",
+            "僅提取與轉換資料，不包含載入步驟"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL依序為Extract（提取）、Transform（轉換）、Load（載入），是標準資料處理流程。",
+        "number": 445,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "關於AI治理中監理沙盒的主要功能，下列描述何者最貼切？",
+        "options": [
+            "允許在受控環境中測試AI系統合規性與安全性",
+            "直接將AI模型部署於生產系統以快速驗證",
+            "禁止任何AI系統於公開市場展示應用",
+            "完全放行AI系統不受監管以促進創新"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒透過受控環境，讓企業測試AI解決方案的合規性和安全性，降低風險並促進合規創新。",
+        "number": 446,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "在處理多類別分類問題時，One-Hot Encoding的主要目的是？",
+        "options": [
+            "將類別特徵轉換成互斥的二進制向量表示",
+            "將數值變量標準化至0到1之間",
+            "合併多個類別為較少數目群組",
+            "刪除缺失值避免資料偏差"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding用於將類別資料轉換為互斥的二進制向量，有助於模型識別不同類別。",
+        "number": 447,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "在生成式AI保證回應語境一致性上，下列何種技術關鍵能有效提升連貫性？",
+        "options": [
+            "利用檢索增強生成技術(RAG)整合外部資訊",
+            "完全依賴本地固定知識庫產生回應",
+            "只使用隨機生成而不參考上下文",
+            "產出時忽視對話歷史與用戶狀態"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "生成式AI語境一致性",
+        "explanation": "RAG技術透過即時檢索相關資訊輔助生成，提升內容與語境的連貫與一致。",
+        "number": 448,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "在強化學習中，Q-Learning相較於Deep Q-Learning的主要差異為？",
+        "options": [
+            "Q-Learning使用查表法，Deep Q-Learning結合深度神經網路",
+            "Q-Learning適用無狀態空間，Deep Q-Learning只用於小狀態空間",
+            "兩者均不適合處理連續行動空間",
+            "Deep Q-Learning完全不使用回饋機制"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "Q-Learning與深度版本",
+        "explanation": "Q-Learning傳統上使用查表法存儲Q值，Deep Q-Learning則利用深度神經網路逼近Q函數，能處理更大狀態空間。",
+        "number": 449,
+        "date": "2025-12-15"
+    },
+    {
+        "question": "在AI模型可解釋性提升手法中，LIME的主要功能為何？",
+        "options": [
+            "在局部區域逼近黑箱模型以解釋單一預測結果",
+            "替換模型中所有非線性元件為線性元件",
+            "完全透過深度學習神經網路提升透明度",
+            "將模型結果加密保護免於外洩"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型評估與解釋",
+        "concept": "模型可解釋性",
+        "explanation": "LIME方法透過在局部區域擬合易解釋的模型，如線性模型，來解釋複雜黑箱模型的單次預測。",
+        "number": 450,
+        "date": "2025-12-15"
     }
 ]

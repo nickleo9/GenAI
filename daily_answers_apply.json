@@ -7468,5 +7468,175 @@
         "explanation": "AI間互動（A2A）若無治理框架，可能陷入無限決策循環，導致偏差判斷放大，不像人-AI互動有明確政策控制，需特別設計專屬規則。",
         "number": 440,
         "date": "2025-12-13"
+    },
+    {
+        "question": "在企業導入生成式AI時，關於No Code/Low Code平台優勢，下列何者正確？",
+        "options": [
+            "可降低開發門檻，加速AI服務上線",
+            "可完全替代所有自定義模型訓練需求",
+            "能保證所有產出的數據皆無需再管理",
+            "可自動處理高度風險資料的法規合規"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code的基本概念",
+        "concept": "平台應用價值",
+        "explanation": "No Code/Low Code平台以模組化設計降低工程技術門檻，讓非技術部門也能快速構建AI服務，但無法完全替代自定義模型或輕易滿足法規合規需求。",
+        "number": 441,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "關於生成式AI在實際企業應用導入時的風險管理，下列敘述何者正確？",
+        "options": [
+            "僅需在模型開發階段檢查法規",
+            "應建立資料敏感分類與審計機制",
+            "只要有信任的模型供應商即可省略監控",
+            "主動確認模型漂移可由業務端完全處理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "數據安全與治理",
+        "explanation": "最佳實務要求導入全流程中的敏感資料分類、存取控制及審計；僅有信任供應商與單階段檢查無法全面保障風險。",
+        "number": 442,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "以下何者並非No Code/Low Code平台於AI應用場景中的常見限制？",
+        "options": [
+            "運算資源高峰時的擴展彈性困難",
+            "供應商鎖定增加額外轉移成本",
+            "模型缺乏專業領域的微調能力",
+            "可完全免除模型的偏差問題"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code優勢與限制",
+        "concept": "平台風險與挑戰",
+        "explanation": "No Code/Low Code平台仍然可能面臨模型偏差、供應商鎖定與無法支援複雜微調等問題，並不是所有偏差問題都能自動消除。",
+        "number": 443,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "下列有關生成式AI提示詞（Prompt）設計原則之敘述，何者為非？",
+        "options": [
+            "應清楚指示目標與輸出格式",
+            "可採用少量示例指引模型行為",
+            "只要簡短敘述就能確保準確度",
+            "可要求模型先產生草稿再驗證"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "Prompt工程原則",
+        "explanation": "僅靠簡短敘述常無法充分引導AI獲得高品質輸出，仍須明確格式與範例輔助提示設計。",
+        "number": 444,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "企業為保證生成式AI導入合規，以下哪項策略最適切？",
+        "options": [
+            "只進行一次性法規審查",
+            "建立跨部門治理小組及持續監控",
+            "依賴自有IT部門不需外部稽核",
+            "完全信任供應商合約聲明"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "法規合規機制",
+        "explanation": "企業需建立跨部門的治理委員會並實施持續監控，才能全面降低風險並因應動態法規變化。",
+        "number": 445,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "多模態生成式AI應用的最大優勢為何？",
+        "options": [
+            "同時可處理結構化數據與二進制檔案",
+            "能跨多種輸入類型產出多樣結果",
+            "每次輸出皆不需進行人工審核",
+            "僅針對特定圖像需求做優化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "多模態模型能力",
+        "explanation": "多模態生成式AI可處理文字、圖像、音頻等多種輸入並產出混合輸出，是現代企業落地應用優勢。",
+        "number": 446,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "當AI模型在長期生產後表現下降，最正確的應對策略為何？",
+        "options": [
+            "定期監控並回溯訓練模型",
+            "只在模型開發完成時檢查表現",
+            "完全依賴AI自我修正機制",
+            "每次出現錯誤時即棄用原模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "模型漂移與維護",
+        "explanation": "AI模型應持續監控與定期再訓練以避免表現隨時間下滑，這是維持系統穩定的標準做法。",
+        "number": 447,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "下列關於合成數據（Synthetic Data）的敘述，何者正確？",
+        "options": [
+            "只用於模型產生高畫質圖片",
+            "用於訓練AI並降低對敏感資料依賴",
+            "可完整取代所有真實世界數據",
+            "主要用於估算數據庫儲存容量"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "合成資料創建",
+        "explanation": "合成數據常用於訓練或測試AI模型，能減少對真實敏感資料的需求，並適用於合規性強的場合。",
+        "number": 448,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "在選擇生成式AI導入方案時，下列哪一項最應納入評估？",
+        "options": [
+            "模型商業化潛力與團隊美術感",
+            "數據交換協議與雲端儲存可用性",
+            "平台對接API能力與資料傳輸安全",
+            "僅考量本地端圖形渲染效能"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "技術與安全選型",
+        "explanation": "導入方案應考慮API對接能力與資料安全性，以保證流程整合與避免資料外洩。",
+        "number": 449,
+        "date": "2025-12-16"
+    },
+    {
+        "question": "關於AI智能體（Agent）的描述，下列何者最正確？",
+        "options": [
+            "僅執行單一元素的計算與傳輸",
+            "可自主進行多步任務並調用外部工具",
+            "僅負責監控系統硬體狀態",
+            "主要限制於內部資料庫查詢功能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "智能體功能",
+        "explanation": "AI智能體具備多步任務自動化能力，能調用多種工具協同處理複雜工作流，是生成式AI發展的關鍵。",
+        "number": 450,
+        "date": "2025-12-16"
     }
 ]

@@ -7638,5 +7638,175 @@
         "explanation": "LIME方法透過在局部區域擬合易解釋的模型，如線性模型，來解釋複雜黑箱模型的單次預測。",
         "number": 450,
         "date": "2025-12-15"
+    },
+    {
+        "question": "在機器學習中，何者最能描述強化學習與監督學習的主要區別？",
+        "options": [
+            "強化學習依靠標記數據進行學習，而監督學習基於獎勵反饋調整行為",
+            "監督學習利用環境獎勵來調整模型策略，強化學習則使用固定標籤訓練",
+            "強化學習通過試錯法依賴獎勵信號，而監督學習使用已標註的輸入輸出對進行訓練",
+            "監督學習不依賴標籤資料，強化學習則完全基於標籤數據進行調整"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習與模型",
+        "subtopic": "學習類型",
+        "concept": "強化學習與監督學習區別",
+        "explanation": "強化學習是基於環境中獎勵信號的試錯學習，不依賴已標注的數據；監督學習則依靠標註輸入和輸出對進行訓練模型。",
+        "number": 451,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "關於資料隱私與安全，下列哪一項策略最有效防止敏感資料泄露？",
+        "options": [
+            "只在本地端數據處理而完全杜絕數據傳輸",
+            "應用聯邦學習分散模型訓練，避免將原始資料集中存儲",
+            "對所有模型輸出進行加密，即使原始資料保持公開",
+            "集中式雲端存儲，透過嚴格權限控制保護數據"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習使模型在分散的資料端進行訓練，資料不出本地，有效避免敏感資料集中暴露的風險。",
+        "number": 452,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "以下哪一個不是生成式AI相較於鑑別式AI的基本特徵？",
+        "options": [
+            "生成式AI可產生新數據樣本，鑑別式AI則專注區分類別",
+            "生成式AI使用生成模型描述數據分布，鑑別式AI只建模決策邊界",
+            "生成式AI無需大量數據訓練，而鑑別式AI依賴大數據提升精度",
+            "鑑別式AI通常用於分類及回歸，生成式AI用於資料合成"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI與鑑別式AI",
+        "subtopic": "基本原理",
+        "concept": "生成模型和鑑別模型差異",
+        "explanation": "生成式AI通常需要大量數據來學習數據分布，生成新樣本；鑑別式AI則注重使用數據標籤來分類或回歸，兩者都依賴數據。",
+        "number": 453,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "在資料整理與分析流程中，ETL的主要步驟是什麼？",
+        "options": [
+            "提取資料、轉換格式、載入目標庫",
+            "挑選樣本、訓練模型、評估結果",
+            "使用監督學習進行標註、驗證、部署",
+            "分群分析、降維處理、生成報告"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL流程包含從資料來源提取資料(Extract)，將資料轉換成合適格式(Transform)，最後載入目標資料庫(Load)。",
+        "number": 454,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "AI治理中，人類在循環（Human on loop）指的是？",
+        "options": [
+            "AI系統完全自主決策並無需人類監督",
+            "人類在模型訓練階段提供監督但決策全由AI完成",
+            "人類在AI決策過程中介入，能監控並修正模型行為",
+            "AI在監控人類決策過程，協助人類更精確判斷"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧治理",
+        "subtopic": "人類與AI互動",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指的是人類持續監督AI系統決策過程，必要時干預或調整模型行為，保障AI運作的透明度與安全。",
+        "number": 455,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "以下哪種正規化方法會導致模型權重向零收斂，促使部分特徵變為不重要？",
+        "options": [
+            "L2正規化使權重均勻縮小，但不會變為零",
+            "L1正規化強制權重稀疏，部分權重變為零",
+            "Dropout正則化隨機刪除部分神經元連結",
+            "Batch Normalization正則化標準化激活值"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習技術",
+        "subtopic": "正規化方法",
+        "concept": "L1與L2正規化差異",
+        "explanation": "L1正規化會促使部分權重變為零，達到特徵篩選效果；L2正規化則均勻縮小權重但不會使其為零。",
+        "number": 456,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "在生成式AI回應語境一致性方面，以下何者最符合技術挑戰？",
+        "options": [
+            "生成式AI能保證所有回答完全一致且無矛盾",
+            "模型常因上下文信息缺失導致回應不連貫或偏離主題",
+            "生成式AI無須依賴訓練語料即可產生高品質回應",
+            "使用單一提示詞即可解決所有上下文不一致問題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用",
+        "subtopic": "語境一致性",
+        "concept": "生成式AI回應上下文挑戰",
+        "explanation": "生成式AI在保持語境連貫和一致性方面面臨挑戰，特別是當上下文信息不足時，容易產生不連貫或偏離主題的回答。",
+        "number": 457,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "自然語言處理中，One-Hot Encoding用於？",
+        "options": [
+            "將文本單詞映射為連續向量表示",
+            "將分類特徵用二進制向量表示，每個類別一位為1",
+            "使用深度學習自動提取詞彙特徵",
+            "將文本轉為語音信號進行分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料編碼方法",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding是將分類特徵轉換為二進制向量的編碼方法，每個類別對應向量中的一位設為1，其餘為0。",
+        "number": 458,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "關於AI模型中偏差-變異（Bias-Variance）權衡，下列哪一陳述正確？",
+        "options": [
+            "低偏差同時必導致高變異，無法同時降低兩者",
+            "過高偏差導致模型欠擬合，過高變異導致過擬合",
+            "偏差和變異只存在於生成式AI模型中",
+            "增加訓練資料無法改善變異問題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習理論",
+        "subtopic": "偏差-變異權衡",
+        "concept": "Bias-Variance Tradeoff",
+        "explanation": "偏差過高表示模型簡單無法捕捉數據模式，欠擬合；變異過高表示模型過於複雜，過擬合。適當平衡兩者是模型訓練關鍵。",
+        "number": 459,
+        "date": "2025-12-17"
+    },
+    {
+        "question": "在AI治理的監理沙盒概念中，主要目的為何？",
+        "options": [
+            "完全限制AI新技術開發以確保安全",
+            "提供有控制的試驗環境，允許監管機構評估AI技術",
+            "公開發佈所有AI系統源碼以促進透明",
+            "將所有AI決策完全交予政府監督管理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧治理",
+        "subtopic": "監理與法規",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒為監管機構設置受控環境，允許進行AI技術測試與評估，平衡創新與風險管理。完全限制或公開源碼則非其目的。",
+        "number": 460,
+        "date": "2025-12-17"
     }
 ]

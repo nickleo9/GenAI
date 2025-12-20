@@ -7808,5 +7808,175 @@
         "explanation": "缺乏Guardrails（輸入限制）容易讓AI產生錯誤或幻覺，導致金融方面決策錯誤、資金損失與法規處罰，決策者應強化防護。",
         "number": 460,
         "date": "2025-12-18"
+    },
+    {
+        "question": "以下哪一項屬於2025年應用於自動化領域且支持低程式碼流程整合的生成式AI工具？",
+        "options": [
+            "AutoGLM，具備跨APP操作與任務閉環特性",
+            "Claude 3.5，專於產品推薦與行銷腳本生成",
+            "DeepSeek，專注於財務預測與風險評估",
+            "Grok，主要應用於醫療臨床洞見分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "生成式AI工具特性",
+        "explanation": "AutoGLM為2025年熱門工具，支持無程式碼自動化及跨APP任務閉環，特別在業務操作自動化領域具優勢。",
+        "number": 461,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "企業引進生成式AI時，若偏好即時多模態業務決策，應首選哪位工具？",
+        "options": [
+            "Claude 3.5，強調文本翻譯與本地化",
+            "Gemini，側重多模態數據整合與智能決策",
+            "Grok，專注醫療診斷文本理解",
+            "Arvin，重點為Logo創意設計"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "工具選擇策略",
+        "explanation": "Gemini在2025年於多模態分析和智能決策應用領先，尤其在即時業務決策上具高度整合能力。",
+        "number": 462,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "下列哪組是No Code/Low Code平台最大的優勢組合？",
+        "options": [
+            "降低企業溝通成本、加速決策自動化",
+            "加速流程部署、降低程式設計門檻",
+            "提升行銷曝光、最佳化客服流程",
+            "增強數據加密、擴展醫療應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code概念",
+        "concept": "平台優勢",
+        "explanation": "No Code/Low Code最大的優勢是快速流程部署、降低進入AI開發的技術門檻，讓非程式人員也能靈活應用。",
+        "number": 463,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "企業導入生成式AI時，若主要目標是多智能體協同處理專案，較適合使用哪種工具？",
+        "options": [
+            "Manus，支援多AI智能體協同與任務閉環",
+            "Copilot，針對行銷腳本生成與品牌管理",
+            "AutoGLM，專於自動文案與個人化推送",
+            "Claude 3.5，主攻醫療大數據結構化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "Agent協同工作",
+        "explanation": "Manus 以多AI Agent協同處理為核心，對跨部門或大型專案自動化尤為合適。",
+        "number": 464,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "以下哪一項關於AI導入風險管理的敘述正確？",
+        "options": [
+            "強化數據即時存取可完全防止AI詐欺",
+            "建置AI安全角色與安全驗證流程有助於減少數據外洩",
+            "AI主動學習能力可消除合規問題的所有影響",
+            "專門導入聊天機器人即可自行排除所有隱私漏洞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "完善AI安全負責與多層驗證機制，是企業降低數據洩漏和AI誤用風險的關鍵方法。",
+        "number": 465,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "有關生成式AI導入企業時的關鍵評估要點，何者非正確判斷？",
+        "options": [
+            "需持續評估投資成本與基礎設施升級",
+            "只要工具先進即可忽略現有流程整合",
+            "應培訓員工提升AI應用能力與知識",
+            "考慮AI與現有生態系統的整合程度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "導入評估",
+        "explanation": "工具本身的先進性雖重要，但企業更需考慮其與現有流程和IT生態系統的整合性。",
+        "number": 466,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "設計生成式AI提示詞時，下列哪種策略能促進工作流程自動化與高效分工？",
+        "options": [
+            "提供情境示例、逐步優化提示詞",
+            "結合數據回饋、調整程式碼結構",
+            "設計多任務分解與Agent角色協同策略",
+            "採用單層線性步驟、降低複雜度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "提示詞工程",
+        "explanation": "多任務分解與多AI Agent角色協同結合，是提升自動化與效率的關鍵提示詞設計方法。",
+        "number": 467,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "2025年生成式AI於醫療產業的主要應用為何？",
+        "options": [
+            "自動零售訂單結算與配送追蹤",
+            "藥物警戒與臨床洞見與早期診斷輔助",
+            "人員排班與智能物流調度",
+            "品牌廣告內容多語翻譯生成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "醫療AI應用",
+        "explanation": "生成式AI於醫療產業應用重點包含藥物安全、臨床洞見與協助診斷輔助，不是單純的後勤或行銷用途。",
+        "number": 468,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "關於生成式AI導入的成本與政策風險，下列何者最為貼切？",
+        "options": [
+            "成本主要來源僅為AI工具購置費用",
+            "需要注意AI數據中心投資與法規變動壓力",
+            "政策風險可藉自動升級工具完全避免",
+            "合規性問題僅限於資料存儲象限"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "企業投資與政策風險",
+        "explanation": "AI導入涉及高額基礎設施投資與持續的政策法規變動，企業需規劃彈性因應。",
+        "number": 469,
+        "date": "2025-12-20"
+    },
+    {
+        "question": "下列哪一點最能避免生成式AI模型產生誤判（幻覺）與任務失敗？",
+        "options": [
+            "反覆進行多樣化輸出驗證與評估",
+            "僅根據單次指令結果決定輸出品質",
+            "完全仰賴模組自帶的預設範例訓練",
+            "專注提升硬體規格與運算效能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "模型安全",
+        "explanation": "模型多次輸出驗證及評估，是降低誤判及任務意外失敗的最佳防線，不能單憑一次結果或硬體升級。",
+        "number": 470,
+        "date": "2025-12-20"
     }
 ]

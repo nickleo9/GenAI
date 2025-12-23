@@ -7978,5 +7978,175 @@
         "explanation": "模型多次輸出驗證及評估，是降低誤判及任務意外失敗的最佳防線，不能單憑一次結果或硬體升級。",
         "number": 470,
         "date": "2025-12-20"
+    },
+    {
+        "question": "某醫院透過No code平台整合Gemini 2.0 Flash與EMR實現病歷查詢的RAG系統規劃，下列哪種提示詞工程最適合提升回應準確且符合法規可追溯性？",
+        "options": [
+            "Chain-of-Thought結合檢索逐步提示醫師決策依據",
+            "採用Few-Shot範例輸入直接生成病歷診斷摘要",
+            "單一句Zero-Shot prompt生成快速建議",
+            "用Tree-of-Thoughts作多路分支推理輸出診斷樹"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code應用",
+        "concept": "提示工程",
+        "explanation": "Chain-of-Thought能逐步引導模型檢索EMR並確保內容可溯，醫療法規要求高度可追溯性，故為最佳選擇。",
+        "number": 471,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "金融產業導入Claude 3.5 Sonnet建立風險監控時，當採用Low code workflow串接Llama 3.2 Guardrails和n8n AI Nodes，最需注意的潛在最大風險為？",
+        "options": [
+            "Guardrails步驟拖慢API回應提高延遲",
+            "Low code視覺化無法自訂檢索容易產生幻覺",
+            "Claude API配額限制導致自動化停擺",
+            "Llama 3.2開源模型串流時產生側信道攻擊導致隱私外洩"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入風險管理",
+        "concept": "模型治理",
+        "explanation": "開源模型如Llama 3.2串流暴露高風險，特別涉及隱私合規；金融產業須對資料保護高度敏感。",
+        "number": 472,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "一間工廠在WeWeb GenAI Builder平台利用Grok 3串接IoT設備資料自動生成保養手冊，為提升步驟準確，理想的提示詞誘導策略是？",
+        "options": [
+            "Role-Playing：模型扮演技師依IoT資料生成",
+            "Structured Output：強制JSON格式產出由WeWeb轉換HTML手冊",
+            "Self-Consistency：多次生成比對差異自動調整",
+            "ReAct提示：交替推理與IoT查詢動態更新步驟"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具用法",
+        "concept": "提示工程",
+        "explanation": "Structured Output結構化的輸出格式最適合產線作業標準且便於Low code平台自動化轉換。",
+        "number": 473,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "下列何者為利用Llama 3.2 Guardrails與Gemini 2.0 Flash在電商個性化RAG推薦時，防範Prompt Injection攻擊的最佳誘導配套？",
+        "options": [
+            "Constitutional AI原則嵌入prompt設計驗證輸出",
+            "配合Guardrail Prompting與sandbox先過濾惡意輸入後觸發RAG",
+            "使用分隔符分離用戶資料並由model解析",
+            "Multi-Turn prompt追蹤對話狀態動態禁止可疑輸入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "應用導入風險管理",
+        "concept": "Prompt Injection防禦",
+        "explanation": "Guardrails sandbox能主動隔離和過濾惡意輸入，是現有最佳的注入攻擊防線。",
+        "number": 474,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "HR採用Bubble 2025 No code平台處理大量履歷並整合Claude 3.5生成面試問題，導入時最大的合規風險為下列何者？",
+        "options": [
+            "No code缺乏fine-tune機制提升準確度有限",
+            "API限流造成高峰時段回應延遲",
+            "履歷資料未經RAG整合，生成內容偏離JD標準",
+            "PII個資處理流程未符合法規易造成外洩與違法"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "隱私合規",
+        "explanation": "當局規範PII與DSGVO等隱私法，No code外匯/導出流程若不監管最易外洩敏感資料。",
+        "number": 475,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "使用Midjourney V7與Stable Diffusion 3.1於n8n自動生成醫療X光影像時，最有效確保真實醫學結構的提示詞誘導策略是哪一種？",
+        "options": [
+            "Negative Prompting排除偽影與搭配ControlNet引導正確結構",
+            "Style Transfer prompt模仿醫院典型影像風格生成",
+            "Inpainting prompt局部修補不完整部位維持連貫性",
+            "Outpainting prompt自動擴展X光影像邊緣補全資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "醫療影像生成",
+        "explanation": "Negative prompt+ControlNet能有效主動控制生成結果結構化，最能保障醫學資料真實與法規正確。",
+        "number": 476,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "證券業用Grok 3和GPT-5o比較建財報RAG分析Low code機器人時，如果未正確納入某項成本，可能大幅低估專案ROI，下列何者為該隱藏成本？",
+        "options": [
+            "Grok 3 API每百萬Token定價",
+            "Pinecone向量DB索引成本",
+            "Low code Zapier節點授權年費",
+            "模型訓練5000筆人工標註成本"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "RAG隱藏成本",
+        "explanation": "RAG架構依賴向量DB長期營運成本高，忽略此成本會嚴重低估總體花費。",
+        "number": 477,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "供應鏈預測斷鏈時，利用Claude 3.5在WeWeb Low code平台強化Chain-of-Thought推理，若需最佳化few-shot prompt效能，下列建議哪一個調整？",
+        "options": [
+            "提供3-5個類似斷鏈範例，強化模型推理能力",
+            "增加Self-Refine反覆生成自動微調結果",
+            "Ensemble Prompting同時多模型投票聚合",
+            "引入HyDE虛擬文件嵌入假想情境"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域",
+        "concept": "few-shot提示詞工程",
+        "explanation": "few-shot展現最大效益需具體多範例補強推理品質而非引入複雜機制。",
+        "number": 478,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "電商用Gemini 2.0結合Llama 3.2 Guardrails生成產品描述時，若遭遇prompt injection誘導生成虛假優惠，最根本的技術防禦手段是？",
+        "options": [
+            "用Guardrails預處理移除危險關鍵字再產生",
+            "Input Sanitization轉義特殊符號轉為純文本",
+            "Output Filtering生成後再人工審查過濾廣告語",
+            "Rate Limiting用戶每分鐘限制一次防止濫用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具用法",
+        "concept": "Prompt Injection防禦",
+        "explanation": "Guardrails可於輸入階段主動預防有害prompt，較事後把關更有效防止惡意生成。",
+        "number": 479,
+        "date": "2025-12-23"
+    },
+    {
+        "question": "跨國集團HR在Bubble No code上用Grok 3多語評估履歷同時採RAG檢索，若要解決倫理風險首要須修正下列何者？",
+        "options": [
+            "RAG偏向英文資料導致中文履歷檢索失衡",
+            "Bubble No code提示詞A/B測試需手動進行",
+            "Grok 3幻覺生成不存在工作技能",
+            "多語token處理API支出成本翻倍"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "多語言RAG與公平性",
+        "explanation": "多語生成應用首要修正RAG造成的語言偏見問題，影響人力決策倫理與合法性。",
+        "number": 480,
+        "date": "2025-12-23"
     }
 ]

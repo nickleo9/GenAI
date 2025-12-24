@@ -8148,5 +8148,175 @@
         "explanation": "監理沙盒為制定AI監理框架的重要工具，允許在規範環境下試驗創新AI技術，兼顧風險管控與創新發展。",
         "number": 480,
         "date": "2025-12-22"
+    },
+    {
+        "question": "在資料預處理階段，何者最適合用於將類別變數轉換為數值型態以利機器學習模型訓練？",
+        "options": [
+            "標準化(Standardization)",
+            "One-Hot Encoding",
+            "主成分分析(PCA)",
+            "文本斷詞(Tokenization)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding 是用於將類別變數轉換為二進制向量的技術，使機器學習模型能夠理解和處理非數值類別資料。標準化是用於數值型資料的縮放，主成分分析為降維方法，文本斷詞是自然語言處理技術。",
+        "number": 481,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "關於機器學習中的偏差-變異權衡(Bias-Variance Tradeoff)，以下哪項描述最正確？",
+        "options": [
+            "增加模型複雜度會提高偏差並降低變異",
+            "模型複雜度過低會導致高偏差和高變異",
+            "偏差是指模型在訓練資料上的誤差，變異是指模型對測試資料的穩定性",
+            "降低變異通常會增加偏差，反之亦然"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差-變異權衡指的是降低模型的變異通常會增加偏差，反之亦然。理想模型希望達到低偏差與低變異之間的平衡，以提升泛化能力。增加模型複雜度通常會降低偏差但提高變異。",
+        "number": 482,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "在生成式AI與鑑別式AI的區別中，下列敘述哪一項是正確的？",
+        "options": [
+            "生成式AI主要用於分類與辨識任務，鑑別式AI用於生成內容",
+            "鑑別式AI學習資料的分佈以生成新樣本",
+            "生成式AI學習資料的分佈進而生成新樣本",
+            "鑑別式AI無法用於自然語言處理任務"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式 AI 與生成式 AI",
+        "explanation": "生成式AI透過學習資料的分佈來生成新樣本，例如文本、圖像創作。鑑別式AI則是學習如何判斷資料所屬類別，常用於分類任務。鑑別式AI能用於自然語言處理，例如文字分類。",
+        "number": 483,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "在AI治理與監理沙盒的應用中，何者為主要目的？",
+        "options": [
+            "加速AI硬體性能提升，優化推論速度",
+            "提供一個受控環境，允許創新技術的合規測試",
+            "使用生成式模型創建虛擬代理自主處理任務",
+            "加強資料加密技術以防範黑客攻擊"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "監理沙盒",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是法律或監管機構提供的受控測試環境，允許企業在實務中測試創新技術，確保符合規範且可控，促進AI技術安全穩健發展。",
+        "number": 484,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "在強化學習中，Q-Learning 主要透過何種方式使智能體學習最佳策略？",
+        "options": [
+            "優化概率分佈，使模型準確分類",
+            "最大化累積獎勵值來選擇行動",
+            "透過監督學習更新固定標籤資料",
+            "將資料轉換為向量空間以進行聚類"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning 是一種強化學習演算法，透過不斷更新動作-價值函數(Q函數)最大化長期累積獎勵，幫助智能體學習最佳決策策略。",
+        "number": 485,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "在資料分析流程中，ETL 代表什麼過程？",
+        "options": [
+            "資料抽取 (Extract)、轉換 (Transform)、載入 (Load)",
+            "資料篩選 (Evaluate)、轉換 (Transform)、學習 (Learn)",
+            "資料擴增 (Expand)、訓練 (Train)、加載 (Load)",
+            "資料消毒 (Eradicate)、合併 (Tie)、封存 (Lock)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL 指抽取資料 (Extract) 從來源，轉換資料格式或結構 (Transform)，並載入(target)到資料庫或資料倉儲中，是資料處理的關鍵步驟。",
+        "number": 486,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "深度學習模型Transformer面臨的主要技術挑戰為何？",
+        "options": [
+            "資料缺失與不平衡導致無法訓練",
+            "梯度消失與計算資源消耗過大",
+            "無法處理時序資料與即時推理",
+            "模型解釋性過高，難以優化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "Transformer 模型技術痛點",
+        "explanation": "Transformer 模型訓練時面臨梯度消失及大量計算資源需求等問題，尤其在大型模型訓練及推理階段影響效能及成本。",
+        "number": 487,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "以下哪一項不是生成式AI在2025年產業應用中的突出特性？",
+        "options": [
+            "多模態內容生成能力提升",
+            "利用用戶數據閉環優化模型",
+            "限制於僅文本生成，不支援圖像",
+            "代理自主化促進跨域任務協作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產業應用趨勢",
+        "concept": "生成式AI應用",
+        "explanation": "2025年生成式AI已發展成多模態平台，支援文本、圖像、音頻等生成，並利用用戶數據持續優化與代理自主化，促進跨域數位轉型，非限於文本生成。",
+        "number": 488,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "在資料隱私與安全治理中，哪種技術可用於分散式資料學習，減少資料集中風險？",
+        "options": [
+            "聯邦學習(Federated Learning)",
+            "強化學習(Reinforcement Learning)",
+            "深度自編碼器(Deep Autoencoder)",
+            "監督式學習(Supervised Learning)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在多個節點本地訓練，僅交換模型參數更新，避免集中資料，提升使用者隱私保護與安全，是分散式學習的重要技術。",
+        "number": 489,
+        "date": "2025-12-24"
+    },
+    {
+        "question": "在機器學習模型優化中，L1正則化的主要作用是？",
+        "options": [
+            "減少模型參數，促使部分權重變為零",
+            "增強模型的非線性能力以提高準確率",
+            "避免梯度消失問題加速訓練收斂",
+            "提高模型對輸入數據尺度的敏感度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型優化與正則化",
+        "concept": "L1正則化",
+        "explanation": "L1正則化透過增加權重的絕對值和懲罰，有助於使部分權重縮減為零，達到稀疏化效果，進而降低模型複雜度與過擬合風險。",
+        "number": 490,
+        "date": "2025-12-24"
     }
 ]

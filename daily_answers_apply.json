@@ -8148,5 +8148,175 @@
         "explanation": "多語生成應用首要修正RAG造成的語言偏見問題，影響人力決策倫理與合法性。",
         "number": 480,
         "date": "2025-12-23"
+    },
+    {
+        "question": "以下哪一項不是2025年全球主流的生成式AI通用大型模型平台選擇？",
+        "options": [
+            "OpenAI/ChatGPT",
+            "元宇宙Grok",
+            "Google Gemini",
+            "IBM WatsonX"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "全球主流AI平台",
+        "explanation": "IBM WatsonX近期專注於財務與醫療等區域應用，但2025年主流生成式AI通用模型平台仍以ChatGPT、Gemini、Grok為主。",
+        "number": 481,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "哪一項最能說明No Code/Low Code平台2025年的產業價值？",
+        "options": [
+            "大幅縮短新AI流程部署時間",
+            "完全消除AI系統維運風險",
+            "使所有產業都可達成100%自動化",
+            "保證每個企業皆採用開源模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 基本概念",
+        "concept": "No Code/Low Code優勢",
+        "explanation": "主要價值為縮短AI流程設計到部署的時間，驅動產業快速導入AI。",
+        "number": 482,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "以下哪一個應用情境屬於RAG（Retrieval Augmented Generation）技術的實際運用？",
+        "options": [
+            "用預設範本生成履歷表內容",
+            "即時串接企業知識庫給客服產生回覆",
+            "使用GAN生成新式車輛設計",
+            "生成醫療圖像資料做診斷"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用範例",
+        "concept": "RAG技術實作",
+        "explanation": "RAG即為檢索補強生成，常用於從知識庫檢索資訊後再產生內容，像企業客服知識管理。",
+        "number": 483,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "2025年生成式AI導入評估時，『隱私與合規檢查』主要應檢驗什麼？",
+        "options": [
+            "選擇最大參數量的模型",
+            "符合個資法、跨境資料流規範",
+            "模型訓練資料來源多元性",
+            "系統操作介面是否夠美觀"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "合規檢查要點",
+        "explanation": "生成式AI需特別重視個資、法規，2025評估中隱私與合規檢查最重要。",
+        "number": 484,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "下列哪一項是No Code/Low Code生成式AI平台在落地應用時，常見且必要的治理元件？",
+        "options": [
+            "訓練集自動標註",
+            "審計與版本控管",
+            "GPU自動擴容功能",
+            "模型端點即時金鑰輪替"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 優勢與限制",
+        "concept": "平台治理功能",
+        "explanation": "成熟No Code/Low Code平台都會內建審計與版本管理來支援風險管理與合規。",
+        "number": 485,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "根據2025年AI應用趨勢，下列哪一項為生成式AI於生命科學/醫療領域落地的主要風險？",
+        "options": [
+            "模型成本過高",
+            "資料偏差及隱私洩漏",
+            "提示詞優化困難",
+            "系統介面複雜"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "AI導入風險管理",
+        "explanation": "醫療應用的主要風險來自數據偏差與高度的隱私要求。",
+        "number": 486,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "請選出2025年企業善用生成式AI工具的正確策略？",
+        "options": [
+            "售後維護全部交由AI自主決策處理",
+            "在特殊場景需設計分層提示詞工程結構",
+            "所有產業資訊都直接連入公有雲API",
+            "每一專案定期重訓原始大型語言模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "提示詞最佳實踐",
+        "explanation": "2025最佳實踐強調分層/分步驟設計Prompt以因應複雜與高風險場景。",
+        "number": 487,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "下列何者最能強化台灣中小企業在導入No Code/Low Code生成式AI的競爭力？",
+        "options": [
+            "只選擇單一大型外國模型",
+            "善用政府標準化API與資料平台",
+            "排除每一項治理與合規流程",
+            "讓使用者授權流程全自動化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 產業推動",
+        "concept": "產業數位轉型",
+        "explanation": "標準化API與資料平台有效降低導入門檻，強化台灣SME轉型競爭力。",
+        "number": 488,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "在生成式AI導入流程中，『連續監控與事故回報』屬於哪一個管理階段？",
+        "options": [
+            "商業價值評估",
+            "資料源盤點",
+            "風險治理監控",
+            "模型選擇與訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "AI運行監控",
+        "explanation": "連續監控與事故回報屬於AI風險治理及運營監管階段的必要設計。",
+        "number": 489,
+        "date": "2025-12-25"
+    },
+    {
+        "question": "下列哪一個為Prompt Engineering設計的降幻覺（hallucination）作法？",
+        "options": [
+            "限定生成輸出需參照指定事實來源",
+            "讓AI每次隨機選擇回覆策略",
+            "限制模型輸出只有一行文字",
+            "完全去除人類監控審核"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "Prompt工程與風險控制",
+        "explanation": "要求AI生成內容須參照資料來源可有效降低幻覺機率，是Prompt設計的重點方法。",
+        "number": 490,
+        "date": "2025-12-25"
     }
 ]

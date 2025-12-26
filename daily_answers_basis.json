@@ -8318,5 +8318,175 @@
         "explanation": "L1正則化透過增加權重的絕對值和懲罰，有助於使部分權重縮減為零，達到稀疏化效果，進而降低模型複雜度與過擬合風險。",
         "number": 490,
         "date": "2025-12-24"
+    },
+    {
+        "question": "在機器學習中，以下哪一種正則化技術會導致權重稀疏化，進而使部分特徵權重變為零？",
+        "options": [
+            "L1正則化會影響權重，使部分權重縮減至零，進而達成特徵選擇效果",
+            "L2正則化透過平方和懲罰權重，促使權重接近零但不會完全為零",
+            "L1正則化藉由增加權重平方和來控制模型複雜度，防止過擬合",
+            "L2正則化直接將權重設置為零，以降低模型參數數量"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會使部分權重變為零，藉此達到特徵選擇的效果，成為控制模型複雜度的方法之一；相較之下，L2正則化是透過平方和來限制權重大小，但通常不會完全為零。",
+        "number": 491,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "在資料處理流程中，ETL主要指的是哪三個步驟的組合？",
+        "options": [
+            "Extract、Transform、Load，分別是資料抽取、轉換及載入階段",
+            "Extract、Translate、Link，涵蓋資料抽取、翻譯及連結操作",
+            "Enter、Transfer、Load，指資料輸入、傳輸及存取流程",
+            "Emit、Transform、Locate，包含資料發出、轉換及定位步驟"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL指資料的抽取(Extract)、轉換(Transform)及載入(Load)，是資料整理及分析的重要步驟，確保來源數據適合分析與模型訓練。",
+        "number": 492,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "在生成式AI與鑑別式AI的應用上，何者為鑑別式AI的正確描述？",
+        "options": [
+            "根據輸入資料判斷標籤或類別，著重於分類和辨識任務",
+            "自動創造內容如影像或文字，透過生成模型生成新樣本",
+            "結合強化學習與生成模型，以產生更具多樣性內容",
+            "利用非監督方法，從資料中學習潛在結構以實現生成"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式AI",
+        "explanation": "鑑別式AI專注於辨識輸入資料屬於哪一類別，進行判斷或分類；與之相對的是生成式AI，專注於生成新內容。",
+        "number": 493,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "下列何者最符合監督式機器學習的特點？",
+        "options": [
+            "模型由標注過的輸入與輸出資料訓練，以學習輸入與標籤的映射關係",
+            "模型在無標記資料中尋找資料的潛在結構，捕捉資料分佈",
+            "模型透過與環境互動，以回饋訊號強化行為決策",
+            "模型自動調整參數以達成資料維度降低的目的"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "監督式學習",
+        "concept": "監督學習特點",
+        "explanation": "監督式學習即使用有標籤的資料訓練模型，使模型能學習輸入資料與對應標籤間的映射，進而預測未來資料的標籤。",
+        "number": 494,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "在AI治理的框架中，下列哪項不屬於2025年臺灣所推動的AI監理措施？",
+        "options": [
+            "設立監理沙盒以測試AI應用的合規性與安全性",
+            "制定AI倫理指導原則保障數據隱私與公平性",
+            "全面禁止邊緣運算技術以避免數據外洩風險",
+            "推動跨部門合作強化AI技術的透明監控"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "監理措施",
+        "concept": "AI監理沙盒",
+        "explanation": "2025年臺灣推廣AI治理重點包括監理沙盒、多方合作與倫理保障，但並未全面禁止邊緣運算，該技術反而被積極應用於提升即時性與隱私保護。",
+        "number": 495,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "在人機互動中結合空間計算技術時，以下哪項應用最能展現2025年的技術趨勢？",
+        "options": [
+            "利用3D感知技術搭配手勢辨識進行設備控制操作",
+            "採用單一平面顯示器進行文字輸入及簡單指令控制",
+            "以純語音助手方式操作設備避免觸控介面",
+            "用文字指令結合滑鼠操作進行複雜任務執行"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "空間計算",
+        "concept": "空間計算應用",
+        "explanation": "空間計算融合3D感知與手勢辨識於2025年成為人機交互的新趨勢，使操作更直覺且自然，超越傳統平面輸入。",
+        "number": 496,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "以下哪種資料編碼方法常用於將類別型特徵轉換成模型可處理的數值型輸入？",
+        "options": [
+            "One-Hot Encoding 將類別值轉為二元向量表示",
+            "Label Scaling 依據頻率將類別數值化",
+            "Binary Reduction 將多類別轉二元分類",
+            "Cluster Encoding 使用叢集中心代表類別"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "特徵編碼",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding是將類別型變數轉換為二進位向量，使機器學習模型能夠處理非數值的輸入特徵。",
+        "number": 497,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "以下關於生成式對抗網路（GAN）的生成器與鑑別器的敘述，何者正確？",
+        "options": [
+            "生成器負責創造假樣本，鑑別器負責判斷真偽",
+            "生成器負責分類，鑑別器負責樣本生成",
+            "生成器與鑑別器同時輸出結果以提升準確度",
+            "生成器只訓練鑑別器，無法自我改善"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "生成式模型",
+        "concept": "生成對抗網路(GAN)",
+        "explanation": "GAN由生成器生產偽樣本，鑑別器判斷樣本真偽，兩者透過對抗學習提升生成品質。",
+        "number": 498,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "在多模態生成式AI中，以下哪一項特性是2025年應用的重要趨勢？",
+        "options": [
+            "整合文字、圖像與語音等多種媒介，共同生成內容",
+            "單一文字提示生成純文字結果，忽略其他媒體类型",
+            "以靜態圖像生成为核心，不支援動態媒體輸出",
+            "僅專注於結構化數據生成，忽略非結構化訊息"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態輸出",
+        "concept": "多模態生成",
+        "explanation": "2025年多模態生成式AI趨勢是將文字、圖像及語音等多種媒介訊息融合，提升內容豐富度與互動性。",
+        "number": 499,
+        "date": "2025-12-26"
+    },
+    {
+        "question": "在2025年AI技術中，Agentic AI的主要特色與優勢為何？",
+        "options": [
+            "能夠自主地進行決策與動作執行，提升自動化水平",
+            "完全依賴人類指令，無法自主學習或調整行為",
+            "僅應用於資料預處理階段，無法直接參與決策",
+            "專注於生成內容，不涉及任務導向或代理功能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Agentic AI",
+        "concept": "AI代理自動化",
+        "explanation": "Agentic AI具備自主決策和行動能力，能大幅提升多領域任務的自動化效率，成為2025年AI應用新焦點。",
+        "number": 500,
+        "date": "2025-12-26"
     }
 ]

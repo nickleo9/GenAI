@@ -8318,5 +8318,175 @@
         "explanation": "要求AI生成內容須參照資料來源可有效降低幻覺機率，是Prompt設計的重點方法。",
         "number": 490,
         "date": "2025-12-25"
+    },
+    {
+        "question": "2025年，企業若希望透過No Code平台快速部署生成式AI知識管理系統，實現文件問答自動化，以下哪一項最應優先評估？",
+        "options": [
+            "導入流程的ROI及回收周期",
+            "AI模型的語意理解深度",
+            "平台的用戶介面自訂功能",
+            "客戶滿意度提升速率"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "知識管理系統評估",
+        "explanation": "企業導入No Code生成式AI知識問答系統時，首先要務是評估投資回報率（ROI）及回收周期，以確保專案執行的可行性和商業價值。",
+        "number": 491,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "以下哪一項最能體現2025年企業利用生成式AI低程式碼( Low Code )工具設計內部訓練課程的關鍵優勢？",
+        "options": [
+            "能快速迭代並自動化教材內容",
+            "降低資安維護的複雜度",
+            "增強系統操作介面的互動性",
+            "減少AI模型的資源消耗"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "Low Code 教育應用",
+        "explanation": "Low Code 工具強項在於能讓非專業開發者快速生成及優化教育內容，大幅提升教材自動化和迭代速度。",
+        "number": 492,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "在生成式AI導入醫療影像輔診流程時，何者不是五階段流程之一？",
+        "options": [
+            "需求分析",
+            "模型微調",
+            "原型開發",
+            "部署與監控"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "醫療AI導入流程",
+        "explanation": "五大流程一般包括需求分析、原型開發、測試、部署、監控，模型微調雖重要，但非標準五階段流程。",
+        "number": 493,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "在生成式AI金融客服場景，哪一種提示詞工程方法最有助於降低模型產生幻覺(Hallucination)風險？",
+        "options": [
+            "限制可回答的資料類型",
+            "提高輸入字數的複雜度",
+            "強化模型的對比訓練",
+            "將資料脈絡重複提示"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "提示詞工程、幻覺控制",
+        "explanation": "重複提示資料脈絡能加強模型回應的準確性，減低出現非預期內容，降低幻覺風險。",
+        "number": 494,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "2025多語多模態對話式AI客服系統導入Low Code平台時，哪一項隱私風險管理策略普遍建議執行？",
+        "options": [
+            "跨國資料流動嚴格審查",
+            "模型效能即時監控",
+            "外部API使用授權限制",
+            "視覺模組獨立運算隔離"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "多語多模態系統、隱私治理",
+        "explanation": "在跨語言及多模態應用時，嚴格審查跨國資料流動是維護資料隱私的首要策略。",
+        "number": 495,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "下列關於企業用No Code平台建立內部AI訓練助理系統的敘述，何者錯誤？",
+        "options": [
+            "提示詞設計能幫助防範模型偏見",
+            "模型偏差可經由多模態互補解決",
+            "高效模型須評估運算依賴風險",
+            "資料安全為建置首要考量之一"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "企業培訓AI、風險控管",
+        "explanation": "多模態可提升表現，但不能根本解決模型的偏見風險，仍需在訓練資料與提示設計上審慎處理。",
+        "number": 496,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "針對心理陪伴型AI的Low Code平台應用，下列何種提示詞設計重點可協助降低用戶成癮風險？",
+        "options": [
+            "強化情感共鳴正回饋",
+            "引導理性自我反思",
+            "增強系統互動頻率",
+            "允許使用者自訂任務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "AI心理陪伴、互動設計",
+        "explanation": "引導用戶理性反思與自我調整，能有效降低AI互動帶來的成癮風險，是2025心理陪伴應用提示詞新重點。",
+        "number": 497,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "若企業以No Code平台結合多模態AI生成行銷內容，下列哪個導入流程能有效控管著作權風險？",
+        "options": [
+            "建立輸出內容來源審查環節",
+            "加強模型多語能力提升內容多元",
+            "導入高效能AI推理模組",
+            "優化提示詞聚焦創意主題"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "內容生成、著作權控管",
+        "explanation": "導入內容來源審查機制能避免權利侵害，是企業利用生成式AI創作時不可忽略的流程。",
+        "number": 498,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "2025年AI Agent運用於供應鏈自動決策，Low Code 平台導入時最需注意哪項風險？",
+        "options": [
+            "訓練資料分佈均衡性",
+            "提示詞誘導錯誤決策",
+            "視覺數據擷取速度",
+            "模型推理權重分配"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "AI Agent、決策自動化",
+        "explanation": "提示詞設計不當容易誘導AI作出錯誤決策，導致供應鏈效率下降甚至產生重大損失。",
+        "number": 499,
+        "date": "2025-12-27"
+    },
+    {
+        "question": "以No Code工具建置AI輔助課程設計系統時，何種提示詞技巧有助提升平台的零樣本學習效能？",
+        "options": [
+            "提供多重演練場景敘述",
+            "限定單一任務類型輸入",
+            "加入結構化資料預處理",
+            "堅持單一語言作業模式"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "零樣本學習、提示詞工程",
+        "explanation": "結構化資料預處理使AI更易理解並推理未見情境，是零樣本學習提升的必要技巧。",
+        "number": 500,
+        "date": "2025-12-27"
     }
 ]

@@ -8488,5 +8488,175 @@
         "explanation": "結構化資料預處理使AI更易理解並推理未見情境，是零樣本學習提升的必要技巧。",
         "number": 500,
         "date": "2025-12-27"
+    },
+    {
+        "question": "針對企業導入生成式AI工具時，哪一項策略能有效促進員工跨部門共享最佳AI應用實踐？",
+        "options": [
+            "擴展提示模板數量並建立公開模板庫",
+            "將AI僅限於研發部門核心應用",
+            "限制跨部門知識傳遞以保障機密性",
+            "單純依賴個別員工自由創造模板"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示模板策略",
+        "explanation": "企業透過擴展提示模板數量並建立公開模板庫，能讓不同部門共享最新AI應用實踐，打破知識孤島。",
+        "number": 501,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "2025年，生成式AI進入企業的主要風險不涵蓋以下哪個面向？",
+        "options": [
+            "幻覺生成內容的增多",
+            "模型透明度與權限問題",
+            "軟體介面過於複雜",
+            "多重合規與資安壓力"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險管理",
+        "explanation": "軟體介面複雜性是次要困難，主要風險為幻覺內容、權限治理、合規與資安。",
+        "number": 502,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "下列關於生成式AI導入的流程，何者描述最為正確？",
+        "options": [
+            "先擬定AI人才培訓計畫再進行業務場景選擇",
+            "評估業務需求後進行技術與合規對應流程",
+            "只需選購市售模型即可快速上線",
+            "著重於單一部門試點不需跨部門合作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入流程",
+        "explanation": "最正確的做法是先評估業務需求，再規劃技術與合規對應的導入流程。",
+        "number": 503,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "No Code / Low Code生成式AI平台的核心優勢為何？",
+        "options": [
+            "使用者無需理解程式邏輯即可完成複雜流程自動化",
+            "所有應用案例皆須專屬程式設計團隊協作",
+            "須依賴開源框架進行高度客製開發",
+            "只能針對重複型人工作業進行單一流程簡化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code / Low Code 優勢",
+        "explanation": "No Code / Low Code工具讓非專業用戶也能透過圖形介面設定自動化流程，無需理解專業程式語言。",
+        "number": 504,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "依據2025年趨勢，哪個產業導入生成式AI的年度成長率最高？",
+        "options": [
+            "醫療保健持續加速但不及製造業",
+            "製造業增長極快但高於科技業",
+            "科技業成長約十一倍領先其他產業",
+            "服務業穩定成長率超過科技業"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "產業應用成長",
+        "explanation": "2025年科技業生成式AI年度成長率高達11倍，明顯領先其他產業。",
+        "number": 505,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "下列哪一種提示詞最適合生成完整且可重複應用的AI工作流程？",
+        "options": [
+            "單一步驟直接產出結果的動作語句",
+            "分段設計並包含清楚指引的流程化提示詞",
+            "完全依賴AI判斷細節而無需結構限制",
+            "持續反覆輸入相同字串以測試文本溫度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示工程",
+        "explanation": "有系統的流程化、結構化提示詞設計更適合生成複雜且可重複應用的AI工作流程。",
+        "number": 506,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "何者是2025年OCI Generative AI服務的新技術特點？",
+        "options": [
+            "純粹文字輸出且無檢索增強功能",
+            "首度整合RAG代理程式至平台",
+            "硬體設備採用外部AI晶片為主",
+            "完全依賴第三方API服務管理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "RAG檢索增強生成",
+        "explanation": "OCI Generative AI於2025年正式推出整合RAG檢索增強代理的功能，提升搜尋與生成品質。",
+        "number": 507,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "關於生成式AI在軟體開發的應用，下列敘述何者正確？",
+        "options": [
+            "僅限於編寫程式註解與文件整理",
+            "能協助自動化單元測試與程式碼生成功能",
+            "專門用於模擬用戶端操作與資料蒐集",
+            "完全取代開發團隊的人力資源需求"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "軟體研發自動化",
+        "explanation": "生成式AI可用於協助自動產生程式碼，也能改善測試效率而非僅限於註解整理。",
+        "number": 508,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "針對生成式AI應用的風險管理，下列哪一項措施最能有效降低內容生成的誤用風險？",
+        "options": [
+            "完全授權所有員工自行調用AI生成內容",
+            "設立多層次權限並加強審核流程設計",
+            "允許開放性用語自由產生不受限內容",
+            "單純追蹤生成結果並定期收集回饋"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "權限與審核設計",
+        "explanation": "設立多層次權限與審核流程能明確區分員工權責，減少誤用和濫用生成內容的風險。",
+        "number": 509,
+        "date": "2025-12-30"
+    },
+    {
+        "question": "下列哪一項最貼近台灣政府推動AI人才培育的最新成果？",
+        "options": [
+            "強調AI硬體設備進口占主導",
+            "整合百項AI應用輔導平台協助企業導入",
+            "專注於大型工業自動化系統布建",
+            "獨立推動教育部門擴大數據開放"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "產業導入與人才培育",
+        "explanation": "台灣政府透過AI應用輔導平台成功整合超過200項工具並輔導數千家企業，廣泛培育AI應用人才。",
+        "number": 510,
+        "date": "2025-12-30"
     }
 ]

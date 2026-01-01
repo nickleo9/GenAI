@@ -8658,5 +8658,175 @@
         "explanation": "台灣政府透過AI應用輔導平台成功整合超過200項工具並輔導數千家企業，廣泛培育AI應用人才。",
         "number": 510,
         "date": "2025-12-30"
+    },
+    {
+        "question": "2026年台灣製造業導入No Code生成式AI平台時，面對供應鏈預測需求，哪項評估指標最能區分LangFlow與n8n的企業級優勢？",
+        "options": [
+            "LangFlow支援多模態提示詞優化，n8n強調API串流整合效率",
+            "n8n提供無程式碼工作流自動化，LangFlow聚焦視覺化模型部署",
+            "LangFlow優化多代理協作架構，n8n強化低延遲邊緣運算適配",
+            "n8n整合開源LLM微調工具，LangFlow支援企業級RAG知識庫"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code平台比較",
+        "concept": "工具效能與整合性評估",
+        "explanation": "n8n以無程式碼自動化、工作流整合高度見長；LangFlow則著重於專業視覺化模型部署，這是兩者在企業級應用的最大區隔。",
+        "number": 511,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "企業老闆審核2025後生成式AI導入提案，針對客服自動化PoC，哪項KPI組合最精準衡量LTV提升與CAC降低的長期效益？",
+        "options": [
+            "回應時間縮短25%、滿意度提升15%、每月處理量增30%",
+            "每月處理量增30%、滿意度提升15%、回應時間縮短25%",
+            "滿意度提升15%、回應時間縮短25%、每月處理量增30%",
+            "處理量增30%、回應時間縮短25%、滿意度提升15%"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "PoC階段ROI試算",
+        "concept": "投資對效果驗證框架",
+        "explanation": "LTV與CAC需綜合滿意度、效率和規模化指標，選項C羅列了最能量化驗證這些長期效益的組合。",
+        "number": 512,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "台灣金融業使用Claude 3.5設計投資建議提示詞，遭遇幻覺問題，哪項CoT框架修正最能確保合規性與準確率達95%？",
+        "options": [
+            "「逐步思考：列風險因素→驗證法規→生成建議→自我審核」",
+            "「分步推理：驗證法規→列風險因素→生成建議→自我審核」",
+            "「結構化思考：自我審核→列風險因素→驗證法規→生成建議」",
+            "「層級推理：生成建議→驗證法規→列風險因素→自我審核」"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Chain-of-Thought進階應用",
+        "concept": "多階段推理結構優化",
+        "explanation": "先進行風險辨識與法規驗證後產出建議，流程層層把關，能顯著降低幻覺問題並提升合規率。",
+        "number": 513,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "2026年台灣媒體公司建置No Code RAG系統處理新聞摘要，Bubble平台與Airtable整合時，哪項配置最避免向量檢索偏差？",
+        "options": [
+            "設定動態嵌入更新週期、混合檢索權重0.7文本+0.3圖像",
+            "混合檢索權重0.7文本+0.3圖像、設定動態嵌入更新週期",
+            "採用語意分塊策略256token、重複率閾值0.85去重",
+            "重複率閾值0.85去重、採用語意分塊策略256token"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "企業知識管理系統",
+        "concept": "RAG架構無程式碼實作",
+        "explanation": "語意分塊處理配合去重機制能顯著減少檢索偏差，是新聞摘要場景最佳解。",
+        "number": 514,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "行銷部門評選2025後多模態工具，針對社群貼文自動化，哪項Midjourney V7 vs. Runway Gen-3差異決定品牌一致性？",
+        "options": [
+            "Runway Gen-3支援參數化風格遷移，Midjourney V7強化提示穩定性",
+            "Midjourney V7提供品牌風格鎖定功能，Runway Gen-3優化影片延續性",
+            "Midjourney V7優化影片延續性，Runway Gen-3提供品牌風格鎖定功能",
+            "Runway Gen-3強化提示穩定性，Midjourney V7支援參數化風格遷移"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態生成工具比較",
+        "concept": "內容創作工作流優化",
+        "explanation": "品牌一致性需鎖定風格，Midjourney V7於此功能領先，而Runway Gen-3則著重在影片延續。",
+        "number": 515,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "台灣醫療機構導入生成式AI診斷輔助，GDPR與個資法雙重合規評估中，哪項風險矩陣優先級排序最符合資安框架？",
+        "options": [
+            "模型漂移(高頻高衝擊)→幻覺風險(高頻中衝擊)→資料洩漏(低頻高衝擊)",
+            "資料洩漏(低頻高衝擊)→模型漂移(高頻高衝擊)→幻覺風險(高頻中衝擊)",
+            "幻覺風險(高頻中衝擊)→資料洩漏(低頻高衝擊)→模型漂移(高頻高衝擊)",
+            "模型漂移(高頻高衝擊)→資料洩漏(低頻高衝擊)→幻覺風險(高頻中衝擊)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險評估矩陣建構",
+        "concept": "合規性與資料治理",
+        "explanation": "資安為先，資料外洩雖機率低但衝擊高，依GDPR/個資法合規優先考量排序應首重此一風險。",
+        "number": 516,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "法律事務所優化GPT-4o提示詞處理合約審核，Few-Shot範例設計中，哪項變數控制最精準提升條款識別F1-score？",
+        "options": [
+            "固定違約金識別範例3組、變動管轄權條款2組、溫度參數0.1",
+            "溫度參數0.1、固定違約金識別範例3組、變動管轄權條款2組",
+            "變動管轄權條款2組、溫度參數0.1、固定違約金識別範例3組",
+            "固定違約金識別範例3組、變動管轄權條款2組、溫度參數0.1"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Few-Shot學習優化",
+        "concept": "領域適配提示工程",
+        "explanation": "固定範例與變動範例平衡，低溫度最佳化範例識別表現，提升F1-score最有效。",
+        "number": 517,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "2026年電商使用Zapier建置生成式AI訂單處理Agent，面對高峰期延遲，哪項並行處理配置最優化吞吐量？",
+        "options": [
+            "設定批次處理閾值50筆、異步回調機制、路由器動態負載平衡",
+            "路由器動態負載平衡、設定批次處理閾值50筆、異步回調機制",
+            "異步回調機制、路由器動態負載平衡、設定批次處理閾值50筆",
+            "批次處理閾值50筆、異步回調機制、路由器動態負載平衡"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自動化工作流設計",
+        "concept": "Agentic Workflow架構",
+        "explanation": "異步結合動態負載與批次閾值可最有效減少延遲並提高訂單處理吞吐率。",
+        "number": 518,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "大型企業部署企業級生成式AI平台，制定模型治理政策時，哪項委員會架構最確保Shadow AI風險控制？",
+        "options": [
+            "由CTO主持、CISO共同主席、法務代表參與、季度審核機制",
+            "季度審核機制、由CTO主持、CISO共同主席、法務代表參與",
+            "法務代表參與、季度審核機制、由CTO主持、CISO共同主席",
+            "CISO共同主席、法務代表參與、由CTO主持、季度審核機制"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "跨部門治理架構",
+        "concept": "中心化模型管理",
+        "explanation": "CISO主責資安風險，委員會組成須涵蓋法務及技術決策與週期審核，才能有效管控Shadow AI。",
+        "number": 519,
+        "date": "2026-01-01"
+    },
+    {
+        "question": "台灣軟體公司評估2025後程式碼生成工具，針對Legacy系統重構，哪項Cursor vs. GitHub Copilot差異決定遷移成功率？",
+        "options": [
+            "GitHub Copilot支援多檔案上下文，Cursor強化架構模式識別",
+            "Cursor提供視覺化重構建議，GitHub Copilot優化單檔程式碼完成",
+            "Cursor優化單檔程式碼完成，GitHub Copilot提供視覺化重構建議",
+            "GitHub Copilot強化架構模式識別，Cursor支援多檔案上下文"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "程式碼生成工具選型",
+        "concept": "開發者生產力提升",
+        "explanation": "Copilot的多檔案脈絡處理更適合大型Legacy重構，Cursor則專注於架構識別，但未臻全範圍支援。",
+        "number": 520,
+        "date": "2026-01-01"
     }
 ]

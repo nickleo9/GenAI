@@ -1344,31 +1344,49 @@ const iPASQuizApp = {
         this.state.isQuizActive = false;
         this.unlockInterface();
 
-        // 🔥 修改：統一處理同步邏輯 🔥
-        this.showLoading('正在上傳成績與錯題...');
+        // 🔥 修改：根據會員等級處理同步邏輯 🔥
+        const memberLevel = UsageManager.getMemberLevel();
 
-        try {
-            // 同時執行兩個上傳動作，並等待它們都完成
-            const [practiceSuccess, wrongSuccess] = await Promise.all([
-                this.syncPracticeRecord(),
-                this.updateWrongQuestions()
-            ]);
+        if (memberLevel === 'guest') {
+            // 遊客：提示登入可解鎖雲端同步
+            this.showAlert(
+                '📝 測驗完成！成績已儲存於本機。\n\n' +
+                '💡 登入後可解鎖雲端同步功能，跨裝置保存進度！',
+                'info'
+            );
+        } else if (memberLevel === 'free') {
+            // 免費會員：提示升級可解鎖雲端同步
+            this.showAlert(
+                '📝 測驗完成！成績已儲存於本機。\n\n' +
+                '💎 升級 VIP 即可解鎖雲端同步，永久保存學習記錄！',
+                'info'
+            );
+        } else {
+            // 付費會員：執行雲端同步
+            this.showLoading('正在上傳成績與錯題...');
 
-            this.hideLoading();
+            try {
+                const [practiceSuccess, wrongSuccess] = await Promise.all([
+                    this.syncPracticeRecord(),
+                    this.updateWrongQuestions()
+                ]);
 
-            if (practiceSuccess && wrongSuccess) {
-                this.showAlert('✅ 雲端同步完成！(成績與錯題皆已儲存)', 'success');
-            } else if (practiceSuccess) {
-                this.showAlert('⚠️ 成績上傳成功，但錯題同步失敗，請稍後再試。', 'warning');
-            } else if (wrongSuccess) {
-                this.showAlert('⚠️ 錯題上傳成功，但成績同步失敗，請稍後再試。', 'warning');
-            } else {
-                this.showAlert('❌ 雲端同步失敗，請檢查網路連線。', 'error');
+                this.hideLoading();
+
+                if (practiceSuccess && wrongSuccess) {
+                    this.showAlert('✅ 雲端同步完成！(成績與錯題皆已儲存)', 'success');
+                } else if (practiceSuccess) {
+                    this.showAlert('⚠️ 成績上傳成功，但錯題同步失敗，請稍後再試。', 'warning');
+                } else if (wrongSuccess) {
+                    this.showAlert('⚠️ 錯題上傳成功，但成績同步失敗，請稍後再試。', 'warning');
+                } else {
+                    this.showAlert('❌ 雲端同步失敗，請檢查網路連線。', 'error');
+                }
+            } catch (error) {
+                this.hideLoading();
+                this.showAlert('❌ 發生未預期的錯誤', 'error');
+                console.error('同步錯誤:', error);
             }
-        } catch (error) {
-            this.hideLoading();
-            this.showAlert('❌ 發生未預期的錯誤', 'error');
-            console.error('同步錯誤:', error);
         }
 
         this.showResult();

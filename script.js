@@ -918,6 +918,18 @@ const iPASQuizApp = {
         this.elements.databaseSelector.classList.add('disabled');
         this.elements.settingsPanel.classList.add('disabled');
         this.elements.databaseCards.forEach(card => card.classList.add('disabled'));
+
+        // 🔥 新增：考試模式時加入頁面離開警告
+        if (this.state.currentMode === 'exam') {
+            window.addEventListener('beforeunload', this.handleBeforeUnload);
+        }
+    },
+
+    // 🔥 新增：處理頁面離開事件
+    handleBeforeUnload(e) {
+        e.preventDefault();
+        e.returnValue = '考試進行中，確定要離開嗎？離開後進度將不會被保存。';
+        return e.returnValue;
     },
 
     // 解鎖介面
@@ -925,6 +937,9 @@ const iPASQuizApp = {
         this.elements.databaseSelector.classList.remove('disabled');
         this.elements.settingsPanel.classList.remove('disabled');
         this.elements.databaseCards.forEach(card => card.classList.remove('disabled'));
+
+        // 🔥 新增：移除頁面離開警告
+        window.removeEventListener('beforeunload', this.handleBeforeUnload);
     },
 
     // 載入題目

@@ -1074,8 +1074,6 @@ const iPASQuizApp = {
 
     // 顯示解析
     showExplanation(question, userAnswerLetter, isCorrect) {
-        this.elements.explanationBox.classList.remove('d-none');
-
         const questionId = this.state.currentQuestionIndex;
         const mapping = this.state.questionMapping[questionId];
         const correctAnswerLetter = mapping.correctLetter;
@@ -1084,12 +1082,45 @@ const iPASQuizApp = {
         const resultIcon = isCorrect ? '✅' : '❌';
         const resultText = isCorrect ? '答對了！' : `答錯了！正確答案是 ${correctAnswerLetter}`;
 
+        // 🔥 遊客延遲顯示解析
+        const memberLevel = UsageManager.getMemberLevel();
+
+        if (memberLevel === 'guest') {
+            // 先顯示延遲提示
+            this.elements.explanationBox.classList.remove('d-none');
+            this.elements.explanationContent.innerHTML = `
+            <div class="${resultClass} mb-3">
+                ${resultIcon} ${resultText}
+            </div>
+            <div class="text-center py-3">
+                <div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div>
+                <span class="text-muted">解析載入中... (遊客需等待 3 秒)</span>
+                <div class="mt-2 small text-muted">💡 <a href="#" onclick="LoginManager.showLoginOptions(); return false;">登入</a>後可立即查看解析！</div>
+            </div>
+        `;
+
+            // 3 秒後顯示真正的解析
+            setTimeout(() => {
+                this._displayExplanationContent(question, userAnswerLetter, isCorrect, resultClass, resultIcon, resultText);
+            }, 3000);
+        } else {
+            // 已登入會員直接顯示
+            this.elements.explanationBox.classList.remove('d-none');
+            this._displayExplanationContent(question, userAnswerLetter, isCorrect, resultClass, resultIcon, resultText);
+        }
+
+        this.elements.topicBadge.textContent = question.topic || '未分類';
+        this.elements.subtopicBadge.textContent = question.subtopic || '未分類';
+    },
+
+    // 🔥 新增：實際顯示解析內容的輔助函式
+    _displayExplanationContent(question, userAnswerLetter, isCorrect, resultClass, resultIcon, resultText) {
         let explanationHTML = `
-                    <div class="${resultClass} mb-3">
-                        ${resultIcon} ${resultText}
-                    </div>
-                    <div class="fw-bold mb-2">解析:</div>
-                `;
+        <div class="${resultClass} mb-3">
+            ${resultIcon} ${resultText}
+        </div>
+        <div class="fw-bold mb-2">解析:</div>
+    `;
 
         if (this.state.explanationMode === 'database') {
             explanationHTML += `<div class="highlight">${question.explanation || '無解析'}</div>`;
@@ -1099,12 +1130,7 @@ const iPASQuizApp = {
         }
 
         this.elements.explanationContent.innerHTML = explanationHTML;
-
-        this.elements.topicBadge.textContent = question.topic || '未分類';
-        this.elements.subtopicBadge.textContent = question.subtopic || '未分類';
     },
-
-
 
     // AI生成解析
     async generateAIExplanation(question, userAnswerLetter) {
@@ -1936,6 +1962,27 @@ const iPASQuizApp = {
 
     // 匯出錯題
     exportWrongQuestions() {
+        // 🔥 權限檢查
+        const memberLevel = UsageManager.getMemberLevel();
+
+        if (memberLevel === 'guest') {
+            this.showAlert('⚠️ 請先登入才能匯出錯題！\n\n登入後免費會員每月可匯出 5 次。', 'warning');
+            return;
+        }
+
+        // 免費會員匯出次數限制 (5次/月)
+        if (memberLevel === 'free') {
+            const exportKey = `export_monthly_${new Date().toISOString().slice(0, 7)}`;
+            const exportCount = parseInt(localStorage.getItem(exportKey) || '0');
+
+            if (exportCount >= 5) {
+                this.showAlert('⏰ 本月匯出次數已達上限 (5次/月)！\n\n💎 升級付費會員即可無限次匯出！', 'warning');
+                return;
+            }
+
+            // 增加匯出次數
+            localStorage.setItem(exportKey, (exportCount + 1).toString());
+        }
         if (!this.state.userData.incorrect || this.state.userData.incorrect.length === 0) {
             this.showAlert('目前沒有錯題記錄', 'info');
             return;

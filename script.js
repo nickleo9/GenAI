@@ -825,27 +825,27 @@ const iPASQuizApp = {
 
     // 開始測驗
     async startQuiz() {
-        // ========== 新增：會員狀態檢查 ==========
-        // 優先從新的 user_data 取得 userId
-        const generalUserData = JSON.parse(localStorage.getItem('user_data') || '{}');
-        const lineUserData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
-        const userId = generalUserData.google_id || generalUserData.userId || lineUserData.userId;
+        // ========== 檢查使用次數限制 ==========
+        const usageCheck = UsageManager.canUseSystem();
 
-        let isPaid = false;
-
-        if (userId) {
-            const status = await LoginManager.checkMemberStatus(userId);
-            isPaid = status.isPaid;
-        }
-
-        // 檢查使用次數限制
-        if (!UsageManager.canUseSystem(isPaid)) {
-            this.showAlert('今日免費練習已達5次限制！請升級付費會員享受無限制練習。', 'warning');
+        if (!usageCheck.allowed) {
+            // 根據會員等級顯示不同的提示訊息
+            if (usageCheck.memberLevel === 'guest') {
+                this.showAlert(
+                    `⏰ ${usageCheck.period}免費體驗已達 ${usageCheck.limit} 次上限！\n\n` +
+                    '💡 登入後可享有每月 100 次練習機會！',
+                    'warning'
+                );
+            } else {
+                this.showAlert(
+                    `⏰ ${usageCheck.period}練習已達 ${usageCheck.limit} 次上限！\n\n` +
+                    '💎 升級付費會員即可無限制使用！',
+                    'warning'
+                );
+            }
             return;
         }
 
-        // 增加使用次數
-        UsageManager.incrementUsage();
 
         if (!this.state.selectedDatabase) {
             this.showAlert('請先選擇題庫！', 'warning');
@@ -900,7 +900,11 @@ const iPASQuizApp = {
                 }
 
                 this.hideLoading();
-                console.log('✅ 測驗已開始');
+
+                // 🔥 測驗成功開始後，增加使用次數
+                UsageManager.incrementUsage();
+
+                console.log('✅ 測驗已開始，剩餘次數:', UsageManager.getRemainingInfo());
             } else {
                 this.hideLoading();
                 this.state.isQuizActive = false;
@@ -2267,24 +2271,90 @@ document.addEventListener('DOMContentLoaded', () => {
 // ==================== 登入管理系統 (LoginManager) ====================
 
 const UsageManager = {
-    checkDailyUsage() {
-        const today = new Date().toDateString();
-        const usageKey = `daily_usage_${today}`;
-        return parseInt(localStorage.getItem(usageKey) || '0');
+    // 使用限制設定
+    LIMITS: {
+        guest: { count: 5, period: 'daily' },      // 遊客：每日 5 次
+        free: { count: 100, period: 'monthly' },   // 免費會員：每月 100 次
+        paid: { count: Infinity, period: null }    // 付費會員：無限制
     },
 
+    // 取得會員等級
+    getMemberLevel() {
+        const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
+        const lineData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+
+        // 未登入 = 遊客
+        if (!userData.google_id && !userData.userId && !lineData.userId) {
+            return 'guest';
+        }
+
+        // 已登入，檢查會員等級
+        const memberLevel = userData.member_level || lineData.memberLevel || '免費會員';
+        if (memberLevel.includes('付費') || memberLevel.includes('VIP') || memberLevel.includes('付費會員')) {
+            return 'paid';
+        }
+        return 'free';
+    },
+
+    // 取得儲存 key
+    getStorageKey(period) {
+        if (period === 'daily') {
+            return `usage_daily_${new Date().toDateString()}`;
+        } else if (period === 'monthly') {
+            return `usage_monthly_${new Date().toISOString().slice(0, 7)}`; // YYYY-MM
+        }
+        return 'usage';
+    },
+
+    // 取得目前使用次數
+    getUsageCount(period) {
+        const key = this.getStorageKey(period);
+        return parseInt(localStorage.getItem(key) || '0');
+    },
+
+    // 增加使用次數
     incrementUsage() {
-        const today = new Date().toDateString();
-        const usageKey = `daily_usage_${today}`;
-        const currentUsage = this.checkDailyUsage();
-        localStorage.setItem(usageKey, (currentUsage + 1).toString());
+        const memberLevel = this.getMemberLevel();
+        const limit = this.LIMITS[memberLevel];
+
+        if (limit.period) {
+            const key = this.getStorageKey(limit.period);
+            const currentUsage = this.getUsageCount(limit.period);
+            localStorage.setItem(key, (currentUsage + 1).toString());
+        }
     },
 
-    canUseSystem(isPaidMember) {
-        if (isPaidMember) return true;
-        return this.checkDailyUsage() < 5;
+    // 檢查是否可以使用
+    canUseSystem() {
+        const memberLevel = this.getMemberLevel();
+        const limit = this.LIMITS[memberLevel];
+
+        // 付費會員無限制
+        if (memberLevel === 'paid') return { allowed: true, memberLevel };
+
+        const currentUsage = this.getUsageCount(limit.period);
+        const remaining = limit.count - currentUsage;
+
+        return {
+            allowed: remaining > 0,
+            memberLevel,
+            currentUsage,
+            limit: limit.count,
+            remaining: Math.max(0, remaining),
+            period: limit.period === 'daily' ? '今日' : '本月'
+        };
+    },
+
+    // 取得剩餘次數（用於 UI 顯示）
+    getRemainingInfo() {
+        const result = this.canUseSystem();
+        if (result.memberLevel === 'paid') {
+            return '無限制';
+        }
+        return `${result.remaining}/${result.limit} (${result.period})`;
     }
 };
+
 
 const LoginManager = {
     // Line Login 設定

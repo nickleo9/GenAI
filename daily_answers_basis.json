@@ -8828,5 +8828,175 @@
         "explanation": "AI監理的目標是促進創新同時保障安全與公平，完全禁止自動化決策系統過於極端，與實務監管目標不符。",
         "number": 520,
         "date": "2025-12-31"
+    },
+    {
+        "question": "2026年多智能體系統在AI應用中的主要優勢為何？",
+        "options": [
+            "A. 單一AI模型獨立完成所有任務",
+            "B. 多AI分工協作提高任務成功率",
+            "C. 專注語音辨識精度提升",
+            "D. 僅用於圖像生成與合成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多智能體系統",
+        "concept": "多智能體協作",
+        "explanation": "多智能體系統允許多個AI模型分工協作，共同完成複雜任務，因而提高任務成功率與適應企業需求的靈活度，這是2026年AI應用的重要趨勢。",
+        "number": 521,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "在資料隱私保護中，生成式AI如何利用合成數據來降低風險？",
+        "options": [
+            "A. 直接使用真實資料進行分析",
+            "B. 利用合成數據模擬真實數據分布以避免個資暴露",
+            "C. 只對敏感數據加密處理",
+            "D. 使用老舊數據避免法律風險"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "合成數據",
+        "explanation": "合成數據通過生成類似真實數據的樣本，減少了對真實個人資料的依賴，從而降低資料隱私洩露風險，特別適用於隱私法律嚴格的場域。",
+        "number": 522,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "下列何者最能代表監督學習的核心原理？",
+        "options": [
+            "A. 利用標註資料進行模型訓練以預測未知標籤",
+            "B. 模型從未標註資料中找尋結構化規則",
+            "C. AI自動學習並調整策略以達成目標",
+            "D. 生成新內容並與真實數據混合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "監督學習",
+        "concept": "監督學習基礎",
+        "explanation": "監督學習透過標註資料讓模型學習資料與標籤之間的關係，以對新資料進行正確分類或預測，是機器學習的基本方法之一。",
+        "number": 523,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "2026年中，AI治理中「監理沙盒」的主要功能為何？",
+        "options": [
+            "A. 監控AI模型性能以調整參數",
+            "B. 提供安全無風險的環境用於測試與監管新AI技術",
+            "C. 對數據進行加密以保障隱私",
+            "D. 自動化訓練資料標註流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "監管與合規",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是監管機構提供給AI企業一個受控實驗環境，讓新技術在不違規的前提下進行測試與評估，有助於促進技術創新與風險管理並重。",
+        "number": 524,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "下列何者不屬於典型的生成式AI模型結構？",
+        "options": [
+            "A. 生成對抗網路（GAN）由生成器與判別器組成",
+            "B. 編碼器-解碼器結構用於文本生成",
+            "C. 隨機森林為決策樹集成生成模型",
+            "D. 變分自編碼器（VAE）用於隱變量生成"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式AI模型",
+        "concept": "生成式模型架構",
+        "explanation": "隨機森林為多個決策樹組成的鑑別式模型，不屬於生成式AI的模型架構；生成式模型如GAN、VAE與編碼器-解碼器網路專門用於創造新數據。",
+        "number": 525,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "資料整理中，下列哪一種方法最適合處理類別資料的數值化？",
+        "options": [
+            "A. L2正規化",
+            "B. One-Hot Encoding",
+            "C. 均值填補",
+            "D. PCA降維"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理方法",
+        "concept": "類別資料數值化",
+        "explanation": "One-Hot Encoding是一種將類別資料轉換成二元向量的數值化方法，常用於機器學習模型的特徵預處理階段，以方便處理非數值型特徵。",
+        "number": 526,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "在機器學習中，Bias-Variance Tradeoff主要描述：",
+        "options": [
+            "A. 偏差過大與模型過擬合的取捨",
+            "B. 偏差過大時模型欠擬合，變異過大時模型過擬合",
+            "C. 模型複雜度與訓練時間的平衡",
+            "D. 訓練資料大小與模型準確度的關係"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "偏差與變異",
+        "concept": "偏差變異權衡",
+        "explanation": "Bias-Variance Tradeoff指的是模型偏差過大通常造成欠擬合，而變異過大通常導致過擬合，兩者需要適度平衡才能取得最佳泛化能力。",
+        "number": 527,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 的基本區別為何？",
+        "options": [
+            "A. 鑑別式AI側重資料生成，生成式AI側重分類判斷",
+            "B. 鑑別式AI直接預測類別標籤，生成式AI學習資料分布生成新資料",
+            "C. 兩者完全相同，只是命名不同",
+            "D. 生成式AI只能用於語言處理，鑑別式AI用於圖像"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式AI差異",
+        "explanation": "鑑別式AI學習如何判別資料所屬的類別，而生成式AI則是學習資料分布來創造出新的類似資料，兩者在應用和模型架構上有本質區別。",
+        "number": 528,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "在機器學習訓練時，L1正則化的特點為何？",
+        "options": [
+            "A. 鼓勵模型權重均勻分布",
+            "B. 導致部分權重縮減為零以實現特徵選擇",
+            "C. 使模型訓練速度變慢但更穩定",
+            "D. 僅用於非線性模型防止過擬合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化效果",
+        "explanation": "L1正則化會導致部分模型權重縮減為零，實現自動特徵選擇的效果，有助於控制模型複雜度並提升解釋性。",
+        "number": 529,
+        "date": "2026-01-02"
+    },
+    {
+        "question": "2026年AI在智慧交通系統中的應用包括？",
+        "options": [
+            "A. AI監控交通違規並自動吊銷駕照",
+            "B. 利用AI減少交通擁堵並優化路網調度",
+            "C. 只用於自動駕駛車輛核心控制",
+            "D. 僅作為交通狀況數據蒐集工具"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "智慧城市與交通",
+        "concept": "智慧交通AI應用",
+        "explanation": "AI智慧交通系統可整合感測器與大數據分析，有效緩解車流擁堵並優化路網調度，提高交通效率與安全性，是2026年AI重要應用領域。",
+        "number": 530,
+        "date": "2026-01-02"
     }
 ]

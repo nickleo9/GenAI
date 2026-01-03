@@ -8828,5 +8828,175 @@
         "explanation": "Copilot的多檔案脈絡處理更適合大型Legacy重構，Cursor則專注於架構識別，但未臻全範圍支援。",
         "number": 520,
         "date": "2026-01-01"
+    },
+    {
+        "question": "2026年No-code/low-code平台如ManusAI融入Agentic AI，在企業規劃AI流程時，何者最能體現代理自主性與效能提升之核心？",
+        "options": [
+            "透過感知-推理-行動-反思循環無需程式開發即自訂跨場域多任務自動化工具鏈",
+            "依賴小語言模型參數優化與多模態輸入方式提升執行速度與邏輯準確度",
+            "整合大型語言模型並結合雲端運算平台以支持多部門同步AI資源調度",
+            "透過流量監控和生成式AI音樂工具跨平台協作強化資訊安全防護"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No code / Low code 概念",
+        "subtopic": "Agentic AI與低代碼流程",
+        "concept": "代理式AI核心四能力",
+        "explanation": "Agentic AI 強調感知、推理、行動與反思，尤其在低代碼工具如ManusAI上，能讓企業用戶無需寫程式即可部署多任務自動化流程，展現最大化的AI自主效能。",
+        "number": 521,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "下列關於DeepSeek於2025年Cloudflare生成式AI流量竄升與No-code應用規劃，哪一項最強調Chain-of-Thought提示詞策略對商務自動化的價值？",
+        "options": [
+            "多模態融合產生文字及影音加速SLM部署於3D自動化專案",
+            "設計目標導向Chain-of-Thought提示詞驅動AI自主協調B2B銷售閉環",
+            "全語言本地化支援與GEO引擎實現全球服務擴張",
+            "結合高效GPU資源和領先雲端存算分離系統提升部署彈性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 應用領域與工具使用",
+        "subtopic": "提示詞工程",
+        "concept": "Chain-of-Thought、商業自動化",
+        "explanation": "DeepSeek善用Chain-of-Thought提示詞，能驅動AI自動完成從線索產生到成交的整個B2B商業流程，這是生成式AI商業應用邏輯的關鍵突破。",
+        "number": 522,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "根據2026年多模態大語言模型（Multimodal LLM）在No-code導入時的主要風險，哪項最值得高度注意？",
+        "options": [
+            "忽略鏈路優化導致結果延遲增加，大幅提升算力成本",
+            "忽略代理AI反思能力，導致複雜客服業務無法閉環持續改善",
+            "低估多雲環境部署帶來的資安漏洞與API串接風險",
+            "過度依賴基礎模型內建模板而降低專案化彈性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 導入評估規劃",
+        "subtopic": "多模態LLM評估",
+        "concept": "反思能力風險",
+        "explanation": "無反思能力會導致代理AI在遭遇複雜流程或錯誤時無法自動修正，大幅降低自動化的適應性及服務品質，是導入多模態LLM的高度風險。",
+        "number": 523,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "以下哪一項最精確描述2026年企業使用SLM（Small Language Model）於Low-code軟體開發的最大優勢？",
+        "options": [
+            "實現多語言內容本地化並強化跨國法規適應能力",
+            "參數小於10億支援邊緣部署與本地運算提升彈性與隱私保障",
+            "結合AI代理自動編輯文件達成流程優化與知識圖譜建構",
+            "大幅縮短模型訓練周期使研發流程高度模組化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No code / Low code 概念",
+        "subtopic": "SLM應用",
+        "concept": "SLM輕量化部署",
+        "explanation": "SLM輕量化特性（參數數目小於10億）使其可在邊緣端部署，支援本地運算，能兼顧彈性和資料隱私，這是低代碼應用的重要優勢。",
+        "number": 524,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "2025-2026年Google Gemini多模態助理的深度整合，在無程式環境下最適合哪一企業AI應用場景？",
+        "options": [
+            "深度Workspace整合讓內容創作者及工程團隊快速生成商業報告",
+            "自動匯總多國財稅數據以即時調度供應鏈資源",
+            "連結Suno音樂AI強化企業品牌行銷互動情境",
+            "異質雲端串接方案支援科技服務全球化策略"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用領域與工具使用",
+        "subtopic": "多模態AI應用",
+        "concept": "Gemini助理應用",
+        "explanation": "Gemini多模態AI與Google Workspace深度整合，特別能協助內容創作者與技術團隊自動產生複雜性高的各類文檔，是典型企業的應用亮點。",
+        "number": 525,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "根據Gartner和相關產業報告，2026年Agentic AI在B2B銷售自動化方面，何者為企業AI導入規劃的里程碑？",
+        "options": [
+            "2026年自動關單流程以智能預測引擎大規模推進行銷預算最佳化",
+            "40%企業工作流導入AI代理，促進銷售從線索到成交全流程自動閉環",
+            "資安政策全面升級強化實時監控與異常行為自動修正",
+            "供應鏈協同採用多AI引擎調度物料採購與生產品質管理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 導入評估規劃",
+        "subtopic": "Agentic AI落地",
+        "concept": "AI代理銷售閉環",
+        "explanation": "Gartner研究指2026年預計40%的企業B2B工作流程將被AI代理自動閉環，特別是在銷售流程，可大幅釋放人力資源與增強決策速度。",
+        "number": 526,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "在進階提示詞應用中，2026年ManusAI與Chain-of-Thought (CoT) 互動的正確實務成果為何？",
+        "options": [
+            "藉由模糊指令讓代理自動拆解目標主動完成跨系統任務",
+            "多模態整合推動SLM進行情緒辨識強化用戶互動體驗",
+            "在AI助理協作下建立知識大腦優化法規遵循查詢效率",
+            "藉由雲端算力自我優化自動修正運算資源不足情境"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用領域與工具使用",
+        "subtopic": "CoT應用",
+        "concept": "提示詞工程+AI代理",
+        "explanation": "進階CoT技術加乘通用AI代理如ManusAI，可藉高度模糊自然語言指令讓AI拆解多步驟工作並主動跨系統串連執行，是low-code應用標竿。",
+        "number": 527,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "Hugging Face 於2025年生成式AI工具榜單中的開源平台在低代碼應用中的最大價值為？",
+        "options": [
+            "作為核心開源模型供應中心，促進微調與No-code產業部署多元選擇",
+            "帶動多模態AI客服場景的內容生成與情緒分類自動執行",
+            "雲端大數據引擎結合本地GPU推進資料流通與匿名保護",
+            "於文本支援服務下重構API靈活性並提升大規模併發性能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 應用領域與工具使用",
+        "subtopic": "開源模型服務",
+        "concept": "模型開源、低代碼部署",
+        "explanation": "Hugging Face作為頂尖的開源模型平台，支援微調、低代碼環境下彈性部署，是企業快速導入生成式AI服務的首要資源。",
+        "number": 528,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "2026年AI技術規劃中，關於光學互連於生成式AI擴展的核心戰略價值說法，何者為正確？",
+        "options": [
+            "主打低功耗高帶寬解決GPU互聯瓶頸，有助大規模AI無縫擴展",
+            "專為小語言模型提升資料傳輸速度並兼顧雲端即時運算",
+            "支援全球語言在內容產生平台中高效本地化部署",
+            "能明顯降低AI系統的權限升級風險與環境入侵通道"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI 導入評估規劃",
+        "subtopic": "硬體基礎評估",
+        "concept": "光學互連、擴展AI計畫",
+        "explanation": "光學互連能大幅提升GPU間的帶寬與傳輸效率，解決AI擴展時的主要性能瓶頸，是規劃大規模生成式AI部署的關鍵技術。",
+        "number": 529,
+        "date": "2026-01-03"
+    },
+    {
+        "question": "以AI原生瀏覽器Dia為例，2026年在No-code生成式AI導入規劃上，其以深度網頁理解與直覺對話取代多分頁操作的最佳效益為？",
+        "options": [
+            "消滅分頁混亂，使知識工作者跨工具協作效率倍增",
+            "輕量化部署強化音樂生成AI跨裝置同步體驗",
+            "智能推薦多模態資源供應鏈自動化調度工具",
+            "優化AI助理自動摘要提升客服回應與異常排解能力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No code / Low code 概念",
+        "subtopic": "AI工具應用",
+        "concept": "深度理解與知識協作",
+        "explanation": "Dia AI瀏覽器能深入理解複雜網頁內容，直接以自然語言對話互動取代繁瑣分頁，是AI助力知識協作的革新應用。",
+        "number": 530,
+        "date": "2026-01-03"
     }
 ]

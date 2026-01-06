@@ -8998,5 +8998,175 @@
         "explanation": "Dia AI瀏覽器能深入理解複雜網頁內容，直接以自然語言對話互動取代繁瑣分頁，是AI助力知識協作的革新應用。",
         "number": 530,
         "date": "2026-01-03"
+    },
+    {
+        "question": "台灣某電子商務公司導入No-code平台開發客製化推薦系統時，工程師團隊面臨整合既有ERP系統的挑戰。下列何者最準確描述No-code平台的優勢，能有效解決此情境中快速原型迭代的需求？",
+        "options": [
+            "A. 透過視覺化拖拉介面實現GAN生成器與鑑別器互動，加速圖像式產品推薦原型驗證",
+            "B. 利用LLM如GPT系列自動生成API橋接程式碼，縮短ERP資料串流至推薦引擎的開發週期",
+            "C. 提供預建模組與低代碼連接器，無需編寫SQL即可即時連動ERP資料庫進行A/B測試迭代",
+            "D. 內建Transformer自我注意力機制，自動優化推薦演算法參數以適配多變電商流量模式"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "No code/Low code基本概念、優勢與限制",
+        "subtopic": "No-code平台的優勢在電商ERP整合應用",
+        "concept": "No-code透過視覺化介面與預建連接器加速原型開發",
+        "explanation": "No-code平台的核心優勢在於視覺化拖拉介面與預建模組，能無需深層編程即連動ERP系統進行快速迭代與A/B測試，適用電商推薦系統原型驗證。A選項誤導GAN為圖像生成而非ERP整合；B提及LLM但No-code重點非自動生成API碼；D混淆Transformer於自然語言而非No-code連接器功能。此題考驗No-code於產業整合的實際優勢辨識。",
+        "number": 531,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "某台灣製造業導入Low-code平台優化供應鏈預測模型，卻發現模型泛化能力不足。下列何者最精確指出Low-code平台在此限制下的最佳因應策略？",
+        "options": [
+            "A. 轉用VAE進行資料壓縮後再以Low-code視覺介面重建供應鏈特徵工程模組",
+            "B. 透過平台內建的Citizen Developer工具，手動微調LLM提示詞以提升預測準確率",
+            "C. 結合外部Python腳本擴充自訂演算法，彌補Low-code在複雜ML模型客製化的限制",
+            "D. 利用Gemini多模態架構直接替換Low-code預測引擎，實現即時供應鏈資料視覺化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "No code/Low code基本概念、優勢與限制",
+        "subtopic": "Low-code平台在製造業供應鏈應用的限制與因應",
+        "concept": "Low-code限制於複雜演算法需外部腳本擴充",
+        "explanation": "Low-code限制在於複雜ML模型如供應鏈預測需客製化演算法，此時最佳策略為結合外部Python腳本擴充平台功能。A誤用VAE於特徵工程；B混淆提示詞與模型微調；D錯誤將Gemini視為Low-code替換方案。此題強調Low-code於產業深度應用的實際限制辨識。",
+        "number": 532,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "台灣銀行業應用生成式AI於投資報告生成，團隊比較ChatGPT與Gemini。下列何者最準確描述Gemini在金融領域的獨特優勢？",
+        "options": [
+            "A. 支援1M token超大上下文窗口，能完整處理年度財報與即時市場數據生成結構化報告",
+            "B. 內建GAN生成器產生虛擬K線圖，提升投資建議的視覺化呈現效果",
+            "C. 透過Claude的安全性機制篩選敏感金融詞彙，避免報告洩露客戶隱私",
+            "D. 利用Jasper行銷模組自動轉換報告為社群媒體投資宣傳文案"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用領域與常見工具",
+        "subtopic": "Gemini在金融投資報告生成的優勢",
+        "concept": "Gemini 2.5 Pro支援1M token上下文與Google生態整合",
+        "explanation": "Gemini於金融領域優勢為1M token超大上下文窗口，能處理長財報與市場數據生成詳盡結構化投資報告，並自動建目錄。B誤導GAN用途；C混淆Claude功能；D無Jasper於Gemini。此題考驗生成式AI工具在銀行業實際應用的細節比較。",
+        "number": 533,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "台灣媒體公司使用Claude生成新聞摘要，面臨倫理爭議。下列何者最正確說明Claude在此應用中的核心特點？",
+        "options": [
+            "A. 強調安全性與倫理考量，能自動標記潛在偏誤新聞內容並建議修正提示",
+            "B. 整合Midjourney生成配圖，加速新聞摘要的視覺化多模態輸出",
+            "C. 利用Copilot Office外掛直接匯出摘要至Google Docs進行團隊審核",
+            "D. 透過Perplexity即時搜尋驗證事實，確保摘要涵蓋最新國際新聞脈絡"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用領域與常見工具",
+        "subtopic": "Claude在媒體新聞摘要生成的倫理應用",
+        "concept": "Claude強調安全性與倫理適合敏感訊息處理",
+        "explanation": "Claude核心特點為安全性與倫理設計，能處理敏感新聞內容並標記偏誤，適合媒體摘要應用。B錯誤整合Midjourney；C混淆Copilot；D屬Perplexity功能。此題聚焦Claude於新聞產業的倫理優勢辨識。",
+        "number": 534,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "某台灣行銷代理商善用ChatGPT生成社群文案，欲提升轉換率。下列提示工程技巧最能有效優化此應用？",
+        "options": [
+            "A. 使用Chain-of-Thought提示，讓ChatGPT逐步分解目標客群心理並生成A/B測試文案變體",
+            "B. 直接輸入'生成10篇FB貼文'，依賴GPT-5即時網路搜尋抓取最新趨勢關鍵字",
+            "C. 結合Few-shot learning提供3個成功案例，引導ChatGPT模仿品牌語調生成文案",
+            "D. 利用Zero-shot prompting要求ChatGPT自動翻譯文案為多語言版本以擴大觸及"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "如何善用生成式AI工具、提示詞（Prompt Engineering）",
+        "subtopic": "ChatGPT在行銷社群文案生成的提示優化",
+        "concept": "ChatGPT支援即時搜尋與免費GPT-5提升文案趨勢性",
+        "explanation": "最佳提示技巧為直接輸入生成指令，利用ChatGPT GPT-5即時網路搜尋功能自動融入最新趨勢，提升社群文案轉換率。A過度複雜化；C雖有效但非最優；D忽略本地化文化差異。此題考驗提示工程於行銷實際應用的效率選擇。",
+        "number": 535,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "台灣醫療機構導入Copilot於病歷摘要生成，團隊困惑提示詞設計。下列何者最適切的Few-shot Prompt Engineering範例？",
+        "options": [
+            "A. '你是一位資深醫師。範例1：症狀=頭痛，摘要=急性偏頭痛疑慮。症狀=咳嗽，摘要=慢性支氣管炎可能性高。現病歷=[輸入]'",
+            "B. '生成病歷摘要，強調Transformer架構解析醫學術語的自我注意力機制'",
+            "C. '使用Zero-shot方法，直接分析以下病歷並輸出JSON格式摘要，包含LLM生成風險警示'",
+            "D. '請像Claude一樣安全處理，自動過濾HIPAA敏感詞彙後生成摘要'"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "如何善用生成式AI工具、提示詞（Prompt Engineering）",
+        "subtopic": "Copilot在醫療病歷摘要的Few-shot提示應用",
+        "concept": "Few-shot提供範例引導AI模仿特定格式輸出",
+        "explanation": "Few-shot Prompt透過提供具體範例(如症狀-摘要對照)，讓Copilot精準模仿醫學摘要格式，確保醫療應用準確性。B無關架構；C誤用Zero-shot於專業領域；D混淆Claude。此題強調提示工程於醫療產業的精準性。",
+        "number": 536,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "台灣半導體廠評估導入生成式AI優化晶片設計流程，ROI分析顯示高風險。下列導入評估規劃步驟最優先考量？",
+        "options": [
+            "A. 計算Gemini 2.5 Pro每月NT$650方案下，設計迭代週期縮短20%的量化效益",
+            "B. 優先識別資料隱私洩露與模型幻覺風險，建立VAE壓縮後的內部私有部署方案",
+            "C. 評估Claude倫理框架對設計偏誤的防護，確保符合台灣半導體產業法規",
+            "D. 分析ChatGPT PDF匯出功能對設計文件版本控管的成本節省潛力"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI導入評估規劃與風險管理",
+        "subtopic": "半導體產業AI導入的風險優先評估",
+        "concept": "導入評估須優先風險識別與法規符合",
+        "explanation": "導入評估優先識別模型偏誤與法規風險，使用Claude倫理框架防護，確保半導體設計符合台灣產業標準。A過早量化；B誤用VAE；D忽略核心風險。此題考驗高風險產業的規劃優先順序。",
+        "number": 537,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "某台灣物流公司導入Jasper生成運單文案後，遭遇品牌語調不一致問題。此屬生成式AI風險管理何種類型？最佳緩解措施為何？",
+        "options": [
+            "A. 幻覺風險(Generation Hallucination)；使用Perplexity即時事實查核驗證運單地址",
+            "B. 提示漂移風險(Prompt Drift)；建立Few-shot範例庫定期校準Jasper品牌語調",
+            "C. 資料毒化風險(Data Poisoning)；轉用Gemini Nano Banana清理訓練資料集",
+            "D. 模型過擬合風險(Overfitting)；導入GAN鑑別器篩選低品質運單生成內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃與風險管理",
+        "subtopic": "物流業Jasper文案生成的風險管理",
+        "concept": "風險管理透過提示工程校準輸出一致性",
+        "explanation": "風險類型為提示漂移導致品牌語調不一致，最佳緩解為Few-shot範例庫定期校準Jasper。A非幻覺問題；C無關毒化；D誤用GAN。此題聚焦產業應用中的細緻風險識別與管理。",
+        "number": 538,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "台灣旅遊業使用Midjourney生成行程海報，設計師透過進階提示工程提升品質。下列何者最能體現Few-shot Prompt在實際應用中的效果？",
+        "options": [
+            "A. '/imagine 台灣花蓮太魯閣，寫實風格，4k --ar 16:9 --v 6'",
+            "B. '參考範例1：阿里山日出=暖橙色調、雲霧繚繞；範例2：墾丁海灘=湛藍漸層、白沙細膩。生成花蓮海報='",
+            "C. '使用Transformer注意力機制優化提示，生成多模態行程整合圖像'",
+            "D. 'Zero-shot生成：高品質台灣景點海報，自動匹配季節主題色彩'"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "提示詞（Prompt Engineering）",
+        "subtopic": "Midjourney在旅遊海報設計的Few-shot應用",
+        "concept": "Few-shot提供具體範例引導風格一致性生成",
+        "explanation": "Few-shot Prompt透過提供阿里山、墾丁範例，精準引導Midjourney生成花蓮海報的風格與色調一致性，提升旅遊業設計效率。A為基本單shot；C無關機制；D忽略風格控制。此題考驗提示工程於創意產業的細節應用。",
+        "number": 539,
+        "date": "2026-01-06"
+    },
+    {
+        "question": "台灣零售業導入Perplexity進行競爭情報分析，欲透過Chain-of-Thought提示提升報告深度。下列何者最正確的提示結構範例？",
+        "options": [
+            "A. '逐步思考：1.蒐集電競品牌市場佔有率；2.分析定價策略；3.預測下季趨勢；4.生成競爭對策報告'",
+            "B. '使用LLM直接生成完整報告，包含GAN視覺化競爭矩陣圖表'",
+            "C. 'Zero-shot分析：列出台灣零售業Top5競爭情報關鍵指標'",
+            "D. '像Claude一樣安全生成，自動過濾商業機密後輸出結構化列表'"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "提示詞（Prompt Engineering）",
+        "subtopic": "Perplexity在零售競爭情報的Chain-of-Thought應用",
+        "concept": "Chain-of-Thought逐步分解提升複雜推理能力",
+        "explanation": "Chain-of-Thought提示透過步驟分解(蒐集→分析→預測→報告)，讓Perplexity生成結構化深度競爭情報，適合零售業決策。B誤用GAN；C過於簡化；D無關安全。此題強調進階提示於商業分析的邏輯結構。",
+        "number": 540,
+        "date": "2026-01-06"
     }
 ]

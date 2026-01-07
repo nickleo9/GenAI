@@ -9168,5 +9168,175 @@
         "explanation": "監理沙盒是為了讓AI產品在受控環境中，接受監管機構的測試與評估，促進創新同時減少風險。",
         "number": 540,
         "date": "2026-01-05"
+    },
+    {
+        "question": "在機器學習中，下列何者最能描述監督學習的基本特性？",
+        "options": [
+            "透過帶有標籤的數據集訓練模型以預測輸出",
+            "利用無標籤資料自動找出資料的內部結構",
+            "通過環境反饋學習最優策略以最大化報酬",
+            "利用隨機樣本生成新的數據分布來提升泛化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習基本原理",
+        "subtopic": "監督學習",
+        "concept": "監督學習",
+        "explanation": "監督學習是利用帶有標籤的數據來訓練模型，目的是讓模型學習輸入與輸出之間的對應關係，進而對新數據做出準確預測。",
+        "number": 541,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "關於生成式 AI 模型，下列敘述何者正確？",
+        "options": [
+            "生成式 AI 模型專注於辨識資料的分類邊界",
+            "生成式 AI 模型能基於輸入資料學習並生成新內容",
+            "生成式 AI 僅用於監督學習的分類任務",
+            "生成式 AI 不涉及資料的概率分布學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 特性",
+        "concept": "生成式 AI",
+        "explanation": "生成式 AI 模型學習資料的分布規律，能根據輸入生成新的數據例如文字、圖像等，與辨識式 AI 專注分類不同。",
+        "number": 542,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "在資料處理流程中，下列哪一個步驟主要負責數據格式轉換與清洗？",
+        "options": [
+            "資料抽取 (Extraction)",
+            "資料轉換 (Transformation)",
+            "資料載入 (Loading)",
+            "資料探索 (Exploratory Data Analysis)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "資料轉換 (Transformation) 包含格式轉換與清洗，確保數據一致且符合分析需求，是 ETL 流程中關鍵環節。",
+        "number": 543,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "以下哪種機器學習模型屬於鑑別式 AI 的應用？",
+        "options": [
+            "變分自編碼器（VAE）",
+            "生成對抗網絡（GAN）",
+            "支持向量機（SVM）",
+            "變換器（Transformer）生成部分"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式 AI",
+        "concept": "鑑別式模型",
+        "explanation": "支持向量機是一種典型的鑑別式模型，主要從資料中學習判別邊界來分類資料，而生成對抗網路和VAE屬於生成式模型。",
+        "number": 544,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "AI 治理中，為確保模型可解釋性，以下何者是常見的技術手段？",
+        "options": [
+            "利用強化學習來優化決策",
+            "採用 LIME 技術分析模型預測結果",
+            "只使用黑箱深度學習模型",
+            "完全依賴自動化無人監督機制"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "模型可解釋性",
+        "concept": "LIME",
+        "explanation": "LIME 是一種局部解釋模型預測結果的技術，有助於提升 AI 模型的透明度與可解釋性，是 AI 治理中的重要手段。",
+        "number": 545,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "在強化學習中，下列哪一項方法為基於價值函數的策略學習？",
+        "options": [
+            "決策樹演算法",
+            "深度 Q-Learning",
+            "主成分分析",
+            "支持向量機"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習基本原理",
+        "subtopic": "強化學習",
+        "concept": "Q-Learning",
+        "explanation": "深度 Q-Learning 是基於 Q-Learning 的深度學習版本，利用價值函數評估行動價值，逐步學習最佳策略。",
+        "number": 546,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "資料隱私保護中，哪一項技術最適合於分散式學習環境下保護個人資料？",
+        "options": [
+            "地端部屬（邊緣計算）",
+            "聯邦學習",
+            "批次推論",
+            "關聯式資料庫"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料隱私與安全",
+        "subtopic": "分散式學習隱私保護",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習在多個設備本地訓練模型，僅共享模型參數而非原始數據，有效保護資料隱私並降低集中風險。",
+        "number": 547,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "於資料分析中，何者最適合用於表示數據分佈情形？",
+        "options": [
+            "直方圖",
+            "連接詞圖",
+            "多維尺度圖",
+            "餘弦相似度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "數據視覺化",
+        "concept": "數據分佈",
+        "explanation": "直方圖以條形表示數據的頻率或分佈情形，是數據視覺化中常用的工具，便於了解資料分布特性。",
+        "number": 548,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "在機器學習中，正規化技術 L1 與 L2 的主要差異為何？",
+        "options": [
+            "L1 強調減少模型誤差，L2 強調減少模型複雜度",
+            "L1 促進權重變為稀疏，L2 透過平方懲罰減少過擬合",
+            "L1 僅適用於非監督學習，L2 僅適用於監督學習",
+            "L1 與 L2 均無法控制模型權重大小"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習基本原理",
+        "subtopic": "正規化技術",
+        "concept": "L1與L2正則化",
+        "explanation": "L1 正規化會促使部分權重變為零，達到特徵選擇和稀疏效果，L2 正規化則透過對權重平方懲罰來減少過擬合，兩者在控制模型複雜度上有所不同。",
+        "number": 549,
+        "date": "2026-01-07"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 在應用整合時，以下哪種情境為典型實例？",
+        "options": [
+            "利用生成式 AI 產生數據，再用鑑別式 AI 進行判別與篩選",
+            "僅用鑑別式 AI 完成自然語言生成任務",
+            "將生成式 AI 應用於資料清洗，忽略鑑別式 AI",
+            "生成式 AI 與鑑別式 AI 全然獨立，互不影響"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別與生成技術整合",
+        "concept": "鑑別式與生成式 AI 應用整合",
+        "explanation": "整合利用生成式 AI 生成數據，再由鑑別式 AI 進行篩選與判別，可提升模型效能與數據品質，這是典型且有效的應用策略。",
+        "number": 550,
+        "date": "2026-01-07"
     }
 ]

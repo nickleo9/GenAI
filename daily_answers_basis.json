@@ -9338,5 +9338,175 @@
         "explanation": "整合利用生成式 AI 生成數據，再由鑑別式 AI 進行篩選與判別，可提升模型效能與數據品質，這是典型且有效的應用策略。",
         "number": 550,
         "date": "2026-01-07"
+    },
+    {
+        "question": "在資料整理與分析流程中，哪一項技術最適合用來處理特徵類別變數的轉換？",
+        "options": [
+            "L1 正規化",
+            "One-Hot Encoding",
+            "批次推論",
+            "剪枝技術"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "特徵數值編碼法",
+        "explanation": "One-Hot Encoding 是將類別變數轉換為二進位向量的技術，使模型能夠處理非數值型的特徵資料。",
+        "number": 551,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "何者最能準確區分監督式學習與非監督式學習的主要差異？",
+        "options": [
+            "監督式學習使用無標籤資料進行分類，非監督式學習依賴標籤指導",
+            "監督式學習依賴標籤資料進行訓練，非監督式學習不依賴標籤",
+            "監督式學習適用於聚類，非監督式學習適合迴歸分析",
+            "監督式學習需要強化機制，非監督式學習不需要"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習三大類型",
+        "concept": "監督式學習與非監督式學習",
+        "explanation": "監督式學習使用帶有輸入及標籤的資料訓練模型，非監督式學習則使用無標籤資料進行模式發掘和分群。",
+        "number": 552,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "生成式 AI 在企業應用中最大的優勢通常是？",
+        "options": [
+            "依據既有規則進行決策",
+            "自動生成多樣化的內容並加速工作流程",
+            "只能基於結構化數據做分析",
+            "減少模型訓練所需的資料量"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用",
+        "concept": "內容生成與工作流加速",
+        "explanation": "生成式 AI 可依提示詞自動產生文字、圖像等多樣內容，顯著提升企業內容製作效率和創新能力。",
+        "number": 553,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "在深度學習模型中，哪一種結構特別適合處理時間序列與語音資料？",
+        "options": [
+            "卷積神經網路（CNN）",
+            "變分自編碼器（VAE）",
+            "循環神經網路（RNN）及其衍生變體（LSTM、GRU）",
+            "生成對抗網路（GAN）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "序列資料處理",
+        "explanation": "RNN 及其變體 LSTM、GRU 擅長捕捉時間序列資料中的長期依賴，適用於語音和文本等序列資料處理。",
+        "number": 554,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "何者最能代表 AI 治理中防止偏見與錯誤資訊的關鍵策略？",
+        "options": [
+            "增加批次推論次數",
+            "制定治理框架與合規標準",
+            "降低模型複雜度以避免過擬合",
+            "利用 Q-Learning 強化學習優化模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "治理框架與合規",
+        "explanation": "AI 治理框架與合規標準可有效避免偏見與錯誤資訊，提高模型的可信度與透明度。",
+        "number": 555,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "以下哪項關於鑑別式 AI 和生成式 AI 的描述最正確？",
+        "options": [
+            "鑑別式 AI 主要負責內容生成，生成式 AI側重資料分類",
+            "鑑別式 AI判斷資料屬性，生成式 AI依提示產生新內容",
+            "鑑別式 AI使用強化學習，生成式 AI使用監督學習",
+            "兩者本質上是相同的技術，只是名稱不同"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別與生成原理差異",
+        "explanation": "鑑別式 AI 判斷輸入資料的類別或屬性，生成式 AI 則藉由模型生成新的資料內容（如文字、影像等）。",
+        "number": 556,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "在資料隱私保護中，哪一種技術特別適合在多個組織間共同學習而不揭露原始資料？",
+        "options": [
+            "ETL",
+            "聯邦學習",
+            "Q-Learning",
+            "正規化 L2"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "分散式學習",
+        "explanation": "聯邦學習允許多個單位在本地訓練模型，僅共享模型參數而非原始資料，有效保障資料隱私。",
+        "number": 557,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "在機器學習模型的偏差-變異權衡中，偏差過高通常會導致？",
+        "options": [
+            "模型過擬合，對訓練資料過度依賴",
+            "模型無法充分學習，導致欠擬合",
+            "模型運算速度過慢，影響即時推論",
+            "模型參數過多，導致內存不足"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "模型評估",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差高代表模型過於簡單，無法擬合訓練資料，導致欠擬合現象。",
+        "number": 558,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "在使用生成式 AI 進行微調時，哪項措施較不易提升模型泛化能力？",
+        "options": [
+            "調整超參數以優化模型架構",
+            "使用特定領域的數據進行再訓練",
+            "數據增強以豐富訓練資料多樣性",
+            "大幅削減訓練資料量以降低計算量"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型微調",
+        "concept": "微調技術",
+        "explanation": "減少訓練資料量反而會降低模型泛化能力，不利於學習多元數據特徵。",
+        "number": 559,
+        "date": "2026-01-09"
+    },
+    {
+        "question": "以下哪一項最能解釋什麼是『人員在迴圈上（Human on loop）』作法？",
+        "options": [
+            "完全自動化無需人員參與的模型決策",
+            "人員在模型訓練前清洗數據",
+            "人工持續監督模型決策並可介入修正",
+            "只用人工標註資料，不使用機器學習"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "模型透明與監督",
+        "concept": "人工監督模型決策",
+        "explanation": "「人員在迴圈上」是指人工介入模型決策過程中，持續監督與修正，提升模型決策安全與可信度。",
+        "number": 560,
+        "date": "2026-01-09"
     }
 ]

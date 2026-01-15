@@ -1,172 +1,172 @@
 [
     {
-        "question": "在No Code平台（如Bubble.io 2025版）導入生成式AI代理（Agent）時，最關鍵的架構限制為何，導致無法處理非結構化多代理協作任務？",
+        "question": "下列哪一項最能體現2025年生成式AI與No Code平台在醫療產業導入時的最大優勢？",
         "options": [
-            "事件驅動綁定無法支援跨模組狀態同步，易致幻覺累積>20%",
-            "視覺化拖拉介面忽略LLM Token限制，推理延遲>5秒/查詢",
-            "資料管道整合缺乏向量資料庫RAG，召回率<85%",
-            "工作流自動化無內建微調端點，部署成本>10倍API呼叫"
+            "醫療資料處理效率提升與病歷生成即時化",
+            "降低人力培訓成本與醫療決策即時化",
+            "增加資料隱私威脅與治療方案自動化",
+            "加速醫護溝通與資料同步化"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "No Code / Low Code 概念與限制",
-        "subtopic": "架構限制",
-        "concept": "事件驅動 vs. 多代理狀態同步",
-        "explanation": "No Code事件綁定僅支援單向觸發，無法實現多代理狀態機同步，導致幻覺在循環任務中累積，案例如供應鏈預測失敗率升高。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "醫療生成式AI、No Code平台",
+        "explanation": "2025年生成式AI與No Code平台應用於醫療產業時，最大的優勢是無需技術背景即可自動化生成病歷、加快資料處理流程，大幅提升作業效率與服務即時性。",
         "number": 1,
-        "date": "2026-01-13"
+        "date": "2026-01-15"
     },
     {
-        "question": "2025年生成式AI常見工具中，Gemini 2.0在企業RAG應用中，相較Claude 3.5 Sonnet的量化優勢為何？",
+        "question": "2025年企業評估導入生成式AI時，哪一項屬於No Code / Low Code方案的常見風險？",
         "options": [
-            "多模態嵌入支援4K視覺Token，F1-score達0.92於醫療影像報告生成",
-            "長脈絡視窗擴至2M Token，降低幻覺率至低於3%於法律合約審核",
-            "函數呼叫並行度達128，API延遲低於200毫秒於即時客服",
-            "知識圖譜整合原生支援OWL推理，準確率高於95%於供應鏈優化"
+            "資料外洩與操作複雜性提升",
+            "模型透明度降低與風險難以量化",
+            "產出內容品質不穩與操作過度簡化",
+            "用戶參與度不足與開發彈性過高"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI應用領域與工 具使用",
-        "subtopic": "Gemini 2.0 vs. Claude 3.5",
-        "concept": "長脈絡視窗對幻覺抑制的量化影響",
-        "explanation": "Gemini 2.0的2M Token視窗優於Claude的1M，減少跨文件幻覺，法務和RAG應用通過率提升。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "No Code / Low Code 風險",
+        "explanation": "由於No Code / Low Code解決方案遮蔽大量底層邏輯，模型透明度與解釋性不足，導致企業在評估風險與效益時遭遇困難。",
         "number": 2,
-        "date": "2026-01-13"
+        "date": "2026-01-15"
     },
     {
-        "question": "企業導入生成式AI時，評估矩陣中，2025年iPAS規劃框架要求首要風險權重指標為何？",
+        "question": "關於生成式AI提示詞設計，下列何者為非？",
         "options": [
-            "資料漂移KL散度大於0.1，影響模型重訓週期低於三個月",
-            "模型對齊RLHF偏差高於15%，違反GDPR隱私罰款高昂",
-            "供應鏈攻擊第三方LLM中毒率超過5%，如Hugging Face漏洞",
-            "幻覺放大在Agent鏈高於30%，導致決策損失超過營收1%"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "風險權重矩陣",
-        "concept": "幻覺在多階段Agent的級聯效應",
-        "explanation": "iPAS強調Agent鏈幻覺放大，實務案例顯示決策損失量化最高，需優先控制。",
-        "number": 3,
-        "date": "2026-01-13"
-    },
-    {
-        "question": "提示詞工程應用於2025年Groq LPU加速的CodeAgent時，Tree-of-Thoughts (ToT)優化的核心變異為何？",
-        "options": [
-            "分支剪枝基於蒙地卡羅樹搜索，收斂速度提升4倍於LeetCode硬題",
-            "自我一致性投票閾值0.7，CodeBLEU分數高於0.88於多語言生成",
-            "動態溫度調控自適應0.2-0.8，減少無限迴圈率低於1%",
-            "反思循環嵌入RAG檢核，錯誤率降至低於2%於企業ERP客製化"
+            "明確的問題描述能獲得更準確回應",
+            "限定格式可提升生成內容可控性",
+            "過度冗長的提示詞能顯著提升產出品質",
+            "適度加入範例有助引導模型生成期望答案"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "生成式AI應用領域與工具使用",
-        "subtopic": "Tree-of-Thoughts優化",
-        "concept": "延遲敏感下的溫度自適應",
-        "explanation": "延遲低的場景需動態溫度以防止CodeAgent無限遞迴，提升正確率。",
-        "number": 4,
-        "date": "2026-01-13"
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞運用與設計",
+        "concept": "提示工程",
+        "explanation": "過度冗長的提示詞不只無法有效提升結果品質，反而可能讓模型難以抓到重點，導致不穩定的回應品質。",
+        "number": 3,
+        "date": "2026-01-15"
     },
     {
-        "question": "Low Code平台（如Mendix 2025）生成式AI整合的隱藏限制，在處理2025年iPAS中級效期縮短案例時，最易導致何問題？",
+        "question": "2025年主流AI應用於心理健康服務，首重哪一項規劃要素？",
         "options": [
-            "自訂微服務無原生LLM微調，專有名詞召回率低於70%",
-            "模組化介面忽略文化脈絡嵌入，台灣iPAS術語翻譯偏差高於10%",
-            "雲端部署缺乏邊緣計算，延遲高於1秒於行動端規劃模擬",
-            "版本控制不支援Git LFS，模型權重同步失敗率超過20%"
+            "選用高算力雲端伺服器",
+            "遵循在地隱私規範與數據匿名化",
+            "導入最新多模態模型",
+            "強化情感生成引擎參數數量"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "No Code / Low Code 概念與限制",
-        "subtopic": "文化/專有名詞限制",
-        "concept": "Low Code的語言模型在地化挑戰",
-        "explanation": "文化脈絡嵌入不足，專有名詞與效期縮短變動時名稱易誤譯，影響台灣規劃準確性。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI倫理與法規",
+        "concept": "隱私合規、資料治理",
+        "explanation": "心理健康屬於敏感領域，必須優先考慮地方法規下的數據隱私及匿名化處理措施，確保用戶資料安全。",
+        "number": 4,
+        "date": "2026-01-15"
+    },
+    {
+        "question": "以下關於2025年企業導入生成式AI的優先考量，何者正確？",
+        "options": [
+            "先進模型多即為成功關鍵",
+            "與現有數據生態系統兼容性",
+            "自訓練數據量越多越好",
+            "計算資源與儲存規模最大化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "企業數據融合",
+        "explanation": "企業導入生成式AI時，與現有數據流與平台的兼容性才是落地的首要考量，否則無法與核心業務有效結合。",
         "number": 5,
-        "date": "2026-01-13"
+        "date": "2026-01-15"
     },
     {
-        "question": "2025年最新工具Mistral Large 2在iPAS供應鏈應用案例中，相較Llama 3.1的優勢為何？",
+        "question": "在零程式碼生成式AI文檔工具的挑選要點中，最重要的是？",
         "options": [
-            "稀疏MoE架構推理效率提升三倍，單位成本低於0.5美元/百萬Token於批量預測",
-            "原生多語言支援，台灣華語BLEU高於0.95於需求預測",
-            "工具整合API並行Agent數多於50，無幻覺傳播",
-            "量化部署INT4精度下準確率維持高於92%於故障檢測"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "專有名詞、應用案例、最新工具（2025）",
-        "subtopic": "Mistral Large 2在供應鏈應用",
-        "concept": "稀疏MoE的成本效益",
-        "explanation": "MoE結構提升運算效率，是供應鏈場景下批量推理的主力工具。",
-        "number": 6,
-        "date": "2026-01-13"
-    },
-    {
-        "question": "生成式AI導入規劃階段，針對No Code RAG管道，2025年評估框架要求最小可行指標(MVI)為何？",
-        "options": [
-            "召回率高於0.90@k=5，結合Pinecone向量檢索於知識庫查詢",
-            "延遲低於500毫秒端到端，Groq加速下支援100 QPS",
-            "成本效率低於1美元/千查詢，動態分層快取命中率高於80%",
-            "幻覺率低於5%，經GPT-4o檢核驗證於規劃報告"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "RAG管道MVI指標",
-        "concept": "召回率作為No Code評估閘門",
-        "explanation": "RAG方案最小可行性需先確保召回率，否則後續結果扭曲放大風險。",
-        "number": 7,
-        "date": "2026-01-13"
-    },
-    {
-        "question": "提示詞工程在2025年Claude 3.5 Sonnet應用於iPAS風險管理時，ReAct框架變異的最優實作為何？",
-        "options": [
-            "觀察-思考-行動循環嵌入憲法AI，偏差分數低於0.05於倫理審核",
-            "工具選擇動態權重，基於歷史成功率超過0.85於多工具路由",
-            "狀態壓縮節省Token數高於40%於長鏈決策樹",
-            "並行模擬，蒙地卡羅抽樣N=100，置信區間低於2%於風險預測"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用領域與工 具使用",
-        "subtopic": "ReAct框架變異",
-        "concept": "並行模擬對風險量化的提升",
-        "explanation": "高並行性ReAct框架下，蒙地卡羅抽樣可量化不確定性，為風險管理亮點。",
-        "number": 8,
-        "date": "2026-01-13"
-    },
-    {
-        "question": "生成式AI工具ChatGPT-5o於2025年台灣iPAS淨零碳規劃應用案例中，Low Code限制最顯著為何？",
-        "options": [
-            "碳足跡API整合無即時校準，偏差高於15%於供應鏈排放預測",
-            "視覺化儀表板忽略多代理協調，優化延遲高於10分鐘/迭代",
-            "資料清洗模組缺乏自動異常檢測，No Code下召回率低於75%",
-            "報告生成無一鍵匯出iPAS格式，合規檢查遺漏高於20%"
+            "內建摘要生成與內容驗證能力",
+            "可與各類數據來源自動對接",
+            "支援跨部門協作與編輯紀錄追蹤",
+            "提供多種自定義模組與視覺化介面"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "生成式AI應用領域與工 具使用",
-        "subtopic": "ChatGPT-5o在淨零應用",
-        "concept": "Low Code資料前處理瓶頸",
-        "explanation": "在No Code或Low Code環境下，資料清洗模組不足導致模型召回率與準確率顯著下滑。",
-        "number": 9,
-        "date": "2026-01-13"
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具評估",
+        "concept": "No Code文檔系統",
+        "explanation": "跨部門協作與完整追蹤編輯紀錄可大幅提升文件準確性與後續稽核效率，是選用文檔類生成式AI的重要關鍵。",
+        "number": 6,
+        "date": "2026-01-15"
     },
     {
-        "question": "2025年生成式AI規劃中，提示詞工程結合LangGraph框架處理iPAS中級證照效期風險，核心概念為何？",
+        "question": "生成式AI在2025年金融業中的首要應用價值為何？",
         "options": [
-            "狀態圖遷移嵌入風險閾值，自動觸發重訓當效期低於三年",
-            "條件分支基於KL散度高於0.2，重定向至備援模型",
-            "錯誤恢復迴圈整合人類反饋，MTTR低於1小時於規劃偏差",
-            "模組化子圖分離倫理與隱私子任務，合規率高於98%"
+            "即時生成投資報告與合規審查",
+            "快速自動化客戶問答與信貸業務錄入",
+            "模型自訓練與圖形化詐欺監控",
+            "深度整合區塊鏈與批量清算自動化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產業應用",
+        "concept": "智慧金融生成式AI",
+        "explanation": "2025年金融業生成式AI主要用於提升即時自動服務，如自動問答與審查加速，大幅提升作業速度及服務品質。",
+        "number": 7,
+        "date": "2026-01-15"
+    },
+    {
+        "question": "關於數據匿名化技術對生成式AI風險管理的意義，下列敘述何者正確？",
+        "options": [
+            "能提升生成模型推理效率",
+            "有助於降低企業敏感資料外流風險",
+            "增加監管合規負擔",
+            "僅適合非商業性應用場景"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "數據匿名化",
+        "explanation": "完善的數據匿名化可降低個資外泄及法律責任風險，是當前生成式AI導入不可或缺的基本措施。",
+        "number": 8,
+        "date": "2026-01-15"
+    },
+    {
+        "question": "當企業規劃RAG（Retrieval-Augmented Generation）系統以支援內部知識文件，下列何者是必須考量的重點？",
+        "options": [
+            "持續最佳化資料檢索器參數",
+            "提升生成式AI端點存取次數",
+            "設計細緻的知識圖譜權重分配",
+            "建立即時監控回饋修正機制"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
-        "topic": "專有名詞、應用案例、最新工具（2025）",
-        "subtopic": "LangGraph在iPAS效期規劃",
-        "concept": "模組化狀態圖對風險隔離",
-        "explanation": "模組化子圖可確保倫理與隱私任務獨立，方便合規審查提升效期調整彈性。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "RAG知識管理",
+        "explanation": "RAG系統需建立即時回饋與內容修正機制，確保檢索與生成結果持續符合當前的知識庫與企業需求。",
+        "number": 9,
+        "date": "2026-01-15"
+    },
+    {
+        "question": "以下哪一項最適合以No Code/Low Code方案短時間推出生成式AI聊天服務？",
+        "options": [
+            "自建深度學習模型並設置多層監控",
+            "直接串接公開API平台結合角色提示詞設計",
+            "設計獨特前端UI並編寫底層驅動代碼",
+            "透過自動化指令實作跨平台安全通訊"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 實作",
+        "concept": "生成式AI聊天應用",
+        "explanation": "公開API整合與角色提示詞設計，是No Code/Low Code平台最快速建置對話式AI服務的有效方式，省略繁複開發流程。",
         "number": 10,
-        "date": "2026-01-13"
+        "date": "2026-01-15"
     }
 ]

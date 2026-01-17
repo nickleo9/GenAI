@@ -1,172 +1,172 @@
 [
     {
-        "question": "下列哪一項最能體現2025年生成式AI與No Code平台在醫療產業導入時的最大優勢？",
+        "question": "2025年，企業主管利用No Code平台規劃AI自動化報價流程，下列哪項最能利用RAG強化日常決策的正確性？",
         "options": [
-            "醫療資料處理效率提升與病歷生成即時化",
-            "降低人力培訓成本與醫療決策即時化",
-            "增加資料隱私威脅與治療方案自動化",
-            "加速醫護溝通與資料同步化"
+            "整合產品歷史定價，直接用生成式AI自動產生報價，無需外部知識檢索",
+            "將即時市場數據存入向量資料庫，AI自動檢索關聯報價並結合生成新報價方案",
+            "根據銷售人員個人經驗輸入，自動輸出建議價格，無需數據比對",
+            "依賴靜態資料表批次生成固定價格，未結合智能提示詞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "RAG",
+        "concept": "檢索增強生成",
+        "explanation": "結合即時市場數據與向量資料庫的RAG，可以提升生成式AI自動報價的真實性與競爭力，強化日常商業決策。",
+        "number": 1,
+        "date": "2026-01-17"
+    },
+    {
+        "question": "某公司導入No Code工具自動化人事流程管理，下列哪項是No Code模式最大優點？",
+        "options": [
+            "需依賴IT部門編寫程式，開發彈性最大",
+            "高維護門檻，各部門調整需申請人力資源",
+            "非技術用戶可視覺化拖拉流程，大幅降低開發與維護成本",
+            "每次流程優化都必須推倒重建整套系統"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "非程式開發自動化",
+        "explanation": "No Code 最大優勢是讓非技術用戶也能視覺編輯、快速部署，降低IT門檻與總體成本。",
+        "number": 2,
+        "date": "2026-01-17"
+    },
+    {
+        "question": "主管欲利用最新生成式AI工具建立顧客服務Chatbot，下列哪一種提示詞最能提升AI回應一致性？",
+        "options": [
+            "請幫我回答所有客戶問題並保持專業口吻",
+            "根據下方三個真實案例回應，並優先參考客戶預設FAQ",
+            "依據聊天記錄自由回答，無須依規則限制",
+            "請隨機產生新穎回應，以增加趣味性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞應用",
+        "concept": "Few-shot Prompting",
+        "explanation": "以Few-shot提供具體回應案例與FAQ，能大幅提升生成式AI在客戶場景中的準確性與標準一致性。",
+        "number": 3,
+        "date": "2026-01-17"
+    },
+    {
+        "question": "教育業者想以Low Code平台與AI自動化批改作業，下列哪一個方法為正確流程？",
+        "options": [
+            "僅以AI批次全文比對，不留任何審查紀錄",
+            "AI與老師共同評分，保留每題詳細批改比對與標註",
+            "完全交給AI自動評分，不需人為審核介入",
+            "固定範本給分，無法彈性客製評量指標"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI工具應用",
+        "concept": "人機協作",
+        "explanation": "Low Code與AI自動批改仍需老師參與並保留審查紀錄，以確保評分公正，且符合教育規範。",
+        "number": 4,
+        "date": "2026-01-17"
+    },
+    {
+        "question": "雇主評估要導入生成式AI時，以下哪項規劃步驟最能降低未來法規風險？",
+        "options": [
+            "僅專注技術效能，無須建立風險管理計畫",
+            "納入AI倫理、偏見審核、與持續監測機制於初期規劃",
+            "每次部署都以低成本優先，忽略合規監控",
+            "設置單一法規聲明書，不需定期檢討"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "風險管理與合規",
+        "explanation": "規劃時需先納入AI倫理、偏見管理與持續監測，才能完整降低因應未來的新法規風險。",
+        "number": 5,
+        "date": "2026-01-17"
+    },
+    {
+        "question": "根據最新No Code AI平台發展，以下哪一項屬於No Code重大局限？",
+        "options": [
+            "高度彈性客製化複雜商業邏輯仍需專業程式介入",
+            "部署周期最長，須逐步審核程式安全",
+            "只能用於IoT工廠類應用，無法整合商務數據",
+            "專為資深工程師設計，不適合一般用戶"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與常見工具",
-        "concept": "醫療生成式AI、No Code平台",
-        "explanation": "2025年生成式AI與No Code平台應用於醫療產業時，最大的優勢是無需技術背景即可自動化生成病歷、加快資料處理流程，大幅提升作業效率與服務即時性。",
-        "number": 1,
-        "date": "2026-01-15"
-    },
-    {
-        "question": "2025年企業評估導入生成式AI時，哪一項屬於No Code / Low Code方案的常見風險？",
-        "options": [
-            "資料外洩與操作複雜性提升",
-            "模型透明度降低與風險難以量化",
-            "產出內容品質不穩與操作過度簡化",
-            "用戶參與度不足與開發彈性過高"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估規劃",
-        "concept": "No Code / Low Code 風險",
-        "explanation": "由於No Code / Low Code解決方案遮蔽大量底層邏輯，模型透明度與解釋性不足，導致企業在評估風險與效益時遭遇困難。",
-        "number": 2,
-        "date": "2026-01-15"
-    },
-    {
-        "question": "關於生成式AI提示詞設計，下列何者為非？",
-        "options": [
-            "明確的問題描述能獲得更準確回應",
-            "限定格式可提升生成內容可控性",
-            "過度冗長的提示詞能顯著提升產出品質",
-            "適度加入範例有助引導模型生成期望答案"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "提示詞運用與設計",
-        "concept": "提示工程",
-        "explanation": "過度冗長的提示詞不只無法有效提升結果品質，反而可能讓模型難以抓到重點，導致不穩定的回應品質。",
-        "number": 3,
-        "date": "2026-01-15"
-    },
-    {
-        "question": "2025年主流AI應用於心理健康服務，首重哪一項規劃要素？",
-        "options": [
-            "選用高算力雲端伺服器",
-            "遵循在地隱私規範與數據匿名化",
-            "導入最新多模態模型",
-            "強化情感生成引擎參數數量"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AI倫理與法規",
-        "concept": "隱私合規、資料治理",
-        "explanation": "心理健康屬於敏感領域，必須優先考慮地方法規下的數據隱私及匿名化處理措施，確保用戶資料安全。",
-        "number": 4,
-        "date": "2026-01-15"
-    },
-    {
-        "question": "以下關於2025年企業導入生成式AI的優先考量，何者正確？",
-        "options": [
-            "先進模型多即為成功關鍵",
-            "與現有數據生態系統兼容性",
-            "自訓練數據量越多越好",
-            "計算資源與儲存規模最大化"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估規劃",
-        "concept": "企業數據融合",
-        "explanation": "企業導入生成式AI時，與現有數據流與平台的兼容性才是落地的首要考量，否則無法與核心業務有效結合。",
-        "number": 5,
-        "date": "2026-01-15"
-    },
-    {
-        "question": "在零程式碼生成式AI文檔工具的挑選要點中，最重要的是？",
-        "options": [
-            "內建摘要生成與內容驗證能力",
-            "可與各類數據來源自動對接",
-            "支援跨部門協作與編輯紀錄追蹤",
-            "提供多種自定義模組與視覺化介面"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI工具評估",
-        "concept": "No Code文檔系統",
-        "explanation": "跨部門協作與完整追蹤編輯紀錄可大幅提升文件準確性與後續稽核效率，是選用文檔類生成式AI的重要關鍵。",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台限制",
+        "explanation": "No Code平台對複雜商業邏輯的彈性有限，遇到專業邏輯仍需工程師參與。",
         "number": 6,
-        "date": "2026-01-15"
+        "date": "2026-01-17"
     },
     {
-        "question": "生成式AI在2025年金融業中的首要應用價值為何？",
+        "question": "產業數位轉型導入RAG架構後，何種情境最能展現外部知識檢索優勢？",
         "options": [
-            "即時生成投資報告與合規審查",
-            "快速自動化客戶問答與信貸業務錄入",
-            "模型自訓練與圖形化詐欺監控",
-            "深度整合區塊鏈與批量清算自動化"
+            "僅依據過去企業內部知識生成功能性報告",
+            "動態檢索法規更新和產業新聞，結合內外部數據進行決策生成",
+            "全程僅依賴AI過往訓練資料，忽略即時外部知識",
+            "定期手動輸入重要資訊，無智能檢索加持"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "產業應用",
-        "concept": "智慧金融生成式AI",
-        "explanation": "2025年金融業生成式AI主要用於提升即時自動服務，如自動問答與審查加速，大幅提升作業速度及服務品質。",
+        "subtopic": "RAG應用",
+        "concept": "即時決策支持",
+        "explanation": "RAG能檢索最新法規與產業數據，極大增強生成式AI的真實性與決策精準度。",
         "number": 7,
-        "date": "2026-01-15"
+        "date": "2026-01-17"
     },
     {
-        "question": "關於數據匿名化技術對生成式AI風險管理的意義，下列敘述何者正確？",
+        "question": "企業導入生成式AI時，針對提升模型公平性，下列哪個做法最為正確？",
         "options": [
-            "能提升生成模型推理效率",
-            "有助於降低企業敏感資料外流風險",
-            "增加監管合規負擔",
-            "僅適合非商業性應用場景"
+            "只調整輸出風格，不處理潛在偏見數據",
+            "定期審查與修正訓練樣本，排除潛在偏見來源並監測輸出",
+            "單純加重小眾結果權重，無論資料來源",
+            "完全放任AI自由學習，不介入數據過濾"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "風險管理",
-        "concept": "數據匿名化",
-        "explanation": "完善的數據匿名化可降低個資外泄及法律責任風險，是當前生成式AI導入不可或缺的基本措施。",
+        "concept": "公平性評估",
+        "explanation": "必須從訓練樣本層級排除偏見，並定期審查模型輸出，以確保AI應用合規且公平。",
         "number": 8,
-        "date": "2026-01-15"
+        "date": "2026-01-17"
     },
     {
-        "question": "當企業規劃RAG（Retrieval-Augmented Generation）系統以支援內部知識文件，下列何者是必須考量的重點？",
+        "question": "什麼情境下應優先選用Low Code而非No Code實現AI流程？",
         "options": [
-            "持續最佳化資料檢索器參數",
-            "提升生成式AI端點存取次數",
-            "設計細緻的知識圖譜權重分配",
-            "建立即時監控回饋修正機制"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估",
-        "concept": "RAG知識管理",
-        "explanation": "RAG系統需建立即時回饋與內容修正機制，確保檢索與生成結果持續符合當前的知識庫與企業需求。",
-        "number": 9,
-        "date": "2026-01-15"
-    },
-    {
-        "question": "以下哪一項最適合以No Code/Low Code方案短時間推出生成式AI聊天服務？",
-        "options": [
-            "自建深度學習模型並設置多層監控",
-            "直接串接公開API平台結合角色提示詞設計",
-            "設計獨特前端UI並編寫底層驅動代碼",
-            "透過自動化指令實作跨平台安全通訊"
+            "企業僅需簡單自動化，無需任何特製邏輯",
+            "需與現有企業IT系統整合，多種工具API互動與數據同步",
+            "僅需表單收集，不需跨平台邏輯",
+            "一般用戶單人部署即時小型功能"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 實作",
-        "concept": "生成式AI聊天應用",
-        "explanation": "公開API整合與角色提示詞設計，是No Code/Low Code平台最快速建置對話式AI服務的有效方式，省略繁複開發流程。",
+        "subtopic": "No Code/Low Code平台選擇",
+        "concept": "企業系統整合",
+        "explanation": "Low Code有能力支持較複雜的系統整合與API操作，適合需全方位企業資料串接情境。",
+        "number": 9,
+        "date": "2026-01-17"
+    },
+    {
+        "question": "下列關於生成式AI導入流程哪一項說法正確？",
+        "options": [
+            "完成技術測試即可全公司同步上線實際應用",
+            "需事前進行需求分析、風險評估、試點測試，再以循序階段擴大部署",
+            "先購買工具，等導入後再逐步設計應用場景",
+            "直接仰賴外包團隊全權執行，內部只須觀察成果"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "導入評估規劃",
+        "concept": "AI部署流程",
+        "explanation": "成功導入生成式AI需進行完整需求與風險評估，並透過試點逐步擴展才能有效落地。",
         "number": 10,
-        "date": "2026-01-15"
+        "date": "2026-01-17"
     }
 ]

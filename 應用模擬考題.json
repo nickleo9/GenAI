@@ -1,172 +1,172 @@
 [
     {
-        "question": "你身為某家製造工廠主管，面臨供應鏈中斷問題，欲利用生成式AI進行供應鏈新方案規劃。若要引入2026年最新的AI代理技術，以期讓AI能自主感知、推理並執行決策，最合適的AI應用策略是？",
+        "question": "如果您是台灣一家製造業工廠主管，想要利用2026年最新的物理AI技術提升生產品質與安全，您最可能會採用下列何種AI應用？",
         "options": [
-            "採用多智能體系統分工合作，將不同AI模組匯總達成決策",
-            "引進代理型AI，讓系統能自主感知環境並執行供應鏈自動化",
-            "利用邊緣小語言模型優化本地供應鏈數據運算效率",
-            "強化多模態大型語言模型處理文字與影像資料輔助決策"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "代理型AI與多智能體系統",
-        "concept": "代理型AI自主感知與執行",
-        "explanation": "2026年的代理型AI強調能自主感知、推理、行動與反思，適合供應鏈等複雜系統的自動化管理，遠超過僅分工合作或單純資料處理。",
-        "number": 1,
-        "date": "2026-01-18"
-    },
-    {
-        "question": "你是行銷主管，2025年希望用生成式AI提升社群聲量監控與品牌內容產出。根據2025年的AI工具趨勢，哪種工具規劃最適合實現24/7自動監控並生成貼文？",
-        "options": [
-            "資料Agent全天監控聲量並產生重點報告，分析Agent根據報告草擬品牌貼文",
-            "內容Agent自動產出影片與圖片，創意Agent分析活動數據摘要",
-            "採用報告Agent定期提交數據成效，並以A2A協議整合多平台",
-            "將多模態大型語言模型嵌入郵件功能，總結郵件並回覆社群提問"
+            "利用CES 2026介紹的邊緣計算視覺系統強化自動檢測及安全監控",
+            "以Google Gemini個人智慧化方案分析員工郵件與照片提升團隊協作",
+            "使用DeepSeek V4模型來優化長程軟體代碼撰寫",
+            "結合OpenAI Stargate資料中心進行模型大規模訓練"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI工具應用",
-        "concept": "資料Agent與分析Agent分工協作",
-        "explanation": "2025年趨勢是透過資料Agent持續監控及分析Agent生成內容，實現主動監控與品牌內容產出自動化。",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "物理AI與邊緣計算",
+        "explanation": "CES 2026展現了物理AI在製造業中的多種應用，邊緣計算視覺技術可加強實時品質檢測與安全監控，最適合提升工廠現場的生產品質與安全。",
+        "number": 1,
+        "date": "2026-01-25"
+    },
+    {
+        "question": "若您是跨國公司主管，想在2026年善用AI提升郵件溝通效率與內容理解，下列哪個工具方案最適合？",
+        "options": [
+            "利用Nvidia的VLA模型模擬人類推理處理郵件內容",
+            "採用Google Gemini的個人智慧技術，自動摘要郵件線程及自然語言查詢",
+            "用DeepSeek V4進行多語言人工智慧代碼生成",
+            "部署Meta的核能超算基礎設施結合機器學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "個人化智慧助手與郵件自動化",
+        "explanation": "Google Gemini的個人智慧功能提供郵件摘要及自然語言查詢，有助跨國公司主管快速掌握郵件重點，增進溝通效率。",
         "number": 2,
-        "date": "2026-01-18"
+        "date": "2026-01-25"
     },
     {
-        "question": "身為半導體廠技術規劃師，2026年需由雲端大型模型逐步轉向邊緣運算處理高頻寬記憶體（HBM）及ASIC晶片運算需求。對企業生成式AI導入規劃而言，核心挑戰與最佳解法是？",
+        "question": "作為一位AI應用規劃師，在評估多代理系統於財務領域應用時，哪項描述最正確？",
         "options": [
-            "AI伺服器性能大幅提升，推動編寫ASIC晶片以滿足邊緣推理運算需求",
-            "採用輕量小語言模型（SLM）來降低邊緣裝置的計算負擔與延遲",
-            "利用多智能體分工協作，動態調整半導體製程運算資源",
-            "部署代理型AI感知生產環境，自主優化晶片製造流程"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入規劃",
-        "concept": "邊緣運算與輕量模型應用",
-        "explanation": "因邊緣計算受限資源，使用輕量化小語言模型（SLM）有助降低GPU/HBM負擔且符合效率需求。",
-        "number": 3,
-        "date": "2026-01-18"
-    },
-    {
-        "question": "作為工研院工程師，想利用2026年CES展示的智慧家電方案開發智慧冰箱，可偵測食材並自動推薦食譜。此實現的多領域AI關鍵技術，最有可能是？",
-        "options": [
-            "Google Gemini AI串聯多設備，實現多模態情境感知",
-            "Physical AI工具延伸雲端到智慧終端裝置實現本地推理",
-            "生成式AI結合多感測器資料創造沉浸互動體驗",
-            "代理型AI自主設置廚房任務並完成料理步驟"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "多領域AI整合應用",
-        "concept": "Physical AI與端側推理",
-        "explanation": "智慧家電須依赖Physical AI及邊緣運算技術，從雲端延伸至終端裝置以實現即時響應與推理。",
-        "number": 4,
-        "date": "2026-01-18"
-    },
-    {
-        "question": "你是企業主管，根據2026年全球TMT產業趨勢，代理型AI市場快速擴張。台灣因應此趨勢，企業在算力主權與生產力革新上應最優先布局？",
-        "options": [
-            "投入量子電腦研發結合AI超導技術",
-            "強化資安防護，應對生成式AI攻擊風險",
-            "發展代理型AI技術，推動企業自動化整合",
-            "普及多模態生成架構，促進機器人空間智能"
+            "多代理系統在序列工作負載中能持續提升表現超過單代理45%",
+            "此系統在提升金融交易速度方面沒有顯著效果",
+            "多代理系統雖加速處理，但在超過45%的序列任務中性能會下降",
+            "多代理只適用於生成式文本模型，不用於財務分析"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AI產業趨勢與策略",
-        "concept": "代理型AI市場與企業數位轉型",
-        "explanation": "代理型AI為2026年生產力革新核心，企業布局應聚焦自主自動化系統與整合能力建設。",
-        "number": 5,
-        "date": "2026-01-18"
+        "topic": "人工智慧基礎概論",
+        "subtopic": "機器學習概念",
+        "concept": "多代理系統效能評估",
+        "explanation": "研究指出多代理系統在序列任務中超過45%時，整體表現反而不如單一代理，需謹慎設計與應用。",
+        "number": 3,
+        "date": "2026-01-25"
     },
     {
-        "question": "作為醫藥研發主管準備iPAS考試，回顧生成式AI歷史：從早期生成報告與音樂，到2026年代理式AI能複雜規劃與執行任務。最具歷史突破性的生成式AI能力是？",
+        "question": "2026年，若您是一位高中英文老師想運用生成式AI製作教案並輔助學生作文，最適合引導學生用何種策略下提示詞？",
         "options": [
-            "多模態大型語言模型處理文字及多媒體客服",
-            "代理式AI具備感知環境、推理規劃、行動與反思能力",
-            "小語言模型優化邊緣推理運算，降低成本",
-            "多智能體合作分工，增強任務成功率與靈活性"
+            "使用簡短模糊的提示詞讓AI自由發揮多樣創意",
+            "以明確指示文體、主題及結構的提示詞引導AI生成清晰內容",
+            "不指定文體，只提供關鍵字讓AI決定風格",
+            "提示詞只用一句完整課文範例，要求學生改寫"
         ],
         "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "鑑別式與生成式AI",
-        "concept": "代理型AI能力提升",
-        "explanation": "代理型AI突破點在於自主感知環境，針對目標推理規劃並執行，這是生成式AI從內容生產向任務完成的重要演進。",
-        "number": 6,
-        "date": "2026-01-18"
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞設計與引導",
+        "explanation": "明確且完整的提示詞有助生成式AI產生符合需求的教案內容，提高學生學習效果。",
+        "number": 4,
+        "date": "2026-01-25"
     },
     {
-        "question": "你為新聞媒體編輯，2025 Microsoft研究院研發出可生成新科學假設並協作實驗工具的AI。若使用此工具生成新聞報導，最適合此AI工具的應用場景是？",
+        "question": "您是家庭主夫，想用2026年流行的AI工具規劃全家旅遊行程，哪種工具最實用？",
         "options": [
-            "AI生成科學假設並調用實驗操作為科研助理",
-            "多模態生成式架構將動作視為第一操作模態",
-            "代理AI嵌入郵件系統，總結長郵件並自動回覆",
-            "專門領域語言模型提升醫藥與科技新聞的準確度"
+            "使用Google Pomelli創建靜態與動畫旅遊介紹文案",
+            "用DeepSeek V4程式編碼工具協助行程自動排程",
+            "採用Meta核能AI平台搭配龐大計算資源",
+            "以OpenAI Stargate雲端模型執行數據分析"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "AI技術與模型",
-        "concept": "AI協作科研與生成新知",
-        "explanation": "Microsoft AI可生成新假設並協作實驗，適合擔任科研助理，協助新聞報導新發現，超出單純內容編寫。",
-        "number": 7,
-        "date": "2026-01-18"
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "內容生成工具應用",
+        "explanation": "Google Pomelli為生成靜態與動畫型內容的工具，易於創建吸引人的旅遊介紹，非常適合家庭旅遊計劃使用。",
+        "number": 5,
+        "date": "2026-01-25"
     },
     {
-        "question": "你是企業HR主管，希望在2026年推動員工賦能，利用Google Cloud AI Agent五大趨勢，讓員工像多智能體系統般合作。下列哪種Agent應用最能促成跨部門高度協作？",
+        "question": "在2026年，考慮AI導入企業的評估與規劃時，哪項說法最符合生成式AI導入風險管理？",
         "options": [
-            "分析Agent主動草擬貼文，內容Agent自動生成視覺素材",
-            "資料Agent持續監控市場情況，報告Agent週報匯總資訊",
-            "創意Agent解讀數據，利用MCP協議在上下文中溝通",
-            "多智能體系統基於A2A開放標準，實現企業無縫工作流"
+            "生成式AI系統不需特別風險監控，因為已是成熟技術",
+            "風險管理應掌握可能的誤用、隱私泄露及數據偏見",
+            "風險只來自技術硬體故障，不涉及軟體層面",
+            "企業只要培訓員工，便能完全規避AI風險"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險識別與管控",
+        "explanation": "生成式AI導入中需重視誤用風險、隱私保護及資料偏見，全面風險管理是成功關鍵。",
+        "number": 6,
+        "date": "2026-01-25"
+    },
+    {
+        "question": "2026年，AI科技在全球持續擴展。若您是一位自媒體創作者，要製作AI教學影片，哪組工具組合最得宜？",
+        "options": [
+            "使用Claude無限記憶技術結合Pomelli動畫製作，同時利用Nvidia VLA模型文字分析",
+            "採用DeepSeek V4程式輔助撰稿，配合Google Gemini郵件整理技術",
+            "結合OpenAI Stargate超大型模型做背景資料分析，再用Meta核能超算產生視頻",
+            "用SurfSense Notebook做文案草稿，配合n8n進行自動工作流程整合"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "多智能體協作",
-        "concept": "跨部門AI系統整合",
-        "explanation": "多智能體系統及A2A（Agent to Agent）協議實現不同AI模組間無縫協作，最適合企業跨部門賦能與任務分配。",
-        "number": 8,
-        "date": "2026-01-18"
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "多工具整合應用",
+        "explanation": "SurfSense筆記工具方便做文案草稿，n8n可自動串接多平台工作流程，適合自媒體內容製作與管理。",
+        "number": 7,
+        "date": "2026-01-25"
     },
     {
-        "question": "身為CES團隊成員，你向NVIDIA展示2026 Physical AI技術，強調AI從虛擬到實體轉型。下列哪項基礎設施技術，對台灣推動Physical AI最關鍵？",
+        "question": "身為一名AI研發工程師想使用Vibe Coding方法準備某專案下游代碼生成，您應如何正確執行與規劃？",
         "options": [
-            "基於AI-Native開發平台，重塑人機協作流程",
-            "以高頻寬記憶體（HBM）支援AI伺服器GPU運算",
-            "Qualcomm Dragonwing平台，連接雲端與行動端裝置",
-            "光學互連高速傳輸技術，實現低延遲數據交換"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "Physical AI與硬體技術",
-        "concept": "雲端與端側硬體整合",
-        "explanation": "Qualcomm Dragonwing平台能將強大雲端AI能力延伸至行動與終端裝置，是實現Physical AI關鍵基礎結構。",
-        "number": 9,
-        "date": "2026-01-18"
-    },
-    {
-        "question": "你為一大型企業規劃生成式AI政策，因應2026全球Deloitte報告指出的用戶擴展趨勢，生成式AI在使用習慣上最可能的變化是？",
-        "options": [
-            "由獨立應用工具轉向整合入主流App中，使用者被動接觸",
-            "代理型AI市場規模擴大，用戶藉由AI自主感知與執行任務",
-            "多模態大型模型廣泛應用於客服與沉浸式創意體驗",
-            "採用輕量小模型於端側量子運算驗證降低成本"
+            "將任務切細並透過提示詞讓AI按階段生成測試與核心功能代碼",
+            "只用單次輸入大型提示詞，等待生成全部專案內容",
+            "完全依賴AI生成代碼，不進行驗證與修改",
+            "採用傳統手寫代碼方法，避免使用AI工具"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "用戶行為與生態系統變化",
-        "concept": "生成式AI整合入主流軟體",
-        "explanation": "Deloitte指出生成式AI將由用戶主動使用獨立工具轉變為內嵌於主流應用中，降低門檻成為背景服務，提高普及度。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "逐階段提示與代碼生成",
+        "explanation": "Vibe Coding強調分段提示詞與階段生成，有利高品質代碼迭代與錯誤控制。",
+        "number": 8,
+        "date": "2026-01-25"
+    },
+    {
+        "question": "在歷史上，哪項技術是早期生成式AI（Generative AI）最關鍵的里程碑？",
+        "options": [
+            "第一代卷積神經網路在影像辨識中的商業應用",
+            "Generative Adversarial Networks（GANs）提出，能生成逼真圖像",
+            "Transformer架構被提出，用於強化自然語言理解",
+            "強化學習在圍棋AI中的先驅應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "生成式 AI 技術演進",
+        "concept": "GANs及生成模型",
+        "explanation": "GAN由Ian Goodfellow於2014年提出，是生成式AI生成高品質影像與內容的重要基礎技術。",
+        "number": 9,
+        "date": "2026-01-25"
+    },
+    {
+        "question": "針對iPAS AI應用規劃師考試，若考官詢問如何透過AutoML及No Code工具打造AI解決方案，下列何者最符合Low Code優勢？",
+        "options": [
+            "無需程式設計背景即可透過視覺化介面快速部署AI模型",
+            "必須全程手寫代碼以控制模型細節及訓練參數",
+            "只適合開發非AI相關的商業應用系統",
+            "需要強大雲端硬體支援才可使用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "低碼工具優勢",
+        "explanation": "低碼工具讓非程式開發者也能運用視覺化操作快速搭建AI應用，降低技術門檻，提高效率。",
         "number": 10,
-        "date": "2026-01-18"
+        "date": "2026-01-25"
     }
 ]

@@ -1,172 +1,172 @@
 [
     {
-        "question": "在機器學習中，哪一種學習類型是基於標註資料進行模型訓練並用於預測未知資料？",
+        "question": "AI發展歷史中，生成式AI自2022年快速發展，其主要依賴哪種輸入生成文字或影像？",
         "options": [
-            "監督學習基於未標註資料訓練模型以發現隱藏結構",
-            "非監督學習透過標註資料進行分類及回歸分析",
-            "監督學習利用標註資料進行模型訓練以預測未知標籤",
-            "強化學習基於環境反饋執行動作策略優化"
+            "由固定資料集作為輸入",
+            "根據提示詞（prompt）生成",
+            "利用專家知識庫生成",
+            "以規則庫為基礎來生成"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "機器學習概念",
-        "subtopic": "機器學習的三大類型",
-        "concept": "監督學習",
-        "explanation": "監督學習是以帶有標籤的訓練資料來訓練模型，使其能夠預測新的、未知的資料標籤，相較於非監督學習不使用標籤。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI 的定義與分類",
+        "concept": "生成式AI基礎",
+        "explanation": "生成式AI主要透過使用者輸入的提示詞（prompt）來生成對應的文字或影像，是生成式模型的關鍵啟動方式。",
         "number": 1,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     },
     {
-        "question": "在資料隱私與安全的治理架構中，哪一項措施最能直接防止個人敏感資料被未經授權訪問？",
+        "question": "數據清洗處理遺缺值時，下列哪一項方法一般不被推薦使用？",
         "options": [
-            "應用分散式學習技術強化資料合規性",
-            "加密技術確保資料傳輸與存儲安全",
-            "使用資料清洗方法確保資料完整性",
-            "透過資料抽取轉換載入改善資料品質"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料隱私與安全",
-        "concept": "資料加密",
-        "explanation": "資料加密技術是防止個人敏感資訊遭未經授權存取的關鍵措施，確保資料在傳輸及儲存過程中的機密性與完整性。",
-        "number": 2,
-        "date": "2026-01-23"
-    },
-    {
-        "question": "關於鑑別式AI與生成式AI的差異，下列何者正確描述其基本運作原理？",
-        "options": [
-            "鑑別式AI用來生成資料，生成式AI則進行分類判斷",
-            "生成式AI根據輸入數據生成新內容，鑑別式AI用於判斷真偽",
-            "鑑別式AI主要用於資料清洗，生成式AI用於資料分析",
-            "生成式AI專注監督學習，鑑別式AI專注強化學習"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "鑑別式AI與生成式AI概念",
-        "subtopic": "鑑別式與生成式AI基本原理",
-        "concept": "生成與鑑別",
-        "explanation": "生成式AI根據現有資料生成新內容，鑑別式AI判斷資料的屬性或真偽，是兩種基本不同的AI模型類型。",
-        "number": 3,
-        "date": "2026-01-23"
-    },
-    {
-        "question": "在資料整理流程中，ETL的主要功能不包括下列哪項？",
-        "options": [
-            "資料抽取(Extract)以取得原始數據",
-            "資料轉換(Transform)以清理與格式化資料",
-            "即時推論(Real-time Inference)提供即時分析",
-            "資料載入(Load)將資料導入目標系統"
+            "填補遺缺值為平均值",
+            "刪除包含遺缺值的記錄",
+            "忽略遺缺值並直接使用",
+            "透過插補法估計遺缺值"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "資料處理與分析概念",
+        "topic": "資料處理與分析",
         "subtopic": "資料整理與分析流程",
-        "concept": "ETL流程",
-        "explanation": "ETL專注於資料的抽取、轉換和載入流程，即時推論則屬於分析應用層面，不是ETL核心功能。",
+        "concept": "資料前處理",
+        "explanation": "直接忽略遺缺值會導致資料不完整並影響模型效果，非建議做法。填補、刪除或插補是較為常用方法。",
+        "number": 2,
+        "date": "2026-01-26"
+    },
+    {
+        "question": "2026年生成式AI訓練常包括微調階段，該階段的主要目的是？",
+        "options": [
+            "資料蒐集與準備",
+            "使用特定領域數據提升任務表現",
+            "選擇最適合的模型架構",
+            "進行原始模型初始訓練"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI規劃",
+        "concept": "微調技術",
+        "explanation": "微調階段會使用專門領域數據來調整已有大模型，以提升其在特定任務的表現。",
+        "number": 3,
+        "date": "2026-01-26"
+    },
+    {
+        "question": "以下哪項趨勢是Microsoft 2026年AI工具發展的核心方向？",
+        "options": [
+            "單一GPU運算的深度優化",
+            "可擴展的3D數據集與空間推理基礎模型",
+            "純文字生成能力的深化",
+            "能源使用的無限擴張"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI 技術趨勢",
+        "concept": "空間推理基礎模型",
+        "explanation": "2026年AI工具發展強調基於空間推理的基礎模型及3D數據擴展，是現今趨勢重點。",
         "number": 4,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     },
     {
-        "question": "在機器學習模型中，L1正則化的主要效果是什麼？",
+        "question": "下列哪一種AI模型最適合用於生成高品質影像與文本數據？",
         "options": [
-            "強化模型中的所有權重，提升精度",
-            "促使部分權重收斂為零以達成特徵選擇",
-            "降低模型的偏差以避免欠擬合",
-            "增加模型的複雜度以改善記憶能力"
+            "循環神經網絡（RNN）",
+            "生成對抗網絡（GAN）",
+            "卷積神經網絡（CNN）",
+            "決策樹模型"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "機器學習概念",
-        "subtopic": "正規化技術",
-        "concept": "L1正則化",
-        "explanation": "L1正則化可以促使模型中部分權重變為零，具有特徵選擇功能，有助於降低模型複雜度，避免過擬合。",
+        "subtopic": "常見的機器學習模型",
+        "concept": "生成模型",
+        "explanation": "生成對抗網絡（GAN）特別適合生成高質量影像與文本，因其包含生成者與判別者的對抗機制。",
         "number": 5,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     },
     {
-        "question": "以下哪一項最能說明聯邦學習的核心特點？",
+        "question": "預測性分析常用的模型包括迴歸、時間序列及XGBoost，以下哪項不屬於常見預測模型？",
         "options": [
-            "將所有訓練資料集中至單一伺服器進行模型訓練",
-            "模型通過分散各地的數據設備協同學習無需資料傳輸",
-            "透過資料清洗技術提升模型精準度",
-            "使用生成技術同步多種模型架構"
+            "時間序列分析模型",
+            "XGBoost提升樹模型",
+            "多層感知機（MLP）",
+            "直方圖分布圖"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "機器學習概念",
-        "subtopic": "聯邦學習",
-        "concept": "分散式學習",
-        "explanation": "聯邦學習允許模型在多個分散的設備上協同訓練，保護資料隱私，避免將資料集中傳輸。",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "資料基本概念與來源",
+        "concept": "預測模型",
+        "explanation": "直方圖用於呈現數據分布，不是預測模型，而迴歸、時間序列及XGBoost均常用於預測分析。",
         "number": 6,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     },
     {
-        "question": "在AI治理中的監理沙盒，主要目的是？",
+        "question": "AI在製造業的2026年應用趨勢中，哪一系統被四成以上製造商升級以提升生產效率？",
         "options": [
-            "實現AI模型自動化訓練和調整",
-            "提供安全、可控的環境測試AI技術和政策",
-            "促進資料加密技術的標準化",
-            "加強對模型黑箱問題的研發"
+            "機器視覺檢測系統",
+            "AI驅動生產排程系統",
+            "自動倉儲管理系統",
+            "智慧能源管理系統"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "AI治理概念",
-        "subtopic": "監理沙盒",
-        "concept": "監管實驗室",
-        "explanation": "監理沙盒為政策制定者和企業提供一個受控環境，用以測試和評估新AI技術和監管框架，降低風險。",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI 各領域應用",
+        "concept": "產業AI應用",
+        "explanation": "2026年製造業重點投資AI驅動的生產排程系統來提高整體製造效率和彈性。",
         "number": 7,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     },
     {
-        "question": "以下哪種模型是屬於生成式AI的代表？",
+        "question": "鑑別式AI與生成式AI在原理上主要差異為？",
         "options": [
-            "貝氏分類器(Bayesian Classifier)",
-            "變分自編碼器(VAE)",
-            "支持向量機(SVM)",
-            "決策樹(Decision Tree)"
+            "鑑別式AI生成資料，生成式AI進行分類",
+            "鑑別式AI使用結構化資料，生成式AI使用非結構化資料",
+            "鑑別式AI專注於區分資料類別，生成式AI專注於生成新資料",
+            "鑑別式AI基於無監督學習，生成式AI基於監督學習"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "機器學習概念",
-        "subtopic": "生成式AI模型",
-        "concept": "VAE",
-        "explanation": "變分自編碼器(VAE)是一種生成式模型，能學習資料分布並生成新樣本，與判別式模型如SVM不同。",
+        "subtopic": "鑑別式 AI 與生成式 AI",
+        "concept": "鑑別與生成原理",
+        "explanation": "鑑別式AI的目標是區分資料是否屬於某類別，而生成式AI則是生成新的資料樣本。",
         "number": 8,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     },
     {
-        "question": "在人機協同的設計中，Human in the loop (人在迴圈上)的主要意義為何？",
+        "question": "下列關於資料隱私與安全的敘述，何者正確？",
         "options": [
-            "全自動系統中完全排除人工干預",
-            "人工監督並可在模型決策不同階段介入修正",
-            "只在數據收集階段引入人工標註",
-            "利用人工智慧替代人員判斷以提高效率"
+            "資料加密僅適用於機敏資料",
+            "匿名化資料可防止所有形式的資料重識別",
+            "使用聯邦學習不必擔心任何資料隱私外洩問題",
+            "加強資料使用權限控管是保障資料隱私的核心方法"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI治理概念",
-        "subtopic": "人工監督",
-        "concept": "Human in the loop",
-        "explanation": "Human in the loop是指系統中引入人工監督，允許人員在模型決策階段介入以提升準確度與安全性。",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料保護",
+        "explanation": "資料使用權限控管可以有效管理資料存取與使用，為保障資料隱私的重要措施。",
         "number": 9,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     },
     {
-        "question": "在自然語言處理中，Transformer架構的主要技術瓶頸為何？",
+        "question": "企業導入2026年AI Agent於資訊安全，角色轉變最主要是？",
         "options": [
-            "無法處理長距依賴的序列資料",
-            "計算量大且容易出現梯度消失或爆炸問題",
-            "訓練時無法使用反向傳播演算法",
-            "不適合處理非結構化文本資料"
+            "監控系統的日常警告觀察員",
+            "被動式錯誤報告系統",
+            "策略性高價值任務的執行者",
+            "僅限技術維運支援角色"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "機器學習概念",
-        "subtopic": "深度學習模型",
-        "concept": "Transformer技術問題",
-        "explanation": "Transformer因其自注意力機制，在處理大規模資料時計算量巨大，且可能遭遇梯度消失或爆炸問題，是其主要挑戰之一。",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI智能體應用",
+        "concept": "AI Agent角色轉變",
+        "explanation": "AI Agent從原本被動監控演進為能夠主動執行策略性重要任務，提高資安的防護效能。",
         "number": 10,
-        "date": "2026-01-23"
+        "date": "2026-01-26"
     }
 ]

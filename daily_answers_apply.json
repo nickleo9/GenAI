@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2025年製造業導入生成式AI品質檢定系統時，企業應優先評估哪項No Code/Low Code平台的關鍵指標，以確保與多模態AI整合的商業可行性？",
+        "question": "在2025年，製造業企業導入No-Code/Low-Code生成式AI系統，主要優勢下列何者最正確？",
         "options": [
-            "A. 拖拉介面支援多模態資料上傳速率",
-            "B. 模組化工作流自動化執行效能",
-            "C. API串接穩定性與即時模型更新",
-            "D. 視覺化儀表板自訂化與資料匯出彈性"
+            "無需大量程式基礎即可落地專業AI應用",
+            "可完全取代所有IT開發團隊工作",
+            "無法實現企業專屬數據整合功能",
+            "每日僅能處理單一業務流程自動化"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "No Code/Low Code",
-        "subtopic": "導入評估",
-        "concept": "多模態AI整合",
-        "explanation": "2025年高確定性場景強調製造業AI質檢需API串接穩定性確保即時模型更新，優於其他指標以應對產業核心痛點。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "自動化應用",
+        "explanation": "No-Code/Low-Code讓用戶無須深厚程式能力，即可部署AI，提高數位轉型速度與覆蓋範圍。",
         "number": 1,
-        "date": "2026-01-24"
+        "date": "2026-01-27"
     },
     {
-        "question": "金融企業部署AI智能風控代理時，最佳提示詞工程策略為何，以平衡2025年自主性提升與合規風險控制？",
+        "question": "企業欲導入生成式AI前，評估ROI時主要應重視下列哪項指標？",
         "options": [
-            "A. 結構化情境描述嵌入歷史交易模式",
-            "B. 角色扮演指令結合即時監管規則更新",
-            "C. 鏈式思考步驟整合多模態風險信號",
-            "D. 反覆優化迴圈搭配動態權重調整機制"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "提示詞用法",
-        "subtopic": "領域應用",
-        "concept": "AI代理自主性",
-        "explanation": "提示詞需角色扮演結合監管更新，方能實現任務閉環同時控制風險，符合2025金融垂直應用趨勢。",
-        "number": 2,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "2025年市場行銷團隊使用生成式AI自動化內容生成，哪項風險管理措施最能防範品牌聲譽損害？",
-        "options": [
-            "A. 實施人類審核閘道與A/B效能測試",
-            "B. 嵌入內容水印追蹤與版權合規檢查",
-            "C. 訓練領域特定模型並設定輸出多樣性",
-            "D. 整合即時社交監測與危機應變協議"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "風險管理",
-        "subtopic": "市場行銷應用",
-        "concept": "品牌聲譽監控",
-        "explanation": "AI分析社交數據需即時監測機制防範聲譽風險，此為2025行銷AI核心防護策略。",
-        "number": 3,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "企業評估導入Amazon Q生成式AI助理時，首要Low Code導入指標應聚焦何處，以最大化供應鏈效率提升？",
-        "options": [
-            "A. 預測需求準確率與庫存優化模組",
-            "B. 自動化報告生成速度與合規驗證",
-            "C. 個性化推薦引擎與客戶行為分析",
-            "D. 物流路徑規劃介面與即時追蹤功能"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "No Code/Low Code",
-        "subtopic": "導入評估",
-        "concept": "供應鏈管理",
-        "explanation": "亞馬遜AI助理強調需求預測優化庫存，此為2025供應鏈商業價值的首要指標。",
-        "number": 4,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "2025年多模態AI虛擬服務專員系統開發中，最有效提示詞技巧為何，以實現從聊天到任務閉環轉型？",
-        "options": [
-            "A. 脈絡延續敘述融合語音影像輸入",
-            "B. 任務分解指令串聯跨模態推理",
-            "C. 多輪對話優化嵌入歷史互動記錄",
-            "D. 意圖辨識模型搭配即時反饋調整"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "提示詞用法",
-        "subtopic": "多模態交互",
-        "concept": "任務閉環",
-        "explanation": "多模態AI需任務分解實現閉環，符合2025從對話到自主代理的演進趨勢。",
-        "number": 5,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "製造業導入AI質檢垂直應用前，風險管理框架應優先納入哪項評估，以因應技術成熟度超前需求？",
-        "options": [
-            "A. 資料隱私合規與模型偏差校正",
-            "B. 組織變革準備與員工技能轉型",
-            "C. 投資回報週期與可擴展性驗證",
-            "D. 供應商鎖定風險與備援方案設計"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "風險管理",
-        "subtopic": "導入評估",
-        "concept": "需求側阻力",
-        "explanation": "技術成熟超前需求，組織準備不足為主要商業化阻力，需優先評估。",
-        "number": 6,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "2025年企業選擇Buy over Build策略導入AI時，哪項決策指標最能反映生成式AI應用層的高成交轉換率？",
-        "options": [
-            "A. 即時生產力提升與ROI量化證明",
-            "B. 整合現有系統的相容性測試",
-            "C. 客製化程度與長期維護成本",
-            "D. 資料遷移安全性與法規遵循度"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "導入評估",
-        "subtopic": "採購策略",
-        "concept": "Buy over Build",
-        "explanation": "企業優先應用層工具帶來直接生產力提升，成交率達47%遠高於傳統SaaS。",
-        "number": 7,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "金融智能風控領域使用Microsoft 365 Copilot時，最佳No Code工作流設計為何，以處理複雜交易合規？",
-        "options": [
-            "A. 自動篩選郵件並生成合規報告",
-            "B. Teams會議筆記轉化風險警示",
-            "C. 資料分析儀表板即時偏差偵測",
-            "D. 代理自主執行交易審核閉環"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "No Code/Low Code",
-        "subtopic": "領域應用",
-        "concept": "AI代理自主性",
-        "explanation": "2025 AI代理將自主處理任務如合規檢查，超越重複性工作。",
-        "number": 8,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "2025年生成式AI市場行銷個性化推薦提示詞優化，哪項技巧最能提升投資回報率？",
-        "options": [
-            "A. 消費者行為多維嵌入與趨勢預測",
-            "B. 社交媒體情緒分類與品牌調整",
-            "C. A/B測試框架下動態內容變異",
-            "D. 受眾画像推斷與跨平台同步"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "提示詞用法",
-        "subtopic": "市場行銷",
-        "concept": "個性化推薦",
-        "explanation": "AI分析行為偏好預測趨勢，提供精準策略提升ROI。",
-        "number": 9,
-        "date": "2026-01-24"
-    },
-    {
-        "question": "企業導入多模態生成式AI前，風險管理應首要關注何項，以確保資安防護在客戶體驗優化中不妥協？",
-        "options": [
-            "A. 模型輸出審核與隱私資料遮罩",
-            "B. 第三方API存取控制與稽核日誌",
-            "C. 攻擊向量模擬與韌性測試",
-            "D. 用戶權限分級與加密傳輸協議"
+            "單次專案運行時長",
+            "員工AI培訓時間",
+            "能節省的總人工作業時數",
+            "企業IT部門規模"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "風險管理",
-        "subtopic": "資安防護",
-        "concept": "多模態AI風險",
-        "explanation": "AI技術加強資安需模擬攻擊確保流暢客戶體驗，2025核心趨勢。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "投資報酬率",
+        "explanation": "評估ROI時最重要的是能節省的總人工作業時數，這能直接反映生成式AI帶來的經濟效益。",
+        "number": 2,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "企業利用 RAG（檢索增強生成式AI）技術時，其主要目的是為何？",
+        "options": [
+            "增加模型設計規模",
+            "減少回覆速度",
+            "強化AI回應的準確性和內容可靠度",
+            "創造更多新型AI代理人"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "RAG",
+        "explanation": "RAG透過結合知識庫和生成式AI，提升回答的準確度與事實可靠性，是企業提升AI運用的重要趨勢。",
+        "number": 3,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "關於生成式AI工具Microsoft Copilot for Microsoft 365，下列何者描述正確？",
+        "options": [
+            "Copilot僅能用於生成圖片，不支援文書處理",
+            "該工具無法與Teams及Excel整合",
+            " Copilot廣泛用於日常業務自動化並提升效率",
+            "Copilot限定僅供單一部門專案管理使用"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "No Code工具整合",
+        "explanation": "Microsoft Copilot廣泛支援Word、Excel、PowerPoint及Teams等，提升日常業務的自動化與決策效率。",
+        "number": 4,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "針對生成式AI提示詞設計，下列哪一種做法可降低AI產生幻覺（錯誤回應）的風險？",
+        "options": [
+            "要求模型自由產生知識內容",
+            "在指令中加入僅限使用已知內部資料",
+            "移除輸出格式約束",
+            "僅使用單一輸入而無結構提示"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "提示詞工程",
+        "explanation": "設計明確限制資料來源的提示詞，能有效降低AI幻覺，提高回應的真實性與商用可靠性。",
+        "number": 5,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "以下哪個案例最適合強調生成式AI在客戶服務領域的創新應用？",
+        "options": [
+            "利用AI自動生成零件技術規格書",
+            "使用RAG技術製作企業知識型聊天助理",
+            "運用AI分析供應鏈需求預測",
+            "以AI設計產品包裝形象"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "知識型客服機器人",
+        "explanation": "生成式AI結合RAG應用於企業知識庫型客服助理，是提升服務質量和效率的創新方向。",
+        "number": 6,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "關於2025年生成式AI導入企業風險，下列哪一項陳述錯誤？",
+        "options": [
+            "資料外洩風險需嚴格控制",
+            "幻覺問題必須透過技術手段減緩",
+            "員工完全不須進行相關變革培訓",
+            "依賴外部AI供應商需兼顧資料隱私"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險管理",
+        "explanation": "成功導入AI須重視員工培訓與變革管理，否則將影響落地成效及系統安全運作。",
+        "number": 7,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "下列有關Few-Shot Learning在生成式AI提示詞應用的描述，何者為非？",
+        "options": [
+            "能通過提供多個範例指導模型產生更精確回答",
+            "對於複雜任務能提升模型的彈性與正確性",
+            "總是不需要任何先前的任務示例即可運作",
+            "企業可利用Few-Shot加速新業務流程建置"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "Few-Shot Learning",
+        "explanation": "Few-Shot Learning核心在於提供一些範例協助模型理解上下文，而不是完全無範例的Zero-Shot。",
+        "number": 8,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "若企業引進生成式AI，首波試點常用於哪個流程以獲得組織快速正面回饋？",
+        "options": [
+            "決策層級投資分析",
+            "高階技術開發本部",
+            "日常行政效率與文件處理",
+            "僅限於產品包裝創意設計"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "落地規劃",
+        "explanation": "文件處理與行政流程因標準化高、評估明確，最適合作為生成式AI導入的最佳試點流程。",
+        "number": 9,
+        "date": "2026-01-27"
+    },
+    {
+        "question": "2025年No-Code生成式AI工具exaBase之導入主要挑戰為何？",
+        "options": [
+            "完全無法自訂企業資料流程",
+            "上線速度緩慢需長期部署",
+            "需衡量供應商依賴與資料隱私政策",
+            "無法支援多語言操作介面"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "工具風險與隱私",
+        "explanation": "No-Code工具導入快速，惟企業必須考量外部供應商依賴與資訊保護要求，強化風險防控。",
         "number": 10,
-        "date": "2026-01-24"
+        "date": "2026-01-27"
     }
 ]

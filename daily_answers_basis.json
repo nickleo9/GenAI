@@ -1,172 +1,172 @@
 [
     {
-        "question": "關於機器學習的三大類型，下列敘述何者正確？",
+        "question": "在2026年的生成式AI規劃中，下列何者最正確描述微調階段的作用？",
         "options": [
-            "監督學習、非監督學習與強化學習為三大類型",
-            "監督學習、關聯式學習與強化學習為三大類型",
-            "監督學習、非監督學習與關聯式學習為三大類型",
-            "非監督學習、強化學習與關聯式學習為三大類型"
+            "微調階段主要用於數據清洗與去噪，提升基礎數據質量。",
+            "微調階段調整模型參數以提升特定任務的準確度和適應性。",
+            "微調階段是完全重新訓練模型，取代原有預訓練模型。",
+            "微調階段只在生成式AI中使用，鑑別式AI則不需此階段。"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "機器學習概念",
-        "subtopic": "機器學習基本原理",
-        "concept": "監督學習與非監督學習",
-        "explanation": "監督學習、非監督學習與強化學習是機器學習的三大主要類型，各自擁有不同的目標與應用範疇。",
-        "number": 1,
-        "date": "2026-01-28"
-    },
-    {
-        "question": "在資料隱私與安全領域，下列哪一項技術屬於分散式學習以保護資料隱私？",
-        "options": [
-            "聯邦學習",
-            "批次推論",
-            "叢集分析",
-            "資料擴增"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "B",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料隱私與安全",
-        "concept": "分散式學習",
-        "explanation": "聯邦學習透過分散式學習架構，讓多方在不共享原始資料的情況下共同訓練模型，有效保護資料隱私。",
-        "number": 2,
-        "date": "2026-01-28"
-    },
-    {
-        "question": "以下哪種方法最常用於資料清洗中處理遺缺值？",
-        "options": [
-            "刪除資料列",
-            "隨機置換值",
-            "加入隱藏層",
-            "深度增強學習"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "C",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料整理與分析流程",
-        "concept": "資料清洗",
-        "explanation": "刪除包含遺缺值的資料列是資料清洗中處理遺缺值的常見方法之一，其他方法還包括插補與預測填補。",
-        "number": 3,
-        "date": "2026-01-28"
-    },
-    {
-        "question": "在機器學習模型中，L1正則化主要有何種效果？",
-        "options": [
-            "減少部分權重至零，達成模型稀疏化",
-            "增加所有權重數值強度，提升模型複雜度",
-            "完全消除神經網絡的誤差",
-            "防止資料過度標準化"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "D",
-        "topic": "機器學習概念",
-        "subtopic": "正則化技術",
-        "concept": "L1正則化",
-        "explanation": "L1正則化透過加入權重絕對值懲罰，促使部分權重減少為零，達到特徵選擇和模型稀疏化效果。",
-        "number": 4,
-        "date": "2026-01-28"
-    },
-    {
-        "question": "鑑別式AI與生成式AI的主要差異在於什麼？",
-        "options": [
-            "鑑別式AI判斷資料是否來自真實分布，生成式AI建立數據分布模型",
-            "鑑別式AI用於生成新內容，生成式AI僅分類",
-            "鑑別式AI訓練速度較慢，生成式AI速度較快",
-            "鑑別式AI只適用深度學習，生成式AI只適用機器學習"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "鑑別式 AI 與生成式 AI",
-        "subtopic": "基本原理",
-        "concept": "鑑別式與生成式AI差異",
-        "explanation": "鑑別式AI專注於判斷資料是否屬於某類別，而生成式AI則試圖模擬資料分布生成新資料，兩者在目標和訓練方式上有所區分。",
-        "number": 5,
-        "date": "2026-01-28"
-    },
-    {
-        "question": "以下哪一項技術主要用於提高生成式AI回答的語境一致性？",
-        "options": [
-            "提示工程（Prompt Engineering）",
-            "L1正則化",
-            "資料清洗",
-            "強化學習"
-        ],
-        "correct_answer_index": 0,
+        "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "提示工程",
-        "concept": "生成式AI語境一致性",
-        "explanation": "提示工程透過設計合適的提示語句，提升生成式AI在特定語境下回應的準確度與一致性。",
-        "number": 6,
-        "date": "2026-01-28"
+        "subtopic": "模型微調",
+        "concept": "微調技術及可能遇到問題",
+        "explanation": "微調是基於原有預訓練模型，少量調整模型參數以適應特定任務，是生成式AI與鑑別式AI常用的訓練策略，不是重新訓練整個模型，也非只用於生成式AI。",
+        "number": 1,
+        "date": "2026-01-30"
     },
     {
-        "question": "機器學習中Q-Learning屬於哪種學習方法？",
+        "question": "關於資料隱私與安全，下列哪項最符合AI治理中的最佳實務？",
         "options": [
-            "強化學習",
-            "監督學習",
-            "非監督學習",
-            "生成學習"
+            "在資料處理過程中，使用匿名化技術以保護用戶個資。",
+            "盡量收集全部原始數據以提升模型學習效果，不需特別保護。",
+            "允許內部無限制共享所有敏感資料以促進多部門合作。",
+            "在模型訓練完畢後才進行資料安全審查及隱私保護措施。"
         ],
         "correct_answer_index": 0,
-        "correct_answer_letter": "C",
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "匿名化技術",
+        "explanation": "使用資料匿名化是保護用戶隱私的標準做法，而非在訓練後才做或放寬管理，且不宜無限制共享敏感資料。",
+        "number": 2,
+        "date": "2026-01-30"
+    },
+    {
+        "question": "機器學習中的強化學習（Reinforcement Learning）主要依賴哪種機制來優化決策？",
+        "options": [
+            "透過大量標註數據進行模型監督。",
+            "根據動作結果獲取回饋信號，透過獎懲學習優化策略。",
+            "使用無監督學習自動辨識數據分布。",
+            "依靠深度神經網路直接模仿人類行為。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "機器學習概念",
         "subtopic": "強化學習",
         "concept": "Q-Learning",
-        "explanation": "Q-Learning是一種基於狀態-行動價值函數的強化學習方法，用於學習最優策略。",
-        "number": 7,
-        "date": "2026-01-28"
+        "explanation": "強化學習透過行為獲得環境回饋，使用獎勵信號來優化策略，不同於監督學習或無監督學習。",
+        "number": 3,
+        "date": "2026-01-30"
     },
     {
-        "question": "資料分析中的ETL流程主要包含哪些步驟？",
+        "question": "下列選項中，何者最能體現鑑別式AI的基本原理？",
         "options": [
-            "資料抽取（Extract）、轉換（Transform）、載入（Load）",
-            "資料擴展（Extend）、轉換（Transform）、學習（Learn）",
-            "資料壓縮（Extract）、分類（Transform）、分析（Load）",
-            "資料提取（Extract）、運算（Transform）、應用（Load）"
+            "生成數據樣本來學習分布差異。",
+            "判斷輸入數據的類別或是否屬於特定群組。",
+            "通過強化學習架構自主完成任務決策。",
+            "使用變分自編碼器重建輸入數據。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式AI與生成式AI",
+        "concept": "鑑別式AI基本原理",
+        "explanation": "鑑別式AI主要任務是判斷輸入是否屬於特定類別，生成式AI則關注生成新數據樣本。",
+        "number": 4,
+        "date": "2026-01-30"
+    },
+    {
+        "question": "哪一項最能描述資料整理與分析流程中ETL的主要用途？",
+        "options": [
+            "在資料科學流程中將資料抽取、轉換與載入為數據倉儲做準備。",
+            "僅用於資料視覺化前的資料清洗。",
+            "主要用於模型訓練之後的結果整理。",
+            "用於跨部門之間資料交換的協議標準。"
         ],
         "correct_answer_index": 0,
-        "correct_answer_letter": "D",
+        "correct_answer_letter": "A",
         "topic": "資料處理與分析概念",
         "subtopic": "資料整理與分析流程",
-        "concept": "ETL流程",
-        "explanation": "ETL是資料處理中的標準流程，包括提取原始資料（Extract）、資料格式轉換（Transform）及導入目標系統（Load）。",
-        "number": 8,
-        "date": "2026-01-28"
+        "concept": "ETL",
+        "explanation": "ETL流程包含資料的抽取(Extract)、轉換(Transform)及載入(Load)，為分析或後續模型使用準備乾淨且結構化的資料。",
+        "number": 5,
+        "date": "2026-01-30"
     },
     {
-        "question": "在AI治理中，「Human on loop」代表什麼意涵？",
+        "question": "在機器學習的特徵編碼中，One-Hot Encoding 的主要功能是？",
         "options": [
-            "人在決策迴圈中持續監督AI模型的決策",
-            "完全由人工獨立決策不依賴AI",
-            "AI自主運行不需人為干預",
-            "人只在模型訓練階段介入"
+            "將類別特徵轉換成數值序列以保留內在順序。",
+            "將類別資料轉換成數值向量中互斥的「1」與「0」，避免大小關係誤導。",
+            "將連續數據離散化為多個級別。",
+            "減少特徵維度以提升訓練效率。"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "AI治理概念",
-        "subtopic": "治理原則",
-        "concept": "Human on loop",
-        "explanation": "Human on loop指透過人工監督與糾正，確保AI模型決策合理且符合倫理與合規要求。",
-        "number": 9,
-        "date": "2026-01-28"
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding將分類屬性表示為互斥向量，避免模型誤把類別順序當作數值大小影響。",
+        "number": 6,
+        "date": "2026-01-30"
     },
     {
-        "question": "以下哪一項不是生成式AI訓練時常見的階段？",
+        "question": "生成式AI在保持語境連貫時，常用哪項技術來提高回應的上下文一致性？",
         "options": [
-            "離線推論優化",
-            "資料準備與清洗",
-            "模型微調",
-            "優化器迭代"
+            "直接以隨機噪聲生成文本。",
+            "採用檢索增強生成技術 (RAG) 結合外部知識庫。",
+            "完全移除上下文信息，單獨處理每一次輸入。",
+            "只使用生成式模型而不考慮歷史對話。"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "模型訓練流程",
-        "concept": "生成式AI訓練階段",
-        "explanation": "生成式AI訓練通常涵蓋資料準備、模型訓練（含優化器迭代）與微調，離線推論優化不是訓練階段。",
+        "subtopic": "生成式AI保持語境",
+        "concept": "RAG",
+        "explanation": "RAG技術結合生成模型與檢索系統，使AI回應可利用外部資料參考，提高內容的上下文相關性與一致性。",
+        "number": 7,
+        "date": "2026-01-30"
+    },
+    {
+        "question": "在AI治理概念中，『Human on Loop』主要指的是？",
+        "options": [
+            "人類完全依賴AI自動決策，無需介入。",
+            "人類在模型訓練前全權控制數據輸入。",
+            "人類介入模型決策過程中以監督和校正。",
+            "人類只負責監控硬體設備運作。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "Human on loop 定義",
+        "explanation": "Human on Loop指人類參與模型決策過程，對模型結果進行監督與干預，以確保系統安全與倫理符合。",
+        "number": 8,
+        "date": "2026-01-30"
+    },
+    {
+        "question": "在機器學習模型中，偏差-變異（Bias-Variance）權衡的目的是？",
+        "options": [
+            "降低模型的訓練時間，提高運算效率。",
+            "在避免過擬合與欠擬合之間找到最佳平衡點。",
+            "增加模型的複雜性使其能擬合更多數據細節。",
+            "完全擺脫誤差，使模型預測完全準確。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "模型評估",
+        "concept": "偏差變異權衡",
+        "explanation": "Bias-Variance Tradeoff是防止模型過於簡化 (欠擬合) 或過度複雜 (過擬合)，尋求最佳泛化能力。",
+        "number": 9,
+        "date": "2026-01-30"
+    },
+    {
+        "question": "在生成式AI與鑑別式AI的整合應用中，以下何者為常見的運用方式？",
+        "options": [
+            "鑑別式模型負責生成文本，生成式模型負責分類。",
+            "生成式模型生成數據樣本，鑑別式模型評估真偽或分辨類別。",
+            "兩者完全分離運用，不進行任何交互。",
+            "鑑別式模型僅用於硬體指令控制，非文本處理。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式AI與生成式AI的整合應用",
+        "concept": "生成式與鑑別式整合",
+        "explanation": "生成式模型創造數據或文本，鑑別式模型評估其真偽或判別其類別，兩者常結合提升系統效能，如生成對抗網絡。",
         "number": 10,
-        "date": "2026-01-28"
+        "date": "2026-01-30"
     }
 ]

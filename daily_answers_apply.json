@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2025年，製造業企業導入No-Code/Low-Code生成式AI系統，主要優勢下列何者最正確？",
+        "question": "企業導入生成式AI進行客服自動化時，採用No Code平台開發聊天機器人。為了確保模型輸出的一致性與可控性，下列哪項技術最適合用於規範生成式AI的回應格式？",
         "options": [
-            "無需大量程式基礎即可落地專業AI應用",
-            "可完全取代所有IT開發團隊工作",
-            "無法實現企業專屬數據整合功能",
-            "每日僅能處理單一業務流程自動化"
+            "溫度參數調降至0.1-0.3，並指定輸出JSON結構",
+            "增加訓練資料集規模，使模型自動學習格式",
+            "透過API呼叫次數上限，限制模型產生多樣性",
+            "多語言提示詞，讓模型自主判斷最佳回應"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的基本概念",
-        "concept": "自動化應用",
-        "explanation": "No-Code/Low-Code讓用戶無須深厚程式能力，即可部署AI，提高數位轉型速度與覆蓋範圍。",
+        "subtopic": "提示詞工程與模型控制",
+        "concept": "溫度參數、結構化輸出",
+        "explanation": "低溫度設定配合明確的系統提示詞可以讓模型穩定且依格式生成，此為客服流程自動化的最佳工程做法。",
         "number": 1,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "企業欲導入生成式AI前，評估ROI時主要應重視下列哪項指標？",
+        "question": "製造業評估用Low Code平台自動化生產流程，下列哪項最需優先考量的法律合規風險？",
         "options": [
-            "單次專案運行時長",
-            "員工AI培訓時間",
-            "能節省的總人工作業時數",
-            "企業IT部門規模"
+            "平台數據中心位置是否符合法規對於資料地存的規範",
+            "員工程式碼是否含開源授權衝突",
+            "AI模型訓練資料著作權歸屬與授權問題",
+            "是否提供全天候技術支援"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估",
-        "concept": "投資報酬率",
-        "explanation": "評估ROI時最重要的是能節省的總人工作業時數，這能直接反映生成式AI帶來的經濟效益。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估與風險管理",
+        "subtopic": "法規合規與數據保護",
+        "concept": "個資法、境內處理",
+        "explanation": "台灣個資法規定個人資料須境內處理，數據中心是否在地直接攸關合法性與合規風險。",
         "number": 2,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "企業利用 RAG（檢索增強生成式AI）技術時，其主要目的是為何？",
+        "question": "在生成式AI提示詞工程中，針對複雜決策流程，哪種提示詞設計法最能提升推理準確率？",
         "options": [
-            "增加模型設計規模",
-            "減少回覆速度",
-            "強化AI回應的準確性和內容可靠度",
-            "創造更多新型AI代理人"
+            "角色扮演設定與Chain-of-Thought步驟分解結合",
+            "導入更多訓練範例讓模型自學決策邏輯",
+            "簡化指令內容避免提供過多細節",
+            "大幅提升溫度參數以促進創造性推理"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "RAG",
-        "explanation": "RAG透過結合知識庫和生成式AI，提升回答的準確度與事實可靠性，是企業提升AI運用的重要趨勢。",
+        "subtopic": "提示詞工程與推理優化",
+        "concept": "Chain-of-Thought、角色設定",
+        "explanation": "角色設定加步驟分解能使模型有明確決策邏輯進程，大幅提升複雜推理的可控性與準確度。",
         "number": 3,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "關於生成式AI工具Microsoft Copilot for Microsoft 365，下列何者描述正確？",
+        "question": "導入No Code平台結合生成式AI自動生成內容時，下列何項因素對於投資報酬率（ROI）計算影響最大？",
         "options": [
-            "Copilot僅能用於生成圖片，不支援文書處理",
-            "該工具無法與Teams及Excel整合",
-            " Copilot廣泛用於日常業務自動化並提升效率",
-            "Copilot限定僅供單一部門專案管理使用"
+            "平台是否有國際安全認證",
+            "自動化後的人工作業成本與生成品質管控成本",
+            "模型參數規模與處理速度",
+            "團隊AI專業背景認證與資歷"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "No Code工具整合",
-        "explanation": "Microsoft Copilot廣泛支援Word、Excel、PowerPoint及Teams等，提升日常業務的自動化與決策效率。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估與風險管理",
+        "subtopic": "成本效益分析",
+        "concept": "ROl、人工成本、品質成本",
+        "explanation": "ROI的核心在於成本節省與品質控管，這些因素直接影響自動化導入的效益評估。",
         "number": 4,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "針對生成式AI提示詞設計，下列哪一種做法可降低AI產生幻覺（錯誤回應）的風險？",
+        "question": "生成式AI用於金融客服諮詢時，為降低「幻覺」風險，最佳組合技術為何？",
         "options": [
-            "要求模型自由產生知識內容",
-            "在指令中加入僅限使用已知內部資料",
-            "移除輸出格式約束",
-            "僅使用單一輸入而無結構提示"
+            "提升溫度參數並擴增訓練資料集",
+            "採檢索增強生成（RAG）搭配人工審核與置信度設定",
+            "多模型投票驗證每次回應內容",
+            "限制回應字數同時指定單一數據來源"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "提示詞工程",
-        "explanation": "設計明確限制資料來源的提示詞，能有效降低AI幻覺，提高回應的真實性與商用可靠性。",
+        "topic": "生成式AI導入評估與風險管理",
+        "subtopic": "幻覺控制與事實驗證",
+        "concept": "RAG、人工審核、置信度",
+        "explanation": "RAG能強化回應事實依據，配合人工審核及置信度設定，有效降低金融AI幻覺風險。",
         "number": 5,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "以下哪個案例最適合強調生成式AI在客戶服務領域的創新應用？",
+        "question": "電商平台用No Code生成商品描述，發現品牌術語混淆與描述不準，應優先採取的改善方案為何？",
         "options": [
-            "利用AI自動生成零件技術規格書",
-            "使用RAG技術製作企業知識型聊天助理",
-            "運用AI分析供應鏈需求預測",
-            "以AI設計產品包裝形象"
+            "接入外部知識庫與企業產品資訊系統，設詞彙專屬字典",
+            "重新微調模型並大幅提升電商資料比例",
+            "將提示詞描述詳細並移除創意思考元素",
+            "升級採購更高階商用模型API"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "知識型客服機器人",
-        "explanation": "生成式AI結合RAG應用於企業知識庫型客服助理，是提升服務質量和效率的創新方向。",
+        "subtopic": "No Code應用與知識整合",
+        "concept": "RAG、詞典管理、準確性提升",
+        "explanation": "知識庫結合RAG與專用詞典能直接改善術語使用與資訊準確性，比單純提高資料量與API升級更有針對性。",
         "number": 6,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "關於2025年生成式AI導入企業風險，下列哪一項陳述錯誤？",
+        "question": "在進行生成式AI導入風險評估時，哪項潛在風險最容易被忽視，但對長期運營影響可能最大？",
         "options": [
-            "資料外洩風險需嚴格控制",
-            "幻覺問題必須透過技術手段減緩",
-            "員工完全不須進行相關變革培訓",
-            "依賴外部AI供應商需兼顧資料隱私"
+            "模型偏見導致企業聲譽與法律責任風險積累",
+            "系統導入初期的技術整合成本",
+            "生成式AI API月費用不確定波動",
+            "員工對AI工具的接受度與培訓成效"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "風險管理",
-        "explanation": "成功導入AI須重視員工培訓與變革管理，否則將影響落地成效及系統安全運作。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估與風險管理",
+        "subtopic": "倫理風險與長期評估",
+        "concept": "偏見、公平性、聲譽風險",
+        "explanation": "模型偏見與公平性問題隱蔽但會累積法規與社會風險，是長期營運不可忽視的關鍵因素。",
         "number": 7,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "下列有關Few-Shot Learning在生成式AI提示詞應用的描述，何者為非？",
+        "question": "企業用Low Code搭配生成式AI自動審合約內容。如何設計提示詞以提升法律條款判讀準確度？",
         "options": [
-            "能通過提供多個範例指導模型產生更精確回答",
-            "對於複雜任務能提升模型的彈性與正確性",
-            "總是不需要任何先前的任務示例即可運作",
-            "企業可利用Few-Shot加速新業務流程建置"
+            "定義法律角色並展示few-shot法律條款範例",
+            "填入完整合約並要求模型自動識別項目",
+            "多次變更溫度參數進行回測選擇最高分",
+            "自行訓練法律小型模型不依賴主流生成式AI"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入規劃",
-        "concept": "Few-Shot Learning",
-        "explanation": "Few-Shot Learning核心在於提供一些範例協助模型理解上下文，而不是完全無範例的Zero-Shot。",
+        "subtopic": "提示詞工程與領域應用",
+        "concept": "Few-shot、角色設定、專業知識注入",
+        "explanation": "Few-shot案例能提供結構化指引，專業角色設定則利於明確法律語境，顯著提升領域應用的可靠度。",
         "number": 8,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "若企業引進生成式AI，首波試點常用於哪個流程以獲得組織快速正面回饋？",
+        "question": "評估企業生成式AI導入就緒度時，下列哪項最直接關乎負責任AI的治理與監控？",
         "options": [
-            "決策層級投資分析",
-            "高階技術開發本部",
-            "日常行政效率與文件處理",
-            "僅限於產品包裝創意設計"
+            "企業設置AI倫理審查委員會並有模型偏見追蹤機制",
+            "IT部門建立最新雲端高效能設施",
+            "購買第三方AI風險保險契約",
+            "開發團隊全部具備博士級資歷"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入規劃",
-        "concept": "落地規劃",
-        "explanation": "文件處理與行政流程因標準化高、評估明確，最適合作為生成式AI導入的最佳試點流程。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估與風險管理",
+        "subtopic": "治理框架與監督機制",
+        "concept": "倫理審查、可追蹤、負責任AI",
+        "explanation": "AI倫理審查委員會能有效監控負責任AI規範落地，是組織化治理成功導入的關鍵基石。",
         "number": 9,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     },
     {
-        "question": "2025年No-Code生成式AI工具exaBase之導入主要挑戰為何？",
+        "question": "No Code平台應用生成式AI時，發現不同月份模型回輸品質波動很大，最可能的關鍵原因是？",
         "options": [
-            "完全無法自訂企業資料流程",
-            "上線速度緩慢需長期部署",
-            "需衡量供應商依賴與資料隱私政策",
-            "無法支援多語言操作介面"
+            "AI供應商模型版本定期更新，造成行為與提示詞敏感度變動",
+            "內部員工各自操作流程差異",
+            "外部網路或API呼叫速度延遲",
+            "季節性業務內容造成統計分布變化"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的優勢與限制",
-        "concept": "工具風險與隱私",
-        "explanation": "No-Code工具導入快速，惟企業必須考量外部供應商依賴與資訊保護要求，強化風險防控。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估與風險管理",
+        "subtopic": "模型穩定性與供應商依賴",
+        "concept": "模型更新、行為漂移、供應商風險",
+        "explanation": "雲端AI供應商端版本更新會改變模型行為，導致同樣提示也產生不同比品質結果，是No Code平台最需管控的風險之一。",
         "number": 10,
-        "date": "2026-01-27"
+        "date": "2026-01-31"
     }
 ]

@@ -1,172 +1,172 @@
 [
     {
-        "question": "下列何者為2025年企業導入生成式AI知識助理（如文件問答系統）最常結合的技術？",
+        "question": "在零售業導入生成式AI聊天機器人後，部門主管發現短期內顧客滿意度未明顯提升，但工數減少20%。依2025年No Code/Low Code平台（如Bubble或Airtable AI）的導入評估最佳實務，應優先採用何種ROI評估框架來驗證長期價值？",
         "options": [
-            "RAG（Retrieval-Augmented Generation）技術",
-            "GAN（生成對抗網路）技術",
-            "變分自編碼器（VAE）技術",
-            "強化學習（Reinforcement Learning）技術"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "RAG",
-        "explanation": "2025年企業內部知識助理與問答系統，大多導入RAG（檢索增強生成）技術來提升資料查詢的準確性與相關性，是目前導入的主流解法。",
-        "number": 1,
-        "date": "2026-02-05"
-    },
-    {
-        "question": "以下何者關於No Code / Low Code生成式AI工具應用的優勢敘述最正確？",
-        "options": [
-            "能讓非工程背景者低門檻快速部署AI應用",
-            "出現更高資安風險，且人才需求提升",
-            "僅支援圖像生成無法支援文字工作",
-            "部署流程較傳統AI開發更複雜"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code概念",
-        "concept": "No Code Low Code優勢",
-        "explanation": "No Code / Low Code 工具主打讓非工程背景者無需或少寫程式碼，即可快速建置、部署AI應用，顯著降低技術門檻。",
-        "number": 2,
-        "date": "2026-02-05"
-    },
-    {
-        "question": "以下哪一項屬於生成式AI應用導入前常見的評估流程？",
-        "options": [
-            "分析AI模型熟悉度與雲端資源運用",
-            "僅選擇公開數據來源作為唯一依據",
-            "評估AI自動化流程的數據合規性與資料安全",
-            "直接部屬無需評估用戶需求"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入評估流程",
-        "explanation": "企業於導入生成式AI系統前，會對AI自動化流程中的數據合規性與資料安全狀況進行審查，確保法規遵循與資訊風險管理。",
-        "number": 3,
-        "date": "2026-02-05"
-    },
-    {
-        "question": "關於2025年生成式AI在B2B領域的最新實際應用，下列敘述何者為非？",
-        "options": [
-            "導入AI知識庫提升內部文件查詢管理效率",
-            "採用智能客服機器人自動回應複雜客戶查詢",
-            "利用AI生成虛擬社群用戶頭像做B2B技術管理",
-            "結合RAG與專業知識問答促進組織培訓"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "產業應用",
-        "explanation": "B2B導入AI時，主要著重知識庫管理與專業問答，利用AI生成虛擬頭像並非B2B技術管理核心需求，為不正確敘述。",
-        "number": 4,
-        "date": "2026-02-05"
-    },
-    {
-        "question": "下列哪一項『提示詞』設計技巧能明顯提升多步推理類生成式AI的準確度？",
-        "options": [
-            "使用短句及單一陳述指令",
-            "強調任務鏈與思考過程鏈式推理",
-            "避免提供背景資訊及限制情境",
-            "堅持保密不透露任何數據細節"
+            "立即擴大A/B測試至全店面，比較AI群組與傳統客服的顧客終身價值（CLV）與重複購買率，確保指標粒度細分至個人化互動層級。",
+            "執行PDCA循環，從Plan階段設定多維KPI（含定性顧客反饋），經Do/Check後於Act階段迭代提示詞，監測1-3個月後的中期工數與滿意度變化。",
+            "啟動時序分析，追蹤導入後6個月內的基線工數與誤差率，並透過BI工具自動化部門別效果擴充，避免因果關係混淆導致的ROI低估。",
+            "進行壓力測試模擬高峰期負荷，評估適合率（Precision）與再現率（Recall）的權衡，優先優化模型泛化能力以支撐跨季節營運持續性。"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "提示工程",
-        "explanation": "多步推理或複雜任務型AI應用，常透過設計思考鏈（Chain-of-Thought）提示詞，使AI分步驟清楚推導，進而提升作答準確度。",
-        "number": 5,
-        "date": "2026-02-05"
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "ROI評估框架",
+        "explanation": "依據生成式AI導入ROI評估的PDCA框架，No Code/Low Code工具強調從Plan階段預設多維KPI（如工數、滿意度、CLV）開始驗證，短期確認初期效果，持續迭代提示詞與應用，平衡定量（工數減少）與定性（滿意度），避免單一A/B測試忽略迭代。",
+        "number": 1,
+        "date": "2026-02-07"
     },
     {
-        "question": "企業採用生成式AI時，哪一項不是常見的風險管理對策？",
+        "question": "醫療診所使用Low Code平台（如Retool整合GPT-4o）自動化病歷摘要生成，需評估導入風險。2025趨勢下，高階規劃師應如何設計提示詞工程以最小化幻覺（Hallucination）風險，同時確保HIPAA合規？",
         "options": [
-            "資料權限與使用者分級控管",
-            "監控輸出結果的可追溯性",
-            "要求模型提供訓練資料來源透明度",
-            "完全不設定風險指標與預警機制"
+            "採用鏈式思考（Chain-of-Thought）提示，逐步引導模型驗證事實來源，並嵌入角色扮演如“你是HIPAA認證醫師”，後置檢核“引用原始病歷證據”。",
+            "實施零次提示（Zero-Shot）結合外部知識圖譜檢索，設定溫度參數為0.2以提升確定性，輔以後處理過濾移除未驗證醫療術語。",
+            "使用少樣本提示（Few-Shot）提供3-5匿名病歷範例，整合RAG動態拉取指南，並以JSON結構化輸出強制合規欄位。",
+            "建構樹狀提示（Tree-of-Thoughts）多分支探索診斷假設，後合併自省機制評估信心分數，優先過濾低於80%的幻覺機率。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具與提示詞設計",
+        "concept": "幻覺管理與合規提示詞",
+        "explanation": "2025生成式AI提示詞設計建議以Chain-of-Thought與Role-Playing結合，於醫療場景下能抑制幻覺與強化合規，利用事實驗證搭配角色約束，遠勝於僅靠Zero/Few-Shot泛化風險。",
+        "number": 2,
+        "date": "2026-02-07"
+    },
+    {
+        "question": "製造業經理以No Code工具（如Make.com + Claude 3.5）優化供應鏈預測，導入後發現模型在罕見事件（如疫情）泛化不足。依2025導入評估框架，風險管理應優先何種模型評估指標來量化此不確定性？",
+        "options": [
+            "計算宏平均（Macro-Average）F1分數，權衡多類別供應事件的再現率與適合率，避免微平均忽略罕見類別偏差。",
+            "採用ROC-AUC曲線下閾值調整，模擬壓力測試下真陰性率與偽陽性率，確保罕見事件下供應鏈中斷預警的穩健性。",
+            "執行混同行列細分，聚焦偽陰性率於尾端事件，並以校準曲線驗證信心區間可靠性。",
+            "整合貝葉斯不確定性量化，透過蒙地卡羅Dropout估計預測熵，優先罕見情境下置信區間擴張。"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "AI風險管理",
-        "explanation": "完善的AI導入須建立資料權限、透明機制等風險對策，任意不設指標或預警屬極高風險且遭產業界普遍排除。",
+        "subtopic": "風險管理與評估指標",
+        "concept": "不確定性量化",
+        "explanation": "2025生成式AI風險管理強調貝葉斯不確定性（如預測熵），能有效處理罕見事件與模型泛化問題，超越傳統宏/微平均或ROC-AUC的二元假設。",
+        "number": 3,
+        "date": "2026-02-07"
+    },
+    {
+        "question": "行銷團隊導入生成式AI工具（如Midjourney V7 No Code版）產生廣告文案，需評估導入ROI。依2025高階趨勢，針對“轉換率提升但創意疲乏”現象，最佳評估路徑為何？",
+        "options": [
+            "從業務可視化基線測量文案工數，量化時間削減×時薪轉化ROI，輔以A/B測試中期滿意度，後擴充至賣上貢獻。",
+            "設定導入前KPI如點擊率與CLV，執行ビフォー・アフター分析1-3個月，迭代提示詞後追蹤時序變化至6個月安定期。",
+            "透過BI工具細分部門指標，優先成本削減軸（工具訂閱vs人力），並以PDCA Act階段驗證長期品質向上定性效果。",
+            "模擬多情境持續監控，計算學習-運營持續成本扣除公式，聚焦賣上貢獻以說服高層擴大No Code部署。"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "轉換率與創意管理",
+        "explanation": "生成式AI ROI評估以ビフォー・アフター短中期數據驗證成效，迭代提示詞並避免長期創意疲乏，較單純A/B測試或僅成本導向更能綜合衡量。",
+        "number": 4,
+        "date": "2026-02-07"
+    },
+    {
+        "question": "HR部門以Low Code平台（如Zapier + Gemini 2.0）設計面試提示詞篩選履歷，需鑑別專有名詞：何者最適合描述“模型對隱私敏感屬性（如性別）產生偏差”的風險管理術語？",
+        "options": [
+            "提示注入攻擊（Prompt Injection）：惡意輸入操縱輸出，需以防禦提示隔離敏感查詢。",
+            "對抗樣本（Adversarial Examples）：微調輸入誘發錯誤分類，適用於影像但非文本偏差。",
+            "公平性偏差（Fairness Bias）：模型在受保護屬性上不均等預測，需DEOA評估與去偏差微調。",
+            "資料漂移（Data Drift）：分佈變化致效能衰退，透過監控概念漂移偵測履歷趨勢偏移。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "專有名詞鑑別與風險管理",
+        "concept": "公平性偏差",
+        "explanation": "Fairness Bias專指生成式AI於敏感屬性上的系統性預測偏誤，2025 HR風險管理核心需專業辨識與去偏差。",
+        "number": 5,
+        "date": "2026-02-07"
+    },
+    {
+        "question": "金融業導入生成式AI合規審核工具，2025 No Code趨勢下，為管理模型漂移風險，最佳提示詞設計與評估組合為何？",
+        "options": [
+            "Few-Shot + RAG檢索最新法規，結合Macro-Average Precision監控類別漂移，每季重新校準基線。",
+            "Chain-of-Verification事實查核，配持續監控Entropy，壓力測試下自動觸發Few-Shot範例更新。",
+            "Self-Consistency多採樣投票，評估Calibration Curve偏差，導入前模擬Data Drift情境驗證。",
+            "Tree-of-Prompts分支合規路徑，以Micro-Average Recall量化，後處理過濾高熵預測。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理與提示詞設計",
+        "concept": "模型漂移與一致性評估",
+        "explanation": "金融合規需Self-Consistency減少漂移，Calibration Curve驗證信心一致性，導入前模擬資料漂移情境。",
         "number": 6,
-        "date": "2026-02-05"
+        "date": "2026-02-07"
     },
     {
-        "question": "下列關於NotebookLM（Google Podcast產生器）描述何者為是？",
+        "question": "教育機構以生成式AI工具（如Perplexity Enterprise）輔助課程規劃，導入評估發現學生參與率波動。依2025風險管理，優先採用何框架平衡品質向上與業務效率化ROI？",
         "options": [
-            "只能生成文字摘要無法製作語音Podcast內容",
-            "可透過No Code流程自動化產生教育內容或Podcast",
-            "專為專業工程師設計需大量程式開發",
-            "主要應用於金融數據自動批次分析"
+            "短中期長ROI階梯：1-3月測工數，6-12月追參與CLV，1年以上定性反饋擴充指標。",
+            "3軸量化：時間/成本/賣上，從基線可視化篩選高瓶頸課程，No Code小規模試驗。",
+            "シミュレーション+ストレス測試，聚焦再現率權衡，持續監控泛化至多元學生群。",
+            "PDCA+因果分析，部門細分粒度，後Act迭代工具以最大化長期定性影響。"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "No Code 工具應用",
-        "explanation": "NotebookLM屬No Code工具，可協助用戶低門檻快速產出教育內容、Podcast，多數應用無需程式經驗亦能操作。",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "短中長期ROI設計",
+        "explanation": "2025生成式AI ROI評估強調短中期長時序平衡效率和品質，教育創新應用需逐步擴充區分指標。",
         "number": 7,
-        "date": "2026-02-05"
+        "date": "2026-02-07"
     },
     {
-        "question": "當企業評估導入AI Agent自主決策代理時，特別應考量哪一項？",
+        "question": "軟體開發團隊使用Low Code生成式AI（如Cursor AI）自動碼生成，需設計提示詞防版權風險。2025最佳實務為何，兼顧專有名詞鑑別？",
         "options": [
-            "AI Agent在多專業跨場域協同任務執行能力",
-            "只需關注單一任務效率優化",
-            "AI Agent必須仰賴大量手動人工指令",
-            "部署AI Agent時不涉及組織知識管理"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入規劃",
-        "concept": "AI Agent",
-        "explanation": "AI Agent於2025應用關鍵在自主跨領域協同能力，能同時整合多種專業任務，更勝單一場景應用。",
-        "number": 8,
-        "date": "2026-02-05"
-    },
-    {
-        "question": "2025年生成式AI平台的產業化落地主要呈現哪些特徵？",
-        "options": [
-            "高度依賴通用模型不考慮垂直專業領域",
-            "聚焦垂直場景Know-How並加強場域解決能力",
-            "只重視消費者端娛樂應用，不理會專業需求",
-            "僅支持開放平台不結合私有雲基礎設施"
+            "角色提示+Few-Shot開源碼範例，後相似度檢查（Cosine Similarity）過濾高重複，標註“衍生自GPL”。",
+            "RAG企業碼庫，整合知識圖譜驗證授權，輸出SBOM（Software Bill of Materials）追蹤依賴。",
+            "Chain-of-Thought審核步驟，嵌入水印嵌入（Watermarking）偵測洩漏，自省“確認無專利侵權”。",
+            "Zero-Shot+溫度0高確定，配LLM守門員（LLM Guard）掃描版權關鍵詞如“Apache”。"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "產業垂直化",
-        "explanation": "最新AI產業應用趨勢強調懂Know-How的垂直場景與專業落地，提升行業實用性並減少單一通用應用的侷限。",
-        "number": 9,
-        "date": "2026-02-05"
+        "subtopic": "生成式AI工具與風險管理",
+        "concept": "SBOM與授權驗證",
+        "explanation": "2025 Low Code碼生成風險管理首選RAG+SBOM，企業碼庫確保授權追蹤，SBOM專名為軟體供應鏈透明。",
+        "number": 8,
+        "date": "2026-02-07"
     },
     {
-        "question": "企業於2025年導入生成式AI，對於投資與日常營運的最佳建議為何？",
+        "question": "物流公司導入No Code生成式AI路徑優化，評估導入ROI時，高階主管面臨“初期成本高但中期賣上增”困境。依2025趨勢，最佳說服框架？",
         "options": [
-            "應由實驗性測試逐漸導入日常營運，且建立績效監控",
-            "僅邀請高層管理者參與無需全員導入",
-            "優先應用於非核心流程以降低影響",
-            "一開始就全面取代所有現有人力任務"
+            "設計先行ROI：導入前定義KPI/基線，故事化呈現定量時間削減+定性決策支援，擴展開發。",
+            "A/B+時序比較，量化工數×物流效率，後PDCA改善至CLV貢獻。",
+            "3軸+業務可視，從瓶頸測成本削減，BI自動化部門報告。",
+            "ビフォー後+指標擴充，1-3月短效確認，聚焦持續成本扣除。"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "產業導入",
-        "explanation": "2025年專業建議是由小規模試點推動，再逐步擴大至日常營運，全程監控效能與報酬，是國際顧問公司普遍倡議。",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "故事化ROI溝通設計",
+        "explanation": "2025物流應用趨勢強調ROI設計先行，提前定義基線KPI與故事化數據說服高層，中長期賣上增結合定量與定性。",
+        "number": 9,
+        "date": "2026-02-07"
+    },
+    {
+        "question": "顧問公司為客戶規劃生成式AI，需鑑別風險管理專有名詞：在No Code提示詞設計中，何者專指“模型輸出操縱導致機密洩漏”的攻擊類型？",
+        "options": [
+            "越獄（Jailbreak）：繞過安全對齊，誘導生成禁止內容如內部策略。",
+            "資料中毒（Data Poisoning）：訓練時污染資料，長期扭曲模型行為。",
+            "模型盜取（Model Stealing）：查詢API逆向工程權重，非輸出直接操縱。",
+            "後門攻擊（Backdoor Attack）：植入觸發器隱藏漏洞，需特定輸入激活。"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞安全與風險管理",
+        "concept": "Jailbreak攻擊與機密洩漏",
+        "explanation": "Jailbreak指2025生成式AI提示攻擊，操縱模型輸出導致機密洩漏，正確區分與訓練污染、盜取及後門其他攻擊型態。",
         "number": 10,
-        "date": "2026-02-05"
+        "date": "2026-02-07"
     }
 ]

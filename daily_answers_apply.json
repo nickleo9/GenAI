@@ -1,172 +1,172 @@
 [
     {
-        "question": "在規劃導入生成式AI工具於企業流程時，哪一個步驟最適合進行需求訪談與現有流程盤點？",
+        "question": "2025年生成式AI導入規劃中，針對「2025年的崖」風險，日本企業應優先採用哪種No Code/Low Code平台策略，以加速數字轉型並避免預估12兆円經濟損失？",
         "options": [
-            "初期需求收集階段",
-            "功能部署後分析階段",
-            "AI方案落地後優化階段",
-            "風險控管最後驗證階段"
+            "整合DeepSeek模型於Low Code平台，強調資源效率與多模態生成，優先部署於製造業異常監測",
+            "採用Microsoft Power Platform結合GPT-5，聚焦企業級No Code工作流自動化，涵蓋BFSI產業市場分析",
+            "利用Google Vertex AI Low Code工具，強化GEO優化與多渠道搜尋策略，適用媒體娛樂內容創作",
+            "部署Meta Movie Gen於No Code環境，專注影片生成與IG整合，針對消費性裝置健康管理應用"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入規劃",
-        "concept": "需求盤點",
-        "explanation": "在初期需求收集階段，進行需求訪談與現有流程盤點，可以確保AI導入與企業實際需求最貼合。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入規劃",
+        "subtopic": "No Code/Low Code平台",
+        "concept": "2025年的崖與企業級自動化",
+        "explanation": "日本企業若延遲生成式AI導入，將面臨12兆円損失。Microsoft Power Platform結合GPT-5提供No Code企業工作流，能快速覆蓋企業自動化需求，是2025年產業標準趨勢。",
         "number": 1,
-        "date": "2026-02-10"
+        "date": "2026-02-12"
     },
     {
-        "question": "下列何者並非No Code/Low Code平台帶來的主要風險？",
+        "question": "2025年Gartner炒作週期預測生成式AI進入幻滅低谷期，企業風險管理應如何透過提示詞工程（Prompt Engineering）緩解模型幻覺（Hallucination）風險？",
         "options": [
-            "資料治理困難加大",
-            "安全漏洞增加",
-            "專案失敗風險減少",
-            "監控維護難度提升"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code/Low Code的優勢與限制",
-        "concept": "No Code平台風險",
-        "explanation": "專案失敗風險減少不是No Code/Low Code平台帶來的風險，反而是好處。",
-        "number": 2,
-        "date": "2026-02-10"
-    },
-    {
-        "question": "選擇生成式AI工具進行圖像生成專案時，應該優先考慮的評估指標是什麼？",
-        "options": [
-            "同業採用比例",
-            "圖像生成解析度",
-            "訓練資料型式",
-            "平台原廠地區"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估",
-        "concept": "評估指標",
-        "explanation": "圖像生成解析度是決定專案品質的關鍵指標，優於其他評估面向。",
-        "number": 3,
-        "date": "2026-02-10"
-    },
-    {
-        "question": "關於提示詞工程（Prompt Engineering），下列敘述何者為正確？",
-        "options": [
-            "設計越模糊越能激發AI創意",
-            "濃縮需求語意可提升回應精確度",
-            "將多重指令拆分可減少誤解",
-            "加入多層負面提示可增強安全性"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI工具使用",
-        "concept": "提示詞用法",
-        "explanation": "將多重指令拆分不僅能減少誤解，也有助於提升AI回應精準度。",
-        "number": 4,
-        "date": "2026-02-10"
-    },
-    {
-        "question": "下列哪一種生成式AI應用，最常見於醫療領域的臨床決策支援？",
-        "options": [
-            "文件摘要生成工具",
-            "臨床診斷資料自動整理",
-            "醫學影像生成質檢工具",
-            "問句自動分類系統"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域",
-        "concept": "生成式AI應用",
-        "explanation": "臨床診斷資料自動整理是醫療臨床決策的重要生成式AI應用。",
-        "number": 5,
-        "date": "2026-02-10"
-    },
-    {
-        "question": "關於生成式AI工具導入流程的說明，下列何者最為正確？",
-        "options": [
-            "應於佈署前即完成風險評估",
-            "驗證階段不需資料標註",
-            "成效追蹤應於上線首月內",
-            "模型微調不會產生新風險"
+            "採用Chain-of-Thought提示，結合RAG檢索外部知識，優先驗證事實於金融市場分析",
+            "實施Few-Shot Learning提示，注入領域特定範例，聚焦生命科學藥物探索資料整合",
+            "使用Tree-of-Thoughts結構化提示，模擬多分支決策，適用製造生產程式碼編寫輔助",
+            "部署Self-Consistency提示，重複生成並投票共識，強化媒體娛樂影音生成互動性"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估",
-        "concept": "AI導入步驟",
-        "explanation": "在正式佈署前就進行風險評估，可避免日後重構或重大失誤。",
-        "number": 6,
-        "date": "2026-02-10"
+        "topic": "風險管理",
+        "subtopic": "提示詞工程",
+        "concept": "幻覺緩解與Gartner炒作週期",
+        "explanation": "採用Chain-of-Thought結合RAG能加強事實驗證，減少AI模型幻覺，2025年金融與其他產業實務均優先採用此方法。",
+        "number": 2,
+        "date": "2026-02-12"
     },
     {
-        "question": "有關2025年最新生成式AI的RAG（Retrieval-Augmented Generation）架構，哪個描述最精確？",
+        "question": "金融科技（FinTech）領域2025年生成式AI應用規劃中，哪種Low Code平台整合策略最適合既有服務流程自動化，同時符合E-E-A-T原則以提升GEO可見性？",
         "options": [
-            "只根據訓練資料集回覆資訊",
-            "結合知識檢索提升生成內容可信度",
-            "僅進行語言理解不負責內容生成",
-            "仰賴外部API達成語意重組功能"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AI技術與模型",
-        "concept": "RAG架構",
-        "explanation": "RAG架構整合生成與檢索技術，可強化內容的實用性和可信度。",
-        "number": 7,
-        "date": "2026-02-10"
-    },
-    {
-        "question": "針對文生圖AI（Text-to-Image AI），哪一種提示詞（Prompt）最能產生真實感照片風格？",
-        "options": [
-            "描述氛圍抽象層級",
-            "直接描述顏色飽和度",
-            "詳述場景細節和光影",
-            "加入隨機性參數變異"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "提示工程",
-        "concept": "prompt設計",
-        "explanation": "詳述場景細節和光影，最能幫助AI產生真實感的照片風格。",
-        "number": 8,
-        "date": "2026-02-10"
-    },
-    {
-        "question": "下列哪一個不是生成式AI導入規劃常見的風險控管手段？",
-        "options": [
-            "建立多層備援機制",
-            "定期語料庫更新",
-            "設定操作權限分級",
-            "開放API至第三方平台"
+            "Bubble.io結合Grok模型，生成用戶體驗對話介面，優化ChatGPT搜尋引用率",
+            "OutSystems平台嵌入DeepSeek，自動化風險評估工作流，強化Google生成式搜尋排名",
+            "Airtable與Claude整合，建構No Code資料管道，針對Bing多渠道SEO策略",
+            "Adalo App Builder使用Llama 3，開發移動端交易助手，提升原生APP E-E-A-T分數"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI風險管理",
-        "concept": "風險控管",
-        "explanation": "開放API至第三方平台可能引入新風險，而非控制它。",
-        "number": 9,
-        "date": "2026-02-10"
+        "topic": "生成式AI工具的領域應用",
+        "subtopic": "金融科技",
+        "concept": "E-E-A-T與GEO優化",
+        "explanation": "Adalo App Builder整合Llama 3能快速生成高E-E-A-T內容，有效提升移動端的可見性，並且E-E-A-T為2025 GEO核心評分依據。",
+        "number": 3,
+        "date": "2026-02-12"
     },
     {
-        "question": "何者不是No Code/Low Code平台於生成式AI應用時遇到的主要限制？",
+        "question": "製造業2025年生成式AI風險管理規劃，面對基盤模型資源效率與安全性挑戰，應優先導入哪種提示詞工程框架於Low Code平台？",
         "options": [
-            "彈性擴充能力受限",
-            "高度自訂流程困難",
-            "專案開發時程拉長",
-            "跨系統整合限制大"
+            "ReAct框架，交替推理與行動，整合DeepSeek於異常事件監測",
+            "GraphRAG提示，建構知識圖譜檢索，適用產品設計輔助",
+            "Automatic Prompt Optimization，提升程式碼生成準確性於Jupyter No Code",
+            "Role-Based Prompting，模擬領域專家於PLCnext Low Code環境"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code/Low Code的優勢與限制",
-        "concept": "No Code平台限制",
-        "explanation": "No Code/Low Code最大優點之一就是短時程開發，不會讓時程拉長。",
+        "topic": "風險管理",
+        "subtopic": "提示詞工程",
+        "concept": "資源效率與安全性",
+        "explanation": "Automatic Prompt Optimization可自動調整最佳提示，有助於提升No Code平台上的生成準確性，降低人為錯誤，是2025年製造業首選。",
+        "number": 4,
+        "date": "2026-02-12"
+    },
+    {
+        "question": "2025年媒體娛樂產業生成式AI導入，針對Meta Movie Gen影片生成工具，哪種No Code平台規劃最佳化互動性並管理版權風險？",
+        "options": [
+            "Webflow整合Movie Gen，生成動態網頁內容，嵌入水印追蹤機制",
+            "Zapier自動化IG發布流程，結合內容審核提示詞",
+            "Glide Apps建移動端遊戲輔助，優化Genie文本到影像",
+            "Bubble.io開發互動故事平台，使用合成資料訓練防抄襲"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI導入規劃",
+        "subtopic": "No Code/Low Code平台",
+        "concept": "版權風險與內容創作",
+        "explanation": "Bubble.io結合故事平台與合成資料，可有效追蹤並防止內容抄襲，適應2025年內容生成版權管理新挑戰。",
+        "number": 5,
+        "date": "2026-02-12"
+    },
+    {
+        "question": "生命科學領域2025生成式AI應用，藥物探索加速規劃中，哪種風險管理策略結合提示詞工程最適合整合病患資料？",
+        "options": [
+            "Federated Learning提示，分散訓練保隱私，驗證DeepSeek生成假藥物分子",
+            "Differential Privacy注入噪聲提示，生成合成病患資料於Low Code",
+            "Knowledge Graph RAG，連結PubChem資料庫於No Code管道",
+            "Ensemble Prompting，多模型投票預測藥效交互"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI工具的領域應用",
+        "subtopic": "生命科學",
+        "concept": "資料隱私與合成資料",
+        "explanation": "Differential Privacy方法加入噪聲有助於保護隱私並生成可用合成資料，特別適用於2025年生命科學AI應用風險管理場景。",
+        "number": 6,
+        "date": "2026-02-12"
+    },
+    {
+        "question": "2025年企業生成式AI導入面對Gartner預測支出成長76.4%，No Code平台風險管理應優先哪種GEO優化提示詞策略？",
+        "options": [
+            "Authority Stacking提示，引用多權威來源提升E-E-A-T於生成搜尋",
+            "Quotation Addition，直接嵌入專家引言於內容生成",
+            "Perspective Enhancement，注入多視角敘述於AI摘要",
+            "Statistics Inclusion，動態插入最新數據於RAG檢索"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入規劃",
+        "subtopic": "生成式引擎優化（GEO）",
+        "concept": "E-E-A-T強化",
+        "explanation": "Authority Stacking能強化內容可信度，是GEO於生成搜尋和內容自動化的2025主流提示詞策略。",
+        "number": 7,
+        "date": "2026-02-12"
+    },
+    {
+        "question": "心理陪伴躍居2025生成式AI使用榜首，企業應用規劃師如何透過Low Code平台設計風險管理模組，處理情感生成倫理風險？",
+        "options": [
+            "整合Claude 3.5於Retool，部署Guardrail提示過濾有害回應",
+            "使用Softr建No Code聊天介面，監測情緒偏差指標",
+            "Adalo結合Grok，生成個性化陪伴腳本並記錄同意追蹤",
+            "Power Apps嵌入DeepSeek，實時倫理審核情感內容"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "風險管理",
+        "subtopic": "情感AI倫理",
+        "concept": "Guardrail與心理陪伴",
+        "explanation": "Retool結合Claude Guardrail提示可有效阻擋不當生成內容，在情感陪伴AI快速普及的2025年，此模組成為標配。",
+        "number": 8,
+        "date": "2026-02-12"
+    },
+    {
+        "question": "2025製造生產生成式AI工具應用，產品設計輔助規劃中，哪種提示詞工程結合No Code平台最佳化DeepSeek效率？",
+        "options": [
+            "CAD-to-Prompt轉換，生成3D模型描述於CAD Low Code",
+            "Iterative Refinement循環，優化設計變更模擬",
+            "Multi-Modal Prompting，融合草圖與文字輸入Genie",
+            "Constraint-Based提示，嵌入工程規範於生成流程"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI工具的領域應用",
+        "subtopic": "製造生產",
+        "concept": "約束優化與DeepSeek",
+        "explanation": "Constraint-Based提示能保障生成內容符合工程約束，有效提升生產流程AI的可靠度與自動化水準。",
+        "number": 9,
+        "date": "2026-02-12"
+    },
+    {
+        "question": "面對2025生成式AI市場成長率降至74%，BFSI導入規劃應採用哪種綜合風險管理框架於提示詞工程？",
+        "options": [
+            "CRISC整合提示，聚焦合規生成於交易文件",
+            "FAIR模型量化提示風險，評估市場分析偏差",
+            "NIST AI RMF，結構化風險評估於No Code部署",
+            "ISO 42001標準，審核供應鏈AI工具安全性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "風險管理",
+        "subtopic": "框架整合",
+        "concept": "NIST AI RMF與BFSI",
+        "explanation": "NIST AI RMF能有效分層評估風險，適用於BFSI大規模AI導入場景，並促進No Code敏捷交付與合規審查。",
         "number": 10,
-        "date": "2026-02-10"
+        "date": "2026-02-12"
     }
 ]

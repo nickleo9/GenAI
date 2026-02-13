@@ -1,172 +1,172 @@
 [
     {
-        "question": "下列哪一項最正確描述2026年人工智慧領域中代理式AI（Agentic AI）與鑑別式與生成式AI的關係？",
+        "question": "2026年AGI元年被預測帶來的主要變化是？",
         "options": [
-            "代理式AI是鑑別式AI與生成式AI的進階階段，強調自主規劃與任務執行。",
-            "代理式AI等同於鑑別式AI，僅用於資料分類與辨識任務。",
-            "生成式AI包含鑑別式AI但不涉及代理式AI的自主行動能力。",
-            "鑑別式AI為生成式AI子集，代理式AI則是二者無關的新領域。"
+            "AI將僅在雲端進行文字生成",
+            "AI將具備世界模型，並在實體任務中超越人類",
+            "AI退回早期專家系統模式",
+            "AI專注於娛樂推薦及內容生成"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "AI類型與發展",
-        "concept": "代理式AI與鑑別式AI、生成式AI區別",
-        "explanation": "2026年AI發展趨勢指出，代理式AI是基於鑑別式與生成式AI的基礎之上，增加自主任務規劃與執行能力，是AI演進的高階階段。鑑別式AI主要是辨識或分類，生成式AI則生成新內容。代理式AI結合兩者能力，強調自動決策與行動。",
+        "subtopic": "AGI與智能體",
+        "concept": "人工智能未來趨勢",
+        "explanation": "馬斯克預測2026年為AGI元年，AI將不僅限於文字生成，而是能夠透過世界模型應用於手術等實體任務，達到超越人類表現。",
         "number": 1,
-        "date": "2026-02-11"
+        "date": "2026-02-13"
     },
     {
-        "question": "在資料分析流程中，何者最正確描述ETL (Extract, Transform, Load)的作用？",
+        "question": "下列哪一項不是2026年生成式AI規劃趨勢中被強調的重點？",
         "options": [
-            "ETL是資料分析模型訓練的最後階段，負責輸入預測結果。",
-            "ETL負責數據抽取、轉換格式及載入，確保資料整合與可用。",
-            "ETL指的是資料模型的自動調整與優化過程。",
-            "ETL是特指資料加密與數據隱私保護的技術。"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料整理流程",
-        "concept": "ETL 資料處理步驟",
-        "explanation": "ETL流程包括三個基本步驟：Extract（資料抽取）、Transform（資料轉換）、Load（資料載入），目的是整合數據來源並準備後續分析使用，不同於模型訓練或隱私加密。",
-        "number": 2,
-        "date": "2026-02-11"
-    },
-    {
-        "question": "以下關於機器學習中正規化（Regularization）方法的敘述，哪一項最準確？",
-        "options": [
-            "L1正規化將權重壓縮到接近零，能產生稀疏解，利於特徵選擇。",
-            "L2正規化會將所有權重強制變為零，完全移除變數。",
-            "正規化技術主要用於增強訓練樣本數量以防止過擬合。",
-            "L1正規化增加模型複雜度以便提升訓練精度。"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "機器學習概念",
-        "subtopic": "模型正規化",
-        "concept": "L1與L2正規化比較",
-        "explanation": "L1正規化（Lasso）會將部分權重強制壓縮為零，導致模型稀疏，便於特徵篩選；L2正規化（Ridge）則是將權重縮小但不完全為零，有助於減少過擬合。正規化是控制模型複雜度，非增加訓練樣本。",
-        "number": 3,
-        "date": "2026-02-11"
-    },
-    {
-        "question": "何者為生成式AI與鑑別式AI的主要原理差異？",
-        "options": [
-            "生成式AI學習數據分布生成新數據，鑑別式AI則學習區分不同類別標籤。",
-            "生成式AI只能應用於影像辨識，鑑別式AI主要用於文字生成。",
-            "鑑別式AI創建新內容，生成式AI僅預測已知標籤。",
-            "生成式AI及鑑別式AI本質上無區別，皆是相同演算法。"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AI模型原理",
-        "concept": "生成式AI與鑑別式AI原理",
-        "explanation": "生成式AI透過學習數據分布，能生成與訓練數據相似的新數據，典型模型如VAE與GAN；鑑別式AI則學習區分不同類別，典型模型如貝葉斯分類器與SVM，兩者是不同目標與架構的演算法。",
-        "number": 4,
-        "date": "2026-02-11"
-    },
-    {
-        "question": "在AI治理（AI Governance）中，以下哪一項最能體現透明度與可解釋性的要求？",
-        "options": [
-            "使用黑箱模型並完全依賴自動決策無需人工介入。",
-            "採用可解釋模型並提供決策依據說明給利害關係人。",
-            "所有AI模型皆不須公開訓練資料與設計細節以保障商業機密。",
-            "只要AI系統運作正常即無需進行合規審查。"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI倫理與法規",
-        "subtopic": "AI治理概念",
-        "concept": "透明度與可解釋性",
-        "explanation": "AI治理強調透明度與可解釋性，確保AI決策過程對使用者與監管單位公開與可理解，提升信任與合規。使用黑箱模型無輔助說明，可能導致決策不透明。保護商業機密須平衡透明需求。",
-        "number": 5,
-        "date": "2026-02-11"
-    },
-    {
-        "question": "以下哪種機器學習方法最常用於無標籤資料的資料分群分析？",
-        "options": [
-            "監督式學習",
-            "非監督式學習",
-            "強化學習",
-            "半監督式學習"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "機器學習概念",
-        "subtopic": "機器學習類型",
-        "concept": "監督、非監督與強化學習",
-        "explanation": "非監督式學習適用於無標籤資料，目標是從資料中找出結構或分群，如叢集分析。監督式學習需已標注資料。強化學習聚焦策略決策。半監督式學習介於兩者之間。",
-        "number": 6,
-        "date": "2026-02-11"
-    },
-    {
-        "question": "在資料隱私與安全的AI應用中，何者不是典型採用的技術或措施？",
-        "options": [
-            "資料匿名化處理以防止個資識別",
-            "建立聯邦學習以分散數據保護隱私",
-            "採用端對端加密保護傳輸數據安全",
-            "將所有數據公開在公共雲端以利分析"
+            "AI代理人能執行多步驟任務",
+            "量子AI用於傳統優化問題",
+            "大模型從生成轉向規劃和行動",
+            "能源限制導致生成式AI發展停滯"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料隱私與安全",
-        "concept": "資料隱私保護技術",
-        "explanation": "開放所有資料到公共雲端會嚴重危害隱私安全。匿名化、聯邦學習與加密都是常見且重要的保護措施，確保數據使用同時防止洩漏個人敏感信息。",
-        "number": 7,
-        "date": "2026-02-11"
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI趨勢",
+        "concept": "AI發展限制",
+        "explanation": "2026年趨勢關注AI代理人、多步驟任務執行、量子AI以及大模型的規劃能力，能源限制導致停滯並非主流觀點。",
+        "number": 2,
+        "date": "2026-02-13"
     },
     {
-        "question": "在資料特徵轉換中，下列何者最能說明One-Hot Encoding的主要目的？",
+        "question": "依據2026年智源AI趨勢報告，AI轉向改變物理世界的核心技術是什麼？",
         "options": [
-            "將連續數值特徵縮放到標準正態分布",
-            "將類別變數轉換成多個二元指標欄位",
-            "對時間序列資料進行時間窗格劃分",
-            "將資料進行主成分分析以降維"
+            "線性搜尋算法",
+            "世界模型與自然語言預測(NSP)",
+            "傳統ETL數據處理技術",
+            "僅用於影像辨識的卷積神經網路"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "世界模型",
+        "concept": "物理世界AI應用",
+        "explanation": "根據2026 AI趨勢，AI將運用世界模型與NSP技術，從文字生成轉為能建模物理環境，如自動駕駛和機器人控制，而非僅是傳統資料處理或單一影像辨識。",
+        "number": 3,
+        "date": "2026-02-13"
+    },
+    {
+        "question": "2026年國資委和政府動態強調AI技術攻關的重點不包括下列哪項？",
+        "options": [
+            "突破大模型技術",
+            "推動整體AI產業創新",
+            "專注純監督式學習技術",
+            "探索量子AI與bitnet應用"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "AI技術策略",
+        "concept": "大模型與創新",
+        "explanation": "政府與國資委強調持續攻關大模型技術與全面推動AI產業，但並不僅限於監督式學習，且也探討量子AI等新興領域。",
+        "number": 4,
+        "date": "2026-02-13"
+    },
+    {
+        "question": "下列哪一種深度學習模型最適合處理序列資料，如語音或文字？",
+        "options": [
+            "卷積神經網路(CNN)",
+            "循環神經網路(RNN)",
+            "生成對抗網路(GAN)",
+            "變分自編碼器(VAE)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "深度學習模型",
+        "concept": "序列模型",
+        "explanation": "RNN因具備循環結構，適合處理時間序列或語言文字等序列資料，CNN通常用於影像資料，GAN與VAE則用於生成建模。",
+        "number": 5,
+        "date": "2026-02-13"
+    },
+    {
+        "question": "在智能製造中，哪一項技術結合允許實現生產排程自主化？",
+        "options": [
+            "純粹影像辨識技術管理品控",
+            "生產排程與數位孿生結合智能體",
+            "傳統基於歷史資料的預測性維護",
+            "機器人單純作業無排程介入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "智能製造",
+        "concept": "智能體應用",
+        "explanation": "結合數位孿生和智能體技術使生產排程能自主調整與優化，遠超純影像辨識或傳統被動維護方法。",
+        "number": 6,
+        "date": "2026-02-13"
+    },
+    {
+        "question": "2026年AI應用於金融業，生成型AI主要用於下列何種功能？",
+        "options": [
+            "偵測信用欺詐交易",
+            "預測市場風險趨勢",
+            "生成財務分析報告與內容",
+            "執行自動交易指令"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "金融AI應用",
+        "concept": "生成式AI功能分類",
+        "explanation": "生成型AI擅長產出文字、報告或內容，分析型AI則用於欺詐偵測，預測型用於風險估計，自動交易是另一類技術應用。",
+        "number": 7,
+        "date": "2026-02-13"
+    },
+    {
+        "question": "在資料清洗中處理遺缺值，首選的合理方法是？",
+        "options": [
+            "直接刪除包含遺缺的紀錄",
+            "利用平均值或中位數填補遺缺",
+            "忽略遺缺值不做處理",
+            "僅做格式轉換不處理遺缺"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
-        "subtopic": "資料轉換與特徵工程",
-        "concept": "One-Hot Encoding",
-        "explanation": "One-Hot Encoding 是將類別變數轉為多個二元欄位，每個欄位代表一個類別，方便機器學習處理非數值特徵。其他選項描述的是標準化、時間序列處理和降維方法。",
+        "subtopic": "資料清理",
+        "concept": "遺缺值處理",
+        "explanation": "平均值或中位數填補遺缺是較普遍且可保留資料完整性的方式，直接刪除可能導致資料偏差，忽略或只做格式轉換無法解決問題。",
         "number": 8,
-        "date": "2026-02-11"
+        "date": "2026-02-13"
     },
     {
-        "question": "機器學習模型中常見的Bias-Variance Tradeoff指的是什麼？",
+        "question": "關於「人在迴圈上」（Human on loop）的定義，何者正確？",
         "options": [
-            "模型偏差和變異程度的平衡，避免過擬合與欠擬合",
-            "正則化強度的調整，增減模型參數數量",
-            "資料與特徵間相關性的量化指標",
-            "訓練時使用不同批次大小的策略"
+            "完全自動化系統無人干預",
+            "人介入模型決策過程以避免錯誤",
+            "人僅在系統開發階段介入",
+            "系統只在發生問題時通知用戶"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "機器學習概念",
-        "subtopic": "模型評估與調優",
-        "concept": "偏差-變異權衡",
-        "explanation": "Bias-Variance Tradeoff描述模型預測誤差中，偏差（Bias）表示模型假設過於簡單導致欠擬合，變異（Variance）表示模型對訓練資料過度適應導致過擬合。兩者須平衡以提升泛化能力。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "AI監督",
+        "concept": "人機協同",
+        "explanation": "人在迴圈上指人類持續介入AI模型決策流程，確保模型判斷正確並避免風險，非完全自動化情況。",
         "number": 9,
-        "date": "2026-02-11"
+        "date": "2026-02-13"
     },
     {
-        "question": "下列工程技術中，何者最貼合生成式AI中維持回應語境一致性的挑戰？",
+        "question": "下列關於鑑別式AI (Discriminative AI) 與生成式AI(Generative AI)的描述，何者為非？",
         "options": [
-            "運用RAG（檢索增強生成）技術輔助生成過程",
-            "使用梯度消失或梯度爆炸技術優化訓練",
-            "利用L1正則化強化模型權重稀疏性",
-            "僅依賴純生成模型不結合外部知識"
+            "鑑別式AI用於分類或判別輸入數據類別",
+            "生成式AI用於創建新數據樣本或內容生成",
+            "鑑別式AI能直接生成新內容如影像或文本",
+            "生成式AI可用於增強數據多樣性與樣本補充"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI技術",
-        "concept": "生成式AI語境一致性與RAG",
-        "explanation": "生成式AI維持語境一致性通常結合RAG技術，即先檢索相關知識再輔助生成，減少語境偏離。梯度問題和正則化與語境一致關聯較小，純生成模型易產生語境錯亂。",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "模型功能區別",
+        "explanation": "鑑別式AI側重於分類和判斷，不直接創建新內容，生成式AI則專注於生產新數據或內容，兩者功能本質不同。",
         "number": 10,
-        "date": "2026-02-11"
+        "date": "2026-02-13"
     }
 ]

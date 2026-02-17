@@ -1,172 +1,172 @@
 [
     {
-        "question": "2025年代理式AI（Agentic AI）最大的特色為何？",
+        "question": "下列有關2025年最新生成式AI多模態平台（如GPT-4o）的應用說明，何者正確？",
         "options": [
-            "能夠自主進行目標規劃與動作執行",
-            "僅能依據指令被動生成內容",
-            "專注於影像分類與辨識",
-            "主要用於數據蒐集與分析展示"
+            "可同時處理文本、影像和語音資料，並支援跨模態交互生成",
+            "僅支援文本與影像資料的生成，但無法語音識別",
+            "只能針對單一模態如文本進行內容產出",
+            "需手動切換每一個模態，無法自動整合輸入輸出"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "代理式AI",
-        "explanation": "代理式AI（Agentic AI）具備感知、規劃、行動及反思能力，能主動完成多步任務，已成為新趨勢。",
+        "subtopic": "多模態AI應用",
+        "concept": "多模態AI",
+        "explanation": "GPT-4o等新一代生成式AI平台支援文本、影像、語音等多種模態的數據同時處理與交互生成，並擁有高度自動整合能力。",
         "number": 1,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "以下哪一項為當前生成式AI No Code/Low Code平台的主要優勢？",
+        "question": "哪一個是2025年全球最受歡迎且具備Prompt Engineering創新特性的生成式AI工作流平台？",
         "options": [
-            "增加人工撰寫程式碼需求",
-            "降低非技術人員的應用建置門檻",
-            "減少資料隱私安全性設計",
-            "只適合工廠維護用途"
+            "Sora 2，專注於即時語音互動",
+            "Claude 3.5，著重於資料視覺辨識",
+            "智譜AI AutoGLM，強調AI Agent協同和跨APP操作",
+            "QuillBot，優化學術查重功能"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的優勢與限制",
-        "concept": "No Code/Low Code基本概念",
-        "explanation": "No Code/Low Code 平台重點在於讓非專業技術人員也能輕鬆啟用自動化應用，降低建置門檻。",
+        "subtopic": "應用工具與平台",
+        "concept": "Prompt Engineering",
+        "explanation": "AutoGLM為2025年No code/Low code趨勢代表，具備AI Agent協同、跨APP操作及進階Prompt工程能力。",
         "number": 2,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "台灣產業界於2025年導入生成式AI，以下哪一應用趨勢最為明顯？",
+        "question": "下列哪一項屬於RAG（檢索增強生成）技術實際應用的最新趨勢？",
         "options": [
-            "僅用於提升手機螢幕顏色表現",
-            "用於提升製造、物流領域自動化",
-            "專注於醫療單一影像分析",
-            "偏重於純娛樂性內容產出"
+            "以大量監督學習資料直接提升生成穩定性",
+            "運用知識檢索結合大型語言模型，增強回應準確性和專業性",
+            "純粹提升硬體效能來優化模型表現",
+            "將所有生成決策交由單一大模型決定，不進行額外搜尋"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "產業落地應用",
-        "explanation": "台灣產業導入生成式AI聚焦於製造與物流自動化，推動工業5.0與企業流程智慧化。",
+        "subtopic": "檢索強化生成",
+        "concept": "RAG",
+        "explanation": "2025年發展趨勢將知識檢索與語言模型結合，提升針對專業領域與知識回應的準確性。",
         "number": 3,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "何者為引導生成式AI輸出精確內容時常用的提示詞設計方法？",
+        "question": "以下關於No code/Low code 生成式AI平台的主要優勢，哪一個說法是正確的？",
         "options": [
-            "縮短提示詞並只給目標關鍵字",
-            "以具體情境與步驟清晰描述需求",
-            "完全仰賴AI隨機回覆",
-            "多使用不確定性與模糊詞彙"
+            "需要專業程式能力來設計流程",
+            "降低技術門檻，讓非工程人員也能建構AI工作流",
+            "僅能用於前端資料視覺化",
+            "只適用於專業開發團隊大規模部署"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "如何善用生成式AI工具",
-        "concept": "提示工程",
-        "explanation": "明確、具體的提示詞能顯著提升生成結果的精確性，是當前常見的設計訣竅。",
+        "subtopic": "No code/Low code",
+        "concept": "No code/Low code",
+        "explanation": "No code/Low code平台的最大價值在於降低技術門檻，任何產業人員均能設計流程，無須深厚程式基礎。",
         "number": 4,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "以下哪一項是2026年No Code平台導入生成式AI的主要限制？",
+        "question": "在生成式AI導入企業時，何者不是2025年主流的風險管理重點？",
         "options": [
-            "所有流程都能百分百自動優化",
-            "平台功能彈性受限於模板設計",
-            "只允許有程式基礎者使用",
-            "完全無需考量資料隱私"
+            "資料隱私與法規遵循問題",
+            "多模態幻覺（Hallucination）影響專業判斷",
+            "單純提升硬體算力以防資料外洩",
+            "同步追蹤合規與流量異常現象"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的優勢與限制",
-        "concept": "No Code/Low Code 限制",
-        "explanation": "No Code平台因多依賴預設模板，彈性不如純程式開發，這是業界公認挑戰之一。",
+        "subtopic": "風險評估",
+        "concept": "風險管理",
+        "explanation": "風險管理重視法規、隱私與技術幻覺，提升硬體效能無法直接防止資料外洩，也非主要重點。",
         "number": 5,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "台灣某企業想導入生成式AI應進行的第一步為何？",
+        "question": "2025年生成式AI在醫療產業的應用，何者為非？",
         "options": [
-            "跳過需求分析直奔落地部署",
-            "先進行企業痛點與應用場景識別",
-            "立即導入任何市場熱門AI工具",
-            "只考慮降低運算能耗"
+            "AI自動診斷醫學影像與生成報告",
+            "利用多模態AI模型綜合語音、影像輔助決策",
+            "只進行語音紀錄分析，無法結合圖像資料",
+            "用於育種及疾病分析的大數據推理"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估",
-        "concept": "導入評估流程",
-        "explanation": "任何企業導入前，首要工作是準確找出內部痛點才能確保價值最大化。",
+        "subtopic": "產業應用",
+        "concept": "多模態AI醫療",
+        "explanation": "多模態AI已能結合語音、影像、文本等資料，單一分析語音資料已非目前主流。",
         "number": 6,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "企業部署生成式AI系統時，風險評估重點通常不包含下列哪一項？",
+        "question": "下列關於2025年生成式AI提示詞（Prompt）工程的描述，哪一項最正確？",
         "options": [
-            "數據隱私安全",
-            "真實性與防深偽",
-            "生成內容著作權",
-            "用戶介面顏色美觀"
+            "Chain-of-Thought提示主要用於分解簡單查詢",
+            "o1推理提示強化模型逐步解題能力",
+            "一般建議只用單句直接指令以避免推理誤差",
+            "提示工程僅適用於程式碼生成場景"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI風險管理",
-        "concept": "風險識別",
-        "explanation": "風險評估著重於安全、權責與真實性，界面顏色非關鍵風險管理因素。",
+        "subtopic": "提示詞工程",
+        "concept": "o1推理提示",
+        "explanation": "o1推理提示是進階Prompt工程，以Chain-of-Thought為基礎，讓模型能逐步執行複雜推理。",
         "number": 7,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "以下何者為2026年生成式AI代理系統的關鍵核心能力？",
+        "question": "2025年最新生成式AI工具普及，以下哪一項不是企業成功AI導入規劃的必要步驟？",
         "options": [
-            "只能單步驟感知與輸出",
-            "具備感知、推理、規劃、反思、自主執行能力",
-            "專職提供內容的美工處理",
-            "僅限制於簡單數據匯入"
+            "分段試行、階段性升級AI工具版本",
+            "完善硬體規劃與多模態數據支援",
+            "忽略行業合規與地區性資料處理法規",
+            "即時追蹤使用數據流量並強化數據風控"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "代理式AI能力",
-        "explanation": "先進代理式AI，不僅執行單一任務，更強調從感知推理到獨立行動與反思。",
+        "subtopic": "導入規劃",
+        "concept": "AI導入流程",
+        "explanation": "合規與資料法規是生成式AI導入規劃不可或缺的一環，不能忽略。",
         "number": 8,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "下列哪一項最能表示2025年生成式AI«合成數據»應用的最大價值？",
+        "question": "在生成式AI應用於金融流程中，以下哪一種方案最有助於減少模型誤判與誤差傳遞？",
         "options": [
-            "主要用來壓縮多媒體檔案",
-            "協助企業模擬與優化決策過程",
-            "僅供網頁前端展示效果用",
-            "純粹提升AI硬體運算效能"
+            "全程信賴AI自行產出決策報告無須審核",
+            "導入RAG模型結合本地金融知識庫查核",
+            "只根據歷史參數設定調整AI模型迭代",
+            "簡化模型設計減少AI參數數量"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "合成數據",
-        "explanation": "合成數據能在不涉真實客戶資料情境下，提升決策模擬與產業應用安全性。",
+        "subtopic": "產業應用",
+        "concept": "金融應用RAG",
+        "explanation": "RAG模型結合本地知識及LLM使生成資訊核查更精準，適合嚴謹的金融領域應用。",
         "number": 9,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     },
     {
-        "question": "當企業導入多模態生成式AI，小型企業可優先關注下列哪一策略？",
+        "question": "下列關於2025年生成式AI垂直應用發展的趨勢，哪一個描述最為貼切？",
         "options": [
-            "聘用資深資料科學家合成所有資料",
-            "利用No Code/Low Code平台開發情境自動化功能",
-            "建立多層雲端資安房間隔離系統",
-            "僅部署於自建機房不連接網路"
+            "基於開放API開發的單一應用最多元持久",
+            "以多智能體（AI Agent）協同互補為主流",
+            "只著重建立語言模型的規模與參數數量",
+            "AI與現有資訊系統整合困難提升"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入規劃",
-        "concept": "多模態與No Code應用",
-        "explanation": "No Code/Low Code結合多模態應用是小型企業快速導入及應用生成式AI的主流方式。",
+        "subtopic": "應用趨勢",
+        "concept": "AI Agent協同",
+        "explanation": "最新垂直應用強調多智能體協同處理複雜場景，遠超單一應用或純語言模型提升。",
         "number": 10,
-        "date": "2026-02-14"
+        "date": "2026-02-17"
     }
 ]

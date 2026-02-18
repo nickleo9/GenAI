@@ -1,172 +1,172 @@
 [
     {
-        "question": "2026年AGI元年被預測帶來的主要變化是？",
+        "question": "在2026年AI發展趨勢中，哪項技術被認為將成為深度學習架構中的核心組件，並互補現有的Transformer模型性能?",
         "options": [
-            "AI將僅在雲端進行文字生成",
-            "AI將具備世界模型，並在實體任務中超越人類",
-            "AI退回早期專家系統模式",
-            "AI專注於娛樂推薦及內容生成"
+            "A. 變分自編碼器（VAE）用於結合生成與鑑別任務",
+            "B. 傳統卷積神經網路（CNN）為深度學習主流",
+            "C. 支持向量機（SVM）提升非線性分類能力",
+            "D. 決策樹結合增強學習取代Transformer"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AGI與智能體",
-        "concept": "人工智能未來趨勢",
-        "explanation": "馬斯克預測2026年為AGI元年，AI將不僅限於文字生成，而是能夠透過世界模型應用於手術等實體任務，達到超越人類表現。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "深度學習結構",
+        "concept": "生成式模型",
+        "explanation": "變分自編碼器（VAE）作為生成模型，能捕捉數據中的潛在分布，並與Transformer模型互補，提升生成與鑑別任務的成效，成為2026年深度學習關鍵技術之一。",
         "number": 1,
-        "date": "2026-02-13"
+        "date": "2026-02-18"
     },
     {
-        "question": "下列哪一項不是2026年生成式AI規劃趨勢中被強調的重點？",
+        "question": "關於資料隱私與安全治理，2026年iPAS應用規劃師在設計AI系統時，哪項原則最符合現行AI倫理要求？",
         "options": [
-            "AI代理人能執行多步驟任務",
-            "量子AI用於傳統優化問題",
-            "大模型從生成轉向規劃和行動",
-            "能源限制導致生成式AI發展停滯"
+            "A. 在收集數據時明確告知用戶用途並獲得同意",
+            "B. 開放所有原始數據給內部團隊以提高模型準確度",
+            "C. 對數據加密後進行不需監督的自動開發",
+            "D. 使用公共數據集時不需考慮數據是否最新"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI趨勢",
-        "concept": "AI發展限制",
-        "explanation": "2026年趨勢關注AI代理人、多步驟任務執行、量子AI以及大模型的規劃能力，能源限制導致停滯並非主流觀點。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "同意與透明",
+        "explanation": "符合倫理的資料處理必須確保用戶知情並同意數據使用目的，這是保障個人隱私與符合AI治理要求的基本原則。",
         "number": 2,
-        "date": "2026-02-13"
+        "date": "2026-02-18"
     },
     {
-        "question": "依據2026年智源AI趨勢報告，AI轉向改變物理世界的核心技術是什麼？",
+        "question": "在機器學習模型中，何者描述了偏差與變異的權衡問題，常作為提高模型泛化能力的指導原理？",
         "options": [
-            "線性搜尋算法",
-            "世界模型與自然語言預測(NSP)",
-            "傳統ETL數據處理技術",
-            "僅用於影像辨識的卷積神經網路"
+            "A. 偏差-變異權衡",
+            "B. 權重衰減機制",
+            "C. 隨機梯度下降",
+            "D. 特徵縮放標準"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "AI技術與模型",
-        "subtopic": "世界模型",
-        "concept": "物理世界AI應用",
-        "explanation": "根據2026 AI趨勢，AI將運用世界模型與NSP技術，從文字生成轉為能建模物理環境，如自動駕駛和機器人控制，而非僅是傳統資料處理或單一影像辨識。",
+        "subtopic": "機器學習理論",
+        "concept": "Bias-Variance Tradeoff",
+        "explanation": "偏差-變異權衡描述模型在訓練準確度與泛化能力之間的平衡，過低的偏差可能導致過擬合，高變異則會影響模型穩定性。",
         "number": 3,
-        "date": "2026-02-13"
+        "date": "2026-02-18"
     },
     {
-        "question": "2026年國資委和政府動態強調AI技術攻關的重點不包括下列哪項？",
+        "question": "在生成式AI與鑑別式AI的整合應用中，下列哪種敘述最正確？",
         "options": [
-            "突破大模型技術",
-            "推動整體AI產業創新",
-            "專注純監督式學習技術",
-            "探索量子AI與bitnet應用"
+            "A. 鑑別式AI主要負責生成內容，生成式AI用於判別真偽",
+            "B. 兩者不可結合，功能相互排斥",
+            "C. 鑑別式AI用於分類與判斷，生成式AI則產生新數據",
+            "D. 生成式AI需在鑑別式AI訓練後才能運作"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "AI治理概念",
-        "subtopic": "AI技術策略",
-        "concept": "大模型與創新",
-        "explanation": "政府與國資委強調持續攻關大模型技術與全面推動AI產業，但並不僅限於監督式學習，且也探討量子AI等新興領域。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別與生成模型",
+        "concept": "模型功能區分",
+        "explanation": "鑑別式AI用於判斷資料的類別或真偽，如分類任務；生成式AI則用以創造新數據，如圖像或文字生成，兩種模型可結合以優化應用效果。",
         "number": 4,
-        "date": "2026-02-13"
+        "date": "2026-02-18"
     },
     {
-        "question": "下列哪一種深度學習模型最適合處理序列資料，如語音或文字？",
+        "question": "針對資料整理與分析流程，以下敘述哪一項是錯誤的？",
         "options": [
-            "卷積神經網路(CNN)",
-            "循環神經網路(RNN)",
-            "生成對抗網路(GAN)",
-            "變分自編碼器(VAE)"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI技術與模型",
-        "subtopic": "深度學習模型",
-        "concept": "序列模型",
-        "explanation": "RNN因具備循環結構，適合處理時間序列或語言文字等序列資料，CNN通常用於影像資料，GAN與VAE則用於生成建模。",
-        "number": 5,
-        "date": "2026-02-13"
-    },
-    {
-        "question": "在智能製造中，哪一項技術結合允許實現生產排程自主化？",
-        "options": [
-            "純粹影像辨識技術管理品控",
-            "生產排程與數位孿生結合智能體",
-            "傳統基於歷史資料的預測性維護",
-            "機器人單純作業無排程介入"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "智能製造",
-        "concept": "智能體應用",
-        "explanation": "結合數位孿生和智能體技術使生產排程能自主調整與優化，遠超純影像辨識或傳統被動維護方法。",
-        "number": 6,
-        "date": "2026-02-13"
-    },
-    {
-        "question": "2026年AI應用於金融業，生成型AI主要用於下列何種功能？",
-        "options": [
-            "偵測信用欺詐交易",
-            "預測市場風險趨勢",
-            "生成財務分析報告與內容",
-            "執行自動交易指令"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "金融AI應用",
-        "concept": "生成式AI功能分類",
-        "explanation": "生成型AI擅長產出文字、報告或內容，分析型AI則用於欺詐偵測，預測型用於風險估計，自動交易是另一類技術應用。",
-        "number": 7,
-        "date": "2026-02-13"
-    },
-    {
-        "question": "在資料清洗中處理遺缺值，首選的合理方法是？",
-        "options": [
-            "直接刪除包含遺缺的紀錄",
-            "利用平均值或中位數填補遺缺",
-            "忽略遺缺值不做處理",
-            "僅做格式轉換不處理遺缺"
+            "A. ETL流程包含抽取、轉換、載入資料三階段",
+            "B. 數據清洗不需要考慮缺失值的填補",
+            "C. 特徵工程是提升模型效果的重要步驟",
+            "D. 探索性數據分析有助於理解資料特性"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
-        "subtopic": "資料清理",
-        "concept": "遺缺值處理",
-        "explanation": "平均值或中位數填補遺缺是較普遍且可保留資料完整性的方式，直接刪除可能導致資料偏差，忽略或只做格式轉換無法解決問題。",
-        "number": 8,
-        "date": "2026-02-13"
+        "subtopic": "資料整理流程",
+        "concept": "ETL與數據清洗",
+        "explanation": "缺失值的填補是數據清洗中不可或缺的步驟，忽略處理缺失值會導致模型效果下降，因此此項為錯誤敘述。",
+        "number": 5,
+        "date": "2026-02-18"
     },
     {
-        "question": "關於「人在迴圈上」（Human on loop）的定義，何者正確？",
+        "question": "關於強化學習Q-Learning方法，下列敘述何者正確？",
         "options": [
-            "完全自動化系統無人干預",
-            "人介入模型決策過程以避免錯誤",
-            "人僅在系統開發階段介入",
-            "系統只在發生問題時通知用戶"
+            "A. Q-Learning依賴預設的環境模型進行學習",
+            "B. Q-Learning是基於價值函數的無模型強化學習方法",
+            "C. Q-Learning只能用於連續動作空間",
+            "D. Q-Learning無法更新狀態行為函數"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "AI治理概念",
-        "subtopic": "AI監督",
-        "concept": "人機協同",
-        "explanation": "人在迴圈上指人類持續介入AI模型決策流程，確保模型判斷正確並避免風險，非完全自動化情況。",
-        "number": 9,
-        "date": "2026-02-13"
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning是無模型方法，透過學習狀態-行為價值函數（Q函數）來指導動作選擇，適用於離散動作空間。",
+        "number": 6,
+        "date": "2026-02-18"
     },
     {
-        "question": "下列關於鑑別式AI (Discriminative AI) 與生成式AI(Generative AI)的描述，何者為非？",
+        "question": "關於生成式AI提示詞工程，下列哪項敘述是合理的設計原則？",
         "options": [
-            "鑑別式AI用於分類或判別輸入數據類別",
-            "生成式AI用於創建新數據樣本或內容生成",
-            "鑑別式AI能直接生成新內容如影像或文本",
-            "生成式AI可用於增強數據多樣性與樣本補充"
+            "A. 提示詞內容應明確且具體，以減少生成結果模糊",
+            "B. 提示詞越長越好，不需關心上下文",
+            "C. 單一提示詞不需調整即可滿足所有場景",
+            "D. 提示詞不影響生成結果的語境一致性"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "AI技術與模型",
-        "subtopic": "鑑別式與生成式AI",
-        "concept": "模型功能區別",
-        "explanation": "鑑別式AI側重於分類和判斷，不直接創建新內容，生成式AI則專注於生產新數據或內容，兩者功能本質不同。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞設計",
+        "explanation": "設計良好且具體的提示詞可以提升生成式AI回應的準確度及上下文相關性，減少無意義或模糊的輸出。",
+        "number": 7,
+        "date": "2026-02-18"
+    },
+    {
+        "question": "ETL過程中，何者並非數據轉換階段應執行的任務？",
+        "options": [
+            "A. 數據標準化與格式統一",
+            "B. 特徵選擇與生成",
+            "C. 數據加密與安全訪問管控",
+            "D. 數據抽樣與完整性檢查"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "ETL流程",
+        "concept": "資料轉換",
+        "explanation": "數據抽樣與完整性檢查多屬於數據抽取或清洗階段，而非純粹的轉換任務，轉換階段主要側重於格式統一與特徵工程等操作。",
+        "number": 8,
+        "date": "2026-02-18"
+    },
+    {
+        "question": "在AI治理框架中，「Human on loop」理念表示？",
+        "options": [
+            "A. 人工持續監督並可干預模型決策流程",
+            "B. 完全由人工決策，無AI參與",
+            "C. AI自動學習且無需人工介入",
+            "D. 人工只在模型訓練前參與"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理策略",
+        "concept": "Human on loop",
+        "explanation": "Human on loop強調人工持續介入AI系統決策過程中，能監控及糾正模型行為，確保AI應用安全與可控。",
+        "number": 9,
+        "date": "2026-02-18"
+    },
+    {
+        "question": "關於聯邦學習在資料隱私上的優勢，哪一項描述最正確？",
+        "options": [
+            "A. 保持數據本地化，模型權重共享而非原始資料",
+            "B. 將所有數據集中至中央伺服器訓練模型",
+            "C. 完全不需要任何型態的數據共享",
+            "D. 僅適用於公開資料集情境"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習讓不同設備或機構在本地訓練模型，僅共享模型參數，避免原始資料外流，增強隱私保護，適用於多方協作情境。",
         "number": 10,
-        "date": "2026-02-13"
+        "date": "2026-02-18"
     }
 ]

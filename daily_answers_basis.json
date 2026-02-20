@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2026年AI發展趨勢中，哪項技術被認為將成為深度學習架構中的核心組件，並互補現有的Transformer模型性能?",
+        "question": "在資料分析流程中，哪一項是進行資料清理與轉換的主要步驟？",
         "options": [
-            "A. 變分自編碼器（VAE）用於結合生成與鑑別任務",
-            "B. 傳統卷積神經網路（CNN）為深度學習主流",
-            "C. 支持向量機（SVM）提升非線性分類能力",
-            "D. 決策樹結合增強學習取代Transformer"
+            "資料抽取、轉換與載入（ETL）",
+            "資料分群叢集分析",
+            "資料視覺化展示",
+            "人工監督模型決策"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "AI技術與模型",
-        "subtopic": "深度學習結構",
-        "concept": "生成式模型",
-        "explanation": "變分自編碼器（VAE）作為生成模型，能捕捉數據中的潛在分布，並與Transformer模型互補，提升生成與鑑別任務的成效，成為2026年深度學習關鍵技術之一。",
-        "number": 1,
-        "date": "2026-02-18"
-    },
-    {
-        "question": "關於資料隱私與安全治理，2026年iPAS應用規劃師在設計AI系統時，哪項原則最符合現行AI倫理要求？",
-        "options": [
-            "A. 在收集數據時明確告知用戶用途並獲得同意",
-            "B. 開放所有原始數據給內部團隊以提高模型準確度",
-            "C. 對數據加密後進行不需監督的自動開發",
-            "D. 使用公共數據集時不需考慮數據是否最新"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "AI倫理與法規",
-        "subtopic": "資料隱私與安全",
-        "concept": "同意與透明",
-        "explanation": "符合倫理的資料處理必須確保用戶知情並同意數據使用目的，這是保障個人隱私與符合AI治理要求的基本原則。",
-        "number": 2,
-        "date": "2026-02-18"
-    },
-    {
-        "question": "在機器學習模型中，何者描述了偏差與變異的權衡問題，常作為提高模型泛化能力的指導原理？",
-        "options": [
-            "A. 偏差-變異權衡",
-            "B. 權重衰減機制",
-            "C. 隨機梯度下降",
-            "D. 特徵縮放標準"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "AI技術與模型",
-        "subtopic": "機器學習理論",
-        "concept": "Bias-Variance Tradeoff",
-        "explanation": "偏差-變異權衡描述模型在訓練準確度與泛化能力之間的平衡，過低的偏差可能導致過擬合，高變異則會影響模型穩定性。",
-        "number": 3,
-        "date": "2026-02-18"
-    },
-    {
-        "question": "在生成式AI與鑑別式AI的整合應用中，下列哪種敘述最正確？",
-        "options": [
-            "A. 鑑別式AI主要負責生成內容，生成式AI用於判別真偽",
-            "B. 兩者不可結合，功能相互排斥",
-            "C. 鑑別式AI用於分類與判斷，生成式AI則產生新數據",
-            "D. 生成式AI需在鑑別式AI訓練後才能運作"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "鑑別與生成模型",
-        "concept": "模型功能區分",
-        "explanation": "鑑別式AI用於判斷資料的類別或真偽，如分類任務；生成式AI則用以創造新數據，如圖像或文字生成，兩種模型可結合以優化應用效果。",
-        "number": 4,
-        "date": "2026-02-18"
-    },
-    {
-        "question": "針對資料整理與分析流程，以下敘述哪一項是錯誤的？",
-        "options": [
-            "A. ETL流程包含抽取、轉換、載入資料三階段",
-            "B. 數據清洗不需要考慮缺失值的填補",
-            "C. 特徵工程是提升模型效果的重要步驟",
-            "D. 探索性數據分析有助於理解資料特性"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
-        "subtopic": "資料整理流程",
-        "concept": "ETL與數據清洗",
-        "explanation": "缺失值的填補是數據清洗中不可或缺的步驟，忽略處理缺失值會導致模型效果下降，因此此項為錯誤敘述。",
-        "number": 5,
-        "date": "2026-02-18"
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "資料清理與轉換是資料分析流程中非常重要的步驟，主要包含資料抽取、轉換與載入，簡稱ETL。這能確保資料的品質並為後續分析做準備。",
+        "number": 1,
+        "date": "2026-02-20"
     },
     {
-        "question": "關於強化學習Q-Learning方法，下列敘述何者正確？",
+        "question": "機器學習中，Q-Learning 與 Deep Q-Learning 的主要差異為何？",
         "options": [
-            "A. Q-Learning依賴預設的環境模型進行學習",
-            "B. Q-Learning是基於價值函數的無模型強化學習方法",
-            "C. Q-Learning只能用於連續動作空間",
-            "D. Q-Learning無法更新狀態行為函數"
+            "Q-Learning 使用深度神經網絡，Deep Q-Learning 則是基本表格更新",
+            "Deep Q-Learning 是基於深度神經網絡的強化學習方法，Q-Learning 為基本表格方法",
+            "兩者皆以非監督學習模式執行，但Deep Q-Learning增強訓練速度",
+            "Q-Learning 是生成式AI技術，Deep Q-Learning屬於鑑別式AI技術"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "機器學習概念",
         "subtopic": "強化學習",
-        "concept": "Q-Learning",
-        "explanation": "Q-Learning是無模型方法，透過學習狀態-行為價值函數（Q函數）來指導動作選擇，適用於離散動作空間。",
-        "number": 6,
-        "date": "2026-02-18"
+        "concept": "Q-Learning vs Deep Q-Learning",
+        "explanation": "Q-Learning 是強化學習的基本表格方法，而 Deep Q-Learning 使用深度神經網絡來近似Q函數，適用於較複雜的環境。",
+        "number": 2,
+        "date": "2026-02-20"
     },
     {
-        "question": "關於生成式AI提示詞工程，下列哪項敘述是合理的設計原則？",
+        "question": "在人工智慧治理中，下列何者是針對避免AI黑箱問題所提出的解法？",
         "options": [
-            "A. 提示詞內容應明確且具體，以減少生成結果模糊",
-            "B. 提示詞越長越好，不需關心上下文",
-            "C. 單一提示詞不需調整即可滿足所有場景",
-            "D. 提示詞不影響生成結果的語境一致性"
+            "使用模型可解釋手法如LIME",
+            "加強資料加密與隱私保護",
+            "優化大數據資料收集流程",
+            "擴充資料標註的自動化能力"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "提示工程",
-        "concept": "提示詞設計",
-        "explanation": "設計良好且具體的提示詞可以提升生成式AI回應的準確度及上下文相關性，減少無意義或模糊的輸出。",
-        "number": 7,
-        "date": "2026-02-18"
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "XAI及黑箱問題",
+        "explanation": "黑箱問題指模型決策無法解釋，LIME等可解釋AI技術可讓使用者理解模型決策過程，是治理AI黑箱問題的重要方法。",
+        "number": 3,
+        "date": "2026-02-20"
     },
     {
-        "question": "ETL過程中，何者並非數據轉換階段應執行的任務？",
+        "question": "在特徵工程中，One-Hot Encoding 的主要用途是？",
         "options": [
-            "A. 數據標準化與格式統一",
-            "B. 特徵選擇與生成",
-            "C. 數據加密與安全訪問管控",
-            "D. 數據抽樣與完整性檢查"
+            "將連續數值型特徵轉換為類別變數",
+            "將類別變數轉換為稀疏二進位向量",
+            "將特徵維度降低以提升模型效率",
+            "對數據進行正則化使其位於0到1之間"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
-        "subtopic": "ETL流程",
-        "concept": "資料轉換",
-        "explanation": "數據抽樣與完整性檢查多屬於數據抽取或清洗階段，而非純粹的轉換任務，轉換階段主要側重於格式統一與特徵工程等操作。",
-        "number": 8,
-        "date": "2026-02-18"
+        "subtopic": "資料整理與分析流程",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding 是將類別型變數轉換成稀疏的二進位向量，使模型能夠理解類別資料。",
+        "number": 4,
+        "date": "2026-02-20"
     },
     {
-        "question": "在AI治理框架中，「Human on loop」理念表示？",
+        "question": "在生成式AI與鑑別式AI的應用區分中，下列何者為生成式AI的典型功能？",
         "options": [
-            "A. 人工持續監督並可干預模型決策流程",
-            "B. 完全由人工決策，無AI參與",
-            "C. AI自動學習且無需人工介入",
-            "D. 人工只在模型訓練前參與"
+            "預測目標變數的分類結果",
+            "根據輸入資料生成新內容",
+            "鑑別資料是否屬於某分類標籤",
+            "透過標註資料訓練實時推論模型"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "AI倫理與法規",
-        "subtopic": "AI治理策略",
-        "concept": "Human on loop",
-        "explanation": "Human on loop強調人工持續介入AI系統決策過程中，能監控及糾正模型行為，確保AI應用安全與可控。",
-        "number": 9,
-        "date": "2026-02-18"
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成式AI",
+        "explanation": "生成式AI通過學習數據分布，能夠生成新的、相似的內容，如圖像、文本，而不是僅做分類或鑑別。",
+        "number": 5,
+        "date": "2026-02-20"
     },
     {
-        "question": "關於聯邦學習在資料隱私上的優勢，哪一項描述最正確？",
+        "question": "下列哪一項最能說明聯邦學習的核心優勢？",
         "options": [
-            "A. 保持數據本地化，模型權重共享而非原始資料",
-            "B. 將所有數據集中至中央伺服器訓練模型",
-            "C. 完全不需要任何型態的數據共享",
-            "D. 僅適用於公開資料集情境"
+            "將資料集中於雲端以加速計算",
+            "利用多地端設備分散式資料訓練模型，保護隱私",
+            "結合生成式AI與鑑別式AI進行模型優化",
+            "以監理沙盒測試AI模型風險"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
         "subtopic": "資料隱私與安全",
         "concept": "聯邦學習",
-        "explanation": "聯邦學習讓不同設備或機構在本地訓練模型，僅共享模型參數，避免原始資料外流，增強隱私保護，適用於多方協作情境。",
+        "explanation": "聯邦學習透過在多個端點本地訓練模型，避免資料集中傳輸，有效保護用戶隱私。",
+        "number": 6,
+        "date": "2026-02-20"
+    },
+    {
+        "question": "在人機互動設計中，Human on Loop 主要強調的是？",
+        "options": [
+            "AI 全自動決策，無需人介入",
+            "人類參與監督AI決策過程及結果",
+            "資料以人類優先權重分群",
+            "將生成式AI結果直接用於市面應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "Human on Loop",
+        "explanation": "Human on Loop指人類監督並可以干預AI決策，防止AI失效或偏誤，是安全治理的重要概念。",
+        "number": 7,
+        "date": "2026-02-20"
+    },
+    {
+        "question": "在監督學習中，下列何者是一種用於避免模型過度擬合的正則化技術？",
+        "options": [
+            "增強學習",
+            "L1與L2正則化",
+            "深度強化學習",
+            "分群分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "正規化 L1、L2",
+        "explanation": "L1及L2正則化透過在損失函數中加入懲罰項，控制模型權重大小，以避免過度擬合。",
+        "number": 8,
+        "date": "2026-02-20"
+    },
+    {
+        "question": "生成式AI保持語境一致性的關鍵技術是？",
+        "options": [
+            "使用批次推論技術",
+            "引入檢索增強生成技術（RAG）",
+            "深度學習中的剪枝技術",
+            "無監督學習優化流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "RAG",
+        "explanation": "檢索增強生成技術（RAG）結合檢索與生成，能讓生成式AI回應與上下文保持一致性，有效提升回答準確度。",
+        "number": 9,
+        "date": "2026-02-20"
+    },
+    {
+        "question": "以下哪項技術主要用來處理資料中類別型變數，避免模型誤解類別間數值大小關係？",
+        "options": [
+            "連續數值標準化",
+            "One-Hot Encoding",
+            "主成分分析（PCA）",
+            "數據增強"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding 將類別變數轉為稀疏的二進位向量，不賦予類別間大小順序，避免模型誤讀。",
         "number": 10,
-        "date": "2026-02-18"
+        "date": "2026-02-20"
     }
 ]

@@ -2770,17 +2770,19 @@ async function selectPlan(planType) {
         });
 
         let result = await response.json();
+        console.log('📡 n8n原始回應:', result);
 
-        // 修正：n8n 有時會將結果包在陣列中 [ {...} ]
-        if (Array.isArray(result)) {
-            result = result[0];
-        }
+        // 強制處理陣列或物件格式
+        const data = Array.isArray(result) ? result[0] : result;
+        console.log('📦 處理後回應資料:', data);
 
-        if (result && result.success && result.ecpayParams) {
+        if (data && data.success && data.ecpayParams) {
             iPASQuizApp.showAlert('✅ 訂單已產生，即將跳轉至綠界金流...', 'success');
-            submitECPayForm(result.paymentUrl, result.ecpayParams);
+            submitECPayForm(data.paymentUrl, data.ecpayParams);
         } else {
-            throw new Error(result ? (result.message || '產生訂單失敗') : '後端回應格式錯誤');
+            const errorMsg = data ? (data.message || '後端回應成功但參數缺失') : '後端回應格式錯誤';
+            console.error('❌ 金流參數校驗失敗:', errorMsg);
+            throw new Error(errorMsg);
         }
     } catch (error) {
         console.error('支付錯誤:', error);

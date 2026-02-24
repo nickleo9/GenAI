@@ -2467,6 +2467,32 @@ const LoginManager = {
     init() {
         this.attachEventListeners();
         this.checkLoginStatus();
+        this.handlePaymentReturn(); // 新增：處理支付回傳
+    },
+
+    // 處理支付回傳 (新增)
+    handlePaymentReturn() {
+        const urlParams = new URLSearchParams(window.location.search);
+        if (urlParams.get('payment') === 'success') {
+            iPASQuizApp.showAlert('💎 感謝您的訂閱！會員權限已開通。', 'success');
+
+            // 重新抓取會員狀態以更新 UI
+            const userData = JSON.parse(localStorage.getItem('user_data') || localStorage.getItem('ipas_user_data') || '{}');
+            const userId = userData.id || userData.userId || userData.email || userData.displayName;
+
+            if (userId) {
+                this.checkMemberStatus(userId).then(status => {
+                    if (status && status.memberLevel) {
+                        const updatedUser = { ...userData, member_level: status.memberLevel };
+                        localStorage.setItem(userData.id ? 'user_data' : 'ipas_user_data', JSON.stringify(updatedUser));
+                        this.showUserInfo(updatedUser);
+                    }
+                });
+            }
+
+            // 清除網址參數，避免重複提示
+            window.history.replaceState({}, document.title, window.location.pathname);
+        }
     },
 
 
@@ -2713,38 +2739,70 @@ function closeModal(modalId) {
 }
 
 // 選擇方案
-function selectPlan(planType) {
+async function selectPlan(planType) {
     const plans = {
-        monthly: {
-            name: '月費會員',
-            price: 199,
-            duration: '1個月'
-        },
-        yearly: {
-            name: '年費會員',
-            price: 1999,
-            duration: '12個月'
-        }
+        monthly: { name: '月費會員', price: 199 },
+        yearly: { name: '年費會員', price: 1999 }
     };
 
     const selectedPlan = plans[planType];
+    const userData = JSON.parse(localStorage.getItem('user_data') || localStorage.getItem('ipas_user_data') || '{}');
+    const userId = userData.id || userData.userId || userData.email || userData.displayName;
+
+    if (!userId) {
+        iPASQuizApp.showAlert('❌ 請先登入會員再執行升級！', 'warning');
+        return;
+    }
 
     console.log('🛒 選擇方案:', selectedPlan);
-
-    // 關閉模態框
     closeModal('upgrade-modal');
+    iPASQuizApp.showLoading('正在產生支付訂單...');
 
-    // 顯示提示
-    iPASQuizApp.showAlert(`✅ 您選擇了 ${selectedPlan.name} ($${selectedPlan.price})
-稍後將導向付款頁面...`, 'success');
+    try {
+        const response = await fetch('https://nickleo9.zeabur.app/webhook/money', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                userId: userId,
+                plan: planType,
+                amount: selectedPlan.price
+            })
+        });
 
-    // TODO: 實際上線時,導向綠界金流
-    // window.location.href = '/payment?plan=' + planType;
+        const result = await response.json();
 
-    // 現在先導向你的聯絡頁面
-    setTimeout(() => {
-        window.open('https://portaly.cc/zn.studio', '_blank');
-    }, 2000);
+        if (result.success && result.ecpayParams) {
+            iPASQuizApp.showAlert('✅ 訂單已產生，即將跳轉至綠界金流...', 'success');
+            submitECPayForm(result.paymentUrl, result.ecpayParams);
+        } else {
+            throw new Error(result.message || '產生訂單失敗');
+        }
+    } catch (error) {
+        console.error('支付錯誤:', error);
+        iPASQuizApp.hideLoading();
+        iPASQuizApp.showAlert('❌ 無法啟動支付流程，請稍後再試：' + error.message, 'error');
+    }
+}
+
+// 動態產生綠界表單並送出 (新增)
+function submitECPayForm(url, params) {
+    const form = document.createElement('form');
+    form.method = 'POST';
+    form.action = url;
+    form.style.display = 'none';
+
+    for (const key in params) {
+        if (params.hasOwnProperty(key)) {
+            const input = document.createElement('input');
+            input.type = 'hidden';
+            input.name = key;
+            input.value = params[key];
+            form.appendChild(input);
+        }
+    }
+
+    document.body.appendChild(form);
+    form.submit();
 }
 
 // 檢查功能權限(用於鎖定付費功能)

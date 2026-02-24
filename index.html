@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
+
 <head>
-<link rel="icon" href="data:,">
+    <link rel="icon" href="data:,">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>iPAS AI應用規劃師專業練習系統</title>
@@ -10,10 +11,11 @@
     <!-- Font Awesome Icons -->
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" rel="stylesheet">
 
- <!-- 👉 你的自定義 CSS -->
+    <!-- 👉 你的自定義 CSS -->
     <link rel="stylesheet" href="style.css">
 
 </head>
+
 <body>
     <!-- 頂部導航 -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light fixed-top">
@@ -26,33 +28,34 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav ms-auto">
-                    
-    <!-- ✨ 新增：登入區塊 START -->
-    <li class="nav-item" id="login-nav-item">
-        <a class="nav-link" href="#" id="nav-login-btn">
-            <i class="fas fa-sign-in-alt me-1"></i>登入
-        </a>
-    </li>
-                    
-<!-- 🔥 新增:導航欄升級按鈕 (免費會員可見) -->
-<li class="nav-item" id="nav-upgrade-item" style="display: none;">
-    <a class="nav-link text-warning fw-bold" href="#" onclick="openUpgradeModal(); return false;">
-        <i class="fas fa-crown me-1"></i>升級 VIP
-    </a>
-</li>
 
-                    
-    <li class="nav-item d-none" id="user-nav-item">
-        <div class="d-flex align-items-center">
-            <img id="nav-user-avatar" src="" class="rounded-circle me-2" width="32" height="32" alt="頭像">
-            <span id="nav-user-name" class="text-dark me-3"></span>
-            <a class="nav-link" href="#" id="nav-logout-btn">
-                <i class="fas fa-sign-out-alt me-1"></i>登出
-            </a>
-        </div>
-    </li>
-    <!-- ✨ 新增：登入區塊 END -->
-                    
+                    <!-- ✨ 新增：登入區塊 START -->
+                    <li class="nav-item" id="login-nav-item">
+                        <a class="nav-link" href="#" id="nav-login-btn">
+                            <i class="fas fa-sign-in-alt me-1"></i>登入
+                        </a>
+                    </li>
+
+                    <!-- 🔥 新增:導航欄升級按鈕 (免費會員可見) -->
+                    <li class="nav-item" id="nav-upgrade-item" style="display: none;">
+                        <a class="nav-link text-warning fw-bold" href="#" onclick="openUpgradeModal(); return false;">
+                            <i class="fas fa-crown me-1"></i>升級 VIP
+                        </a>
+                    </li>
+
+
+                    <li class="nav-item d-none" id="user-nav-item">
+                        <div class="d-flex align-items-center">
+                            <img id="nav-user-avatar" src="" class="rounded-circle me-2" width="32" height="32"
+                                alt="頭像">
+                            <span id="nav-user-name" class="text-dark me-3"></span>
+                            <a class="nav-link" href="#" id="nav-logout-btn">
+                                <i class="fas fa-sign-out-alt me-1"></i>登出
+                            </a>
+                        </div>
+                    </li>
+                    <!-- ✨ 新增：登入區塊 END -->
+
                     <li class="nav-item">
                         <a class="nav-link" href="#" id="save-btn">
                             <i class="fas fa-save me-1"></i>儲存進度
@@ -85,84 +88,90 @@
         <div id="quiz-status" class="quiz-status" style="display: none;">
             <i class="fas fa-lock me-1"></i>測驗進行中
         </div>
-        
+
         <div class="quiz-header">
             <h1><i class="fas fa-brain me-3"></i>iPAS AI應用規劃師專業練習系統</h1>
             <p class="mb-0">經濟部產業人才能力鑑定 - 考試衝刺專用</p>
         </div>
-         <!-- ✨ 新增：會員登入區塊 START -->
-    <div class="login-section" id="login-section" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 30px; margin: 20px; text-align: center;">
-        <h4 class="text-white mb-4">
-            <i class="fas fa-user-circle me-2"></i>會員專屬功能
-        </h4>
-        <p class="text-white mb-4">登入後即可雲端同步學習進度、查看排行榜、接收 Line 每日推播！</p>
-        
-        <div class="d-flex justify-content-center gap-3 flex-wrap">
-            <button id="line-login-btn" class="btn btn-success btn-lg px-4">
-                <i class="fab fa-line me-2"></i>使用 Line 登入
-            </button>
-            <button id="google-login-btn" class="btn btn-light btn-lg px-4">
-                <i class="fab fa-google me-2"></i>使用 Google 登入
-            </button>
-        </div>
-    </div>
-    
-    <!-- 登入後顯示的區塊 -->
-    <div class="user-welcome d-none" id="user-welcome" style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); border-radius: 15px; padding: 25px; margin: 20px;">
-        <div class="d-flex align-items-center justify-content-between flex-wrap">
-            <div class="d-flex align-items-center">
-                <img id="user-avatar" src="" alt="頭像" class="rounded-circle me-3" width="60" height="60">
-                <div>
-                    <h5 class="mb-1">
-                        <i class="fas fa-check-circle text-success me-2"></i>
-                        歡迎回來，<span id="user-name">載入中...</span>！
-                        <span id="user-level-badge" class="badge bg-primary ms-2" style="font-size: 0.8rem;">載入中...</span>
-                    </h5>
-                    <small class="text-muted">
-                        <i class="fas fa-calendar-alt me-1"></i>最後登入：<span id="last-login">剛剛</span>
-                        <span class="ms-3"><i class="fas fa-sign-in-alt me-1"></i>登入方式: <span id="login-method">Line</span></span>
-                    </small>
-                </div>
-            </div>
-                    <div class="d-flex gap-2">
-            <!-- 🔥 新增:升級按鈕 (大版本,只對免費會員顯示) -->
-            <button id="upgrade-btn-large" class="btn btn-warning" style="display: none;" onclick="openUpgradeModal()">
-                <i class="fas fa-star me-2"></i>升級付費會員
-            </button>
+        <!-- ✨ 新增：會員登入區塊 START -->
+        <div class="login-section" id="login-section"
+            style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); border-radius: 15px; padding: 30px; margin: 20px; text-align: center;">
+            <h4 class="text-white mb-4">
+                <i class="fas fa-user-circle me-2"></i>會員專屬功能
+            </h4>
+            <p class="text-white mb-4">登入後即可雲端同步學習進度、查看排行榜、接收 Line 每日推播！</p>
 
-            
-            <button id="logout-btn" class="btn btn-outline-danger">
-                <i class="fas fa-sign-out-alt me-2"></i>登出
-            </button>
-        </div>
-    </div>
-
-   <!-- 🔥 新增:免費會員限制提示卡片 -->
-    <div id="free-member-notice" class="alert alert-warning mt-3" style="display: none;">
-        <div class="d-flex align-items-start">
-            <i class="fas fa-info-circle me-3" style="font-size: 1.5rem;"></i>
-            <div class="flex-grow-1">
-                <h6 class="mb-2">
-                    <strong>免費會員功能限制</strong>
-                </h6>
-                <ul class="mb-2" style="font-size: 0.9rem;">
-                    <li>✅ 模擬考試模式 (5次/月)</li>
-                    <li>❌ 無法雲端同步學習進度</li>
-                    <li>✅ 匯出錯題集 (5次/月)</li>
-                    <li>❌ 社群題目解析需等到晚上</li>
-                </ul>
-                <button class="btn btn-warning btn-sm" onclick="openUpgradeModal()">
-                    <i class="fas fa-crown me-1"></i>立即升級解鎖全功能
+            <div class="d-flex justify-content-center gap-3 flex-wrap">
+                <button id="line-login-btn" class="btn btn-success btn-lg px-4">
+                    <i class="fab fa-line me-2"></i>使用 Line 登入
+                </button>
+                <button id="google-login-btn" class="btn btn-light btn-lg px-4">
+                    <i class="fab fa-google me-2"></i>使用 Google 登入
                 </button>
             </div>
-            <button class="btn-close" onclick="document.getElementById('free-member-notice').style.display='none'"></button>
         </div>
-    </div>
-</div>
 
-        
-    <!-- ✨ 新增：會員登入區塊 END -->
-        
+        <!-- 登入後顯示的區塊 -->
+        <div class="user-welcome d-none" id="user-welcome"
+            style="background: linear-gradient(135deg, #84fab0 0%, #8fd3f4 100%); border-radius: 15px; padding: 25px; margin: 20px;">
+            <div class="d-flex align-items-center justify-content-between flex-wrap">
+                <div class="d-flex align-items-center">
+                    <img id="user-avatar" src="" alt="頭像" class="rounded-circle me-3" width="60" height="60">
+                    <div>
+                        <h5 class="mb-1">
+                            <i class="fas fa-check-circle text-success me-2"></i>
+                            歡迎回來，<span id="user-name">載入中...</span>！
+                            <span id="user-level-badge" class="badge bg-primary ms-2"
+                                style="font-size: 0.8rem;">載入中...</span>
+                        </h5>
+                        <small class="text-muted">
+                            <i class="fas fa-calendar-alt me-1"></i>最後登入：<span id="last-login">剛剛</span>
+                            <span class="ms-3"><i class="fas fa-sign-in-alt me-1"></i>登入方式: <span
+                                    id="login-method">Line</span></span>
+                        </small>
+                    </div>
+                </div>
+                <div class="d-flex gap-2">
+                    <!-- 🔥 新增:升級按鈕 (大版本,只對免費會員顯示) -->
+                    <button id="upgrade-btn-large" class="btn btn-warning" style="display: none;"
+                        onclick="openUpgradeModal()">
+                        <i class="fas fa-star me-2"></i>升級付費會員
+                    </button>
+
+
+                    <button id="logout-btn" class="btn btn-outline-danger">
+                        <i class="fas fa-sign-out-alt me-2"></i>登出
+                    </button>
+                </div>
+            </div>
+
+            <!-- 🔥 新增:免費會員限制提示卡片 -->
+            <div id="free-member-notice" class="alert alert-warning mt-3" style="display: none;">
+                <div class="d-flex align-items-start">
+                    <i class="fas fa-info-circle me-3" style="font-size: 1.5rem;"></i>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-2">
+                            <strong>免費會員功能限制</strong>
+                        </h6>
+                        <ul class="mb-2" style="font-size: 0.9rem;">
+                            <li>✅ 模擬考試模式 (5次/月)</li>
+                            <li>❌ 無法雲端同步學習進度</li>
+                            <li>✅ 匯出錯題集 (5次/月)</li>
+                            <li>❌ 社群題目解析需等到晚上</li>
+                        </ul>
+                        <button class="btn btn-warning btn-sm" onclick="openUpgradeModal()">
+                            <i class="fas fa-crown me-1"></i>立即升級解鎖全功能
+                        </button>
+                    </div>
+                    <button class="btn-close"
+                        onclick="document.getElementById('free-member-notice').style.display='none'"></button>
+                </div>
+            </div>
+        </div>
+
+
+        <!-- ✨ 新增：會員登入區塊 END -->
+
         <!-- 題庫選擇區 -->
         <div class="database-selector" id="database-selector">
             <h3 class="mb-4"><i class="fas fa-database me-2"></i>選擇練習題庫</h3>
@@ -204,11 +213,12 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- 設定面板 -->
         <div id="settings-panel" class="settings-panel">
             <div class="card border-0 shadow-sm">
-                <div class="card-header bg-gradient text-white text-center py-3" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
+                <div class="card-header bg-gradient text-white text-center py-3"
+                    style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);">
                     <h5 class="mb-0"><i class="fas fa-cogs me-2"></i>測驗設定</h5>
                 </div>
                 <div class="card-body p-4">
@@ -226,7 +236,7 @@
                                 <option value="100" selected>100題 - iPAS標準</option>
                             </select>
                         </div>
-                        
+
                         <div class="col-lg-3 col-md-6">
                             <label class="form-label fw-bold">
                                 <i class="fas fa-play-circle me-2 text-success"></i>練習模式
@@ -260,18 +270,20 @@
                                 </div>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-3 col-md-6">
                             <label class="form-label fw-bold">
                                 <i class="fas fa-lightbulb me-2 text-warning"></i>解析模式
                             </label>
                             <div class="mb-2">
                                 <div class="form-check form-check-inline">
-                                    <input class="form-check-input" type="radio" name="explanation-mode" id="database-mode" value="database" checked>
+                                    <input class="form-check-input" type="radio" name="explanation-mode"
+                                        id="database-mode" value="database" checked>
                                     <label class="form-check-label" for="database-mode">資料庫解析</label>
                                 </div>
                                 <div class="form-check form-check-inline" style="display: none;">
-                                    <input class="form-check-input" type="radio" name="explanation-mode" id="ai-mode" value="ai">
+                                    <input class="form-check-input" type="radio" name="explanation-mode" id="ai-mode"
+                                        value="ai">
                                     <label class="form-check-label" for="ai-mode">AI生成解析</label>
                                 </div>
                             </div>
@@ -283,7 +295,7 @@
                                 </select>
                             </div>
                         </div>
-                        
+
                         <div class="col-lg-3 col-md-6">
                             <label class="form-label fw-bold">
                                 <i class="fas fa-rocket me-2 text-danger"></i>準備就緒
@@ -291,7 +303,8 @@
                             <button id="start-btn" class="btn btn-danger w-100 mb-2" disabled>
                                 <i class="fas fa-play me-2"></i>開始練習
                             </button>
-                            <button id="review-btn-main" class="btn btn-success w-100 mb-2" disabled style="display: none;">
+                            <button id="review-btn-main" class="btn btn-success w-100 mb-2" disabled
+                                style="display: none;">
                                 <i class="fas fa-redo me-2"></i>開始複習
                             </button>
                             <div id="timer" class="timer text-center">
@@ -302,23 +315,23 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- 問題區域 -->
         <div id="quiz-container" class="quiz-container d-none">
             <!-- 考試計時器 - 在測驗進行時顯示 -->
             <div id="quiz-timer-display" class="quiz-timer-display" style="display: none;">
                 <i class="fas fa-clock me-2"></i>剩餘時間: --:--
             </div>
-            
+
             <!-- 返回選擇按鈕 -->
             <button id="back-to-selection" class="back-to-selection">
                 <i class="fas fa-arrow-left me-2"></i>返回題庫選擇
             </button>
-            
+
             <div class="progress mb-3">
                 <div id="progress-bar" class="progress-bar" role="progressbar" style="width: 0%"></div>
             </div>
-            
+
             <div class="d-flex justify-content-between align-items-center mb-4">
                 <h5 id="question-number" class="mb-0">問題 1/100</h5>
                 <div class="d-flex gap-2 align-items-center">
@@ -333,13 +346,13 @@
                     <span id="stats-display" class="badge bg-info">得分: 0/0 (0%)</span>
                 </div>
             </div>
-            
+
             <h4 id="question-text" class="mb-4">載入題目中...</h4>
-            
+
             <div id="options-container" class="mb-4">
                 <!-- 選項會在JavaScript中動態生成 -->
             </div>
-            
+
             <div id="explanation-box" class="explanation-box d-none">
                 <h5 class="mb-3"><i class="fas fa-lightbulb me-2"></i>答案解析</h5>
                 <div id="explanation-content"></div>
@@ -349,20 +362,20 @@
                 </div>
             </div>
         </div>
-        
+
         <!-- 底部導航 -->
         <div class="bottom-nav" id="bottom-navigation">
             <div class="container-fluid">
                 <div class="row justify-content-between align-items-center">
                     <div class="col-2">
                         <button id="prev-btn" class="btn btn-secondary w-100" disabled>
-                            <i class="fas fa-arrow-left me-1"></i> 
+                            <i class="fas fa-arrow-left me-1"></i>
                             <span class="d-none d-sm-inline">上一題</span>
                         </button>
                     </div>
                     <div class="col-2">
                         <button id="submit-btn" class="btn btn-primary w-100" disabled>
-                            <i class="fas fa-check me-1"></i> 
+                            <i class="fas fa-check me-1"></i>
                             <span class="d-none d-sm-inline">提交</span>
                         </button>
                     </div>
@@ -374,13 +387,13 @@
                     </div>
                     <div class="col-2">
                         <button id="finish-btn" class="btn btn-success w-100" disabled>
-                            <i class="fas fa-flag-checkered me-1"></i> 
+                            <i class="fas fa-flag-checkered me-1"></i>
                             <span class="d-none d-sm-inline">完成</span>
                         </button>
                     </div>
-                     <div class="col-2">
+                    <div class="col-2">
                         <button id="overview-btn" class="btn btn-info w-100">
-                            <i class="fas fa-th me-1"></i> 
+                            <i class="fas fa-th me-1"></i>
                             <span class="d-none d-sm-inline">題號總覽</span>
                         </button>
                     </div>
@@ -474,7 +487,7 @@
                     <div class="alert alert-info">
                         <strong>考試資訊：</strong>iPAS AI應用規劃師初級認證，建議準備時間：4-6週
                     </div>
-                    
+
                     <h6>📚 複習模式使用建議</h6>
                     <ul>
                         <li><strong>錯題複習：</strong>重點攻克薄弱環節</li>
@@ -482,14 +495,14 @@
                         <li><strong>主題複習：：</strong>針對特定領域加強</li>
                         <li><strong>隨機複習：：</strong>模擬考試隨機出題</li>
                     </ul>
-                    
+
                     <h6>📋 練習模式建議</h6>
                     <ul>
                         <li><strong>每日練習：</strong>20-50題維持手感</li>
                         <li><strong>週末模擬：：</strong>100題完整測驗</li>
                         <li><strong>考前衝刺：：</strong>錯題複習模式</li>
                     </ul>
-                    
+
                     <h6>🎯 重點題型</h6>
                     <ul>
                         <li>AI技術應用與商業價值評估</li>
@@ -497,7 +510,7 @@
                         <li>數據分析與模型評估</li>
                         <li>倫理與風險管理</li>
                     </ul>
-                    
+
                     <h6>⏱️ 模擬考試建議</h6>
                     <ul>
                         <li><strong>iPAS模式：：</strong>選擇100題標準模式，每科75分鐘</li>
@@ -505,14 +518,14 @@
                         <li>嚴格控制答題時間</li>
                         <li>目標正確率：70%以上</li>
                     </ul>
-                    
+
                     <h6>📊 使用統計功能</h6>
                     <ul>
                         <li>定期檢查學習統計</li>
                         <li>重點關注薄弱主題</li>
                         <li>匯出錯題進行紙本複習</li>
                     </ul>
-                    
+
                     <ul>
                         <li>開發者：ZN Studio</li>
                         <li>版本：2.2.0 (官方規範版)</li>
@@ -535,7 +548,8 @@
                 </div>
                 <div class="modal-body">
                     <div class="d-flex justify-content-center flex-wrap gap-3 mb-3">
-                        <span class="badge bg-light text-dark border"><i class="fas fa-circle text-secondary me-1"></i> 未作答</span>
+                        <span class="badge bg-light text-dark border"><i class="fas fa-circle text-secondary me-1"></i>
+                            未作答</span>
                         <span class="badge bg-success text-white"><i class="fas fa-check-circle me-1"></i> 已作答</span>
                         <span class="badge bg-warning text-dark"><i class="fas fa-flag me-1"></i> 已標記</span>
                         <span class="badge bg-primary text-white">當前題目</span>
@@ -563,15 +577,18 @@
                 <div class="modal-body">
                     <p class="text-center mb-4">請選擇您要練習的iPAS AI應用規劃師科目：</p>
                     <div class="d-grid gap-3">
-                        <button type="button" class="btn btn-outline-primary btn-lg ipas-subject-btn" data-subject="ai-basis">
+                        <button type="button" class="btn btn-outline-primary btn-lg ipas-subject-btn"
+                            data-subject="ai-basis">
                             <i class="fas fa-brain me-2"></i>人工智慧基礎概論
                             <small class="d-block text-muted mt-1">AI基礎理論與概念</small>
                         </button>
-                        <button type="button" class="btn btn-outline-success btn-lg ipas-subject-btn" data-subject="ai-application">
+                        <button type="button" class="btn btn-outline-success btn-lg ipas-subject-btn"
+                            data-subject="ai-application">
                             <i class="fas fa-cogs me-2"></i>生成式AI應用與規劃
                             <small class="d-block text-muted mt-1">實務應用與規劃策略</small>
                         </button>
-                        <button type="button" class="btn btn-outline-info btn-lg ipas-subject-btn" data-subject="ipas-combined">
+                        <button type="button" class="btn btn-outline-info btn-lg ipas-subject-btn"
+                            data-subject="ipas-combined">
                             <i class="fas fa-layer-group me-2"></i>綜合考題
                             <small class="d-block text-muted mt-1">兩科目混合練習</small>
                         </button>
@@ -583,7 +600,7 @@
             </div>
         </div>
     </div>
-    
+
     <!-- 加載遮罩 -->
     <div id="loading-overlay" class="overlay d-none">
         <div class="loader"></div>
@@ -591,375 +608,384 @@
     </div>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.3.0/js/bootstrap.bundle.min.js"></script>
-        
+
     <!-- 👉 你的自定義 JS -->
     <script src="script.js"></script>
 
-  
 
 
-<!-- 🔥 功能鎖定模態框 -->
-<div class="modal fade" id="feature-locked-modal" tabindex="-1">
-    <div class="modal-dialog modal-dialog-centered">
-        <div class="modal-content" style="border: 3px solid #f5576c;">
-            <div class="modal-header bg-gradient-premium text-white">
-                <h5 class="modal-title">
-                    <i class="fas fa-lock me-2"></i>VIP 專屬功能
-                </h5>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body text-center p-4">
-                <div class="mb-4">
-                    <i class="fas fa-crown" style="font-size: 4rem; color: #f5576c;"></i>
-                </div>
-                <h4 class="mb-3">此功能需要升級為付費會員</h4>
-                <p class="text-muted mb-4">升級後即可解鎖:</p>
-                
-                <div class="row g-3 mb-4">
-                    <div class="col-6">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle text-success me-2"></i>
-                            無限次練習/複習
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle text-success me-2"></i>
-                            模擬考試 (5次/月)
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle text-success me-2"></i>
-                            無限次匯出錯題
-                        </div>
-                    </div>
-                    <div class="col-6">
-                        <div class="feature-item">
-                            <i class="fas fa-check-circle text-success me-2"></i>
-                            即時解析 (免等待)
-                        </div>
-                    </div>
-                    <div class="col-12">
-                        <div class="feature-item text-muted small">
-                            <i class="fas fa-hourglass-half me-2"></i>
-                            AI 弱點分析 (即將推出)
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="price-tag mb-4">
-                    <div class="h2 mb-0">
-                        <span class="text-muted" style="text-decoration: line-through; font-size: 1rem;">$2,388</span>
-                        <span class="text-danger ms-2">$1,999</span>
-                        <span class="text-muted" style="font-size: 1rem;">/年</span>
-                    </div>
-                    <small class="text-success">
-                        <i class="fas fa-tags me-1"></i>限時優惠,省 $390
-                    </small>
-                </div>
-                
-                <button class="btn btn-gradient-premium btn-lg w-100 mb-2" onclick="closeModal('feature-locked-modal'); openUpgradeModal();">
-                    <i class="fas fa-crown me-2"></i>立即升級 VIP
-                </button>
-                <button class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">
-                    稍後再說
-                </button>
-            </div>
-        </div>
-    </div>
-</div>
 
-<!-- 🔥 升級方案模態框 -->
-<div class="modal fade" id="upgrade-modal" tabindex="-1">
-    <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
-        <div class="modal-content">
-            <div class="modal-header bg-gradient-premium text-white">
-                <h4 class="modal-title">
-                    <i class="fas fa-crown me-2"></i>升級付費會員,解鎖完整功能
-                </h4>
-                <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
-            </div>
-            <div class="modal-body p-4">
-                <div class="row g-4">
-                    <!-- 免費方案 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 pricing-card">
-                            <div class="card-body text-center">
-                                <h5 class="mb-3">免費會員</h5>
-                                <div class="h2 mb-4">$0</div>
-                                <ul class="list-unstyled text-start">
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        無限次練習
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        4 個題庫
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        標準練習模式
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        本地錯題記錄
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        模擬考試模式 (5次/月)
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="fas fa-times text-danger me-2"></i>
-                                        雲端同步
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="fas fa-times text-danger me-2"></i>
-                                        AI 分析報告
-                                    </li>
-                                </ul>
-                                <button class="btn btn-outline-secondary w-100 mt-3" disabled>
-                                    目前方案
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 月費方案 -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-warning pricing-card">
-                            <div class="card-body text-center">
-                                <h5 class="mb-3">月費會員</h5>
-                                <div class="h2 mb-4">
-                                    $199
-                                    <small class="text-muted">/月</small>
-                                </div>
-                                <ul class="list-unstyled text-start">
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        <strong>免費會員全部功能</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        模擬考試模式
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        雲端同步進度
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        錯題集匯出 (TXT)
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        即時題目解析
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        完整學習統計
-                                    </li>
-                                    <li class="mb-2 text-muted">
-                                        <i class="fas fa-times text-danger me-2"></i>
-                                        AI 弱點分析
-                                    </li>
-                                </ul>
-                                <button class="btn btn-warning w-100 mt-3" onclick="selectPlan('monthly')">
-                                    <i class="fas fa-shopping-cart me-2"></i>選擇月費方案
-                                </button>
-                            </div>
-                        </div>
-                    </div>
-                    
-                    <!-- 年費方案 (推薦) -->
-                    <div class="col-md-4">
-                        <div class="card h-100 border-danger shadow-lg pricing-card recommended-card">
-                            <div class="ribbon">
-                                <span>最划算</span>
-                            </div>
-                            <div class="card-body text-center">
-                                <h5 class="mb-3 text-danger">
-                                    <i class="fas fa-star me-1"></i>
-                                    年費會員
-                                </h5>
-                                <div class="mb-2">
-                                    <span class="text-muted" style="text-decoration: line-through;">
-                                        $2,388
-                                    </span>
-                                </div>
-                                <div class="h2 mb-1 text-danger">
-                                    $1,999
-                                    <small class="text-muted">/年</small>
-                                </div>
-                                <div class="mb-4">
-                                    <span class="badge bg-success">省 $390</span>
-                                    <span class="badge bg-info ms-1">每月僅 $167</span>
-                                </div>
-                                <ul class="list-unstyled text-start">
-                                    <li class="mb-2">
-                                        <i class="fas fa-check text-success me-2"></i>
-                                        <strong>月費會員全部功能</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-star text-warning me-2"></i>
-                                        <strong>AI 弱點分析報告</strong>
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-star text-warning me-2"></i>
-                                        專屬學習指南
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-star text-warning me-2"></i>
-                                        錯題集匯出 (PDF)
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-star text-warning me-2"></i>
-                                        優先客服支援
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-star text-warning me-2"></i>
-                                        終身更新題庫
-                                    </li>
-                                    <li class="mb-2">
-                                        <i class="fas fa-star text-warning me-2"></i>
-                                        社群獨家資源
-                                    </li>
-                                </ul>
-                                <button class="btn btn-danger w-100 mt-3 btn-lg" onclick="selectPlan('yearly')">
-                                    <i class="fas fa-crown me-2"></i>立即升級 VIP
-                                </button>
-                            </div>
-                        </div>
-                    </div>
+    <!-- 🔥 功能鎖定模態框 -->
+    <div class="modal fade" id="feature-locked-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered">
+            <div class="modal-content" style="border: 3px solid #f5576c;">
+                <div class="modal-header bg-gradient-premium text-white">
+                    <h5 class="modal-title">
+                        <i class="fas fa-lock me-2"></i>VIP 專屬功能
+                    </h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
                 </div>
-                
-                <!-- 付款方式說明 -->
-                <div class="mt-4 p-3 bg-light rounded">
-                    <h6>
-                        <i class="fas fa-credit-card me-2"></i>付款方式
-                    </h6>
-                    <div class="d-flex flex-wrap gap-3 mb-3">
-                        <span class="badge bg-primary">信用卡</span>
-                        <span class="badge bg-success">Line Pay</span>
-                        <span class="badge bg-info">超商代碼</span>
-                        <span class="badge bg-warning text-dark">ATM 轉帳</span>
+                <div class="modal-body text-center p-4">
+                    <div class="mb-4">
+                        <i class="fas fa-crown" style="font-size: 4rem; color: #f5576c;"></i>
                     </div>
-                    <small class="text-muted">
-                        使用綠界金流,安全有保障
-                    </small>
-                </div>
-                
-                <!-- 保證說明 -->
-                <div class="mt-3 text-center">
-                    <small class="text-muted">
-                        <i class="fas fa-shield-alt me-1"></i>
-                        7 天無條件退款保證 | 
-                        <i class="fas fa-lock me-1"></i>
-                        SSL 加密保護 |
-                        <i class="fas fa-headset me-1"></i>
-                        專業客服支援
-                    </small>
+                    <h4 class="mb-3">此功能需要升級為付費會員</h4>
+                    <p class="text-muted mb-4">升級後即可解鎖:</p>
+
+                    <div class="row g-3 mb-4">
+                        <div class="col-6">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                無限次練習/複習
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                模擬考試 (5次/月)
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                無限次匯出錯題
+                            </div>
+                        </div>
+                        <div class="col-6">
+                            <div class="feature-item">
+                                <i class="fas fa-check-circle text-success me-2"></i>
+                                即時解析 (免等待)
+                            </div>
+                        </div>
+                        <div class="col-12">
+                            <div class="feature-item text-muted small">
+                                <i class="fas fa-hourglass-half me-2"></i>
+                                AI 弱點分析 (即將推出)
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="price-tag mb-4">
+                        <div class="h2 mb-0">
+                            <span class="text-muted"
+                                style="text-decoration: line-through; font-size: 1rem;">$2,388</span>
+                            <span class="text-danger ms-2">$1,999</span>
+                            <span class="text-muted" style="font-size: 1rem;">/年</span>
+                        </div>
+                        <small class="text-success">
+                            <i class="fas fa-tags me-1"></i>限時優惠,省 $390
+                        </small>
+                    </div>
+
+                    <button class="btn btn-gradient-premium btn-lg w-100 mb-2"
+                        onclick="closeModal('feature-locked-modal'); openUpgradeModal();">
+                        <i class="fas fa-crown me-2"></i>立即升級 VIP
+                    </button>
+                    <button class="btn btn-outline-secondary w-100" data-bs-dismiss="modal">
+                        稍後再說
+                    </button>
                 </div>
             </div>
         </div>
     </div>
-</div>
 
-<!-- 作者資訊區塊 -->
-<footer class="mt-5 py-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
-    <div class="container">
-        <div class="row">
-            <div class="col-12 text-center mb-3">
-                <h5 class="fw-bold mb-3">
-                    <i class="fas fa-code me-2"></i>開發者資訊
-                </h5>
-            </div>
-        </div>
+    <!-- 🔥 升級方案模態框 -->
+    <div class="modal fade" id="upgrade-modal" tabindex="-1">
+        <div class="modal-dialog modal-xl modal-dialog-centered modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header bg-gradient-premium text-white">
+                    <h4 class="modal-title">
+                        <i class="fas fa-crown me-2"></i>升級付費會員,解鎖完整功能
+                    </h4>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4">
+                    <div class="row g-4">
+                        <!-- 免費方案 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 pricing-card">
+                                <div class="card-body text-center">
+                                    <h5 class="mb-3">免費會員</h5>
+                                    <div class="h2 mb-4">$0</div>
+                                    <ul class="list-unstyled text-start">
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            無限次練習
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            4 個題庫
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            標準練習模式
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            本地錯題記錄
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            錯題集匯出 (5次/月)
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            模擬考試模式 (5次/月)
+                                        </li>
+                                        <li class="mb-2 text-muted">
+                                            <i class="fas fa-times text-danger me-2"></i>
+                                            雲端同步
+                                        </li>
+                                        <li class="mb-2 text-muted">
+                                            <i class="fas fa-times text-danger me-2"></i>
+                                            AI 分析報告
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-outline-secondary w-100 mt-3" disabled>
+                                        目前方案
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-        <div class="row">
-            <!-- 聯絡資訊 -->
-            <div class="col-md-4 mb-3">
-                <h6 class="fw-bold mb-3"><i class="fas fa-user me-2"></i>聯絡方式</h6>
-                <p class="mb-2">
-                    <i class="fas fa-signature me-2"></i>
-                    <strong>Nick Chang</strong>
-                </p>
-                <p class="mb-2">
-                    <i class="fas fa-envelope me-2"></i>
-                    <a href="mailto:nickleo051216@gmail.com" class="text-white text-decoration-none">
-                        nickleo051216@gmail.com
-                    </a>
-                </p>
-                <p class="mb-2">
-                    <i class="fas fa-phone me-2"></i>
-                    <a href="tel:0932684051" class="text-white text-decoration-none">
-                        0932-684-051
-                    </a>
-                </p>
-            </div>
+                        <!-- 月費方案 -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-warning pricing-card">
+                                <div class="card-body text-center">
+                                    <h5 class="mb-3">月費會員</h5>
+                                    <div class="h2 mb-4">
+                                        $199
+                                        <small class="text-muted">/月</small>
+                                    </div>
+                                    <ul class="list-unstyled text-start">
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <strong>免費會員全部功能</strong>
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            模擬考試模式
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            雲端同步進度
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            錯題集匯出 (TXT)
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            即時題目解析
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            完整學習統計
+                                        </li>
+                                        <li class="mb-2 text-muted">
+                                            <i class="fas fa-times text-danger me-2"></i>
+                                            AI 弱點分析
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-warning w-100 mt-3" onclick="selectPlan('monthly')">
+                                        <i class="fas fa-shopping-cart me-2"></i>選擇月費方案
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
 
-            <!-- 網站與社群 -->
-            <div class="col-md-4 mb-3">
-                <h6 class="fw-bold mb-3"><i class="fas fa-globe me-2"></i>網站與社群</h6>
-                <p class="mb-2">
-                    <i class="fas fa-link me-2"></i>
-                    <a href="https://portaly.cc/zn.studio" target="_blank" class="text-white text-decoration-none">
-                        ZN Studio (Portaly)
-                    </a>
-                </p>
-                <p class="mb-2">
-                    <i class="fas fa-globe me-2"></i>
-                    <a href="https://znstudio216.com" target="_blank" class="text-white text-decoration-none">
-                        znstudio216.com
-                    </a>
-                </p>
-                <p class="mb-2">
-                    <i class="fab fa-threads me-2"></i>
-                    <a href="https://www.threads.com/@nickai216" target="_blank" class="text-white text-decoration-none">
-                        @nickai216
-                    </a>
-                </p>
-            </div>
+                        <!-- 年費方案 (推薦) -->
+                        <div class="col-md-4">
+                            <div class="card h-100 border-danger shadow-lg pricing-card recommended-card">
+                                <div class="ribbon">
+                                    <span>最划算</span>
+                                </div>
+                                <div class="card-body text-center">
+                                    <h5 class="mb-3 text-danger">
+                                        <i class="fas fa-star me-1"></i>
+                                        年費會員
+                                    </h5>
+                                    <div class="mb-2">
+                                        <span class="text-muted" style="text-decoration: line-through;">
+                                            $2,388
+                                        </span>
+                                    </div>
+                                    <div class="h2 mb-1 text-danger">
+                                        $1,999
+                                        <small class="text-muted">/年</small>
+                                    </div>
+                                    <div class="mb-4">
+                                        <span class="badge bg-success">省 $390</span>
+                                        <span class="badge bg-info ms-1">每月僅 $167</span>
+                                    </div>
+                                    <ul class="list-unstyled text-start">
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            <strong>月費會員全部功能</strong>
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-star text-warning me-2"></i>
+                                            <strong>AI 弱點分析報告</strong>
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-star text-warning me-2"></i>
+                                            專屬學習指南
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-star text-warning me-2"></i>
+                                            錯題集匯出 (PDF)
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-star text-warning me-2"></i>
+                                            優先客服支援
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-star text-warning me-2"></i>
+                                            終身更新題庫
+                                        </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-star text-warning me-2"></i>
+                                            社群獨家資源
+                                        </li>
+                                    </ul>
+                                    <button class="btn btn-danger w-100 mt-3 btn-lg" onclick="selectPlan('yearly')">
+                                        <i class="fas fa-crown me-2"></i>立即升級 VIP
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
 
-            <!-- Line 相關 -->
-            <div class="col-md-4 mb-3">
-                <h6 class="fw-bold mb-3"><i class="fab fa-line me-2"></i>Line 服務</h6>
-                <p class="mb-2">
-                    <i class="fas fa-users me-2"></i>
-                    <a href="https://reurl.cc/1OZNAY" target="_blank" class="text-white text-decoration-none">
-                        Line 社群
-                    </a>
-                </p>
-                <p class="mb-2">
-                    <i class="fas fa-robot me-2"></i>
-                    <a href="https://lin.ee/Faz0doj" target="_blank" class="text-white text-decoration-none">
-                        n8n Line@
-                    </a>
-                </p>
-                <p class="mb-2">
-                    <i class="fas fa-book-open me-2"></i>
-                    <a href="https://line.me/R/ti/p/@924mzscd" target="_blank" class="text-white text-decoration-none">
-                        模擬考練習 Line@ (@924mzscd)
-                    </a>
-                </p>
-            </div>
-        </div>
+                    <!-- 付款方式說明 -->
+                    <div class="mt-4 p-3 bg-light rounded">
+                        <h6>
+                            <i class="fas fa-credit-card me-2"></i>付款方式
+                        </h6>
+                        <div class="d-flex flex-wrap gap-3 mb-3">
+                            <span class="badge bg-primary">信用卡</span>
+                            <span class="badge bg-success">Line Pay</span>
+                            <span class="badge bg-info">超商代碼</span>
+                            <span class="badge bg-warning text-dark">ATM 轉帳</span>
+                        </div>
+                        <small class="text-muted">
+                            使用綠界金流,安全有保障
+                        </small>
+                    </div>
 
-        <!-- 版權聲明 -->
-        <div class="row mt-3 pt-3 border-top border-white border-opacity-25">
-            <div class="col-12 text-center">
-                <p class="mb-0">
-                    <small>
-                        © 2025 Nick Chang | ZN Studio. All rights reserved.
-                        <br class="d-sm-none">
-                        <span class="d-none d-sm-inline">|</span>
-                        Powered by iPAS AI 練習系統
-                    </small>
-                </p>
+                    <!-- 保證說明 -->
+                    <div class="mt-3 text-center">
+                        <small class="text-muted">
+                            <i class="fas fa-shield-alt me-1"></i>
+                            7 天無條件退款保證 |
+                            <i class="fas fa-lock me-1"></i>
+                            SSL 加密保護 |
+                            <i class="fas fa-headset me-1"></i>
+                            專業客服支援
+                        </small>
+                    </div>
+                </div>
             </div>
         </div>
     </div>
-</footer>
+
+    <!-- 作者資訊區塊 -->
+    <footer class="mt-5 py-4" style="background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white;">
+        <div class="container">
+            <div class="row">
+                <div class="col-12 text-center mb-3">
+                    <h5 class="fw-bold mb-3">
+                        <i class="fas fa-code me-2"></i>開發者資訊
+                    </h5>
+                </div>
+            </div>
+
+            <div class="row">
+                <!-- 聯絡資訊 -->
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3"><i class="fas fa-user me-2"></i>聯絡方式</h6>
+                    <p class="mb-2">
+                        <i class="fas fa-signature me-2"></i>
+                        <strong>Nick Chang</strong>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-envelope me-2"></i>
+                        <a href="mailto:nickleo051216@gmail.com" class="text-white text-decoration-none">
+                            nickleo051216@gmail.com
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-phone me-2"></i>
+                        <a href="tel:0932684051" class="text-white text-decoration-none">
+                            0932-684-051
+                        </a>
+                    </p>
+                </div>
+
+                <!-- 網站與社群 -->
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3"><i class="fas fa-globe me-2"></i>網站與社群</h6>
+                    <p class="mb-2">
+                        <i class="fas fa-link me-2"></i>
+                        <a href="https://portaly.cc/zn.studio" target="_blank" class="text-white text-decoration-none">
+                            ZN Studio (Portaly)
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-globe me-2"></i>
+                        <a href="https://znstudio216.com" target="_blank" class="text-white text-decoration-none">
+                            znstudio216.com
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fab fa-threads me-2"></i>
+                        <a href="https://www.threads.com/@nickai216" target="_blank"
+                            class="text-white text-decoration-none">
+                            @nickai216
+                        </a>
+                    </p>
+                </div>
+
+                <!-- Line 相關 -->
+                <div class="col-md-4 mb-3">
+                    <h6 class="fw-bold mb-3"><i class="fab fa-line me-2"></i>Line 服務</h6>
+                    <p class="mb-2">
+                        <i class="fas fa-users me-2"></i>
+                        <a href="https://reurl.cc/1OZNAY" target="_blank" class="text-white text-decoration-none">
+                            Line 社群
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-robot me-2"></i>
+                        <a href="https://lin.ee/Faz0doj" target="_blank" class="text-white text-decoration-none">
+                            n8n Line@
+                        </a>
+                    </p>
+                    <p class="mb-2">
+                        <i class="fas fa-book-open me-2"></i>
+                        <a href="https://line.me/R/ti/p/@924mzscd" target="_blank"
+                            class="text-white text-decoration-none">
+                            模擬考練習 Line@ (@924mzscd)
+                        </a>
+                    </p>
+                </div>
+            </div>
+
+            <!-- 版權聲明 -->
+            <div class="row mt-3 pt-3 border-top border-white border-opacity-25">
+                <div class="col-12 text-center">
+                    <p class="mb-0">
+                        <small>
+                            © 2025 Nick Chang | ZN Studio. All rights reserved.
+                            <br class="d-sm-none">
+                            <span class="d-none d-sm-inline">|</span>
+                            Powered by iPAS AI 練習系統
+                        </small>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </footer>
 
 </body>
+
 </html>

@@ -2769,13 +2769,18 @@ async function selectPlan(planType) {
             })
         });
 
-        const result = await response.json();
+        let result = await response.json();
 
-        if (result.success && result.ecpayParams) {
+        // 修正：n8n 有時會將結果包在陣列中 [ {...} ]
+        if (Array.isArray(result)) {
+            result = result[0];
+        }
+
+        if (result && result.success && result.ecpayParams) {
             iPASQuizApp.showAlert('✅ 訂單已產生，即將跳轉至綠界金流...', 'success');
             submitECPayForm(result.paymentUrl, result.ecpayParams);
         } else {
-            throw new Error(result.message || '產生訂單失敗');
+            throw new Error(result ? (result.message || '產生訂單失敗') : '後端回應格式錯誤');
         }
     } catch (error) {
         console.error('支付錯誤:', error);

@@ -2749,15 +2749,31 @@ function selectPlan(planType) {
 
 // 檢查功能權限(用於鎖定付費功能)
 function checkFeatureAccess(feature) {
-    const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
-    const lineData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
-    const memberLevel = userData.member_level || lineData.memberLevel || '免費會員';
+    const memberLevel = UsageManager.getMemberLevel();
 
     // 付費功能列表
     const paidFeatures = ['exam', 'export', 'cloud-sync', 'ai-analysis'];
 
-    if (paidFeatures.includes(feature) && !memberLevel.includes('付費')) {
-        // 顯示功能鎖定模態框
+    // 如果功能在付費清單中且不是付費會員
+    if (paidFeatures.includes(feature) && memberLevel !== 'paid') {
+
+        // --- 特別處理：免費會員每月 5 次模擬考試 ---
+        if (feature === 'exam' && memberLevel === 'free') {
+            const examKey = `exam_monthly_${new Date().toISOString().slice(0, 7)}`;
+            const examCount = parseInt(localStorage.getItem(examKey) || '0');
+
+            if (examCount < 5) {
+                // 還有額度，允許進入並增加計數
+                localStorage.setItem(examKey, (examCount + 1).toString());
+                iPASQuizApp.showAlert(`📊 模擬考試額度：本月已使用 ${examCount + 1}/5 次`, 'info');
+                return true;
+            } else {
+                iPASQuizApp.showAlert('⏰ 本月模擬考試次數已達上限 (5次/月)！\n\n💎 升級付費會員即可無限次參與模擬考！', 'warning');
+                return false;
+            }
+        }
+
+        // 其他付費功能或額度用完，顯示功能鎖定模態框
         showFeatureLockedModal();
         return false;
     }

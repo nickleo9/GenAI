@@ -2354,7 +2354,7 @@ const UsageManager = {
     // 使用限制設定
     LIMITS: {
         guest: { count: 5, period: 'daily' },      // 遊客：每日 5 次
-        free: { count: 100, period: 'monthly' },   // 免費會員：每月 100 次
+        free: { count: 30, period: 'daily' },    // 免費會員：每日 30 次
         paid: { count: Infinity, period: null }    // 付費會員：無限制
     },
 

@@ -1,172 +1,172 @@
 [
     {
-        "question": "下列何者正確描述代理式AI（Agentic AI）的四核心能力？",
+        "question": "2026年AI算力的結構發生重大變化，哪一項描述最符合當前趨勢？",
         "options": [
-            "感知、推理、行動、反思",
-            "學習、感知、互動、優化",
-            "推理、預測、分類、生成",
-            "感知、決策、數據處理、執行"
+            "訓練階段的算力消耗占總算力的三分之二",
+            "推理階段的算力消耗占總算力的三分之二",
+            "推理與訓練的算力消耗各佔一半",
+            "推理的算力消耗僅占總算力的三分之一"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "代理式AI基本原理",
-        "concept": "代理式AI核心能力",
-        "explanation": "代理式AI特指具備感知環境、推理分析、行動決策以及反思思考這四大核心能力的智能系統，能夠自主解決複雜問題。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "算力結構",
+        "concept": "推理與訓練算力比例",
+        "explanation": "2026年趨勢是AI算力結構出現倒置，推理（即執行模型回答或任務所需運算）占總算力約三分之二，遠多於訓練階段。",
         "number": 1,
-        "date": "2026-02-23"
+        "date": "2026-02-25"
     },
     {
-        "question": "在資料處理流程中，ETL是指哪一個步驟？",
+        "question": "在AI代理人技術中，下列哪項應用最能展現其核心價值？",
         "options": [
-            "抽取、轉換、載入",
-            "提取、編碼、學習",
-            "評估、清理、降維",
-            "過濾、整合、分析"
+            "協助完成單一簡單任務，無需持續互動",
+            "自動化多步驟業務流程，跨系統執行任務",
+            "取代所有人類決策行為，達成完全自主操作",
+            "只作為數據存取工具，不處理決策與執行"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料整理流程",
-        "concept": "ETL流程",
-        "explanation": "ETL代表 Extract（抽取）、Transform（轉換）、Load（載入），是將數據從來源抽取、經過清洗轉換後，載入目標系統的重要過程。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI代理人",
+        "concept": "AI代理應用",
+        "explanation": "AI代理人能自動執行多步驟任務並跨系統協作，這是其區別於只做簡單協助或純數據取用的核心價值。",
         "number": 2,
-        "date": "2026-02-23"
+        "date": "2026-02-25"
     },
     {
-        "question": "以下何者非屬於機器學習的三大類型？",
+        "question": "關於2026年的量子人工智慧(Quantum AI)技術，下列哪項敘述最正確？",
         "options": [
-            "監督學習",
-            "非監督學習",
-            "強化學習",
-            "增強式學習"
+            "量子AI已廣泛商用，主導產業最佳化問題",
+            "量子AI仍處於初步發展階段，尚未成熟應用",
+            "量子AI完全取代了傳統深度學習方法",
+            "量子AI不涉及傳統AI難題的解決"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "機器學習概念",
-        "subtopic": "機器學習基本原理",
-        "concept": "機器學習分類",
-        "explanation": "機器學習的三大類型為監督學習、非監督學習及強化學習，增強式學習並非正式的分類名稱，屬強化學習的誤用。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "量子AI",
+        "concept": "量子人工智慧發展",
+        "explanation": "量子人工智慧在2026年仍屬初步階段，尚無廣泛商用，主要研究集中於解決傳統AI難題。",
         "number": 3,
-        "date": "2026-02-23"
+        "date": "2026-02-25"
     },
     {
-        "question": "鑑別式AI與生成式AI的差異，下列何者描述最為貼切？",
+        "question": "2026年預測通用人工智慧(AGI)的發展動向，下列哪項為符合趨勢的陳述？",
         "options": [
-            "鑑別式AI專注於區分資料類型，生成式AI專注於創造新資料",
-            "鑑別式AI生成數據，生成式AI分類數據",
-            "鑑別式AI實現資料轉換，生成式AI強化資料安全",
-            "鑑別式AI優化模型參數，生成式AI優化資料蒐集"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "鑑別式 AI 與生成式 AI",
-        "subtopic": "基本原理",
-        "concept": "鑑別式與生成式AI差異",
-        "explanation": "鑑別式AI工作目標是分類或辨識輸入資料的類別，生成式AI則是生成類似真實資料的新數據。",
-        "number": 4,
-        "date": "2026-02-23"
-    },
-    {
-        "question": "選擇適合於預測房價的損失函數，下列何者為最佳選擇？",
-        "options": [
-            "均方誤差（MSE）",
-            "交叉熵損失",
-            "平均絕對誤差（MAE）",
-            "對比損失（Contrastive Loss）"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "機器學習概念",
-        "subtopic": "損失函數",
-        "concept": "迴歸損失函數",
-        "explanation": "均方誤差（MSE）常用於迴歸任務如房價預測，有效衡量預測值與真實值的平方差距。",
-        "number": 5,
-        "date": "2026-02-23"
-    },
-    {
-        "question": "針對隱私保護與資料安全，AI治理中不包含下列何者？",
-        "options": [
-            "資料匿名化",
-            "數據加密",
-            "模型過擬合",
-            "訪問權限管理"
+            "AGI已完全超越人類智慧，無須人類干預",
+            "AGI仍屬長遠目標，未見實質進展",
+            "AGI有望在未來3至5年內實現並融合人類合作",
+            "AGI技術主要停留在理論階段，無應用計畫"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "AI治理概念",
-        "subtopic": "資料隱私與安全",
-        "concept": "AI治理與安全措施",
-        "explanation": "模型過擬合是模型訓練的問題，非資料安全治理相關措施。治理側重於保護資料隱私與控制合法使用。",
-        "number": 6,
-        "date": "2026-02-23"
+        "topic": "人工智慧概念",
+        "subtopic": "AGI預測",
+        "concept": "通用人工智慧發展",
+        "explanation": "多數權威預測指出AGI可能於未來3至5年內達成，並與人類科研、生活合作共存。",
+        "number": 4,
+        "date": "2026-02-25"
     },
     {
-        "question": "XAI黑箱問題指的是什麼？",
+        "question": "生成式AI在2026年多模態應用中，下列哪兩項為最主要的應用場景？",
         "options": [
-            "模型對決策過程缺乏透明和可解釋性",
-            "資料缺失導致模型無法正常訓練",
-            "模型運算過慢不適用於實時推論",
-            "數據分布不均導致模型偏差過大"
+            "自動駕駛與股票買賣",
+            "影片創作與個人化醫療輔助",
+            "文字分類與網頁設計",
+            "流程自動化與系統維護"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "機器學習概念",
-        "subtopic": "模型可解釋性",
-        "concept": "黑箱問題",
-        "explanation": "XAI（Explainable AI）研究如何提高黑箱模型的透明度，解決模型決策無法解釋的問題。",
-        "number": 7,
-        "date": "2026-02-23"
-    },
-    {
-        "question": "在生成式AI中，微調（Fine-tuning）常見可能遇到的主要問題是？",
-        "options": [
-            "過度擬合導致模型泛化能力下降",
-            "資料缺失導致訓練無法進行",
-            "資料過度標注引起訓練不穩定",
-            "損失函數無法收斂"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "模型微調",
-        "concept": "微調風險",
-        "explanation": "微調期間過度擬合訓練數據會讓模型在新資料上表現不佳，降低泛化性。",
+        "subtopic": "多模態生成",
+        "concept": "多模態生成應用",
+        "explanation": "2026年生成式AI多模態應用聚焦資訊整合，影片製作及個人化醫療輔助是主要領域。",
+        "number": 5,
+        "date": "2026-02-25"
+    },
+    {
+        "question": "以下關於AI在製造業中的應用階段排序，哪一項為正確順序？",
+        "options": [
+            "設計驗證 → 自主運行 → 排程",
+            "排程 → 自主運行 → 設計驗證",
+            "排程 → 設計驗證 → 自主運行",
+            "自主運行 → 排程 → 設計驗證"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI應用與規劃",
+        "subtopic": "製造業AI",
+        "concept": "製造業AI導入流程",
+        "explanation": "智能製造先以AI排程優化運作，再進行設計驗證，最後實現自主運行。",
+        "number": 6,
+        "date": "2026-02-25"
+    },
+    {
+        "question": "關於2026年AI投資泡沫的疑慮，下列哪項敘述最符合現實？",
+        "options": [
+            "所有行業中AI投資報酬率一致且持續攀升",
+            "AI投資普遍回報不如預期，市場完全冷卻",
+            "部分領域表現優異，部分領域仍面臨回報不均問題",
+            "AI投資已被完全取代，市場無成長潛力"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "投資與風險",
+        "concept": "AI投資回報不均",
+        "explanation": "2026年AI在醫療製造等領域獲利顯著，但投資回報不均，伴隨泡沫與競爭風險。",
+        "number": 7,
+        "date": "2026-02-25"
+    },
+    {
+        "question": "在AI系統設計中，\"人在迴圈上(Human on loop)\" 與\"人在迴圈中(Human in loop)\"有何主要差異？",
+        "options": [
+            "人在迴圈上指人工完全取代系統決策，人在迴圈中無人類參與",
+            "人在迴圈上指人類監督最終決策，人在迴圈中指人類持續介入運作過程",
+            "兩者意義相同，皆為無人類介入的全自動運作",
+            "人在迴圈上指演算法自動優化，人在迴圈中指數據自動收集"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "人工監督",
+        "concept": "Human on loop與Human in loop",
+        "explanation": "\"人在迴圈上\"指人工監督與核准決策，\"人在迴圈中\"則表示運作過程中人類持續介入調整。",
         "number": 8,
-        "date": "2026-02-23"
+        "date": "2026-02-25"
     },
     {
-        "question": "在機器學習中，One-Hot Encoding 為何常用？",
+        "question": "下列哪一種資料編碼方式最適合用於分類型類別變數的機器學習模型？",
         "options": [
-            "將類別型特徵轉換為二進制向量以利模型處理",
-            "將連續數據標準化至0到1之間",
-            "進行資料降維以減少維度數量",
-            "將資料隨機分割為訓練與測試集"
+            "持續數值縮放（Feature scaling）",
+            "One-Hot Encoding",
+            "隨機映射編碼（Random Projection）",
+            "遞歸編碼（Recursive Encoding）"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
-        "subtopic": "資料編碼技術",
-        "concept": "One-Hot Encoding",
-        "explanation": "One-Hot Encoding將類別變數轉為二進制向量格式，讓機器學習模型能處理非數值類別資料。",
+        "subtopic": "資料整理",
+        "concept": "資料編碼技術",
+        "explanation": "One-Hot Encoding能將類別變數轉換為無序獨立的二元向量，適用於多數分類模型。",
         "number": 9,
-        "date": "2026-02-23"
+        "date": "2026-02-25"
     },
     {
-        "question": "以下何者非屬於AI資料分析中的探索性資料分析步驟？",
+        "question": "下列哪一項最能準確解釋生成式AI與鑑別式AI的根本差異？",
         "options": [
-            "繪製直方圖觀察數據分布",
-            "進行特徵工程生成新變數",
-            "使用熱圖檢視變數相關性",
-            "實施模型超參數微調"
+            "生成式AI預測數據標籤，鑑別式AI生成新資料內容",
+            "生成式AI生成新資料內容，鑑別式AI判斷資料的屬性或類別",
+            "兩者皆用於數據預測，無根本差異",
+            "鑑別式AI專注於強化學習，生成式AI僅用於非監督學習"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "資料處理與分析概念",
-        "subtopic": "探索性資料分析",
-        "concept": "資料分析流程",
-        "explanation": "模型超參數微調屬於模型訓練階段，非探索性資料分析步驟，後者主要包含資料視覺化與特徵理解。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "生成式與鑑別式AI",
+        "concept": "鑑別式與生成式AI差異",
+        "explanation": "生成式AI透過學習生成資料樣本，鑑別式AI則專注於辨識資料的真實標籤或分類。",
         "number": 10,
-        "date": "2026-02-23"
+        "date": "2026-02-25"
     }
 ]

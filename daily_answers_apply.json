@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2025年企業導入生成式AI自動化流程時，針對No Code平台的導入評估，企業主管應優先考量哪項策略，以最大化GPT-4o與AI代理整合的投資報酬率？",
+        "question": "2026年企業在導入生成式AI自動化工作流程時，下列何者屬於Agentic AI的核心能力？",
         "options": [
-            "評估No Code平台與GPT-4o的API相容性，並進行小規模PoC測試自動化流程的端到端效能",
-            "分析No Code工具的雲端基礎設施成本，並預估未來五年AI代理擴展的運算資源需求",
-            "檢視No Code平台的資料治理功能，並驗證其符合GDPR與企業內部合規要求的資料加密標準",
-            "比較No Code解決方案的市佔率，並選擇支援最多GPT-4o預訓練模型的供應商合作夥伴"
+            "Perception, Reasoning and Planning, Action, Reflection",
+            "Visualization, Computation, Allocation, Translation",
+            "Monitoring, Expansion, Isolation, Specification",
+            "Detection, Compilation, Projection, Justification"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "生成式AI工具實際應用",
-        "subtopic": "No Code平台導入評估",
-        "concept": "PoC測試與GPT-4o整合",
-        "explanation": "正確答案A強調透過No Code平台的小規模概念驗證（PoC）測試GPT-4o驅動的AI自動化流程端到端效能，這符合2025年趨勢中企業從守勢效率化轉向攻勢新規事業開發的需求。此策略能快速驗證投資報酬，並降低導入風險，其他選項雖相關但非優先考量。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "Agentic AI核心能力",
+        "explanation": "2026年Agentic AI強調Perception、Reasoning and Planning、Action、Reflection四大核心能力，協助AI自主規劃與執行複雜流程，並自我反思以優化決策。",
         "number": 1,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "企業規劃2025年生成式AI工具導入時，風險管理最佳實踐為何，特別在融合AI自動化流程與No Code環境下處理幻覺（hallucination）問題？",
+        "question": "以下有關2026年No Code/Low Code平台結合AI工具的描述，何者正確？",
         "options": [
-            "實施多層提示詞驗證機制，結合人類審核迴圈於No Code自動化流程中監控GPT-4o輸出準確性",
-            "部署分散式雲端架構分散No Code AI代理的運算負載，並定期備份生成式AI模型參數",
-            "建立跨部門AI治理委員會，審核所有No Code工具的第三方API存取權限與資料傳輸記錄",
-            "導入進階加密協議保護No Code平台內GPT-4o處理的敏感企業資料，並進行滲透測試"
+            "No Code/Low Code平台支持被動式整合生成式AI於既有應用中",
+            "No Code/Low Code平台只能連動純文字型生成AI，不支援多模態功能",
+            "No Code/Low Code平台不允許用戶自行調整AI提示詞設計",
+            "No Code/Low Code平台僅在人力資源領域有應用價值"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "風險管理",
-        "subtopic": "生成式AI幻覺風險緩解",
-        "concept": "提示詞驗證與人類審核",
-        "explanation": "A選項直接針對生成式AI幻覺問題，透過No Code環境的多層提示詞驗證與人類審核迴圈，確保AI自動化流程可靠性，這是2025年企業應用趨勢的核心風險管理實踐。其他選項聚焦基礎設施或安全，而非AI特定輸出品質。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code/Low Code的優勢與限制",
+        "concept": "平台整合方式",
+        "explanation": "2026年主流發展趨勢為被動式整合，No Code/Low Code平台直接嵌入AI於現有應用系統，極大提升整合效率與用戶體驗。",
         "number": 2,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "2025年提示詞設計的最佳實踐，在企業No Code生成式AI應用中，針對GPT-4o多模態功能的最佳化應如何規劃？",
+        "question": "關於2026年開源AI模型Granite的敘述，何者正確？",
         "options": [
-            "採用結構化Chain-of-Thought提示模板，整合文字影像輸入以提升No Code AI代理的決策準確度",
-            "設計模組化提示庫，支援A/B測試不同GPT-4o溫度參數於No Code工作流的生成效能",
-            "建置動態提示生成器，依企業資料脈絡自動調整GPT-4o的上下文視窗長度限制",
-            "整合Few-Shot學習範例於提示中，強化No Code工具對行業特定術語的理解與回應一致性"
+            "Granite支援低程式碼端點部署且適用於特定領域自動化工作流",
+            "Granite無法支援多模態輸入如圖像與音訊整合",
+            "Granite專為超大型語言模型雲端運算研發",
+            "Granite不建議應用於物理世界互動型 AI"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "提示詞設計",
-        "subtopic": "GPT-4o多模態最佳化",
-        "concept": "Chain-of-Thought提示模板",
-        "explanation": "Chain-of-Thought（思考鏈）提示是2025年GPT-4o多模態應用的最佳實踐，能顯著提升No Code AI代理的推理能力與準確性，特別適合企業自動化決策流程。此方法融合最新趨勢，提供步驟式思考路徑，其他選項為輔助技術。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "開源AI生態",
+        "explanation": "Granite是新一代開源AI模型，特別支援邊緣設備低程式碼應用，有助領域客製化工作流設計。",
         "number": 3,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "企業主管評估No Code生成式AI導入時，2025年企業應用趨勢中，哪項指標最能衡量AI自動化流程從效率化轉向產業變革的成功？",
+        "question": "2026年金融業利用生成式AI的哪些能力來抵禦Deepfake詐騙風險？",
         "options": [
-            "AI代理處理任務數量成長率，結合新規營收貢獻比例於No Code工作流部署後的季度報告",
-            "No Code平台使用者採用率，搭配GPT-4o生成內容的內部滿意度調查分數統計",
-            "自動化流程減少人力成本百分比，連同企業資料品質改善的KPI達成率數據",
-            "GPT-4o模型微調迭代次數，反映No Code環境下持續學習的技術成熟度指標"
+            "跨平台資訊篩選及自動化風險評估",
+            "只允許人工審核所有交易內容",
+            "專注單一文字生成模型檢核",
+            "永久性資料凍結以防詐騙"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "導入評估",
-        "subtopic": "企業應用ROI衡量",
-        "concept": "新規營收貢獻",
-        "explanation": "2025年趨勢顯示生成式AI從「成本削減」轉向「新規事業開發」，故AI代理任務成長結合新規營收是最權威成功指標。此融合No Code自動化與產業變革，其他選項僅測量效率而非轉型影響。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "金融數位防詐",
+        "explanation": "Deepfake詐騙日趨逼真，金融機構透過AI全自動風險篩選與多來源比對強化辨識能力。",
         "number": 4,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "針對2025年金融業生成式AI工具應用，風險管理框架中，No Code平台導入GPT-4o於與信審核流程時，首要緩解措施為何？",
+        "question": "下列何者為2026年多模態大語言模型（Multimodal LLM）主要優勢？",
         "options": [
-            "整合差分隱私技術於提示詞設計，確保No Code AI代理不洩露個別客戶資料於模型訓練",
-            "建立即時監控儀表板，追蹤GPT-4o在No Code流程中偏差分數並觸發人工介入閾值",
-            "採用聯邦學習架構分散No Code工具的資料儲存，降低單點金融資料外洩風險",
-            "實施端到端可解釋AI審計，記錄所有GPT-4o決策路徑以符合監管報告要求"
+            "能同時處理語言、影像及影音資訊以支援廣泛應用",
+            "僅能進行單純語意理解作業",
+            "限制於單一圖像輸入解析",
+            "只支援純數據處理無法應用在醫療影像分析"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "風險管理",
-        "subtopic": "金融業合規自動化",
-        "concept": "即時偏差監控",
-        "explanation": "金融業規制嚴格，2025年No Code生成式AI需即時監控GPT-4o偏差以確保與信審核準確性，此措施平衡效率與風險。B選項提供動態介入機制，其他聚焦靜態防護。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "多模態融合",
+        "explanation": "Multimodal LLM可以融合多種格式資料，提升跨領域應用深度，尤其在醫療、製造等產業。",
         "number": 5,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "2025年製造業AI自動化流程規劃中，使用Low Code平台融合GPT-4o於品質管理，提示詞設計的核心原則應為？",
+        "question": "2026年企業規劃導入生成式AI時，建議優先評估哪項風險？",
         "options": [
-            "嵌入領域特定Few-Shot範例與Chain-of-Thought，指導Low Code AI代理分析缺陷影像與生產數據",
-            "優化提示長度以最小化GPT-4o token消耗，加速Low Code工作流在邊緣裝置的推理速度",
-            "設計自適應提示框架，根據即時感測器資料動態調整Low Code品質預測模型輸入",
-            "整合多語言支援於提示中，提升Low Code平台跨國製造線的全球供應鏈溝通效能"
+            "AI生成內容爆炸所帶來的資訊濫用",
+            "僅評估工作流程轉換成本",
+            "忽略模型倫理偏誤可能性",
+            "僅考量AI硬體升級問題"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "提示詞設計",
-        "subtopic": "製造業品質管理",
-        "concept": "領域特定Few-Shot",
-        "explanation": "製造業特化AI需Few-Shot與Chain-of-Thought提示於Low Code平台，提升GPT-4o對品質影像與數據的精準分析，這是2025年行業應用趨勢。提供具體指導優於通用優化。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "AI內容治理",
+        "explanation": "內容濫用及資訊氾濫已成為2026年導入AI時首要風險，須配合反射能力設計治理機制。",
         "number": 6,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "企業導入No Code生成式AI時，2025年風險管理趨勢強調哪項評估框架，以防範AI自動化流程中的供應鏈中斷？",
+        "question": "下列哪種生成式AI技術最適合自駕車在複雜路況的自動決策？",
         "options": [
-            "評估No Code供應商的模型多樣化支援，包括GPT-4o與Claude備援切換機制於自動化流程",
-            "分析No Code平台的離線模式效能，確保AI代理在雲端斷線時維持核心業務連續性",
-            "檢驗供應商資料中心地理多樣性，降低No Code生成式AI單一區域災害的系統性風險",
-            "驗證No Code工具的版本相容性歷史，預測GPT-4o升級對既有自動化流程的影響程度"
+            "VLA模型整合視覺、語言、動作多模態分析",
+            "單一語言模型做導航文字分析",
+            "傳統規則式硬體感測模組",
+            "僅使用影像識別搭配手動干預"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "風險管理",
-        "subtopic": "供應鏈中斷防範",
-        "concept": "模型多樣化備援",
-        "explanation": "2025年生成式AI依賴第三方模型，No Code平台需支援GPT-4o等多模型備援以防單一供應商中斷，此為企業級風險管理核心。其他為輔助措施。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "VLA多模態模型",
+        "explanation": "VLA整合視覺、語言與物理動作，是複雜場景自動決策的最佳架構。",
         "number": 7,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "GPT-4o於2025年HR部門No Code應用規劃中，導入評估重點為何，以實現人資資料自動化儀表板？",
+        "question": "何者非2026年生成式AI導入規劃的核心方向？",
         "options": [
-            "驗證No Code整合GPT-4o多模態能力，處理員工檔案影像與離職風險預測的端到端準確率",
-            "評估儀表板生成速度，優化GPT-4o提示以支援即時跨部門人件費與生產性視覺化",
-            "比較No Code平台資料匯入相容性，確保HR系統與GPT-4o的結構化資料對齊效率",
-            "測試使用者介面自訂彈性，讓GPT-4o生成客製化HR洞察報告於No Code環境"
+            "獨立發展單機AI工具取代被動整合模式",
+            "嵌入既有主流應用並保持高彈性擴展",
+            "開源模型結合邊緣運算進行快速部署",
+            "以多模態LLM與物理AI融合提升應用深度"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "導入評估",
-        "subtopic": "HR自動化儀表板",
-        "concept": "多模態整合驗證",
-        "explanation": "HR應用需GPT-4o多模態處理影像與預測，No Code導入評估優先端到端準確率，此趨勢強調人×AI×資料融合。核心於資料品質而非速度。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "應用整合策略",
+        "explanation": "2026年AI規劃趨勢強調應用被動整合與多模態模型協作，獨立單機工具非主流方向。",
         "number": 8,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "2025年小零售業生成式AI工具導入，針對提示詞最佳實踐與風險管理，企業主管應優先部署哪項No Code解決方案？",
+        "question": "以下哪一項主要用於2026年醫療影像診斷輔助的生成式AI技術？",
         "options": [
-            "需求預測AI代理，使用精煉提示詞結合歷史銷售與天氣資料，內建偏誤偵測機制",
-            "客戶服務聊天機器人，優化GPT-4o對話提示以提升回應多樣性，並記錄互動審計日誌",
-            "行銷內容生成器，設計模板化提示產生社群貼文，配備版權檢查自動篩選功能",
-            "庫存優化自動化，透過動態提示調整供應鏈參數，整合供應商API即時資料饋入"
+            "多模態大語言模型結合圖像辨識分析",
+            "單純文字生成模型用於問診對話",
+            "單一規則型決策樹病理推測",
+            "僅依賴人工線上審查醫療數據"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "生成式AI工具實際應用",
-        "subtopic": "零售需求預測",
-        "concept": "提示詞與偏誤偵測",
-        "explanation": "零售業2025年聚焦需求預測AI，No Code代理需精煉提示與偏誤偵測，融合風險管理於核心業務。此優於支援功能，提供直接營運影響。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "AI醫療多模解析",
+        "explanation": "多模態LLM能同時分析影像與其他數據，是推動醫療AI應用的重要技術。",
         "number": 9,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     },
     {
-        "question": "在2025年軟體開發AI自動化流程中，Low Code平台規劃生成式AI導入風險管理，核心概念為何以確保程式碼生成品質？",
+        "question": "2026年生成式AI風險管理重點之一是『倫理悖論』，企業應如何因應？",
         "options": [
-            "部署生成後測試迴圈，將GPT-4o程式碼輸出饋入單元測試框架於Low Code管道",
-            "實施提示詞版本控制，追蹤Low Code中GPT-4o程式碼生成迭代的效能變異",
-            "建立AI代理沙箱環境，隔離Low Code開發流程中潛在安全漏洞的橫向擴散",
-            "整合靜態程式碼分析工具，掃描GPT-4o於Low Code生成的潛在效能瓶頸模式"
+            "優先設計AI反射機制平衡創新與控制",
+            "僅依賴AI自主開放創新不控管",
+            "完全排除AI在決策流程中的參與",
+            "只要求AI執行固定任務不許自我學習"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "風險管理",
-        "subtopic": "軟體開發品質保障",
-        "concept": "生成後測試迴圈",
-        "explanation": "大型企業如NTT DATA強調生成式AI程式碼生成後自動測試迴圈於Low Code流程，此確保品質並加速開發。融合2025年自動化趨勢，優於預防措施。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "倫理悖論與反射能力",
+        "explanation": "AI反射（Reflection）能力設計是2026倫理治理重點，有助於平衡擴張與安全創新。",
         "number": 10,
-        "date": "2026-02-24"
+        "date": "2026-02-26"
     }
 ]

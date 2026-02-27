@@ -1,172 +1,172 @@
 [
     {
-        "question": "2026年AI算力的結構發生重大變化，哪一項描述最符合當前趨勢？",
+        "question": "在資料處理流程中，下列何者最適合用於消除多重共線性以提升機器學習模型的穩定性？",
         "options": [
-            "訓練階段的算力消耗占總算力的三分之二",
-            "推理階段的算力消耗占總算力的三分之二",
-            "推理與訓練的算力消耗各佔一半",
-            "推理的算力消耗僅占總算力的三分之一"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI技術與模型",
-        "subtopic": "算力結構",
-        "concept": "推理與訓練算力比例",
-        "explanation": "2026年趨勢是AI算力結構出現倒置，推理（即執行模型回答或任務所需運算）占總算力約三分之二，遠多於訓練階段。",
-        "number": 1,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "在AI代理人技術中，下列哪項應用最能展現其核心價值？",
-        "options": [
-            "協助完成單一簡單任務，無需持續互動",
-            "自動化多步驟業務流程，跨系統執行任務",
-            "取代所有人類決策行為，達成完全自主操作",
-            "只作為數據存取工具，不處理決策與執行"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AI代理人",
-        "concept": "AI代理應用",
-        "explanation": "AI代理人能自動執行多步驟任務並跨系統協作，這是其區別於只做簡單協助或純數據取用的核心價值。",
-        "number": 2,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "關於2026年的量子人工智慧(Quantum AI)技術，下列哪項敘述最正確？",
-        "options": [
-            "量子AI已廣泛商用，主導產業最佳化問題",
-            "量子AI仍處於初步發展階段，尚未成熟應用",
-            "量子AI完全取代了傳統深度學習方法",
-            "量子AI不涉及傳統AI難題的解決"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI技術與模型",
-        "subtopic": "量子AI",
-        "concept": "量子人工智慧發展",
-        "explanation": "量子人工智慧在2026年仍屬初步階段，尚無廣泛商用，主要研究集中於解決傳統AI難題。",
-        "number": 3,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "2026年預測通用人工智慧(AGI)的發展動向，下列哪項為符合趨勢的陳述？",
-        "options": [
-            "AGI已完全超越人類智慧，無須人類干預",
-            "AGI仍屬長遠目標，未見實質進展",
-            "AGI有望在未來3至5年內實現並融合人類合作",
-            "AGI技術主要停留在理論階段，無應用計畫"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "人工智慧概念",
-        "subtopic": "AGI預測",
-        "concept": "通用人工智慧發展",
-        "explanation": "多數權威預測指出AGI可能於未來3至5年內達成，並與人類科研、生活合作共存。",
-        "number": 4,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "生成式AI在2026年多模態應用中，下列哪兩項為最主要的應用場景？",
-        "options": [
-            "自動駕駛與股票買賣",
-            "影片創作與個人化醫療輔助",
-            "文字分類與網頁設計",
-            "流程自動化與系統維護"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "多模態生成",
-        "concept": "多模態生成應用",
-        "explanation": "2026年生成式AI多模態應用聚焦資訊整合，影片製作及個人化醫療輔助是主要領域。",
-        "number": 5,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "以下關於AI在製造業中的應用階段排序，哪一項為正確順序？",
-        "options": [
-            "設計驗證 → 自主運行 → 排程",
-            "排程 → 自主運行 → 設計驗證",
-            "排程 → 設計驗證 → 自主運行",
-            "自主運行 → 排程 → 設計驗證"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "AI應用與規劃",
-        "subtopic": "製造業AI",
-        "concept": "製造業AI導入流程",
-        "explanation": "智能製造先以AI排程優化運作，再進行設計驗證，最後實現自主運行。",
-        "number": 6,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "關於2026年AI投資泡沫的疑慮，下列哪項敘述最符合現實？",
-        "options": [
-            "所有行業中AI投資報酬率一致且持續攀升",
-            "AI投資普遍回報不如預期，市場完全冷卻",
-            "部分領域表現優異，部分領域仍面臨回報不均問題",
-            "AI投資已被完全取代，市場無成長潛力"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "AI倫理與法規",
-        "subtopic": "投資與風險",
-        "concept": "AI投資回報不均",
-        "explanation": "2026年AI在醫療製造等領域獲利顯著，但投資回報不均，伴隨泡沫與競爭風險。",
-        "number": 7,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "在AI系統設計中，\"人在迴圈上(Human on loop)\" 與\"人在迴圈中(Human in loop)\"有何主要差異？",
-        "options": [
-            "人在迴圈上指人工完全取代系統決策，人在迴圈中無人類參與",
-            "人在迴圈上指人類監督最終決策，人在迴圈中指人類持續介入運作過程",
-            "兩者意義相同，皆為無人類介入的全自動運作",
-            "人在迴圈上指演算法自動優化，人在迴圈中指數據自動收集"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI治理概念",
-        "subtopic": "人工監督",
-        "concept": "Human on loop與Human in loop",
-        "explanation": "\"人在迴圈上\"指人工監督與核准決策，\"人在迴圈中\"則表示運作過程中人類持續介入調整。",
-        "number": 8,
-        "date": "2026-02-25"
-    },
-    {
-        "question": "下列哪一種資料編碼方式最適合用於分類型類別變數的機器學習模型？",
-        "options": [
-            "持續數值縮放（Feature scaling）",
-            "One-Hot Encoding",
-            "隨機映射編碼（Random Projection）",
-            "遞歸編碼（Recursive Encoding）"
+            "L1正規化減少係數的稀疏性",
+            "L2正規化對於特徵係數施加懲罰",
+            "Dropout技術隨機丟棄部分神經元",
+            "批次正則化 (Batch Normalization) 平衡數據分布"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
-        "subtopic": "資料整理",
-        "concept": "資料編碼技術",
-        "explanation": "One-Hot Encoding能將類別變數轉換為無序獨立的二元向量，適用於多數分類模型。",
-        "number": 9,
-        "date": "2026-02-25"
+        "subtopic": "資料整理與分析流程",
+        "concept": "正規化技術",
+        "explanation": "L2正規化通過對所有特徵係數施加平方懲罰，有效降低模型中多重共線性問題，提升模型穩定性和泛化能力。L1正規化則更偏向稀疏性，並非專門消除共線性。",
+        "number": 1,
+        "date": "2026-02-27"
     },
     {
-        "question": "下列哪一項最能準確解釋生成式AI與鑑別式AI的根本差異？",
+        "question": "哪種機器學習類型最適合用於自主操控機器人的複雜決策制定，並從環境反饋中逐步改善策略？",
         "options": [
-            "生成式AI預測數據標籤，鑑別式AI生成新資料內容",
-            "生成式AI生成新資料內容，鑑別式AI判斷資料的屬性或類別",
-            "兩者皆用於數據預測，無根本差異",
-            "鑑別式AI專注於強化學習，生成式AI僅用於非監督學習"
+            "監督學習透過標籤數據訓練模型",
+            "非監督學習發掘數據內在結構",
+            "強化學習基於獎勵信號優化行為策略",
+            "生成對抗網絡 (GAN) 用於數據合成"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "強化學習",
+        "explanation": "強化學習利用環境的反饋信號（獎勵或懲罰）來調整行為策略，使機器人能夠在不斷嘗試中學習最佳決策。此類學習特別適合自主系統應用。",
+        "number": 2,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "以下哪項最能代表生成式AI在內容創作中的獨特優勢？",
+        "options": [
+            "通過特定特徵辨識完成分類任務",
+            "基於大量數據生成具創意的多樣化輸出",
+            "防止模型中的過度擬合現象",
+            "強化模型對異常資料的魯棒性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式AI概念",
+        "concept": "生成式AI特點",
+        "explanation": "生成式AI的核心優勢在於能夠根據訓練數據生成各種創意且多樣性的內容，如文本、圖像或音頻。而鑑別式AI則專注於分類和辨識任務。",
+        "number": 3,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "關於AI治理的『監理沙盒』概念，下列敘述何者正確？",
+        "options": [
+            "允許AI模型在無限制環境下自由運行",
+            "提供實驗平台以評估AI技術和政策風險",
+            "強制所有AI系統必須完全透明公開源碼",
+            "專指針對硬體資源的管理機制"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是一種受控的測試環境，讓AI企業可以在有限制條件下試驗新技術或應用，鑑定其潛在風險與商業價值，從而支持政策制定與監管。",
+        "number": 4,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "資料隱私保護中，下列哪一項最能確保個人資料在不直接暴露的前提下用於分析？",
+        "options": [
+            "實施ETL流程中的加密轉換",
+            "使用One-Hot Encoding對資料分類",
+            "採行聯邦學習方法分散數據訓練",
+            "依託監管規定限制資料訪問"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習讓多方能在保持資料本地化且不外泄的條件下，共同訓練機器學習模型，有效維護資料隱私。相比加密或限定訪問，聯邦學習技術更適合分散式數據環境。",
+        "number": 5,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "鑑別式AI與生成式AI結合應用中，哪種技術最常用於強化生成內容的真實性與合理性？",
+        "options": [
+            "利用卷積神經網絡辨識輸出真偽",
+            "結合Transformer結構以擴大上下文",
+            "應用RAG（檢索增強生成）技術融合外部知識",
+            "進行LIME模型解釋提升透明度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用技術",
+        "concept": "RAG",
+        "explanation": "檢索增強生成（RAG）技術將鑑別式AI提供的外部知識與生成式AI結合，使生成內容更具真實性和上下文連貫性，廣泛用於問答和文本生成系統中。",
+        "number": 6,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "在資料分析中，何謂『偏差-變異權衡（Bias-Variance Tradeoff）』？",
+        "options": [
+            "模型複雜度增加能降低變異但偏差提升",
+            "高偏差模型傾向於過度擬合訓練數據",
+            "低變異模型對資料變動較為敏感",
+            "在模型選擇時需平衡偏差與變異以最佳化泛化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差-變異權衡指的是模型在簡化假設（偏差）與對訓練資料敏感度（變異）間的平衡，過度追求任一方面都會降低模型對未知資料的預測能力。",
+        "number": 7,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "機器學習中『Human on Loop』一詞意指什麼？",
+        "options": [
+            "完全由人工操作的決策系統",
+            "在人類監督下進行模型決策調整的流程",
+            "基於人類標記數據的無監督學習方式",
+            "透過群眾智慧自動更新模型參數"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "機器學習概念",
-        "subtopic": "生成式與鑑別式AI",
-        "concept": "鑑別式與生成式AI差異",
-        "explanation": "生成式AI透過學習生成資料樣本，鑑別式AI則專注於辨識資料的真實標籤或分類。",
+        "subtopic": "監督流程",
+        "concept": "Human on Loop",
+        "explanation": "'Human on Loop'指的是在自動決策系統中，仍有人工參與或監督模型的決策過程，確保決策合理性和安全，尤其在高風險場景常見。",
+        "number": 8,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "在Transformer架構中，以下哪個挑戰最直接影響其在大規模語言模型的訓練效率？",
+        "options": [
+            "梯度消失導致模型無法有效學習",
+            "巨大計算資源需求造成高耗能與延遲",
+            "模型深度增加使過擬合風險提升",
+            "注意力機制無法捕捉長距離依賴"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "Transformer技術痛點",
+        "explanation": "Transformer架構雖強大，但其自注意力機制隨序列長度计算量呈二次方增长，導致高計算資源與耗能需求，大幅影響訓練效率與擴展性。",
+        "number": 9,
+        "date": "2026-02-27"
+    },
+    {
+        "question": "在資料分類問題中，貝葉斯分類器的核心假設是什麼？",
+        "options": [
+            "各特徵條件獨立於彼此",
+            "輸出變量完全依賴單一特徵",
+            "類別標籤隨機分布且不依賴特徵",
+            "模型不需要先驗概率可直接訓練"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "貝葉斯分類器",
+        "explanation": "貝葉斯分類器基於特徵條件獨立性假設，計算各特徵在特定類別下的條件概率，進而推斷資料的最可能類別，是經典機率模型。",
         "number": 10,
-        "date": "2026-02-25"
+        "date": "2026-02-27"
     }
 ]

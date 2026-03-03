@@ -1,172 +1,172 @@
 [
     {
-        "question": "2025年台灣企業於RAG結構進行私有化部署時，哪個平台最能同時保障資料主權、合規性並支援拖拉式低程式碼快速建模，適用於金融、電信、製造等多產業導入？",
+        "question": "在2025年的企業專案導入情境中，選擇No code/Low code 平台搭配生成式AI時，哪一項優勢最能支撐台灣企業降低IT開發瓶頸、快速試錯？",
         "options": [
-            "Amazon Bedrock整合TAIDE透過雲端API無程式碼RAG連結但需外部算力",
-            "中華電信CHT AI Factory地端低程式碼平台確保資料不離境支援拖拉RAG元件",
-            "NVIDIA地端AI與台灣大哥大運算中心搭配低程式碼私有RAG建模訓練",
-            "TAIWAN AI RAP No code建置RAG代理同時需外部資料匯入合規查核"
+            "A. 提供視覺化流程設計，自動化繁雜任務，有效減少程式撰寫與部署時間",
+            "B. 僅能用於資料查詢，限制於靜態報表產生",
+            "C. 需仰賴資深AI工程師全程監控，無法應對大規模迭代需求",
+            "D. 僅限單一部門導入，無法跨部門協作"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "No code / Low code 概念",
-        "subtopic": "生成式AI私有化部署",
-        "concept": "RAG、主權AI、地端部署",
-        "explanation": "中華電信CHT AI Factory專為台灣合規需求設計，強調本地資料主權、不離境，結合低程式碼拖拉介面，可讓非技術人員快速建置RAG，有效兼顧便利性與合規。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 基本概念",
+        "concept": "流程自動化與開發敏捷化",
+        "explanation": "No code/Low code以視覺化工具降低技術門檻，大幅提升各部門敏捷協作效率與原型試錯速度，A為核心優勢，其餘選項未涵蓋跨職能部署與縮短開發週期的現實需求。",
         "number": 1,
-        "date": "2026-02-28"
+        "date": "2026-03-03"
     },
     {
-        "question": "金融業2025年導入生成式AI時，哪一種No code低程式碼代理人AI組合最能滿足金管會調查的87%銀行業高採用率，同時在客服、防詐有深度應用？",
+        "question": "2025年在行銷部門轉型過程中應用生成式AI時，哪一種提示詞設計策略能最適合提升廣告內容的SEO和GEO（生成式搜尋引擎最佳化）效果？",
         "options": [
-            "momo零售No code+TAIDE實現客服RAG但限內部使用不及防詐",
-            "全家便利No code平台建AI代理交易偵測金管會採用率僅33%",
-            "低程式碼Agentic AI結合RAG支援銀行客服防詐與自動交易達87%應用",
-            "製造業低程式碼跨用金融供應鏈防詐但客服代理功能弱"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用領域與工具使用",
-        "subtopic": "金融業智能客服與防詐",
-        "concept": "Agentic AI、RAG、行業落地",
-        "explanation": "低程式碼Agentic AI結合RAG能實現銀行智能客服、防詐及自動交易，是2025年金融業高導入和深度應用的主要方案，滿足金管會對產業應用指標。",
-        "number": 2,
-        "date": "2026-02-28"
-    },
-    {
-        "question": "關於2025年底No code/Low code在台灣企業生成式AI投資ROI評估下列何者最能對應IDC預測市場規模與AI化指數提升？",
-        "options": [
-            "只評估經營面忽略人才導致AI化指數難以提升",
-            "專聚技術RAG但無法量化金融導入與ROI",
-            "整合經營人才技術三層Low code佈局預測AI化指數升市場成長幅度",
-            "僅算製造供應鏈No code ROI未理會整體指數與人才落差"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "ROI與AI化指數",
-        "concept": "三層面綜合評估、IDC市場預測",
-        "explanation": "根據2025年IDC預測，生成式AI導入必須評估經營、人才、技術三層面，綜合Low code規劃才能有效推升AI化指數並符合預期市場成長。",
-        "number": 3,
-        "date": "2026-02-28"
-    },
-    {
-        "question": "台灣製造業應用生成式AI平台於預測維護與供應鏈韌性決策，下列哪項最能善用TAIWAN AI RAP高效能算力結合No code/Low code代理人AI？",
-        "options": [
-            "零售業Low code工具移植供應鏈但算力整合不足",
-            "台灣大哥大NVIDIA中心建地端代理但韌性管理有限",
-            "TAIWAN AI RAP結合算力與Low code工具可用於預測維護與供應鏈AI決策",
-            "CHT Factory No code平台聚焦客服忽略製造業決策需求"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用領域與工具使用",
-        "subtopic": "供應鏈與預測維護",
-        "concept": "TAIWAN AI RAP、Agentic AI、算力與低程式碼",
-        "explanation": "TAIWAN AI RAP整合算力、低程式碼與代理人決策工具，支持製造預測維護與多層次供應鏈AI決策，是領先的產業案例。",
-        "number": 4,
-        "date": "2026-02-28"
-    },
-    {
-        "question": "生成式AI導入評估時，No code/Low code方案於大型企業內部推動資料安全與價值轉化，哪一種解法最能落實地端資料主權與規模化AI效益？",
-        "options": [
-            "雲端No code RAG優先但未解資料離境與安全需求",
-            "地端AI解決方案Low code建模能確保資料主權同時量化GenAI價值",
-            "低程式碼零售工具只在行政流程無法處理複雜信任層次",
-            "金融領域No code著重防詐但無法落地於電信AI主權"
+            "A. 只用長度最短的指令增加生成速度",
+            "B. 包含目標關鍵詞、目標受眾、欲強調品牌價值等多層次明確描述",
+            "C. 單純描述圖片格式，忽略關鍵詞與受眾",
+            "D. 僅複製競品描述，不進行品牌優化"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "大型企業主權與規模化",
-        "concept": "地端部署、主權AI、Low code規模效應",
-        "explanation": "低程式碼地端AI方案可確保資料主權，並有效規模化落地企業GenAI應用，特別符合大型企業從起步至價值登頂的核心需求。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程 (Prompt Engineering)",
+        "concept": "SEO/GEO策略性提示設計",
+        "explanation": "正確的提示工程會融合產品特色、目標族群與關鍵詞，有助於自動化生成高曝光內容，並優化於搜尋與AI引用平台的能見度。",
+        "number": 2,
+        "date": "2026-03-03"
+    },
+    {
+        "question": "製造業在導入生成式AI輔助品質檢測的風險評估階段，哪一項說法正確？",
+        "options": [
+            "A. 完全仰賴AI自動判斷，不需人工驗證",
+            "B. 結合生成式AI和預測型AI，並進行A/B測試以確認準確率",
+            "C. 僅應用於低風險部位，主機台異常可忽略不計",
+            "D. 僅採用開源AI模型，無須考量數據專有權"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI風險管理",
+        "concept": "Hybrid AI與A/B測試驗證",
+        "explanation": "B反映出逐步測試AI準確率與落地性是企業落地GenAI時的最佳實踐，能兼顧品質驗證與降低誤判風險。",
+        "number": 3,
+        "date": "2026-03-03"
+    },
+    {
+        "question": "2025年，哪一類生成式AI應用最有潛力為台灣零售業帶來自動化與消費者互動革新？",
+        "options": [
+            "A. 產生靜態廣告圖片自動投放",
+            "B. 多語言智能客服搭配推薦引擎，即時生成對話內容與專屬促銷資訊",
+            "C. 僅用於商品倉儲溫度監控",
+            "D. 單一語言查詢機器人，無法跨渠道應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "零售領域應用",
+        "concept": "多語言互動與生成式推薦",
+        "explanation": "B融合了生成式AI擅長的對話自動化與即時個人化推薦，提升消費者體驗與企業行銷成效。",
+        "number": 4,
+        "date": "2026-03-03"
+    },
+    {
+        "question": "在生成式AI模型與No code平台結合於醫療影像分析時，下列哪一項風險管理措施最重要？",
+        "options": [
+            "A. 充分考量資料匿名化與動態存取權限的規劃",
+            "B. 忽略個資問題，人工審查可取代AI評估",
+            "C. 只做單一模型驗證，不需第三方審核",
+            "D. 所有醫療數據皆以開放共享為原則"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "醫療數據隱私安全",
+        "concept": "動態權限控管與匿名化",
+        "explanation": "醫療影像屬於高度隱私數據，導入AI與No code時需多層次動態授權與匿名化處理，方能兼顧合法合規與應用彈性。",
         "number": 5,
-        "date": "2026-02-28"
+        "date": "2026-03-03"
     },
     {
-        "question": "下列哪一項最能體現2025年台灣政策強調Vertical AI及Low code/No code在製造、醫療、交通等產業的客製化效益？",
+        "question": "在教育領域應用生成式AI制定個人學習路徑時，以下何者非其主要優勢？",
         "options": [
-            "行政院AI建設No code限半導體忽略產業客製應用",
-            "開放資料平台Low code只聚教育無醫療金融代理人",
-            "政策推動Vertical AI Low code允許醫療交通金融多產業生成規劃",
-            "ICT產業No code優化供應鏈但不及醫療防詐深度"
+            "A. 實現即時反饋，動態調整教學內容",
+            "B. 輔助教師快速產生互動教材",
+            "C. 降低教師對各科教學的個人化負擔",
+            "D. 毫無審核過程，所有內容隨時自動上線"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "No code / Low code 概念",
-        "subtopic": "垂直產業客製化應用",
-        "concept": "Vertical AI、政府政策、產業整合",
-        "explanation": "台灣政策明確強調Vertical AI，推動Low code/No code工具在多產業客製化生成式AI的深度應用，符合精準醫療、金融防詐等複合需求。",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育領域應用",
+        "concept": "自動化與動態個人化教學",
+        "explanation": "A、B、C是生成式AI強化個人化教學的優點，D未審核機制反而可能造成內容錯誤與風險，屬於錯誤敘述。",
         "number": 6,
-        "date": "2026-02-28"
+        "date": "2026-03-03"
     },
     {
-        "question": "企業AI化指數偏低與NLP人才斷層，依2025年54.2%企業內部應用狀況，哪一種策略最能因應自然語言處理技能落差快速落地生成式AI？",
+        "question": "2025年生成式AI於企業決策輔助領域投入時，如何確認其產出的客觀性與可信度提升？",
         "options": [
-            "專注AI算力硬體投資忽略No code工具導入",
-            "著重專業AI人才培訓導致Low code落地延緩",
-            "選用No code/Low code平台以彌補NLP人才斷層提升AI化指數",
-            "預測AI支出增加但先軟體服務忽視人才短缺"
+            "A. 僅依據單一來源資料進行產出",
+            "B. 引用多重權威資料庫並比對來源一致性，結合RAG資訊補強技術",
+            "C. 完全依靠歷史數據，不需即時動態補充",
+            "D. 僅關注運算速度，忽略數據來源"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "人才缺口與技能落差",
-        "concept": "NLP、人才斷層、低程式碼",
-        "explanation": "Low code/No code平臺可協助快速建立NLP應用，非資深工程師亦可參與開發，直接改善產業AI化指數與人才缺口。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "決策支援與RAG",
+        "concept": "檢索增強生成 (RAG) 技術",
+        "explanation": "RAG技術結合多數據庫檢索與跨來源比對，能夠顯著降低AI幻覺風險與資訊偏差，提高決策可信度。",
         "number": 7,
-        "date": "2026-02-28"
+        "date": "2026-03-03"
     },
     {
-        "question": "2025年momo零售應用生成式AI，No code工具如何同時切合第二波生成式AI與第三波算力疊加的商業流程轉型動能？",
+        "question": "請問下列關於低程式碼( Low code )開發平台在生成式AI實作的敘述，何者正確？",
         "options": [
-            "第一波AI成長No code僅限虛擬智慧無法算力整合",
-            "第四波AI Low code聚焦實體感測不及零售行政深度",
-            "第二第三波AI算力疊加Low code平台強化內部RAG與客服代理人",
-            "沉浸式體驗No code偏娛樂未觸動零售業務改革"
+            "A. 只支援靜態前端網頁設計，無法整合AI微服務",
+            "B. 可藉由API串接，快速串聯文本生成、語音辨識等多種AI模組",
+            "C. 每次更新都必須全人工重新部署AI模組",
+            "D. 無法自訂資料流程，只能依預設流程完成產出"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用領域與工具使用",
-        "subtopic": "零售業商業應用",
-        "concept": "生成式AI世代波次、RAG、No code算力",
-        "explanation": "momo與No code算力平台組合可以同時利用生成式AI與高效能算力推動智能客服、行政優化，是典型第二、三波商業流程疊加應用。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 工具實作",
+        "concept": "平台API串接AI服務",
+        "explanation": "Low code平台提供API端點能彈性串聯各項AI模組，並自訂資料與流程，B為正確說法，其餘均與實際應用趨勢不符。",
         "number": 8,
-        "date": "2026-02-28"
+        "date": "2026-03-03"
     },
     {
-        "question": "大型企業2025年於GenAI登頂階段，為克服信任風險與文化挑戰，哪項No code/Low code策略最能實現規模化效益與人才轉化？",
+        "question": "針對生成式AI導入大型企業跨國多據點協作時，何者是不完善規劃的風險指標？",
         "options": [
-            "資料安全No code優先卻無法觸及價值與文化信任轉化",
-            "B2B行政流程數位化Low code未處理企業心態管理",
-            "綜合資料價值人才文化以Low code推動GenAI規模化",
-            "AI機器人No code只主攻個人端忽略組織文化"
+            "A. 不統一提示詞標準，造成輸出內容風格與品質嚴重不一致",
+            "B. 制定嚴謹提示詞與審核規範以維持輸出穩定",
+            "C. 採用本地端數據隔離策略，降低數據外洩風險",
+            "D. 定期審核不同市場端AI產出，進行在地化優化"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "進化階段管理挑戰",
-        "concept": "GenAI進化、組織信任、文化挑戰",
-        "explanation": "企業GenAI進化後應用規模化的同時，唯有兼顧人才、文化與信任管理的Low code平台推動，方能突破登頂階段組織效益轉型瓶頸。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "企業多據點部署",
+        "concept": "提示詞一致性與品質管控",
+        "explanation": "A為導致內容差異失控的根本原因，大型組織跨據點應加強標準化，否則無法確保品牌調性與輸出品質一致。",
         "number": 9,
-        "date": "2026-02-28"
+        "date": "2026-03-03"
     },
     {
-        "question": "2025年台灣電信產業將主權AI如TAIDE應用於No code平台時，何種工具組合能克服語言障礙並支援低程式碼多媒體娛樂創作？",
+        "question": "2025年針對生成式AI工具商策略評估，以下哪一項是規模導入前必須進行的流程控管作法？",
         "options": [
-            "NVIDIA運算中心No code僅限地端娛樂無法兼顧TAIDE本地優勢",
-            "TAIWAN AI RAP Low code算力整合專注醫療非電信領域",
-            "CHT AI Factory No code結合TAIDE具語言優勢支援多媒體娛樂RAG",
-            "全家便利Low code強化零售客服不符電信主權AI需求"
+            "A. 直接開放所有功能於生產環境不加審核",
+            "B. 規劃多階段導入流程、設置安全沙箱環境進行灰階測試並由多方利害關係人審查",
+            "C. 只需單人測試即可全面部署",
+            "D. 只用一年期契約，不考慮長期維運"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用領域與工具使用",
-        "subtopic": "電信產業主權AI",
-        "concept": "TAIDE、RAG、主權低程式碼多媒體",
-        "explanation": "CHT AI Factory結合TAIDE及本地資料，提供本地語言優化及多媒體快速生成，是支援台灣電信主權AI應用的最佳No code/Low code平台。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "規模導入規劃",
+        "concept": "流程分階段控管與多方審查",
+        "explanation": "根據2025年AI治理趨勢，有效導入必須設計沙箱、多階段及多方審核，確保系統穩定、風險可控，B為唯一正確選項。",
         "number": 10,
-        "date": "2026-02-28"
+        "date": "2026-03-03"
     }
 ]

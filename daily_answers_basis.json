@@ -1,172 +1,172 @@
 [
     {
-        "question": "在資料整理與分析流程中，哪一個步驟最關鍵以確保資料隱私與安全？",
+        "question": "在2026年的人工智慧發展趨勢中，代理式AI的核心能力不包含下列哪一項？",
         "options": [
-            "A. 對資料進行加密與匿名化處理以防止未授權訪問",
-            "B. 只使用關聯式資料庫儲存所有資料以方便管理",
-            "C. 將所有資料公開共享以促進資料透明度",
-            "D. 將資料直接用於機器學習模型訓練不做額外處理"
+            "感知環境並收集資訊",
+            "基於目標推理與決策",
+            "自動生成視覺藝術創作",
+            "反思並調整行動策略"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "代理式AI",
+        "concept": "代理式AI核心能力",
+        "explanation": "代理式AI的核心能力通常包括感知環境、基於目標推理、行動執行與反思調整，不包含專門生成視覺藝術，該屬於生成式AI的特定應用。",
+        "number": 1,
+        "date": "2026-03-04"
+    },
+    {
+        "question": "下列何者最符合2026年實體AI的應用場景？",
+        "options": [
+            "純虛擬虛擬助手系統",
+            "自主載具的無人駕駛技術",
+            "基於雲端的語音辨識系統",
+            "網路數據分析平台"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI的定義與分類",
+        "concept": "實體AI",
+        "explanation": "實體AI指的是具實體行動能力的人工智慧系統，如機器人、自主載具等，純虛擬系統不屬於此範疇。",
+        "number": 2,
+        "date": "2026-03-04"
+    },
+    {
+        "question": "在資料收集與分析流程中，ETL代表何種作業？",
+        "options": [
+            "資料抽取、轉換與載入",
+            "資料加密、傳輸與保存",
+            "資料視覺化、報告與回饋",
+            "資料分群、建模與評估"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "資料處理與分析概念",
-        "subtopic": "資料隱私與安全",
-        "concept": "資料加密與匿名化",
-        "explanation": "為保障資料隱私與安全，必須對敏感資料進行加密及匿名化處理，避免未經授權的存取和洩漏，這是資料治理中的重要環節。",
-        "number": 1,
-        "date": "2026-03-02"
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL是資料工程中的抽取(Extract)、轉換(Transform)、載入(Load)三階段，是資料分析的重要前置步驟。",
+        "number": 3,
+        "date": "2026-03-04"
     },
     {
-        "question": "以下何者最能準確描述機器學習中強化學習的核心概念？",
+        "question": "在機器學習的三大類型中，以下哪一項不屬於其中之一？",
         "options": [
-            "A. 透過標記資料進行分類與預測",
-            "B. 利用未標記資料自動找尋資料內在結構",
-            "C. 透過環境回饋學習決策策略以最大化累積獎勵",
-            "D. 將資料按相似性直接聚類分析"
+            "監督學習",
+            "非監督學習",
+            "集群學習",
+            "強化學習"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "機器學習概念",
         "subtopic": "機器學習基本原理",
-        "concept": "強化學習",
-        "explanation": "強化學習是通過與環境互動，透過獎勵回饋機制來學習最佳決策策略以達成最大化累積獎勵的機制。",
-        "number": 2,
-        "date": "2026-03-02"
-    },
-    {
-        "question": "鑑別式AI與生成式AI的主要差異在於以下哪一項？",
-        "options": [
-            "A. 鑑別式AI專注於資料生成，而生成式AI專注於資料分類",
-            "B. 鑑別式AI學習如何區分不同類別，生成式AI學習如何創造資料",
-            "C. 兩者皆完全用於資料標記與分類，無生成能力",
-            "D. 生成式AI無法被用於機器學習模型的微調"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "鑑別式 AI 與生成式 AI 概念",
-        "subtopic": "基本原理",
-        "concept": "鑑別式與生成式差異",
-        "explanation": "鑑別式AI主要學習區分不同類別資料，而生成式AI則致力於生成具有真實性的資料如文字、影像等，是兩種不同的機器學習方法。",
-        "number": 3,
-        "date": "2026-03-02"
-    },
-    {
-        "question": "在AI治理概念中，「Human on loop」主要代表什麼意涵？",
-        "options": [
-            "A. 全自動學習過程無需人為干預",
-            "B. 人工在AI系統中持續提供監督與判斷以降低風險",
-            "C. AI系統不接受任何人工監督操作",
-            "D. 僅在模型訓練階段有人參與，推論階段無人參與"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI治理概念",
-        "subtopic": "AI倫理與監控",
-        "concept": "Human on loop",
-        "explanation": "\"Human on loop\" 是指人在AI系統運作中持續參與監督與決策過程，確保系統行為透明、可控並降低決策錯誤風險。",
+        "concept": "機器學習類型",
+        "explanation": "機器學習主要分為監督學習、非監督學習及強化學習，集群學習並非正式類別。",
         "number": 4,
-        "date": "2026-03-02"
+        "date": "2026-03-04"
     },
     {
-        "question": "使用One-Hot Encoding在處理資料時主要是為了解決什麼問題？",
+        "question": "鑑別式AI與生成式AI的主要差異在於下列何者？",
         "options": [
-            "A. 轉換連續型變數為類別型變數",
-            "B. 將類別變數轉成數值型向量以便於模型訓練",
-            "C. 降低資料維度以減少運算量",
-            "D. 消除資料中的缺失值"
+            "鑑別式AI專注於辨識資料類別，生成式AI能創造新資料樣本",
+            "生成式AI僅能辨識資料，鑑別式AI可生成圖像與文字",
+            "鑑別式AI必須使用強化學習，生成式AI不需學習",
+            "生成式AI能直接取代所有鑑別式AI功能"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料基本概念與來源",
-        "concept": "One-Hot Encoding",
-        "explanation": "One-Hot Encoding將類別變數轉為有序無重疊的數值向量，讓模型能有效理解非數值性質的資料。",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別與生成模型差異",
+        "explanation": "鑑別式AI側重於資料分類與辨識，生成式AI則用於創造新的資料樣本，例如圖像或文字。",
         "number": 5,
-        "date": "2026-03-02"
+        "date": "2026-03-04"
     },
     {
-        "question": "在使用生成式AI進行微調(fine-tuning)時，最主要的挑戰是什麼？",
+        "question": "在資料隱私與安全的考量中，何者為資料保護的有效機制？",
         "options": [
-            "A. 無法取得足夠的原始訓練數據",
-            "B. 微調過程中可能導致模型過度擬合特定任務",
-            "C. 生成式AI無法調整其基礎架構",
-            "D. 無法運用GPU進行計算加速"
+            "公開所有資料以促進透明",
+            "使用聯邦學習避免集中資料存取",
+            "只用人工方式處理資料",
+            "取消資料蒐集以防止任何風險"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "微調技術",
-        "concept": "微調技術與過擬合風險",
-        "explanation": "微調時若只針對特定資料集訓練，模型可能對該資料集過度擬合，導致模型泛化能力降低，是微調最大的技術挑戰之一。",
-        "number": 6,
-        "date": "2026-03-02"
-    },
-    {
-        "question": "以下何者正確描述資料的「關聯式」與「非關聯式」資料庫？",
-        "options": [
-            "A. 關聯式資料庫以表格結構呈現，非關聯式資料庫支援多種資料格式如文件與鍵值對",
-            "B. 非關聯式資料庫只能儲存文字資料，無法支援影像資料",
-            "C. 關聯式資料庫無法做資料查詢與關聯操作",
-            "D. 非關聯式資料庫必須使用SQL語言查詢"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
         "topic": "資料處理與分析概念",
-        "subtopic": "資料基本概念與來源",
-        "concept": "關聯式與非關聯式資料庫",
-        "explanation": "關聯式資料庫使用表格及關聯鍵管理資料，適合結構化資料；非關聯式資料庫則支援靈活多樣格式，如文檔、鍵值、圖形資料，適合半結構化或非結構化資料。",
-        "number": 7,
-        "date": "2026-03-02"
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習是一種分散式學習技術，可在保護資料隱私的前提下協同訓練模型，有效避免單點資料洩漏風險。",
+        "number": 6,
+        "date": "2026-03-04"
     },
     {
-        "question": "當使用RNN（循環神經網路）處理序列資料時，常面臨哪一種訓練問題？",
+        "question": "下列何種機器學習模型屬於鑑別式模型？",
         "options": [
-            "A. 梯度消失與梯度爆炸問題導致訓練不穩定",
-            "B. 無法處理序列資料中的數值",
-            "C. 無法在GPU上進行分散式訓練",
-            "D. 模型無法理解任何時間資訊"
+            "變分自編碼器（VAE）",
+            "貝氏分類器（Naive Bayes）",
+            "生成對抗網路（GAN）",
+            "深度信念網路（DBN）"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "機器學習概念",
         "subtopic": "常見機器學習模型",
-        "concept": "RNN與梯度問題",
-        "explanation": "RNN在長序列訓練過程中，梯度可能因反覆反向傳播而變得極小（梯度消失）或極大（梯度爆炸），影響模型學習與穩定性。",
+        "concept": "鑑別式模型",
+        "explanation": "貝氏分類器是用於分類任務的鑑別式模型，而VAE與GAN屬於生成式模型。",
+        "number": 7,
+        "date": "2026-03-04"
+    },
+    {
+        "question": "在生成式AI的應用中，何者是用於提升回應語境一致性的技術？",
+        "options": [
+            "剪枝技術",
+            "即時推論技術",
+            "檢索增強生成技術(RAG)",
+            "正則化L2技術"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI技術",
+        "concept": "語境一致性提升",
+        "explanation": "檢索增強生成技術(RAG)結合外部知識庫檢索與生成模型，有助提升生成內容與上下文的一致性。",
         "number": 8,
-        "date": "2026-03-02"
+        "date": "2026-03-04"
     },
     {
-        "question": "以下哪一項是AI治理中「監理沙盒」的正確意涵？",
+        "question": "何者為AI治理中，監理沙盒的主要功能？",
         "options": [
-            "A. 允許AI產品在真實環境中受控測試以理解風險與影響",
-            "B. 完全禁止任何AI新技術上線以確保安全",
-            "C. 對所有AI算法實施強制公開源代碼",
-            "D. 僅監控數據隱私不介入演算法的合理性"
+            "快速商業化AI產品，不受監管",
+            "建立安全空間供AI技術測試與監管試驗",
+            "封鎖所有新型AI應用以保護用戶",
+            "完全開放AI資料公開分享"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "AI治理概念",
-        "subtopic": "法規與政策框架",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
         "concept": "監理沙盒",
-        "explanation": "監理沙盒是指在受控的測試環境中讓AI產品實際運行，讓監管機構了解其運作和風險，促進法律和政策的合理設計與調整。",
+        "explanation": "監理沙盒為監管機構設置的安全測試環境，允許企業在受控條件下試驗新AI技術或產品，有助促進創新與合規。",
         "number": 9,
-        "date": "2026-03-02"
+        "date": "2026-03-04"
     },
     {
-        "question": "在機器學習中，哪一項技術是用來控制模型複雜度，避免過度擬合的正則化方法？",
+        "question": "在深度學習中，何謂偏差變異權衡（Bias-Variance Tradeoff）？",
         "options": [
-            "A. L1正則化能促使權重向零收斂，實現稀疏解",
-            "B. One-Hot Encoding用於將數值資料轉成類別資料",
-            "C. Q-Learning用於強化學習中選擇行動",
-            "D. LSTM專門用來解決圖像分類問題"
+            "模型複雜度與訓練資料大小的比值",
+            "偏差減少時變異必然增加的現象",
+            "模型在訓練誤差與泛化能力間的平衡",
+            "用於評估資料隱私風險的指標"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "機器學習概念",
-        "subtopic": "正則化技術",
-        "concept": "L1正則化",
-        "explanation": "L1正則化會對模型權重加懲罰項促使部分權重變成零，有助於簡化模型結構、減少過擬合，常用於特徵選擇與降維。",
+        "subtopic": "機器學習基本原理",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差變異權衡指的是模型需要在降低訓練誤差（偏差）與增強對未知資料泛化能力（變異）之間取得適當平衡。",
         "number": 10,
-        "date": "2026-03-02"
+        "date": "2026-03-04"
     }
 ]

@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2026年的人工智慧發展趨勢中，代理式AI的核心能力不包含下列哪一項？",
+        "question": "關於代理式AI(Agentic AI)的四大核心能力，下列哪一項不包括在內？",
         "options": [
-            "感知環境並收集資訊",
-            "基於目標推理與決策",
-            "自動生成視覺藝術創作",
-            "反思並調整行動策略"
+            "感知 (Perception)、推理 (Reasoning)、行動 (Action)、反思 (Reflection)",
+            "感知 (Perception)、判斷 (Judgment)、學習 (Learning)、適應 (Adaptation)",
+            "感知 (Perception)、推理 (Reasoning)、行動 (Action)、學習 (Learning)",
+            "收集資料 (Data Collection)、推理 (Reasoning)、行動 (Action)、反思 (Reflection)"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "代理式AI",
         "concept": "代理式AI核心能力",
-        "explanation": "代理式AI的核心能力通常包括感知環境、基於目標推理、行動執行與反思調整，不包含專門生成視覺藝術，該屬於生成式AI的特定應用。",
+        "explanation": "代理式AI的四大核心能力是感知、推理、行動與反思，判斷和適應非核心定義。",
         "number": 1,
-        "date": "2026-03-04"
+        "date": "2026-03-06"
     },
     {
-        "question": "下列何者最符合2026年實體AI的應用場景？",
+        "question": "在2026年AI硬體競爭中，ASIC加速器較GPU在邊緣AI部署的優勢為何？",
         "options": [
-            "純虛擬虛擬助手系統",
-            "自主載具的無人駕駛技術",
-            "基於雲端的語音辨識系統",
-            "網路數據分析平台"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "人工智慧基礎",
-        "subtopic": "AI的定義與分類",
-        "concept": "實體AI",
-        "explanation": "實體AI指的是具實體行動能力的人工智慧系統，如機器人、自主載具等，純虛擬系統不屬於此範疇。",
-        "number": 2,
-        "date": "2026-03-04"
-    },
-    {
-        "question": "在資料收集與分析流程中，ETL代表何種作業？",
-        "options": [
-            "資料抽取、轉換與載入",
-            "資料加密、傳輸與保存",
-            "資料視覺化、報告與回饋",
-            "資料分群、建模與評估"
+            "更高能效比與專為特定任務優化",
+            "通用性較強但耗能較高",
+            "強大的浮點運算能力但散熱較差",
+            "低成本但較難支援邊緣端實時推理"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "硬體加速",
+        "concept": "ASIC與GPU比較",
+        "explanation": "ASIC是專用積體電路，為特定AI運算優化，能效高於GPU，非常適合邊緣設備部署。",
+        "number": 2,
+        "date": "2026-03-06"
+    },
+    {
+        "question": "下列何者不是在資料整理與分析流程中常見的步驟？",
+        "options": [
+            "資料抽取 (Extract)、資料轉換 (Transform)、資料載入 (Load)",
+            "資料清理 (Cleaning)、資料分群 (Clustering)、資料擴增 (Augmentation)",
+            "資料預處理 (Preprocessing)、模型訓練 (Training)、模型評估 (Evaluation)",
+            "資料收集 (Collection)、模型部署 (Deployment)、資料隱私保護 (Privacy)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "資料處理與分析概念",
         "subtopic": "資料整理與分析流程",
-        "concept": "ETL流程",
-        "explanation": "ETL是資料工程中的抽取(Extract)、轉換(Transform)、載入(Load)三階段，是資料分析的重要前置步驟。",
+        "concept": "資料流程步驟",
+        "explanation": "資料收集屬於前期，模型部署為後端步驟，資料隱私為保障措施，不屬於整理分析流程主要步驟。",
         "number": 3,
-        "date": "2026-03-04"
+        "date": "2026-03-06"
     },
     {
-        "question": "在機器學習的三大類型中，以下哪一項不屬於其中之一？",
+        "question": "在機器學習中，哪種類型屬於監督學習？",
         "options": [
-            "監督學習",
-            "非監督學習",
-            "集群學習",
-            "強化學習"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "機器學習概念",
-        "subtopic": "機器學習基本原理",
-        "concept": "機器學習類型",
-        "explanation": "機器學習主要分為監督學習、非監督學習及強化學習，集群學習並非正式類別。",
-        "number": 4,
-        "date": "2026-03-04"
-    },
-    {
-        "question": "鑑別式AI與生成式AI的主要差異在於下列何者？",
-        "options": [
-            "鑑別式AI專注於辨識資料類別，生成式AI能創造新資料樣本",
-            "生成式AI僅能辨識資料，鑑別式AI可生成圖像與文字",
-            "鑑別式AI必須使用強化學習，生成式AI不需學習",
-            "生成式AI能直接取代所有鑑別式AI功能"
+            "用標註資料 (Labelled Data) 訓練模型，以預測新資料標籤",
+            "使用無標記資料 (Unlabelled Data) 來發現資料結構",
+            "模型透過試錯與環境互動來學習最佳政策",
+            "利用資料隨機噪聲來增強模型泛化能力"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "鑑別式 AI 與生成式 AI",
-        "subtopic": "基本原理",
-        "concept": "鑑別與生成模型差異",
-        "explanation": "鑑別式AI側重於資料分類與辨識，生成式AI則用於創造新的資料樣本，例如圖像或文字。",
-        "number": 5,
-        "date": "2026-03-04"
+        "topic": "機器學習概念",
+        "subtopic": "監督學習",
+        "concept": "監督學習定義",
+        "explanation": "監督學習依賴有標註的訓練資料，用於預測或分類。非監督學習與強化學習不涉及標籤。",
+        "number": 4,
+        "date": "2026-03-06"
     },
     {
-        "question": "在資料隱私與安全的考量中，何者為資料保護的有效機制？",
+        "question": "鑑別式AI(Discriminative AI)與生成式AI(Generative AI)的主要差異在於？",
         "options": [
-            "公開所有資料以促進透明",
-            "使用聯邦學習避免集中資料存取",
-            "只用人工方式處理資料",
-            "取消資料蒐集以防止任何風險"
+            "鑑別式AI建模條件機率，生成式AI建模資料分布",
+            "鑑別式AI輸出新資料，生成式AI進行分類",
+            "鑑別式AI基於強化學習，生成式AI是監督學習",
+            "鑑別式AI用於資料生成，生成式AI用於資料辨識"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "模型本質差異",
+        "explanation": "鑑別式模型學習條件機率P(y|x)，生成式模型則嘗試學習資料的整體分布P(x,y)。",
+        "number": 5,
+        "date": "2026-03-06"
+    },
+    {
+        "question": "在AI治理中，何者屬於提升模型公平性的重要措施？",
+        "options": [
+            "引入多樣化訓練數據與偏差調整方法",
+            "提升模型複雜度以增加預測準確性",
+            "使用較小資料集減少過度擬合風險",
+            "採用獨立資料分割法以提高運算速度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "模型公平性",
+        "concept": "公平性提升策略",
+        "explanation": "公平性需通過多樣化數據及偏差矯正，提升多群體預測表現，僅增加複雜度或資料量無法達成。",
+        "number": 6,
+        "date": "2026-03-06"
+    },
+    {
+        "question": "在資料隱私與安全管理中，下列何者最適合保護個人敏感資訊？",
+        "options": [
+            "使用匿名化 (Anonymization) 和差分隱私 (Differential Privacy)",
+            "加密所有資料但不考慮授權機制",
+            "限制資料存取但不改變資料本身",
+            "定期刪除所有歷史數據以防外洩"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "資料處理與分析概念",
         "subtopic": "資料隱私與安全",
-        "concept": "聯邦學習",
-        "explanation": "聯邦學習是一種分散式學習技術，可在保護資料隱私的前提下協同訓練模型，有效避免單點資料洩漏風險。",
-        "number": 6,
-        "date": "2026-03-04"
-    },
-    {
-        "question": "下列何種機器學習模型屬於鑑別式模型？",
-        "options": [
-            "變分自編碼器（VAE）",
-            "貝氏分類器（Naive Bayes）",
-            "生成對抗網路（GAN）",
-            "深度信念網路（DBN）"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "機器學習概念",
-        "subtopic": "常見機器學習模型",
-        "concept": "鑑別式模型",
-        "explanation": "貝氏分類器是用於分類任務的鑑別式模型，而VAE與GAN屬於生成式模型。",
+        "concept": "資料隱私保護方法",
+        "explanation": "匿名化和差分隱私是保護敏感資訊有效方式，加密及授權都重要但不足以隱匿個資。",
         "number": 7,
-        "date": "2026-03-04"
+        "date": "2026-03-06"
     },
     {
-        "question": "在生成式AI的應用中，何者是用於提升回應語境一致性的技術？",
+        "question": "關於強化學習中Q-Learning的描述，下列何者為非？",
         "options": [
-            "剪枝技術",
-            "即時推論技術",
-            "檢索增強生成技術(RAG)",
-            "正則化L2技術"
+            "Q-Learning屬於監督學習，依靠標註資料訓練",
+            "使用狀態-行動價值函數更新策略",
+            "透過獎勵信號最大化預期回報",
+            "屬於無模型(MODEL-FREE)強化學習方法"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI技術",
-        "concept": "語境一致性提升",
-        "explanation": "檢索增強生成技術(RAG)結合外部知識庫檢索與生成模型，有助提升生成內容與上下文的一致性。",
-        "number": 8,
-        "date": "2026-03-04"
-    },
-    {
-        "question": "何者為AI治理中，監理沙盒的主要功能？",
-        "options": [
-            "快速商業化AI產品，不受監管",
-            "建立安全空間供AI技術測試與監管試驗",
-            "封鎖所有新型AI應用以保護用戶",
-            "完全開放AI資料公開分享"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI倫理與法規",
-        "subtopic": "AI治理概念",
-        "concept": "監理沙盒",
-        "explanation": "監理沙盒為監管機構設置的安全測試環境，允許企業在受控條件下試驗新AI技術或產品，有助促進創新與合規。",
-        "number": 9,
-        "date": "2026-03-04"
-    },
-    {
-        "question": "在深度學習中，何謂偏差變異權衡（Bias-Variance Tradeoff）？",
-        "options": [
-            "模型複雜度與訓練資料大小的比值",
-            "偏差減少時變異必然增加的現象",
-            "模型在訓練誤差與泛化能力間的平衡",
-            "用於評估資料隱私風險的指標"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "機器學習概念",
-        "subtopic": "機器學習基本原理",
-        "concept": "偏差變異權衡",
-        "explanation": "偏差變異權衡指的是模型需要在降低訓練誤差（偏差）與增強對未知資料泛化能力（變異）之間取得適當平衡。",
+        "subtopic": "強化學習",
+        "concept": "Q-Learning原理",
+        "explanation": "Q-Learning是無模型強化學習，不依賴標註資料，透過獎勵信號學習最佳策略。",
+        "number": 8,
+        "date": "2026-03-06"
+    },
+    {
+        "question": "生成式AI的微調(fine-tuning)過程中，較常遇到的問題不包括？",
+        "options": [
+            "過度擬合 (Overfitting)",
+            "語境一致性下降 (Context Inconsistency)",
+            "資料標註錯誤影響準確度",
+            "計算資源消耗過低導致訓練不足"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型微調",
+        "concept": "微調常見問題",
+        "explanation": "微調常見問題包括過擬合、語境不一致和資料標註錯誤，消耗過低不會是問題，反而意味不足。",
+        "number": 9,
+        "date": "2026-03-06"
+    },
+    {
+        "question": "在資料分析中，One-Hot Encoding用於哪種資料類型？",
+        "options": [
+            "將類別型資料轉換成二進制向量",
+            "將數值型資料正規化至0與1之間",
+            "將時間序列資料分段成固定區間",
+            "將文本資料轉化成詞袋向量"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料預處理",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding將類別變數轉成二進制向量，便於機器學習模型使用。",
         "number": 10,
-        "date": "2026-03-04"
+        "date": "2026-03-06"
     }
 ]

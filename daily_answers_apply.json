@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2025-2026年生成式AI代理式應用於工業5.0人機協作場景下，使用No-code/Low-code平台設計自適應製造代理時，依據資策會2026十大AI關鍵技術與Gartner預測，哪一核心能力序列最精準體現『感知-推理-行動-反思』循環以實現自主優化韌性生產？",
+        "question": "以下何者最能體現No Code平台於企業流程自動化中的實際應用成效？",
         "options": [
-            "Perception → Reasoning & Planning → Action → Reflection, 強調邊緣運算即時回饋以符合EU AI Act高風險系統分級",
-            "Perception → Reasoning & Planning → Reflection → Action, 優先反思合成數據生成以對應台灣AI基本法高風險金融核貸規範",
-            "Reasoning & Planning → Perception → Action → Reflection, 初始規劃主導以整合Physical AI人形機器人至物流自主協作",
-            "Action → Perception → Reasoning & Planning → Reflection, 行動先行驗證以加速3奈米以下製程AI伺服器部署於淨零排放路徑"
+            "員工可直接用視覺化工具調整自動化流程",
+            "須仰賴開發工程師撰寫專屬後端API",
+            "用戶必須經過程式語言實作教育訓練",
+            "自動化只能設計單一部門內部流程"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "No code/Low code應用",
-        "subtopic": "代理式AI在工業5.0的自適應設計",
-        "concept": "Agentic AI核心能力序列與國際高風險規範整合",
-        "explanation": "資策會明確定義代理式AI具備Perception、Reasoning and Planning、Action、Reflection四核心能力，此序列為No-code平台實現目標導向自主工作流程之標準，Gartner預測2026年40%企業應用內建AI代理，EU AI Act要求高風險系統強調感知即時性與反思優化。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "無程式碼平台應用",
+        "explanation": "No Code平台提供視覺化工具讓一般員工可自行設計並調整自動化流程，降低程式門檻，促進流程迅速部署，無須工程師介入。",
         "number": 1,
-        "date": "2026-03-05"
+        "date": "2026-03-07"
     },
     {
-        "question": "針對製藥產業2026年藥物研發代理式AI導入評估，依據Precedence Research市場預測與台灣AI基本法分級管理，生成式AI評估框架中哪一指標最關鍵區分『高投資報酬率專業產出』與通用生成，以確保符合NCC生成式AI標示規範？",
+        "question": "下列關於Low Code工具實務導入挑戰，何者敘述正確？",
         "options": [
-            "多模態內容生成精密度與ROI量化，驗證Claude代理模式在多步驟分子模擬自主行動",
-            "合成客戶資料建立效率與ROI量化，驗證Gemini代理在長期目標藥效預測反思能力",
-            "邊緣運算延遲降低與ROI量化，驗證ChatGPT代理在實時臨床試驗數據感知規劃",
-            "全模態融合生成品質與ROI量化，驗證Anthropic代理在跨域藥物設計行動序列"
+            "管理單位可完全忽略資安架構設定",
+            "跨部門導入時需提前評估系統整合性",
+            "所有Low Code工具皆內建企業專屬API",
+            "Low Code工具無法支援雲端協作模式"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI評估導入",
-        "subtopic": "高風險產業ROI與法規符合評估",
-        "concept": "代理式AI目標導向效能指標與國家AI戰略委員會規範",
-        "explanation": "台灣AI基本法針對高風險應用如醫療輔助要求分級管理，生成式AI評估須量化邊緣運算延遲以支持實時感知規劃，Precedence Research預測代理市場CAGR 45.82%，NCC規範強調標示生成內容來源以區分專業ROI。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "系統整合挑戰",
+        "explanation": "Low Code平台在跨部門導入時，若未充份評估系統間資料流與API的整合性，易產生資源重疊與安全風險，因此需提前規劃。",
         "number": 2,
-        "date": "2026-03-05"
+        "date": "2026-03-07"
     },
     {
-        "question": "2026年媒體娛樂產業採用生成式AI工具實現全模態合成內容（如高預算好萊塢影片生成），依據Gartner 75%企業合成客戶資料趨勢與EU AI Act透明度要求，哪一提示詞工程策略最優化工具應用以生成『極致精密領域專用系統』？",
+        "question": "下列哪一種生成式AI提示詞（Prompt）設計方式，最能有效提升模型生成答案的專業性？",
         "options": [
-            "鏈式思考提示注入合成訓練數據參數，確保深偽偵測標示符合MIC AI攻防競逐規範",
-            "角色扮演提示整合代理反思循環，確保多步驟敘事生成符合台灣生成式AI標示指引",
-            "少樣本學習提示融合邊緣AI部署，確保即時影片生成符合Physical AI基礎設施標準",
-            "多代理協作提示優化模態無縫融合，確保高品質內容符合Gartner自適應優化預測"
+            "僅提供主題關鍵字",
+            "明確規範內容語氣、格式和背景脈絡",
+            "全然不設限制，由AI自行決定回答風格",
+            "只要求AI列舉相關數據而不作說明"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI工具應用",
-        "subtopic": "全模態內容生成於娛樂產業",
-        "concept": "提示詞工程驅動領域專用GenAI與透明規範",
-        "explanation": "2026生成式AI強調全模態精密內容，多代理協作提示實現模態融合與高ROI專業產出，Gartner預測75%企業使用合成資料，EU AI Act要求透明標示以防深偽濫用。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式AI工具",
+        "concept": "提示工程（Prompt Engineering）",
+        "explanation": "良好設計的Prompt應包含語氣、格式、資訊脈絡等規範，引導模型產出具專業且精準的內容。",
         "number": 3,
-        "date": "2026-03-05"
+        "date": "2026-03-07"
     },
     {
-        "question": "金融核貸高風險生成式AI應用中，依據金管會2025銀行AI指引與資策會AI攻防趨勢，AI風險管理框架應優先採用哪一策略緩解『生成式AI帶動攻擊鏈升級』之深偽社交工程威脅？",
+        "question": "針對企業導入生成式AI，哪一項風險管控策略最適合資訊隱私需求高的產業？",
         "options": [
-            "即時自動化應變結合合成數據驗證，區分代理行動真偽以符合台灣AI基本法分級",
-            "反思循環嵌入邊緣運算偵測，量化物理AI人形機器人身分冒用風險",
-            "多模態提示詞審核整合量子運算，防範跨域代理決策操縱",
-            "目標導向規劃注入3奈米製程加速，阻斷物流自主協作資料外洩"
+            "直接將所有內部數據開放給AI訓練",
+            "採取本地端私有化部署模式",
+            "僅依賴第三方公有雲API服務",
+            "忽略資料標註流程審查"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "AI風險管理",
-        "subtopic": "高風險金融應用深偽攻擊緩解",
-        "concept": "生成式AI攻防與國家法規即時應變框架",
-        "explanation": "MIC指出生成式AI降低攻擊成本擴大深偽規模，金管會指引要求金融高風險AI即時偵測自動應變，台灣AI基本法國家委員會督導分級管理，合成數據驗證為核心策略。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "私有化部署",
+        "explanation": "本地端私有化部署可最大化保障敏感資料與個資不外流，特別適合金融、醫療等隱私要求高的產業。",
         "number": 4,
-        "date": "2026-03-05"
+        "date": "2026-03-07"
     },
     {
-        "question": "設計提示詞用於2026代理式AI在智慧物流Physical AI部署，依據資策會人形機器人趨勢與Gartner 40%企業應用內建代理，哪一進階提示結構最精準實現『自主實戰』多步驟目標導向規劃？",
+        "question": "何種指標最適合用於評估生成式AI文案品質的一致性？",
         "options": [
-            "分層代理提示：感知模組→推理樹狀規劃→行動序列→反思自優化，整合邊緣運算延遲<50ms",
-            "動態角色提示：環境感知→目標分解→並行行動→循環反思，注入合成客戶資料生成",
-            "模態融合提示：多感測輸入→決策圖譜→單一行動→後置反思，符合工業5.0韌性標準",
-            "反思先行提示：預測風險→感知驗證→規劃調整→行動執行，支援淨零排放路徑優化"
+            "僅看生成內容字數",
+            "使用BLEU與ROUGE分數結合分析",
+            "關注模型推論計算速度",
+            "只倚賴人工主觀閱讀體驗"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "AI提示詞設計",
-        "subtopic": "代理式AI物流自主規劃",
-        "concept": "進階提示結構驅動Perception-Action-Reflection循環",
-        "explanation": "代理式AI需動態角色提示實現目標分解與並行行動，資策會強調Physical AI基礎設施，Gartner預測40%企業內建特定任務代理，合成資料提升物流決策精準度。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "品質一致性評估",
+        "explanation": "BLEU與ROUGE分數可量化比對生成文本與參考文本間的一致性，是主流的AI文本品質評估指標。",
         "number": 5,
-        "date": "2026-03-05"
+        "date": "2026-03-07"
     },
     {
-        "question": "No-code平台加速2026製造業導入實體AI代理，依據經濟部AI新十大建設與Precedence Research CAGR 45.82%，評估導入時哪一KPI最能驗證『從生成式實驗到自主實戰』轉型成功？",
+        "question": "商業應用中，何種生成式AI工具組合最能協助跨語言多國行銷素材自動產製？",
         "options": [
-            "代理自主行動成功率>95%與人機協作產能提升30%，符合五大信賴產業標準",
-            "合成訓練數據生成速度與決策準確率>92%，對應邊緣運算普及率",
-            "全模態內容生成ROI與反思循環週期<24小時，驗證娛樂產業移植",
-            "深偽偵測F1-score>0.98與攻擊成本降低指標，確保國防應用安全"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "No code/Low code應用",
-        "subtopic": "實體AI製造業導入評估",
-        "concept": "經濟部AI產業化KPI與代理市場成長驗證",
-        "explanation": "經濟部白皮書強調AI新十大建設計畫推動產業AI化，代理式AI自主行動成功率與產能提升為工業5.0關鍵KPI，Precedence Research確認商業潛力。",
-        "number": 6,
-        "date": "2026-03-05"
-    },
-    {
-        "question": "2026銷售決策代理式AI工具應用於零售，依據Appier解釋與MIC資安趨勢，生成式AI評估中哪一框架最能平衡『目標導向自主行動』與『AI攻防競逐』生成式釣魚詐騙風險？",
-        "options": [
-            "雙軌評估：Perception準確率×Action ROI – Reflection風險分數，注入NCC標示機制",
-            "三維矩陣：Reasoning深度×Planning彈性×Attack向量覆蓋，符合金管會高風險指引",
-            "循環指標：自主步驟完成率 – 合成資料偏差 – 深偽生成概率，驗證代理反思",
-            "動態權重：目標達成率×即時應變速度×邊緣部署延遲，支援Physical AI零售機器人"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI評估導入",
-        "subtopic": "銷售代理風險平衡評估",
-        "concept": "Appier代理核心能力與MIC生成式攻擊鏈框架",
-        "explanation": "Appier定義代理式AI具Perception/Reasoning/Action/Reflection，MIC強調生成式AI升級釣魚深偽攻擊，循環評估框架量化合成偏差與生成概率確保銷售決策安全。",
-        "number": 7,
-        "date": "2026-03-05"
-    },
-    {
-        "question": "依據Gartner 2026年75%企業合成客戶資料趨勢，設計生成式AI工具於消費行為分析，哪一No-code提示詞模板最優化『代理性質自主行動』實現跨第三方應用多步驟購物路徑優化？",
-        "options": [
-            "\"作為[角色]，感知[環境]，規劃[目標路徑]，執行[行動序列]，反思[ROI]並標示生成內容\"",
-            "\"分析[合成資料]，推理[行為模式]，代理行動[推薦序列]，驗證[深偽風險]並自動應變\"",
-            "\"融合[多模態輸入]，生成[全域優化]，部署[邊緣代理]，優化[物理互動]循環\"",
-            "\"目標[長期轉換]，分解[子任務]，協作[多代理]，自適應[市場變化]並報告規範符合\""
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI工具應用",
-        "subtopic": "消費代理多步驟自主優化",
-        "concept": "Gartner合成資料與代理第三方溝通模板",
-        "explanation": "Gartner預測合成客戶資料推動消費分析，2026代理AI具自主行動朝長期目標前進，多代理協作模板實現子任務分解與自適應，符合ChatGPT/Gemini/Claude代理模式。",
-        "number": 8,
-        "date": "2026-03-05"
-    },
-    {
-        "question": "2026國防物流高風險Physical AI部署，依據資策會人形機器人基礎設施與台灣AI基本法，AI風險管理中哪一協議最關鍵防範『生成式AI大幅降低攻擊成本』的身分冒用與自動化應變失效？",
-        "options": [
-            "零信任架構+代理反思強制驗證+3奈米加密加速，符合國家AI戰略委員會督導",
-            "多模態生物特徵+邊緣即時感知+合成挑戰回應，區分工業5.0協作夥伴",
-            "量子混合簽章+行動前規劃審核+深偽指紋水印，支援淨零路徑供應鏈",
-            "區塊鏈追蹤+目標導向風險預測+跨域代理隔離，驗證娛樂內容移植安全"
+            "只用單一語言的大型語言模型",
+            "搭配多語支持的LLM與自動排版API",
+            "依賴簡易機器翻譯不經人審查",
+            "僅運用圖像生成再手動翻譯"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "AI風險管理",
-        "subtopic": "Physical AI國防深偽身分冒用防護",
-        "concept": "資策會攻擊鏈升級與AI基本法高風險協議",
-        "explanation": "MIC指出生成式AI擴大身分冒用難偵測，人形機器人需多模態特徵與邊緣感知，台灣AI基本法分級管理高風險應用如國防，要求自動化應變與合成挑戰驗證。",
-        "number": 9,
-        "date": "2026-03-05"
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "內容自動化與多語能力",
+        "explanation": "深度整合多語大型語言模型及自動格式排版API，可大幅提升多國行銷素材的產製效率與品質。",
+        "number": 6,
+        "date": "2026-03-07"
     },
     {
-        "question": "針對2026醫療輔助代理式AI提示詞設計，依據經濟部2050淨零路徑與Gartner自適應優化，哪一結構最精準整合『教授級研發團隊領域專用系統』實現手術機器人多步驟自主決策？",
+        "question": "下列哪個詞彙最準確描述LLM基於企業內部資料持續進行知識擴充的能力？",
         "options": [
-            "醫學知識圖譜注入→感知診斷→規劃手術路徑→行動微調→淨零能耗反思",
-            "跨模態病例融合→目標分解→代理協作→執行驗證→ROI與風險雙重反思",
-            "合成患者資料生成→推理證據→行動序列→邊緣部署→法規標示循環",
-            "物理環境感知→多代理規劃→即時行動→自優化學習→深偽防護驗證"
+            "推論（Inference）",
+            "微調（Fine-tuning）",
+            "檢索增強生成（Retrieval-Augmented Generation）",
+            "回歸（Regression）"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "AI提示詞設計",
-        "subtopic": "醫療高風險代理手術決策",
-        "concept": "領域專用提示與台灣高風險標示規範",
-        "explanation": "台灣AI基本法要求醫療輔助生成式AI標示，Gartner強調合成資料與自適應優化，提示結構須整合合成患者資料推理與邊緣部署，確保高風險決策透明與淨零相容。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "RAG（Retrieval-Augmented Generation）",
+        "explanation": "RAG技術結合知識檢索系統使LLM能動態擴充專屬知識庫，產生符合企業情境的內容，比單純推論或微調更有彈性。",
+        "number": 7,
+        "date": "2026-03-07"
+    },
+    {
+        "question": "有關生成式AI的風險管理，下列何者為非？",
+        "options": [
+            "應建立AI生成內容監督與稽核機制",
+            "任何產出都必須經人員審查",
+            "生成式AI完全不會產生隱私洩漏問題",
+            "需依據法規定期檢討AI應用流程"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "隱私與法規風險",
+        "explanation": "生成式AI若輸入敏感資訊仍有潛在隱私風險，故選項C描述錯誤。",
+        "number": 8,
+        "date": "2026-03-07"
+    },
+    {
+        "question": "企業導入No Code/Low Code平台的主要限制為何？",
+        "options": [
+            "開發者培訓成本過高",
+            "高度客製需求時彈性有限",
+            "平台無法整合現有資安系統",
+            "缺乏應用範例與技術應用社群"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台彈性限制",
+        "explanation": "No Code/Low Code平台在應對高度客製化需求時彈性和擴展性受限，為目前重要的導入限制。",
+        "number": 9,
+        "date": "2026-03-07"
+    },
+    {
+        "question": "導入生成式AI流程時，下列哪一項步驟最有助於減少錯誤資訊流出？",
+        "options": [
+            "強化AI訓練數據的隨機多樣性",
+            "建立嚴格多階段產出審查流程",
+            "簡化模型推論API串接流程",
+            "定期進行使用者回饋調查"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "多階段審查",
+        "explanation": "多階段產出審查流程可有效降低不正確或不當內容外流，保障企業資訊安全與品質。",
         "number": 10,
-        "date": "2026-03-05"
+        "date": "2026-03-07"
     }
 ]

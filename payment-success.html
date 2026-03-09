@@ -242,12 +242,12 @@
                     console.log('✅ 驗證成功:', result);
 
                     // 更新 localStorage 中的會員等級
-                    if (userData.line_user_id) {
+                    if (userData && (userData.userId || userData.google_id || userData.email)) {
                         userData.member_level = '付費會員';
                         localStorage.setItem('user_data', JSON.stringify(userData));
                     }
-                    
-                    if (lineData.userId) {
+
+                    if (lineData && lineData.userId) {
                         lineData.memberLevel = '付費會員';
                         localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
                     }

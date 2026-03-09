@@ -2371,6 +2371,11 @@ const UsageManager = {
         // 已登入，檢查會員等級
         const memberLevel = userData.member_level || lineData.memberLevel || '免費會員';
         if (memberLevel.includes('付費') || memberLevel.includes('VIP') || memberLevel.includes('付費會員')) {
+            // 有 paid_until 才驗證是否過期，沒有則信任 member_level（舊資料向下相容）
+            const paidUntil = userData.paid_until || lineData.paid_until;
+            if (paidUntil && new Date(paidUntil) <= new Date()) {
+                return 'free'; // 到期降回免費
+            }
             return 'paid';
         }
         return 'free';
@@ -2470,21 +2475,54 @@ const LoginManager = {
         this.handlePaymentReturn(); // 新增：處理支付回傳
     },
 
-    // 處理支付回傳 (新增)
+    // 處理支付回傳
     handlePaymentReturn() {
         const urlParams = new URLSearchParams(window.location.search);
         if (urlParams.get('payment') === 'success') {
             iPASQuizApp.showAlert('💎 感謝您的訂閱！會員權限已開通。', 'success');
 
-            // 重新抓取會員狀態以更新 UI
-            const userData = JSON.parse(localStorage.getItem('user_data') || localStorage.getItem('ipas_user_data') || '{}');
-            const userId = userData.id || userData.userId || userData.email || userData.displayName;
+            // 正確判斷用戶類型（Google 優先，其次 LINE）
+            let userData = null;
+            let storageKey = null;
+            let userId = null;
 
-            if (userId) {
+            const googleUserStr = localStorage.getItem('user_data');
+            if (googleUserStr) {
+                try {
+                    const parsed = JSON.parse(googleUserStr);
+                    const id = parsed.google_id || parsed.userId;
+                    if (id) {
+                        userData = parsed;
+                        storageKey = 'user_data';
+                        userId = id;
+                    }
+                } catch (e) {}
+            }
+
+            if (!userId) {
+                const lineUserStr = localStorage.getItem('ipas_user_data');
+                if (lineUserStr) {
+                    try {
+                        const parsed = JSON.parse(lineUserStr);
+                        if (parsed.userId) {
+                            userData = parsed;
+                            storageKey = 'ipas_user_data';
+                            userId = parsed.userId;
+                        }
+                    } catch (e) {}
+                }
+            }
+
+            if (userId && storageKey) {
                 this.checkMemberStatus(userId).then(status => {
                     if (status && status.memberLevel) {
-                        const updatedUser = { ...userData, member_level: status.memberLevel };
-                        localStorage.setItem(userData.id ? 'user_data' : 'ipas_user_data', JSON.stringify(updatedUser));
+                        const updatedUser = {
+                            ...userData,
+                            member_level: status.memberLevel,
+                            // 伺服器有回傳 paid_until 就更新，否則保留本地的
+                            paid_until: status.paid_until || userData.paid_until
+                        };
+                        localStorage.setItem(storageKey, JSON.stringify(updatedUser));
                         this.showUserInfo(updatedUser);
                     }
                 });

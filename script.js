@@ -2515,7 +2515,9 @@ const LoginManager = {
 
             if (userId && storageKey) {
                 this.checkMemberStatus(userId).then(status => {
-                    if (status && status.memberLevel) {
+                    // not_found 代表伺服器查不到此用戶（例如 Google 用戶查 LINE 表）
+                    // 此時不覆蓋本地資料，避免誤將付費用戶降級
+                    if (status && status.memberLevel && status.status !== 'not_found') {
                         const updatedUser = {
                             ...userData,
                             member_level: status.memberLevel,

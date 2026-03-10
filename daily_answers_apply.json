@@ -1,172 +1,172 @@
 [
     {
-        "question": "以下何者最能體現No Code平台於企業流程自動化中的實際應用成效？",
+        "question": "以下關於No Code/Low Code平台結合生成式AI工具的優勢，何者正確？",
         "options": [
-            "員工可直接用視覺化工具調整自動化流程",
-            "須仰賴開發工程師撰寫專屬後端API",
-            "用戶必須經過程式語言實作教育訓練",
-            "自動化只能設計單一部門內部流程"
+            "能加速企業導入自動化流程並降低專業程式開發門檻",
+            "僅適用於小型企業且無法自訂流程",
+            "必須依賴外包團隊進行所有AI模型修改",
+            "主要提升硬體效能而非用戶體驗"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的基本概念",
-        "concept": "無程式碼平台應用",
-        "explanation": "No Code平台提供視覺化工具讓一般員工可自行設計並調整自動化流程，降低程式門檻，促進流程迅速部署，無須工程師介入。",
+        "subtopic": "No Code / Low Code 基本概念",
+        "concept": "平台優勢",
+        "explanation": "No Code/Low Code平台可使非技術用戶快速建置自動化流程，降低企業導入生成式AI培訓與實作的技術障礙，是現今企業數位轉型的重要工具。",
         "number": 1,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "下列關於Low Code工具實務導入挑戰，何者敘述正確？",
+        "question": "企業在導入生成式AI前應優先分析哪個面向，以最有效提升生產力？",
         "options": [
-            "管理單位可完全忽略資安架構設定",
-            "跨部門導入時需提前評估系統整合性",
-            "所有Low Code工具皆內建企業專屬API",
-            "Low Code工具無法支援雲端協作模式"
+            "模型時尚程度",
+            "投資報酬率與實用產出",
+            "雜誌報導頻率",
+            "硬體品牌知名度"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的優勢與限制",
-        "concept": "系統整合挑戰",
-        "explanation": "Low Code平台在跨部門導入時，若未充份評估系統間資料流與API的整合性，易產生資源重疊與安全風險，因此需提前規劃。",
+        "subtopic": "生成式AI 導入評估",
+        "concept": "ROI與實用性",
+        "explanation": "企業評估生成式AI時，應聚焦於提升工作流程的真實產出和投資報酬率，而非僅考量話題性或品牌名氣。",
         "number": 2,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "下列哪一種生成式AI提示詞（Prompt）設計方式，最能有效提升模型生成答案的專業性？",
+        "question": "下列關於推理型多模態原生模型的描述，何者為非？",
         "options": [
-            "僅提供主題關鍵字",
-            "明確規範內容語氣、格式和背景脈絡",
-            "全然不設限制，由AI自行決定回答風格",
-            "只要求AI列舉相關數據而不作說明"
+            "能同時理解圖像、語音和文字資訊",
+            "只適用於靜態圖像分類應用",
+            "可用於AI Agent自主執行多情境任務",
+            "支援跨領域自動化決策"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "如何善用生成式AI工具",
-        "concept": "提示工程（Prompt Engineering）",
-        "explanation": "良好設計的Prompt應包含語氣、格式、資訊脈絡等規範，引導模型產出具專業且精準的內容。",
+        "topic": "AI技術與模型",
+        "subtopic": "多模態原生模型",
+        "concept": "推理模型應用",
+        "explanation": "多模態原生模型特色為整合圖像、語音、文字等多種形式，廣泛應用於AI Agent自主任務執行，並不限制於靜態圖像分類。",
         "number": 3,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "針對企業導入生成式AI，哪一項風險管控策略最適合資訊隱私需求高的產業？",
+        "question": "下列何者屬於2025-2026最新生成式AI工具且主要應用於高解析影片生成？",
         "options": [
-            "直接將所有內部數據開放給AI訓練",
-            "採取本地端私有化部署模式",
-            "僅依賴第三方公有雲API服務",
-            "忽略資料標註流程審查"
+            "Stable Diffusion 1.5",
+            "OpenAI Sora",
+            "Claude Sonnet 2",
+            "MIDJOURNEY V3"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI風險管理",
-        "concept": "私有化部署",
-        "explanation": "本地端私有化部署可最大化保障敏感資料與個資不外流，特別適合金融、醫療等隱私要求高的產業。",
+        "subtopic": "生成式AI工具使用",
+        "concept": "高解析多模態生成",
+        "explanation": "OpenAI Sora為2025-2026年最受矚目的新一代高解析影片生成技術代表，可在醫療、國防等多領域產生關鍵應用。",
         "number": 4,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "何種指標最適合用於評估生成式AI文案品質的一致性？",
+        "question": "有關AI Agent導入企業流程的說明，下列何者正確？",
         "options": [
-            "僅看生成內容字數",
-            "使用BLEU與ROUGE分數結合分析",
-            "關注模型推論計算速度",
-            "只倚賴人工主觀閱讀體驗"
+            "AI Agent僅支援文本分析，無法自主溝通協作",
+            "AI Agent能成為企業數位員工，自主處理跨部門任務",
+            "AI Agent無法與IoT裝置連動",
+            "AI Agent僅能處理固有流程，無法動態學習"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估",
-        "concept": "品質一致性評估",
-        "explanation": "BLEU與ROUGE分數可量化比對生成文本與參考文本間的一致性，是主流的AI文本品質評估指標。",
+        "subtopic": "AI Agent應用",
+        "concept": "代理式AI",
+        "explanation": "新一代AI Agent具備感知、推理、決策與行動能力，可整合多種資料源以及IoT設備，成為企業數位員工。",
         "number": 5,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "商業應用中，何種生成式AI工具組合最能協助跨語言多國行銷素材自動產製？",
+        "question": "下列哪種生成式AI導入最佳做法最能提升組織AI治理與風險管理？",
         "options": [
-            "只用單一語言的大型語言模型",
-            "搭配多語支持的LLM與自動排版API",
-            "依賴簡易機器翻譯不經人審查",
-            "僅運用圖像生成再手動翻譯"
+            "忽略法規與資安自動部署所有AI應用",
+            "依產業規範建立治理框架並落實數據安全管理",
+            "僅靠資安人員檢查模型訓練資料來源",
+            "優先選擇市占高的AI平台而不看合規性"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與常見工具",
-        "concept": "內容自動化與多語能力",
-        "explanation": "深度整合多語大型語言模型及自動格式排版API，可大幅提升多國行銷素材的產製效率與品質。",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理與合規",
+        "concept": "風險管理",
+        "explanation": "建立AI治理架構與落實法規合規是降低風險與保障資訊安全的關鍵步驟，且此舉已為Ｇ7、NCC等趨勢所指引。",
         "number": 6,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "下列哪個詞彙最準確描述LLM基於企業內部資料持續進行知識擴充的能力？",
+        "question": "下列何者最適合作為無程式碼(No Code)開發平台上導入生成式AI時的資料訓練策略？",
         "options": [
-            "推論（Inference）",
-            "微調（Fine-tuning）",
-            "檢索增強生成（Retrieval-Augmented Generation）",
-            "回歸（Regression）"
+            "大量收集真實數據無需檢查正確性",
+            "利用合成資料加速原型開發並降低隱私風險",
+            "僅依賴外部數據來源不考慮自有數據",
+            "完全避免AI模型自學功能"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入規劃",
-        "concept": "RAG（Retrieval-Augmented Generation）",
-        "explanation": "RAG技術結合知識檢索系統使LLM能動態擴充專屬知識庫，產生符合企業情境的內容，比單純推論或微調更有彈性。",
+        "subtopic": "No Code / Low Code與數據應用",
+        "concept": "合成資料",
+        "explanation": "合成資料的使用可安全又快速地豐富模型訓練素材，減少真實資料敏感資訊外洩的風險，可在No Code/Low Code專案協作中發揮高效益。",
         "number": 7,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "有關生成式AI的風險管理，下列何者為非？",
+        "question": "下列關於生成式AI提示詞設計(Prompt Engineering)的描述，何者為是？",
         "options": [
-            "應建立AI生成內容監督與稽核機制",
-            "任何產出都必須經人員審查",
-            "生成式AI完全不會產生隱私洩漏問題",
-            "需依據法規定期檢討AI應用流程"
+            "提示詞設計能影響模型生成結果的相關性與多樣性",
+            "提示詞設計只能控制生成文法的正確性",
+            "提示詞設計不影響模型輸出樣本品質",
+            "提示詞設計僅適用於純語言模型，無法應用於多模態工具"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI風險管理",
-        "concept": "隱私與法規風險",
-        "explanation": "生成式AI若輸入敏感資訊仍有潛在隱私風險，故選項C描述錯誤。",
+        "subtopic": "提示工程",
+        "concept": "提示詞設計",
+        "explanation": "精確與創意的提示詞設計能顯著提升生成式AI的輸出品質、相關性及多樣性，不當的提示則可能導致偏誤結果。",
         "number": 8,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "企業導入No Code/Low Code平台的主要限制為何？",
+        "question": "關於生成式AI的邊緣運算(Edge AI)應用，以下哪個描述正確？",
         "options": [
-            "開發者培訓成本過高",
-            "高度客製需求時彈性有限",
-            "平台無法整合現有資安系統",
-            "缺乏應用範例與技術應用社群"
+            "邊緣運算將所有資料傳回雲端集中處理",
+            "邊緣運算降低延遲並保護用戶隱私",
+            "邊緣運算只適用於靜態資訊推播",
+            "邊緣運算會讓資安風險大幅增加"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的優勢與限制",
-        "concept": "平台彈性限制",
-        "explanation": "No Code/Low Code平台在應對高度客製化需求時彈性和擴展性受限，為目前重要的導入限制。",
+        "subtopic": "Edge AI應用",
+        "concept": "本地即時運算",
+        "explanation": "邊緣運算能於本地端快速處理數據，大幅降低回傳延遲，同時實現更高層次的用戶隱私保護。",
         "number": 9,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     },
     {
-        "question": "導入生成式AI流程時，下列哪一項步驟最有助於減少錯誤資訊流出？",
+        "question": "若企業希望快速建立跨部門AI協作流程，應優先採用下列哪種AI系統？",
         "options": [
-            "強化AI訓練數據的隨機多樣性",
-            "建立嚴格多階段產出審查流程",
-            "簡化模型推論API串接流程",
-            "定期進行使用者回饋調查"
+            "單一雲端語言模型推播系統",
+            "可客製自動化代理式AI多模態協作平台",
+            "純靜態報表型AI分析儀表板",
+            "單一用途自動回應型聊天機器人"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估規劃",
-        "concept": "多階段審查",
-        "explanation": "多階段產出審查流程可有效降低不正確或不當內容外流，保障企業資訊安全與品質。",
+        "subtopic": "AI多模態協作",
+        "concept": "跨部門協作",
+        "explanation": "具備代理式AI與多模態功能的平台能動態處理多元資訊、分析與決策，實現企業組織內部的即時協作與持續優化流程。",
         "number": 10,
-        "date": "2026-03-07"
+        "date": "2026-03-10"
     }
 ]

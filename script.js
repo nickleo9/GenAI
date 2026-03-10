@@ -2468,6 +2468,62 @@ const LoginManager = {
         }
     },
 
+    // 驗證會員狀態
+    async verifyMemberStatus() {
+        const userData = JSON.parse(
+            localStorage.getItem('user_data') ||
+            localStorage.getItem('ipas_user_data') || '{}'
+        );
+        const userId = userData.google_id || userData.userId || userData.line_user_id;
+        const email = userData.email;
+
+        if (!userId && !email) {
+            if (typeof iPASQuizApp !== 'undefined') iPASQuizApp.showAlert('❌ 無法取得用戶資訊，請重新登入', 'error');
+            else alert('❌ 無法取得用戶資訊，請重新登入');
+            return;
+        }
+
+        if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showLoading) iPASQuizApp.showLoading('正在驗證會員狀態...');
+        try {
+            const response = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
+                method: 'POST',
+                headers: { 'Content-Type': 'application/json' },
+                body: JSON.stringify({ userId, email })
+            });
+            const status = await response.json();
+
+            if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.hideLoading) iPASQuizApp.hideLoading();
+
+            if (status.isPaid === true || status.isPaid === 'true') {
+                // 更新 localStorage
+                userData.member_level = status.memberLevel || status.member_level || '付費會員';
+                userData.memberLevel = status.memberLevel || status.member_level || '付費會員';
+                userData.paid_until = status.paid_until;
+
+                const key = localStorage.getItem('user_data') ? 'user_data' : 'ipas_user_data';
+                localStorage.setItem(key, JSON.stringify(userData));
+
+                if (typeof iPASQuizApp !== 'undefined') {
+                    iPASQuizApp.showAlert('✅ 會員狀態已更新為付費會員！', 'success');
+                    setTimeout(() => location.reload(), 1500);
+                } else {
+                    alert('✅ 會員狀態已更新為付費會員！');
+                    location.reload();
+                }
+            } else {
+                if (typeof iPASQuizApp !== 'undefined') {
+                    iPASQuizApp.showAlert('❌ 查無付費記錄，請確認是否已完成付款，或稍後再試。', 'warning');
+                } else {
+                    alert('❌ 查無付費記錄，請確認是否已完成付款，或稍後再試。');
+                }
+            }
+        } catch (error) {
+            if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.hideLoading) iPASQuizApp.hideLoading();
+            if (typeof iPASQuizApp !== 'undefined') iPASQuizApp.showAlert('❌ 驗證失敗：' + error.message, 'error');
+            else alert('❌ 驗證失敗：' + error.message);
+        }
+    },
+
     // 初始化
     init() {
         this.attachEventListeners();
@@ -2496,7 +2552,7 @@ const LoginManager = {
                         storageKey = 'user_data';
                         userId = id;
                     }
-                } catch (e) {}
+                } catch (e) { }
             }
 
             if (!userId) {
@@ -2509,7 +2565,7 @@ const LoginManager = {
                             storageKey = 'ipas_user_data';
                             userId = parsed.userId;
                         }
-                    } catch (e) {}
+                    } catch (e) { }
                 }
             }
 
@@ -2558,6 +2614,16 @@ const LoginManager = {
         if (googleLoginBtn) {
             googleLoginBtn.addEventListener('click', () => this.googleLogin());
         }
+
+        // 驗證會員狀態按鈕
+        const verifyMemberBtn = document.getElementById('verify-member-btn');
+        if (verifyMemberBtn) {
+            verifyMemberBtn.addEventListener('click', async (e) => {
+                e.preventDefault();
+                await this.verifyMemberStatus();
+            });
+        }
+
 
         // 登出按鈕
         document.querySelectorAll('[id$="logout-btn"]').forEach(btn => {
@@ -2698,17 +2764,20 @@ const LoginManager = {
         const upgradeBtnLarge = document.getElementById('upgrade-btn-large');
         const freeMemberNotice = document.getElementById('free-member-notice');
         const navUpgradeItem = document.getElementById('nav-upgrade-item');
+        const verifyMemberBtn = document.getElementById('verify-member-btn');
 
         if (!isPaid) {
             // 免費會員:顯示所有升級入口
             if (upgradeBtnLarge) upgradeBtnLarge.style.display = 'inline-block';
             if (freeMemberNotice) freeMemberNotice.style.display = 'block';
             if (navUpgradeItem) navUpgradeItem.style.display = 'block';
+            if (verifyMemberBtn) verifyMemberBtn.style.display = 'inline-block';
         } else {
             // 付費會員:隱藏所有升級入口
             if (upgradeBtnLarge) upgradeBtnLarge.style.display = 'none';
             if (freeMemberNotice) freeMemberNotice.style.display = 'none';
             if (navUpgradeItem) navUpgradeItem.style.display = 'none';
+            if (verifyMemberBtn) verifyMemberBtn.style.display = 'none';
         }
     },
 

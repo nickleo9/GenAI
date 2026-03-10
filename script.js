@@ -2511,10 +2511,44 @@ const LoginManager = {
                     location.reload();
                 }
             } else {
-                if (typeof iPASQuizApp !== 'undefined') {
-                    iPASQuizApp.showAlert('❌ 查無付費記錄，請確認是否已完成付款，或稍後再試。', 'warning');
-                } else {
-                    alert('❌ 查無付費記錄，請確認是否已完成付款，或稍後再試。');
+                // 查無一般付費紀錄，詢問是否用 Email 尋找舊訂單
+                const inputEmail = prompt("查無此帳號的付費紀錄。\n您是否使用其他方式登入並結帳過？請輸入您付款時填寫的『電子郵件 (Email)』，系統將嘗試為您同步會員狀態：");
+
+                if (inputEmail && inputEmail.trim() !== '') {
+                    // 再次發送請求，這次帶上手動輸入的 Email，並帶上一個特殊標記告知後端要進行跨平台同步綁定
+                    if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showLoading) iPASQuizApp.showLoading('正在搜尋並同步訂單...');
+
+                    const syncResponse = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
+                        method: 'POST',
+                        headers: { 'Content-Type': 'application/json' },
+                        body: JSON.stringify({
+                            userId: userId,
+                            email: inputEmail.trim(),
+                            action: 'sync_account' // 傳送標記給 n8n
+                        })
+                    });
+                    const syncStatus = await syncResponse.json();
+
+                    if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.hideLoading) iPASQuizApp.hideLoading();
+
+                    if (syncStatus.isPaid === true || syncStatus.isPaid === 'true') {
+                        // 同步綁定成功
+                        userData.member_level = syncStatus.memberLevel || syncStatus.member_level || '付費會員';
+                        userData.memberLevel = syncStatus.memberLevel || syncStatus.member_level || '付費會員';
+                        userData.paid_until = syncStatus.paid_until;
+                        // 更新原本資料內的 email
+                        if (!userData.email) userData.email = inputEmail.trim();
+
+                        const key = localStorage.getItem('user_data') ? 'user_data' : 'ipas_user_data';
+                        localStorage.setItem(key, JSON.stringify(userData));
+
+                        alert('🎉 已成功找到您的訂單並同步帳號！您的會員狀態已升級為付費會員。');
+                        location.reload();
+                    } else {
+                        // 真的找不到
+                        if (typeof iPASQuizApp !== 'undefined') iPASQuizApp.showAlert('❌ 仍然找不到符合此 Email 的付費訂單紀錄，請確認 Email 是否正確或聯繫客服。', 'error');
+                        else alert('❌ 仍然找不到符合此 Email 的付費訂單紀錄，請確認 Email 是否正確或聯繫客服。');
+                    }
                 }
             }
         } catch (error) {

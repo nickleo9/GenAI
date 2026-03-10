@@ -158,11 +158,11 @@
 
     <script>
         // ==================== 付費成功處理邏輯 ====================
-        
+
         const PaymentSuccessHandler = {
-            // n8n Webhook URL (用於驗證付款並更新會員等級)
-            N8N_VERIFY_URL: 'https://nickleo9.zeabur.app/webhook/verify-payment',
-            
+            // 使用已存在的 check-member-status webhook 來驗證會員狀態
+            CHECK_MEMBER_URL: 'https://nickleo9.zeabur.app/webhook/check-member-status',
+
             init() {
                 console.log('🎉 付費成功頁面載入');
                 this.getPaymentInfo();
@@ -172,26 +172,12 @@
             // 從 URL 取得付款資訊
             getPaymentInfo() {
                 const urlParams = new URLSearchParams(window.location.search);
-                
+
                 return {
-                    // 綠界 ECPay 回傳參數
-                    merchantTradeNo: urlParams.get('MerchantTradeNo'),  // 訂單編號
-                    tradeNo: urlParams.get('TradeNo'),                  // 綠界交易編號
-                    paymentType: urlParams.get('PaymentType'),          // 付款方式
-                    tradeAmt: urlParams.get('TradeAmt'),                // 交易金額
-                    paymentDate: urlParams.get('PaymentDate'),          // 付款時間
-                    rtnCode: urlParams.get('RtnCode'),                  // 交易狀態 (1=成功)
-                    rtnMsg: urlParams.get('RtnMsg'),                    // 交易訊息
-                    
-                    // NewebPay 回傳參數 (備用)
-                    status: urlParams.get('Status'),                    // 付款狀態
-                    message: urlParams.get('Message'),                  // 付款訊息
-                    result: urlParams.get('Result'),                    // 付款結果
-                    
-                    // 自訂參數
-                    userId: urlParams.get('userId'),                    // 用戶 ID
-                    planType: urlParams.get('planType'),                // 方案類型 (monthly/yearly)
-                    customField1: urlParams.get('CustomField1'),        // 自訂欄位
+                    payment: urlParams.get('payment'),
+                    orderId: urlParams.get('orderId'),
+                    tradeAmt: urlParams.get('tradeAmt'),
+                    planType: urlParams.get('planType'),
                 };
             },
 
@@ -201,59 +187,45 @@
                     const paymentInfo = this.getPaymentInfo();
                     const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
                     const lineData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
-                    
-                    // 取得用戶 ID (優先使用 URL 參數,再從 localStorage 取得)
-                    const userId = paymentInfo.userId || 
-                                   userData.line_user_id || 
-                                   lineData.userId;
 
-                    if (!userId) {
-                        throw new Error('找不到用戶 ID');
+                    // 取得用戶 ID 和 email
+                    const userId = userData.google_id || userData.userId || userData.line_user_id || lineData.userId || '';
+                    const email = userData.email || lineData.email || '';
+
+                    // 如果 URL 參數帶有 payment=success，表示從綠界跳轉回來
+                    if (paymentInfo.payment === 'success') {
+                        console.log('📡 綠界付款成功，正在透過 check-member-status 確認會員狀態...');
+
+                        // 呼叫 check-member-status 確認後端是否已更新會員狀態
+                        const response = await fetch(this.CHECK_MEMBER_URL, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify({ userId, email })
+                        });
+
+                        const result = await response.json();
+                        console.log('✅ 會員狀態查詢結果:', result);
+
+                        // 更新 localStorage 中的會員等級
+                        if (userData && (userData.userId || userData.google_id || userData.email)) {
+                            userData.member_level = result.isPaid ? '付費會員' : (userData.member_level || '免費會員');
+                            userData.memberLevel = userData.member_level;
+                            userData.paid_until = result.paid_until || userData.paid_until || '';
+                            localStorage.setItem('user_data', JSON.stringify(userData));
+                        }
+
+                        if (lineData && lineData.userId) {
+                            lineData.memberLevel = result.isPaid ? '付費會員' : (lineData.memberLevel || '免費會員');
+                            lineData.member_level = lineData.memberLevel;
+                            lineData.paid_until = result.paid_until || lineData.paid_until || '';
+                            localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
+                        }
+
+                        // 顯示成功畫面（綠界已確認付款成功才會跳轉到此頁）
+                        this.showSuccess(result, paymentInfo);
+                    } else {
+                        throw new Error('缺少付款成功參數');
                     }
-
-                    console.log('📡 發送付款驗證請求...', {
-                        userId: userId,
-                        paymentInfo: paymentInfo
-                    });
-
-                    // 呼叫 n8n Webhook 驗證付款
-                    const response = await fetch(this.N8N_VERIFY_URL, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            userId: userId,
-                            merchantTradeNo: paymentInfo.merchantTradeNo,
-                            tradeNo: paymentInfo.tradeNo,
-                            tradeAmt: paymentInfo.tradeAmt,
-                            rtnCode: paymentInfo.rtnCode,
-                            planType: paymentInfo.planType || 'monthly',
-                            paymentDate: paymentInfo.paymentDate || new Date().toISOString(),
-                            paymentType: paymentInfo.paymentType || 'unknown'
-                        })
-                    });
-
-                    if (!response.ok) {
-                        throw new Error('驗證請求失敗');
-                    }
-
-                    const result = await response.json();
-                    console.log('✅ 驗證成功:', result);
-
-                    // 更新 localStorage 中的會員等級
-                    if (userData && (userData.userId || userData.google_id || userData.email)) {
-                        userData.member_level = '付費會員';
-                        localStorage.setItem('user_data', JSON.stringify(userData));
-                    }
-
-                    if (lineData && lineData.userId) {
-                        lineData.memberLevel = '付費會員';
-                        localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
-                    }
-
-                    // 顯示成功畫面
-                    this.showSuccess(result, paymentInfo);
 
                 } catch (error) {
                     console.error('❌ 付款驗證失敗:', error);
@@ -266,22 +238,28 @@
                 document.getElementById('verifying-section').style.display = 'none';
                 document.getElementById('success-section').style.display = 'block';
 
-                // 填入會員方案資訊
-                const planNames = {
-                    'monthly': '月費會員 ($199/月)',
-                    'yearly': '年費會員 ($1,999/年)'
-                };
-                
-                const expiryDate = new Date();
-                if (paymentInfo.planType === 'yearly') {
-                    expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+                // 根據金額判斷方案類型
+                const amt = parseInt(paymentInfo.tradeAmt) || 0;
+                const isYearly = amt >= 1000 || paymentInfo.planType === 'yearly';
+                const planName = isYearly ? '年費會員 ($1,999/年)' : '月費會員 ($199/月)';
+
+                // 計算到期日
+                let expiryText = '載入中...';
+                if (result.paid_until) {
+                    expiryText = new Date(result.paid_until).toLocaleDateString('zh-TW');
                 } else {
-                    expiryDate.setMonth(expiryDate.getMonth() + 1);
+                    const expiryDate = new Date();
+                    if (isYearly) {
+                        expiryDate.setFullYear(expiryDate.getFullYear() + 1);
+                    } else {
+                        expiryDate.setMonth(expiryDate.getMonth() + 1);
+                    }
+                    expiryText = expiryDate.toLocaleDateString('zh-TW');
                 }
 
-                document.getElementById('plan-type').textContent = planNames[paymentInfo.planType] || '月費會員';
-                document.getElementById('expiry-date').textContent = expiryDate.toLocaleDateString('zh-TW');
-                document.getElementById('order-id').textContent = paymentInfo.merchantTradeNo || '系統處理中';
+                document.getElementById('plan-type').textContent = planName;
+                document.getElementById('expiry-date').textContent = expiryText;
+                document.getElementById('order-id').textContent = paymentInfo.orderId || '系統處理中';
 
                 // 開始倒數計時
                 this.startCountdown();

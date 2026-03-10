@@ -2455,12 +2455,17 @@ const LoginManager = {
     N8N_WEBHOOK_URL: 'https://nickleo9.zeabur.app/webhook/line-login',  // ⚠️ 記得替換
 
 
-    async checkMemberStatus(userId) {
+    async checkMemberStatus(userId, email) {
         try {
+            // 如果沒傳 email，嘗試從 localStorage 取得
+            if (!email) {
+                const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
+                email = userData.email || '';
+            }
             const response = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ userId: userId })
+                body: JSON.stringify({ userId: userId, email: email })
             });
             return await response.json();
         } catch (error) {
@@ -2604,7 +2609,8 @@ const LoginManager = {
             }
 
             if (userId && storageKey) {
-                this.checkMemberStatus(userId).then(status => {
+                const userEmail = userData.email || '';
+                this.checkMemberStatus(userId, userEmail).then(status => {
                     if (status && status.memberLevel) {
                         const updatedUser = {
                             ...userData,

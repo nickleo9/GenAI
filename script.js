@@ -2728,7 +2728,8 @@ const LoginManager = {
         const displayName = user.displayName || user.name || user.email || '使用者';
         const pictureUrl = user.pictureUrl || user.avatar;
         const loginType = user.login_type === 'google' ? 'Google' : 'Line';
-        const memberLevel = user.member_level || '免費會員';
+        const memberLevel = user.member_level || user.memberLevel || '免費會員';
+
 
         // 顯示用戶資訊區塊
         const userWelcome = document.getElementById('user-welcome');
@@ -2953,6 +2954,7 @@ function checkFeatureAccess(feature) {
 }
 
 // 🔥 付費升級功能 JavaScript END
+
 
 
 

@@ -267,7 +267,6 @@
             padding: 25px;
             margin-top: 20px;
             border-radius: 12px;
-            min-height: 150px;
             max-height: 500px;
             overflow-y: auto;
             word-wrap: break-word;

@@ -1198,50 +1198,34 @@ const iPASQuizApp = {
             const mapping = this.state.questionMapping[questionId];
             const correctAnswerLetter = mapping ? mapping.correctLetter : question.correct_answer_letter;
 
-            let optionsText = '';
-            if (mapping && mapping.shuffledOptions) {
-                optionsText = mapping.shuffledOptions.map((opt, idx) =>
-                    `${String.fromCharCode(65 + idx)}. ${opt.text}`
-                ).join('\n');
-            } else {
-                optionsText = question.options.map((opt, i) =>
-                    `${String.fromCharCode(65 + i)}. ${opt}`
-                ).join('\n');
-            }
+            const prompt = `你是iPAS認證考試輔導老師。請用繁體中文說明此題正確答案，80字以內，只說核心理由。
 
-            const prompt = `
-                    你是一個專業的iPAS AI應用規劃師認證考試輔導老師。請用繁體中文根據以下題目生成詳細的答案解析（150字以內）：
-                    
-                    題目：${question.question}
-                    選項（按用戶看到的順序）: 
-                    ${optionsText}
-                    正確答案: ${correctAnswerLetter}
-                    用戶答案: ${userAnswerLetter}
-                    
-                    請提供清晰完整的解釋，說明為什麼正確答案是正確的，以及為什麼其他選項是錯誤的。重點關注AI應用規劃的商業價值與實務考量。
-                    `;
+題目：${question.question}
+正確答案：${correctAnswerLetter}`;
 
             let aiExplanation = null;
 
             try {
+                const controller = new AbortController();
+                const timeoutId = setTimeout(() => controller.abort(), 8000);
+
                 const response = await fetch('https://back-9qb9.onrender.com/api/generate-explanation', {
                     method: 'POST',
-                    headers: {
-                        'Content-Type': 'application/json',
-                    },
+                    headers: { 'Content-Type': 'application/json' },
                     body: JSON.stringify({
                         model: this.state.selectedAIModel,
                         prompt: prompt,
                     }),
-                    timeout: 10000
+                    signal: controller.signal
                 });
+                clearTimeout(timeoutId);
 
                 if (response.ok) {
                     const data = await response.json();
                     aiExplanation = data.explanation || data.response || data.answer;
                 }
             } catch (error) {
-                console.warn('自定義API失敗，嘗試其他方案:', error);
+                console.warn('AI API失敗，改用資料庫解析:', error);
             }
 
             if (!aiExplanation) {

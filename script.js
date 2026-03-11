@@ -896,6 +896,12 @@ const iPASQuizApp = {
                 this.elements.quizStatus.style.display = 'block';
                 this.elements.quizStatus.classList.add('active');
 
+                // 模擬考試模式：隱藏題庫選擇區與返回按鈕，保持沉浸感
+                if (this.state.currentMode === 'exam') {
+                    this.elements.databaseSelector.classList.add('d-none');
+                    document.getElementById('back-to-selection').style.display = 'none';
+                }
+
                 this.displayQuestion();
 
                 if (this.state.currentMode === 'exam') {
@@ -1329,6 +1335,8 @@ const iPASQuizApp = {
 
         this.elements.quizContainer.classList.add('d-none');
         this.elements.settingsPanel.classList.remove('d-none');
+        this.elements.databaseSelector.classList.remove('d-none');
+        document.getElementById('back-to-selection').style.display = '';
         this.elements.quizStatus.style.display = 'none';
         this.elements.quizStatus.classList.remove('active');
 
@@ -1580,6 +1588,8 @@ const iPASQuizApp = {
         this.unlockInterface();
         this.elements.quizContainer.classList.add('d-none');
         this.elements.settingsPanel.classList.remove('d-none');
+        this.elements.databaseSelector.classList.remove('d-none');
+        document.getElementById('back-to-selection').style.display = '';
         this.elements.quizStatus.style.display = 'none';
         this.elements.quizStatus.classList.remove('active');
 

@@ -749,6 +749,7 @@ const iPASQuizApp = {
             document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
             document.querySelector('[data-mode="practice"]').classList.add('active');
             this.state.currentMode = 'practice';
+            this.showAlert('iPAS 題庫僅支援練習模式', 'info');
         }
     },
 

@@ -503,13 +503,30 @@ const iPASQuizApp = {
         // 解析模式選擇
         document.querySelectorAll('[name="explanation-mode"]').forEach(radio => {
             radio.addEventListener('change', (e) => {
-                this.state.explanationMode = e.target.value;
                 const aiModelSelect = document.getElementById('ai-model-select');
-                if (this.state.explanationMode === 'ai') {
+                if (e.target.value === 'ai') {
+                    const access = UsageManager.canUseAIExplanation();
+                    if (!access.allowed) {
+                        const memberLevel = UsageManager.getMemberLevel();
+                        if (memberLevel === 'guest') {
+                            this.showAlert('請先登入才能使用 AI 解析！', 'warning');
+                        } else {
+                            this.showAlert('AI 解析今日已達上限（3次/天），升級付費會員可無限使用！', 'warning');
+                            showFeatureLockedModal();
+                        }
+                        document.getElementById('database-mode').checked = true;
+                        this.state.explanationMode = 'database';
+                        aiModelSelect.classList.add('d-none');
+                        return;
+                    }
+                    if (access.remaining !== Infinity) {
+                        this.showAlert(`AI 解析今日剩餘 ${access.remaining} 次（付費會員可無限使用）`, 'info');
+                    }
                     aiModelSelect.classList.remove('d-none');
                 } else {
                     aiModelSelect.classList.add('d-none');
                 }
+                this.state.explanationMode = e.target.value;
             });
         });
 
@@ -1223,6 +1240,7 @@ const iPASQuizApp = {
                 if (response.ok) {
                     const data = await response.json();
                     aiExplanation = data.explanation || data.response || data.answer;
+                    if (aiExplanation) UsageManager.incrementAIExplanation();
                 }
             } catch (error) {
                 console.warn('AI API失敗，改用資料庫解析:', error);
@@ -2494,9 +2512,28 @@ const UsageManager = {
     getRemainingInfo() {
         const result = this.canUseSystem();
         if (result.memberLevel === 'paid') {
-            return '無限制';
+            return '無限制 (付費會員)';
         }
-        return `${result.remaining}/${result.limit} (${result.period})`;
+        return `${result.remaining}/${result.limit} 次 (${result.period === '今日' ? '今日' : '本月'})`;
+    },
+
+    // AI 解析次數控制
+    canUseAIExplanation() {
+        const memberLevel = this.getMemberLevel();
+        if (memberLevel === 'paid') return { allowed: true, remaining: Infinity };
+        if (memberLevel === 'guest') return { allowed: false, remaining: 0 };
+        // free: 3次/天
+        const key = `ai_exp_daily_${new Date().toDateString()}`;
+        const used = parseInt(localStorage.getItem(key) || '0');
+        const remaining = 3 - used;
+        return { allowed: remaining > 0, remaining: Math.max(0, remaining), limit: 3 };
+    },
+
+    incrementAIExplanation() {
+        if (this.getMemberLevel() === 'paid') return;
+        const key = `ai_exp_daily_${new Date().toDateString()}`;
+        const used = parseInt(localStorage.getItem(key) || '0');
+        localStorage.setItem(key, (used + 1).toString());
     }
 };
 

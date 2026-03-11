@@ -836,7 +836,7 @@ const iPASQuizApp = {
             if (usageCheck.memberLevel === 'guest') {
                 this.showAlert(
                     `⏰ ${usageCheck.period}免費體驗已達 ${usageCheck.limit} 次上限！\n\n` +
-                    '💡 登入後可享有每月 100 次練習機會！',
+                    '💡 登入後可享有每日 30 次練習機會！',
                     'warning'
                 );
             } else {
@@ -859,6 +859,8 @@ const iPASQuizApp = {
 
         // 如果是考試模式，加入確認機制
         if (this.state.currentMode === 'exam') {
+            if (!checkFeatureAccess('exam')) return;
+
             const confirmStart = confirm(
                 `確定要開始${config.name}模擬考試嗎？\n\n` +
                 '⚠️ 重要提醒：\n' +

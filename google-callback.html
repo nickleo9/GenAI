@@ -338,12 +338,13 @@
         function startCountdown(seconds) {
             let remaining = seconds;
             countdownDiv.style.display = 'block';
-            
+            countdownDiv.innerHTML = `⏱️ ${remaining} 秒後自動跳轉...`;
+
             const interval = setInterval(() => {
-                countdownDiv.innerHTML = `⏱️ ${remaining} 秒後自動跳轉...`;
                 remaining--;
-                
-                if (remaining < 0) {
+                countdownDiv.innerHTML = `⏱️ ${remaining} 秒後自動跳轉...`;
+
+                if (remaining <= 0) {
                     clearInterval(interval);
                     redirectToMain();
                 }

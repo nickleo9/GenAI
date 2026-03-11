@@ -669,12 +669,12 @@ const iPASQuizApp = {
                     this.showAlert(`在您選擇的主題中找不到任何題目。`, 'info');
                     return false;
                 }
-                questionsToReview = questionsToReview.sort(() => Math.random() - 0.5)
+                questionsToReview = this.shuffleArray(questionsToReview)
                     .slice(0, Math.min(questionCount, questionsToReview.length));
                 break;
 
             case 'random':
-                questionsToReview = [...currentQuizData].sort(() => Math.random() - 0.5)
+                questionsToReview = this.shuffleArray(currentQuizData)
                     .slice(0, Math.min(questionCount, currentQuizData.length));
                 break;
 
@@ -683,8 +683,7 @@ const iPASQuizApp = {
                 return false;
         }
 
-        this.state.questions = questionsToReview;
-        this.state.questions.forEach((q, index) => q.number = index + 1);
+        this.state.questions = questionsToReview.map((q, index) => ({ ...q, number: index + 1 }));
 
         return true;
     },
@@ -719,8 +718,26 @@ const iPASQuizApp = {
         // 更新考試時間
         this.state.examDuration = config.duration;
 
-        // 更新預設題目數量
-        document.getElementById('question-count').value = config.defaultQuestions;
+        // 更新題目數量選項（依據題庫實際題數）
+        const available = (quizData[type] && quizData[type].length) || 0;
+        const select = document.getElementById('question-count');
+        Array.from(select.options).forEach(opt => {
+            const val = parseInt(opt.value);
+            opt.disabled = available > 0 && val > available;
+            opt.text = opt.text.replace(/ \(超出題庫\)$/, '');
+            if (available > 0 && val > available) {
+                opt.text += ' (超出題庫)';
+            }
+        });
+        const defaultCount = available > 0
+            ? Math.min(config.defaultQuestions, available)
+            : config.defaultQuestions;
+        select.value = defaultCount;
+        if (!select.value || select.options[select.selectedIndex]?.disabled) {
+            // fallback to first enabled option
+            const firstEnabled = Array.from(select.options).find(o => !o.disabled);
+            if (firstEnabled) select.value = firstEnabled.value;
+        }
 
         // 使用新的 updateTimerForMode 方法來更新計時器顯示
         if (this.state.currentMode === 'exam') {
@@ -953,6 +970,16 @@ const iPASQuizApp = {
         window.removeEventListener('beforeunload', this.handleBeforeUnload);
     },
 
+    // Fisher-Yates 洗牌算法（比 sort(Math.random) 更均勻）
+    shuffleArray(arr) {
+        const shuffled = [...arr];
+        for (let i = shuffled.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+        }
+        return shuffled;
+    },
+
     // 載入題目
     loadQuestions(count) {
         const currentQuizData = quizData[this.state.selectedDatabase];
@@ -963,9 +990,17 @@ const iPASQuizApp = {
             return false;
         }
 
-        const shuffledQuestions = [...currentQuizData].sort(() => Math.random() - 0.5);
-        this.state.questions = shuffledQuestions.slice(0, Math.min(count, shuffledQuestions.length));
-        this.state.questions.forEach((q, index) => q.number = index + 1);
+        const available = currentQuizData.length;
+        const actualCount = Math.min(count, available);
+
+        if (count > available) {
+            this.showAlert(`⚠️ 此題庫共 ${available} 題，已調整為全部 ${available} 題出題。`, 'info');
+        }
+
+        const shuffled = this.shuffleArray(currentQuizData);
+        this.state.questions = shuffled
+            .slice(0, actualCount)
+            .map((q, index) => ({ ...q, number: index + 1 }));
 
         return true;
     },

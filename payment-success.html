@@ -137,7 +137,7 @@
                 <span id="error-message">請聯繫客服處理</span>
             </div>
 
-            <button class="btn btn-primary" onclick="location.href='web.html'">
+            <button class="btn btn-primary" onclick="location.href='/GenAI/index.html'">
                 <i class="fas fa-arrow-left me-2"></i>返回首頁
             </button>
         </div>
@@ -165,7 +165,6 @@
             
             init() {
                 console.log('🎉 付費成功頁面載入');
-                this.getPaymentInfo();
                 this.verifyPayment();
             },
 
@@ -312,7 +311,7 @@
 
             // 跳轉回首頁
             redirectToHome() {
-                window.location.href = 'web.html';
+                window.location.href = '/GenAI/index.html';
             }
         };
 

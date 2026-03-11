@@ -386,7 +386,8 @@ const iPASQuizApp = {
                 correct: [],
                 incorrect: [],
                 history: [],
-                databaseStats: {}
+                databaseStats: {},
+                markedByDatabase: {}
             };
         } catch (error) {
             console.error('載入使用者數據錯誤:', error);
@@ -394,7 +395,8 @@ const iPASQuizApp = {
                 correct: [],
                 incorrect: [],
                 history: [],
-                databaseStats: {}
+                databaseStats: {},
+                markedByDatabase: {}
             };
         }
     },
@@ -606,7 +608,8 @@ const iPASQuizApp = {
             if (this.loadReviewQuestions()) {
                 this.state.currentQuestionIndex = 0;
                 this.state.userAnswers = {};
-                this.state.markedQuestions = []; // 新增這一行
+                this.state.markedQuestions = [];
+                this.restoreMarkedQuestions();
                 this.state.questionMapping = {};
                 this.state.score = 0;
                 this.state.wrongQuestions = [];
@@ -739,22 +742,14 @@ const iPASQuizApp = {
             if (firstEnabled) select.value = firstEnabled.value;
         }
 
-        // 使用新的 updateTimerForMode 方法來更新計時器顯示
-        if (this.state.currentMode === 'exam') {
-            this.elements.timerElement.innerHTML =
-                `<i class="fas fa-clock me-2"></i>${config.name} | 考試時間：${config.duration}分鐘`;
-            this.elements.timerElement.classList.add('exam-mode');
-        } else {
-            this.elements.timerElement.innerHTML =
-                `<i class="fas fa-clock me-2"></i>已選擇：${config.name}`;
-            this.elements.timerElement.classList.remove('exam-mode');
-        }
+        this.updateTimerForMode();
 
         // 如果是iPAS相關，設定為練習模式
         if (['ipas', 'ai-basis', 'ai-application', 'ipas-combined'].includes(type)) {
             document.querySelectorAll('.mode-btn').forEach(btn => btn.classList.remove('active'));
             document.querySelector('[data-mode="practice"]').classList.add('active');
             this.state.currentMode = 'practice';
+            this.showAlert('iPAS 題庫僅支援練習模式', 'info');
         }
     },
 
@@ -904,7 +899,8 @@ const iPASQuizApp = {
             if (this.loadQuestions(questionCount)) {
                 this.state.currentQuestionIndex = 0;
                 this.state.userAnswers = {};
-                this.state.markedQuestions = []; // 新增這一行
+                this.state.markedQuestions = [];
+                this.restoreMarkedQuestions();
                 this.state.questionMapping = {};
                 this.state.score = 0;
                 this.state.wrongQuestions = [];
@@ -1606,7 +1602,8 @@ const iPASQuizApp = {
         this.state.currentQuestionIndex = 0;
         this.state.score = 0;
         this.state.userAnswers = {};
-        this.state.markedQuestions = []; // 新增這一行
+        this.state.markedQuestions = [];
+        this.restoreMarkedQuestions();
         this.state.questionMapping = {};
         this.state.wrongQuestions = [];
 
@@ -1751,17 +1748,39 @@ const iPASQuizApp = {
     // 新增：標記/取消標記題目
     toggleMarkForReview() {
         const index = this.state.currentQuestionIndex;
+        const question = this.state.questions[index];
+        const db = this.state.selectedDatabase;
+
+        if (!this.state.userData.markedByDatabase) this.state.userData.markedByDatabase = {};
+        if (!this.state.userData.markedByDatabase[db]) this.state.userData.markedByDatabase[db] = [];
+
+        const dbMarks = this.state.userData.markedByDatabase[db];
         const markedIndex = this.state.markedQuestions.indexOf(index);
+        const textIndex = dbMarks.indexOf(question.question);
 
         if (markedIndex > -1) {
             this.state.markedQuestions.splice(markedIndex, 1);
+            if (textIndex > -1) dbMarks.splice(textIndex, 1);
             this.elements.markReviewBtn.classList.remove('active');
             this.elements.markReviewBtn.innerHTML = '<i class="fas fa-flag"></i> 標記此題';
         } else {
             this.state.markedQuestions.push(index);
+            if (textIndex === -1) dbMarks.push(question.question);
             this.elements.markReviewBtn.classList.add('active');
             this.elements.markReviewBtn.innerHTML = '<i class="fas fa-flag"></i> 已標記';
         }
+        this.saveUserData();
+    },
+
+    // 新增：從 localStorage 還原當前題庫的標記題目
+    restoreMarkedQuestions() {
+        const db = this.state.selectedDatabase;
+        const dbMarks = (this.state.userData.markedByDatabase || {})[db] || [];
+        if (dbMarks.length === 0) return;
+        this.state.markedQuestions = this.state.questions.reduce((acc, q, i) => {
+            if (dbMarks.includes(q.question)) acc.push(i);
+            return acc;
+        }, []);
     },
 
     // 新增：顯示題號總覽模態框

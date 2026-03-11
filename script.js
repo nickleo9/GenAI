@@ -1598,7 +1598,7 @@ const iPASQuizApp = {
         }
 
         this.state.reviewingWrong = true;
-        this.modals.result.hide();
+        setTimeout(() => this.modals.result.hide(), 0);
         this.state.currentMode = 'review';
         this.state.selectedReviewMode = 'wrong';
 
@@ -1665,8 +1665,9 @@ const iPASQuizApp = {
         // 下一題：只要不是最後一題，就可用
         this.elements.nextBtn.disabled = isLast;
 
-        // 完成：恆定可用
-        this.elements.finishBtn.disabled = false;
+        // 完成：依模式和作答數判斷
+        this.elements.finishBtn.disabled = !this.calculateFinishButtonState();
+        this.updateFinishButtonText();
     },
 
     // 計算完成按鈕狀態
@@ -3020,20 +3021,28 @@ function checkFeatureAccess(feature) {
     // 如果功能在付費清單中且不是付費會員
     if (paidFeatures.includes(feature) && memberLevel !== 'paid') {
 
-        // --- 特別處理：免費會員每月 5 次模擬考試 ---
+        // --- 特別處理：免費會員每次考試間隔 5 天冷卻 ---
         if (feature === 'exam' && memberLevel === 'free') {
-            const examKey = `exam_monthly_${new Date().toISOString().slice(0, 7)}`;
-            const examCount = parseInt(localStorage.getItem(examKey) || '0');
+            const lastExamKey = 'exam_last_date';
+            const lastExamDate = localStorage.getItem(lastExamKey);
+            const now = new Date();
 
-            if (examCount < 5) {
-                // 還有額度，允許進入並增加計數
-                localStorage.setItem(examKey, (examCount + 1).toString());
-                iPASQuizApp.showAlert(`📊 模擬考試額度：本月已使用 ${examCount + 1}/5 次`, 'info');
-                return true;
-            } else {
-                iPASQuizApp.showAlert('⏰ 本月模擬考試次數已達上限 (5次/月)！\n\n💎 升級付費會員即可無限次參與模擬考！', 'warning');
-                return false;
+            if (lastExamDate) {
+                const diffMs = now - new Date(lastExamDate);
+                const diffDays = diffMs / (1000 * 60 * 60 * 24);
+                if (diffDays < 5) {
+                    const remainingDays = Math.ceil(5 - diffDays);
+                    const nextDate = new Date(new Date(lastExamDate).getTime() + 5 * 24 * 60 * 60 * 1000);
+                    const nextDateStr = nextDate.toLocaleDateString('zh-TW');
+                    iPASQuizApp.showAlert(`⏰ 免費會員每次考試需間隔 5 天，還需等待 ${remainingDays} 天（${nextDateStr} 後可再考）！\n\n💎 升級付費會員即可無限次參與模擬考！`, 'warning');
+                    return false;
+                }
             }
+
+            localStorage.setItem(lastExamKey, now.toISOString());
+            const nextDate = new Date(now.getTime() + 5 * 24 * 60 * 60 * 1000);
+            iPASQuizApp.showAlert(`📊 下次可考試時間：${nextDate.toLocaleDateString('zh-TW')}`, 'info');
+            return true;
         }
 
         // 其他付費功能或額度用完，顯示功能鎖定模態框

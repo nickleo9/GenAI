@@ -1,172 +1,172 @@
 [
     {
-        "question": "2026年資策會列為十大AI關鍵技術之首的代理式AI，不包含下列何項核心能力？",
+        "question": "在資料整理與分析流程中，下列哪一項最適合作為資料清洗的步驟？",
         "options": [
-            "感知環境並即時反應",
-            "量子運算以提升計算速度",
-            "自主規劃及推理決策",
-            "執行行動與反思學習"
+            "辨識並填補缺失值，避免資料遺失影響模型準確度",
+            "將原始數據隨機分割為訓練集與測試集以進行模型評估",
+            "使用特徵工程增加新的派生變數以提升訓練效果",
+            "利用PCA降維以減少模型的計算複雜度及過擬合風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗的核心工作包括辨識並填補缺失值，確保資料完整性，避免缺失資料削弱模型表現。分割數據、特徵工程及降維皆是後續步驟。",
+        "number": 1,
+        "date": "2026-03-11"
+    },
+    {
+        "question": "以下哪一項最符合人工智慧治理（AI Governance）中的“監理沙盒”(Regulatory Sandbox)概念？",
+        "options": [
+            "允許企業在受控環境中實驗AI技術，評估法律與倫理風險",
+            "強制所有AI系統實施偏見檢測與公平性評估",
+            "企業須於正式發布前公開說明AI演算法細節與數據來源",
+            "建立集中資料平台，實行資料共享與跨組織協作"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "治理框架與機制",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是讓企業在受控、有限的環境下測試AI應用，辨識潛在的法律和倫理風險，促進技術創新同時保障合規。",
+        "number": 2,
+        "date": "2026-03-11"
+    },
+    {
+        "question": "在機器學習模型中，下列哪種方法屬於非監督學習？",
+        "options": [
+            "貝氏分類器用於電子郵件垃圾郵件分類",
+            "決策樹以標籤資料進行信用評分預測",
+            "K-Means進行客戶分群以找出潛在類型",
+            "強化學習訓練自動駕駛車學習最佳路徑"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習模型",
+        "concept": "非監督學習",
+        "explanation": "K-Means是一種非監督學習方法，用於資料聚類，不使用標籤資訊。貝氏分類器和決策樹是監督學習，強化學習則屬於另一類型。",
+        "number": 3,
+        "date": "2026-03-11"
+    },
+    {
+        "question": "在生成式AI和鑑別式AI的基本原理中，下列敘述何者正確？",
+        "options": [
+            "生成式AI主要是根據標籤資料進行分類辨識任務",
+            "鑑別式AI學習條件機率 P(x|y) 以生成數據樣本",
+            "生成式AI能模擬資料分布，創造新的資料樣本",
+            "鑑別式AI是基於無監督方式進行資料分群"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成式與鑑別式AI",
+        "explanation": "生成式AI是透過學習資料分布生成新樣本，鑑別式AI則重點在區分不同類別（學習 P(y|x)）。生成式AI可用於創造新文字或影像。",
+        "number": 4,
+        "date": "2026-03-11"
+    },
+    {
+        "question": "在強化學習的應用中，Q-Learning方法的主要特點為何？",
+        "options": [
+            "依賴模型預先知曉環境轉移機率進行決策",
+            "透過試錯學習，不需環境模型即可獲得策略",
+            "利用深度神經網路直接優化策略函數",
+            "專門用於多智能體系統的協同學習"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "AI技術與模型",
-        "subtopic": "代理式AI",
-        "concept": "代理式AI核心能力",
-        "explanation": "代理式AI核心能力包括感知、推理、行動及反思，量子運算屬於硬體技術，非代理式AI內建功能。",
-        "number": 1,
-        "date": "2026-03-09"
-    },
-    {
-        "question": "在機器學習中，監督學習、非監督學習與強化學習的主要區別在於：",
-        "options": [
-            "監督學習需標記資料，非監督學習無需，強化學習透過環境反饋學習",
-            "非監督學習需標記資料，強化學習不依賴環境反饋",
-            "強化學習需大量標記資料，監督學習依賴環境反饋",
-            "監督學習與強化學習皆無需標記資料，非監督學習依賴反饋"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
         "topic": "機器學習概念",
-        "subtopic": "機器學習類型",
-        "concept": "監督學習與非監督學習區別",
-        "explanation": "監督學習使用帶標記資料，非監督學習無標記，強化學習基於環境反饋進行策略學習。",
-        "number": 2,
-        "date": "2026-03-09"
+        "subtopic": "強化學習",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning不需要環境模型，是一種無模型的強化學習方法，透過試錯不斷更新動作價值以學習最佳策略。",
+        "number": 5,
+        "date": "2026-03-11"
     },
     {
-        "question": "資料整理分析流程中，下列哪一項順序最合理？",
+        "question": "資料隱私與安全中，哪一項技術最適合在分散式資料環境中保護個人隱私同時進行機器學習？",
         "options": [
-            "資料清理 -> 特徵工程 -> 資料集成 -> 模型訓練",
-            "資料集成 -> 資料清理 -> 特徵工程 -> 模型訓練",
-            "資料清理 -> 資料集成 -> 特徵工程 -> 模型訓練",
-            "特徵工程 -> 資料清理 -> 資料集成 -> 模型訓練"
+            "批次資料抽取、轉換與載入（ETL）",
+            "聯邦學習（Federated Learning）",
+            "主成分分析（PCA）降維",
+            "生成對抗網路（GAN）生成隱私資料"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "資料處理與分析概念",
-        "subtopic": "資料整理與分析流程",
-        "concept": "資料分析步驟",
-        "explanation": "先清理資料，再整合不同來源的資料，接著做特徵工程，最後用於模型訓練。",
-        "number": 3,
-        "date": "2026-03-09"
-    },
-    {
-        "question": "生成式AI與鑑別式AI的根本差異是？",
-        "options": [
-            "生成式AI專注模仿輸入資料產生新內容，鑑別式AI判斷資料屬性",
-            "鑑別式AI用於創作新影像，生成式AI適合分類任務",
-            "生成式AI只用非監督學習，鑑別式AI只用監督學習",
-            "鑑別式AI使用深度模型，生成式AI使用線性模型"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "鑑別式AI 與生成式AI",
-        "subtopic": "基本原理",
-        "concept": "生成式AI與鑑別式AI差異",
-        "explanation": "生成式AI能創造新資料，鑑別式AI判斷輸入是否屬於某類別，功能不同。",
-        "number": 4,
-        "date": "2026-03-09"
-    },
-    {
-        "question": "在資料隱私與安全議題中，下列哪一項技術可有效保護用戶資料？",
-        "options": [
-            "聯邦學習使資料分散於多端進行訓練",
-            "資料全部集中於雲端以便備份",
-            "公開所有資料以確保透明性",
-            "只採用監督式學習以防資料外洩"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "資料處理與分析概念",
         "subtopic": "資料隱私與安全",
-        "concept": "保護用戶資料技術",
-        "explanation": "聯邦學習允許資料不離開本地，即可參與模型訓練保障隱私。",
-        "number": 5,
-        "date": "2026-03-09"
-    },
-    {
-        "question": "生成式AI在企業中微調模型的主要目的是？",
-        "options": [
-            "在特定任務上優化模型表現與數據適配性",
-            "完全重新訓練模型從資料蒐集到訓練",
-            "隨機調整模型參數以增加多樣性",
-            "刪除部分訓練資料以提升速度"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI微調",
-        "concept": "模型微調技術",
-        "explanation": "微調意在用少量專門資料優化模型在特定任務的效果，非重訓整個模型。",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在多個設備端本地訓練，不需集中資料，有效保護隱私。ETL是資料匯整流程，PCA降維無隱私目的，GAN用於生成資料。",
         "number": 6,
-        "date": "2026-03-09"
+        "date": "2026-03-11"
     },
     {
-        "question": "以下何者非量子AI結合傳統AI可帶來的優勢？",
+        "question": "關於人工智慧中“Human on loop”和“Human in loop”的區別，下列何者描述最符合“Human on loop”？",
         "options": [
-            "快速解決複雜最佳化問題",
-            "提升藥物研發的計算效率",
-            "簡化輸入資料的特徵數量",
-            "增強模式辨識的能力"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "AI技術與模型",
-        "subtopic": "量子AI",
-        "concept": "量子AI優勢",
-        "explanation": "量子AI優勢在複雜計算和模式辨識，並非簡化資料特徵數量。",
-        "number": 7,
-        "date": "2026-03-09"
-    },
-    {
-        "question": "下列何者最符合AI治理框架的核心目標？",
-        "options": [
-            "確保AI系統公平、透明與負責任",
-            "最大化AI運算效率而忽略倫理",
-            "全面禁止生成式AI技術開發",
-            "只專注資料隱私不考慮系統安全"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "AI倫理與法規",
-        "subtopic": "AI治理概念",
-        "concept": "AI治理核心目標",
-        "explanation": "AI治理旨在確保系統公平公正、透明且負責任，並非忽視倫理或完全禁止技術。",
-        "number": 8,
-        "date": "2026-03-09"
-    },
-    {
-        "question": "在機器學習常見模型中，哪種模型通常用於時間序列數據分析？",
-        "options": [
-            "循環神經網絡（RNN）",
-            "支援向量機（SVM）",
-            "決策樹（Decision Tree）",
-            "貝氏分類器（Naive Bayes）"
+            "人工隨時監控模型決策並在必要時參與介入",
+            "模型完全自動運作，無需人為監督",
+            "人類介入於模型訓練階段但後續自動運行",
+            "人類介入調整和監督模型輸出結果的完整過程"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "機器學習概念",
-        "subtopic": "常見模型",
-        "concept": "時間序列模型",
-        "explanation": "RNN適合處理序列資料，能捕捉時間關係，其他模型不具此特性。",
-        "number": 9,
-        "date": "2026-03-09"
+        "subtopic": "模型監督與調控",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指人類持續監控機器決策流程，必要時介入修正，確保決策合理。它強調人工監督過程中持續介入。",
+        "number": 7,
+        "date": "2026-03-11"
     },
     {
-        "question": "針對預測房價問題，下列何種損失函數最適用？",
+        "question": "在AI治理碎片化問題中，RAI（Responsible AI）主要強調哪項核心價值？",
         "options": [
-            "均方誤差（MSE）",
-            "交叉熵損失（Cross-Entropy）",
-            "對比損失（Contrastive Loss）",
-            "鉛筆損失（Hinge Loss）"
+            "最大化模型精度與效能",
+            "資料共享與跨域整合的便利",
+            "公平性、透明度與問責性的提升",
+            "加速模型訓練與部署時間"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "責任性AI",
+        "concept": "RAI",
+        "explanation": "RAI強調負責任的AI開發，包含公平性、透明度、可解釋性與問責制，避免AI帶來倫理與法律風險。",
+        "number": 8,
+        "date": "2026-03-11"
+    },
+    {
+        "question": "生成式AI回應語境一致性挑戰主要是指下列哪一項？",
+        "options": [
+            "生成內容無法反映最新的即時數據信息",
+            "生成回答無法連貫且與上下文保持一致",
+            "生成模型的計算複雜度過高，推論時間長",
+            "生成資料缺乏多樣性與創新性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式AI挑戰",
+        "concept": "語境一致性",
+        "explanation": "生成式AI在長對話或複雜語境中易出現語意不一致或前後矛盾，影響使用者體驗與信任。",
+        "number": 9,
+        "date": "2026-03-11"
+    },
+    {
+        "question": "在處理類別型特徵數據時，下列哪種編碼方式能有效避免模型對類別間數值大小的誤解？",
+        "options": [
+            "直接使用原始文字標籤輸入模型",
+            "標籤編碼（Label Encoding）由類別轉為數值",
+            "One-Hot Encoding編碼類別為二進制矢量",
+            "使用PCA將類別向量降維"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "資料處理與分析概念",
-        "subtopic": "損失函數應用",
-        "concept": "迴歸損失函數",
-        "explanation": "房價預測屬迴歸問題，MSE用於衡量預測與真實值的平方誤差。",
+        "subtopic": "資料預處理",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding將類別轉為互斥二進制向量，避免模型誤認數字大小意義，適合類別無序資料。",
         "number": 10,
-        "date": "2026-03-09"
+        "date": "2026-03-11"
     }
 ]

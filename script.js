@@ -30,9 +30,9 @@ async function loadQuizDatabases() {
             quizData['generative-ai'] = [];
         }
 
-        // 載入人工智慧基礎概論題庫 (daily_answers_apply.json)
+        // 載入人工智慧基礎概論題庫 (daily_answers_basis.json)
         try {
-            const response2 = await fetch('./daily_answers_apply.json');
+            const response2 = await fetch('./daily_answers_basis.json');
             if (response2.ok) {
                 const data2 = await response2.json();
                 if (Array.isArray(data2) && data2.length > 0) {
@@ -49,9 +49,9 @@ async function loadQuizDatabases() {
             quizData['ai-basis'] = [];
         }
 
-        // 載入生成式AI應用與規劃題庫 (daily_answers_basis.json)
+        // 載入生成式AI應用與規劃題庫 (daily_answers_apply.json)
         try {
-            const response3 = await fetch('./daily_answers_basis.json');
+            const response3 = await fetch('./daily_answers_apply.json');
             if (response3.ok) {
                 const data3 = await response3.json();
                 if (Array.isArray(data3) && data3.length > 0) {
@@ -521,9 +521,12 @@ const iPASQuizApp = {
         document.getElementById('restart-quiz-btn').addEventListener('click', () => this.restartQuiz());
         document.getElementById('reset-stats-btn').addEventListener('click', () => this.resetProgress());
 
-        // 🔥 新增：結果模態框關閉時返回首頁
+        // 結果模態框關閉時返回首頁（複習錯題流程除外）
         document.getElementById('result-modal').addEventListener('hidden.bs.modal', () => {
-            this.backToSelection();
+            if (!this.state.reviewingWrong) {
+                this.backToSelection();
+            }
+            this.state.reviewingWrong = false;
         });
 
         // 頁面關閉前自動保存
@@ -893,6 +896,12 @@ const iPASQuizApp = {
                 this.elements.quizStatus.style.display = 'block';
                 this.elements.quizStatus.classList.add('active');
 
+                // 模擬考試模式：隱藏題庫選擇區與返回按鈕，保持沉浸感
+                if (this.state.currentMode === 'exam') {
+                    this.elements.databaseSelector.classList.add('d-none');
+                    document.getElementById('back-to-selection').style.display = 'none';
+                }
+
                 this.displayQuestion();
 
                 if (this.state.currentMode === 'exam') {
@@ -1110,7 +1119,7 @@ const iPASQuizApp = {
             <div class="text-center py-3">
                 <div class="spinner-border spinner-border-sm text-primary me-2" role="status"></div>
                 <span class="text-muted">解析載入中... (遊客需等待 3 秒)</span>
-                <div class="mt-2 small text-muted">💡 <a href="#" onclick="LoginManager.showLoginOptions(); return false;">登入</a>後可立即查看解析！</div>
+                <div class="mt-2 small text-muted">💡 <a href="#" onclick="LoginManager.showLoginButton(); return false;">登入</a>後可立即查看解析！</div>
             </div>
         `;
 
@@ -1326,30 +1335,33 @@ const iPASQuizApp = {
 
         this.elements.quizContainer.classList.add('d-none');
         this.elements.settingsPanel.classList.remove('d-none');
+        this.elements.databaseSelector.classList.remove('d-none');
+        document.getElementById('back-to-selection').style.display = '';
         this.elements.quizStatus.style.display = 'none';
         this.elements.quizStatus.classList.remove('active');
 
         console.log('🔙 已返回題庫選擇');
     },
 
-    // 完成測驗
-    async finishQuiz() {
+    // 完成測驗 (forced=true 時跳過確認，例如計時器到期)
+    async finishQuiz(forced = false) {
         const totalQuestions = this.state.questions.length;
         const answeredCount = Object.keys(this.state.userAnswers).length;
         const unansweredCount = totalQuestions - answeredCount;
 
-        // 🔥 改進：無論是否有未答題目，都顯示確認框
-        let confirmMessage = '確定要完成測驗嗎？\n\n';
-        confirmMessage += `📊 已作答：${answeredCount} / ${totalQuestions} 題\n`;
+        if (!forced) {
+            let confirmMessage = '確定要完成測驗嗎？\n\n';
+            confirmMessage += `📊 已作答：${answeredCount} / ${totalQuestions} 題\n`;
 
-        if (unansweredCount > 0) {
-            confirmMessage += `⚠️ 未作答：${unansweredCount} 題（將視為答錯）\n`;
-        }
+            if (unansweredCount > 0) {
+                confirmMessage += `⚠️ 未作答：${unansweredCount} 題（將視為答錯）\n`;
+            }
 
-        confirmMessage += '\n⚠️ 完成後將無法修改答案！';
+            confirmMessage += '\n⚠️ 完成後將無法修改答案！';
 
-        if (!confirm(confirmMessage)) {
-            return;
+            if (!confirm(confirmMessage)) {
+                return;
+            }
         }
 
         // 核心修改：在顯示結果前，根據最終答案計算分數和錯題
@@ -1548,6 +1560,7 @@ const iPASQuizApp = {
             return;
         }
 
+        this.state.reviewingWrong = true;
         this.modals.result.hide();
         this.state.currentMode = 'review';
         this.state.selectedReviewMode = 'wrong';
@@ -1575,6 +1588,8 @@ const iPASQuizApp = {
         this.unlockInterface();
         this.elements.quizContainer.classList.add('d-none');
         this.elements.settingsPanel.classList.remove('d-none');
+        this.elements.databaseSelector.classList.remove('d-none');
+        document.getElementById('back-to-selection').style.display = '';
         this.elements.quizStatus.style.display = 'none';
         this.elements.quizStatus.classList.remove('active');
 
@@ -1793,6 +1808,10 @@ const iPASQuizApp = {
         this.state.userData.incorrect = (this.state.userData.incorrect || []).filter(q => !sessionCorrectQuestions.has(q));
         // 2. 將本次答錯的題目，加入全域錯題中 (去重)
         this.state.userData.incorrect = [...new Set([...(this.state.userData.incorrect || []), ...sessionIncorrectQuestions])];
+        // 3. 將本次答對的題目，加入全域正確題中 (去重)
+        this.state.userData.correct = [...new Set([...(this.state.userData.correct || []), ...sessionCorrectQuestions])];
+        // 4. 將本次答錯的題目，從全域正確題中移除
+        this.state.userData.correct = (this.state.userData.correct || []).filter(q => !sessionIncorrectQuestions.has(q));
     },
 
 
@@ -2131,7 +2150,7 @@ const iPASQuizApp = {
             this.elements.quizTimerDisplay.classList.add('warning');
             this.stopTimer();
             this.showAlert('⏰ 考試時間結束！系統將自動交卷並計算成績。', 'warning');
-            this.finishQuiz();
+            this.finishQuiz(true);
             return;
         }
 

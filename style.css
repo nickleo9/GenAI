@@ -312,6 +312,13 @@
             50% { transform: translateY(-50%) scale(1.2); }
             100% { transform: translateY(-50%) scale(1); }
         }
+
+        /* 選了錯誤答案時，覆蓋 :checked 的 ✓，改顯示 ✗（特異度高於上方 :checked 規則）*/
+        .option-input:checked + .option-label.option-wrong::after {
+            content: '✗';
+            background: #e53935;
+            animation: none;
+        }
         
         .option-input {
             display: none;

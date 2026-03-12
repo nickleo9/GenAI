@@ -2769,7 +2769,7 @@ const UsageManager = {
         }
 
         // 已登入，檢查會員等級
-        const memberLevel = userData.member_level || lineData.memberLevel || '免費會員';
+        const memberLevel = userData.member_level || lineData.member_level || lineData.memberLevel || '免費會員';
         if (memberLevel.includes('付費') || memberLevel.includes('VIP') || memberLevel.includes('付費會員')) {
             // 有 paid_until 才驗證是否過期，沒有則信任 member_level（舊資料向下相容）
             const paidUntil = userData.paid_until || lineData.paid_until;

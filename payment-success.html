@@ -77,7 +77,7 @@
         <div id="verifying-section">
             <div class="loading-spinner"></div>
             <h3 class="mt-4">正在驗證您的付款...</h3>
-            <p class="text-muted">請稍候,我們正在確認您的交易</p>
+            <p class="text-muted" id="verifying-msg">請稍候，我們正在確認您的交易</p>
         </div>
 
         <!-- 成功狀態 -->
@@ -194,69 +194,86 @@
                 };
             },
 
-            // 驗證付款並更新會員等級
+            // 驗證付款並更新會員等級（含 retry，處理 ECPay callback 尚未寫入 DB 的 race condition）
             async verifyPayment() {
-                try {
-                    const paymentInfo = this.getPaymentInfo();
-                    const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
-                    const lineData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
-                    
-                    // 取得用戶 ID (優先使用 URL 參數,再從 localStorage 取得)
-                    const userId = paymentInfo.userId || 
-                                   userData.line_user_id || 
-                                   lineData.userId;
+                const MAX_RETRIES = 3;
+                const RETRY_DELAY_MS = 2000;
 
-                    if (!userId) {
-                        throw new Error('找不到用戶 ID');
+                const paymentInfo = this.getPaymentInfo();
+                const userData = JSON.parse(localStorage.getItem('user_data') || '{}');
+                const lineData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
+
+                const userId = paymentInfo.userId ||
+                               userData.line_user_id ||
+                               lineData.userId;
+
+                if (!userId) {
+                    this.showError('找不到用戶 ID，請重新登入後再試');
+                    return;
+                }
+
+                const requestBody = {
+                    userId: userId,
+                    merchantTradeNo: paymentInfo.merchantTradeNo,
+                    tradeNo: paymentInfo.tradeNo,
+                    tradeAmt: paymentInfo.tradeAmt,
+                    rtnCode: paymentInfo.rtnCode,
+                    planType: paymentInfo.planType || 'monthly',
+                    paymentDate: paymentInfo.paymentDate || new Date().toISOString(),
+                    paymentType: paymentInfo.paymentType || 'unknown'
+                };
+
+                for (let attempt = 1; attempt <= MAX_RETRIES; attempt++) {
+                    try {
+                        console.log(`📡 付款驗證請求（第 ${attempt}/${MAX_RETRIES} 次）...`);
+
+                        const response = await fetch(this.N8N_VERIFY_URL, {
+                            method: 'POST',
+                            headers: { 'Content-Type': 'application/json' },
+                            body: JSON.stringify(requestBody)
+                        });
+
+                        if (!response.ok) throw new Error('驗證請求失敗');
+
+                        const result = await response.json();
+                        console.log(`✅ 驗證回應（第 ${attempt} 次）:`, result);
+
+                        // 若 DB 尚未更新（callback 還沒跑完），等待後重試
+                        const isPaid = result.isPaid === true || result.isPaid === 'true' ||
+                                       result.memberLevel === '付費會員' || result.member_level === '付費會員';
+
+                        if (!isPaid && attempt < MAX_RETRIES) {
+                            console.log(`⏳ 後端尚未更新，${RETRY_DELAY_MS / 1000} 秒後重試...`);
+                            const msgEl = document.getElementById('verifying-msg');
+                            if (msgEl) msgEl.textContent = `付款確認中，請稍候... (${attempt}/${MAX_RETRIES})`;
+                            await new Promise(resolve => setTimeout(resolve, RETRY_DELAY_MS));
+                            continue;
+                        }
+
+                        // 更新 localStorage
+                        if (userData && (userData.userId || userData.google_id || userData.email)) {
+                            userData.member_level = '付費會員';
+                            if (result.paid_until) userData.paid_until = result.paid_until;
+                            localStorage.setItem('user_data', JSON.stringify(userData));
+                        }
+                        if (lineData && lineData.userId) {
+                            lineData.memberLevel = '付費會員';
+                            lineData.member_level = '付費會員';
+                            if (result.paid_until) lineData.paid_until = result.paid_until;
+                            localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
+                        }
+
+                        this.showSuccess(result, paymentInfo);
+                        return;
+
+                    } catch (error) {
+                        console.error(`❌ 第 ${attempt} 次驗證失敗:`, error);
+                        if (attempt < MAX_RETRIES) {
+                            await new Promise(resolve => setTimeout(resolve, RETRY_DELAY_MS));
+                        } else {
+                            this.showError(error.message);
+                        }
                     }
-
-                    console.log('📡 發送付款驗證請求...', {
-                        userId: userId,
-                        paymentInfo: paymentInfo
-                    });
-
-                    // 呼叫 n8n Webhook 驗證付款
-                    const response = await fetch(this.N8N_VERIFY_URL, {
-                        method: 'POST',
-                        headers: {
-                            'Content-Type': 'application/json'
-                        },
-                        body: JSON.stringify({
-                            userId: userId,
-                            merchantTradeNo: paymentInfo.merchantTradeNo,
-                            tradeNo: paymentInfo.tradeNo,
-                            tradeAmt: paymentInfo.tradeAmt,
-                            rtnCode: paymentInfo.rtnCode,
-                            planType: paymentInfo.planType || 'monthly',
-                            paymentDate: paymentInfo.paymentDate || new Date().toISOString(),
-                            paymentType: paymentInfo.paymentType || 'unknown'
-                        })
-                    });
-
-                    if (!response.ok) {
-                        throw new Error('驗證請求失敗');
-                    }
-
-                    const result = await response.json();
-                    console.log('✅ 驗證成功:', result);
-
-                    // 更新 localStorage 中的會員等級
-                    if (userData && (userData.userId || userData.google_id || userData.email)) {
-                        userData.member_level = '付費會員';
-                        localStorage.setItem('user_data', JSON.stringify(userData));
-                    }
-
-                    if (lineData && lineData.userId) {
-                        lineData.memberLevel = '付費會員';
-                        localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
-                    }
-
-                    // 顯示成功畫面
-                    this.showSuccess(result, paymentInfo);
-
-                } catch (error) {
-                    console.error('❌ 付款驗證失敗:', error);
-                    this.showError(error.message);
                 }
             },
 

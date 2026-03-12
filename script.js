@@ -1457,7 +1457,7 @@ const iPASQuizApp = {
             // 免費會員：提示升級可解鎖雲端同步
             this.showAlert(
                 '📝 測驗完成！成績已儲存於本機。\n\n' +
-                '💎 升級 VIP 即可解鎖雲端同步，永久保存學習記錄！',
+                '💎 升級付費會員即可解鎖雲端同步，永久保存學習記錄！',
                 'info'
             );
         } else {
@@ -3383,10 +3383,17 @@ function checkFeatureAccess(feature) {
     const memberLevel = UsageManager.getMemberLevel();
 
     // 付費功能列表
-    const paidFeatures = ['exam', 'export', 'cloud-sync', 'ai-analysis'];
+    // 注意：export 不在此列，exportWrongQuestions() 有自己的免費/付費邏輯
+    const paidFeatures = ['exam', 'cloud-sync', 'ai-analysis'];
 
     // 如果功能在付費清單中且不是付費會員
     if (paidFeatures.includes(feature) && memberLevel !== 'paid' && memberLevel !== 'paid_yearly') {
+
+        // --- 特別處理：遊客嘗試使用考試 → 提示登入 ---
+        if (feature === 'exam' && memberLevel === 'guest') {
+            iPASQuizApp.showAlert('⚠️ 請先登入才能使用模擬考試！\n\n登入後免費會員每 5 天可考一次。', 'warning');
+            return false;
+        }
 
         // --- 特別處理：免費會員每次考試間隔 5 天冷卻 ---
         if (feature === 'exam' && memberLevel === 'free') {

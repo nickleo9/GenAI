@@ -2530,7 +2530,8 @@ const UsageManager = {
     },
 
     incrementAIExplanation() {
-        if (this.getMemberLevel() === 'paid') return;
+        const level = this.getMemberLevel();
+        if (level === 'paid' || level === 'guest') return;
         const key = `ai_exp_daily_${new Date().toDateString()}`;
         const used = parseInt(localStorage.getItem(key) || '0');
         localStorage.setItem(key, (used + 1).toString());

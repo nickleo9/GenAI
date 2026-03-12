@@ -467,14 +467,13 @@ const iPASQuizApp = {
         // 複習模式選擇事件
         document.querySelectorAll('.review-mode-item').forEach(item => {
             item.addEventListener('click', (e) => {
+                e.preventDefault();
                 if (this.state.isQuizActive) {
                     this.showAlert('測驗進行中，無法更改複習模式！', 'warning');
                     return;
                 }
                 const mode = item.dataset.reviewMode;
                 this.selectReviewMode(mode);
-
-                // 如果是主題複習，則打開選擇視窗
                 if (mode === 'topic') {
                     this.openTopicSelectionModal();
                 }
@@ -560,17 +559,24 @@ const iPASQuizApp = {
 
     // 選擇複習模式
     selectReviewMode(mode) {
-        document.querySelectorAll('.review-mode-item').forEach(item => {
-            item.classList.remove('selected');
-        });
+        const modeLabels = {
+            wrong: '錯題複習',
+            all: '全題複習',
+            topic: '主題複習',
+            random: '隨機複習'
+        };
 
+        document.querySelectorAll('.review-mode-item').forEach(item => {
+            item.classList.remove('active');
+        });
         const selectedItem = document.querySelector(`[data-review-mode="${mode}"]`);
-        if (selectedItem) {
-            selectedItem.classList.add('selected');
-            this.state.selectedReviewMode = mode;
-            this.updateReviewButtonState();
-            console.log(`✅ 已選擇複習模式: ${mode}`);
-        }
+        if (selectedItem) selectedItem.classList.add('active');
+
+        const label = document.getElementById('review-mode-label');
+        if (label) label.textContent = modeLabels[mode] || '選擇複習模式';
+
+        this.state.selectedReviewMode = mode;
+        this.updateReviewButtonState();
     },
 
     // 更新模式UI
@@ -2074,9 +2080,10 @@ const iPASQuizApp = {
                 `;
 
         document.getElementById('stats-content').innerHTML = statsHTML;
-        // 年費會員才顯示 AI 弱點分析按鈕
+        // 年費或月費才顯示 AI 弱點分析按鈕
         const aiBtn = document.getElementById('ai-analysis-btn');
-        if (UsageManager.getMemberLevel() === 'paid_yearly') {
+        const level = UsageManager.getMemberLevel();
+        if (level === 'paid' || level === 'paid_yearly') {
             aiBtn.classList.remove('d-none');
         } else {
             aiBtn.classList.add('d-none');
@@ -2086,8 +2093,9 @@ const iPASQuizApp = {
 
     // ─── AI 弱點分析報告 ────────────────────────────────────────────────
     showWeaknessAnalysis() {
-        if (UsageManager.getMemberLevel() !== 'paid_yearly') {
-            this.showAlert('AI 弱點分析報告為年費會員專屬功能。', 'warning');
+        const analysisLevel = UsageManager.getMemberLevel();
+        if (analysisLevel !== 'paid' && analysisLevel !== 'paid_yearly') {
+            this.showAlert('AI 弱點分析報告為付費會員專屬功能。', 'warning');
             return;
         }
 

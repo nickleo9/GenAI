@@ -467,7 +467,6 @@ const iPASQuizApp = {
         // 複習模式選擇事件
         document.querySelectorAll('.review-mode-item').forEach(item => {
             item.addEventListener('click', (e) => {
-                e.preventDefault();
                 if (this.state.isQuizActive) {
                     this.showAlert('測驗進行中，無法更改複習模式！', 'warning');
                     return;
@@ -475,7 +474,8 @@ const iPASQuizApp = {
                 const mode = item.dataset.reviewMode;
                 this.selectReviewMode(mode);
                 if (mode === 'topic') {
-                    this.openTopicSelectionModal();
+                    // modal 已由 data-bs-dismiss 關閉，稍延後開啟主題選擇
+                    setTimeout(() => this.openTopicSelectionModal(), 200);
                 }
             });
         });
@@ -567,10 +567,14 @@ const iPASQuizApp = {
         };
 
         document.querySelectorAll('.review-mode-item').forEach(item => {
-            item.classList.remove('active');
+            item.classList.remove('btn-success', 'text-white');
+            item.classList.add('btn-light');
         });
         const selectedItem = document.querySelector(`[data-review-mode="${mode}"]`);
-        if (selectedItem) selectedItem.classList.add('active');
+        if (selectedItem) {
+            selectedItem.classList.remove('btn-light');
+            selectedItem.classList.add('btn-success', 'text-white');
+        }
 
         const label = document.getElementById('review-mode-label');
         if (label) label.textContent = modeLabels[mode] || '選擇複習模式';
@@ -1078,6 +1082,11 @@ const iPASQuizApp = {
         this.elements.submitBtn.classList.add('d-none'); // 隱藏提交按鈕
         document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = false);
 
+        // 清除上一題的答題顏色標記
+        document.querySelectorAll('.option-label').forEach(label => {
+            label.classList.remove('option-correct', 'option-wrong');
+        });
+
         // 🔥 新增：為選項添加自動暫存功能
         document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
             input.addEventListener('change', () => this.autoSaveAnswer());
@@ -1158,11 +1167,27 @@ const iPASQuizApp = {
         return this.autoSaveAnswer();
     },
 
+    // 標記選項顏色（答題結果）
+    highlightAnswerOptions(correctLetter, userLetter) {
+        document.querySelectorAll('.option-label').forEach(label => {
+            label.classList.remove('option-correct', 'option-wrong');
+        });
+        const correctInput = document.getElementById(`option-${correctLetter}`);
+        if (correctInput) correctInput.nextElementSibling.classList.add('option-correct');
+        if (userLetter && userLetter !== correctLetter) {
+            const wrongInput = document.getElementById(`option-${userLetter}`);
+            if (wrongInput) wrongInput.nextElementSibling.classList.add('option-wrong');
+        }
+    },
+
     // 顯示解析
     showExplanation(question, userAnswerLetter, isCorrect) {
         const questionId = this.state.currentQuestionIndex;
         const mapping = this.state.questionMapping[questionId];
         const correctAnswerLetter = mapping.correctLetter;
+
+        // 立即標記選項顏色（不等解析延遲）
+        this.highlightAnswerOptions(correctAnswerLetter, userAnswerLetter);
 
         const resultClass = isCorrect ? 'correct' : 'incorrect';
         const resultIcon = isCorrect ? '✅' : '❌';

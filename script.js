@@ -1078,6 +1078,11 @@ const iPASQuizApp = {
         this.elements.submitBtn.classList.add('d-none'); // 隱藏提交按鈕
         document.querySelectorAll('input[name="quiz-option"]').forEach(input => input.disabled = false);
 
+        // 清除上一題的答題顏色標記
+        document.querySelectorAll('.option-label').forEach(label => {
+            label.classList.remove('option-correct', 'option-wrong');
+        });
+
         // 🔥 新增：為選項添加自動暫存功能
         document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
             input.addEventListener('change', () => this.autoSaveAnswer());
@@ -1158,11 +1163,27 @@ const iPASQuizApp = {
         return this.autoSaveAnswer();
     },
 
+    // 標記選項顏色（答題結果）
+    highlightAnswerOptions(correctLetter, userLetter) {
+        document.querySelectorAll('.option-label').forEach(label => {
+            label.classList.remove('option-correct', 'option-wrong');
+        });
+        const correctInput = document.getElementById(`option-${correctLetter}`);
+        if (correctInput) correctInput.nextElementSibling.classList.add('option-correct');
+        if (userLetter && userLetter !== correctLetter) {
+            const wrongInput = document.getElementById(`option-${userLetter}`);
+            if (wrongInput) wrongInput.nextElementSibling.classList.add('option-wrong');
+        }
+    },
+
     // 顯示解析
     showExplanation(question, userAnswerLetter, isCorrect) {
         const questionId = this.state.currentQuestionIndex;
         const mapping = this.state.questionMapping[questionId];
         const correctAnswerLetter = mapping.correctLetter;
+
+        // 立即標記選項顏色（不等解析延遲）
+        this.highlightAnswerOptions(correctAnswerLetter, userAnswerLetter);
 
         const resultClass = isCorrect ? 'correct' : 'incorrect';
         const resultIcon = isCorrect ? '✅' : '❌';

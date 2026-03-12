@@ -231,6 +231,62 @@
             transform: scale(1.02);
             box-shadow: 0 6px 20px rgba(76, 175, 80, 0.3);
         }
+
+        /* 答題結果：答錯的選項（紅底）*/
+        .option-label.option-wrong {
+            background: linear-gradient(145deg, #ffcdd2, #ef9a9a) !important;
+            border-color: #e53935 !important;
+            color: #b71c1c !important;
+            font-weight: bold;
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(229, 57, 53, 0.3);
+        }
+
+        .option-label.option-wrong::after {
+            content: '✗';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #e53935;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
+
+        /* 答題結果：正確選項（深綠底）*/
+        .option-label.option-correct {
+            background: linear-gradient(145deg, #a5d6a7, #81c784) !important;
+            border-color: #2e7d32 !important;
+            color: #1b5e20 !important;
+            font-weight: bold;
+            transform: scale(1.02);
+            box-shadow: 0 6px 20px rgba(46, 125, 50, 0.4);
+        }
+
+        .option-label.option-correct::after {
+            content: '✓';
+            position: absolute;
+            top: 50%;
+            right: 20px;
+            transform: translateY(-50%);
+            background: #2e7d32;
+            color: white;
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 0.8rem;
+        }
         
         .option-input:checked + .option-label::after {
             content: '✓';

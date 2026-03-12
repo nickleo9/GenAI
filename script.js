@@ -467,7 +467,6 @@ const iPASQuizApp = {
         // 複習模式選擇事件
         document.querySelectorAll('.review-mode-item').forEach(item => {
             item.addEventListener('click', (e) => {
-                e.preventDefault();
                 if (this.state.isQuizActive) {
                     this.showAlert('測驗進行中，無法更改複習模式！', 'warning');
                     return;
@@ -475,7 +474,8 @@ const iPASQuizApp = {
                 const mode = item.dataset.reviewMode;
                 this.selectReviewMode(mode);
                 if (mode === 'topic') {
-                    this.openTopicSelectionModal();
+                    // modal 已由 data-bs-dismiss 關閉，稍延後開啟主題選擇
+                    setTimeout(() => this.openTopicSelectionModal(), 200);
                 }
             });
         });
@@ -567,10 +567,14 @@ const iPASQuizApp = {
         };
 
         document.querySelectorAll('.review-mode-item').forEach(item => {
-            item.classList.remove('active');
+            item.classList.remove('btn-success', 'text-white');
+            item.classList.add('btn-light');
         });
         const selectedItem = document.querySelector(`[data-review-mode="${mode}"]`);
-        if (selectedItem) selectedItem.classList.add('active');
+        if (selectedItem) {
+            selectedItem.classList.remove('btn-light');
+            selectedItem.classList.add('btn-success', 'text-white');
+        }
 
         const label = document.getElementById('review-mode-label');
         if (label) label.textContent = modeLabels[mode] || '選擇複習模式';

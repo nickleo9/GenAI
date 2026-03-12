@@ -256,39 +256,11 @@
                             </div>
                             <!-- 複習模式選擇區 -->
                             <div class="mt-2" id="review-modes-section" style="display: none;">
-                                <div class="dropdown">
-                                    <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start"
-                                        type="button" id="review-mode-dropdown-btn"
-                                        data-bs-toggle="dropdown" aria-expanded="false">
-                                        <i class="fas fa-redo me-2"></i><span id="review-mode-label">選擇複習模式</span>
-                                    </button>
-                                    <ul class="dropdown-menu w-100 shadow-sm">
-                                        <li>
-                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="wrong">
-                                                <i class="fas fa-times-circle me-2 text-danger"></i><strong>錯題複習</strong>
-                                                <small class="d-block text-muted ps-4">複習之前答錯的題目</small>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="all">
-                                                <i class="fas fa-list me-2 text-primary"></i><strong>全題複習</strong>
-                                                <small class="d-block text-muted ps-4">系統性複習所有題目</small>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="topic">
-                                                <i class="fas fa-tags me-2 text-warning"></i><strong>主題複習</strong>
-                                                <small class="d-block text-muted ps-4">按主題分類複習</small>
-                                            </a>
-                                        </li>
-                                        <li>
-                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="random">
-                                                <i class="fas fa-random me-2 text-success"></i><strong>隨機複習</strong>
-                                                <small class="d-block text-muted ps-4">隨機順序複習</small>
-                                            </a>
-                                        </li>
-                                    </ul>
-                                </div>
+                                <button class="btn btn-outline-secondary w-100 text-start"
+                                    type="button" data-bs-toggle="modal" data-bs-target="#review-mode-modal">
+                                    <i class="fas fa-redo me-2"></i><span id="review-mode-label">選擇複習模式</span>
+                                    <i class="fas fa-chevron-right ms-auto float-end mt-1 small text-muted"></i>
+                                </button>
                             </div>
                         </div>
 
@@ -443,6 +415,44 @@
                     <button type="button" class="btn btn-primary" id="review-wrong-btn">
                         <i class="fas fa-times-circle me-1"></i>複習錯題
                     </button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 複習模式選擇 Modal -->
+    <div class="modal fade" id="review-mode-modal" tabindex="-1" aria-labelledby="reviewModeModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered" style="max-width: 360px;">
+            <div class="modal-content border-0 shadow-lg rounded-4">
+                <div class="modal-header border-0 pb-0">
+                    <h6 class="modal-title fw-bold" id="reviewModeModalLabel">
+                        <i class="fas fa-redo me-2 text-success"></i>選擇複習模式
+                    </h6>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body pt-2 pb-3">
+                    <div class="d-grid gap-2">
+                        <button class="btn btn-light text-start px-3 py-3 review-mode-item border rounded-3"
+                            data-review-mode="wrong" data-bs-dismiss="modal">
+                            <i class="fas fa-times-circle me-2 text-danger"></i><strong>錯題複習</strong>
+                            <small class="d-block text-muted ms-4 mt-1">複習之前答錯的題目</small>
+                        </button>
+                        <button class="btn btn-light text-start px-3 py-3 review-mode-item border rounded-3"
+                            data-review-mode="all" data-bs-dismiss="modal">
+                            <i class="fas fa-list me-2 text-primary"></i><strong>全題複習</strong>
+                            <small class="d-block text-muted ms-4 mt-1">系統性複習所有題目</small>
+                        </button>
+                        <button class="btn btn-light text-start px-3 py-3 review-mode-item border rounded-3"
+                            data-review-mode="topic" data-bs-dismiss="modal">
+                            <i class="fas fa-tags me-2 text-warning"></i><strong>主題複習</strong>
+                            <small class="d-block text-muted ms-4 mt-1">按主題分類複習</small>
+                        </button>
+                        <button class="btn btn-light text-start px-3 py-3 review-mode-item border rounded-3"
+                            data-review-mode="random" data-bs-dismiss="modal">
+                            <i class="fas fa-random me-2 text-success"></i><strong>隨機複習</strong>
+                            <small class="d-block text-muted ms-4 mt-1">隨機順序複習</small>
+                        </button>
+                    </div>
                 </div>
             </div>
         </div>

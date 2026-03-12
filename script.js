@@ -2099,11 +2099,6 @@ const iPASQuizApp = {
             return;
         }
 
-        let exportText = "iPAS AI應用規劃師認證考試錯題集\n";
-        exportText += `匯出時間: ${new Date().toLocaleString()}\n`;
-        exportText += `總錯題數: ${this.state.userData.incorrect.length}\n\n`;
-        exportText += "=".repeat(50) + "\n\n";
-
         const incorrectQuestions = this.state.userData.incorrect;
         const questionData = {};
 
@@ -2113,53 +2108,98 @@ const iPASQuizApp = {
             }
         });
 
-        incorrectQuestions.forEach((questionText, i) => {
-            exportText += `【題目 ${i + 1}】\n${questionText}\n\n`;
+        const timestamp = new Date().toISOString().slice(0, 19).replace(/[-:T]/g, '');
+        const exportTime = new Date().toLocaleString();
 
-            if (questionData[questionText]) {
+        if (memberLevel === 'paid_yearly') {
+            // 年費會員：PDF（瀏覽器列印）
+            let html = `<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8">
+<title>iPAS 錯題集</title>
+<style>
+  body { font-family: 'Noto Sans TC', sans-serif; padding: 24px; color: #222; }
+  h1 { font-size: 1.4rem; border-bottom: 2px solid #f5576c; padding-bottom: 8px; }
+  .meta { color: #666; font-size: 0.85rem; margin-bottom: 24px; }
+  .question-block { border: 1px solid #ddd; border-radius: 8px; padding: 16px; margin-bottom: 20px; page-break-inside: avoid; }
+  .q-title { font-weight: bold; margin-bottom: 10px; }
+  .option { padding: 2px 0; }
+  .correct { color: #28a745; font-weight: bold; }
+  .wrong { color: #dc3545; }
+  .explanation { background: #f8f9fa; border-left: 3px solid #6c757d; padding: 10px; margin-top: 10px; font-size: 0.9rem; }
+  @media print { body { padding: 0; } .no-print { display: none; } }
+</style></head><body>
+<h1>iPAS AI應用規劃師認證考試 — 錯題集</h1>
+<div class="meta">匯出時間：${exportTime}｜總錯題數：${incorrectQuestions.length}</div>`;
+
+            incorrectQuestions.forEach((questionText, i) => {
+                html += `<div class="question-block"><div class="q-title">【題目 ${i + 1}】${questionText}</div>`;
                 const data = questionData[questionText];
-
-                const options = data.options || [];
-                if (options.length > 0) {
-                    exportText += "選項:\n";
-                    options.forEach((option, j) => {
-                        exportText += `${String.fromCharCode(65 + j)}. ${option}\n`;
+                if (data) {
+                    (data.options || []).forEach((opt, j) => {
+                        const letter = String.fromCharCode(65 + j);
+                        const isCorrect = letter === (data.correct_answer_letter || '');
+                        const isWrong = letter === (data.user_answer || '') && !isCorrect;
+                        html += `<div class="option ${isCorrect ? 'correct' : isWrong ? 'wrong' : ''}">${letter}. ${opt}</div>`;
                     });
-                    exportText += "\n";
+                    html += `<div style="margin-top:8px">正確答案：<span class="correct">${data.correct_answer_letter || '未知'}</span>　您的答案：<span class="${data.user_answer === data.correct_answer_letter ? 'correct' : 'wrong'}">${data.user_answer || '未知'}</span></div>`;
+                    const config = this.examConfigs[data.database];
+                    html += `<div style="font-size:0.85rem;color:#666">題庫：${config ? config.name : data.database}｜${data.topic || ''}＞${data.subtopic || ''}</div>`;
+                    if (data.explanation) html += `<div class="explanation">解析：${data.explanation}</div>`;
                 }
+                html += `</div>`;
+            });
 
-                exportText += `正確答案: ${data.correct_answer_letter || '未知'}\n`;
-                exportText += `您的答案: ${data.user_answer || '未知'}\n`;
-                const config = this.examConfigs[data.database];
-                exportText += `題庫來源: ${config ? config.name : data.database}\n`;
-                exportText += `主題分類: ${data.topic || '未分類'} > ${data.subtopic || '未分類'}\n`;
+            html += `</body></html>`;
+            const printWin = window.open('', '_blank');
+            printWin.document.write(html);
+            printWin.document.close();
+            printWin.onload = () => { printWin.print(); };
+            this.showAlert('PDF 預覽已開啟，請選擇「另存為 PDF」', 'success');
+        } else {
+            // 免費 / 月費會員：TXT
+            let exportText = "iPAS AI應用規劃師認證考試錯題集\n";
+            exportText += `匯出時間: ${exportTime}\n`;
+            exportText += `總錯題數: ${incorrectQuestions.length}\n\n`;
+            exportText += "=".repeat(50) + "\n\n";
 
-                if (data.explanation) {
-                    exportText += `解析: ${data.explanation}\n`;
+            incorrectQuestions.forEach((questionText, i) => {
+                exportText += `【題目 ${i + 1}】\n${questionText}\n\n`;
+                const data = questionData[questionText];
+                if (data) {
+                    const options = data.options || [];
+                    if (options.length > 0) {
+                        exportText += "選項:\n";
+                        options.forEach((option, j) => {
+                            exportText += `${String.fromCharCode(65 + j)}. ${option}\n`;
+                        });
+                        exportText += "\n";
+                    }
+                    exportText += `正確答案: ${data.correct_answer_letter || '未知'}\n`;
+                    exportText += `您的答案: ${data.user_answer || '未知'}\n`;
+                    const config = this.examConfigs[data.database];
+                    exportText += `題庫來源: ${config ? config.name : data.database}\n`;
+                    exportText += `主題分類: ${data.topic || '未分類'} > ${data.subtopic || '未分類'}\n`;
+                    if (data.explanation) exportText += `解析: ${data.explanation}\n`;
                 }
-            }
+                exportText += "\n" + "-".repeat(50) + "\n\n";
+            });
 
-            exportText += "\n" + "-".repeat(50) + "\n\n";
-        });
+            exportText += "\n建議復習重點:\n";
+            exportText += "1. 重點關注答錯率高的主題\n";
+            exportText += "2. 理解題目背後的商業邏輯\n";
+            exportText += "3. 加強AI應用規劃的實務知識\n";
+            exportText += "4. 定期回顧錯題，避免重複犯錯\n";
 
-        exportText += "\n建議復習重點:\n";
-        exportText += "1. 重點關注答錯率高的主題\n";
-        exportText += "2. 理解題目背後的商業邏輯\n";
-        exportText += "3. 加強AI應用規劃的實務知識\n";
-        exportText += "4. 定期回顧錯題，避免重複犯錯\n";
-
-        const filename = `iPAS_AI應用規劃師_錯題集_${new Date().toISOString().slice(0, 19).replace(/[-:T]/g, '')}.txt`;
-        const blob = new Blob([exportText], { type: 'text/plain;charset=utf-8' });
-
-        const a = document.createElement('a');
-        a.href = URL.createObjectURL(blob);
-        a.download = filename;
-        a.style.display = 'none';
-        document.body.appendChild(a);
-        a.click();
-        document.body.removeChild(a);
-
-        this.showAlert(`錯題已匯出至 ${filename}`, 'success');
+            const filename = `iPAS_AI應用規劃師_錯題集_${timestamp}.txt`;
+            const blob = new Blob([exportText], { type: 'text/plain;charset=utf-8' });
+            const a = document.createElement('a');
+            a.href = URL.createObjectURL(blob);
+            a.download = filename;
+            a.style.display = 'none';
+            document.body.appendChild(a);
+            a.click();
+            document.body.removeChild(a);
+            this.showAlert(`錯題已匯出至 ${filename}`, 'success');
+        }
     },
 
     // 重置學習進度
@@ -2454,6 +2494,10 @@ const UsageManager = {
             if (paidUntil && new Date(paidUntil) <= new Date()) {
                 return 'free'; // 到期降回免費
             }
+            // 區分年費 / 月費
+            if (memberLevel.includes('年費') || memberLevel.includes('yearly') || memberLevel.includes('annual')) {
+                return 'paid_yearly';
+            }
             return 'paid';
         }
         return 'free';
@@ -2493,7 +2537,7 @@ const UsageManager = {
         const limit = this.LIMITS[memberLevel];
 
         // 付費會員無限制
-        if (memberLevel === 'paid') return { allowed: true, memberLevel };
+        if (memberLevel === 'paid' || memberLevel === 'paid_yearly') return { allowed: true, memberLevel };
 
         const currentUsage = this.getUsageCount(limit.period);
         const remaining = limit.count - currentUsage;
@@ -2511,7 +2555,7 @@ const UsageManager = {
     // 取得剩餘次數（用於 UI 顯示）
     getRemainingInfo() {
         const result = this.canUseSystem();
-        if (result.memberLevel === 'paid') {
+        if (result.memberLevel === 'paid' || result.memberLevel === 'paid_yearly') {
             return '無限制 (付費會員)';
         }
         return `${result.remaining}/${result.limit} 次 (${result.period === '今日' ? '今日' : '本月'})`;
@@ -2520,7 +2564,7 @@ const UsageManager = {
     // AI 解析次數控制
     canUseAIExplanation() {
         const memberLevel = this.getMemberLevel();
-        if (memberLevel === 'paid') return { allowed: true, remaining: Infinity };
+        if (memberLevel === 'paid' || memberLevel === 'paid_yearly') return { allowed: true, remaining: Infinity };
         if (memberLevel === 'guest') return { allowed: false, remaining: 0 };
         // free: 3次/天
         const key = `ai_exp_daily_${new Date().toDateString()}`;
@@ -2530,7 +2574,8 @@ const UsageManager = {
     },
 
     incrementAIExplanation() {
-        if (this.getMemberLevel() === 'paid') return;
+        const level = this.getMemberLevel();
+        if (level === 'paid' || level === 'paid_yearly' || level === 'guest') return;
         const key = `ai_exp_daily_${new Date().toDateString()}`;
         const used = parseInt(localStorage.getItem(key) || '0');
         localStorage.setItem(key, (used + 1).toString());
@@ -3059,7 +3104,7 @@ function checkFeatureAccess(feature) {
     const paidFeatures = ['exam', 'export', 'cloud-sync', 'ai-analysis'];
 
     // 如果功能在付費清單中且不是付費會員
-    if (paidFeatures.includes(feature) && memberLevel !== 'paid') {
+    if (paidFeatures.includes(feature) && memberLevel !== 'paid' && memberLevel !== 'paid_yearly') {
 
         // --- 特別處理：免費會員每次考試間隔 5 天冷卻 ---
         if (feature === 'exam' && memberLevel === 'free') {

@@ -271,7 +271,8 @@
                         google_id: data.Google_user_id || data.google_id,
                         email: data.email,
                         member_level: data.member_level || '免費會員',
-                        
+                        paid_until: data.paid_until || '',
+
                         // 元資料
                         login_type: 'google',
                         last_login: new Date().toLocaleString('zh-TW')

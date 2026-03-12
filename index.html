@@ -255,23 +255,39 @@
                                 </button>
                             </div>
                             <!-- 複習模式選擇區 -->
-                            <div class="review-modes mt-2" id="review-modes-section" style="display: none;">
-                                <h6 class="mb-2"><i class="fas fa-redo me-2"></i>複習模式選擇</h6>
-                                <div class="review-mode-item" data-review-mode="wrong" id="review-wrong-mode">
-                                    <i class="fas fa-times-circle me-2"></i>錯題複習
-                                    <small class="d-block text-muted">複習之前答錯的題目</small>
-                                </div>
-                                <div class="review-mode-item" data-review-mode="all" id="review-all-mode">
-                                    <i class="fas fa-list me-2"></i>全題複習
-                                    <small class="d-block text-muted">系統性複習所有題目</small>
-                                </div>
-                                <div class="review-mode-item" data-review-mode="topic" id="review-topic-mode">
-                                    <i class="fas fa-tags me-2"></i>主題複習
-                                    <small class="d-block text-muted">按主題分類複習</small>
-                                </div>
-                                <div class="review-mode-item" data-review-mode="random" id="review-random-mode">
-                                    <i class="fas fa-random me-2"></i>隨機複習
-                                    <small class="d-block text-muted">隨機順序複習</small>
+                            <div class="mt-2" id="review-modes-section" style="display: none;">
+                                <div class="dropdown">
+                                    <button class="btn btn-outline-secondary dropdown-toggle w-100 text-start"
+                                        type="button" id="review-mode-dropdown-btn"
+                                        data-bs-toggle="dropdown" aria-expanded="false">
+                                        <i class="fas fa-redo me-2"></i><span id="review-mode-label">選擇複習模式</span>
+                                    </button>
+                                    <ul class="dropdown-menu w-100 shadow-sm">
+                                        <li>
+                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="wrong">
+                                                <i class="fas fa-times-circle me-2 text-danger"></i><strong>錯題複習</strong>
+                                                <small class="d-block text-muted ps-4">複習之前答錯的題目</small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="all">
+                                                <i class="fas fa-list me-2 text-primary"></i><strong>全題複習</strong>
+                                                <small class="d-block text-muted ps-4">系統性複習所有題目</small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="topic">
+                                                <i class="fas fa-tags me-2 text-warning"></i><strong>主題複習</strong>
+                                                <small class="d-block text-muted ps-4">按主題分類複習</small>
+                                            </a>
+                                        </li>
+                                        <li>
+                                            <a class="dropdown-item review-mode-item py-2" href="#" data-review-mode="random">
+                                                <i class="fas fa-random me-2 text-success"></i><strong>隨機複習</strong>
+                                                <small class="d-block text-muted ps-4">隨機順序複習</small>
+                                            </a>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -473,7 +489,32 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-purple d-none" id="ai-analysis-btn"
+                        style="background:linear-gradient(135deg,#6f42c1,#e83e8c);color:#fff;">
+                        <i class="fas fa-brain me-1"></i>AI 弱點分析報告
+                    </button>
                     <button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI 弱點分析報告 Modal -->
+    <div class="modal fade" id="analysis-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header text-white" style="background:linear-gradient(135deg,#6f42c1,#e83e8c);">
+                    <h5 class="modal-title"><i class="fas fa-brain me-2"></i>AI 弱點分析報告 <span class="badge bg-warning text-dark ms-2" style="font-size:0.7rem;">付費會員專屬</span></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4" id="analysis-content">
+                    <div class="text-center py-5"><div class="spinner-border text-primary"></div></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-outline-primary" id="export-analysis-btn">
+                        <i class="fas fa-download me-1"></i>匯出分析報告
+                    </button>
                 </div>
             </div>
         </div>
@@ -791,9 +832,13 @@
                                             <i class="fas fa-check text-success me-2"></i>
                                             完整學習統計
                                         </li>
+                                        <li class="mb-2">
+                                            <i class="fas fa-check text-success me-2"></i>
+                                            AI 弱點分析報告
+                                        </li>
                                         <li class="mb-2 text-muted">
                                             <i class="fas fa-times text-danger me-2"></i>
-                                            AI 弱點分析
+                                            錯題集匯出 (PDF)
                                         </li>
                                     </ul>
                                     <button class="btn btn-warning w-100 mt-3" onclick="selectPlan('monthly')">

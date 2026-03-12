@@ -473,7 +473,32 @@
                 </div>
                 <div class="modal-footer">
                     <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-purple d-none" id="ai-analysis-btn"
+                        style="background:linear-gradient(135deg,#6f42c1,#e83e8c);color:#fff;">
+                        <i class="fas fa-brain me-1"></i>AI 弱點分析報告
+                    </button>
                     <button type="button" class="btn btn-danger" id="reset-stats-btn">重置學習進度</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- AI 弱點分析報告 Modal -->
+    <div class="modal fade" id="analysis-modal" tabindex="-1">
+        <div class="modal-dialog modal-dialog-centered modal-xl">
+            <div class="modal-content">
+                <div class="modal-header text-white" style="background:linear-gradient(135deg,#6f42c1,#e83e8c);">
+                    <h5 class="modal-title"><i class="fas fa-brain me-2"></i>AI 弱點分析報告 <span class="badge bg-warning text-dark ms-2" style="font-size:0.7rem;">年費專屬</span></h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body p-4" id="analysis-content">
+                    <div class="text-center py-5"><div class="spinner-border text-primary"></div></div>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">關閉</button>
+                    <button type="button" class="btn btn-outline-primary" id="export-analysis-btn">
+                        <i class="fas fa-download me-1"></i>匯出分析報告
+                    </button>
                 </div>
             </div>
         </div>

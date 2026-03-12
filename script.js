@@ -325,6 +325,7 @@ const iPASQuizApp = {
     modals: {
         result: new bootstrap.Modal(document.getElementById('result-modal')),
         stats: new bootstrap.Modal(document.getElementById('stats-modal')),
+        analysis: new bootstrap.Modal(document.getElementById('analysis-modal')),
         help: new bootstrap.Modal(document.getElementById('help-modal')),
         topicSelection: new bootstrap.Modal(document.getElementById('topic-selection-modal')),
         overview: new bootstrap.Modal(document.getElementById('overview-modal')),
@@ -539,6 +540,11 @@ const iPASQuizApp = {
         document.getElementById('review-wrong-btn').addEventListener('click', () => this.reviewWrongQuestions());
         document.getElementById('restart-quiz-btn').addEventListener('click', () => this.restartQuiz());
         document.getElementById('reset-stats-btn').addEventListener('click', () => this.resetProgress());
+        document.getElementById('ai-analysis-btn').addEventListener('click', () => {
+            this.modals.stats.hide();
+            setTimeout(() => this.showWeaknessAnalysis(), 300);
+        });
+        document.getElementById('export-analysis-btn').addEventListener('click', () => this.exportAnalysisReport());
 
         // 結果模態框關閉時返回首頁（複習錯題流程除外）
         document.getElementById('result-modal').addEventListener('hidden.bs.modal', () => {
@@ -2068,7 +2074,250 @@ const iPASQuizApp = {
                 `;
 
         document.getElementById('stats-content').innerHTML = statsHTML;
+        // 年費會員才顯示 AI 弱點分析按鈕
+        const aiBtn = document.getElementById('ai-analysis-btn');
+        if (UsageManager.getMemberLevel() === 'paid_yearly') {
+            aiBtn.classList.remove('d-none');
+        } else {
+            aiBtn.classList.add('d-none');
+        }
         this.modals.stats.show();
+    },
+
+    // ─── AI 弱點分析報告 ────────────────────────────────────────────────
+    showWeaknessAnalysis() {
+        if (UsageManager.getMemberLevel() !== 'paid_yearly') {
+            this.showAlert('AI 弱點分析報告為年費會員專屬功能。', 'warning');
+            return;
+        }
+
+        this.modals.analysis.show();
+        const history = this.state.userData.history || [];
+
+        if (history.length < 10) {
+            document.getElementById('analysis-content').innerHTML = `
+                <div class="text-center py-5 text-muted">
+                    <i class="fas fa-database fa-3x mb-3"></i>
+                    <p>答題數量不足（目前 ${history.length} 題），請至少完成 10 題後再查看分析報告。</p>
+                </div>`;
+            return;
+        }
+
+        // ── 1. 基礎統計 ──
+        const total = history.length;
+        const correct = history.filter(e => e.is_correct).length;
+        const accuracy = (correct / total * 100);
+
+        // ── 2. 主題統計 ──
+        const topicMap = {};
+        const subtopicMap = {};
+        history.forEach(e => {
+            const t = e.topic || '未分類';
+            const st = `${t} > ${e.subtopic || '未分類'}`;
+            if (!topicMap[t]) topicMap[t] = { correct: 0, total: 0 };
+            topicMap[t].total++;
+            if (e.is_correct) topicMap[t].correct++;
+            if (!subtopicMap[st]) subtopicMap[st] = { correct: 0, total: 0, topic: t };
+            subtopicMap[st].total++;
+            if (e.is_correct) subtopicMap[st].correct++;
+        });
+
+        const topicList = Object.entries(topicMap)
+            .map(([name, s]) => ({ name, acc: s.total ? s.correct / s.total * 100 : 0, ...s }))
+            .sort((a, b) => a.acc - b.acc);
+
+        // ── 3. 重複犯錯題目 ──
+        const wrongCount = {};
+        history.filter(e => !e.is_correct).forEach(e => {
+            wrongCount[e.question] = (wrongCount[e.question] || 0) + 1;
+        });
+        const topWrong = Object.entries(wrongCount)
+            .sort((a, b) => b[1] - a[1]).slice(0, 5);
+
+        // ── 4. 學習趨勢（近20筆 vs 整體）──
+        const recent = history.slice(-20);
+        const recentAcc = recent.filter(e => e.is_correct).length / recent.length * 100;
+        const trendDiff = recentAcc - accuracy;
+        const trendLabel = trendDiff > 5 ? '📈 進步中' : trendDiff < -5 ? '📉 需注意' : '📊 穩定';
+        const trendColor = trendDiff > 5 ? '#28a745' : trendDiff < -5 ? '#dc3545' : '#6c757d';
+
+        // ── 5. 考試準備度 ──
+        const weakTopics = topicList.filter(t => t.acc < 60).length;
+        let readiness, readinessColor, readinessBar;
+        if (accuracy >= 80 && total >= 50 && weakTopics === 0) {
+            readiness = '已準備就緒'; readinessColor = '#28a745'; readinessBar = accuracy;
+        } else if (accuracy >= 65) {
+            readiness = '接近準備完成'; readinessColor = '#ffc107'; readinessBar = accuracy;
+        } else {
+            readiness = '需要加強練習'; readinessColor = '#dc3545'; readinessBar = accuracy;
+        }
+
+        // ── 6. 個人化建議 ──
+        const topicAdvice = {
+            '生成式AI基礎': '建議複習 Transformer 架構、GPT 系列模型原理及生成機制',
+            '大型語言模型': '加強 LLM fine-tuning、RLHF 及 RAG 架構的概念理解',
+            '提示工程': '練習 Few-shot、Chain-of-Thought 等 Prompt 技巧，多動手實驗',
+            'AI應用規劃': '重點理解 AI 專案生命週期、ROI 評估與利害關係人管理',
+            '專案管理': '複習 AI 專案風險管理、資源規劃與敏捷開發方法',
+            '機器學習': '加強 Overfitting/Underfitting 辨識、評估指標（F1/AUC）理解',
+            '資料管理': '複習資料治理框架、資料品質管理與隱私法規（GDPR）',
+            '商業分析': '加強 AI 商業模式分析、成本效益分析與市場評估方法',
+        };
+        const recommendations = topicList
+            .filter(t => t.acc < 80)
+            .slice(0, 4)
+            .map(t => ({
+                topic: t.name,
+                acc: t.acc,
+                advice: topicAdvice[t.name] || `加強「${t.name}」相關概念，多做相關練習題`
+            }));
+
+        // ── Render ──
+        const accColor = accuracy >= 80 ? '#28a745' : accuracy >= 60 ? '#ffc107' : '#dc3545';
+
+        const html = `
+        <!-- 考試準備度 -->
+        <div class="row g-3 mb-4">
+            <div class="col-md-4">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body py-4">
+                        <div style="font-size:2.5rem;font-weight:700;color:${accColor}">${accuracy.toFixed(1)}%</div>
+                        <div class="text-muted">整體正確率</div>
+                        <small class="text-muted">${correct} / ${total} 題</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body py-4">
+                        <div style="font-size:1.8rem;font-weight:700;color:${trendColor}">${trendLabel}</div>
+                        <div class="text-muted">近期學習趨勢</div>
+                        <small class="text-muted">近20題：${recentAcc.toFixed(1)}% vs 整體：${accuracy.toFixed(1)}%</small>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card h-100 text-center border-0 shadow-sm">
+                    <div class="card-body py-4">
+                        <div style="font-size:1.4rem;font-weight:700;color:${readinessColor}">${readiness}</div>
+                        <div class="text-muted mb-2">考試準備度</div>
+                        <div class="progress" style="height:10px">
+                            <div class="progress-bar" style="width:${readinessBar}%;background:${readinessColor}"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- 弱點主題排名 -->
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header text-white" style="background:linear-gradient(135deg,#6f42c1,#e83e8c)">
+                <i class="fas fa-exclamation-triangle me-2"></i>弱點主題排名（由弱到強）
+            </div>
+            <div class="card-body">
+                ${topicList.map(t => {
+                    const c = t.acc < 60 ? '#dc3545' : t.acc < 80 ? '#ffc107' : '#28a745';
+                    const label = t.acc < 60 ? '🔴 重點加強' : t.acc < 80 ? '🟡 持續練習' : '🟢 表現良好';
+                    return `
+                    <div class="mb-3">
+                        <div class="d-flex justify-content-between align-items-center mb-1">
+                            <span class="fw-semibold">${t.name}</span>
+                            <span class="badge" style="background:${c}">${t.acc.toFixed(1)}%　${label}</span>
+                        </div>
+                        <div class="progress" style="height:12px">
+                            <div class="progress-bar" style="width:${t.acc}%;background:${c}"></div>
+                        </div>
+                        <small class="text-muted">答對 ${t.correct} / 共 ${t.total} 題</small>
+                    </div>`;
+                }).join('')}
+            </div>
+        </div>
+
+        <!-- 子主題細分（僅顯示弱項） -->
+        ${(() => {
+            const weak = Object.entries(subtopicMap)
+                .map(([name, s]) => ({ name, acc: s.total ? s.correct / s.total * 100 : 0, ...s }))
+                .filter(s => s.acc < 70 && s.total >= 2)
+                .sort((a, b) => a.acc - b.acc)
+                .slice(0, 8);
+            if (weak.length === 0) return '';
+            return `
+            <div class="card border-0 shadow-sm mb-4">
+                <div class="card-header bg-danger text-white">
+                    <i class="fas fa-search me-2"></i>子主題精細分析（正確率 &lt; 70% 且答題 ≥ 2）
+                </div>
+                <div class="card-body p-0">
+                    <table class="table table-hover mb-0">
+                        <thead class="table-light"><tr><th>子主題</th><th>正確率</th><th>答題數</th></tr></thead>
+                        <tbody>
+                            ${weak.map(s => `
+                            <tr>
+                                <td><span class="text-muted small">${s.topic}</span><br>${s.name.split(' > ')[1]}</td>
+                                <td><span class="fw-bold text-danger">${s.acc.toFixed(1)}%</span></td>
+                                <td>${s.total}</td>
+                            </tr>`).join('')}
+                        </tbody>
+                    </table>
+                </div>
+            </div>`;
+        })()}
+
+        <!-- 重複犯錯題目 -->
+        ${topWrong.length > 0 ? `
+        <div class="card border-0 shadow-sm mb-4">
+            <div class="card-header bg-warning text-dark">
+                <i class="fas fa-redo me-2"></i>重複犯錯題目 TOP ${topWrong.length}
+            </div>
+            <div class="card-body">
+                ${topWrong.map(([q, n], i) => `
+                <div class="d-flex align-items-start mb-3 pb-3 ${i < topWrong.length - 1 ? 'border-bottom' : ''}">
+                    <span class="badge bg-danger me-3 mt-1" style="font-size:1rem;min-width:28px">${n}次</span>
+                    <span class="small">${q.length > 100 ? q.slice(0, 100) + '…' : q}</span>
+                </div>`).join('')}
+            </div>
+        </div>` : ''}
+
+        <!-- 個人化學習建議 -->
+        <div class="card border-0 shadow-sm">
+            <div class="card-header text-white" style="background:linear-gradient(135deg,#0d6efd,#6f42c1)">
+                <i class="fas fa-lightbulb me-2"></i>個人化學習建議
+            </div>
+            <div class="card-body">
+                ${recommendations.length === 0
+                    ? '<div class="text-success text-center py-3"><i class="fas fa-trophy me-2"></i>各主題表現均良好，繼續保持！</div>'
+                    : recommendations.map((r, i) => `
+                <div class="mb-3 ${i < recommendations.length - 1 ? 'pb-3 border-bottom' : ''}">
+                    <div class="d-flex align-items-center mb-1">
+                        <span class="badge me-2" style="background:${r.acc < 60 ? '#dc3545' : '#ffc107'}">${r.acc.toFixed(1)}%</span>
+                        <strong>${r.topic}</strong>
+                    </div>
+                    <p class="mb-0 text-muted small"><i class="fas fa-arrow-right me-1"></i>${r.advice}</p>
+                </div>`).join('')}
+                <div class="alert alert-info mt-3 mb-0">
+                    <i class="fas fa-clock me-2"></i><strong>備考提醒：</strong>
+                    建議每天練習 20-30 題，優先攻克弱點主題。${accuracy >= 75 ? ' 目前狀態良好，維持節奏即可！' : ' 目標在考前將整體正確率提升至 80% 以上。'}
+                </div>
+            </div>
+        </div>`;
+
+        document.getElementById('analysis-content').innerHTML = html;
+    },
+
+    exportAnalysisReport() {
+        const content = document.getElementById('analysis-content');
+        if (!content || content.children.length === 0) return;
+        const html = `<!DOCTYPE html><html lang="zh-TW"><head><meta charset="UTF-8">
+<title>AI弱點分析報告</title>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css">
+<style>body{padding:24px;} .card{margin-bottom:16px;} @media print{.no-print{display:none}}</style>
+</head><body>
+<h4 style="color:#6f42c1">iPAS AI應用規劃師 — 弱點分析報告</h4>
+<p class="text-muted">產生時間：${new Date().toLocaleString()}</p>
+<hr>${content.innerHTML}</body></html>`;
+        const win = window.open('', '_blank');
+        win.document.write(html);
+        win.document.close();
+        win.onload = () => win.print();
     },
 
     // 匯出錯題

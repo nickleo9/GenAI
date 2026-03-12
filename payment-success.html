@@ -248,6 +248,7 @@
 
                     if (lineData && lineData.userId) {
                         lineData.memberLevel = '付費會員';
+                        lineData.member_level = '付費會員'; // snake_case 一致
                         localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
                     }
 

@@ -273,7 +273,7 @@ const iPASQuizApp = {
         selectedReviewMode: null,
         selectedTopicsForReview: [],
         explanationMode: 'database',
-        selectedAIModel: 'gpt-4o',
+        selectedAIModel: 'gpt-4o-mini',
         questions: [],
         currentQuestionIndex: 0,
         userAnswers: {},
@@ -1057,7 +1057,7 @@ const iPASQuizApp = {
                 isCorrect: index === question.correct_answer_index // 加上這行來標記哪個是正確選項
             }));
 
-            const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
+            const shuffledOptions = this.shuffleArray([...optionsWithIndex]);
 
             // 找到正確選項在新的隨機數組中的位置，並轉換為字母
             const correctLetter = String.fromCharCode(65 + shuffledOptions.findIndex(opt => opt.isCorrect));

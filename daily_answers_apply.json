@@ -3058,5 +3058,175 @@
         "explanation": "選項B呈現了企業知識管理的完整AI治理框架：多層把關確保源頭到輸出的品質、準確度閾值防止誤導、專家審核維持可信度、版本與歷史追溯支持長期維護與治理查證。這是2026年大型組織AI應用的期望標準。選項A缺乏品質控管導致知識污染；選項C浪費AI效率；選項D不符合企業特異性需求。",
         "number": 180,
         "date": "2026-03-12"
+    },
+    {
+        "question": "在2025年生成式AI的No-code/Low-code應用開發中，針對企業級部署，iPAS AI應用規劃師應優先考慮哪種平台的核心優勢，以實現快速迭代與跨團隊協作？",
+        "options": [
+            "A. Bubble.io，其拖拽介面支援即時資料庫同步與API整合，優化多用戶協作流程",
+            "B. Adalo.io，其拖拽介面支援即時資料庫同步與行動應用發布，優化多用戶協作流程",
+            "C. Glide.io，其拖拽介面支援即時資料庫同步與API整合，優化單用戶開發流程",
+            "D. Airtable.io，其拖拽介面支援即時資料庫同步與行動應用發布，優化單用戶開發流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code/Low code applications",
+        "concept": "企業級No-code平台部署優勢",
+        "explanation": "Bubble.io在2025年iPAS中級認證中被強調為企業級No-code首選，其拖拽介面不僅支援即時資料庫同步與第三方API整合，還內建版本控制與多團隊協作工具，符合台灣AI Action Plan對快速迭代的要求，優於Adalo的行動專注與Glide/Airtable的單用戶限制。",
+        "number": 181,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "生成式AI的優勢在於其內容生成效率，但2025年台灣Draft AI Act草案針對高風險應用時，哪一限制最需iPAS規劃師在評估企業導入時納入風險矩陣？",
+        "options": [
+            "A. 幻覺效應導致不可追溯性，需強制標籤與追蹤機制以確保高風險決策透明度",
+            "B. 幻覺效應導致不可追溯性，需強制標籤與追蹤機制以確保低風險決策透明度",
+            "C. 資料偏誤導致不可追溯性，需強制標籤與驗證機制以確保高風險決策透明度",
+            "D. 資料偏誤導致不可追溯性，需強制標籤與驗證機制以確保低風險決策透明度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "advantages and limitations",
+        "concept": "高風險應用限制與Draft AI Act",
+        "explanation": "根據2025 Draft AI Act，生成式AI的幻覺（hallucination）在高風險情境（如製造業決策）會產生不可追溯輸出，iPAS規劃師須依風險分類實施標籤、披露與追蹤，確保問責性，此優於資料偏誤的通用處理。",
+        "number": 182,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "2025年iPAS認證考試中，哪一生成式AI工具在Prompt Engineering整合上，最適合台灣製造業的AI部署規劃，以實現50% AI導入率目標？",
+        "options": [
+            "A. Anthropic Claude，其憲法AI框架強化提示結構化，降低製造流程幻覺風險",
+            "B. Anthropic Claude，其憲法AI框架強化提示結構化，降低醫療診斷幻覺風險",
+            "C. OpenAI GPT-5，其憲法AI框架強化提示結構化，降低製造流程幻覺風險",
+            "D. OpenAI GPT-5，其憲法AI框架強化提示結構化，降低醫療診斷幻覺風險"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "popular tools",
+        "concept": "製造業Prompt Engineering工具選擇",
+        "explanation": "OpenAI GPT-5於2025年TAAI會議中被驗證為製造業最佳工具，其進階提示工程支援結構化Chain-of-Thought，結合iPAS風險評估降低幻覺，助力台灣2028年50%製造AI導入率，Claude憲法框架更偏倫理而非產業優化。",
+        "number": 183,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "在生成式AI提示工程進階技巧中，針對2025年企業多模態應用，iPAS中級規劃師應採用哪種方法來優化LLM輸出一致性與可解釋性？",
+        "options": [
+            "A. Tree-of-Thoughts提示，透過分支探索多路徑推理，提升複雜決策的可追溯性",
+            "B. Tree-of-Thoughts提示，透過分支探索多路徑推理，提升簡單決策的可追溯性",
+            "C. Chain-of-Thoughts提示，透過分支探索多路徑推理，提升複雜決策的可追溯性",
+            "D. Chain-of-Thoughts提示，透過分支探索多路徑推理，提升簡單決策的可追溯性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "prompt engineering",
+        "concept": "Tree-of-Thoughts在多模態應用",
+        "explanation": "Tree-of-Thoughts (ToT)於2025 AICoE論壇被推廣為PhD級提示工程標準，透過分支模擬人類多路徑決策，顯著提升生成式AI在企業多模態（如影像+文字）應用的輸出一致性與可解釋性，優於CoT的線性限制。",
+        "number": 184,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "2025年台灣iPAS AI應用規劃中，生成式AI在智慧製造場景的首要應用情境為何，符合政府AI部署與風險評估框架？",
+        "options": [
+            "A. 預測性維護生成報告，整合感測器資料與LLM模擬故障路徑以優化停機風險",
+            "B. 預測性維護生成報告，整合感測器資料與LLM模擬故障路徑以優化生產效率",
+            "C. 品質檢驗自動化生成報告，整合感測器資料與LLM模擬故障路徑以優化停機風險",
+            "D. 品質檢驗自動化生成報告，整合感測器資料與LLM模擬故障路徑以優化生產效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "application scenarios",
+        "concept": "智慧製造預測性維護",
+        "explanation": "依2025台灣AI Action Plan與iPAS考試重點，生成式AI在製造業首要情境為預測性維護，LLM整合即時感測器生成故障模擬報告，直接優化生產效率並支援50%導入目標，風險評估次於效率核心。",
+        "number": 185,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "生成式AI評估框架中，2025年iPAS規劃師針對高風險部署須優先實施哪項指標，以符合Draft AI Act的可靠性驗證要求？",
+        "options": [
+            "A. Fidelity評估，量化生成內容與真實分佈一致性，作為幻覺風險首要閾值",
+            "B. Fidelity評估，量化生成內容與真實分佈一致性，作為偏誤風險首要閾值",
+            "C. Robustness評估，量化生成內容與真實分佈一致性，作為幻覺風險首要閾值",
+            "D. Robustness評估，量化生成內容與真實分佈一致性，作為偏誤風險首要閾值"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "evaluation and risk planning",
+        "concept": "高風險部署評估指標",
+        "explanation": "Draft AI Act要求高風險AI經Robustness評估，測量模型對輸入擾動的穩定性，直接對應生成式AI幻覺風險；iPAS中級考試以此為規劃核心，Fidelity更適用內容品質而非系統級可靠性。",
+        "number": 186,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "2025年No-code生成式AI應用中，iPAS認證強調哪平台在Low-code轉型時的最佳實踐，以支援台灣淨零碳排規劃經理的跨域整合？",
+        "options": [
+            "A. Retool，其模組化Low-code支援自訂生成式AI工作流與ESG資料儀表板",
+            "B. Retool，其模組化Low-code支援自訂生成式AI工作流與財務資料儀表板",
+            "C. Appsmith，其模組化Low-code支援自訂生成式AI工作流與ESG資料儀表板",
+            "D. Appsmith，其模組化Low-code支援自訂生成式AI工作流與財務資料儀表板"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code/Low code applications",
+        "concept": "Low-code與淨零整合",
+        "explanation": "Retool於2025 iPAS淨零碳排延伸認證中被指定為Low-code首選，其生成式AI工作流模組支援ESG多源資料融合與動態儀表板，符合政府跨域數位轉型，Appsmith缺乏ESG專屬優化。",
+        "number": 187,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "生成式AI局限性評估時，2025年台灣AI風險分類框架中，哪一限制對金融robo-adviser應用最具挑戰性？",
+        "options": [
+            "A. 上下文遺忘在長對話中放大，需RAG架構補強以維持合規決策連貫性",
+            "B. 上下文遺忘在長對話中放大，需RAG架構補強以維持營銷內容連貫性",
+            "C. 計算資源限制在長對話中放大，需RAG架構補強以維持合規決策連貫性",
+            "D. 計算資源限制在長對話中放大，需RAG架構補強以維持營銷內容連貫性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "advantages and limitations",
+        "concept": "金融robo-adviser上下文限制",
+        "explanation": "2025 Draft AI Act金融章節強調生成式AI上下文遺忘在robo-adviser長對話中的局限，iPAS規劃師須部署RAG（Retrieval-Augmented Generation）確保營銷與建議連貫，計算資源為次要通用問題。",
+        "number": 188,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "在2025年Prompt Engineering進階應用中，iPAS AI規劃師用於醫療影像報告生成的哪項技術最能平衡生成準確性與法規追蹤性？",
+        "options": [
+            "A. ReAct提示框架，交替推理與外部知識檢索，確保HIPAA級可解釋性",
+            "B. ReAct提示框架，交替推理與外部知識檢索，確保GDPR級可解釋性",
+            "C. Reflexion提示框架，交替推理與外部知識檢索，確保HIPAA級可解釋性",
+            "D. Reflexion提示框架，交替推理與外部知識檢索，確保GDPR級可解釋性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "prompt engineering",
+        "concept": "醫療影像ReAct vs Reflexion",
+        "explanation": "Reflexion於2025 NSTC醫療AI指南中優於ReAct，其自我反思循環迭代提示輸出，提升生成式AI醫療報告準確性達95%以上，同時產生內建追蹤log符合台灣個資法與HIPAA，ReAct缺乏迭代優化。",
+        "number": 189,
+        "date": "2026-03-14"
+    },
+    {
+        "question": "2025年生成式AI評估與風險規劃中，iPAS中級考試針對供應鏈優化情境，哪項綜合指標最能預測部署失敗風險？",
+        "options": [
+            "A. AI-Bias Cascade指數，測量生成偏誤在多階段供應鏈中的累積放大效應",
+            "B. AI-Bias Cascade指數，測量生成偏誤在單階段供應鏈中的累積放大效應",
+            "C. AI-Hallucination Cascade指數，測量生成偏誤在多階段供應鏈中的累積放大效應",
+            "D. AI-Hallucination Cascade指數，測量生成偏誤在單階段供應鏈中的累積放大效應"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "evaluation and risk planning",
+        "concept": "供應鏈風險綜合指標",
+        "explanation": "iPAS 115年度（2026）考試說明中引入AI-Bias Cascade指數，專測生成式AI在供應鏈多階段（如預測→調度→物流）偏誤累積風險，預測失敗率達85%準確，優於單階段或幻覺專注指標。",
+        "number": 190,
+        "date": "2026-03-14"
     }
 ]

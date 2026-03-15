@@ -253,9 +253,9 @@
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
+            line-height: 24px;
+            text-align: center;
             font-weight: bold;
             font-size: 0.8rem;
         }
@@ -281,9 +281,9 @@
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
+            line-height: 24px;
+            text-align: center;
             font-weight: bold;
             font-size: 0.8rem;
         }
@@ -299,9 +299,9 @@
             width: 24px;
             height: 24px;
             border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
+            display: inline-block;
+            line-height: 24px;
+            text-align: center;
             font-weight: bold;
             font-size: 0.8rem;
             animation: checkmark 0.3s ease-in-out;

@@ -943,6 +943,8 @@ const iPASQuizApp = {
                 this.elements.quizContainer.classList.remove('d-none');
                 this.elements.quizStatus.style.display = 'block';
                 this.elements.quizStatus.classList.add('active');
+                const modeLabel = this.state.currentMode === 'exam' ? '測驗' : '練習';
+                this.elements.quizStatus.innerHTML = `<i class="fas fa-lock me-1"></i>${modeLabel}進行中`;
 
                 // 模擬考試模式：隱藏題庫選擇區與返回按鈕，保持沉浸感
                 if (this.state.currentMode === 'exam') {
@@ -1057,7 +1059,7 @@ const iPASQuizApp = {
                 isCorrect: index === question.correct_answer_index // 加上這行來標記哪個是正確選項
             }));
 
-            const shuffledOptions = [...optionsWithIndex].sort(() => Math.random() - 0.5);
+            const shuffledOptions = this.shuffleArray(optionsWithIndex);
 
             // 找到正確選項在新的隨機數組中的位置，並轉換為字母
             const correctLetter = String.fromCharCode(65 + shuffledOptions.findIndex(opt => opt.isCorrect));
@@ -1502,7 +1504,7 @@ const iPASQuizApp = {
 
         let resultHTML = `
                     <div class="text-center mb-4">
-                        <h3>📊 ${this.state.currentMode === 'review' ? '複習' : '測驗'}結果</h3>
+                        <h3>📊 ${ this.state.currentMode === 'review' ? '複習' : this.state.currentMode === 'practice' ? '練習' : '測驗'}結果</h3>
                         <div class="progress my-3" style="height: 25px;">
                             <div class="progress-bar ${percentage >= 70 ? 'bg-success' : 'bg-warning'}" 
                                  style="width: ${percentage}%">${percentage}%</div>
@@ -1776,11 +1778,6 @@ const iPASQuizApp = {
             input.disabled = false;
         });
 
-        // 🔥 重新添加自動暫存事件監聽器
-        document.querySelectorAll('input[name="quiz-option"]').forEach(input => {
-            input.addEventListener('change', () => this.autoSaveAnswer());
-        });
-
         this.showAlert('您可以修改答案了，選擇新答案後會自動保存。', 'info');
     },
 
@@ -1922,8 +1919,9 @@ const iPASQuizApp = {
                 score++;
             }
         }
-        const percentage = answered > 0 ? (score / answered * 100).toFixed(1) : 0;
-        this.elements.statsDisplay.textContent = `得分: ${score}/${answered} (${percentage}%)`;
+        const total = this.state.questions.length;
+        const percentage = total > 0 ? (score / total * 100).toFixed(1) : 0;
+        this.elements.statsDisplay.textContent = `得分: ${score}/${total} (${percentage}%)`;
     },
 
     // 顯示統計資料

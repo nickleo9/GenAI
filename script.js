@@ -1212,6 +1212,8 @@ const iPASQuizApp = {
             </div>
         `;
 
+            // 先滾動到解析框位置
+            this._scrollToExplanation();
             // 3 秒後顯示真正的解析
             setTimeout(() => {
                 this._displayExplanationContent(question, userAnswerLetter, isCorrect, resultClass, resultIcon, resultText);
@@ -1220,6 +1222,7 @@ const iPASQuizApp = {
             // 已登入會員直接顯示
             this.elements.explanationBox.classList.remove('d-none');
             this._displayExplanationContent(question, userAnswerLetter, isCorrect, resultClass, resultIcon, resultText);
+            this._scrollToExplanation();
         }
 
         this.elements.topicBadge.textContent = question.topic || '未分類';
@@ -1243,6 +1246,20 @@ const iPASQuizApp = {
         }
 
         this.elements.explanationContent.innerHTML = explanationHTML;
+        this._scrollToExplanation();
+    },
+
+    // 滾動到解析框，確保不被底部導航遮住
+    _scrollToExplanation() {
+        const box = this.elements.explanationBox;
+        if (!box) return;
+        const bottomNavHeight = document.getElementById('bottom-navigation')?.offsetHeight || 80;
+        const boxBottom = box.getBoundingClientRect().bottom;
+        const viewportHeight = window.innerHeight;
+        if (boxBottom > viewportHeight - bottomNavHeight - 10) {
+            const scrollBy = boxBottom - (viewportHeight - bottomNavHeight - 20);
+            window.scrollBy({ top: scrollBy, behavior: 'smooth' });
+        }
     },
 
     // AI生成解析

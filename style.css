@@ -363,7 +363,8 @@
             backdrop-filter: blur(20px);
             border-top: 1px solid rgba(0, 0, 0, 0.1);
             z-index: 1040;
-            padding: 20px 0;
+            padding: 10px 0;
+            padding-bottom: max(10px, env(safe-area-inset-bottom, 10px));
             box-shadow: 0 -4px 20px rgba(0, 0, 0, 0.1);
         }
         
@@ -671,33 +672,44 @@
         
         @media (max-width: 768px) {
             body {
-                margin-bottom: 130px;
+                margin-bottom: 80px;
             }
-            
+
             .main-container {
                 margin: 5px auto;
-                margin-bottom: 140px;
+                margin-bottom: 100px;
                 border-radius: 15px;
                 max-width: 98%;
-                padding-bottom: 50px;
+                padding-bottom: 20px;
+                /* 移除強制最小高度，避免大量空白 */
+                min-height: unset;
             }
-            
+
             .quiz-header {
                 padding: 15px;
                 border-radius: 15px 15px 0 0;
             }
-            
-            .database-selector, .quiz-container, .settings-panel {
+
+            .database-selector, .settings-panel {
                 margin: 10px;
                 padding: 15px;
                 margin-bottom: 20px;
             }
-            
+
+            /* 題目容器需要足夠的底部空間，防止最後選項或解析框被底部導航遮住 */
+            .quiz-container {
+                margin: 10px;
+                padding: 15px;
+                /* 底部 padding 要大於 bottom-nav 高度 (~80px) */
+                padding-bottom: 90px;
+                margin-bottom: 0;
+            }
+
             .database-card {
                 padding: 15px;
                 margin: 8px 0;
             }
-            
+
             .quiz-timer-display {
                 position: fixed;
                 top: 70px;
@@ -705,6 +717,21 @@
                 font-size: 1rem;
                 padding: 10px 15px;
                 min-width: 160px;
+            }
+
+            /* 底部導航按鈕在手機上更緊湊，防止文字換行 */
+            .bottom-nav .btn {
+                font-size: 0.72rem;
+                padding: 7px 3px;
+                min-height: 40px;
+                white-space: nowrap;
+                overflow: hidden;
+            }
+
+            /* 解析框在手機上不限制最大高度，讓內容完整顯示 */
+            .explanation-box {
+                max-height: none;
+                overflow-y: visible;
             }
         }
 

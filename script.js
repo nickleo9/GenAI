@@ -977,6 +977,8 @@ const iPASQuizApp = {
         this.elements.databaseSelector.classList.add('disabled');
         this.elements.settingsPanel.classList.add('disabled');
         this.elements.databaseCards.forEach(card => card.classList.add('disabled'));
+        // 測驗/練習進行中隱藏即時得分
+        this.elements.statsDisplay.classList.add('d-none');
 
         // 🔥 新增：考試模式時加入頁面離開警告
         if (this.state.currentMode === 'exam') {
@@ -1925,10 +1927,14 @@ const iPASQuizApp = {
     },
 
 
-    // 更新統計顯示
+    // 更新統計顯示（測驗/練習進行中不顯示即時得分）
     updateStats() {
+        // 測驗進行中隱藏得分，避免影響作答
+        if (this.state.isQuizActive) {
+            this.elements.statsDisplay.classList.add('d-none');
+            return;
+        }
         let score = 0;
-        const answered = Object.keys(this.state.userAnswers).length;
         for (const index in this.state.userAnswers) {
             const question = this.state.questions[index];
             const userAnswer = this.state.userAnswers[index];
@@ -1939,6 +1945,7 @@ const iPASQuizApp = {
         const total = this.state.questions.length;
         const percentage = total > 0 ? (score / total * 100).toFixed(1) : 0;
         this.elements.statsDisplay.textContent = `得分: ${score}/${total} (${percentage}%)`;
+        this.elements.statsDisplay.classList.remove('d-none');
     },
 
     // 顯示統計資料

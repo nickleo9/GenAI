@@ -273,7 +273,7 @@ const iPASQuizApp = {
         selectedReviewMode: null,
         selectedTopicsForReview: [],
         explanationMode: 'database',
-        selectedAIModel: 'gpt-4o',
+        selectedAIModel: 'gpt-4o-mini',
         questions: [],
         currentQuestionIndex: 0,
         userAnswers: {},

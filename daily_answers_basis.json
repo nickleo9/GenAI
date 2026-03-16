@@ -2888,5 +2888,175 @@
         "explanation": "Q-Learning是強化學習方法，透過狀態-動作價值函數（Q函數）更新策略，使智能體採取行動以最大累積獎勵。",
         "number": 170,
         "date": "2026-03-13"
+    },
+    {
+        "question": "在機器學習中，哪一種技術主要依賴於標記過的資料來訓練模型以進行預測？",
+        "options": [
+            "監督學習利用標記資料來訓練模型，達成預測任務",
+            "非監督學習僅透過資料內部結構來建模，不依賴標記",
+            "強化學習通過獎勵回饋來優化策略，不使用標記資料",
+            "生成式學習通過生成新資料來訓練模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習",
+        "explanation": "監督學習是機器學習中的一種方法，透過有標記的資料來訓練模型，使其能從輸入特徵預測對應的標籤。",
+        "number": 171,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "在資料分析流程中，ETL階段的主要作用是？",
+        "options": [
+            "從資料來源抽取資料，轉換格式，並載入到資料庫或倉儲中",
+            "進行資料視覺化與報告生成",
+            "評估模型效能並優化參數",
+            "保障資料隱私與加密保護"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL代表抽取（Extract）、轉換（Transform）、載入（Load）三個步驟，是資料工程中將原始資料轉成可用格式的關鍵流程。",
+        "number": 172,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "關於鑑別式AI與生成式AI的區分，下列敘述何者正確？",
+        "options": [
+            "鑑別式AI主要是判斷資料屬於哪一類，生成式AI則是創造新資料",
+            "生成式AI專注於分類問題，鑑別式AI則用於生成文本",
+            "鑑別式AI用於資料壓縮，生成式AI用於資料標記",
+            "生成式AI無法應用於自然語言處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "concept": "鑑別式AIvs生成式AI",
+        "explanation": "鑑別式AI專注於區分輸入資料的類別，而生成式AI藉由學習資料分布來生成新的數據樣本。",
+        "number": 173,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "在資料隱私與安全方面，'聯邦學習'的主要特點是？",
+        "options": [
+            "資料不離開本地端，在本地端訓練模型且合併更新參數",
+            "將所有原始資料集中在雲端進行統一訓練",
+            "資料加密後傳送到中央伺服器進行分析",
+            "利用公鑰和私鑰進行資料傳輸保護"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在分散的裝置本地訓練，保護資料隱私，僅共享模型參數而非原始資料。",
+        "number": 174,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "機器學習中，正規化L1與L2技術的主要作用是？",
+        "options": [
+            "控制模型複雜度，以防止過度擬合並提升泛化能力",
+            "增加模型輸出多樣性，提高準確度",
+            "用於處理非結構化資料的特徵擴充",
+            "將資料轉換成One-Hot格式"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "正規化",
+        "explanation": "L1和L2正規化透過加入懲罰項控制模型權重值，避免模型學習到過於複雜的規則，有助於防止過擬合。",
+        "number": 175,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "在AI治理概念中，何謂“Human on loop”？",
+        "options": [
+            "人工參與監控並干預AI決策流程，提高安全與透明度",
+            "完全由AI自主運作，不需人工介入",
+            "AI模型在雲端無人管理下進行自我學習訓練",
+            "只使用人工智慧輔助，不涉及人員決策"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指人工監督AI流程，必要時介入決策，確保系統行為符合倫理與安全規範。",
+        "number": 176,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "在資料來源分類中，下列何者屬於非關聯式資料？",
+        "options": [
+            "文件、影像及多媒體數據，通常不具固定結構",
+            "資料庫中結構化的交易紀錄",
+            "電子表格中格式規整的統計數據",
+            "API回傳的JSON格式數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "關聯式與非關聯式資料",
+        "explanation": "非關聯式資料指無特定結構與關聯的資料類型，包括文字文件、影像、音頻等，與結構化資料相對。",
+        "number": 177,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "以深度學習架構中的Transformer為例，常見的技術挑戰包括？",
+        "options": [
+            "計算資源需求高、梯度消失與爆炸問題導致訓練困難",
+            "無法處理序列資料與時間依賴性問題",
+            "不適合用於自然語言處理與圖像辨識",
+            "固定結構導致模型無法進行微調"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "Transformer模型技術挑戰",
+        "explanation": "Transformer架構雖強大，但計算成本高，且梯度消失與爆炸仍是深度神經網路訓練的常見挑戰。",
+        "number": 178,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "在生成式AI回應中，保持語境一致性的主要技術是？",
+        "options": [
+            "利用RAG檢索增強生成技術將相關資料納入生成過程",
+            "僅依靠訓練完成的固定模型無檢索功能",
+            "隨機生成內容，無法考慮上下文",
+            "只使用先驗資料預測，不使用外部資訊"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "RAG",
+        "explanation": "RAG是結合檢索與生成的技術，透過檢索相關內容輔助生成過程，使AI回應在語境一致性與準確度上更佳。",
+        "number": 179,
+        "date": "2026-03-16"
+    },
+    {
+        "question": "何者最能代表監理沙盒在AI治理中的功能？",
+        "options": [
+            "提供可控環境讓企業測試與驗證AI系統合規性",
+            "為AI模型提供訓練資料的安全庫存",
+            "負責數據加密與隱私保護技術研發",
+            "建立AI模型自動更新的開放平台"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是監管機構提供企業在受控環境中開發與試驗AI應用的平台，促進創新同時保障法規遵循。",
+        "number": 180,
+        "date": "2026-03-16"
     }
 ]

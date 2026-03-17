@@ -3228,5 +3228,175 @@
         "explanation": "iPAS 115年度（2026）考試說明中引入AI-Bias Cascade指數，專測生成式AI在供應鏈多階段（如預測→調度→物流）偏誤累積風險，預測失敗率達85%準確，優於單階段或幻覺專注指標。",
         "number": 190,
         "date": "2026-03-14"
+    },
+    {
+        "question": "下列哪項最能體現No Code工具與生成式AI結合的最新優勢？",
+        "options": [
+            "加速部署自訂表單流程，無需撰寫程式碼",
+            "自動生成大數據平台底層程式碼",
+            "以圖像辨識技術強化IoT裝置安全加密",
+            "強化併購評估模型的資料匯入彈性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code應用",
+        "concept": "No Code優勢",
+        "explanation": "No Code與生成式AI結合的核心優勢之一是無需程式碼即可自訂工作流程或表單，讓非技術用戶也能輕鬆導入AI應用。",
+        "number": 191,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "關於生成式AI風險管理的方法，哪一項敘述最不正確？",
+        "options": [
+            "應優先建立資料隱私隔離策略以防洩密",
+            "對產生內容實施人類審核機制以降低幻覺風險",
+            "完全信任外部AI服務商的合規性",
+            "利用風險矩陣評估導入風險的影響與機率"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI風險管理",
+        "concept": "生成式AI風險控管",
+        "explanation": "外部服務商合規性仍須企業自主審查，不可完全信任，需結合自訂安全及治理機制。",
+        "number": 192,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "以下有關RAG（檢索增強生成）模型應用於企業的優點，何者敘述不正確？",
+        "options": [
+            "提升特定領域知識準確性",
+            "強化外部API資料共用頻率",
+            "支援自訂企業內部知識庫查詢",
+            "降低模型產生幻覺機率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入規劃",
+        "concept": "RAG應用",
+        "explanation": "RAG主要針對提升內部知識查詢與正確率，而非單純強化API資料共用頻率。",
+        "number": 193,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "下列哪一種生成式AI導入評估的重點考量最符合2025產業趨勢？",
+        "options": [
+            "僅以模型新穎度決定導入與否",
+            "根據輸出速度單一指標做評價",
+            "評估ROI並優先小規模試點驗證",
+            "完全與既有ERP系統整合後再啟動"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入評估規劃",
+        "concept": "AI導入流程與ROI",
+        "explanation": "2025產業趨勢強調先用小規模POC試點評估ROI，再決定擴大導入，減少風險。",
+        "number": 194,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "下列何者最符合No Code/Low Code平台未來發展趨勢？",
+        "options": [
+            "只提供靜態資料管理服務",
+            "與生成式AI深度整合提升自動化程度",
+            "以純手動程式開發為主要手段",
+            "僅支援單一產業應用模式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code應用",
+        "concept": "No Code/Low Code未來趨勢",
+        "explanation": "No Code/Low Code平台發展重點在於利用生成式AI自動編輯、原型及自動化應用，非僅限手動或單產業用途。",
+        "number": 195,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "以下哪一種提示詞策略最能有效降低生成型AI的幻覺（hallucination）問題？",
+        "options": [
+            "重複輸入相同行為描述",
+            "明確提供角色身份和情境限制",
+            "只要求系統簡化問題回應",
+            "避免提供任何範例或上下文"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "Prompt Engineering",
+        "explanation": "明確指定角色及情境能讓生成AI聚焦於正確知識範圍，顯著減少幻覺發生。",
+        "number": 196,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "關於生成式AI於虛擬人類應用，最正確的描述為？",
+        "options": [
+            "虛擬人類僅支援單向知識推播",
+            "虛擬人類可用於即時互動客服與資訊導覽",
+            "虛擬人類僅依靠靜態規則庫運作",
+            "虛擬人類不適合應用於行動裝置"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI工具與應用",
+        "concept": "虛擬人類應用",
+        "explanation": "最新虛擬人類服務可即時回應、互動並提供資訊支援，是生成式AI熱門應用之一。",
+        "number": 197,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "生成式AI在精密農業上的主要應用特色為何？",
+        "options": [
+            "僅用於文字報告生成，無實體應用",
+            "分析氣象與土壤資料，優化種植決策",
+            "依賴單一自動灌溉系統作為AI核心",
+            "僅限於農產品線上販售資訊整合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI應用領域",
+        "concept": "精密農業應用",
+        "explanation": "2025新趨勢下，生成式AI能結合氣象、感測數據提供最適種植與收割決策，提升農業效益。",
+        "number": 198,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "下列哪項不是AI生成內容（生成式AI）風險治理未來發展的重要方向？",
+        "options": [
+            "採用可解釋AI對決策進行追蹤與調查",
+            "加強治理倫理框架防止AI誤用",
+            "以自動提示優化(APE)工具替代人類審查",
+            "依循國際及在地合規指引強化內容審查"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI風險管理",
+        "concept": "AI治理趨勢",
+        "explanation": "雖然自動提示優化有助於提升生成品質，但不能完全取代人類審查或治理倫理。",
+        "number": 199,
+        "date": "2026-03-17"
+    },
+    {
+        "question": "針對生成式AI的提示詞（prompt）設計，下列哪一種方法有助於提升模型的正確回答率？",
+        "options": [
+            "僅發送開放式模糊提問不給範例",
+            "給予1-3個具體範例示範正確輸出",
+            "反覆修改問題長度但不調整內容",
+            "限制模型回應僅使用專有名詞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "Few-shot prompting",
+        "explanation": "Few-shot Prompting，即提供具體範例，是2025年重要的生成式AI提示詞策略，能顯著提升模型正確率與可靠性。",
+        "number": 200,
+        "date": "2026-03-17"
     }
 ]

@@ -3228,5 +3228,175 @@
         "explanation": "邊緣AI部署在裝置或本地，強調即時性與隱私，減少依賴雲端，並需考慮硬體資源及能耗。",
         "number": 190,
         "date": "2026-03-18"
+    },
+    {
+        "question": "在監督學習中，哪一項是主要用於回歸問題的損失函數？",
+        "options": [
+            "均方誤差（MSE）",
+            "交叉熵（Cross-Entropy）",
+            "對比損失（Contrastive Loss）",
+            "支持向量機損失（SVM Loss）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "損失函數",
+        "concept": "監督學習回歸損失",
+        "explanation": "均方誤差（MSE）是監督學習中用於回歸問題的常用損失函數，計算預測值與實際值之間差異的平方均值。",
+        "number": 191,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "在資料治理中，「監理沙盒」的主要功能為何？",
+        "options": [
+            "提供模型透明化工具以增強AI可解釋性",
+            "為AI創新應用提供受控的監管測試環境",
+            "限制AI系統資料使用範圍以保護隱私",
+            "實施資料抽取轉換載入(ETL)流程規範"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "監管機制",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是一個受控且受監管的環境，使AI創新應用能在符合規範的情況下進行測試和試驗。",
+        "number": 192,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "下列哪一項最能代表鑑別式AI模型的本質？",
+        "options": [
+            "建模資料的聯合機率以生成新樣本",
+            "直接學習輸入與輸出之間的條件機率分布",
+            "通過強化回饋調整模型策略以最大化報酬",
+            "利用無標籤資料進行資料的自動分群"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式AI與生成式AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別模型",
+        "explanation": "鑑別式AI模型專注於直接學習輸入與對應標籤輸出之間的條件機率分布，而非生成資料的整體分布。",
+        "number": 193,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "在機器學習模型中，L1正則化相較於L2正則化的主要影響是？",
+        "options": [
+            "導致參數逐漸減小但不會變成零",
+            "鼓勵產生稀疏解，使部分參數變為零",
+            "增加模型複雜度以提升擬合能力",
+            "避免參數收斂，促使持續更新"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會鼓勵權重向量變得稀疏，也就是讓部分權重直接變為零，有助於特徵選擇和模型簡化。",
+        "number": 194,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "於資料整理與分析流程中，“ETL”指的是哪三個主要步驟？",
+        "options": [
+            "提取、清洗、載入",
+            "抽取、轉換、載入",
+            "抽取、清理、同步",
+            "提取、處理、同步"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "流程",
+        "concept": "ETL",
+        "explanation": "ETL代表 Extract（抽取）、Transform（轉換）、Load（載入）三個步驟，是資料整理的標準流程。",
+        "number": 195,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "聯邦學習的主要優勢在於？",
+        "options": [
+            "集中儲存大量數據以提高效率",
+            "在多個分散節點協同訓練而不共享原始資料",
+            "使用無監督方法提升模型準確度",
+            "快速合併不同模型的參數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "分散式學習",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習是一種分散式機器學習方法，允許模型在多個節點訓練且不共享原始數據，提升隱私安全。",
+        "number": 196,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "在生成式AI中，變分自編碼器（VAE）的主要功能是？",
+        "options": [
+            "直接計算輸入資料的機率密度",
+            "透過隱變數學習資料的潛在分布以生成新樣本",
+            "使用強化學習策略自我優化決策",
+            "利用分類器識別資料真實標籤"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式AI與生成式AI",
+        "subtopic": "生成模型",
+        "concept": "變分自編碼器",
+        "explanation": "VAE利用隱變數學習資料的潛在分布，並能夠生成與原資料相似的新樣本，屬於生成式模型。",
+        "number": 197,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "以下哪一項描述最符合“Human on loop”概念？",
+        "options": [
+            "完全自主AI系統，無需人類干預",
+            "人類完全控制AI模型的所有決策",
+            "人在決策過程中適時介入以補足AI不足",
+            "AI模型進行自我調整，不涉及人力監控"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "人工監督",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指的是人在AI系統決策流程中能適時介入，以改進或監督模型效果，提高安全與準確性。",
+        "number": 198,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "何者最能代表資料隱私與安全管理中的“最小權限原則”？",
+        "options": [
+            "所有用戶擁有相同的存取權限以簡化管理",
+            "授權時只給予完成任務所需的最低權限範圍",
+            "避免使用身份驗證以提升系統效率",
+            "定期向所有人員開放資料存取以促進透明"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "最小權限原則",
+        "explanation": "最小權限原則是資訊安全的重要措施，僅授權用戶完成工作所需的最低限度權限，降低資安風險。",
+        "number": 199,
+        "date": "2026-03-18"
+    },
+    {
+        "question": "下列哪種AI技術應用最多用於非監督學習中的資料聚類？",
+        "options": [
+            "貝氏分類器（Naive Bayes Classifier）",
+            "叢集分析（Clustering）",
+            "支持向量機（SVM）",
+            "深度增強學習（Deep Reinforcement Learning）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "非監督學習模型",
+        "concept": "叢集分析",
+        "explanation": "叢集分析是一種非監督學習技術，用於將資料分群，識別資料間的隱含結構。",
+        "number": 200,
+        "date": "2026-03-18"
     }
 ]

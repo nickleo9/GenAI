@@ -850,9 +850,9 @@
                     quizData['generative-ai'] = [];
                 }
 
-                // 載入人工智慧基礎概論題庫 (daily_answers_apply.json)
+                // 載入人工智慧基礎概論題庫 (daily_answers_basis.json)
                 try {
-                    const response2 = await fetch('./daily_answers_apply.json');
+                    const response2 = await fetch('./daily_answers_basis.json');
                     if (response2.ok) {
                         const data2 = await response2.json();
                         if (Array.isArray(data2) && data2.length > 0) {
@@ -869,9 +869,9 @@
                     quizData['ai-basis'] = [];
                 }
 
-                // 載入生成式AI應用與規劃題庫 (daily_answers_basis.json)
+                // 載入生成式AI應用與規劃題庫 (daily_answers_apply.json)
                 try {
-                    const response3 = await fetch('./daily_answers_basis.json');
+                    const response3 = await fetch('./daily_answers_apply.json');
                     if (response3.ok) {
                         const data3 = await response3.json();
                         if (Array.isArray(data3) && data3.length > 0) {

@@ -317,7 +317,7 @@
     {
       "parameters": {
         "respondWith": "json",
-        "responseBody": "={\n  \"status\": \"success\",\n  \"message\": \"會員登入成功\",\n  \"needPayment\": false,\n  \"user\": {\n    \"userId\": \"{{ $('處理用戶資料').first().json.line_user_id }}\",\n    \"displayName\": \"{{ $('處理用戶資料').first().json.displayName }}\",\n    \"memberLevel\": \"{{ $json.member_level }}\",\n    \"pictureUrl\": \"{{ $('處理用戶資料').first().json.pictureUrl }}\"\n  },\n  \"creator\": {\n    \"name\": \"Nick Chang\",\n    \"email\": \"nickleo051216@gmail.com\",\n    \"phone\": \"0932-684-051\",\n    \"website\": \"https://portaly.cc/zn.studio\"\n  }\n}",
+        "responseBody": "={\n  \"status\": \"success\",\n  \"message\": \"會員登入成功\",\n  \"needPayment\": false,\n  \"user\": {\n    \"userId\": \"{{ $('處理用戶資料').first().json.line_user_id }}\",\n    \"displayName\": \"{{ $('處理用戶資料').first().json.displayName }}\",\n    \"member_level\": \"{{ $json.member_level }}\",\n    \"paid_until\": \"{{ $json.paid_until }}\",\n    \"pictureUrl\": \"{{ $('處理用戶資料').first().json.pictureUrl }}\"\n  },\n  \"creator\": {\n    \"name\": \"Nick Chang\",\n    \"email\": \"nickleo051216@gmail.com\",\n    \"phone\": \"0932-684-051\",\n    \"website\": \"https://portaly.cc/zn.studio\"\n  }\n}",
         "options": {
           "responseCode": 200,
           "responseHeaders": {

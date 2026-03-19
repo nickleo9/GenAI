@@ -204,7 +204,8 @@
                 const lineData = JSON.parse(localStorage.getItem('ipas_user_data') || '{}');
 
                 const userId = paymentInfo.userId ||
-                               userData.line_user_id ||
+                               paymentInfo.customField1 ||
+                               userData.google_id || userData.userId || userData.email ||
                                lineData.userId;
 
                 if (!userId) {

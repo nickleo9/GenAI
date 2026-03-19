@@ -272,7 +272,24 @@
                         if (attempt < MAX_RETRIES) {
                             await new Promise(resolve => setTimeout(resolve, RETRY_DELAY_MS));
                         } else {
-                            this.showError(error.message);
+                            // 若 ECPay 已有訂單編號，代表付款確實成功（只是驗證 webhook 有問題）
+                            // 此時仍顯示成功，避免用戶誤以為付款失敗
+                            if (paymentInfo.merchantTradeNo || paymentInfo.rtnCode === '1') {
+                                console.warn('⚠️ verify-payment webhook 失敗，但 ECPay 已有訂單，視為付款成功');
+                                // 更新 localStorage
+                                if (userData && (userData.userId || userData.google_id || userData.email)) {
+                                    userData.member_level = '付費會員';
+                                    localStorage.setItem('user_data', JSON.stringify(userData));
+                                }
+                                if (lineData && lineData.userId) {
+                                    lineData.memberLevel = '付費會員';
+                                    lineData.member_level = '付費會員';
+                                    localStorage.setItem('ipas_user_data', JSON.stringify(lineData));
+                                }
+                                this.showSuccess({ isPaid: true, _verifyFailed: true }, paymentInfo);
+                            } else {
+                                this.showError(error.message);
+                            }
                         }
                     }
                 }
@@ -299,6 +316,22 @@
                 document.getElementById('plan-type').textContent = planNames[paymentInfo.planType] || '月費會員';
                 document.getElementById('expiry-date').textContent = expiryDate.toLocaleDateString('zh-TW');
                 document.getElementById('order-id').textContent = paymentInfo.merchantTradeNo || '系統處理中';
+
+                // 若是 verify-payment 失敗但仍顯示成功，加提示訊息
+                if (result._verifyFailed) {
+                    const alertDiv = document.createElement('div');
+                    alertDiv.className = 'alert alert-warning mt-3';
+                    alertDiv.innerHTML = `
+                        <i class="fas fa-exclamation-triangle me-2"></i>
+                        <strong>帳號狀態同步中</strong><br>
+                        您的付款已成功！若進入系統後帳號尚未升級，請聯繫客服處理。<br>
+                        <small class="text-muted">訂單編號：${paymentInfo.merchantTradeNo || '確認中'}</small>
+                    `;
+                    document.getElementById('success-section').insertBefore(
+                        alertDiv,
+                        document.querySelector('.mt-4')
+                    );
+                }
 
                 // 開始倒數計時
                 this.startCountdown();

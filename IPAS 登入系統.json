@@ -10,8 +10,8 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
       "position": [
-        128,
-        160
+        32,
+        -112
       ],
       "id": "f6c7fcb0-9cc4-4a7b-ac73-28c008193076",
       "name": "Webhook1",
@@ -19,13 +19,13 @@
     },
     {
       "parameters": {
-        "jsCode": "// 取得要查詢的 Line User ID\nconst requestData = $input.first().json;\nconst userIdToCheck = $input.first().json.body.userId;\n\nif (!userIdToCheck) {\n  return [{\n    json: {\n      status: 'error',\n      message: '缺少 userId'\n    }\n  }];\n}\n\n// 判斷是 LINE 用戶（U 開頭）還是 Google 用戶\nconst isLineUser = userIdToCheck.startsWith('U');\n\n// 準備查詢條件\nreturn [{\n  json: {\n    searchUserId: userIdToCheck\n  }\n}];"
+        "jsCode": "const userIdToCheck = $input.first().json.body.userId;\nconst emailToCheck = $input.first().json.body.email;\n\nreturn [{ json: {\n    searchUserId: userIdToCheck || '',\n    searchEmail: emailToCheck || ''\n} }];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        352,
-        160
+        384,
+        -160
       ],
       "id": "fe52572c-d92d-4d40-bfd0-b4878ab9dd0a",
       "name": "Code in JavaScript1"
@@ -39,8 +39,8 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.4,
       "position": [
-        1024,
-        160
+        1344,
+        -192
       ],
       "id": "eeea627c-f24f-4424-856b-cba64ed2c0a0",
       "name": "Respond to Webhook1"
@@ -153,7 +153,7 @@
     },
     {
       "parameters": {
-        "jsCode": "// 從 Line Login 取得用戶資料\nconst userData = $input.first().json;\n\n// 檢查必要欄位\nif (!userData.userId) {\n  throw new Error('缺少 Line User ID');\n}\n\n// 準備會員資料\nconst memberData = {\n  line_user_id: userData.userId,\n  displayName: userData.displayName || '未知用戶',\n  email: userData.email || '',\n  member_level: '免費會員',\n  paid_until: '',\n  register_date: new Date().toISOString().split('T')[0],\n  pictureUrl: userData.pictureUrl || ''\n};\n\n// 記錄製作者資訊\nconsole.log('Workflow by Nick Chang | nickleo051216@gmail.com');\n\nreturn [{\n  json: memberData\n}];"
+        "jsCode": "// 從 Line Login 取得用戶資料\nconst userData = $input.first().json;\n\n// 檢查必要欄位\nif (!userData.userId) {\n  throw new Error('缺少 Line User ID');\n}\n\n// 準備會員資料\nconst memberData = {\n  line_user_id: userData.userId,\n  displayName: userData.displayName || '未知用戶',\n  email: userData.email || '',\n  register_date: new Date().toISOString().split('T')[0],\n  pictureUrl: userData.pictureUrl || ''\n};\n\n// 記錄製作者資訊\nconsole.log('Workflow by Nick Chang | nickleo051216@gmail.com');\n\nreturn [{\n  json: memberData\n}];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -716,11 +716,12 @@
           "conditions": [
             {
               "id": "27a00b99-1f0f-4e7d-9389-c1f20d77a7c9",
-              "leftValue": "={{ $items(\"Get a row\").length }}",
+              "leftValue": "={{ $('Get a row').first().json.user_id }}",
               "rightValue": 0,
               "operator": {
-                "type": "number",
-                "operation": "equals"
+                "type": "string",
+                "operation": "empty",
+                "singleValue": true
               }
             }
           ],
@@ -747,7 +748,7 @@
       "type": "n8n-nodes-base.stickyNote",
       "position": [
         -128,
-        784
+        832
       ],
       "typeVersion": 1,
       "id": "c57cbc7a-693e-4ea7-a7ce-acd37e27c447",
@@ -1092,7 +1093,7 @@
       "parameters": {
         "content": "GOOGLE\n",
         "height": 464,
-        "width": 2384
+        "width": 2592
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
@@ -1122,7 +1123,7 @@
       "parameters": {
         "content": "Line 登入系統\n",
         "height": 496,
-        "width": 2624
+        "width": 2832
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
@@ -1188,24 +1189,11 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.4,
       "position": [
-        3040,
+        3248,
         2192
       ],
       "id": "f73e09ce-4b70-41e6-aa0b-d82372d4c09e",
       "name": "Respond to Webhook"
-    },
-    {
-      "parameters": {
-        "jsCode": "// 取得上一步 (Supabase Fetch User) 返回的用戶資料物件\nconst userResponse = $input.item.json;\n\n// 取得第一步 (Webhook) 傳入的 Token 資料\n// 注意：在 n8n 中，您可能需要透過 $node 語法來存取初始 Webhook 的資料\n// 這裡假設我們可以直接從上一個節點的原始輸入取得 tokens\nconst initialData = $input.item.json; \n// 為了簡化，我們假設 Supabase Fetch User 的輸出已經包含了原始的 tokens\n// 但在實際 n8n 中，您可能需要用 $node[\"Webhook\"].json 取得\n\n// 檢查是否成功取得用戶資訊\nif (!userResponse || !userResponse.id) {\n    // 雖然理論上 Webhook Response 應該會處理失敗，但這裡提供一個失敗防護\n    return [{ json: { status: 'error', message: '無法從 Supabase 取得用戶資料' } }];\n}\n\n// 格式化要儲存到 Google Sheets 的資料\nconst formattedData = {\n  // 從 Supabase 的回應中取出核心資料\n  google_id: userResponse.id,\n  email: userResponse.email,\n  // 優先使用 Supabase metadata 中的 name，否則使用 email\n  name: userResponse.user_metadata?.full_name || userResponse.email,\n  avatar_url: userResponse.user_metadata?.avatar_url || '',\n  \n  // 設定預設會員等級 (待 Google Sheets 節點更新或新增)\n  member_level: '免費會員', \n\n  // 記錄時間與 token\n  login_time: new Date().toISOString(),\n  access_token: initialData.access_token, // 假設 token 被帶過來\n  refresh_token: initialData.refresh_token, // 假設 token 被帶過來\n  created_at: new Date().toISOString()\n};\n\nreturn [{ json: formattedData }];\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        576,
-        2192
-      ],
-      "id": "6aaed2cc-b1ca-432a-9cef-dab704a31f35",
-      "name": "Code in JavaScript"
     },
     {
       "parameters": {
@@ -1214,7 +1202,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1024,
+        1232,
         2192
       ],
       "id": "ecee3794-8114-475b-8613-56876a8807fe",
@@ -1296,7 +1284,8 @@
               "defaultMatch": false,
               "display": true,
               "type": "string",
-              "canBeUsedToMatch": true
+              "canBeUsedToMatch": true,
+              "removed": true
             },
             {
               "id": "picture",
@@ -1334,7 +1323,7 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        800,
+        752,
         2192
       ],
       "id": "4e466e1a-8bc0-4297-9362-6d46e9625b6c",
@@ -1348,55 +1337,12 @@
     },
     {
       "parameters": {
-        "method": "POST",
-        "url": "={{ $json.user_data.avatar }}",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        1472,
-        2112
-      ],
-      "id": "27ca6339-f753-4610-812a-b3af22f7f8b6",
-      "name": "HTTP Request",
-      "alwaysOutputData": false
-    },
-    {
-      "parameters": {
-        "method": "PUT",
-        "url": "=https://naftwmajxuoauokuwpaz.supabase.co/storage/v1/object/ipas/google/{{ $json.user_data.google_id }}.jpeg",
-        "sendHeaders": true,
-        "headerParameters": {
-          "parameters": [
-            {
-              "name": "Authorization",
-              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hZnR3bWFqeHVvYXVva3V3cGF6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDk5ODE1OCwiZXhwIjoyMDc2NTc0MTU4fQ.IQTvWiOuWuozhHLeXQ4M7K4rxNWFzVNl-dnTDdiJnQE"
-            }
-          ]
-        },
-        "sendBody": true,
-        "contentType": "binaryData",
-        "inputDataFieldName": "data",
-        "options": {}
-      },
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.2,
-      "position": [
-        1696,
-        2048
-      ],
-      "id": "a70a86b0-76b2-4a48-bec0-2bd1caf4083e",
-      "name": "HTTP Request2"
-    },
-    {
-      "parameters": {
         "jsCode": "// 在 Code in JavaScript4 節點 (將此代碼完整貼入)\n\n// ----------------------------------------------------------------------\n// 💡 確保這些值與您的 Supabase 設定一致\nconst PROJECT_ID = 'naftwmajxuoauokuwpaz'; \nconst BUCKET_NAME = 'ipas'; \n// ----------------------------------------------------------------------\n\n\n// 🎯 修正點 1：安全地獲取原始回應結構 (Code in JavaScript3)\n// 確保您流程中的節點名稱是 'Code in JavaScript3'\n// 這是包含 status, message, needPayment, user_data 的完整結構\nconst originalResponse = $('Code in JavaScript3').first().json.user_data; \nconst originalUserData = $('Code in JavaScript3').first().json.user_data; \n\n\n// 🎯 修正點 2：安全地獲取上傳 Key（來自 HTTP Request2）\n// 確保您流程中的節點名稱是 'HTTP Request2'\nconst uploadResponse = $input.first().json.Key; \n\n// 上傳成功的回應 Key (ipas/google/Studio ZN.jpeg)\nconst uploadResponseKey = $input.first().json.Key; \n\nif (!originalUserData) {\n    throw new Error('流程錯誤：原始回應中缺少 user_data 結構。');\n}\nif (!uploadResponseKey) {\n    throw new Error('上傳 Key 獲取失敗。請檢查 HTTP Request2 節點輸出。');\n}\n\n\n// 3. 組裝公開網址 (Public URL)\n// 網址格式: https://[PROJECT_ID].supabase.co/storage/v1/object/public/[BUCKET_NAME]/[FILE_PATH]\nconst publicUrl = `https://${PROJECT_ID}.supabase.co/storage/v1/object/public/${uploadResponseKey}`;\n\n\n// 4. 更新 user_data 結構 (問題行數已修正！)\noriginalUserData.avatar = publicUrl;\noriginalUserData.pictureUrl = publicUrl;\n\n\n// 5. 返回更新後的完整資料結構\nreturn [{ \n    json: { \n        ...originalResponse, // 保留所有 status, message, paymentUrl 等頂層屬性\n        user_data: originalUserData // 替換為包含新網址的 user_data\n    } \n}];"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1920,
+        2128,
         2048
       ],
       "id": "78cc601d-2e17-4414-a45b-4db94a3830ea",
@@ -1418,7 +1364,7 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        2144,
+        2352,
         2192
       ],
       "id": "fec5ba71-5024-4c1a-baa1-22d282d7e223",
@@ -1459,7 +1405,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        2368,
+        2576,
         2192
       ],
       "id": "6c906e44-6e5b-46ca-a8dc-e174dfd67b03",
@@ -1468,13 +1414,13 @@
     {
       "parameters": {
         "content": "✅ 判斷用戶是否為付費會員\n✅ 控制功能顯示/隱藏\n✅ 決定何時顯示升級按鈕",
-        "height": 320,
-        "width": 1248
+        "height": 624,
+        "width": 1456
       },
       "type": "n8n-nodes-base.stickyNote",
       "position": [
         0,
-        0
+        -304
       ],
       "typeVersion": 1,
       "id": "247e917a-0903-44d9-bfd4-14c3cb9a716f",
@@ -1532,7 +1478,7 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        2816,
+        3024,
         2096
       ],
       "id": "aafc4de5-352f-4d9a-a999-a234a5b83c46",
@@ -1579,7 +1525,7 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        2592,
+        2800,
         2096
       ],
       "id": "9ee7ce04-f655-4db3-a81e-58e8a9a9e30a",
@@ -1619,7 +1565,7 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.2,
       "position": [
-        1248,
+        1456,
         2192
       ],
       "id": "97e5723b-48ef-4735-89d5-abe823806da9",
@@ -1632,7 +1578,7 @@
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        1920,
+        2128,
         2336
       ],
       "id": "ef1964f2-0a5d-4c08-8222-3bfd97b46e6d",
@@ -1683,7 +1629,7 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        2816,
+        3024,
         2288
       ],
       "id": "2bc2721d-fbad-4f8a-a7ee-3bb87c04d3ed",
@@ -1788,7 +1734,7 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        1728,
+        1936,
         304
       ],
       "id": "71eb6c93-4f61-432b-a002-77833f368895",
@@ -1846,19 +1792,6 @@
     },
     {
       "parameters": {
-        "jsCode": "\n// ===== 綠界金鑰 =====\nconst HASH_KEY = 'jR0x6VkCq8XyCKPV';\nconst HASH_IV = '8FEOgzZkipv14N1H';\n\n// ===== 取得綠界 POST 過來的資料 =====\nconst ecpayData = $json.body;\n\nconsole.log('收到綠界付款結果通知:', JSON.stringify(ecpayData, null, 2));\n\n// ===== 綠界專用 URL Encode =====\nfunction ecpayUrlEncode(str) {\n    let encoded = encodeURIComponent(str);\n    encoded = encoded.replace(/%2d/gi, '-').replace(/%5f/gi, '_').replace(/%2e/gi, '.')\n        .replace(/%21/gi, '!').replace(/%2a/gi, '*').replace(/%28/gi, '(')\n        .replace(/%29/gi, ')').replace(/%20/gi, '+');\n    return encoded;\n}\n\n// ===== 純 JS 版 MD5 實作 =====\nfunction md5(string) {\n    function rotateLeft(lValue, iShiftBits) { return (lValue << iShiftBits) | (lValue >>> (32 - iShiftBits)); }\n    function addUnsigned(lX, lY) {\n        var lX8, lY8, lX4, lY4, lResult;\n        lX8 = (lX & 0x80000000); lY8 = (lY & 0x80000000);\n        lX4 = (lX & 0x40000000); lY4 = (lY & 0x40000000);\n        lResult = (lX & 0x3FFFFFFF) + (lY & 0x3FFFFFFF);\n        if (lX4 & lY4) return (lResult ^ 0x80000000 ^ lX8 ^ lY8);\n        if (lX4 | lY4) {\n            if (lResult & 0x40000000) return (lResult ^ 0xC0000000 ^ lX8 ^ lY8);\n            else return (lResult ^ 0x40000000 ^ lX8 ^ lY8);\n        } else return (lResult ^ lX8 ^ lY8);\n    }\n    function F(x, y, z) { return (x & y) | ((~x) & z); }\n    function G(x, y, z) { return (x & z) | (y & (~z)); }\n    function H(x, y, z) { return (x ^ y ^ z); }\n    function I(x, y, z) { return (y ^ (x | (~z))); }\n    function FF(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(F(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function GG(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(G(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function HH(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(H(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function II(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(I(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function convertToWordArray(string) {\n        var lWordCount;\n        var lMessageLength = string.length;\n        var lNumberOfWords_Temp1 = lMessageLength + 8;\n        var lNumberOfWords_Temp2 = (lNumberOfWords_Temp1 - (lNumberOfWords_Temp1 % 64)) / 64;\n        var lNumberOfWords = (lNumberOfWords_Temp2 + 1) * 16;\n        var lWordArray = Array(lNumberOfWords);\n        var lBytePosition = 0;\n        var lByteCount = 0;\n        while (lByteCount < lMessageLength) {\n            lWordCount = (lByteCount - (lByteCount % 4)) / 4;\n            lBytePosition = (lByteCount % 4) * 8;\n            lWordArray[lWordCount] = (lWordArray[lWordCount] | (string.charCodeAt(lByteCount) << lBytePosition));\n            lByteCount++;\n        }\n        lWordCount = (lByteCount - (lByteCount % 4)) / 4;\n        lBytePosition = (lByteCount % 4) * 8;\n        lWordArray[lWordCount] = lWordArray[lWordCount] | (0x80 << lBytePosition);\n        lWordArray[lNumberOfWords - 2] = lMessageLength << 3;\n        lWordArray[lNumberOfWords - 1] = lMessageLength >>> 29;\n        return lWordArray;\n    }\n    function wordToHex(lValue) {\n        var WordToHexValue = \"\", WordToHexValue_Temp = \"\", lByte, lCount;\n        for (lCount = 0; lCount <= 3; lCount++) {\n            lByte = (lValue >>> (lCount * 8)) & 255;\n            WordToHexValue_Temp = \"0\" + lByte.toString(16);\n            WordToHexValue = WordToHexValue + WordToHexValue_Temp.substr(WordToHexValue_Temp.length - 2, 2);\n        }\n        return WordToHexValue;\n    }\n    function utf8Encode(string) {\n        string = string.replace(/\\r\\n/g, \"\\n\");\n        var utftext = \"\";\n        for (var n = 0; n < string.length; n++) {\n            var c = string.charCodeAt(n);\n            if (c < 128) {\n                utftext += String.fromCharCode(c);\n            } else if ((c > 127) && (c < 2048)) {\n                utftext += String.fromCharCode((c >> 6) | 192);\n                utftext += String.fromCharCode((c & 63) | 128);\n            } else {\n                utftext += String.fromCharCode((c >> 12) | 224);\n                utftext += String.fromCharCode(((c >> 6) & 63) | 128);\n                utftext += String.fromCharCode((c & 63) | 128);\n            }\n        }\n        return utftext;\n    }\n    var x = Array();\n    var k, AA, BB, CC, DD, a, b, c, d;\n    var S11 = 7, S12 = 12, S13 = 17, S14 = 22;\n    var S21 = 5, S22 = 9, S23 = 14, S24 = 20;\n    var S31 = 4, S32 = 11, S33 = 16, S34 = 23;\n    var S41 = 6, S42 = 10, S43 = 15, S44 = 21;\n    string = utf8Encode(string);\n    x = convertToWordArray(string);\n    a = 0x67452301; b = 0xEFCDAB89; c = 0x98BADCFE; d = 0x10325476;\n    for (k = 0; k < x.length; k += 16) {\n        AA = a; BB = b; CC = c; DD = d;\n        a = FF(a, b, c, d, x[k + 0], S11, 0xD76AA478); d = FF(d, a, b, c, x[k + 1], S12, 0xE8C7B756);\n        c = FF(c, d, a, b, x[k + 2], S13, 0x242070DB); b = FF(b, c, d, a, x[k + 3], S14, 0xC1BDCEEE);\n        a = FF(a, b, c, d, x[k + 4], S11, 0xF57C0FAF); d = FF(d, a, b, c, x[k + 5], S12, 0x4787C62A);\n        c = FF(c, d, a, b, x[k + 6], S13, 0xA8304613); b = FF(b, c, d, a, x[k + 7], S14, 0xFD469501);\n        a = FF(a, b, c, d, x[k + 8], S11, 0x698098D8); d = FF(d, a, b, c, x[k + 9], S12, 0x8B44F7AF);\n        c = FF(c, d, a, b, x[k + 10], S13, 0xFFFF5BB1); b = FF(b, c, d, a, x[k + 11], S14, 0x895CD7BE);\n        a = FF(a, b, c, d, x[k + 12], S11, 0x6B901122); d = FF(d, a, b, c, x[k + 13], S12, 0xFD987193);\n        c = FF(c, d, a, b, x[k + 14], S13, 0xA679438E); b = FF(b, c, d, a, x[k + 15], S14, 0x49B40821);\n        a = GG(a, b, c, d, x[k + 1], S21, 0xF61E2562); d = GG(d, a, b, c, x[k + 6], S22, 0xC040B340);\n        c = GG(c, d, a, b, x[k + 11], S23, 0x265E5A51); b = GG(b, c, d, a, x[k + 0], S24, 0xE9B6C7AA);\n        a = GG(a, b, c, d, x[k + 5], S21, 0xD62F105D); d = GG(d, a, b, c, x[k + 10], S22, 0x02441453);\n        c = GG(c, d, a, b, x[k + 15], S23, 0xD8A1E681); b = GG(b, c, d, a, x[k + 4], S24, 0xE7D3FBC8);\n        a = GG(a, b, c, d, x[k + 9], S21, 0x21E1CDE6); d = GG(d, a, b, c, x[k + 14], S22, 0xC33707D6);\n        c = GG(c, d, a, b, x[k + 3], S23, 0xF4D50D87); b = GG(b, c, d, a, x[k + 8], S24, 0x455A14ED);\n        a = GG(a, b, c, d, x[k + 13], S21, 0xA9E3E905); d = GG(d, a, b, c, x[k + 2], S22, 0xFCEFA3F8);\n        c = GG(c, d, a, b, x[k + 7], S23, 0x676F02D9); b = GG(b, c, d, a, x[k + 12], S24, 0x8D2A4C8A);\n        a = HH(a, b, c, d, x[k + 5], S31, 0xFFFA3942); d = HH(d, a, b, c, x[k + 8], S32, 0x8771F681);\n        c = HH(c, d, a, b, x[k + 11], S33, 0x6D9D6122); b = HH(b, c, d, a, x[k + 14], S34, 0xFDE5380C);\n        a = HH(a, b, c, d, x[k + 1], S31, 0xA4BEEA44); d = HH(d, a, b, c, x[k + 4], S32, 0x4BDECFA9);\n        c = HH(c, d, a, b, x[k + 7], S33, 0xF6BB4B60); b = HH(b, c, d, a, x[k + 10], S34, 0xBEBFBC70);\n        a = HH(a, b, c, d, x[k + 13], S31, 0x289B7EC6); d = HH(d, a, b, c, x[k + 0], S32, 0xEAA127FA);\n        c = HH(c, d, a, b, x[k + 3], S33, 0xD4EF3085); b = HH(b, c, d, a, x[k + 6], S34, 0x04881D05);\n        a = HH(a, b, c, d, x[k + 9], S31, 0xD9D4D039); d = HH(d, a, b, c, x[k + 12], S32, 0xE6DB99E5);\n        c = HH(c, d, a, b, x[k + 15], S33, 0x1FA27CF8); b = HH(b, c, d, a, x[k + 2], S34, 0xC4AC5665);\n        a = II(a, b, c, d, x[k + 0], S41, 0xF4292244); d = II(d, a, b, c, x[k + 7], S42, 0x432AFF97);\n        c = II(c, d, a, b, x[k + 14], S43, 0xAB9423A7); b = II(b, c, d, a, x[k + 5], S44, 0xFC93A039);\n        a = II(a, b, c, d, x[k + 12], S41, 0x655B59C3); d = II(d, a, b, c, x[k + 3], S42, 0x8F0CCC92);\n        c = II(c, d, a, b, x[k + 10], S43, 0xFFEFF47D); b = II(b, c, d, a, x[k + 1], S44, 0x85845DD1);\n        a = II(a, b, c, d, x[k + 8], S41, 0x6FA87E4F); d = II(d, a, b, c, x[k + 15], S42, 0xFE2CE6E0);\n        c = II(c, d, a, b, x[k + 6], S43, 0xA3014314); b = II(b, c, d, a, x[k + 13], S44, 0x4E0811A1);\n        a = II(a, b, c, d, x[k + 4], S41, 0xF7537E82); d = II(d, a, b, c, x[k + 11], S42, 0xBD3AF235);\n        c = II(c, d, a, b, x[k + 2], S43, 0x2AD7D2BB); b = II(b, c, d, a, x[k + 9], S44, 0xEB86D391);\n        a = addUnsigned(a, AA); b = addUnsigned(b, BB); c = addUnsigned(c, CC); d = addUnsigned(d, DD);\n    }\n    var temp = wordToHex(a) + wordToHex(b) + wordToHex(c) + wordToHex(d);\n    return temp.toLowerCase();\n}\n\n// ===== 驗證 CheckMacValue =====\nfunction verifyCheckMacValue(data, hashKey, hashIv) {\n    const receivedCheckMac = data.CheckMacValue;\n\n    // 複製並移除 CheckMacValue\n    const params = { ...data };\n    delete params.CheckMacValue;\n\n    // 按 key 排序\n    const sortedKeys = Object.keys(params).sort();\n\n    // 組成字串\n    let checkStr = `HashKey=${hashKey}&`;\n    for (const key of sortedKeys) {\n        checkStr += `${key}=${params[key]}&`;\n    }\n    checkStr += `HashIV=${hashIv}`;\n\n    // URL encode → 轉小寫 → MD5 → 轉大寫\n    checkStr = ecpayUrlEncode(checkStr);\n    checkStr = checkStr.toLowerCase();\n    const calculatedCheckMac = md5(checkStr).toUpperCase();\n\n    console.log('收到的 CheckMacValue:', receivedCheckMac);\n    console.log('計算的 CheckMacValue:', calculatedCheckMac);\n\n    return receivedCheckMac === calculatedCheckMac;\n}\n\n// ===== 執行驗證 =====\nconst isValid = verifyCheckMacValue(ecpayData, HASH_KEY, HASH_IV);\nconst isPaid = ecpayData.RtnCode === '1';\n\n// ===== 回傳結果 =====\nreturn {\n    json: {\n        isValid: isValid,\n        isPaid: isPaid,\n        orderId: ecpayData.MerchantTradeNo || '',\n        ecpayTradeNo: ecpayData.TradeNo || '',\n        rtnCode: ecpayData.RtnCode || '',\n        rtnMsg: ecpayData.RtnMsg || '',\n        tradeAmt: ecpayData.TradeAmt || '',\n        paymentDate: ecpayData.PaymentDate || '',\n        paymentType: ecpayData.PaymentType || '',\n        rawData: ecpayData\n    }\n};\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        0,
-        3088
-      ],
-      "id": "0e8e58a8-4fb3-4796-a2c5-c9b637659d89",
-      "name": "Code in JavaScript6"
-    },
-    {
-      "parameters": {
         "httpMethod": "POST",
         "path": "ipas-pay-result",
         "responseMode": "responseNode",
@@ -1867,115 +1800,12 @@
       "type": "n8n-nodes-base.webhook",
       "typeVersion": 2.1,
       "position": [
-        -256,
-        3088
+        -208,
+        3328
       ],
       "id": "47021b38-c5b1-4d35-835b-491ebafbff08",
       "name": "付款完成",
       "webhookId": "c8c7bc99-dfde-47d7-87c2-c7d3dd3fa4c6"
-    },
-    {
-      "parameters": {
-        "respondWith": "text",
-        "responseBody": "=<html><head><meta charset=\"utf-8\"><title>付款成功</title></head><body><p>付款成功，正在跳轉...</p><script>window.location.href='https://nickleo9.github.io/GenAI/payment-success.html?payment=success&planType={{ $(\"金流\").first().json.body.plan }}&orderId={{ $(\"Code in JavaScript6\").first().json.orderId }}';\n';</script></body></html>",
-        "options": {
-          "responseHeaders": {
-            "entries": [
-              {
-                "name": "Content-Type",
-                "value": "text/html; charset=utf-8"
-              }
-            ]
-          }
-        }
-      },
-      "type": "n8n-nodes-base.respondToWebhook",
-      "typeVersion": 1.5,
-      "position": [
-        560,
-        3072
-      ],
-      "id": "da7e6a04-815d-4b0b-a562-c39fd5909a49",
-      "name": "Respond to Webhook3"
-    },
-    {
-      "parameters": {
-        "operation": "update",
-        "tableId": "users",
-        "filters": {
-          "conditions": [
-            {
-              "keyName": "orderId",
-              "condition": "eq",
-              "keyValue": "={{ $json.rawData.MerchantTradeNo }}"
-            }
-          ]
-        },
-        "fieldsUi": {
-          "fieldValues": [
-            {
-              "fieldId": "member_level",
-              "fieldValue": "付費會員"
-            },
-            {
-              "fieldId": "paid_until",
-              "fieldValue": "={{ $('Code in JavaScript6').first().json.tradeAmt >= 1999\n   ? $now.plus(365, 'days').toISO()\n   : $now.plus(30, 'days').toISO() }}"
-            }
-          ]
-        }
-      },
-      "type": "n8n-nodes-base.supabase",
-      "typeVersion": 1,
-      "position": [
-        560,
-        2912
-      ],
-      "id": "fe47fedc-5a79-4dd5-8a8d-d5d0ac5e17e2",
-      "name": "Update a row",
-      "credentials": {
-        "supabaseApi": {
-          "id": "RFeqT1SHp7ich50Q",
-          "name": "nickleo051216 ipas"
-        }
-      }
-    },
-    {
-      "parameters": {
-        "operation": "update",
-        "tableId": "users",
-        "matchType": "allFilters",
-        "filters": {
-          "conditions": [
-            {
-              "keyName": "user_id",
-              "condition": "eq",
-              "keyValue": "={{ $('金流').item.json.body.userId }}"
-            }
-          ]
-        },
-        "fieldsUi": {
-          "fieldValues": [
-            {
-              "fieldId": "orderId",
-              "fieldValue": "={{ $json.ecpayParams.MerchantTradeNo }}"
-            }
-          ]
-        }
-      },
-      "type": "n8n-nodes-base.supabase",
-      "typeVersion": 1,
-      "position": [
-        544,
-        2592
-      ],
-      "id": "c29053c5-fe26-4047-a075-b70d58509474",
-      "name": "Update a row1",
-      "credentials": {
-        "supabaseApi": {
-          "id": "RFeqT1SHp7ich50Q",
-          "name": "nickleo051216 ipas"
-        }
-      }
     },
     {
       "parameters": {
@@ -1997,9 +1827,9 @@
         "columns": {
           "mappingMode": "defineBelow",
           "value": {
-            "google_id": "={{ $('Update a row').first().json.user_id }}",
+            "google_id": "={{ $json.Google_user_id }}",
             "member_level": "付費會員",
-            "paid_until": "={{ $json.paid_until }}"
+            "paid_until": "={{ $('計算付費到期日').first().json.paid_until }}"
           },
           "matchingColumns": [
             "google_id"
@@ -2104,8 +1934,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1040,
-        2992
+        1168,
+        2928
       ],
       "id": "23b82aff-dfe7-49d4-94a4-b1d4d0f16822",
       "name": "更新 google 帳號變成付費會員",
@@ -2138,7 +1968,7 @@
           "value": {
             "line_user_id": "={{ $json.user_id }}",
             "member_level": "付費會員",
-            "paid_until": "={{ $json.paid_until }}"
+            "paid_until": "={{ $('計算付費到期日').first().json.paid_until }}"
           },
           "matchingColumns": [
             "line_user_id"
@@ -2233,8 +2063,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1024,
-        2736
+        1328,
+        3152
       ],
       "id": "2290617e-6eb1-4567-a994-b4df799ab102",
       "name": "更新 line 變成付費會員",
@@ -2320,8 +2150,8 @@
       "type": "n8n-nodes-base.if",
       "typeVersion": 2.3,
       "position": [
-        208,
-        3088
+        224,
+        3040
       ],
       "id": "27a26320-6e0d-4dc2-a3c1-08adb44668be",
       "name": "If1"
@@ -2335,7 +2165,7 @@
             "entries": [
               {
                 "name": "Content-Type",
-                "value": "text/html; charset=utf-8"
+                "value": "application/json; charset=utf-8"
               }
             ]
           }
@@ -2344,45 +2174,11 @@
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,
       "position": [
-        576,
-        3264
+        656,
+        3232
       ],
       "id": "5b127ce5-1d9b-4cd7-9a8a-efeb40ba639d",
       "name": "驗證失敗"
-    },
-    {
-      "parameters": {
-        "conditions": {
-          "options": {
-            "caseSensitive": true,
-            "leftValue": "",
-            "typeValidation": "strict",
-            "version": 3
-          },
-          "conditions": [
-            {
-              "id": "97fa8f06-38fd-419b-b487-91c1a1de6842",
-              "leftValue": "={{ $json.user_id.startsWith('U') }}",
-              "rightValue": "True",
-              "operator": {
-                "type": "string",
-                "operation": "equals",
-                "name": "filter.operator.equals"
-              }
-            }
-          ],
-          "combinator": "and"
-        },
-        "options": {}
-      },
-      "type": "n8n-nodes-base.if",
-      "typeVersion": 2.3,
-      "position": [
-        736,
-        2912
-      ],
-      "id": "cf3f6597-3d3f-4ed0-a6d6-a8125b582330",
-      "name": "LINE 用戶是 U 開頭"
     },
     {
       "parameters": {
@@ -2400,8 +2196,8 @@
       "type": "n8n-nodes-base.supabase",
       "typeVersion": 1,
       "position": [
-        576,
-        160
+        816,
+        -288
       ],
       "id": "f9c96fa9-5944-41e4-bd11-22789052f3bc",
       "name": "Get a row2",
@@ -2415,29 +2211,16 @@
     },
     {
       "parameters": {
-        "jsCode": "const userData = $input.first().json;\n\n// Supabase 空結果通常回傳空陣列\nif (!userData || (Array.isArray(userData) && userData.length === 0)) {\n  return [{ json: { status: 'not_found', memberLevel: '免費會員', isPaid: false } }];\n}\n\nconst user = Array.isArray(userData) ? userData[0] : userData;\n\nconst isPaid = (\n  user.member_level === '付費會員' &&\n  (!user.paid_until || new Date(user.paid_until) > new Date())\n);\n\nreturn [{ json: {\n  status: 'found',\n  memberLevel: isPaid ? '付費會員' : '免費會員',\n  isPaid,\n  paid_until: user.paid_until || '',\n  userId: user.user_id,\n  displayName: user.displayName\n} }];\n"
+        "jsCode": "// 嘗試從有執行的那個路徑拿資料\nlet userData;\ntry {\n  userData = $('Get a row2').first().json;\n} catch (e) {\n  // Get a row2 沒執行，改從 Get a row3 拿\n  userData = $('Get a row3').first().json;\n}\n\n// Supabase 空結果通常回傳空陣列\nif (!userData || (Array.isArray(userData) && userData.length === 0)) {\n  return [{ json: { status: 'not_found', memberLevel: '免費會員', isPaid: false } }];\n}\n\nconst user = Array.isArray(userData) ? userData[0] : userData;\n\nconst isPaid = (\n  user.member_level === '付費會員' &&\n  (!user.paid_until || new Date(user.paid_until) > new Date())\n);\n\nreturn [{ json: {\n  status: 'found',\n  memberLevel: isPaid ? '付費會員' : '免費會員',\n  isPaid,\n  paid_until: user.paid_until || '',\n  userId: user.user_id,\n  displayName: user.displayName\n} }];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
       "position": [
-        800,
-        160
+        1088,
+        -192
       ],
       "id": "1f5a1f03-690d-4072-9756-991594a1a661",
       "name": "Code in JavaScript2"
-    },
-    {
-      "parameters": {
-        "jsCode": "const data = $input.first().json;\nconst isPaid = (\n  data.member_level === '付費會員' &&\n  (!data.paid_until || new Date(data.paid_until) > new Date())\n);\nreturn [{ json: { ...data, isPaid } }];\n"
-      },
-      "type": "n8n-nodes-base.code",
-      "typeVersion": 2,
-      "position": [
-        1696,
-        672
-      ],
-      "id": "c65bf320-6dd5-4271-ba15-28aa52369f71",
-      "name": "Code in JavaScript7"
     },
     {
       "parameters": {
@@ -2468,8 +2251,8 @@
       "type": "n8n-nodes-base.googleSheets",
       "typeVersion": 4.7,
       "position": [
-        1392,
-        544
+        1424,
+        672
       ],
       "id": "8051e886-cd6d-4599-8152-92bc75de702e",
       "name": "Get row(s) in sheet",
@@ -2479,6 +2262,839 @@
           "name": "nickleo3"
         }
       }
+    },
+    {
+      "parameters": {
+        "jsCode": "// 取得上一步 (Supabase Fetch User) 返回的用戶資料物件\nconst userResponse = $input.item.json;\n\n// 取得第一步 (Webhook) 傳入的 Token 資料\n// 注意：在 n8n 中，您可能需要透過 $node 語法來存取初始 Webhook 的資料\n// 這裡假設我們可以直接從上一個節點的原始輸入取得 tokens\nconst initialData = $input.item.json; \n// 為了簡化，我們假設 Supabase Fetch User 的輸出已經包含了原始的 tokens\n// 但在實際 n8n 中，您可能需要用 $node[\"Webhook\"].json 取得\n\n// 檢查是否成功取得用戶資訊\nif (!userResponse || !userResponse.id) {\n    // 雖然理論上 Webhook Response 應該會處理失敗，但這裡提供一個失敗防護\n    return [{ json: { status: 'error', message: '無法從 Supabase 取得用戶資料' } }];\n}\n\n// 格式化要儲存到 Google Sheets 的資料\nconst formattedData = {\n  // 從 Supabase 的回應中取出核心資料\n  google_id: userResponse.id,\n  email: userResponse.email,\n  // 優先使用 Supabase metadata 中的 name，否則使用 email\n  name: userResponse.user_metadata?.full_name || userResponse.email,\n  avatar_url: userResponse.user_metadata?.avatar_url || '',\n  \n\n  // 記錄時間與 token\n  login_time: new Date().toISOString(),\n  access_token: initialData.access_token, // 假設 token 被帶過來\n  refresh_token: initialData.refresh_token, // 假設 token 被帶過來\n  created_at: new Date().toISOString()\n};\n\nreturn [{ json: formattedData }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        576,
+        2192
+      ],
+      "id": "6aaed2cc-b1ca-432a-9cef-dab704a31f35",
+      "name": "取得上一步 (Supabase Fetch User) 返回的用戶資料物件"
+    },
+    {
+      "parameters": {
+        "jsCode": "// 直接從 Google Sheets 取得會員資料（Get row(s) in sheet 的輸出）\nconst sheetData = $input.first().json;\n\nconst memberLevel = sheetData.member_level || '免費會員';\nconst paidUntil = sheetData.paid_until || '';\n\n// 檢查是否為付費會員（含 30 天期限檢查）\nconst isPaid = (\n  memberLevel === '付費會員' &&\n  (!paidUntil || new Date(paidUntil) > new Date())\n);\n\nreturn [{ json: { ...sheetData, member_level: memberLevel, paid_until: paidUntil, isPaid } }];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        1696,
+        672
+      ],
+      "id": "c65bf320-6dd5-4271-ba15-28aa52369f71",
+      "name": "從 Google Sheets 取得會員資料"
+    },
+    {
+      "parameters": {
+        "documentId": {
+          "__rl": true,
+          "value": "1FvOxZb46ek8N2kSH4QvVsS21IGKCqk-wr7WBljBve8g",
+          "mode": "list",
+          "cachedResultName": "社群iPAS 題庫",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1FvOxZb46ek8N2kSH4QvVsS21IGKCqk-wr7WBljBve8g/edit?usp=drivesdk"
+        },
+        "sheetName": {
+          "__rl": true,
+          "value": 1350648105,
+          "mode": "list",
+          "cachedResultName": "「會員資料」(GOOGLE)",
+          "cachedResultUrl": "https://docs.google.com/spreadsheets/d/1FvOxZb46ek8N2kSH4QvVsS21IGKCqk-wr7WBljBve8g/edit#gid=1350648105"
+        },
+        "filtersUI": {
+          "values": [
+            {
+              "lookupColumn": "google_id",
+              "lookupValue": "={{ $json.google_id }}"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.googleSheets",
+      "typeVersion": 4.7,
+      "position": [
+        976,
+        2192
+      ],
+      "id": "069a9be9-d1b6-46a3-918a-41518e68ae25",
+      "name": "Get row(s) in sheet1",
+      "credentials": {
+        "googleSheetsOAuth2Api": {
+          "id": "ZZgkB5gxJYCEKFNR",
+          "name": "nickleo3"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "google_user",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "email",
+              "keyValue": "={{ $json.searchEmail }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        816,
+        -80
+      ],
+      "id": "e6882e57-a32c-4800-831f-9dd2b0d2c85a",
+      "name": "Get a row3",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "leftValue": "={{ $json.searchUserId }}",
+                    "rightValue": "U",
+                    "operator": {
+                      "type": "string",
+                      "operation": "contains"
+                    },
+                    "id": "2486dfc4-23b0-4b9c-b2a9-55b13ed9d826"
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "line"
+            },
+            {
+              "conditions": {
+                "options": {
+                  "caseSensitive": true,
+                  "leftValue": "",
+                  "typeValidation": "strict",
+                  "version": 3
+                },
+                "conditions": [
+                  {
+                    "id": "ab6d9331-5d9d-476b-98a0-478ec6a26f9a",
+                    "leftValue": "={{ $json.searchEmail }}",
+                    "rightValue": "",
+                    "operator": {
+                      "type": "string",
+                      "operation": "exists",
+                      "singleValue": true
+                    }
+                  }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": true,
+              "outputKey": "google"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.4,
+      "position": [
+        560,
+        -160
+      ],
+      "id": "ae88336a-4684-4400-877e-847280899c7b",
+      "name": "Switch"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "0461363d-f9f1-4c28-aef3-3f59678ea892",
+              "leftValue": "={{ $json.body.action }}",
+              "rightValue": "sync_account",
+              "operator": {
+                "type": "string",
+                "operation": "notEquals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        208,
+        64
+      ],
+      "id": "7f3b881b-5a9f-4f60-8689-7081fdfb1e5a",
+      "name": "If2"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "users",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "email",
+              "keyValue": "={{ $json.body.email }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        416,
+        32
+      ],
+      "id": "97637bd0-5c9c-4522-96b2-22bfe4ef2efa",
+      "name": "Get a row4",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "baad929d-7fe2-4926-b23e-02a62bcfcc12",
+              "leftValue": "={{ $('金流').item.json.body.userId }}",
+              "rightValue": "@",
+              "operator": {
+                "type": "string",
+                "operation": "contains"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        544,
+        2592
+      ],
+      "id": "087d9b8a-cbc6-426b-9d64-24d456ae2b57",
+      "name": "If3"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "tableId": "google_user",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "email",
+              "condition": "eq",
+              "keyValue": "={{ $('先查google 是否有訂單').first().json.email }}"
+            }
+          ]
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "orderId",
+              "fieldValue": "={{ $('先查google 是否有訂單').item.json.orderId }}"
+            },
+            {
+              "fieldId": "member_level",
+              "fieldValue": "付費會員"
+            },
+            {
+              "fieldId": "paid_until",
+              "fieldValue": "={{ $('計算付費到期日').first().json.paid_until }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1456,
+        2928
+      ],
+      "id": "42263867-0237-4249-a797-d86a642ecece",
+      "name": "更新google 登入客戶資料為已付款1",
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "tableId": "google_user",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "email",
+              "condition": "eq",
+              "keyValue": "={{ $('金流').item.json.body.userId }}"
+            }
+          ]
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "orderId",
+              "fieldValue": "={{ $json.ecpayParams.MerchantTradeNo }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        848,
+        2560
+      ],
+      "id": "c29053c5-fe26-4047-a075-b70d58509474",
+      "name": "更新google 登入客戶資料為有訂單",
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "tableId": "users",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "user_id",
+              "condition": "eq",
+              "keyValue": "={{ $('金流').item.json.body.userId }}"
+            }
+          ]
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "orderId",
+              "fieldValue": "={{ $json.ecpayParams.MerchantTradeNo }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        864,
+        2736
+      ],
+      "id": "5f2a4529-032a-400f-84ac-721943ab56fc",
+      "name": "更新line 登入客戶資料為有訂單",
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "tableId": "users",
+        "matchType": "allFilters",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "user_id",
+              "condition": "eq",
+              "keyValue": "={{ $('查詢 line 是否有訂單').first().json.user_id }}"
+            }
+          ]
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "orderId",
+              "fieldValue": "={{ $('計算付費到期日').first().json.orderId }}"
+            },
+            {
+              "fieldId": "member_level",
+              "fieldValue": "付費會員"
+            },
+            {
+              "fieldId": "paid_until",
+              "fieldValue": "={{ $('計算付費到期日').first().json.paid_until  }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1536,
+        3152
+      ],
+      "id": "f2864313-fc5a-4ca8-a653-03350065b64c",
+      "name": "更新line 登入客戶資料為有訂單1",
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "ipas-ecpay-callback",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        -288,
+        3056
+      ],
+      "id": "39a4efdc-686b-426b-b01e-d89626920cf4",
+      "name": "ipas-ecpay-callback",
+      "webhookId": "f391f4b6-3b98-4f64-a036-107cb8e814ba"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "=<html><head><meta charset=\"utf-8\"><title>付款成功</title></head><body><p>付款成功，正在跳轉...</p><script>window.location.href='https://nickleo9.github.io/GenAI/payment-success.html?payment=success&MerchantTradeNo={{ $json.body.MerchantTradeNo }}&TradeAmt={{ $json.body.TradeAmt }}&RtnCode={{ $json.body.RtnCode }}';</script></body></html>",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "text/html; charset=utf-8"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        96,
+        3328
+      ],
+      "id": "da7e6a04-815d-4b0b-a562-c39fd5909a49",
+      "name": "給使用者看的成功頁面"
+    },
+    {
+      "parameters": {
+        "jsCode": "// ===== 綠界金鑰 =====\nconst HASH_KEY = 'jR0x6VkCq8XyCKPV';\nconst HASH_IV = '8FEOgzZkipv14N1H';\n\n// ===== 取得綠界 POST 過來的資料 =====\nconst ecpayData = $json.body;\n\nconsole.log('收到綠界付款結果通知:', JSON.stringify(ecpayData, null, 2));\n\n// ===== 綠界專用 URL Encode =====\nfunction ecpayUrlEncode(str) {\n    let encoded = encodeURIComponent(str);\n    encoded = encoded.replace(/%2d/gi, '-').replace(/%5f/gi, '_').replace(/%2e/gi, '.')\n        .replace(/%21/gi, '!').replace(/%2a/gi, '*').replace(/%28/gi, '(')\n        .replace(/%29/gi, ')').replace(/%20/gi, '+');\n    return encoded;\n}\n\n// ===== 純 JS 版 MD5 實作 =====\nfunction md5(string) {\n    function rotateLeft(lValue, iShiftBits) { return (lValue << iShiftBits) | (lValue >>> (32 - iShiftBits)); }\n    function addUnsigned(lX, lY) {\n        var lX8, lY8, lX4, lY4, lResult;\n        lX8 = (lX & 0x80000000); lY8 = (lY & 0x80000000);\n        lX4 = (lX & 0x40000000); lY4 = (lY & 0x40000000);\n        lResult = (lX & 0x3FFFFFFF) + (lY & 0x3FFFFFFF);\n        if (lX4 & lY4) return (lResult ^ 0x80000000 ^ lX8 ^ lY8);\n        if (lX4 | lY4) {\n            if (lResult & 0x40000000) return (lResult ^ 0xC0000000 ^ lX8 ^ lY8);\n            else return (lResult ^ 0x40000000 ^ lX8 ^ lY8);\n        } else return (lResult ^ lX8 ^ lY8);\n    }\n    function F(x, y, z) { return (x & y) | ((~x) & z); }\n    function G(x, y, z) { return (x & z) | (y & (~z)); }\n    function H(x, y, z) { return (x ^ y ^ z); }\n    function I(x, y, z) { return (y ^ (x | (~z))); }\n    function FF(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(F(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function GG(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(G(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function HH(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(H(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function II(a, b, c, d, x, s, ac) {\n        a = addUnsigned(a, addUnsigned(addUnsigned(I(b, c, d), x), ac));\n        return addUnsigned(rotateLeft(a, s), b);\n    }\n    function convertToWordArray(string) {\n        var lWordCount;\n        var lMessageLength = string.length;\n        var lNumberOfWords_Temp1 = lMessageLength + 8;\n        var lNumberOfWords_Temp2 = (lNumberOfWords_Temp1 - (lNumberOfWords_Temp1 % 64)) / 64;\n        var lNumberOfWords = (lNumberOfWords_Temp2 + 1) * 16;\n        var lWordArray = Array(lNumberOfWords);\n        var lBytePosition = 0;\n        var lByteCount = 0;\n        while (lByteCount < lMessageLength) {\n            lWordCount = (lByteCount - (lByteCount % 4)) / 4;\n            lBytePosition = (lByteCount % 4) * 8;\n            lWordArray[lWordCount] = (lWordArray[lWordCount] | (string.charCodeAt(lByteCount) << lBytePosition));\n            lByteCount++;\n        }\n        lWordCount = (lByteCount - (lByteCount % 4)) / 4;\n        lBytePosition = (lByteCount % 4) * 8;\n        lWordArray[lWordCount] = lWordArray[lWordCount] | (0x80 << lBytePosition);\n        lWordArray[lNumberOfWords - 2] = lMessageLength << 3;\n        lWordArray[lNumberOfWords - 1] = lMessageLength >>> 29;\n        return lWordArray;\n    }\n    function wordToHex(lValue) {\n        var WordToHexValue = \"\", WordToHexValue_Temp = \"\", lByte, lCount;\n        for (lCount = 0; lCount <= 3; lCount++) {\n            lByte = (lValue >>> (lCount * 8)) & 255;\n            WordToHexValue_Temp = \"0\" + lByte.toString(16);\n            WordToHexValue = WordToHexValue + WordToHexValue_Temp.substr(WordToHexValue_Temp.length - 2, 2);\n        }\n        return WordToHexValue;\n    }\n    function utf8Encode(string) {\n        string = string.replace(/\\r\\n/g, \"\\n\");\n        var utftext = \"\";\n        for (var n = 0; n < string.length; n++) {\n            var c = string.charCodeAt(n);\n            if (c < 128) {\n                utftext += String.fromCharCode(c);\n            } else if ((c > 127) && (c < 2048)) {\n                utftext += String.fromCharCode((c >> 6) | 192);\n                utftext += String.fromCharCode((c & 63) | 128);\n            } else {\n                utftext += String.fromCharCode((c >> 12) | 224);\n                utftext += String.fromCharCode(((c >> 6) & 63) | 128);\n                utftext += String.fromCharCode((c & 63) | 128);\n            }\n        }\n        return utftext;\n    }\n    var x = Array();\n    var k, AA, BB, CC, DD, a, b, c, d;\n    var S11 = 7, S12 = 12, S13 = 17, S14 = 22;\n    var S21 = 5, S22 = 9, S23 = 14, S24 = 20;\n    var S31 = 4, S32 = 11, S33 = 16, S34 = 23;\n    var S41 = 6, S42 = 10, S43 = 15, S44 = 21;\n    string = utf8Encode(string);\n    x = convertToWordArray(string);\n    a = 0x67452301; b = 0xEFCDAB89; c = 0x98BADCFE; d = 0x10325476;\n    for (k = 0; k < x.length; k += 16) {\n        AA = a; BB = b; CC = c; DD = d;\n        a = FF(a, b, c, d, x[k + 0], S11, 0xD76AA478); d = FF(d, a, b, c, x[k + 1], S12, 0xE8C7B756);\n        c = FF(c, d, a, b, x[k + 2], S13, 0x242070DB); b = FF(b, c, d, a, x[k + 3], S14, 0xC1BDCEEE);\n        a = FF(a, b, c, d, x[k + 4], S11, 0xF57C0FAF); d = FF(d, a, b, c, x[k + 5], S12, 0x4787C62A);\n        c = FF(c, d, a, b, x[k + 6], S13, 0xA8304613); b = FF(b, c, d, a, x[k + 7], S14, 0xFD469501);\n        a = FF(a, b, c, d, x[k + 8], S11, 0x698098D8); d = FF(d, a, b, c, x[k + 9], S12, 0x8B44F7AF);\n        c = FF(c, d, a, b, x[k + 10], S13, 0xFFFF5BB1); b = FF(b, c, d, a, x[k + 11], S14, 0x895CD7BE);\n        a = FF(a, b, c, d, x[k + 12], S11, 0x6B901122); d = FF(d, a, b, c, x[k + 13], S12, 0xFD987193);\n        c = FF(c, d, a, b, x[k + 14], S13, 0xA679438E); b = FF(b, c, d, a, x[k + 15], S14, 0x49B40821);\n        a = GG(a, b, c, d, x[k + 1], S21, 0xF61E2562); d = GG(d, a, b, c, x[k + 6], S22, 0xC040B340);\n        c = GG(c, d, a, b, x[k + 11], S23, 0x265E5A51); b = GG(b, c, d, a, x[k + 0], S24, 0xE9B6C7AA);\n        a = GG(a, b, c, d, x[k + 5], S21, 0xD62F105D); d = GG(d, a, b, c, x[k + 10], S22, 0x02441453);\n        c = GG(c, d, a, b, x[k + 15], S23, 0xD8A1E681); b = GG(b, c, d, a, x[k + 4], S24, 0xE7D3FBC8);\n        a = GG(a, b, c, d, x[k + 9], S21, 0x21E1CDE6); d = GG(d, a, b, c, x[k + 14], S22, 0xC33707D6);\n        c = GG(c, d, a, b, x[k + 3], S23, 0xF4D50D87); b = GG(b, c, d, a, x[k + 8], S24, 0x455A14ED);\n        a = GG(a, b, c, d, x[k + 13], S21, 0xA9E3E905); d = GG(d, a, b, c, x[k + 2], S22, 0xFCEFA3F8);\n        c = GG(c, d, a, b, x[k + 7], S23, 0x676F02D9); b = GG(b, c, d, a, x[k + 12], S24, 0x8D2A4C8A);\n        a = HH(a, b, c, d, x[k + 5], S31, 0xFFFA3942); d = HH(d, a, b, c, x[k + 8], S32, 0x8771F681);\n        c = HH(c, d, a, b, x[k + 11], S33, 0x6D9D6122); b = HH(b, c, d, a, x[k + 14], S34, 0xFDE5380C);\n        a = HH(a, b, c, d, x[k + 1], S31, 0xA4BEEA44); d = HH(d, a, b, c, x[k + 4], S32, 0x4BDECFA9);\n        c = HH(c, d, a, b, x[k + 7], S33, 0xF6BB4B60); b = HH(b, c, d, a, x[k + 10], S34, 0xBEBFBC70);\n        a = HH(a, b, c, d, x[k + 13], S31, 0x289B7EC6); d = HH(d, a, b, c, x[k + 0], S32, 0xEAA127FA);\n        c = HH(c, d, a, b, x[k + 3], S33, 0xD4EF3085); b = HH(b, c, d, a, x[k + 6], S34, 0x04881D05);\n        a = HH(a, b, c, d, x[k + 9], S31, 0xD9D4D039); d = HH(d, a, b, c, x[k + 12], S32, 0xE6DB99E5);\n        c = HH(c, d, a, b, x[k + 15], S33, 0x1FA27CF8); b = HH(b, c, d, a, x[k + 2], S34, 0xC4AC5665);\n        a = II(a, b, c, d, x[k + 0], S41, 0xF4292244); d = II(d, a, b, c, x[k + 7], S42, 0x432AFF97);\n        c = II(c, d, a, b, x[k + 14], S43, 0xAB9423A7); b = II(b, c, d, a, x[k + 5], S44, 0xFC93A039);\n        a = II(a, b, c, d, x[k + 12], S41, 0x655B59C3); d = II(d, a, b, c, x[k + 3], S42, 0x8F0CCC92);\n        c = II(c, d, a, b, x[k + 10], S43, 0xFFEFF47D); b = II(b, c, d, a, x[k + 1], S44, 0x85845DD1);\n        a = II(a, b, c, d, x[k + 8], S41, 0x6FA87E4F); d = II(d, a, b, c, x[k + 15], S42, 0xFE2CE6E0);\n        c = II(c, d, a, b, x[k + 6], S43, 0xA3014314); b = II(b, c, d, a, x[k + 13], S44, 0x4E0811A1);\n        a = II(a, b, c, d, x[k + 4], S41, 0xF7537E82); d = II(d, a, b, c, x[k + 11], S42, 0xBD3AF235);\n        c = II(c, d, a, b, x[k + 2], S43, 0x2AD7D2BB); b = II(b, c, d, a, x[k + 9], S44, 0xEB86D391);\n        a = addUnsigned(a, AA); b = addUnsigned(b, BB); c = addUnsigned(c, CC); d = addUnsigned(d, DD);\n    }\n    var temp = wordToHex(a) + wordToHex(b) + wordToHex(c) + wordToHex(d);\n    return temp.toLowerCase();\n}\n\n// ===== 驗證 CheckMacValue =====\nfunction verifyCheckMacValue(data, hashKey, hashIv) {\n    const receivedCheckMac = data.CheckMacValue;\n\n    // 複製參數，保留所有欄位 (包含綠界回傳的 amount)\n    const params = { ...data };\n    delete params.CheckMacValue;\n\n    // 🔥 關鍵修正：大小寫不敏感排序 (Case-Insensitive Sort) \n    const sortedKeys = Object.keys(params).sort((a, b) => {\n        return a.toLowerCase().localeCompare(b.toLowerCase());\n    });\n\n    // 組成字串\n    let checkStr = `HashKey=${hashKey}&`;\n    for (const key of sortedKeys) {\n        checkStr += `${key}=${params[key]}&`;\n    }\n    checkStr += `HashIV=${hashIv}`;\n\n    // URL encode → 轉小寫 → MD5 → 轉大寫\n    checkStr = ecpayUrlEncode(checkStr);\n    checkStr = checkStr.toLowerCase();\n    const calculatedCheckMac = md5(checkStr).toUpperCase();\n\n    console.log('收到的 CheckMacValue:', receivedCheckMac);\n    console.log('計算的 CheckMacValue:', calculatedCheckMac);\n\n    return receivedCheckMac === calculatedCheckMac;\n}\n\n// ===== 執行驗證 =====\nconst isValid = verifyCheckMacValue(ecpayData, HASH_KEY, HASH_IV);\nconst isPaid = ecpayData.RtnCode === '1';\n\n// ===== 回傳結果 =====\nreturn {\n    json: {\n        isValid: isValid,\n        isPaid: isPaid,\n        orderId: ecpayData.MerchantTradeNo || '',\n        ecpayTradeNo: ecpayData.TradeNo || '',\n        rtnCode: ecpayData.RtnCode || '',\n        rtnMsg: ecpayData.RtnMsg || '',\n        tradeAmt: ecpayData.TradeAmt || '',\n        paymentDate: ecpayData.PaymentDate || '',\n        paymentType: ecpayData.PaymentType || '',\n        rawData: ecpayData\n    }\n};\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        -80,
+        3056
+      ],
+      "id": "f51ee63d-ecc5-48af-91f5-27f59da6053d",
+      "name": "驗證是否取得信用卡資訊及綠界"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "1|OK",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1744,
+        3008
+      ],
+      "id": "f1f96fb4-e56d-478a-bb2a-ba9e39e14e82",
+      "name": "1|OK"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "google_user",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "orderId",
+              "keyValue": "={{ $json.rawData.MerchantTradeNo }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        704,
+        3024
+      ],
+      "id": "6ed0ee28-e879-468b-94f0-f0645ab7453f",
+      "name": "先查google 是否有訂單",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "users",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "orderId",
+              "keyValue": "={{ $json.orderId }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1136,
+        3152
+      ],
+      "id": "fe47fedc-5a79-4dd5-8a8d-d5d0ac5e17e2",
+      "name": "查詢 line 是否有訂單",
+      "alwaysOutputData": true,
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "adf24f19-ec8b-45d2-8067-7a34e94448ca",
+              "leftValue": "={{ $json.Google_user_id }}",
+              "rightValue": "",
+              "operator": {
+                "type": "string",
+                "operation": "exists",
+                "singleValue": true
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        896,
+        3024
+      ],
+      "id": "de302f77-7b33-4b78-9d4a-44afca3ad31a",
+      "name": "If4",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "jsCode": "// 功能：根據付款金額計算 paid_until 到期日\n// 放置位置：If1 (true) → 本節點 → 先查google是否有訂單\n\nconst paymentData = $input.first().json;\n\n// 取得交易金額\nconst tradeAmt = parseInt(paymentData.rawData.TradeAmt || paymentData.tradeAmt || '0');\n\n// 根據金額判斷方案：>= 1000 為年費，否則為月費\nconst now = new Date();\nlet paidUntil;\n\nif (tradeAmt >= 1000) {\n  // 年費方案：+365 天\n  paidUntil = new Date(now.getTime() + 365 * 24 * 60 * 60 * 1000);\n} else {\n  // 月費方案：+30 天\n  paidUntil = new Date(now.getTime() + 30 * 24 * 60 * 60 * 1000);\n}\n\nconst paidUntilStr = paidUntil.toISOString(); // \"2026-04-09T00:00:00.000Z\" 不如改成當天\n\nconsole.log(`💰 交易金額: ${tradeAmt}, 方案: ${tradeAmt >= 1000 ? '年費' : '月費'}, 到期日: ${paidUntilStr}`);\n\n// 把原始資料 + paid_until 一起往下傳\nreturn [{\n  json: {\n    ...paymentData,\n    paid_until: paidUntilStr,\n    plan_type: tradeAmt >= 1000 ? 'yearly' : 'monthly'\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        464,
+        3008
+      ],
+      "id": "1f108a5f-048e-4ba4-a74e-40772a26f8ad",
+      "name": "計算付費到期日"
+    },
+    {
+      "parameters": {
+        "operation": "update",
+        "tableId": "users",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "email",
+              "condition": "eq",
+              "keyValue": "={{ $json.syncEmail }}"
+            }
+          ]
+        },
+        "fieldsUi": {
+          "fieldValues": [
+            {
+              "fieldId": "member_level",
+              "fieldValue": "付費會員"
+            },
+            {
+              "fieldId": "paid_until",
+              "fieldValue": "={{ $json.paid_until }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        1072,
+        64
+      ],
+      "id": "9b6aec2c-0614-4e42-9d54-d15bc20e8317",
+      "name": "同步會員狀態到當前用戶",
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "={\n  \"status\": \"found\",\n  \"isPaid\": true,\n  \"memberLevel\": \"付費會員\",\n  \"paid_until\": \"{{ $('處理 Email 同步').first().json.paid_until }}\",\n  \"message\": \"已成功同步會員狀態\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1280,
+        64
+      ],
+      "id": "1f3aaf4d-f5f9-4658-840b-4d1ce0e22e70",
+      "name": "Respond to Webhook3"
+    },
+    {
+      "parameters": {
+        "conditions": {
+          "options": {
+            "caseSensitive": true,
+            "leftValue": "",
+            "typeValidation": "strict",
+            "version": 3
+          },
+          "conditions": [
+            {
+              "id": "88236332-2c55-49e8-ad94-8fa2b678b5b9",
+              "leftValue": "={{ $json.found }}",
+              "rightValue": true,
+              "operator": {
+                "type": "boolean",
+                "operation": "equals"
+              }
+            }
+          ],
+          "combinator": "and"
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.if",
+      "typeVersion": 2.3,
+      "position": [
+        896,
+        144
+      ],
+      "id": "b4aa6b89-3cf5-40d1-8bd2-330d8d5fb77a",
+      "name": "判斷是否找到付費會員"
+    },
+    {
+      "parameters": {
+        "jsCode": "const webhookData = $('Webhook1').first().json.body;\nconst currentUserId = webhookData.userId;\nconst searchEmail = webhookData.email;\n\nconst items = $input.all();\nlet foundPaid = null;\n\nfor (const item of items) {\n  const d = item.json;\n  \n  // 檢查 _1（舊表）是否為付費會員\n  if (d.member_level_1 === '付費會員' || d.orderId_1) {\n    const paidUntil = d.paid_until_1 || '';\n    const isValid = !paidUntil || new Date(paidUntil) > new Date();\n    if (isValid) {\n      foundPaid = { paid_until: paidUntil, source: 'table1' };\n      break;\n    }\n  }\n  \n  // 檢查 _2（新表）是否為付費會員\n  if (d.member_level_2 === '付費會員' || d.orderId_2) {\n    const paidUntil = d.paid_until_2 || '';\n    const isValid = !paidUntil || new Date(paidUntil) > new Date();\n    if (isValid) {\n      foundPaid = { paid_until: paidUntil, source: 'table2' };\n      break;\n    }\n  }\n}\n\nif (foundPaid) {\n  return [{\n    json: {\n      found: true,\n      isPaid: true,\n      currentUserId: currentUserId,\n      syncEmail: searchEmail,\n      memberLevel: '付費會員',\n      member_level: '付費會員',\n      paid_until: foundPaid.paid_until,\n      status: 'found',\n      message: '已找到付費紀錄，準備同步'\n    }\n  }];\n}\n\nreturn [{\n  json: {\n    found: false,\n    isPaid: false,\n    currentUserId: currentUserId,\n    syncEmail: searchEmail,\n    memberLevel: '免費會員',\n    member_level: '免費會員',\n    paid_until: '',\n    status: 'not_found',\n    message: '找不到此 Email 的付費紀錄'\n  }\n}];\n"
+      },
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [
+        736,
+        144
+      ],
+      "id": "d95f6d8f-0552-470b-875e-6e34767f62d9",
+      "name": "處理 Email 同步"
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"status\": \"not_found\",\n  \"isPaid\": false,\n  \"memberLevel\": \"免費會員\",\n  \"paid_until\": \"\",\n  \"message\": \"找不到此 Email 的付費訂單紀錄\"\n}\n",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        1136,
+        240
+      ],
+      "id": "2c8a8e4a-a866-4d2e-9e00-8a1a1c344277",
+      "name": "Respond to Webhook4"
+    },
+    {
+      "parameters": {
+        "operation": "get",
+        "tableId": "google_user",
+        "filters": {
+          "conditions": [
+            {
+              "keyName": "email",
+              "keyValue": "={{ $json.body.email }}"
+            }
+          ]
+        }
+      },
+      "type": "n8n-nodes-base.supabase",
+      "typeVersion": 1,
+      "position": [
+        432,
+        224
+      ],
+      "id": "20dbbf8f-c500-4d49-881c-a86ad12e076d",
+      "name": "Get a row5",
+      "credentials": {
+        "supabaseApi": {
+          "id": "RFeqT1SHp7ich50Q",
+          "name": "nickleo051216 ipas"
+        }
+      }
+    },
+    {
+      "parameters": {
+        "mode": "combine",
+        "combineBy": "combineAll",
+        "options": {
+          "clashHandling": {
+            "values": {
+              "resolveClash": "addSuffix"
+            }
+          }
+        }
+      },
+      "type": "n8n-nodes-base.merge",
+      "typeVersion": 3.2,
+      "position": [
+        576,
+        144
+      ],
+      "id": "b445e918-b7e0-465f-bcab-cda870a85a26",
+      "name": "Merge"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "={{ $json.user_data.avatar }}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1680,
+        2160
+      ],
+      "id": "27ca6339-f753-4610-812a-b3af22f7f8b6",
+      "name": "轉換大頭貼",
+      "alwaysOutputData": false
+    },
+    {
+      "parameters": {
+        "method": "PUT",
+        "url": "=https://naftwmajxuoauokuwpaz.supabase.co/storage/v1/object/ipas/google/{{ $json.user_data.google_id }}.jpeg",
+        "sendHeaders": true,
+        "headerParameters": {
+          "parameters": [
+            {
+              "name": "Authorization",
+              "value": "Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hZnR3bWFqeHVvYXVva3V3cGF6Iiwicm9sZSI6InNlcnZpY2Vfcm9sZSIsImlhdCI6MTc2MDk5ODE1OCwiZXhwIjoyMDc2NTc0MTU4fQ.IQTvWiOuWuozhHLeXQ4M7K4rxNWFzVNl-dnTDdiJnQE"
+            }
+          ]
+        },
+        "sendBody": true,
+        "contentType": "binaryData",
+        "inputDataFieldName": "data",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.2,
+      "position": [
+        1904,
+        2048
+      ],
+      "id": "a70a86b0-76b2-4a48-bec0-2bd1caf4083e",
+      "name": "把大頭貼轉成網址"
+    },
+    {
+      "parameters": {
+        "respondWith": "text",
+        "responseBody": "=1|OK",
+        "options": {
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Content-Type",
+                "value": "application/json; charset=utf-8"
+              }
+            ]
+          }
+        }
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        880,
+        3232
+      ],
+      "id": "6cbe0a25-8c5e-4729-8247-a8707a86bb24",
+      "name": "驗證失敗1"
     }
   ],
   "connections": {
@@ -2486,7 +3102,7 @@
       "main": [
         [
           {
-            "node": "Code in JavaScript1",
+            "node": "If2",
             "type": "main",
             "index": 0
           }
@@ -2497,7 +3113,7 @@
       "main": [
         [
           {
-            "node": "Get a row2",
+            "node": "Switch",
             "type": "main",
             "index": 0
           }
@@ -2874,18 +3490,7 @@
       "main": [
         [
           {
-            "node": "Code in JavaScript",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Code in JavaScript": {
-      "main": [
-        [
-          {
-            "node": "Append or update row in sheet",
+            "node": "取得上一步 (Supabase Fetch User) 返回的用戶資料物件",
             "type": "main",
             "index": 0
           }
@@ -2907,34 +3512,7 @@
       "main": [
         [
           {
-            "node": "Code in JavaScript3",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "HTTP Request": {
-      "main": [
-        [
-          {
-            "node": "Get a row1",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "HTTP Request2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "HTTP Request2": {
-      "main": [
-        [
-          {
-            "node": "Code in JavaScript4",
+            "node": "Get row(s) in sheet1",
             "type": "main",
             "index": 0
           }
@@ -3025,7 +3603,7 @@
       "main": [
         [
           {
-            "node": "HTTP Request",
+            "node": "轉換大頭貼",
             "type": "main",
             "index": 0
           }
@@ -3076,23 +3654,12 @@
       "main": [
         [
           {
-            "node": "Update a row1",
+            "node": "Respond to Webhook2",
             "type": "main",
             "index": 0
           },
           {
-            "node": "Respond to Webhook2",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Code in JavaScript6": {
-      "main": [
-        [
-          {
-            "node": "If1",
+            "node": "If3",
             "type": "main",
             "index": 0
           }
@@ -3103,49 +3670,40 @@
       "main": [
         [
           {
-            "node": "Code in JavaScript6",
+            "node": "給使用者看的成功頁面",
             "type": "main",
             "index": 0
           }
         ]
-      ]
-    },
-    "Update a row": {
-      "main": [
-        [
-          {
-            "node": "LINE 用戶是 U 開頭",
-            "type": "main",
-            "index": 0
-          }
-        ]
-      ]
-    },
-    "Update a row1": {
-      "main": [
-        []
       ]
     },
     "更新 google 帳號變成付費會員": {
       "main": [
-        []
+        [
+          {
+            "node": "更新google 登入客戶資料為已付款1",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "更新 line 變成付費會員": {
       "main": [
-        []
+        [
+          {
+            "node": "更新line 登入客戶資料為有訂單1",
+            "type": "main",
+            "index": 0
+          }
+        ]
       ]
     },
     "If1": {
       "main": [
         [
           {
-            "node": "Respond to Webhook3",
-            "type": "main",
-            "index": 0
-          },
-          {
-            "node": "Update a row",
+            "node": "計算付費到期日",
             "type": "main",
             "index": 0
           }
@@ -3159,18 +3717,11 @@
         ]
       ]
     },
-    "LINE 用戶是 U 開頭": {
+    "驗證失敗": {
       "main": [
         [
           {
-            "node": "更新 line 變成付費會員",
-            "type": "main",
-            "index": 0
-          }
-        ],
-        [
-          {
-            "node": "更新 google 帳號變成付費會員",
+            "node": "驗證失敗1",
             "type": "main",
             "index": 0
           }
@@ -3199,7 +3750,29 @@
         ]
       ]
     },
-    "Code in JavaScript7": {
+    "Get row(s) in sheet": {
+      "main": [
+        [
+          {
+            "node": "從 Google Sheets 取得會員資料",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "取得上一步 (Supabase Fetch User) 返回的用戶資料物件": {
+      "main": [
+        [
+          {
+            "node": "Append or update row in sheet",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "從 Google Sheets 取得會員資料": {
       "main": [
         [
           {
@@ -3210,11 +3783,281 @@
         ]
       ]
     },
-    "Get row(s) in sheet": {
+    "Get row(s) in sheet1": {
       "main": [
         [
           {
-            "node": "Code in JavaScript7",
+            "node": "Code in JavaScript3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a row3": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript2",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Switch": {
+      "main": [
+        [
+          {
+            "node": "Get a row2",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get a row3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If2": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript1",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Get a row4",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "Get a row5",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a row4": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If3": {
+      "main": [
+        [
+          {
+            "node": "更新google 登入客戶資料為有訂單",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "更新line 登入客戶資料為有訂單",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "更新google 登入客戶資料為已付款1": {
+      "main": [
+        [
+          {
+            "node": "1|OK",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "更新google 登入客戶資料為有訂單": {
+      "main": [
+        []
+      ]
+    },
+    "更新line 登入客戶資料為有訂單1": {
+      "main": [
+        [
+          {
+            "node": "1|OK",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "ipas-ecpay-callback": {
+      "main": [
+        [
+          {
+            "node": "驗證是否取得信用卡資訊及綠界",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "驗證是否取得信用卡資訊及綠界": {
+      "main": [
+        [
+          {
+            "node": "If1",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "先查google 是否有訂單": {
+      "main": [
+        [
+          {
+            "node": "If4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "查詢 line 是否有訂單": {
+      "main": [
+        [
+          {
+            "node": "更新 line 變成付費會員",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "If4": {
+      "main": [
+        [
+          {
+            "node": "更新 google 帳號變成付費會員",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "查詢 line 是否有訂單",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "計算付費到期日": {
+      "main": [
+        [
+          {
+            "node": "先查google 是否有訂單",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "同步會員狀態到當前用戶": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook3",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "判斷是否找到付費會員": {
+      "main": [
+        [
+          {
+            "node": "同步會員狀態到當前用戶",
+            "type": "main",
+            "index": 0
+          }
+        ],
+        [
+          {
+            "node": "Respond to Webhook4",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "處理 Email 同步": {
+      "main": [
+        [
+          {
+            "node": "判斷是否找到付費會員",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Get a row5": {
+      "main": [
+        [
+          {
+            "node": "Merge",
+            "type": "main",
+            "index": 1
+          }
+        ]
+      ]
+    },
+    "Merge": {
+      "main": [
+        [
+          {
+            "node": "處理 Email 同步",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "轉換大頭貼": {
+      "main": [
+        [
+          {
+            "node": "Get a row1",
+            "type": "main",
+            "index": 0
+          },
+          {
+            "node": "把大頭貼轉成網址",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "把大頭貼轉成網址": {
+      "main": [
+        [
+          {
+            "node": "Code in JavaScript4",
             "type": "main",
             "index": 0
           }
@@ -3222,134 +4065,9 @@
       ]
     }
   },
-  "pinData": {
-    "金流": [
-      {
-        "headers": {
-          "host": "nickleo9.zeabur.app",
-          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
-          "content-length": "76",
-          "accept": "*/*",
-          "accept-encoding": "gzip, deflate, br, zstd",
-          "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-          "content-type": "application/json",
-          "origin": "https://nickleo9.github.io",
-          "priority": "u=1, i",
-          "referer": "https://nickleo9.github.io/",
-          "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
-          "sec-ch-ua-mobile": "?0",
-          "sec-ch-ua-platform": "\"Windows\"",
-          "sec-fetch-dest": "empty",
-          "sec-fetch-mode": "cors",
-          "sec-fetch-site": "cross-site",
-          "x-forwarded-for": "114.37.83.209, 114.37.83.209",
-          "x-forwarded-host": "nickleo9.zeabur.app",
-          "x-forwarded-port": "443",
-          "x-forwarded-proto": "https",
-          "x-real-ip": "114.37.83.209",
-          "x-zeabur-container-port": "5678",
-          "x-zeabur-ip-country": "TW",
-          "x-zeabur-request-id": "hnd1::9ca59360-6cdf-4b3f-b30a-cf1ff31f873f"
-        },
-        "params": {},
-        "query": {},
-        "body": {
-          "userId": "U3e2b566b875944da659e729c2e42aadb",
-          "plan": "monthly",
-          "amount": 199
-        },
-        "webhookUrl": "https://nickleo9.zeabur.app/webhook/money",
-        "executionMode": "production"
-      }
-    ],
-    "付款完成": [
-      {
-        "headers": {
-          "host": "nickleo9.zeabur.app",
-          "user-agent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/145.0.0.0 Safari/537.36",
-          "content-length": "776",
-          "accept": "text/html,application/xhtml+xml,application/xml;q=0.9,image/avif,image/webp,image/apng,*/*;q=0.8,application/signed-exchange;v=b3;q=0.7",
-          "accept-encoding": "gzip, deflate, br, zstd",
-          "accept-language": "zh-TW,zh;q=0.9,en-US;q=0.8,en;q=0.7",
-          "cache-control": "max-age=0",
-          "content-type": "application/x-www-form-urlencoded",
-          "origin": "https://payment.ecpay.com.tw",
-          "priority": "u=0, i",
-          "referer": "https://payment.ecpay.com.tw/",
-          "sec-ch-ua": "\"Not:A-Brand\";v=\"99\", \"Google Chrome\";v=\"145\", \"Chromium\";v=\"145\"",
-          "sec-ch-ua-mobile": "?0",
-          "sec-ch-ua-platform": "\"Windows\"",
-          "sec-fetch-dest": "document",
-          "sec-fetch-mode": "navigate",
-          "sec-fetch-site": "cross-site",
-          "upgrade-insecure-requests": "1",
-          "x-forwarded-for": "114.37.83.209, 114.37.83.209",
-          "x-forwarded-host": "nickleo9.zeabur.app",
-          "x-forwarded-port": "443",
-          "x-forwarded-proto": "https",
-          "x-real-ip": "114.37.83.209",
-          "x-zeabur-container-port": "5678",
-          "x-zeabur-ip-country": "TW",
-          "x-zeabur-request-id": "hnd1::8daf9b30-cfec-4b91-a44d-1e9cd0ec870c"
-        },
-        "params": {},
-        "query": {},
-        "body": {
-          "AlipayID": "",
-          "AlipayTradeNo": "",
-          "amount": "199",
-          "ATMAccBank": "",
-          "ATMAccNo": "",
-          "auth_code": "134962",
-          "card4no": "4263",
-          "card6no": "519936",
-          "CustomField1": "",
-          "CustomField2": "",
-          "CustomField3": "",
-          "CustomField4": "",
-          "eci": "0",
-          "ExecTimes": "",
-          "Frequency": "",
-          "gwsr": "151102674",
-          "MerchantID": "3475994",
-          "MerchantTradeNo": "IPAS1771923772800",
-          "PayFrom": "",
-          "PaymentDate": "2026/02/24 17:03:26",
-          "PaymentNo": "",
-          "PaymentType": "Credit_CreditCard",
-          "PaymentTypeChargeFee": "7",
-          "PeriodAmount": "",
-          "PeriodType": "",
-          "process_date": "2026/02/24 17:03:26",
-          "red_dan": "0",
-          "red_de_amt": "0",
-          "red_ok_amt": "0",
-          "red_yet": "0",
-          "RtnCode": "1",
-          "RtnMsg": "Succeeded",
-          "SimulatePaid": "0",
-          "staed": "0",
-          "stage": "0",
-          "stast": "0",
-          "StoreID": "",
-          "TenpayTradeNo": "",
-          "TotalSuccessAmount": "",
-          "TotalSuccessTimes": "",
-          "TradeAmt": "199",
-          "TradeDate": "2026/02/24 17:02:53",
-          "TradeNo": "2602241702531683",
-          "WebATMAccBank": "",
-          "WebATMAccNo": "",
-          "WebATMBankName": "",
-          "CheckMacValue": "84E1B3F68395F020B8C8B5B45C311A14"
-        },
-        "webhookUrl": "https://nickleo9.zeabur.app/webhook/ipas-pay-result",
-        "executionMode": "production"
-      }
-    ]
-  },
+  "pinData": {},
   "meta": {
     "templateCredsSetupCompleted": true,
-    "instanceId": "045b337db1b2137df2bcf09177f16bf68cbe9e27bc92ad426e9dd633638b802f"
+    "instanceId": "f7acbd4ff05e61b15467cacfe53ccd4dbee5e4fe811bcf45a0e64a9caedd60bc"
   }
 }

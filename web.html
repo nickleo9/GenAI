@@ -833,7 +833,7 @@
 
                 // 載入生成式AI題庫
                 try {
-                    const response1 = await fetch('./模擬考題.json');
+                    const response1 = await fetch('./generative_ai_exam.json');
                     if (response1.ok) {
                         const data1 = await response1.json();
                         if (Array.isArray(data1) && data1.length > 0) {
@@ -890,7 +890,7 @@
 
                 // 載入原iPAS題庫 (保持向後兼容)
                 try {
-                    const response4 = await fetch('./應用模擬考題.json');
+                    const response4 = await fetch('./ipas_exam.json');
                     if (response4.ok) {
                         const data4 = await response4.json();
                         if (Array.isArray(data4) && data4.length > 0) {
@@ -922,9 +922,9 @@
                     // 顯示提示訊息
                     setTimeout(() => {
                         if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showAlert) {
-                            iPASQuizApp.showAlert('題庫檔案未找到，已載入示例題目供測試！\n請確保 模擬考題.json 和 應用模擬考題.json 在正確位置。', 'warning');
+                            iPASQuizApp.showAlert('題庫檔案未找到，已載入示例題目供測試！\n請確保 generative_ai_exam.json 和 ipas_exam.json 在正確位置。', 'warning');
                         } else {
-                            alert('題庫檔案未找到，已載入示例題目供測試！\n請確保 模擬考題.json 和 應用模擬考題.json 在正確位置。');
+                            alert('題庫檔案未找到，已載入示例題目供測試！\n請確保 generative_ai_exam.json 和 ipas_exam.json 在正確位置。');
                         }
                     }, 1000);
                 } else if (quizData['ipas'].length === 0) {

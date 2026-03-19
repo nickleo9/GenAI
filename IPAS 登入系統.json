@@ -19,7 +19,7 @@
     },
     {
       "parameters": {
-        "jsCode": "const userIdToCheck = $input.first().json.body.userId;\nconst emailToCheck = $input.first().json.body.email;\n\nreturn [{ json: {\n    searchUserId: userIdToCheck || '',\n    searchEmail: emailToCheck || ''\n} }];\n"
+        "jsCode": "const userIdToCheck = $input.first().json.body.userId;\nconst emailToCheck = $input.first().json.body.email;\n\nreturn [{ json: {\n    searchUserId: userIdToCheck || '',\n    searchEmail: emailToCheck || '',\n    action: sync_account ||\n} }];\n"
       },
       "type": "n8n-nodes-base.code",
       "typeVersion": 2,
@@ -2907,8 +2907,26 @@
     {
       "parameters": {
         "respondWith": "json",
-        "responseBody": "={\n  \"status\": \"found\",\n  \"isPaid\": true,\n  \"memberLevel\": \"付費會員\",\n  \"paid_until\": \"{{ $('處理 Email 同步').first().json.paid_until }}\",\n  \"message\": \"已成功同步會員狀態\"\n}\n",
-        "options": {}
+        "responseBody": "={{ \n  {\nstatus: 'found',\nisPaid: true,\nmemberLevel: '付費會員',\npaid_until: $('處理 Email 同步').first().json.paid_until || '',\nmessage: '已成功同步會員狀態'\n        } \n              }}",
+        "options": {
+          "responseCode": 200,
+          "responseHeaders": {
+            "entries": [
+              {
+                "name": "Access-Control-Allow-Origin",
+                "value": "*"
+              },
+              {
+                "name": "Access-Control-Allow-Methods",
+                "value": "GET, POST, OPTIONS"
+              },
+              {
+                "name": "Access-Control-Allow-Headers",
+                "value": "Content-Type, Authorization"
+              }
+            ]
+          }
+        }
       },
       "type": "n8n-nodes-base.respondToWebhook",
       "typeVersion": 1.5,

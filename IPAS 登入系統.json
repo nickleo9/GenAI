@@ -220,7 +220,7 @@
               "display": true,
               "type": "string",
               "canBeUsedToMatch": true,
-              "removed": false
+              "removed": true
             },
             {
               "id": "paid_until",
@@ -230,7 +230,7 @@
               "display": true,
               "type": "string",
               "canBeUsedToMatch": true,
-              "removed": false
+              "removed": true
             },
             {
               "id": "pictureUrl",
@@ -1516,7 +1516,7 @@
             },
             {
               "fieldId": "member_level",
-              "fieldValue": "={{ $('Append or update row in sheet').item.json.member_level }}"
+              "fieldValue": "=免費會員"
             },
             {
               "fieldId": "register_date",
@@ -1563,7 +1563,7 @@
             },
             {
               "fieldId": "member_level",
-              "fieldValue": "={{ $('Append or update row in sheet').item.json.member_level }}"
+              "fieldValue": "=免費會員"
             },
             {
               "fieldId": "created_at",
@@ -1664,10 +1664,6 @@
             {
               "fieldId": "email",
               "fieldValue": "={{ $('Append or update row in sheet').item.json.email }}"
-            },
-            {
-              "fieldId": "member_level",
-              "fieldValue": "={{ $('Append or update row in sheet').item.json.member_level }}"
             },
             {
               "fieldId": "created_at",
@@ -1772,7 +1768,7 @@
             },
             {
               "fieldId": "member_level",
-              "fieldValue": "={{ $('處理用戶資料').item.json.member_level }}"
+              "fieldValue": "=免費會員"
             },
             {
               "fieldId": "pictureUrl",
@@ -2252,7 +2248,7 @@
     {
       "parameters": {
         "respondWith": "json",
-        "responseBody": "={\n  \"status\": \"success\",\n  \"message\": \"會員註冊成功，請升級為付費會員\",\n  \"needPayment\": true,\n  \"paymentUrl\": \"https://portaly.cc/zn.studio\",\n  \"user\": {\n    \"userId\": \"{{ $('處理用戶資料').first().json.line_user_id }}\",\n    \"displayName\": \"{{ $('處理用戶資料').first().json.displayName }}\",\n    \"memberLevel\": \"{{ $('處理用戶資料').first().json.member_level }}\",\n    \"pictureUrl\": \"{{ $('處理用戶資料').first().json.pictureUrl }}\"\n  },\n  \"creator\": {\n    \"name\": \"Nick Chang\",\n    \"email\": \"nickleo051216@gmail.com\",\n    \"phone\": \"0932-684-051\",\n    \"website\": \"https://portaly.cc/zn.studio\"\n  }\n}",
+        "responseBody": "={\n  \"status\": \"success\",\n  \"message\": \"會員註冊成功，請升級為付費會員\",\n  \"needPayment\": true,\n  \"paymentUrl\": \"https://portaly.cc/zn.studio\",\n  \"user\": {\n    \"userId\": \"{{ $('處理用戶資料').first().json.line_user_id }}\",\n    \"displayName\": \"{{ $('處理用戶資料').first().json.displayName }}\",\n    \"memberLevel\": \"免費會員\",\n    \"pictureUrl\": \"{{ $('處理用戶資料').first().json.pictureUrl }}\"\n  },\n  \"creator\": {\n    \"name\": \"Nick Chang\",\n    \"email\": \"nickleo051216@gmail.com\",\n    \"phone\": \"0932-684-051\",\n    \"website\": \"https://portaly.cc/zn.studio\"\n  }\n}",
         "options": {
           "responseCode": 200,
           "responseHeaders": {

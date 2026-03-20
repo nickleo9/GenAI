@@ -1,0 +1,16 @@
+{
+  "name": "n8n-mcp-editor",
+  "version": "1.0.0",
+  "description": "MCP server for editing n8n workflows (create, update, delete nodes)",
+  "type": "module",
+  "main": "index.mjs",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.27.1"
+  }
+}

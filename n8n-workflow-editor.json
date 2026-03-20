@@ -1,0 +1,496 @@
+{
+  "name": "Workflow Editor (Claude MCP)",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "workflow-editor",
+        "options": {
+          "rawBody": true
+        }
+      },
+      "id": "webhook-trigger",
+      "name": "接收編輯請求",
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2,
+      "position": [250, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// 解析 Claude 傳來的指令\nconst input = $input.first().json;\nconst body = input.body || input;\n\nconst action = body.action; // 'get' | 'update' | 'update_node' | 'add_node' | 'delete_node' | 'create'\nconst workflowId = body.workflowId;\nconst data = body.data || {};\n\nreturn [{ json: { action, workflowId, data } }];"
+      },
+      "id": "parse-request",
+      "name": "解析請求",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [470, 300]
+    },
+    {
+      "parameters": {
+        "rules": {
+          "values": [
+            {
+              "conditions": {
+                "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+                "conditions": [
+                  { "leftValue": "={{ $json.action }}", "rightValue": "get", "operator": { "type": "string", "operation": "equals" } }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": "get"
+            },
+            {
+              "conditions": {
+                "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+                "conditions": [
+                  { "leftValue": "={{ $json.action }}", "rightValue": "update", "operator": { "type": "string", "operation": "equals" } }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": "update"
+            },
+            {
+              "conditions": {
+                "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+                "conditions": [
+                  { "leftValue": "={{ $json.action }}", "rightValue": "update_node", "operator": { "type": "string", "operation": "equals" } }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": "update_node"
+            },
+            {
+              "conditions": {
+                "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+                "conditions": [
+                  { "leftValue": "={{ $json.action }}", "rightValue": "create", "operator": { "type": "string", "operation": "equals" } }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": "create"
+            },
+            {
+              "conditions": {
+                "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+                "conditions": [
+                  { "leftValue": "={{ $json.action }}", "rightValue": "add_node", "operator": { "type": "string", "operation": "equals" } }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": "add_node"
+            },
+            {
+              "conditions": {
+                "options": { "caseSensitive": true, "leftValue": "", "typeValidation": "strict" },
+                "conditions": [
+                  { "leftValue": "={{ $json.action }}", "rightValue": "delete_node", "operator": { "type": "string", "operation": "equals" } }
+                ],
+                "combinator": "and"
+              },
+              "renameOutput": "delete_node"
+            }
+          ]
+        },
+        "options": {
+          "fallbackOutput": "extra"
+        }
+      },
+      "id": "switch-action",
+      "name": "判斷動作",
+      "type": "n8n-nodes-base.switch",
+      "typeVersion": 3.2,
+      "position": [690, 300]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "getById",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $('解析請求').item.json.workflowId }}",
+          "mode": "id"
+        }
+      },
+      "id": "get-workflow",
+      "name": "取得 Workflow",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [920, 100]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "update",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $('解析請求').item.json.workflowId }}",
+          "mode": "id"
+        },
+        "workflowObject": "={{ JSON.stringify($('解析請求').item.json.data) }}"
+      },
+      "id": "update-workflow",
+      "name": "更新 Workflow",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [920, 300]
+    },
+    {
+      "parameters": {
+        "jsCode": "// update_node: 讀取 workflow -> 修改指定 node -> 寫回\nconst { workflowId, data } = $('解析請求').item.json;\nconst nodeName = data.nodeName;\nconst nodeData = data.nodeData;\n\nreturn [{ json: { workflowId, nodeName, nodeData, action: 'update_node' } }];"
+      },
+      "id": "prepare-update-node",
+      "name": "準備更新節點",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [920, 500]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "getById",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $json.workflowId }}",
+          "mode": "id"
+        }
+      },
+      "id": "get-workflow-for-node-update",
+      "name": "讀取 Workflow (節點更新用)",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [1140, 500]
+    },
+    {
+      "parameters": {
+        "jsCode": "// 取得 workflow 並修改指定節點\nconst workflow = $input.first().json;\nconst { nodeName, nodeData, workflowId } = $('準備更新節點').item.json;\n\n// 找到要更新的節點\nconst nodeIndex = workflow.nodes.findIndex(n => n.name === nodeName);\nif (nodeIndex === -1) {\n  throw new Error(`Node \"${nodeName}\" not found in workflow`);\n}\n\n// Merge 更新\nworkflow.nodes[nodeIndex] = { ...workflow.nodes[nodeIndex], ...nodeData };\n\n// 準備 PUT body (只保留必要欄位)\nconst updateBody = {\n  name: workflow.name,\n  nodes: workflow.nodes,\n  connections: workflow.connections,\n  settings: workflow.settings || {}\n};\n\nreturn [{ json: { workflowId, updateBody, updatedNode: workflow.nodes[nodeIndex].name } }];"
+      },
+      "id": "merge-node-update",
+      "name": "合併節點更新",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1360, 500]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "update",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $json.workflowId }}",
+          "mode": "id"
+        },
+        "workflowObject": "={{ JSON.stringify($json.updateBody) }}"
+      },
+      "id": "apply-node-update",
+      "name": "寫回更新的 Workflow",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [1580, 500]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "create",
+        "workflowObject": "={{ JSON.stringify($('解析請求').item.json.data) }}"
+      },
+      "id": "create-workflow",
+      "name": "建立 Workflow",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [920, 700]
+    },
+    {
+      "parameters": {
+        "jsCode": "// add_node: 讀取 workflow -> 新增節點 -> 寫回\nconst { workflowId, data } = $('解析請求').item.json;\nconst newNode = data.node;\n\nif (!newNode || !newNode.name || !newNode.type) {\n  throw new Error('data.node must include at least \"name\" and \"type\"');\n}\n\nreturn [{ json: { workflowId, newNode, action: 'add_node' } }];"
+      },
+      "id": "prepare-add-node",
+      "name": "準備新增節點",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [920, 900]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "getById",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $json.workflowId }}",
+          "mode": "id"
+        }
+      },
+      "id": "get-workflow-for-add-node",
+      "name": "讀取 Workflow (新增節點用)",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [1140, 900]
+    },
+    {
+      "parameters": {
+        "jsCode": "// 取得 workflow 並新增節點\nconst workflow = $input.first().json;\nconst { newNode, workflowId } = $('準備新增節點').item.json;\n\n// 檢查節點名稱是否重複\nconst exists = workflow.nodes.find(n => n.name === newNode.name);\nif (exists) {\n  throw new Error(`Node \"${newNode.name}\" already exists in workflow`);\n}\n\n// 新增節點\nworkflow.nodes.push(newNode);\n\n// 準備更新 body\nconst updateBody = {\n  name: workflow.name,\n  nodes: workflow.nodes,\n  connections: workflow.connections,\n  settings: workflow.settings || {}\n};\n\nreturn [{ json: { workflowId, updateBody, addedNode: newNode.name } }];"
+      },
+      "id": "merge-add-node",
+      "name": "合併新增節點",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1360, 900]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "update",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $json.workflowId }}",
+          "mode": "id"
+        },
+        "workflowObject": "={{ JSON.stringify($json.updateBody) }}"
+      },
+      "id": "apply-add-node",
+      "name": "寫回新增的 Workflow",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [1580, 900]
+    },
+    {
+      "parameters": {
+        "jsCode": "// delete_node: 讀取 workflow -> 刪除指定節點及其連線 -> 寫回\nconst { workflowId, data } = $('解析請求').item.json;\nconst nodeName = data.nodeName;\n\nif (!nodeName) {\n  throw new Error('data.nodeName is required for delete_node action');\n}\n\nreturn [{ json: { workflowId, nodeName, action: 'delete_node' } }];"
+      },
+      "id": "prepare-delete-node",
+      "name": "準備刪除節點",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [920, 1100]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "getById",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $json.workflowId }}",
+          "mode": "id"
+        }
+      },
+      "id": "get-workflow-for-delete-node",
+      "name": "讀取 Workflow (刪除節點用)",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [1140, 1100]
+    },
+    {
+      "parameters": {
+        "jsCode": "// 取得 workflow 並刪除指定節點及其相關連線\nconst workflow = $input.first().json;\nconst { nodeName, workflowId } = $('準備刪除節點').item.json;\n\n// 確認節點存在\nconst nodeIndex = workflow.nodes.findIndex(n => n.name === nodeName);\nif (nodeIndex === -1) {\n  throw new Error(`Node \"${nodeName}\" not found in workflow`);\n}\n\n// 移除節點\nworkflow.nodes.splice(nodeIndex, 1);\n\n// 移除所有與該節點相關的連線\nconst connections = workflow.connections || {};\n\n// 刪除該節點作為來源的連線\ndelete connections[nodeName];\n\n// 刪除其他節點連向該節點的連線\nfor (const sourceNode of Object.keys(connections)) {\n  if (connections[sourceNode].main) {\n    connections[sourceNode].main = connections[sourceNode].main.map(outputArr =>\n      outputArr.filter(conn => conn.node !== nodeName)\n    );\n  }\n}\n\n// 準備更新 body\nconst updateBody = {\n  name: workflow.name,\n  nodes: workflow.nodes,\n  connections,\n  settings: workflow.settings || {}\n};\n\nreturn [{ json: { workflowId, updateBody, deletedNode: nodeName } }];"
+      },
+      "id": "merge-delete-node",
+      "name": "合併刪除節點",
+      "type": "n8n-nodes-base.code",
+      "typeVersion": 2,
+      "position": [1360, 1100]
+    },
+    {
+      "parameters": {
+        "resource": "workflow",
+        "operation": "update",
+        "workflowId": {
+          "__rl": true,
+          "value": "={{ $json.workflowId }}",
+          "mode": "id"
+        },
+        "workflowObject": "={{ JSON.stringify($json.updateBody) }}"
+      },
+      "id": "apply-delete-node",
+      "name": "寫回刪除的 Workflow",
+      "type": "n8n-nodes-base.n8n",
+      "typeVersion": 1,
+      "position": [1580, 1100]
+    },
+    {
+      "parameters": {
+        "options": {},
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, result: $json }) }}"
+      },
+      "id": "respond-get",
+      "name": "回應 Get",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1140, 100]
+    },
+    {
+      "parameters": {
+        "options": {},
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, action: 'update', result: $json }) }}"
+      },
+      "id": "respond-update",
+      "name": "回應 Update",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1140, 300]
+    },
+    {
+      "parameters": {
+        "options": {},
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, action: 'update_node', updatedNode: $('合併節點更新').item.json.updatedNode, result: $json }) }}"
+      },
+      "id": "respond-node-update",
+      "name": "回應 Node Update",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1800, 500]
+    },
+    {
+      "parameters": {
+        "options": {},
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, action: 'create', result: $json }) }}"
+      },
+      "id": "respond-create",
+      "name": "回應 Create",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1140, 700]
+    },
+    {
+      "parameters": {
+        "options": {},
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, action: 'add_node', addedNode: $('合併新增節點').item.json.addedNode, result: $json }) }}"
+      },
+      "id": "respond-add-node",
+      "name": "回應 Add Node",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1800, 900]
+    },
+    {
+      "parameters": {
+        "options": {},
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: true, action: 'delete_node', deletedNode: $('合併刪除節點').item.json.deletedNode, result: $json }) }}"
+      },
+      "id": "respond-delete-node",
+      "name": "回應 Delete Node",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [1800, 1100]
+    },
+    {
+      "parameters": {
+        "options": {
+          "responseCode": 400
+        },
+        "respondWith": "json",
+        "responseBody": "={{ JSON.stringify({ success: false, error: 'Unknown action: ' + $('解析請求').item.json.action, supportedActions: ['get', 'update', 'update_node', 'add_node', 'delete_node', 'create'] }) }}"
+      },
+      "id": "respond-error",
+      "name": "回應錯誤",
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.1,
+      "position": [920, 1300]
+    }
+  ],
+  "connections": {
+    "接收編輯請求": {
+      "main": [
+        [{ "node": "解析請求", "type": "main", "index": 0 }]
+      ]
+    },
+    "解析請求": {
+      "main": [
+        [{ "node": "判斷動作", "type": "main", "index": 0 }]
+      ]
+    },
+    "判斷動作": {
+      "main": [
+        [{ "node": "取得 Workflow", "type": "main", "index": 0 }],
+        [{ "node": "更新 Workflow", "type": "main", "index": 0 }],
+        [{ "node": "準備更新節點", "type": "main", "index": 0 }],
+        [{ "node": "建立 Workflow", "type": "main", "index": 0 }],
+        [{ "node": "準備新增節點", "type": "main", "index": 0 }],
+        [{ "node": "準備刪除節點", "type": "main", "index": 0 }],
+        [{ "node": "回應錯誤", "type": "main", "index": 0 }]
+      ]
+    },
+    "取得 Workflow": {
+      "main": [
+        [{ "node": "回應 Get", "type": "main", "index": 0 }]
+      ]
+    },
+    "更新 Workflow": {
+      "main": [
+        [{ "node": "回應 Update", "type": "main", "index": 0 }]
+      ]
+    },
+    "準備更新節點": {
+      "main": [
+        [{ "node": "讀取 Workflow (節點更新用)", "type": "main", "index": 0 }]
+      ]
+    },
+    "讀取 Workflow (節點更新用)": {
+      "main": [
+        [{ "node": "合併節點更新", "type": "main", "index": 0 }]
+      ]
+    },
+    "合併節點更新": {
+      "main": [
+        [{ "node": "寫回更新的 Workflow", "type": "main", "index": 0 }]
+      ]
+    },
+    "寫回更新的 Workflow": {
+      "main": [
+        [{ "node": "回應 Node Update", "type": "main", "index": 0 }]
+      ]
+    },
+    "建立 Workflow": {
+      "main": [
+        [{ "node": "回應 Create", "type": "main", "index": 0 }]
+      ]
+    },
+    "準備新增節點": {
+      "main": [
+        [{ "node": "讀取 Workflow (新增節點用)", "type": "main", "index": 0 }]
+      ]
+    },
+    "讀取 Workflow (新增節點用)": {
+      "main": [
+        [{ "node": "合併新增節點", "type": "main", "index": 0 }]
+      ]
+    },
+    "合併新增節點": {
+      "main": [
+        [{ "node": "寫回新增的 Workflow", "type": "main", "index": 0 }]
+      ]
+    },
+    "寫回新增的 Workflow": {
+      "main": [
+        [{ "node": "回應 Add Node", "type": "main", "index": 0 }]
+      ]
+    },
+    "準備刪除節點": {
+      "main": [
+        [{ "node": "讀取 Workflow (刪除節點用)", "type": "main", "index": 0 }]
+      ]
+    },
+    "讀取 Workflow (刪除節點用)": {
+      "main": [
+        [{ "node": "合併刪除節點", "type": "main", "index": 0 }]
+      ]
+    },
+    "合併刪除節點": {
+      "main": [
+        [{ "node": "寫回刪除的 Workflow", "type": "main", "index": 0 }]
+      ]
+    },
+    "寫回刪除的 Workflow": {
+      "main": [
+        [{ "node": "回應 Delete Node", "type": "main", "index": 0 }]
+      ]
+    }
+  },
+  "settings": {
+    "executionOrder": "v1"
+  }
+}

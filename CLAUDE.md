@@ -6,15 +6,6 @@ This file provides guidance to Claude Code (claude.ai/code) when working with co
 
 **iPAS AI應用規劃師練習系統** — 部署於 GitHub Pages (`nickleo9.github.io/GenAI/`)，供用戶練習 iPAS 認證考試題目的前端網頁應用。
 
-## 相關帳號與 Repo
-
-| 帳號 | 用途 |
-|------|------|
-| `nickleo9` | 主要 GitHub 帳號，本 repo (`nickleo9/GenAI`) |
-| `nickleo051216` | ZN Studio 帳號，`znstudioquotation` 等其他 repo |
-
-存取 `nickleo051216` 的 repo 需用 curl + `$GITHUB_ZN_TOKEN`（存於 `~/.claude/settings.json`），因 GitHub MCP 只允許 `nickleo9/genai`。
-
 ## 架構
 
 ### 核心檔案
@@ -88,16 +79,3 @@ n8n workflow 定義存於 `n8n-workflow-editor.json`（25個節點）。
 ## 部署
 
 靜態網站，直接 push 到 `main` branch 即上線（GitHub Pages 自動部署）。無 build 步驟。
-
-## 常用 curl 存取 ZN repo
-
-```bash
-# 列出 znstudioquotation 檔案
-curl -s https://api.github.com/repos/nickleo051216/znstudioquotation/contents/
-
-# 讀取特定檔案（Base64 解碼）
-curl -s https://api.github.com/repos/nickleo051216/znstudioquotation/contents/index.html \
-  | python3 -c "import sys,json,base64; print(base64.b64decode(json.load(sys.stdin)['content']).decode())"
-```
-
-（Repo 為 public，不需 token；若變 private 則加 `-H "Authorization: token $GITHUB_ZN_TOKEN"`）

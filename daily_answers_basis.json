@@ -3568,5 +3568,175 @@
         "explanation": "聯邦學習允許分散多端模型在本地訓練，避免敏感數據集中，提升隱私保護同時共享模型參數。",
         "number": 210,
         "date": "2026-03-23"
+    },
+    {
+        "question": "在機器學習中，何者最能描述監督式學習的核心特徵？",
+        "options": [
+            "模型透過標記數據進行訓練，以產生預測結果",
+            "模型根據無標記數據自行發現數據結構",
+            "模型依賴強化回饋進行策略調整",
+            "模型使用生成對抗網路以創建新數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "監督學習",
+        "concept": "監督學習核心",
+        "explanation": "監督式學習使用已標記的數據來訓練模型，使其能根據輸入預測對應的標籤或結果，是最常見的機器學習類型。",
+        "number": 211,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "以下哪一項最不符合生成式 AI 的特性？",
+        "options": [
+            "基於條件概率分布生成新資料",
+            "用於自動文生、影像創建",
+            "僅能針對輸入進行分類判別",
+            "透過模型學習輸入數據分布"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式 AI 基本原理",
+        "concept": "生成式 AI",
+        "explanation": "生成式 AI 的主要目標是生成新的數據樣本，而不是分類判斷，分類屬於鑑別式 AI 功能。",
+        "number": 212,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "在 AI 治理架構中，以下哪一項行為最能體現「Human on Loop」原則？",
+        "options": [
+            "AI自主決策且全自動化執行",
+            "人工回饋介入以調整模型決策流程",
+            "完全不需人員監控的無人操作",
+            "模型完全由自動演算法更新"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI 治理概念",
+        "subtopic": "人機互動與監控",
+        "concept": "Human on Loop",
+        "explanation": "Human on Loop 指在AI運作過程中，有人工監督和干預，確保決策過程可控、可調整。",
+        "number": 213,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "資料整理過程中的ETL主要指？",
+        "options": [
+            "資料抽取、轉換與載入的流程",
+            "資料壓縮、加密與傳輸",
+            "演算法優化與模型訓練",
+            "資料視覺化與報表生成"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL代表資料抽取(Extract)、轉換(Transform)與載入(Load)，是數據整理的關鍵步驟。",
+        "number": 214,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "以下何者最能代表鑑別式 AI 的運作方式？",
+        "options": [
+            "學習條件概率分布以模擬數據生成",
+            "以判別數據是否屬於特定類別為目標",
+            "透過強化學習自主優化行動策略",
+            "使用生成對抗網路創建新圖像"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "鑑別式 AI 基本原理",
+        "concept": "鑑別式 AI",
+        "explanation": "鑑別式 AI主要目標是辨識輸入數據的類別或特徵，與生成新數據的生成式 AI 相對。",
+        "number": 215,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "對於資料隱私與安全，下列哪種做法最符合現代 AI 應用要求？",
+        "options": [
+            "將所有數據集中存儲以加強控制",
+            "採用聯邦學習技術分散數據，保障隱私",
+            "公開完整數據集以利模型訓練",
+            "不使用加密技術以提高傳輸速度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料隱私保護",
+        "explanation": "聯邦學習允許模型在分散的數據節點進行訓練，不集中數據，有效保護用戶隱私與安全。",
+        "number": 216,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "在機器學習模型中，何謂L1正則化的主要功能？",
+        "options": [
+            "促進模型參數稀疏化並減少過擬合",
+            "增加模型參數值以提升表現力",
+            "使模型參數均勻分佈以增加穩定性",
+            "忽略輸入數據中的雜訊以促進收斂"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "正規化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會讓部分權重收斂為零，促進模型參數稀疏化，有助於減少過擬合。",
+        "number": 217,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "生成式 AI 融合鑑別式 AI 的應用不包含下列哪項？",
+        "options": [
+            "通過生成內容輔助鑑別提升判斷準確率",
+            "生成對抗網路的生成器與判別器互相促進",
+            "純粹依賴鑑別模型提供預測結果",
+            "結合生成模型與鑑別模型完成多模態任務"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "生成與鑑別整合",
+        "explanation": "融合應用強調生成和鑑別互補，純鑑別模型不屬於融合應用範疇。",
+        "number": 218,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "以下哪一選項最準確描述資料依關聯性分類的差異？",
+        "options": [
+            "關聯式資料庫以結構化數據為主，非關聯式適用非結構化數據",
+            "非關聯式資料庫需強制關聯約束，關聯式則不需",
+            "關聯式資料庫不支持交易管理，非關聯式支持",
+            "非關聯式資料庫只能儲存文字資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念",
+        "concept": "資料庫類型",
+        "explanation": "關聯式資料庫適合結構化數據，提供嚴格關聯性約束；非關聯式則彈性強，支援非結構化資料。",
+        "number": 219,
+        "date": "2026-03-25"
+    },
+    {
+        "question": "在機器學習中，偏差與變異的權衡（Bias-Variance Tradeoff）表示哪種情況？",
+        "options": [
+            "模型複雜度增高，偏差降低但變異可能增加",
+            "降低模型複雜度會增加偏差及變異",
+            "偏差增加代表模型過擬合數據",
+            "全部以上皆不正確"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型評估",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差-變異權衡指模型複雜度提高時，偏差通常降低，但模型對訓練數據的敏感性（變異）會增加。",
+        "number": 220,
+        "date": "2026-03-25"
     }
 ]

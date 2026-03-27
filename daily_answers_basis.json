@@ -3738,5 +3738,175 @@
         "explanation": "偏差-變異權衡指模型複雜度提高時，偏差通常降低，但模型對訓練數據的敏感性（變異）會增加。",
         "number": 220,
         "date": "2026-03-25"
+    },
+    {
+        "question": "在AI治理中，下列何者最能強調AI系統的透明度與可解釋性？",
+        "options": [
+            "使用黑箱模型進行決策以保護數據隱私",
+            "推行可解釋AI（XAI）以促進使用者理解模型決策過程",
+            "限制AI使用者的訪問權限以防範機密洩漏",
+            "強制AI系統在本地離線運行避免雲端外洩"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理",
+        "concept": "可解釋性",
+        "explanation": "可解釋AI（XAI）強調讓使用者理解AI如何做出決策，這是提高AI系統透明度的關鍵措施，不同於黑箱模型或純粹的訪問限制。",
+        "number": 221,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "下列何者最能表達生成式AI與鑑別式AI在運作原理上的根本差異？",
+        "options": [
+            "生成式AI透過判別數據屬性分類，鑑別式AI通過模擬數據生成",
+            "生成式AI尋求建模數據分布以產生新數據，鑑別式AI則判斷數據類別歸屬",
+            "鑑別式AI與生成式AI本質相同，不同名稱僅強調應用領域",
+            "生成式AI專注於有監督學習，鑑別式AI專注於無監督學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "生成式與鑑別式AI",
+        "concept": "生成與鑑別基本原理",
+        "explanation": "生成式AI建立數據的整體分布來產生新數據，鑑別式AI則直接判斷輸入數據所屬類別，兩者在核心學習目標不同。",
+        "number": 222,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "機器學習中常見的資料預處理方法“One-Hot Encoding”主要用途為何？",
+        "options": [
+            "將類別型變數轉化為數值型變數的二進位向量格式",
+            "降低訓練資料的維度以提升演算法效率",
+            "針對數值資料進行標準化處理以消除偏倚",
+            "將連續變數離散化為多個區間類別"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理與編碼",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding將類別變數轉成數值向量形式，每個類別對應一個獨立的二進位位元，方便模型處理非數值資料。",
+        "number": 223,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "資料隱私與安全領域中，何種技術可在不讓中央伺服器取得完整資料的情況下完成機器學習？",
+        "options": [
+            "細粒度存取控制機制",
+            "聯邦學習分散式訓練模式",
+            "使用加密貨幣保證資料交易安全",
+            "部署區塊鏈智能合約管理資料使用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許多個節點本地訓練模型，只共享模型更新參數而不傳輸原始數據，保障資料隱私。",
+        "number": 224,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "在機器學習中，監督學習、非監督學習與強化學習主要的區分依據是什麼？",
+        "options": [
+            "訓練資料是否有標籤與學習中的回饋信號形式",
+            "學習模型中使用的損失函數類型與優化策略",
+            "資料型態是否屬於結構化或非結構化數據",
+            "模型是否需要在邊緣設備或雲端運行"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督、非監督與強化學習",
+        "explanation": "監督學習有標籤資料，非監督學習無標籤，強化學習依據環境給予的獎勵反饋信號學習行為策略。",
+        "number": 225,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "AI系統中所謂「Human on loop」的定義主要是什麼？",
+        "options": [
+            "完全自動化系統中無需人類介入的運作模式",
+            "結合人類監控與即時干預維護模型決策安全",
+            "利用人類資料擴充深度學習龐大的數據庫",
+            "設計初期以人類規則為訓練基礎的模型迭代方法"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理",
+        "subtopic": "AI監控與介入",
+        "concept": "Human on loop",
+        "explanation": "Human on loop 指在AI模型決策過程中，人類持續監控並能介入修正，確保系統安全與可靠性。",
+        "number": 226,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "鑑別式AI與生成式AI整合應用時，下列何種案例最能反映其協同作用？",
+        "options": [
+            "生成式AI完成文本初稿，鑑別式AI負責審核並分類內容品質",
+            "鑑別式AI用於圖像生成，生成式AI用於語音辨識",
+            "獨立運行生成式AI來產出資料，無需鑑別式AI輔助",
+            "鑑別式AI取代生成式AI作為全部任務的唯一模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "生成式與鑑別式AI",
+        "concept": "AI整合應用",
+        "explanation": "生成式AI生成內容後，鑑別式AI用於評估與分類生成結果品質，兩者協同提升系統效能與準確度。",
+        "number": 227,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "在資料整理流程中，ETL主要包含下列哪三個步驟？",
+        "options": [
+            "抽取 (Extract)、轉換 (Transform)、加密 (Encrypt)",
+            "抽取 (Extract)、轉換 (Transform)、載入 (Load)",
+            "編碼 (Encode)、轉換 (Transform)、載入 (Load)",
+            "驗證 (Evaluate)、轉換 (Transform)、輸出 (Output)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL流程指從各種來源抽取資料，進行格式轉換，最後載入目標系統中，是資料處理的基本流程。",
+        "number": 228,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "在機器學習中，避免模型過度擬合常用的正則化方法，下列何者屬於L1正則化？",
+        "options": [
+            "對權重施加平方懲罰，使多餘權重接近零",
+            "引入絕對值懲罰，促使部分權重變為零以達特徵選擇",
+            "通過隨機丟棄神經元降低模型複雜度",
+            "限制模型輸出範圍以防止極端預測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "模型正則化",
+        "concept": "L1正則化",
+        "explanation": "L1正則化藉由對權重絕對值懲罰，讓部分權重收斂到零，有助於特徵選擇，與L2的平方懲罰不同。",
+        "number": 229,
+        "date": "2026-03-27"
+    },
+    {
+        "question": "依據2026年AI應用趨勢，何種AI技術最適合邊緣運算環境以提升運算效率？",
+        "options": [
+            "巨型語言模型（LLM）具備數百億參數",
+            "小型語言模型（SLM）具備輕量化結構與低參數量",
+            "生成對抗網路（GAN）專用於資料增強",
+            "強化學習適用於雲端集中式訓練"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI模型與硬體適配",
+        "concept": "小型語言模型（SLM）",
+        "explanation": "小型語言模型具備輕量化設計與少量參數，適用於資源有限的邊緣設備，有效提升運算效率。",
+        "number": 230,
+        "date": "2026-03-27"
     }
 ]

@@ -3398,5 +3398,175 @@
         "explanation": "Few-shot Prompting，即提供具體範例，是2025年重要的生成式AI提示詞策略，能顯著提升模型正確率與可靠性。",
         "number": 200,
         "date": "2026-03-17"
+    },
+    {
+        "question": "某製造業企業考慮導入生成式AI進行品質檢測流程自動化。在進行TCO（總持有成本）評估時，應包含哪項成本要素？",
+        "options": [
+            "生成式AI模型的API Token費用、GPU運算資源、人類在迴圈內(HITL)審核人力成本",
+            "生成式AI模型的API Token費用、GPU運算資源、資料清洗與標註成本、傳統檢測設備淘汰費用",
+            "生成式AI模型的API Token費用、GPU運算資源、邊緣AI部署成本、替代員工遣散費",
+            "生成式AI模型的API Token費用、訓練資料購買成本、模型微調成本、員工培訓費用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "專案評估",
+        "concept": "TCO成本評估",
+        "explanation": "TCO評估應納入完整生命週期成本，包括運營、前置和轉型成本。選項B最為全面，涵蓋資料處理與舊設備汰換等關鍵內容。",
+        "number": 201,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "企業開發多代理協作(A2A)系統處理採購流程，包含三個自主智能Agent。為防止系統陷入互相等待的死鎖狀態，應實現何種機制？",
+        "options": [
+            "解決方案圖譜(Solution Graph)與心跳機制(Heartbeat)監控各Agent狀態",
+            "工具調用(Tool Calling)與API限流閘道確保Agent無法同時執行",
+            "外部API互動日誌與容錯轉移(Failover)策略自動降級至備用模型",
+            "提示詞工程優化與多Agent推理決策框架強化指令一致性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "代理系統架構",
+        "concept": "多Agent協作/容錯",
+        "explanation": "解決方案圖譜能規劃Agent協作流程，心跳機制可即時監控Agent運作，這是實踐A2A架構中防死鎖的關鍵方法。",
+        "number": 202,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "金融機構評估No Code生成式AI平台建立客戶風險評級系統，下列哪項最準確描述該方案的核心限制？",
+        "options": [
+            "無法自訂模型演算法與特徵工程，難以滿足高度客製化的風險模型需求",
+            "無法進行API Token費用優化，導致成本永遠高於Low Code方案",
+            "無法實現人類在迴圈內(HITL)審核，違反監管高風險應用要求",
+            "無法部署到本地邊緣環境，只能在雲端執行"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code應用",
+        "subtopic": "平台選型",
+        "concept": "No Code限制",
+        "explanation": "No Code最大限制是缺乏深度自訂與特徵工程能力，難支援金融高需求的客製化演算。",
+        "number": 203,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "醫療機構搭建RAG系統回答患者用藥問題，為提升準確度並降低幻覺風險，最佳提示詞策略是？",
+        "options": [
+            "明確要求『若檢索不足則回覆我不知道』並設定Temperature為0.3",
+            "增加藥物資料庫背景並設定Temperature為0.9以提高創意",
+            "多輪對話提升記憶力並設定Top-P為1.0保證多樣性",
+            "列舉所有副作用並限制輸出格式以強制回答結構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "RAG/溫度控制",
+        "explanation": "明確要求不推測並調低溫度，有效減少醫療應用中幻覺風險並增強可信度。",
+        "number": 204,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "企業利用生成式AI自動招聘篩選，若模型訓練數據產生性別年齡偏見，根據台灣AI基本法，最關鍵合規措施為？",
+        "options": [
+            "加大訓練樣本量以降低統計偏差",
+            "實施HITL決策並記錄招聘審查與推薦過程",
+            "將模型轉為Black Box架構減少濫用風險",
+            "定期重訓並審計以徹底消除偏差"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "合規治理",
+        "concept": "HITL、透明原則",
+        "explanation": "高風險場景需HITL，保有人類最終決策並追蹤模型偏差於決策日誌，才符合法規要求。",
+        "number": 205,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "零售連鎖部署生成式AI於邊緣設備進行即時客戶行為分析，成本、隱私、頻寬皆有限，下列哪個技術組合最適合？",
+        "options": [
+            "完整版LLM部署邊緣GPU並混合雲端推理",
+            "量化與蒸餾後的輕量模型部署於本地並按需雲端同步",
+            "僅使用邊緣設備收集資料，推理全交由雲端執行",
+            "預訓練通用模型直接進行零樣本推理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "零售業/邊緣AI",
+        "concept": "模型優化/邊緣部署",
+        "explanation": "量化和蒸餾能降低邊緣AI運算開銷，兼顧即時反應與隱私，有效平衡本地與雲端運作。",
+        "number": 206,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "企業在Low Code平台設計供應鏈異常預警流程，AI預測缺貨風險高時自動生成採購單，應重點治理哪項風險？",
+        "options": [
+            "自動決策缺乏人類審查應在高風險閾值設HITL點",
+            "Low Code條件判斷無法精準支持80%閾值區分",
+            "自動採購可能擴增模型預測偏差需再提升模型準確度",
+            "流程設計過於繁雜應簡化成單一路徑"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工作流程治理",
+        "concept": "HITL/自動決策",
+        "explanation": "自動決策中應於關鍵閾值設立人類審批點，降低因自動化導致決策偏差的經營風險。",
+        "number": 207,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "教育機構考量採用多模態生成式AI自動評閱數學作業內容，Buy vs. Build決策時，最具指標性評估因素為？",
+        "options": [
+            "有現成多模態API並比較Token費用與自建模型訓練成本",
+            "教育單位現有IT人力規模及GPU基礎",
+            "模型評閱準確度與推理速度指標差異",
+            "競爭對手技術採用現況與市場回饋"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "成本決策",
+        "concept": "多模態系統/Buy-Build",
+        "explanation": "選項A聚焦於成本效益比較，現成API的Token費用對照訓練與維護自建模型總成本，是決策核心。",
+        "number": 208,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "生成式AI客服機器人提示詞易遭注入攻擊而洩露敏感指示，最佳防護組合應該是？",
+        "options": [
+            "增加提示詞複雜度並明確禁止忽視和改變指令",
+            "採用內容過濾及降低Temperature防止多樣化攻擊",
+            "利用提示詞分離和輸入沙箱隔離並加上HITL審核敏感查詢",
+            "改用專屬Fine-tuned模型以降低注入風險"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "安全治理",
+        "concept": "提示詞注入防護",
+        "explanation": "安全應用須多層防線，提示詞分離與沙箱隔離可大幅阻斷攻擊向量，HITL審查提升最後把關。",
+        "number": 209,
+        "date": "2026-03-31"
+    },
+    {
+        "question": "銀行規劃生成式AI進行反洗錢(AML)報告，需滿足金融監理要求與風險分級，根據歐盟AI法案應如何部署？",
+        "options": [
+            "二級風險(高風險)，完全自動化決策並定期審計",
+            "四級風險(禁止類)，全面人工審核不建議使用AI",
+            "二級風險(高風險)，必須建立HITL、完整審計日誌與偏差檢測方案",
+            "一級風險(低風險)，Low Code平台加外部API自動生成"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "金融場景治理",
+        "concept": "高風險分級/監理合規",
+        "explanation": "銀行AML屬高風險應用，必須實施HITL、詳實審計記錄和偏差監控，符合法規及客戶權益保障。",
+        "number": 210,
+        "date": "2026-03-31"
     }
 ]

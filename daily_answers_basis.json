@@ -3908,5 +3908,175 @@
         "explanation": "小型語言模型具備輕量化設計與少量參數，適用於資源有限的邊緣設備，有效提升運算效率。",
         "number": 230,
         "date": "2026-03-27"
+    },
+    {
+        "question": "以下何者最能精確描述鑑別式 AI 與生成式 AI 在應用上的主要差異？",
+        "options": [
+            "鑑別式 AI 用於判斷資料屬性，生成式 AI 用於創造新內容",
+            "鑑別式 AI 主要用於資料生成，生成式 AI 主要用於資料分類",
+            "鑑別式 AI 只適用監督學習，生成式 AI 只適用非監督學習",
+            "鑑別式 AI 主要處理結構化資料，生成式 AI 僅處理非結構化資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "鑑別式 AI 與生成式 AI",
+        "concept": "鑑別式與生成式基本原理",
+        "explanation": "鑑別式 AI 的核心是辨別資料屬性或類別，通常用於分類任務；生成式 AI 著重於創造新數據或內容，如文字、影像等，兩者在功能與應用上截然不同。",
+        "number": 231,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "在資料處理流程中，ETL 指的是哪一連串作業流程？",
+        "options": [
+            "提取、轉換、加載",
+            "抽取、轉換、載入",
+            "編碼、轉換、連接",
+            "抽象、轉置、蒐集"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL 是資料處理中的基本流程，即抽取（Extract）數據、轉換（Transform）格式與結構，最後載入（Load）到資料庫或資料倉儲中。",
+        "number": 232,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "關於機器學習中「監督學習」與「非監督學習」的敘述，下列何者正確？",
+        "options": [
+            "監督學習使用標記資料，非監督學習利用無標記資料進行模式挖掘",
+            "監督學習不需要標記資料，非監督學習必須依賴標記資料",
+            "監督學習只能用於分類，非監督學習只用於回歸",
+            "監督學習主要處理文本，非監督學習限定結構化數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習與非監督學習",
+        "explanation": "監督學習依賴帶標記的資料進行訓練，用於分類或回歸任務；非監督學習不需要標記資料，通過自動發現資料內在結構執行任務如叢集。",
+        "number": 233,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "AI治理中所強調的\"Human on loop\"機制，最主要是指？",
+        "options": [
+            "機器完全自動決策，無需人為介入",
+            "人工監督並可干預機器決策流程",
+            "由多個人同時監督同一AI系統",
+            "人機交互介面自動調整模型參數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "Human on loop",
+        "explanation": "Human on loop 強調在AI系統運作過程中保留人類人工監督權限，能隨時介入或修正模型決策，以確保安全與合規。",
+        "number": 234,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "下列哪個方法屬於資料的數值特徵編碼技術，常用於機器學習預處理？",
+        "options": [
+            "One-Hot Encoding",
+            "隨機森林抽樣",
+            "深度強化學習",
+            "特徵正則化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "數值特徵編碼",
+        "explanation": "One-Hot Encoding 為特徵編碼方法，將類別型變量轉換為二進制向量，使得機器學習模型能處理非數值資料。",
+        "number": 235,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "關於機器學習中的「偏差-變異權衡」(Bias-Variance Tradeoff)，以下敘述何者錯誤？",
+        "options": [
+            "高偏差通常導致模型欠擬合",
+            "高變異通常導致模型過擬合",
+            "偏差與變異可以同時降到最低",
+            "適當調整可平衡偏差與變異以提昇模型效能"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "偏差-變異權衡",
+        "explanation": "偏差與變異呈現權衡關係，通常無法同時降到最低，且過高的偏差表明欠擬合，高變異造成過擬合，調整模型複雜度以取得平衡。",
+        "number": 236,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "以下有關生成式AI在實務應用中所強調的\"語境一致性\"是指？",
+        "options": [
+            "生成內容需與上下文保持邏輯和語義連貫",
+            "生成內容必須完全創新且無關上下文",
+            "生成內容可隨機產生，不要求相似性",
+            "只需在訓練期間保持資料一致即可"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI基本原理",
+        "concept": "語境一致性",
+        "explanation": "生成式AI在自然語言處理中要求生成的回答或內容與前後文語境相符，避免偏離主題或出現語義矛盾，提高使用者體驗。",
+        "number": 237,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "資料隱私與安全議題中，聯邦學習（Federated Learning）的核心優勢為何？",
+        "options": [
+            "分散式訓練避免集中資料隱私風險",
+            "所有資料集中於雲端統一處理",
+            "無需模型更新即可完成學習",
+            "加密後資料可隨意分享與存儲"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習讓多個終端在本地訓練模型參數，避免資料移動與集中，有效保護使用者隱私並降低資料安全風險。",
+        "number": 238,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "在機器學習模型的訓練過程中，L1正則化導致的參數收斂特性是什麼？",
+        "options": [
+            "促使部分權重收斂到零以達成特徵選擇",
+            "增加所有權重的幅度以提升模型複雜度",
+            "忽略損失函數，專注於最大化權重",
+            "使權重均等分布，避免稀疏解"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會對權重施加絕對值懲罰，導致部分權重縮減為零，達成特徵擇優與模型稀疏化效果，提高解釋性。",
+        "number": 239,
+        "date": "2026-04-03"
+    },
+    {
+        "question": "以下哪項不是目前AI治理框架中常見的監管工具？",
+        "options": [
+            "監理沙盒 (Regulatory Sandbox)",
+            "自動化模型無監控部署",
+            "透明度報告 (Transparency Reporting)",
+            "資料可解釋性 (Explainability)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "AI監管工具",
+        "explanation": "自動化模型無監控部署違反治理原則，缺乏監管與風險控管；監理沙盒、透明度報告及可解釋性是目前通行的AI治理措施。",
+        "number": 240,
+        "date": "2026-04-03"
     }
 ]

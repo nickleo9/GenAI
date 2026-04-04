@@ -3738,5 +3738,175 @@
         "explanation": "只關注技術更新而無視業務實際效益，將導致工具無法發揮企業價值，評估重點應多面向併重。",
         "number": 220,
         "date": "2026-04-02"
+    },
+    {
+        "question": "2025年生成式AI主流架構為何，結合傳統預測性AI解決高精確度預測？",
+        "options": [
+            "純生成式AI（GenAI）主導內容生成與知識問答",
+            "混合AI（Hybrid AI），整合Predictive AI與GenAI",
+            "Agentic AI單獨處理設備異常偵測與維修步驟",
+            "No Code平台直接部署大模型如Gemini 2.5"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "混合AI（Hybrid AI）",
+        "explanation": "2025年企業發現單靠GenAI不足，主流為混合AI，將Predictive AI與生成式AI結合，提升製造業等領域異常偵測與維修指引的精準度。",
+        "number": 221,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "No Code/Low Code在生成式AI導入評估中，最優先需求確認步驟為何？",
+        "options": [
+            "直接選用Gamma一鍵美化既有內容為簡報",
+            "召開會議統一認知，產出明確需求文件",
+            "部署HKGAI V1大模型測試港話通互動功能",
+            "監控Veo 3影片模型的音訊生成token量"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "導入評估流程",
+        "explanation": "L121及L123課程強調需求不清往往造成返工，導入生成式AI首重召開專案會議，統一需求與目標，產出明確文件。",
+        "number": 222,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "台灣2025年政府生成式AI戰略中，凌群電腦重點展出何者於智慧城市展？",
+        "options": [
+            "純內容創作工具如Claude高橋流簡報生成",
+            "智慧醫療AI Agent與藥櫃管理系統應用",
+            "智慧醫療AI Agent藥櫃管理及公部門範例",
+            "稀疏注意力（Sparse Attention）優化混合專家模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "智慧城市AI Agent",
+        "explanation": "凌群電腦於2025智慧城市展重點展示智慧醫療AI Agent應用於藥櫃管理及公部門響應資訊化轉型。",
+        "number": 223,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "提示詞工程（Prompt Engineering）在Agentic AI崛起後，關鍵優化為何？",
+        "options": [
+            "僅依賴Gemini 2.5的AI模式自動生成搜索結果",
+            "使用Notebook LM整理資料後Gamma美化簡報",
+            "指定「聚合實時數據多維關聯分析生成報告」",
+            "混合AI中忽略Predictive AI僅用GenAI預測異常"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞用法",
+        "concept": "提示詞優化",
+        "explanation": "Agentic AI應用重視多維數據關聯，透過精準提示詞聚合實時數據生成詳盡報告是關鍵優化策略。",
+        "number": 224,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "生成式AI導入評估規劃中，部署後首月關鍵監控項為何？",
+        "options": [
+            "僅追蹤大模型參數規模達1.76萬億的邏輯推理",
+            "模型輸出準確率、幻覺率及資源使用效率",
+            "No Code工具如Canva Design for me的秒做美簡報",
+            "HKGAI V1針對香港本土表達的政務咨詢互動"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "風險監控",
+        "explanation": "導入生成式AI後，需優先監控模型準確度、幻覺率（誤導性生成）及用資源效率，防範潛在風險。",
+        "number": 225,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "Google I/O 2025宣布何款具原生音訊生成能力的影片模型，適用No Code創作？",
+        "options": [
+            "Imagen 4專注圖像生成整合至Gemini API",
+            "HKGAI V1用於港話通實時交通旅遊查詢",
+            "Gamma一鍵轉換內容為高橋流簡報模板",
+            "Veo 3，生成式媒體模型支援創意發想影片"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "多媒體生成模型",
+        "explanation": "Google推出Veo 3影片生成模型，支援原生音訊生成，適合No Code環境快速創作多媒體內容。",
+        "number": 226,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "2025生成式AI應用報告典型場景中，工業製造如何運用混合AI？",
+        "options": [
+            "單用GenAI讀取維修手冊生成抽象知識問答",
+            "IoT感測器Predictive AI偵測異常，GenAI生成步驟",
+            "公部門AI Infra平台直接部署智慧電腦人",
+            "辦公助手如Copilot內建PPT忽略風險治理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "工業製造Hybrid AI",
+        "explanation": "工業製造利用IoT感測器結合Predictive AI做異常偵測，再由GenAI生成具體維修指引，提高效能。",
+        "number": 227,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "香港生成式AI指引中，僱員使用GenAI內部政策重點涵蓋何者？",
+        "options": [
+            "僅推廣Claude文字圖解美化簡報SVG模板",
+            "忽略非結構化數據挖掘直接優化決策流程",
+            "遵守私隱條例，制定僱員生成式AI使用清單",
+            "百度搜索AI生成內容占比從22%升至35%"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "AI風險管理",
+        "explanation": "香港私隱專員於2025年提出生成式AI使用指引，協助企業制定合規的內部政策，保障隱私。",
+        "number": 228,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "Low Code生成式AI工具在2025簡報製作中，最強組合為何提升企業效率？",
+        "options": [
+            "單用Felo Agent秒出長篇但忽略美感版型",
+            "Notebook LM整理資料+Gamma一鍵美化簡報",
+            "SlideGo仿模板生成但無Claude提示詞優化",
+            "港環通聚合環境數據忽略市民生活整合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "Low Code工具組合",
+        "explanation": "Notebook LM擅長資料整理搭配Gamma一鍵生成專業簡報，為企業提升效率與質感的理想Low Code方案。",
+        "number": 229,
+        "date": "2026-04-04"
+    },
+    {
+        "question": "2025企業GenAI規模化部署，核心人才賦能策略結合何架構優化？",
+        "options": [
+            "純Agentic AI忽略治理與風險管理框架",
+            "僅用Sparse Attention無混合專家模型支援",
+            "生活服務智能硬件如藥櫃忽略精確預測",
+            "Hybrid AI加稀疏注意力，提升邏輯歸納任務"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "人才賦能與架構優化",
+        "explanation": "企業結合Hybrid AI與先進架構如稀疏注意力與混合專家模型，優化推理與決策，提高人才賦能成效。",
+        "number": 230,
+        "date": "2026-04-04"
     }
 ]

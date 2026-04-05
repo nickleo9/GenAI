@@ -7416,5 +7416,175 @@
         "explanation": "2025年生成式AI可自動生產且依需求調整教材，實現高效且針對性訓練，優於全部手工或無結構內容生成。",
         "number": 473,
         "date": "2026-03-29"
+    },
+    {
+        "question": "如果你是台灣一家製造工廠的主管，希望利用2026年最新AI技術提升供應鏈的即時韌性，以下哪個AI方案最適合導入？",
+        "options": [
+            "Fujitsu的全球AI供應鏈平台，專注即時風險監控與調度優化",
+            "Google的TurboQuant記憶壓縮演算法，用於降低模型KV快取消耗",
+            "三星的AI影像及語音助手，整合於手機裝置提升用戶體驗",
+            "DeepMind的AlphaEvolve理論推演系統，用於基礎科學研究優化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI應用領域與工具使用",
+        "concept": "供應鏈韌性與即時監控",
+        "explanation": "Fujitsu於2026年發表的全球AI平台專門針對供應鏈即時韌性，提供供應鏈事件預警及調度優化，最符合製造工廠需求。TurboQuant與三星產品雖為AI工具，但用於其他領域；AlphaEvolve為基礎研究工具，不適合供應鏈運用。",
+        "number": 474,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "如果你是補習班的國文老師，要輔助學生製作教案並引導學生用AI工具生成詩詞，下列哪個提示詞策略較適合搭配生成式AI？",
+        "options": [
+            "請生成一首古風詩，包含描寫春天和友情的意象",
+            "給我一份國文課程大綱包括現代詩與古詩的差異",
+            "請快速分析唐詩中的修辭手法與歷史背景說明",
+            "生成一篇關於春天的文章，著重使用現代白話文"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞設計與文本生成",
+        "explanation": "生成式AI對於產出創意藝術類文本，使用具體的指令（如古風詩和指定主題）最有效。其他選項偏向文本分析或教案規劃，不直接產出詩詞，因此第一選項符合生成詩詞需求。",
+        "number": 475,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "2026年AI治理趨勢中，全球主要會議特別強調什麼核心要素，對iPAS AI應用規劃師在企業AI風險管理中最具指導意義？",
+        "options": [
+            "確保AI系統的公平與透明，避免生成假新聞或深偽內容",
+            "推動快速模型縮放以提高企業AI競爭力",
+            "加強AI硬體計算能效與量子運算投資",
+            "優先開發通用AI以達到人類水平智能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "AI安全與倫理",
+        "concept": "公平性與透明度管理",
+        "explanation": "2026全球AI治理峰會多次強調AI公平性、透明度、抵制假新聞與深偽風險，這對企業落地AI政策、風險評估極具參考價值，並契合iPAS考試對倫理監控的要求。其他選項是技術方向，但非治理核心。",
+        "number": 476,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "你是某地理老師，打算使用生成式AI輔助學生研究氣候變遷的地理影響，請問下列哪一種AI工具或策略最適合？",
+        "options": [
+            "利用專門訓練的物理與氣候模型AI，如IBM Granite，進行氣候模擬",
+            "採用通用語言模型生成氣候新聞摘要",
+            "運用文本分類模型對歷史氣候新聞分類",
+            "使用語音辨識模型將野外訪談錄音轉文字"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI應用領域與工具使用",
+        "concept": "專業模型應用",
+        "explanation": "IBM Granite為專門針對物理領域設計的AI模型，可進行氣候和自然現象模擬，適合深入研究氣候變遷地理影響。其他選項雖有AI應用，但不適合進行科學模擬分析。",
+        "number": 477,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "作為科技公司的管理者，想導入生成式AI協助跨部門工作流程自動化，下列哪項2026年AI發展最快的趨勢最應優先考慮？",
+        "options": [
+            "推動agentic AI系統成為自動執行多步作業的數位員工",
+            "著重提升大型語言模型的數據預訓練集規模",
+            "加速普及量子計算硬體的商用化",
+            "發展全新加密演算法保障AI模型的數據隱私"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入規劃",
+        "concept": "agentic AI與自動化",
+        "explanation": "2026年agentic AI成為重點趨勢，能獨立執行複雜的跨部門工作自動化，符合管理者想提升效率和減少人力的需求。其他方向是技術前沿，但與工作流程自動化關聯較小。",
+        "number": 478,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "若你是自媒體經營者，想利用2025年熱門AI工具快速生成多平台內容，下列哪個工具功能最適合用於生成多種類型媒體（文章、圖片、影像）？",
+        "options": [
+            "Google Gemini 3.1 Pro，整合文字、圖片、影音複合型生成能力",
+            "OpenAI GPT-3，專注高質量文章文本生成",
+            "DeepMind AlphaEvolve，重點在演算法優化及運算加速",
+            "NVIDIA Vera Rubin，專為AI硬體加速設計的平台"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態生成",
+        "concept": "多媒體內容創作",
+        "explanation": "Google Gemini 3.1 Pro為2026年推出的多模態生成模型，可處理文字、圖片、影音複合型內容，完美契合自媒體多元內容需求；其他選項功能較為單一或偏技術底層。",
+        "number": 479,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "執行AI應用規劃時，關於「No Code/Low Code」平台，下列敘述何者正確？",
+        "options": [
+            "No Code/Low Code讓非程式設計背景用戶也能快速構建AI應用與流程",
+            "No Code/Low Code須由資深工程師編寫複雜程式碼才能使用",
+            "No Code/Low Code不適合AI應用，僅用於數據視覺化",
+            "No Code/Low Code平台主要限制在產生式AI模型訓練"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "簡易開發",
+        "explanation": "No Code/Low Code平台設計宗旨是讓非技術人員也能快速構建AI應用和自動化流程，減少對程式碼的依賴。反之，B、C、D選項均屬誤解或侷限描述。",
+        "number": 480,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "在2026年的AI技術發展中，Google推出TurboQuant的主要功能是什麼？",
+        "options": [
+            "通過記憶壓縮演算法大幅降低大型模型的KV快取消耗",
+            "以新型量子晶片加速AI訓練運算速度",
+            "生成高解析度影像的Transformer模型",
+            "提升語音辨識精準度並支援多語言轉換"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "模型效能優化",
+        "concept": "記憶壓縮",
+        "explanation": "TurboQuant是Google於2026年推出的記憶壓縮技術，用來降低大型AI模型在KV快取上的記憶體消耗，支持大上下文窗口運算。其餘選項雖是AI技術，與TurboQuant無關。",
+        "number": 481,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "你是家庭主婦，計畫規劃育兒與家務行程，想用AI工具提升效率，以下哪種AI工具和策略最適合？",
+        "options": [
+            "使用生成式AI助理（如ChatGPT）規劃日常任務與育兒提醒",
+            "用GAN模型生成家庭照片藝術畫作",
+            "部署自有AI模型優化家庭能源使用",
+            "利用量子計算平台提升家務流程自動化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生活應用",
+        "concept": "AI助理與日程管理",
+        "explanation": "生成式AI助理能根據需求生成任務清單、提醒與育兒指引，實用於家庭日常管理；其他選項技術門檻較高或應用與日常生活關聯有限。",
+        "number": 482,
+        "date": "2026-04-05"
+    },
+    {
+        "question": "iPAS AI應用規劃師在評估生成式AI導入風險時，哪項事項屬於最重要的考量？",
+        "options": [
+            "確保AI生成內容不涉及侵權與數據隱私問題",
+            "只評估系統效能及硬體兼容性",
+            "著重於快速增加模型參數數量以提升精度",
+            "優先關注AI模型的開源社群活躍度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "風險管理",
+        "concept": "倫理與合規性",
+        "explanation": "生成式AI在企業落地必須重視內容合規、避免侵犯智慧財產權和個資外洩，這是導入風險管控的核心。其他選項雖與導入相關，但風險管理重點不足。",
+        "number": 483,
+        "date": "2026-04-05"
     }
 ]

@@ -4078,5 +4078,175 @@
         "explanation": "自動化模型無監控部署違反治理原則，缺乏監管與風險控管；監理沙盒、透明度報告及可解釋性是目前通行的AI治理措施。",
         "number": 240,
         "date": "2026-04-03"
+    },
+    {
+        "question": "在人工智慧治理(AI Governance)中，哪一項最能確保AI系統的公平性與透明度？",
+        "options": [
+            "制定模型訓練數據的嚴格隱私保護政策",
+            "強制公開AI演算法的原始程式碼與訓練流程",
+            "對AI系統進行定期的績效與公平性評估",
+            "限制AI系統的應用領域以減少風險"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "公平性評估",
+        "explanation": "定期評估AI系統的績效與公平性，能有效發現並修正偏差與不公平，提升AI系統在實際應用中的可信度。",
+        "number": 241,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "下列何者最符合生成式AI的基本原理？",
+        "options": [
+            "學習輸入資料的條件概率以生成新內容",
+            "使用標籤數據進行監督學習以分類資料",
+            "透過強化學習調整策略以最大化獎勵",
+            "建立資料特徵的判別函數以執行預測"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "生成式AI概念",
+        "concept": "生成式AI原理",
+        "explanation": "生成式AI通常會學習輸入數據的條件概率分布，並用此來創造新的數據或內容，與鑑別式AI的判別函數不同。",
+        "number": 242,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "在資料整理與分析流程中，哪個步驟主要是為了防止個人資料洩漏？",
+        "options": [
+            "資料清洗以剔除重複數據",
+            "特徵工程以強化模型效果",
+            "資料匿名化與加密處理",
+            "使用ETL工具進行資料整合"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料匿名化",
+        "explanation": "資料匿名化與加密是保障個人資料隱私與安全的重要步驟，能防止敏感資訊外洩及未授權訪問。",
+        "number": 243,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "以下哪一種機器學習模型屬於鑑別式模型？",
+        "options": [
+            "生成對抗網絡（GAN）",
+            "貝氏分類器",
+            "支持向量機（SVM）",
+            "變分自編碼器（VAE）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "機器學習模型",
+        "concept": "鑑別式模型",
+        "explanation": "支持向量機（SVM）屬於鑑別式模型，直接學習樣本的決策邊界用於分類任務，而生成式模型則學習資料生成分布。",
+        "number": 244,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "在人在迴圈（Human in the Loop）的概念中，哪項敘述是正確的？",
+        "options": [
+            "完全由AI系統自動決策無需人工監督",
+            "人工使用者介入以調整模型決策過程",
+            "模型僅在訓練階段接受人工標註數據",
+            "人工干預只發生於資料清洗階段"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "模型監控",
+        "concept": "Human on Loop",
+        "explanation": "人在迴圈的核心在於人工參與與監督模型決策過程，以確保AI系統的決策具有正確性與可控性。",
+        "number": 245,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "在資料來源分類中，下列何者屬於非關聯式資料？",
+        "options": [
+            "只包含顧客基本資料的數據表",
+            "沒有固定模式的文字文件集合",
+            "包含時間序列數據的監控記錄",
+            "結構化且標準化的資料庫表單"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "非關聯式資料",
+        "explanation": "非關聯式資料如文字文件、圖片等，沒有固定的結構或模式，不同於結構化的關聯式資料。",
+        "number": 246,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "關於強化學習（Reinforcement Learning）中的Q-Learning，下列敘述何者正確？",
+        "options": [
+            "主要用於非監督學習中無標籤數據的分群任務",
+            "透過動作價值函數來學習最佳行為策略",
+            "直接模擬人類大腦神經元之間的連結權重",
+            "使用生成式模型來預測未來數據分布"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "機器學習基本原理",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning是一種強化學習算法，透過估計動作的價值函數，學習在不同狀態下最佳行為策略。",
+        "number": 247,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "在Transformer架構中，什麼機制是用來解決序列資料中遠距離依賴問題？",
+        "options": [
+            "卷積神經層的池化機制",
+            "注意力機制（Self-Attention）",
+            "遞歸神經網絡（RNN）迴圈結構",
+            "長短期記憶（LSTM）門控單元"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "深度學習架構",
+        "concept": "注意力機制",
+        "explanation": "Transformer中的注意力機制透過計算序列中所有位置的關聯，解決了遠距離依賴的問題，顯著提升模型效果。",
+        "number": 248,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "以下何者最符合資料處理中的ETL流程？",
+        "options": [
+            "轉換、清洗、分析",
+            "抽取、轉換、載入",
+            "編碼、解碼、分析",
+            "訓練、驗證、測試"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL",
+        "explanation": "ETL代表資料的抽取(Extract)、轉換(Transform)、載入(Load)三個步驟，是資料處理的標準流程。",
+        "number": 249,
+        "date": "2026-04-06"
+    },
+    {
+        "question": "在生成式AI應用中，何者為提升回應語境一致性的主要技術？",
+        "options": [
+            "深度增強學習調整生成策略",
+            "檢索增強生成技術（RAG）結合外部資料",
+            "單純增加模型參數大小",
+            "利用KNN方法做資料分類"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用",
+        "concept": "RAG",
+        "explanation": "檢索增強生成技術(RAG)能結合外部資料庫資訊，提升生成內容的精確性與語境一致性。",
+        "number": 250,
+        "date": "2026-04-06"
     }
 ]

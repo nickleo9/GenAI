@@ -4248,5 +4248,175 @@
         "explanation": "檢索增強生成技術(RAG)能結合外部資料庫資訊，提升生成內容的精確性與語境一致性。",
         "number": 250,
         "date": "2026-04-06"
+    },
+    {
+        "question": "以下哪一個最準確描述生成式人工智慧（Generative AI）的核心特徵？",
+        "options": [
+            "A. 分析過去數據以識別模式和關係",
+            "B. 利用歷史數據預測未來趨勢",
+            "C. 根據輸入提示詞創造新文字、影像或音頻",
+            "D. 僅用於資料分類及標註任務"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 的定義與分類",
+        "concept": "生成式AI基本原理",
+        "explanation": "生成式AI透過提示詞生成新的內容，如文字、影像或音訊，與純粹分析或預測的AI不同，是目前AI應用的核心趨勢之一。",
+        "number": 251,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "在資料處理流程中，ETL的職能是什麼？",
+        "options": [
+            "A. 從資料庫抽取、轉換再載入資料至分析系統",
+            "B. 進行數據模型訓練與測試",
+            "C. 對資料進行加密保護以確保資料隱私",
+            "D. 監管AI系統的倫理風險評估"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL代表Extract, Transform, Load，主要職能是從不同資料來源抽取資料、進行清洗與轉換，最後載入目的系統以供後續分析。",
+        "number": 252,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "下列哪一項不屬於機器學習的三大類型？",
+        "options": [
+            "A. 監督式學習 (Supervised Learning)",
+            "B. 非監督式學習 (Unsupervised Learning)",
+            "C. 強化學習 (Reinforcement Learning)",
+            "D. 自然語言處理 (Natural Language Processing)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "機器學習模型分類",
+        "explanation": "自然語言處理是AI應用領域之一，而非機器學習的類型；機器學習三大類型分別是監督學習、非監督學習與強化學習。",
+        "number": 253,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "在人工智慧治理（AI Governance）中，何者最能有效保障個人資料隱私安全？",
+        "options": [
+            "A. 強制公開所有AI模型訓練數據",
+            "B. 採用分散式聯邦學習提升資料保護",
+            "C. 限制所有AI系統使用匿名化資料",
+            "D. 對AI系統配置無人監控模式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習與資料安全",
+        "explanation": "聯邦學習透過在本地端訓練模型，避免將敏感資料直接傳輸至中央伺服器，有效提升隱私保護。",
+        "number": 254,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "在深度學習中，哪種模型最適合處理時間序列或語言序列資料？",
+        "options": [
+            "A. 卷積神經網路（CNN）",
+            "B. 循環神經網路（RNN）",
+            "C. 生成對抗網路（GAN）",
+            "D. 變分自編碼器（VAE）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "RNN模型",
+        "explanation": "RNN具備時間遞歸結構，能捕捉序列間的時間依賴性，適合語音、文本及時間序列分析。",
+        "number": 255,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "鑑別式AI與生成式AI定義的主要差異為何？",
+        "options": [
+            "A. 鑑別式AI生成新內容，生成式AI判斷真假",
+            "B. 鑑別式AI判斷數據屬性，生成式AI創造新數據",
+            "C. 兩者皆以生成新影音為首要任務",
+            "D. 兩者模型架構完全相同，主要應用不同"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別與生成差異",
+        "explanation": "鑑別式AI專注於分類和判斷數據屬性，生成式AI則專注於創造新數據內容，如影像或文本生成。",
+        "number": 256,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "對於機器學習中的正則化技術，下列哪項描述最正確？",
+        "options": [
+            "A. L1正則化常用於防止過擬合且能引導部分權重變為零",
+            "B. L2正則化會將所有權重直接刪除以簡化模型",
+            "C. 正則化僅用於增強模型表現，不影響模型複雜度",
+            "D. 正則化主要用來提升模型推論速度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "L1與L2正則化",
+        "explanation": "L1正則化透過稀疏化參數，有助於特徵選擇並防止過擬合，而L2則是壓縮權重但不會使其為零。",
+        "number": 257,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "在資料分析中，下列何者最主要用於揭示資料中變數之間的相關性？",
+        "options": [
+            "A. 直方圖",
+            "B. 散佈圖矩陣 (Scatterplot Matrix)",
+            "C. 折線圖",
+            "D. 數據的中位數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料視覺化",
+        "explanation": "散佈圖矩陣同時呈現多對變數的兩兩關係，有助於觀察相關性及資料分布。",
+        "number": 258,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "以下關於人工智慧模型「人在迴圈中」（Human-in-the-loop）的描述，何者正確？",
+        "options": [
+            "A. 完全由AI自動決策，不需人工干預",
+            "B. 人工參與模型訓練與決策以提升準確性與倫理性",
+            "C. 僅用於資料收集階段無須參與模型調整",
+            "D. 是指讓使用者監督硬體設備狀態"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "AI倫理與治理",
+        "concept": "Human-in-the-loop",
+        "explanation": "人在迴圈中結合人類專家與AI系統，讓人工干預決策過程，提升模型透明度與可信度。",
+        "number": 259,
+        "date": "2026-04-08"
+    },
+    {
+        "question": "在2026年生成式AI規劃的趨勢中，下列哪項描述最準確？",
+        "options": [
+            "A. 生成式AI將完全在本地端獨立運行",
+            "B. 生成式AI將深度整合於主流數位應用平台",
+            "C. 生成式AI會完全依賴雲端部署，無法用於邊緣裝置",
+            "D. 生成式AI將不再需要提示詞作為輸入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI規劃趨勢",
+        "concept": "生成式AI與生態系統整合",
+        "explanation": "2026年生成式AI的重點在於與主流數位應用深度整合，促進普及與跨領域應用，而非單一平台運行。",
+        "number": 260,
+        "date": "2026-04-08"
     }
 ]

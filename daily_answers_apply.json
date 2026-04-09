@@ -4078,5 +4078,175 @@
         "explanation": "隨著生成式AI影響力擴大，生成內容的真實性驗證與著作權保護成為企業和監管機構關注焦點，確保合規和社會接受度，是2026年AI倫理管理的重要方向。",
         "number": 240,
         "date": "2026-04-07"
+    },
+    {
+        "question": "生成式AI中的No Code平台的核心優勢不包括以下哪一項？",
+        "options": [
+            "快速開發和低成本擴大參與度促進團隊合作",
+            "高度客製化與精細控制業務邏輯和模型細節",
+            "視覺化操作降低技術門檻支持非技術人員使用",
+            "與現有系統無縫整合簡化AI工作流部署"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 平台優勢與限制",
+        "explanation": "No Code平台的優勢在於快速開發、低門檻和良好的整合性，但其本身限制包括無法高度客製化和精細控制業務邏輯與模型，這是它的核心缺陷之一。",
+        "number": 241,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "以下何者為生成式AI在醫療領域的主要應用？",
+        "options": [
+            "基於病歷資料進行新藥開發和治療方案建議",
+            "即時生成客製化廣告文案吸引病患注意",
+            "利用擴散模型生成醫療教育視頻與宣傳海報",
+            "建構低代碼醫療裝置無需專業程式設計"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "醫療領域AI應用",
+        "explanation": "生成式AI在醫療領域主要透過分析病歷和影像診斷結果來輔助新藥研發與治療方案推薦，提升診療效率與品質。",
+        "number": 242,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "生成式AI導入評估中，對資料品質的風險管理主要不包括以下哪一項？",
+        "options": [
+            "確保資料準確性與一致性避免數據孤島",
+            "監控模型性能以防止模型漂移問題",
+            "依賴大量低品質數據以降低成本",
+            "評估數據偏誤導致不公平結果風險"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "資料品質與偏誤風險",
+        "explanation": "依賴大量低品質數據會增加風險並降低模型效能，評估資料品質是風險管理的重要環節，不應取決於低品質數據。",
+        "number": 243,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "No Code與Low Code工具相比，何者更適合有基礎技術用戶進行生成式AI應用開發？",
+        "options": [
+            "No Code需零編碼靠視覺化操作",
+            "Low Code需少量編碼兼顧靈活性",
+            "No Code較適合複雜模型微調",
+            "Low Code完全依賴自然語言提示"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code vs Low Code",
+        "explanation": "Low Code需要少量編碼，較適合有技術背景用戶，能兼顧靈活性和擴展性，而No Code主要透過視覺化操作，適合非技術使用者。",
+        "number": 244,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "生成式AI導入規劃中，推動企業數位轉型時應優先採取下列哪一步驟？",
+        "options": [
+            "進行全公司範圍大規模部署以快速見效",
+            "明確定義目標與挑戰並說服經營階層支持",
+            "忽略初期教育訓練以節省成本",
+            "選擇高風險高回報項目作為首批業務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "企業數位轉型",
+        "explanation": "成功的生成式AI導入需要先明確目標和挑戰，取得經營層支持，形成跨部門共識，避免資源浪費並確保順利推進。",
+        "number": 245,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "關於生成式AI導入的風險管理，下列哪項不是重點考量？",
+        "options": [
+            "評估系統免疫資安攻擊之能力與預防",
+            "管理並確保資料隱私與合規法律遵守",
+            "忽視模型偏誤與公平性問題",
+            "監控系統效能異常與持續優化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險識別與緩解",
+        "explanation": "忽視模型偏誤與公平性問題會導致嚴重風險，風險管理必須包括資料品質與偏誤的監控與處理，確保模型可信與合規。",
+        "number": 246,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "生成式AI應用中，以下哪種工具主要用於高真實度圖像與影片生成？",
+        "options": [
+            "Transformer架構文本生成模型如GPT-5.2 、Claude",
+            "擴散模型如Stable Diffusion 3.5 、DALL-E 3",
+            "低代碼平台如Google AutoML與Vertex AI",
+            "自然語言提示詞設計用於無代碼操作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "圖像生成工具",
+        "explanation": "擴散模型如Stable Diffusion與DALL-E是生成高真實度圖像與影片的主要技術，而文本生成模型主要用於自然語言處理。",
+        "number": 247,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "生成式AI導入規劃的長期策略主要聚焦於？",
+        "options": [
+            "投資高成長領域並提升客製化與創新服務",
+            "專注短期成本降低與初期效益實現",
+            "快速全公司無差異導入AI技術",
+            "只關注風險管理與合規標準落實"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "長期數位轉型策略",
+        "explanation": "長期策略目標是投資具高成長潛力的領域，強化客製化能力，持續創新，提升競爭力。",
+        "number": 248,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "生成式AI導入評估中，防範Shadow AI的主要方法是？",
+        "options": [
+            "引入AI BOM追蹤資產來源並強化異常管理",
+            "依賴自然語言提示改善模型準確度",
+            "全面使用低代碼平台避免自建系統",
+            "限制非技術員工使用AI工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資安與模型安全風險",
+        "explanation": "Shadow AI指未授權的AI資產，透過建立AI BOM資產追蹤與異常事件管理，可有效防範相關風險。",
+        "number": 249,
+        "date": "2026-04-09"
+    },
+    {
+        "question": "以下關於No Code工具的敘述，何者為非？",
+        "options": [
+            "適用於非技術使用者透過視覺化拖拉介面建構應用",
+            "能完全取代所有複雜生成式AI客製化需求",
+            "降低開發成本並加速原型設計",
+            "常用於快速驗證AI概念與簡單流程自動化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 工具限制",
+        "explanation": "No Code工具因技術限制無法滿足所有複雜且高度客製化的生成式AI需求，仍有其局限性。",
+        "number": 250,
+        "date": "2026-04-09"
     }
 ]

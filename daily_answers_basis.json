@@ -4418,5 +4418,175 @@
         "explanation": "2026年生成式AI的重點在於與主流數位應用深度整合，促進普及與跨領域應用，而非單一平台運行。",
         "number": 260,
         "date": "2026-04-08"
+    },
+    {
+        "question": "2026年生成式AI從雲端轉向邊緣運算的主要技術挑戰中，下列何者最具代表性？",
+        "options": [
+            "數據隱私保護與推理延遲降低",
+            "模型參數增多與資料標準化困難",
+            "伺服器能耗過低與分散式訓練問題",
+            "資料清洗流程複雜與即時分析能力欠缺"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "邊緣運算與AI推理",
+        "concept": "邊緣AI技術挑戰",
+        "explanation": "生成式AI在邊緣運算環境中，需兼顧數據隱私保護與推理延遲降低，因為資料不可輕易上傳雲端，且即時回應要求高。與伺服器能耗及模型複雜程度問題相比，隱私與延遲是更主要的挑戰。",
+        "number": 261,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "在機器學習分類中，哪一種方法主要用於 Agent AI 的目標導向行為決策？",
+        "options": [
+            "非監督學習",
+            "強化學習",
+            "監督學習",
+            "生成對抗網路 (GAN)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "機器學習類型",
+        "concept": "強化學習",
+        "explanation": "強化學習透過獎勵與懲罰機制讓 Agent 在環境中學習最優決策，適合目標導向的行為，如代理式AI，而監督與非監督學習不直接用於目標策略決策。",
+        "number": 262,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "下列哪種資料編碼方法較適合將類別變數轉換為機器學習模型可接受的數據？",
+        "options": [
+            "PCA 主成分分析",
+            "One-Hot Encoding",
+            "數據正則化",
+            "標準差縮放"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理",
+        "concept": "類別特徵編碼",
+        "explanation": "One-Hot Encoding 是將類別變數轉換成二進位熱向量的編碼方法，常用於分類器輸入；而PCA是降維方法，正則化與標準差縮放則用於數值型資料的標準化處理。",
+        "number": 263,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "於AI治理架構中，何者最能協助解決黑箱模型（黑盒AI）引起的信任問題？",
+        "options": [
+            "自動化模型微調",
+            "模型可解釋性技術（XAI）",
+            "數據增強技術",
+            "分散式聯邦學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "可解釋AI",
+        "explanation": "模型可解釋性技術（XAI）透過解釋模型內部決策機制，降低黑箱問題，提高模型信任度；自動微調、數據增強及聯邦學習則針對不同面向。",
+        "number": 264,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "生成式AI在娛樂產業中影響深遠，下列哪個因素對模型微調階段最關鍵？",
+        "options": [
+            "數據品質與標註一致性",
+            "硬體平行運算能力",
+            "演算法梯度消失問題",
+            "即時推理與回應速度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型微調",
+        "concept": "數據品質",
+        "explanation": "生成式AI微調時，數據品質和標註的一致性直接影響生成文本或影像的準確與自然程度，是成功微調的關鍵。其他選項主要是技術支援面。",
+        "number": 265,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "何者屬於機器學習中用來减緩過擬合並控制模型複雜度的正則化技術？",
+        "options": [
+            "One-Hot Encoding",
+            "L1與L2正則化",
+            "卷積神經網路",
+            "隨機森林"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "機器學習模型",
+        "concept": "正則化",
+        "explanation": "L1（Lasso）和L2（Ridge）正則化透過在損失函數中加入懲罰項，控制模型權重大小與複雜度，降低過擬合風險。其他選項是編碼或模型架構。",
+        "number": 266,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "於資料分析流程中，ETL 主要包含哪三個步驟？",
+        "options": [
+            "抽取（Extract）、轉換（Transform）、載入（Load）",
+            "清洗（Clean）、標註（Label）、輸出（Output）",
+            "特徵工程（Feature）、優化（Optimize）、評估（Evaluate）",
+            "選擇（Select）、分割（Split）、訓練（Train）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL流程是指先從資料源抽取資料，再轉換成適合分析的格式，最後將資料載入目標系統。其他選項描述的是不同資料處理或模型訓練流程。",
+        "number": 267,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "對於AI系統中的偏差變異權衡（Bias-Variance Tradeoff），下列敘述何者正確？",
+        "options": [
+            "提高模型複雜度通常會增加偏差",
+            "過度簡化模型會導致高變異",
+            "降低偏差可能伴隨著變異增加",
+            "減少變異同時會提高模型的訓練錯誤"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "模型評估",
+        "concept": "Bias-Variance Tradeoff",
+        "explanation": "偏差變異權衡指出，降低模型偏差（讓模型更貼合訓練資料）往往會導致模型變異增加（對資料噪音敏感）；需要在兩者間找平衡。",
+        "number": 268,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "聯邦學習在資料隱私維護中扮演關鍵角色，其特點為何？",
+        "options": [
+            "集中所有用戶資料於中央伺服器",
+            "透過分散式裝置本地訓練模型再聚合參數",
+            "使用生成對抗網路匿名化資料",
+            "將資料全部公開以促進資料共享"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "D",
+        "topic": "資料隱私與安全",
+        "subtopic": "資料隱私技術",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習讓分散裝置保留原始資料，本地訓練模型後僅傳送模型參數至中央服務器進行聚合，保護用戶資料隱私。",
+        "number": 269,
+        "date": "2026-04-10"
+    },
+    {
+        "question": "鑑別式AI與生成式AI整合應用下，何者最能代表其協同工作的範例？",
+        "options": [
+            "利用鑑別式模型判斷生成內容的真實性",
+            "通過生成式模型強化資料標註的準確度",
+            "鑑別式模型生成虛擬影像數據",
+            "生成式AI取代鑑別式AI作分類任務"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "鑑別與生成模型協作",
+        "explanation": "典型整合應用是由生成式AI產生內容，再由鑑別式AI判斷其真偽，如GAN架構中的鑑別網路負責判斷生成器生成的樣本是否真實。",
+        "number": 270,
+        "date": "2026-04-10"
     }
 ]

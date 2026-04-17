@@ -5098,5 +5098,175 @@
         "explanation": "Human on loop指的是在AI系統決策流程中保留人工介入，以監督及修正模型決策，確保系統在關鍵決策上可靠且合規。",
         "number": 300,
         "date": "2026-04-17"
+    },
+    {
+        "question": "關於人工智慧的定義，下列何者最精確描述 AI 的核心目的？",
+        "options": [
+            "結合深度學習與強化學習優化機器決策",
+            "系統性處理資料以模仿人類智慧行為",
+            "模擬人類思考過程並產生自主行為",
+            "運用巨量數據進行無人監督的自動學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 的定義與分類",
+        "concept": "AI核心定義",
+        "explanation": "人工智慧核心在於系統性處理資料來模仿人類智慧行為，著重於資料分析與推理，且不一定必須完全模仿人類思考過程或產生自主行為，選項B涵蓋最完整。",
+        "number": 301,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "在資料整理與分析流程中，下列哪一環節是保護資料隱私的重要步驟？",
+        "options": [
+            "使用關聯規則挖掘潛在資料模式",
+            "資料標準化以統一數據格式",
+            "資料匿名化處理以防止個人識別",
+            "數據清洗以去除錯誤值和異常值"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料隱私與安全",
+        "explanation": "資料匿名化是確保資料隱私的重要措施，能有效避免個人資訊被識別，保障安全，因此B為正確選項。",
+        "number": 302,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "下列何者不是機器學習三大類型之一？",
+        "options": [
+            "強化學習（Reinforcement Learning）",
+            "非監督學習（Unsupervised Learning）",
+            "深度強化學習（Deep Reinforcement Learning）",
+            "監督學習（Supervised Learning）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "機器學習分類",
+        "explanation": "監督學習、非監督學習與強化學習為機器學習三大基本類型，深度強化學習是強化學習的擴展而非獨立類型。",
+        "number": 303,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 的主要差異在於？",
+        "options": [
+            "生成式 AI 僅使用監督學習，鑑別式 AI 僅用非監督學習",
+            "鑑別式 AI 專注於區分輸入和判別，生成式 AI 專注於創造新資料",
+            "生成式 AI 只能用於圖像處理，鑑別式 AI 用於語言理解",
+            "鑑別式 AI 專注於生成資料，生成式 AI 專注於判斷類別"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基礎概念",
+        "concept": "鑑別式與生成式AI原理",
+        "explanation": "鑑別式AI主要用於區分輸入資料類別，生成式AI則著重於生成新的資料樣本，如圖像、文字，二者功能本質不同，故選B。",
+        "number": 304,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "AI治理中，『監理沙盒』的主要功能是什麼？",
+        "options": [
+            "創造新型AI技術的商業應用環境",
+            "提供可受控的實驗環境以測試AI技術合規性",
+            "即時監控AI系統的運作效能與安全問題",
+            "建立AI倫理規範的法律約束機制"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "AI監理沙盒",
+        "explanation": "監理沙盒是一種受控的環境，用於測試及評估AI技術與應用是否符合法規與安全標準，以促進技術創新與風險管控並行。",
+        "number": 305,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "在特徵處理中，One-Hot Encoding的主要用途為何？",
+        "options": [
+            "將連續數值特徵分割為區間標籤",
+            "將文本內容轉換為詞向量",
+            "透過降維手段壓縮特徵維度",
+            "將分類變數轉換為二進位向量表示"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "特徵編碼",
+        "explanation": "One-Hot Encoding用於將分類類別轉化為互斥的二進位向量，有利機器學習算法理解分類資料特徵。",
+        "number": 306,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "在機器學習模型中，L1 正規化的主要效果是？",
+        "options": [
+            "增加模型複雜度以提升預測準確度",
+            "減少模型過擬合風險，並促使權重趨近於零",
+            "平滑模型參數以避免梯度消失問題",
+            "提高權重的稀疏性並強化特徵選擇能力"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "正規化技術",
+        "explanation": "L1正規化會對權重施加罰款，促使部分權重減少為零，從而產生稀疏模型並具備特徵選擇能力，增強模型解釋力。",
+        "number": 307,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "下列何者最好描述 Transformer 模型的核心特性？",
+        "options": [
+            "使用卷積神經網路進行特徵提取",
+            "結合監督與非監督學習雙重機制",
+            "透過遞歸方式處理序列資料",
+            "完全基於注意力機制，摒棄循環結構"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "Transformer架構",
+        "explanation": "Transformer架構採用自注意力機制，拋棄了傳統的循環結構，能有效處理長距離序列依賴並加速訓練。",
+        "number": 308,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "關於生成式 AI 在應用規劃中，微調技術(Micro-tuning)的目的主要是？",
+        "options": [
+            "自動從大量生成資料中擷取關鍵特徵",
+            "提升模型基本結構以支援多模態輸出",
+            "針對特定任務優化模型表現與生成內容",
+            "降低模型複雜度以減少運算資源消耗"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI規劃",
+        "concept": "模型微調",
+        "explanation": "微調通常是指基於預訓練模型，透過少量且針對性資料進行調整，以提升模型在特定任務上的表現及生成效果。",
+        "number": 309,
+        "date": "2026-04-17"
+    },
+    {
+        "question": "在人機互動治理中，'Human on loop'的主要作用是？",
+        "options": [
+            "監控AI模型性能並自動調整參數",
+            "透過人工干預確保模型決策的正確性和合理性",
+            "分析並生成對話內容以增進人機互動體驗",
+            "完全取代人工操作，實現全自主AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指的是在AI系統決策流程中保留人工介入，以監督及修正模型決策，確保系統在關鍵決策上可靠且合規。",
+        "number": 310,
+        "date": "2026-04-17"
     }
 ]

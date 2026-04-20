@@ -1,15 +1,10 @@
 #!/bin/bash
-# Claude Telegram Bot 健康檢查腳本 (tmux 版本)
+# Claude Telegram Bot 健康檢查腳本 (tmux 版本 v2)
 #
-# 監控項目：
-#   1. tmux session 是否存在
-#   2. claude 進程是否在 tmux 內運行
-#   3. bun telegram worker 是否運行
-#   4. inbox 是否有訊息堆積（>5 分鐘未處理 = MCP 可能掛了）
-#
-# 修復策略：
-#   - tmux/claude/bun 掛了 → 重建 tmux session
-#   - inbox 堆積 → 重建 tmux session（會讓 MCP 重新連線）
+# v2 改進：
+#   - 新增 bun worker 網路連線檢查（偵測假死）
+#   - 新增強制定期重啟（每 6 小時）
+#   - 重啟後自動清理 inbox 舊訊息，避免死循環
 
 set -u
 
@@ -18,6 +13,7 @@ TMUX_SESSION="claude-telegram"
 INBOX_DIR="/home/ubuntu/.claude/channels/telegram/inbox"
 CLAUDE_BIN="/home/ubuntu/.local/bin/claude"
 MAX_LOG_LINES=1000
+UPTIME_FILE="/tmp/claude-telegram-start-time"
 
 log() {
     echo "$(date '+%Y-%m-%d %H:%M:%S') $1" >> "$LOG_FILE"
@@ -30,28 +26,48 @@ truncate_log() {
     fi
 }
 
+clean_inbox() {
+    if [ -d "$INBOX_DIR" ]; then
+        find "$INBOX_DIR" -type f -mmin +5 -delete 2>/dev/null || true
+    fi
+}
+
 restart_tmux_session() {
     local reason="$1"
     log "RESTART: $reason"
 
-    # 殺掉殘留進程
     pkill -9 -f "bun.*telegram" 2>/dev/null || true
     pkill -9 -f "claude.*channels.*telegram" 2>/dev/null || true
     tmux kill-session -t "$TMUX_SESSION" 2>/dev/null || true
     sleep 3
 
-    # 重建 tmux session
+    clean_inbox
+
     tmux new-session -d -s "$TMUX_SESSION"
     sleep 1
     tmux send-keys -t "$TMUX_SESSION" \
         "$CLAUDE_BIN --channels plugin:telegram@claude-plugins-official --dangerously-skip-permissions --enable-auto-mode" Enter
 
-    log "RESTART: tmux session 已重建，等待 Claude 啟動"
+    date +%s > "$UPTIME_FILE"
+    log "RESTART: tmux session 已重建，inbox 已清理"
 }
 
 # --- 開始檢查 ---
 
 truncate_log
+
+# 檢查 0: 強制定期重啟（每 6 小時）避免 MCP 長期假死
+if [ -f "$UPTIME_FILE" ]; then
+    START_TIME=$(cat "$UPTIME_FILE")
+    NOW=$(date +%s)
+    ELAPSED=$(( NOW - START_TIME ))
+    if [ "$ELAPSED" -gt 21600 ]; then
+        restart_tmux_session "定期強制重啟（已運行 $(( ELAPSED / 3600 )) 小時）"
+        exit 0
+    fi
+else
+    date +%s > "$UPTIME_FILE"
+fi
 
 # 檢查 1: tmux session 存在嗎？
 if ! tmux has-session -t "$TMUX_SESSION" 2>/dev/null; then
@@ -62,7 +78,6 @@ fi
 # 檢查 2: claude 進程存在嗎？
 CLAUDE_PID=$(pgrep -f "claude.*channels.*telegram" | head -1)
 if [ -z "$CLAUDE_PID" ]; then
-    # 給 claude 啟動時間（第一次啟動可能還在載入）
     sleep 15
     CLAUDE_PID=$(pgrep -f "claude.*channels.*telegram" | head -1)
     if [ -z "$CLAUDE_PID" ]; then
@@ -74,7 +89,6 @@ fi
 # 檢查 3: bun telegram worker 存在嗎？
 BUN_PID=$(pgrep -f "bun.*telegram" | head -1)
 if [ -z "$BUN_PID" ]; then
-    # bun worker 是 claude 啟動後由 MCP 拉起的，給多點時間
     sleep 20
     BUN_PID=$(pgrep -f "bun.*telegram" | head -1)
     if [ -z "$BUN_PID" ]; then
@@ -83,8 +97,22 @@ if [ -z "$BUN_PID" ]; then
     fi
 fi
 
-# 檢查 4: inbox 是否有堆積訊息（>10 分鐘未處理 = MCP 或 Claude 卡住）
-# 注意：門檻設為 10 分鐘，避免 Claude 正在長時間思考時被誤殺
+# 檢查 4: bun worker 有沒有連到 Telegram API？（偵測假死）
+# Telegram API IP 範圍: 149.154.x.x 和 91.108.x.x
+CONNECTIONS=$(ss -tnp 2>/dev/null | grep "$BUN_PID" | grep -cE "149\.154|91\.108")
+if [ "$CONNECTIONS" -eq 0 ]; then
+    sleep 15
+    BUN_PID=$(pgrep -f "bun.*telegram" | head -1)
+    if [ -n "$BUN_PID" ]; then
+        CONNECTIONS=$(ss -tnp 2>/dev/null | grep "$BUN_PID" | grep -cE "149\.154|91\.108")
+    fi
+    if [ "$CONNECTIONS" -eq 0 ]; then
+        restart_tmux_session "Bun worker 無 Telegram API 連線（假死，PID=$BUN_PID）"
+        exit 0
+    fi
+fi
+
+# 檢查 5: inbox 堆積（>10 分鐘未處理 = MCP 或 Claude 卡住）
 if [ -d "$INBOX_DIR" ]; then
     OLD_MSGS=$(find "$INBOX_DIR" -type f -mmin +10 2>/dev/null | wc -l)
     if [ "$OLD_MSGS" -gt 2 ]; then
@@ -93,4 +121,4 @@ if [ -d "$INBOX_DIR" ]; then
     fi
 fi
 
-log "HEALTHY: tmux=ok, claude=$CLAUDE_PID, bun=$BUN_PID"
+log "HEALTHY: tmux=ok, claude=$CLAUDE_PID, bun=$BUN_PID, tg_conn=$CONNECTIONS"

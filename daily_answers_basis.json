@@ -5268,5 +5268,175 @@
         "explanation": "Human on loop指的是在AI系統決策流程中保留人工介入，以監督及修正模型決策，確保系統在關鍵決策上可靠且合規。",
         "number": 310,
         "date": "2026-04-17"
+    },
+    {
+        "question": "在資料處理流程中，ETL 的主要功能為何？",
+        "options": [
+            "將非結構化資料轉為結構化格式以利存儲",
+            "建立資料關聯性矩陣以提升預測準確度",
+            "編碼資料特徵以利機器學習模型識別",
+            "抽取、轉換及載入資料以備後續分析使用"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL代表Extract（抽取）、Transform（轉換）與Load（載入），為將資料從各來源抽取，經過格式轉換後載入資料庫或倉儲，作為後續分析之基礎流程。",
+        "number": 311,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "下列哪一項不是鑑別式 AI 與生成式 AI 整合應用的常見特徵？",
+        "options": [
+            "兩者可結合提升模型解釋能力",
+            "生成式 AI 則根據輸入生成多樣內容",
+            "鑑別式 AI 用於判斷生成結果的真實性與相關性",
+            "鑑別式 AI 通常用於強化內容生成多樣性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "鑑別式與生成式模型整合",
+        "explanation": "鑑別式 AI 主要負責判別真偽或分類，生成式 AI 則用於內容生產。強化多樣性通常透過生成式模型而非鑑別式模型。",
+        "number": 312,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "何者最能符合機器學習中強化學習的定義？",
+        "options": [
+            "利用標籤資料進行模型訓練使預測精確",
+            "系統在未知環境中嘗試行動並根據回饋調整策略",
+            "透過資料聚類發掘隱含結構或模式",
+            "人工設定規則以判斷輸入資料的分類"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "強化學習",
+        "explanation": "強化學習透過智能體在環境中執行行動並根據回饋信號（獎勵）學習最佳策略。",
+        "number": 313,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "在機器學習模型訓練時，L1 正則化（Lasso）的主要效果是？",
+        "options": [
+            "將部分模型權重收斂為零以達到特徵選擇效果",
+            "增加模型複雜度以提升擬合能力",
+            "強化模型的非線性表現能力",
+            "促使模型權重均勻分布防止過擬合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "正規化",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會將部分權重壓縮為零，達到特徵選擇及簡化模型的效果，有助於減少過擬合。",
+        "number": 314,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "哪種資料類型最可能需要使用聯邦學習來進行分析？",
+        "options": [
+            "分散於不同機構無法合併的敏感個資",
+            "公開可取得的政府統計資料",
+            "未標記的網路爬蟲數據",
+            "已經集中儲存在同一平台的數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習適用於數據無法集中且需確保隱私的場景，如多機構共享敏感資料，模型在本地端學習後更新全局模型。",
+        "number": 315,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "在自然語言處理中，Transformer 模型的主要技術瓶頸為何？",
+        "options": [
+            "無法處理長距依賴問題，效果差於RNN",
+            "訓練速度過慢導致模型不易收斂",
+            "計算資源消耗大，尤其是注意力機制的計算複雜度高",
+            "模型參數過少，導致缺乏表達能力"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "模型架構",
+        "concept": "Transformer技術挑戰",
+        "explanation": "Transformer 雖然效果優異，但自注意力機制需要對整體序列計算關聯，導致計算複雜度和記憶體需求大幅增加。",
+        "number": 316,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "HTC工程師使用生成式AI時，為確保回應語境一致性，應優先著重於哪項技術？",
+        "options": [
+            "後設模型用於分辨生成結果真偽",
+            "提示工程設計與上下文維護",
+            "模型正規化以避免過度擬合",
+            "資料預處理與丟棄嘈雜資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示工程",
+        "explanation": "提示工程設計著重正確引導生成模型，維持上下文的一致性與連貫性，是生成式AI回應質量的關鍵。",
+        "number": 317,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "關於 AI 治理中“Human on loop”策略，下列敘述何者正確？",
+        "options": [
+            "完全自動化讓人類無須干預判斷過程",
+            "讓人工監控並在必要時介入機器決策過程",
+            "讓人工完全取代機器決策以避免失誤",
+            "機器自動調整決策參數以提升效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指人類在機器決策過程中保持監督，必要時進行干預，以確保系統決策合乎倫理和安全。",
+        "number": 318,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "下列哪種損失函數最適合用於預測房價的迴歸問題？",
+        "options": [
+            "交叉熵損失（Cross-Entropy Loss）",
+            "對比損失（Contrastive Loss）",
+            "均方誤差（Mean Squared Error, MSE）",
+            "指數損失（Exponential Loss）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "損失函數",
+        "concept": "均方誤差",
+        "explanation": "預測房價屬於連續數值的迴歸問題，均方誤差是常用且適合的損失函數，能衡量預測值與實際值差異。",
+        "number": 319,
+        "date": "2026-04-20"
+    },
+    {
+        "question": "在 AI 技術應用的偏差與變異權衡 (Bias-Variance Tradeoff) 中，過度簡化模型導致的主要問題為何？",
+        "options": [
+            "高偏差（Bias）導致模型無法捕捉資料複雜性",
+            "高變異（Variance）導致模型在新資料上過度波動",
+            "偏差與變異同時偏高使模型不穩定",
+            "無法平衡資料大小造成維度災難"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型評估",
+        "concept": "偏差變異權衡",
+        "explanation": "過於簡化的模型會產生高偏差，表示模型不足以學習資料中的複雜關係，導致欠擬合。",
+        "number": 320,
+        "date": "2026-04-20"
     }
 ]

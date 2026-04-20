@@ -43,13 +43,14 @@ restart_tmux_session() {
 
     clean_inbox
 
+    # --continue 讓 Claude 繼續上一次的對話 session，保留記憶
     tmux new-session -d -s "$TMUX_SESSION"
     sleep 1
     tmux send-keys -t "$TMUX_SESSION" \
-        "$CLAUDE_BIN --channels plugin:telegram@claude-plugins-official --dangerously-skip-permissions --enable-auto-mode" Enter
+        "$CLAUDE_BIN --continue --channels plugin:telegram@claude-plugins-official --dangerously-skip-permissions --enable-auto-mode" Enter
 
     date +%s > "$UPTIME_FILE"
-    log "RESTART: tmux session 已重建，inbox 已清理"
+    log "RESTART: tmux session 已重建（--continue 保留對話記憶），inbox 已清理"
 }
 
 # --- 開始檢查 ---

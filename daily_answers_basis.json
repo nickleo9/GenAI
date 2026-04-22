@@ -5438,5 +5438,175 @@
         "explanation": "過於簡化的模型會產生高偏差，表示模型不足以學習資料中的複雜關係，導致欠擬合。",
         "number": 320,
         "date": "2026-04-20"
+    },
+    {
+        "question": "在2026年代理式AI的主要特徵中，何者不屬於其特性？",
+        "options": [
+            "A. 能自主推理並決策執行",
+            "C. 取代傳統手機應用程式",
+            "D. 可結合實體機械執行任務",
+            "B. 僅依賴用戶指令回應操作"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "代理式AI",
+        "concept": "代理式AI特性",
+        "explanation": "代理式AI具備自主推理和自主執行能力，能取代部分傳統手機APP並結合實體裝置操作，而非僅被動依賴用戶指令回應。",
+        "number": 321,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "下列哪一項AI運算負載約占2026年生成式AI算力的2/3？",
+        "options": [
+            "A. 訓練階段負載",
+            "C. 資料清洗負載",
+            "B. 推論與推理負載",
+            "D. 模型微調負載"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI架構",
+        "concept": "算力分布",
+        "explanation": "生成式AI中推論與推理的運算負載占算力的約2/3，是整體算力使用的主體。",
+        "number": 322,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "資料整理流程中，以下何者最不符合「資料清洗」的主要任務？",
+        "options": [
+            "D. 對資料進行匿名化處理",
+            "C. 建立數據的分佈模型",
+            "A. 移除重複與錯誤資料",
+            "B. 補齊缺失值與格式統一"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗主要是在移除錯誤、缺失處理和資料格式化，建立分佈模型屬於資料分析階段而非清洗。",
+        "number": 323,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "機器學習中，何者最不屬於常見監督學習任務？",
+        "options": [
+            "C. 聚類分析",
+            "A. 分類問題",
+            "B. 回歸預測",
+            "D. 預測房價"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "監督學習",
+        "concept": "學習類型識別",
+        "explanation": "聚類分析屬於非監督學習，因為它處理無標籤資料進行分組，而分類和回歸都是監督學習的典型任務。",
+        "number": 324,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "下列何者最符合AI治理「監理沙盒」的定義？",
+        "options": [
+            "C. 資料隱私保護機制",
+            "A. 實體AI運行環境",
+            "D. AI模型訓練平台",
+            "B. 監管機構提供的實驗安全空間"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是監管機構提供的實驗環境，允許企業在受控情況下測試AI技術與服務，促進創新同時管控風險。",
+        "number": 325,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的主要差異在於？",
+        "options": [
+            "B. 鑑別式AI關注資料辨識，生成式AI生產新內容",
+            "D. 生成式AI只能用於語言處理",
+            "A. 鑑別式AI生成資料，生成式AI辨識資料",
+            "C. 兩者皆屬於監督學習模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "模型功能區分",
+        "explanation": "鑑別式AI專注於辨識和分類現有資料，生成式AI則以生成新資料為目的，例如文本、影像等內容的創作。",
+        "number": 326,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "在深度學習中，哪種模型架構特別適合處理時序資料？",
+        "options": [
+            "B. RNN（循環神經網絡）",
+            "D. Transformer（變換器架構）",
+            "A. CNN（卷積神經網絡）",
+            "C. GAN（生成對抗網絡）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "模型專長",
+        "explanation": "RNN因其循環結構適合處理時間序列資料和序列問題，如語音、語言和時間序列預測。",
+        "number": 327,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "資料隱私與安全中，何者最不屬於資料匿名化方法？",
+        "options": [
+            "A. 假名化",
+            "B. 雜湊加密",
+            "C. 特徵縮放",
+            "D. 數據屏蔽"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料匿名化技術",
+        "explanation": "特徵縮放是資料預處理方法，並非匿名化技術，匿名化包括假名化、雜湊和數據屏蔽等以保護個資。",
+        "number": 328,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "以下哪一項技術屬於生成式AI的典型應用？",
+        "options": [
+            "C. 異常檢測",
+            "B. 文本生成",
+            "D. 監督式回歸",
+            "A. 影像分類"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用",
+        "concept": "生成內容",
+        "explanation": "生成式AI專注於生成人類類似創作的文本、影像、音樂等，文本生成是其代表應用之一。",
+        "number": 329,
+        "date": "2026-04-22"
+    },
+    {
+        "question": "下列何者不屬於資料分析中「資料分群」的主要技術？",
+        "options": [
+            "A. 叢集分析",
+            "C. 支持向量機分類",
+            "D. 階層式分群",
+            "B. K-均值算法"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料分析技術",
+        "concept": "分群與分類區別",
+        "explanation": "支持向量機屬於監督式分類技術，需標註資料，而資料分群則是非監督學習，包含叢集、K-均值、階層式分群。",
+        "number": 330,
+        "date": "2026-04-22"
     }
 ]

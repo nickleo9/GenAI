@@ -1,172 +1,172 @@
 [
     {
-        "question": "某製造企業需建構一系統，能同時分析監控影片異常、結合設備手冊文字，並在單一模型內完成分析，請問2026年最佳技術選擇是？",
+        "question": "在2026年導入Agentic AI時，哪一項為No code/Low code平台於生成式AI規劃中的核心應用？",
         "options": [
-            "使用GPT-4搭配OCR系統及API串接資料庫",
-            "採用多模態原生模型直接處理視頻與文字",
-            "使用傳統機器視覺與規則引擎不用大模型",
-            "分別部署影像及語言模型並人工整合結果"
+            "行動與反思循環記憶交互持續優化能力。",
+            "多模態數據蒐集與即時工作流程自動化。",
+            "感知與推理模組自動任務拆解與工具呼叫。",
+            "知識圖譜建構複雜問題解決自我修正機制。"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "多模態模型應用",
-        "concept": "多模態原生模型",
-        "explanation": "2026年多模態原生模型如Claude 4或Gemini 2.0可同時處理多種類型資料，降低複雜度，提升效率。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No code / Low code應用場景",
+        "explanation": "多模態數據蒐集及即時自動化是No code/Low code平台助力Agentic AI快速搭建及優化工作流程的核心能力。",
         "number": 1,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     },
     {
-        "question": "生成式AI從傳統對話生成跨向代理式執行的主要差異為何？",
+        "question": "評估2026年Qwen3-Max-Thinking模型企業導入的首要No code/Low code規劃重點是？",
         "options": [
-            "代理式AI依賴提示詞工程更多",
-            "代理式AI能自主採取行動及調用工具",
-            "代理式AI專用於多語言場景",
-            "代理式AI模型參數更多生成速度更快"
+            "文本語義強化提高實務問題執行效率。",
+            "推理躍升支持超長上下文及多智能體協作。",
+            "知識圖譜優化應用RAG行業標準。",
+            "多模態交互提升代理AI行動與反思能力。"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "代理式AI",
-        "concept": "代理式執行",
-        "explanation": "代理式AI能根據指令自主採取行動，與僅生成文字回應的對話生成形成根本區別。",
+        "subtopic": "生成式 AI導入評估規劃",
+        "concept": "模型導入規劃",
+        "explanation": "Qwen3-Max-Thinking以推理能力提升為核心，強調支持超長上下文並多智能體協作，是導入No code/Low code時首要考量。",
         "number": 2,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     },
     {
-        "question": "使用合成資料於金融產品推薦，最準確描述其在高度監管行業中的價值為何？",
+        "question": "Stable Diffusion 3於低代碼影像應用中，導入評估的關鍵技術為何？",
         "options": [
-            "成本最低完全替代真實資料免審查",
-            "不受監管限制適合所有產業應用",
-            "避開隱私風險簡化合規審查支持冷啟動",
-            "準確度優於真實資料提高20%準確率"
+            "代理AI協作加強物理系統適應行為。",
+            "整合擴散Transformer提升文本和高解析度生成。",
+            "逆向擴散蒸餾技術壓縮生成步驟提高速度。",
+            "多模態視頻擴展支持社區生態共創。"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "合成資料應用",
-        "concept": "合成資料風險管理",
-        "explanation": "合成資料能避免真實資料隱私風險，符合監管需求，便利新產品開發。",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "影像生成技術",
+        "explanation": "Stable Diffusion 3在低代碼平台中強調融合擴散Transformer架構，大幅提升文本理解與圖像解析度生成。",
         "number": 3,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     },
     {
-        "question": "2026年生成式AI規模化部署最大的瓶頸是？",
+        "question": "2026年使用GraphRAG工具建立生成式AI知識庫，No code/Low code規劃的最大優勢為何？",
         "options": [
-            "缺乏計算基礎設施及GPU資源",
-            "缺乏成熟生成式AI工具選擇",
-            "員工技能不足培訓成本過高",
-            "79%預期部署三核心流程只有26%具足治理"
+            "多智能體協作強化代理AI持續學習。",
+            "基於知識圖譜優化RAG提升長文準確性。",
+            "低功耗光學互連提升GPU能源效率。",
+            "量子AI融合加速科學假設自動調用。"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "AI治理",
-        "concept": "治理框架缺口",
-        "explanation": "企業普遍缺乏完整AI治理架構，成為規模化部署的主要障礙。",
+        "subtopic": "生成式 AI導入評估規劃",
+        "concept": "知識庫技術",
+        "explanation": "GraphRAG結合知識圖譜和RAG技術，通過No code工具提升對超長文檔及複雜查詢的準確處理能力。",
         "number": 4,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     },
     {
-        "question": "Google 2026年推出TurboQuant技術象徵哪種發展轉向？",
+        "question": "在2026年評估GPT-4o多模態生成式AI的低代碼關鍵指標排序為何？",
         "options": [
-            "從模型規模競賽轉向推論效率優化",
-            "從雲端部署轉向本地部署",
-            "從監督學習轉向無監督學習",
-            "從GPU轉向CPU架構"
+            "知識圖譜RAG標準化處理推理行動循環。",
+            "代理AI記憶互動及自主任務拆解能力。",
+            "原生支持全模態、響應速度提升、成本大幅降低。",
+            "量子架構生成代碼助力科學發現。"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "模型推論優化",
-        "concept": "推論效率",
-        "explanation": "TurboQuant利用量化與降維技術顯著降低推論成本與記憶體使用。",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "多模態生成技術",
+        "explanation": "GPT-4o強調原生支持多模態並提升響應與成本效率，是低代碼評估中的首要指標。",
         "number": 5,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     },
     {
-        "question": "2026年企業應用RAG技術的焦點轉向為何？",
+        "question": "台灣企業在2026年利用NotebookLM等No code平台導入Kimi K2.5時，其最大規劃效益為何？",
         "options": [
-            "主要用於降低成本與模型精度無關",
-            "僅適用金融產業其他產業使用率低",
-            "核心價值被遺棄改用微調方案",
-            "標準配置但焦點在系統整體運作而非模型"
+            "多模態即時生成提升創作效率。",
+            "超長上下文支持多智能體加速落地。",
+            "代理AI反思機制優化持續互動體驗。",
+            "知識圖譜強化準確檢索與品質。"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "RAG技術",
-        "concept": "系統整合",
-        "explanation": "2026年焦點由模型能力轉向整體系統可運作性以確保企業穩定運用。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "平台效益",
+        "explanation": "NotebookLM支持超長上下文和多智能體協作，使企業應用生成式AI更快捷高效。",
         "number": 6,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     },
     {
-        "question": "No Code / Low Code在AI民主化發展中最關鍵角色是？",
+        "question": "Agentic AI於2026年生成式AI導入評估時，No code/Low code工具應具備的核心能力是？",
         "options": [
-            "程式設計被淘汰全由AI完成",
-            "企業放棄專業AI團隊完全自動化平台",
-            "AI應用升級強調非工程師亦能應用",
-            "初級用戶需學No Code進階用戶學程式"
+            "多模態全感官實時對話與成本控制。",
+            "感知、推理、行動與反思自動化流程。",
+            "結合量子AI加速科學實驗自動化。",
+            "知識圖譜提升長文檔的知識管理。"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code",
-        "concept": "AI民主化",
-        "explanation": "No Code / Low Code降低技術門檻，擴展非技術人員AI應用能力。",
+        "subtopic": "生成式 AI導入評估規劃",
+        "concept": "Agentic AI能力",
+        "explanation": "Agentic AI強調感知、推理、行動與反思四個核心能力，在No code工具中實現目標自動化轉化。",
         "number": 7,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     },
     {
-        "question": "2026年電商使用生成式AI生成購物建議，最佳提示詞設計應該如何？",
+        "question": "2026年Google Labs低代碼平台規劃生成式AI科學發現應用，評估重點應聚焦何處？",
         "options": [
-            "「推薦一個商品」",
-            "使用極長複雜提示詞確保理解",
-            "隨機輸入偏好由AI判斷",
-            "「根據客戶歷史及季節推薦三商品及理由」"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "提示詞設計",
-        "concept": "提示詞工程",
-        "explanation": "明確且具體的提示詞含多維度條件，提高生成建議的相關性與實用性。",
-        "number": 8,
-        "date": "2026-04-21"
-    },
-    {
-        "question": "生成式AI在全球AI投資中的比例升高透露什麼趨勢？",
-        "options": [
-            "全球AI總額下降生成式AI佔比相對升",
-            "仍是附加項目傳統AI為主力",
-            "成為核心支出類別成為優先投資",
-            "投資規模虛高回報不明"
+            "光學互連提升GPU數據傳輸效率。",
+            "代理AI實現語言指令轉物理行為。",
+            "AI生成新假設並調用協作實驗工具。",
+            "輕量開源模型加速企業應用落地。"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "企業投資趨勢",
-        "concept": "投資優先級",
-        "explanation": "生成式AI由附加項目轉為主要技術投資項目，企業重視度顯著提升。",
-        "number": 9,
-        "date": "2026-04-21"
+        "subtopic": "生成式 AI導入評估規劃",
+        "concept": "科學發現AI",
+        "explanation": "Google Labs低代碼平台重點是協助AI在科學發現中生成假設和實驗工具調用，以及與人類協作。",
+        "number": 8,
+        "date": "2026-04-23"
     },
     {
-        "question": "實體AI與軟體AI的根本差異在於？",
+        "question": "企業老闆評估2026年Salesforce代理式AI導入時，No code規劃中優先解決的核心挑戰是？",
         "options": [
-            "實體AI只能做簡單重複任務無學習能力",
-            "無本質差異僅為行銷用語",
-            "實體AI成本較低適合中小企業",
-            "實體AI是自主協作的學習反應機器人"
+            "多模態生成提升影像視頻實時應用。",
+            "Qwen3推理支持多智能體商業部署。",
+            "從單工具轉向數位勞動力自主協作。",
+            "GraphRAG優化超長文檔準確性成本。"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI導入評估規劃",
+        "concept": "企業代理AI導入",
+        "explanation": "重點在從分散單一工具轉型為整合自主協作的數位勞動力，以提升代理式AI的實用性和效率。",
+        "number": 9,
+        "date": "2026-04-23"
+    },
+    {
+        "question": "2026年IBM Granite開源生成式AI模型低代碼應用評估的最大優勢為何？",
+        "options": [
+            "多模態交互提升低功耗推理成本控制。",
+            "量子技術融合優化AI科研自動化流程。",
+            "代理式AI四核心能力構建持續互動系統。",
+            "輕量化特定領域加快企業Agentic AI整合。"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "實體AI",
-        "concept": "自主協作",
-        "explanation": "實體AI結合感測與學習能力能即時回應變化，成為自主協作夥伴。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "開源模型價值",
+        "explanation": "IBM Granite主打輕量化設計，專注特定領域，助力企業快速整合Agentic AI生態。",
         "number": 10,
-        "date": "2026-04-21"
+        "date": "2026-04-23"
     }
 ]

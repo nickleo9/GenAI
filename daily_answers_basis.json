@@ -5608,5 +5608,175 @@
         "explanation": "支持向量機屬於監督式分類技術，需標註資料，而資料分群則是非監督學習，包含叢集、K-均值、階層式分群。",
         "number": 330,
         "date": "2026-04-22"
+    },
+    {
+        "question": "2026年在生成式AI規劃中，以下哪一項最能代表其趨勢與應用重點？",
+        "options": [
+            "僅限於文字生成，圖像與影音生成尚未實用",
+            "不需進行微調 (fine-tuning) 即可應用於多種場景",
+            "以雲端中心化大模型為主，忽略邊緣運算",
+            "採用邊緣設備下沉與垂直小模型進行細分領域優化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI規劃趨勢",
+        "concept": "垂直小模型與邊緣AI",
+        "explanation": "2026年生成式AI不再是雲端獨大，而是將計算和模型分散至邊緣設備，並藉由垂直小模型專注特定領域優化，這提升了應用效率與實用性。",
+        "number": 331,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "以下何者不屬於2026年人工智慧在製造業及實體領域的典型應用？",
+        "options": [
+            "無人機投入流量監控與物流配送",
+            "眼鏡型裝置裝配邊緣AI輔助工作",
+            "人形機器人進行商業化服務",
+            "利用深度強化學習優化電商推薦系統"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "AI各領域應用",
+        "concept": "製造與實體AI應用",
+        "explanation": "深度強化學習雖是重要技術，但優化電商推薦屬於消費及娛樂領域，非製造與實體領域的典型應用。製造業偏重機器人、邊緣裝置與無人機等實體設備。",
+        "number": 332,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "對企業而言，2026年採用代理式AI來應對決策超載的主要優勢是什麼？",
+        "options": [
+            "降低AI模型大小以節省運算資源",
+            "只需處理結構化數據，提升數據品質",
+            "加速情境化分析，提高多維度思考能力",
+            "可完全自動決策，減少人為干預"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "代理式AI與決策優化",
+        "concept": "情境分析加速",
+        "explanation": "代理式AI能快速進行情境分析，幫助企業突破傳統單一維度競爭，提升多維度思考與決策效率，減少決策超載問題。",
+        "number": 333,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "在資料處理與分析流程中，哪一個步驟不屬於資料清洗的範疇？",
+        "options": [
+            "建立分類器以完成資料標籤",
+            "剔除極端值防止模型偏差",
+            "處理遺缺值，運用均值或中位數填補",
+            "資料格式統一，例如日期格式標準化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "資料清洗步驟",
+        "explanation": "建立分類器屬於機器學習模型建置階段，不是資料清洗的內容。資料清洗主要關注遺缺值處理、格式統一與極端值剔除等。",
+        "number": 334,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "以下哪種機器學習模型屬於監督學習？",
+        "options": [
+            "支持向量機 (SVM)",
+            "強化學習中的Q-Learning",
+            "主成分分析 (PCA)",
+            "K-Means分群演算法"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習模型分類",
+        "concept": "監督學習模型",
+        "explanation": "支持向量機(SVM)是典型的監督學習演算法，需要有標註的訓練資料進行訓練。K-Means和PCA屬非監督學習，Q-Learning屬強化學習。",
+        "number": 335,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "在鑑別式AI與生成式AI的整合應用中，下列敘述何者錯誤？",
+        "options": [
+            "鑑別式AI能獨立生成多樣化內容",
+            "兩者可結合以提升回答準確率與內容豐富度",
+            "鑑別式AI主要用於分類與判別任務",
+            "生成式AI擅長於產生新內容或數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "模型基本原理與應用",
+        "concept": "鑑別式與生成式AI分工",
+        "explanation": "鑑別式AI（如分類器）主要判別輸入屬於哪個類別，並非用於生成內容。生成式AI才擅長創造多樣化的新數據。",
+        "number": 336,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "2026年AI安全與資料隱私方面，以下哪項策略不符合現行最佳實踐？",
+        "options": [
+            "加密傳輸與儲存敏感數據",
+            "實施嚴格身份驗證與存取權限控管",
+            "運用聯邦學習分散式訓練以保護隱私",
+            "將用戶數據集中在單一雲端平台以便監控"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料隱私與安全",
+        "subtopic": "AI安全治理",
+        "concept": "資料隱私最佳實踐",
+        "explanation": "集中用戶數據於單一平台增加資安風險，不符合隱私保護原則。分散式訓練與加密技術是目前推薦的標準策略。",
+        "number": 337,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "在機器學習中，L1正則化(Regularization)導致權重收斂為零的主要原因是？",
+        "options": [
+            "提高學習率使收斂速度加快",
+            "強制部分權重逼近零以達特徵選擇效果",
+            "使權重分佈變平滑以避免震盪",
+            "增加模型複雜度以減少欠擬合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正規化特性",
+        "explanation": "L1正則化鼓勵權重稀疏化(零化)，進而起到特徵選擇效果，有助於降低模型複雜度與提升泛化能力。",
+        "number": 338,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "在資料分析中，ETL流程的正確順序是？",
+        "options": [
+            "轉換(Transform)、抽取(Extract)、載入(Load)",
+            "抽取(Extract)、載入(Load)、轉換(Transform)",
+            "載入(Load)、抽取(Extract)、轉換(Transform)",
+            "抽取(Extract)、轉換(Transform)、載入(Load)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL順序",
+        "explanation": "ETL指數據抽取(Extract)、轉換(Transform)、載入(Load)，是將資料從原始源頭抽取後經過格式及品質調整，再載入目標系統的過程。",
+        "number": 339,
+        "date": "2026-04-24"
+    },
+    {
+        "question": "在2026年生成式AI提示詞工程中，哪項因素對輸出結果的一致性與品質影響最大？",
+        "options": [
+            "忽略上下文不做提示詞調整",
+            "提示詞語言的語意清晰與具體程度",
+            "不限制輸出長度且無任何限制條件",
+            "提示詞使用模糊且多義的詞匯"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞設計",
+        "explanation": "提示詞需語意清晰且具體，才能引導生成式AI產出契合需求的精確內容，避免模糊及無關回答。上下文和輸出限制也會影響，但語意為關鍵。",
+        "number": 340,
+        "date": "2026-04-24"
     }
 ]

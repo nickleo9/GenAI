@@ -1,172 +1,172 @@
 [
     {
-        "question": "如果您是臺灣一家製造工廠的主管，想在2025年引入生成式AI來優化生產流程，以下哪種AI工具最適合實現自動化監控與品質檢測？",
+        "question": "如果你是中小企業主管，想用2025年最新生成式AI工具來提升員工日常會議紀錄與報告的效率，以下哪一款工具最適合整合多語言即時翻譯與文本生成？",
         "options": [
-            "C. 無需訓練的通用聊天機器人，用於員工溝通",
-            "D. 傳統資料庫查詢系統，用於存取生產紀錄",
-            "A. 多模態生成式AI結合視覺辨識模型，自動檢測缺陷產品",
-            "B. 基於規則的專家系統，手動校正生產參數"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "多模態AI與視覺分析",
-        "explanation": "多模態生成式AI可結合視覺辨識模型，自動化缺陷檢測，比起傳統規則系統或手動方法更有效且適用於品質監控。",
-        "number": 1,
-        "date": "2026-04-19"
-    },
-    {
-        "question": "作為一位國中英文老師，想利用2025年最新的生成式AI工具來協助學生製作英文作文教案，以下提示詞哪一種最能有效生成功能完整、語法正確的範例文章？",
-        "options": [
-            "B. 「寫一篇隨意的英語文章，字數不限，關於任何題目」",
-            "D. 「生成一段簡短中文摘要」",
-            "C. 「輸入英文單字，產生單字表」",
-            "A. 「請生成一篇有5段邏輯清晰、有主題句和結論的英語書面作文，主題為環保」"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "提示工程",
-        "concept": "提示詞設計",
-        "explanation": "精確且具體的提示詞，如包含格式、結構和主題，能幫助生成式AI生產符合教學需求的優質作文範例。",
-        "number": 2,
-        "date": "2026-04-19"
-    },
-    {
-        "question": "2025年，某金融公司計畫導入生成式AI客服系統以提升多語言客戶服務能力。根據全球AI發展趨勢，在哪項AI技術上投入最多資源最可能帶來最大效益？",
-        "options": [
-            "C. 單語言語音辨識軟體",
-            "B. 基於規則的客戶資料查詢系統",
-            "D. 手動客服工作流程管理工具",
-            "A. 自然語言生成與理解多語言大型語言模型(LLM)"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域",
-        "concept": "多語言大型語言模型",
-        "explanation": "多語言LLM能自動理解及生成多種語言對話，改善客戶體驗並提升服務效率，是2025年金融業AI應用的關鍵投入方向。",
-        "number": 3,
-        "date": "2026-04-19"
-    },
-    {
-        "question": "作為一位自媒體內容創作者，您想在2025年使用生成式AI來快速產出多平台文章和短影片腳本，下列哪種策略能最大化工具使用效益？",
-        "options": [
-            "B. 只用單一句話提示詞直至完全完成作品",
-            "D. 僅利用AI生成圖片，文字內容完全自己撰寫",
-            "C. 完全依賴AI，不做任何人為修改或校正",
-            "A. 使用細分提示詞分別生成文章主題標題、段落內容和腳本要點"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "提示工程",
-        "concept": "分步提示策略",
-        "explanation": "拆解複雜任務並用細分提示詞生成不同內容部分，可提升生成內容的質量與控制度，提高創作者效率。",
-        "number": 4,
-        "date": "2026-04-19"
-    },
-    {
-        "question": "2025年全球AI市場擴張迅速，聯合國預測到2033年產值將達4.8兆美元。身為台灣某科技公司主管，當您規劃AI導入評估時，哪項因素最應優先考慮避免數位鴻溝加劇？",
-        "options": [
-            "C. 完全依賴進口AI專利技術",
-            "B. 只投資高端AI技術以保持競爭優勢",
-            "D. 限制AI使用於研發部門，降低部署風險",
-            "A. 搭配普及教育與廉價硬體，促進AI公平接取"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "風險管理",
-        "concept": "數位鴻溝與公平性",
-        "explanation": "擴大AI教育普及和降低硬體門檻能減少數位鴻溝，確保技術利益在社會中公平分配，是AI導入成功的重要前提。",
-        "number": 5,
-        "date": "2026-04-19"
-    },
-    {
-        "question": "根據AI歷史發展，生成對抗網路(GAN)首次發表於何時，並對2025年生成式AI產生何種長遠影響？",
-        "options": [
-            "D. 2018年，引入注意力機制改善語言模型",
-            "A. 2014年，推動高度逼真影像和媒體生成技術的突破",
-            "C. 2010年，改進強化學習在遊戲中的應用",
-            "B. 2007年，強化語音辨識的準確性"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "機器學習概念",
-        "concept": "生成對抗網路(GAN)",
-        "explanation": "GAN於2014年提出，為生成式AI帶來高品質圖像與影片生成能力，成為2025年多媒體生成技術基石。",
-        "number": 6,
-        "date": "2026-04-19"
-    },
-    {
-        "question": "2025年，身為一家新創公司的產品經理，您想利用No Code/Low Code 平台整合生成式AI協助業務流程自動化。關於這類工具，下列敘述何者正確？",
-        "options": [
-            "B. Low Code只能由專業開發人員使用，不友善初學者",
-            "C. 使用No Code開發的AI應用無需做資料隱私審查",
-            "A. No Code平台允許非程式人員快速設計自動化App",
-            "D. No Code與Low Code平台無法連接外部AI服務"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 概念",
-        "concept": "平台特性與優勢",
-        "explanation": "No Code平台設計目標是讓非技術人員快速建置應用，提供低門檻自動化工具，廣泛被2025年企業採用。",
-        "number": 7,
-        "date": "2026-04-19"
-    },
-    {
-        "question": "如果您是2025年身在國外的家庭主婦，想利用AI工具幫忙規劃家庭旅遊與理財計劃，哪種AI功能最符合您的需求？",
-        "options": [
-            "A. 生成式AI結合多模態數據分析提供行程與預算建議",
-            "B. 傳統電子表格軟體手動輸入旅程細節",
-            "C. 基於關鍵字的簡單搜尋引擎查詢",
-            "D. 只使用單一語言聊天機器人回答一般疑問"
+            "Prompts.ai企業級AI編排平台，可連接超過35種大型語言模型並支持實時多語言輸出",
+            "Midjourney專注於高質量圖像生成，適合製作視覺化展示內容",
+            "Jasper專注於社群和廣告文案生成，主要為文字創作優化",
+            "Lovart整合圖像和視頻生成，主打設計師全鏈路創作流程"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生活應用",
-        "concept": "生成式AI多模態分析",
-        "explanation": "生成式AI可整合交通、住宿與理財數據提供個人化行程與財務建議，適合多變需求的家庭規劃。",
-        "number": 8,
-        "date": "2026-04-19"
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "多模態整合",
+        "explanation": "Prompts.ai作為企業級AI編排平台，能統一訪問多個大型語言模型，包括支持多語言即時翻譯與文本生成，非常適合跨文化和多語言企業的會議記錄與報告需求。其他選項則主要專注圖像或單一場景。",
+        "number": 1,
+        "date": "2026-04-26"
     },
     {
-        "question": "作為2025年自媒體經營者，您想結合n8n與生成式AI提升社群自動化管理與內容產製，下列哪種搭配是最理想的？",
+        "question": "假設你是設計師準備使用2025年流行的生成式AI幫客戶產出品牌視覺，以下哪種提示詞下法最能讓Midjourney生成符合品牌調性的圖像？",
         "options": [
-            "B. 只用n8n進行純粹資料搬移，不結合AI生成開發",
-            "C. 僅在AI系統手動輸出內容再由n8n處理發布",
-            "A. 用n8n自動抓取社群訊息觸發AI生成回覆與內容發布流程",
-            "D. 把n8n用於電子郵件服務，不涉及AI應用"
+            "描述競爭對手風格並要求AI生成相反風格的圖像",
+            "聚焦描述圖像細節，如光影、紋理，忽略風格和色彩調和",
+            "明確描述品牌主題色彩、風格、應用場景及目標受眾，例如「極簡主義深藍色企業LOGO，適用於金融業」",
+            "僅輸入品牌名稱與企業類型，讓AI自動生成風格"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "工具整合運用",
-        "concept": "自動化工作流(n8n)+AI",
-        "explanation": "n8n可自動化社群訊息收集並引發生成式AI自動創作回覆及內容發布，提升自媒體經營效率。",
-        "number": 9,
-        "date": "2026-04-19"
+        "subtopic": "提示工程",
+        "concept": "提示詞精準設計",
+        "explanation": "對生成式AI如Midjourney來說，明確指定品牌色彩、風格和使用場景，有助於生成符合品牌調性的圖像。僅給品牌名稱或聚焦局部細節無法全面反映品牌特色，描述相反風格可能與客戶需求不符。",
+        "number": 2,
+        "date": "2026-04-26"
     },
     {
-        "question": "啟動一個AI專案時，iPAS AI應用規劃師需注意哪些生成式AI風險管理原則？以下哪項不符合其建議？",
+        "question": "2025年台灣一家自媒體主婦想用AI輔助製作親子育兒短影片，適合搭配的生成式AI工具組合是？",
         "options": [
-            "B. 設計AI系統需重視數據隱私與誤導內容偵測",
-            "A. 使用開源模型無需任何使用限制與透明度說明",
-            "C. 建立持續監控與風險評估機制",
-            "D. 導入生成式AI前進行完整倫理與合規檢視"
+            "Jasper社群貼文生成+Lovart多版海報設計+Vibe Coding代碼生成",
+            "Prompts.ai企業級平台+InfiniteTalk直播數字人+NotebookLM知識管理",
+            "ElevenLabs語音生成+Runway Gen-3視頻生成+ChatGPT文案撰寫",
+            "GitHub Copilot程式碼編寫+Claude文本生成+Midjourney圖像製作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態生成整合",
+        "concept": "影音與語音生成",
+        "explanation": "ElevenLabs提供高品質語音合成，Runway Gen-3用於影片製作，ChatGPT擅長撰寫文案，三者結合能快捷生成親子育兒短影片。其他組合多偏程式或設計，不適合短影片製作的全流程。",
+        "number": 3,
+        "date": "2026-04-26"
+    },
+    {
+        "question": "若在2025年你是AI應用規劃師，為國外工廠規劃智能客服系統，最需要關注的AI治理要點是？",
+        "options": [
+            "優先追求AI回應速度與多語言覆蓋，忽略數據來源安全",
+            "確保數據隱私合規、模型透明度與回應合理性，避免歧視與偏見",
+            "僅聚焦減低成本，不需設定風險管控或審計機制",
+            "重點使用生成式模型的創造力而不需關注結果真實性"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "風險管理",
-        "concept": "風險控制與合規",
-        "explanation": "即使是開源模型，也需設定使用限制並提升透明度以防止濫用與風險，是iPAS推崇的風險控管原則。",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "AI倫理與治理",
+        "explanation": "2025年AI治理強調數據隱私合規、模型透明與回應合理，以避免歧視偏差並保障用戶權益。忽視安全與風險管理會導致法規及名譽風險，尤其涉及跨國客服服務。",
+        "number": 4,
+        "date": "2026-04-26"
+    },
+    {
+        "question": "科學研究人員計畫用Vibe Coding做2025年的AI模型研發，哪一項是正確的執行策略？",
+        "options": [
+            "利用Vibe Coding圖形化編碼優勢，快速構建資料處理和模型訓練流程，提升迭代效率",
+            "僅使用Vibe Coding完成全流程產品部署，不涉及外部API整合",
+            "用Vibe Coding直接生成高質量圖像和視頻，不需其他工具輔助",
+            "專注用Vibe Coding做API測試，不進行資料預處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "低代碼開發策略",
+        "explanation": "Vibe Coding作為低代碼工具平台，主要優勢在於快速搭建資料處理、訓練和測試模型的工作流，提高研發效率。它不是圖像視頻生成工具，且常需整合外部API及資源。",
+        "number": 5,
+        "date": "2026-04-26"
+    },
+    {
+        "question": "一位國中英文老師計劃使用生成式AI幫學生製作互動教案，哪種AI工具組合最適合？",
+        "options": [
+            "GitHub Copilot協助程式設計+Midjourney生成教室壁報",
+            "ChatGPT輔助文本生成+Runway製作影片素材+Prompts.ai整合多模態互動",
+            "Lovart設計海報+InfiniteTalk創建數字人直播",
+            "Jasper製作社群貼文+ElevenLabs生成音頻朗讀"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "多模態教案整合",
+        "explanation": "以ChatGPT輔助文本教案編寫，Runway生成教學影片內容，Prompts.ai可整合多模型提升交互性，是打造互動教案的最佳選擇。其他方案多偏設計或直播，不全面適合教案製作。",
+        "number": 6,
+        "date": "2026-04-26"
+    },
+    {
+        "question": "使用n8n工作流程自動化串接生成式AI工具，可以實現哪項功能以提升家庭主婦運動計劃管理？",
+        "options": [
+            "直接創建精美家居設計圖，不涉及日程規劃",
+            "僅作為AI音頻合成接口而不連動其他工具",
+            "自動將健康數據同步到日曆並生成運動提醒及AI定制運動菜單",
+            "用於生成語音故事給兒童聽，無需健康或運動相關任務"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工作流程自動化",
+        "concept": "流程串接與自動化",
+        "explanation": "n8n可串接多服務，讓健康數據自動同步至日曆並生成運動提醒，加上生成個性化運動菜單，顯著助力家庭主婦管理日常健身。它不專注設計圖或純語音生成。",
+        "number": 7,
+        "date": "2026-04-26"
+    },
+    {
+        "question": "以下關於2025年生成式AI模型Gemini 2.5的說法，何者為正確？",
+        "options": [
+            "Gemini 2.5以強化機器翻譯為主，不涉及生成式任務",
+            "Gemini 2.5只專注於文本生成，不支持圖像或多媒體相關功能",
+            "Gemini 2.5為開源模型，任何人均可免費使用與修改",
+            "Gemini 2.5具備多模態融合能力，可用於文本、圖片和影片生成整合"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI",
+        "concept": "多模態AI模型",
+        "explanation": "2025年Google發布的Gemini 2.5為多模態生成式AI，能融合文本、圖片、影片等多媒體資料進行生成和分析。其非開源，且功能廣泛，不僅限於翻譯。",
+        "number": 8,
+        "date": "2026-04-26"
+    },
+    {
+        "question": "在2025年生成式AI的導入規劃中，下列哪項是合理的風險管理做法？",
+        "options": [
+            "忽略用戶隱私及法律要求，優先追求系統性能效率",
+            "建立數據來源審核機制與模型決策風險評估，確保AI應用透明可控",
+            "只關注模型準確率，無視系統的可解釋性與公平性問題",
+            "完全依賴AI模型自動決策，不設置人工審查與後續修正"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險管控與合規",
+        "explanation": "2025年生成式AI導入強調全面風險管理，包括數據審核、模型決策透明與責任歸屬，保障合規與用戶權益。完全自動決策或忽視隱私與公平性風險會導致合規失敗。",
+        "number": 9,
+        "date": "2026-04-26"
+    },
+    {
+        "question": "如果你在國外進行跨國創作專案，想用2025年最新AI工具來協助多語言內容產出，下列哪一組工具最適合？",
+        "options": [
+            "Midjourney專注圖像生成+Sora短影片製作+GitHub Copilot程式碼輔助",
+            "InfiniteTalk數字人直播+Vibe Coding低代碼平台+NotebookLM知識管理",
+            "Runway生產短影片+Jasper社群貼文+Lovart設計海報",
+            "GPT-5強化語義理解+Prompts.ai整合多語言API+ElevenLabs多語音合成"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "跨語言應用",
+        "concept": "多語言整合與輸出",
+        "explanation": "GPT-5擁有先進語義理解，配合Prompts.ai多語言API整合及ElevenLabs多語音合成，是跨國創作、多語言內容產出最佳方案。其他組合偏重視覺或單一功能，不具備全面多語言能力。",
         "number": 10,
-        "date": "2026-04-19"
+        "date": "2026-04-26"
     }
 ]

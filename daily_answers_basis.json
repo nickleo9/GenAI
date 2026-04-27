@@ -5778,5 +5778,175 @@
         "explanation": "提示詞需語意清晰且具體，才能引導生成式AI產出契合需求的精確內容，避免模糊及無關回答。上下文和輸出限制也會影響，但語意為關鍵。",
         "number": 340,
         "date": "2026-04-24"
+    },
+    {
+        "question": "以下哪項最能準確描述代理式AI（Agentic AI）在2026年的核心能力？",
+        "options": [
+            "結合感知、推理、行動及反思多重能力",
+            "僅進行數據清洗與整理，不涉及決策",
+            "只專注於生成文字回應，缺乏行動能力",
+            "著重於線性搜尋與資料索引功能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "代理式AI核心能力",
+        "concept": "代理AI能力組合",
+        "explanation": "代理式AI不只是生成內容，還結合了感知、推理、行動和反思，能夠做出更自主及全面的決策和執行行動。",
+        "number": 341,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "在資料分析流程中，下列何者不是資料隱私與安全的重要考量？",
+        "options": [
+            "確保資料加密傳輸與存放",
+            "依規範進行資料匿名化與去識別化",
+            "在用戶授權下分享資料給第三方",
+            "無條件開放所有資料以促進分析"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料隱私保護措施",
+        "explanation": "無條件開放所有資料違反隱私法規與倫理，必須透過授權、匿名化等措施來保護使用者隱私。",
+        "number": 342,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "以下哪個機器學習模型屬於監督學習的典型代表？",
+        "options": [
+            "支持向量機 (Support Vector Machine)",
+            "生成對抗網路 (GAN)",
+            "K均值分群 (K-Means Clustering)",
+            "關聯規則挖掘 (Association Rule Mining)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習模型",
+        "concept": "監督學習模型分類",
+        "explanation": "支持向量機(SVM)是一種典型監督學習模型，主要用於分類任務；而K-Means屬非監督學習，GAN為生成式模型，關聯規則屬關聯分析。",
+        "number": 343,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "關於生成式AI與鑑別式AI的差異，下列敘述何者正確？",
+        "options": [
+            "生成式AI僅負責判斷輸入數據的真偽",
+            "鑑別式AI會產生新的數據例子以供學習",
+            "生成式AI能生成類似真實數據的輸出內容",
+            "鑑別式AI無法應用於圖像分類任務"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI 概念",
+        "subtopic": "生成式與鑑別式AI原理",
+        "concept": "生成式AI與鑑別式AI區別",
+        "explanation": "生成式AI會根據訓練數據創建類似真實的數據，鑑別式AI是用來區分資料真偽或分類，但不會生成新的樣本。",
+        "number": 344,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "針對AI治理，下列何者不符合現代AI治理原則？",
+        "options": [
+            "允許任意資料收集，不受法律約束",
+            "強調用戶隱私權保護與資料安全",
+            "建立多方監管與風險評估體系",
+            "確保AI系統運作透明且可解釋"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "AI治理原則",
+        "concept": "AI責任與合規",
+        "explanation": "現代AI治理強調合法合規，確保資料收集尊重法律與倫理，任意資料收集是不被允許的。",
+        "number": 345,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "以下何者最貼切描述強化學習的基本原理？",
+        "options": [
+            "通過與環境互動並獲得獎勵信號來優化決策",
+            "分析無標記資料以尋找潛在結構和分布",
+            "利用生成模型創造新樣本來提升模型表現",
+            "利用標記資料學習輸入和輸出之間的映射"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習基本原理",
+        "concept": "強化學習機制",
+        "explanation": "強化學習透過智能體在環境中行動並根據獲得的獎勵信號來調整策略，以達到最大化長期獎勵。",
+        "number": 346,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "在AI資料處理中，下列哪種技術主要用於將類別變數轉換成可用於機器學習的數值形式？",
+        "options": [
+            "交叉驗證",
+            "梯度下降",
+            "One-Hot Encoding",
+            "資料清洗"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理方法",
+        "concept": "類別資料編碼",
+        "explanation": "One-Hot Encoding能將類別變數轉換成二進制向量，達到數值化表示以供模型使用。梯度下降、資料清洗與交叉驗證則是不同的處理步驟。",
+        "number": 347,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "以下選項中，何者屬於2026年AI技術發展的十大重點之一，尤其強調邊緣運算優勢？",
+        "options": [
+            "加速邊緣裝置上的即時推論能力",
+            "提升深度神經網絡的透明性與可解釋性",
+            "大規模雲端資料庫的集中管理",
+            "推廣去中心化聯邦學習協議"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "2026 AI技術趨勢",
+        "concept": "邊緣AI與即時推論",
+        "explanation": "2026年強調提升邊緣裝置的即時推論能力，降低對雲端依賴，實現快速反應及隱私保護。",
+        "number": 348,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "在機器學習模型中，下列敘述關於L1正規化 (Lasso) 的效果，何者正確？",
+        "options": [
+            "僅用於非監督式學習任務中",
+            "促使模型權重趨近零導致特徵選擇效果",
+            "增加模型複雜度防止過擬合",
+            "保留所有特徵但降低權重振幅"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "正規化技術",
+        "concept": "L1正規化特性",
+        "explanation": "L1正規化會促使部分權重收斂為零，達到特徵選擇的效果，有助簡化模型，防止過擬合。",
+        "number": 349,
+        "date": "2026-04-27"
+    },
+    {
+        "question": "關於生成式AI回應語境一致性的說法，下列何者正確？",
+        "options": [
+            "回應語境一致性僅靠訓練資料大小控制",
+            "僅依賴單一端到端神經網絡結構實現",
+            "生成內容完全獨立於上下文語境",
+            "需要結合檢索強化技術如RAG模型進行提高"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "上下文語境連貫性",
+        "concept": "檢索增強生成 (RAG)",
+        "explanation": "生成式AI為提升回應的語境一致性，常結合檢索增強技術（RAG），利用外部知識檢索輔助生成更精確連貫內容。",
+        "number": 350,
+        "date": "2026-04-27"
     }
 ]

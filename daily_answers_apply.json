@@ -1,172 +1,172 @@
 [
     {
-        "question": "在生成式AI導入評估中，何者為評估No Code平台時最重要的考量？",
+        "question": "2026年生成式AI領域專用化趨勢中，RAG架構進化的核心是什麼？",
         "options": [
-            "平台是否支持多種編程語言的深入自定義能力",
-            "平台是否具備完全開源並允許底層架構修改",
-            "平台需具備完全自動化的模型訓練和上線功能",
-            "平台提供的視覺化設計工具是否易於快速構建流程"
+            "通用知識檢索結合量子金融混合化",
+            "多模態基礎模型與TinyML邊緣部署",
+            "自主AI代理的記憶與互動持續性",
+            "領域本體論、知識圖譜與專家策展的整合"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code 平台評估",
-        "explanation": "No Code平台的核心優勢是讓使用者利用視覺化工具快速構建和部署應用，無需程式碼編寫，因此使用者友好和快速開發能力是評估重點，而非編程深度或完全自動訓練。",
-        "number": 1,
-        "date": "2026-04-28"
-    },
-    {
-        "question": "在生成式AI應用領域中，下列何者不是常見的應用場景？",
-        "options": [
-            "基於歷史資料進行財務報表異常檢測",
-            "進行深度神經網路的底層架構優化設計",
-            "利用AI代理主動管理供應鏈中斷風險",
-            "自動生成客製化行銷文案與多媒體內容"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "應用場景辨識",
-        "explanation": "生成式AI主要聚焦於內容創作、數據分析和智能代理應用，深度神經網路的底層架構優化通常屬於AI技術開發層面，不屬於生成式AI應用場景。",
-        "number": 2,
-        "date": "2026-04-28"
-    },
-    {
-        "question": "何者最能反映生成式AI風險管理的核心要素？",
-        "options": [
-            "建立多層次資料隱私保護及偏誤監控機制",
-            "優化模型訓練速度以減少運算資源消耗",
-            "確保模型架構的專有演算法保密不外泄",
-            "強化使用者自定義的API安全性及反駭措施"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "風險管理與合規監控",
-        "explanation": "風險管理核心在於防止資料洩漏、保障用戶隱私以及模型產出的公正性及可靠性，故多層次隱私保護與偏誤監控是重點。",
-        "number": 3,
-        "date": "2026-04-28"
-    },
-    {
-        "question": "關於Low Code平台的限制，下列敘述何者正確？",
-        "options": [
-            "限制用戶擴展複雜流程與客製化邏輯",
-            "完全取代人工撰寫複雜AI演算法的需求",
-            "缺乏足夠的視覺化操作介面設計",
-            "無法支援跨平台資料整合與自訂擴充"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "Low Code 限制分析",
-        "explanation": "Low Code平台雖然降低開發難度，但在擴展複雜流程和高度客製化邏輯方面仍有限制，難以完全替代手寫複雜程式碼。",
-        "number": 4,
-        "date": "2026-04-28"
-    },
-    {
-        "question": "選擇生成式AI工具時，哪項特性最重要以提升多部門協作效率？",
-        "options": [
-            "專注於單一任務的高精度輸出能力",
-            "提供完整底層模型調參與結構修改功能",
-            "嚴格限制資料輸入格式以確保一致性",
-            "支援即時版本控制與多用戶同時編輯"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式AI工具協作特性",
-        "explanation": "多部門協作需求重視版本控制和多用戶協作能力，便於即時共享和更新，提升工作流整合效率。",
-        "number": 5,
-        "date": "2026-04-28"
-    },
-    {
-        "question": "在生成式AI導入評估流程中，下列步驟何者最先進行？",
-        "options": [
-            "識別目標業務流程及其自動化潛力",
-            "選擇適合的生成式AI工具及平台",
-            "制定風險管理和合規監控策略",
-            "系統整合與部署模型開發環境"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入評估流程",
-        "explanation": "導入評估的首要步驟是識別可用生成式AI技術優化的業務流程，明確需求後才能後續選擇合適工具與規劃風險。",
-        "number": 6,
-        "date": "2026-04-28"
+        "concept": "RAG",
+        "explanation": "RAG架構的進化核心在於結合領域本體論、知識圖譜與專家策展，提升專用化智能系統的深度和準確度，超越單純通用知識檢索和基礎模型。",
+        "number": 1,
+        "date": "2026-04-30"
     },
     {
-        "question": "何者為生成式AI中提示詞設計的最佳實踐？",
+        "question": "在No Code環境下，使用OpenAI Sora生成實時視頻的最佳提示詞工程原則是？",
         "options": [
-            "盡量使用大量複雜專業詞彙以提升準確",
-            "保持提示詞簡潔且包含具體任務細節",
-            "使用多義詞加強提示詞表達的靈活性",
-            "刻意模糊提示詞以減少模型偏誤風險"
+            "拆解任務為資料蒐集後自動生成圖表",
+            "僅指定主題，依賴通用LLM一次性輸出",
+            "整合Gmail與Google Drive進行數據蒐集",
+            "強調角色一致性、物理效果與敘事連貫性"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 應用領域與工具使用",
         "concept": "提示工程",
-        "explanation": "提示詞需簡潔且具體，幫助模型精確理解任務需求，避免使用模糊或過於複雜的詞彙造成誤解。",
-        "number": 7,
-        "date": "2026-04-28"
+        "explanation": "OpenAI Sora生成視頻時，重點在於提示詞設計需確保角色一致性和物理效果的真實敘事，才能生成高質感連貫視頻內容。",
+        "number": 2,
+        "date": "2026-04-30"
     },
     {
-        "question": "在生成式AI系統的風險管理中，何者不屬於常見的治理措施？",
+        "question": "Agentic AI（代理式AI）的四核心能力不包括哪一項？",
         "options": [
-            "針對模型輸出設定自動化審查標準",
-            "定期對用戶進行提示詞設計培訓",
-            "建立數據來源可追蹤的透明機制",
-            "對模型訓練參數進行嚴密加密保護"
+            "感知（Perception）",
+            "行動（Action）與反思（Reflection）",
+            "推理與計畫（Reasoning and Planning）",
+            "量子計算加速訓練"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "Agentic AI",
+        "explanation": "Agentic AI的四核心能力涵蓋感知、推理計畫、行動及反思，不包括量子計算加速訓練，它不是核心能力之一。",
+        "number": 3,
+        "date": "2026-04-30"
+    },
+    {
+        "question": "企業導入生成式AI的風險管理重點，根據2026趨勢為何？",
+        "options": [
+            "不實訊息資安與日益完善的監管框架",
+            "通用工具取代垂直領域專家系統",
+            "多代理人系統的單一任務執行",
+            "僅關注模型商品化與成本降低70-90%"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 風險管理",
-        "concept": "AI治理措施",
-        "explanation": "雖然提示詞設計重要，但風險治理主要聚焦資料來源透明、模型輸出監控及模型安全，並非強制用戶接受提示詞培訓。",
-        "number": 8,
-        "date": "2026-04-28"
+        "concept": "風險管理",
+        "explanation": "風險管理聚焦在防範不實訊息與遵守不斷完善的監管政策，而非僅關注模型商品化或簡化代理人任務。",
+        "number": 4,
+        "date": "2026-04-30"
     },
     {
-        "question": "No Code工具與Low Code工具的主要差異為何？",
+        "question": "哪款工具最適合Low Code軟體開發流水線，支援提示詞描述需求生成完整程式碼模組？",
         "options": [
-            "Low Code支持視覺化設計，No Code全靠手寫代碼",
-            "No Code支持完全無程式碼開發，Low Code允許少量編碼",
-            "Low Code不能整合第三方API，No Code具備該功能",
-            "No Code專注於自動化，Low Code只支援數據處理"
+            "Runway Gen-3（圖文轉視頻）",
+            "Midjourney V7（藝術海報生成）",
+            "Stable Diffusion 3（開源圖像定制）",
+            "Cursor（需求描述轉程式碼）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code",
+        "explanation": "Cursor專注將文字需求轉換成程式碼，適合Low Code開發流水線，而其他工具偏重視覺創作或多媒體生成。",
+        "number": 5,
+        "date": "2026-04-30"
+    },
+    {
+        "question": "2026生成式AI規劃策略中，多代理人系統（Multi-Agent Systems）的企業應用壁壘在於？",
+        "options": [
+            "Google生態無縫整合Gmail分析",
+            "專長不同AI代理的協作工作流程設計",
+            "僅實時聯網搜索與視頻生成",
+            "單一萬能模型的規模化部署"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code與Low Code區別",
-        "explanation": "No Code工具旨在無需任何程式碼即可完成應用構建，而Low Code工具允許使用者用少量程式碼拓展功能，兩者主要差異在於是否允許編碼。",
-        "number": 9,
-        "date": "2026-04-28"
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "多代理系統",
+        "explanation": "多代理系統注重協同合作，企業應用壁壘在於協作工作流程的複雜設計，而不是單一模型部署或單一功能操作。",
+        "number": 6,
+        "date": "2026-04-30"
     },
     {
-        "question": "企業導入生成式AI時，下列哪項指標最能反映導入成功？",
+        "question": "使用Claude Opus 4.6生成工作報表的提示詞範例，強調哪項No Code功能？",
         "options": [
-            "模型訓練耗時縮短20%以上",
-            "業務流程自動化率達成預期目標",
-            "使用生成式AI工具的員工人數增加",
-            "AI系統使用日誌記錄完整度提升"
+            "4K 60fps視頻敘事與角色物理效果",
+            "知識圖譜本體論領域專用檢索",
+            "TinyML邊緣智能量子混合",
+            "從原始數據自動生成可视化圖表+分析文字+演讲备注"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "提示工程",
+        "explanation": "Claude Opus 4.6強調從數據到圖表與演講稿的自動生成，體現No Code功能的便利與效率。",
+        "number": 7,
+        "date": "2026-04-30"
+    },
+    {
+        "question": "生成式AI在垂直領域（如醫療AI）的評估標準，優先考慮哪項？",
+        "options": [
+            "僅多模態融合文本/圖像/視頻",
+            "領域知識深度整合的研發能力與RAG專用化",
+            "代理系統的單步任務執行",
+            "通用工具的商品化與78%企業採用率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "評估標準",
+        "explanation": "垂直領域AI評估重點在於深度整合領域知識與專用RAG架構，而非表面上的通用採用率或單一功能。",
+        "number": 8,
+        "date": "2026-04-30"
+    },
+    {
+        "question": "2026年Gemini代理與GPT-5助手的差異，於企業No Code導入評估中何者最關鍵？",
+        "options": [
+            "兩者均具自主多步任務，但Gemini強調互動持續性",
+            "Gemini深度Google生態整合優於GPT聯網搜索",
+            "GPT-5專注視頻生成，Gemini限圖像藝術",
+            "Gemini支援量子金融，GPT無反思能力"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入成功指標",
-        "explanation": "成功導入生成式AI的關鍵是實際業務流程自動化的提升，而非單純技術指標或使用量的增加。",
+        "concept": "企業導入評估",
+        "explanation": "Gemini代理的關鍵優勢為深度整合Google生態系統，這在企業No Code導入評估中比GPT的聯網搜索功能更具價值。",
+        "number": 9,
+        "date": "2026-04-30"
+    },
+    {
+        "question": "生成式AI風險管理中，Agentic AI的完整性需具備記憶、互動與持續性，用於哪類應用拆解任務？",
+        "options": [
+            "僅生成商業海報或短視頻腳本",
+            "寫主題X文章：資料蒐集、內容撰寫、修改潤飾",
+            "TinyML單一邊緣設備部署",
+            "通用RAG一次性檢索內部知識"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "Agentic AI完整性",
+        "explanation": "Agentic AI用於拆解複雜任務，如文章撰寫中包含資料蒐集、寫作與修改多步驟，展現其記憶、互動與持續性能力。",
         "number": 10,
-        "date": "2026-04-28"
+        "date": "2026-04-30"
     }
 ]

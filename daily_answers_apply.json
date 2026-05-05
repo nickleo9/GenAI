@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2026年企業導入生成式AI進行客戶服務自動化時，針對高併發查詢情境，No Code平台的最佳RAG架構優化策略為何？",
+        "question": "在2026年生成式AI導入規劃中，選擇No Code平台以加速業務自動化時，何者為該方案的主要限制？",
         "options": [
-            "採用Hybrid Retrieval結合知識圖譜與向量資料庫，動態調整檢索權重以提升上下文相關性",
-            "基於規則的關鍵字匹配後處理，結合外部API即時驗證事實正確性",
-            "多代理系統分層檢索，Agent間透過權重投票機制決定最終回應內容",
-            "純向量嵌入檢索搭配Chain-of-Thought提示，依賴LLM內部推理補足知識缺口"
+            "D. 成本高昂，不適合中小企業使用",
+            "A. 高度客製化功能不足，難以滿足複雜特殊業務需求",
+            "C. 部署速度緩慢，更新頻率無法即時反應市場變化",
+            "B. 需要具備深厚程式語言知識才能調整及開發"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估規劃",
-        "concept": "RAG架構優化",
-        "explanation": "Hybrid Retrieval結合知識圖譜與向量資料庫，並透過動態調整檢索權重，可在高併發情境下提高上下文的相關性與檢索效率，是現階段No Code平台最佳優化策略。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code平台限制",
+        "explanation": "No Code平台的優勢是快速開發與易用性，但其限制在於無法高度客製化，對於複雜且特殊的業務需求往往無法完全支持，這是選擇該方案時的重要考量點。",
         "number": 1,
-        "date": "2026-05-02"
+        "date": "2026-05-05"
     },
     {
-        "question": "博士級AI規劃師評估生成式AI導入行銷內容生成時，提示詞工程中Chain-of-Verification(COV)與Tree-of-Thoughts(ToT)的關鍵差異為何？",
+        "question": "生成式AI在企業內容創作應用中，下列何者為提升生成品質的最佳提示詞設計策略？",
         "options": [
-            "COV處理結構化輸出，ToT專注非結構化創意發散任務",
-            "COV依賴外部知識庫，ToT純內部推理無需檢索增強",
-            "COV適用單輪生成，ToT需要多輪互動對話維持狀態連貫性",
-            "COV強調事實核查閉環迭代，ToT聚焦多分支推理路徑探索與剪枝"
+            "B. 提供隨意描述以提升模型多樣性和創造力",
+            "D. 僅使用通用性詞彙避免對模型造成過度限制",
+            "C. 減少文字長度以加快生成時間，犧牲細節完整性",
+            "A. 明確限定生成範圍與風格，並加入具體情境細節"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "提示詞工程",
-        "concept": "提示詞方法比較",
-        "explanation": "Chain-of-Verification(COV)通常用於單輪生成且著重於事實核查的閉環流程，而Tree-of-Thoughts(ToT)則須多輪互動以維護狀態連貫，聚焦多分支推理與路徑探索，因此是其主要差異點。",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示詞工程",
+        "explanation": "清楚且具體的提示詞能讓生成式AI更精準地理解需求，提高內容品質，尤其是在專業或品牌一致性的內容創作中十分關鍵。",
         "number": 2,
-        "date": "2026-05-02"
+        "date": "2026-05-05"
     },
     {
-        "question": "2026年最新MCP(Model Context Protocol)在Low Code生成式AI應用中的核心優勢，與傳統RAG相比的主要突破點是？",
+        "question": "在生成式AI風險管理中，針對資訊安全，何者為導入時最關鍵的合規措施？",
         "options": [
-            "動態上下文壓縮機制，支援超長對話歷史無Token溢位問題",
-            "自動化模型蒸餾流程，壓縮參數同時保留推理能力",
-            "跨模態統一表示學習，單一協議處理文字影像音訊輸入",
-            "標準化模型間通訊協定，實現異質LLM無縫協作部署"
+            "B. 簡化風險評估流程以縮短部署時間",
+            "C. 完全依賴平台供應商保護數據安全",
+            "D. 採用單一驗證機制減少用戶身份管理複雜度",
+            "A. 採用C2PA標準確保數據來源可追溯且未遭竄改"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "C2PA標準",
+        "explanation": "C2PA標準提供了內容真實性驗證機制，能有效阻止Deepfake與假資料的流通，符合生成式AI合規與風險控管的關鍵要求。",
+        "number": 3,
+        "date": "2026-05-05"
+    },
+    {
+        "question": "企業評估是否利用Low Code平台構建生成式AI解決方案時，何者不是評估重點？",
+        "options": [
+            "C. 系統能否輕易整合現有數據資源",
+            "B. 開發團隊的人數配置與技能分布",
+            "D. 平台的年費價格是否低於市場平均",
+            "A. 平台是否支持快速PoC原型開發"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 概念",
-        "concept": "MCP核心優勢",
-        "explanation": "MCP的突破點在於跨模態統一表示學習，使得單一通訊協定能同時處理文字、影像、音訊輸入，從而比傳統RAG模型具更高整合與協同能力。",
-        "number": 3,
-        "date": "2026-05-02"
-    },
-    {
-        "question": "企業進行生成式AI導入TCO(Total Cost of Ownership)評估時，API Token費用與自建Fine-tuning的損益平衡點公式為何？",
-        "options": [
-            "年化QPS峰值×平均Token長度×單價＞初始建置+運維年費總和",
-            "當月預期QPS×Token單價×365×月份＞Fine-tuning成本×效能衰減係數",
-            "累計推理Token數×動態單價＞模型訓練Token數×硬體折舊率",
-            "預期ROI×專案週期＞(API訂閱費+資料標註費)/效能提升百分比"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估規劃",
-        "concept": "TCO損益平衡",
-        "explanation": "損益平衡點需考慮預期ROI與專案周期，並與API訂閱費與資料標註費按效能提升百分比相較，才能判斷自建Fine-tuning是否具成本效益。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "Low Code評估",
+        "explanation": "雖然成本是考量因素，但年費價格是否低於市場平均並非決定優劣的主要指標，企業更注重平台功能與整合能力。",
         "number": 4,
-        "date": "2026-05-02"
+        "date": "2026-05-05"
     },
     {
-        "question": "No Code平台開發知識密集型法律諮詢聊天機器人時，應優先採用哪種進階檢索策略以避免幻覺問題？",
+        "question": "下列有關Low Code和No Code開發方式的敘述，何者正確反映其優勢？",
         "options": [
-            "Dense Passage Retrieval結合法律條文向量化與案例相似度匹配",
-            "Multi-Query重寫生成多版本查詢，聚合檢索結果提升召回率",
-            "HyDE假設文件嵌入策略，生成查詢假設後檢索真實法律文件",
-            "BM25稀疏檢索後以Cross-encoder重新排序確保法律精確性"
+            "B. 需要專業軟體工程師才能有效使用與維護",
+            "D. 完全不支持客製化功能，無法擴充",
+            "A. 無需寫程式碼即可快速構建應用，加速數位轉型速度",
+            "C. 只能用於開發靜態網頁及簡單資料展示"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "檢索策略與幻覺防範",
-        "explanation": "BM25結合Cross-encoder的重新排序策略在法律領域能提供精確且符合語境的檢索結果，有效降低AI生成內容幻覺風險。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code優勢",
+        "explanation": "Low Code/No Code平台核心優勢在於降低技術門檻，讓非開發人員也能快速構建應用，有助推動企業數位轉型與敏捷開發。",
         "number": 5,
-        "date": "2026-05-02"
+        "date": "2026-05-05"
     },
     {
-        "question": "生成式AI各領域應用中，針對供應鏈需求預測的Multi-Agent系統架構，Agent間協調機制的Nash均衡最佳實作是哪一種？",
+        "question": "在多領域生成式AI應用規劃中，何種策略最能有效管理跨部門資料隱私風險？",
         "options": [
-            "分散式投票機制，每Agent獨立評估預測偏差後加權融合",
-            "共享信念狀態更新，使用Bayesian更新維持全局一致性",
-            "競爭性訓練框架，透過Game Theory獎勵塑造合作均衡",
-            "層級式委託結構，上層Agent仲裁下層衝突決策結果"
+            "A. 採用同態加密技術確保資料在運算過程中保持隱私",
+            "D. 平台只授權給管理層以控制存取權限",
+            "C. 鼓勵跨部門資料自由共享以加快流程",
+            "B. 僅依賴內部人員培訓，無需技術加持"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "Multi-Agent協調",
-        "explanation": "分散式投票機制讓每個Agent獨立評估並加權融合預測，有助於達成Nash均衡並提升預測精度，為供應鏈多代理系統的最佳實踐。",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "同態加密",
+        "explanation": "同態加密可在不解密資料情況下進行運算，有效保障資料隱私，是跨部門共享敏感資訊時重要的技術手段。",
         "number": 6,
-        "date": "2026-05-02"
+        "date": "2026-05-05"
     },
     {
-        "question": "2026年金融風控領域生成式AI應用中，防護提示詞注入攻擊的最佳組合技術包含哪些？",
+        "question": "下列哪個是生成式AI與Low Code平台整合時，提升系統穩定性與效能的重要因素？",
         "options": [
-            "多模型集成投票+異常Token序列檢測",
-            "對抗性訓練資料集+LLM內嵌安全守門員機制",
-            "提示過濾+輸出解析+沙箱執行環境隔離高風險查詢",
-            "人類迴圈審核+自動化風險評分閾值動態調整"
+            "D. 完全使用靜態資料避免模型更新",
+            "C. 排除所有外部API以避免安全漏洞",
+            "B. 減少模型參數以降低複雜度",
+            "A. 建立負載平衡機制分散運算壓力"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI風險管理",
-        "concept": "提示詞注入防護",
-        "explanation": "結合人類迴圈審核與自動化風險評分門檻調整，可以即時發現和降低提示詞注入攻擊風險，是金融領域生成式AI防護的最佳實務。",
+        "subtopic": "模型部署與優化",
+        "concept": "負載平衡",
+        "explanation": "負載平衡有助於分散伺服器負荷，提升系統穩定性及效能，特別在生成式AI服務大量呼叫的場景下極為重要。",
         "number": 7,
-        "date": "2026-05-02"
+        "date": "2026-05-05"
     },
     {
-        "question": "生成式AI導入評估規劃中，針對跨部門知識庫整合的RAG系統，如何設計檢索器以最大化企業ROI？",
+        "question": "在使用生成式AI進行自動客服對話時，何者為減少生成錯誤回答的重要設計？",
         "options": [
-            "階層式檢索，先粗粒度召回後精細重排序機制",
-            "領域自適應檢索器，依部門專業動態切換embedding模型",
-            "聯邦學習架構，部門資料本地化檢索僅上傳聚合特徵",
-            "知識圖譜增強檢索，結構化關係推理提升精確度"
+            "B. 限制回答長度以降低語句複雜度",
+            "A. 建置反事實提示詞以引導模型正確回應",
+            "D. 除錯時只依賴用戶反饋",
+            "C. 使用同態加密保護對話內容"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI導入評估規劃",
-        "concept": "RAG系統跨部門設計",
-        "explanation": "採用聯邦學習架構能保護部門數據隱私，且只上傳聚合特徵進行整合檢索，大幅提升RAG系統的跨部門協同效果，從而提高ROI。",
-        "number": 8,
-        "date": "2026-05-02"
-    },
-    {
-        "question": "辨識專有名詞：在生成式AI多模態應用中，CLIP(Contrastive Language-Image Pretraining)與BLIP(Bootstrapping Language-Image Pre-training)的主要技術差異為？",
-        "options": [
-            "CLIP單向編碼器架構，BLIP雙向編碼器架構",
-            "CLIP影像優先特徵提取，BLIP語言優先特徵提取",
-            "CLIP靜態特徵對齊，BLIP動態特徵對齊機制",
-            "CLIP對比學習零樣本，BLIP生成式預訓練支援圖文生成"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "多模態模型技術",
-        "explanation": "CLIP採用對比學習方法支持零樣本分類，BLIP則採用生成式預訓練框架以支援圖文生成，這是兩者在多模態學習上的主要差異。",
-        "number": 9,
-        "date": "2026-05-02"
-    },
-    {
-        "question": "Low Code生成式AI工具在醫療影像報告自動化生成時，提示詞工程的最佳Few-Shot範例設計原則為何？",
-        "options": [
-            "多視角影像融合描述的跨模態對齊範例設計",
-            "時間序列影像變化追蹤的動態上下文範例鏈",
-            "正常/異常二元分類後展開詳細解釋的樹狀範例結構",
-            "病灶定位→特徵描述→鑑別診斷→治療建議的鏈式推理範例"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "提示詞工程",
-        "concept": "Few-Shot範例設計",
-        "explanation": "醫療影像報告的自動化生成常需先分類正常或異常後，再展開詳細具體解讀，樹狀結構的Few-Shot範例設計適合此種推理流程。",
+        "concept": "反事實提示詞",
+        "explanation": "反事實提示詞幫助模型理解與預防可能的錯誤回答，透過引導可提升生成內容的精準度及合理性，是客服系統中重要技術。",
+        "number": 8,
+        "date": "2026-05-05"
+    },
+    {
+        "question": "評估生成式AI導入時，何種指標最能全面反映系統總擁有成本（TCO）？",
+        "options": [
+            "B. 僅考慮初始購置與授權費用",
+            "C. 只計算訓練模型所需的硬體成本",
+            "D. 依據使用者數量預估人力投入工時",
+            "A. 包含平台維護費用、二次開發及負載均衡相關支出"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "TCO評估",
+        "explanation": "完整的TCO評估需要涵蓋持續的維護費用、後續開發，以及系統運行過程中的負載管理成本，單純初始費用不足以反映真實成本。",
+        "number": 9,
+        "date": "2026-05-05"
+    },
+    {
+        "question": "企業導入生成式AI時，為避免模型決策過度依賴單一資料來源，何種技術最適合防範資料偏差與洩露？",
+        "options": [
+            "D. 用人工方式篩選所有發生成果",
+            "B. 僅使用原始數據避免引入合成資料的風險",
+            "C. 強化使用者密碼以保障數據存取安全",
+            "A. 採用SMOTE進行數據增強並輔以XAI工具監控決策過程"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "資料整理與分析",
+        "concept": "資料增強與XAI",
+        "explanation": "SMOTE技術透過製造少數類別合成樣本來平衡資料分布，結合XAI工具可有效監控模型決策過程，降低資料偏差與洩露風險，優於其他選項。",
         "number": 10,
-        "date": "2026-05-02"
+        "date": "2026-05-05"
     }
 ]

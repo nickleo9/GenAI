@@ -1,172 +1,172 @@
 [
     {
-        "question": "在2026年生成式AI導入規劃中，選擇No Code平台以加速業務自動化時，何者為該方案的主要限制？",
+        "question": "根據2026年Gartner報告，No-Code/Low-Code平台中，生成式AI功能整合的關鍵趨勢為何？",
         "options": [
-            "D. 成本高昂，不適合中小企業使用",
-            "A. 高度客製化功能不足，難以滿足複雜特殊業務需求",
-            "C. 部署速度緩慢，更新頻率無法即時反應市場變化",
-            "B. 需要具備深厚程式語言知識才能調整及開發"
+            "AI代理的自律業務執行與任務分擔",
+            "市民開發者占比達80%的AutoML效能提升",
+            "程式碼生成AI與原型設計的無縫轉換",
+            "數位孿生與生成式AI的混合融合技術"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "No Code平台限制",
-        "explanation": "No Code平台的優勢是快速開發與易用性，但其限制在於無法高度客製化，對於複雜且特殊的業務需求往往無法完全支持，這是選擇該方案時的重要考量點。",
+        "concept": "AI代理整合",
+        "explanation": "根據最新趨勢，No-Code/Low-Code平台重點在於結合AI代理的自律業務執行，透過多AI代理分工協作提升自動化效率。",
         "number": 1,
-        "date": "2026-05-05"
+        "date": "2026-05-07"
     },
     {
-        "question": "生成式AI在企業內容創作應用中，下列何者為提升生成品質的最佳提示詞設計策略？",
+        "question": "2026年在No-Code工具中，如Lark與Notion整合的生成式AI功能，其共通優勢為何？",
         "options": [
-            "B. 提供隨意描述以提升模型多樣性和創造力",
-            "D. 僅使用通用性詞彙避免對模型造成過度限制",
-            "C. 減少文字長度以加快生成時間，犧牲細節完整性",
-            "A. 明確限定生成範圍與風格，並加入具體情境細節"
+            "不需程式設計即可處理多模態資料",
+            "生成式AI代理的即時多平台協同",
+            "提升可解釋AI性能和內嵌XAI機制",
+            "融合Low-Code架構實現高擴展性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態資料處理",
+        "explanation": "多數No-Code工具強調用戶無需程式設計即可執行多模態資料(文字、圖像、語音等)處理，是其核心優勢之一。",
+        "number": 2,
+        "date": "2026-05-07"
+    },
+    {
+        "question": "在生成式AI導入評估中，No-Code工具的首要限制應優先評估為何？",
+        "options": [
+            "非結構化資料AutoML效能有限",
+            "程式碼生成轉移時的資料隱私風險",
+            "數位孿生實作的高度技術門檻",
+            "AI代理任務分配的倫理治理風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "工具效能限制",
+        "explanation": "No-Code工具在處理非結構化資料時，AutoML效能通常不及專業程式設計，因此為導入評估首要考量。",
+        "number": 3,
+        "date": "2026-05-07"
+    },
+    {
+        "question": "2026年市場中，自然語言指示生成應用的No-Code核心技術為何？",
+        "options": [
+            "多代理AI協同分擔複雜任務",
+            "生成式AI數位孿生3D NPC自律",
+            "超越拖拉的AutoML結構化流程",
+            "80%市民開發者的使用者轉換"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "自然語言指示生成",
+        "explanation": "核心技術在於AutoML結構化流程，使得使用者無需編碼即可透過自然語言指令快速建立應用。",
+        "number": 4,
+        "date": "2026-05-07"
+    },
+    {
+        "question": "生成式AI工具與傳統AutoML相比，No-Code平台在哪方面主要優勢明顯？",
+        "options": [
+            "Low-Code內建的可解釋AI功能",
+            "從原型至全程式碼自由轉換",
+            "結構化資料分類達95%準確度",
+            "非結構化多模態資料的特徵工學"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "提示詞工程",
-        "explanation": "清楚且具體的提示詞能讓生成式AI更精準地理解需求，提高內容品質，尤其是在專業或品牌一致性的內容創作中十分關鍵。",
-        "number": 2,
-        "date": "2026-05-05"
-    },
-    {
-        "question": "在生成式AI風險管理中，針對資訊安全，何者為導入時最關鍵的合規措施？",
-        "options": [
-            "B. 簡化風險評估流程以縮短部署時間",
-            "C. 完全依賴平台供應商保護數據安全",
-            "D. 採用單一驗證機制減少用戶身份管理複雜度",
-            "A. 採用C2PA標準確保數據來源可追溯且未遭竄改"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "C2PA標準",
-        "explanation": "C2PA標準提供了內容真實性驗證機制，能有效阻止Deepfake與假資料的流通，符合生成式AI合規與風險控管的關鍵要求。",
-        "number": 3,
-        "date": "2026-05-05"
-    },
-    {
-        "question": "企業評估是否利用Low Code平台構建生成式AI解決方案時，何者不是評估重點？",
-        "options": [
-            "C. 系統能否輕易整合現有數據資源",
-            "B. 開發團隊的人數配置與技能分布",
-            "D. 平台的年費價格是否低於市場平均",
-            "A. 平台是否支持快速PoC原型開發"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "Low Code評估",
-        "explanation": "雖然成本是考量因素，但年費價格是否低於市場平均並非決定優劣的主要指標，企業更注重平台功能與整合能力。",
-        "number": 4,
-        "date": "2026-05-05"
-    },
-    {
-        "question": "下列有關Low Code和No Code開發方式的敘述，何者正確反映其優勢？",
-        "options": [
-            "B. 需要專業軟體工程師才能有效使用與維護",
-            "D. 完全不支持客製化功能，無法擴充",
-            "A. 無需寫程式碼即可快速構建應用，加速數位轉型速度",
-            "C. 只能用於開發靜態網頁及簡單資料展示"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "Low Code優勢",
-        "explanation": "Low Code/No Code平台核心優勢在於降低技術門檻，讓非開發人員也能快速構建應用，有助推動企業數位轉型與敏捷開發。",
+        "concept": "多模態資料處理",
+        "explanation": "No-Code平台藉由生成式AI支持非結構化多模態資料的複雜特徵提取與學習，優於純AutoML。",
         "number": 5,
-        "date": "2026-05-05"
+        "date": "2026-05-07"
     },
     {
-        "question": "在多領域生成式AI應用規劃中，何種策略最能有效管理跨部門資料隱私風險？",
+        "question": "生成式AI導入風險管理中，No/Low-Code平台AI團隊的首要倫理風險為何？",
         "options": [
-            "A. 採用同態加密技術確保資料在運算過程中保持隱私",
-            "D. 平台只授權給管理層以控制存取權限",
-            "C. 鼓勵跨部門資料自由共享以加快流程",
-            "B. 僅依賴內部人員培訓，無需技術加持"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "同態加密",
-        "explanation": "同態加密可在不解密資料情況下進行運算，有效保障資料隱私，是跨部門共享敏感資訊時重要的技術手段。",
-        "number": 6,
-        "date": "2026-05-05"
-    },
-    {
-        "question": "下列哪個是生成式AI與Low Code平台整合時，提升系統穩定性與效能的重要因素？",
-        "options": [
-            "D. 完全使用靜態資料避免模型更新",
-            "C. 排除所有外部API以避免安全漏洞",
-            "B. 減少模型參數以降低複雜度",
-            "A. 建立負載平衡機制分散運算壓力"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "模型部署與優化",
-        "concept": "負載平衡",
-        "explanation": "負載平衡有助於分散伺服器負荷，提升系統穩定性及效能，特別在生成式AI服務大量呼叫的場景下極為重要。",
-        "number": 7,
-        "date": "2026-05-05"
-    },
-    {
-        "question": "在使用生成式AI進行自動客服對話時，何者為減少生成錯誤回答的重要設計？",
-        "options": [
-            "B. 限制回答長度以降低語句複雜度",
-            "A. 建置反事實提示詞以引導模型正確回應",
-            "D. 除錯時只依賴用戶反饋",
-            "C. 使用同態加密保護對話內容"
+            "數位孿生計算資源過度使用",
+            "多AI代理間偏差擴大及問責",
+            "市民開發者遇到的安全漏洞",
+            "資料清洗中隱私侵犯風險"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "提示詞工程",
-        "concept": "反事實提示詞",
-        "explanation": "反事實提示詞幫助模型理解與預防可能的錯誤回答，透過引導可提升生成內容的精準度及合理性，是客服系統中重要技術。",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "多代理倫理治理",
+        "explanation": "多代理系統在同步合作時，偏差可能被放大，對責任歸屬造成挑戰，需優先加以治理。",
+        "number": 6,
+        "date": "2026-05-07"
+    },
+    {
+        "question": "生成式AI規劃中，追求極致模型效能時，最適合採用何種平台類型？",
+        "options": [
+            "Pro-Code：完全多模態無上限",
+            "Low-Code：半結構化數百萬筆",
+            "No-Code：結構化表格數千筆",
+            "AI No-Code：自律代理整合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "效能極致化",
+        "explanation": "Pro-Code平台可支持任意多模態及高計算需求，提供最高的模型效能與可控性。",
+        "number": 7,
+        "date": "2026-05-07"
+    },
+    {
+        "question": "日本2026年提及AI×No-Code使系統開發從6個月縮短到2個月的主要生成式AI應用是？",
+        "options": [
+            "數位孿生NPC對話功能實現",
+            "Low-Code市民開發者工作流程自動化",
+            "包含資料分析與影像生成工具",
+            "複雜任務由生成式AI代理分工處理"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生產效率提升",
+        "explanation": "資料分析與影像生成AI工具內嵌於No-Code，顯著加速系統開發週期。",
         "number": 8,
-        "date": "2026-05-05"
+        "date": "2026-05-07"
     },
     {
-        "question": "評估生成式AI導入時，何種指標最能全面反映系統總擁有成本（TCO）？",
+        "question": "生成式AI導入評估中，No/Low-Code工具資源分配時應著重風險評估的市場趨勢為何？",
         "options": [
-            "B. 僅考慮初始購置與授權費用",
-            "C. 只計算訓練模型所需的硬體成本",
-            "D. 依據使用者數量預估人力投入工時",
-            "A. 包含平台維護費用、二次開發及負載均衡相關支出"
+            "8成企業AI代理治理措施不足",
+            "國內市場達1300億日圓開發者過多",
+            "AI No-Code向程式碼生成AI混合轉移延遲",
+            "Low-Code市場擴張時的擴展性瓶頸"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估",
-        "concept": "TCO評估",
-        "explanation": "完整的TCO評估需要涵蓋持續的維護費用、後續開發，以及系統運行過程中的負載管理成本，單純初始費用不足以反映真實成本。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "治理不足風險",
+        "explanation": "大量企業導入AI代理卻缺乏有效治理，對資源分配與風險管理構成重大挑戰。",
         "number": 9,
-        "date": "2026-05-05"
+        "date": "2026-05-07"
     },
     {
-        "question": "企業導入生成式AI時，為避免模型決策過度依賴單一資料來源，何種技術最適合防範資料偏差與洩露？",
+        "question": "iPAS科目二No-Code/Low-Code模組核心能力指標強調哪階段技能？",
         "options": [
-            "D. 用人工方式篩選所有發生成果",
-            "B. 僅使用原始數據避免引入合成資料的風險",
-            "C. 強化使用者密碼以保障數據存取安全",
-            "A. 採用SMOTE進行數據增強並輔以XAI工具監控決策過程"
+            "包含需求確認與資源分配的設計測試",
+            "資料清洗與機器學習原理應用",
+            "後期風險評估與XAI客製化解釋",
+            "AI倫理挑戰與鑑別生成式模型特性"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "資料整理與分析",
-        "concept": "資料增強與XAI",
-        "explanation": "SMOTE技術透過製造少數類別合成樣本來平衡資料分布，結合XAI工具可有效監控模型決策過程，降低資料偏差與洩露風險，優於其他選項。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "專案設計與測試",
+        "explanation": "該模組重點著眼於設計及測試階段，包括需求確認和資源配置，是成功導入的關鍵。",
         "number": 10,
-        "date": "2026-05-05"
+        "date": "2026-05-07"
     }
 ]

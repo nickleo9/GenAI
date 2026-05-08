@@ -6628,5 +6628,175 @@
         "explanation": "良好的數據品質、多樣性，合適的模型結構與參數以及數據清洗是影響生成式AI模型效果的關鍵，僅依賴計算資源無法彌補數據問題。",
         "number": 390,
         "date": "2026-05-06"
+    },
+    {
+        "question": "在機器學習中，下列哪一種正則化技術主要透過減少模型參數的數值使模型更簡潔，以避免過擬合？",
+        "options": [
+            "L1正則化，它會增加參數數量以提升模型容量",
+            "L1正則化，它會使某些權重收斂至零，達到特徵選擇效果",
+            "L2正則化，它會使所有權重完全等於零",
+            "L2正則化，它會增加模型的複雜度來提升學習能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習基礎",
+        "subtopic": "模型正則化",
+        "concept": "正規化 L1、L2",
+        "explanation": "L1正則化透過對模型權重的絕對值之和加懲罰，使部分權重變為零，達到特徵篩選和模型簡化效果，防止過擬合。L2則是懲罰權重平方，幫助權重保持較小但不會變零。",
+        "number": 391,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "AI治理在實務中常採用何種機制以讓決策過程保留人工參與並避免黑箱風險？",
+        "options": [
+            "Human on loop，指人工監督所有模型輸出，不允許自動執行",
+            "Human out of loop，強調人工完全退出決策過程",
+            "Fully automated decision making，由AI獨立做決策，減少人工干預",
+            "Human in loop，指人與AI協同合作，必要時介入決策流程"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "監管與倫理",
+        "concept": "Human on loop 定義",
+        "explanation": "Human in loop機制讓人工在AI決策過程中持續監督與介入，平衡自動化與風險管理，避免完全黑箱化和責任不明確，確保AI決策的透明與可控。",
+        "number": 392,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "在資料處理流程中，ETL指的是什麼步驟？",
+        "options": [
+            "資料整理、訓練與測試，是機器學習數據處理的核心步驟",
+            "資料抽取、轉換與載入，是將資料從不同來源整合並準備分析的流程",
+            "資料刪除、清洗與加密，以保障數據隱私與安全",
+            "資料轉換、預測與報告，是分析完成後的最後階段"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL",
+        "explanation": "ETL指資料抽取(Extract)、轉換(Transform)、載入(Load)三個步驟，是資料工程中將多來源資料淨化並集中化的核心技術，以利後續分析與應用。",
+        "number": 393,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的主要差異在於？",
+        "options": [
+            "鑑別式AI用於識別資料屬性，生成式AI用於創造新資料內容",
+            "鑑別式AI專注於創建新資料，生成式AI專注於分類輸入資料",
+            "鑑別式AI不需要訓練，生成式AI完全依賴訓練資料",
+            "生成式AI需要標註資料，鑑別式AI採用無監督學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "鑑別式 AI 與生成式 AI 的基本原理",
+        "explanation": "鑑別式AI用來判斷資料屬性或分類，如辨識圖片是否含有目標物；生成式AI則創造新資料，如生成文字或影像。兩者功能與目標不同但可整合應用。",
+        "number": 394,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "在強化學習中，Q-Learning算法的主要功能是？",
+        "options": [
+            "以概率方式估計資料標籤的分佈",
+            "進行特徵工程，提升資料表達能力",
+            "通過計算和更新Q值，學習在不同狀態下的最佳行動策略",
+            "用於非監督式學習，透過叢集尋找資料模式"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning是一種強化學習演算法，透過更新Q值函數（狀態-行動價值）來找到長期獎勵最大的行動策略，廣泛應用於自動決策問題。",
+        "number": 395,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "在深度學習中，Transformer結構的技術痛點主要不包括？",
+        "options": [
+            "訓練過程中的收斂速度緩慢",
+            "高計算資源需求與記憶體消耗",
+            "自注意力機制難以捕捉長距離相依",
+            "梯度消失與爆炸問題"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習架構",
+        "concept": "transformer 模型技術痛點",
+        "explanation": "Transformer利用自注意力機制很好地捕捉長距離依賴，但其技術痛點主要是巨大的計算與記憶體需求、梯度問題及訓練收斂挑戰，不包括捕捉長距離相依困難。",
+        "number": 396,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "聯邦學習的核心優勢是什麼？",
+        "options": [
+            "通過公開資料集增強模型泛化能力",
+            "集中所有資料於中央伺服器以提升運算效率",
+            "避免任何資料存儲，完全使用模擬數據訓練",
+            "分散資料存放，保護隱私，同時協同訓練模型"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "分散式學習",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在多個資料持有端分散訓練，僅傳遞參數或梯度，避免資料集中存放，以提高資料隱私及安全性，廣泛應用於敏感領域。",
+        "number": 397,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "在人工智慧模型中，何者屬於可解釋性AI技術的範疇？",
+        "options": [
+            "生成對抗網路（GAN）",
+            "無監督學習的聚類演算法",
+            "黑箱模型全自動決策",
+            "LIME，局部解釋模型-通用解釋方法"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI技術與模型",
+        "subtopic": "模型可解釋性",
+        "concept": "LIME",
+        "explanation": "LIME是一種用於解釋黑箱模型預測結果的技術，透過生成局部可解釋模型來揭示模型在特定輸入上的決策依據，提升模型透明度與信任度。",
+        "number": 398,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "在資料分析中，下列哪一種編碼方法最適合將分類特徵轉換為數值形式以供機器學習使用？",
+        "options": [
+            "數據標準化，將資料縮放到0到1之間",
+            "PCA降維，將多維資料壓縮為少量主成分",
+            "One-Hot Encoding，對每個類別創建獨立二進制欄位",
+            "正則化，通過懲罰權重減少模型複雜度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "特徵工程",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding將分類特徵轉換成互斥的二進制向量，使模型能將非數值類別資料理解為可計算的數據，是常用的特徵編碼方法。",
+        "number": 399,
+        "date": "2026-05-08"
+    },
+    {
+        "question": "在生成式AI中，為確保生成回應與上下文一致性，應特別關注什麼技術或概念？",
+        "options": [
+            "剪枝技術，降低模型複雜度與運算負荷",
+            "批次推論的困難點，提升效能優化的方法",
+            "監理沙盒，進行生成模型法規合規性測試",
+            "生成式AI回應語境一致性，確保生成內容與上下文連貫"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成內容品質",
+        "concept": "生成式AI 回應語境一致性",
+        "explanation": "生成式AI的回應語境一致性是指模型生成的內容必須符合對話或文本上下文主題與語氣，提升生成品質並避免產生不相關或錯誤資訊。",
+        "number": 400,
+        "date": "2026-05-08"
     }
 ]

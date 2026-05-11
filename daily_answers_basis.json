@@ -6798,5 +6798,175 @@
         "explanation": "生成式AI的回應語境一致性是指模型生成的內容必須符合對話或文本上下文主題與語氣，提升生成品質並避免產生不相關或錯誤資訊。",
         "number": 400,
         "date": "2026-05-08"
+    },
+    {
+        "question": "在人工智慧治理中，何者最符合“Human on loop”的定義？",
+        "options": [
+            "人為監督並適時介入模型決策流程",
+            "完全由AI自主決策，不需人員介入",
+            "人員在事後審核AI決策結果",
+            "AI自動調整並控制人員介入時間"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "人工監督",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指的是人工智慧模型在決策流程中有人的監督，可適時介入修正，而非完全自動化。",
+        "number": 401,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "在機器學習的三大類型中，哪一類型主要依靠從環境互動中學習行動策略？",
+        "options": [
+            "生成學習",
+            "強化學習",
+            "非監督學習",
+            "監督學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "學習類型",
+        "concept": "強化學習",
+        "explanation": "強化學習是透過與環境互動，從獎勵或懲罰中學習最佳行動策略。",
+        "number": 402,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "資料正規化的主要目的為何？",
+        "options": [
+            "消除不同變數單位的影響，使數據具有可比性",
+            "將數據隨機分散以避免過擬合",
+            "將所有數據強制轉為非負數",
+            "忽略數據中的異常值"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "數據前處理",
+        "concept": "正規化",
+        "explanation": "資料正規化能消除不同變數單位的差異，使模型能更有效比較與處理多種特徵。",
+        "number": 403,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "關於鑑別式AI與生成式AI，下列敘述何者正確？",
+        "options": [
+            "鑑別式AI主要用於生成新數據，生成式AI用於分類判斷",
+            "鑑別式AI僅應用於監督學習，生成式AI僅限非監督學習",
+            "兩者皆可透過相同訓練目標優化模型性能",
+            "生成式AI用於建模數據分佈，鑑別式AI用於判斷數據標籤"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式AI與生成式AI",
+        "subtopic": "基本原理",
+        "concept": "模型類型",
+        "explanation": "生成式AI學習數據分布以生成新數據，鑑別式AI學習分類決策邊界來判斷數據類別。",
+        "number": 404,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "在資料庫中，結構化數據常見的儲存方式是？",
+        "options": [
+            "純文本檔案",
+            "影像檔案格式",
+            "關聯式資料庫（如MySQL）",
+            "非結構化文件系統"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "數據來源與儲存",
+        "concept": "結構化數據",
+        "explanation": "結構化數據通常儲存在關聯式資料庫，如MySQL，以便於管理與索引。",
+        "number": 405,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "下列何者是生成式AI訓練中的關鍵第一步？",
+        "options": [
+            "直接生成結果",
+            "數據蒐集與清洗",
+            "模型微調與優化",
+            "超參數隨機選擇"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "訓練流程",
+        "concept": "數據清理",
+        "explanation": "生成式AI訓練首要工作是蒐集並清洗數據，確保後續訓練的數據品質與準確性。",
+        "number": 406,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "在機器學習中，L1正則化的主要效果是什麼？",
+        "options": [
+            "防止梯度消失問題",
+            "提高模型中權重的稀疏性，促進特徵選擇",
+            "使模型權重分散且連續",
+            "增加模型複雜度以提高準確率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化使權重趨近於零，從而促進稀疏性，有利於特徵選擇與模型簡化。",
+        "number": 407,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "哪一種資料隱私保護技術是分散式學習中常用的？",
+        "options": [
+            "聯邦學習",
+            "資料正則化",
+            "主動學習",
+            "強化學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料隱私與安全",
+        "subtopic": "隱私保護技術",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在多個分散節點上本地訓練，避免數據集中，保障隱私。",
+        "number": 408,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "XAI（可解釋性AI）的主要目標是什麼？",
+        "options": [
+            "提升模型的計算速度",
+            "自動生成新數據",
+            "增加模型的無監督學習能力",
+            "提高模型的可理解度，避免黑箱問題"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "模型可解釋性",
+        "concept": "XAI",
+        "explanation": "XAI目的是使AI模型決策更加透明與可理解，減少“黑箱”效應，增加信任度。",
+        "number": 409,
+        "date": "2026-05-11"
+    },
+    {
+        "question": "在資料分析中，箱型圖主要用來呈現什麼資訊？",
+        "options": [
+            "數據的時間序列走勢",
+            "數據的分佈範圍與離群值",
+            "數據的分類準確率",
+            "數據的回歸曲線"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "探索性資料分析",
+        "concept": "箱型圖",
+        "explanation": "箱型圖用以展示數據的中位數、四分位數及離群值，有助於探索資料分佈特性。",
+        "number": 410,
+        "date": "2026-05-11"
     }
 ]

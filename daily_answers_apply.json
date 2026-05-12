@@ -1,172 +1,172 @@
 [
     {
-        "question": "No-Code平台的首要優勢在於下列何者，能讓非技術人員最有效率地建構應用？",
+        "question": "一家台灣製造企業在2026年計劃運用低代碼(No Code / Low Code)平台整合生產與ERP系統。以下何種策略最符合減少開發負擔並提高部署效率的做法？",
         "options": [
-            "依賴專業工程師團隊進行深度客製化",
-            "使用視覺化拖拉介面無需編碼快速原型",
-            "整合複雜後端伺服器與分散式資料庫",
-            "透過大量程式碼編寫實現高性能運算"
+            "全面聘請AI專家研發團隊專注底層算法優化",
+            "採用拖拉式介面結合GPT-5.4模型進行視覺化流程設計",
+            "尋找多供應商分別負責AI與系統整合的解決方案",
+            "自行開發定制的生成式AI模型並手動編碼工作流"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code 基本概念",
-        "explanation": "No-Code平台的核心特色是視覺化拖拉介面，讓非技術使用者無需寫程式碼即可快速開發應用，適合簡單至中型需求，符合iPAS科目二L121概念。",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "低代碼快速部署",
+        "explanation": "低代碼平台利用視覺化介面如拖拉工具，結合如GPT-5.4的強大生成模型，可以大幅提升整合效率，減少手寫程式碼量，適合快速部署企業流程。",
         "number": 1,
-        "date": "2026-05-09"
+        "date": "2026-05-12"
     },
     {
-        "question": "Low-Code平台相較No-Code平台的關鍵差異為何，特別適用於企業級擴展需求？",
+        "question": "企業希望在保障客戶資料隱私前提下使用生成式AI即時分析金融數據。下列哪種架構最適合2026年此需求？",
         "options": [
-            "允許少量自訂程式碼注入以支援複雜邏輯",
-            "強制使用預設模板無法進行任何修改",
-            "僅限於靜態網頁與基本表單開發功能",
-            "完全排除任何程式碼撰寫以確保純視覺化"
+            "使用完全公開的雲端大型語言模型API服務",
+            "混合鑑別式和生成式AI架構，但需上傳所有數據",
+            "延後部署等待更成熟的隱私計算技術",
+            "採用私有雲部署的邊緣AI結合ASIC推理硬體"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "Low Code 基本概念",
-        "explanation": "Low-Code允許少量程式碼自訂，適合需要複雜業務邏輯與整合的場景，如企業應用擴展，區別於No-Code的零程式碼限制（iPAS L121）。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "邊緣AI隱私保護",
+        "explanation": "邊緣AI允許模型推理在本地端硬體執行，避免資料外流，搭配專用ASIC加速硬體能實現即時且安全的分析，最符合隱私與效能需求。",
         "number": 2,
-        "date": "2026-05-09"
+        "date": "2026-05-12"
     },
     {
-        "question": "生成式AI在No-Code工具中最常見的應用領域為下列何者，能加速內容創作流程？",
+        "question": "2026年生成式AI的多模態技術最適合用於下列哪一種應用場景？",
         "options": [
-            "設計低階硬體驅動程式與韌體更新",
-            "訓練自訂深度神經網路模型架構",
-            "自動產生行銷文案、圖像與程式片段",
-            "建置大型分散式運算叢集基礎設施"
+            "純文字患者病歷數據的自動摘要",
+            "整合醫療影像、文字與基因數據生成診斷建議",
+            "完全自動取代專業醫師做最終診斷",
+            "用文字描述生成化學分子結構圖"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 工具使用",
-        "explanation": "生成式AI如ChatGPT或DALL-E在No-Code平台中常用於自動生成文案、圖像等，加速非技術用戶的創作，屬iPAS L122生成式AI應用領域。",
+        "concept": "多模態AI",
+        "explanation": "多模態AI擅長處理多種資料型態的結合，如影像、文字與數據，有助精準診斷與建議生成，完全替代醫師目前仍不符合倫理與技術要求。",
         "number": 3,
-        "date": "2026-05-09"
+        "date": "2026-05-12"
     },
     {
-        "question": "下列哪種生成式AI工具最適合Low-Code平台整合，用於企業報告自動化生成？",
+        "question": "針對2026年生成式AI導入企業流程時，以下哪項風險是依調查最顯著且急需治理的議題？",
         "options": [
-            "TensorFlow框架進行模型微調優化",
-            "Kubernetes容器化部署管理系統",
-            "Apache Spark大數據批次處理引擎",
-            "Google Gemini API串接動態內容產生"
+            "員工缺乏操作生成式AI培訓",
+            "硬體資源不足導致推理延遲",
+            "模型訓練資料不足導致結果偏差",
+            "大部分企業缺乏有效AI治理框架"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 工具使用",
-        "explanation": "Google Gemini等生成式AI API易於Low-Code平台整合，支持報告、摘要等自動化，符合L122工具使用情境，非傳統ML框架。",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "AI治理框架缺失",
+        "explanation": "2026年調查顯示只有約26%的企業自認具備完整AI治理機制，導致在大規模部署生成式AI時，治理缺陷為最大系統性風險。",
         "number": 4,
-        "date": "2026-05-09"
+        "date": "2026-05-12"
     },
     {
-        "question": "生成式AI導入評估時，最關鍵的規劃步驟為下列何者，以確保業務價值最大化？",
+        "question": "企業導入生成式AI產生大量長篇文本，團隊希望提高局部修改效率。以下哪種提示詞運用及工具選擇最符合此需求？",
         "options": [
-            "直接替換所有既有系統無風險評估",
-            "立即全組織部署無需前期測試驗證",
-            "購買最多GPU硬體擴充運算資源",
-            "定義明確ROI指標與試點專案驗證"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "生成式 AI 導入評估",
-        "explanation": "iPAS L123強調導入評估須先定義ROI、KPI並進行試點，避免盲目部署，確保生成式AI應用符合業務規劃。",
-        "number": 5,
-        "date": "2026-05-09"
-    },
-    {
-        "question": "在No-Code環境下生成式AI不適合下列哪種高階應用領域，需要轉向Low-Code？",
-        "options": [
-            "快速產生社群媒體貼文與視覺設計",
-            "自訂多模態模型融合與即時推理",
-            "個人化電子郵件行銷內容優化",
-            "自動化客服聊天機器人對話流程"
+            "利用Gemini 3.1重新編寫全文本",
+            "使用GPT-5.4 Canvas執行段落局部重構提示",
+            "用SearchGPT重新生成完整文件内容",
+            "改用開源OpenClaw雲端協作平台"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code 限制與 Low Code 優勢",
-        "explanation": "No-Code限於標準化應用，自訂多模態融合需Low-Code的程式碼注入，超出L121 No-Code能力範圍。",
-        "number": 6,
-        "date": "2026-05-09"
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示詞與局部重構",
+        "explanation": "GPT-5.4 Canvas支持局部重構，提示詞可針對特定段落優化且保留其他部分不變，顯著提升效率並符合長文本創作需求。",
+        "number": 5,
+        "date": "2026-05-12"
     },
     {
-        "question": "生成式AI導入規劃中，風險評估應優先考量下列哪項專有名詞相關議題？",
+        "question": "2026年企業將生成式AI導入業務的主因不包括下列哪一項？",
         "options": [
-            "資料隱私法規如GDPR與個資保護",
-            "區塊鏈共識機制驗證流程設計",
-            "5G網路延遲優化參數調整",
-            "量子運算加速器硬體規格選擇"
+            "降低多系統整合複雜度",
+            "提升決策速度與正確率",
+            "減少人力訓練時間",
+            "產生創意內容與營運優化"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "生成式 AI 風險管理",
-        "explanation": "L123導入評估強調GDPR等資料隱私風險，生成式AI處理敏感資料時須優先合規規劃。",
-        "number": 7,
-        "date": "2026-05-09"
+        "concept": "導入驅動因素",
+        "explanation": "生成式AI主要提升決策與創意產能，及加快訓練，降低人力投入。多系統整合複雜度反而可能因工具多樣而增加，非主因。",
+        "number": 6,
+        "date": "2026-05-12"
     },
     {
-        "question": "Low-Code平台結合生成式AI的最佳企業應用為何，能提升開發效率30%以上？",
+        "question": "2026年台灣金融業進行法規合規AI應用時，結合RAG 2.0知識庫有何主要優勢？",
         "options": [
-            "自動生成API整合與UI原型介面",
-            "從零建構作業系統核心模組",
-            "設計ASIC晶片專用指令集",
-            "訓練自監督學習大型語言模型"
+            "主要用於數據視覺化呈現",
+            "能確保生成內容具法規依據並避免幻覺",
+            "提升文本生成速度但易產生誤判",
+            "降低系統建置成本但速度較慢"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "RAG 2.0 知識庫",
+        "explanation": "RAG 2.0技術透過知識檢索支持生成內容，使AI回答可依據結構化法規知識，降低幻覺即虛假資訊問題，提升合規準確率。",
+        "number": 7,
+        "date": "2026-05-12"
+    },
+    {
+        "question": "以下關於生成式AI Agent在企業流程中的能力描述，何者為正確？",
+        "options": [
+            "具備跨系統自主規劃及多步任務執行能力",
+            "只能執行單系統簡單的任務",
+            "僅適合客服自動問答",
+            "與傳統RPA技術沒有差異"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 工具使用",
-        "explanation": "Low-Code+生成式AI擅長自動碼生成與UI建構，加速企業應用開發，符合L122工具應用。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "AI Agent 自主能力",
+        "explanation": "2026年成熟的AI Agent可跨系統整合業務，自主規劃、推理與執行多步驟複雜任務，超越傳統RPA與簡單問答的限制。",
         "number": 8,
-        "date": "2026-05-09"
+        "date": "2026-05-12"
     },
     {
-        "question": "生成式AI導入評估的成本效益分析，應聚焦下列哪種指標進行量化規劃？",
+        "question": "教育科技新創要在生成式AI平台中選型，以下何種特性最能確保未來內容創作和數位學習競爭力？",
         "options": [
-            "雲端儲存容量無限擴張方案",
-            "伺服器CPU核心數量擴充規模",
-            "人力節省率與產出品質提升比",
-            "單純硬體採購總金額計算"
+            "最低成本API方案",
+            "最新發布的媒體宣傳訊息",
+            "具備多模態能力及完整生態支持",
+            "最大用戶數平台"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "生成式 AI 導入評估",
-        "explanation": "L123要求評估ROI透過人力節省與品質指標量化，非僅硬體成本，確保規劃可行性。",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態平台評估",
+        "explanation": "多模態能力（整合文字、圖像、音訊等）及廣泛生態系工具能滿足多元教育內容需求，確保平台具長期競爭優勢。",
         "number": 9,
-        "date": "2026-05-09"
+        "date": "2026-05-12"
     },
     {
-        "question": "No-Code平台生成式AI工具在醫療領域的限制為何，不宜用於高風險決策？",
+        "question": "2026年投資邊緣AI的最大技術與市場理由為何？",
         "options": [
-            "無法處理影像診斷與基因序列分析",
-            "缺乏可解釋性與法規審核合規機制",
-            "不支援即時視訊串流與AR整合",
-            "無法產生多語言病歷翻譯內容"
+            "邊緣AI是過去技術，已無發展空間",
+            "邊緣AI已取代所有雲端AI架構",
+            "邊緣AI僅適合財團大型企業應用",
+            "AI推理需求激增，邊緣AI降低延遲並增強隱私"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "生成式 AI 風險管理",
-        "explanation": "No-Code生成式AI在醫療需考量可解釋性與HIPAA/GDPR，L123導入評估強調高風險領域限制。",
+        "concept": "邊緣AI市場趨勢",
+        "explanation": "隨著算力需求爆增，邊緣AI可提供實時推理、降低資料延遲與加強隱私保護，市場規模及ASIC供應成熟，成為2026重要趨勢。",
         "number": 10,
-        "date": "2026-05-09"
+        "date": "2026-05-12"
     }
 ]

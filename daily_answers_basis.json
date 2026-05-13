@@ -6968,5 +6968,175 @@
         "explanation": "箱型圖用以展示數據的中位數、四分位數及離群值，有助於探索資料分佈特性。",
         "number": 410,
         "date": "2026-05-11"
+    },
+    {
+        "question": "在機器學習中，下列何者最適合用於分類任務？",
+        "options": [
+            "支持向量機（SVM）",
+            "K-均值聚類",
+            "線性回歸模型",
+            "主成分分析（PCA）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "監督學習",
+        "explanation": "支持向量機（SVM）是一種常用於分類任務的監督學習模型，適合區分不同類別資料。線性回歸用於迴歸，PCA屬於降維技術，K-均值則為非監督式聚類算法。",
+        "number": 411,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "在下列資料類型中，哪一種資料最可能屬於非結構化資料？",
+        "options": [
+            "CSV格式的銷售資料",
+            "關聯式資料庫的交易記錄",
+            "影像檔案如JPEG",
+            "數值型問卷調查結果"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料類型",
+        "explanation": "影像檔案屬於非結構化資料，其格式不適合用表格直接存取；相對而言，關聯式資料庫、CSV、數值型問卷屬於結構化資料。",
+        "number": 412,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "資料整理流程中，下列哪一步驟主要負責處理資料中的缺失值、錯誤值及重複值？",
+        "options": [
+            "資料轉換",
+            "資料蒐集",
+            "資料清洗",
+            "資料分析"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗階段會處理遺缺值、錯誤值、重複值等問題，是確保資料品質的關鍵步驟，資料轉換主要處理格式與型態變更。",
+        "number": 413,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "以下哪一項敘述不屬於人工智慧治理（AI治理）的重點？",
+        "options": [
+            "強化資料隱私與安全性措施",
+            "制定適當的監督與倫理規範",
+            "確保AI系統的公平性與透明度",
+            "提升人工智慧系統的推論速度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "AI治理",
+        "explanation": "提升推論速度屬於技術性能優化，不屬於AI治理範疇。AI治理聚焦在公平性、隱私、監管與倫理等非技術層面。",
+        "number": 414,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "下列哪一個機器學習模型屬於生成式AI的典型代表？",
+        "options": [
+            "支持向量機 (SVM)",
+            "隨機森林 (Random Forest)",
+            "K-均值聚類",
+            "對抗生成網路 (GAN)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式 AI 的基本原理",
+        "concept": "生成式 AI",
+        "explanation": "對抗生成網路（GAN）屬於生成式AI，能根據資料分布生成新樣本。隨機森林和SVM為鑑別式模型，K-均值為非監督學習。",
+        "number": 415,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "資料隱私保護措施中，下列何者較不適合用於保護結構化數據？",
+        "options": [
+            "數據匿名化（Anonymization）",
+            "數據加密（Encryption）",
+            "權限控制（Access Control）",
+            "數據清洗（Data Cleaning）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料保護措施",
+        "explanation": "資料清洗處理主要為提升數據品質不直接用於隱私保護。匿名化、加密及權限控管是常用的資料隱私保護技術。",
+        "number": 416,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "在機器學習中，下列哪一個描述最符合強化學習的特性？",
+        "options": [
+            "透過試錯方式學習行為策略並獲得獎勵",
+            "將高維資料降維以便分析",
+            "利用標籤數據學習分類決策",
+            "從未標記數據中找出隱藏模式"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "強化學習",
+        "explanation": "強化學習透過試錯學習策略並以獎勵作為反饋，與監督學習和非監督學習不同。",
+        "number": 417,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "在AI系統中，何謂「Human on loop」的概念？",
+        "options": [
+            "完全由AI自主決策不需人員介入",
+            "僅用人類資料訓練AI模型",
+            "人員只在系統出錯時介入",
+            "人為介入並監督AI系統決策過程"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "人機互動",
+        "explanation": "Human on loop指的是人類持續監督並參與AI的決策過程，以維持系統可靠性及倫理性。",
+        "number": 418,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "在資料轉換流程中，下列何者不是常用的方法？",
+        "options": [
+            "資料匿名化",
+            "數據正規化",
+            "離散化",
+            "主成分分析(PCA)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料轉換技術",
+        "explanation": "資料匿名化屬於資料隱私保護，不屬於一般的數據轉換流程。正規化、離散化和PCA都是常見轉換方法。",
+        "number": 419,
+        "date": "2026-05-13"
+    },
+    {
+        "question": "鑑別式AI與生成式AI整合應用時，何者為其主要優勢？",
+        "options": [
+            "兩者結合可降低資料蒐集需求",
+            "鑑別式模型可直接生成新樣本",
+            "融合可提升模型預測精度與生成品質",
+            "生成式模型提高模型透明度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "模型融合優勢",
+        "explanation": "融合鑑別式與生成式AI模型能同時提升分類預測精度與生成內容的品質，達成更強大的應用效果。",
+        "number": 420,
+        "date": "2026-05-13"
     }
 ]

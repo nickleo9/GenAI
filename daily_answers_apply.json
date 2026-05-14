@@ -1,172 +1,172 @@
 [
     {
-        "question": "一家台灣製造企業在2026年計劃運用低代碼(No Code / Low Code)平台整合生產與ERP系統。以下何種策略最符合減少開發負擔並提高部署效率的做法？",
+        "question": "關於 No Code 與 Low Code 的差異，下列哪項敘述最符合企業導入規劃的考量？",
         "options": [
-            "全面聘請AI專家研發團隊專注底層算法優化",
-            "採用拖拉式介面結合GPT-5.4模型進行視覺化流程設計",
-            "尋找多供應商分別負責AI與系統整合的解決方案",
-            "自行開發定制的生成式AI模型並手動編碼工作流"
+            "Low Code 允許在視覺化流程外加入少量自訂程式碼",
+            "No Code 一定適用於所有大型企業系統開發",
+            "Low Code 無法整合 API 與外部資料庫",
+            "No Code 與 Low Code 唯一差別在介面設計風格"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 概念",
-        "concept": "低代碼快速部署",
-        "explanation": "低代碼平台利用視覺化介面如拖拉工具，結合如GPT-5.4的強大生成模型，可以大幅提升整合效率，減少手寫程式碼量，適合快速部署企業流程。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 與 Low Code 差異",
+        "explanation": "Low Code 平台通常除了視覺化設計外，允許加入少量自訂程式碼以處理例外情境和整合外部系統，是企業導入時的重要判斷依據。",
         "number": 1,
-        "date": "2026-05-12"
+        "date": "2026-05-14"
     },
     {
-        "question": "企業希望在保障客戶資料隱私前提下使用生成式AI即時分析金融數據。下列哪種架構最適合2026年此需求？",
+        "question": "若企業欲導入生成式 AI 於客服知識庫摘要與工單初判，下列何種方案最能降低幻覺風險？",
         "options": [
-            "使用完全公開的雲端大型語言模型API服務",
-            "混合鑑別式和生成式AI架構，但需上傳所有數據",
-            "延後部署等待更成熟的隱私計算技術",
-            "採用私有雲部署的邊緣AI結合ASIC推理硬體"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "邊緣AI隱私保護",
-        "explanation": "邊緣AI允許模型推理在本地端硬體執行，避免資料外流，搭配專用ASIC加速硬體能實現即時且安全的分析，最符合隱私與效能需求。",
-        "number": 2,
-        "date": "2026-05-12"
-    },
-    {
-        "question": "2026年生成式AI的多模態技術最適合用於下列哪一種應用場景？",
-        "options": [
-            "純文字患者病歷數據的自動摘要",
-            "整合醫療影像、文字與基因數據生成診斷建議",
-            "完全自動取代專業醫師做最終診斷",
-            "用文字描述生成化學分子結構圖"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "多模態AI",
-        "explanation": "多模態AI擅長處理多種資料型態的結合，如影像、文字與數據，有助精準診斷與建議生成，完全替代醫師目前仍不符合倫理與技術要求。",
-        "number": 3,
-        "date": "2026-05-12"
-    },
-    {
-        "question": "針對2026年生成式AI導入企業流程時，以下哪項風險是依調查最顯著且急需治理的議題？",
-        "options": [
-            "員工缺乏操作生成式AI培訓",
-            "硬體資源不足導致推理延遲",
-            "模型訓練資料不足導致結果偏差",
-            "大部分企業缺乏有效AI治理框架"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "AI治理框架缺失",
-        "explanation": "2026年調查顯示只有約26%的企業自認具備完整AI治理機制，導致在大規模部署生成式AI時，治理缺陷為最大系統性風險。",
-        "number": 4,
-        "date": "2026-05-12"
-    },
-    {
-        "question": "企業導入生成式AI產生大量長篇文本，團隊希望提高局部修改效率。以下哪種提示詞運用及工具選擇最符合此需求？",
-        "options": [
-            "利用Gemini 3.1重新編寫全文本",
-            "使用GPT-5.4 Canvas執行段落局部重構提示",
-            "用SearchGPT重新生成完整文件内容",
-            "改用開源OpenClaw雲端協作平台"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "提示詞與局部重構",
-        "explanation": "GPT-5.4 Canvas支持局部重構，提示詞可針對特定段落優化且保留其他部分不變，顯著提升效率並符合長文本創作需求。",
-        "number": 5,
-        "date": "2026-05-12"
-    },
-    {
-        "question": "2026年企業將生成式AI導入業務的主因不包括下列哪一項？",
-        "options": [
-            "降低多系統整合複雜度",
-            "提升決策速度與正確率",
-            "減少人力訓練時間",
-            "產生創意內容與營運優化"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入驅動因素",
-        "explanation": "生成式AI主要提升決策與創意產能，及加快訓練，降低人力投入。多系統整合複雜度反而可能因工具多樣而增加，非主因。",
-        "number": 6,
-        "date": "2026-05-12"
-    },
-    {
-        "question": "2026年台灣金融業進行法規合規AI應用時，結合RAG 2.0知識庫有何主要優勢？",
-        "options": [
-            "主要用於數據視覺化呈現",
-            "能確保生成內容具法規依據並避免幻覺",
-            "提升文本生成速度但易產生誤判",
-            "降低系統建置成本但速度較慢"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "RAG 2.0 知識庫",
-        "explanation": "RAG 2.0技術透過知識檢索支持生成內容，使AI回答可依據結構化法規知識，降低幻覺即虛假資訊問題，提升合規準確率。",
-        "number": 7,
-        "date": "2026-05-12"
-    },
-    {
-        "question": "以下關於生成式AI Agent在企業流程中的能力描述，何者為正確？",
-        "options": [
-            "具備跨系統自主規劃及多步任務執行能力",
-            "只能執行單系統簡單的任務",
-            "僅適合客服自動問答",
-            "與傳統RPA技術沒有差異"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "AI Agent 自主能力",
-        "explanation": "2026年成熟的AI Agent可跨系統整合業務，自主規劃、推理與執行多步驟複雜任務，超越傳統RPA與簡單問答的限制。",
-        "number": 8,
-        "date": "2026-05-12"
-    },
-    {
-        "question": "教育科技新創要在生成式AI平台中選型，以下何種特性最能確保未來內容創作和數位學習競爭力？",
-        "options": [
-            "最低成本API方案",
-            "最新發布的媒體宣傳訊息",
-            "具備多模態能力及完整生態支持",
-            "最大用戶數平台"
+            "改用 No Code 平台可保證答案正確率百分百",
+            "單純增加模型參數數量消除幻覺問題",
+            "使用 Retrieval-Augmented Generation（RAG）結合企業知識庫",
+            "讓模型自由生成答案，不依賴任何資料來源"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "多模態平台評估",
-        "explanation": "多模態能力（整合文字、圖像、音訊等）及廣泛生態系工具能滿足多元教育內容需求，確保平台具長期競爭優勢。",
-        "number": 9,
-        "date": "2026-05-12"
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "幻覺風險控制",
+        "explanation": "結合企業內部知識庫的 Retrieval-Augmented Generation 技術，可有效降低生成式 AI 在回答時的幻覺現象，提升資訊可靠性。",
+        "number": 2,
+        "date": "2026-05-14"
     },
     {
-        "question": "2026年投資邊緣AI的最大技術與市場理由為何？",
+        "question": "關於提示詞工程（Prompt Engineering）在企業生成式 AI 應用中，下列何者為最佳做法？",
         "options": [
-            "邊緣AI是過去技術，已無發展空間",
-            "邊緣AI已取代所有雲端AI架構",
-            "邊緣AI僅適合財團大型企業應用",
-            "AI推理需求激增，邊緣AI降低延遲並增強隱私"
+            "一旦設定完成，不需要因情境調整提示詞",
+            "盡量將問題提示詞寫得越短越好",
+            "提示詞只能以英文撰寫以避免能力下降",
+            "在提示詞中加入角色、任務與格式限制以強化控制"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "提示詞工程",
+        "explanation": "加入角色設定、任務說明與格式限制在提示詞中，有助提升模型回應的可控性與符合需求，為提示詞工程的重要技巧。",
+        "number": 3,
+        "date": "2026-05-14"
+    },
+    {
+        "question": "企業欲利用生成式 AI 協助法務部審閱合約，下列哪項是最重要的風險評估重點？",
+        "options": [
+            "控制回答內容字數在200字以內",
+            "模型支援表情符號與語氣變化",
+            "模型產出創意內容的能力",
+            "避免洩漏敏感資料與錯誤法律詮釋"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "邊緣AI市場趨勢",
-        "explanation": "隨著算力需求爆增，邊緣AI可提供實時推理、降低資料延遲與加強隱私保護，市場規模及ASIC供應成熟，成為2026重要趨勢。",
+        "concept": "生成式 AI 風險管理",
+        "explanation": "生成式 AI 用於法律合約審閱時，必須嚴格控管敏感資料安全與避免錯誤法律資訊的產生，保障法務決策可靠性。",
+        "number": 4,
+        "date": "2026-05-14"
+    },
+    {
+        "question": "在結合生成式 AI 與 Low Code 平台開發公司內部申請流程時，下列哪項為最佳實務？",
+        "options": [
+            "只要使用 Low Code 平台則不需測試與審核",
+            "AI 用於內容生成輔助判斷，關鍵規則人工審核",
+            "由 AI 全權控管權限設定避免人工介入",
+            "讓 AI 完全決定所有商業規則"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "生成式 AI 與 Low Code 整合應用",
+        "explanation": "生成式 AI 常用於內容輔助生成與判斷輔助，核心商業規則仍需人工審核與流程引擎管理，確保流程穩健與合規。",
+        "number": 5,
+        "date": "2026-05-14"
+    },
+    {
+        "question": "評估生成式 AI 工具導入時，以下哪項最能代表全面的評估考量？",
+        "options": [
+            "模型回答流暢即代表可直接上線",
+            "以工具是否免費為唯一評估指標",
+            "須考量成本、資料安全、整合與維運能力",
+            "選擇最新模型一定優於舊模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入評估",
+        "explanation": "導入生成式 AI 工具需從多面向評估，包括成本、資料安全性、是否能與現有系統整合，以及後續可維護性，不能單以模型版本或免費與否判斷。",
+        "number": 6,
+        "date": "2026-05-14"
+    },
+    {
+        "question": "關於大型語言模型（LLM）的專有名詞，下列哪項描述正確？",
+        "options": [
+            "Temperature 越高輸出越穩定保守",
+            "LLM 僅能處理文字資料",
+            "Fine-tuning 與 Prompt Engineering 相同概念",
+            "Token 是模型處理文字的最小單位之一"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 工具使用",
+        "concept": "大型語言模型專有名詞",
+        "explanation": "Token 是語言模型中處理文字的基本單位，可以是字、詞或子詞，影響模型理解與輸出。其他選項錯誤溫度參數越高會增加多樣性，Fine-tuning 是模型調整，不同於提示詞工程，且現代LLM可處理多模態。",
+        "number": 7,
+        "date": "2026-05-14"
+    },
+    {
+        "question": "企業想利用生成式 AI 協助行銷團隊產出多版本廣告文案，應採何種策略？",
+        "options": [
+            "AI 自動發布所有生成內容到社群平台",
+            "只依賴傳統搜尋引擎不使用生成式 AI",
+            "完全讓模型根據自身學習產出品牌調性",
+            "AI 產出多版本文案，由行銷人員篩選微調"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域",
+        "concept": "生成式 AI 行銷應用",
+        "explanation": "生成式 AI 可快速產生多版本文案，但須由行銷團隊把關篩選確保符合品牌調性及法規，不適合無審核直接發布。",
+        "number": 8,
+        "date": "2026-05-14"
+    },
+    {
+        "question": "評估生成式 AI 導入可行性時，下列哪項最不應被忽視？",
+        "options": [
+            "是否能即刻全面取代人工",
+            "是否能提升員工午休品質",
+            "是否有明確業務痛點與資料治理機制",
+            "是否可不經試點即正式部署"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入可行性",
+        "explanation": "導入生成式 AI 須先確認切確業務痛點、可衡量KPI及完整資料治理機制，這些是成功導入的基礎條件，非立即全面取代或跳過試點階段。",
+        "number": 9,
+        "date": "2026-05-14"
+    },
+    {
+        "question": "下列何者最能體現企業導入生成式 AI 時「負責任 AI」的核心要求？",
+        "options": [
+            "只要模型能聊天就不需治理架構",
+            "強化可解釋性、隱私保護與人類監督",
+            "只追求模型快速輸出，不顧內容可靠性",
+            "將所有資料開放給模型以提高準確率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "負責任 AI",
+        "explanation": "負責任 AI 強調解釋性、隱私保護、公平性及人類監督，保障生成式 AI 的安全與合規使用，非粗放無治理。",
         "number": 10,
-        "date": "2026-05-12"
+        "date": "2026-05-14"
     }
 ]

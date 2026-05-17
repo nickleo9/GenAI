@@ -1,172 +1,172 @@
 [
     {
-        "question": "如果我是國中英文老師，要利用最新的生成式AI工具輔助學生寫作文和課文理解，下列哪一個AI工具最適合用來做長文本分析與互動問答？",
+        "question": "如果你是台灣一家製造業工廠主管，想利用2025年最新的AI工具提升生產線的品質檢測，以下哪一種AI工具最適合應用？",
         "options": [
-            "Canva AI，因為它用於影像設計，提升學生視覺學習",
-            "Perplexity，因為它提供有來源引用的結構化回應，方便教學引用資料",
-            "Gemini 3，因為它具備強大的程式碼與圖像多模態能力",
-            "Cursor，因為它專注於程式碼協作與快速原型設計"
+            "使用Midjourney生成產品設計圖",
+            "部署基於Computer Vision的質量檢測系統",
+            "利用ChatGPT輔助決策會議記錄",
+            "使用Grammarly檢查產品說明文檔語法"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與常見工具",
-        "concept": "多模態文本理解與互動",
-        "explanation": "Perplexity能夠提供有來源引證的結構化回答，適合輔助學生進行長文本的資料理解與互動提問，非常適合作為教學輔助工具。",
+        "subtopic": "電腦視覺",
+        "concept": "生產線自動檢測",
+        "explanation": "質量檢測通常利用電腦視覺技術來進行影像分析和缺陷發現，Midjourney是圖像生成工具，Grammarly針對文字，ChatGPT則偏向文本生成和對話。",
         "number": 1,
-        "date": "2026-05-10"
+        "date": "2026-05-17"
     },
     {
-        "question": "一家工廠想導入生成式AI提升內部研發及自動化產出，且要兼顧成本效益，哪一項趨勢與工具最符合2025-2026年的推薦？",
+        "question": "作為一位大學英文老師，要利用生成式AI協助同學製作英文讀書計畫，下列哪一種AI工具或方法最合適？",
         "options": [
-            "單靠Google Imagen系列生成圖像，自動替代所有文本創作任務",
-            "全部依賴大型通用模型如GPT-5.5維持最高精度，無須考慮成本",
-            "只運用Canva做設計，無需多模態協同與編碼支援",
-            "採用Anthropic專注的多代理管理系統，搭配低成本中國開源模型如DeepSeek V4"
+            "以ElevenLabs生成人聲朗讀教材",
+            "使用Google Gemini整合文件並生成個性化讀書指引",
+            "用Zapier自動化批改英文作文",
+            "用Runway製作口語演講影片"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "生成式 AI 導入規劃",
-        "concept": "成本效益與多代理系統",
-        "explanation": "2026年趨勢強調採用多代理管理的agentic AI系統，並且重視成本效益，中国开源模型提供了高性价比，适合企业内部集成。",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自然語言處理",
+        "concept": "個性化學習計畫",
+        "explanation": "Google Gemini擅長文檔整合與生成，可根據學生需求製作學習路徑，而Runway和ElevenLabs專注於媒體生成，Zapier主要自動化流程。",
         "number": 2,
-        "date": "2026-05-10"
+        "date": "2026-05-17"
     },
     {
-        "question": "當家庭主婦計劃一個家庭旅遊行程，並希望利用生成式AI自動生成行程安排及預算控制，下列哪種AI應用方式最直接有幫助？",
+        "question": "公司打算導入生成式AI來優化客戶服務，關於生成式AI規劃，下列哪一項不屬於考量範圍？",
         "options": [
-            "使用Zapier AI結合多個線上服務，搭配低代碼工作流程自動化行程整合",
-            "使用Nano Banana Pro設計旅遊行程的海報",
-            "使用DeepSeek V4專注於生物領域的AI模型",
-            "使用GitHub Copilot直接生成旅遊程式代碼"
+            "系統的準確率與風險管理",
+            "員工午餐菜單的設計優化",
+            "數據的準備與質量評估",
+            "客戶服務問題的清晰定義"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "AI導入規劃",
+        "concept": "AI導入評估",
+        "explanation": "員工午餐菜單設計與生成式AI客戶服務規劃無關，其他選項均為導入AI時必須考量的核心面向。",
+        "number": 3,
+        "date": "2026-05-17"
+    },
+    {
+        "question": "若你是一名研究所人工智慧工程師計劃使用雲端服務來訓練大型生成式模型，2025年下列哪一種AI硬體發展趨勢最應重視？",
+        "options": [
+            "提升有線網路的頻寬傳輸速度",
+            "優化傳統硬盤讀寫速度",
+            "強化GPU的AI推論效能與功耗優化",
+            "增強桌面電腦的CPU核心數量"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI硬體發展",
+        "concept": "AI加速晶片與推論優化",
+        "explanation": "2025年AI硬體發展重點是在GPU及專用AI晶片的推論效能與功耗平衡，這與模型訓練和部署效能直接相關。",
+        "number": 4,
+        "date": "2026-05-17"
+    },
+    {
+        "question": "作為自媒體工作者，想要快速生成有吸引力的短影片內容，以下哪種生成式AI工具最適合利用？",
+        "options": [
+            "Synthesia視頻自動生成",
+            "Midjourney圖像生成",
+            "ElevenLabs語音合成",
+            "Grammarly文法校正"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的優勢與限制",
-        "concept": "低碼自動化整合",
-        "explanation": "Zapier AI 提供無需寫程式的自動化能力，能結合訂票、行程、地圖等多種工具，幫助家庭主婦便捷高效地完成旅遊計劃與預算管理。",
-        "number": 3,
-        "date": "2026-05-10"
+        "subtopic": "媒體生成",
+        "concept": "自動影片創作",
+        "explanation": "Synthesia專注生成自動化視頻，適合短影片製作；Midjourney生成靜態圖像，ElevenLabs是語音，Grammarly為文本校正工具。",
+        "number": 5,
+        "date": "2026-05-17"
     },
     {
-        "question": "在企業導入生成式AI作為輔助決策工具時，iPAS AI應用規劃師最應關注以下哪個風險管理核心要素？",
+        "question": "iPAS AI應用規劃師考試中，涉及生成式AI評估階段，下列哪一項是評估生成模型準確性與安全性的主要指標？",
         "options": [
-            "單一模型的準確率達到100%，忽略多模型整合",
-            "採用全球最昂貴的硬體提升算力水平",
-            "資料隱私與安全，避免敏感資料外洩或被濫用",
-            "提升畫面生成速度，避免用戶等待過久"
+            "輸出結果的真實性與是否有幻覺現象",
+            "模型執行速度與系統記憶體使用量",
+            "模型訓練所需的資料量與批次大小",
+            "AI工具的市場佔有率與用戶數"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "模型評估",
+        "concept": "模型準確性與安全",
+        "explanation": "生成式AI重要評估指標是對輸出內容的真實性和幻覺(hallucination)的控制，速度與資料量雖重要但不屬主要安全指標。",
+        "number": 6,
+        "date": "2026-05-17"
+    },
+    {
+        "question": "以下哪個選項最正確描述了RAG（Retrieval-Augmented Generation）技術在2025年生成式AI應用中的角色？",
+        "options": [
+            "透過大量資料訓練生成模型核心參數",
+            "藉由直接調整模型權重提高生成靈活度",
+            "利用外部知識庫輔助生成更具事實依據的答案",
+            "使用自動化流程簡化提示詞編寫"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "資料隱私與安全",
-        "explanation": "資料隱私與安全是企業導入生成式AI時最重要的風險管理要素，避免機敏資料被不當利用，保持合規與信任。",
-        "number": 4,
-        "date": "2026-05-10"
-    },
-    {
-        "question": "作為自媒體工作者，想利用生成式AI提高內容產出效率並維持原創度，以下何者提示詞使用策略最有效？",
-        "options": [
-            "只輸入模糊的關鍵字，讓AI自由發揮創意",
-            "具體且限定主題範圍，要求安全性及引用來源，避免生成內容過於泛泛",
-            "讓AI自行推測目標，不設定任何限制以減低人工干預",
-            "使用重複且無結構的敘述詞彙，增加創意多樣化"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "提示工程",
-        "concept": "提示詞精準設計",
-        "explanation": "具體且限定範圍的提示詞能協助生成內容更聚焦、具體，適合作為內容產出工具，且能確保資訊安全與可信度。",
-        "number": 5,
-        "date": "2026-05-10"
+        "concept": "RAG技術",
+        "explanation": "RAG技術是結合檢索系統和生成模型，利用外部文件或知識庫提高內容真實性，比純生成模型更能減少幻覺。",
+        "number": 7,
+        "date": "2026-05-17"
     },
     {
-        "question": "2026年AI發展的重要趨勢之一，是「agentic engineering」，此概念所指的是什麼？",
+        "question": "身為一位家庭主婦想利用2025年的AI工具規劃暑假全家旅遊，下列哪種AI工具組合最能提升旅遊計劃的效率？",
         "options": [
-            "以視覺辨識為主的AI運算框架",
-            "僅用於單一模型調校的傳統機器學習流程",
-            "結合多代理系統，自動規劃並執行多步驟任務的AI工程模式",
-            "聚焦在硬體加速晶片的研發與製造"
+            "利用GitHub Copilot協助編寫旅遊相關程式碼",
+            "用Midjourney生成旅遊地點風景照片",
+            "用Zapier自動串接行程資訊與Google Calendar提醒",
+            "採用Grammarly為旅遊日記進行文法修正"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
-        "concept": "agentic AI",
-        "explanation": "\"Agentic engineering\"指的是建立具備多代理協同、能自動追蹤與記憶、並完成多步驟任務的結構化AI系統，是2026年AI大趨勢。",
-        "number": 6,
-        "date": "2026-05-10"
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "行程規劃",
+        "concept": "工作流自動化",
+        "explanation": "Zapier能自動串接多種應用，一鍵整合行程和提醒，提升方案安排效率；其他選項雖有用但效用不如自動化流程高。",
+        "number": 8,
+        "date": "2026-05-17"
     },
     {
-        "question": "以下哪一項是台灣在全球AI科技供應鏈中最重要的角色？",
+        "question": "在iPAS AI應用規劃師考試中，下列關於鑑別式AI與生成式AI的描述何者正確？",
         "options": [
-            "唯一人工智慧倫理法律立法推動者",
-            "半導體晶片與AI硬體製造的核心供應者",
-            "主導所有AI語言模型的訓練數據收集",
-            "全球最大生成式AI模型的開發者"
+            "鑑別式AI用於識別與分類，生成式AI用於創造新內容",
+            "兩者皆使用相同模型架構，無明確區分",
+            "鑑別式AI主要用於生成新內容，生成式AI主要用於分類與判斷",
+            "生成式AI無法用於自然語言處理領域"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "AI在各領域的應用",
-        "subtopic": "AI科技台灣",
-        "concept": "供應鏈角色",
-        "explanation": "台灣以其半導體晶片與硬體製造能力，在全球AI硬體及運算平台供應鏈中擔任核心角色。",
-        "number": 7,
-        "date": "2026-05-10"
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式AI與生成式AI",
+        "concept": "模型基本原理",
+        "explanation": "鑑別式AI負責判斷輸入屬於何種類別，生成式AI則生成文字、圖像等新內容；兩者架構不同且應用領域廣泛。",
+        "number": 9,
+        "date": "2026-05-17"
     },
     {
-        "question": "如果我是新創公司的經營者，要制定2026年的生成式AI應用規劃，下列何者是較佳的策略？",
+        "question": "作為一位主管，想利用生成式AI提升團隊的工作效率，請問以下哪種做法最符合2025年AI應用規劃的最佳實務？",
         "options": [
-            "全力投入購買最貴的全球大型通用模型，不考慮開源替代",
-            "專注手動人工創作，避免依賴AI技術以保障品質",
-            "完全依賴單一生成式AI做所有業務，不整合企業內部系統",
-            "優先導入低成本、可微調的中國開源模型，再結合agentic管理工具提高效率"
+            "只關注AI模型的準確率忽略成本與風險",
+            "全面取消所有人工審核改用AI自動決策",
+            "直接導入最新大型模型，不需考慮業務需求",
+            "先明確定義目標，再評估數據及人機互動流程"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI導入評估規劃",
-        "subtopic": "生成式 AI 導入評估",
-        "concept": "成本與效能策略",
-        "explanation": "2026年趨勢強調透過低成本開源模型搭配agentic AI系統達到高效化的實務策略，更符合新創公司資源配置。",
-        "number": 8,
-        "date": "2026-05-10"
-    },
-    {
-        "question": "2025年最具代表性的低代碼(No Code/Low Code)AI工具，通常具備什麼特性？",
-        "options": [
-            "需要大量程式碼編寫與深厚AI技術背景",
-            "讓非程式人員也能快速自動化工作流程和應用整合",
-            "只能產生文字輸出，無法處理影像或音訊資訊",
-            "僅能進行簡單的資料查詢，不支援跨平台整合"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 的優勢與限制",
-        "concept": "無程式碼自動化",
-        "explanation": "低代碼平台著重於簡化使用門檻，讓無程式背景用戶能快速打造跨平台、跨應用的自動化工作流程。",
-        "number": 9,
-        "date": "2026-05-10"
-    },
-    {
-        "question": "在2026年人工智慧領域中，「生成式AI」與「鑑別式AI」主要差異為何？",
-        "options": [
-            "生成式AI只適用於視覺分析，鑑別式AI只適用於自然語言處理",
-            "兩者是同一技術，無本質差異",
-            "生成式AI無法進行資料分析，鑑別式AI無法生成文本",
-            "生成式AI主要用於創建新內容，鑑別式AI則專注於分類與識別"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "鑑別式 AI 與生成式 AI 概念",
-        "concept": "模型原理區辨",
-        "explanation": "生成式AI強調生成文本、影像等新內容，鑑別式AI著重於輸入資料的分類與判別，兩者在應用與模型訓練上有本質不同。",
+        "subtopic": "AI導入規劃",
+        "concept": "業務目標與風險管理",
+        "explanation": "最佳導入規劃須先明確業務問題及目標，評估數據品質與人機協同，兼顧成本與風險；盲目導入或取消人為審核風險高。",
         "number": 10,
-        "date": "2026-05-10"
+        "date": "2026-05-17"
     }
 ]

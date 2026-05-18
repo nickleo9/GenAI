@@ -7308,5 +7308,175 @@
         "explanation": "提示工程透過設計有效指令，引導生成式AI產出更貼近需求的內容。",
         "number": 430,
         "date": "2026-05-15"
+    },
+    {
+        "question": "在機器學習中，哪一種學習類型主要依賴有標註的資料來進行訓練？",
+        "options": [
+            "非監督學習主要依靠有標註的資料尋找資料結構",
+            "監督學習不需要任何標註資料，完全自動化訓練",
+            "監督學習主要使用有標註的資料進行模型訓練",
+            "強化學習依賴大量有標註資料來訓練決策模型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習",
+        "explanation": "監督學習是機器學習中常見的類型，透過有標註的資料訓練模型，使模型能學習輸入與輸出之間的關係，進而對新資料做預測。",
+        "number": 431,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "以下關於 XAI（可解釋性AI）與黑箱問題，哪一項描述是正確的？",
+        "options": [
+            "XAI 目的是使模型決策過程透明，避免黑箱問題",
+            "黑箱問題是指所有機器學習模型都能被解釋",
+            "黑箱問題指模型決策過程透明且易於被解釋",
+            "XAI 是指讓模型像黑箱一樣不被理解，以提高隱私保護"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "可解釋性AI",
+        "explanation": "XAI的目標是讓AI模型的決策過程更透明可理解，以解決黑箱問題，增加使用者信任與模型監管可能性。",
+        "number": 432,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "資料轉換中，One-Hot Encoding 是用來做什麼的處理？",
+        "options": [
+            "用於資料缺失值補全的技巧",
+            "以正規化方式調整資料分布",
+            "將類別變數轉成二進位向量表示",
+            "將連續數值變成標籤類別"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "特徵數值編碼法",
+        "explanation": "One-Hot Encoding 將類別資料轉換成二進位向量，讓模型能接受非數值型的特徵，提高演算法的適用性。",
+        "number": 433,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "生成式AI與鑑別式AI的主要區別是什麼？",
+        "options": [
+            "生成式AI主要用來判斷資料是非正確，鑑別式AI主要用於生成新資料",
+            "鑑別式AI用於區分不同資料類別，生成式AI用於創造符合資料分佈的新資料",
+            "兩者皆主要用於資料清洗，但生成式AI更有效率",
+            "鑑別式AI專注於資料隱私，加強安全性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式AI原理",
+        "explanation": "鑑別式AI用於區分資料是否屬於某類別，如分類器；生成式AI則能生成新的資料樣本，像是GAN。",
+        "number": 434,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "在資料隱私與安全領域，下列何者最能描述聯邦學習的核心概念？",
+        "options": [
+            "將資料集中到中央伺服器以提升安全措施",
+            "使用同一份資料多次訓練增強模型準確度",
+            "資料分散在多個設備中，不直接集中共享",
+            "透過解密技術來保護資料傳輸安全"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習讓資料保留在本地端裝置，只共享模型參數，避免資料集中與洩漏，提升隱私安全。",
+        "number": 435,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "以下何者最能說明強化學習中Q-Learning的主要目的？",
+        "options": [
+            "透過標註資料監督模型預測結果",
+            "學習策略以最大化累積獎勵",
+            "找出資料中潛在群集結構",
+            "生成符合資料分布的新資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning是一種強化學習演算法，透過學習行動策略來最大化長期獎勵。",
+        "number": 436,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "在生成式AI的系統中，提示工程（Prompt Engineering）主要用來實現什麼功能？",
+        "options": [
+            "管理資料隱私保護措施",
+            "設計輸入提示以引導模型生成符合目標的輸出",
+            "調整模型權重以減少過擬合風險",
+            "資料清洗過程中的缺失值填補"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI基礎",
+        "concept": "提示工程",
+        "explanation": "提示工程是設計與調整輸入提示來引導生成式AI產出符合需求的結果，提升應用效果。",
+        "number": 437,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "AI治理中所謂的監理沙盒（Regulatory Sandbox）主要是指什麼？",
+        "options": [
+            "用於資料匿名化處理的技術",
+            "禁止未經審核的AI應用上線",
+            "限縮AI系統在特定區域的運行範圍",
+            "提供一個受監管的實驗環境測試新技術"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是一種受監管的測試環境，允許企業在受控條件下試驗新技術，平衡創新與風險。",
+        "number": 438,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "在機器學習中，L1正則化導致模型權重有可能變為零的原因最可能是？",
+        "options": [
+            "L1正則化懲罰權重的絕對值，促進稀疏解",
+            "L1正則化使權重不斷增大，最終爆炸",
+            "L1正則化會讓模型權重趨近於平均數",
+            "L1正則化忽略權重，僅優化偏差項"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "正規化L1",
+        "explanation": "L1正則化會懲罰權重的絕對值，鼓勵模型參數稀疏化，使部分權重縮減到零，有助於特徵選擇。",
+        "number": 439,
+        "date": "2026-05-18"
+    },
+    {
+        "question": "以下哪一項最能描述及時推論（Real-time inference）在AI應用中的挑戰？",
+        "options": [
+            "生成多樣化樣本來增加訓練資料量",
+            "需要快速且低延遲處理輸入資料以即刻產出結果",
+            "模型訓練過程中數據缺失的自動補全",
+            "對資料集中和批量訓練的過度依賴"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理與應用",
+        "concept": "即時推論",
+        "explanation": "及時推論要求AI系統能在非常短的延遲內處理輸入資料並產生決策或結果，是很多實務應用的關鍵挑戰。",
+        "number": 440,
+        "date": "2026-05-18"
     }
 ]

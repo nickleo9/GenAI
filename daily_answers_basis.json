@@ -7478,5 +7478,185 @@
         "explanation": "及時推論要求AI系統能在非常短的延遲內處理輸入資料並產生決策或結果，是很多實務應用的關鍵挑戰。",
         "number": 440,
         "date": "2026-05-18"
+    },
+    {
+        "question": "在機器學習中，哪一種學習類型是透過標註好的數據進行模型訓練，以達成預測或分類任務？",
+        "options": [
+            "非監督學習是運用標註好的數據進行監督模型學習",
+            "監督學習是透過有標註數據進行模型訓練以完成預測或分類",
+            "監督學習是利用無標註數據進行模型訓練以發現數據結構",
+            "強化學習涉及智能體通過獎勵機制學習決策策略"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習的三大類型",
+        "concept": "監督學習",
+        "explanation": "監督學習指的是利用帶有標籤的數據進行訓練，模型學會從輸入預測對應的標籤，用於分類或迴歸任務。",
+        "difficulty": "高級",
+        "number": 441,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在資料處理流程中，ETL代表的是哪三個主要步驟？",
+        "options": [
+            "資料標記、分類、儲存",
+            "資料抽取、轉換、載入",
+            "資料編碼、轉換、校正",
+            "資料分析、轉換、清洗"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL意指Extract（抽取）、Transform（轉換）、Load（載入），是資料處理中將資料從來源抽取、整理格式再載入目的地的流程。",
+        "difficulty": "中級",
+        "number": 442,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "關於生成式 AI 與鑑別式 AI，下列何者正確描述它們的主要區別？",
+        "options": [
+            "生成式 AI 專注於對輸入資料進行分類，鑑別式 AI 則是生成新的資料樣本",
+            "鑑別式 AI 通過評估真實與偽造資料差異進行判斷，生成式 AI 則能創造新數據或內容",
+            "生成式 AI 只能使用監督學習，鑑別式 AI 只能使用非監督學習",
+            "鑑別式 AI 常用於創造文本內容，生成式 AI 用於風險評估分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成式 vs 鑑別式 AI",
+        "explanation": "鑑別式 AI專注於辨識輸入是否符合真實資料，而生成式 AI具備創造像真實世界數據的能力，兩者角色互補。",
+        "difficulty": "高級",
+        "number": 443,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在強化學習中，Q-Learning演算法的核心目標是什麼？",
+        "options": [
+            "透過標註數據訓練分類器",
+            "將資料轉換為低維表示進行分群",
+            "利用生成模型創造多樣化資料樣本",
+            "直接計算出動作價值函數以決定策略"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning是一種基於值函數的強化學習方法，用來計算每個行動在每狀態下的價值，以此推導出最佳決策策略。",
+        "difficulty": "高級",
+        "number": 444,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在人工智慧治理中，『監理沙盒』的主要作用是？",
+        "options": [
+            "強制要求AI模型的所有訓練數據必須為公開數據集",
+            "將AI系統所有資料公佈於公開平台，促進透明化",
+            "使AI系統能於真實環境中有限制地測試並調整，符合法規要求",
+            "提供實驗環境給AI模型無限運行，忽略法律規範"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "監理措施",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒提供一個受控、受監管的環境，讓AI技術及產品可在合規情境下實際測試，促進創新與風險管控共存。",
+        "difficulty": "中級",
+        "number": 445,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在資料隱私保護技術中，聯邦學習的優勢是？",
+        "options": [
+            "中央伺服器集中收集所有訓練數據進行模型學習",
+            "不同裝置本地訓練模型，集中更新參數避免數據直接共享",
+            "僅在本地設備進行模型推論，無法進行模型更新",
+            "將用戶數據匿名化後再集中訓練模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料隱私與安全",
+        "subtopic": "聯邦學習",
+        "concept": "資料隱私保護",
+        "explanation": "聯邦學習允許多個終端設備本地學習並共享模型參數，而不傳輸原始數據，可有效保護用戶隱私和數據安全。",
+        "difficulty": "高級",
+        "number": 446,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在人機協作的 AI 系統中，『Human on loop』機制指的是？",
+        "options": [
+            "人工只在訓練階段介入，推論階段無需介入",
+            "完全由AI自動決策，無需人工介入",
+            "人工參與監督並調整AI模型決策過程",
+            "人工負責數據標註，但不參與決策調整"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "人機協作",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指人類工作者在模型推理和決策過程中持續監控及修正，確保系統可靠與符合倫理規範。",
+        "difficulty": "中級",
+        "number": 447,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在生成式 AI 提示工程（prompt engineering）中，下列哪一種做法能有效提升模型回答的準確性？",
+        "options": [
+            "故意使用不完整或模糊提示以測試模型魯棒性",
+            "只使用關鍵字提示，省略詳細敘述以提速",
+            "多次重複同一句話以強化模型記憶",
+            "撰寫具體且包含上下文的清晰提示語句"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "Prompt Engineering",
+        "explanation": "撰寫具體且有上下文的提示，有助於生成式AI準確理解需求並產生高質量回應。",
+        "difficulty": "中級",
+        "number": 448,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在機器學習中，如何解決模型過擬合問題的技術主要包括以下哪一種？",
+        "options": [
+            "增加模型複雜度以提升表現",
+            "全部使用無監督學習以降低偏差",
+            "使用正則化技術如L1或L2約束模型權重",
+            "減少數據量以避免模型過度學習"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "模型優化",
+        "concept": "正規化 L1、L2",
+        "explanation": "正則化技術透過對模型權重施加約束，防止權重過大導致模型過擬合，提升泛化能力。",
+        "difficulty": "高級",
+        "number": 449,
+        "date": "2026-05-20"
+    },
+    {
+        "question": "在資料科學與AI專案中，RAG（Retrieval-Augmented Generation）技術的主要目的是？",
+        "options": [
+            "基於已標註數據訓練生成式模型",
+            "以監督學習為主導的分類技術",
+            "只使用生成模型創造新內容，無需外部資料",
+            "結合檢索系統和生成模型提升資訊回應準確度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成技術整合",
+        "concept": "RAG",
+        "explanation": "RAG技術是利用檢索引擎先找到相關資訊，再由生成模型基於這些內容生成人類可理解的答覆，提高回應的準確性與可信度。",
+        "difficulty": "高級",
+        "number": 450,
+        "date": "2026-05-20"
     }
 ]

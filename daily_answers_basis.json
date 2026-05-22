@@ -7658,5 +7658,175 @@
         "difficulty": "高級",
         "number": 450,
         "date": "2026-05-20"
+    },
+    {
+        "question": "在人工智慧（AI）的資料處理與分析流程中，下列何者為資料清洗（Data Cleaning）的主要目標？",
+        "options": [
+            "壓縮資料大小以便儲存",
+            "統一資料格式並填補缺失值",
+            "刪除所有異常值以避免誤差",
+            "將資料轉換成正規分布"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗的主要目標是統一格式、修正資料錯誤並填補缺失值，提高資料質量，促使後續分析準確。",
+        "number": 451,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "哪一種機器學習方法最適合用於有明確標籤的資料來進行預測模型訓練？",
+        "options": [
+            "監督學習（Supervised Learning）",
+            "強化學習（Reinforcement Learning）",
+            "半監督學習（Semi-supervised Learning）",
+            "非監督學習（Unsupervised Learning）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習",
+        "explanation": "監督學習利用有標籤資料來訓練模型，目標是學習輸入與標籤的關係以做預測或分類。",
+        "number": 452,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "下列哪一項是生成式AI（Generative AI）相較鑑別式AI（Discriminative AI）最主要的特徵？",
+        "options": [
+            "只用於判斷資料之間的相關性",
+            "從輸入資料生成新的相似資料樣本",
+            "優先使用決策樹及隨機森林模型",
+            "直接估計條件機率P(y|x)以分類資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成式 AI 特徵",
+        "explanation": "生成式AI主動生成新資料（如文字、圖像），而鑑別式AI則專注判斷資料所屬類別或標籤。",
+        "number": 453,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "在AI治理概念中，『Human on loop』指的是什麼意思？",
+        "options": [
+            "人工完全介入AI決策過程，取代模型",
+            "人工參與資料蒐集但不干涉模型運作",
+            "只在模型訓練階段加入人工標註資料",
+            "人工監督模型運作，必要時採取調整或修正"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指在AI模型運作中持續有人工監督，確保決策過程符合倫理與準確性需求。",
+        "number": 454,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "在資料隱私與安全方面，哪種技術能在不揭露個資的前提下，讓多方協作進行聯邦學習？",
+        "options": [
+            "資料加密（Encryption）",
+            "資料去識別化（De-identification）",
+            "聯邦學習（Federated Learning）",
+            "資料擴增（Data Augmentation）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許多方在自身裝置上本地訓練模型，並共享模型參數，無需交換原始個資。",
+        "number": 455,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "機器學習中正規化（Regularization）技術的主要作用是？",
+        "options": [
+            "控制模型複雜度以防止過度擬合",
+            "提高模型在訓練資料上的準確度",
+            "增加模型的訓練速度",
+            "人工標註更多資料以提升模型性能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "正規化",
+        "explanation": "正規化通過限制模型參數大小減少過度擬合，提升模型泛化能力。",
+        "number": 456,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "在資料分析中，One-Hot Encoding主要是用來處理哪一類型的資料？",
+        "options": [
+            "時間序列資料",
+            "連續數值型資料",
+            "類別型非序列資料",
+            "文本資料的詞向量表示"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料編碼",
+        "explanation": "One-Hot Encoding將類別型資料轉換成二進制向量，方便用於機器學習模型。",
+        "number": 457,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "以下哪項屬於人工智慧中強化學習（Reinforcement Learning）的方法？",
+        "options": [
+            "支持向量機（SVM）",
+            "主成分分析（PCA）",
+            "Q-Learning",
+            "隨機森林（Random Forest）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "強化學習",
+        "explanation": "Q-Learning是強化學習中透過環境回饋評估動作價值以達成最佳策略的方法之一。",
+        "number": 458,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的整合應用中，RAG（檢索增強生成技術）最主要的功能是什麼？",
+        "options": [
+            "協助生成模型更好地檢索與理解外部知識",
+            "利用生成模型自動標註監督式訓練資料",
+            "提高生成模型的語言流暢度，降低語法錯誤",
+            "優化鑑別式模型的分類速度和準確度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "RAG",
+        "explanation": "RAG結合檢索和生成，能在生成回答時有效調用外部資料，提升知識準確度。",
+        "number": 459,
+        "date": "2026-05-22"
+    },
+    {
+        "question": "在AI專案導入與規劃中，下列何者最適合用來評估模型的泛化能力？",
+        "options": [
+            "訓練資料的準確率",
+            "資料清洗後的資料量",
+            "訓練的損失函數值",
+            "測試資料的準確率"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "模型評估",
+        "explanation": "模型在測試資料上的準確率反映其泛化能力，能較客觀衡量模型在未見資料上的表現。",
+        "number": 460,
+        "date": "2026-05-22"
     }
 ]

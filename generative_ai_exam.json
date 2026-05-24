@@ -1,172 +1,172 @@
 [
     {
-        "question": "如果你是台灣一家製造業工廠主管，想利用2025年最新的AI工具提升生產線的品質檢測，以下哪一種AI工具最適合應用？",
+        "question": "如果您是一位製造工廠主管，想透過生成式AI提升生產效率，下列何者為最適合採用的AI應用策略？",
         "options": [
-            "使用Midjourney生成產品設計圖",
-            "部署基於Computer Vision的質量檢測系統",
-            "利用ChatGPT輔助決策會議記錄",
-            "使用Grammarly檢查產品說明文檔語法"
+            "利用純聊天機器人回應客戶詢問以提升客服效率",
+            "導入低程式碼產生器以快速設計內部軟體介面",
+            "部署 agentic AI，整合多個工廠自動化系統進行任務協調與優化",
+            "擴大使用生成式AI繪圖工具創造行銷素材"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "電腦視覺",
-        "concept": "生產線自動檢測",
-        "explanation": "質量檢測通常利用電腦視覺技術來進行影像分析和缺陷發現，Midjourney是圖像生成工具，Grammarly針對文字，ChatGPT則偏向文本生成和對話。",
+        "subtopic": "AI在產業應用",
+        "concept": "agentic AI應用",
+        "explanation": "agentic AI指能夠自主計畫並執行多步驟任務，有助於工廠流程整合與最佳化，遠超過單純回應的聊天AI或內容生產工具。",
         "number": 1,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     },
     {
-        "question": "作為一位大學英文老師，要利用生成式AI協助同學製作英文讀書計畫，下列哪一種AI工具或方法最合適？",
+        "question": "2026年最新AI趨勢指向，生成式AI如何從單純內容產生轉向更具價值的業務模式？",
         "options": [
-            "以ElevenLabs生成人聲朗讀教材",
-            "使用Google Gemini整合文件並生成個性化讀書指引",
-            "用Zapier自動化批改英文作文",
-            "用Runway製作口語演講影片"
+            "限縮應用於文本生成以降低部署成本",
+            "專注提升生成內容的藝術性與豐富度",
+            "僅提高模型規模及訓練資料量以提升精準度",
+            "透過agentic AI整合多工具與工作流程完成複雜任務"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "自然語言處理",
-        "concept": "個性化學習計畫",
-        "explanation": "Google Gemini擅長文檔整合與生成，可根據學生需求製作學習路徑，而Runway和ElevenLabs專注於媒體生成，Zapier主要自動化流程。",
+        "subtopic": "AI工具趨勢",
+        "concept": "agentic AI與工作流程整合",
+        "explanation": "業界趨勢是從單純生成內容轉為agentic AI，實現多系統間協同與多步驟指令執行，提升商業應用價值。",
         "number": 2,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     },
     {
-        "question": "公司打算導入生成式AI來優化客戶服務，關於生成式AI規劃，下列哪一項不屬於考量範圍？",
+        "question": "若您是台灣的一家中小企業主，想利用AI工具進行多語言客服應用，依2025~2026年趨勢，應優先考慮什麼？",
         "options": [
-            "系統的準確率與風險管理",
-            "員工午餐菜單的設計優化",
-            "數據的準備與質量評估",
-            "客戶服務問題的清晰定義"
+            "投入大量訓練數據進行模型開發以確保準確率",
+            "使用低程式碼平台快速整合多語言生成式客服AI",
+            "租用大型全球雲端平台並自行整合所有服務",
+            "自行開發深度學習模型以強化本地語言理解能力"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "AI導入規劃",
-        "concept": "AI導入評估",
-        "explanation": "員工午餐菜單設計與生成式AI客戶服務規劃無關，其他選項均為導入AI時必須考量的核心面向。",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多語言AI工具",
+        "concept": "Low Code平台應用",
+        "explanation": "中小企業常缺乏深度研發資源，低程式碼平台可快速整合多語言AI，降低技術門檻，加速部署。",
         "number": 3,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     },
     {
-        "question": "若你是一名研究所人工智慧工程師計劃使用雲端服務來訓練大型生成式模型，2025年下列哪一種AI硬體發展趨勢最應重視？",
+        "question": "如果您是內容創作者，要善用2025年底最新生成式AI工具提升影片剪輯效率，下列哪種策略較有效？",
         "options": [
-            "提升有線網路的頻寬傳輸速度",
-            "優化傳統硬盤讀寫速度",
-            "強化GPU的AI推論效能與功耗優化",
-            "增強桌面電腦的CPU核心數量"
+            "僅使用傳統影片剪輯軟體，不導入AI輔助",
+            "使用聊天機器人完成腳本撰寫，手動剪輯影片",
+            "派遣助手手動剪輯將AI影片生成的素材拼接",
+            "利用生成式AI創作輔助，結合多模態模型進行多階段影片生成及編輯"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "AI硬體發展",
-        "concept": "AI加速晶片與推論優化",
-        "explanation": "2025年AI硬體發展重點是在GPU及專用AI晶片的推論效能與功耗平衡，這與模型訓練和部署效能直接相關。",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態生成式AI",
+        "concept": "多模態AI與影片編輯",
+        "explanation": "最新生成式AI可整合文字、影像、音頻多模態數據，提升影片多階段製作與編輯的自動化與效率。",
         "number": 4,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     },
     {
-        "question": "作為自媒體工作者，想要快速生成有吸引力的短影片內容，以下哪種生成式AI工具最適合利用？",
+        "question": "以下何者最能反映2026年台灣AI產業在全球供應鏈上的關鍵優勢？",
         "options": [
-            "Synthesia視頻自動生成",
-            "Midjourney圖像生成",
-            "ElevenLabs語音合成",
-            "Grammarly文法校正"
+            "擁有強大的雲端AI服務平台與應用軟體開發商",
+            "專精於AI聊天機器人的語言模型訓練",
+            "以生成式AI內容創作工具著稱國際市場",
+            "在半導體製造與高效能運算硬體供應鏈中具領先地位"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "媒體生成",
-        "concept": "自動影片創作",
-        "explanation": "Synthesia專注生成自動化視頻，適合短影片製作；Midjourney生成靜態圖像，ElevenLabs是語音，Grammarly為文本校正工具。",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "台灣AI產業發展",
+        "concept": "供應鏈優勢",
+        "explanation": "台灣在全球AI產業鏈中，以半導體與高效能運算硬體供應著稱，是多家AI運算平台的主要硬體供應基地。",
         "number": 5,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     },
     {
-        "question": "iPAS AI應用規劃師考試中，涉及生成式AI評估階段，下列哪一項是評估生成模型準確性與安全性的主要指標？",
+        "question": "作為iPAS AI應用規劃師，規劃一個包含多步驟指令的企業用AI專案，下列何種AI最合適？",
         "options": [
-            "輸出結果的真實性與是否有幻覺現象",
-            "模型執行速度與系統記憶體使用量",
-            "模型訓練所需的資料量與批次大小",
-            "AI工具的市場佔有率與用戶數"
+            "鑑別式AI",
+            "純聊天機器人",
+            "agentic AI",
+            "生成式AI"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI導入評估規劃",
-        "subtopic": "模型評估",
-        "concept": "模型準確性與安全",
-        "explanation": "生成式AI重要評估指標是對輸出內容的真實性和幻覺(hallucination)的控制，速度與資料量雖重要但不屬主要安全指標。",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI模型分類",
+        "concept": "agentic AI定義",
+        "explanation": "agentic AI不僅生成內容，更能自動規劃並執行多步任務，非常適合企業多階段流程自動化需求。",
         "number": 6,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     },
     {
-        "question": "以下哪個選項最正確描述了RAG（Retrieval-Augmented Generation）技術在2025年生成式AI應用中的角色？",
+        "question": "如果您是一位高中英文老師，要利用AI幫助學生製作英文報告，下列何種操作最符合生成式AI的提示詞設計原則？",
         "options": [
-            "透過大量資料訓練生成模型核心參數",
-            "藉由直接調整模型權重提高生成靈活度",
-            "利用外部知識庫輔助生成更具事實依據的答案",
-            "使用自動化流程簡化提示詞編寫"
+            "只要求AI生成文章標題，報告內容由學生自填",
+            "輸入大綱並要求AI細膩擴寫自然流暢文章段落",
+            "讓學生全程使用AI生成報告，不提供指導",
+            "使用鑑別式AI篩選學生的錯字和文章架構"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "提示工程",
-        "concept": "RAG技術",
-        "explanation": "RAG技術是結合檢索系統和生成模型，利用外部文件或知識庫提高內容真實性，比純生成模型更能減少幻覺。",
+        "subtopic": "提示詞工程",
+        "concept": "提示詞設計",
+        "explanation": "有效的生成式AI提示詞應明確包含內容框架，引導AI生成完整且通順的段落，協助學生深化寫作。",
         "number": 7,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     },
     {
-        "question": "身為一位家庭主婦想利用2025年的AI工具規劃暑假全家旅遊，下列哪種AI工具組合最能提升旅遊計劃的效率？",
+        "question": "下列關於2026年AI治理及風險管理的說法，何者為真？",
         "options": [
-            "利用GitHub Copilot協助編寫旅遊相關程式碼",
-            "用Midjourney生成旅遊地點風景照片",
-            "用Zapier自動串接行程資訊與Google Calendar提醒",
-            "採用Grammarly為旅遊日記進行文法修正"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "行程規劃",
-        "concept": "工作流自動化",
-        "explanation": "Zapier能自動串接多種應用，一鍵整合行程和提醒，提升方案安排效率；其他選項雖有用但效用不如自動化流程高。",
-        "number": 8,
-        "date": "2026-05-17"
-    },
-    {
-        "question": "在iPAS AI應用規劃師考試中，下列關於鑑別式AI與生成式AI的描述何者正確？",
-        "options": [
-            "鑑別式AI用於識別與分類，生成式AI用於創造新內容",
-            "兩者皆使用相同模型架構，無明確區分",
-            "鑑別式AI主要用於生成新內容，生成式AI主要用於分類與判斷",
-            "生成式AI無法用於自然語言處理領域"
+            "人類監督和透明度是AI合規的重要核心元素",
+            "AI治理只需注重數據隱私，其他風險不必關注",
+            "AI的法律監管已完全統一，國際間無差異",
+            "生成式AI完全自動，無需任何人類介入"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "鑑別式AI與生成式AI",
-        "concept": "模型基本原理",
-        "explanation": "鑑別式AI負責判斷輸入屬於何種類別，生成式AI則生成文字、圖像等新內容；兩者架構不同且應用領域廣泛。",
-        "number": 9,
-        "date": "2026-05-17"
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理與風險管理",
+        "concept": "人類監督與透明度",
+        "explanation": "AI治理強調多元素，包括人類監督、透明度、責任歸屬與數據隱私，這是合規與信任的基礎。",
+        "number": 8,
+        "date": "2026-05-24"
     },
     {
-        "question": "作為一位主管，想利用生成式AI提升團隊的工作效率，請問以下哪種做法最符合2025年AI應用規劃的最佳實務？",
+        "question": "在iPAS考試中，若被問及生成式AI導入評估，下列何者不屬於評估範圍？",
         "options": [
-            "只關注AI模型的準確率忽略成本與風險",
-            "全面取消所有人工審核改用AI自動決策",
-            "直接導入最新大型模型，不需考慮業務需求",
-            "先明確定義目標，再評估數據及人機互動流程"
+            "AI模型的推論成本與延遲",
+            "AI導入的資料隱私與安全性",
+            "業務流程的AI整合可行性",
+            "AI生成內容的藝術價值評比"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI導入評估規劃",
-        "subtopic": "AI導入規劃",
-        "concept": "業務目標與風險管理",
-        "explanation": "最佳導入規劃須先明確業務問題及目標，評估數據品質與人機協同，兼顧成本與風險；盲目導入或取消人為審核風險高。",
+        "subtopic": "生成式AI評估內容",
+        "concept": "導入評估範圍",
+        "explanation": "生成式AI導入須評估業務流程整合、成本、安全等，藝術價值屬主觀創作面，非導入評估重點。",
+        "number": 9,
+        "date": "2026-05-24"
+    },
+    {
+        "question": "假設您是自媒體經營者，想用AI工具提升內容多樣性與經營效率，下列哪種策略最貼合2026年生成式AI工具的應用趨勢？",
+        "options": [
+            "回避使用生成式AI，僅依賴人工創作",
+            "結合多模態生成式AI，同時產生圖像、文字與短影片素材",
+            "集中在低程式碼平臺開發自有AI模型",
+            "僅使用文字生成工具撰寫稿件，忽略影音與圖片內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態AI",
+        "concept": "多模態生成式AI應用",
+        "explanation": "2026年趨勢將是多模態生成式AI同時處理文字、影像、聲音等多種媒材，提升自媒體內容豐富性與經營效率。",
         "number": 10,
-        "date": "2026-05-17"
+        "date": "2026-05-24"
     }
 ]

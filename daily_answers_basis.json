@@ -7828,5 +7828,175 @@
         "explanation": "模型在測試資料上的準確率反映其泛化能力，能較客觀衡量模型在未見資料上的表現。",
         "number": 460,
         "date": "2026-05-22"
+    },
+    {
+        "question": "在機器學習中，何者最能描述「監督式學習」的核心特徵？",
+        "options": [
+            "運用生成模型合成多樣化資料用於訓練",
+            "模型透過有標籤資料學習，進而預測新資料的標籤",
+            "模型基於回饋獎勵自行探索最佳決策路徑",
+            "模型分析無標籤資料以發現資料內在結構與分群"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "監督式學習",
+        "concept": "監督學習基本原理",
+        "explanation": "監督式學習是透過已標記的資料來訓練模型，使模型能預測新資料的標籤。其他選項分別描述非監督學習、強化學習及生成模型，不符合監督學習定義。",
+        "number": 461,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "在生成式 AI 中，「Prompt」的角色是什麼？",
+        "options": [
+            "生成模型自動學習的隱藏參數集",
+            "用戶提供的輸入指令或提示，引導生成內容",
+            "數據清洗後餵入模型的標準格式資料",
+            "模型用來評估生成內容質量的指標"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI核心技術",
+        "concept": "提示工程",
+        "explanation": "Prompt 是用戶輸入給生成式 AI 的提示語句或指令，目的是引導模型生成需求內容，而非評估指標或隱藏參數。",
+        "number": 462,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "關於資料隱私與安全，下列敘述何者錯誤？",
+        "options": [
+            "資料存取權限管理是防止未授權訪問的方法",
+            "資料保存期間越長，越有利於隱私安全",
+            "資料去識別化可有效保護個人隱私",
+            "加密技術在傳輸過程中確保資料不被竊取"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料安全策略",
+        "explanation": "資料保存期間過長可能增加外洩風險，因此不利於隱私安全，正確做法是依政策限制保存期限。其他選項均為維護資料隱私安全的正確措施。",
+        "number": 463,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "下列何者是鑑別式 AI 模型的典型特徵？",
+        "options": [
+            "結合生成與鑑別技術提高模型效能",
+            "直接建模資料分布以產生新樣本",
+            "利用強化學習不斷優化決策策略",
+            "透過概率模型對資料類別決策進行建模"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "鑑別式 AI 基本原理",
+        "concept": "鑑別式模型原理",
+        "explanation": "鑑別模型專注於直接建模條件概率以判斷資料屬於哪一類，和直接建模資料分布生成新樣本的生成模型明顯不同。強化學習和整合應用則屬其他範疇。",
+        "number": 464,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "建立一個能從結構化資料中快速進行預測的機器學習模型時，下列何者最合適？",
+        "options": [
+            "利用LSTM處理時間序列資料",
+            "使用生成對抗網路（GAN）",
+            "運用強化學習優化策略選擇",
+            "應用隨機森林進行分類預測"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "隨機森林",
+        "explanation": "隨機森林能有效處理結構化資料進行分類或回歸，適合快速建立預測模型。GAN屬生成模型，LSTM適合序列資料，強化學習用於策略優化。",
+        "number": 465,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "資料整理流程中，ETL 代表什麼？",
+        "options": [
+            "資料擷取、轉換與載入流程",
+            "資料驗證、清洗與標註流程",
+            "資料加密、轉譯與儲存流程",
+            "資料提取、訓練與輸出流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL指資料的抽取（Extract）、轉換（Transform）及載入（Load）流程，是資料處理中的關鍵步驟，選項說明正確反映該流程。",
+        "number": 466,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "在機器學習中，L1正則化特別會導致什麼現象？",
+        "options": [
+            "減少模型權重，形成稀疏解",
+            "增強模型複雜度以擬合資料",
+            "提升模型對異常值的敏感度",
+            "引發梯度消失現象影響訓練"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "正規化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會將部分權重推向零，產生稀疏解，有助於特徵選擇和模型簡化。其他選項描述並非L1正則化特性。",
+        "number": 467,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "在AI治理中，監理沙盒的主要目的是？",
+        "options": [
+            "建立全球統一的AI法規與標準",
+            "透過監控AI系統自動修正錯誤",
+            "限制AI模型在特定資料上的使用權限",
+            "讓企業在有限範圍內測試創新AI產品與服務"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "AI監管措施",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒允許企業在受控環境中測試與驗證AI創新，兼顧實驗與風險控管，促進法規與技術的協同發展。",
+        "number": 468,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "下列關於深度學習模型Transformer的敘述，何者最準確？",
+        "options": [
+            "Transformer不適合語言模型的應用",
+            "Transformer主要依賴循環結構處理序列資料",
+            "Transformer僅用於圖像辨識任務",
+            "Transformer採用注意力機制實現高效上下文建模"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "Transformer",
+        "explanation": "Transformer依賴自注意力機制有效捕捉序列中長距離依賴，廣泛應用於語言模型及其他序列任務，非循環結構且非僅用於圖像。",
+        "number": 469,
+        "date": "2026-05-25"
+    },
+    {
+        "question": "在生成式AI與鑑別式AI的整合應用中，下列敘述何者正確？",
+        "options": [
+            "兩種模型均專注於資料分類，無生成能力",
+            "鑑別式模型生成原始數據後，由生成式模型判斷其真偽",
+            "生成式AI僅用於數據分析，無法生成人工內容",
+            "生成式AI用於創建資料，鑑別式AI則用於評估與篩選生成內容"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "生成與鑑別結合",
+        "explanation": "生成式 AI 專注於生成新內容，而鑑別式 AI 用於判斷內容真偽或質量，兩者結合可提升生成結果的可靠性與實用性。",
+        "number": 470,
+        "date": "2026-05-25"
     }
 ]

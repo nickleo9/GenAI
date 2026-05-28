@@ -1,172 +1,172 @@
 [
     {
-        "question": "2026年生成式AI導入評估中，哪項指標最能準確反映企業的實際投資回報？",
+        "question": "關於 No Code 與 Low Code 平台應用，下列哪項描述最正確？",
         "options": [
-            "以使用頻率為主要衡量標準，評估使用者活躍度",
-            "評估時間節省、錯誤率下降與流程效率提升",
-            "根據員工對生成內容趣味性的主觀感受評估",
-            "考核模型大小與運算資源佔用是否達標準"
+            "No Code 完全不需撰寫程式碼，以圖形化介面完成應用建置",
+            "Low Code 完全不包含任何程式碼，可快速部署複雜系統",
+            "Low Code 僅用於建立靜態網頁，無法進行流程自動化",
+            "No Code 與 Low Code 無法串接外部 API，限制使用範圍"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "ROI 衡量",
-        "explanation": "2026年企業導入生成式AI已進入實際運用期，衡量ROI時須以時間節省、錯誤率下降、流程效率提升等具體量化指標為主，避免主觀感受或單一指標判斷。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 與 Low Code 定義",
+        "explanation": "No Code 平台透過拖拉式圖形介面，讓非程式開發者也能建立應用，完全不需撰寫程式碼。而 Low Code 則允許少量程式碼擴充，提高彈性，二者均廣泛用於快速構建應用與自動化流程。",
         "number": 1,
-        "date": "2026-05-26"
+        "date": "2026-05-28"
     },
     {
-        "question": "No Code與Low Code平台在生成式AI導入的主要差異為何？",
+        "question": "生成式 AI Agent 技術的特點中，何者最貼近2026年企業應用趨勢？",
         "options": [
-            "No Code需具備程式能力，Low Code則是純視覺化操作",
-            "No Code僅限製作簡單報表，Low Code用於複雜數據分析",
-            "No Code完全無需程式撰寫，Low Code允許少量程式客製化",
-            "No Code主要用於模型訓練，Low Code適合建立用戶端應用"
+            "能主動設定目標、串接工具並完成多步驟任務",
+            "僅用於生成文字內容，無法結合其他工具",
+            "只回答預設問題，不具任務規劃能力",
+            "主要用於生成靜態圖片，無支援多模態能力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI Agent",
+        "explanation": "2026年生成式 AI 不再只是被動回答問題，而是以 AI Agent 形式主動執行多任務，能規劃、串接多工具，提升自動化和智能化企業流程的實務能力。",
+        "number": 2,
+        "date": "2026-05-28"
+    },
+    {
+        "question": "在生成式 AI 導入評估過程中，下列哪一項不是應優先考慮的面向？",
+        "options": [
+            "資安風險與法規遵循",
+            "技術可行性與多模態需求",
+            "使用者人數的個人喜好調查",
+            "資料可用性與正確性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估指標",
+        "explanation": "生成式 AI 導入評估需要重點考慮資料準備、技術能力、資安合規與流程管理，使用者的個人喜好調查雖有參考價值，但不是優先評估面向。",
+        "number": 3,
+        "date": "2026-05-28"
+    },
+    {
+        "question": "以下哪個項目最能說明生成式 AI 系統中幻覺（Hallucination）風險的本質？",
+        "options": [
+            "系統因硬體故障導致無法生成內容",
+            "用戶未授權使用模型進行訓練",
+            "模型因輸入資料不足而無法回答問題",
+            "輸出結果表面合理但實際內容錯誤"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "幻覺風險",
+        "explanation": "幻覺指的是生成式 AI 模型對輸入資訊理解不完整時，產生看似合理但其實錯誤的內容，這是生成模型常見且難以完全消除的風險。",
+        "number": 4,
+        "date": "2026-05-28"
+    },
+    {
+        "question": "使用生成式 AI 作為企業知識庫建置時，以下哪項措施最能提升檢索結果的準確性？",
+        "options": [
+            "減少資料源，僅採用公開數據",
+            "增加模型參數以提高生成內容多樣性",
+            "定期更新內部文件與規則庫資料",
+            "完全依賴外部大型語言模型生成文本"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "知識庫整合與資料更新",
+        "explanation": "為確保生成式 AI 能提供正確、有用的資訊，維護並定期更新內部文件與知識庫至關重要，這能提升檢索質量與生成內容的相關度。",
+        "number": 5,
+        "date": "2026-05-28"
+    },
+    {
+        "question": "在企業導入生成式 AI 工具時，下列哪項風險最需重視且控制？",
+        "options": [
+            "模型生成內容的品牌一致性問題",
+            "外部 API 授權條款的合規性",
+            "生成模型可能輸出含個資的敏感資訊",
+            "系統操作介面的使用者友好度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資料隱私保護",
+        "explanation": "生成式 AI 使用中最大的資安風險之一，是模型可能在輸出時洩露機密或個資，需透過分級管理與嚴格控管來降低資料外洩風險。",
+        "number": 6,
+        "date": "2026-05-28"
+    },
+    {
+        "question": "No Code / Low Code 平台搭配生成式 AI 工具一大優勢是什麼？",
+        "options": [
+            "保證生成內容100%正確，避免幻覺產生",
+            "僅適合簡單業務，難以進行進階應用開發",
+            "無需技術團隊即可快速設計自動化流程",
+            "完全免除資料治理與資安風險擔憂"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "No Code / Low Code 差異",
-        "explanation": "No Code平台著重視覺化拖拉操作，無需程式編碼，Low Code平台則允許用戶透過少量程式碼進行更複雜的系統與流程客製化。",
-        "number": 2,
-        "date": "2026-05-26"
-    },
-    {
-        "question": "在2026年的生成式AI工具分類中，下列何者最正確描述其對應領域？",
-        "options": [
-            "NotebookLM專注控制硬體，Copilot用於商務簽核，Runway做ERP審計",
-            "NotebookLM用於自動駕駛，Copilot做3D建模，Runway任務資安掃描",
-            "NotebookLM為知識管理，Copilot輔助程式開發，Runway做影片生成",
-            "NotebookLM主攻資料標註，Copilot集中法規合規，Runway負責資料庫維護"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 工具分類",
-        "explanation": "2026年主流工具分類中NotebookLM用於知識管理與問答，Copilot輔助智能程式開發，Runway則常用於影音內容生成，三者領域明確分工。",
-        "number": 3,
-        "date": "2026-05-26"
-    },
-    {
-        "question": "2026年多模態生成式AI的特性與應用，以下哪一說法最符合當前趨勢？",
-        "options": [
-            "多模態模型僅用於將文字轉換成圖片，不支援其他功能",
-            "多模態模型專注藝術創作，不適合企業一般業務應用",
-            "多模態模型只處理文字與靜態影像，不支持影音與表格處理",
-            "多模態模型已成標準，能統一處理文字、影像、音訊、影片等不同資料型態"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "多模態生成式 AI",
-        "explanation": "2026年多模態AI已成為趨勢，能同時處理多種資料型態，包括文字、影像、音訊、影片與表格，廣泛應用於企業與消費者場景。",
-        "number": 4,
-        "date": "2026-05-26"
-    },
-    {
-        "question": "在生成式AI應用中，Context Engineering的核心涵義為何？",
-        "options": [
-            "整合提示詞、工具權限、上下文資料及工作流程的全面設計",
-            "採用固定模板來標準化所有生成任務",
-            "撰寫更長且完整的提示詞以涵蓋所有需求",
-            "專注模型微調而忽略上下文資料配置"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "Context Engineering",
-        "explanation": "Context Engineering強調不僅是提示詞設計，而是結合上下文資料、工具與工作流程的整體協同設計，是2026年生成式AI重要演進方向。",
-        "number": 5,
-        "date": "2026-05-26"
-    },
-    {
-        "question": "企業在導入生成式AI進行法遵審查時，哪一組評估項目最完整且具代表性？",
-        "options": [
-            "社群媒體反響、用戶行銷效果、內容病毒性傳播",
-            "AI回答人性化、生成文本長度、是否支援語音操作",
-            "模型流行度、介面美觀度、免費試用期長短",
-            "業務價值、資料可用性、法遵風險、可稽核性與系統整合性"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入評估重點",
-        "explanation": "生成式AI導入法遵場景，評估需聚焦於業務影響、資料準備、法遵風險控管以及系統整合與審計的可行性。",
-        "number": 6,
-        "date": "2026-05-26"
-    },
-    {
-        "question": "哪項敘述最能準確反映2026年AI Agent與傳統聊天機器人的主要差異？",
-        "options": [
-            "AI Agent能接受目標指令，透過推理與規劃自主完成任務",
-            "AI Agent僅回答問題，無法執行具體任務",
-            "AI Agent與傳統聊天機器人無顯著差異",
-            "AI Agent本質為長篇回答的聊天機器人"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "AI Agent 特性",
-        "explanation": "代理式AI（AI Agent）強調自主執行帶目標導向任務，具推理、規劃與反思能力，超越傳統只回答問題的聊天機器人。",
+        "concept": "No Code / Low Code優勢",
+        "explanation": "No Code / Low Code 平台通過圖形化界面降低使用門檻，使不具程式背景者即可快速搭建自動化與應用，搭配生成式 AI 可加速企業智能化轉型。",
         "number": 7,
-        "date": "2026-05-26"
+        "date": "2026-05-28"
     },
     {
-        "question": "部門級快速導入生成式AI流程時，為何選擇Low Code平台可能較優於完整自訂系統？",
+        "question": "生成式 AI 工具整合企業內部系統時，下列哪項策略最能促進人機協作與治理？",
         "options": [
-            "Low Code適用於全球核心高頻交易系統的 안전",
-            "Low Code適合快速試點與迭代部門自動化及知識助理專案",
-            "Low Code只適合低延遲自動駕駛決策模組",
-            "Low Code專門用於飛行控制等即時高安全系統"
+            "忽略輸出結果的版本及提示詞記錄",
+            "設置角色權限控管與審核流程",
+            "全面自動化決策，減少人工干預",
+            "使用開源模型而不考慮授權風險"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "Low Code 應用場景",
-        "explanation": "Low Code平台尤其適合部門級流程自動化與知識助理快速構建，支持迭代與跨部門協作，高可靠高安全系統仍通常採用嚴謹自訂開發。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "人機協作與治理",
+        "explanation": "導入企業生成式 AI 須建立完善的權限控管與審核機制，確保模型輸出符合企業政策且可追溯，有助於降低錯誤與風險。",
         "number": 8,
-        "date": "2026-05-26"
+        "date": "2026-05-28"
     },
     {
-        "question": "關於2026年RAG 2.0等企業知識庫策略，下列敘述何者為是？",
+        "question": "多模態生成在生成式 AI 中的重要性主要表現為？",
         "options": [
-            "RAG 2.0結合多模態資料、GraphRAG與Agentic RAG增強資料檢索與任務執行",
-            "RAG 2.0僅依賴單純向量搜尋不結合知識圖譜",
-            "RAG 2.0專注於影像生成，不應用於企業知識管理",
-            "RAG 2.0完全取代提示詞工程，不需上下文設計"
+            "專注於單一任務深度優化模型效能",
+            "主要用於資料預處理與清洗工作",
+            "只能生成純文字內容，提升語意準確度",
+            "同時處理文字、圖像、聲音等多種數據類型"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態生成",
+        "explanation": "多模態生成是指系統可以綜合處理文字、影像、音訊等多種不同媒介的資訊，提升系統靈活性與應用廣度，為2026年的生成式 AI 趨勢核心所在。",
+        "number": 9,
+        "date": "2026-05-28"
+    },
+    {
+        "question": "生成式 AI 導入風險管理中，哪種做法最能有效降低偏誤與歧視問題？",
+        "options": [
+            "針對模型訓練資料進行公平性評估與調整",
+            "全自動生成內容，不開放人工干預",
+            "忽略少數族群數據，加強主流族群覆蓋",
+            "採用單一模型來源，避免兼容性問題"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "RAG 2.0 與知識庫",
-        "explanation": "2026 年RAG 2.0策略結合向量檢索、圖譜結構與代理式流程，提升企業知識庫的準確性與任務自動化能力。",
-        "number": 9,
-        "date": "2026-05-26"
-    },
-    {
-        "question": "2026年生成式AI中，何者不是No Code / Low Code平台的常見限制？",
-        "options": [
-            "在處理大型且特定領域數據時可能需額外開發",
-            "在高度複雜系統整合時可能無法完全滿足需求",
-            "適用於跨部門協作與快速原型設計",
-            "缺乏客製化能力限制其應用範圍"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code / Low Code 優勢與限制",
-        "explanation": "No Code / Low Code平台在快速原型與跨部門合作中有明顯優勢，但在複雜系統整合與特殊領域需額外客製化。",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "公平性與偏誤控制",
+        "explanation": "偏誤主要源於訓練資料的不平衡與偏見，定期公平性評估並調整資料及模型，是減少不公平歧視最有效的策略之一。",
         "number": 10,
-        "date": "2026-05-26"
+        "date": "2026-05-28"
     }
 ]

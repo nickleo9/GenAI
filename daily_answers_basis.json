@@ -8338,5 +8338,175 @@
         "explanation": "RAG (Retrieval-Augmented Generation) 是結合檢索與生成模型的方法，以提升文本生成的準確性和相關性。",
         "number": 490,
         "date": "2026-05-29"
+    },
+    {
+        "question": "下列關於鑑別式 AI 與生成式 AI 的敘述，何者正確？",
+        "options": [
+            "鑑別式AI著重於區分資料類別，生成式AI則主要用於模擬資料分布進行內容生成",
+            "鑑別式AI和生成式AI皆不涉及機器學習模型的訓練",
+            "生成式AI只用於資料分類，鑑別式AI則專注生成新內容",
+            "生成式AI專注監督式學習，鑑別式AI採用非監督學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式AI與生成式AI",
+        "concept": "基本原理",
+        "explanation": "鑑別式AI是學習資料的判別邊界，用於分類任務；生成式AI則是學習資料的分布，能生成新資料或內容。",
+        "number": 491,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "在資料整理流程中，下列何者最適合用於處理資料缺失值？",
+        "options": [
+            "忽略缺失值，直接進行分析即可",
+            "一律刪除含缺失值的所有資料列",
+            "採用插補法填補缺失值，如均值或中位數",
+            "將缺失值以最大值替代"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "資料清洗",
+        "explanation": "插補法是處理缺失值的常用方法，可使用均值、中位數等合理值填補，避免因大量刪除資料造成資訊損失。",
+        "number": 492,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "AI治理中，「監理沙盒」的主要目的是？",
+        "options": [
+            "提供實驗環境以測試AI技術與政策，降低實際風險",
+            "要求所有AI模型公開其源碼",
+            "禁止使用任何生成式AI模型",
+            "限制所有人工智慧系統的開發與應用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒允許業者在受控環境下試驗創新AI應用，協助政府制定合適政策，同時降低實施風險。",
+        "number": 493,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "關於機器學習三大類型，下列敘述何者錯誤？",
+        "options": [
+            "非監督學習用於從無標註資料中發現隱含結構",
+            "強化學習通過獎勵信號學習最佳策略",
+            "所有三種學習類型均需大量標註資料",
+            "監督學習依賴有標註的資料進行模型訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "三大類型",
+        "explanation": "強化學習不依賴標註資料，而是通過與環境互動獲得獎勵信號進行學習，其他兩種則需標註資料或無標註資料。",
+        "number": 494,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "在資料分析流程中，哪一種資料型態屬於非結構化資料？",
+        "options": [
+            "以JSON格式儲存的客戶資料",
+            "資料庫中的交易紀錄",
+            "文字文件與影片資料",
+            "電子表格中的銷售數據"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料型態分類",
+        "explanation": "非結構化資料指未經格式化、難以直接進行資料庫查詢的資料，如文字、影音等，其他選項屬於結構化或半結構化資料。",
+        "number": 495,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "何者屬於生成式AI常見模型？",
+        "options": [
+            "決策樹(DT)",
+            "卷積神經網路(CNN)",
+            "支持向量機(SVM)",
+            "生成對抗網路(GAN)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "生成式模型",
+        "explanation": "生成對抗網路(GAN)是一種生成式模型，可以用於生成新資料，其他模型主要用於分類與辨識任務。",
+        "number": 496,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "在資料安全與隱私保護中，下列何者屬於個資保護的常見方法？",
+        "options": [
+            "使用數據匿名化或去識別化技術",
+            "採用非加密的純文字資料儲存",
+            "將所有資料公開共享",
+            "忽略使用者同意即直接使用個資"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "個資保護措施",
+        "explanation": "數據匿名化與去識別化是保障個資安全的關鍵技術，其他選項皆有違反個資保護原則風險。",
+        "number": 497,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "下列何者最能描述「Agentic AI」的特性？",
+        "options": [
+            "只能回應使用者問題，不能自主執行任務",
+            "可以自主規劃、推理並完成任務的智能代理",
+            "完全依賴手動編碼規則執行",
+            "僅用於生成文本內容，無其他功能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "代理式AI",
+        "concept": "Agentic AI",
+        "explanation": "Agentic AI是具備自主決策能力的智能代理，能規劃與執行任務，而非僅回答問題或生成內容。",
+        "number": 498,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "關於資料轉換，何者正確描述「正規化 (Normalization)」？",
+        "options": [
+            "將資料縮放至固定區間如0到1之間",
+            "對資料進行隨機抽樣",
+            "將類別資料轉換為數值型資料",
+            "將資料轉換至均值為0、標準差為1的分布"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "正規化",
+        "explanation": "正規化是將資料縮放至固定範圍(如0到1)以利模型訓練，與標準化(均值為0、標準差為1)不同。",
+        "number": 499,
+        "date": "2026-06-01"
+    },
+    {
+        "question": "何者最準確描述「LIME」在AI模型中的用途？",
+        "options": [
+            "資料預處理的失真修正方法",
+            "一種用於生成文本的自然語言處理模型",
+            "模型的可解釋性技術，用於說明黑箱模型決策",
+            "監控AI系統運行狀況的工具"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "模型可解釋性",
+        "concept": "LIME",
+        "explanation": "LIME是一種局部模型可解釋技術，幫助理解複雜黑箱模型對特定輸入的決策理由。",
+        "number": 500,
+        "date": "2026-06-01"
     }
 ]

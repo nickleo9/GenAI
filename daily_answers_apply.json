@@ -1,172 +1,172 @@
 [
     {
-        "question": "關於 No Code 與 Low Code 平台應用，下列哪項描述最正確？",
+        "question": "Which feature best characterizes No Code platforms in generative AI application development?",
         "options": [
-            "No Code 完全不需撰寫程式碼，以圖形化介面完成應用建置",
-            "Low Code 完全不包含任何程式碼，可快速部署複雜系統",
-            "Low Code 僅用於建立靜態網頁，無法進行流程自動化",
-            "No Code 與 Low Code 無法串接外部 API，限制使用範圍"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code 與 Low Code 定義",
-        "explanation": "No Code 平台透過拖拉式圖形介面，讓非程式開發者也能建立應用，完全不需撰寫程式碼。而 Low Code 則允許少量程式碼擴充，提高彈性，二者均廣泛用於快速構建應用與自動化流程。",
-        "number": 1,
-        "date": "2026-05-28"
-    },
-    {
-        "question": "生成式 AI Agent 技術的特點中，何者最貼近2026年企業應用趨勢？",
-        "options": [
-            "能主動設定目標、串接工具並完成多步驟任務",
-            "僅用於生成文字內容，無法結合其他工具",
-            "只回答預設問題，不具任務規劃能力",
-            "主要用於生成靜態圖片，無支援多模態能力"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "AI Agent",
-        "explanation": "2026年生成式 AI 不再只是被動回答問題，而是以 AI Agent 形式主動執行多任務，能規劃、串接多工具，提升自動化和智能化企業流程的實務能力。",
-        "number": 2,
-        "date": "2026-05-28"
-    },
-    {
-        "question": "在生成式 AI 導入評估過程中，下列哪一項不是應優先考慮的面向？",
-        "options": [
-            "資安風險與法規遵循",
-            "技術可行性與多模態需求",
-            "使用者人數的個人喜好調查",
-            "資料可用性與正確性"
+            "Exclusive to large-scale enterprise core systems",
+            "Requires extensive programming to build applications",
+            "Enables application creation with minimal to no coding",
+            "Restricted solely to database design tasks"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入評估指標",
-        "explanation": "生成式 AI 導入評估需要重點考慮資料準備、技術能力、資安合規與流程管理，使用者的個人喜好調查雖有參考價值，但不是優先評估面向。",
-        "number": 3,
-        "date": "2026-05-28"
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 概念",
+        "explanation": "No Code platforms allow users to create AI applications mostly through visual interfaces without writing code, ideal for fast prototyping by non-developers.",
+        "number": 1,
+        "date": "2026-06-02"
     },
     {
-        "question": "以下哪個項目最能說明生成式 AI 系統中幻覺（Hallucination）風險的本質？",
+        "question": "Which characteristic accurately describes Low Code approaches in generative AI deployment?",
         "options": [
-            "系統因硬體故障導致無法生成內容",
-            "用戶未授權使用模型進行訓練",
-            "模型因輸入資料不足而無法回答問題",
-            "輸出結果表面合理但實際內容錯誤"
+            "Requires hardware engineers for operation",
+            "Completely disallows any customization",
+            "Suitable only for personal entertainment use",
+            "Allows limited coding for enhanced flexibility"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "幻覺風險",
-        "explanation": "幻覺指的是生成式 AI 模型對輸入資訊理解不完整時，產生看似合理但其實錯誤的內容，這是生成模型常見且難以完全消除的風險。",
-        "number": 4,
-        "date": "2026-05-28"
-    },
-    {
-        "question": "使用生成式 AI 作為企業知識庫建置時，以下哪項措施最能提升檢索結果的準確性？",
-        "options": [
-            "減少資料源，僅採用公開數據",
-            "增加模型參數以提高生成內容多樣性",
-            "定期更新內部文件與規則庫資料",
-            "完全依賴外部大型語言模型生成文本"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "知識庫整合與資料更新",
-        "explanation": "為確保生成式 AI 能提供正確、有用的資訊，維護並定期更新內部文件與知識庫至關重要，這能提升檢索質量與生成內容的相關度。",
-        "number": 5,
-        "date": "2026-05-28"
-    },
-    {
-        "question": "在企業導入生成式 AI 工具時，下列哪項風險最需重視且控制？",
-        "options": [
-            "模型生成內容的品牌一致性問題",
-            "外部 API 授權條款的合規性",
-            "生成模型可能輸出含個資的敏感資訊",
-            "系統操作介面的使用者友好度"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "資料隱私保護",
-        "explanation": "生成式 AI 使用中最大的資安風險之一，是模型可能在輸出時洩露機密或個資，需透過分級管理與嚴格控管來降低資料外洩風險。",
-        "number": 6,
-        "date": "2026-05-28"
-    },
-    {
-        "question": "No Code / Low Code 平台搭配生成式 AI 工具一大優勢是什麼？",
-        "options": [
-            "保證生成內容100%正確，避免幻覺產生",
-            "僅適合簡單業務，難以進行進階應用開發",
-            "無需技術團隊即可快速設計自動化流程",
-            "完全免除資料治理與資安風險擔憂"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "No Code / Low Code優勢",
-        "explanation": "No Code / Low Code 平台通過圖形化界面降低使用門檻，使不具程式背景者即可快速搭建自動化與應用，搭配生成式 AI 可加速企業智能化轉型。",
-        "number": 7,
-        "date": "2026-05-28"
+        "concept": "Low Code 概念",
+        "explanation": "Low Code platforms enable some programming to tailor AI applications, balancing quick development with enterprise-grade customization.",
+        "number": 2,
+        "date": "2026-06-02"
     },
     {
-        "question": "生成式 AI 工具整合企業內部系統時，下列哪項策略最能促進人機協作與治理？",
+        "question": "What is one of the most common use cases for generative AI as of 2025?",
         "options": [
-            "忽略輸出結果的版本及提示詞記錄",
-            "設置角色權限控管與審核流程",
-            "全面自動化決策，減少人工干預",
-            "使用開源模型而不考慮授權風險"
+            "Controlling robotic arms in factories",
+            "Information gathering, querying, and summarization",
+            "Satellite orbit control",
+            "Replacing all accounting functions"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "人機協作與治理",
-        "explanation": "導入企業生成式 AI 須建立完善的權限控管與審核機制，確保模型輸出符合企業政策且可追溯，有助於降低錯誤與風險。",
-        "number": 8,
-        "date": "2026-05-28"
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 常見用途",
+        "explanation": "Knowledge work such as information collection, search, and content summarization remains the primary application of generative AI in 2025.",
+        "number": 3,
+        "date": "2026-06-02"
     },
     {
-        "question": "多模態生成在生成式 AI 中的重要性主要表現為？",
+        "question": "Which capability is an example of multimodal AI technology in generative AI?",
         "options": [
-            "專注於單一任務深度優化模型效能",
-            "主要用於資料預處理與清洗工作",
-            "只能生成純文字內容，提升語意準確度",
-            "同時處理文字、圖像、聲音等多種數據類型"
+            "Only processes tabular data",
+            "Handles text, images, audio, and video simultaneously",
+            "Only aggregates numerical data",
+            "Executes fixed rule-based tasks exclusively"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "多模態生成",
-        "explanation": "多模態生成是指系統可以綜合處理文字、影像、音訊等多種不同媒介的資訊，提升系統靈活性與應用廣度，為2026年的生成式 AI 趨勢核心所在。",
-        "number": 9,
-        "date": "2026-05-28"
+        "concept": "多模態AI技術",
+        "explanation": "Multimodal AI processes diverse types of data such as text, images, audio, and video at once to enable richer and more flexible applications.",
+        "number": 4,
+        "date": "2026-06-02"
     },
     {
-        "question": "生成式 AI 導入風險管理中，哪種做法最能有效降低偏誤與歧視問題？",
+        "question": "What is typically the most important first step when adopting generative AI in enterprises?",
         "options": [
-            "針對模型訓練資料進行公平性評估與調整",
-            "全自動生成內容，不開放人工干預",
-            "忽略少數族群數據，加強主流族群覆蓋",
-            "採用單一模型來源，避免兼容性問題"
+            "Identifying business pain points and measurable scenarios",
+            "Outsourcing all workflows immediately",
+            "Completely stopping all manual work",
+            "Purchasing all available AI tools upfront"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "公平性與偏誤控制",
-        "explanation": "偏誤主要源於訓練資料的不平衡與偏見，定期公平性評估並調整資料及模型，是減少不公平歧視最有效的策略之一。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "業務價值評估",
+        "explanation": "Before AI adoption, enterprises need to pinpoint relevant business problems and define quantifiable use cases to maximize AI impact.",
+        "number": 5,
+        "date": "2026-06-02"
+    },
+    {
+        "question": "Which metric best evaluates the effectiveness of generative AI implementation?",
+        "options": [
+            "Presence of animation effects in UI",
+            "Support for all possible languages",
+            "User preference for interface color",
+            "Time saved or improvement in output quality"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "成效衡量",
+        "explanation": "Effectiveness is measured by tangible business outcomes like increased efficiency and quality, rather than superficial features.",
+        "number": 6,
+        "date": "2026-06-02"
+    },
+    {
+        "question": "Which of the following risks is relevant to deploying generative AI?",
+        "options": [
+            "Data leakage and hallucination outputs",
+            "Excessive monitor screen size",
+            "Printing supply shortages",
+            "Overly long network cables"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "Key risks include data privacy breaches, misinformation through hallucinations, and biases inherent in generative AI models.",
+        "number": 7,
+        "date": "2026-06-02"
+    },
+    {
+        "question": "For quickly prototyping internal document summaries and FAQ chatbots, which platform type is more appropriate?",
+        "options": [
+            "Completely process-free approaches",
+            "Manual paper-based processes",
+            "No Code or Low Code platforms",
+            "Only large ERP systems"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "平台選擇",
+        "explanation": "No Code and Low Code platforms enable fast prototyping of AI-powered document and chatbot solutions without heavy software development.",
+        "number": 8,
+        "date": "2026-06-02"
+    },
+    {
+        "question": "Which trend best represents generative AI adoption in 2025?",
+        "options": [
+            "Shifting from PoC to practical deployment and governance",
+            "Remaining solely at proof-of-concept stage without deployment",
+            "Completely ignoring data governance considerations",
+            "Applicable only in research organizations, not businesses"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入趨勢",
+        "explanation": "In 2025, generative AI adoption focuses on moving beyond experimentation to real-world system implementation with strong governance.",
+        "number": 9,
+        "date": "2026-06-02"
+    },
+    {
+        "question": "Which phrase best matches the 'pilot then scale' strategy in generative AI rollout?",
+        "options": [
+            "Replace all systems all at once",
+            "Launch immediately without any planning",
+            "Phased rollout with initial small-scale testing before expansion",
+            "Focus only on training models ignoring business impact"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入策略",
+        "explanation": "A phased approach prioritizes initial limited deployment to validate effectiveness before broad enterprise-scale adoption.",
         "number": 10,
-        "date": "2026-05-28"
+        "date": "2026-06-02"
     }
 ]

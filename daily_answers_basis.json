@@ -8508,5 +8508,175 @@
         "explanation": "LIME是一種局部模型可解釋技術，幫助理解複雜黑箱模型對特定輸入的決策理由。",
         "number": 500,
         "date": "2026-06-01"
+    },
+    {
+        "question": "以下哪一項最能正確描述鑑別式 AI 與生成式 AI 的主要差異？",
+        "options": [
+            "生成式 AI 主要以監督式學習為主，鑑別式 AI 以非監督式學習為主",
+            "生成式 AI 只能處理結構化資料，鑑別式 AI 處理非結構化資料",
+            "鑑別式 AI 判斷輸入資料的類別，生成式 AI 用於創造新的資料樣本",
+            "鑑別式 AI 用於生成新內容，生成式 AI 用於分類和預測"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式 AI 與生成式 AI",
+        "concept": "鑑別與生成基本原理",
+        "explanation": "鑑別式 AI 主要用於判斷輸入資料的類別或標籤，生成式 AI則致力於生成新的資料樣本，如文本、圖像等，兩者功能定位不同。",
+        "number": 501,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "在資料整理與分析流程中，下列哪一項步驟通常是處理資料隱私與安全的最關鍵階段？",
+        "options": [
+            "資料分析階段建立模型",
+            "資料視覺化階段展示結果",
+            "資料清洗階段去除異常值",
+            "資料蒐集階段加密數據"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料加密與隱私保護",
+        "explanation": "資料蒐集階段加密能確保資料在收集時的機密性，防止未經授權的存取，是保護資料隱私的首要措施。",
+        "number": 502,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "何謂監督式學習？",
+        "options": [
+            "模型在無標籤資料上自動尋找模式",
+            "模型透過獎勵機制學習最佳策略",
+            "模型利用標記過的資料來學習對應輸入與輸出",
+            "模型基於過去資料自行生成未來可能性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習",
+        "explanation": "監督式學習指的是模型依據事先標記好的資料 (輸入與輸出對應) 來進行訓練，學習如何從輸入預測正確結果。",
+        "number": 503,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "以下哪一項敘述最正確描述 AI 治理的核心內容？",
+        "options": [
+            "涵蓋 AI 技術倫理、法規遵循及風險管理的全方位規範",
+            "只是限制 AI 系統的使用範圍與時段",
+            "針對AI模型的硬體資源運用調整",
+            "僅針對 AI 技術優化效能的管理流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "AI倫理與法規",
+        "explanation": "AI治理涵蓋倫理、法規遵循與風險管理，確保AI技術的安全、透明和公平性，全方位規範和管理AI應用。",
+        "number": 504,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "在使用機器學習模型時，正規化技術如 L1 與 L2 的主要目的是？",
+        "options": [
+            "增加模型的運算速度",
+            "優化資料視覺化效果",
+            "提升資料蒐集效率",
+            "防止模型過擬合並控制複雜度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "正規化技術",
+        "explanation": "L1與L2正規化旨在透過對模型權重的懲罰，減少過擬合、控制模型複雜度，增強模型的泛化能力。",
+        "number": 505,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "ETL 在資料處理流程中指的是哪一組流程？",
+        "options": [
+            "資料轉換、模型訓練、結果評估",
+            "特徵選取、資料清洗、特徵工程",
+            "資料視覺化、分析、報告生成",
+            "資料抽取、轉換與載入"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL代表Extract（抽取）、Transform（轉換）、Load（載入），是資料整合與整理的基本流程。",
+        "number": 506,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "關於聯邦學習，下列何者為非？",
+        "options": [
+            "透過多方協同優化模型參數更新",
+            "減少敏感數據跨域傳輸增強資料安全",
+            "分散資料於不同端點避免集中資料隱私疑慮",
+            "資料集中於同一伺服器進行統一訓練"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習強調多端點協作訓練模型，資料不集中於單一伺服器，保护隱私和數據安全。",
+        "number": 507,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "下列哪個機器學習模型最適合用於處理時間序列資料？",
+        "options": [
+            "隨機森林（Random Forest）",
+            "循環神經網路（RNN）",
+            "支持向量機（SVM）",
+            "K最近鄰（K-NN）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "時間序列模型",
+        "explanation": "RNN 特別設計用於處理序列資料，可以捕捉時間上的依賴關係，適合時間序列分析。",
+        "number": 508,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "何者最適合描述生成式 AI 在實務應用中的一項主要挑戰？",
+        "options": [
+            "模型訓練過程中缺乏足夠標記資料",
+            "生成內容可能與上下文語境不一致造成誤導",
+            "無法用於非結構化資料的處理",
+            "生成式 AI 無法與鑑別式 AI 一起使用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 基本原理",
+        "concept": "內容一致性挑戰",
+        "explanation": "生成式 AI 的一大挑戰是生成內容可能與上下文不匹配，導致錯誤或誤導性資訊，需要技術手段保持語境一致性。",
+        "number": 509,
+        "date": "2026-06-03"
+    },
+    {
+        "question": "在資料分析中，何謂偏差變異權衡（Bias-Variance Tradeoff）？",
+        "options": [
+            "追求資料偏向特定群體以提高準確性",
+            "減少資料噪聲以提升可解釋性",
+            "在模型複雜度與預測誤差之間尋找平衡",
+            "只專注降低模型的變異性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差變異權衡指的是在模型過於簡單導致偏差大，或過於複雜導致變異大之間需取得最佳平衡。",
+        "number": 510,
+        "date": "2026-06-03"
     }
 ]

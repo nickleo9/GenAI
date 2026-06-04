@@ -1,172 +1,172 @@
 [
     {
-        "question": "Which feature best characterizes No Code platforms in generative AI application development?",
+        "question": "連鎖餐飲集團希望門市主管無需程式設計便能建立「每日缺貨回報與補貨提醒」流程，最適合的方案是？",
         "options": [
-            "Exclusive to large-scale enterprise core systems",
-            "Requires extensive programming to build applications",
-            "Enables application creation with minimal to no coding",
-            "Restricted solely to database design tasks"
+            "純手工程式開發避免視覺化平台可能的治理風險",
+            "訓練專屬基礎模型再讓門市主管微調參數",
+            "直接用大型語言模型完全取代流程系統",
+            "採用No Code平台搭配標準化工作流程後由IT補充整合"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code 概念",
-        "explanation": "No Code platforms allow users to create AI applications mostly through visual interfaces without writing code, ideal for fast prototyping by non-developers.",
+        "subtopic": "No Code / Low Code概念",
+        "concept": "No Code 應用",
+        "explanation": "No Code平台使非程式背景人員能快速建立應用流程，結合IT客製化符合實務需求。",
         "number": 1,
-        "date": "2026-06-02"
+        "date": "2026-06-04"
     },
     {
-        "question": "Which characteristic accurately describes Low Code approaches in generative AI deployment?",
+        "question": "行銷部門使用生成式AI產出符合「年輕族群、法規合規、品牌語氣」條件的文案，適合的提示詞設計是？",
         "options": [
-            "Requires hardware engineers for operation",
-            "Completely disallows any customization",
-            "Suitable only for personal entertainment use",
-            "Allows limited coding for enhanced flexibility"
+            "請依品牌指南目標客群禁用詞及格式生成三版文案",
+            "幫我寫一篇文案，越吸引人越好格式不限",
+            "請自由發揮多寫幾版我再挑選",
+            "先假設所有產品通過審核生成最有創意版本"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "Low Code 概念",
-        "explanation": "Low Code platforms enable some programming to tailor AI applications, balancing quick development with enterprise-grade customization.",
+        "subtopic": "提示詞設計",
+        "concept": "提示詞工程",
+        "explanation": "明確指定規範與格式可提升生成內容一致性及合規性。",
         "number": 2,
-        "date": "2026-06-02"
+        "date": "2026-06-04"
     },
     {
-        "question": "What is one of the most common use cases for generative AI as of 2025?",
+        "question": "醫療院所導入生成式AI做病歷摘要前，最應優先確認的事項是？",
         "options": [
-            "Controlling robotic arms in factories",
-            "Information gathering, querying, and summarization",
-            "Satellite orbit control",
-            "Replacing all accounting functions"
+            "模型回應是否足夠流暢",
+            "病患資料隱私法規遵循與風險影響",
+            "系統介面是否流行顏色設計",
+            "醫師是否喜歡AI語氣風格"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 常見用途",
-        "explanation": "Knowledge work such as information collection, search, and content summarization remains the primary application of generative AI in 2025.",
+        "subtopic": "導入評估",
+        "concept": "風險管理",
+        "explanation": "導入前必須確保符合資料隱私與法規要求，避免法律風險。",
         "number": 3,
-        "date": "2026-06-02"
+        "date": "2026-06-04"
     },
     {
-        "question": "Which capability is an example of multimodal AI technology in generative AI?",
+        "question": "製造業用AI預測零件交期風險與生成溝通信件，適合的規劃方案是？",
         "options": [
-            "Only processes tabular data",
-            "Handles text, images, audio, and video simultaneously",
-            "Only aggregates numerical data",
-            "Executes fixed rule-based tasks exclusively"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "多模態AI技術",
-        "explanation": "Multimodal AI processes diverse types of data such as text, images, audio, and video at once to enable richer and more flexible applications.",
-        "number": 4,
-        "date": "2026-06-02"
-    },
-    {
-        "question": "What is typically the most important first step when adopting generative AI in enterprises?",
-        "options": [
-            "Identifying business pain points and measurable scenarios",
-            "Outsourcing all workflows immediately",
-            "Completely stopping all manual work",
-            "Purchasing all available AI tools upfront"
+            "採用Hybrid AI預測風險加生成式AI解釋文案",
+            "先建立影像生成工具等人工判讀",
+            "只用聊天機器人回覆不做任何分析",
+            "只用生成式AI做所有預測省去傳統模型"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "業務價值評估",
-        "explanation": "Before AI adoption, enterprises need to pinpoint relevant business problems and define quantifiable use cases to maximize AI impact.",
-        "number": 5,
-        "date": "2026-06-02"
+        "subtopic": "應用領域與工具",
+        "concept": "Hybrid AI整合應用",
+        "explanation": "Hybrid AI結合預測模型與生成式AI，提高準確性與說明性。",
+        "number": 4,
+        "date": "2026-06-04"
     },
     {
-        "question": "Which metric best evaluates the effectiveness of generative AI implementation?",
+        "question": "客服中心擔心生成式AI亂編資訊引發客訴，最適合的風險控管做法是？",
         "options": [
-            "Presence of animation effects in UI",
-            "Support for all possible languages",
-            "User preference for interface color",
-            "Time saved or improvement in output quality"
+            "讓模型完全自由生成不加限制",
+            "提高回覆速度模型盡量先答為主",
+            "加入人工覆核高風險問題升級機制",
+            "只要模型講得像真人就免檢查"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "人工覆核機制",
+        "explanation": "人工覆核與升級安排可防止錯誤資訊傳播。",
+        "number": 5,
+        "date": "2026-06-04"
+    },
+    {
+        "question": "補習班想用AI同時產出講義摘要、語音講解與課程短影片，符合哪種生成式AI趨勢？",
+        "options": [
+            "單模態封閉式自動化",
+            "無需任何規劃直接上線",
+            "文字輸出的傳統自然語言處理",
+            "多模態整合與協同生成"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "成效衡量",
-        "explanation": "Effectiveness is measured by tangible business outcomes like increased efficiency and quality, rather than superficial features.",
+        "subtopic": "應用領域與工具",
+        "concept": "多模態生成",
+        "explanation": "多模態技術支援多形式內容協同生成，提升學習體驗。",
         "number": 6,
-        "date": "2026-06-02"
+        "date": "2026-06-04"
     },
     {
-        "question": "Which of the following risks is relevant to deploying generative AI?",
+        "question": "企業財務希望用平台自行建立費用申請流程，但需少量程式擴充以整合ERP，最合適方案是？",
         "options": [
-            "Data leakage and hallucination outputs",
-            "Excessive monitor screen size",
-            "Printing supply shortages",
-            "Overly long network cables"
+            "只能用生成式AI聊天介面不做流程設計",
+            "必須重新訓練大型基礎模型",
+            "Low Code保留少量程式碼客製能力",
+            "No Code完全不允許任何客製化"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "風險管理",
-        "explanation": "Key risks include data privacy breaches, misinformation through hallucinations, and biases inherent in generative AI models.",
+        "subtopic": "No Code / Low Code",
+        "concept": "Low Code優勢與限制",
+        "explanation": "Low Code除視覺化外允許少量原生程式碼，更適合系統整合。",
         "number": 7,
-        "date": "2026-06-02"
+        "date": "2026-06-04"
     },
     {
-        "question": "For quickly prototyping internal document summaries and FAQ chatbots, which platform type is more appropriate?",
+        "question": "零售業顧客回購預測、商品文案與客服摘要三方案，以快速落地及低風險為優先，推薦優先執行的是？",
         "options": [
-            "Completely process-free approaches",
-            "Manual paper-based processes",
-            "No Code or Low Code platforms",
-            "Only large ERP systems"
+            "先重建資料中台方能支援AI導入",
+            "先做商品文案與客服摘要因資料門檻低",
+            "先建企業知識圖譜啟動所有應用",
+            "立即做到顧客回購預測功效最大"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "平台選擇",
-        "explanation": "No Code and Low Code platforms enable fast prototyping of AI-powered document and chatbot solutions without heavy software development.",
+        "subtopic": "導入評估",
+        "concept": "先易後難策略",
+        "explanation": "生成式AI易落地於內容生成與摘要，較快產出成效。",
         "number": 8,
-        "date": "2026-06-02"
+        "date": "2026-06-04"
     },
     {
-        "question": "Which trend best represents generative AI adoption in 2025?",
+        "question": "法務部用生成式AI協助合約整理，避免洩露客戶機密且不得外洩未公開條款，最佳做法是？",
         "options": [
-            "Shifting from PoC to practical deployment and governance",
-            "Remaining solely at proof-of-concept stage without deployment",
-            "Completely ignoring data governance considerations",
-            "Applicable only in research organizations, not businesses"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入趨勢",
-        "explanation": "In 2025, generative AI adoption focuses on moving beyond experimentation to real-world system implementation with strong governance.",
-        "number": 9,
-        "date": "2026-06-02"
-    },
-    {
-        "question": "Which phrase best matches the 'pilot then scale' strategy in generative AI rollout?",
-        "options": [
-            "Replace all systems all at once",
-            "Launch immediately without any planning",
-            "Phased rollout with initial small-scale testing before expansion",
-            "Focus only on training models ignoring business impact"
+            "容許模型記住所有合約後續引用",
+            "直接貼完整合約請模型找漏洞",
+            "遮蔽敏感內容後以受控提示詞摘要比對",
+            "用公開聊天機器人多次測試最佳回覆"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "導入策略",
-        "explanation": "A phased approach prioritizes initial limited deployment to validate effectiveness before broad enterprise-scale adoption.",
+        "subtopic": "風險管理",
+        "concept": "資料遮蔽與最小化",
+        "explanation": "遮蔽敏感資訊並用控制性提示詞降低洩密風險。",
+        "number": 9,
+        "date": "2026-06-04"
+    },
+    {
+        "question": "企業董事會推動生成式AI，要求形成可擴充能力並兼顧治理，最適合的規劃策略是？",
+        "options": [
+            "先導入最強模型治理再補強",
+            "要求所有員工並行使用單一提示詞模板",
+            "先建立資料治理權限及風險審查分階段導入",
+            "各部門自行購買喜歡工具後再整合"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "導入評估與風險管理",
+        "concept": "企業級治理架構",
+        "explanation": "建構治理與審查機制是可持續產能擴張的基礎。",
         "number": 10,
-        "date": "2026-06-02"
+        "date": "2026-06-04"
     }
 ]

@@ -8678,5 +8678,175 @@
         "explanation": "偏差變異權衡指的是在模型過於簡單導致偏差大，或過於複雜導致變異大之間需取得最佳平衡。",
         "number": 510,
         "date": "2026-06-03"
+    },
+    {
+        "question": "在機器學習中，哪一種學習方式是利用帶有標註資料來訓練模型？",
+        "options": [
+            "強化學習使用回饋信號來學習最佳策略",
+            "監督學習使用標註過的資料進行模型訓練",
+            "半監督學習完全不依賴標註資料",
+            "非監督學習透過資料本身結構發現模式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習",
+        "subtopic": "基本原理",
+        "concept": "監督學習",
+        "explanation": "監督學習依賴帶有標註的訓練資料來進行模型學習，藉此預測未知資料的輸出，是機器學習中常見的類型之一。",
+        "number": 511,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "以下關於資料隱私與安全的描述，哪一項是錯誤的？",
+        "options": [
+            "資料加密能保障在傳輸過程中的資料安全",
+            "資料監控能及時發現不當存取或異常",
+            "身份驗證機制確保只有授權者能存取資料",
+            "資料匿名化會完全刪除所有資料內容"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料匿名化",
+        "explanation": "資料匿名化是透過修改或遮蔽敏感資訊，使資料無法直接辨識個人，但不會完全刪除資料內容。",
+        "number": 512,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "在AI治理中，哪一種措施最能確保決策過程的透明度？",
+        "options": [
+            "限制模型輸出僅允許部分人員查閱",
+            "採用可解釋性AI技術提供決策依據",
+            "忽略模型偏見以提升效率",
+            "部署黑箱模型進行高效預測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理",
+        "subtopic": "治理概念",
+        "concept": "可解釋性AI",
+        "explanation": "可解釋性AI技術使模型決策過程具備可理解性與透明度，有助於治理並提高信任度。",
+        "number": 513,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "當進行資料整理時，下列哪一個流程依序是正確的？",
+        "options": [
+            "清理錯誤資料 → 資料轉換 → 資料抽取",
+            "資料分析 → 清理錯誤資料 → 資料抽取",
+            "資料抽取 → 清理重複值 → 資料轉換",
+            "資料轉換 → 清理遺缺值 → 資料分析"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL與資料清洗",
+        "explanation": "正確資料整理流程是先進行資料抽取，再清理重複值與錯誤值，最後做資料轉換以利後續分析。",
+        "number": 514,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "生成式AI與鑑別式AI的主要差異為何？",
+        "options": [
+            "兩者功能完全相同，只是名稱不同",
+            "生成式AI主要用於監督學習，鑑別式AI只用於強化學習",
+            "鑑別式AI訓練判斷資料類別，生成式AI可以創造符合條件的新資料",
+            "生成式AI用於辨識輸入的正確標籤，鑑別式AI產生新內容"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "生成式AI與鑑別式AI原理",
+        "explanation": "鑑別式AI專注於辨識資料屬性與類別，生成式AI則透過模型產生符合條件的新資料，如文字、圖片。",
+        "number": 515,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "在資料來源分類中，下列哪一項屬於半結構化資料？",
+        "options": [
+            "傳統關聯式資料庫的表格資料",
+            "XML或JSON格式的資料",
+            "圖片、影片等多媒體檔案",
+            "感測器數值的時序資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料結構分類",
+        "explanation": "半結構化資料介於結構化與非結構化之間，有結構標籤但不固定格式，常見如XML、JSON格式資料。",
+        "number": 516,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "在機器學習訓練中，使用L1正規化的主要效果為何？",
+        "options": [
+            "減少梯度消失問題，提升模型穩定性",
+            "增加模型複雜度，改善預測準確率",
+            "促進模型參數稀疏化，使部分權重變為零",
+            "避免過擬合，但無助於參數稀疏"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習",
+        "subtopic": "模型正則化",
+        "concept": "L1正規化",
+        "explanation": "L1正規化會加強模型參數的稀疏性，使部分參數權重變零，有助於特徵選擇與避免過擬合。",
+        "number": 517,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "以下哪一種AI應用較常結合生成式AI與鑑別式AI進行資料分析？",
+        "options": [
+            "聊天機器人對話生成",
+            "智慧影像辨識系統",
+            "推薦系統中內容生成與過濾",
+            "產業製造缺陷檢測"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "生成式與鑑別式AI整合",
+        "concept": "AI應用混合模型",
+        "explanation": "推薦系統常用生成式AI創造新內容，並利用鑑別式AI作為過濾和判斷，提升推薦品質與準確度。",
+        "number": 518,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "在資料分析流程中，何者通常是最後一個步驟？",
+        "options": [
+            "資料收集與擷取",
+            "模型建立與訓練",
+            "資料清理與前處理",
+            "結果解釋與報告撰寫"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料分析流程",
+        "explanation": "資料分析流程通常最後是結果解釋和報告撰寫，以便向決策者傳達分析洞見。",
+        "number": 519,
+        "date": "2026-06-05"
+    },
+    {
+        "question": "何謂Human-in-the-loop（人在迴圈）機制？",
+        "options": [
+            "完全由AI自主完成決策過程，無需人工介入",
+            "專指僅人工判斷結果的系統流程",
+            "人工參與模型監督與調整，確保決策合理性",
+            "依賴人工標註資料時才算Human-in-the-loop"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理",
+        "subtopic": "AI倫理與監控",
+        "concept": "Human-in-the-loop",
+        "explanation": "Human-in-the-loop指人員在AI系統決策流程中持續監督、調整及干預，保持決策的準確性和倫理性。",
+        "number": 520,
+        "date": "2026-06-05"
     }
 ]

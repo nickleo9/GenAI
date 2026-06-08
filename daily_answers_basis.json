@@ -8848,5 +8848,175 @@
         "explanation": "Human-in-the-loop指人員在AI系統決策流程中持續監督、調整及干預，保持決策的準確性和倫理性。",
         "number": 520,
         "date": "2026-06-05"
+    },
+    {
+        "question": "下列何者最能準確描述監督式學習在機器學習中的角色？",
+        "options": [
+            "自動發現數據中的隱含結構而不需標籤數據協助",
+            "利用標籤數據訓練模型以預測未知數據的結果",
+            "生成新數據或內容以擴充現有的數據庫",
+            "透過強化回饋來調整模型決策的強化學習過程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習基礎",
+        "subtopic": "監督學習",
+        "concept": "監督學習定義",
+        "explanation": "監督式學習使用帶有標籤的數據集來訓練模型，使模型能夠對新的、未標記的數據做出準確預測。",
+        "number": 521,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "在資料治理中，以下哪項最符合「資料隱私保護」的核心做法？",
+        "options": [
+            "提高資料量以增加模型訓練精度並降低偏差",
+            "實施資料標準化以改善跨系統資料整合能力",
+            "利用資料備份加速資料恢復及系統穩定性",
+            "使用數據加密與匿名化技術防止個資外洩"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料隱私保護技術",
+        "explanation": "資料隱私保護的重點在於藉由加密、匿名化等技術確保敏感資訊不被未經授權訪問與洩露。",
+        "number": 522,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "何者屬於生成式 AI 的典型應用範疇？",
+        "options": [
+            "文字自動寫作與圖像合成",
+            "資料清洗及缺失值補補全",
+            "資料回歸分析與趨勢預測",
+            "數據分類與預測模型建構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI",
+        "subtopic": "應用範疇",
+        "concept": "生成式 AI 應用",
+        "explanation": "生成式 AI 主要用於產生新的文本、圖像、音頻等內容，典型應用如自動寫作與圖像合成。",
+        "number": 523,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "在資料前處理流程中，哪一項不適合用於處理遺缺資料？",
+        "options": [
+            "使用資料插補法推估遺缺數值",
+            "將遺缺資料直接納入模型輸出",
+            "用平均值填補遺缺資料",
+            "剔除包含遺缺值的整筆資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理流程",
+        "concept": "遺缺資料處理",
+        "explanation": "遺缺資料應透過填補或剔除等方法處理，不應將遺缺值直接作為模型輸出，因會導致結果不準。",
+        "number": 524,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "關於人工智慧治理 (AI Governance) 的敘述，何者錯誤？",
+        "options": [
+            "包含資料隱私與安全的合規性管理",
+            "需建立責任歸屬與監督機制",
+            "強調模型透明度與結果可解釋性",
+            "僅針對生成式 AI 的內容進行風險控管"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "治理範疇",
+        "concept": "AI治理基礎",
+        "explanation": "AI治理不僅限於生成式 AI，還涵蓋所有 AI 技術與系統的風險管理與合規要求。",
+        "number": 525,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "在機器學習中，下列哪種模型最適合處理時間序列數據預測？",
+        "options": [
+            "循環神經網絡 (RNN)",
+            "卷積神經網絡 (CNN)",
+            "隨機森林",
+            "決策樹分類器"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習基礎",
+        "subtopic": "模型選擇",
+        "concept": "時間序列預測",
+        "explanation": "RNN 特別適合處理序列數據，因其內部結構能夠捕捉時間上的依賴關係。",
+        "number": 526,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "以下何者描述最貼切鑑別式 AI 與生成式 AI 的差異？",
+        "options": [
+            "鑑別式 AI 只用於監督學習；生成式 AI 只用於非監督學習",
+            "鑑別式 AI 必須微調；生成式 AI 不需訓練",
+            "鑑別式 AI 輸出新內容；生成式 AI 做辨別分類",
+            "鑑別式 AI 做分類判斷；生成式 AI 創造新資料"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "AI類型差異",
+        "explanation": "鑑別式AI通常用於分類或辨別任務，而生成式AI則用於創造具有多樣性且新穎的資料或內容。",
+        "number": 527,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "以下哪一項最符合 'Human on Loop' 的定義？",
+        "options": [
+            "人類在數據收集階段提供標籤資訊",
+            "僅使用無人監管的自動化數據分析",
+            "人類介入監督與調整模型決策流程",
+            "完全自主運作無需人類干預的 AI 系統"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習實務",
+        "subtopic": "模型監控",
+        "concept": "Human on Loop",
+        "explanation": "Human on Loop 指的是人類在模型決策或運行過程中持續監督與調整，避免完全自動化帶來風險。",
+        "number": 528,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "AI專案規劃時，下列哪個步驟屬於資料整理與分析流程？",
+        "options": [
+            "模型選型、微調、性能監測",
+            "資料清理、特徵工程、資料標準化",
+            "數據蒐集、標注、模型訓練",
+            "需求定義、效益評估、系統部署"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理",
+        "subtopic": "資料分析流程",
+        "concept": "資料前處理",
+        "explanation": "資料整理與分析流程包含資料清理、特徵工程和標準化，這是準備資料進行機器學習的前置工作。",
+        "number": 529,
+        "date": "2026-06-08"
+    },
+    {
+        "question": "在生成式 AI 的微調過程中，何種挑戰最可能影響模型的穩定性？",
+        "options": [
+            "缺乏足夠的非結構化數據",
+            "完全避免使用先前訓練權重",
+            "使用白盒模型增強可解釋性",
+            "資料質量不佳，導致模型擬合不良"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式 AI",
+        "subtopic": "訓練與微調",
+        "concept": "微調挑戰",
+        "explanation": "資料質量不佳會導致模型在微調時過擬合或無法穩定學習，影響生成結果的品質與一致性。",
+        "number": 530,
+        "date": "2026-06-08"
     }
 ]

@@ -9018,5 +9018,175 @@
         "explanation": "資料質量不佳會導致模型在微調時過擬合或無法穩定學習，影響生成結果的品質與一致性。",
         "number": 530,
         "date": "2026-06-08"
+    },
+    {
+        "question": "在 AI 系統分類中，下列哪一項最能準確描述生成式 AI（Generative AI）的主要功能？",
+        "options": [
+            "透過輸入資料辨識分類後進行判斷",
+            "利用已有資料產生新內容，例如文字或圖像",
+            "根據規則預測未來趨勢與數值",
+            "針對輸入資料進行標註與清理處理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI基本概念",
+        "concept": "生成式AI",
+        "explanation": "生成式 AI 的核心目標是根據訓練數據生成新的內容，如文本、影像或音訊，與鑑別式 AI 強調分類判斷不同。",
+        "number": 531,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "在資料處理流程中，何者是將資料轉換為標準格式以便模型訓練的重要步驟？",
+        "options": [
+            "資料抽取（Extraction）",
+            "資料可視化（Visualization）",
+            "資料轉換（Transformation）",
+            "資料隱私保護（Privacy Preservation）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "資料轉換是將抽取的原始資料進行清理、格式化和標準化，使之適合作為機器學習模型的輸入，為ETL流程中的核心環節。",
+        "number": 532,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "以下哪一個機器學習模型最適合用於時間序列資料的預測與分析？",
+        "options": [
+            "支持向量機（SVM）",
+            "卷積神經網絡（CNN）",
+            "決策樹（Decision Tree）",
+            "循環神經網絡（RNN）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "RNN",
+        "explanation": "RNN 能夠處理序列數據，記憶前一狀態訊息，對時間序列資料如語音、文字、或股價預測尤為適合。",
+        "number": 533,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "下列哪一個選項最正確描述邊緣運算（Edge Computing）在 AI 系統中的角色？",
+        "options": [
+            "將所有資料集中傳送至雲端伺服器進行處理",
+            "在資料源近端即時處理資料以降低延遲",
+            "取代傳統的資料基地架構",
+            "僅用於資料前處理與清理流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料處理架構",
+        "concept": "地端部署與推論",
+        "explanation": "邊緣運算指的是在資料產生源附近進行運算與分析，降低傳輸延遲並提升即時應用效果，常見於智能裝置與物聯網。",
+        "number": 534,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "在機器學習監督式學習中，下列哪一項描述最符合目標函數（Loss Function）的作用？",
+        "options": [
+            "作為資料前處理階段的特徵標準化工具",
+            "用於提高模型訓練速度以減少時間成本",
+            "量化模型預測值與真實標籤之間的差異程度",
+            "自動調整資料集以平衡正負樣本分佈"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "監督學習基礎",
+        "concept": "損失函數",
+        "explanation": "目標函數用來量化模型輸出與真實標籤差距，模型訓練過程中透過最小化損失函數優化參數，提升預測準確度。",
+        "number": 535,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "以下哪個名詞最恰當描述將人類專家知識融入 AI 模型決策過程的做法？",
+        "options": [
+            "無監督學習 (Unsupervised Learning)",
+            "Human-in-the-loop",
+            "生成對抗網路 (GAN)",
+            "端到端學習 (End-to-End Learning)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "人工監督與可解釋性",
+        "concept": "Human on loop",
+        "explanation": "Human-in-the-loop 指在 AI 決策過程中引入人類專家的監督或調整，提高系統的可控性及安全性。",
+        "number": 536,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "鑑別式 AI 主要的原理是什麼？",
+        "options": [
+            "通過環境獎勵反饋進行學習",
+            "直接執行物理實體行動",
+            "將資料區分或分類為不同標籤類別",
+            "根據資料生成新的內容或資料"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI 概念",
+        "subtopic": "鑑別式 AI原理",
+        "concept": "鑑別式 AI",
+        "explanation": "鑑別式 AI 的重點是對輸入資料做分類或識別，透過學習決策邊界分類，而非自行生成資料。",
+        "number": 537,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "在 AI 資料隱私與安全領域中，下列哪項技術可用於保障多方資料合作時的資料隱私？",
+        "options": [
+            "超參數調優 (Hyperparameter Tuning)",
+            "深度增強學習 (Deep Reinforcement Learning)",
+            "聯邦學習 (Federated Learning)",
+            "資料標註 (Data Annotation)"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許多方在不共享原始資料的情況下共同訓練模型，保障資料隱私並減少資料外洩風險。",
+        "number": 538,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "下列哪一項不是機器學習中的三大類別？",
+        "options": [
+            "非監督學習 (Unsupervised Learning)",
+            "半監督學習 (Semi-supervised Learning)",
+            "監督學習 (Supervised Learning)",
+            "強化學習 (Reinforcement Learning)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "基本原理",
+        "concept": "機器學習類型",
+        "explanation": "機器學習三大類型通常指監督學習、非監督學習與強化學習，半監督學習雖存在，但不被列為基本三類。",
+        "number": 539,
+        "date": "2026-06-10"
+    },
+    {
+        "question": "在生成式 AI 的模型微調過程中，下列哪一項是可能面臨的常見問題？",
+        "options": [
+            "梯度消失導致模型無法收斂",
+            "推論時間過長導致即時性降低",
+            "資料來源缺少足夠標籤而無法微調",
+            "模型過擬合導致生成結果不夠多樣化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "微調技術與風險",
+        "concept": "微調問題",
+        "explanation": "模型微調時若過度擬合調整資料，可能造成生成結果重複度高，缺乏多樣性，降低實用價值。",
+        "number": 540,
+        "date": "2026-06-10"
     }
 ]

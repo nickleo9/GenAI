@@ -1,172 +1,172 @@
 [
     {
-        "question": "下列何者最符合 No Code／Low Code 平台在生成式 AI 導入中的典型定位？",
+        "question": "在 2026 年的生成式 AI 應用規劃中，何者最符合 No Code / Low Code 概念的優勢？",
         "options": [
-            "A. 以拖拉元件完成流程建置，降低非工程背景者開發門檻",
-            "D. 以離線訓練資料集為主，完全不需介接外部服務",
-            "B. 以底層重寫模型權重，提升大型語言模型推論速度",
-            "C. 以純手寫程式替代平台元件，避免使用視覺化設計"
+            "減少對高階程式設計能力的依賴，加速應用部署流程",
+            "降低自動化程度，增加人工介入與監控",
+            "依賴複雜程式碼撰寫以支持自訂化功能",
+            "提高系統安全性，並加強手動程式碼審核程序"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code概念",
-        "concept": "理解 No Code／Low Code 的平台定位、使用方式與適用對象",
-        "explanation": "No Code／Low Code 的核心價值，在於透過視覺化元件、流程設計與少量或零程式碼操作，讓非技術背景人員也能參與應用開發與自動化流程建置。這類平台常用於快速原型、內部流程表單、簡易工作流與外部服務串接。相對地，重寫模型權重、完全手寫程式或完全不需介接外部服務，都不是 No Code／Low Code 的典型特徵。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的優勢",
+        "explanation": "No Code / Low Code 概念的核心優勢在於降低技術門檻，使非程式專業人士也能快速開發與部署應用程序，因此最符合的優勢是減少對高階程式設計能力的依賴，加速應用部署流程。",
         "number": 1,
-        "date": "2026-06-09"
+        "date": "2026-06-11"
     },
     {
-        "question": "企業評估導入生成式 AI 時，何者最適合作為優先選定的應用場景？",
+        "question": "在生成式 AI 工具的選擇上，以下選項中何者主要針對多模態內容生成（例如影像與語音）？",
         "options": [
-            "D. 完全依賴單一主管經驗且難以文件化的例外處理",
-            "A. 高度創意且規則頻繁變動的核心決策流程",
-            "C. 重複性高、規則清楚且可標準化的客服查詢",
-            "B. 低頻發生且需要大量人工臨機判斷的特殊案件"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "導入評估與場景選定",
-        "concept": "辨識適合 AI 導入的流程特性：重複性、規則性、標準化",
-        "explanation": "生成式 AI 導入評估通常會優先考量重複性高、規則明確、輸入輸出相對標準化的場景，例如客服查詢、文件摘要、報表初稿或資料整理。這類工作較容易定義輸出品質與效益，也較適合先行試點。相反地，核心決策、低頻特殊案件與高度依賴個人經驗的例外處理，通常風險較高、評估成本較大，較不適合作為第一波導入標的。",
-        "number": 2,
-        "date": "2026-06-09"
-    },
-    {
-        "question": "在生成式 AI 工具使用中，下列何者最能降低模型產生幻覺（hallucination）的風險？",
-        "options": [
-            "B. 將模型輸出連結至可驗證資料來源",
-            "D. 取消所有限制條件，讓模型自由生成",
-            "C. 只用更長的提示詞，以避免模型誤解",
-            "A. 僅提高回覆溫度參數，增加答案多樣性"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI工具使用",
-        "concept": "建立基準或檢索支援以提升回覆可信度",
-        "explanation": "當生成式 AI 的輸出連結到可驗證的資料來源時，模型回覆有機會受到外部事實支撐，能有效降低幻覺與不實內容的風險。這類做法常被用於檢索增強生成、知識庫問答或文件引用場景。單純提高溫度、延長提示詞或放寬限制，並不會自動提升事實正確性，反而可能增加不穩定性。",
-        "number": 3,
-        "date": "2026-06-09"
-    },
-    {
-        "question": "若企業希望先用生成式 AI 快速驗證需求，又保留後續擴充空間，下列哪一種做法最符合實務規劃？",
-        "options": [
-            "C. 先禁止所有使用者測試，以避免任何回饋干擾",
-            "A. 直接全面替換所有既有系統，避免重複建置",
-            "B. 先從可控的試點場景開始，再逐步擴大整合",
-            "D. 先將所有資料外包給第三方，再決定用途"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "導入規劃與試點策略",
-        "concept": "由小而大、先試點後擴張的導入路徑",
-        "explanation": "生成式 AI 導入通常建議先從可控、風險較低、成效較容易衡量的場景做試點，例如內部知識問答、摘要輔助或客服草稿生成。這樣可以先驗證效益、流程與治理機制，再逐步擴大整合到更多部門。直接全面替換、完全禁止測試或先外包資料再決定用途，都不利於風險控制與需求驗證。",
-        "number": 4,
-        "date": "2026-06-09"
-    },
-    {
-        "question": "關於 No Code／Low Code 平台的差異，下列何者最正確？",
-        "options": [
-            "A. No Code 一定比 Low Code 更難上手且更適合程式設計師",
-            "B. Low Code 通常可透過少量程式碼處理進階邏輯",
-            "D. Low Code 完全不能與外部 API 進行串接",
-            "C. No Code 必然需要自行撰寫完整後端服務"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code概念",
-        "concept": "Low Code 可在視覺化開發之外加入少量程式邏輯",
-        "explanation": "Low Code 的典型特徵，是以視覺化方式快速建置，並允許在需要時加入少量程式碼處理欄位驗證、條件判斷或外部 API 呼叫。No Code 則更強調完全或近乎完全以平台元件完成開發。Low Code 不等於完全不能串接外部服務，反而常見於企業系統整合。",
-        "number": 5,
-        "date": "2026-06-09"
-    },
-    {
-        "question": "在評估生成式 AI 導入風險時，何者最屬於資料治理層面的主要議題？",
-        "options": [
-            "D. 介面顏色是否符合品牌識別",
-            "C. 資料是否涉及敏感資訊或授權限制",
-            "A. 模型提示詞是否寫得夠長",
-            "B. 回覆內容是否使用太多形容詞"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "導入評估與風險管理",
-        "concept": "資料隱私、機密性與授權合規",
-        "explanation": "生成式 AI 導入風險管理中，資料治理是核心議題之一，必須確認資料是否包含個資、商業機密、受保護內容或授權受限資料。若資料使用不當，可能引發隱私、合規與資安風險。提示詞長短、文案語氣或介面配色，並非資料治理的主要風險來源。",
-        "number": 6,
-        "date": "2026-06-09"
-    },
-    {
-        "question": "若要用生成式 AI 協助產出行銷文案，下列哪一項做法最能提升輸出品質的一致性？",
-        "options": [
-            "C. 只要求模型多產生幾個隨機版本",
-            "A. 完全不提供範例，讓模型自由發揮",
-            "B. 提供目標、語氣與格式的明確指示",
-            "D. 取消所有受眾設定，以擴大適用範圍"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI工具使用",
-        "concept": "提示詞設計與輸出控制",
-        "explanation": "要提升生成式 AI 文案輸出的穩定性，最重要的是清楚定義任務目標、受眾、語氣、字數與格式。這能讓模型更接近可交付的內容，並降低反覆修正成本。若不提供範例或明確限制，輸出雖可能更多樣，但一致性通常較差。",
-        "number": 7,
-        "date": "2026-06-09"
-    },
-    {
-        "question": "企業導入生成式 AI 前，何者最適合用來判斷專案可行性與投入優先順序？",
-        "options": [
-            "B. 只看競爭對手是否已經使用",
-            "A. 僅依主管個人偏好決定導入順序",
-            "D. 先選最複雜的流程，以展現技術能力",
-            "C. 同時評估效益、成本、資源與風險"
+            "ChatGPT, Claude 與 Perplexity",
+            "Notion AI, ClickUp Brain 與 Fireflies",
+            "Cursor, Replit AI 與 Antigravity",
+            "Midjourney, Runway 與 Synthesia"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "導入評估與專案規劃",
-        "concept": "以效益、成本、資源與風險進行綜合評估",
-        "explanation": "導入評估不應只看單一指標，而要同時衡量商業效益、建置成本、資料與人力資源，以及安全、法規與營運風險。這樣才能排出合理優先順序，避免只追求技術展示卻忽略實際落地。僅依主管偏好、競品動向或挑戰難度決策，都不符合規劃原則。",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態內容生成",
+        "explanation": "Midjourney、Runway 及 Synthesia 皆為專注於圖像、影片與語音等多模態內容生成的工具，而 ChatGPT 等偏向文字與語言理解，Cursor 則聚焦於程式碼生成。",
+        "number": 2,
+        "date": "2026-06-11"
+    },
+    {
+        "question": "在導入生成式 AI 時，何者屬於評估導入風險的必要步驟？",
+        "options": [
+            "專注提升 AI 模型準確率，忽略系統安全",
+            "忽略生產效率，以避免技術依賴",
+            "評估資料隱私與合規風險，建立監控機制",
+            "由技術團隊單獨決策，不需跨部門協作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 風險管理",
+        "explanation": "生成式 AI 導入評估須注重資料隱私與合規風險，並建立持續監控機制確保安全，而非忽略合規或孤立決策。",
+        "number": 3,
+        "date": "2026-06-11"
+    },
+    {
+        "question": "以下哪種描述最能體現生成式 AI 工具在業務流程自動化中的優勢？",
+        "options": [
+            "僅用生成式 AI 來取代人類決策，減少人工監督",
+            "完全依賴手動流程以確保準確度與穩定性",
+            "利用 n8n 與 Zapier AI 強化自動化與跨系統串接",
+            "將所有業務流程獨立開發，避免共用自動化平台"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 應用於流程自動化",
+        "explanation": "生成式 AI 導入業務流程時，常利用 n8n、Zapier 等工具實現跨系統的自動化串接，提升效率與一致性。",
+        "number": 4,
+        "date": "2026-06-11"
+    },
+    {
+        "question": "何者說明最正確反映了 No Code / Low Code 平台的限制？",
+        "options": [
+            "在高度客製化需求下，可能遇到功能瓶頸",
+            "可無限制地取代所有傳統程式開發工作",
+            "不需任何技術門檻即可打造複雜企業系統",
+            "對資料隱私風險管理有絕對保障"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的限制",
+        "explanation": "No Code / Low Code 平台具有快速開發優勢，但在高度複雜或特定客製化場景可能無法完全涵蓋，形成功能上的限制。",
+        "number": 5,
+        "date": "2026-06-11"
+    },
+    {
+        "question": "在生成式 AI 的應用規劃中，如何有效利用 ChatGPT、Claude 與 Gemini 進行研究與創意發想？",
+        "options": [
+            "避免使用以免資訊過於分散難以整合",
+            "用於初步構思、資料蒐集與語義分析支援",
+            "只用於生產靜態影像與影音內容創作",
+            "忽視多模態資料，專注單一文字生成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入規劃",
+        "explanation": "ChatGPT、Claude 與 Gemini 是強大的語言與多模態 AI，常用於初步創意構思、資料蒐集與分析，協助用戶提升企劃與研究效率。",
+        "number": 6,
+        "date": "2026-06-11"
+    },
+    {
+        "question": "如何詮釋生成式 AI 工具在企業知識管理中扮演的角色？",
+        "options": [
+            "整合並生成可用知識資產，如文件摘要與問答",
+            "僅用於生成行銷素材，非內部知識分享",
+            "避免參與業務文檔流程，降低數據安全性",
+            "純粹做為資料的靜態儲存設備，無協作功能"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "知識管理",
+        "explanation": "生成式 AI 工具可以協助企業從大量文件中萃取與整合關鍵知識，產生摘要、問答與演示資料，提升內部知識管理效率。",
+        "number": 7,
+        "date": "2026-06-11"
+    },
+    {
+        "question": "在搭建生成式 AI 開發環境時，下列何者為常用專注於程式碼與應用建構的工具？",
+        "options": [
+            "Cursor、Claude Code 與 Replit AI",
+            "Zapier AI、n8n 與 Optimizely Opal",
+            "Midjourney、Synthesia 與 ElevenLabs",
+            "Notion AI、Fireflies 與 HubSpot AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 軟體開發工具",
+        "explanation": "Cursor、Claude Code 與 Replit AI 是專門設計來加速程式碼撰寫與應用建構的生成式 AI 工具，能為開發者提升效率。",
         "number": 8,
-        "date": "2026-06-09"
+        "date": "2026-06-11"
     },
     {
-        "question": "下列何者最能描述生成式 AI 與 No Code／Low Code 結合後的典型應用？",
+        "question": "在生成式 AI 導入策略中，選擇何種導入階段策略有助於降低風險並促進成功？",
         "options": [
-            "D. 以離線紙本流程完全排除數位化操作",
-            "A. 以自然語言快速建立簡易應用與工作流程",
-            "B. 以人工逐行重構模型底層演算法",
-            "C. 以單一靜態頁面取代所有互動功能"
+            "推遲導入以等待完全成熟的 AI 技術",
+            "僅由技術團隊決定，避免使用者介入",
+            "立即全公司大規模推行，不做試點計畫",
+            "分階段引入，配合跨部門溝通與測試評估"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code概念",
-        "concept": "自然語言與視覺化平台結合以加速開發",
-        "explanation": "生成式 AI 與 No Code／Low Code 結合後，常見價值是利用自然語言描述需求，再由平台協助生成流程、頁面或部分程式邏輯，縮短開發時間並降低門檻。這種模式特別適合快速原型、內部應用或簡化的任務流程。重構底層演算法、取消互動功能或完全離線紙本化，皆不符合這類結合的實務方向。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入規劃",
+        "explanation": "分階段導入並搭配跨部門溝通及實際測試，有助企業降低風險，適時調整策略，增加生成式 AI 導入的成功率。",
         "number": 9,
-        "date": "2026-06-09"
+        "date": "2026-06-11"
     },
     {
-        "question": "在生成式 AI 導入風險管理中，若擔心模型回答錯誤但語氣很自信，最貼切的風險類型是什麼？",
+        "question": "以下哪項不屬於生成式 AI 在 2026 年業務應用中常見的功能？",
         "options": [
-            "B. 資料壓縮率不足風險",
-            "A. 幻覺與錯誤資訊輸出風險",
-            "C. 伺服器散熱不足風險",
-            "D. 介面字型過小風險"
+            "結合多模態技術生成視覺和語音內容",
+            "利用 AI 助手自動生成行銷文案和報告摘要",
+            "AI 專注於硬體設計與物理實體製造流程",
+            "自動化電子郵件草擬與客戶互動紀錄分析"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "導入評估與風險管理",
-        "concept": "辨識幻覺、錯誤資訊與過度自信回覆",
-        "explanation": "生成式 AI 可能產生語氣流暢但內容錯誤的回覆，這類現象通常稱為幻覺。對企業來說，這會影響決策、客服與合規輸出，因此需要透過來源驗證、人工覆核、檢索支援與輸出限制來降低風險。資料壓縮、伺服器散熱或字型大小不是這個問題的核心。",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式 AI 業務功能",
+        "explanation": "生成式 AI 主要聚焦於內容生成、溝通自動化與多模態媒體創作，對硬體設計與物理製造未必是主流應用，因此選項 B 不屬於常見功能。",
         "number": 10,
-        "date": "2026-06-09"
+        "date": "2026-06-11"
     }
 ]

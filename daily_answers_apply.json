@@ -1,172 +1,172 @@
 [
     {
-        "question": "在 2026 年的生成式 AI 應用規劃中，何者最符合 No Code / Low Code 概念的優勢？",
+        "question": "在2026年生成式AI應用趨勢中，下列哪一項最能代表從試用階段邁向業務整合的趨勢？",
         "options": [
-            "減少對高階程式設計能力的依賴，加速應用部署流程",
-            "降低自動化程度，增加人工介入與監控",
-            "依賴複雜程式碼撰寫以支持自訂化功能",
-            "提高系統安全性，並加強手動程式碼審核程序"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code / Low Code 的優勢",
-        "explanation": "No Code / Low Code 概念的核心優勢在於降低技術門檻，使非程式專業人士也能快速開發與部署應用程序，因此最符合的優勢是減少對高階程式設計能力的依賴，加速應用部署流程。",
-        "number": 1,
-        "date": "2026-06-11"
-    },
-    {
-        "question": "在生成式 AI 工具的選擇上，以下選項中何者主要針對多模態內容生成（例如影像與語音）？",
-        "options": [
-            "ChatGPT, Claude 與 Perplexity",
-            "Notion AI, ClickUp Brain 與 Fireflies",
-            "Cursor, Replit AI 與 Antigravity",
-            "Midjourney, Runway 與 Synthesia"
+            "AI系統單純依賴雲端推論服務",
+            "AI專注於單一任務的準確回答",
+            "AI模型不斷增強訓練數據量",
+            "AI代理人自律執行複數任務目標"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "多模態內容生成",
-        "explanation": "Midjourney、Runway 及 Synthesia 皆為專注於圖像、影片與語音等多模態內容生成的工具，而 ChatGPT 等偏向文字與語言理解，Cursor 則聚焦於程式碼生成。",
-        "number": 2,
-        "date": "2026-06-11"
+        "subtopic": "生成式AI應用趨勢",
+        "concept": "AI代理人",
+        "explanation": "2026年生成式AI趨勢中，AI代理人（Agent）強調在給定目標後能自主管理多重任務，自律完成目標，代表從試用階段進入全面業務整合。",
+        "number": 1,
+        "date": "2026-06-13"
     },
     {
-        "question": "在導入生成式 AI 時，何者屬於評估導入風險的必要步驟？",
+        "question": "下列哪一項是No Code與Low Code平台最顯著的優勢？",
         "options": [
-            "專注提升 AI 模型準確率，忽略系統安全",
-            "忽略生產效率，以避免技術依賴",
-            "評估資料隱私與合規風險，建立監控機制",
-            "由技術團隊單獨決策，不需跨部門協作"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "生成式 AI 風險管理",
-        "explanation": "生成式 AI 導入評估須注重資料隱私與合規風險，並建立持續監控機制確保安全，而非忽略合規或孤立決策。",
-        "number": 3,
-        "date": "2026-06-11"
-    },
-    {
-        "question": "以下哪種描述最能體現生成式 AI 工具在業務流程自動化中的優勢？",
-        "options": [
-            "僅用生成式 AI 來取代人類決策，減少人工監督",
-            "完全依賴手動流程以確保準確度與穩定性",
-            "利用 n8n 與 Zapier AI 強化自動化與跨系統串接",
-            "將所有業務流程獨立開發，避免共用自動化平台"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 應用於流程自動化",
-        "explanation": "生成式 AI 導入業務流程時，常利用 n8n、Zapier 等工具實現跨系統的自動化串接，提升效率與一致性。",
-        "number": 4,
-        "date": "2026-06-11"
-    },
-    {
-        "question": "何者說明最正確反映了 No Code / Low Code 平台的限制？",
-        "options": [
-            "在高度客製化需求下，可能遇到功能瓶頸",
-            "可無限制地取代所有傳統程式開發工作",
-            "不需任何技術門檻即可打造複雜企業系統",
-            "對資料隱私風險管理有絕對保障"
+            "允許非技術人員快速構建定制化應用",
+            "要求使用者具備編寫複雜代碼能力",
+            "只能用於簡單靜態網頁設計",
+            "限定於資料庫管理系統的開發"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "No Code / Low Code 的限制",
-        "explanation": "No Code / Low Code 平台具有快速開發優勢，但在高度複雜或特定客製化場景可能無法完全涵蓋，形成功能上的限制。",
-        "number": 5,
-        "date": "2026-06-11"
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "No Code / Low Code 優勢",
+        "explanation": "No Code/Low Code使非程式設計師也能快速搭建業務應用，降低開發門檻，提高業務響應速度，這是其最大優勢。",
+        "number": 2,
+        "date": "2026-06-13"
     },
     {
-        "question": "在生成式 AI 的應用規劃中，如何有效利用 ChatGPT、Claude 與 Gemini 進行研究與創意發想？",
+        "question": "生成式AI導入評估時，下列哪項評估最能幫助確認業務的適合性？",
         "options": [
-            "避免使用以免資訊過於分散難以整合",
-            "用於初步構思、資料蒐集與語義分析支援",
-            "只用於生產靜態影像與影音內容創作",
-            "忽視多模態資料，專注單一文字生成"
+            "是否適合定型化任務及例外處理頻率",
+            "是否已經有現成AI系統可以替換",
+            "是否包含圖像和語音處理需求",
+            "是否有足夠的GPU資源來訓練模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "業務適合性評估",
+        "explanation": "評估業務是否定型、例外多寡，有助判斷是否適合用生成式AI自動化或需人工判斷，為導入前重要指標。",
+        "number": 3,
+        "date": "2026-06-13"
+    },
+    {
+        "question": "在生成式AI應用中，何者最適合用於保護敏感資料的即時處理環境？",
+        "options": [
+            "雲端集中式模型推論服務",
+            "公開API生成器無限制連線",
+            "本地端（On-device）AI推論執行",
+            "商業開源大型語言模型自訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI風險管理",
+        "concept": "本地AI",
+        "explanation": "本地端AI推論避免將敏感數據送往雲端，降低資料外洩風險，適合對機密性要求高的場合。",
+        "number": 4,
+        "date": "2026-06-13"
+    },
+    {
+        "question": "在2026年，特化型基礎模型相比汎用型基礎模型的最大優勢是什麼？",
+        "options": [
+            "能處理更多樣化任務與數據類型",
+            "在特定行業與數據格式下表現更優異",
+            "能節省所有運算成本且不需調校",
+            "通用於所有業務流程無須調整"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "生成式 AI 導入規劃",
-        "explanation": "ChatGPT、Claude 與 Gemini 是強大的語言與多模態 AI，常用於初步創意構思、資料蒐集與分析，協助用戶提升企劃與研究效率。",
-        "number": 6,
-        "date": "2026-06-11"
+        "subtopic": "模型選擇",
+        "concept": "特化型基礎模型",
+        "explanation": "特化型模型經過對特定業務和數據類型的優化，能在該領域提供更高質量和準確度的結果。",
+        "number": 5,
+        "date": "2026-06-13"
     },
     {
-        "question": "如何詮釋生成式 AI 工具在企業知識管理中扮演的角色？",
+        "question": "以下哪項描述是生成式AI中「幻覺（hallucination）」風險的正確說明？",
         "options": [
-            "整合並生成可用知識資產，如文件摘要與問答",
-            "僅用於生成行銷素材，非內部知識分享",
-            "避免參與業務文檔流程，降低數據安全性",
-            "純粹做為資料的靜態儲存設備，無協作功能"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "知識管理",
-        "explanation": "生成式 AI 工具可以協助企業從大量文件中萃取與整合關鍵知識，產生摘要、問答與演示資料，提升內部知識管理效率。",
-        "number": 7,
-        "date": "2026-06-11"
-    },
-    {
-        "question": "在搭建生成式 AI 開發環境時，下列何者為常用專注於程式碼與應用建構的工具？",
-        "options": [
-            "Cursor、Claude Code 與 Replit AI",
-            "Zapier AI、n8n 與 Optimizely Opal",
-            "Midjourney、Synthesia 與 ElevenLabs",
-            "Notion AI、Fireflies 與 HubSpot AI"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 軟體開發工具",
-        "explanation": "Cursor、Claude Code 與 Replit AI 是專門設計來加速程式碼撰寫與應用建構的生成式 AI 工具，能為開發者提升效率。",
-        "number": 8,
-        "date": "2026-06-11"
-    },
-    {
-        "question": "在生成式 AI 導入策略中，選擇何種導入階段策略有助於降低風險並促進成功？",
-        "options": [
-            "推遲導入以等待完全成熟的 AI 技術",
-            "僅由技術團隊決定，避免使用者介入",
-            "立即全公司大規模推行，不做試點計畫",
-            "分階段引入，配合跨部門溝通與測試評估"
+            "生成的內容均來自預先訓練資料庫",
+            "幻覺是指模型因硬體故障停止運作",
+            "當AI模型無法生成回應時即稱為幻覺",
+            "AI生成的內容事實錯誤但表現看似合理"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "生成式 AI 導入規劃",
-        "explanation": "分階段導入並搭配跨部門溝通及實際測試，有助企業降低風險，適時調整策略，增加生成式 AI 導入的成功率。",
-        "number": 9,
-        "date": "2026-06-11"
+        "subtopic": "風險管理",
+        "concept": "幻覺風險",
+        "explanation": "幻覺指AI生成看似合理但實際錯誤甚至虛假的資訊，為生成式AI重要風險之一。",
+        "number": 6,
+        "date": "2026-06-13"
     },
     {
-        "question": "以下哪項不屬於生成式 AI 在 2026 年業務應用中常見的功能？",
+        "question": "以生成式AI工具進行業務流程自動化時，下列哪一項工作最適合由Human-in-the-loop（人工介入）進行？",
         "options": [
-            "結合多模態技術生成視覺和語音內容",
-            "利用 AI 助手自動生成行銷文案和報告摘要",
-            "AI 專注於硬體設計與物理實體製造流程",
-            "自動化電子郵件草擬與客戶互動紀錄分析"
+            "系統自動回應客戶簡單查詢",
+            "大批量文字自動生成報告",
+            "決策中需評估道德與法律風險的判斷",
+            "初步數據清理及格式標準化"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 業務功能",
-        "explanation": "生成式 AI 主要聚焦於內容生成、溝通自動化與多模態媒體創作，對硬體設計與物理製造未必是主流應用，因此選項 B 不屬於常見功能。",
+        "subtopic": "導入規劃",
+        "concept": "Human-in-the-loop",
+        "explanation": "Human-in-the-loop指在需要倫理、法律判斷或風險控管的重要決策點由人類參與，避免完全自動化帶來誤判。",
+        "number": 7,
+        "date": "2026-06-13"
+    },
+    {
+        "question": "No Code平台中，下列哪一項功能屬於其典型應用範疇？",
+        "options": [
+            "管理虛擬機器的效能測試",
+            "設計低階嵌入式系統軟體",
+            "透過拖拉元件構建工作流程自動化",
+            "撰寫複雜深度學習模型程式碼"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 應用",
+        "concept": "工作流程自動化",
+        "explanation": "No Code平台主要提供視覺化拖拉介面，讓非程式設計人員輕鬆建立業務自動化流程。",
+        "number": 8,
+        "date": "2026-06-13"
+    },
+    {
+        "question": "生成式AI如何透過RAG（檢索增強生成）策略提升回答品質？",
+        "options": [
+            "直接調用多個生成模型輸出結果",
+            "使用雲端GPU加速推論速度",
+            "參考外部知識庫實時檢索並結合生成",
+            "增加訓練數據量進行離線更新"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型技術",
+        "concept": "RAG",
+        "explanation": "RAG透過外部知識庫檢索輔助生成，提高生成內容的正確性與時效性，而非只靠預先訓練的模型權重。",
+        "number": 9,
+        "date": "2026-06-13"
+    },
+    {
+        "question": "以下哪種風險管理措施最適合防範敏感數據在生成式AI應用中的外洩？",
+        "options": [
+            "使用開源模型無需授權監控",
+            "嚴格控制數據存取權限與審計日誌",
+            "允許所有用戶自由上傳敏感數據",
+            "完全依賴AI生成物自動審查系統"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "資料隱私保護",
+        "explanation": "防止敏感數據外洩需嚴格控制存取權限及記錄審計，確保數據只被授權人員使用並能追蹤行為。",
         "number": 10,
-        "date": "2026-06-11"
+        "date": "2026-06-13"
     }
 ]

@@ -1,172 +1,172 @@
 [
     {
-        "question": "企業在導入生成式AI時，以下哪項評估最能有效降低資料外洩與模型幻覺風險？",
+        "question": "在生成式AI導入評估中，何者最能有效評估流程的標準化與量化程度？",
         "options": [
-            "直接加強模型微調以提升模型專業準確度",
-            "優先升級API版本並設定更高溫度參數增加隨機性",
-            "使用多模態模型一次性輸入所有資料進行處理",
-            "先建立資料分級與脫敏流程並採用RAG與人工覆核"
+            "技術可行性評估",
+            "業務價值評估",
+            "風險等級評估",
+            "流程適配度評估"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "風險管理",
-        "concept": "資料安全與幻覺防範",
-        "explanation": "建立資料分級、脫敏流程，並結合RAG（檢索增強生成）與人工覆核，是降低資料外洩及模型幻覺的重要控制措施，因為這能保障機密性並增進生成結果準確性。",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "流程適配度",
+        "explanation": "流程適配度評估主要用於判斷目標業務流程是否標準化、可拆解並且能被量化，是導入生成式AI時確保流程合適的重要指標，因此最能評估流程的標準化與量化程度。",
         "number": 1,
-        "date": "2026-06-16"
+        "date": "2026-06-20"
     },
     {
-        "question": "下列哪一項情境最適合利用Low Code平台來快速導入生成式AI應用？",
+        "question": "No Code / Low Code 平台在生成式AI應用中，最適合用於以下哪種情境？",
         "options": [
-            "需高複雜度的機器學習模型微調與優化",
-            "核心交易系統需即時多併發高頻撮合功能",
-            "專注晶片控制的嵌入式系統實時運算",
-            "需快速建立部門內部表單自動簽核與AI摘要流程"
+            "需高安全與審計的金融交易流程",
+            "部門內部短期驗證型專案",
+            "實時高頻率低延遲任務處理",
+            "跨部門大規模數據整合應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 適用場景",
+        "explanation": "No Code / Low Code 平台適合快速組裝，尤其用於部門內短期驗證型專案，能加快實驗與調整；而對於跨部門大規模整合、高安全稽核或低延遲系統，則不適合純 No Code / Low Code。",
+        "number": 2,
+        "date": "2026-06-20"
+    },
+    {
+        "question": "於生成式AI系統中，下列何者是用來標準化模型與外部工具、資料源連接協議的技術？",
+        "options": [
+            "SLM (Small Language Model)",
+            "MCP (Model Context Protocol)",
+            "RAG (Retrieval-Augmented Generation)",
+            "Agentic AI"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "MCP",
+        "explanation": "MCP（Model Context Protocol）用於實現生成式AI模型與多樣外部工具、資料源的標準化連接，提高系統互通性及擴展性，屬於生成式AI架構中重要的協議標準。",
+        "number": 3,
+        "date": "2026-06-20"
+    },
+    {
+        "question": "在管理生成式AI風險時，何種措施屬於技術性 Guardrail？",
+        "options": [
+            "設定輸出格式限制和敏感詞過濾",
+            "建立人工複核（HITL）機制",
+            "實施角色基礎存取控管（RBAC）",
+            "保存完整日誌與審計追蹤"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "Guardrails",
+        "explanation": "技術性 Guardrail 主要是指對生成模型輸出結果的即時約束與管控，如設定輸出格式、敏感詞過濾等技術措施，以避免模型生成非法或不當內容。",
+        "number": 4,
+        "date": "2026-06-20"
+    },
+    {
+        "question": "在生成式AI應用規劃中，何者描述正確？",
+        "options": [
+            "RAG解決任務執行問題，Agent解決知識正確性問題",
+            "Agent負責多步驟任務調用，RAG優化知識檢索與內容生成",
+            "MCP主要用於資料預處理，No Code工具用於模型微調",
+            "SLM適合高延遲且跨國大數據同步場景"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "RAG與Agent功能差異",
+        "explanation": "RAG著重在優化知識庫檢索與生成內容的正確性，Agent負責任務分解與工具調用，支持多步驟流程的執行。MCP則是連接模型與工具的協議，SLM多應用於低延遲、成本敏感場景。",
+        "number": 5,
+        "date": "2026-06-20"
+    },
+    {
+        "question": "在生成式AI工具的應用中，下列哪一項最符合Agentic AI的特點？",
+        "options": [
+            "維持狀態並自動執行跨系統任務",
+            "只支援靜態知識庫檢索",
+            "單純提供文字生成和摘要功能",
+            "著重於生成高質量訓練數據"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "Agentic AI",
+        "explanation": "Agentic AI不僅能回答查詢，還能維持上下文狀態，調用多個工具與API，自動執行複雜任務並跨系統協同，顯著提升自動化能力與應用範圍。",
+        "number": 6,
+        "date": "2026-06-20"
+    },
+    {
+        "question": "在生成式AI導入規劃中，下列敘述何者正確？",
+        "options": [
+            "Scale-up階段主要是完成PoC示範",
+            "Pilot階段主要驗證業務價值，忽略技術細節",
+            "Use Case Discovery階段重點是盤點高頻且有價值流程",
+            "MVP階段可忽略風險控制以縮短開發時程"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code",
-        "concept": "Low Code應用場景",
-        "explanation": "Low Code平台適合快速建立非核心、流程相對單純的自動化應用，如部門內表單簽核及AI摘要。交易撮合與晶片控制等複雜應用則不適合。",
-        "number": 2,
-        "date": "2026-06-16"
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入階段與重點",
+        "explanation": "Use Case Discovery階段的主要工作是盤點企業中高頻率且具高價值的業務流程，找到適合導入生成式AI的場景，為後續PoC和MVP打基礎，其他選項均有誤。",
+        "number": 7,
+        "date": "2026-06-20"
     },
     {
-        "question": "在評估導入生成式AI工具時，哪一項最可能被企業忽略但影響總成本？",
+        "question": "關於No Code / Low Code的優勢，下列敘述何者錯誤？",
         "options": [
-            "使用者職等與培訓需求",
-            "供應商API結算計價模式與推論運算成本",
-            "模型訓練過程的算法透明度",
-            "功能介面設計與用戶體驗美學"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "導入評估",
-        "concept": "成本結構評估",
-        "explanation": "推論成本與API計費常常被低估，這會直接影響長期總擁有成本及整體經濟效益，故需嚴格評估。",
-        "number": 3,
-        "date": "2026-06-16"
-    },
-    {
-        "question": "何者是2026年生成式AI從「產生內容」轉變為「嵌入流程與執行任務」的代表特徵？",
-        "options": [
-            "模型只能單純處理圖像分類任務",
-            "只以聊天機器人回覆使用者查詢為主要功能",
-            "僅專注於文字內容生成與摘要產出",
-            "AI代理人可將目標自動分解並呼叫外部工具完成工作"
+            "可快速組裝提示詞與工作流進行應用驗證",
+            "適合在部門內部迅速實現自動化流程",
+            "支持將法規與審核節點整合入工作流",
+            "完全不需工程師介入即可應對高風險場景"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用趨勢",
-        "concept": "AI代理人",
-        "explanation": "AI代理人具備將複雜任務自動分解並調用多種工具執行的能力，是生成式AI功能往流程自動化與任務執行演進的核心特徵。",
-        "number": 4,
-        "date": "2026-06-16"
-    },
-    {
-        "question": "以下哪一項不符合No Code平台的主要限制？",
-        "options": [
-            "有助於縮短開發時程與促進部門快速部署",
-            "平台綁定性高導致彈性不足",
-            "無法處理複雜業務邏輯及高度客製化需求",
-            "不具備完善的版本控管與稽核機制"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code",
-        "concept": "No Code限制",
-        "explanation": "No Code平台有助於快速部署與縮短開發時程，但相對複雜邏輯與治理面有限制，且可能面臨平台綁定及管理不足問題。",
-        "number": 5,
-        "date": "2026-06-16"
-    },
-    {
-        "question": "企業要求敏感資料不得離開內網，且需低延遲響應，最合適的生成式AI部署方式為下列哪者？",
-        "options": [
-            "使用內網私有部署或On-device端側推論方案",
-            "透過社群模型進行訓練並分散多節點執行",
-            "完全依賴公有雲API外部服務進行運算",
-            "僅使用網頁瀏覽器直接呼叫線上模型"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "導入規劃",
-        "concept": "私有部署與端側AI",
-        "explanation": "對於必須保護資料隱私及要求低延遲的場景，私有部署及On-device（端側）推論是較合適的選項，避免資料外洩風險與網路延遲。",
-        "number": 6,
-        "date": "2026-06-16"
-    },
-    {
-        "question": "使用生成式AI整合多模態技術在企業應用中，以下哪種案例最能展現其價值？",
-        "options": [
-            "同時分析會議錄音、簡報與圖表自動產生行動計劃",
-            "將文字摘要轉成報表格式輸出",
-            "單純以文字回覆客服查詢需求",
-            "只做關鍵字搜尋並列出相符文件"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "多模態AI",
-        "concept": "多模態應用",
-        "explanation": "多模態AI結合語音、文字、影像等多種資料型態，能同時處理複雜多元資訊，如會議錄音、簡報及圖表，提升分析效率與商業價值。",
-        "number": 7,
-        "date": "2026-06-16"
-    },
-    {
-        "question": "哪項措施最能有效防止生成式AI模型受到惡意提示詞注入攻擊？",
-        "options": [
-            "建立提示詞治理規範與Red Team測試機制",
-            "加大模型架構參數以提升能力",
-            "增加輸入資料的長度與豐富度",
-            "完全禁用外部文件作為輸入"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "風險管理",
-        "concept": "提示注入風險",
-        "explanation": "透過規範提示詞編寫與Red Team測試，可以發現並防堵惡意注入，保護模型免於被惡意指令破壞行為，提升安全性。",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 限制",
+        "explanation": "雖然No Code / Low Code能快速構建和驗證應用，但對於高風險場景如金融、公衛資料處理仍需工程師與專業人員介入，確保安全與合規，該選項敘述錯誤。",
         "number": 8,
-        "date": "2026-06-16"
+        "date": "2026-06-20"
     },
     {
-        "question": "在生成式AI工具導入流程中，哪個階段主要用於在單一部門進行小範圍測試？",
+        "question": "生成式AI技術中，哪一項最適合解決資料不足與隱私問題？",
         "options": [
-            "Governance建立使用政策和審查機制",
-            "Pilot試點上線以驗證運作效果",
-            "PoC驗證可行性和初步風險評估",
-            "Scale-out全面跨部門擴展部署"
+            "多模態原生模型",
+            "合成資料技術",
+            "小型語言模型（SLM）",
+            "Agentic AI"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "導入規劃",
-        "concept": "導入階段",
-        "explanation": "Pilot階段是在單一部門進行小規模測試，評估系統運行效率和使用者反饋，為後續全面部署做準備。",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "合成資料",
+        "explanation": "合成資料技術利用AI生成模擬數據，可補足真實資料不足或敏感資料保護需求，避免隱私外洩，是解決資料限制和隱私問題的重要方法。",
         "number": 9,
-        "date": "2026-06-16"
+        "date": "2026-06-20"
     },
     {
-        "question": "何者不是生成式AI導入初期最需重視的管理與治理重點？",
+        "question": "生成式AI導入後的風險管理，何者為非？",
         "options": [
-            "針對所有員工實施深度超參數調整訓練",
-            "建立完整資料分級與權限控管流程",
-            "制定人工覆核與異常處理流程",
-            "規範提示詞設計與設定使用審核機制"
+            "透過Human-in-the-Loop強化高風險審核",
+            "使用Fallback Mechanism避免錯誤自動放大",
+            "單靠模型流暢度判斷輸出可靠性",
+            "利用Model Evaluation持續監控模型表現"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "風險管理",
-        "concept": "治理重點",
-        "explanation": "深度超參數調整屬於模型訓練層面，非導入初期的管理重點。初期更應聚焦於資料權限、提示詞治理及人工覆核等風險控管措施。",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險控管原則",
+        "explanation": "單純以模型輸出流暢度判斷內容正確性是錯誤的做法，高質量風險管理須結合多項控管措施，如人員複核、評測與異常回退機制。",
         "number": 10,
-        "date": "2026-06-16"
+        "date": "2026-06-20"
     }
 ]

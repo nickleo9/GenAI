@@ -1,172 +1,172 @@
 [
     {
-        "question": "在生成式AI應用規劃中，No Code工具的最大優勢是什麼？",
+        "question": "關於No Code平台的典型特性，下列何者正確？",
         "options": [
-            "使非技術人員能快速開發AI解決方案",
-            "必須具備編碼技能才能操作平台介面",
-            "僅適用於生成影像與音樂的AI工具",
-            "允許開發者利用少量程式碼擴展功能"
+            "透過視覺化介面與標準化流程，協助完成模型訓練與調校",
+            "著重資料處理與轉換，模型訓練仍需外部工具完成",
+            "主要提供既有模型推論能力，通常不支援重新訓練",
+            "僅支援特定大數據框架，適用性較低且需專業開發人員"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "No Code 工具優勢",
-        "explanation": "No Code工具允許非技術人員透過圖形介面操作，避免撰寫程式碼，速成AI解決方案開發，這是其最大優勢。",
+        "concept": "No Code 平台特性",
+        "explanation": "No Code平台強調以視覺化介面協助非技術人員完成模型訓練與調校，降低開發門檻，非僅提供推論功能或需專業程式設計。",
         "number": 1,
-        "date": "2026-06-23"
+        "date": "2026-06-25"
     },
     {
-        "question": "以下哪項是生成式AI導入評估時最重要的財務指標？",
+        "question": "Gartner預測至2026年，超過65%的應用程式開發將透過何種平台完成？",
         "options": [
-            "專案完成時間(Schedule Duration)",
-            "投資回報率(ROI)",
-            "總成本估算(Cost Estimation)",
-            "使用者滿意度(User Satisfaction)"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "ROI",
-        "explanation": "ROI用來評估專案投資回報，衡量投入與產出，是導入生成式AI時關鍵財務指標。",
-        "number": 2,
-        "date": "2026-06-23"
-    },
-    {
-        "question": "RAG（Retrieval-Augmented Generation）在生成式AI的應用中，主要目的是什麼？",
-        "options": [
-            "在生成圖像時自動調整色彩與版面配置",
-            "使用深度學習優化AI代理的硬體資源分配",
-            "協助低程式碼平台自動生成應用界面",
-            "將大型語言模型與內部知識庫結合提升回答品質"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "RAG",
-        "explanation": "RAG結合檢索系統與生成模型，利用企業內部知識庫提升生成回答的準確度與相關性。",
-        "number": 3,
-        "date": "2026-06-23"
-    },
-    {
-        "question": "生成式AI中，Prompt Engineering中常見的設計策略不包括下列哪一項？",
-        "options": [
-            "Chain of Thought (CoT)",
-            "Tree of Thoughts (ToT)",
-            "Layered Neural Reinforcement (LNR)",
-            "Graph of Thoughts (GoT)"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "提示工程",
-        "explanation": "CoT、ToT和GoT為提示設計常用策略，LNR不是提示工程中常見方法。",
-        "number": 4,
-        "date": "2026-06-23"
-    },
-    {
-        "question": "在生成式AI導入風險管理中，下列哪種技術是用來防範資料在加密狀態下仍被處理洩露的？",
-        "options": [
-            "數位內容驗證協議(C2PA)",
-            "知識蒸餾(Knowledge Distillation)",
-            "合成資料生成(Synthetic Data)",
-            "同態加密(Homomorphic Encryption)"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "同態加密",
-        "explanation": "同態加密使數據在加密狀態下可被計算處理，有助於防範資料洩露，是生成式AI安全的重要技術。",
-        "number": 5,
-        "date": "2026-06-23"
-    },
-    {
-        "question": "以下哪項最能描述Low Code工具的特點？",
-        "options": [
-            "只支援商業數據分析工具的自動化",
-            "需輕量編程搭配介面完成自訂功能",
-            "完全無需撰寫程式碼，全部介面操作",
-            "只能應用於文字生成和簡單圖像創作"
+            "Low-Code或AutoML平台，雲端運算為核心驅動力",
+            "No-Code或Low-Code平台，AI整合為關鍵驅動力",
+            "No-Code或Pro-Code平台，數據分析為主要驅動力",
+            "Pro-Code或AutoML平台，人工智慧為次要驅動力"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "Low Code 工具",
-        "explanation": "Low Code工具允許使用者以少量程式碼輔助介面配置來擴充功能，介於No Code與專業開發間的解決方案。",
-        "number": 6,
-        "date": "2026-06-23"
+        "concept": "No Code/Low Code市場趨勢",
+        "explanation": "Gartner預測No Code與Low Code平台將成為超過65%應用開發的主流，且AI功能整合是推動因素。",
+        "number": 2,
+        "date": "2026-06-25"
     },
     {
-        "question": "針對零售業AI應用規劃，下列哪一項是生成式AI可提升的關鍵效益？",
+        "question": "下列何者屬於Low Code AI的定義特徵？",
         "options": [
-            "透過邊緣裝置實時調節家庭照明",
-            "生成客戶支持的語音互動機器人音效",
-            "自動生成促銷文案並優化庫存週轉",
-            "利用合成數據學習分子結構藥物設計"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入規劃",
-        "concept": "零售業生成式AI應用",
-        "explanation": "生成式AI可自動產生促銷文案，並結合數據分析優化庫存管理，是零售業提升營收關鍵。",
-        "number": 7,
-        "date": "2026-06-23"
-    },
-    {
-        "question": "關於生成式AI應用中API Token費用估算，下列何者為正確考量？",
-        "options": [
-            "按設備數量免費提供Token使用額度",
-            "只需考慮硬體部署成本與維護費用",
-            "估算每筆請求的用詞量與調用次數",
-            "API Token費用只與用户數量相關"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "API Token費用估算",
-        "explanation": "生成式AI的API通常按用詞數量及請求頻率付費，需精準估算以控制專案成本。",
-        "number": 8,
-        "date": "2026-06-23"
-    },
-    {
-        "question": "在評估是否採用Buy vs. Build策略時，下列何者是生成式AI應用規劃師主要考慮的因素？",
-        "options": [
-            "市場競爭者的廣告投入與品牌知名度",
-            "從業人員的程式設計經驗與機器硬體需求",
-            "現有工具的客製化彈性與專案成本投入",
-            "使用者對操作介面的熟悉度與培訓時間"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入規劃",
-        "concept": "Buy vs. Build評估",
-        "explanation": "Buy vs. Build需要衡量現有工具是否具備足夠客製化彈性，以及自建系統的成本效益。",
-        "number": 9,
-        "date": "2026-06-23"
-    },
-    {
-        "question": "防止生成式AI中Deepfake問題，常用的内容真實性驗證技術不包括？",
-        "options": [
-            "SynthID數位水印技術",
-            "同態加密數據保護",
-            "AI內容來源追蹤與認證",
-            "C2PA數位內容驗證標準"
+            "僅支援特定評估指標，無法自定義特徵工程邏輯",
+            "以圖形化介面為主，允許特定環節使用少量Python或SQL客製化",
+            "完全透過圖形化介面，無需撰寫任何程式碼即可操作",
+            "完全透過程式碼開發，使用Python/R搭配機器學習框架"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code AI特徵",
+        "explanation": "Low Code AI平台結合圖形介面與部分程式碼，讓使用者可客製特定功能，提高靈活性。",
+        "number": 3,
+        "date": "2026-06-25"
+    },
+    {
+        "question": "生成式AI擅長根據學習模式生成新內容，下列何者為其典型產出？",
+        "options": [
+            "數據庫、發票、報稅單等結構化文件",
+            "文本、圖像、程式碼等多模態內容",
+            "表格、圖表、儀表板等靜態視覺化報告",
+            "音頻、視頻、直播等即時流媒體內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式AI產出類型",
+        "explanation": "生成式AI擅長產生多種類型的新內容，例如文本、圖像、程式碼，屬多模態生成。",
+        "number": 4,
+        "date": "2026-06-25"
+    },
+    {
+        "question": "下列何者是No Code AI的代表平台？",
+        "options": [
+            "scikit-learn、PyTorch、TensorFlow搭配MLflow工具鏈",
+            "DataRobot（進階模式）、H2O.ai、SageMaker Canvas+Studio",
+            "Obviously AI、Akkio、Azure AI Builder（預建模型模式）",
+            "Kubeflow、Weights & Biases、TensorBoard等Pro-Code框架"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "No Code AI平台",
+        "explanation": "Obviously AI、Akkio及Azure AI Builder為No Code AI典型代表平台，方便無程式背景者使用。",
+        "number": 5,
+        "date": "2026-06-25"
+    },
+    {
+        "question": "適合使用No Code AI的使用者類型為何？",
+        "options": [
+            "有基礎程式能力的分析師、公民資料科學家、初階工程師",
+            "雲端架構師、數據庫管理員、系統整合顧問等技術專家",
+            "專業資料科學家、機器學習工程師、高級開發人員",
+            "業務分析師、行銷經理、營運主管等無程式設計背景者"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "使用者適用性",
+        "explanation": "No Code AI設計給無程式設計背景的業務、行銷等專業人員，降低AI應用門檻。",
+        "number": 6,
+        "date": "2026-06-25"
+    },
+    {
+        "question": "生成式AI導入評估中，企業首要考量因素為何？",
+        "options": [
+            "工具在企業導入時的可行性與成本效益分析",
+            "資料來源的結構化程度與預處理複雜度高低",
+            "模型在實驗環境中的準確率與訓練速度表現",
+            "技術人員的程式能力與團隊協作效率優劣"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估重點",
+        "explanation": "企業導入生成式AI需優先評估可行性及成本效益，確保投資回報合理。",
+        "number": 7,
+        "date": "2026-06-25"
+    },
+    {
+        "question": "生成式AI應用風險管理中，下列何者為核心議題？",
+        "options": [
+            "數據庫容量、備份頻率與恢復時間目標設定",
+            "用戶授權機制、登入頻率與多因子驗證強度",
+            "程式碼安全性、伺服器穩定性與網路延遲優化",
+            "資料隱私保護、模型偏差控制與合規性遵循"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
         "subtopic": "生成式 AI 風險管理",
-        "concept": "Deepfake防範技術",
-        "explanation": "同態加密保護數據隱私，但非專門用於防範Deepfake，SynthID與C2PA才是內容真實性驗證技術。",
+        "concept": "風險管理重點",
+        "explanation": "生成式AI風險管理重點聚焦資料隱私、模型偏差與法規合規，保障企業與使用者權益。",
+        "number": 8,
+        "date": "2026-06-25"
+    },
+    {
+        "question": "下列何者屬於Pro-Code AI的開發方式？",
+        "options": [
+            "以圖形化介面為主，允許特定環節使用少量Python或SQL",
+            "完全透過圖形化介面，無需撰寫任何程式碼即可操作",
+            "完全透過程式碼開發，使用Python/R搭配機器學習框架",
+            "僅支援特定評估指標，無法自定義特徵工程邏輯"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Pro-Code AI開發",
+        "explanation": "Pro-Code開發強調完全程式碼實作，使用Python或R等語言及機器學習框架完成複雜應用開發。",
+        "number": 9,
+        "date": "2026-06-25"
+    },
+    {
+        "question": "生成式AI結合No Code/Low Code平台，對產業發展的最大助益是？",
+        "options": [
+            "透過人工智慧與雲端運算，降低開發成本與縮短訓練時間",
+            "透過數據分析與自動化內容生成，提升營運效率與服務品質",
+            "透過程式碼審查與版本控制，提升團隊協作與開發效率",
+            "透過數據庫優化與伺服器擴展，增強系統穩定性與安全性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "產業發展契機",
+        "explanation": "結合No Code/Low Code平台，生成式AI幫助企業自動化內容生成與數據洞察，提升營運效率與服務品質。",
         "number": 10,
-        "date": "2026-06-23"
+        "date": "2026-06-25"
     }
 ]

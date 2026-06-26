@@ -10208,5 +10208,175 @@
         "explanation": "RAG技術結合檢索系統與生成模型，透過先檢索相關資料，再生成更準確且具參考依據的內容，常用於自然語言處理。",
         "number": 600,
         "date": "2026-06-24"
+    },
+    {
+        "question": "2026年生成式AI的發展中，OpenAI完成了創紀錄的資金調達，顯示AI產業的哪種趨勢正在加劇？",
+        "options": [
+            "AI大模型競爭加劇，資金集中度提高",
+            "生成式AI從試用階段過渡到業務整合階段",
+            "生成式AI與監管政策融合速度加快",
+            "生成式AI進入過度炒作的泡沫階段"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "資金動態與產業趨勢",
+        "concept": "資金集中度",
+        "explanation": "OpenAI大規模融資顯示市場對大模型技術的集中投資，代表資金競爭與集中度提升，是AI產業成熟競爭的表現。",
+        "number": 601,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "以下哪個選項最準確描述敘述性數據分析中標準差的作用？",
+        "options": [
+            "標準差不受極端值影響",
+            "標準差用於描述數據的頻率分布",
+            "標準差描述數據的中央趨勢",
+            "標準差衡量數據的分散程度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "敘述性統計",
+        "concept": "標準差",
+        "explanation": "標準差衡量資料分散程度，即資料點如何分布於平均值周圍，數值越大表示分布越分散。",
+        "number": 602,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "關於非結構化數據，下列何者為正確描述？",
+        "options": [
+            "JSON結構化文件無需解析即可分析",
+            "CSV表格被歸類為非結構化數據",
+            "MySQL關聯式資料庫屬於非結構化數據",
+            "電子郵件與文章屬於非結構化數據"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料分類",
+        "concept": "非結構化數據",
+        "explanation": "非結構化數據如電子郵件、文章無固定數據模型，須透過解析才能進行分析。MySQL及CSV為結構化數據，JSON為半結構化格式。",
+        "number": 603,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "在機器學習中，強化學習的典型方法之一是？",
+        "options": [
+            "決策樹",
+            "監督學習",
+            "非監督學習",
+            "Q-Learning"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning是一種典型的強化學習算法，透過狀態-行為價值函數進行策略學習。",
+        "number": 604,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "在生成式AI的技術發展中，引入「意圖重構」機制主要是為了？",
+        "options": [
+            "降低生成成本",
+            "提升重構意圖與圖像自然度",
+            "自動化生成流程",
+            "實現多模態生成能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成機制",
+        "concept": "意圖重構生成",
+        "explanation": "「意圖重構」能先理解與重構使用者意圖，再生成內容，提升生成質量與語境一致性。",
+        "number": 605,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "在AI治理概念中，何謂『Human on loop』？",
+        "options": [
+            "人工監督機器模型決策過程",
+            "人工完全替代AI決策",
+            "AI自主決策無人干預",
+            "AI模型自我調整優化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "監督機制",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指的是在決策模型中加入人工監督，確保AI決策過程透明且有人介入調控。",
+        "number": 606,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "資料隱私與安全中，哪種措施最能有效防止個人資料在雲端被未授權存取？",
+        "options": [
+            "採用端對端加密技術",
+            "僅依賴使用者密碼強度",
+            "資料去標識化處理但無加密",
+            "定期備份資料但無加密"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料加密",
+        "explanation": "端對端加密確保資料傳輸與儲存階段均被保護，防止未授權存取，為防護關鍵手段。",
+        "number": 607,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "在AI機器學習模型中，何種正則化技術通常會導致部分權重變為零，具有特徵選擇效果？",
+        "options": [
+            "L2正則化",
+            "L1正則化",
+            "Batch Normalization",
+            "Dropout正則化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會促使部分權重變為零，達到特徵選擇及模型瘦身效果，與L2正則化主要縮小權重不同。",
+        "number": 608,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "生成式AI從『全球通用』轉向『本地化』，其核心挑戰最主要是？",
+        "options": [
+            "降低模型計算成本",
+            "增加生成內容豐富度",
+            "提升數據輸入速度",
+            "實現多語言與文化適應性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "本地化應用",
+        "concept": "本地化生成",
+        "explanation": "本地化生成重點在於語言與文化差異的適應，使生成模型更貼近用戶的區域需求與表達方式。",
+        "number": 609,
+        "date": "2026-06-26"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的整合應用，最常被用於以下哪種功能？",
+        "options": [
+            "將鑑別模型用於資料預處理",
+            "生成高質量數據後由鑑別模型進行驗證",
+            "僅用生成模型完成所有任務",
+            "提高鑑別器模型的監督能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式AI 與 生成式AI",
+        "subtopic": "模型整合應用",
+        "concept": "生成-鑑別雙重模型",
+        "explanation": "生成式模型創造數據後，鑑別式模型用於檢驗真偽與質量，提升應用的可靠性和精確度。",
+        "number": 610,
+        "date": "2026-06-26"
     }
 ]

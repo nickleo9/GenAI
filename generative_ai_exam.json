@@ -1,172 +1,172 @@
 [
     {
-        "question": "如果你是製造業的工廠管理者，面對機械設備異常震動問題，2025年常用的AI策略是什麼？",
+        "question": "如果你是一位企業主管想在2025年導入生成式AI來提升員工工作效率，以下哪一項AI工具最適合用於自動化客服並整合多種智能代理？",
         "options": [
-            "完全使用生成式AI進行設備異常診斷，忽略傳統資料分析方法",
-            "結合傳統預測性AI偵測異常震動數據，搭配生成式AI產生具體維修步驟指引",
-            "依賴傳統統計分析來判斷設備故障，並以歷史紀錄手動撰寫維修報告",
-            "利用生成式AI自動生成維修手冊和遠端操作指引，結合IoT感測器進行實時預測"
+            "OpenAI的GPT-5.6，包含Mini與Pro版本供選擇",
+            "Apple的Siri AI，搭配Google Gemini模型的生成式能力",
+            "Salesforce收購的Fin，用於擴展Agentforce智能代理自動化",
+            "Databricks的Unity AI Gateway，用來控制AI資源支出"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "製造業AI應用",
-        "concept": "混合AI應用",
-        "explanation": "2025年製造業普遍採用混合AI技術，傳統預測性AI負責感測異常數據偵測，而生成式AI則根據維修手冊和歷史紀錄，生成具體的維修操作指引，兩者結合可提升維修效率與準確。",
+        "subtopic": "企業AI應用",
+        "concept": "AI代理與自動化",
+        "explanation": "Salesforce收購Fin是專注於擴展多智能代理自動化，非常適合企業用於客服工作流程的生成式AI導入與管理。",
         "number": 1,
-        "date": "2026-06-21"
+        "date": "2026-06-28"
     },
     {
-        "question": "作為一位國中英文老師，想輔導學生利用生成式AI製作教案，以下哪種工具或策略最適合？",
+        "question": "如果你是台灣研發工程師，準備打造長上下文推理能力的生成式AI系統，2025年最新哪一模型最具備1百萬字元摘要能力，且適合長序列程式碼理解？",
         "options": [
-            "僅通過ChatGPT撰寫完整教案，不需要任何輔助工具",
-            "使用Gemini結合Google文件自動生成教學文本與練習題",
-            "使用Cursor生成英文教案程式碼模板，適合程式教學但不適用於語文教學",
-            "讓學生自己搜尋網路資料，再用傳統文字處理軟體整理成教案"
+            "Claude Opus，專注高效能生成",
+            "OpenAI GPT-5.6，強化多任務學習",
+            "Google Gemini，優化多模態輸入處理",
+            "Z.ai的GLM-5.2，配備1M令牌上下文視窗"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "大型語言模型",
+        "concept": "長上下文建模",
+        "explanation": "GLM-5.2是Z.ai的模型，擁有1百萬令牌上下文視窗，能支持長篇推理和大規模程式碼分析，是符合需求的選擇。",
+        "number": 2,
+        "date": "2026-06-28"
+    },
+    {
+        "question": "你是一位英文補習班老師，想利用AI設計學生互動教材以提升語言學習效率。根據2025年的AI工具發展，以下哪種AI策略最有效？",
+        "options": [
+            "使用圖像生成式AI協助創造視覺化教案素材",
+            "透過OpenAI Deployment Company直接購買大量API使用權",
+            "運用No Code平台結合GPT-4生成學生對話練習題",
+            "僅依賴傳統規則式專家系統進行語法測驗設計"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
         "subtopic": "教育AI應用",
-        "concept": "生成式AI工具整合",
-        "explanation": "Gemini具備多模態與良好上下文記憶能力，能有效整合Google生態系工具，自動生成適合教學的文本和練習題，既節省教師時間又提升教案多樣性。",
-        "number": 2,
-        "date": "2026-06-21"
-    },
-    {
-        "question": "2025年，臺灣企業採用生成式AI的普及率約為多少？並且哪項技術使用率最高？",
-        "options": [
-            "約86%，AI輔助日常工作為最高採用率，約59%企業應用於軟體開發",
-            "超過75%，以自主開發AI模型為主流",
-            "超過90%，且AI生成內容是最普遍的應用程序",
-            "約70%，主要用於客服自動化與行銷發送"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "產業AI應用率",
-        "concept": "企業AI採用率",
-        "explanation": "2025年台灣生成式AI採用率約86%，其中AI輔助日常工作應用最高，59%企業採用AI強化軟體開發，顯示生成式AI已深度嵌入企業運作。",
+        "concept": "No Code與提示工程",
+        "explanation": "結合No Code平台與GPT-4生成練習題能快速打造互動教材，適合英文教學中生成式AI應用。",
         "number": 3,
-        "date": "2026-06-21"
+        "date": "2026-06-28"
     },
     {
-        "question": "假設你是自媒體經營者，想利用生成式AI提升影片腳本創作效率，哪種提示詞設計更適合？",
+        "question": "若你是家庭主婦計畫2025年暑假旅遊行程，下列哪種AI工具組合最能幫助你整合交通、住宿和行程規劃？",
         "options": [
-            "請寫一篇科技新聞的摘要，不需要加入個人觀點",
-            "生成一個關於未來科技的深度訪談腳本，包含問答環節和觀眾互動指示",
-            "生成單純的數據報告，強調統計數字",
-            "產生一組無關的隨機句子，用於靈感激發"
+            "採用僅具基本文字轉語音功能的AI助理",
+            "依靠Excel巨集自動排列表格與預算計算",
+            "使用AI聊天機器人整合預訂平台，並搭配行程推薦系統",
+            "單獨使用圖像生成AI製作旅遊照片回憶錄"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生活應用",
+        "concept": "AI與行程規劃整合",
+        "explanation": "聊天機器人結合預訂與推薦功能能全面支援多面向旅遊規劃，是最實用方案。",
+        "number": 4,
+        "date": "2026-06-28"
+    },
+    {
+        "question": "在AI發展歷史上，以下哪個里程碑標誌著『人工智慧（AI）』一詞首次被正式提出？",
+        "options": [
+            "1943年麥卡洛克與皮茨的神經元模型提出",
+            "1956年達特茅斯會議（Dartmouth Conference）",
+            "1966年ELIZA聊天機器人問世",
+            "1997年深藍戰勝卡斯帕羅夫"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "人工智慧概念",
+        "concept": "AI命名與起源",
+        "explanation": "1956年達特茅斯會議正式提出「人工智慧」一詞，並啟動該領域研發。",
+        "number": 5,
+        "date": "2026-06-28"
+    },
+    {
+        "question": "2025年全球AI治理趨勢中，G7國家推動的『可信夥伴框架』主要目的在於？",
+        "options": [
+            "推廣所有國家共享最先進AI模型",
+            "防止AI技術外洩到非批准國家",
+            "降低AI模型開發的成本門檻",
+            "放寬AI使用的數據隱私限制"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI治理概念",
+        "concept": "國際AI安全合作",
+        "explanation": "G7國家探索可信夥伴制度，限制先進模型僅授權予信任國家，以維護安全與控制。",
+        "number": 6,
+        "date": "2026-06-28"
+    },
+    {
+        "question": "你是自媒體經營者，想利用生成式AI工具創建吸引人的影片腳本與海報，下列提示詞撰寫方式中哪個較適合取得最佳結果？",
+        "options": [
+            "只輸入簡短主題關鍵字，讓AI自由發揮創意",
+            "描述影片主題、目標受眾與期望情緒，指示圖像風格",
+            "讓AI自動生成標題後，再隨意調整內容",
+            "使用複雜技術術語和大量細節以求精準"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "內容創作提示詞",
-        "concept": "提示詞工程",
-        "explanation": "針對影片腳本，設計包含互動與問答的深度訪談提示詞，可利用生成式AI創造結構明確且吸引觀眾的內容，而非純粹摘要或隨機詞句。",
-        "number": 4,
-        "date": "2026-06-21"
-    },
-    {
-        "question": "若你是一名工程師使用Vibe Coding來研發新的AI應用，2025年生成式AI的混合架構策略是什麼？",
-        "options": [
-            "使用傳統機器學習模型訓練，避免生成式AI的不確定性",
-            "忽略傳統AI，專注於無代碼工具以快速部署",
-            "結合預測性AI來處理精確數據，並用生成式AI輔助自然語言生成和邏輯推理",
-            "完全依賴生成式AI自動化編碼和建模"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AI架構設計",
-        "concept": "混合AI",
-        "explanation": "2025年主流架構是混合AI，預測性AI負責精確數據的判定，生成式AI在自然語言生成、內容創作及邏輯推理上提供補充，兩者結合提升系統效能和應用範疇。",
-        "number": 5,
-        "date": "2026-06-21"
-    },
-    {
-        "question": "關於iPAS AI應用規劃師認證考試，以下說法何者正確？",
-        "options": [
-            "iPAS考試專注於硬體架構設計，不包含生成式AI應用",
-            "該認證免費且無需任何實務經驗即可參加",
-            "2025年官方尚未公布最新考試日期與題型，應持續關注iDB網站資訊",
-            "考試內容完全以英文出題，無中文支援"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "AI治理與認證",
-        "subtopic": "iPAS考試規劃",
-        "concept": "認證資訊更新",
-        "explanation": "目前查無2025年最新iPAS考試具體公告，官方網站是取得最新報名、考試與培訓資訊的最佳來源，其他選項皆有誤。",
-        "number": 6,
-        "date": "2026-06-21"
-    },
-    {
-        "question": "2025年最新生成式AI工具中，哪個工具最擅長與Google生態系統整合，具備多模態理解和上下文記憶能力？",
-        "options": [
-            "ChatGPT",
-            "Grok",
-            "DeepSeek",
-            "Gemini"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI工具",
-        "concept": "多模態大語言模型",
-        "explanation": "Gemini由Google開發，專注多模態（文字、影像、程式碼等）及上下文記憶，能與Gmail、地圖及試算表等Google產品深度整合，提升工作效率。",
+        "subtopic": "提示工程",
+        "concept": "高效AI提示詞撰寫",
+        "explanation": "完整且清楚包含目標、風格和氛圍的提示詞，有助AI生成貼近需求的內容。",
         "number": 7,
-        "date": "2026-06-21"
+        "date": "2026-06-28"
     },
     {
-        "question": "某企業主管想帶領團隊利用生成式AI提升會議報告效率，下列哪種做法最符合2025年的應用趨勢？",
+        "question": "在AI應用規劃中，下列哪項是No Code/Low Code平台的主要優勢？",
         "options": [
-            "只用傳統AI模型進行數據分析，忽略自然語言生成部分",
-            "由員工手動整理會議紀錄，再由主管逐字校對",
-            "將生成式AI用於會議中即時翻譯，但不涉及內容產出",
-            "使用代理型AI(Agentic AI)智能助理，主動整理摘要、提煉重點，並可生成後續任務提醒"
+            "確保所有生成內容具備最高機密性保護",
+            "僅用於資料視覺化而非AI模型開發",
+            "必須由專業程式設計師手動編碼完成",
+            "降低技術門檻，促進非專業人員創建AI應用"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "工作流程自動化",
-        "concept": "代理型AI",
-        "explanation": "2025年企業普遍使用代理型AI能自主執行多步任務與目標導向行為，幫助會議紀錄處理與後續工作提醒，大幅提升團隊工作效率。",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "無碼平台優勢",
+        "explanation": "No Code/Low Code平臺主要幫助使用者無需專業編碼即可構建AI解決方案，大幅降低使用門檻。",
         "number": 8,
-        "date": "2026-06-21"
+        "date": "2026-06-28"
     },
     {
-        "question": "2025年AI在醫療領域的應用，下列敘述何者正確？",
+        "question": "若你在國外旅遊，想要用AI即時翻譯當地標誌與菜單，以下哪類生成式AI工具最適合此需求？",
         "options": [
-            "醫療AI模型以監督式學習取代所有基於規則的系統",
-            "生成式AI主要用於影像診斷，取代醫師判讀",
-            "多步推理能力的生成式AI可根據患者資料提出連串診療建議，協助醫師決策",
-            "生成式AI僅用於藥物研發，不涉及臨床決策輔助"
+            "僅具備語音合成功能的AI產品",
+            "多模態大模型，支援影像文字辨識與多語言即時轉換",
+            "使用專門設計的遊戲策略AI",
+            "純文字生成型語言模型，只提供文本互動"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "醫療AI應用",
-        "concept": "多步推理",
-        "explanation": "2025年生成式AI具備多步推理能力，能根據患者診斷、用藥和治療反應，提出有深度的診療建議，支持醫師做出更全面的醫療決策。",
+        "subtopic": "AI多模態應用",
+        "concept": "跨模態翻譯與識別",
+        "explanation": "多模態模型可結合影像識別與語言翻譯，滿足旅遊即時翻譯需求。",
         "number": 9,
-        "date": "2026-06-21"
+        "date": "2026-06-28"
     },
     {
-        "question": "n8n是一款整合自動化工具，下列何者為適合結合生成式AI應用的示例？",
+        "question": "2025年AI技術發展中，SpaceX收購Cursor在AI領域的主要目標是？",
         "options": [
-            "只用n8n純粹做數據備份，不涉及AI生成內容",
-            "n8n只能用於小型任務，無法處理AI數據流",
-            "利用n8n自動從電子郵件提取問句，透過生成式AI回覆客戶服務問題，並記錄對話內容",
-            "利用n8n設計大型語言模型的訓練過程，取代GPU硬件"
+            "開發自主導航機器人以應用於太空探索",
+            "創建高效能的AI聊天機器人服務",
+            "推動AI在金融數據分析的專家系統",
+            "打造全球頂尖的程式碼生成與自動化AI平台"
         ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "工作流程自動化",
-        "concept": "RPA與生成式AI整合",
-        "explanation": "n8n適合做流程自動化，可將電子郵件接收、問題萃取及自動生成AI回答串接起來，實現客服自動回覆並保存對話，提升企業運營效率。",
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI技術與模型",
+        "concept": "AI程式碼生成",
+        "explanation": "SpaceX收購Cursor是為打造AI驅動的程式碼生成器，結合Colossus超級電腦資源。",
         "number": 10,
-        "date": "2026-06-21"
+        "date": "2026-06-28"
     }
 ]

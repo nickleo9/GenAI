@@ -10378,5 +10378,175 @@
         "explanation": "生成式模型創造數據後，鑑別式模型用於檢驗真偽與質量，提升應用的可靠性和精確度。",
         "number": 610,
         "date": "2026-06-26"
+    },
+    {
+        "question": "根據2026年生成式AI的六大關鍵趨勢，哪一個階段代表生成式AI已經脫離實驗階段，成為企業不可或缺的基礎設施？",
+        "options": [
+            "策略性基礎設施階段",
+            "實驗性技術探索階段",
+            "垂直領域封閉測試階段",
+            "邊緣計算過渡階段"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "技術趨勢",
+        "concept": "生成式AI階段劃分",
+        "explanation": "2026年Gartner報告指出，生成式AI已正式進入「策略性基礎設施」階段，意味著生成式AI已從實驗性應用成為企業核心基礎建設，推動產業數位轉型。",
+        "number": 611,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "在2026年AI技術架構中，所謂的「原生多模態（Natively Multimodal）」架構的主要特色是？",
+        "options": [
+            "模型在預訓練階段同時學習文字、影像、音訊與程式碼的聯合表示",
+            "只在後端階段將多模態資料做整合處理",
+            "透過外接模組將各種模態轉換為單一文字向量",
+            "只支援文字與影像兩種模態的整合，不包含程式碼"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型架構",
+        "concept": "多模態學習",
+        "explanation": "2026 年重點在原生多模態，指的是模型在預訓練時就同時連結多種資料模態，此設計不同於後端階段的資料整合，而是深度聯合表示的共同學習。",
+        "number": 612,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "下列哪一項不是2026年製造業AI發展的三大核心趨勢之一？",
+        "options": [
+            "治理化（Governance）",
+            "代理化（Agentic）",
+            "隨機化（Randomized）",
+            "邊緣化（Edge）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI治理概念",
+        "concept": "AI發展趨勢",
+        "explanation": "根據麥肯錫與KPMG分析，2026年製造業AI核心發展趨勢為代理化、邊緣化與治理化，隨機化並非核心趨勢之一。",
+        "number": 613,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "機器學習中的Q-Learning屬於下列何種學習類型？",
+        "options": [
+            "非監督學習",
+            "監督學習",
+            "半監督學習",
+            "強化學習"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "學習類型",
+        "concept": "強化學習",
+        "explanation": "Q-Learning是一種強化學習方法，透過與環境互動來優化行為策略，不依賴標籤資料。",
+        "number": 614,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "在資料隱私與安全管理中，哪一種技術最適合在不暴露原始資料的情況下，進行分散式模型訓練？",
+        "options": [
+            "資料清洗（Data Cleaning）",
+            "聯邦學習（Federated Learning）",
+            "特徵工程（Feature Engineering）",
+            "資料增強（Data Augmentation）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習讓多個設備或中心在保留本地資料安全的前提下，協同訓練模型，以提升隱私防護效果。",
+        "number": 615,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "在人機協作中，Human on loop 主要指的是？",
+        "options": [
+            "完全由人工操作決策流程",
+            "人工監督與介入模型決策過程",
+            "模型完全自主完成任務",
+            "人工在模型訓練階段參與資料標註"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI治理概念",
+        "concept": "人在迴圈（Human on loop)",
+        "explanation": "Human on loop指的是在AI決策過程中加入人工監督與干預，確保決策的安全性和可靠性。",
+        "number": 616,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的主要差異在於？",
+        "options": [
+            "鑑別式AI生成新資料，生成式AI進行分類判斷",
+            "二者僅是不同的名稱，沒有本質區別",
+            "鑑別式AI判斷資料屬性，生成式AI生成新資料",
+            "生成式AI只能用於文字資料，鑑別式AI用於影像"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式AI與生成式AI",
+        "subtopic": "基本原理",
+        "concept": "AI模型分類",
+        "explanation": "鑑別式AI專注於判斷（例如分類），而生成式AI則能生成新的資料如文本、影像等，二者功能本質不同。",
+        "number": 617,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "在資料整理與分析流程中，ETL代表什麼？",
+        "options": [
+            "建立、測試、學習（Establish, Train, Learn）",
+            "分析、匯總、回報（Evaluate, Transfer, Log）",
+            "提取、轉換、載入（Extract, Transform, Load）",
+            "索引、排序、壓縮（Enumerate, Tidy, Link）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL是資料工程流程中的核心步驟，分別為資料提取、轉換成適合格式，最後載入目標系統。",
+        "number": 618,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "下列何者為常見的資料編碼方法，用於將分類變數轉換成可用於機器學習的數值？",
+        "options": [
+            "剪枝技術",
+            "L1正規化",
+            "One-Hot Encoding",
+            "Q-Learning"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "特徵工程",
+        "concept": "資料編碼",
+        "explanation": "One-Hot Encoding是將分類變數轉換為二元向量的常用方法，以便模型能理解非數值資料。",
+        "number": 619,
+        "date": "2026-06-29"
+    },
+    {
+        "question": "以下哪一項技術是用來提升生成式AI回應語境連貫性與相關性的關鍵？",
+        "options": [
+            "Q-Learning強化學習",
+            "生成對抗網路（GAN）",
+            "LIME模型解釋",
+            "檢索增強生成（RAG）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型整合方法",
+        "concept": "RAG技術",
+        "explanation": "RAG結合檢索系統與生成式模型，利用檢索資訊強化生成回答的語境一致性與資訊準確性。",
+        "number": 620,
+        "date": "2026-06-29"
     }
 ]

@@ -1,172 +1,172 @@
 [
     {
-        "question": "關於2026年生成式AI多模態原生模型的特性，下列何者正確？",
+        "question": "2026年推出的哪一款生成式AI模型，強調長上下文處理與步驟推理，並適合企業代理工作流程？",
         "options": [
-            "模型預訓練階段同時學習文字、影像、音訊與程式碼的聯合表示",
-            "模型依序分別訓練各模態後進行功能疊加",
-            "模型只針對文字資料進行預訓練，不包括其他模態",
-            "模型主要依賴單一模態資料進行自我監督學習"
+            "GPT-4o mini",
+            "GPT-5.4",
+            "GPT-5.2 系列",
+            "GPT-3.5 turbo"
         ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "多模態原生模型",
-        "explanation": "2026年流行的生成式AI多模態原生模型設計，在預訓練階段即同步學習文字、影像、音訊及程式碼的聯合表示，與傳統的逐模態訓練後疊加不同，是架構層面的重新定義。",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "生成式AI模型演進",
+        "explanation": "GPT-5.4是2026年推出的主要版本，優化長上下文處理與步驟推理，適合企業級代理工作流程，提升AI執行複雜任務能力。",
         "number": 1,
-        "date": "2026-06-27"
+        "date": "2026-06-30"
     },
     {
-        "question": "在生成式AI導入評估中，何者是No Code工具的主要優勢？",
+        "question": "在No Code/Low Code AI部署中，Model Context Protocol (MCP)的主要作用為何？",
         "options": [
-            "適合客製化企業核心系統的深度開發",
-            "專注於大型語言模型微調與部署",
-            "需大量寫程式碼以實現複雜業務邏輯",
-            "允許非技術人員快速透過介面創建APP或自動化流程"
+            "評估RAG流程效能",
+            "促進工具連接與企業系統整合",
+            "優化向量資料庫檢索效果",
+            "視覺化訓練資料分佈"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "No Code",
-        "explanation": "No Code工具的最大優勢在於讓非技術人員能透過介面操作，快速構建APP或自動化流程，無需編寫程式碼，適合快速原型及標準化流程。",
+        "concept": "企業AI架構工具",
+        "explanation": "MCP協助生成式AI工具與企業內部系統進行連結整合，支援多工具協同運作，是No Code/Low Code架構中重要橋樑。",
         "number": 2,
-        "date": "2026-06-27"
+        "date": "2026-06-30"
     },
     {
-        "question": "以下關於2026年一款主流AI Agent工具的敘述，何者為是？",
+        "question": "設計自動規劃行銷活動的AI代理提示詞時，哪種提示工程方法最能確保品牌規範與輸出一致性？",
         "options": [
-            "依賴手動觸發任務，無法自主優化",
-            "具備端到端任務完成能力，可自主規劃執行工作流程",
-            "專注於簡報生成，不能進行任務自動化",
-            "僅提供文字生成輔助，無法執行複雜流程"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "AI Agent 自動化",
-        "explanation": "如Manus等AI Agent工具，具有自主規劃、執行並優化複雜任務流程的能力，可提升企業生產力。",
-        "number": 3,
-        "date": "2026-06-27"
-    },
-    {
-        "question": "生成式AI導入時，No Code 與 Low Code 工具選擇的正確原則是？",
-        "options": [
-            "No Code 僅用於教育領域，Low Code 只用於醫療",
-            "兩者皆適用於大型語言模型微調",
-            "No Code 適合複雜邏輯，Low Code 適合快速構建標準流程",
-            "No Code 適合快速原型與標準流程，Low Code 適合複雜邏輯擴展"
+            "無限制的零次提示",
+            "隨機種子調控多樣性",
+            "無約束的回饋放大",
+            "具明確約束的思維鏈提示"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "提示詞工程",
+        "explanation": "具明確約束的思維鏈提示能引導AI依循品牌規範逐步思考，達到輸出一致且符合要求的效果。",
+        "number": 3,
+        "date": "2026-06-30"
+    },
+    {
+        "question": "以下哪一款2026年頂尖企業生成式AI工具獨特擅長多模態處理並深度整合Google Workspace？",
+        "options": [
+            "ChatGPT",
+            "Claude",
+            "Google Gemini",
+            "Microsoft Copilot"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "多模態AI工具",
+        "explanation": "Google Gemini專為多模態（文本、影像、視頻）處理設計，能與Google Workspace深度整合，適合研究和協作任務。",
+        "number": 4,
+        "date": "2026-06-30"
+    },
+    {
+        "question": "對於生成式AI在生產環境中放行未經控管的AI代理執行，最嚴重的風險為何？",
+        "options": [
+            "推理延遲過高",
+            "與舊有資料庫不相容",
+            "未經人工監控下的未授權複雜任務執行",
+            "雲端訓練成本過高"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "風險監控",
+        "explanation": "未經人工監控的複雜任務自動執行可能導致不可控錯誤或安全事件，是生產環境中最嚴重風險。",
+        "number": 5,
+        "date": "2026-06-30"
+    },
+    {
+        "question": "用於評估RAG（檢索增強生成）管線準確度且側重語意相似度的評估工具是？",
+        "options": [
+            "TruLens",
+            "LangSmith",
+            "MLflow",
+            "Ragas"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "生成式AI評估工具",
+        "explanation": "Ragas專注於RAG管線的語意相似度評估，有助於確認檢索與生成結果的相關性與準確性。",
+        "number": 6,
+        "date": "2026-06-30"
+    },
+    {
+        "question": "2026年以下哪款生成式AI工具最適合從文字提示生成高品質影片，用於市場行銷和創意故事？",
+        "options": [
+            "Adobe Firefly",
+            "DALL·E 3",
+            "ElevenLabs",
+            "Runway"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "視訊生成工具",
+        "explanation": "Runway專注於高品質影片生成，適合市場行銷及故事創作；DALL·E及Firefly更偏重圖片生成。",
+        "number": 7,
+        "date": "2026-06-30"
+    },
+    {
+        "question": "在Low Code解決方案中，LangGraph相比傳統LangChain在工作流編排上主要優勢是？",
+        "options": [
+            "支持多智能體的有狀態循環工作流",
+            "模型推理成本更低",
+            "非技術用戶化簡介面",
+            "向量資料庫索引更快"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "No Code 與 Low Code 差異",
-        "explanation": "No Code 工具通常用於快速原型與標準化流程，Low Code 工具則用於有程式碼擴展需求的複雜企業系統。",
-        "number": 4,
-        "date": "2026-06-27"
+        "concept": "工作流協調",
+        "explanation": "LangGraph支持複雜多智能體的有狀態循環工作流，讓工作流編排更靈活強大，適合低碼場景的進階應用。",
+        "number": 8,
+        "date": "2026-06-30"
     },
     {
-        "question": "推理模型在2026年生成式AI中扮演何種關鍵角色？",
+        "question": "執行客戶服務AI代理評估時，以下哪項指標最能反映代理成功導入？",
         "options": [
-            "替代多模態模型完成影像生成任務",
-            "只負責生成文本和圖片，無法進行深度推論",
-            "只用於語音識別，非生成式AI核心",
-            "提升模型的邏輯推演與因果分析能力，提高決策品質"
+            "資料庫查詢速度提升",
+            "雲端存儲成本降低",
+            "員工訓練時數減少",
+            "首次回應解決率提升"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "推理模型",
-        "explanation": "推理模型不只是生成內容，更進行深度邏輯推演與因果分析，強化生成結果的準確性與決策依據。",
-        "number": 5,
-        "date": "2026-06-27"
-    },
-    {
-        "question": "生成式AI導入風險管理中，何者為非？",
-        "options": [
-            "合成資料訓練可完全避免模型偏差問題",
-            "數據隱私是企業重要的合規考量",
-            "AI治理法規強調透明度與合規性",
-            "模型偏差需持續監控以降低風險"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "風險管理",
-        "explanation": "合成資料訓練雖有助於改善資料不足問題，但不能完全消除模型偏差，模型偏差仍需監控和管理。",
-        "number": 6,
-        "date": "2026-06-27"
-    },
-    {
-        "question": "低延遲邊緣設備在生成式AI應用中，主要貢獻是？",
-        "options": [
-            "限制使用於大型語言模型的運算",
-            "必須依賴雲端連接提供計算能力",
-            "保障數據隱私並實現離線功能",
-            "只用於資料備份，無助於生成式AI"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 風險管理",
-        "concept": "嵌入式邊緣部署",
-        "explanation": "低延遲邊緣設備能離線執行AI任務，減少對雲端依賴，保護資料隱私並提升響應速度。",
-        "number": 7,
-        "date": "2026-06-27"
-    },
-    {
-        "question": "2026年一款熱門的編碼助理生成式AI工具是？",
-        "options": [
-            "Runway，專注影片剪輯與視覺內容創作",
-            "Lovable，讓非技術人員說出APP",
-            "Gemini Code Assist，提供IDE即時代碼補全功能",
-            "Gamma，用於快速生成簡報投影片"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 工具使用",
-        "explanation": "Gemini Code Assist是基於Gemini模型的AI編碼助理，能於主流IDE即時補全和生成程式碼，支援開發者效率。",
-        "number": 8,
-        "date": "2026-06-27"
-    },
-    {
-        "question": "合成資料在生成式AI訓練中的用途為何？",
-        "options": [
-            "用於微調小型語言模型，改善隱私與資料稀缺問題",
-            "僅作為模型驗證，不參與訓練過程",
-            "製造真實的用戶資料以增加訓練量",
-            "替代所有真實資料，減少模型準確度"
-        ],
-        "correct_answer_index": 0,
-        "correct_answer_letter": "A",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 導入評估規劃",
-        "concept": "合成資料訓練",
-        "explanation": "合成資料可用來微調小型語言模型，幫助克服真實資料受限及隱私問題，促進模型性能提升。",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "代理導入評估",
+        "explanation": "提高首次回應解決率表示AI代理有效幫助解決問題，減少人力介入，是AI客戶服務導入成功的重要指標。",
         "number": 9,
-        "date": "2026-06-27"
+        "date": "2026-06-30"
     },
     {
-        "question": "在2026年生成式AI工具中，以下哪個工具適合非技術人員快速生成APP？",
+        "question": "生成藝術圖像時，2026年以下哪款AI模型因具卓越風格控制與高質量輸出而聞名？",
         "options": [
-            "Manus，專注AI Agent端到端任務自動化",
-            "Lovable，可透過自然語言描述說出APP",
-            "Jasper，大規模行銷文案生成工具",
-            "Gamma，快速簡報製作AI工具"
+            "Perplexity",
+            "MidJourney",
+            "Synthesia",
+            "Cursor"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式 AI 應用領域與工具使用",
-        "concept": "生成式 AI 工具使用",
-        "explanation": "Lovable專為非技術人員設計，使用自然語言描述即可快速構建應用程式，降低開發門檻。",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "藝術圖像生成",
+        "explanation": "MidJourney以其強大的風格控制能力和藝術質量著稱，是2026年高質量藝術圖像生成的代表工具。",
         "number": 10,
-        "date": "2026-06-27"
+        "date": "2026-06-30"
     }
 ]

@@ -10548,5 +10548,175 @@
         "explanation": "RAG結合檢索系統與生成式模型，利用檢索資訊強化生成回答的語境一致性與資訊準確性。",
         "number": 620,
         "date": "2026-06-29"
+    },
+    {
+        "question": "根據2026年Gartner報告，生成式AI已經進入哪一階段，成為企業策略性基礎設施？",
+        "options": [
+            "技術驗證期，尚處於實驗階段",
+            "策略性基礎設施，開始大量商業應用",
+            "概念普及期，主要停留在理論層面",
+            "市場淘汰期，逐漸被其他技術取代"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "技術趨勢",
+        "concept": "生成式AI發展階段",
+        "explanation": "2026年生成式AI已從實驗性技術轉型為企業策略性基礎設施，意即已廣泛應用於商業環境中並且成為重要的技術支柱。",
+        "number": 621,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "在2026年生成式AI的六大關鍵趨勢中，哪種模型能同時處理文字、影像、語音與程式碼？",
+        "options": [
+            "多模態原生模型（Natively Multimodal），支援多種數據形式",
+            "推理模型（Reasoning Model），強調邏輯推理",
+            "合成資料訓練模型，主要用於生成訓練資料",
+            "小型語言模型（SLM），專注於語言處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態AI",
+        "concept": "多模態模型",
+        "explanation": "多模態原生模型能整合不同類型數據（文字、影像、語音、程式碼）輸入，實現更為靈活與全方位的AI應用。",
+        "number": 622,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "監督式學習、非監督式學習與強化學習，哪一個是透過環境回饋來優化決策？",
+        "options": [
+            "非監督式學習，自動辨識數據結構",
+            "強化學習，依環境回饋持續修正策略",
+            "半監督式學習，結合標記與未標記數據",
+            "監督式學習，基於標記數據做預測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "學習方法",
+        "concept": "強化學習",
+        "explanation": "強化學習透過與環境互動，根據回饋訊號調整策略以達成最優決策，與監督和非監督學習不同。",
+        "number": 623,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "AI治理中，以下哪一項不是確保資料隱私與安全的關鍵措施？",
+        "options": [
+            "資料加密保護個人隱私",
+            "匿名化處理使用者資料",
+            "未授權資料即時公開透明",
+            "限制資料存取權限控制"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料保護措施",
+        "explanation": "未授權資料公開違反資料隱私安全原則，正確措施包含加密、匿名化及存取限制。",
+        "number": 624,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "在資料整理與分析流程中，哪一個步驟主要是對資料中的缺失值進行處理？",
+        "options": [
+            "資料抽取，從來源獲取原始資料",
+            "資料分析，執行統計或模型建構",
+            "資料清洗，填補或刪除缺失值",
+            "資料視覺化，呈現分析結果"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗階段的主要任務之一是處理缺失資料，透過填補或刪除以提高後續分析品質。",
+        "number": 625,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "在機器學習中，L1正規化會導致模型中哪些權重值變為零，這是因為？",
+        "options": [
+            "L1正規化對權重平方懲罰，使其趨近於零",
+            "L1正規化使用絕對值約束，使權重稀疏化",
+            "L1正規化增加隨機噪聲，削弱權重影響",
+            "L1正規化讓權重均勻下降，避免過擬合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "模型正規化",
+        "concept": "L1正規化",
+        "explanation": "L1正規化透過對權重的絕對值懲罰，使部分權重降低至零，達到特徵選擇與模型簡化效果。",
+        "number": 626,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "鑑別式AI與生成式AI基本差異在於？",
+        "options": [
+            "鑑別式AI用於生成文本，生成式AI用於辨識影像",
+            "鑑別式AI產生新資料，生成式AI判別資料類別",
+            "鑑別式AI估計資料分布，生成式AI分類新輸入",
+            "鑑別式AI判別分類結果，生成式AI創造新資料"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式VS生成式AI",
+        "explanation": "鑑別式AI專注於辨識和分類現有資料，而生成式AI能根據學習創造新資料，如文本或圖像。",
+        "number": 627,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "以下何項是生成式AI微調時提高模型特定任務表現的有效方法？",
+        "options": [
+            "縮減模型架構層數，簡化模型複雜度",
+            "完全移除隱藏層避免過擬合",
+            "使用目標領域特定數據集訓練模型",
+            "增加泛用訓練數據，減少任務特異性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型微調",
+        "concept": "微調技術",
+        "explanation": "微調時使用目標領域專屬數據能讓模型更精準掌握任務特徵，提升效果。",
+        "number": 628,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "以下哪項最能描述ETL處理流程？",
+        "options": [
+            "過濾-訓練-驗證，主要用於機器學習流程",
+            "數據抽取-轉換-載入，用於資料庫導入準備",
+            "抽取-先行分析-調整，強調即時分析",
+            "編碼-壓縮-存儲，專注於資料壓縮儲存"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL是資料處理標準流程：先抽取資料、轉換格式清洗，再載入目標系統，確保資料品質。",
+        "number": 629,
+        "date": "2026-07-01"
+    },
+    {
+        "question": "在AI治理中，人為監督模型決策稱為何種概念？",
+        "options": [
+            "資料匿名化，以保護使用者隱私",
+            "完全自動化決策，無需人工介入",
+            "人類在迴路中（Human in the loop），結合人工審核與自動化",
+            "集中式雲端運算架構"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "模型監督",
+        "concept": "Human on loop",
+        "explanation": "Human in the loop指在AI決策流程中加入人工監督與干預，提高決策透明度與安全。",
+        "number": 630,
+        "date": "2026-07-01"
     }
 ]

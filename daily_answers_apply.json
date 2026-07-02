@@ -1,172 +1,172 @@
 [
     {
-        "question": "2026年推出的哪一款生成式AI模型，強調長上下文處理與步驟推理，並適合企業代理工作流程？",
+        "question": "2026年に生成式AIが「同僚」として位置づけられ、AIエージェントが全AI価値の29％を創出するとされる主要なトレンドはどれか？",
         "options": [
-            "GPT-4o mini",
-            "GPT-5.4",
-            "GPT-5.2 系列",
-            "GPT-3.5 turbo"
+            "マルチモーダル統合による視覚と音声の融合促進",
+            "オンデバイスAIの普及によるプライバシー強化",
+            "AIエージェント時代の本格化と自律ワークフロー実現",
+            "ドメイン特化モデルの増加による専門化促進"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "生成式AI模型演進",
-        "explanation": "GPT-5.4是2026年推出的主要版本，優化長上下文處理與步驟推理，適合企業級代理工作流程，提升AI執行複雜任務能力。",
+        "concept": "AIエージェント",
+        "explanation": "2026年は生成式AIが単なるツールから自律的に業務を行う同僚として進化し、AIエージェントが生み出す価値が全体の29％に達すると予測されています。",
         "number": 1,
-        "date": "2026-06-30"
+        "date": "2026-07-02"
     },
     {
-        "question": "在No Code/Low Code AI部署中，Model Context Protocol (MCP)的主要作用為何？",
+        "question": "生成式AIの本格的な企業導入が進み、AI計算リソースの約3分の2が推論に使われる要因として最適なものはどれか？",
         "options": [
-            "評估RAG流程效能",
-            "促進工具連接與企業系統整合",
-            "優化向量資料庫檢索效果",
-            "視覺化訓練資料分佈"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "No code / Low code 概念",
-        "concept": "企業AI架構工具",
-        "explanation": "MCP協助生成式AI工具與企業內部系統進行連結整合，支援多工具協同運作，是No Code/Low Code架構中重要橋樑。",
-        "number": 2,
-        "date": "2026-06-30"
-    },
-    {
-        "question": "設計自動規劃行銷活動的AI代理提示詞時，哪種提示工程方法最能確保品牌規範與輸出一致性？",
-        "options": [
-            "無限制的零次提示",
-            "隨機種子調控多樣性",
-            "無約束的回饋放大",
-            "具明確約束的思維鏈提示"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "提示詞工程",
-        "explanation": "具明確約束的思維鏈提示能引導AI依循品牌規範逐步思考，達到輸出一致且符合要求的效果。",
-        "number": 3,
-        "date": "2026-06-30"
-    },
-    {
-        "question": "以下哪一款2026年頂尖企業生成式AI工具獨特擅長多模態處理並深度整合Google Workspace？",
-        "options": [
-            "ChatGPT",
-            "Claude",
-            "Google Gemini",
-            "Microsoft Copilot"
+            "フィットネス分野での動的コンテンツ生成増加",
+            "広告運用の完全自動化と個人最適化精度の向上",
+            "AIを『使い倒すフェーズ』への業務自動化推進",
+            "リアルタイム翻訳と多言語コミュニケーション拡大"
         ],
         "correct_answer_index": 2,
         "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "多模態AI工具",
-        "explanation": "Google Gemini專為多模態（文本、影像、視頻）處理設計，能與Google Workspace深度整合，適合研究和協作任務。",
-        "number": 4,
-        "date": "2026-06-30"
-    },
-    {
-        "question": "對於生成式AI在生產環境中放行未經控管的AI代理執行，最嚴重的風險為何？",
-        "options": [
-            "推理延遲過高",
-            "與舊有資料庫不相容",
-            "未經人工監控下的未授權複雜任務執行",
-            "雲端訓練成本過高"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI風險管理",
-        "concept": "風險監控",
-        "explanation": "未經人工監控的複雜任務自動執行可能導致不可控錯誤或安全事件，是生產環境中最嚴重風險。",
-        "number": 5,
-        "date": "2026-06-30"
-    },
-    {
-        "question": "用於評估RAG（檢索增強生成）管線準確度且側重語意相似度的評估工具是？",
-        "options": [
-            "TruLens",
-            "LangSmith",
-            "MLflow",
-            "Ragas"
-        ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式AI導入評估規劃",
-        "concept": "生成式AI評估工具",
-        "explanation": "Ragas專注於RAG管線的語意相似度評估，有助於確認檢索與生成結果的相關性與準確性。",
-        "number": 6,
-        "date": "2026-06-30"
+        "concept": "推論リソース消費",
+        "explanation": "2026年には生成式AIが実験フェーズを終え、本格的に業務で使い倒されるフェーズに入り、推論リソースの消費が急増すると予測されています。",
+        "number": 2,
+        "date": "2026-07-02"
     },
     {
-        "question": "2026年以下哪款生成式AI工具最適合從文字提示生成高品質影片，用於市場行銷和創意故事？",
+        "question": "特定産業に特化した生成式AIモデルが汎用モデルより優れる主な理由はどれか？",
         "options": [
-            "Adobe Firefly",
-            "DALL·E 3",
-            "ElevenLabs",
-            "Runway"
+            "自律型エージェントによる業務自動化達成",
+            "オンデバイス処理によるデータプライバシー保護強化",
+            "マルチモーダル処理による複合情報解析力の向上",
+            "ドメイン知識を深く学習した特化型モデルの効率"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "視訊生成工具",
-        "explanation": "Runway專注於高品質影片生成，適合市場行銷及故事創作；DALL·E及Firefly更偏重圖片生成。",
-        "number": 7,
-        "date": "2026-06-30"
+        "concept": "ドメイン特化モデル",
+        "explanation": "特定産業に特化した生成式AIは、その分野のドメイン知識を深く学習しているため、汎用モデルよりも性能とコスト面で優位になります。",
+        "number": 3,
+        "date": "2026-07-02"
     },
     {
-        "question": "在Low Code解決方案中，LangGraph相比傳統LangChain在工作流編排上主要優勢是？",
+        "question": "2026年の生成式AIにおいて『自ら考えて動くパートナー』へ進化した主要なトレンドはどれか？",
         "options": [
-            "支持多智能體的有狀態循環工作流",
-            "模型推理成本更低",
-            "非技術用戶化簡介面",
-            "向量資料庫索引更快"
+            "オンデバイスAIの普及によるオフライン利用強化",
+            "ドメイン特化モデルによる専門性向上とコスト削減",
+            "マルチモーダル統合によるテキスト・画像・音声の統合処理",
+            "自律型エージェント化によるワークフローの自動運用"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "自律型AIエージェント",
+        "explanation": "2026年は生成式AIが自己判断で計画立案から実行までを担う自律型パートナーへ大きく進化しました。",
+        "number": 4,
+        "date": "2026-07-02"
+    },
+    {
+        "question": "生成式AIが評価と統制の時代に入った2026年、注目されるインフラや指標とは？",
+        "options": [
+            "AIエバンジェリズムから実証的評価への転換",
+            "マルチモーダルによる多情報源データ統合",
+            "自律型エージェントのワークフロー自動化",
+            "オンデバイス処理のプライバシー強化機構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "AI評価インフラ",
+        "explanation": "2026年にはAIの可能性を説く伝道の時代から、測定可能な成果を基にAIの価値とリスクを評価・統制する時代へシフトしています。",
+        "number": 5,
+        "date": "2026-07-02"
+    },
+    {
+        "question": "2026年に法人導入率でMicrosoft CopilotとChatGPTの二重構造が生じる要因はどれか？",
+        "options": [
+            "ドメイン特化モデルの高性能な専門対応能力",
+            "マルチモーダル統合による全社導入の促進",
+            "ChatGPTの高い検索力と広範なファイル解析力",
+            "オンデバイスAIによる漏洩防止と速度向上"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "ツール普及要因",
+        "explanation": "ChatGPTは多様な業務を支える汎用性と高度な検索・解析力が評価され、個人および企業実務での標準ツールとなっているためです。",
+        "number": 6,
+        "date": "2026-07-02"
+    },
+    {
+        "question": "No Code/Low Code プラットフォームで生成式AI活用の欠点として最も適切なものはどれか？",
+        "options": [
+            "複雑なロジック構築が困難で拡張性が制限される",
+            "開発コスト削減によりリリースまでが迅速化される",
+            "オンデバイス処理によるプライバシーと応答速度の改善",
+            "ドメイン特化型モデルの活用による適用性向上"
         ],
         "correct_answer_index": 0,
         "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
         "subtopic": "No code / Low code 概念",
-        "concept": "工作流協調",
-        "explanation": "LangGraph支持複雜多智能體的有狀態循環工作流，讓工作流編排更靈活強大，適合低碼場景的進階應用。",
-        "number": 8,
-        "date": "2026-06-30"
+        "concept": "No Code/Low Code限界",
+        "explanation": "No Code/Low Codeでは複雑なビジネスロジックの実装が難しく、システム全体の拡張性やカスタマイズ性に制限があります。",
+        "number": 7,
+        "date": "2026-07-02"
     },
     {
-        "question": "執行客戶服務AI代理評估時，以下哪項指標最能反映代理成功導入？",
+        "question": "生成式AIのリスク評価において、最も懸念される問題点はどれか？",
         "options": [
-            "資料庫查詢速度提升",
-            "雲端存儲成本降低",
-            "員工訓練時數減少",
-            "首次回應解決率提升"
+            "マルチモーダル統合により生じるデータ不整合",
+            "AI出力の誤情報や偏見を含む可能性の制御",
+            "オンデバイスAIのセキュリティ脆弱性増大",
+            "ドメイン特化モデルの誤用による信頼性低下"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "AI偏見と誤情報",
+        "explanation": "生成式AIは誤った情報や偏見を含む出力を行うリスクが高く、これを適切に管理・制御することが重要です。",
+        "number": 8,
+        "date": "2026-07-02"
+    },
+    {
+        "question": "生成式AI導入計画の初期段階で最も重視すべきステップはどれか？",
+        "options": [
+            "オンデバイス環境での運用試験設定",
+            "特化型生成モデルの詳細学習計画策定",
+            "マルチモーダルデータ連携基盤の構築準備",
+            "繰り返し業務タスクの明確化とプロンプト設計"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
         "subtopic": "生成式AI導入評估規劃",
-        "concept": "代理導入評估",
-        "explanation": "提高首次回應解決率表示AI代理有效幫助解決問題，減少人力介入，是AI客戶服務導入成功的重要指標。",
+        "concept": "導入初期計画",
+        "explanation": "効率的な生成式AI活用には、まず繰り返し実施される業務タスクを特定し、それを最適化するためのプロンプト設計から始めることが重要です。",
         "number": 9,
-        "date": "2026-06-30"
+        "date": "2026-07-02"
     },
     {
-        "question": "生成藝術圖像時，2026年以下哪款AI模型因具卓越風格控制與高質量輸出而聞名？",
+        "question": "生成式AI導入後に最も効果的とされる運用戦略はどれか？",
         "options": [
-            "Perplexity",
-            "MidJourney",
-            "Synthesia",
-            "Cursor"
+            "AIに業務全体を任せる自律的パートナー運用",
+            "オンデバイスAIの利用拡大による処理高速化",
+            "専門知識強化のためのモデル再学習の頻度増加",
+            "マルチモーダル対応による多情報統合分析の推進"
         ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "生成式AI應用領域與工具使用",
-        "concept": "藝術圖像生成",
-        "explanation": "MidJourney以其強大的風格控制能力和藝術質量著稱，是2026年高質量藝術圖像生成的代表工具。",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "自律型運用",
+        "explanation": "生成式AIは導入後、細かな指示から解放して業務の一連の流れをAIに任せる自律的なパートナー運用が最も効果的です。",
         "number": 10,
-        "date": "2026-06-30"
+        "date": "2026-07-02"
     }
 ]

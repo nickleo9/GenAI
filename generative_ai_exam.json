@@ -1,172 +1,172 @@
 [
     {
-        "question": "如果你是一位企業主管想在2025年導入生成式AI來提升員工工作效率，以下哪一項AI工具最適合用於自動化客服並整合多種智能代理？",
+        "question": "如果您是台灣一家設計公司負責生成式 AI 導入規劃，為了在2025年提升影像設計效率，最適合推薦下列哪個 AI 工具來生成高解析度影片素材？",
         "options": [
-            "OpenAI的GPT-5.6，包含Mini與Pro版本供選擇",
-            "Apple的Siri AI，搭配Google Gemini模型的生成式能力",
-            "Salesforce收購的Fin，用於擴展Agentforce智能代理自動化",
-            "Databricks的Unity AI Gateway，用來控制AI資源支出"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "企業AI應用",
-        "concept": "AI代理與自動化",
-        "explanation": "Salesforce收購Fin是專注於擴展多智能代理自動化，非常適合企業用於客服工作流程的生成式AI導入與管理。",
-        "number": 1,
-        "date": "2026-06-28"
-    },
-    {
-        "question": "如果你是台灣研發工程師，準備打造長上下文推理能力的生成式AI系統，2025年最新哪一模型最具備1百萬字元摘要能力，且適合長序列程式碼理解？",
-        "options": [
-            "Claude Opus，專注高效能生成",
-            "OpenAI GPT-5.6，強化多任務學習",
-            "Google Gemini，優化多模態輸入處理",
-            "Z.ai的GLM-5.2，配備1M令牌上下文視窗"
+            "ChatGPT",
+            "Copilot",
+            "Perplexity",
+            "Sora"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "大型語言模型",
-        "concept": "長上下文建模",
-        "explanation": "GLM-5.2是Z.ai的模型，擁有1百萬令牌上下文視窗，能支持長篇推理和大規模程式碼分析，是符合需求的選擇。",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "影像生成",
+        "explanation": "Sora 是2025年新興的影像生成工具，特別適合透過文字描述生成高解析度影片，用於分鏡腳本或動態背景素材，較適合設計公司使用。ChatGPT 主攻文本生成，Copilot 主要是程式編輯，Perplexity 則是聚焦搜尋正確性。",
+        "number": 1,
+        "date": "2026-07-05"
+    },
+    {
+        "question": "作為一位企業主管，如果您計畫帶領團隊利用 2025 年最新 AI 工具提升多媒體行銷內容製作，下列哪個搭配生成式 AI 工具組合最適合用於快速製作文案與影片？",
+        "options": [
+            "Jasper 與 Sora",
+            "DeepSeek 與 ChatGPT",
+            "Copilot 與 Perplexity",
+            "Gemini 與 Cursor"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "行銷內容生成",
+        "explanation": "Jasper 是優秀的文案撰寫AI，搭配影片生成工具 Sora，可以滿足從文案到視覺多媒體的行銷內容需求；Copilot 與 Perplexity 主要偏向程式與搜尋輔助，Gemini 與 Cursor 偏重生產力與程式編輯，DeepSeek 以數據搜尋為主。",
         "number": 2,
-        "date": "2026-06-28"
+        "date": "2026-07-05"
     },
     {
-        "question": "你是一位英文補習班老師，想利用AI設計學生互動教材以提升語言學習效率。根據2025年的AI工具發展，以下哪種AI策略最有效？",
+        "question": "您是台灣補習班的國文老師，想利用生成式 AI 來輔助學生製作教案，以下哪個 AI 工具組合的提示詞設計最適合用於生成具有文學分析及教學重點的教材內容？",
         "options": [
-            "使用圖像生成式AI協助創造視覺化教案素材",
-            "透過OpenAI Deployment Company直接購買大量API使用權",
-            "運用No Code平台結合GPT-4生成學生對話練習題",
-            "僅依賴傳統規則式專家系統進行語法測驗設計"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "教育AI應用",
-        "concept": "No Code與提示工程",
-        "explanation": "結合No Code平台與GPT-4生成練習題能快速打造互動教材，適合英文教學中生成式AI應用。",
-        "number": 3,
-        "date": "2026-06-28"
-    },
-    {
-        "question": "若你是家庭主婦計畫2025年暑假旅遊行程，下列哪種AI工具組合最能幫助你整合交通、住宿和行程規劃？",
-        "options": [
-            "採用僅具基本文字轉語音功能的AI助理",
-            "依靠Excel巨集自動排列表格與預算計算",
-            "使用AI聊天機器人整合預訂平台，並搭配行程推薦系統",
-            "單獨使用圖像生成AI製作旅遊照片回憶錄"
-        ],
-        "correct_answer_index": 2,
-        "correct_answer_letter": "C",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "生活應用",
-        "concept": "AI與行程規劃整合",
-        "explanation": "聊天機器人結合預訂與推薦功能能全面支援多面向旅遊規劃，是最實用方案。",
-        "number": 4,
-        "date": "2026-06-28"
-    },
-    {
-        "question": "在AI發展歷史上，以下哪個里程碑標誌著『人工智慧（AI）』一詞首次被正式提出？",
-        "options": [
-            "1943年麥卡洛克與皮茨的神經元模型提出",
-            "1956年達特茅斯會議（Dartmouth Conference）",
-            "1966年ELIZA聊天機器人問世",
-            "1997年深藍戰勝卡斯帕羅夫"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "人工智慧概念",
-        "concept": "AI命名與起源",
-        "explanation": "1956年達特茅斯會議正式提出「人工智慧」一詞，並啟動該領域研發。",
-        "number": 5,
-        "date": "2026-06-28"
-    },
-    {
-        "question": "2025年全球AI治理趨勢中，G7國家推動的『可信夥伴框架』主要目的在於？",
-        "options": [
-            "推廣所有國家共享最先進AI模型",
-            "防止AI技術外洩到非批准國家",
-            "降低AI模型開發的成本門檻",
-            "放寬AI使用的數據隱私限制"
-        ],
-        "correct_answer_index": 1,
-        "correct_answer_letter": "B",
-        "topic": "人工智慧基礎概論",
-        "subtopic": "AI治理概念",
-        "concept": "國際AI安全合作",
-        "explanation": "G7國家探索可信夥伴制度，限制先進模型僅授權予信任國家，以維護安全與控制。",
-        "number": 6,
-        "date": "2026-06-28"
-    },
-    {
-        "question": "你是自媒體經營者，想利用生成式AI工具創建吸引人的影片腳本與海報，下列提示詞撰寫方式中哪個較適合取得最佳結果？",
-        "options": [
-            "只輸入簡短主題關鍵字，讓AI自由發揮創意",
-            "描述影片主題、目標受眾與期望情緒，指示圖像風格",
-            "讓AI自動生成標題後，再隨意調整內容",
-            "使用複雜技術術語和大量細節以求精準"
+            "用 Cursor 生成結構化程式碼來整合教材",
+            "使用 ChatGPT 輔以 FlowGPT 平台進行提示詞優化",
+            "使用 Perplexity 搜尋功能搭配 Jasper 寫作",
+            "利用 DeepSeek 直接抓取網路資料分析文學作品"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
         "topic": "生成式AI應用與規劃",
         "subtopic": "提示工程",
-        "concept": "高效AI提示詞撰寫",
-        "explanation": "完整且清楚包含目標、風格和氛圍的提示詞，有助AI生成貼近需求的內容。",
-        "number": 7,
-        "date": "2026-06-28"
+        "concept": "提示工程",
+        "explanation": "ChatGPT 配合提示工程平台 FlowGPT，有助於優化文本生成的精準度與教學針對性，而 DeepSeek 側重於數據搜尋，不聚焦教案內容創作，Cursor 用於程式碼，Perplexity 專注於資訊搜尋不適合生成文學教材。",
+        "number": 3,
+        "date": "2026-07-05"
     },
     {
-        "question": "在AI應用規劃中，下列哪項是No Code/Low Code平台的主要優勢？",
+        "question": "如果您是自媒體經營者，想在2025年利用AI工具自動生成社群貼文與影音內容，下列哪種策略最有效？",
         "options": [
-            "確保所有生成內容具備最高機密性保護",
-            "僅用於資料視覺化而非AI模型開發",
-            "必須由專業程式設計師手動編碼完成",
-            "降低技術門檻，促進非專業人員創建AI應用"
+            "使用 Copilot 進行程式碼開發，配合 Runway 進行影片後製",
+            "用 Gemini 做寫作輔助，搭配 Cursor 自動除錯程式",
+            "選擇 Jasper 生成文案，搭配 HeyGen 製作短影片",
+            "利用 Perplexity 搜尋搭配 Canva 設計海報"
         ],
-        "correct_answer_index": 3,
-        "correct_answer_letter": "D",
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
         "topic": "生成式AI應用與規劃",
-        "subtopic": "No Code / Low Code 概念",
-        "concept": "無碼平台優勢",
-        "explanation": "No Code/Low Code平臺主要幫助使用者無需專業編碼即可構建AI解決方案，大幅降低使用門檻。",
-        "number": 8,
-        "date": "2026-06-28"
+        "subtopic": "內容創作應用",
+        "concept": "多媒體內容自動生成",
+        "explanation": "Jasper 擅長文案生成，HeyGen 是2025年熱門的AI影片製作工具，適合自媒體產出短影音。Copilot 和 Cursor 偏向程式開發，Gemini 屬於辦公輔助，Perplexity 是精確搜尋引擎，不專注於內容創作。",
+        "number": 4,
+        "date": "2026-07-05"
     },
     {
-        "question": "若你在國外旅遊，想要用AI即時翻譯當地標誌與菜單，以下哪類生成式AI工具最適合此需求？",
+        "question": "在2025年的AI工具趨勢中，若您身為台灣一個金融科技公司的資料分析師，要設計整合生成式AI模型與數據搜尋工具處理大量金融資料，以下哪種組合較推薦？",
         "options": [
-            "僅具備語音合成功能的AI產品",
-            "多模態大模型，支援影像文字辨識與多語言即時轉換",
-            "使用專門設計的遊戲策略AI",
-            "純文字生成型語言模型，只提供文本互動"
+            "Manus 與 Uizard",
+            "DeepSeek 與 ChatGPT",
+            "Promptbase 與 Midjourney",
+            "Sora 與 Fotor"
         ],
         "correct_answer_index": 1,
         "correct_answer_letter": "B",
-        "topic": "生成式AI應用與規劃",
-        "subtopic": "AI多模態應用",
-        "concept": "跨模態翻譯與識別",
-        "explanation": "多模態模型可結合影像識別與語言翻譯，滿足旅遊即時翻譯需求。",
-        "number": 9,
-        "date": "2026-06-28"
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料搜尋與生成分析整合",
+        "explanation": "DeepSeek 擅長資料搜尋與整合，ChatGPT 可生成分析報告和解釋說明，兩者協同在金融資料分析非常合適。Sora 與 Fotor 屬於影像生成，Promptbase 與 Midjourney 用於提示工程與圖像生成，Manus 為AI代理人，Uizard為UI設計。",
+        "number": 5,
+        "date": "2026-07-05"
     },
     {
-        "question": "2025年AI技術發展中，SpaceX收購Cursor在AI領域的主要目標是？",
+        "question": "在生成式AI的發展歷史中，哪一年被普遍認為是消費級生成式AI大爆發的起點，標誌著大眾開始廣泛使用生成式AI工具？",
         "options": [
-            "開發自主導航機器人以應用於太空探索",
-            "創建高效能的AI聊天機器人服務",
-            "推動AI在金融數據分析的專家系統",
-            "打造全球頂尖的程式碼生成與自動化AI平台"
+            "2010年",
+            "2025年",
+            "2022年",
+            "2017年"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "生成式 AI 概念",
+        "concept": "生成式 AI 歷史",
+        "explanation": "2022年ChatGPT推出，引發全球關注，標誌著生成式AI進入消費級時代，開始被廣泛大眾使用和認識。2010年和2017年是深度學習和語言模型的技術基礎期，2025年為持續發展期。",
+        "number": 6,
+        "date": "2026-07-05"
+    },
+    {
+        "question": "身為一位主管，想帶領員工利用 No Code / Low Code 工具結合生成式 AI 來快速建立業務流程自動化，以下哪個工具組合較適合？",
+        "options": [
+            "n8n 與 Google AI Studio",
+            "DeepSeek 與 FlowGPT",
+            "Jasper 與 Canva",
+            "Cursor 與 Perplexity"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "流程自動化",
+        "explanation": "n8n 是主流的工作流程自動化工具，可結合 Google AI Studio 用於生成式AI模型快速原型與API整合，非常適合業務流程自動化。Cursor 和 Perplexity 偏向程式和搜尋，Jasper 與 Canva 不專注流程自動化，DeepSeek 與 FlowGPT 功能不同。",
+        "number": 7,
+        "date": "2026-07-05"
+    },
+    {
+        "question": "下列關於鑑別式 AI 與生成式 AI 混合應用的敘述，哪一項是正確的？",
+        "options": [
+            "生成式 AI 會直接從鑑別式 AI 複製數據",
+            "鑑別式 AI 主要以生成圖像為主，生成式 AI 用於判別真假",
+            "兩者是相同技術，只是應用領域不同",
+            "鑑別式 AI 負責資料分類，生成式 AI 則能生成新內容"
         ],
         "correct_answer_index": 3,
         "correct_answer_letter": "D",
         "topic": "人工智慧基礎概論",
-        "subtopic": "AI技術與模型",
-        "concept": "AI程式碼生成",
-        "explanation": "SpaceX收購Cursor是為打造AI驅動的程式碼生成器，結合Colossus超級電腦資源。",
+        "subtopic": "鑑別式 AI 與生成式 AI",
+        "concept": "鑑別式與生成式 AI 原理",
+        "explanation": "鑑別式 AI專注於對資料進行分類與判斷，而生成式 AI是能從資料中創造出新的內容，如文字或影像。兩者在AI系統中常整合互補，技術和應用各有不同。",
+        "number": 8,
+        "date": "2026-07-05"
+    },
+    {
+        "question": "如果您是高職英文老師，想利用2025年生成式 AI 來幫助學生提升寫作與口說練習，下列哪些 AI 工具與功能組合最適合？",
+        "options": [
+            "Cursor 用於程式語法，Sora 製作語音影片",
+            "ChatGPT 用於寫作輔助，Eleven Labs 增強口說練習",
+            "Perplexity 用於語料搜尋，DeepSeek 作為翻譯助手",
+            "Jasper 創作文案，Manus 執行語言代理人"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "語言學習應用",
+        "concept": "AI輔助語言學習",
+        "explanation": "ChatGPT 能有效協助學生產出寫作素材與反饋，Eleven Labs專注於自然語音生成與口說練習，兩者搭配最適於語言學習。Perplexity與DeepSeek側重於搜尋與數據，Cursor用於程式，Sora偏影音生成。",
+        "number": 9,
+        "date": "2026-07-05"
+    },
+    {
+        "question": "關於 2025 年 iPAS AI應用規劃師考試新增的考試重點，下列何者為非？",
+        "options": [
+            "涵蓋生成式 AI 基礎理論與企業應用場景設計",
+            "強化實務應用與企業戰略評估能力",
+            "新增實際案例模擬與 AI 規劃報告撰寫",
+            "完全不涉及資料隱私與 AI 偏差相關課題"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI導入評估與風險管理",
+        "concept": "AI倫理與風險管理",
+        "explanation": "iPAS考試內容包含資料隱私與AI偏差的法律與倫理相關議題，絕非完全不涉及。其他選項皆為2025年考試新增與強化的重點。",
         "number": 10,
-        "date": "2026-06-28"
+        "date": "2026-07-05"
     }
 ]

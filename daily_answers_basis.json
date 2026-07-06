@@ -10888,5 +10888,175 @@
         "explanation": "\"人在迴圈上\"指的是人類在AI系統運作過程中持續介入，監督、調整決策，以確保系統安全與正確性。",
         "number": 640,
         "date": "2026-07-03"
+    },
+    {
+        "question": "在 AI 治理中，何者屬於確保 AI 模型符合倫理與安全的重要措施？",
+        "options": [
+            "只針對生成式 AI 進行行為規範管控",
+            "建立 AI 模型的黑箱操作，避免過度解釋",
+            "推動 AI 模型公開透明，並實施監理沙盒測試",
+            "降低對資料隱私的重視，以提高模型效率"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "監理沙盒",
+        "explanation": "AI治理重點在促進模型公開透明與安全測試，監理沙盒提供實驗空間，並非黑箱操作，是確保AI符合倫理與安全的重要途徑。",
+        "number": 641,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "資料處理流程中，ETL指的正確程序順序是？",
+        "options": [
+            "載入資料(Load)、抽取資料(Extract)、轉換資料(Transform)",
+            "轉換資料(Transform)、抽取資料(Extract)、載入資料(Load)",
+            "抽取資料(Extract)、轉換資料(Transform)、載入資料(Load)",
+            "載入資料(Load)、轉換資料(Transform)、抽取資料(Extract)"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL的標準流程為先抽取資料，再進行資料轉換，最後將處理結果載入目標系統。",
+        "number": 642,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "以下哪一種機器學習模型屬於監督學習？",
+        "options": [
+            "強化學習 (Reinforcement Learning)",
+            "自編碼器 (Autoencoder)",
+            "貝氏分類器 (Bayesian Classifier)",
+            "K-均值叢集 (K-Means Clustering)"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "監督學習",
+        "explanation": "貝氏分類器為監督學習模型，使用標註資料進行學習；K-均值叢集屬於非監督學習，強化學習和自編碼器分別為強化學習和非監督學習模型。",
+        "number": 643,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "關於生成式 AI 與鑑別式 AI，以下敘述何者正確？",
+        "options": [
+            "鑑別式 AI 主要用於生成新資料，生成式 AI 主要用於分類任務",
+            "鑑別式 AI 和生成式 AI 功能完全相同，可互相替代",
+            "生成式 AI 只能處理文字輸入，鑑別式 AI 只能處理圖片輸入",
+            "生成式 AI 通常可用於圖像合成，鑑別式 AI 常用於分類判斷"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成式 AI",
+        "explanation": "生成式 AI 通常用於合成各類新資料（如影像、文字），鑑別式 AI 重點在辨別分類任務，兩者功能和應用不同且互補。",
+        "number": 644,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "在資料隱私與安全中，下列哪一項技術可以有效保護使用者資料不被直接交換？",
+        "options": [
+            "直接資料共享",
+            "集中式資料庫",
+            "資料去中心化管理",
+            "聯邦學習"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許在不直接分享原始數據的情況下進行模型訓練，有效提高資料隱私與安全性。",
+        "number": 645,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "以下關於深度學習架構 Transformer 的敘述，何者最為正確？",
+        "options": [
+            "Transformer 不支援並行運算，且訓練效率低下",
+            "Transformer 使用注意力機制有效解決長期依賴問題",
+            "Transformer 僅用於處理結構化資料，難以處理自然語言",
+            "Transformer 僅用於影像識別，不適用於文本分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "Transformer",
+        "explanation": "Transformer架構使用注意力機制，解決了長期依賴的問題，並且支援高效的並行運算，是自然語言處理的主流模型。",
+        "number": 646,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "何者最能描述 \"Human on loop\" 的意涵？",
+        "options": [
+            "模型完全自動運作，無需人力介入或監督",
+            "透過人力全程手動完成決策，無自動化部分",
+            "將使用者操作自動記錄，無實際影響模型判斷",
+            "人為定期監控模型決策，必要時介入調整"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "模型治理與倫理",
+        "concept": "Human on loop",
+        "explanation": "Human on loop 指人為持續監控與參與模型決策流程，以確保模型準確性與倫理符合，非完全自動化。",
+        "number": 647,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "在 AI 系統中，何者屬於資料基本概念的“關聯式資料”範例？",
+        "options": [
+            "文字檔無結構的紀錄",
+            "以表格形式，欄位間有外鍵關係",
+            "大規模向量化的影像庫",
+            "分散式儲存的非結構化資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "關聯式資料庫",
+        "explanation": "關聯式資料庫以結構化的表格形式儲存資料，表格間透過外鍵建立彼此的關聯，是典型的關聯式資料概念。",
+        "number": 648,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "機器學習中 \"偏差變異權衡\"（Bias-Variance Tradeoff）指的是？",
+        "options": [
+            "模型偏差越高，變異性越低，且均可同時減少",
+            "變異性增高會減少偏差，模型越簡單越好",
+            "模型偏差與變異性需找到平衡，過高會影響預測準確性",
+            "偏差指資料的噪音，變異指模型的計算效率"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "模型評估與優化",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差變異權衡指出模型需要在低偏差（擬合準確）與低變異（泛化穩定）之間取得平衡，避免過擬合或欠擬合。",
+        "number": 649,
+        "date": "2026-07-06"
+    },
+    {
+        "question": "以下哪一種常見的生成式 AI 技術，可提高生成內容與上下文的連貫性？",
+        "options": [
+            "剪枝技術 (Pruning)",
+            "生成式對抗網絡 (GAN)",
+            "One-Hot 編碼",
+            "檢索增強生成技術 (RAG)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式 AI 應用",
+        "concept": "檢索增強生成技術 (RAG)",
+        "explanation": "RAG(檢索增強生成)結合檢索技術與生成模型，改善生成結果的語境一致性和準確度，是提升生成式 AI 內容連貫性的有效方法。",
+        "number": 650,
+        "date": "2026-07-06"
     }
 ]

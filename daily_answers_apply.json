@@ -3398,5 +3398,175 @@
         "explanation": "負責任 AI 強調解釋性、隱私保護、公平性及人類監督，保障生成式 AI 的安全與合規使用，非粗放無治理。",
         "number": 200,
         "date": "2026-05-14"
+    },
+    {
+        "question": "在No Code/Low Code平台中，哪一項是最大限度降低開發門檻的主要優勢？",
+        "options": [
+            "透過簡化GUI確保程式碼的可讀性和擴展性",
+            "直接使用純手寫程式碼以提升系統的靈活性",
+            "強化硬體資源使用以加速應用的執行效率",
+            "減少專業程式編寫需求以加快應用開發速度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 優勢",
+        "explanation": "No Code/Low Code平台透過減少程式編寫，讓非專業開發者也能快速設計和部署應用程式，從而加速產品開發流程。",
+        "number": 201,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "生成式AI導入評估中，以下何者屬於最重要的風險管理措施？",
+        "options": [
+            "增加使用者介面的互動豐富度",
+            "確保硬體效能優化以避免延遲",
+            "評估模型偏見及數據隱私合規性問題",
+            "建立更複雜的多模型融合架構"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "生成式AI導入需重點評估模型偏見及數據隱私，防止法律風險及負面社會影響，這是風險管理中的核心措施。",
+        "number": 202,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "在選用生成式AI工具時，何者為提升精準度的有效方法？",
+        "options": [
+            "善用上下文提示與少樣本提示提升模型表現",
+            "全面依賴預訓練模型無需後續調整",
+            "忽略數據多樣性強調單一來源數據",
+            "偏重模型大小以提升運算速度效率"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示詞使用",
+        "explanation": "利用上下文提示及少樣本提示技術，可針對特定任務優化模型輸出，提升生成式AI的精準度與實用性。",
+        "number": 203,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "No Code與Low Code平台在限制上，最可能面臨的挑戰是？",
+        "options": [
+            "限制使用者界面設計的視覺美感",
+            "缺乏跨平台的移植性和協作功能",
+            "難以支持高度定制化的複雜業務需求",
+            "對硬體要求過低導致運算瓶頸"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 限制",
+        "explanation": "No Code/Low Code的主要限制是對高度定制化的業務需求支持不足，因為其主要設計是為了快速開發簡化流程而非複雜系統。",
+        "number": 204,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "生成式AI導入規劃中，下列何者是確保項目成功的關鍵步驟？",
+        "options": [
+            "重點配置團隊專注在數據標註工作",
+            "擴充系統硬體以達成即時回應要求",
+            "聚焦於長期技術堆疊無視初期需求",
+            "完整評估業務需求與模型能力匹配度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入規劃",
+        "explanation": "成功的生成式AI導入必須從業務需求出發，評估模型的適用性，確保技術能切合實際場景需求。",
+        "number": 205,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "以下哪個生成式AI應用領域最適合導入GitHub Copilot？",
+        "options": [
+            "醫療影像診斷與病理學輔助",
+            "軟體開發與程式碼自動生成輔助",
+            "文本情感分析及主題提取任務",
+            "視訊監控圖片即時辨識分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "生成式AI工具",
+        "explanation": "GitHub Copilot專為程式碼輔助生成設計，可在軟體開發過程中提高程式碼撰寫的效率與正確性。",
+        "number": 206,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "在多模型融合（MCP）技術中，主要目的是？",
+        "options": [
+            "強化單一模型結構以降低過擬合風險",
+            "使用不同硬體資源分工加速訓練流程",
+            "減少模型參數總量以提升運算速度",
+            "結合多個模型結果提高預測精度與魯棒性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "多模型融合",
+        "explanation": "多模型融合技術透過結合不同模型的優勢，提高預測的精度與穩定性，常用於生成式AI強化效果。",
+        "number": 207,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "以下何者不是No Code / Low Code工具常見的限制？",
+        "options": [
+            "過度依賴內建元件導致彈性不足",
+            "使用者無需任何理解程式框架即可開發",
+            "無法完全支持高複雜度定制開發需求",
+            "效能瓶頸可能因抽象層次過高而產生"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 限制",
+        "explanation": "No Code/Low Code工具雖然降低程式設計難度，但開發者仍需理解一定的邏輯和框架，不是完全無需理解。",
+        "number": 208,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "在生成式AI的上下文提示技術中，哪項最能提升模型生成的相關性？",
+        "options": [
+            "忽略已知資訊快速觸發生成過程",
+            "加入任務相關的詳細上下文文字說明",
+            "使用單純關鍵字疊加無序清單提示",
+            "減少提示詞長度以避免模型過度擬合"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "上下文提示",
+        "explanation": "加入具體且相關的上下文信息，有助於生成模型理解任務背景，產出更為精確及符合需求的結果。",
+        "number": 209,
+        "date": "2026-07-07"
+    },
+    {
+        "question": "生成式AI導入項目中，如何評估模型是否符合業務需求？",
+        "options": [
+            "采納所有生成結果避免遺漏潛在價值",
+            "以模型複雜度作為導入主要決策依據",
+            "透過關鍵性能指標(KPI)與業務目標的匹配度評估",
+            "僅依賴模型訓練精度來判斷適用性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估",
+        "explanation": "確定模型與業務需求匹配，需透過設定和追蹤相關關鍵性能指標，確保AI系統能實際創造價值。",
+        "number": 210,
+        "date": "2026-07-07"
     }
 ]

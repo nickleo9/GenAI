@@ -11228,5 +11228,175 @@
         "explanation": "AI技術被廣泛整合到日常應用如郵件、搜尋、購物及餐廳預訂等服務，大幅提升用戶體驗。",
         "number": 660,
         "date": "2026-07-06"
+    },
+    {
+        "question": "根據2026年最新AI技術趨勢，代理式AI（Agentic AI）最重要的四項核心能力是以下哪一組？",
+        "options": [
+            "收集、清洗、分析、優化",
+            "生成、判別、對抗、收斂",
+            "感知、學習、分類、預測",
+            "感知、推理與計畫、行動、反思"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "代理式AI能力",
+        "concept": "代理式AI核心能力",
+        "explanation": "代理式AI定義為自主執行任務的AI系統，需具備感知環境、推理與計畫行動、執行行動及反思調整四項核心能力。",
+        "number": 661,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "在資料清洗中，當資料中遺缺值比例過高且無法修復時，應優先採取何種處理策略？",
+        "options": [
+            "使用插補法預估遺缺值",
+            "以平均值填補遺缺值",
+            "標準化數據後保留遺缺值",
+            "刪除遺漏資料的整筆記錄"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料清洗流程",
+        "concept": "遺缺值處理",
+        "explanation": "當遺缺值比例過高且資料不可恢復時，刪除該筆資料有助於維持資料質量，避免填補錯誤影響模型表現。",
+        "number": 662,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "在AI治理的最新趨勢裡，企業推動生成式AI應用時，面臨的最大道德挑戰是？",
+        "options": [
+            "確保AI內容的創新性",
+            "符合使用者隱私與資料真實性要求",
+            "採用最高性能模型",
+            "降低模型運算成本"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "倫理與法規",
+        "concept": "資料隱私與真實性",
+        "explanation": "生成式AI大量產生內容，但使用者更重視內容的真實性及個人隱私保護，是AI治理的核心挑戰。",
+        "number": 663,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "以下哪種機器學習模型屬於監督學習範疇？",
+        "options": [
+            "支持向量機（SVM）",
+            "主成分分析（PCA）",
+            "K均值叢集（K-Means）",
+            "生成對抗網路（GAN）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型分類",
+        "concept": "監督學習模型",
+        "explanation": "支持向量機屬於監督學習，使用標記數據訓練模型，與非監督學習和生成模型不同。",
+        "number": 664,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "在資料整理流程中，ETL代表什麼過程？",
+        "options": [
+            "編碼（Encode）、清洗（Transform）、導入（Load）",
+            "分析（Examine）、轉化（Translate）、更新（Update）",
+            "擷取（Extract）、轉換（Transform）、載入（Load）",
+            "輸入（Enter）、測試（Test）、儲存（Log）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL流程是資料工程中的核心，分別為擷取資料、轉換格式及清理，最後載入目標資料庫。",
+        "number": 665,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "鑑別式AI與生成式AI最大的區別在於？",
+        "options": [
+            "兩者均能生成新數據，但生成式AI速度更快",
+            "鑑別式AI判斷輸入數據類別，生成式AI創造新的數據樣本",
+            "鑑別式AI主要用於生成新數據，生成式AI專注分類任務",
+            "生成式AI只能處理結構化數據，鑑別式AI可處理非結構化數據"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別與生成模型差異",
+        "explanation": "鑑別式模型用於判斷數據屬於哪個類別，生成式模型則能生成全新數據樣本。",
+        "number": 666,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "使用聯邦學習技術在AI應用的最大優點是？",
+        "options": [
+            "提高模型訓練速度和效率",
+            "中心化數據儲存安全性高",
+            "保護資料隱私同時協同訓練模型",
+            "降低模型複雜度以提高準確率"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許多個節點在不共享原始資料下協同訓練模型，提升隱私保護與安全。",
+        "number": 667,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "下列哪一項不是機器學習中常見的正則化技術？",
+        "options": [
+            "K均值聚類",
+            "L1正則化",
+            "L2正則化",
+            "dropout隨機失活"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見模型與技術",
+        "concept": "正則化方法",
+        "explanation": "K均值聚類是非監督學習方法，不屬於正則化技術；其他為用於控制模型過擬合的正則化技術。",
+        "number": 668,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "下列何者最能描述生成式AI操作過程？",
+        "options": [
+            "記憶過去數據並返回原始樣本",
+            "根據標籤數據學習分辨類別",
+            "透過提示詞生成與上下文一致的內容",
+            "結合多種資料源以精準預測結果"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "提示詞生成",
+        "explanation": "生成式AI通過設計提示詞，根據上下文產生連貫且相關的新內容。",
+        "number": 669,
+        "date": "2026-07-08"
+    },
+    {
+        "question": "以下何者屬於人工智慧治理的主要挑戰？",
+        "options": [
+            "提升模型準確率與效率",
+            "設計多模態模型架構",
+            "增強模型的推論速度",
+            "保障資料隱私與建立透明度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "倫理與法規",
+        "concept": "資料隱私與透明度",
+        "explanation": "AI治理強調在促進技術發展同時，注重資料隱私保護與決策透明度，確保倫理合規。",
+        "number": 670,
+        "date": "2026-07-08"
     }
 ]

@@ -1247,6 +1247,11 @@ const iPASQuizApp = {
             this.generateAIExplanation(question, userAnswerLetter);
         }
 
+        // 🔥 題目回報按鈕(2026-07-09)
+        window.__lastShownQuestion = question;
+        window.__lastShownDatabase = this.state.selectedDatabase;
+        explanationHTML += '<div class="mt-2 text-end"><button class="btn btn-sm btn-outline-secondary" onclick="reportQuestion()"><i class="fas fa-flag me-1"></i>回報此題有誤</button></div>';
+
         this.elements.explanationContent.innerHTML = explanationHTML;
         this._scrollToExplanation();
     },
@@ -3453,3 +3458,35 @@ function checkFeatureAccess(feature) {
 
 
 
+
+
+// 🔥 題目回報功能(2026-07-09 新增,後端 webhook: report-question)
+async function reportQuestion() {
+    const q = window.__lastShownQuestion;
+    if (!q) { alert('找不到目前題目'); return; }
+    const reason = prompt('請說明這題哪裡有問題?(例:答案錯誤/題意不清/選項重複)');
+    if (!reason || !reason.trim()) return;
+    let uid = 'guest';
+    try {
+        for (const k of ["iPASQuizUserData", "user_data", "ipas_user_data"]) {
+            const d = JSON.parse(localStorage.getItem(k) || '{}');
+            if (d && (d.user_id || d.userId)) { uid = d.user_id || d.userId; break; }
+        }
+    } catch (e) {}
+    try {
+        await fetch('https://nickleo9.zeabur.app/webhook/report-question', {
+            method: 'POST',
+            headers: { 'Content-Type': 'application/json' },
+            body: JSON.stringify({
+                subject: window.__lastShownDatabase || 'unknown',
+                question_number: q.number || null,
+                question_text: (q.question || '').slice(0, 200),
+                reason: reason.trim().slice(0, 300),
+                user_id: uid
+            })
+        });
+        alert('✅ 已收到回報,感謝你讓題庫更好!');
+    } catch (e) {
+        alert('回報送出失敗,請稍後再試');
+    }
+}

@@ -3568,5 +3568,175 @@
         "explanation": "確定模型與業務需求匹配，需透過設定和追蹤相關關鍵性能指標，確保AI系統能實際創造價值。",
         "number": 210,
         "date": "2026-07-07"
+    },
+    {
+        "question": "在生成式AI應用中，何者最能體現No Code工具的核心優勢？",
+        "options": [
+            "允許使用者無需編程即可快速建立應用服務",
+            "提供專業編碼介面以滿足高級開發需求",
+            "依賴複雜的腳本語言來優化性能表現",
+            "需要專業資料科學家進行模型調校"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 優勢",
+        "explanation": "No Code工具的主要優勢是允許使用者無需任何程式編碼背景即可快速構建應用，提升創新效率與普及度，因此選項A為正確答案。",
+        "number": 211,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "在生成式AI風險管理中，下列哪一項策略最適合減少數據隱私洩露風險？",
+        "options": [
+            "使用聯邦學習技術避免集中儲存敏感資料",
+            "依賴雲端服務本身的安全防護措施",
+            "全部公開所有模型及數據以促進透明度",
+            "在訓練數據中加入更多合成數據來隱藏敏感信息"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "數據隱私保護",
+        "explanation": "聯邦學習技術是透過分散式學習方式，讓資料保留在本地，避免敏感資訊外洩，因此是合適風險管理策略。",
+        "number": 212,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "關於生成式AI工具的提示詞使用，下列哪種提示詞技術可提升多步推理準確度？",
+        "options": [
+            "Graph prompt提高圖結構解析能力",
+            "Chain of Thought提示支援多步及多向思維策略",
+            "利用上下文提示提升單步輸出完整度",
+            "Auto Prompt Engineer自動生成正確提示詞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示工程 Chain of Thought",
+        "explanation": "Chain of Thought（推理鏈）提示技術可引導模型逐步進行推理，提高多步推理的準確性與合理性，故此選項為正確。",
+        "number": 213,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "以下哪種描述最符合Low Code開發平台的限制？",
+        "options": [
+            "需要具備高端編程能力以調整應用細節",
+            "完全無需任何使用者參與即可自動完成開發",
+            "低學習曲線但不易進行複雜自訂功能開發",
+            "通常耗費大量訓練數據以達成高精度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code 限制",
+        "explanation": "Low Code平台的限制為對複雜自訂功能支持有限，雖降低學習門檻，但仍有開發上的限制，故選項A正確。",
+        "number": 214,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "在生成式AI導入前的評估規劃中，下列哪個要素是最重要的關鍵指標？",
+        "options": [
+            "所使用的資料庫類型及存取速度",
+            "訓練過程中所使用的硬體資源",
+            "模型架構的複雜度與大小",
+            "模型準確率與業務場景的匹配度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入評估關鍵指標",
+        "explanation": "生成式AI導入中，模型準確率是否契合業務場景，是評估時最核心的指標，直接影響應用效果與實用性。",
+        "number": 215,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "生成式AI在客服領域的典型應用，最常利用哪項技術實現即時響應？",
+        "options": [
+            "模型壓縮提升模型部署效率",
+            "多模態模型結合影像與音訊理解",
+            "知識蒸餾以簡化客服模型尺寸",
+            "大規模語言模型（LLM）處理自然語言對話"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI產業應用",
+        "concept": "大規模語言模型應用",
+        "explanation": "客服領域大量使用大規模語言模型來處理自然語言理解與生成，實現較高質量的即時對話響應。",
+        "number": 216,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "選擇生成式AI工具時，何者不是評估導入規劃時應考慮的因素？",
+        "options": [
+            "工具的視覺化操作頁面美觀程度",
+            "提供的API安全控管機制",
+            "工具在目標行業的適用案例",
+            "工具的兼容性與擴展性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "工具評估準則",
+        "explanation": "視覺化介面美觀與否通常不影響工具功能與安全性，故不屬於重點評估條件，選項C為正確答案。",
+        "number": 217,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "下列哪個是自動生成提示詞（Auto Prompt Engineer, APE）的主要作用？",
+        "options": [
+            "將提示詞轉換成程式碼以便直接執行",
+            "評估提示詞在真實場景中的道德合規性",
+            "將複雜邏輯轉化成結構化數據格式",
+            "自動設計最佳提示詞以提高模型回應質量"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "Auto Prompt Engineer",
+        "explanation": "自動提示工程師(APE)的核心在於自動生成或優化提示詞，提升生成式AI模型的回答品質，故選項B為正確。",
+        "number": 218,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "導入生成式AI系統時，哪種風險管理措施最適合降低模型可能存在的偏見與歧視？",
+        "options": [
+            "全自動數據清洗避免人為干預風險",
+            "完全依賴預訓練模型輸出結果來加速部署",
+            "不考慮回饋機制避免引入外部干擾",
+            "採用多模型融合技術（MCP）加強決策多元性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "多模型融合",
+        "explanation": "多模型融合(MCP)透過結合多個模型結果，可有效減少單一模型偏見，提升結果公平性與多元性，是重要風險管理策略。",
+        "number": 219,
+        "date": "2026-07-11"
+    },
+    {
+        "question": "在生成式AI應用中，何者描述最符合上下文提示（Context Prompting）的使用方式？",
+        "options": [
+            "將多個提示詞結合成複雜提示以擴展生成範圍",
+            "通過提供相關歷史對話或信息提升生成反應的連貫性",
+            "自動生成多個候選提示詞供模型篩選使用",
+            "針對多模態輸入數據設計專用提示詞"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "上下文提示",
+        "explanation": "上下文提示通過提供相關先前訊息給模型，幫助生成更連貫和符合語境的答案，是提升生成品質的關鍵技術。",
+        "number": 220,
+        "date": "2026-07-11"
     }
 ]

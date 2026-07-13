@@ -11568,5 +11568,175 @@
         "explanation": "地端部署即邊緣運算，減少數據傳輸，降低隱私洩露風險並減少延遲，是資料隱私要求較高場域的理想選擇。",
         "number": 680,
         "date": "2026-07-10"
+    },
+    {
+        "question": "在2026年最新多模態原生模型中，其核心優勢不包括以下哪一項？",
+        "options": [
+            "預訓練階段即聯合學習文字、影像、音訊與程式碼，減少系統整合複雜度",
+            "整合多種感知資訊，提高模型應用的靈活性與準確度",
+            "僅支援文字與影像的簡單疊加，易於快速開發",
+            "由於原生設計，能在多模態輸入間達成更佳的語意理解"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI模型架構",
+        "concept": "多模態原生模型",
+        "explanation": "正確答案B，因多模態原生模型的核心在於預訓練階段即聯合多種模態數據學習，而非簡單的功能疊加或支援有限的模態。",
+        "number": 681,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "關於AI Agent的核心能力，下列哪一組描述正確？",
+        "options": [
+            "監控、告警、修復、報告",
+            "搜尋、分類、預測、儲存",
+            "輸入、輸出、訓練、評估",
+            "感知、推理與計畫、行動、反思"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Agent技術",
+        "concept": "AI Agent能力構成",
+        "explanation": "AI Agent的四大核心能力包含感知（Perception）、推理與計畫（Reasoning and Planning）、行動（Action）以及反思（Reflection），能自主完成複雜任務。",
+        "number": 682,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "以下哪一項不屬於資料隱私與安全的重要考量？",
+        "options": [
+            "強調資料的完整性，避免資料篡改",
+            "確保資料在傳輸與存儲過程中加密",
+            "在分析資料時任意分享用戶個資以便深度學習",
+            "控制資料的存取權限，防止未授權存取"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料保護原則",
+        "explanation": "正確答案D，任意分享用戶個資違反資料隱私保護原則，合規作法須控制並保護敏感資訊。",
+        "number": 683,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "機器學習中，以下哪一項描述最貼切「強化學習」？",
+        "options": [
+            "根據有標註的資料學習輸入與輸出關係",
+            "利用統計方法對資料進行分群",
+            "透過獎勵與懲罰機制，學習最佳策略以達成目標",
+            "從無標註資料中找出資料結構與模式"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "強化學習原理",
+        "explanation": "強化學習是一種自主學習策略，透過環境反饋的獎勵與懲罰，學習如何採取能最大化報酬的行動。",
+        "number": 684,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "以下何者為鑑別式AI與生成式AI整合應用的實例？",
+        "options": [
+            "鑑別式AI負責判斷生成式AI產出的結果是否合理，兩者合作提升內容品質",
+            "鑑別式AI用於圖像分類，生成式AI用於圖像生成，二者完全獨立運作",
+            "鑑別式AI只用於資料清洗，生成式AI只用於文字產出",
+            "生成式AI取代鑑別式AI使用，無須驗證產出結果"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "鑑別與生成的合作關係",
+        "explanation": "鑑別式AI通常用於判斷或評估生成式AI結果的真實性與合理性，兩者協作能提升生成內容的準確度與可信度。",
+        "number": 685,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "在資料整理與分析流程中，ETL指的是什麼？",
+        "options": [
+            "Enhance、Transfer、Label，指資料強化、轉移與標注",
+            "Estimate、Test、Learn，意指估算、測試與學習資料特性",
+            "Evaluate、Trim、Link，指評估、修剪與連結資料",
+            "Extract、Transform、Load，意指資料抽取、轉換與載入"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL是資料工程常見流程，包括資料抽取（Extract）、轉換（Transform）為合適格式及載入（Load）至目標系統。",
+        "number": 686,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "於機器學習模型中，正則化技術L1與L2的主要差異為何？",
+        "options": [
+            "L1與L2正則化皆使所有參數變為零，無差異",
+            "L1正則化對權重大小沒有影響，僅用於提升準確度",
+            "L2正則化會導致稀疏解，使部分權重變零，L1則會均勻縮小權重",
+            "L1正則化會導致稀疏解，使部分權重變零，L2則會均勻縮小權重"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1與L2正則化差異",
+        "explanation": "L1正則化常用於特徵選擇，因可使部分權重稀疏化為零；L2則透過均勻縮小權重，減少過擬合。",
+        "number": 687,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "以下何者最符合AI治理中「監理沙盒」的定義？",
+        "options": [
+            "透過沙盤遊戲測試AI的決策能力",
+            "限制所有AI相關技術的開發與使用，以防外泄",
+            "建立用戶行為監控系統，即時阻止異常操作",
+            "允許企業在受控環境下試驗AI應用，觀察風險與效果"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "法規與規範",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒提供企業實驗新AI技術的合法受控環境，透過實際測試理解風險與效益，利於法規制定與調整。",
+        "number": 688,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "鑑別式AI最主要的工作目標為何？",
+        "options": [
+            "判斷輸入資料是否屬於特定類別或真實與否",
+            "生成新的數據或內容以增強資料庫",
+            "建立資料間的潛在關聯以推斷未知資訊",
+            "自主學習並探索最佳策略以解決問題"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式AI目標",
+        "explanation": "鑑別式AI著重於判斷或分類任務，辨識數據屬性或真假，主要用於監督學習與分類問題。",
+        "number": 689,
+        "date": "2026-07-13"
+    },
+    {
+        "question": "在最新生成式AI應用中，何謂RAG（檢索增強生成技術）？",
+        "options": [
+            "單純依賴生成模型產出內容，不涉及外部資料庫",
+            "利用傳統資料庫做批量數據整理，不生成文本",
+            "結合檢索系統與生成模型，以提供符合上下文的答案",
+            "只用於圖像生成的資料增強技術"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程與應用",
+        "concept": "RAG技術",
+        "explanation": "RAG技術融合檢索和生成模型優勢，可從龐大資料庫檢索相關資料並生成上下文一致、精確答案，提高生成準確性。",
+        "number": 690,
+        "date": "2026-07-13"
     }
 ]

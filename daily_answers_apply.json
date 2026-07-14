@@ -3738,5 +3738,175 @@
         "explanation": "上下文提示通過提供相關先前訊息給模型，幫助生成更連貫和符合語境的答案，是提升生成品質的關鍵技術。",
         "number": 220,
         "date": "2026-07-11"
+    },
+    {
+        "question": "關於2026年多模態原生模型架構，下列何者陳述正確？",
+        "options": [
+            "模型依序處理多模態數據，無須同時學習或聯合訓練",
+            "多模態能力主要依賴後端API插件來整合不同媒介數據",
+            "多模態原生模型主要提升文字生成速度，影像處理仍依賴外部系統",
+            "模型從預訓練階段即同時學習文字、影像與程式碼的聯合表示"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "多模態原生模型",
+        "explanation": "2026年多模態原生模型在預訓練階段即聯合學習不同媒介表示，非後期插件整合，提升系統整合效率與推理性能。",
+        "number": 221,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "在No Code/Low Code平台選擇上，2026年哪項策略較符合生成式AI應用趨勢？",
+        "options": [
+            "No Code平台僅適合簡單任務，複雜案務仍需全手動開發",
+            "以 GoDaddy Airo AI Builder為企業首選，專注生成企業級應用",
+            "優先採用 Cursor 或 Windsurf，利用自然語言描述完成全流程開發",
+            "堅持傳統IDE結合外掛生成程式碼，確保舊案架構穩定"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code平台選型",
+        "explanation": "2026年AI原生IDE如Cursor及Windsurf支持自然語言全流程開發，極大提升開發效率及門檻降低。",
+        "number": 222,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "2026年生成式AI導入評估中，何者最能有效管理Token經濟學以達到成本效益？",
+        "options": [
+            "將複雜任務分配旗艦模型，輕量工作交給微型模型",
+            "忽略模型選擇僅採用最新版本進行全部任務",
+            "高頻率重複運算由旗艦模型與微型模型同時参与",
+            "所有任務均由高階旗艦模型統一處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "Token經濟學與模型階層式佈局",
+        "explanation": "階層佈局將複雜決策交給旗艦模型，輕量任務分配微型模型，能降低Token成本及提升效率。",
+        "number": 223,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "下列哪項描述正確呈現2026年AI治理框架與合成資料的應用？",
+        "options": [
+            "合成資料技術無助於減少對敏感資料的依賴",
+            "合成資料是由人工標籤製成，無法模擬真實統計特性",
+            "AI治理框架涵蓋資料隱私、模型偏誤監控及合規審查",
+            "AI治理僅關注模型輸出準確性，不重視數據合規"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "AI治理與合成資料",
+        "explanation": "2026年AI治理框架強調資料隱私及模型合規監控，合成資料可模擬統計特性並降低敏感資料使用。",
+        "number": 224,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "生成式AI中，提示詞工程的「Answer-First」策略適用何種情境？",
+        "options": [
+            "所有查詢任務均應避免提前給出答案以防誤導模型",
+            "需快速決策且邏輯透明度高的場景，先給出答案再解釋",
+            "提示詞應側重於逐步思考而非提前輸出結論",
+            "複雜推理任務中避免使用結論先行的提示詞結構"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "提示詞工程",
+        "explanation": "Answer-First策略適用需快速決策且邏輯透明的情境，先呈現結論方便快速判斷與決策。",
+        "number": 225,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "2026年企業採用邊緣AI與私有化部署的主要優勢是？",
+        "options": [
+            "私有化部署無法支援多模態處理且缺乏擴展性",
+            "在本地運行大模型保障隱私與即時響應",
+            "邊緣AI主要降低傳輸雲端成本但無即時反應能力",
+            "私有部署導致推理速度降低，不建議用於高時效業務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "邊緣AI與私有部署",
+        "explanation": "本地部署大模型可提供更佳資料隱私與即時性反饋，是2026年邊緣AI發展的重要優勢。",
+        "number": 226,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "2026年生成式AI影像與影片生成工具的技術突破包括何者？",
+        "options": [
+            "Midjourney V7突破恐怖谷，加強生成畫面真實性",
+            "Seedance 2.0與Veo無法生成高品質短影片",
+            "OpenAI Sora持續營運並擴大影片生成市場份額",
+            "影像生成速度的提升是唯一技術突破"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "影像與影片生成技術",
+        "explanation": "Midjourney V7顯著提升影像真實度，OpenAI Sora已於2026年初關閉，Seedance 2.0等新工具則接替影片製作市場。",
+        "number": 227,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "2026年AI Agent技術下列何種敘述正確？",
+        "options": [
+            "Agent技術未改變企業工作方式，仍是被動工具",
+            "Agent不適合執行複雜任務，只做查詢用途",
+            "Agent僅能處理單指令，無法動態調整過程",
+            "AI Agent可自主規劃並執行多步工作流程，連動外部工具"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI應用領域與工具使用",
+        "concept": "AI Agent自主代理",
+        "explanation": "2026年AI Agent已能自主規劃並執行複雜多步任務，極大改變工作方式，連接多種工具網絡。",
+        "number": 228,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "生成式AI導入評估中，何者錯誤理解Token經濟學的應用？",
+        "options": [
+            "動態依任務複雜度選擇不同模型以最佳化成本和效能",
+            "將複雜判斷交由旗艦模型，簡易任務交由微型模型處理",
+            "所有任務皆統一使用旗艦模型以確保質量一致",
+            "輕量任務分配微型模型，減少總體Token消耗"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "Token經濟學模型階層式佈局",
+        "explanation": "所有任務用旗艦模型會造成成本過高，2026年趨勢是依任務特性分級使用不同模型節省資源。",
+        "number": 229,
+        "date": "2026-07-14"
+    },
+    {
+        "question": "2026年生成式AI核心競爭力在於？",
+        "options": [
+            "將AI與領域知識深度整合，打造行業解決方案",
+            "模型參數越大，解決方案越完美無缺",
+            "採用最新旗艦模型即可保持競爭優勢",
+            "僅靠多樣化AI工具使用保持市場競爭力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI導入評估規劃",
+        "concept": "核心競爭力與技術整合",
+        "explanation": "通用AI工具商品化後，差異化競爭力來自AI與行業專業知識的深度整合與應用落地。",
+        "number": 230,
+        "date": "2026-07-14"
     }
 ]

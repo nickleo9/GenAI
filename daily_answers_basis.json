@@ -11738,5 +11738,175 @@
         "explanation": "RAG技術融合檢索和生成模型優勢，可從龐大資料庫檢索相關資料並生成上下文一致、精確答案，提高生成準確性。",
         "number": 690,
         "date": "2026-07-13"
+    },
+    {
+        "question": "根據2026年7月最新AI規範，以下哪項AI功能在中國必須強制下架以符合新法規？",
+        "options": [
+            "生成式圖像AI工具",
+            "人形互動AI代理（Human-like Agent）",
+            "AI語音助理服務",
+            "自動新聞摘要AI系統"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "AI法規與合規",
+        "concept": "生成式AI合規",
+        "explanation": "中國於2026年7月實施新AI法規，嚴格限制涉及擬人化互動的AI代理服務，導致相關產品如豆包、千問必須下架，以符合人形AI安全與合規要求。",
+        "number": 691,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "Meta於2026年7月推出的新代理式AI模型Muse Spark 1.1，其主要應用定位為？",
+        "options": [
+            "代理編程智能助手",
+            "風險評估預測系統",
+            "生成式圖像設計服務",
+            "語音合成與識別工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "代理式AI模型",
+        "concept": "代理式AI",
+        "explanation": "Muse Spark 1.1是Meta推出的代理式編程AI模型，主要面向程式開發者，強化自動化碼生成與代理任務處理，與生成式圖像或語音模型不同。",
+        "number": 692,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "以下何者屬於機器學習的三大類型之一，尤其是透過「回饋機制」及「獎勵」進行學習的類型？",
+        "options": [
+            "非監督式學習",
+            "強化學習",
+            "監督式學習",
+            "遷移學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "學習類型辨識",
+        "concept": "強化學習",
+        "explanation": "強化學習透過環境回饋與獎勵機制，讓模型持續調整策略行動，與監督式和非監督式學習不同，適用於決策與自我優化。",
+        "number": 693,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "在資料處理流程中，ETL代表哪一項完整作業？",
+        "options": [
+            "分析（Explore）、轉換（Transform）、評估（Test）",
+            "抽取（Extract）、測試（Test）、載入（Load）",
+            "抽取（Extract）、轉換（Transform）、載入（Load）",
+            "存儲（Encode）、轉換（Transform）、繪圖（Layout）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL意指資料的抽取、轉換與載入，是將異質資料整合為分析可用格式的重要過程。",
+        "number": 694,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "關於生成式AI訓練階段，下列何者正確描述主要階段？",
+        "options": [
+            "監督學習與非監督學習",
+            "資料收集與特徵工程",
+            "預訓練階段與微調階段",
+            "特徵提取與分類器訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型訓練流程",
+        "concept": "生成式AI訓練",
+        "explanation": "生成式AI主要通過大型語料的預訓練，再進行微調以針對特定任務或上下文優化輸出。",
+        "number": 695,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "在機器學習中，哪種正則化技術會導致部分權重直接等於零，從而促進模型的稀疏性？",
+        "options": [
+            "Batch Normalization",
+            "L2正則化",
+            "L1正則化",
+            "Dropout正則化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "模型正則化",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會對模型權重施加絕對值懲罰，促使部分權重降為零，以達到特徵選擇與模型簡化效果。",
+        "number": 696,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "以下哪項最不可能是非結構化數據的範例？",
+        "options": [
+            "自由文本郵件內容",
+            "MySQL關聯式資料庫",
+            "音訊紀錄與錄音",
+            "影像與視頻檔案"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料類型",
+        "concept": "資料結構分類",
+        "explanation": "非結構化數據指沒有固定模式與表格結構的資料，如文本、影像、音訊；而MySQL是典型關聯式結構化資料。",
+        "number": 697,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "於鑑別式AI與生成式AI整合應用中，何者為主要角色分工？",
+        "options": [
+            "鑑別式AI負責辨識，生成式AI負責生成內容",
+            "生成式AI負責辨識，鑑別式AI負責產生內容",
+            "二者皆負責模型壓縮與優化",
+            "兩者皆負責內容生成，無角色區分"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "原理與應用整合",
+        "concept": "鑑別式與生成式角色",
+        "explanation": "鑑別式AI主要用於辨識、分類與判斷真偽；生成式AI則用於文本、影像等新內容的創建，兩者合用提升智能系統功能。",
+        "number": 698,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "何謂Human on loop (人為介入)在現代AI系統的意義？",
+        "options": [
+            "人工監督決策過程以確保準確性與倫理合規",
+            "人工介入是指人在硬體維護中的角色",
+            "人為介入只在訓練資料蒐集階段使用",
+            "完全的自動化不需人工監控"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "倫理與風險管理",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指在AI決策流程中加入人工監督或干預，以降低錯誤風險並確保符合倫理、法規標準。",
+        "number": 699,
+        "date": "2026-07-15"
+    },
+    {
+        "question": "在機器學習中，Transformer架構最常見的技術困難是？",
+        "options": [
+            "資料預處理複雜度高於其他架構",
+            "訓練資料不足導致過擬合",
+            "計算資源消耗大且易出現梯度消失",
+            "無法處理長距離依賴關係"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "深度學習架構",
+        "concept": "Transformer模型問題",
+        "explanation": "Transformer擁有自注意力機制能處理長距離依賴，但面臨計算量大和梯度消失爆炸等問題，需特別設計解決策略。",
+        "number": 700,
+        "date": "2026-07-15"
     }
 ]

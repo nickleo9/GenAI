@@ -3908,5 +3908,175 @@
         "explanation": "通用AI工具商品化後，差異化競爭力來自AI與行業專業知識的深度整合與應用落地。",
         "number": 230,
         "date": "2026-07-14"
+    },
+    {
+        "question": "根據2026年最新趨勢，下列哪一項為多模態原生模型的主要優勢？",
+        "options": [
+            "僅支援單一輸入模態，無法同時處理多種資料格式",
+            "能處理文字、圖片及影片等多種數據模態，降低系統整合複雜度",
+            "多模態模型增加部署成本，不適合企業使用",
+            "僅能專注處理文本數據，提升文字生成速度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態原生模型",
+        "explanation": "多模態原生模型如GPT-5及Gemini Omni可同時處理文字、圖片與影片，簡化多系統整合流程，提升企業應用效率。",
+        "number": 231,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "下列關於No Code / Low Code平臺與生成式AI的結合，何者描述正確？",
+        "options": [
+            "Lovable與Base44提供非程式背景者App開發能力",
+            "AI在No Code領域僅能用於文字生成，無視覺設計能力",
+            "Zapier與n8n專注於純代碼開發而非自動化",
+            "No Code 平臺無法串接AI API，僅能依賴靜態模板"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 與 Low Code 平台",
+        "explanation": "Lovable與Base44代表無需撰寫程式碼即可開發應用的No Code工具，結合生成式 AI 降低開發門檻。",
+        "number": 232,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "2026年生成式AI應用領域中，哪一組工具主要用於辦公自動化與程式代理？",
+        "options": [
+            "OpenAI Codex、Manus AI、Motion",
+            "Lovable、Base44、Runway",
+            "ChatGPT、Claude、DALL-E",
+            "Midjourney、Canva、Gamma"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "辦公自動化與AI代理",
+        "explanation": "OpenAI Codex屬於程式碼代理，Manus AI與Motion為智慧排程與AI代理，適合No Code/Low Code及自動化場景。",
+        "number": 233,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "生成式AI導入評估中，下列何者為2026年企業組織能力的重點考量？",
+        "options": [
+            "僅採用單一模態模型提升處理速度",
+            "組織能力是否隨技術投資優先順序調整",
+            "是否全面依賴開源模型以降低成本",
+            "完全避免私有化部署以利公開使用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "企業組織能力需求",
+        "explanation": "2026年企業重塑組織能力以配合生成式AI技術的優先順序調整，是成功導入的關鍵。",
+        "number": 234,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "根據2026年AI治理趨勢，合成資料在風險管理中扮演何種角色？",
+        "options": [
+            "生成模擬真實世界統計特性的資料以解決瓶頸",
+            "提升真實用戶數據使用以增加準確度",
+            "僅應用於圖像生成，不適用於文字或程式碼",
+            "未有重要突破，尚無企業實際應用案例"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "合成資料",
+        "explanation": "合成資料模擬真實統計特性，可用於訓練和測試，降低使用真實用戶隱私數據的風險。",
+        "number": 235,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "2026年No Code發展中，何種AI工具最有助於無程式背景開發者的應用創建？",
+        "options": [
+            "文字生成僅限於文案撰寫的工具",
+            "專注代碼優化的GitHub Copilot",
+            "低階無法串接API的靜態模板工具",
+            "多模態原生模型如Gemini Omni"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "多模態模型與無程式背景開發",
+        "explanation": "多模態原生模型支援多種輸入輸出，便利無程式背景者快速建立多元應用。",
+        "number": 236,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "2026年下列何者不屬於生成式AI應用導入風險管理的主要項目？",
+        "options": [
+            "資料隱私與合成資料應用",
+            "AI治理與合規性監控",
+            "降低多系統整合的複雜度",
+            "禁止使用外部AI API以防資料外洩"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "生成式 AI風險管理",
+        "explanation": "完全禁止外部AI API不切實際，風險管理應注重監控、隱私與複雜度降低。",
+        "number": 237,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "2026年生成式AI工具分類，哪一組組合對應正確？",
+        "options": [
+            "文字: ChatGPT、Gemini；圖片: Midjourney、DALL-E",
+            "程式碼: Cursor、Zapier；簡報: Canva、Lovart Slides",
+            "數據分析: Perplexity、Photoshop；修圖: Topaz、SurveyMonkey AI",
+            "影片: Runway、Gamma；音樂: Lovo AI、Songburst AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI工具分類與應用",
+        "explanation": "2026年主流文字工具包括ChatGPT、Gemini，圖像生成則以Midjourney、DALL-E為主流。",
+        "number": 238,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "以下哪項描述正確反映2026年AI代理人的功能特點？",
+        "options": [
+            "具備專案脈絡知識，能自主進行腦力激盪與編輯",
+            "主要用於多模態數據的批次離線處理",
+            "只能執行簡單查詢，無法協助複雜任務規劃",
+            "完全依賴使用者逐步指令，無自主判斷能力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "AI代理人自主性",
+        "explanation": "Google Flow AI代理具備深厚專業知識與專案脈絡掌握能力，能協助創作與規劃。",
+        "number": 239,
+        "date": "2026-07-16"
+    },
+    {
+        "question": "2026年評估生成式AI導入時，何項為風險管理必備策略？",
+        "options": [
+            "強化AI治理與合規監控",
+            "加速推動完全公開化部署",
+            "拒絕所有合成資料使用",
+            "只使用單一供應商技術以降低風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "AI治理與合規",
+        "explanation": "風險管理強調AI治理與合規監控，合理利用合成資料而非拒絕，有助保障資料隱私與合規性。",
+        "number": 240,
+        "date": "2026-07-16"
     }
 ]

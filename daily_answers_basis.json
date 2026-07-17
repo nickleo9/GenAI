@@ -11908,5 +11908,175 @@
         "explanation": "Transformer擁有自注意力機制能處理長距離依賴，但面臨計算量大和梯度消失爆炸等問題，需特別設計解決策略。",
         "number": 700,
         "date": "2026-07-15"
+    },
+    {
+        "question": "在資料整理流程中，下列何者最符合ETL的定義？",
+        "options": [
+            "資料驗證、模型評估、模型調優",
+            "資料擷取、數據清洗、數據視覺化呈現",
+            "資料抽取、轉換、載入到資料倉庫",
+            "資料蒐集、特徵工程、模型訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL代表Extract（抽取），Transform（轉換），Load（載入），是資料整理過程的三個主要步驟，用於將資料抽取後進行清洗與轉換，最後載入目標資料庫或倉庫。",
+        "number": 701,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "下列哪一項不屬於AI治理的核心議題？",
+        "options": [
+            "公平性與偏見控制",
+            "模型的運算效能提升",
+            "資料隱私與安全",
+            "透明度與可解釋性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "AI治理核心",
+        "explanation": "AI治理主要關注如何確保AI系統的透明度、公平性、隱私安全等倫理與法律議題，提升運算效能屬於技術優化面向，非治理核心。",
+        "number": 702,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "在監督學習中，下列何者最適合用於分類問題？",
+        "options": [
+            "主成分分析（PCA）",
+            "貝氏分類器",
+            "強化學習演算法",
+            "卷積神經網絡（CNN）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "監督學習模型",
+        "explanation": "貝氏分類器是一種基於概率統計的監督學習分類模型，常用於分類問題。CNN常用於影像分類，但本題偏泛監督學習模型，PCA是降維方法，強化學習則屬強化類型。",
+        "number": 703,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的主要差異為？",
+        "options": [
+            "兩者皆為強化學習模型",
+            "兩者皆專注於資料清洗與預處理",
+            "鑑別式AI用於分類，生成式AI用於數據生成",
+            "鑑別式AI擅長生成數據，生成式AI擅長分類判斷"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式 vs 生成式 AI",
+        "explanation": "鑑別式AI專注於區分不同類別或判斷輸入數據的標籤，生成式AI旨在生成新數據如影像、文本，兩者功能截然不同。",
+        "number": 704,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "在機器學習中，正規化（Regularization）L1與L2主要用於什麼目的？",
+        "options": [
+            "優化模型的運行速度",
+            "增加模型複雜度與擬合度",
+            "減少模型過擬合並控制權重大小",
+            "提高資料輸入的維度數"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "正規化技術",
+        "explanation": "L1與L2正規化用來限制模型權重大小，有效控制過擬合現象，提升模型泛化能力，並不增加複雜度或提升速度。",
+        "number": 705,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "以下哪一項資料類型最屬於非結構化資料？",
+        "options": [
+            "JSON格式",
+            "影像與語音檔案",
+            "關聯式資料庫表格",
+            "結構化的CSV檔案"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料類型分類",
+        "explanation": "非結構化資料無固定格式，如影像、音訊、文字等；結構化資料則包含固定欄位格式，如表格、CSV、JSON。",
+        "number": 706,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "人為干預模型決策的概念稱為何？",
+        "options": [
+            "Human on loop",
+            "Reinforcement Learning",
+            "Human in the loop",
+            "AutoML"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "模型監督",
+        "concept": "Humans in/on loop",
+        "explanation": "Human on loop意指人為監督並干預AI模型決策，以防止不當結果，而Human in the loop通常指人與AI共同參與流程的互動。",
+        "number": 707,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "以下哪項說法最能準確描述聯邦學習？",
+        "options": [
+            "將資料先合併再統一訓練",
+            "資料集中在單一伺服器上進行訓練",
+            "僅限於監督式學習算法的分布式版本",
+            "分散在多地的設備協同訓練模型，但不共享資料本體"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習是在分散設備上協同訓練模型，資料不離開本地以保護隱私，屬於分散式機器學習技術。",
+        "number": 708,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "生成式AI回應語境一致性的挑戰在於？",
+        "options": [
+            "減少模型過擬合現象",
+            "提升模型訓練階段的計算效率",
+            "如何維持語句的文法正確性與上下文一致",
+            "準確識別輸入資料的格式類型"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式AI應用",
+        "concept": "內容連貫性",
+        "explanation": "生成式AI需要保持語境的一致性與邏輯連貫，避免前後矛盾，這是其設計和應用中的重要挑戰。",
+        "number": 709,
+        "date": "2026-07-17"
+    },
+    {
+        "question": "何者為常見的機器學習損失函數適用於房價預測問題？",
+        "options": [
+            "對數損失函數（Log Loss）",
+            "均方誤差（Mean Squared Error, MSE）",
+            "交叉熵損失函數（Cross Entropy Loss）",
+            "對比損失函數（Contrastive Loss）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "損失函數選擇",
+        "explanation": "均方誤差（MSE）是迴歸問題（如房價預測）常用的損失函數，用來衡量預測值與實際值的平均平方差異。",
+        "number": 710,
+        "date": "2026-07-17"
     }
 ]

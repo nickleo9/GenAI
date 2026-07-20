@@ -12078,5 +12078,185 @@
         "explanation": "均方誤差（MSE）是迴歸問題（如房價預測）常用的損失函數，用來衡量預測值與實際值的平均平方差異。",
         "number": 710,
         "date": "2026-07-17"
+    },
+    {
+        "question": "2026年生成式AI已進入哪個成熟階段，且McKinsey調查指出能實現產業規模化價值的企業比例為何？",
+        "options": [
+            "商業化成熟階段；25%",
+            "策略性基礎設施階段；15%",
+            "技術驗證階段；35%",
+            "普及化應用階段；50%"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI趨勢",
+        "concept": "AI成熟度模型",
+        "explanation": "Gartner 2026指出生成式AI已成為策略性基礎設施，而McKinsey調查顯示僅15%的企業能實現生成式AI規模化價值，顯示多數企業仍處於起步階段，這是評估企業AI應用成熟度的重要參考。",
+        "source": "[2]",
+        "number": 711,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "下列何者最能描述2026年AI Agent在企業應用中的普及情況？",
+        "options": [
+            "有60%的企業應用內建特定任務AI代理",
+            "有40%的企業應用內建特定任務AI代理",
+            "有15%的企業應用內建特定任務AI代理",
+            "有25%的企業應用內建特定任務AI代理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI Agent 應用",
+        "concept": "AI代理普及率",
+        "explanation": "根據Gartner 2026預測，約40%的企業應用程式會內建特定任務的AI代理，標誌AI從原先的對話工具轉型為自主執行任務的基礎設施，是企業AI自動化的重要里程碑。",
+        "source": "[3]",
+        "number": 712,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "2026年多模態AI模型如GPT-5和Claude 4採用何種架構來實現文字、影像、音訊與程式碼的聯合表示？",
+        "options": [
+            "序列疊加式架構",
+            "原生多模態架構",
+            "後端整合式架構",
+            "混合模態模組化架構"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "多模態模型",
+        "concept": "原生多模態架構",
+        "explanation": "2026年最新深度學習模型採用原生多模態(Natively Multimodal)架構，從預訓練階段即同時學習不同模態資料的整合表示，提升模型多元感知與理解能力。",
+        "source": "[2]",
+        "number": 713,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "關於「實體AI（Physical AI）」的核心特性，下列何者正確？",
+        "options": [
+            "專注雲端運算與伺服器負載優化",
+            "強調數據視覺化與報表應用",
+            "結合實體與AI，具備感知、推理、計畫及執行實體行動能力",
+            "強化語音辨識技術應用於客服系統"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "實體AI",
+        "concept": "實體行動智能",
+        "explanation": "實體AI指的是結合實體環境與人工智慧，具備感知、推理、計畫、執行能力，典型應用為人形機器人、自動駕駛等，這是AI技術進入實體世界的關鍵發展。",
+        "source": "[7]",
+        "number": 714,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "金融與醫療領域中，用於避免隱私風險及測試極端情境的數據生成技術是？",
+        "options": [
+            "真實數據壓縮技術",
+            "合成資料技術",
+            "數據離散化方法",
+            "購買外部商業數據"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "數據安全與隱私",
+        "concept": "合成資料",
+        "explanation": "合成資料是用AI生成模擬數據，能有效避免隱私洩露，且可在金融詐騙檢測、醫療藥物實驗中模擬極端狀況，是2026年重點的數據應用策略。",
+        "source": "[6]",
+        "number": 715,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "2026年生成式AI導入率最高的行業是，下列何者正確？",
+        "options": [
+            "醫療保健業，主攻診斷輔助",
+            "金融服務業，主涵蓋智能客服及法規審查",
+            "製造業，著重於產品設計自動化",
+            "零售業，應用於倉儲物流優化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "行業應用",
+        "concept": "行業AI整合度",
+        "explanation": "金融服務業2026年生成式AI導入率達82%，領先各行業，主要應用於智能客服、合規審查、反洗錢監控等複雜任務，是AI規劃師的核心應用場域。",
+        "source": "[4]",
+        "number": 716,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "在數據清洗與分析時，「離群值」在異常檢測中可能代表什麼意義？",
+        "options": [
+            "僅是數據誤差，需要刪除",
+            "純粹是數據雜訊，無須關注",
+            "數據格式轉換時產生的錯誤",
+            "可能代表有意義的異常行為或情況"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "異常檢測",
+        "concept": "離群值與異常偵測",
+        "explanation": "離群值不一定錯誤，有時可揭示金融詐欺或系統異常情況，依業務目標決定保留或刪除，異常檢測正是利用這些離群值辨識異常事件的關鍵。",
+        "source": "[3]",
+        "number": 717,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "以下哪種學習方法主要依據「回饋機制」進行試錯學習，適合長期規劃及複雜任務？",
+        "options": [
+            "深度學習",
+            "強化學習",
+            "非監督式學習",
+            "監督式學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "回饋與試錯",
+        "explanation": "強化學習基於獎勵與回饋，透過試錯學習策略，特別適合遊戲、機器人控制等需長期決策的情境，是AI自主系統的基石算法。",
+        "source": "[5]",
+        "number": 718,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "哪種深度學習模型特別適合處理圖像數據，擅長提取局部特徵，應用於人臉辨識？",
+        "options": [
+            "生成對抗網路 (GAN)",
+            "邏輯迴歸 (Logistic Regression)",
+            "卷積神經網路 (CNN)",
+            "循環神經網路 (RNN)"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI技術與模型",
+        "subtopic": "深度學習模型",
+        "concept": "CNN圖像處理",
+        "explanation": "CNN透過卷積層擅長提取圖像的局部特徵，如邊緣與紋理，廣泛應用於人臉辨識、物件偵測等圖像識別任務，是主流圖像深度模型。",
+        "source": "[6]",
+        "number": 719,
+        "date": "2026-07-20"
+    },
+    {
+        "question": "生成式AI在微調階段中，為提升特定任務（如醫療診斷）表現，最關鍵的步驟是？",
+        "options": [
+            "只修改模型的輸入層結構",
+            "完全移除預訓練模型參數",
+            "使用特定領域數據集進行精調",
+            "增加一般通用數據量"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型微調",
+        "concept": "精調(fine-tuning)",
+        "explanation": "在微調階段，使用特定領域數據集是提升模型對專業任務性能的關鍵，可以使生成模型更貼合目標應用，避免泛化偏差，是企業用生成式AI成功轉化的必要步驟。",
+        "source": "[7]",
+        "number": 720,
+        "date": "2026-07-20"
     }
 ]

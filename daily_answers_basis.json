@@ -12258,5 +12258,175 @@
         "source": "[7]",
         "number": 720,
         "date": "2026-07-20"
+    },
+    {
+        "question": "在機器學習中，哪一種學習類型最適合用於處理有標註資料的預測問題？",
+        "options": [
+            "強化學習依靠環境反饋，適合決策最佳化問題處理",
+            "半監督學習結合少量標註與大量未標註資料進行訓練",
+            "監督學習利用標註資料來訓練模型，適合分類與回歸任務",
+            "非監督學習透過資料分群來發現資料結構，適合無標籤資料"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習與深度學習",
+        "subtopic": "監督學習",
+        "concept": "監督學習基本概念",
+        "explanation": "監督學習是機器學習三大類型之一，它利用有標註的資料來訓練模型，因此非常適合用於分類和回歸的預測任務。",
+        "number": 721,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "以下何者最能有效保障資料隱私與安全，常見於企業AI資料治理？",
+        "options": [
+            "One-Hot Encoding主要提升資料隱私保護能力",
+            "批次推論減少模型更新次數提升資料安全",
+            "ETL流程中的資料轉換會增加資料外洩風險",
+            "聯邦學習允許分散式資料訓練，避免集中原始資料外洩"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習架構允許資料在本地端訓練模型，僅共享模型參數，降低原始資料集中與外洩風險，是保障資料隱私與安全的重要技術。",
+        "number": 722,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 的主要區別在於哪一個方面？",
+        "options": [
+            "鑑別式 AI 只能處理結構化資料，生成式 AI 僅處理非結構化資料",
+            "鑑別式 AI 預測輸入屬於某類別，生成式 AI 則可創建新數據樣本",
+            "兩者本質相同，只在訓練資料量上有所區別",
+            "鑑別式 AI 用於資料生成，生成式 AI 專注分類任務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI與AI工具",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "鑑別式與生成式AI區別",
+        "explanation": "鑑別式 AI 是用於判斷輸入資料屬於哪個類別的模型，而生成式 AI 則是用來生成新的數據樣本，例如文本、圖片等，兩者功能不同。",
+        "number": 723,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "在資料整理流程中，哪一項技術主要用於將類別型變數轉換為數值形式以便模型處理？",
+        "options": [
+            "資料清洗去除遺漏值",
+            "ETL流程整合多個資料來源",
+            "PCA降維處理減少維度",
+            "One-Hot Encoding 將類別映射成二進位向量"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "特徵編碼 - One-Hot Encoding",
+        "explanation": "One-Hot Encoding 是將類別型變數轉換成互斥的二進位向量，方便模型處理非數值資料，是資料前處理重要步驟之一。",
+        "number": 724,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "在自然語言處理模型中，Transformer 架構主要解決了哪個典型深度學習問題？",
+        "options": [
+            "梯度爆炸與消失問題",
+            "過擬合現象",
+            "資料預處理不充分",
+            "缺乏資料標註數"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習與深度學習",
+        "subtopic": "Transformer",
+        "concept": "梯度消失與爆炸",
+        "explanation": "Transformer 架構透過自注意力機制，可以有效避免長序列中梯度消失與爆炸問題，提升深度學習模型的訓練穩定性。",
+        "number": 725,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "人工智慧治理中，‘監理沙盒’的主要功能為何？",
+        "options": [
+            "強制數據匿名化處理",
+            "提供安全環境讓AI技術試驗與監督",
+            "限制AI模型使用敏感資料",
+            "建立AI模型性能指標"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒為一種安全的監管環境，允許AI技術或產品在符合監管要求下進行創新試驗及監督管理，促進技術發展與風險控管。",
+        "number": 726,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "在強化學習中，Q-Learning 是什麼類型的方法？",
+        "options": [
+            "監督學習中的分類算法",
+            "無需環境模型的值函數迭代方法",
+            "基於神經網路的生成模型",
+            "資料分群的無監督方法"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習與深度學習",
+        "subtopic": "強化學習",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning 是強化學習中一種無需環境模型的方法，透過值函數迭代學習最佳策略，屬於離線策略學習的典型演算法。",
+        "number": 727,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "生成式AI在產業應用時最常見的挑戰是？",
+        "options": [
+            "生成內容與上下文一致性保持困難",
+            "只能使用監督式資料訓練",
+            "無法應用於非結構化資料",
+            "訓練速度遠快於鑑別式AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI與AI工具",
+        "subtopic": "生成式AI應用挑戰",
+        "concept": "語境一致性",
+        "explanation": "生成式AI常見問題是產出的內容難以與上下文保持一致，影響回應的準確與連貫性，是技術改進焦點之一。",
+        "number": 728,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "以下何者屬於資料分析流程中的ETL階段？",
+        "options": [
+            "資料轉換及資料抽取與載入",
+            "模型評估與性能測試",
+            "數據視覺化與報告生成",
+            "模型訓練與超參數調整"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL流程包含資料的抽取、轉換與載入，是資料分析系統中前置的資料清理與準備工作階段。",
+        "number": 729,
+        "date": "2026-07-22"
+    },
+    {
+        "question": "在機器學習模型中，何謂「偏差-變異權衡」(Bias-Variance Tradeoff)？",
+        "options": [
+            "模型偏差低，變異必定高",
+            "偏差與變異兩者無關，可同時最小化",
+            "模型偏差與變異需平衡以達最佳泛化能力",
+            "偏差越高，模型訓練越準確"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習與深度學習",
+        "subtopic": "模型泛化能力",
+        "concept": "偏差-變異權衡",
+        "explanation": "偏差-變異權衡指的是在模型訓練時，偏差與變異的平衡關係，過高的偏差會欠擬合，過高的變異會過擬合，需取得最佳平衡以提升泛化能力。",
+        "number": 730,
+        "date": "2026-07-22"
     }
 ]

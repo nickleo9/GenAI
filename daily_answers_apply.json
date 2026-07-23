@@ -4435,5 +4435,192 @@
         "explanation": "2026年生成式AI普遍支持多模態數據處理，包含文字、圖片、音訊與視頻，大幅擴展應用界面。",
         "number": 261,
         "date": "2026-07-21"
+    },
+    {
+        "question": "在生成式 AI 導入評估中，哪一項最適合用來降低模型產生幻覺的風險？",
+        "options": [
+            "利用檢索增強生成（RAG）技術結合企業知識庫",
+            "部署大型通用語言模型，不需整合外部資料",
+            "使用單一固定訓練資料集不更新",
+            "完全依賴提示詞工程來控制模型回答"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "RAG",
+        "explanation": "檢索增強生成（RAG）結合即時知識庫資料，能有效降低模型幻覺的可能性，因為模型回答會根據具體檢索到的資料來生成，而非完全依賴訓練期間的知識。",
+        "number": 262,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "下列哪一項不是 No Code 平台的明顯優勢？",
+        "options": [
+            "不需要撰寫程式碼即可快速建置應用",
+            "可視化介面讓非技術人員容易操作",
+            "有助於加速產品的市場驗證與迭代",
+            "支援高自由度的複雜程式邏輯編寫"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code",
+        "explanation": "No Code 平台的特點是免程式碼開發，但通常無法支援非常複雜且高自由度的程式邏輯編寫，這是 Low Code 或傳統開發的強項。",
+        "number": 263,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "在設計提示詞時，哪一項做法最能提升模型輸出結果的結構化和可控性？",
+        "options": [
+            "濃縮背景資訊以節省模型資源",
+            "僅描述任務，忽略限制條件",
+            "指定輸出格式為 JSON 或表格",
+            "採用較自由無限制的開放式指令"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞使用",
+        "concept": "提示工程",
+        "explanation": "指定輸出格式（如JSON、表格）能幫助生成式 AI 產生有條理且格式統一的結果，便於後續自動處理與系統整合。",
+        "number": 264,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "以下哪種生成式 AI 工具類型最適合用於客戶服務與問答系統？",
+        "options": [
+            "圖片與影片生成工具",
+            "通用聊天型 AI 工具",
+            "程式碼生成輔助工具",
+            "AI 專用資料標註工具"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "聊天型工具",
+        "explanation": "通用聊天型 AI 工具強調自然語言理解與回覆，適合客服回應、FAQ自動答覆等應用場景。",
+        "number": 265,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "在生成式 AI 導入規劃中，何者是企業最先進行的評估步驟？",
+        "options": [
+            "測試 PoC 以驗證技術效益",
+            "可行性分析並確認資料充足性",
+            "風險評估確認資料安全問題",
+            "需求盤點與流程重複性分析"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估",
+        "explanation": "企業在導入生成式 AI 前首先需盤點需求，找出可標準化、重複且耗時的流程，作為後續評估與規劃基礎。",
+        "number": 266,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "下列敘述何者錯誤？關於 Low Code 平台的理解",
+        "options": [
+            "支持可視化流程與工具串接整合",
+            "Low Code 完全免除資料治理需求",
+            "低門檻設計能縮短應用開發週期",
+            "Low Code 允許少量程式碼客製化功能"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code",
+        "explanation": "Low Code 雖然降低開發門檻，但並不代表免除資料治理或權限控管等重要企業需求。",
+        "number": 267,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "在企業導入生成式 AI 工具時，下列哪一項通常最被看重以確保合規與安全？",
+        "options": [
+            "是否提供全面的權限管理與審計紀錄",
+            "是否包含圖像生成或影片製作功能",
+            "是否支援API、Webhook串接功能",
+            "是否有開源授權與社群活躍度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "資料治理",
+        "explanation": "企業要在合規和安全方面確保風險降低，全面的權限管理與審計紀錄是關鍵，特別是涉及敏感資訊時。",
+        "number": 268,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "使用 Agentic AI 於企業應用，最主要的特點為何？",
+        "options": [
+            "只能處理結構化數據而非文字資訊",
+            "僅回應使用者自然語言查詢",
+            "能自主規劃、執行多步驟流程與串接工具",
+            "完全依賴人類審核後方可執行任務"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "Agentic AI",
+        "explanation": "Agentic AI 不只是回覆問題，更能自主規劃和執行多步驟工作流程，並串接外部工具和流程，提升企業自動化能力。",
+        "number": 269,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "關於生成式 AI 的風險管理，下列哪一項措施最能防止模型生成具偏見的內容？",
+        "options": [
+            "引入多樣化且代表性的訓練資料",
+            "完全避免使用開放式提示詞設計",
+            "縮短模型訓練時間以免過擬合",
+            "僅限制輸出長度防止過度表述"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "偏誤",
+        "explanation": "防止模型偏見的有效方式是採用多樣且具包容性的訓練資料集，使模型能全面理解不同觀點。",
+        "number": 270,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "在低程式碼 (Low Code) 平台中，何種做法有助於提升開發效率及治理？",
+        "options": [
+            "完全不控管開發人員權限以加速流程",
+            "採用純文字命令行操作以減少誤差",
+            "結合圖形化介面與有限程式碼進行快速客製化",
+            "隔離環境只部署單一固定版本應用"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code",
+        "explanation": "Low Code 平台結合視覺化配置與有限程式碼，可加速開發且符合企業治理需求。",
+        "number": 271,
+        "date": "2026-07-23"
+    },
+    {
+        "question": "在提示詞設計中，下列哪一種提示詞結構有助於模型在複雜任務中展現邏輯推理能力？",
+        "options": [
+            "Jailbreak 解除模型限制",
+            "Zero-shot 僅靠一次提示指令",
+            "Prompt Injection 用於遊戲測試",
+            "ReAct 結合反思與工具呼叫"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞使用",
+        "concept": "ReAct",
+        "explanation": "ReAct 結構結合模型的思考(Reasoning)和行動(Action)，讓模型能逐步推理並呼叫外部工具，提升複雜任務表現。",
+        "number": 272,
+        "date": "2026-07-23"
     }
 ]

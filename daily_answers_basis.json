@@ -12428,5 +12428,175 @@
         "explanation": "偏差-變異權衡指的是在模型訓練時，偏差與變異的平衡關係，過高的偏差會欠擬合，過高的變異會過擬合，需取得最佳平衡以提升泛化能力。",
         "number": 730,
         "date": "2026-07-22"
+    },
+    {
+        "question": "在人工智慧治理中，何者最能體現“Human on loop” 的概念？",
+        "options": [
+            "模型完全自動決策，無需人為干預",
+            "人類僅在模型出錯後才介入後續修正",
+            "人類參與且可監督和調整AI模型決策過程",
+            "AI模型透過自我學習逐漸取代人類監督"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理與風險管理",
+        "subtopic": "治理機制",
+        "concept": "Human on loop",
+        "explanation": "Human on loop 指的是人工智慧運行過程中，人類持續參與並監督模型決策，能在必要時進行調整與控制，以避免決策失誤或偏差，強化模型可控性與責任制。",
+        "number": 731,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "資料清理流程中，下列何者不屬於ETL (Extract, Transform, Load)的步驟？",
+        "options": [
+            "資料可視化分析報告產出",
+            "資料抽取與匯入",
+            "資料載入至目標系統",
+            "資料轉換與格式化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL主要分為抽取 (Extract)、轉換 (Transform) 和載入 (Load) 三個步驟，資料可視化分析屬於後續的分析階段，不屬於ETL範疇。",
+        "number": 732,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "在機器學習中，哪一種正則化方法可促使部分模型權重變為零，以達到特徵選擇效果？",
+        "options": [
+            "L2正則化導致模型參數縮小但不為零",
+            "Dropout隨機丟棄部分神經元",
+            "L1正則化促成模型權重稀疏化且可為零",
+            "Early stopping防止過擬合但非正則化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習基礎",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化（如Lasso）會懲罰模型參數的絕對值，使部分權重趨近或等於零，從而達到特徵選擇和模型稀疏化的效果，而L2正則化則是將權重縮小但不完全為零。",
+        "number": 733,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "關於鑑別式 AI 與生成式 AI 的差異，下列敘述何者正確？",
+        "options": [
+            "鑑別式 AI 基於規則，生成式 AI 基於神經網絡",
+            "鑑別式 AI 判斷輸入數據所屬類別，生成式 AI 創造新數據",
+            "鑑別式 AI 生成新數據，生成式 AI 則用於分類任務",
+            "生成式 AI 僅用於圖像處理，鑑別式 AI 用於語音分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "鑑別式與生成式AI",
+        "concept": "鑑別式與生成式AI原理",
+        "explanation": "鑑別式AI專注於判斷輸入資料的類別或標籤，例如分類任務；生成式AI則著重於學習資料分布，能生成新的數據樣本，如文本、圖像或音頻。",
+        "number": 734,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "以下何者為聯邦學習的主要特性？",
+        "options": [
+            "利用生成式 AI 創造合成數據進行模型訓練",
+            "將所有數據集中於單一伺服器統一訓練模型",
+            "多個資料庫直接交換原始數據進行訓練",
+            "各終端設備本地訓練，透過模型參數更新共享學習成果"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "分散式學習",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習是一種將模型帶到數據所在位置進行本地訓練，再將模型參數或更新結果回傳聚合的分散式機器學習方法，避免傳輸原始資料以保障隱私。",
+        "number": 735,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "在AI模型訓練中，何者最能有效解決梯度消失問題？",
+        "options": [
+            "使用ReLU激活函數替代Sigmoid或Tanh",
+            "使用批次正規化移除激活函數",
+            "減少訓練數據量，以避免梯度過大",
+            "使用更深的神經網絡架構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習基礎",
+        "subtopic": "深度學習原理",
+        "concept": "梯度消失與激活函數",
+        "explanation": "ReLU激活函數能有效緩解梯度消失問題，因為它在正值區間具有恒定梯度，而Sigmoid和Tanh在飽和區域梯度趨近於零，易造成梯度消失。",
+        "number": 736,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "在生成式AI的應用中，何者最符合RAG（Retrieval Augmented Generation）技術的核心理念？",
+        "options": [
+            "僅基於結構化資料進行生成",
+            "結合檢索外部知識，增強生成文本的準確性與完整度",
+            "純粹生成文本，不依賴外部資料庫",
+            "使用無監督學習模型生成文本"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成技術",
+        "concept": "RAG技術",
+        "explanation": "RAG 是一種結合資訊檢索與生成模型的方法，先檢索相關外部資料，再以這些資料為輔助生成更具內容準確性和深度的文本。",
+        "number": 737,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "在人工智慧資料隱私與安全管理中，哪種技術能在不揭露原始資料的情況下進行模型訓練？",
+        "options": [
+            "聯邦學習（Federated Learning）",
+            "資料標準化（Data Normalization）",
+            "資料擴充（Data Augmentation）",
+            "特徵選擇（Feature Selection）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在分散的終端裝置上本地訓練，避免資料集中傳輸或外洩，從而保護數據隱私與安全。",
+        "number": 738,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "在生成式AI中，提示工程(Prompt Engineering)的主要目的是？",
+        "options": [
+            "調整模型結構以加速運算速度",
+            "優化數據清洗流程以提升模型效能",
+            "降低模型參數量以防止過擬合",
+            "設計有效提示詞以引導模型生成更準確內容"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "Prompt Engineering",
+        "explanation": "提示工程透過設計與優化輸入提示詞，讓生成式AI模型更好理解與回應使用者需求，以產生更準確與相關的內容。",
+        "number": 739,
+        "date": "2026-07-24"
+    },
+    {
+        "question": "下列何者最能反映目前企業在導入AI應用時的成本考量趨勢？",
+        "options": [
+            "單純追求最低硬體設備採購成本",
+            "忽略成本，優先提升模型精度",
+            "僅關注模型訓練階段的資源消耗",
+            "專注於成功完成每項任務的整體推論成本"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI應用規劃與趨勢",
+        "subtopic": "成本效益評估",
+        "concept": "推論成本",
+        "explanation": "現今企業越來越重視完成實際業務任務的整體推論成本，強調以最有效率且合理的成本完成AI應用，而非僅看硬體或單階段成本。",
+        "number": 740,
+        "date": "2026-07-24"
     }
 ]

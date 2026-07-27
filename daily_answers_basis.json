@@ -12598,5 +12598,175 @@
         "explanation": "現今企業越來越重視完成實際業務任務的整體推論成本，強調以最有效率且合理的成本完成AI應用，而非僅看硬體或單階段成本。",
         "number": 740,
         "date": "2026-07-24"
+    },
+    {
+        "question": "在資料處理流程中，何者最適合用於將分類變數轉換為模型可接受的數值格式？",
+        "options": [
+            "遺缺值插補 (Imputation)，處理資料缺失以保證完整性",
+            "One-Hot Encoding，可以避免分類變數的大小順序誤解",
+            "資料剪枝 (Pruning)，移除無關特徵以降低模型複雜度",
+            "正規化 (Normalization)，用於調整資料尺度以符合模型需求"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding 是將分類變數轉為二元向量的編碼方式，避免模型將分類變數誤判為有序數值，而正規化則是調整數值範圍，插補處理遺缺值，剪枝是特徵選擇。",
+        "number": 741,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "機器學習中的監督學習與非監督學習最主要的區別在於？",
+        "options": [
+            "監督學習使用標註資料進行模型訓練，而非監督學習使用無標註資料挖掘結構",
+            "監督學習只能用於分類任務，非監督學習只能用於回歸任務",
+            "監督學習依賴深度學習技術，非監督學習完全不使用神經網路",
+            "監督學習無須靠模型調參，非監督學習需要大量調參"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督式與非監督式學習",
+        "explanation": "監督學習是利用有標註的輸入輸出資料訓練模型，非監督學習則在無標註資料中尋找結構或規律，並非限定任務類型，兩者皆可能使用深度學習或其他演算法。",
+        "number": 742,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "關於生成式 AI 與鑑別式 AI，其基本功能區分為何？",
+        "options": [
+            "生成式 AI 多使用規則系統，鑑別式 AI 多屬深度強化學習",
+            "生成式 AI 僅能進行數據清洗，鑑別式 AI 僅能生成文字內容",
+            "生成式 AI 用來判斷輸入資料的有效性，鑑別式 AI 用於資料增強",
+            "生成式 AI 用於創造新資料，鑑別式 AI 用於分類或辨識資料真假"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式 AI",
+        "explanation": "生成式 AI 主要用於創造新內容如圖片、文字，鑑別式 AI 則負責分辨資料或做分類，是兩種 AI 任務本質的區別。",
+        "number": 743,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "在 AI 治理中，何者屬於防範模型黑箱問題的技術？",
+        "options": [
+            "強化學習，通過試錯達最佳策略",
+            "資料正規化，有助於模型輸入的穩定性",
+            "LIME，用於解釋複雜模型的決策依據",
+            "生成對抗網路，用於提升生成內容真實度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "模型可解釋性",
+        "concept": "模型解釋技術",
+        "explanation": "LIME (Local Interpretable Model-agnostic Explanations) 是專門用於提升 AI 模型可解釋性的技術，有助於解決黑箱問題，其他選項為不同類型的技術，與治理黑箱問題關聯較低。",
+        "number": 744,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "深度強化學習中的 Deep Q-Learning 主要用於？",
+        "options": [
+            "純粹使用監督式學習，改進分類準確率",
+            "基於資料分群，辨識潛在客戶群體",
+            "直接生成高品質文本數據，提升 NLP 表現",
+            "結合深度學習與 Q-Learning，提升狀態空間處理能力"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "Deep Q-Learning",
+        "explanation": "Deep Q-Learning 是將深度神經網絡與經典 Q-Learning 結合，能夠在高維度狀態空間中學習決策策略，廣泛用於強化學習應用。",
+        "number": 745,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "在資料隱私與安全管理中，以下何者是分散式學習的一個重要特性？",
+        "options": [
+            "生成式 AI，自動生成隱私保護策略",
+            "批次推論，強化資料加密傳輸",
+            "資料剪枝，透過特徵消除提升資料安全",
+            "聯邦學習，能在不共享原始資料下進行模型訓練"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許多方在不直接交換資料的條件下，共同訓練模型，有效保護個人隱私，其他選項與直接的隱私保護機制關聯較弱。",
+        "number": 746,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "以下關於 AI 生成模型中 prompt 的描述，何者正確？",
+        "options": [
+            "Prompt 是模型訓練中自動調整的參數，決定模型性能",
+            "Prompt 是生成模型內部用於記憶歷史狀態的機制",
+            "Prompt 為資料清洗時用於標註資料的工具",
+            "Prompt 是指用戶輸入給生成模型的指令或提示詞，影響生成內容的品質"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示工程",
+        "concept": "Prompt 作用",
+        "explanation": "Prompt 是使用者給予生成式 AI 的輸入文字或指令，設計良好的 prompt 能提升生成內容的準確度和一致性，其他選項則屬不同概念。",
+        "number": 747,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "AI 模型訓練時使用 L1 正則化主要目的是？",
+        "options": [
+            "促使部分權重變為零，實現稀疏特徵選擇",
+            "防止梯度消失，提升深度網路收斂速度",
+            "增加模型複雜度，提升擬合能力",
+            "強化模型對噪音的魯棒性，避免過度擬合"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1 正則化會促使模型權重稀疏化，部分參數收斂為零，有助於特徵選擇及模型簡化。而防止梯度消失及提升魯棒性屬其他方法的範疇。",
+        "number": 748,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "企業導入 AI 系統時，「Human on loop」意指？",
+        "options": [
+            "人工負責資料爬取，AI 負責資料分析",
+            "人工在模型決策過程中持續監督並能介入修正",
+            "僅在模型訓練階段由人工參與，運行則完全機器控制",
+            "完全自動化，無需人工干預的 AI 運行模式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "人工監督",
+        "concept": "Human on loop",
+        "explanation": "Human on loop 意味著人工監督模型運行過程，及時發現及修正決策錯誤，確保 AI 系統的安全與可靠性，非完全自動或分階段干預。",
+        "number": 749,
+        "date": "2026-07-27"
+    },
+    {
+        "question": "下列哪種 AI 模型更適合用於分析時間序列資料，如股價或語音訊號？",
+        "options": [
+            "卷積神經網路 (CNN)，主要用於圖像識別任務而非時間序列",
+            "貝葉斯分類器，主要用於靜態分類問題",
+            "循環神經網路 (RNN)，因其擅長處理序列資料中的時間依賴關係",
+            "生成對抗網路 (GAN)，設計用於數據生成而非序列分析"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "常見模型",
+        "concept": "RNN/時間序列",
+        "explanation": "循環神經網路（RNN）特別設計用來捕捉序列資料中元素間的時間依賴性，適合語音、股價等時間序列分析。CNN 主要用於圖像處理，GAN 用於生成任務，貝葉斯分類器適合靜態分類。",
+        "number": 750,
+        "date": "2026-07-27"
     }
 ]

@@ -4792,5 +4792,175 @@
         "explanation": "生成式 AI 可透過自然語言描述快速生成包含前後端的完整應用程式，顯著提高開發效率。",
         "number": 282,
         "date": "2026-07-25"
+    },
+    {
+        "question": "在2026年的生成式AI應用中，『No Code / Low Code』技術的主要優勢是哪一項？",
+        "options": [
+            "降低非工程背景者參與開發的門檻，提高效率",
+            "強化系統安全性，減少外部攻擊風險",
+            "增加企業數據的多樣性與廣泛性",
+            "提升人工智能模型的推理準確率與穩定性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code的優勢",
+        "explanation": "No Code / Low Code技術使非程式開發者能透過自然語言描述需求，快速生成應用，降低技術門檻並提升開發效率，是該技術最關鍵的優勢。",
+        "number": 283,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "以下哪一項描述最符合2026年『生成式AI工具』在企業內部的導入規劃重點？",
+        "options": [
+            "直接全面替代所有人工決策，達成完全自動化",
+            "優先從員工賦能與標準化培訓開始，再擴展至業務流程整合",
+            "忽略風險管理，快速導入以搶占市場",
+            "聚焦於單一部門短期試點，不進行後續拓展"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "企業AI導入步驟",
+        "explanation": "2026年企業導入生成式AI，普遍從員工賦能和標準化培訓開始，確保內部接受度，再逐步整合至主要業務流程，避免過早全面強制導入造成阻力。",
+        "number": 284,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "在使用生成式AI進行工作流程自動化時，下列何者是『Agentic Workflow』的特色？",
+        "options": [
+            "需要高階程式語言技能才能操作",
+            "只能生成單一任務的文字內容",
+            "僅適用於圖像和音訊生成領域",
+            "能跨多工具分解任務並執行多步驟流程"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "工作代理人 (Agentic Workflow)",
+        "explanation": "Agentic Workflow指的是生成式AI不僅能產出內容，更能跨應用工具自動完成多步驟任務，提高整體自動化效率。",
+        "number": 285,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "評估企業是否適合導入生成式AI時，下列哪項『非適合的指標』？",
+        "options": [
+            "需要對答案來源有嚴格可追溯性",
+            "任務頻率低且流程高度隨機",
+            "可接受一定的錯誤容忍度",
+            "任務具高頻率且標準化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入適用性評估",
+        "explanation": "生成式AI適合用於高頻且標準化的任務，低頻且流程隨機的工作不易以AI自動化，因此任務頻率低且流程高度隨機不是適合導入的指標。",
+        "number": 286,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "關於2026年No Code / Low Code生成式AI工具的限制，下列敘述哪一項較正確？",
+        "options": [
+            "生成速度通常比人工撰寫程式慢",
+            "適合複雜且高度客製化程式碼開發需求",
+            "必須具備深度機器學習知識方能使用",
+            "無法完全取代專業程式開發環境與技能"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code的限制",
+        "explanation": "No Code / Low Code工具雖大幅降低開發門檻，但對複雜、客製化需求仍有不足，無法完全替代傳統程式開發及相關專業技能。",
+        "number": 287,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "生成式AI中，RAG架構的核心價值是什麼？",
+        "options": [
+            "僅使用內部資料庫來生成答案",
+            "以大量生成內容替代資料搜尋流程",
+            "結合檢索與生成以降低幻覺並提高答案準確度",
+            "提升模型在無監督學習上的表現"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "RAG (檢索增強生成)",
+        "explanation": "RAG透過先從外部知識庫檢索關鍵資訊，再根據相關資料生成答案，能有效減少幻覺現象並提供可驗證來源，提高準確性與可信度。",
+        "number": 288,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "2026年生成式AI在企業中進行風險管理時，下列哪項是最需優先關注的問題？",
+        "options": [
+            "AI系統的電力消耗過高",
+            "資料儲存硬體的容量不足",
+            "使用者對AI工具的抵抗心理",
+            "模型生成錯誤內容（幻覺）與來源不可追溯"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "幻覺與來源管理",
+        "explanation": "生成式AI可能產生看似合適但實際錯誤的內容，缺乏可追溯來源的問題會嚴重影響企業決策，故此為風險管理中首要解決挑戰。",
+        "number": 289,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "以下哪一種2026年流行的生成式AI工具特性，最能支援非工程背景用戶快速生成應用？",
+        "options": [
+            "高階Python程式碼手動撰寫需求",
+            "多模態資料手動整合與標註",
+            "自然語言描述需求，AI自動生成應用原型",
+            "深入調教參數以提升模型表現"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "自然語言驅動開發",
+        "explanation": "No Code / Low Code生成式AI工具利用自然語言描述需求，讓用戶不用撰寫程式碼即可快速建立應用原型，降低技術門檻。",
+        "number": 290,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "生成式AI工具整合於Google Cloud平台的優勢不包括以下哪一項？",
+        "options": [
+            "支援即時多模態輸出與高度自定義",
+            "整合API方便企業流程自動化",
+            "提供文字、對話與程式碼生成的一體化服務",
+            "對免費用量沒有任何限制"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "雲端平台AI工具",
+        "explanation": "雖然Google Cloud提供強大生成式AI服務與免費額度，但其免費用量有限制，企業仍需根據使用量規劃成本，故對免費用量沒有限制屬錯誤描述。",
+        "number": 291,
+        "date": "2026-07-28"
+    },
+    {
+        "question": "生成式AI導入評估中，企業考慮『錯誤成本』的意義何在？",
+        "options": [
+            "判斷企業是否有能力自行訓練模型",
+            "評估模型錯誤帶來的風險與容忍度，選擇合適模型",
+            "確定模型部署於本地或雲端架構",
+            "確保所有生成內容均不包含敏感資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "錯誤成本評估",
+        "explanation": "錯誤成本評估是企業根據任務重要性和容錯要求，考量採用快速但可能錯誤較多的標準模型，還是穩定但較慢昂貴的推理模型的重要依據。",
+        "number": 292,
+        "date": "2026-07-28"
     }
 ]

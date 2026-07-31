@@ -12938,5 +12938,185 @@
         "explanation": "地端部屬可將計算負擔分散至邊緣設備，降低主雲端服務的壓力與延遲，是面對算力限制下較有效的解決方案。",
         "number": 760,
         "date": "2026-07-29"
+    },
+    {
+        "question": "在資料處理與分析的流程中，下列哪一項最適合用於處理數據中缺失值的情況？",
+        "options": [
+            "B. 應用資料清洗中的插補法或刪除缺失資料",
+            "D. 使用強化學習來自動填補資料缺口",
+            "C. 利用Transformer模型進行特徵編碼轉換",
+            "A. 使用L1正則化技術來減少特徵的影響"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗的常見方法包括插補缺失值或刪除缺失資料，以避免資料異常影響後續分析。L1正則化與Transformer模型屬於機器學習特徵處理技術，強化學習則非用於處理缺失資料。",
+        "difficulty": "博士生 - 高級",
+        "number": 761,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "人工智慧的治理中，『監理沙盒』的主要功能是什麼？",
+        "options": [
+            "B. 自動調整AI模型的超參數以符合法規要求",
+            "C. 利用生成式AI進行自動資料隱私加密",
+            "D. 強化AI模型的自主學習能力以適應市場變化",
+            "A. 提供一個受控環境供新AI技術進行試驗及監管評估"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "監管實驗室",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒是一種受控環境，讓新技術在有限範圍內測試和驗證，並同時接受監管評估，降低技術風險並促進合規發展。",
+        "difficulty": "博士生 - 高級",
+        "number": 762,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "以下何者最準確描述「鑑別式AI」與「生成式AI」的本質差異？",
+        "options": [
+            "C. 鑑別式AI是無監督學習，生成式AI則屬監督學習範疇",
+            "B. 鑑別式AI進行資料分類判斷，生成式AI可創造新內容以滿足需求",
+            "A. 鑑別式AI專注於生成新內容，生成式AI側重分類與判斷",
+            "D. 生成式AI只用於語音辨識，鑑別式AI用於圖像生成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式AI 與生成式AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式 vs 生成式本質差異",
+        "explanation": "鑑別式AI主要用於辨識與分類，例如語音或圖像辨識；生成式AI則能創造新內容，如文字或影像生成，是兩種AI的核心差異。",
+        "difficulty": "博士生 - 高級",
+        "number": 763,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "在機器學習中，哪一個模型最適合用於處理時序資料並捕捉長期依賴關係？",
+        "options": [
+            "A. 卷積神經網路（CNN）",
+            "D. 隨機森林（Random Forest）",
+            "C. 支持向量機（SVM）",
+            "B. 長短期記憶網路（LSTM）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "時序資料與LSTM",
+        "explanation": "LSTM是一種特別設計於處理時序數據、捕捉長期依賴關係的循環神經網路，相較於CNN、SVM及隨機森林更適合時序資料分析。",
+        "difficulty": "博士生 - 高級",
+        "number": 764,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "資料隱私保護中，下列哪項技術最符合在分散式學習中保證用戶資料不外洩？",
+        "options": [
+            "C. 卷積神經網路",
+            "B. 聯邦學習",
+            "A. 強化學習",
+            "D. 監理沙盒"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料隱私與安全",
+        "subtopic": "分散式資料保護",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在用戶端本地訓練，避免直接傳送資料，保障用戶資料隱私；其他選項不涉及分散式隱私保護的核心方法。",
+        "difficulty": "博士生 - 高級",
+        "number": 765,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "在機器學習中，何者屬於控制模型複雜度以防止過擬合的正則化技術？",
+        "options": [
+            "B. L1與L2正規化",
+            "D. RNN回饋機制",
+            "C. Transformer架構",
+            "A. Q-Learning"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "模型正則化",
+        "concept": "L1與L2正則化",
+        "explanation": "L1與L2正則化是抑制模型過度擬合的常用技術，透過限制權重大小來降低模型複雜度；其他選項不屬於此範疇。",
+        "difficulty": "博士生 - 高級",
+        "number": 766,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "在資料分析中，下列哪種圖表最適合用來展示資料分布的集中趨勢與離散情況？",
+        "options": [
+            "A. 直方圖（Histogram）",
+            "C. 決策樹圖（Decision tree plot）",
+            "D. 反向散布圖（Inverse scatter plot）",
+            "B. 叢集圖（Clustering plot）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料視覺化",
+        "concept": "直方圖",
+        "explanation": "直方圖能有效展示資料的頻率分布，呈現集中趨勢及離散程度；叢集圖與決策樹圖用途不同，反向散布圖並非標準術語。",
+        "difficulty": "博士生 - 高級",
+        "number": 767,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "何謂『Human on loop』在AI系統中的定義？",
+        "options": [
+            "A. AI系統自動無需人工介入",
+            "C. 完全由人類操作的手動系統",
+            "D. 利用語音識別技術進行控制",
+            "B. 人工在模型決策流程中持續監督與介入"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI治理概念",
+        "subtopic": "人工監督",
+        "concept": "Human on loop",
+        "explanation": "'Human on loop'指的是人在AI系統決策流程中持續監督或干預，以確保判斷合理與安全，避免完全自動化的黑箱風險。",
+        "difficulty": "博士生 - 高級",
+        "number": 768,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "深度學習中的Transformer架構，以下敘述何者最精準？",
+        "options": [
+            "C. 是一種基於規則的AI系統設計架構",
+            "B. 僅限用於影像辨識任務中提取區域特徵",
+            "D. 僅用於監督式學習中的分類器",
+            "A. 透過自注意力機制實現序列資料的全局依賴建模"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "Transformer架構",
+        "explanation": "Transformer利用自注意力機制對整個序列進行全局依賴關係建模，廣泛應用於NLP及多模態任務，而非局限於影像或規則系統。",
+        "difficulty": "博士生 - 高級",
+        "number": 769,
+        "date": "2026-07-31"
+    },
+    {
+        "question": "生成式AI回應語境一致性的重要性意味著什麼？",
+        "options": [
+            "D. 只能生成結構化的資料輸出",
+            "B. 模型必須獨立於任何輸入提示生成內容",
+            "C. 回應內容不需考慮用戶意圖和歷史對話",
+            "A. 產生內容需與先前上下文保持邏輯與語義連貫"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式AI 與生成式AI",
+        "subtopic": "生成式AI應用",
+        "concept": "生成式AI語境一致性",
+        "explanation": "生成式AI須保持其回應與上下文在語義與邏輯上的一致，確保對話或內容流暢與合理，這是提升使用者體驗的關鍵。",
+        "difficulty": "博士生 - 高級",
+        "number": 770,
+        "date": "2026-07-31"
     }
 ]

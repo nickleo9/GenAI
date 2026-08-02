@@ -9678,5 +9678,175 @@
         "explanation": "提供清楚具體的內容與風格指示，能讓生成AI更精確符合預期，提升生成文本品質和實用性。",
         "number": 595,
         "date": "2026-07-26"
+    },
+    {
+        "question": "如果你是台灣一家製造業的主管，想利用生成式AI提升產線的自動化與品質監控，以下哪種AI工具組合最適合？",
+        "options": [
+            "D. 使用Grammarly協助產線文件撰寫，搭配ElevenLabs製作培訓音頻",
+            "B. 使用Gemini進行多模態數據融合，配合Cursor進行自動化程式碼生成",
+            "C. 以DALL·E 3產生產品設計視覺，搭配Otter.ai記錄生產會議內容",
+            "A. 結合ChatGPT進行生產計劃溝通與Midjourney進行質量檢測影像分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工具使用",
+        "concept": "多模態融合與程式自動化",
+        "explanation": "Gemini的多模態融合能力適合整合影像與文字等多元數據，Cursor則能幫助自動生成程式碼及自動化生產流程，使整體流程自動化與品質監控更有效率。其他選項雖有各自用途，但不適合結合達成產線自動化需求。",
+        "number": 596,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "如果你是國中數學老師，需要利用生成式AI輔導學生製作教案和練習題，以下哪個提示詞最有效？",
+        "options": [
+            "C. \"創建數學公式並解釋其推導過程\"",
+            "B. \"生成有趣的數學故事，激發學生學習興趣\"",
+            "D. \"撰寫數學歷史人物及其貢獻介紹\"",
+            "A. \"製作符合課綱的數學教學計劃，包含例題及解答步驟\""
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "教育應用",
+        "concept": "提示工程",
+        "explanation": "明確指示生成符合教學需求的教案與例題，最能符合教育輔導應用目標。其他選項雖有教育意義，但無法直接產出教案與練習題。",
+        "number": 597,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "2025年AI業界常使用的No Code與Low Code平台，關於適用場景與限制，下列敘述何者正確？",
+        "options": [
+            "C. Low Code無法加入程式碼，No Code具高度自定義能力",
+            "B. No Code適合快速原型開發，Low Code兼顧彈性與速度",
+            "D. No Code與Low Code均能完美滿足所有企業需求",
+            "A. No Code適合複雜邏輯客製化，Low Code僅適合簡單流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "平台選型與限制",
+        "explanation": "No Code更快速且零程式碼，適合快速驗證與標準流程；Low Code允許少量程式碼，兼顧彈性與開發效率。A、C、D選項理解錯誤。",
+        "number": 598,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "作為一位自媒體經營者，若想利用生成式AI提升內容創作效率，以下哪種AI工具組合及提示詞最合理？",
+        "options": [
+            "D. 用Otter.ai錄製訪談，提示詞為“文學史概述”",
+            "A. 使用ChatGPT產出文案並搭配Midjourney生成視覺素材，提示詞為“為生活風格打造溫馨影像”",
+            "C. 利用Cursor生成程式碼，提示詞用於影像編輯自動化",
+            "B. 依賴ElevenLabs製作語音內容，提示詞為“寫一篇科技深度報告”"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "內容創作",
+        "concept": "多媒體內容生成",
+        "explanation": "ChatGPT在文字創作方面功能強大，搭配Midjourney圖像生成，是自媒體內容生產的合理組合，提示詞明確指向生活風格相關視覺。其他選項雖具特定用途，但不符提升整體創作流程的最佳實踐。",
+        "number": 599,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "根據生成式AI發展歷史，哪一項技術突破被認為是大型語言模型（LLM）興起的關鍵？",
+        "options": [
+            "D. GAN對抗生成提升影像品質",
+            "C. Transformer架構引入注意力機制",
+            "B. 反向傳播算法實現多層神經網絡訓練",
+            "A. ELIZA程式的自然語言模式匹配"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "機器學習概念",
+        "concept": "Transformer架構",
+        "explanation": "Transformer引入的注意力機制有效改善序列建模，成為後續GPT等大型語言模型的基礎，是LLM爆發的關鍵技術。A為早期對話程序，B為神經網路基礎，D主要推動影像生成。",
+        "number": 600,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "作為一名AI應用規劃師，想規劃企業導入生成式AI以提升客服效率，下列哪一項風險管理措施最關鍵？",
+        "options": [
+            "B. 強化生成內容的合法合規審查及數據安全",
+            "D. 完全自動化無人工審核保證效率最高",
+            "A. 聚焦模型推論速度，忽略數據隱私保護",
+            "C. 只選擇免費的通用生成式AI工具減少成本"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "風險管理",
+        "concept": "合規與安全",
+        "explanation": "導入生成式AI時，合規審查及數據隱私安全是避免法律風險和商業損失的關鍵措施。忽略隱私或完全依賴免費工具可能帶來法律及安全漏洞。",
+        "number": 601,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "2025年全球熱門生成式AI工具中，哪一款工具以多模態對話和Google生態系整合聞名？",
+        "options": [
+            "B. Gemini",
+            "C. ChatGPT",
+            "D. Perplexity",
+            "A. Claude"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工具使用",
+        "concept": "多模態整合",
+        "explanation": "Gemini是Google開發的多模態大型語言模型，能理解圖像、文本和其他數據，並與Google多種服務深度整合，提高便利性。其他選項為其他公司的模型。",
+        "number": 602,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "假設您是行政主管要帶領員工運用生成式AI提升會議效率，下列哪個AI工具及應用方法最適合？",
+        "options": [
+            "D. 透過Cursor自動撰寫會議程式碼腳本",
+            "B. 使用Midjourney即時生成會議視覺插畫提高參與感",
+            "C. 利用ElevenLabs製作會議背景音樂增強專注力",
+            "A. Otter.ai錄製並自動生成會議摘要，搭配ChatGPT梳理重點行動項"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "辦公自動化",
+        "concept": "會議管理",
+        "explanation": "Otter.ai能有效轉錄會議內容並生成文字檔，搭配ChatGPT整理出會議重點和行動項，顯著提升行政效率。其他選項與會議效率關聯較低。",
+        "number": 603,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "iPAS AI應用規劃師考試中，關於生成式AI導入評估，下列哪項指標最能反映投資報酬率(ROI)？",
+        "options": [
+            "C. 工具導入後節省的時間與降低的成本",
+            "D. 生成AI模型的訓練資料量",
+            "A. 生成模型的參數量",
+            "B. 員工使用AI工具的滿意度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "效益衡量",
+        "concept": "ROI評估",
+        "explanation": "ROI主要衡量投資效益，以節省時間和降低成本作為核心指標。參數量、滿意度和訓練資料量間接影響，但非直接ROI衡量指標。",
+        "number": 604,
+        "date": "2026-08-02"
+    },
+    {
+        "question": "在2025年AI技術發展史上，ELIZA程式的最大貢獻是什麼？",
+        "options": [
+            "D. 實現Transformer架構開創多模態模型",
+            "A. 首創生成對抗網絡(GAN)架構",
+            "C. 發明反向傳播算法促進深度學習",
+            "B. 初步展示機器人與人類自然語言對話能力"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "人工智慧概念",
+        "concept": "歷史里程碑",
+        "explanation": "ELIZA是1966年出現的早期聊天機器人，以模式匹配方式模擬人類對話，展示了自然語言互動的可能性，奠定對話AI基礎。GAN、反向傳播與Transformer為後期技術突破。",
+        "number": 605,
+        "date": "2026-08-02"
     }
 ]

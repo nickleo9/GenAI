@@ -13118,5 +13118,175 @@
         "difficulty": "博士生 - 高級",
         "number": 770,
         "date": "2026-07-31"
+    },
+    {
+        "question": "在人工智慧中，哪種學習類型主要是依賴標註資料進行模型訓練？",
+        "options": [
+            "監督學習主要依賴標註資料訓練模型",
+            "半監督學習完全不依賴標註資料",
+            "強化學習需要標註資料作為主要輸入",
+            "非監督學習利用有標籤的數據訓練"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習",
+        "explanation": "監督學習是一種機器學習方法，依賴已標註的資料（輸入與對應的標籤）進行模型訓練，讓模型學習預測標籤的能力。",
+        "number": 771,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "在資料處理流程中，ETL指的是？",
+        "options": [
+            "資料評估(Estimate)、轉換(Transform)與載入(Load)的流程",
+            "資料初始化(Enable)、編輯(Transform)、與載入(Load)流程",
+            "資料萃取(Extract)、轉換(Transform)與載入(Load)的流程",
+            "資料監控(Evaluate)、轉換(Transmit)與整合(Load)流程"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL代表資料的抽取（Extract）、轉換（Transform）與載入（Load），是資料處理的標準流程。",
+        "number": 772,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "關於生成式 AI 與鑑別式 AI 的描述，以下哪一項為真？",
+        "options": [
+            "鑑別式 AI 生成新資料，生成式 AI 僅辨識資料",
+            "兩者皆為生成資料但原理相同",
+            "生成式 AI 僅應用於圖像識別",
+            "生成式 AI 負責產生資料，鑑別式 AI 負責判斷資料屬性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成式 AI 與鑑別式 AI",
+        "explanation": "生成式 AI 生成新的資料樣本，而鑑別式 AI 負責判別輸入資料的類別或屬性。",
+        "number": 773,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "在 AI 治理架構中，以下哪項機制較不屬於風險控管的一部分？",
+        "options": [
+            "建立透明度與解釋能力",
+            "模型偏差與公平性評估",
+            "隨機資料噪聲注入以改變模型結果",
+            "資料隱私與安全機制"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI治理概念",
+        "subtopic": "風險控管",
+        "concept": "風險控管",
+        "explanation": "隨機資料噪聲注入雖可用於增強模型隱私保護（如差分隱私），但本身不是標準的風險控管機制，風險控管通常著重於資料安全、偏誤評估與透明解釋。",
+        "number": 774,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "在機器學習模型中，正規化（Regularization）的方法中，L1正規化最主要造成的影響是？",
+        "options": [
+            "增加訓練時間，但不改變模型複雜度",
+            "使權重變化趨近於無限大",
+            "使權重逐漸接近零，達到稀疏效果",
+            "使模型產生非線性變換"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "模型正規化",
+        "concept": "L1正規化",
+        "explanation": "L1正規化促使模型權重變為零，具有特徵選擇與稀疏化效果，有助於降低模型複雜度。",
+        "number": 775,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "在使用資料時，何者最符合資料隱私與安全的最佳實務？",
+        "options": [
+            "加密敏感資料並限制存取權限",
+            "公開所有收集的資料以提升透明度",
+            "將所有資料儲存於單一無防護的伺服器",
+            "隨意分享資料以促進資料流通"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料保護",
+        "explanation": "確保資料隱私與安全的標準做法是對敏感資料進行加密並限制存取權限，以防止未授權的資料洩漏。",
+        "number": 776,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "以下關於聯邦學習的敘述，何者正確？",
+        "options": [
+            "允許在多設備上本地訓練模型，並共享模型參數",
+            "必須共享原始資料以提升模型準確度",
+            "僅適用於結構化資料的場景",
+            "數據集中在單一伺服器上由中心模型進行訓練"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "聯邦學習",
+        "concept": "分散式學習",
+        "explanation": "聯邦學習讓多個本地設備在不共享原始資料的情況下各自訓練模型，僅共享模型參數以提升隱私及安全。",
+        "number": 777,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "在生成式 AI 的應用中，下列哪種技術最常用於文本生成？",
+        "options": [
+            "卷積神經網絡（CNN）",
+            "循環神經網絡（RNN）",
+            "決策樹（Decision Tree）",
+            "生成對抗網絡（GAN）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI 規劃",
+        "subtopic": "模型選型",
+        "concept": "文本生成模型",
+        "explanation": "RNN 特別適合序列資料處理，是生成文本時常用的深度學習架構。",
+        "number": 778,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "在資料分類時，哪一個為常見的資料編碼方法用以處理類別型變數？",
+        "options": [
+            "One-Hot Encoding 編碼",
+            "歸一化編碼",
+            "Z-score 正規化",
+            "標准分數編碼"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料編碼",
+        "explanation": "One-Hot Encoding 是常用的類別型資料編碼方法，將類別轉為二進位形式，方便機器學習模型處理。",
+        "number": 779,
+        "date": "2026-08-03"
+    },
+    {
+        "question": "下列對GAN（生成對抗網路）的描述，哪項是正確的？",
+        "options": [
+            "GAN 僅用於資料分類任務，不涉及生成",
+            "GAN 只能處理結構化資料",
+            "GAN 由生成器與鑑別器兩部分模型交替訓練",
+            "GAN 不需要用到損失函數進行優化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "生成對抗網路（GAN）",
+        "explanation": "GAN 由生成器與鑑別器兩個模型組成，通過交替訓練提升生成資料的真實度。",
+        "number": 780,
+        "date": "2026-08-03"
     }
 ]

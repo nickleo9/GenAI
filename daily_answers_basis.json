@@ -13288,5 +13288,175 @@
         "explanation": "GAN 由生成器與鑑別器兩個模型組成，通過交替訓練提升生成資料的真實度。",
         "number": 780,
         "date": "2026-08-03"
+    },
+    {
+        "question": "以下哪項最能正確描述人工智慧（AI）的分類方法？",
+        "options": [
+            "根據技術架構分為符號AI、連結主義AI與進化AI",
+            "根據資料處理方式分為結構化資料AI與非結構化資料AI",
+            "根據應用領域分為醫療AI、金融AI、製造AI與娛樂AI",
+            "根據智能水平分為狹義AI、通用AI與超級AI"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 的定義與分類",
+        "concept": "AI分類",
+        "explanation": "人工智慧通常依智能水平劃分為狹義AI（專注任務）、通用AI（多領域智能）及超級AI（超越人類智能）。其他分類雖有參考價值，但相較於智能水平分類較為次要。",
+        "number": 781,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "在資料整理與分析流程中，下列哪一個步驟不屬於資料清洗的範疇？",
+        "options": [
+            "處理遺漏值與空值",
+            "標註資料以利模型訓練",
+            "去除重複資料與錯誤異常值",
+            "將資料轉換為模型能接受的格式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗包括剔除錯誤、處理遺漏值及格式轉換，但標註資料屬於資料標註與預備階段，不直接算清洗流程。",
+        "number": 782,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "何者最能代表機器學習中的強化學習特徵？",
+        "options": [
+            "藉由與環境互動，根據回饋信號調整策略達成目標",
+            "利用生成式模型創造新資料以供訓練",
+            "利用大量標註資料訓練模型，以達成預測任務",
+            "從未標註的資料中自動找到群集與結構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "強化學習",
+        "explanation": "強化學習透過試誤與回饋，學習最佳策略來最大化累積報酬，與監督學習及非監督學習不同。",
+        "number": 783,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "關於鑑別式 AI 與生成式 AI 整合應用，下列敘述何者正確？",
+        "options": [
+            "生成式 AI 主要用於資料清洗，鑑別式 AI 主要用於強化學習",
+            "鑑別式 AI 僅用於生成文字，生成式 AI 僅用於分類影像",
+            "兩者無法同時應用，因模型原理互斥",
+            "鑑別式 AI 負責判斷輸入真假，生成式 AI 負責創造新內容"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "整合應用",
+        "explanation": "鑑別式 AI 用於區分輸入是否真實，生成式 AI 則用於創造新訊息，兩者常結合提升生成內容真實性。",
+        "number": 784,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "在AI治理框架中，何者不是常見的治理措施？",
+        "options": [
+            "對AI模型訓練數據進行嚴格保密以避免洩漏",
+            "強制所有AI模型開源以利社會審核",
+            "建立AI系統透明度與可解釋性的標準",
+            "制定使用者隱私權與資料保護法規"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "AI治理",
+        "explanation": "雖然鼓勵透明度及審核，但強制所有AI模型開源並非普遍治理措施，考量商業競爭與資安考量不同。",
+        "number": 785,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "關於資料隱私與安全，下列敘述何者為非？",
+        "options": [
+            "資料匿名化可完全保障使用者隱私權",
+            "資料加密是提升資料安全的重要方法之一",
+            "對敏感資料實施嚴格存取控制是保障安全策略",
+            "聯邦學習是保護資料隱私的分散式訓練方式"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料隱私",
+        "explanation": "資料匿名化可降低風險，但無法完全保障隱私，仍可能有重識別風險。",
+        "number": 786,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "One-Hot Encoding 的主要目的為何？",
+        "options": [
+            "對資料進行標準化，使其均值為0、方差為1",
+            "將類別變數編碼為數值向量以便機器學習模型處理",
+            "將時間序列資料轉換成頻譜特徵",
+            "對資料進行缺失值填補以確保完整性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料編碼",
+        "explanation": "One-Hot Encoding 將類別資料轉成二進制向量，使模型能處理非數值類別特徵。",
+        "number": 787,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "以下哪一項屬於常見的監督學習模型？",
+        "options": [
+            "深度置信網路（Deep Belief Network）",
+            "K-means叢集分群",
+            "貝氏分類器（Naive Bayes）",
+            "自編碼器（Autoencoder）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "監督學習模型",
+        "explanation": "貝氏分類器屬於監督學習用於分類任務；K-means屬非監督學習，自編碼器與DBN主要為無監督或生成模型。",
+        "number": 788,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "以下對Transformer架構的痛點描述，何者為是？",
+        "options": [
+            "計算量大，且可能出現梯度消失現象",
+            "對小規模數據訓練效果優於CNN",
+            "無法處理序列資料的長期依賴問題",
+            "架構簡單，且不需要大量算力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見的機器學習模型",
+        "concept": "Transformer技術痛點",
+        "explanation": "Transformer計算複雜度高，訓練需大算力；梯度消失為深度學習常見問題，且Transformer優於序列長期依賴。",
+        "number": 789,
+        "date": "2026-08-05"
+    },
+    {
+        "question": "下列何者最能描述聯邦學習的特點？",
+        "options": [
+            "只針對標註資料進行分群演算法分析",
+            "中心化收集所有資料至伺服器訓練完整模型",
+            "資料分散於多方，模型訓練僅分享模型參數而非資料",
+            "強調大規模無監督資料的自動標註"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許資料留在本地，多方只共享模型更新，保障資料隱私和安全。",
+        "number": 790,
+        "date": "2026-08-05"
     }
 ]

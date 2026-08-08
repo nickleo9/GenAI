@@ -5642,5 +5642,175 @@
         "explanation": "不同任務類型需要不同工具，透過結合多工具及制定人機協作流程，才能發揮生成式AI的最大效益，並兼顧風險管理與效率。",
         "number": 332,
         "date": "2026-08-06"
+    },
+    {
+        "question": "在 No Code / Low Code 平台中，以下何者最能描述其主要優勢？",
+        "options": [
+            "提供深度學習模型參數的調整功能",
+            "提高程式碼的靈活性與可維護性",
+            "強化軟體專案的安全性與資料加密",
+            "降低程式設計複雜度並加快應用開發速度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的優勢",
+        "explanation": "No Code / Low Code 平台最主要的優勢是降低開發人員對程式設計的需求，讓非技術背景的人員也能快速開發和部署應用。",
+        "number": 333,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "生成式 AI 中，RAG 技術應用主要是為了什麼？",
+        "options": [
+            "提升生成內容的真實性與資訊回補能力",
+            "降低生成文本的計算成本及延遲",
+            "增加模型對多語言的理解能力",
+            "加速模型訓練過程中的樣本擴充"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "RAG",
+        "explanation": "RAG (Retrieval-Augmented Generation) 技術透過檢索外部資料來提升生成內容的真實性與資訊全面性，是生成式 AI 中重要的應用技術。",
+        "number": 334,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "在生成式 AI 導入評估中，下列何者是評估風險管理的關鍵指標？",
+        "options": [
+            "資料隱私保護與生成結果的道德問題",
+            "模型訓練速度與硬體資源使用率",
+            "用戶介面的美觀設計與操作便利性",
+            "開發團隊的程式碼風格與版本控制"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "生成式 AI 風險管理",
+        "explanation": "生成式 AI 風險管理中，資料隱私與倫理道德問題是最關鍵的風險點，需要仔細評估與監控。",
+        "number": 335,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "關於少樣本提示(Few-shot prompting)和零樣本提示(Zero-shot prompting)的敘述，下列何者正確？",
+        "options": [
+            "少樣本提示包含少量範例，零樣本提示則無需範例輸入",
+            "兩者均需提供大量訓練數據以達到最佳效果",
+            "兩者皆是生成式 AI 中用於模型壓縮的方法",
+            "少樣本提示無需範例輸入，零樣本提示包含少量範例"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "少樣本提示 、零樣本提示",
+        "explanation": "少樣本提示使用少量範例作為模型輸入，增強模型生成效果，而零樣本提示完全不依賴範例，直接根據指令生成內容。",
+        "number": 336,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "在生成式 AI 工具的應用中，GitHub Copilot 的主要功能為何？",
+        "options": [
+            "協助程式碼生成及自動補全",
+            "進行自然語言的自動摘要",
+            "統整資料庫中的結構化數據",
+            "生成多媒體藝術設計資源"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "GitHub Copilot",
+        "explanation": "GitHub Copilot 是基於 OpenAI 技術的 AI 編程助手，能自動補全程式碼並生成代碼片段，提高開發生產力。",
+        "number": 337,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "No Code 平台應用的限制不包括以下何項？",
+        "options": [
+            "無法快速原型設計與迭代",
+            "難以支持高度客製化與複雜邏輯",
+            "受限於平台本身模板和功能限制",
+            "可能面臨安全性與資料隱私風險"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的限制",
+        "explanation": "No Code 平台最大的缺點之一是難以應付高度客製化需求，但它非常適合快速原型設計與迭代，因此選項中“無法快速原型設計與迭代”是不正確的。",
+        "number": 338,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "在生成式 AI 導入中，何者最能代表成功規劃的重要環節？",
+        "options": [
+            "完全依賴現成模型忽視訓練",
+            "需求分析與風險評估緊密結合",
+            "只關注技術實現忽略業務需求",
+            "無需資料隱私保護直接部署"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式 AI 導入規劃",
+        "explanation": "生成式 AI 導入規劃中，需求分析與風險評估相輔相成，是保證導入成功的關鍵環節。",
+        "number": 339,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "關於提示詞工程(Prompt Engineering)的描述，何者為非？",
+        "options": [
+            "須依應用場景調整提示詞策略",
+            "提示詞長度無限制且越長越佳",
+            "合理設計提示詞可提升生成內容的相關性",
+            "提示詞可包含上下文信息以引導模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示工程",
+        "explanation": "提示詞工程強調設計合理且精簡的提示詞來提升生成效果，提示詞過長反而可能降低效率和準確性，因此提示詞長度無限制且越長越佳是不正確的。",
+        "number": 340,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "以下何者最能彰顯 Low Code 平台在企業中的應用價值？",
+        "options": [
+            "構建大型數據倉庫並優化查詢性能",
+            "快速部署符合業務流程的自動化工具",
+            "利用編程語言進行複雜邏輯編寫",
+            "專注於深度學習模型的自定義訓練"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 的應用",
+        "explanation": "Low Code 平台在企業中主要用於快速構建和部署自動化應用，支持業務流程優化，減少技術門檻。",
+        "number": 341,
+        "date": "2026-08-08"
+    },
+    {
+        "question": "下列何者描述最符合 Auto Prompt Engineer (APE) 的功能？",
+        "options": [
+            "內建多模型融合進行結果對比分析",
+            "即時監控生成式 AI 資料隱私風險",
+            "自動生成最佳提示詞以提升生成品質",
+            "管理分散式資料的安全共享與同步"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "APE",
+        "explanation": "Auto Prompt Engineer (APE) 是一種自動提示詞生成技術，可根據應用需求優化提示詞以提高生成內容的品質和效率。",
+        "number": 342,
+        "date": "2026-08-08"
     }
 ]

@@ -5812,5 +5812,175 @@
         "explanation": "Auto Prompt Engineer (APE) 是一種自動提示詞生成技術，可根據應用需求優化提示詞以提高生成內容的品質和效率。",
         "number": 342,
         "date": "2026-08-08"
+    },
+    {
+        "question": "企業要快速建立一個面向業務單位的 AI 原生客戶服務申請平台，需求是可視化拖拉建置、可逐步加入少量 Python/SQL 客製、並保留治理與審核流程。下列何者最符合 Low-Code AI 的典型特徵？",
+        "options": [
+            "完全以自然語言生成應用，且禁止任何程式碼介入",
+            "只能由資料工程師以手寫程式完整開發",
+            "以圖形化介面為主，並允許局部以少量程式碼進行擴充",
+            "專用於模型訓練，不能用於應用開發"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low-Code AI",
+        "explanation": "Low-Code AI 的核心是以視覺化方式開發，但保留少量程式碼彈性，適合在業務需求與技術治理之間取得平衡。選項 A 描述較接近 No-Code AI；選項 C、D 都不符合 Low-Code 的應用定位。",
+        "number": 343,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "某大型企業計畫導入生成式 AI，要求系統可處理文字、影像、語音與程式碼，並希望降低多模型、多系統整合成本。下列何者最能直接支撐此目標？",
+        "options": [
+            "傳統 ETL 批次流程與報表系統",
+            "純 RPA 腳本與人工審核機制",
+            "多模態原生模型與統一推理架構",
+            "單一模態規則引擎與靜態表單平台"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態 AI",
+        "explanation": "2026 趨勢之一是多模態原生模型，可在單一模型中處理文字、影像、語音與程式碼，減少整合複雜度。其他選項難以直接對應多模態生成式 AI 的核心能力。",
+        "number": 344,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "企業導入 AI Agent 以自動完成文件生成、工單流轉與部署任務，管理層最應優先建立哪一項機制，才能兼顧效率與可控性？",
+        "options": [
+            "以開源模型替代所有流程控制",
+            "建立 Human-in-the-loop 驗證與治理流程",
+            "僅採用匿名使用者測試，不需正式審核",
+            "完全取消人工介入，避免降低自動化速度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "Human-in-the-loop治理",
+        "explanation": "AI Agent 雖能自動化多任務，但仍需要 Human-in-the-loop 驗證機制來確保流程的正確性與合規。取消人工介入或忽視審核將增加企業風險。",
+        "number": 345,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "某集團想評估生成式 AI 導入效益，董事會最關心的是「投資回收」與「可持續擴張」。下列哪一組指標最適合作為高層評估框架？",
+        "options": [
+            "ROI、TCO、流程節省工時與營收增益",
+            "GPU 型號、記憶體頻寬、推論延遲",
+            "使用者登入次數、頁面停留秒數、API 呼叫峰值",
+            "模型參數量、訓練輪數、語料庫大小"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "商業價值評估",
+        "explanation": "企業高層主要關注投資回收率 (ROI)、總擁有成本 (TCO) 和因導入 AI 所節省的工時與帶來的營收增益，這些指標直接反映商業效益。",
+        "number": 346,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "某中型企業希望以低風險方式試做內部知識助手，且團隊缺乏程式開發能力，主要目標是快速驗證需求與縮短 PoC 週期。下列何者最適合先採用？",
+        "options": [
+            "自建分散式訓練叢集",
+            "No-Code AI 平台",
+            "企業級資料湖重構專案",
+            "全客製微服務架構"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No-Code AI",
+        "explanation": "No-Code AI 平台以圖形化操作為主，無需程式開發，能快速驗證想法並降低導入風險，適合缺乏技術背景的團隊快速完成 PoC。",
+        "number": 347,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "企業在導入生成式 AI 之前，發現多數業務部門都想自行建立應用，導致工具分散、權責不清與資料外流風險上升。此情境最接近下列哪一種治理議題？",
+        "options": [
+            "ERP 主檔同步的批次排程問題",
+            "Shadow IT 轉為受管控的 Citizen Development",
+            "CDN 節點分配的流量調度問題",
+            "供應鏈金融的現金流折現問題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "Shadow IT治理",
+        "explanation": "多業務部門自行建構 AI 應用形成 Shadow IT，企業需將其納入正式治理流程，提升資料安全與權責分明，進而推動 Citizen Development。",
+        "number": 348,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "某金融機構準備採用第三方 AI 平台，法遵部門要求先確認供應商是否具備獨立稽核與長期營運能力，以避免平台短期消失或資料權屬不明。這最接近哪一項風險管理重點？",
+        "options": [
+            "Token pricing 與 prompt compression",
+            "Latency jitter 與 packet loss recovery",
+            "UI aesthetic 與 theme consistency",
+            "Vendor longevity 與 data ownership"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "供應商管理",
+        "explanation": "選擇 AI 供應商時，必須評估其長期營運力（Vendor longevity）與資料所有權（data ownership），確保企業資安與運營風險受控。",
+        "number": 349,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "某公司希望避免把敏感資料送入外部模型，並要求 AI 在公司內部環境完成推論與資料處理。下列何者最符合其需求？",
+        "options": [
+            "採用內部部署與資料最小暴露原則",
+            "只使用公開社群提示詞庫",
+            "開放所有員工共享同一組管理員權限",
+            "將所有資料直接同步至外部 SaaS"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資料治理",
+        "explanation": "為保護敏感資料，企業應採內部部署並遵守資料最小暴露原則，避免將敏感資訊外洩或無限制授權。",
+        "number": 350,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "某零售企業想把客服、行銷文案與分析報告整合成一個生成式 AI 工作流，並要求未來可擴充到更多業務流程。以下哪一種做法最符合 2026 的平台演進方向？",
+        "options": [
+            "只做模型評測，不建立任何業務介面",
+            "以單點聊天機器人處理所有需求，永不升級",
+            "先以人工處理全部流程，再考慮數位化",
+            "採用可治理的低代碼平台，逐步擴展到任務型 AI Agent"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "任務型 AI Agent",
+        "explanation": "2026 趨勢強調低代碼平台與任務型 AI Agent 的深度整合，以支援持續擴充的業務流程與治理需求。",
+        "number": 351,
+        "date": "2026-08-11"
+    },
+    {
+        "question": "某企業希望判斷是否該大規模投入生成式 AI。下列哪一種判斷最符合成熟的導入策略？",
+        "options": [
+            "以業務價值、資料可得性、治理成熟度與風險承受度綜合評估",
+            "只要員工會用聊天工具，就可直接上線",
+            "先看競爭對手是否使用，再完全複製",
+            "只要模型最新、參數最大，就應全面導入"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入策略評估",
+        "explanation": "成熟導入策略必須考量業務價值、資料品質與可用性、治理架構成熟度以及組織對風險的承擔能力，非僅追求技術新穎。",
+        "number": 352,
+        "date": "2026-08-11"
     }
 ]

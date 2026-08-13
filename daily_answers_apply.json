@@ -5982,5 +5982,175 @@
         "explanation": "成熟導入策略必須考量業務價值、資料品質與可用性、治理架構成熟度以及組織對風險的承擔能力，非僅追求技術新穎。",
         "number": 352,
         "date": "2026-08-11"
+    },
+    {
+        "question": "在生成式AI應用中，哪一項最能代表No Code平台的主要特性？",
+        "options": [
+            "完全不需撰寫程式碼且適合非技術使用者",
+            "需要部分程式碼編寫以增加功能彈性",
+            "只適合簡單資料輸入與管理任務",
+            "主要針對軟體開發者提供高度自訂能力"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 基本特性",
+        "explanation": "No Code 平台的核心是讓非技術背景的使用者透過圖形化介面與配置來完成應用開發，而不需撰寫任何程式碼，這使其容易被業務部門快速採用。",
+        "number": 353,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "下列哪一種生成式AI工具最適合自動化代碼生成並支援開發者進行程式碼審查？",
+        "options": [
+            "Runway 專注於多媒體內容創建",
+            "ChatGPT 用於文本生成和對話應用",
+            "Perplexity 主要用於資料檢索和搜尋",
+            "GitHub Copilot Agent 提供代碼生成與審查支援"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "代碼生成工具",
+        "explanation": "GitHub Copilot Agent 為開發者專用的生成式AI工具，不僅能生成程式碼，也支援程式碼審查和建議，提升開發效率與品質。",
+        "number": 354,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "在生成式AI導入評估時，何者不是常見的評估指標？",
+        "options": [
+            "資料隱私與機密保護措施",
+            "模型推論的效能與成本",
+            "系統使用者界面的色彩設計",
+            "營業部門的實際業務成效"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "評估指標",
+        "explanation": "導入評估聚焦於AI模型效能、資料安全與業務效益，而系統界面的色彩設計屬於使用體驗設計，非導入評估核心指標。",
+        "number": 355,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "生成式AI在營銷領域中，最常見的應用是哪一項？",
+        "options": [
+            "財務風險模型評估",
+            "自動生成廣告文案及內容個人化",
+            "供應鏈物流路徑優化",
+            "影像辨識與監視系統建置"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "營銷應用",
+        "explanation": "生成式AI在營銷方面廣泛用於產生吸引人的廣告文案，並依據使用者特性做到內容個人化，大幅提升行銷效果。",
+        "number": 356,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "何者為低碼（Low Code）平台的限制？",
+        "options": [
+            "在高度複雜的業務邏輯中功能彈性受限",
+            "僅提供靜態網頁設計，缺乏動態交互",
+            "無法整合第三方API或外部系統",
+            "完全不需要任何程式設計知識，適合所有用戶"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code 限制",
+        "explanation": "Low Code平台雖提供部分程式碼介入以擴展功能，但在面對複雜業務邏輯時彈性仍有限，需要結合傳統開發以滿足需求。",
+        "number": 357,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "在生成式AI導入風險管理中，下列何者最可能導致企業法律責任？",
+        "options": [
+            "平台使用者介面不夠友善且較難操作",
+            "生成AI無法自動處理多模態數據輸入",
+            "生成模型過度依賴內部數據庫導致信息孤島",
+            "缺乏對生成內容的版權歸屬與授權管理"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "法律風險管理",
+        "explanation": "生成式AI產生內容的版權歸屬與授權問題是企業面臨的重大法律風險之一，若管理不善，可能導致著作權侵權法律責任。",
+        "number": 358,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "2026年生成式AI發展趨勢中，下列哪一點是產業普遍接受的重要方向？",
+        "options": [
+            "生成AI以單一工具形態存在，無需整合",
+            "多模態AI成為標準，涵蓋文字、圖片與語音",
+            "AI只在研發部門有限使用，難以普及",
+            "生成AI只能用於內容創作，限制較多"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態 AI",
+        "explanation": "2026年的趨勢強調多模態AI，即能處理文字、圖像、語音等多種媒介，成為企業整合應用的標準。",
+        "number": 359,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "下列哪項最不符合生成式AI在業務導入的常見步驟？",
+        "options": [
+            "先定義清楚目標業務自動化內容",
+            "透過PoC進行小規模驗證後評估效果",
+            "直接投入大量資金購買高端硬體設備",
+            "先從高頻率、標準化任務開始試點"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入流程",
+        "explanation": "生成式AI導入包流程中，通常會先進行目標明確、分階段的評估與試點，不會直接大規模投資，因為風險與成本過高。",
+        "number": 360,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "在生成式AI提示詞（Prompt Engineering）應用中，何者描述較為錯誤？",
+        "options": [
+            "精準提示可提高生成內容準確度與相關度",
+            "透過細膩設計提示可引導模型產出特定格式",
+            "提示詞過於模糊時會提高生成錯誤資訊機率",
+            "提示工程主要針對使用者介面設計進行優化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "提示工程",
+        "explanation": "提示工程專注於設計輸入模型的提示詞以影響輸出質量，與使用者介面設計無直接關係，該選項描述錯誤。",
+        "number": 361,
+        "date": "2026-08-13"
+    },
+    {
+        "question": "生成式AI導入中，所謂‘Agentic AI’主要指的是什麼？",
+        "options": [
+            "只負責單一步驟文本生成的模型",
+            "僅專注文字輸入，拒絕多模態資料處理",
+            "能自我設定目標並自動執行多階段任務的AI",
+            "需依賴人類逐步指令介入操作的工具"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "Agentic AI",
+        "explanation": "Agentic AI是指能夠自我設定目標並執行多階段任務的自主AI系統，超越單一步驟的指令執行，提高自律性。",
+        "number": 362,
+        "date": "2026-08-13"
     }
 ]

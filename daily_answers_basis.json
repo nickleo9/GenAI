@@ -13978,5 +13978,175 @@
         "explanation": "監理沙盒是一種受控的創新實驗環境，允許企業在監管框架下試驗AI技術，促進創新同時有效監控與控制風險。",
         "number": 820,
         "date": "2026-08-12"
+    },
+    {
+        "question": "在AI治理的背景下，哪一項最符合透明度(original transparency)的定義？",
+        "options": [
+            "模型架構與決策過程對用戶開放且可解釋",
+            "模型結果由外部專家進行隨機審查",
+            "模型精確度高於90%且訓練時間短",
+            "僅提供模型的輸入與輸出結果，不透露中間運算"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理概念",
+        "concept": "透明度",
+        "explanation": "透明度指的是模型的架構與決策過程對用戶開放且可以被理解，這有助於提升AI系統的負責任性與信任度。",
+        "number": 821,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "在資料整理與分析流程中，ETL流程不包含下列哪一項？",
+        "options": [
+            "資料轉換(Transform)",
+            "資料抽取(Extract)",
+            "資料載入(Load)",
+            "資料加密(Encrypt)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL指的是抽取、轉換和載入三個主要步驟，資料加密則是屬於資料安全措施，不包含在ETL流程中。",
+        "number": 822,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "以下哪種機器學習方法屬於監督式學習(supervised learning)？",
+        "options": [
+            "K-均值叢集(K-means Clustering)",
+            "K-近鄰演算法(KNN)",
+            "強化學習(Q-Learning)",
+            "主成分分析(PCA)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督式學習",
+        "explanation": "KNN是典型的監督式學習，因為其需要標記的訓練資料來訓練分類器。PCA與K-means是非監督式學習，Q-Learning屬於強化學習。",
+        "number": 823,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "當企業規劃導入生成式AI客服系統，最重要的前期資料處理是？",
+        "options": [
+            "直接使用公開的預訓練生成模型",
+            "加密所有結構化資料以符合隱私需求",
+            "蒐集大量影像資料用於模型訓練",
+            "清洗歷史客服對話資料並標註關鍵回答"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用",
+        "concept": "資料準備",
+        "explanation": "導入生成式AI客服系統時，需先清洗與標註大量歷史客服對話資料以讓模型能學習正確回答，影像資料與預訓練模型則不適合直接用於此應用。",
+        "number": 824,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "在鑑別式AI與生成式AI的整合應用中，哪一種技術最常用於強化生成內容的可靠性？",
+        "options": [
+            "檢索增強生成(RAG)",
+            "強化學習(Q-Learning)",
+            "卷積神經網絡(CNN)",
+            "生成對抗網絡(GAN)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式AI與生成式AI",
+        "subtopic": "整合應用",
+        "concept": "RAG",
+        "explanation": "檢索增強生成(RAG)結合鑑別式檢索與生成模型，能提升生成內容的資訊精確度與上下文相關性。",
+        "number": 825,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "在資料隱私治理中，以下何者不屬於常見的資料保護措施？",
+        "options": [
+            "數據加密(Encryption)",
+            "聯邦學習(Federated Learning)",
+            "關聯式資料庫(Relational Database)",
+            "資料去識別化(De-identification)"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料保護",
+        "explanation": "關聯式資料庫是一種資料庫管理系統，不是資料保護措施。去識別化、聯邦學習以及加密是保障資料隱私的技術。",
+        "number": 826,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "何者描述最能準確反映機器學習中偏差-變異權衡(Bias-Variance Tradeoff)的概念？",
+        "options": [
+            "變異越高，模型訓練誤差通常越大",
+            "提高模型複雜度同時減少偏差與變異",
+            "模型偏差與變異是一體兩面，降低一方常會增加另一方",
+            "模型偏差低時，通常模型變異也低"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "模型評估",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差-變異權衡指的是降低模型偏差可能會導致變異增加，反之亦然，兩者通常無法同時降低到最低。",
+        "number": 827,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "在AI應用於金融風險預測中，選擇下列哪個損失函數較適合預測數值型的違約風險？",
+        "options": [
+            "均方誤差損失(Mean Squared Error,MSE)",
+            "交叉熵損失(Cross-Entropy Loss)",
+            "對比損失(Contrastive Loss)",
+            "Hinge 損失(Hinge Loss)"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "損失函數",
+        "concept": "損失函數選擇",
+        "explanation": "金融風險預測通常是回歸問題，適合用均方誤差(MSE)來評估預測誤差。交叉熵用於分類問題。",
+        "number": 828,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "以下哪一項最適合作為生成式AI模型微調(fine-tuning)時的風險控管措施？",
+        "options": [
+            "禁止使用任何公開資料作為訓練數據",
+            "只用單一用戶的私有資料微調，以增加準確度",
+            "使用有標註權屬的數據集並進行倫理審查",
+            "微調時全權放開模型參數，不做限制"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "模型微調",
+        "concept": "風險控管",
+        "explanation": "使用有明確數據權屬且經過倫理審查的數據集，有效控制著作權與隱私問題，防範微調過程中產生的法律風險。",
+        "number": 829,
+        "date": "2026-08-14"
+    },
+    {
+        "question": "哪項敘述最貼切描述Human-in-the-loop (人在迴圈) 的人工智慧治理策略？",
+        "options": [
+            "透過人機互動訓練，使AI能自行修正錯誤",
+            "人工監督並干預AI決策以避免錯誤擴散",
+            "模型訓練完全自動化無需人力參與",
+            "完全由人類手動決策，不使用自動模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI倫理與法規",
+        "subtopic": "AI治理策略",
+        "concept": "Human-in-the-loop",
+        "explanation": "Human-in-the-loop是指結合人工監督與AI模型決策流程，以確保決策正確性和負責任性，避免錯誤自動擴散。",
+        "number": 830,
+        "date": "2026-08-14"
     }
 ]

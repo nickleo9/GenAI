@@ -10018,5 +10018,175 @@
         "explanation": "Vibe Coding等平台需明確拆解目標並要求清晰注釋與測試，避免過度依賴AI自行決策，提升程式碼質量與可維護性。",
         "number": 615,
         "date": "2026-08-09"
+    },
+    {
+        "question": "如果您是企業主管，準備導入生成式AI協助商業文件撰寫，哪種工具最符合需求？",
+        "options": [
+            "程式碼輔助工具如 Cursor",
+            "圖像生成工具如 Midjourney",
+            "文本生成工具如 ChatGPT",
+            "流程自動化工具如 n8n"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "工具選擇",
+        "explanation": "文本生成工具如 ChatGPT 專用於自然語言內容創作，非常適合協助撰寫商業文檔，而圖像生成工具與程式碼輔助工具則不符合文書工作需求。",
+        "number": 616,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "作為中學英文老師，想輔導學生利用生成式AI創作英文作文，應該如何設計提示詞以避免內容偏離主題？",
+        "options": [
+            "不使用提示詞，任意請AI生成內容",
+            "使用開放式提示詞，鼓勵自由發揮",
+            "只輸入單一關鍵詞讓AI自動聯想",
+            "清楚限定寫作主題與字數範圍"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "提示詞設計",
+        "explanation": "清楚限定主題與字數範圍的提示詞，能有效引導AI生成符合需求的內容，避免偏離或過度開放造成不相關結果。",
+        "number": 617,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "2025年，台灣政府推動 AI 人才培育計畫，iPAS AI 應用規劃師認證的初級考試最適合何種職位的人士報考？",
+        "options": [
+            "專職資料科學家",
+            "非技術背景的商業規劃人員",
+            "資深資工系統架構師",
+            "深度學習研究員"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "iPAS AI 應用規劃師認證",
+        "concept": "報考對象",
+        "explanation": "iPAS初級考試對象以非技術或跨領域從業人員為主，幫助商業或管理人員理解AI應用而非深入技術細節。",
+        "number": 618,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "在工廠生產流程中，若要利用AI提升質檢準確率，應用哪種AI類型較合適？",
+        "options": [
+            "無監督學習用於生成銷售預測",
+            "生成式AI用於自動產生檢測報告",
+            "鑑別式AI用於影像辨識瑕疵",
+            "語音合成AI用於生產語音提示"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI",
+        "concept": "鑑別式 AI",
+        "explanation": "鑑別式AI擅長分類與辨識任務，如影像瑕疵檢測提高質檢準確率，生成式AI偏向創建內容非辨識。",
+        "number": 619,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "若家庭主婦想設計一個每日健康運動計畫，且無程式撰寫經驗，推薦她使用何種AI工具？",
+        "options": [
+            "No Code/Low Code 運動計畫自動生成工具",
+            "程式碼輔助編輯器如 Cursor",
+            "大型語言模型手動微調介面",
+            "高階深度學習模型訓練平台"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code",
+        "explanation": "No Code/Low Code 工具專為無程式經驗者設計，方便在日常生活中快速製作如運動計畫等應用。\n",
+        "number": 620,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "iPAS AI應用規劃師考試中，哪項屬於生成式AI導入風險管理的主要考量？",
+        "options": [
+            "使用者介面設計的美觀度",
+            "AI生成內容的版權及智慧財產權問題",
+            "深度學習模型的訓練超參數微調",
+            "資料清理的程式碼編寫效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險管理",
+        "explanation": "生成內容的版權及智慧財產權是生成式AI應用中重要的風險管理議題，需謹慎評估與遵守相關法規。",
+        "number": 621,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "若您是台灣科技業工程師，準備研究生成式AI自動程式碼輔助，Vibe Coding工具最適合用於哪個環節？",
+        "options": [
+            "在IDE中提示與生成程式碼片段",
+            "撰寫複雜數據視覺化報告",
+            "自動批量產生商品行銷文案",
+            "生成多語言音頻廣播內容"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "工具應用",
+        "concept": "程式碼生成",
+        "explanation": "Vibe Coding為AI程式碼助理，重點在IDE中自動提供程式碼建議與生成，提升開發效率。",
+        "number": 622,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "在使用生成式AI創作圖像時，設計提示詞要避免哪項以確保生成結果準確？",
+        "options": [
+            "包含特定色彩與氛圍描述",
+            "使用過多限定詞導致風格僵硬",
+            "簡明扼要描述想要主題內容",
+            "提醒AI強調畫面細節與構圖"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "提示詞調整",
+        "explanation": "過度限定提示詞可能讓AI生成的圖像風格僵硬缺乏多樣性，適度指引可提高畫質同時保持創意彈性。",
+        "number": 623,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "下列哪項是企業在導入生成式AI時最適合先行評估的核心指標？",
+        "options": [
+            "AI工具的外觀使用者介面友善度",
+            "生成內容的分享社群活躍度",
+            "AI解決方案與企業目標的契合度",
+            "AI模型內部參數的複雜度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入評估核心指標",
+        "explanation": "企業導入生成式AI首先需確定工具是否符合企業實際目標與需求，才能有效提升生產力與投資回報。",
+        "number": 624,
+        "date": "2026-08-16"
+    },
+    {
+        "question": "如果您是自媒體經營者，想快速生成多平台社群貼文，以下哪個方案最合適？",
+        "options": [
+            "利用 ChatGPT 自動產生文字內容",
+            "手動逐一撰寫貼文提高品質",
+            "使用 Midjourney 創作廣告圖像",
+            "透過 Cursor 協助程式碼撰寫"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 常見工具",
+        "concept": "工具選擇策略",
+        "explanation": "ChatGPT擅長自動生成多樣化文字內容，適合經營自媒體時快速產生大量貼文文字，而Midjourney偏重圖像，Cursor是程式碼助手。",
+        "number": 625,
+        "date": "2026-08-16"
     }
 ]

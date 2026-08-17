@@ -14148,5 +14148,185 @@
         "explanation": "Human-in-the-loop是指結合人工監督與AI模型決策流程，以確保決策正確性和負責任性，避免錯誤自動擴散。",
         "number": 830,
         "date": "2026-08-14"
+    },
+    {
+        "question": "在台灣的iPAS AI應用規劃師考試中，資料清洗階段主要的目的是？",
+        "options": [
+            "收集多元來源的原始資料進行合併",
+            "設定資料隱私權限以符合相關法規",
+            "去除資料中的重複值與異常點，確保資料品質與一致性",
+            "將資料轉換為機器學習模型可接受的格式"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗",
+        "explanation": "資料清洗是指去除重複值與異常點，以提高資料的正確性與一致性，為後續分析打下基礎。",
+        "difficulty": "中",
+        "number": 831,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "下列何者最能描述生成式AI與鑑別式AI的主要差異？",
+        "options": [
+            "鑑別式AI主要使用非監督學習，生成式AI則是強化學習",
+            "生成式AI用於辨識資料類別，鑑別式AI用於產生新資料",
+            "鑑別式AI使用監督學習，生成式AI通常不需要監督資料",
+            "生成式AI用於生成新內容，鑑別式AI用於判別資料真偽"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "生成式與鑑別式 AI 差異",
+        "explanation": "生成式AI專注於產生新的資料或內容，而鑑別式AI則專注於判別資料的類別或真假。",
+        "difficulty": "中",
+        "number": 832,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "在機器學習中，使用哪種技術可有效避免模型過度擬合（Overfitting）？",
+        "options": [
+            "使用正則化方法如L1或L2正規化",
+            "只使用非監督學習模型",
+            "減少訓練資料量以強化特徵學習",
+            "增加訓練資料的維度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "正則化範例",
+        "explanation": "正則化（L1、L2）可抑制模型過於複雜，防止過度擬合，提高模型泛化能力。",
+        "difficulty": "中",
+        "number": 833,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "以資料隱私安全為考量，哪一種做法最符合AI治理中的規範要求？",
+        "options": [
+            "允許未經授權人員存取用於訓練的敏感資料",
+            "公開所有訓練資料增加模型可解釋性",
+            "儲存所有原始資料以備將來可能分析使用",
+            "在分析前將資料匿名化並最小化資料使用範圍"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料匿名化與最小化原則",
+        "explanation": "AI治理強調資料匿名化及最小範圍使用，避免洩漏個人或機密資訊，保障隱私權。",
+        "difficulty": "中",
+        "number": 834,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "在監督式學習中，哪種情形最適合使用決策樹模型？",
+        "options": [
+            "資料缺乏標記且需要自動分群",
+            "資料為結構化且特徵多為類別型變數",
+            "需處理時間序列資料的長期依賴",
+            "資料大量且為非結構化影像數據"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "決策樹應用場景",
+        "explanation": "決策樹對結構化資料且特徵為類別型變數表現良好，且容易解釋決策邏輯。",
+        "difficulty": "中",
+        "number": 835,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "ETL流程中不包含下列哪一個步驟？",
+        "options": [
+            "資料建模（Modeling）",
+            "資料載入（Load）",
+            "資料抽取（Extract）",
+            "資料轉換（Transform）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程組成",
+        "explanation": "ETL專指資料的抽取、轉換和載入，不包括資料建模，建模屬於分析後續環節。",
+        "difficulty": "中",
+        "number": 836,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "在人機協作的AI開發流程中「Human on Loop」指的是？",
+        "options": [
+            "模型在運行中持續接受人工監督與決策支持",
+            "人工主動介入模型訓練調整環節",
+            "完全自動化不需人工干預",
+            "人工僅於資料蒐集階段參與"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "治理與監督",
+        "concept": "Human on Loop定義",
+        "explanation": "Human on Loop為模型運行有持續人工監督與介入，確保決策可控與安全。",
+        "difficulty": "中",
+        "number": 837,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "在生成式AI模型微調時容易發生哪種常見問題？",
+        "options": [
+            "模型過度偏向預訓練樣本，導致回想偏誤",
+            "資料隱私保護機制無法啟用",
+            "梯度消失導致模型無法學習",
+            "資料清洗不充分導致訓練資料類型混亂"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI與規劃",
+        "subtopic": "模型微調",
+        "concept": "生成式AI微調風險",
+        "explanation": "生成式模型微調時，過度依賴預訓練資料可能引起記憶偏誤，影響生成效果與多樣性。",
+        "difficulty": "難",
+        "number": 838,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "哪種資料類型屬於半結構化資料？",
+        "options": [
+            "JSON格式的API回傳資料",
+            "純文字文件",
+            "傳統關聯式資料庫",
+            "CSV檔案中的表格資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料類型分類",
+        "explanation": "半結構化資料如JSON含結構標籤但不固定欄位，介於結構化與非結構化之間。",
+        "difficulty": "中",
+        "number": 839,
+        "date": "2026-08-17"
+    },
+    {
+        "question": "在AI治理架構中，下列何者是負責確保模型公平性的做法？",
+        "options": [
+            "充分利用所有可得資料以提升模型準確度",
+            "監控並減少模型決策中的偏誤與歧視",
+            "偷換資料來源以符合監管要求",
+            "不對模型進行任何人為干預以保持中立"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "模型公平性",
+        "concept": "公平性評估",
+        "explanation": "AI治理重視公平性，需監控偏見歧視，並調整模型以促進公平決策。",
+        "difficulty": "中",
+        "number": 840,
+        "date": "2026-08-17"
     }
 ]

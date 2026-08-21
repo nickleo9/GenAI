@@ -14498,5 +14498,175 @@
         "explanation": "RAG 結合資料檢索功能與生成模型，能根據上下文提供更準確且一致的回答，提高生成式 AI 的語境連貫性。",
         "number": 850,
         "date": "2026-08-19"
+    },
+    {
+        "question": "在機器學習的三大類型中，哪種類型主要依賴標記過的資料來訓練模型？",
+        "options": [
+            "強化學習主要依賴環境反饋進行策略優化",
+            "非監督學習主要依賴未標記資料進行分類和聚類",
+            "半監督學習主要依賴大量未標記資料和少量標記資料",
+            "監督學習主要依賴標記過的資料進行模型訓練"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "監督學習",
+        "explanation": "監督學習是機器學習中的一類方法，模型使用帶有明確標記（標籤）的數據進行訓練，讓模型學習輸入與輸出的映射關係。",
+        "number": 851,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "下列對於資料隱私與安全的敘述，何者正確？",
+        "options": [
+            "資料隱私通常只指的是資料的儲存安全，與使用無關",
+            "資料隱私不涉及個人資料保護的法律法規要求",
+            "資料安全包括數據加密、訪問控制及匿名化處理等措施",
+            "資料安全主要只考慮資料傳輸過程中的防護"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料安全措施",
+        "explanation": "資料安全是保護資料在存儲、傳輸及使用過程中的安全，包含加密、授權訪問控制與數據匿名化等多種方法，是資料隱私的重要保障。",
+        "number": 852,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "關於AI治理，下列何者為是？",
+        "options": [
+            "AI治理主要是為了防止AI替代人工工作",
+            "AI治理包含透明度、可解釋性及合規性等多層面要求",
+            "AI治理僅針對演算法效能的提升進行技術管理",
+            "AI治理不涉及資料來源與風險控管問題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "AI治理",
+        "explanation": "AI治理不僅關注技術效能，還包含包括透明度、可解釋性、倫理合規、資料來源及風險控管，是全面管理AI系統的必要框架。",
+        "number": 853,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "鑑別式AI與生成式AI的主要差異為何？",
+        "options": [
+            "生成式AI專注於資料標注，鑑別式AI專注於資料合成",
+            "鑑別式AI主要產生資料，生成式AI只進行分類判斷",
+            "兩者功能完全相同，只是名稱不同",
+            "鑑別式AI針對資料進行分類，而生成式AI能創造新資料"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "concept": "AI模型類型區分",
+        "explanation": "鑑別式AI通常用於分類和判斷任務，判斷輸入數據屬於哪個類別；生成式AI則能創造新的數據樣本，如文本、圖像等。",
+        "number": 854,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "在資料整理與分析流程中，ETL主要指什麼？",
+        "options": [
+            "資料整理、優化、解讀的流程",
+            "資料抽取、轉換、載入的流程",
+            "資料編碼、分類、分析的流程",
+            "資料壓縮、轉換、儲存的流程"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL指資料的抽取(Extract)、轉換(Transform)和載入(Load)三個步驟，是資料整理與分析中非常重要的流程。",
+        "number": 855,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "強化學習中的Q-Learning方法，主要是用來做什麼？",
+        "options": [
+            "監督式學習中的回歸預測",
+            "生成模型的資料樣本生成",
+            "非監督式中資料的分群處理",
+            "強化學習中透過估計行動價值函數進行決策"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "強化學習",
+        "explanation": "Q-Learning是強化學習算法，透過估計行動的價值函數（Q函數）來指導智能體做出最佳決策。",
+        "number": 856,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "在生成式AI規劃中，Prompt工程主要指的是什麼？",
+        "options": [
+            "設計和優化模型本身的內部參數",
+            "設計輸入給生成式AI的提示語以引導其產出",
+            "開發用於資料清洗的自動化工具",
+            "建構資料庫結構以支持AI訓練"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI規劃",
+        "concept": "Prompt設計",
+        "explanation": "Prompt工程是設計適當的輸入提示語，以有效引導生成式AI模型產生符合預期的文本或內容。",
+        "number": 857,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "以下關於L1與L2正規化的描述，何者正確？",
+        "options": [
+            "L2正規化使權重變為0，而L1正規化不會",
+            "L1正規化和L2正規化對模型影響完全相同",
+            "L1正規化促進權重稀疏，而L2正規化促進權重小但不稀疏",
+            "兩者皆不影響模型的複雜度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1與L2正規化",
+        "explanation": "L1正規化會產生稀疏效果，使部分權重變為零，有助於特徵選擇；L2正規化則驅使權重較小但不會變為零，偏向於平滑模型。",
+        "number": 858,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "Human on loop的主要功能為何？",
+        "options": [
+            "僅針對資料蒐集階段的人工審核",
+            "指數據自動生成無需人力操作",
+            "結合人工監督與AI自動化進行決策輔助",
+            "完全由AI自動決策不需人工介入"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "人工監督模型",
+        "concept": "Human on loop",
+        "explanation": "Human on loop指系統在AI自動化流程中結合人工監督，確保決策或結果的準確性與可控性。",
+        "number": 859,
+        "date": "2026-08-21"
+    },
+    {
+        "question": "以下關於Transformer模型的敘述，何者最精確？",
+        "options": [
+            "Transformer模型專門用於生成式對話，不具分類能力",
+            "Transformer模型利用自注意力機制以改善長距依賴問題",
+            "Transformer是一種基於循環神經網路的模型架構",
+            "Transformer模型問題出在無法並行處理資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習架構",
+        "concept": "Transformer",
+        "explanation": "Transformer模型引入自注意力機制，改善了RNN在長距離依賴上的表現，且支持高效的並行運算。",
+        "number": 860,
+        "date": "2026-08-21"
     }
 ]

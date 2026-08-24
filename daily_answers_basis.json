@@ -14668,5 +14668,175 @@
         "explanation": "Transformer模型引入自注意力機制，改善了RNN在長距離依賴上的表現，且支持高效的並行運算。",
         "number": 860,
         "date": "2026-08-21"
+    },
+    {
+        "question": "在機器學習中，何者最能代表非監督學習的主要特徵？",
+        "options": [
+            "訓練資料包含標籤，透過已知結果進行模型學習",
+            "以生成對抗網路方式進行資料合成與分類",
+            "訓練資料不包含標籤，自動發掘資料內在結構或分群",
+            "模型透過獎勵或懲罰機制強化行為策略"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習類型",
+        "concept": "非監督學習",
+        "explanation": "非監督學習是指訓練資料沒有標籤，模型主要透過找出資料間的關聯性、分群或降維等自動結構發掘方式學習。",
+        "number": 861,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "在資料分析流程中，何者不屬於資料清理的主要步驟？",
+        "options": [
+            "資料去重與一致性檢查",
+            "模型訓練與評估",
+            "補齊缺失值與處理離群值",
+            "資料格式轉換與編碼"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "資料清理",
+        "explanation": "資料清理主要是指前處理步驟，如補缺失值、處理離群值、格式轉換、編碼與去重，模型訓練與評估是後續的分析步驟。",
+        "number": 862,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "下列關於鑑別式 AI 與生成式 AI 的說明，何者正確？",
+        "options": [
+            "生成式AI能從資料中學習分布，鑑別式AI則判斷資料是否屬於某類別",
+            "生成式AI重點在預測未來走勢，鑑別式AI重點為資料清理",
+            "鑑別式AI主要用於生成新資料，生成式AI用於分類辨識",
+            "鑑別式AI機制基於強化學習，生成式AI則多屬監督學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式AI區別",
+        "explanation": "鑑別式AI主要進行分類判斷，如判斷資料是否屬於某類別；生成式AI則學習資料的分布並生成相似的新資料。",
+        "number": 863,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "在 AI 治理框架中，以下哪個概念最能保障資料使用的透明度與負責任性？",
+        "options": [
+            "資料多樣性與平衡性",
+            "資料持久保存與備份",
+            "模型黑箱透明度與解釋性",
+            "資料去識別化與匿名化"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI 治理概念",
+        "subtopic": "模型與資料透明度",
+        "concept": "模型可解釋性與監督",
+        "explanation": "模型黑箱透明度與解釋性指的是理解AI模型決策過程，保障資料應用過程的透明與負責任，避免不明決策風險。",
+        "number": 864,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "下列何者是強化學習中的關鍵元素？",
+        "options": [
+            "資料分群與特徵抽取",
+            "環境狀態、行動與獎勵",
+            "資料標籤與分類準則",
+            "資料清洗與標準化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習",
+        "concept": "強化學習基本原理",
+        "explanation": "強化學習強調在環境狀態下，智能體透過行動獲得獎勵來學習最優策略。",
+        "number": 865,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "以下哪項不是資料隱私與安全的典型措施？",
+        "options": [
+            "資料加密傳輸",
+            "資料公開共享",
+            "身份認證控制",
+            "存取權限設定"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料安全措施",
+        "explanation": "資料公開共享通常與隱私保護相矛盾，隱私與安全措施應著重資料加密、身份認證和權限控管。",
+        "number": 866,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "在機器學習模型中，L1 正則化主要作用為何？",
+        "options": [
+            "增加模型複雜度，提高擬合能力",
+            "避免梯度消失問題，提高學習效率",
+            "使模型權重稀疏，促進特徵選擇",
+            "降低模型的偏差，增加預測準確度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "正則化技術",
+        "concept": "L1正則化",
+        "explanation": "L1正則化會導致模型權重帶有稀疏性，因而促進部分特徵權重趨近於零，有助於特徵選擇和模型簡化。",
+        "number": 867,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "在生成式 AI 應用中，RAG 技術的主要功能是？",
+        "options": [
+            "自然語言理解與語境推理",
+            "融合檢索資訊輔助生成，提高回應準確性",
+            "生成對抗網路對抗資料歧視",
+            "強化式學習調整生成內容"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "RAG 技術",
+        "concept": "檢索增強生成",
+        "explanation": "RAG (Retrieval-Augmented Generation) 是將檢索系統與生成模型結合，讓模型可輔助引用外部資訊提高生成答案的準確性與相關性。",
+        "number": 868,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "以下何種資料類型最適合利用深度學習中的 RNN 模型處理？",
+        "options": [
+            "結構化交易紀錄資料",
+            "靜態分類標籤資料",
+            "時間序列或語言文本資料",
+            "圖片影像資料"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "RNN模型應用",
+        "explanation": "RNN特別適合處理序列資料如時間序列、語言文字等，因其網路結構具備記憶過去資訊處理能力。",
+        "number": 869,
+        "date": "2026-08-24"
+    },
+    {
+        "question": "下列哪項屬於 AI 生成式模型中通用的風險管理策略？",
+        "options": [
+            "完全依賴自動化生成減少人為干預",
+            "增加模型層數提高細節擬合",
+            "加入人類監督與多階段審核機制",
+            "限制生成內容的多樣性與創新性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "生成式AI風險控管",
+        "explanation": "因生成式AI可能產生錯誤或不當內容，通常透過人類在迴圈中監督和多階段審核減少風險，提高生成結果的可靠度。",
+        "number": 870,
+        "date": "2026-08-24"
     }
 ]

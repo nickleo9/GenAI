@@ -7002,5 +7002,175 @@
         "explanation": "成熟的規劃需全面考慮知識來源、提示詞設計、權限控管、異常處理與後續擴充，確保導入穩健且實用。單純重視模型答題數量或介面美感均不夠。",
         "number": 412,
         "date": "2026-08-25"
+    },
+    {
+        "question": "下列何者最符合2025年生成式AI與No Code / Low Code的整體發展方向？",
+        "options": [
+            "No Code與Low Code仍以手動拖拉元件為主，生成式AI只是附加的文字建議功能",
+            "自然語言需求輸入可直接驅動工作流程、UI與部分程式生成，AI已成為平台核心能力",
+            "生成式AI主要用於模型訓練，與應用開發流程無明顯整合",
+            "企業在2025年已全面放棄LCNC，改採純手寫程式開發"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "生成式AI與LCNC融合趨勢",
+        "explanation": "2025年生成式AI不再是輔助工具，而成為通過自然語言驅動工作流程及部分程式生成的核心技術，促使No Code與Low Code平台智能化升級。其他選項過度簡化或與趨勢相悖。",
+        "number": 413,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "企業若希望讓業務部門在無需撰寫程式或少程式碼的情況下快速建立審批流程與微應用，以下何者平台最合適？",
+        "options": [
+            "只有後端API管理功能的閘道平台",
+            "No Code平台",
+            "純資料倉儲平台",
+            "僅供模型微調的MLOps平台"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code平台應用場景",
+        "explanation": "No Code平台允許非工程人員透過視覺化配置建立應用與流程，無需撰寫程式；其他選項分別偏向資料管理、模型調整或API閘道，無法滿足快速建立流程需求。",
+        "number": 414,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "下列敘述何者最能精準區分Low Code與No Code？",
+        "options": [
+            "Low Code與No Code在2025年已完全沒有差異",
+            "Low Code允許少量程式補充與較高延展性；No Code則以視覺化與零程式為主，較偏業務使用者",
+            "Low Code只適合學術研究；No Code只適合大型企業核心系統",
+            "Low Code完全不允許任何程式擴充；No Code則允許大量手寫程式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Low Code與No Code區別",
+        "explanation": "Low Code平台支援少量程式碼擴展，具備較高彈性，適合技術人員；No Code則強調完全視覺化、零程式碼操作，目標為業務人員或公民開發者。",
+        "number": 415,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "2025年企業導入生成式AI時，哪種應用模式最符合主流趨勢？",
+        "options": [
+            "Agentic AI與Hybrid AI：由代理式流程自動執行任務，結合傳統預測AI提升精確度",
+            "完全排除傳統AI，只保留生成式AI",
+            "只要導入聊天機器人即可解決所有營運問題",
+            "僅使用大型語言模型做自由生成，不需流程控制"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "Agentic AI與Hybrid AI",
+        "explanation": "主流趨勢是Agentic AI能自動執行多階段任務，與傳統預測式AI結合提升準確率，避免只用生成式AI帶來的無序風險。",
+        "number": 416,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "以下何者最能代表2025年AI原生（AI-native）低程式碼平台特徵？",
+        "options": [
+            "AI深度參與需求理解、領域建模、測試與效能診斷，成為平台架構的一部分",
+            "AI只提供固定模板，不能參與流程與資料模型生成",
+            "AI只在系統上線後負責客服回覆",
+            "AI-native指的是必須完全由AI取代人類審查"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "AI原生低程式碼平台",
+        "explanation": "2025年AI-native平台將AI深度整合於全開發流程，包括需求理解、建模與測試，而非僅作為輔助服務或模板提供。",
+        "number": 417,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "企業評估導入生成式AI時，哪項應為優先納入評估框架？",
+        "options": [
+            "是否能完全不需要IT與資安部門參與",
+            "業務價值、資料品質、治理能力、權限控管與可追溯性",
+            "生成內容是否最具娛樂性",
+            "模型參數量是否最大"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "生成式AI企業導入評估",
+        "explanation": "企業重視生成式AI帶來的業務價值和治理環境，包含資料質量、權限與追蹤；模型大小或娛樂性不是首要考量，IT資安部門必須參與防風險。",
+        "number": 418,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "生成式AI導入時主要風險管理重點為何？",
+        "options": [
+            "避免機密資料外洩、減少幻覺輸出、建立審核機制與日誌追蹤",
+            "只要使用開源模型，就不需要任何風險控管",
+            "只要模型回答速度夠快，其他風險可忽略",
+            "將所有權限交給業務部門即可提升效率"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險管理重點",
+        "explanation": "生成式AI風險包含資料外洩、幻覺內容及無法追蹤，需妥設審核和日誌機制，避免過度放權或誤信開源模型是無風險。",
+        "number": 419,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "2025年No Code / Low Code市場與採用趨勢何者合理？",
+        "options": [
+            "LCNC已被證明沒有市場需求，將快速萎縮",
+            "LCNC成長與AI無關，兩者完全獨立",
+            "LCNC持續成長，新應用中高比例將透過LCNC建構",
+            "LCNC僅適合個人開發者，企業基本不採用"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "市場趨勢與採用",
+        "explanation": "多方資料指出LCNC仍為成長市場且與AI融合緊密，企業採用率高，非僅限個人使用，且二者趨勢互相促進。",
+        "number": 420,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "為滿足「業務部門快速建置」及「IT保持架構治理」兩目標，合理策略為何？",
+        "options": [
+            "採用LCNC作為前台快速構建層，IT負責資料、權限與治理標準",
+            "僅保留傳統瀑布式開發，不納入任何AI工具",
+            "完全禁止業務部門接觸任何開發工具",
+            "僅用生成式AI自由生成應用，不設任何流程標準"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "跨部門協同與治理",
+        "explanation": "讓業務快速用LCNC建置應用，IT負責架構治理與安全，避免影子IT與無序成長，單純禁止或放任均不可取。",
+        "number": 421,
+        "date": "2026-08-27"
+    },
+    {
+        "question": "2025年企業在生成式AI導入上的高階判斷為何？",
+        "options": [
+            "依任務型態選擇：創意生成用GenAI，需高準確率時結合傳統AI或規則引擎",
+            "只要技術新，就一定值得全面導入",
+            "只採購同一家大模型供應商，不需做情境分類",
+            "所有企業場景均完全交給生成式AI處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "混合AI策略",
+        "explanation": "高階策略會根據任務需求結合生成式AI與傳統AI或規則引擎，避免盲目全面導入或單一供應商依賴。",
+        "number": 422,
+        "date": "2026-08-27"
     }
 ]

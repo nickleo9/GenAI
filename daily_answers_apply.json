@@ -7342,5 +7342,175 @@
         "explanation": "2026 年生成式 AI 的核心趨勢之一是 Agent 化工作流，重點已從生成內容轉為跨系統完成任務。這正符合客服與工單的端到端自動化需求。",
         "number": 432,
         "date": "2026-08-29"
+    },
+    {
+        "question": "在 2026 年的生成式 AI 應用中，No Code 工具的限制為何？",
+        "options": [
+            "完全不需要任何程式碼且不需治理監控",
+            "只適合用於高風險決策且無需任何後端整合",
+            "可完全取代工程師並自行處理所有例外情況",
+            "適合用於低複雜度流程但仍需設計人工審核節點"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 優勢與限制",
+        "explanation": "No Code 工具便利快速落地，但對於涉及複雜權限及例外處理的流程，仍需設置人工審核及後端整合，才能保證流程安全與正確性。",
+        "number": 433,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "選擇下列哪一項最能代表生成式 AI 代理式 Agent 的特性？",
+        "options": [
+            "只能用文字回答問題，無自動操作能力",
+            "能跨多步驟自律執行任務並操作檔案命令",
+            "執行速度較低且不適合用於任務自動化",
+            "不需要設定權限控管即可自由操作系統"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "Agent AI",
+        "explanation": "Agent 型 AI 具備自律跨步驟執行任務能力，能操作檔案與命令，因此需嚴格權限管控避免風險。",
+        "number": 434,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "在生成式 AI 導入評估中，哪一項不是合理的 PoC 評估重點？",
+        "options": [
+            "是否已能完全取代所有員工",
+            "是否在低風險場景達成提升效率的 KPI",
+            "是否適合於高重複性且可量化的應用場景",
+            "是否具備可衡量的正確率與用戶接受度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "PoC設計",
+        "explanation": "PoC 階段重點在於驗證效益與風險，完全取代所有員工非實務目標，反而應聚焦低風險與可量化成效。",
+        "number": 435,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "下列哪種情境最適合採用 Low Code 工具而非純 No Code？",
+        "options": [
+            "純粹產生文字內容且無後端交互需求",
+            "建立簡單表單且無需程式碼",
+            "不需要權限控管的簡易資料查詢",
+            "業務流程涉及例外處理與少量客製 API 整合"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 優勢與限制",
+        "explanation": "Low Code 適用於需少量程式碼介入，特別是例外處理或與其他系統 API 整合的情境。",
+        "number": 436,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "在生成式 AI 的風險管理中，下列哪項為幻覺問題(hallucination)的核心描述？",
+        "options": [
+            "幻覺僅發生於低資源語言並且極為罕見",
+            "模型只生成圖片不影響文字回答的邏輯",
+            "模型生成內容完全符合數據庫事實且無誤差",
+            "模型可能製造出看似合理但實際錯誤的內容"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "幻覺(Hallucination)",
+        "explanation": "幻覺指生成式 AI 產生看似可信但實際錯誤、不實的信息，需透過人類審核及資料驗證加以防範。",
+        "number": 437,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "2026 年多模態生成式 AI 的一個重要特徵是？",
+        "options": [
+            "專注於靜態圖片生成而非影像合成",
+            "只能在雲端環境執行不支持邊緣運算",
+            "能跨越文字、圖片、語音、影片多種媒介處理",
+            "僅能處理文字輸入與文字輸出"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "多模態模型",
+        "explanation": "多模態模型能同時處理與生成多種媒介形式，如文字、聲音、圖片及影像，是 2026 年主流能力。",
+        "number": 438,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "哪個選項最正確地闡述 No Code / Low Code 工具導入時的治理需求？",
+        "options": [
+            "仍需管理資料來源、權限及版本管控等風險",
+            "僅需關注成本，不必理會合規性要求",
+            "完全不需資料治理與權限管理介入",
+            "只要用戶熟悉介面就可忽略流程設計"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 風險管理",
+        "explanation": "即使是 No Code/Low Code 工具，仍須嚴格控管資料權限及版本以避免安全及合規風險。",
+        "number": 439,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "在生成式 AI 工具的使用上，下列哪項是 2026 年以後企業較重視的導入考量？",
+        "options": [
+            "重視標準模型與推理模型依任務複雜度適配選型",
+            "避免任何人工覆核以加速自動化",
+            "全部使用邊緣部署小型模型以省成本",
+            "只考慮最高準確度模型，不理會成本"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "模型選型與管理",
+        "explanation": "企業會根據任務需求及錯誤容忍度，動態選擇標準模型或高精度推理模型，以平衡成本與效能。",
+        "number": 440,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "生成式 AI 在高風險場域（如醫療、金融）導入時，應遵循何種原則？",
+        "options": [
+            "直接全自動上線以節省人力",
+            "不需考慮資料隱私及權限控管",
+            "必須建立完備的人機協作與審核機制",
+            "只要模型準確就可忽略合規要求"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "高風險場域治理",
+        "explanation": "高風險場域必須有人類審核以防止錯誤與保障合規，絕不可全自動無審核上線。",
+        "number": 441,
+        "date": "2026-09-01"
+    },
+    {
+        "question": "在 2026 年生成式 AI 工具中，Nano Banana Pro 提供了下列哪項優化？",
+        "options": [
+            "改善文字拼寫錯誤與影像細節穩定性",
+            "強化多語言自然語言生成能力",
+            "優化語音辨識率但不涉及影像生成",
+            "專注於邊緣端輕量模型的部署"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "影像生成優化",
+        "explanation": "Nano Banana Pro 特別提升影像中常見的文字拼寫、光影合理性和細節真實度，是 2026 年影像生成的重要技術進展。",
+        "number": 442,
+        "date": "2026-09-01"
     }
 ]

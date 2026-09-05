@@ -7682,5 +7682,175 @@
         "explanation": "從多面向評估導入策略與停損點，並提供多種情境，最符合高階主管策略決策需求。",
         "number": 452,
         "date": "2026-09-03"
+    },
+    {
+        "question": "在生成式AI的No Code/Low Code開發環境中，哪一項因素最可能限制企業快速導入AI方案？",
+        "options": [
+            "模型自動微調功能過於頻繁造成誤差",
+            "系統支援多語言提示詞的能力不足",
+            "缺乏足夠資料的治理與授權控制機制",
+            "使用者界面的過度複雜增加操作難度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "資料治理",
+        "explanation": "No Code / Low Code 平台雖能快速開發，但企業面臨的最大挑戰在於必須有嚴謹的資料治理與授權控制，避免資料洩漏或違規，這才能保證AI方案安全且合規。",
+        "number": 453,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "以下哪一種生成式AI風險最可能因提示詞注入攻擊而產生？",
+        "options": [
+            "Bias（偏誤）導致不公平判斷",
+            "Hallucination（幻覺）產生錯誤資訊",
+            "Data Leakage（資料外洩）洩漏密碼",
+            "Prompt Injection（提示詞注入）誘導違規指令"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "提示詞注入",
+        "explanation": "提示詞注入指的是惡意使用者在提示詞中插入特定內容，誘使AI模型執行違規或非預期行為，造成系統安全威脅。",
+        "number": 454,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "生成式AI中，使用Retrieval-Augmented Generation (RAG)技術時，下列哪項是主要考量？",
+        "options": [
+            "採用多模態技術結合影像與語音輸入",
+            "強化模型記憶以增加長上下文理解",
+            "資料品質控制與引用來源的透明標示",
+            "使用1-bit量化技術減少模型運算"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具與應用",
+        "concept": "RAG技術",
+        "explanation": "RAG結合知識檢索與生成，故需確保資料品質與來源清楚，避免產生錯誤或不實資訊並提升回答信賴度。",
+        "number": 455,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "下列何者不是生成式AI導入評估時應考慮的維運性面向？",
+        "options": [
+            "監控系統表現與模型版本控管",
+            "設定人工智慧決策全自動化",
+            "回溯並調整改進生成內容的流程",
+            "升級模型與提示詞以應對漂移風險"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "導入評估與維運",
+        "concept": "可維運性",
+        "explanation": "維運性強調持續監控與人工干預避免錯誤擴大，完全自動化可能忽視異常但不易快速修正，故非維運考量。",
+        "number": 456,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "在多模態生成式AI工具中，以下哪種資料類型通常不屬於系統的多模態輸入？",
+        "options": [
+            "語音與影像融合輸入",
+            "純數值統計數據流",
+            "3D模型直接生成",
+            "文字與視頻同步理解"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多模態AI",
+        "concept": "多模態輸入",
+        "explanation": "多模態主要指結合多種感官資料如文字、影像、語音，純數值統計數據屬於單一數據類型，不屬多模態輸入。",
+        "number": 457,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "關於No Code / Low Code平台的優勢，下列敘述何者為非？",
+        "options": [
+            "降低專業程式設計門檻促進快速開發",
+            "大幅減少企業資料治理需求",
+            "可快速調整提示詞模板以改善結果",
+            "方便業務流程規劃整合與人機協作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "優勢與限制",
+        "explanation": "No Code / Low Code雖方便開發，但仍需嚴格資料治理，不能大幅減少資料治理需求，是誤解。",
+        "number": 458,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "生成式AI中，Agentic AI最顯著的特點是？",
+        "options": [
+            "著重在模型壓縮以降低資源消耗",
+            "只能接受單步驟指令完成任務",
+            "主要產出文字內容的高品質句子",
+            "自動化長流程規劃與執行多階段任務"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "Agentic AI",
+        "concept": "代理式AI",
+        "explanation": "Agentic AI具備自行決策與執行多步任務的能力，超越傳統單步回答，強調流程自治與協作。",
+        "number": 459,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "在生成式AI生成內容中依法律規範須加註的標籤是？",
+        "options": [
+            "資料版本標籤",
+            "內容身份標籤",
+            "系統更新標籤",
+            "使用者認證標籤"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "風險管理",
+        "concept": "法遵風險",
+        "explanation": "生成內容身份標籤是保障資訊透明與可追溯的手段，尤其在中國等地已做成法規要求必須標示來源。",
+        "number": 460,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "以下哪項工具最適合用於快速原型及AI輔助開發？",
+        "options": [
+            "Runway影像製作軟體",
+            "GPT-5-Codex程式代碼模型",
+            "Replit AI開發平台",
+            "Sora影片生成工具"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "開發平台",
+        "explanation": "Replit是一個支持AI輔助的開發環境，適合快速原型與低門檻AI開發，方便開發者集成生成式AI。",
+        "number": 461,
+        "date": "2026-09-05"
+    },
+    {
+        "question": "提示詞工程中，下面哪一部分不是高品質提示詞的核心要素？",
+        "options": [
+            "限制條件與輸出格式詳細要求",
+            "範例提供與指令細節限定",
+            "明確的角色設定與任務描述",
+            "模型自動微調參數設定"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞使用",
+        "concept": "提示詞工程",
+        "explanation": "高品質提示詞主要包含明確的指令結構與示範，不包括模型的內部參數調整設定，這屬於模型訓練層面。",
+        "number": 462,
+        "date": "2026-09-05"
     }
 ]

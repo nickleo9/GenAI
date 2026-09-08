@@ -7852,5 +7852,175 @@
         "explanation": "高品質提示詞主要包含明確的指令結構與示範，不包括模型的內部參數調整設定，這屬於模型訓練層面。",
         "number": 462,
         "date": "2026-09-05"
+    },
+    {
+        "question": "2026年生成式AI導入前，哪項評估最重要以確保專案成功？",
+        "options": [
+            "是否有明確業務痛點及可衡量效益",
+            "是否能免費試用所有模型",
+            "模型名稱是否流行且熱門",
+            "介面是否美觀且易操作"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "導入前評估",
+        "explanation": "生成式AI導入前，必須確認有明確的業務痛點及能衡量的效益，才能確保專案具備實質價值與落地可行性，避免資源浪費。",
+        "number": 463,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "哪項特性最能說明Low Code平台相較於No Code的優勢？",
+        "options": [
+            "必須由資深資料科學家操作",
+            "完全不需任何程式碼，純圖形化操作",
+            "只能用於資料分析應用，不支援AI",
+            "允許少量程式碼擴充，提高客製彈性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "Low Code特性",
+        "explanation": "Low Code保有少量程式碼擴充的彈性，讓使用者能在圖形化操作基礎上進行客製化，比純No Code更具彈性和功能深度。",
+        "number": 464,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "2026年生成式AI模型選擇策略，下列何者最合理？",
+        "options": [
+            "所有任務均用最快速且低成本模型",
+            "一律選最便宜模型，無視任務難易",
+            "完全忽略準確性，只看輸出長度",
+            "依任務複雜度在標準模型與推理模型間選擇"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "模型選擇策略",
+        "explanation": "根據任務複雜度及錯誤容忍度選擇標準模型或推理模型，既能兼顧成本效益，也保證核心任務的準確性和穩定性。",
+        "number": 465,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "何者不是生成式AI主要風險？",
+        "options": [
+            "模型經常出現幻覺和偏見問題",
+            "資料隱私與機密外洩風險",
+            "可能侵犯著作權與內容合規風險",
+            "模型固定輸出且無法變化格式"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "風險類型",
+        "explanation": "生成式AI輸出具有高度變化性，不會固定格式，無法變化格式不是其風險，幻覺、偏見、個資外洩及著作權問題才是主要風險。",
+        "number": 466,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "AI Agent 於2026年生成式AI應用中，扮演何種角色？",
+        "options": [
+            "可自主規劃、執行與追蹤多步驟流程",
+            "只能做單次問答，無法執行任務",
+            "僅限於資料分析，無工作流程自動化",
+            "主要用於娛樂產業的角色扮演"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "AI Agent",
+        "explanation": "AI Agent具備自主規劃與執行複雜多步驟任務的能力，是2026年生成式AI的重要應用趨勢，能大幅提升企業流程自動化。",
+        "number": 467,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "2026年No Code平台最適合哪類使用者？",
+        "options": [
+            "無需任何業務流程知識者",
+            "非程式背景，需快速構建應用者",
+            "專業資料科學家與軟體工程師",
+            "僅專注深度程式碼開發者"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "使用者適用性",
+        "explanation": "No Code平台通過圖形化操作，降低技術門檻，適合非程式背景使用者快速構建AI應用，促進業務創新與自動化。",
+        "number": 468,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "以下哪種工具最能體現2026年生成式AI多模態模型特性？",
+        "options": [
+            "同時處理文字、圖像、語音與程式碼的工具",
+            "專門用於生成單一路徑流程的程式碼",
+            "只用於語音辨識，無法生成其他內容",
+            "只能生成文字內容的聊天機器人"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "多模態模型",
+        "explanation": "2026年多模態模型原生支持文字、圖像、語音和程式碼等多種資料型態，能大幅降低跨系統整合成本。",
+        "number": 469,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "生成式AI專案風險管理中，下列哪項措施最有效降低敏感資訊外洩？",
+        "options": [
+            "增加模型訓練資料量",
+            "制定使用政策並實施資料去識別化",
+            "使用大型語言模型以提高準確度",
+            "增加輸出內容的多樣化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI風險管理",
+        "concept": "風險控管措施",
+        "explanation": "通過明確使用政策和資料去識別化能有效降低個資及機密外洩風險，是風險管理的重要手段。",
+        "number": 470,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "導入生成式AI後，什麼指標最能反映企業效益？",
+        "options": [
+            "模型參數數量是否足夠大",
+            "使用者數量與流量大小",
+            "節省工時計算與回覆正確率",
+            "介面設計美觀程度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "效益指標",
+        "explanation": "節省工時和提高回覆正確率直接反映生成式AI對業務效率與品質的提升，是衡量導入效益的關鍵指標。",
+        "number": 471,
+        "date": "2026-09-08"
+    },
+    {
+        "question": "以下哪項敘述最準確描述2026年生成式AI在企業系統中的定位？",
+        "options": [
+            "深度嵌入業務流程成為工作自動化核心",
+            "用於娛樂產業，不涉足企業應用",
+            "純粹作為內容生成工具使用",
+            "主要用於離線設備，非即時應用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "企業流程整合",
+        "explanation": "2026年生成式AI不再是純展示工具，而是深度整合並自動化企業工作流程，成為企業數位轉型的重要利器。",
+        "number": 472,
+        "date": "2026-09-08"
     }
 ]

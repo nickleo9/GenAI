@@ -10698,5 +10698,175 @@
         "explanation": "2025年生成式AI Agent已從學術展示進入企業級應用，能自動執行客服、知識管理及業務流程，有效提升營運效率。",
         "number": 655,
         "date": "2026-09-06"
+    },
+    {
+        "question": "如果你是台灣一家製造業工廠的主管，想導入生成式AI來改善供應鏈文件自動化與流程規劃，哪種AI工具最適合使用？",
+        "options": [
+            "D. IBM Deep Blue，專用於棋類遊戲策略，無法應用於流程自動化",
+            "A. Google Gemini 2.5 Computer Use，因為可以自動執行多步驟任務並整合應用程式",
+            "B. OpenAI GPT-3，因為主要擅長自然語言文字生成，不適合流程自動化",
+            "C. Meta Llama，主要用於開源模型研究，不適合企業級流程規劃"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "AI 工具使用",
+        "concept": "Agentic AI, 流程自動化",
+        "explanation": "Google Gemini 2.5 Computer Use 模型適合開發者用於多步驟任務的自動化，能整合瀏覽器與多應用程式，非常適合工廠供應鏈文件的自動化和流程規劃。",
+        "number": 656,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "如果你是高中英文老師，準備輔導學生製作多媒體英文演講教案，最合適使用哪種生成式AI工具輔助素材製作？",
+        "options": [
+            "C. Meta Superintelligence Labs，偏向模型訓練和研發，不適合教學輔助",
+            "A. OpenAI GPT-4，主要生成文字內容，不擅長影片或音樂創作",
+            "B. Google Imagen 4 和 Lyria 2，用於生成圖片和音樂素材，適合多媒體教案",
+            "D. Claude Code，專注於程式碼輔助，不適合教學用多媒體製作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "多媒體生成工具",
+        "concept": "多模態生成",
+        "explanation": "Google Imagen 4 針對圖像生成，Lyria 2 用於音樂創作，兩者可協助老師製作豐富的多媒體英文教案素材，提升學生學習興趣與教學效果。",
+        "number": 657,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "以2025年全球AI發展趨勢來看，iPAS AI應用規劃師在規劃生成式AI導入時，最需要評估哪些因素？",
+        "options": [
+            "D. 僅關注硬體成本與電力消耗",
+            "C. 僅評估模型的精確度與反應速度",
+            "B. 只考慮生成內容的趣味性和新穎性",
+            "A. 成本、延遲（Latency）、資料隱私與風險管理"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI導入評估規劃",
+        "subtopic": "導入風險管理",
+        "concept": "成本效益與風險評估",
+        "explanation": "生成式AI導入需綜合考量成本、系統延遲、用戶資料隱私及技術和法律風險，才能制定可行且安全的應用規劃。",
+        "number": 658,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "在2025年AI治理趨勢中，以下關於AI生成內容的法規哪一項是正確描述？",
+        "options": [
+            "B. AI產生的所有內容均免於版權保護",
+            "A. Take It Down Act 法案禁止未經同意散布AI生成深偽影像的行為",
+            "D. AI生成內容在台灣完全不受任何法律管制",
+            "C. 全球尚未有任何關於深偽影像的法律規範"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI治理概念",
+        "subtopic": "深偽影像與法規",
+        "concept": "內容合法性與風險",
+        "explanation": "美國的Take It Down Act明確規範未經當事人同意散布AI深偽內容屬犯罪行為，代表全球AI治理正朝向嚴格的內容安全管控。",
+        "number": 659,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "若你是科技新創公司主管，想利用No Code/Low Code平台整合生成式AI提升業務自動化，下列哪項最符合此工具的優勢？",
+        "options": [
+            "B. 需要大量程式碼修改才能完成整合",
+            "A. 可快速建立無需程式碼的AI流程並降低技術門檻",
+            "C. 適合複雜AI模型的深度開發但不適合業務自動化",
+            "D. 只支援固定模板無法因應多樣需求"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 概念",
+        "concept": "工具適用性",
+        "explanation": "No Code/Low Code平台允許非程式開發人員快速搭建、定制自動化流程，大幅降低技術門檻和開發成本，符合業務自動化需求。",
+        "number": 660,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "如果你是自媒體經營者，想使用2025年最新AI工具提升內容產出效率，下列哪個工具應該優先考慮？",
+        "options": [
+            "D. AlphaGenome，專用於基因序列分析不適合內容生產",
+            "C. Meta Superintelligence Labs，尚在研發階段無商用工具",
+            "A. Perplexity Comet 瀏覽器，結合AI搜索與即時內容生成功能",
+            "B. IBM Deep Blue，專注複雜遊戲決策，與內容創作無關"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "媒體與內容工具",
+        "concept": "搜尋與內容生成結合",
+        "explanation": "Perplexity Comet 是2025年新興的AI瀏覽器，能輔助用戶即時獲取資料並生成內容，特別適合自媒體快速產出與靈感探索。",
+        "number": 661,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "作為一名研發工程師，想使用Vibe Coding來實驗生成式AI研發流程，正確的執行步驟應該是？",
+        "options": [
+            "B. 直接輸入複雜指令讓Vibe Coding自動完成專案，無需後續人工調整",
+            "A. 利用Vibe Coding設計提示詞，生成程式碼範本後進行測試與優化",
+            "C. 僅能使用Vibe Coding來生成圖片，無法生成程式碼",
+            "D. Vibe Coding是專門用於硬體設計，無法執行軟體研發"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "提示詞設計與代碼生成",
+        "explanation": "Vibe Coding能透過精準提示詞生成程式碼範本，研發工程師可進行測試、調整與優化，形成有效的AI輔助研發流程。",
+        "number": 662,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "在2025年台灣AI發展現況中，哪種應用領域被認為是最具商業價值及發展潛力？",
+        "options": [
+            "D. AI在農業灌溉中的自動分析與管理",
+            "A. 半導體產業AI製造與供應鏈優化",
+            "B. 綜合藝術創作，特別是高端影像動畫領域",
+            "C. 國內教育機構的語言學習AI助教應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "產業應用",
+        "concept": "產業AI導入",
+        "explanation": "台灣以半導體及製造業為主的產業結構使得AI在生產與供應鏈優化具最大商業效益，成為台灣重點發展方向。",
+        "number": 663,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "iPAS AI應用規劃師在設計生成式AI提示詞時，下列哪項是有效優化生成結果的策略？",
+        "options": [
+            "B. 使用含糊且籠統的指令以讓AI有更多自由發揮",
+            "A. 明確且具體描述需求並包含約束條件與目標格式",
+            "C. 單純重複關鍵字增加提示詞長度就能提升準確度",
+            "D. 使用口語化短語並避免技術用語"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞工程",
+        "concept": "提示詞優化",
+        "explanation": "清楚精確的提示詞包含明確目標與限制，能有效引導生成式AI產生所需高品質結果，避免模糊指令導致結果不準確。",
+        "number": 664,
+        "date": "2026-09-13"
+    },
+    {
+        "question": "關於生成式AI模型的類型，下列何者正確區分「鑑別式AI」與「生成式AI」？",
+        "options": [
+            "D. 生成式AI僅用於文字，鑑別式AI僅用於圖片",
+            "B. 鑑別式AI用於生成新圖像，生成式AI用於質量鑑定",
+            "A. 鑑別式AI主要用於分類判斷，生成式AI用於新內容創造",
+            "C. 兩者功能相同，只是用詞不同"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI 概念",
+        "subtopic": "模型基礎",
+        "concept": "模型分類與應用",
+        "explanation": "鑑別式模型判斷輸入所屬類別或是否符合類別，生成式模型則創造新數據（文字、圖片、音頻等），二者功能及應用方向不同。",
+        "number": 665,
+        "date": "2026-09-13"
     }
 ]

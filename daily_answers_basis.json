@@ -16198,5 +16198,175 @@
         "explanation": "將鑑別式與生成式AI模型結合可以發揮雙方優勢，既提升分類精度，也支持新的內容生成，適合多元複雜應用。單一模型難以涵蓋所有需求。",
         "number": 950,
         "date": "2026-09-11"
+    },
+    {
+        "question": "在監督學習中，哪一項描述最正確地反映了標籤數據集的角色？",
+        "options": [
+            "標籤數據只是用於模型驗證階段，訓練階段不需要",
+            "標籤數據提供輸入與對應正確輸出，作為模型學習的基準",
+            "標籤數據主要用於模型的特徵選擇而非訓練",
+            "標籤數據是用於模型結束後的結果解釋和分析"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "監督學習",
+        "concept": "監督學習基本原理",
+        "explanation": "監督學習依賴標籤數據，模型透過學習輸入資料與標籤之間的映射關係，從而進行預測或分類。",
+        "number": 951,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "在AI治理中，下列何者最符合「治理」的核心目標？",
+        "options": [
+            "只聚焦於資料隱私的保護措施",
+            "優先使用生成式AI以降低人力成本",
+            "確保AI系統的透明、可靠與符合倫理法規",
+            "強化AI模型的複雜性以提升性能"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理概念",
+        "concept": "AI治理核心目標",
+        "explanation": "AI治理的核心在於推動AI系統在透明、倫理、合規與安全的框架下運作，確保社會信任與風險控制。",
+        "number": 952,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "下列哪個是生成式AI最主要的功能？",
+        "options": [
+            "根據輸入資料判定類別標籤",
+            "從無到有創造新的數據或內容",
+            "以規則基礎生成決策樹模型",
+            "對已有資料進行分類與聚類"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式 AI 概念",
+        "concept": "生成式AI基本原理",
+        "explanation": "生成式AI的核心功能是自主創造新的數據或資訊，如文本、圖像、音頻等，與鑑別式AI的判斷分類不同。",
+        "number": 953,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "在機器學習中，使用L1正則化與L2正則化的主要差異是什麼？",
+        "options": [
+            "L1正則化促使權重稀疏化，L2正則化促使權重趨向零但不為零",
+            "L1正則化使模型容量變大，L2正則化使模型容量減小",
+            "L1正則化與L2正則化效果完全相同，只是名稱不同",
+            "L1正則化用於非監督學習，L2正則化用於監督學習"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "正規化技術",
+        "concept": "正規化L1與L2差異",
+        "explanation": "L1正則化會促使某些權重變為零，起到特徵選擇效果；L2正則化則是使權重小幅度趨近於零，減少過擬合，兩者在模型稀疏性上有顯著差異。",
+        "number": 954,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "資料整理流程中的ETL步驟，哪一項描述不正確？",
+        "options": [
+            "Transform是將資料轉換為分析所需格式",
+            "Load是將資料傳送到最終使用系統",
+            "Extract是從資料來源抽取資料",
+            "ETL主要用於資料模型訓練的超參數調整"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL指資料抽取、轉換與載入的流程，與模型超參數調整無關，後者屬於機器學習訓練階段的參數設定。",
+        "number": 955,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "在AI系統中，Human on loop最重要的意義是什麼？",
+        "options": [
+            "僅在人工作業中使用AI輔助，而非決策",
+            "由AI完全自行決策，不需人工介入",
+            "人類能干預並監督AI判斷與決策過程",
+            "將AI模型完全替換人工決策者的角色"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理與監督",
+        "concept": "Human on loop定義",
+        "explanation": "Human on loop指的是在AI系統中，保持人類能夠干預與監督決策，確保系統可控與責任明確。",
+        "number": 956,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "KNN分群法在新增一個輸入變數後，最可能對分群結果產生何種影響？",
+        "options": [
+            "分群結果完全不變，因為KNN不受輸入變數數量影響",
+            "分群結果只依靠最常見的類別標籤調整",
+            "分群結果由於新增變數會自動忽略原先特徵",
+            "分群邊界可能改變，影響相鄰點的分類"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習概念",
+        "subtopic": "分類與分群",
+        "concept": "KNN新增特徵影響",
+        "explanation": "KNN依據距離判斷鄰近點的類別，新增特徵會改變距離計算，進而影響分群邊界及結果。",
+        "number": 957,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "何者為鑑別式AI模型與生成式AI模型的根本區別？",
+        "options": [
+            "兩者完全相同，僅稱呼不同",
+            "鑑別式模型用於創造新的數據，生成式模型用於分類",
+            "鑑別式模型只用於無監督學習，生成式模型只能監督學習",
+            "生成式模型描述數據分布，鑑別式模型區分不同類別"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "模型基本原理",
+        "concept": "鑑別式vs生成式差異",
+        "explanation": "鑑別式模型專注於直接判斷數據屬於哪個類別；生成式模型則學習數據整體分布，可用來生成新數據。",
+        "number": 958,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "資料隱私保護中，以下哪種技術不直接屬於資料匿名化處理？",
+        "options": [
+            "差分隱私 (Differential Privacy)",
+            "聯邦學習 (Federated Learning)",
+            "資料正則化 (Data Regularization)",
+            "資料去識別化 (De-identification)"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料匿名化技術",
+        "explanation": "資料正則化是用於預防模型過擬合的技術，不屬於匿名化或資料隱私保護。",
+        "number": 959,
+        "date": "2026-09-14"
+    },
+    {
+        "question": "在生成式AI應用中，何謂檢索增強生成（RAG）技術？",
+        "options": [
+            "用於模型微調過程中的正則化方法",
+            "僅依賴資料庫預訓練模型自動生成文本",
+            "利用過往資料標籤強化生成內容",
+            "結合檢索系統與生成模型以提升答案準確度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式技術",
+        "concept": "RAG檢索增強生成",
+        "explanation": "RAG結合檢索系統的相關資料和生成模型，讓模型能根據檢索到的信息生成更精確且語境相關的輸出。",
+        "number": 960,
+        "date": "2026-09-14"
     }
 ]

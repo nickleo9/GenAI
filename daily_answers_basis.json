@@ -16368,5 +16368,175 @@
         "explanation": "RAG結合檢索系統的相關資料和生成模型，讓模型能根據檢索到的信息生成更精確且語境相關的輸出。",
         "number": 960,
         "date": "2026-09-14"
+    },
+    {
+        "question": "在資料處理流程中，以下哪一個步驟最適合用於清理遺缺值與錯誤值，以確保資料品質？",
+        "options": [
+            "資料轉換（Transformation）",
+            "資料抽取（Extraction）",
+            "資料載入（Loading）",
+            "資料正規化（Normalization）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗與轉換",
+        "explanation": "資料轉換階段通常包含清理遺缺值、錯誤值與資料格式標準化的步驟，以確保後續分析的資料品質。資料抽取只是從原始來源取得資料，資料載入是將整理好的資料存入資料庫，正規化則是特徵工程的一部分，不屬於清理遺缺值的環節。",
+        "number": 961,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 在根本原理上的主要差異是什麼？",
+        "options": [
+            "鑑別式 AI 用於強化學習，生成式 AI 用於監督學習",
+            "鑑別式 AI 預測資料分布，生成式 AI 判斷資料類別",
+            "鑑別式 AI 僅處理結構化資料，生成式 AI 僅處理非結構化資料",
+            "鑑別式 AI 分類或回歸輸入資料，生成式 AI 生成人類可讀輸出"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式模型差異",
+        "explanation": "鑑別式 AI 著重於學習如何直接將輸入映射到標籤（分類或回歸），而生成式 AI 則著重於學習輸入資料的分布並生成新的相似資料。鑑別式 AI 不是用來預測資料分布，且兩者不限於特定資料型態。",
+        "number": 962,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "下列哪一項不是 AI 治理（AI Governance）理念的主要考量？",
+        "options": [
+            "增強 AI 模型的計算效能與訓練速度",
+            "確保 AI 系統的公平性與透明度",
+            "保障使用者資料的隱私與安全",
+            "建立 AI 系統的監理與合規要求"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧概念",
+        "subtopic": "AI 治理概念",
+        "concept": "AI治理與倫理",
+        "explanation": "AI 治理強調的是公平、合規、隱私與透明度等政策與管理層面的目標，而計算效能與訓練速度屬於技術優化範疇，非治理理念核心。",
+        "number": 963,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "在機器學習中，強化學習（Reinforcement Learning）最主要的學習方式是什麼？",
+        "options": [
+            "基於資料之間的相似性群集分類",
+            "基於生成模型產生新資料進行自我批判",
+            "基於環境回饋獎懲機制自發探索策略",
+            "基於標記資料的回饋與監督進行訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習基本原理",
+        "concept": "強化學習基本原理",
+        "explanation": "強化學習利用代理人在環境中透過獎懲機制來優化行為策略，以達成長期目標，不依賴標記資料，也不同於無監督群集或生成模型訓練。",
+        "number": 964,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "在監督學習模型中，當模型訓練過程發生偏差-變異（Bias-Variance）權衡，哪一狀況最可能代表高偏差現象？",
+        "options": [
+            "模型在測試資料中表現優異準確度高",
+            "模型簡單無法擬合訓練資料樣本",
+            "模型過於複雜對訓練資料過擬合",
+            "模型在訓練與測試資料誤差均低"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "偏差變異權衡",
+        "concept": "Bias-Variance Tradeoff",
+        "explanation": "高偏差代表模型過於簡單，無法捕捉資料中複雜的模式，導致訓練誤差高且模型欠擬合。過於複雜且過擬合為高變異，正確評估為偏差類別。",
+        "number": 965,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "以下哪個方法不是處理資料遺缺值的常見策略？",
+        "options": [
+            "利用資料平均值填補遺缺",
+            "利用鄰近資料插值填補遺缺",
+            "用資料的最大值取代遺缺值",
+            "刪除包含遺缺值的資料列"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料遺缺值處理",
+        "explanation": "用最大值來填補遺缺值容易造成資料偏斜，通常不是合適的處理方法。刪除、均值填補和鄰近插值是較為常見也合理的策略。",
+        "number": 966,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "在生成式 AI 的應用中，以下哪一項最能體現其主要功能？",
+        "options": [
+            "基於大量資料訓練數據聚類",
+            "生成圖像、文本或語音新內容",
+            "預測未來趨勢的監督模型輸出",
+            "自動分類電子郵件為垃圾郵件與否"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "生成式 AI 應用",
+        "concept": "生成式 AI 功能",
+        "explanation": "生成式 AI 的主要功能是創造新數據，如文本、圖像或語音。自動分類與監督模型輸出屬於鑑別式 AI，資料聚類則為非監督學習。",
+        "number": 967,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "何謂 Human on loop 在 AI 系統中的定義？",
+        "options": [
+            "人類全程參與並直接介入每一步決策",
+            "人類定期監督模型並在必要時修正決策",
+            "放任 AI 系統全自動運作無需人員監控",
+            "利用人類數據訓練無需後續人工介入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "Human on loop 定義",
+        "concept": "人工監督模型決策",
+        "explanation": "Human on loop 指人類在 AI 流程中進入監督角色，隨時有能力介入並修正 AI 決策，確保系統表現符合期望，而非全自動或完全人控。",
+        "number": 968,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "在 AI 資料隱私與安全的措施中，以下哪一項是聯邦學習（Federated Learning）的主要優點？",
+        "options": [
+            "使用加密技術傳輸資料至中央伺服器",
+            "集中所有數據來訓練共享模型以提升準確度",
+            "允許模型在分散裝置本地訓練，保障使用者隱私",
+            "允許匿名化資料後結果共享以降低洩漏風險"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許模型在本地設備訓練，避免集中原始資料，進而提升隱私保護，與加密和匿名化不同，其重點在於分散式訓練。",
+        "number": 969,
+        "date": "2026-09-16"
+    },
+    {
+        "question": "以下何者最適合用來解決文本序列建模問題，尤其是在自然語言處理中捕捉上下文依賴？",
+        "options": [
+            "卷積神經網絡（CNN）",
+            "線性迴歸（Linear Regression）",
+            "循環神經網絡（RNN）",
+            "隨機森林（Random Forest）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習概念",
+        "subtopic": "常見機器學習模型",
+        "concept": "RNN 應用",
+        "explanation": "RNN 專門設計用於處理序列資料，能捕捉長短期依賴，特別適合自然語言處理。CNN 主要用於影像，隨機森林及線性迴歸不專門處理序列。",
+        "number": 970,
+        "date": "2026-09-16"
     }
 ]

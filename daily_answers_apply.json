@@ -8532,5 +8532,175 @@
         "explanation": "企業須綜合考量任務類型、資料敏感度、整合與治理需求及成本，選擇多工具組合作業，而非追求單一萬能工具或僅看表面評價。",
         "number": 502,
         "date": "2026-09-15"
+    },
+    {
+        "question": "在2026年多模態AI的應用評估中，哪一項情境最適合導入多模態生成式AI模型？",
+        "options": [
+            "客戶服務中心同時處理語音、文字及影像資料",
+            "單一資料類型的API串接與數據整合作業",
+            "編程代碼自動完成與程式錯誤糾正功能",
+            "純文字報告自動生成與文案撰寫輔助流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "多模態AI應用",
+        "explanation": "多模態AI指的是同時處理文字、影像、語音與其他資料型態的模型，最適合用於像客戶服務中心這類需要多種資料來源融合的情境，可以提升服務效率與品質。",
+        "number": 503,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "No Code 與 Low Code 平台結合生成式AI時，哪一項不是其主要優勢？",
+        "options": [
+            "可快速生成跨平台的高度複雜應用",
+            "使非技術人員能自行定制工作流程",
+            "大幅降低開發時間與成本投入",
+            "減少對專業程式設計師的依賴"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code優勢",
+        "explanation": "No Code / Low Code平台雖能減少技術門檻與開發時間，但對高度複雜、跨平台整合仍有限制，該選項描述過於理想化，非主要優勢。",
+        "number": 504,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "以下哪一項是2026年企業在評估生成式AI導入時，最重要考量的風險管理項目？",
+        "options": [
+            "生成速度與模型推論延遲性",
+            "生成內容的多媒體格式支援",
+            "生成內容的多語言翻譯準確度",
+            "生成內容的版權與授權問題"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "AI風險管理",
+        "explanation": "生成式AI涉及大量內容自動生成，版權與授權爭議為企業重大風險，需納入治理與法規遵循考量。其他選項是技術層面但非核心風險。",
+        "number": 505,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "什麼是MCP（Model Context Protocol）在生成式AI產業的主要功能？",
+        "options": [
+            "標準化AI模型間語言資料格式的交換協定",
+            "用於智能合約區塊鏈的AI安全協定",
+            "用於促進AI代理系統跨工具與服務的協同",
+            "設計用於生成高解析度影像的建模技術"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "MCP協定",
+        "explanation": "MCP是2026年生成式AI代理系統中，促進不同模型與工具間標準化溝通與協作的重要協定，支持跨系統流程自動化。",
+        "number": 506,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "在生成式AI工具領域，哪一款工具以具備跨多檔案自動修改和重構功能著稱？",
+        "options": [
+            "Runway",
+            "GitHub Copilot Workspace",
+            "Elicit 3.0",
+            "Midjourney v7"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與工具使用",
+        "concept": "AI程式開發工具",
+        "explanation": "GitHub Copilot Workspace能讀取整個項目上下文，自動完成跨多檔案的程式碼修改與重構，是開發者常用的AI輔助工具。",
+        "number": 507,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "何者非生成式AI導入評估時應著重考量的資料特性？",
+        "options": [
+            "資料來源的合法授權與隱私安全",
+            "資料的多樣性與品質完整性",
+            "資料是否支援知識增強生成",
+            "資料加密傳輸速度與頻寬需求"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料可用性評估",
+        "explanation": "資料加密傳輸速度屬於網路安全基礎設施層面，不是生成式AI導入評估重點；評估時重點在資料合法性、多樣性及是否可作知識增強用。",
+        "number": 508,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "生成式AI中的AI Agent主要功能不包括下列哪一項？",
+        "options": [
+            "自動拆解複雜任務並跨平台執行",
+            "完成流程管理與多工具整合操作",
+            "具備多代理間標準化協同通信能力",
+            "根據自然語言指令生成完整應用程式"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式 AI 與生成式 AI 整合應用",
+        "concept": "AI Agent功能",
+        "explanation": "AI Agent擅長任務拆解與跨工具協作，不直接負責整體應用程式的完整生成，該工作較偏向Vibe Coding與No Code工具。",
+        "number": 509,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "下列何種情境最適合採用Vibe Coding技術結合生成式AI？",
+        "options": [
+            "工程師在開發複雜分布式系統時調試程式碼",
+            "商業人員利用自然語言設計快速試用的業務應用",
+            "法律顧問審查AI生成文件中潛在合規風險",
+            "資料科學家在建構機器學習模型的特徵工程階段"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "Vibe Coding應用",
+        "explanation": "Vibe Coding允許非程式設計者透過自然語言描述需求，即時生成應用程式，適用商業用戶快速定制原型和業務流程自動化。",
+        "number": 510,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "生成式AI導入中所謂“Shadow AI”最主要的治理風險是？",
+        "options": [
+            "AI模型在執行時產生不可解釋的偏誤結果",
+            "AI系統自動異動資料庫導致系統不穩定",
+            "員工私自未經授權使用AI工具造成資料外洩",
+            "供應商AI服務停止導致業務中斷"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "Shadow AI治理風險",
+        "explanation": "Shadow AI指員工私下使用未經正式核准的AI工具，容易帶來資料資安風險與合規問題，是企業治理的重要挑戰。",
+        "number": 511,
+        "date": "2026-09-17"
+    },
+    {
+        "question": "針對企業快速導入生成式AI，自動化工作流程時，下列何者屬於核心評估指標？",
+        "options": [
+            "模型訓練所需運算硬體成本",
+            "流程中影像資料比重是否超過80%",
+            "員工接受度是否達到90%以上",
+            "目標流程是否具備高重複性與明確量化指標"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入評估流程",
+        "explanation": "導入評估重點在於選擇具高頻率、高重複性且具可量化ROI的流程，利於展現生成式AI帶來的自動化效益與成本節省。",
+        "number": 512,
+        "date": "2026-09-17"
     }
 ]

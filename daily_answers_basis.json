@@ -16538,5 +16538,185 @@
         "explanation": "RNN 專門設計用於處理序列資料，能捕捉長短期依賴，特別適合自然語言處理。CNN 主要用於影像，隨機森林及線性迴歸不專門處理序列。",
         "number": 970,
         "date": "2026-09-16"
+    },
+    {
+        "question": "在企業導入生成式AI時，哪一個步驟最能有效降低資料隱私風險？",
+        "options": [
+            "使用公開的資料集進行模型訓練，忽略內部資料",
+            "將資料未經處理直接用於生成模型的訓練",
+            "將所有原始資料集中到單一伺服器進行處理",
+            "在本地設備上運行模型，避免將資料傳送至雲端"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "資料本地化處理",
+        "explanation": "在本地設備上運行模型能避免敏感資料傳輸至雲端，減少資料外洩風險，符合資料隱私保護最佳實務。",
+        "difficulty": "進階",
+        "number": 971,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "關於機器學習中的監督式學習，以下何者描述錯誤？",
+        "options": [
+            "監督式學習適合用於分類和回歸問題",
+            "監督式學習不需要事先定義輸入和輸出的對應關係",
+            "模型在訓練時使用帶有標籤的資料",
+            "模型透過誤差反向傳播不斷調整參數以優化預測"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習",
+        "subtopic": "監督學習",
+        "concept": "監督式學習定義",
+        "explanation": "監督式學習需要明確的輸入與輸出標籤，模型訓練就是透過這對應關係來學習，第三選項描述錯誤。",
+        "difficulty": "中等",
+        "number": 972,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "在鑑別式 AI 與生成式 AI 結合的應用中，下列何者屬於典型的整合方式？",
+        "options": [
+            "生成式 AI 只用於資料清洗，鑑別式 AI 用於模型訓練",
+            "兩者功能相同，無需整合分工",
+            "鑑別式 AI 直接產出自然語言文章並發布",
+            "生成式 AI 自動編寫對話內容，鑑別式 AI 進行內容真實性驗證"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "整合應用",
+        "concept": "生成與鑑別協同",
+        "explanation": "生成式 AI負責創造內容，鑑別式 AI負責評估內容質量與真實性，兩者協同增加系統穩健性。",
+        "difficulty": "進階",
+        "number": 973,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "在資料整理流程中，哪一項操作不屬於資料轉換階段？",
+        "options": [
+            "將類別變數進行 One-Hot Encoding",
+            "利用標準化方法調整特徵尺度",
+            "填補資料中的缺失值",
+            "將資料集劃分為訓練和測試集"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料處理與分析",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料轉換與前處理",
+        "explanation": "資料劃分成訓練及測試集屬於資料準備或分割步驟，不屬於轉換階段。",
+        "difficulty": "中等",
+        "number": 974,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "在監督式學習中，何者損失函數最適合用於房價預測問題？",
+        "options": [
+            "Hinge損失函數",
+            "均方誤差（MSE）",
+            "交叉熵損失函數",
+            "對比損失函數"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習",
+        "subtopic": "損失函數",
+        "concept": "回歸的損失函數選擇",
+        "explanation": "房價預測屬於連續值回歸問題，均方誤差（MSE）為常用且適合的損失函數。",
+        "difficulty": "基礎",
+        "number": 975,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "下列何者最能描述強化學習的核心特徵？",
+        "options": [
+            "透過未標記資料自動尋找資料群集",
+            "主動對抗生成假資料及辨別關係",
+            "依靠固定標籤資料進行模型訓練",
+            "模型根據環境回饋策略做出決策並調整行動"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習",
+        "subtopic": "強化學習",
+        "concept": "強化學習基本原理",
+        "explanation": "強化學習透過環境回饋（獎勵/懲罰）來引導模型學習最優策略做決策。",
+        "difficulty": "中等",
+        "number": 976,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "企業在建立 AI 治理機制時，以下哪一項措施最能有效避免影子使用問題？",
+        "options": [
+            "建立清晰的 AI 使用政策並監控合規實施",
+            "只允許 IT 部門負責 AI 相關作業",
+            "完全禁止在工作環境使用生成式 AI 工具",
+            "授權所有員工自由使用 AI 工具進行工作創新"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI治理概念",
+        "subtopic": "治理措施",
+        "concept": "影子使用監控",
+        "explanation": "建立規範並監控AI使用，有助於防止員工未經允許的影子使用，降低風險。",
+        "difficulty": "進階",
+        "number": 977,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "在多模態 AI 應用中，何種模型最適合同時處理圖像與文字資料？",
+        "options": [
+            "Transformer 多模態架構",
+            "循環神經網路（RNN）專注序列",
+            "決策樹模型",
+            "卷積神經網路（CNN）專注圖像"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式 AI",
+        "subtopic": "多模態應用",
+        "concept": "多模態模型",
+        "explanation": "Transformer 可有效整合不同型態資料（如圖像與文字）進行多模態學習與應用。",
+        "difficulty": "進階",
+        "number": 978,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "關於資料安全的說法，以下哪一項最符合 GDPR 規定？",
+        "options": [
+            "使用者無需同意即可收集其個資",
+            "使用者有權要求刪除其個人資料",
+            "資料可任意分享，只要是內部同事",
+            "企業可無限期保存匿名化資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料處理與分析",
+        "subtopic": "資料隱私與安全",
+        "concept": "GDPR",
+        "explanation": "GDPR 賦予使用者刪除個資權利，企業必須尊重此權利。",
+        "difficulty": "基礎",
+        "number": 979,
+        "date": "2026-09-18"
+    },
+    {
+        "question": "在生成式 AI 回應中，何種技術最能提升回答語境的一致性？",
+        "options": [
+            "透過隨機採樣產生多樣回答",
+            "使用注意力機制與之前上下文資訊",
+            "忽略先前訊息只針對當前指令生成",
+            "純粹依靠最新語料庫訓練"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式 AI",
+        "subtopic": "語境處理",
+        "concept": "注意力機制",
+        "explanation": "注意力機制允許模型重點關注相關上下文，有助維持語境連續性與一致性。",
+        "difficulty": "進階",
+        "number": 980,
+        "date": "2026-09-18"
     }
 ]

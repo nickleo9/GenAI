@@ -8702,5 +8702,175 @@
         "explanation": "導入評估重點在於選擇具高頻率、高重複性且具可量化ROI的流程，利於展現生成式AI帶來的自動化效益與成本節省。",
         "number": 512,
         "date": "2026-09-17"
+    },
+    {
+        "question": "在2026年生成式AI常見的應用中，哪種場景最適合先從No Code / Low Code平台導入以減少開發資源需求？",
+        "options": [
+            "內部知識庫智能客服流程串接與自動化",
+            "高頻交易的量化決策系統全面重構",
+            "多模態影片生成與複雜素材融合設計",
+            "深度學習模型的自訂核心訓練流程搭建"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code平臺導入",
+        "explanation": "No Code / Low Code 平台適合用於企業內部知識庫與客戶服務流程的串接及自動化，因為這類場景多為流程性、重複性高且開發門檻較低，適合以較少的開發資源快速上線。",
+        "number": 513,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "在生成式 AI 風險管理中，下列哪一項措施最關鍵以防止AI系統產生幻覺（Hallucination）？",
+        "options": [
+            "將模型部署於分散式邊緣計算架構",
+            "增強模型對抗攻擊的深度學習能力",
+            "搭建完善的權限控管與日志審計系統",
+            "適當增加模型參數量提升運算能力"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "防止生成式AI幻覺最重要的是搭建完善的權限控管與日誌審計系統，能追蹤模型輸出並對異常進行人工審核，從而減少不當或錯誤內容的風險。",
+        "number": 514,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "2026年主流生成式AI工具中，哪一款被認為在中文繁體與台灣本地化知識方面表現最佳且成本最低？",
+        "options": [
+            "阿里雲 Qwen 3 Max",
+            "Google Gemini Omni",
+            "Meta Llama 4 Maverick",
+            "OpenAI GPT-5.6"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "本地化模型",
+        "explanation": "阿里雲的 Qwen 3 Max 在繁中語境、台語混用及本地新聞脈絡理解表現優秀，且部署成本較同級閉源模型低，適合臺灣中小企業自建知識庫。",
+        "number": 515,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "在生成式AI應用導入規劃時，應優先考慮哪種資料來源以確保模型訓練與生成結果的準確性與實用性？",
+        "options": [
+            "網路公開百科全書和新聞彙整",
+            "公開技術論壇與代碼庫文件",
+            "社交媒體用戶隨機貼文和評論",
+            "企業內部產品文件與操作手冊"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "資料可用性評估",
+        "explanation": "企業內部產品文件與操作手冊提供結構化且高質量的資料，有助於提升模型對企業業務的專業理解與生成結果的精確度。",
+        "number": 516,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "生成式 AI 工具 GitHub Copilot Workspace 的2026年升級功能主要為何？",
+        "options": [
+            "強化使用者自然語言代碼提示的精確度",
+            "支援區塊鏈開發環境的即時智能輔助",
+            "可直接讀取整個Repository並自動生成跨檔案修改方案",
+            "加入多員工的雲端協作與版本控制"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "程式開發協同",
+        "explanation": "2026年GitHub Copilot Workspace升級重點是能讀取全Repository上下文，根據Issue自動生成跨多個檔案修改，極大提升程式重構與協作效率。",
+        "number": 517,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "以下哪一項不屬於No Code / Low Code平台的典型限制？",
+        "options": [
+            "高度彈性但難以處理複雜且自訂需求",
+            "不支持跨平台多語言開發",
+            "常局限於平台生態系統與接口限制",
+            "開發速度快，適合快速原型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code限制",
+        "explanation": "No Code / Low Code平台通常支援跨平台開發與多語言，但其限制主要是彈性不足、複雜度承受有限及生態系統封閉，選項D的「不支持跨平台多語言」描述不正確。",
+        "number": 518,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "生成式AI在行銷領域應用時，導入規劃中應優先建立下列哪一項以確保品牌一致性與合規？",
+        "options": [
+            "具體的品牌語氣模板與素材審核流程",
+            "多渠道廣告自動投放系統的優化方案",
+            "多模態影片生成與音效合成平臺",
+            "社群熱點數據分析與即時互動工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "品牌一致性設計",
+        "explanation": "建立品牌語氣模板與素材審核流程是確保生成內容符合品牌形象與法規要求的關鍵，有助降低生成內容風險與提升產出穩定性。",
+        "number": 519,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "以下哪種生成式AI工具適合用於研究助理與顧問分析，因其能以因果圖表視覺化文獻證據鏈？",
+        "options": [
+            "GitHub Copilot Workspace",
+            "OpenAI GPT-5.6",
+            "Elicit 3.0",
+            "Google Gemini Omni"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與工具使用",
+        "concept": "研究輔助工具",
+        "explanation": "Elicit 3.0新增因果推論圖表功能，專注於文獻回顧和證據視覺化，非常適合研究與顧問分析使用。",
+        "number": 520,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "生成式AI導入時，以下哪項成本考量是評估API與自建系統費用差異的最佳指標？",
+        "options": [
+            "開發團隊的多語言程式設計熟練度",
+            "人力監督所需工時乘以時薪再加上推論成本",
+            "市場競爭對手使用相同模型的比例",
+            "模型參數大小與伺服器運算能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估規劃",
+        "concept": "成本評估",
+        "explanation": "以每月節省工時乘以人時成本，結合推論與人工審核成本，是評估API使用與自建系統總成本的實際標準。",
+        "number": 521,
+        "date": "2026-09-19"
+    },
+    {
+        "question": "何者描述生成式AI中『鑑別式AI與生成式AI的整合應用』最合理？",
+        "options": [
+            "鑑別式AI僅用於數據標準化前的初步清理",
+            "鑑別式AI負責評估生成內容的品質並過濾錯誤",
+            "兩者是互斥技術，不可同時使用於同一系統中",
+            "生成式AI必須放棄鑑別式AI以提升生成速度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式 AI 與生成式 AI 整合應用",
+        "concept": "鑑別與生成結合",
+        "explanation": "鑑別式AI常用於對生成式AI產出的內容進行品質評估與錯誤過濾，兩者結合可提升系統的整體結果準確性與穩定度。",
+        "number": 522,
+        "date": "2026-09-19"
     }
 ]

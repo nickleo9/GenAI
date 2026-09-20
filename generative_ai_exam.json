@@ -10868,5 +10868,175 @@
         "explanation": "鑑別式模型判斷輸入所屬類別或是否符合類別，生成式模型則創造新數據（文字、圖片、音頻等），二者功能及應用方向不同。",
         "number": 665,
         "date": "2026-09-13"
+    },
+    {
+        "question": "如果您是台灣一位企業主管，計畫在2025年導入生成式AI以提升客服效率，以下哪一項是導入前最重要的治理措施？",
+        "options": [
+            "先確保生成式AI模型使用最新的算法加速回應速度",
+            "購置多款不同品牌AI工具以達成本分散",
+            "建立資料權限管控、輸出驗證及提示詞管理機制",
+            "投入大量算力以獲取最高模型準確率"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入規劃",
+        "concept": "AI治理與風險管理",
+        "explanation": "企業在導入生成式AI前，必須先建立完善的治理機制，包含資料權限控管、輸出驗證和提示詞管理，才能降低誤用風險並確保合規。僅著重算法速度或多工具不利於風險控制。",
+        "number": 666,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "作為一名高中英文老師，您計畫利用生成式AI協助學生製作教案並進行寫作輔導，哪種AI工具最適合用於自動生成符合課程需求的教案大綱？",
+        "options": [
+            "基於類GPT大型語言模型的文案生成工具",
+            "結合影像辨識的電腦視覺工具",
+            "數據分析儀表板工具",
+            "多模態語音合成工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI工具使用",
+        "concept": "提示工程與內容生成",
+        "explanation": "基於大型語言模型的生成式文案工具非常適合自動生成符合課程需求的教案大綱和輔助學生寫作，而影像或語音工具則不適合此文本生成場景。",
+        "number": 667,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "如果您是家庭主婦，希望擬定一個包含旅遊、育兒、及理財的家庭計畫，利用2025年流行的生成式AI工具，應該如何下提示詞以獲得最具體的多面向規劃？",
+        "options": [
+            "請提供一份標準旅行行程",
+            "給我理財知識問答",
+            "提供育兒理財的最新趨勢報告",
+            "生成一份家庭旅遊育兒理財綜合計畫，包括時間表與預算建議"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞設計",
+        "concept": "提示工程",
+        "explanation": "明確且多維度的提示詞設定，如請求綜合計畫和細節建議，能令生成式AI產出符合生活需求的具體方案，而非只得到單一資訊片段。",
+        "number": 668,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "2025年，全球多家公司推動生成式AI研發，其中Google發布的哪款AI模型在多項基準測試創新高，成為業界焦點？",
+        "options": [
+            "Google Gemini 3 Pro",
+            "xAI Grok 4.1",
+            "Anthropic Claude 4.5",
+            "OpenAI GPT-5.2"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI模型",
+        "concept": "模型性能與市場競爭",
+        "explanation": "2025年Google公布的Gemini 3 Pro系列，在多項基準測試取得業界首位，顯示其在生成式AI市場中具重要影響力。",
+        "number": 669,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "如果您身為製造業的工程師，準備利用生成式AI技術強化工廠自動化，哪種AI應用趨勢最適合您著重研究？",
+        "options": [
+            "語音識別與自然語言處理",
+            "代理型AI（Agentic AI）與人形機器人結合",
+            "AI輔助財務分析",
+            "開源語言模型文本生成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "機器人與代理型AI應用",
+        "concept": "代理型AI",
+        "explanation": "製造業自動化正快速導入代理型AI與具體人形機器人，能自主執行任務和提升生產效率，而文本生成和財務分析較不直接相關。",
+        "number": 670,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "台灣於2025年推出了首款MIT製造的生成式AI智慧眼鏡VIVE Eagle。該產品的最大特色是什麼？",
+        "options": [
+            "專注於製造業數據監控與遠程操作",
+            "內建完備的醫療健康數據分析系統",
+            "主打音頻語音識別功能",
+            "支援Google Gemini及OpenAI GPT大型語言模型的即時穿戴式互動"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI硬體應用",
+        "concept": "多模態AI與穿戴裝置",
+        "explanation": "VIVE Eagle智慧眼鏡主打即時結合Google Gemini和OpenAI GPT的大型語言模型，讓AI助理能即時提供穿戴式互動體驗，符合2025年生成式AI硬體趨勢。",
+        "number": 671,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "作為一名自媒體內容創作者，您想使用生成式AI自動產生文章標題跟摘要，下列哪種提示詞寫法，可以讓AI產出最專業且具吸引力的標題？",
+        "options": [
+            "幫我寫標題",
+            "請生成吸引眼球且與下方內容高度相關的新聞標題和專業摘要",
+            "產生一段有趣的文章開頭",
+            "寫一個隨便的新聞標題"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "提示詞設計",
+        "concept": "提示工程",
+        "explanation": "明確且具體的提示詞，例如要求相關性高度和吸睛度，能幫助生成式AI理解任務需求，產出更符合期待的專業標題與摘要。",
+        "number": 672,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "iPAS AI應用規劃師考試中，關於生成式AI與鑑別式AI的區別，下列敘述何者正確？",
+        "options": [
+            "生成式AI主要用於分類問題，鑑別式AI用於生成文本",
+            "生成式AI著重視覺辨識，鑑別式AI只用於語音",
+            "鑑別式AI學習如何分辨資料，生成式AI學習如何產生新資料",
+            "兩者指的是同一類AI技術，沒有差異"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 概念",
+        "concept": "鑑別式與生成式AI基本原理",
+        "explanation": "鑑別式AI專注於判定輸入屬於哪類別，生成式AI則學習產生全新資料（如文本、圖像）。兩者原理和用途不同，不可混淆。",
+        "number": 673,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "在2025年，許多國家開始嚴格實施AI治理法規，例如歐盟AI Act，以下哪一項不屬於該法規的要求？",
+        "options": [
+            "將所有AI系統列為高風險，必須全面禁止",
+            "建立技術文件與系統監控機制",
+            "禁止高風險AI技術的使用",
+            "要求通用AI模型必須透明披露及風險評估"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI治理概念",
+        "concept": "AI法規與合規",
+        "explanation": "歐盟AI Act禁止高風險AI特定用途，但不是全面禁止所有AI系統，而是根據風險分級進行管理並要求透明度與監控。",
+        "number": 674,
+        "date": "2026-09-20"
+    },
+    {
+        "question": "若您計畫在國外利用No Code / Low Code工具搭配生成式AI建立自動化行銷報告系統，哪項能力是選擇工具時最重要的考量？",
+        "options": [
+            "提供客戶的社群追蹤功能及自動發文",
+            "支援整合多資料源並能透過提示詞輕鬆設定流程",
+            "具有豐富的圖像合成模板",
+            "內建多種語言的翻譯能力，方便跨國溝通"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code",
+        "concept": "流程自動化與提示詞運用",
+        "explanation": "No Code / Low Code平台主要優勢為可讓非程式人員透過提示詞快速設定資料整合及自動化流程，這是建立行銷報告系統的關鍵。",
+        "number": 675,
+        "date": "2026-09-20"
     }
 ]

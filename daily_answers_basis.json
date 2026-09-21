@@ -16718,5 +16718,175 @@
         "difficulty": "進階",
         "number": 980,
         "date": "2026-09-18"
+    },
+    {
+        "question": "在機器學習中，下列哪一種學習類型主要透過標註資料進行模型訓練，並在預測時以已知標籤作為學習目標？",
+        "options": [
+            "D. 無監督學習，依賴獎勵信號來調整決策策略",
+            "A. 監督學習，使用帶有標籤的訓練資料進行學習並預測標籤",
+            "B. 非監督學習，對未標註資料進行自動分群與模式識別",
+            "C. 強化學習，透過環境回饋調整策略以最大化回報"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "機器學習的三大類型",
+        "concept": "監督學習",
+        "explanation": "監督學習是指模型藉由帶有標籤的訓練資料，學習輸入與標籤間的對應關係，用以預測新資料的標籤，與非監督學習與強化學習有本質不同。",
+        "number": 981,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "當使用 LIME 解釋一個黑箱模型時，哪項敘述最準確描述其方法？",
+        "options": [
+            "A. LIME通過全局擬合模型來解釋黑箱模型的整體行為",
+            "B. LIME根據局部鄰域擬合可解釋模型以揭示預測原因",
+            "C. LIME採用梯度下降技術優化可解釋模型的準確度",
+            "D. LIME透過生成式模型模擬不同輸入以產生解釋"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "AI技術與模型",
+        "subtopic": "模型可解釋性",
+        "concept": "LIME局部可解釋模型",
+        "explanation": "LIME解釋器針對某一特定輸入，利用局部鄰域資料擬合一個簡單的可解釋模型，以解釋黑箱模型在該點的預測行為，而非全局擬合。",
+        "number": 982,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "在資料分析流程中，ETL指的是資料______、______、______三個重要階段。",
+        "options": [
+            "D. 抽取、轉換、載入",
+            "C. 載入、清理、建模",
+            "A. 抽取、轉換、負載",
+            "B. 抽取、清洗、分析"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料整理流程",
+        "concept": "ETL流程",
+        "explanation": "ETL代表資料抽取（Extract）、轉換（Transform）與載入（Load），是將資料從多個來源抽取後，經過轉換處理，再載入目標資料庫或系統的過程。",
+        "number": 983,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "於生成式 AI 系統設計中，哪種技術最能提升模型對於上下文語境的一致性？",
+        "options": [
+            "A. 剪枝以減少模型複雜度",
+            "D. One-Hot Encoding 以強化語詞表示",
+            "C. 強化學習增強模型決策能力",
+            "B. 使用 RAG (檢索增強生成)以結合外部知識"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "自然語言處理",
+        "concept": "RAG（檢索增強生成）",
+        "explanation": "RAG結合資料檢索與生成模型，透過檢索外部知識以佐證生成內容，有效提高生成回應的語境一致性和資訊正確性。",
+        "number": 984,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "AI治理的核心目的不包括下列哪一項？",
+        "options": [
+            "D. 保護使用者資料隱私與安全",
+            "B. 監管AI技術避免濫用與風險",
+            "A. 確保AI系統公平、透明且符合倫理",
+            "C. 加快AI模型運行速度與效率"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧概念",
+        "subtopic": "AI治理",
+        "concept": "AI治理目標",
+        "explanation": "AI治理重點在於道德、法律、透明、隱私與風險控管，不涵蓋加快模型運行速度，效能優化屬於技術層面，非治理核心。",
+        "number": 985,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "關於資料前處理，以下敘述何者正確？",
+        "options": [
+            "B. 離群值處理僅刪除資料，不能進行替換",
+            "A. 格式轉換主指將原始資料變為結構化形式",
+            "C. 缺失值填補可使用均值、中位數或模型預測",
+            "D. 特徵數值標準化不可應用於樞紐分析"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料清洗與轉換",
+        "concept": "缺失值處理",
+        "explanation": "缺失值常用方法包含均值、中位數填補或利用機器學習模型推測，格式轉換不限結構化，離群值處理可刪除或替換，標準化可廣泛應用。",
+        "number": 986,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "關於鑑別式AI與生成式AI的描述，何者符合鑑別式AI的特性？",
+        "options": [
+            "A. 生成數據以擴充資料集提升模型泛化能力",
+            "C. 依據上下文創造新文本或影像等內容",
+            "B. 判斷資料屬於哪一類別或是否存在特定特徵",
+            "D. 通過隱式式變分自編碼生成新數據"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式AI",
+        "explanation": "鑑別式AI主要關注於判別資料的分類或特徵存在與否，與生成式AI創造新數據的功能不同。",
+        "number": 987,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "在強化學習中，Q-Learning 方法的核心目標為何？",
+        "options": [
+            "A. 利用監督資料直接優化決策函數",
+            "B. 基於動作價值函數更新策略以最大化長期報酬",
+            "C. 通過無標籤資料尋找隱藏狀態轉換模式",
+            "D. 利用卷積神經網絡加強特徵抽取能力"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習概念",
+        "subtopic": "強化學習算法",
+        "concept": "Q-Learning",
+        "explanation": "Q-Learning 是透過估計動作價值函數(Q函數)來更新行為策略，目的是最大化累積的長期報酬，不涉及監督資料及CNN結合。",
+        "number": 988,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "在資料隱私保護技術中，下列哪一項措施主要是為了避免個人資料被外洩或濫用？",
+        "options": [
+            "B. 聯邦學習分散式訓練避免中央收集資料",
+            "C. 剪枝技術降低模型複雜度與大小",
+            "A. 批次推論以提高模型推理效率",
+            "D. 使用One-Hot Encoding提升分類準確率"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料處理與分析概念",
+        "subtopic": "資料隱私與安全",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習透過分散式訓練保障資料不離開本地設備，有效提升資料隱私，與剪枝、編碼或推論效率無直接關聯。",
+        "number": 989,
+        "date": "2026-09-21"
+    },
+    {
+        "question": "以下哪些技術最適合處理非結構化資料，如文字、影像或語音？",
+        "options": [
+            "B. 循環神經網絡（RNN）擅長序列及時序數據分析",
+            "D. 貝葉斯分類器適用於影像特徵擷取",
+            "C. 決策樹廣泛用於非結構化資料的分類問題",
+            "A. 支持向量機（SVM）僅適用於結構化資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習概念",
+        "subtopic": "深度學習模型",
+        "concept": "RNN",
+        "explanation": "RNN因其能處理序列資料特性，特別適合非結構化文本、語音等序列輸入，SVM和決策樹多用於結構化數據，貝葉斯分類器不專於影像抽取。",
+        "number": 990,
+        "date": "2026-09-21"
     }
 ]

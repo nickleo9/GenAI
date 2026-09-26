@@ -9229,5 +9229,175 @@
         "explanation": "生成式 AI 可透過自然語言生成個人化銷售內容，協助精準市場分眾與提升行銷效率，遠超過回報中的其他用途。",
         "number": 543,
         "date": "2026-09-24"
+    },
+    {
+        "question": "在2025年，台灣企業導入生成式AI時，哪一項規劃策略最能快速實現低門檻且有成效的落地？",
+        "options": [
+            "優先從行銷內容創造或智慧客服等前線應用切入",
+            "重點在跨國資料中心遷移以確保資料安全",
+            "集中資源建立本地大型自研模型後再決定應用",
+            "全面替換核心ERP系統以提升基礎架構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "快速落地策略",
+        "explanation": "2025年台灣多數企業選擇從低門檻、可快速見效的前端場景如行銷內容生成與智慧客服切入，以便快速試水溫並累積經驗，而非立即投入大型系統改造或重資建模型。",
+        "number": 544,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "何者並非生成式AI導入規劃過程中常見的挑戰？",
+        "options": [
+            "導入時未妥善優先考慮易落地應用場景",
+            "現有模型運算能力不足無法生成文本",
+            "企業缺乏明確切入點與成效評估能力",
+            "企業不抗拒AI但推動力不足"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入挑戰",
+        "explanation": "調查表明台灣企業挑戰多為無法掌握AI應用切入點、評估效益與具備推動力，而非模型技術本身運算能力問題，因為多數採用成熟雲端服務。",
+        "number": 545,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "下列何者最適合成為生成式AI導入的第一步策略？",
+        "options": [
+            "優先購買各種不同類型的AI模型以涵蓋所有場景",
+            "定義高頻且重複性的業務流程並逐步擴大應用",
+            "必須先將所有資料清洗至完美狀態後啟動",
+            "禁止使用現有工具以避免資訊外洩風險"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入策略",
+        "explanation": "選擇高頻、重複且可量化的業務來做試點，可快速展現效益並降低成本風險，是台灣產業常見且實用的導入策略。",
+        "number": 546,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "在生成式AI風險管理中，哪一項措施最能有效降低敏感資料外洩的風險？",
+        "options": [
+            "只要模型輸出正確就無須關注資料來源安全",
+            "事前評估資料敏感度、存取權限及外部傳輸風險",
+            "員工簽署保密協議後可忽略資料治理問題",
+            "所有內部資料可隨意輸入公開AI模型無需分類"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "隱私與資安",
+        "explanation": "嚴格評估資料的敏感程度及控制存取權限，搭配防範資料外傳，是生成式AI風險管理中重要的隱私與資安措施。",
+        "number": 547,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "哪一項不是生成式AI風險管理中的典型風險？",
+        "options": [
+            "模型產生的幻覺或錯誤資訊",
+            "模型缺乏可解釋性",
+            "敏感資料的外洩或不當使用",
+            "提升資料壓縮比率以節省空間"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險項目",
+        "explanation": "提升資料壓縮比率是技術優化的指標，不屬於風險管理中的風險類別；其他選項均為常見生成式AI運用中的潛在風險。",
+        "number": 548,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "某企業導入生成式AI客服系統時，發現模型有時生成錯誤信息。下列哪一項風險管理方法最合適？",
+        "options": [
+            "讓模型自由學習所有網路資料增加知識",
+            "模型輸出直接發給客戶無需檢核",
+            "建立人工覆核機制以驗證答案準確性",
+            "提高回覆速度忽略內容正確性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "人工覆核",
+        "explanation": "因生成式AI可能產生看似合理但錯誤的內容，加入人工覆核機制並比對標準答案庫，可有效降低錯誤風險，確保對客戶回覆品質。",
+        "number": 549,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "關於No Code與Low Code平台，何者敘述最正確？",
+        "options": [
+            "Low Code不依賴任何平台工具獨立開發",
+            "No Code一定勝過Low Code適用於大型客製系統",
+            "No Code強調視覺化拖拉介面，Low Code允許少量程式碼擴充",
+            "No Code與Low Code完全相同沒有差異"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台差異",
+        "explanation": "No Code平台通常用視覺化介面拖拉組件完成應用，Low Code則在此基礎上支持少量程式碼，以提供彈性與擴充能力，這是兩者本質差異。",
+        "number": 550,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "某中小企業希望快速建立內部表單與簡易簽核流程，下列何種做法最符合No Code / Low Code的優勢？",
+        "options": [
+            "先訓練大型語言模型後處理簽核流程",
+            "建設複雜微服務架構再逐步補齊前端",
+            "使用視覺化平台快速組裝表單、流程並設定權限",
+            "大量手寫原始碼從頭開始設計開發"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "快速開發優勢",
+        "explanation": "No Code / Low Code的優勢在於快速透過視覺化元件與拖拉功能組合完成應用，減少技術門檻及開發時間，特別適合內部表單與簡易流程。",
+        "number": 551,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "哪種應用最適合選擇Low Code平台而非純No Code？",
+        "options": [
+            "無需流程或數據處理的靜態展示頁",
+            "靜態公告網站，無交互行為與資料交換",
+            "需要少量程式碼擴充及API串接的業務系統",
+            "完全無需程式碼的簡單問卷收集頁面"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台選擇",
+        "explanation": "Low Code平台適合需要視覺化開發加上部分程式碼擴展，如API串接及客製化邏輯的業務應用；純No Code多用於簡單無程式碼需求的情境。",
+        "number": 552,
+        "date": "2026-09-26"
+    },
+    {
+        "question": "關於No Code / Low Code平台在2025年台灣企業應用中的限制，以下敘述何者為非？",
+        "options": [
+            "適合快速建置原型及部門級工具",
+            "完全無需考慮權限控管與資料治理",
+            "能加速內部工具的開發與驗證",
+            "常用於數位轉型與AI落地的加速工具"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "應用限制",
+        "explanation": "儘管No Code / Low Code可以快速開發，但仍須謹慎管理使用權限、資料治理及維運，不能忽視基礎資安及合規問題。",
+        "number": 553,
+        "date": "2026-09-26"
     }
 ]

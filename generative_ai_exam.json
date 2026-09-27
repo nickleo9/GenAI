@@ -11038,5 +11038,175 @@
         "explanation": "No Code / Low Code平台主要優勢為可讓非程式人員透過提示詞快速設定資料整合及自動化流程，這是建立行銷報告系統的關鍵。",
         "number": 675,
         "date": "2026-09-20"
+    },
+    {
+        "question": "如果您是台灣一個中小企業主管，想利用No Code / Low Code工具快速開發內部數據管理系統，以下哪項是No Code平台的主要優勢？",
+        "options": [
+            "可以快速開發且降低開發成本",
+            "開發過程中無法調整業務邏輯",
+            "僅適用於個人使用，無法團隊協作",
+            "需要專業程式設計師才能上手使用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "快速開發與成本效益",
+        "explanation": "No Code / Low Code平台能幫助非程式設計背景的使用者快速完成應用程式開發，大幅降低企業開發成本和時間，是其主要優勢。",
+        "number": 676,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "在鑑別式AI與生成式AI的整合應用中，若一家金融公司希望透過AI提高詐騙偵測精準度，應該如何運用這兩種AI以達最佳效果？",
+        "options": [
+            "僅使用生成式AI創造更多偵測樣本",
+            "放棄鑑別式AI，直接用生成式AI生成詐騙案例",
+            "兩者完全獨立運作，避免相互影響",
+            "使用鑑別式AI偵測異常，生成式AI補充模型訓練"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "異質AI模型融合",
+        "explanation": "鑑別式AI擅長判別真偽，生成式AI則能創造樣本補強資料，兩者整合能有效提升金融詐騙偵測系統的準確率。",
+        "number": 677,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "身為自媒體經營者，您想利用No Code工具打造自動化內容發布流程，下列哪項是No Code的常見限制？",
+        "options": [
+            "操作界面過於複雜，不易上手",
+            "對流程自定義彈性較低",
+            "無法整合第三方API",
+            "需要撰寫大量程式碼"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "限制與適用場景",
+        "explanation": "No Code工具通常設計成低門檻，對高度自定義的業務流程可能彈性不足，是其主要限制之一。",
+        "number": 678,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "有位教育工作者希望教學中能利用鑑別式AI與生成式AI整合應用來提升學生作業檢核效率，下列哪一敘述最適合描述這種AI結合應用？",
+        "options": [
+            "丟給鑑別式AI處理所有教學任務，生成式AI不參與",
+            "生成式AI負責批改作業，鑑別式AI生成學生輔助教材",
+            "鑑別式AI判斷作業內容正確性，生成式AI產生輔導素材",
+            "只用生成式AI即可達到最準確的檢核效果"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "教育輔助整合",
+        "explanation": "鑑別式AI擅長精準判斷與分類，可用於檢核作業正確性；生成式AI則可根據結果生成個性化輔導內容，兩者互補強化教學效果。",
+        "number": 679,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "以下哪一項敘述正確描述了No Code / Low Code技術的基本概念？",
+        "options": [
+            "要求使用者需擁有基本程式設計能力",
+            "讓使用者完全不需編程即可設計應用程式的技術",
+            "僅針對資料分析而設計的程式開發工具",
+            "指只能使用少量程式碼輔助完成複雜系統開發"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "定義",
+        "explanation": "No Code 平台主旨是在不需撰寫程式碼或只需極少程式碼的情況下，讓使用者能快速開發應用，降低技術門檻。",
+        "number": 680,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "如果您是生產線主管，想結合鑑別式AI與生成式AI優化產品質檢流程，下列哪種整合策略最合理？",
+        "options": [
+            "兩者功能重疊，無須同時使用",
+            "只利用生成式AI模擬缺陷報告",
+            "只使用鑑別式AI做缺陷判斷",
+            "用生成式AI生成缺陷樣本，鑑別式AI做判別分類"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "工業應用整合",
+        "explanation": "生成式AI能創建缺陷樣本豐富訓練數據，鑑別式AI則用於分類和檢測，兩者結合提升質檢效率和準確度。",
+        "number": 681,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "身為資深主管，您評估一家No Code工具能加速企業流程自動化，下列何者為該技術不能完全克服的限制？",
+        "options": [
+            "不支持跨平台或多系統整合",
+            "無法簡化非技術人員的使用難度",
+            "對企業專有流程定制彈性較低",
+            "自動化流程設計必須使用複雜程式碼"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "技術限制",
+        "explanation": "No Code平台通常在標準場景表現良好，但面對複雜或專有業務流程時，其定制能力有限，難以完全滿足。",
+        "number": 682,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "設計師想運用生成式AI輔助設計海報時，若結合鑑別式AI做風格優化，哪種操作流程較符合鑑別式與生成式整合應用？",
+        "options": [
+            "先用生成式AI產出初稿，再用鑑別式AI評估並調整風格",
+            "先用鑑別式AI生成海報，再用生成式AI優化風格",
+            "同時用兩者獨立完成海報設計，最後人工合成",
+            "一開始只用鑑別式AI做整體設計"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "設計輔助",
+        "explanation": "生成式AI用於創建初步設計稿，鑑別式AI再對輸出做評估與優化，形成有效反饋迴圈，提升作品質量。",
+        "number": 683,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "若一位業務主管想利用No Code工具快速建置客戶關係管理系統，下列何者最可能是No Code平台面臨的限制？",
+        "options": [
+            "無法管理大量資料庫記錄",
+            "強制要求使用者具備編程能力",
+            "缺乏多用戶協作功能",
+            "客製化自動化流程彈性不足"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "企業應用挑戰",
+        "explanation": "No Code工具的自動化與流程設計有限，無法全部滿足企業對高度客製化的需求，是其常見限制。",
+        "number": 684,
+        "date": "2026-09-27"
+    },
+    {
+        "question": "根據2025年全球AI發展趨勢，若一名AI應用規劃師在台灣工作，希望推動生成式與鑑別式AI整合應用，哪種策略最符合當前主流規劃思路？",
+        "options": [
+            "優先建構生成式AI模組，後續考慮鑑別式AI集成",
+            "完全用鑑別式AI取代生成式AI以避免複雜度",
+            "協同設計，以生成式AI生成數據，鑑別式AI負責驗證與優化",
+            "獨立發展兩種AI，避免系統整合風險"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "策略規劃",
+        "explanation": "當代AI規劃普遍採用生成式AI與鑑別式AI協同設計策略，提升系統整體性能與準確度，是最有效的規劃思路。",
+        "number": 685,
+        "date": "2026-09-27"
     }
 ]

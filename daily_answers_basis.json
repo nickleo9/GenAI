@@ -17398,5 +17398,175 @@
         "explanation": "未經用戶同意分享個資給第三方，是明顯違反資料隱私與安全的行為。",
         "number": 1020,
         "date": "2026-09-28"
+    },
+    {
+        "question": "在機器學習的基本原理中，監督學習與非監督學習的主要區別是什麼？",
+        "options": [
+            "監督學習使用帶標籤的資料，而非監督學習則無需標籤資料",
+            "監督學習依賴於生成模型，非監督學習依賴於鑑別模型",
+            "監督學習只適用於結構化資料，非監督學習只能處理非結構化資料",
+            "監督學習僅用於分類任務，非監督學習僅用於回歸任務"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習基本原理",
+        "subtopic": "監督學習與非監督學習",
+        "concept": "機器學習類型",
+        "explanation": "監督學習基於有標籤的資料進行模型訓練，而非監督學習則在無標籤資料中尋找內在結構或模式。",
+        "number": 1021,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "在常見機器學習模型中，以下哪一種模型主要用於解決分類問題並基於概率計算？",
+        "options": [
+            "k-近鄰演算法（KNN）",
+            "支持向量機（SVM）",
+            "線性回歸",
+            "貝氏分類器"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "常見的機器學習模型",
+        "subtopic": "分類模型",
+        "concept": "貝氏分類器",
+        "explanation": "貝氏分類器是一種基於概率和貝葉斯定理的分類模型，適合用於分類問題。",
+        "number": 1022,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "在機器學習中，Bias-Variance Tradeoff 指的是什麼？",
+        "options": [
+            "模型在偏差和變異之間的平衡，偏差過高會欠擬合，變異過大會過擬合",
+            "資料在偏差與變異間的隨機分布，決定模型的準確率",
+            "偏差表示模型的複雜度，變異表示訓練資料的錯誤率",
+            "Tradeoff 指模型在訓練速度與精確度間的權衡"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "機器學習基本原理",
+        "subtopic": "模型偏差與變異",
+        "concept": "偏差變異權衡",
+        "explanation": "Bias-Variance Tradeoff 是機器學習中重要的概念，描述模型在偏差與變異之間需取得平衡，以避免欠擬合或過擬合。",
+        "number": 1023,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "以下哪一項不是常見的生成模型？",
+        "options": [
+            "自回歸模型（AR）",
+            "決策樹（Decision Tree）",
+            "變分自編碼器（VAE）",
+            "生成對抗網路（GAN）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "常見的機器學習模型",
+        "subtopic": "生成模型",
+        "concept": "生成模型種類",
+        "explanation": "決策樹是一種鑑別模型，用於分類和回歸問題，並非生成模型。",
+        "number": 1024,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "在鑑別式 AI 與生成式 AI 的基本原理差異中，何者敘述正確？",
+        "options": [
+            "鑑別式 AI 無法用於機器學習任務，生成式 AI 可",
+            "鑑別式 AI 主要學習資料的決策邊界，生成式 AI 學習資料的分布模式",
+            "鑑別式 AI 專注於建模資料生成過程，生成式 AI 用於分類資料",
+            "兩者皆只用於文字生成任務，但方法不同"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "subtopic": "原理比較",
+        "concept": "鑑別式與生成式差異",
+        "explanation": "鑑別式 AI 通過學習決策邊界來分類資料，生成式 AI 則嘗試學習資料的分布以生成新樣本。",
+        "number": 1025,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "在實務應用中，生成式 AI 最常用於以下何種場景？",
+        "options": [
+            "資料分類和標註",
+            "簡單數據清洗和轉換",
+            "監督式模型精度提升",
+            "合成新影像與語言內容生成"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "subtopic": "生成式 AI 應用",
+        "concept": "生成式 AI 應用場景",
+        "explanation": "生成式 AI 最常用於合成影像、語言等內容，創造新數據樣本。",
+        "number": 1026,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "在機器學習模型中，KNN（k-Nearest Neighbors）是屬於哪種類型？",
+        "options": [
+            "深度學習模型，利用多層神經網路進行特徵抽取",
+            "鑑別模型，通過鄰近距離度量決定分類結果",
+            "生成模型，通過建模資料分佈來生成新樣本",
+            "強化學習模型，基於獎勵機制迭代學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "常見的機器學習模型",
+        "subtopic": "模型類型",
+        "concept": "KNN分類",
+        "explanation": "KNN 是基於鄰近距離的鑑別模型，用於分類或回歸，通過比較樣本間距離做判斷。",
+        "number": 1027,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "以下對鑑別式 AI 的敘述何者錯誤？",
+        "options": [
+            "鑑別式 AI 適合生成圖像和文本內容",
+            "鑑別式 AI 不嘗試建模資料的整體分佈",
+            "鑑別式 AI 模型旨在直接學習決策邊界以分類資料",
+            "支持向量機（SVM）屬於鑑別式模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "subtopic": "鑑別式 AI 特性",
+        "concept": "鑑別式 AI 限制",
+        "explanation": "鑑別式 AI 主要用於分類和辨識，並不適合直接生成圖像或文本內容，此為生成式 AI 的功能。",
+        "number": 1028,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "在深度學習中，Transformer 模型是基於下列何種機制運作？",
+        "options": [
+            "自注意力（Self-Attention）機制",
+            "卷積運算（Convolution）",
+            "強化學習中的政策網路",
+            "遞歸神經網路（RNN）結構"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "常見的機器學習模型",
+        "subtopic": "深度學習架構",
+        "concept": "Transformer",
+        "explanation": "Transformer 採用自注意力機制，能有效捕捉長距離依賴，提高序列數據處理效率。",
+        "number": 1029,
+        "date": "2026-09-30"
+    },
+    {
+        "question": "機器學習中，何者最能反映生成式 AI 與鑑別式 AI 結合應用的典型例子？",
+        "options": [
+            "兩者獨立運作，無結合應用案例",
+            "使用生成式 AI 創建新語料，鑑別式 AI 進行分類標註",
+            "鑑別式 AI 用於數據預處理，生成式 AI 用於強化學習",
+            "生成式 AI 主要用於監督學習，鑑別式 AI 用於無監督學習"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "subtopic": "整合應用",
+        "concept": "AI整合應用範例",
+        "explanation": "生成式 AI 可生成新數據樣本，鑑別式 AI 利用這些資料進行分類或判斷，達成兩者整合應用。",
+        "number": 1030,
+        "date": "2026-09-30"
     }
 ]

@@ -9569,5 +9569,175 @@
         "explanation": "生成內容的色彩飽和度為視覺美學參數，與導入評估關鍵技術、成本及合規門檻無關，真正重要的門檻包括準確率、成本、延遲及合規風險管理。",
         "number": 563,
         "date": "2026-09-29"
+    },
+    {
+        "question": "關於生成式 AI 導入評估規劃，下列哪項描述最準確？",
+        "options": [
+            "A. 導入評估重點在模型架構選擇，較少考慮業務流程配合度",
+            "C. 評估階段可完全忽略資料隱私與合規風險，直接進入開發階段",
+            "B. 適合先從高價值且易落地的用例做小規模試點，再依結果調整擴展策略",
+            "D. 重點是提升模型訓練速度，並預測未來硬體資源需求"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估與試點策略",
+        "explanation": "生成式AI導入評估應從高價值且易執行的用例入手，通過試點評估資料、技術及使用者接受度，再部署及調整，這是有效的導入規劃方法。",
+        "number": 564,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "在生成式 AI 風險管理中，下列何者最能反映模型「幻覺」（Hallucination）現象的風險？",
+        "options": [
+            "D. 系統版本控管不當引起模型性能下降",
+            "C. 模型運行時需要消耗巨大硬體資源導致延遲",
+            "B. 輸出內容為語法正確但事實錯誤或不存在的資訊",
+            "A. 模型生成的內容符合事實且高度一致"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "幻覺風險",
+        "explanation": "生成式AI模型幻覺是指模型創造出語法合理但事實不正確或不存在的資訊，此為生成式AI風險管理中需特別注意的問題。",
+        "number": 565,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "哪一項不是 No Code / Low Code 平台的優勢？",
+        "options": [
+            "C. 降低對專業程式設計師的依賴",
+            "A. 可迅速開發原型與減少部署時間",
+            "B. 支援複雜且深度定制的系統架構",
+            "D. 促進業務部門與技術團隊間協作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台優勢與限制",
+        "explanation": "No Code / Low Code 平台適合簡單至中等複雜度的應用快速開發設計，不適合複雜且深度定制的系統架構，這是其限制。",
+        "number": 566,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "在生成式 AI 導入規劃的實務操作中，下列哪一行動是較不適合的？",
+        "options": [
+            "A. 先明確業務需求與目標，再選擇模型及工具",
+            "B. 初期即全自動化，完全不設定人工審核",
+            "C. 建立明確的資料治理和安全政策",
+            "D. 持續監控模型表現及使用者反饋以優化應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入流程策略",
+        "explanation": "生成式 AI 導入初期不宜完全自動化，因生成內容可能有風險，設置人工審核（Human-in-the-loop）是必要風險控管措施。",
+        "number": 567,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "生成式 AI 風險管理中，哪一項措施最能有效防止用戶敏感資料外洩？",
+        "options": [
+            "D. 不進行任何監控以加速模型生成速度",
+            "A. 僅依賴模型端學習的不透明數據過濾",
+            "C. 增強模型的生成字數及多樣性",
+            "B. 實施嚴格的輸入提示詞過濾和數據脫敏"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資料隱私保護",
+        "explanation": "為防止用戶敏感資料外洩，必須對輸入進行嚴格的過濾與脫敏處理，確保不包含個資或受保護信息，是管理生成式AI風險重要步驟。",
+        "number": 568,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "哪一項描述錯誤地反映了生成式 AI 風險管理與傳統 IT 風險管理的差異？",
+        "options": [
+            "C. 生成式 AI 風險管理需結合倫理合規及內容審查機制",
+            "A. 生成式 AI 風險管理著重於提示詞誤用和模型幻覺的控制",
+            "B. 生成式 AI 風險管理不包含數據隱私保護，僅針對模型功能管理",
+            "D. 傳統 IT 風險管理較偏重於系統可用性和資安防護"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "生成式 AI 風險管理與傳統 IT 風險管理比較",
+        "explanation": "生成式 AI 風險管理需包含數據隱私保護、倫理合規等專門議題，而非僅針對模型功能，因此選項B為錯誤陳述。",
+        "number": 569,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "No Code 與 Low Code 平台的主要差異為何？",
+        "options": [
+            "D. No Code 解決方案用於 AI，Low Code 僅應用於傳統軟體",
+            "B. No Code 只支援簡單報表，Low Code 僅適用數據整合",
+            "C. No Code 專注於前端設計，Low Code 完全針對後端開發",
+            "A. No Code 不需任何程式碼，Low Code 允許少量程式碼自訂"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code 與 Low Code 的定義與比較",
+        "explanation": "No Code 平台基本不需撰寫程式碼即可建置應用，而 Low Code 則允許有限度程式碼加入以擴充功能，是主要區別。",
+        "number": 570,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "在 No Code / Low Code 應用中，哪種情境最適合選擇 No Code 平台？",
+        "options": [
+            "C. 大型分散式系統開發需高效能程式碼優化",
+            "A. 業務單位需快速建立標準化申請流程，無開發資源",
+            "D. 技術團隊希望用低階程式語言重寫全部應用",
+            "B. 需要複雜數據運算與自訂系統架構的企業級解決方案"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code 應用情境",
+        "explanation": "No Code 平台最適合業務部門快速構建流程和表單，自行組合組件且無需程式資源的情況下使用。",
+        "number": 571,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "在生成式 AI 導入風險管理中，下列哪項做法最不合適？",
+        "options": [
+            "A. 確保敏感信息在提示詞和輸出中均有適當保護",
+            "D. 保持合規並遵守相關法規與政策標準",
+            "C. 持續監控模型輸出品質與偏差情況",
+            "B. 不設置任何人工審核機制，完全依賴模型自動輸出"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險控管措施",
+        "explanation": "完全無人工審核是不適合的風險控管方式，因生成內容可能出錯或違規，人審是必要的風險管控手段。",
+        "number": 572,
+        "date": "2026-10-01"
+    },
+    {
+        "question": "生成式 AI 導入規劃中，下列哪項事前準備最不必要？",
+        "options": [
+            "A. 清楚界定業務問題與目標場景",
+            "C. 完全無須關注組織內部人員的接受度",
+            "D. 評估現有技術資源與成本效益",
+            "B. 確定是否可使用公開數據與測試模型"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入規劃準備事項",
+        "explanation": "組織內部人員接受度是導入成功的關鍵因素，忽視此一點將嚴重影響專案推行，不可輕忽。",
+        "number": 573,
+        "date": "2026-10-01"
     }
 ]

@@ -9739,5 +9739,175 @@
         "explanation": "組織內部人員接受度是導入成功的關鍵因素，忽視此一點將嚴重影響專案推行，不可輕忽。",
         "number": 573,
         "date": "2026-10-01"
+    },
+    {
+        "question": "以下何者是2025年No Code / Low Code開發平台主要優勢？",
+        "options": [
+            "大幅縮短開發週期，讓非技術人員也能參與開發",
+            "能完全取代傳統軟體開發，無需任何工程介入",
+            "平台依賴性低，容易自由移植至任何其他系統",
+            "適用於所有高複雜度核心系統的生產環境"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台優勢",
+        "explanation": "2025年No Code / Low Code的主要優勢在於縮短開發週期與降低技術門檻，讓非技術用戶也能參與應用建置，但它並不能完全取代傳統開發，也不適合所有核心系統，且平台依賴仍是一大限制。",
+        "number": 574,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "關於No Code與Low Code開發的比較，下列敘述何者正確？",
+        "options": [
+            "No Code需要寫大量代碼，Low Code完全可視化無代碼",
+            "No Code完全不需程式編寫，Low Code仍需少量程式碼",
+            "兩者皆需大量編寫自定義複雜邏輯程式碼",
+            "No Code與Low Code兩者功能與限制完全相同"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "No Code vs Low Code",
+        "explanation": "No Code平台允許用戶通過圖形界面打造應用，幾乎不需任何程式碼；而Low Code平台雖降低了程式編寫量，但仍需部分編碼完成高度客製化。",
+        "number": 575,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "當企業選擇生成式AI應用工具時，最適合用於快速原型設計和市場測試的工具類型為何？",
+        "options": [
+            "低代碼/無代碼平台",
+            "全自主編碼軟體開發",
+            "純手工資料分析工具",
+            "傳統大型ERP系統"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "應用場景",
+        "explanation": "低代碼及無代碼平台憑藉快速交付及易於迭代的特性，非常適合快速原型設計和市場需求測試，能節省時間成本。",
+        "number": 576,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "生成式AI常見的應用領域不包含下列哪項？",
+        "options": [
+            "數據安全防護系统核心設計",
+            "內容生成與行銷",
+            "軟體開發與程式碼生成",
+            "客服與聊天機器人"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "應用領域",
+        "explanation": "生成式AI主要專注於內容生成、客服對話、行銷推廣及軟體開發等領域，核心數據安全防護系統設計通常屬於其他AI或安全技術範疇。",
+        "number": 577,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "2025年以下哪類生成式AI工具最常見，用於提升企業文案撰寫與郵件生成效率？",
+        "options": [
+            "圖像生成工具",
+            "數據分析模型",
+            "影音剪輯工具",
+            "文字生成工具"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "工具類型",
+        "explanation": "文字生成工具專注於自動化撰寫文案、郵件和報告，因應企業內容產出的需求極為廣泛，因此是2025年最普遍應用的生成式AI類型。",
+        "number": 578,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "在應用生成式AI工具時，哪種使用方式較不符合善用生成式AI的最佳原則？",
+        "options": [
+            "使用多重工具交叉驗證重要資訊",
+            "將AI輸出當作正式定稿直接使用",
+            "明確定義目標和輸出格式",
+            "持續優化提示詞以提升輸出品質"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "操作原則",
+        "explanation": "生成式AI輸出通常作為初稿或輔助，需要人工編修和事實查核，直接當成正式定稿可能造成錯誤與誤導。",
+        "number": 579,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "關於使用生成式AI工具進行協作，下列哪項為正確的操作建議？",
+        "options": [
+            "隨意跳題讓AI產出更多多樣性答覆",
+            "將敏感企業資料大量輸入公有模型",
+            "在一個對話中維持連貫主題，避免頻繁切換",
+            "只使用單一工具以增加結果一致性"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "操作技巧",
+        "explanation": "維持對話連貫有助於AI更準確理解上下文，避免頻繁跳題可提升輸出品質，而敏感資料應避免輸入公有模型，多工具混用則有助於交叉驗證。",
+        "number": 580,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "以下哪種生成式AI工具最適合用於設計概念草圖及視覺創意？",
+        "options": [
+            "圖像生成工具",
+            "文本摘要工具",
+            "問答聊天工具",
+            "程式碼生成工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "工具對應應用",
+        "explanation": "圖像生成工具能自動創造設計概念草圖、配色建議及視覺素材，是設計與創意產業中廣泛用於輔助創作的類型。",
+        "number": 581,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "在生成式AI工具的使用過程中，何者非屬於有效提示詞（Prompt）的寫法？",
+        "options": [
+            "使用模糊指令並避免上下文補充",
+            "明確限定輸出語氣、篇幅與限制條件",
+            "提供範例或相關背景資料以輔助理解",
+            "包含任務目標、角色設定及輸出格式"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示詞工程",
+        "explanation": "有效提示詞需要具體清楚，包含目標、角色、格式及上下文，避免使用模糊指令，這樣才能提升生成品質和精確度。",
+        "number": 582,
+        "date": "2026-10-03"
+    },
+    {
+        "question": "生成式AI工具的善用策略中，以下哪項最能幫助用戶持續獲得高品質輸出？",
+        "options": [
+            "反覆迭代提示詞及補充上下文",
+            "隨意改變任務目標導致輸出多樣",
+            "限制使用多種工具避免混淆",
+            "依賴第一次生成結果不再修改"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "反覆迭代與優化",
+        "explanation": "質量優良的生成結果往往來自持續優化提示詞與補充上下文背景，反覆對話並修正可以提升內容精確性和相關度。",
+        "number": 583,
+        "date": "2026-10-03"
     }
 ]

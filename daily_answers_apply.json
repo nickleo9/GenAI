@@ -9909,5 +9909,175 @@
         "explanation": "質量優良的生成結果往往來自持續優化提示詞與補充上下文背景，反覆對話並修正可以提升內容精確性和相關度。",
         "number": 583,
         "date": "2026-10-03"
+    },
+    {
+        "question": "Which statement best captures the planning implication of Generative AI in an enterprise strategy?",
+        "options": [
+            "It only supports numerical forecasting and anomaly detection.",
+            "It creates new multimodal content from learned patterns and prompts.",
+            "It replaces all human review because outputs are inherently authoritative.",
+            "It mainly improves deterministic rule execution and workflow branching."
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "Generative AI content creation capability",
+        "explanation": "Generative AI is distinguished by content creation, not merely classification or prediction. In planning, this means the organization must evaluate use cases where novel content generation adds value, such as drafting, design, synthesis, or conversational assistance. Other options describe different AI types or misunderstand risk and governance.",
+        "number": 584,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "A planning team must choose between a discriminative model and a generative model for a customer-support use case. Which choice is most appropriate if the goal is to generate first-draft replies from policy and case history?",
+        "options": [
+            "Either model is identical if the training data are large enough.",
+            "Generative model, because it can synthesize response text from context.",
+            "Discriminative model, because it is optimized for selecting one class label.",
+            "Neither model is suitable because AI cannot support support-center drafting."
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "Model choice by task: generative vs discriminative",
+        "explanation": "Discriminative models classify or select labels, whereas generative models synthesize new content, making them suitable for drafting text. Assuming equivalence or dismissing AI's utility is inaccurate.",
+        "number": 585,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "An executive sponsor wants to launch Generative AI quickly in a regulated organization. Which pilot scope is the best first step for planning?",
+        "options": [
+            "A customer-facing autonomous agent that can execute transactions immediately.",
+            "Replacing the entire knowledge management system before testing.",
+            "A low-risk internal drafting assistant with review and approval gates.",
+            "Automating final legal decisions with no human oversight."
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "Pilot scoping and risk control",
+        "explanation": "A low-risk assistant with human oversight balances innovation and compliance, providing measurable value safely. Other choices introduce excessive risk or premature scale-up.",
+        "number": 586,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "True or false: Generative AI risk management should focus only on cybersecurity because content-quality errors are not material enterprise risks.",
+        "options": [
+            "True",
+            "True only for public sector systems.",
+            "False",
+            "False only if the model is open source."
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "Comprehensive risk management in GenAI",
+        "explanation": "Content-quality risks such as hallucinations or bias affect decisions and compliance, making a narrow cybersecurity focus insufficient.",
+        "number": 587,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "A generative assistant is producing polished but occasionally inaccurate policy summaries for executives. What is the best risk control design?",
+        "options": [
+            "Allow unsupervised publication because fluency indicates accuracy.",
+            "Increase temperature so the model becomes more creative and less repetitive.",
+            "Add retrieval grounding, citation checks, and human approval for final output.",
+            "Remove all source documents to prevent the model from copying text."
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "Managing hallucinations and output accuracy",
+        "explanation": "Ensuring outputs are supported by authoritative sources and human review mitigates risk from incorrect content. Fluency does not guarantee accuracy, and extreme creativity or lack of source context worsens risk.",
+        "number": 588,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "Which control is most effective for reducing the risk of confidential-data exposure in enterprise Generative AI use?",
+        "options": [
+            "A larger model with more parameters and longer context.",
+            "A data-classification policy combined with input/output filtering.",
+            "A style guide for more concise prompts.",
+            "A prompt library with generic examples only."
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "Data governance and filtering",
+        "explanation": "Data classification and filtering directly limit exposure of sensitive information. Style guides or generic prompts do not control data leakage risks, and model size does not inherently protect data confidentiality.",
+        "number": 589,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "Which statement best differentiates No Code from Low Code in enterprise planning?",
+        "options": [
+            "No Code emphasizes visual configuration, while Low Code allows code for extension.",
+            "Low Code always eliminates business-user participation.",
+            "They are identical because both eliminate governance needs.",
+            "No Code always requires more engineering than Low Code."
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code vs Low Code distinction",
+        "explanation": "No Code platforms target minimal or no coding with visual tools, while Low Code platforms permit coding for more complex or customized functions. Other options misunderstand roles or governance.",
+        "number": 590,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "A business unit needs a workflow app for leave requests, but it also needs audit logging, API integration, and a few custom validation rules. Which option is most suitable?",
+        "options": [
+            "Low Code, because it supports configuration plus limited custom logic.",
+            "Traditional handwritten development only, because governance requires coding from scratch.",
+            "Spreadsheet macros, because they scale best for auditability.",
+            "No Code, because any workflow app can be built without extensions."
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "Platform selection by requirements",
+        "explanation": "Low Code balances rapid development with technical customization and integration capabilities. No Code may be insufficient for these requirements. Hand coding is unnecessary at this scope, and macros are weak for enterprise-level audit needs.",
+        "number": 591,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "Which trade-off most accurately reflects enterprise use of No Code platforms compared with Low Code platforms?",
+        "options": [
+            "Low Code prevents citizen development entirely.",
+            "Low Code always has lower governance requirements than No Code.",
+            "No Code often improves speed but may limit complex extension and portability.",
+            "No Code usually maximizes customization depth while minimizing speed."
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "Trade-offs between No Code and Low Code",
+        "explanation": "No Code platforms speed delivery but reduce flexibility for complex customizations and integration. Low Code supports more extensibility but requires more technical involvement. Other options misstate the realities of these platforms.",
+        "number": 592,
+        "date": "2026-10-06"
+    },
+    {
+        "question": "True or false: A No Code / Low Code program is safest when business users can publish production apps independently without platform standards or review.",
+        "options": [
+            "False",
+            "True",
+            "True only if the apps are internal.",
+            "False only for regulated industries."
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "Governance in citizen development",
+        "explanation": "Allowing ungoverned publishing risks fragmentation, inconsistency, and security breaches. Governance via templates, testing, access controls, and approval workflows is essential across industries.",
+        "number": 593,
+        "date": "2026-10-06"
     }
 ]

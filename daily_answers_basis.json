@@ -17918,5 +17918,175 @@
         "explanation": "完整的資料分析流程通常依序為收集資料、清理、探索、建模與評估，確保資料品質與模型準確度。",
         "number": 1050,
         "date": "2026-10-05"
+    },
+    {
+        "question": "以下哪一項不屬於常見的機器學習模型？",
+        "options": [
+            "A. 支持向量機 (SVM)",
+            "B. 決策樹",
+            "C. 生成對抗網路 (GAN)",
+            "D. 隨機森林"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "機器學習模型",
+        "subtopic": "常見的機器學習模型",
+        "concept": "模型分類",
+        "explanation": "生成對抗網路 (GAN) 是一種生成式深度學習模型，主要用於生成式 AI，並不屬於傳統機器學習模型如監督式分類和回歸模型。",
+        "number": 1051,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "在區分鑑別式 AI 與生成式 AI 的基本原理時，以下敘述哪一項是錯誤的？",
+        "options": [
+            "C. 鑑別式模型能直接生成數據樣本",
+            "B. 生成式模型著重於學習數據的完整分布並生成新樣本",
+            "D. 生成式模型通常用於圖像、文本等內容創造",
+            "A. 鑑別式模型旨在區分不同類別數據的概率分布"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "鑑別式與生成式模型區別",
+        "explanation": "鑑別式模型主要是用於分類或預測任務，不能直接生成新數據樣本；生成式模型則學習數據分布，並可生成新樣本。",
+        "number": 1052,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "某企業希望利用機器學習模型從客戶購買行為中預測未來消費趨勢，下列哪一種機器學習模型最適合此預測任務？",
+        "options": [
+            "C. K-均值聚類 (K-means)",
+            "B. 線性迴歸",
+            "A. 支持向量機 (SVM)",
+            "D. 卷積神經網路 (CNN)"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習模型",
+        "subtopic": "常見的機器學習模型",
+        "concept": "迴歸分析",
+        "explanation": "線性迴歸模型適合連續數值的預測問題，像是消費趨勢的量化預測；SVM更多用於分類，聚類屬非監督學習，CNN主要用於影像。",
+        "number": 1053,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "在整合鑑別式 AI 與生成式 AI 技術應用時，下列敘述何者為非？",
+        "options": [
+            "D. 鑑別式 AI 完全取代生成式 AI 的功能",
+            "C. 兩者結合可以提升模型的可解釋性和準確率",
+            "A. 生成式 AI 可以用來豐富鑑別式 AI 訓練資料",
+            "B. 鑑別式 AI 可評估生成式 AI 的輸出結果品質"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式與鑑別式 AI 應用",
+        "subtopic": "整合應用",
+        "concept": "生成與鑑別整合",
+        "explanation": "鑑別式 AI 和生成式 AI 在應用中通常互補並結合使用，而非完全取代彼此的功能。",
+        "number": 1054,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "以下哪一種機器學習模型最適合用於非監督式學習的資料分群？",
+        "options": [
+            "D. 支持向量機 (SVM)",
+            "B. K-均值聚類 (K-means)",
+            "C. 邏輯迴歸",
+            "A. 決策樹"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習模型",
+        "subtopic": "常見的機器學習模型",
+        "concept": "非監督學習",
+        "explanation": "K-means 是典型的非監督式學習分群方法，用於將未標記資料分群；決策樹、邏輯迴歸與 SVM 通常為監督式學習模型。",
+        "number": 1055,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "生成式 AI 模型中的「生成對抗網路 (GAN)」基本原理是？",
+        "options": [
+            "B. 透過回歸分析建立目標變數與輸入變數關係",
+            "D. 以監督式學習方式預測資料標籤",
+            "C. 利用決策樹分割資料以進行分類",
+            "A. 利用兩個網路模型競爭來改善生成樣本的真實性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "鑑別式與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "GAN 基本原理",
+        "explanation": "生成對抗網路由生成器和判別器兩部分組成，透過競爭學習過程提升生成樣本的真實度。",
+        "number": 1056,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 在應用上的差異主要是？",
+        "options": [
+            "B. 鑑別式 AI 側重辨識與分類，生成式 AI 側重創作與生成",
+            "D. 鑑別式 AI 借助深度學習，生成式 AI 不使用深度學習",
+            "A. 鑑別式 AI 用於回答問題，生成式 AI 用於數據標記",
+            "C. 鑑別式 AI 僅用於影像處理，生成式 AI 僅用於文字處理"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式與生成式 AI",
+        "subtopic": "基本原理",
+        "concept": "應用差異",
+        "explanation": "鑑別式 AI 主要用於辨識分類任務，如影像分類；生成式 AI 則用於生成新內容，如文本或圖像創作。",
+        "number": 1057,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "一家公司希望利用生成式 AI 自動生成客服回覆，但也想確保回答正確率高，最合適的整合方案是？",
+        "options": [
+            "C. 資料清理以後直接部署生成式 AI",
+            "D. 結合非監督式學習直接分類客戶問題",
+            "B. 用鑑別式 AI 檢驗生成式 AI 回覆的正確性",
+            "A. 只使用純生成式 AI，自動回覆"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式與鑑別式 AI 應用",
+        "subtopic": "整合應用",
+        "concept": "生成式與鑑別式整合",
+        "explanation": "用鑑別式 AI 來評估和篩選生成式 AI 產生的答覆，可以提升回答的準確率與可靠性。",
+        "number": 1058,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "在常見的機器學習模型中，哪一種模型能自然地處理非線性關係並降低過擬合風險？",
+        "options": [
+            "C. 邏輯迴歸",
+            "B. 隨機森林",
+            "D. 支持向量機",
+            "A. 線性迴歸"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習模型",
+        "subtopic": "常見的機器學習模型",
+        "concept": "模型特性",
+        "explanation": "隨機森林透過多顆決策樹集成，有效捕捉非線性關係且降低過擬合，適合複雜資料。",
+        "number": 1059,
+        "date": "2026-10-07"
+    },
+    {
+        "question": "下列何者最能表達生成式 AI 和鑑別式 AI 整合應用的實務價值？",
+        "options": [
+            "A. 提升資料標註效率，縮短訓練時間",
+            "D. 僅依賴鑑別模型處理所有流程",
+            "B. 用生成模型擴充資料，鑑別模型提升品質控制準確",
+            "C. 生成模型替換鑑別模型，避免複雜性增加"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式與鑑別式 AI 應用",
+        "subtopic": "整合應用",
+        "concept": "應用價值",
+        "explanation": "整合使用生成式模型來擴充資料，再用鑑別式模型來提升資料的品質與準確度，是實務中常見並有效的策略。",
+        "number": 1060,
+        "date": "2026-10-07"
     }
 ]

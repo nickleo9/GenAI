@@ -10079,5 +10079,175 @@
         "explanation": "Allowing ungoverned publishing risks fragmentation, inconsistency, and security breaches. Governance via templates, testing, access controls, and approval workflows is essential across industries.",
         "number": 593,
         "date": "2026-10-06"
+    },
+    {
+        "question": "在無需寫程式背景的企業用戶中，No Code / Low Code 平台最大且常見的限制是什麼？",
+        "options": [
+            "A. 開發速度受限且維護成本高",
+            "C. 平台本身安全性不足導致資料外洩頻繁",
+            "D. 無法支援與外部系統集成的API介面",
+            "B. 供應商鎖定風險以及自訂彈性不足"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "供應商鎖定與平台彈性",
+        "explanation": "No Code/Low Code 平台通常能提升開發速度和可操作性，但最大限制為供應商鎖定，即平台特定的技術限制和API改動會造成切換成本高。此外，自訂功能和深度客製化有限，限制了某些複雜業務的實作能力。",
+        "number": 594,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "低程式碼平台相較於傳統軟體開發在企業專案中，最具顯著的優勢是什麼？",
+        "options": [
+            "B. 促進企業業務人員快速參與應用設計與迭代",
+            "C. 確保軟體產品的高度安全性與穩定性",
+            "D. 自動產生所有測試案例並進行完整測試",
+            "A. 可完全替代專業開發團隊降低人力需求"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "業務參與加速迭代",
+        "explanation": "低程式碼平台主要優勢在於降低技術門檻，讓非程式人員也能參與應用開發與快速迭代，促使業務需求能被快速反映，提高企業應變速度。完全替代開發團隊或自動化測試並非其強項。",
+        "number": 595,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "No Code 與 Low Code 平台最大的差異在於？",
+        "options": [
+            "B. Low Code 完全無需編寫程式，No Code 則需少量程式碼",
+            "A. No Code 完全無需編寫程式，Low Code 則允許部分程式碼撰寫",
+            "C. No Code 僅限單一行業，Low Code 則跨多行業應用",
+            "D. 兩者本質相同，僅名稱不同"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "No Code 與 Low Code 定義比較",
+        "explanation": "No Code 強調完全使用圖形化界面與工具，不需撰寫任何程式碼，而 Low Code 則允許在圖形化之外，有少量程式碼撰寫以實現更複雜功能。這是兩者的本質差異。",
+        "number": 596,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "生成式AI在以下哪個領域的應用仍屬前沿且涉及高專業門檻？",
+        "options": [
+            "A. 自然語言聊天機器人",
+            "D. 自動化社群媒體圖像生成",
+            "C. 藥物分子結構生成與設計",
+            "B. 商業文檔自動摘要"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "專業領域應用",
+        "explanation": "雖然自然語言處理及影像生成有廣泛應用，但藥物分子生成涉及複雜生物化學知識與嚴格的實驗驗證，屬生成式AI中專業技術門檻高且應用前沿的領域。",
+        "number": 597,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "下列哪一款生成式AI工具最適合在本地端部署、支持可控的影像生成與細緻調整？",
+        "options": [
+            "D. Google Bard 服務",
+            "B. DALL·E 3 雲端版",
+            "A. OpenAI GPT-4",
+            "C. Stable Diffusion 開源版本"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "開源工具與部署彈性",
+        "explanation": "Stable Diffusion 為開源的生成式影像模型，支持本地端部署，方便自訂及微調，相較於其他主要雲端服務更適合需高控制權的專業用戶。GPT-4及Google Bard主要為文字生成服務，DALL·E多為雲端版。",
+        "number": 598,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "在內容創作領域，生成式AI工具如ChatGPT、Claude最主要的應用優勢為何？",
+        "options": [
+            "C. 直接取代人類編輯完成所有文稿潤飾工作",
+            "B. 協助生成多樣化且具創意的初稿文本內容",
+            "A. 自動化資料蒐集並進行嚴格事實檢驗",
+            "D. 僅能生成固定模板內的文字，不適用自由創作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "生成式AI創意文本",
+        "explanation": "這類生成式AI擅長快速產生多樣且具創意的文本草稿，協助輔助寫作與內容構思，但並非能完全自動取代人類修訂，也不專注於嚴格事實檢核。",
+        "number": 599,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "當使用生成式AI工具處理敏感企業資料時，下列哪種做法最適合保障資料安全？",
+        "options": [
+            "A. 全面禁用所有生成式AI工具以防外洩風險",
+            "D. 無需限制，因為生成式AI本身具備加密保護",
+            "C. 授權專人限制存取並實施訊息脫敏與監控",
+            "B. 僅用開源本地部署的模型，避免雲端數據傳輸"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "資料安全策略",
+        "explanation": "適當的數據安全措施包括限制存取權限、資料脫敏和使用監控機制，而非全面禁用或完全依賴工具的自帶加密。使用本地模型雖可減少風險，但仍需嚴格管理使用。",
+        "number": 600,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "在生成式AI工具的提示詞設計中，下列哪一種策略有助於提高生成結果的準確性與可控性？",
+        "options": [
+            "B. 只使用簡短指令，讓模型自由發揮",
+            "C. 不提供上下文，讓模型憑聯想生成內容",
+            "D. 輸入不完整句子以激發模型創意",
+            "A. 給予詳細的角色設定、操作規則與輸出格式約束"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示詞工程",
+        "explanation": "精確且具結構化的提示詞設計能限制模型生成的範圍與格式，避免偏差和不必要的發揮，從而提高結果的穩定性和專業度。自由式簡短指令則風險較大且難以控管。",
+        "number": 601,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "在生成式AI應用規劃中，導入評估時應優先考量哪項風險？",
+        "options": [
+            "B. 生成內容的合規風險與偏見引發之負面效應",
+            "D. 模型訓練資料量過少導致結果過於多樣",
+            "C. 使用者界面設計不符合潮流美學",
+            "A. 模型運算速度過快，導致成本過高"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "風險治理",
+        "explanation": "生成內容可能包含偏見、不實或違規資訊，帶來法律及聲譽風險，因此合規與偏見管理是導入時首要風險考量。運算成本及介面設計雖重要，但非首要風險。",
+        "number": 602,
+        "date": "2026-10-08"
+    },
+    {
+        "question": "生成式AI工具輸出結果不正確時，哪種善用方法最能有效提升結果品質？",
+        "options": [
+            "C. 無視錯誤，直接產出供使用者自行判別",
+            "A. 反覆增長輸入文字長度直到滿足要求",
+            "B. 使用結構化、多階段提示並加入反饋指令",
+            "D. 切換多個不同工具，隨機使用不做選擇"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示詞優化與迭代",
+        "explanation": "多階段與結構化提示詞搭配明確反饋指令，可引導模型聚焦正確資訊，提升準確度。單純增加文字長度或隨機切換工具無法系統性解決內容品質問題。",
+        "number": 603,
+        "date": "2026-10-08"
     }
 ]

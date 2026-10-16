@@ -18598,5 +18598,175 @@
         "explanation": "生成式 AI 可用於製造更多樣本提升鑑別式 AI 訓練效果，兩種 AI 形成互補增強系統。",
         "number": 1090,
         "date": "2026-10-14"
+    },
+    {
+        "question": "何謂AI治理中的「資料最小化」原則？",
+        "options": [
+            "A. 僅收集完成業務所需的最少資料，避免過度蒐集個資",
+            "B. 將所有資料集中存放以增強分析能力",
+            "D. 無限制地保留用戶所有行為數據以改進模型",
+            "C. 定期刪除所有過期資料以降低資料庫容量"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI治理概念",
+        "concept": "資料隱私與安全",
+        "explanation": "資料最小化是指在資料蒐集階段，只收集與業務目的相關且必要的資料，以避免過度蒐集，降低個資外洩風險，且符合個資保護規範。B、C、D選項與此原則相反，可能增加風險。",
+        "number": 1091,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "某企業蒐集來自官網訪問紀錄與第三方社交平台資料作為分析源頭，這類資料主要屬於哪種資料來源？",
+        "options": [
+            "C. 僅屬於結構化資料",
+            "A. 結構化資料與半結構化資料混合",
+            "B. 完全非結構化資料",
+            "D. 僅屬於半結構化資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料來源種類",
+        "explanation": "網站訪問紀錄通常為結構化資料（如數字、日期），而社交平台數據多為半結構化的JSON、文字等格式，因此為混合型。B、C、D過於單一描述，不符合實情。",
+        "number": 1092,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "在資料整理流程中，ETL的順序代表何種意義？",
+        "options": [
+            "A. Extract（抽取）、Transform（轉換）、Load（載入）",
+            "C. Load（載入）、Extract（抽取）、Transform（轉換）",
+            "D. Transform（轉換）、Load（載入）、Extract（抽取）",
+            "B. Extract（轉換）、Transform（載入）、Load（抽取）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL流程",
+        "explanation": "ETL是資料處理的經典流程：先從來源抽取資料（Extract），接著針對資料清洗或格式調整等進行轉換（Transform），最後將清理好的資料載入目標系統（Load）。其他選項順序錯誤。",
+        "number": 1093,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "以下哪一項不屬於AI治理中防範資料偏誤的做法？",
+        "options": [
+            "C. 評估資料代表性與來源多樣性",
+            "D. 針對不同族群進行偏見檢測與調整",
+            "B. 只使用來自單一族群的數據以確保資料同質性",
+            "A. 確保資料標註的一致性與專業監督"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI治理概念",
+        "concept": "資料品質與公平性",
+        "explanation": "使用單一族群數據會導致模型有偏見且不具泛化能力，不屬於正確治理做法。相反地，確保標註一致性、多樣化資料及偏見檢測才是好的治理策略。",
+        "number": 1094,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "在資料整理流程中，何者為遺缺值處理的常見方法？",
+        "options": [
+            "B. 隨機亂數產生缺失值增加訓練資料",
+            "C. 將遺缺值轉換成0以避免運算錯誤",
+            "D. 對缺失值無需處理，直接使用原始資料訓練",
+            "A. 使用平均值、中位數填補，或刪除缺失行"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料前處理",
+        "explanation": "遺缺值處理常用填補法，如利用平均值或中位數，或直接刪除缺值過多的資料行；B、C方法會導致資料不合理；D則有可能導致模型偏差和錯誤。",
+        "number": 1095,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "企業在進行AI治理時，建立資料存取權限控管的主要目的是？",
+        "options": [
+            "C. 強制將機密資料公開提升透明度",
+            "D. 只在資料發生異常時才設定存取限制",
+            "A. 限制非授權人員存取敏感資料，防止外洩與誤用",
+            "B. 確保所有員工均可自由存取所有資料以促進合作"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI治理概念",
+        "concept": "資料安全管理",
+        "explanation": "權限控管是防止未授權人員接觸敏感資料的關鍵手段，確保資料安全與合規，B、C、D則會造成資料風險擴大。",
+        "number": 1096,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "資料來源的多樣化有何意義？",
+        "options": [
+            "B. 降低資料收集成本，減少資料清理工作",
+            "A. 提高資料的代表性與減少樣本偏誤，提高模型泛化能力",
+            "C. 集中單一來源資料以便快速訓練模型",
+            "D. 僅取決於資料量而不考慮資料品質"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料代表性",
+        "explanation": "多元資料來源能提升樣本多樣性及代表性，避免偏誤，是提升模型性能與公平性的關鍵。B、C、D忽略了品質與多樣性重要性。",
+        "number": 1097,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "在AI資料整理流程中，下列哪一步最有助於消除資料格式不一致的問題？",
+        "options": [
+            "D. 資料蒐集（Collection）",
+            "C. 資料載入（Loading）",
+            "A. 資料轉換（Transformation）",
+            "B. 資料抽取（Extraction）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清理與標準化",
+        "explanation": "資料轉換階段會將不同來源的資料格式統一、標準化，利於後續分析。抽取和載入階段主要處理資料取得和存放，蒐集是前期工作。",
+        "number": 1098,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "若AI治理政策要求建立「監理沙盒」環境，其主要目的是？",
+        "options": [
+            "B. 永久公開所有AI模型原始碼",
+            "A. 允許企業在受控環境下測試AI應用與風險",
+            "D. 禁止人工介入AI決策過程",
+            "C. 無限制地使用所有真實使用者資料進行訓練"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "AI治理概念",
+        "concept": "AI監理沙盒",
+        "explanation": "監理沙盒為受管控的實驗環境，便於企業測試AI技術的安全性與合規性，非永久公開或無限制資料使用，也不應禁止人工作為輔助。",
+        "number": 1099,
+        "date": "2026-10-16"
+    },
+    {
+        "question": "在資料基本概念中，下列何者屬於非結構化資料？",
+        "options": [
+            "C. Excel中整理的財務數據",
+            "A. 文字文件與圖片",
+            "B. 資料庫中的關聯表格",
+            "D. 有明確欄位結構的問卷調查結果"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料結構分類",
+        "explanation": "非結構化資料指無固定格式或欄位的資料，如文字文件、圖片或影音。B、C、D均為結構化資料，有明確欄位與格式。",
+        "number": 1100,
+        "date": "2026-10-16"
     }
 ]

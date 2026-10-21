@@ -18768,5 +18768,175 @@
         "explanation": "非結構化資料指無固定格式或欄位的資料，如文字文件、圖片或影音。B、C、D均為結構化資料，有明確欄位與格式。",
         "number": 1100,
         "date": "2026-10-16"
+    },
+    {
+        "question": "在企業導入 AI 系統時，何者最能準確描述 AI 治理的核心目的？",
+        "options": [
+            "確保 AI 模型的決策完全由自動化系統無需人工監督",
+            "簡化企業流程以盡量減少 AI 介入人工決策的頻率",
+            "專注於提升 AI 計算效能與資料處理速度",
+            "建立策略框架以管理 AI 風險並確保合規與倫理標準"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI 治理概念",
+        "subtopic": "治理策略與風險控管",
+        "concept": "AI 治理核心目的",
+        "explanation": "AI 治理主要目的是建立適當的管理政策與程序，以確保 AI 系統在合規、風險控管與倫理標準上達到企業及社會的期待，而非完全自動化或純技術優化。",
+        "number": 1101,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "生成式 AI 與鑑別式 AI 在整合應用中，最常見的協同方式是什麼？",
+        "options": [
+            "由鑑別式 AI 評估生成式 AI 產出質量以進行優化修正",
+            "將兩者結合成一個端到端模型完全取代人工監督",
+            "鑑別式 AI 負責訓練模型，生成式 AI 負責資料清洗",
+            "使用生成式 AI 產生分類標籤，鑑別式 AI 用於生成內容"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "subtopic": "應用協同策略",
+        "concept": "模型協同優化",
+        "explanation": "在整合應用中，鑑別式 AI 通常作為判斷者，評估生成式 AI 產生的內容品質，從而改進生成過程與結果，提升整體應用效能。",
+        "number": 1102,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "哪一項最正確說明人工智慧（AI）的分類？",
+        "options": [
+            "生成式 AI 是唯一能夠自我進化的 AI 類型",
+            "AI 僅分為監督式學習與非監督式學習兩大類",
+            "所有 AI 模型都屬於規則基礎的專家系統",
+            "AI 分析型、預測型與生成型三種類型反映不同應用目的"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI 的定義與分類",
+        "subtopic": "AI 類型分類",
+        "concept": "AI 基本分類",
+        "explanation": "AI 常用的分類包含分析型 AI、預測型 AI 與生成型 AI，分別對應不同的應用目標與技術特色，監督與非監督為機器學習範疇的分類，不是整體 AI 分類。",
+        "number": 1103,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "下列哪一項最符合 AI 治理中「Human on loop」的定義與實務應用？",
+        "options": [
+            "人工完全取代 AI 系統來提升決策效率",
+            "人工設計 AI 模型結構與訓練過程",
+            "人工可在必要時介入監控與修正 AI 產出結果",
+            "人工負責收集與清洗所有訓練資料"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI 治理概念",
+        "subtopic": "人機協作與監控",
+        "concept": "Human on loop",
+        "explanation": "Human on loop 指的是人在 AI 系統運行中負責監控與必要介入，確保決策正確性與倫理符合，而非完全放任 AI 自動決策或取代人員。",
+        "number": 1104,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "在 AI 的分類中，哪種 AI 最適合用來生成自然語言文本或影像作品？",
+        "options": [
+            "生成式 AI",
+            "監督式學習 AI",
+            "分析型 AI",
+            "預測型 AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "AI 的定義與分類",
+        "subtopic": "生成式 AI",
+        "concept": "生成式 AI 應用",
+        "explanation": "生成式 AI 是針對生成新內容的 AI，特別適用於文本、影像、音頻等多媒體創作，與分析型或預測型 AI 功能明顯不同。",
+        "number": 1105,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "企業在應用鑑別式與生成式 AI 結合的解決方案時，哪一項情境最符合其風險控管的良好實務？",
+        "options": [
+            "鑑別式 AI 與生成式 AI 同時並行使用但沒有跨模型監控",
+            "將鑑別式 AI 僅用於資料清洗，不參與生成內容評估",
+            "使用鑑別式 AI 作為守門員過濾生成式 AI 產出以確保品質",
+            "完全信賴生成式 AI 輸出而不進行手動審核"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "subtopic": "風險控管策略",
+        "concept": "模型互補與審核",
+        "explanation": "良好的整合應用會利用鑑別式 AI 評估並過濾生成式 AI 的結果，防止錯誤或不合適資訊流出，確保系統整體品質與安全。",
+        "number": 1106,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "以下何者不屬於 AI 治理應特別關注的議題？",
+        "options": [
+            "模型的透明度與可解釋性",
+            "AI 模型的持續監控與風險管理",
+            "確保 AI 系統符合相關法規與倫理標準",
+            "單純提升 AI 運算速度與硬體效能"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI 治理概念",
+        "subtopic": "治理重點",
+        "concept": "AI 治理重點範疇",
+        "explanation": "AI 治理強調透明、合規、監控與倫理，運算速度屬於技術優化領域，不直接屬於治理核心。",
+        "number": 1107,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "哪一種 AI 技術結合能有效提升客服系統中生成回答的可信度？",
+        "options": [
+            "結合鑑別式 AI 評估生成式 AI 的回應並篩選適當答案",
+            "完全放棄生成式 AI，僅使用規則基礎回答系統",
+            "將鑑別式 AI 用於監控硬體設備運行狀態",
+            "單獨使用生成式 AI 直接回應客戶問題"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "subtopic": "客服應用",
+        "concept": "生成與鑑別結合應用",
+        "explanation": "鑑別式 AI 用來評估與篩選生成式 AI 的回答，可以有效降低錯誤或不當內容，提高客服回應的質量與可信度。",
+        "number": 1108,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "關於 AI 的定義，下列敘述何者錯誤？",
+        "options": [
+            "AI 涵蓋了能模擬人類智能的程式與系統",
+            "現代 AI 包含深度學習與強化學習技術",
+            "AI 僅指程式自動化數據輸入過程",
+            "AI 可分為符號式與統計式兩大類"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "AI 的定義與分類",
+        "subtopic": "AI 定義理解",
+        "concept": "AI 基本定義",
+        "explanation": "AI 是指模擬人類智能的系統或技術，不只是自動化資料輸入，該敘述過於狹隘且錯誤。",
+        "number": 1109,
+        "date": "2026-10-21"
+    },
+    {
+        "question": "在 AI 治理的構架中，下列何者不屬於常見的治理機制？",
+        "options": [
+            "監理沙盒實驗環境",
+            "資料隱私與安全保護",
+            "風險評估與控管",
+            "無限自動調整模型參數"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "AI 治理概念",
+        "subtopic": "治理機制",
+        "concept": "治理機制範疇",
+        "explanation": "治理機制包括風險控管、監理沙盒及資料安全等，無限自動調整模型參數不屬於治理措施，反而可能帶來不確定性。",
+        "number": 1110,
+        "date": "2026-10-21"
     }
 ]

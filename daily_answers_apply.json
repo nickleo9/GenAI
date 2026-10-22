@@ -10759,5 +10759,175 @@
         "explanation": "醫療理賠影響重大，應結合人工覆核及完整稽核管理，避免完全依賴模型自行判斷，提高安全性。",
         "number": 633,
         "date": "2026-10-15"
+    },
+    {
+        "question": "何謂 No Code 平台的核心特徵？",
+        "options": [
+            "需專業開發者撰寫大量代碼才能執行",
+            "提供使用者零程式碼的可視化開發介面",
+            "著重於系統底層程式碼優化與效能調教",
+            "僅支援複雜的演算法設計與高階客製化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code 平台定義",
+        "explanation": "No Code 平台的目標是讓非程式設計背景的使用者透過可視化的拖拉介面，無需撰寫程式碼，輕鬆建立應用程式。",
+        "number": 634,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "關於 Low Code 開發的優勢，下列何者錯誤？",
+        "options": [
+            "促進業務專家參與軟體開發流程",
+            "提供可程式擴展以支援定製需求",
+            "無須任何程式碼即可完成高複雜度應用",
+            "降低專業開發者對基礎功能的工作量"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "Low Code 優勢與限制",
+        "explanation": "Low Code 平台雖降低程式碼需求，但在高複雜度或定制化應用仍需程式設計支援，不可能完全無程式碼。",
+        "number": 635,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "在企業導入 No Code / Low Code 平台時，最重要的風險管理措施為何？",
+        "options": [
+            "完全放開使用者自主建立應用權限",
+            "加強資料隱私及權限控管審核",
+            "忽略既有 IT 架構及系統整合需求",
+            "以價格低廉為唯一選擇平台條件"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "風險管理",
+        "explanation": "因為 No Code / Low Code 平台可能導致資料洩漏及權限管理風險，企業須加強對資料隱私與權限控管的審核。",
+        "number": 636,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "以下何種情境最適合使用 No Code / Low Code 平台？",
+        "options": [
+            "進行底層系統韌體的優化與開發",
+            "快速打造內部工作流程與自動化系統",
+            "設計高複雜度的機器學習模型",
+            "建立高頻交易金融核心系統"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "應用場景判斷",
+        "explanation": "No Code / Low Code 平台最適合用於快速構建內部流程、自動化工作及部門級應用，不適合用於核心或複雜系統開發。",
+        "number": 637,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "生成式 AI 工具中，常見用於製作社群媒體文案的工具為何？",
+        "options": [
+            "Midjourney",
+            "Runway ML",
+            "GitHub Copilot",
+            "Jasper AI"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "文案生成工具",
+        "explanation": "Jasper AI 主要用於行銷文案及社群媒體內容生成，專注語言文字內容創作。",
+        "number": 638,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "關於2025年生成式 AI 產業趨勢，何者敘述正確？",
+        "options": [
+            "多模態AI助理整合企業數據和內容工作流",
+            "生成式AI工具不支援程式碼生成與調試",
+            "生成式AI主要專注於單一內容生成不涉及整合",
+            "生成式AI只限於圖像和影片生產範疇"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "多模態AI趨勢",
+        "explanation": "2025年生成式AI趨勢朝向跨模態整合的工作流助理，能夠同時處理文字、圖像、程式碼等多種任務。",
+        "number": 639,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "以下哪一點不是 No Code / Low Code 平台常見的限制？",
+        "options": [
+            "存在供應商鎖定風險",
+            "可完全取代傳統複雜系統開發",
+            "可能導致隱藏的維護技術債",
+            "高度定制需求難以達成"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台限制識別",
+        "explanation": "No Code / Low Code 雖可加快開發，但通常無法完全替代需要高度複雜及定制的傳統軟體系統。",
+        "number": 640,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "生成式 AI 在軟體開發領域，常用於以下何種應用？",
+        "options": [
+            "製作高質感3D模型及動畫角色",
+            "自動化客戶服務聊天回應文字",
+            "代碼補全、錯誤偵測及自動測試生成",
+            "設計數據加密和安全協定"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "軟體開發輔助",
+        "explanation": "生成式 AI 可輔助軟體開發完成代碼補全、錯誤偵測及測試生成，提升開發效率。",
+        "number": 641,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "針對生成式 AI 導入評估，下列哪項是重要考量點？",
+        "options": [
+            "只需挑選免費且知名的 AI 工具即足夠",
+            "避開所有生成式AI工具，完全採用傳統方案",
+            "確保模型符合企業業務目標與合規要求",
+            "忽視員工培訓與使用者操作介面設計"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "導入評估",
+        "explanation": "導入生成式 AI 時，必須評估其是否符合企業目標、合規政策及具備可管控的風險，確保實用和安全。",
+        "number": 642,
+        "date": "2026-10-22"
+    },
+    {
+        "question": "對於 No Code / Low Code 平台與傳統程式開發的比較，下列說法何者錯誤？",
+        "options": [
+            "No Code / Low Code 提升業務參與度和開發速度",
+            "傳統開發適合高度複雜、性能敏感的系統",
+            "Low Code 支援拖拉式介面並允許少量自訂程式碼",
+            "No Code 平台允許使用者自行撰寫所有底層代碼"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "比較分析",
+        "explanation": "No Code 平台以零程式碼為設計目標，使用者無需撰寫底層代碼；能撰寫完整程式碼的是傳統開發或部分 Low Code 平台。",
+        "number": 643,
+        "date": "2026-10-22"
     }
 ]

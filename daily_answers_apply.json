@@ -10929,5 +10929,175 @@
         "explanation": "No Code 平台以零程式碼為設計目標，使用者無需撰寫底層代碼；能撰寫完整程式碼的是傳統開發或部分 Low Code 平台。",
         "number": 643,
         "date": "2026-10-22"
+    },
+    {
+        "question": "以下哪一項最能準確定義「如何善用生成式AI工具」的核心策略？",
+        "options": [
+            "B. 盡可能讓AI自由發揮，避免提供限制條件與背景",
+            "A. 依任務明確定義角色與背景，分段提示並要求引用出處",
+            "C. 只要輸入完整資料，AI自動生成結果即可",
+            "D. 使用長句複雜提示以增加生成內容長度"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示工程",
+        "explanation": "善用生成式AI工具需先明確任務角色、背景資料與限制，透過分階段提示與明確輸出格式提升品質並降低錯誤，避免模糊或無限制輸入導致幻覺或不正確內容。",
+        "number": 644,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "No Code 與 Low Code 的主要區別在於？",
+        "options": [
+            "D. 兩者都無需任何程式碼並且完全相同",
+            "A. No Code 需要撰寫複雜程式碼，而 Low Code 完全不寫程式",
+            "C. Low Code 僅適用於簡單應用，No Code 適用於複雜系統",
+            "B. No Code 完全圖形化，Low Code 則允許少量程式碼客製化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "定義與比較",
+        "explanation": "No Code 完全透過圖形化介面建置流程與應用，使用者不需撰寫程式；Low Code 則結合圖形化介面與少量程式碼，可進行進一步的客製化與整合。",
+        "number": 645,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "企業在進行生成式AI導入評估時，以下哪一項不屬於四大評估面向？",
+        "options": [
+            "D. 組織治理與效益評估",
+            "C. 企業負責人個人偏好評估",
+            "B. 法規與合規性評估",
+            "A. 技術可行性評估"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "導入評估架構",
+        "explanation": "導入評估重點為技術面、法規面、組織面與效益面，企業負責人的個人偏好不是正式評估項目，應以客觀且全面的指標為依據。",
+        "number": 646,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "以下哪個步驟最適合作為生成式AI導入規劃的第一步？",
+        "options": [
+            "B. 立即購買最高階生成式AI模型",
+            "A. 盤點企業業務痛點與現有流程瓶頸",
+            "C. 直接上傳全公司所有資料進行模型訓練",
+            "D. 先全面取消人工覆核以提升效率"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入規劃流程",
+        "explanation": "導入規劃須先了解企業痛點和瓶頸，才能針對問題挑選合適的AI應用場景與技術，避免盲目採購與錯誤導入。",
+        "number": 647,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "以下哪些是No Code平台的限制？",
+        "options": [
+            "D. 完全無法與API整合",
+            "C. 需要大量程式碼撰寫",
+            "B. 平台功能限制客製化，效能及資料移轉性可能受限",
+            "A. 高度客製化與彈性編程"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "限制",
+        "explanation": "No Code平台透過圖形化操作快速開發，但因平台功能固定，客製化能力有限，且在效能及移轉性上有一定限制。",
+        "number": 648,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "導入生成式AI時，為何需設置Human-in-the-Loop機制？",
+        "options": [
+            "D. 僅用於低風險的文本生成流程",
+            "B. 為高風險決策場景提供人工覆核，確保責任與風險管控",
+            "A. 以避免所有輸出需要人工審核，降低效率",
+            "C. 完全依賴AI，自動卸載所有人工工作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "風險管理",
+        "explanation": "Human-in-the-Loop為高風險決策審核提供人工確認，避免AI錯誤擴大、確保合規責任，是風險控制標準措施。",
+        "number": 649,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "使用生成式AI生成客服回覆的效率指標，以下何者最不適合作為衡量KPI？",
+        "options": [
+            "C. AI模型月訂閱費用",
+            "D. 客戶滿意度得分",
+            "B. 人工處理時數降低百分比",
+            "A. 回覆的一次解決率"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "效益與KPI",
+        "explanation": "訂閱費用屬成本項目，不是績效指標。KPI應集中於服務品質、客戶滿意度及效率提升等效益面指標。",
+        "number": 650,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "在導入生成式AI規劃中，下列哪一項行為屬於風險降低策略？",
+        "options": [
+            "C. 將所有權限開放予所有使用者",
+            "D. 將生成內容直接用於法律依據",
+            "A. 完全放棄使用AI，避免所有風險",
+            "B. 參與策略制定並建立人工覆核流程與監控系統"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "風險控制策略",
+        "explanation": "風險降低策略包含建立人工覆核、監控機制與權限管理，而非完全放棄AI或放任自由使用。",
+        "number": 651,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "企業欲以No Code平台快速建立內部流程自動化，最合適的情境是？",
+        "options": [
+            "A. 建立複雜資料庫管理系統和高度客製化功能",
+            "B. 自動化簡單的申請流程、問卷收集與通知發送",
+            "C. 開發即時金融交易核心系統",
+            "D. 撰寫大型機器學習模型程式碼"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "適用情境",
+        "explanation": "No Code適合快速建置簡單且標準化的流程，複雜高效能系統不適合作此類平台。",
+        "number": 652,
+        "date": "2026-10-24"
+    },
+    {
+        "question": "以下哪項選擇最符合生成式AI穩健導入的最佳策略？",
+        "options": [
+            "D. 完全取消人工審核以求自動化",
+            "C. 僅依據廠商推薦直接上線",
+            "A. 一次全面開放所有員工使用全功能AI",
+            "B. 選定低風險高效益場景試點並依KPI持續優化"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入策略",
+        "explanation": "分階段試點、重視量化驗證並持續監控，是降低風險並促進成功導入的有效策略。",
+        "number": 653,
+        "date": "2026-10-24"
     }
 ]

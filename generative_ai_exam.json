@@ -11548,5 +11548,175 @@
         "explanation": "資料規劃不只要考量數量，也要確認來源可信度、使用權利、目的適配性、時效性、代表性與品質。",
         "number": 705,
         "date": "2026-10-11"
+    },
+    {
+        "question": "如果某製造工廠面臨瑕疵品資料極度稀少且種類多樣的問題，為有效提升AI檢測準確度，以下何者組合策略最合適？",
+        "options": [
+            "僅採用鑑別式AI分類瑕疵與良品",
+            "依賴生成式AI直接判斷產品是否良好",
+            "使用生成式AI模擬多樣瑕疵，再由鑑別式AI分類",
+            "只使用人工作業，避免AI誤判"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "生成資料增強與鑑別分類",
+        "explanation": "由於瑕疵品少且種類多，生成式AI可補足資料不足，模擬各種瑕疵影像來增強訓練集，再由鑑別式AI做分類，提高檢測準確度；而生成式AI本身不具判斷能力，且全人工容易錯誤率高。",
+        "number": 706,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "公司欲利用生成式AI快速產出客戶服務回覆，同時避免錯誤或不當內容擴散，下列何者是最適合的策略？",
+        "options": [
+            "增加生成式AI模型規模提升準確度",
+            "只使用人工客服不採用AI",
+            "結合鑑別式AI進行回覆內容審查與風險篩選",
+            "讓生成式AI直接回覆客戶問題"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "生成內容審查與風險管理",
+        "explanation": "生成式AI容易產生錯誤或不當內容，需搭配鑑別式AI進行正確性和風險篩選，避免直接將生成結果回覆客戶。單靠生成式AI或全人工客服皆無法兼顧效率與品質。",
+        "number": 707,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "假設你是企業主管，想快速建立員工請假與簽核系統，流程簡單明確，時間限制兩周內完成。哪種AI開發策略最合適？",
+        "options": [
+            "直接購買大型ERP系統全面導入",
+            "建置大型分布式系統",
+            "要求團隊從零開始用C++大量編程",
+            "採用 No Code 平台快速實作"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "快速開發與標準流程",
+        "explanation": "此類流程簡單且時程緊迫，使用No Code平台能以拖拉視覺化元件快速完成，降低人力與技術門檻，且符合企業快速驗證需求。",
+        "number": 708,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "作為新創團隊成員，希望在一週內建立預約系統原型，驗證客戶填寫行為。以下哪種做法最適合？",
+        "options": [
+            "直接撰寫底層服務所有程式碼",
+            "從資料庫底層開始設計自有引擎",
+            "立即建置全球級多區資料中心",
+            "使用No Code工具快速建立並測試"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "快速原型設計",
+        "explanation": "在假設未定且需快速試錯階段，使用No Code工具能迅速建立功能原型並迭代調整，節省時間與成本，等待驗證結果後再決定後續方案。",
+        "number": 709,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "公司行銷部門使用低程式碼平台自行建立客戶資料管理系統，但未經IT治理與資安檢測。下列何者為非？",
+        "options": [
+            "未審查的Low Code系統恐引發資料洩露與權限失控",
+            "缺乏治理風險包括資料孤島與重複建置",
+            "Low Code 開發不需進行資安掃描與權限管控",
+            "缺乏治理可能造成影子IT問題"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "資安治理與風險",
+        "explanation": "Low Code並非無需資安與權限控管，缺乏IT治理會造成人員誤用、資料外洩等風險，產生影子IT與資料孤島問題，因此治理極為重要。",
+        "number": 710,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "金融業想模擬多種經濟情境做信用風險評估，生成式AI與鑑別式AI應如何角色分工？",
+        "options": [
+            "僅藉鑑別式AI分類不做模擬",
+            "只用生成式AI自動判定信用良窳",
+            "鑑別式AI產生情境，生成式AI做核貸決策",
+            "生成式AI用來模擬情境，鑑別式AI預測違約風險"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "生成模擬與風險預測",
+        "explanation": "生成式AI負責創造多變經濟情境資料，鑑別式AI利用這些情境模型預測客戶風險，兩者相輔相成。生成式AI不直接做決策，鑑別式AI需搭配人工審查。",
+        "number": 711,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "如果要開發一款面向百萬級用戶的高度客製化社交App，含複雜動畫與即時通訊，下列哪項關於No Code/Low Code的判斷較合理？",
+        "options": [
+            "只要新增多種模板即可解決",
+            "Low Code能完全取代軟體工程師",
+            "No Code足以完成全部功能",
+            "Low Code適合後台管理，核心功能需傳統程式開發"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "客製化與效能限制",
+        "explanation": "No Code與Low Code適合快速構建內部工具與一般流程，但大型且複雜的即時高效能功能仍需專業軟體工程師用傳統開發實現。",
+        "number": 712,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "在No Code平台上使用者設計一套自動化流程，忽略資料治理與權限設定，出現資料外洩與權限失控，這反映出哪種風險？",
+        "options": [
+            "平台功能不足",
+            "供應商綁定",
+            "影子IT及治理缺失",
+            "用戶介面複雜"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "資訊治理風險",
+        "explanation": "影子IT指未經官方IT審核的系統開發，缺乏適當治理與安全控管，易導致資料洩漏與權限混亂，需加強管理與嚴格流程監控。",
+        "number": 713,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "企業在使用No Code／Low Code平台時，遇到供應商突然停止服務、限制資料匯出，導致系統難以遷移，這屬於哪類限制？",
+        "options": [
+            "開發速度不足",
+            "使用者操作介面複雜",
+            "系統性能瓶頸",
+            "平台供應商綁定"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "供應商鎖定風險",
+        "explanation": "平台供應商綁定指系統依賴特定平台的專有技術或資料格式，若供應商終止服務或限縮功能，企業必須面臨高成本遷移或重建風險。",
+        "number": 714,
+        "date": "2026-10-25"
+    },
+    {
+        "question": "下列哪項最能代表No Code與Low Code技術的最大差異？",
+        "options": [
+            "No Code完全不需撰寫程式碼，Low Code允許少量自訂程式碼",
+            "No Code需要大量程式碼撰寫，Low Code不需",
+            "兩者功能與限制完全相同",
+            "No Code適合高延展性系統，Low Code只適合簡單表單"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "程式碼撰寫量差異",
+        "explanation": "No Code平台完整採用視覺化設計，非技術人員即可開發；Low Code則允許加入程式碼以處理客製化需求，具備較高彈性。兩者用戶族群與應用層面有所區別。",
+        "number": 715,
+        "date": "2026-10-25"
     }
 ]

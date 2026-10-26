@@ -19108,5 +19108,175 @@
         "explanation": "資料可靠性首要以來源的可信度評估，官方或權威組織產出資料較可信，避免誤導分析結果。",
         "number": 1120,
         "date": "2026-10-23"
+    },
+    {
+        "question": "以下哪一項不是常見的機器學習模型？",
+        "options": [
+            "長短期記憶網絡（LSTM）",
+            "支持向量機（SVM）",
+            "生成對抗網絡（GAN）",
+            "結構化查詢語言（SQL）"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "常見的機器學習模型",
+        "concept": "機器學習模型分類",
+        "explanation": "支持向量機（SVM）、生成對抗網絡（GAN）、長短期記憶網絡（LSTM）均為常見機器學習模型，然而結構化查詢語言（SQL）是資料庫查詢語言，不屬於機器學習模型。",
+        "number": 1121,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "在使用金融詐欺偵測系統中，下列哪種機器學習模型最適合用於識別異常行為？",
+        "options": [
+            "K-means分群",
+            "強化學習",
+            "卷積神經網絡（CNN）",
+            "決策樹"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎",
+        "subtopic": "常見的機器學習模型",
+        "concept": "異常偵測與分群模型",
+        "explanation": "K-means分群適合用於異常行為識別中的分群分析，能透過分群結果判斷異常群組；決策樹主要用於分類，CNN適合影像處理，強化學習則較少用於異常偵測。",
+        "number": 1122,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "以下關於鑑別式 AI 與生成式 AI 的基本差異，何者正確？",
+        "options": [
+            "兩者皆以生成圖像為主要功能",
+            "鑑別式 AI 生成新數據，生成式 AI 區分數據類別",
+            "兩者都是只用於文字資料分析",
+            "鑑別式 AI 預測數據標籤，生成式 AI 創造內容"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "concept": "鑑別式與生成式 AI 原理區別",
+        "explanation": "鑑別式 AI 用於資料分類或標籤預測，生成式 AI 能創造全新內容如文字、圖像。兩者功能不同，不是皆用於圖像或文字。",
+        "number": 1123,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "在企業運用生成式AI創建客製化行銷內容時，鑑別式 AI 主要扮演什麼角色？",
+        "options": [
+            "自動生成廣告文案",
+            "控制系統權限與用戶交互",
+            "整合多種資料來源建立風險模型",
+            "分析並評估生成內容的真實性與準確性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "生成式與鑑別式 AI 整合應用",
+        "explanation": "生成式 AI 用於創造內容，鑑別式 AI 則用於分析和評估生成內容的真實性與準確性，是內容品質控管的重要一環。",
+        "number": 1124,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "何者是鑑別式 AI 與生成式 AI 整合應用中常見的實務情境？",
+        "options": [
+            "用生成式 AI 訓練鑑別式 AI 模型的所有參數",
+            "生成式 AI 負責資料標註，鑑別式 AI 自動生成句子",
+            "鑑別式 AI 用於生成影像，生成式 AI 用於分類影像",
+            "使用鑑別式 AI 監控並優化生成式 AI 產出的文章質量"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "AI系統整合應用實務",
+        "explanation": "整合應用中，鑑別式 AI 常用於評估和監控生成式 AI 輸出的內容質量，而非反向生成或標註，這能提升系統穩定性與準確度。",
+        "number": 1125,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "下列何者是生成式 AI 中常見的技術？",
+        "options": [
+            "生成對抗網絡（GAN）",
+            "支持向量機（SVM）",
+            "隨機森林",
+            "決策樹"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎",
+        "subtopic": "常見的機器學習模型",
+        "concept": "生成式 AI 技術",
+        "explanation": "生成對抗網絡（GAN）是生成式 AI 的核心技術，用於創造圖像、音訊等新內容。決策樹、隨機森林及 SVM 屬於鑑別式模型。",
+        "number": 1126,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "鑑別式 AI 通常不包括以下哪種操作？",
+        "options": [
+            "分類資料",
+            "預測標籤",
+            "生成新文本內容",
+            "區分真實與偽造資料"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "concept": "鑑別式 AI 功能限制",
+        "explanation": "鑑別式 AI 的主要任務是區分和分類，預測標籤，而不會生成新文本內容。生成文本屬於生成式 AI 的範疇。",
+        "number": 1127,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "當企業結合鑑別式 AI 與生成式 AI 在客服系統中，以下哪個功能最不可能出現？",
+        "options": [
+            "即時審核回覆內容的合規性",
+            "生成個人化回覆",
+            "自動分類客戶問題類型",
+            "直接進行財務交易決策"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "AI客服系統應用",
+        "explanation": "生成式 AI 負責生成回覆，鑑別式 AI 協助分類與審核合規性，但財務交易決策通常需更嚴格監管，不會直接由客服 AI 處理。",
+        "number": 1128,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "關於常見機器學習模型，下列敘述何者錯誤？",
+        "options": [
+            "隨機森林由多個決策樹組成以減少過度擬合",
+            "卷積神經網絡特別適用於影像及視覺任務",
+            "KNN 是基於鄰近樣本的分類或迴歸方法",
+            "邏輯迴歸是用於解決非監督式學習問題"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎",
+        "subtopic": "常見的機器學習模型",
+        "concept": "監督式與非監督式模型",
+        "explanation": "邏輯迴歸是監督式學習方法，常用於二元分類，不適用於非監督式學習；其他選項皆正確。",
+        "number": 1129,
+        "date": "2026-10-26"
+    },
+    {
+        "question": "在一個利用生成式 AI 輔助文案產生與鑑別式 AI 評估品質的行銷專案中，下列哪種做法最為適切？",
+        "options": [
+            "採用生成式 AI 預測行銷數據趨勢",
+            "完全依賴生成式 AI 產生文案並直接發布",
+            "鑑別式 AI 用於篩選並標記不合格的生成內容",
+            "使用鑑別式 AI 來生成創意文案"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "生成式與鑑別式 AI 在行銷的角色",
+        "explanation": "生成式 AI 負責創作內容，鑑別式 AI 負責評估及品質篩選，確保發布內容的質量與準確性。使用鑑別式 AI 生成文案並非慣例。",
+        "number": 1130,
+        "date": "2026-10-26"
     }
 ]

@@ -11099,5 +11099,175 @@
         "explanation": "分階段試點、重視量化驗證並持續監控，是降低風險並促進成功導入的有效策略。",
         "number": 653,
         "date": "2026-10-24"
+    },
+    {
+        "question": "以下哪一項最貼切描述了 No Code 開發平台的主要使用者與開發方法？",
+        "options": [
+            "專業開發者在低程式碼平台中撰寫大量自訂程式碼",
+            "資料科學家使用複雜演算法調整模型參數",
+            "業務或非技術人員透過拖放和視覺化介面快速建立應用程式",
+            "IT 專家藉由純手動編碼建立高效能系統"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code 使用者與開發模式",
+        "explanation": "No Code 平台主要為非技術使用者設計，透過拖放元件、視覺化介面建立應用，不需撰寫程式碼，方便快速原型與簡易應用建立。",
+        "number": 654,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "下列對 Low Code 平台的限制描述，何者最正確？",
+        "options": [
+            "完全不需撰寫任何程式碼，適合複雜邏輯",
+            "無法進行任何客製化與擴充",
+            "容易造成平台綁定與後續治理難度增加",
+            "無法支援 API 連接第三方服務"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "Low Code 限制",
+        "explanation": "Low Code 平台雖支援程式碼擴充與系統整合，但容易產生平台綁定問題與治理複雜度，需要規劃架構與資料治理。",
+        "number": 655,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "以下哪個情境最適合採用 No Code 工具？",
+        "options": [
+            "快速建立內部費用申請流程，且使用者無程式背景",
+            "開發需要多系統整合的企業資源管理系統（ERP）",
+            "設計高性能、高度客製化的線上交易平台",
+            "實施複雜機器學習模型訓練"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "No Code 適用場景",
+        "explanation": "No Code 工具適合快速建立簡單、規則明確、使用者無程式設計經驗的業務流程，如內部申請或簽核。",
+        "number": 656,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "生成式 AI 在 2025 年的主要應用領域不包含下列哪一項？",
+        "options": [
+            "金融市場高頻交易系統核心運算",
+            "資料分析與決策支援",
+            "影像與設計生成工具",
+            "智慧客服與 AI Agent 自动回應"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "生成式 AI 應用領域",
+        "explanation": "高頻交易系統需極高效能與低延遲，通常不採用生成式 AI，而是專用算法與硬體。生成式 AI 主要聚焦內容創作、客服、資料分析等生產力場景。",
+        "number": 657,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "下列哪一個生成式 AI 工具最適合用於自動產生高品質文字文案與客服問答？",
+        "options": [
+            "ChatGPT",
+            "Midjourney",
+            "ElevenLabs",
+            "Sora"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "生成式 AI 工具選擇",
+        "explanation": "ChatGPT 專注於自然語言生成，適合文案撰寫與智能客服，Midjourney用於圖像，Sora用於影片，ElevenLabs專注語音生成。",
+        "number": 658,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "在低程式碼平台中，哪項技術最常用於提升企業內部流程自動化效率？",
+        "options": [
+            "大量手工撰寫複雜演算法",
+            "單一語言的命令行工具",
+            "拖放式組件結合少量自訂腳本和API整合",
+            "純文本指令操作無任何編碼"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "流程自動化",
+        "explanation": "低程式碼平台結合視覺化拖放元件與少量程式碼擴充，能快速整合多系統，提升企業流程自動化效率。",
+        "number": 659,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "生成式 AI 工具在企業導入時，以下哪項風險不正確？",
+        "options": [
+            "AI 自動生成內容均可直接用於法律文件",
+            "未經審核資料輸出造成敏感資訊外洩",
+            "模型幻覺可能出現錯誤資訊",
+            "偏見數據可能導致不公平決策"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估規劃",
+        "concept": "風險管理",
+        "explanation": "AI 生成內容可能不精確或不合法，法律文件需人工核查。敏感資料洩漏、偏見及幻覺皆屬導入風險。",
+        "number": 660,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "以下對生成式 AI 工具 Microsoft 365 Copilot 的應用說明，何者為非？",
+        "options": [
+            "能自動完成全部企業決策無需用戶介入",
+            "減少員工重複性文字工作而提升效率",
+            "簡化會議摘要和電子郵件管理流程",
+            "協助快速撰寫文件與分析 Excel 資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "生成式 AI 在辦公自動化中的應用",
+        "explanation": "Microsoft 365 Copilot 幫助員工加速工作流程與分析，但不會自動取代企業決策，仍需人工判斷。",
+        "number": 661,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "以下哪個敘述最能反映 No Code 與 Low Code 對企業 IT 部門負擔的影響？",
+        "options": [
+            "No Code 只適合資安專家使用，Low Code 只適合業務人員",
+            "No Code 增加 IT 監管負擔，Low Code 完全取代 IT",
+            "低程式碼平台無法整合企業既有系統",
+            "兩者均減少 IT 部門積壓，提高非技術人員自主開發能力"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "IT 負擔及治理",
+        "explanation": "No Code 與 Low Code 讓業務人員可自主快速建立工具，減少 IT 複雜度與積壓，促進跨部門協作，但仍需治理。",
+        "number": 662,
+        "date": "2026-10-27"
+    },
+    {
+        "question": "在生成式 AI 的多模態應用中，下列何者為主要趨勢？",
+        "options": [
+            "生成式 AI 主要用於硬體設備維護",
+            "文字、圖片、語音與影片的跨格式理解與生成",
+            "AI 智能體只限單一任務操作",
+            "只專注文字生成，不支援圖像或音訊輸入"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "多模態生成與智能體",
+        "explanation": "2025 年生成式 AI 聚焦多模態能力，支持文字、圖片、語音、影片的整合與自主任務執行，廣泛應用於生產力提升。",
+        "number": 663,
+        "date": "2026-10-27"
     }
 ]

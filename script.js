@@ -2679,7 +2679,7 @@ const iPASQuizApp = {
             markedQuestions: this.state.markedQuestions
         };
 
-        const webhookUrl = 'https://nickleo9.zeabur.app/webhook/save-practice-record';
+        const webhookUrl = 'https://n8n.znstudio216.com/webhook/save-practice-record';
 
         try {
             const response = await fetch(webhookUrl, {
@@ -2744,7 +2744,7 @@ const iPASQuizApp = {
                 timestamp: new Date().toISOString()
             };
 
-            const response = await fetch('https://nickleo9.zeabur.app/webhook/update-wrong-questions', {
+            const response = await fetch('https://n8n.znstudio216.com/webhook/update-wrong-questions', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -2903,12 +2903,12 @@ const LoginManager = {
     SUPABASE_ANON_KEY: 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Im5hZnR3bWFqeHVvYXVva3V3cGF6Iiwicm9sZSI6ImFub24iLCJpYXQiOjE3NjA5OTgxNTgsImV4cCI6MjA3NjU3NDE1OH0.zf-eKQVC5PCFFC_ZucGNbFsc8n4627rRxZQ2A0S4FM4', // 您的 Supabase Anon Key
 
     // n8n Webhook URL
-    N8N_WEBHOOK_URL: 'https://nickleo9.zeabur.app/webhook/line-login',  // ⚠️ 記得替換
+    N8N_WEBHOOK_URL: 'https://n8n.znstudio216.com/webhook/line-login',  // ⚠️ 記得替換
 
 
     async checkMemberStatus(userId) {
         try {
-            const response = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
+            const response = await fetch('https://n8n.znstudio216.com/webhook/check-member-status', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userId: userId })
@@ -2936,7 +2936,7 @@ const LoginManager = {
 
         if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showLoading) iPASQuizApp.showLoading('正在驗證會員狀態...');
         try {
-            const response = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
+            const response = await fetch('https://n8n.znstudio216.com/webhook/check-member-status', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({ userId, email })
@@ -2969,7 +2969,7 @@ const LoginManager = {
                     // 再次發送請求，這次帶上手動輸入的 Email，並帶上一個特殊標記告知後端要進行跨平台同步綁定
                     if (typeof iPASQuizApp !== 'undefined' && iPASQuizApp.showLoading) iPASQuizApp.showLoading('正在搜尋並同步訂單...');
 
-                    const syncResponse = await fetch('https://nickleo9.zeabur.app/webhook/check-member-status', {
+                    const syncResponse = await fetch('https://n8n.znstudio216.com/webhook/check-member-status', {
                         method: 'POST',
                         headers: { 'Content-Type': 'application/json' },
                         body: JSON.stringify({
@@ -3352,7 +3352,7 @@ async function selectPlan(planType) {
     iPASQuizApp.showLoading('正在產生支付訂單...');
 
     try {
-        const response = await fetch('https://nickleo9.zeabur.app/webhook/money', {
+        const response = await fetch('https://n8n.znstudio216.com/webhook/money', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({
@@ -3474,7 +3474,7 @@ async function reportQuestion() {
         }
     } catch (e) {}
     try {
-        await fetch('https://nickleo9.zeabur.app/webhook/report-question', {
+        await fetch('https://n8n.znstudio216.com/webhook/report-question', {
             method: 'POST',
             headers: { 'Content-Type': 'application/json' },
             body: JSON.stringify({

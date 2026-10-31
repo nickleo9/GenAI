@@ -11439,5 +11439,175 @@
         "explanation": "生成式AI的模型、資料、使用情境與供應商服務可能持續變動，因此不能以一次性驗收取代持續監控；應建立責任分工、版本管理、事件處理、訓練與定期審查機制。",
         "number": 673,
         "date": "2026-10-29"
+    },
+    {
+        "question": "依據2025年NIST生成式AI風險管理框架，下列何者最準確描述生成式AI風險管理的核心流程？",
+        "options": [
+            "先建立統一模型標準，再以單一指標判定整體系統可信度",
+            "先提高模型準確率，再以法律審查取代技術性風險評估",
+            "先界定使用情境，再持續治理、辨識、衡量與處置風險",
+            "先限制模型輸出，再以使用者回報取代部署前風險分析"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI風險管理",
+        "subtopic": "定義：風險管理核心流程",
+        "concept": "NIST AI風險管理框架",
+        "explanation": "生成式AI風險管理需先明確劃定使用情境，並持續進行風險辨識、衡量與處置，形成動態治理迴圈，而非單靠準確率或單一評估指標。",
+        "number": 674,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "與傳統判別式AI相比，生成式AI的風險管理中哪項風險是其獨有且需要特別注意的？",
+        "options": [
+            "增加訓練資料缺失風險，因此不需對輸出內容監測",
+            "增加模型延遲風險，取代公平性與隱私性測試",
+            "只因模型參數規模增加，限制模型大小即可治理",
+            "新增生成內容失真與濫用風險，且風險隨使用情境擴散"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI風險管理",
+        "subtopic": "比較：生成式與傳統AI風險差異",
+        "concept": "生成式AI特有風險",
+        "explanation": "生成式AI特有的幻覺、內容誤導與大規模濫用風險，且風險依使用者互動情境而變化，需特別持續監控。",
+        "number": 675,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "在醫療機構使用生成式AI摘要病歷時，如模型出現未在病歷中出現的診斷，最適合的風險管理策略為何？",
+        "options": [
+            "建立輸出來源追溯並強制人工覆核",
+            "擴大模型參數量以提高回答速度",
+            "限制醫師輸入內容並封鎖外部資料",
+            "增加提示詞長度並取消人工覆核流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI風險管理",
+        "subtopic": "情境判斷：醫療應用的風險控制",
+        "concept": "高風險領域幻覺防範",
+        "explanation": "面對醫療上的幻覺風險，需結合來源追蹤、人工覆核與錯誤監控以降低錯誤決策風險，僅靠參數或提示調整無法根治。",
+        "number": 676,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "下列何者「不是」生成式AI風險管理中合理的治理原則？",
+        "options": [
+            "以發布前一次性測試取代部署後持續監督",
+            "依使用情境與影響程度分級配置控制",
+            "明確界定資料、模型及人工決策責任",
+            "將評估與監控納入模型生命週期"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI風險管理",
+        "subtopic": "何者為非：風險生命週期治理",
+        "concept": "持續治理不可取代",
+        "explanation": "生成式AI須持續監控與回饋，單次測試無法涵蓋後續風險變化；其他選項皆為合適治理原則。",
+        "number": 677,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "下列哪一描述最正確區分No Code與Low Code平台的基本概念？",
+        "options": [
+            "No Code主要視覺化配置；Low Code保留程式擴充能力",
+            "No Code只能用於資料分析；Low Code僅限行動開發",
+            "No Code部署於雲端；Low Code必須內部部署",
+            "No Code完全不需設計流程；Low Code完全手寫程式"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code基本概念",
+        "subtopic": "定義：平台抽象程度",
+        "concept": "視覺化與程式碼擴充差異",
+        "explanation": "No Code以拖放與視覺元件為主，Low Code則在此基礎上保留少量程式碼擴充能力，其他選項與實際用法不符。",
+        "number": 678,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "企業透過Low Code平台以API串接ERP與身分驗證，最能展現Low Code平台的哪項特性？",
+        "options": [
+            "以人工操作替代系統串接，降低自動化",
+            "以資料庫代替應用程式，取消權限管理",
+            "以抽象元件快速組合流程，同時保留整合與客製化",
+            "以固定模板封閉所有邏輯，避免外部服務介入"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "No Code/Low Code基本概念",
+        "subtopic": "情境判斷：流程組合與整合性",
+        "concept": "平台組合式開發與API整合",
+        "explanation": "Low Code允許視覺化組合流程同時支持API及程式碼擴展，提升整合彈性，其他選項則過於極端或錯誤。",
+        "number": 679,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "關於No Code/Low Code平台，下列敘述何者最不恰當？",
+        "options": [
+            "視覺化介面自然消除資安與維運風險",
+            "平台以抽象元件降低開發門檻",
+            "平台能力依賴連接器與版本控管",
+            "平台支援公民開發者但需治理控管"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "No Code/Low Code基本概念",
+        "subtopic": "何者為非：平台能力與風險",
+        "concept": "資安與治理挑戰",
+        "explanation": "雖視覺化降低開發技術壁壘，但不等於消除資安及維運問題，依然須嚴格治理。其他選項皆為平台現實特徵。",
+        "number": 680,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "在企業導入生成式AI流程中，下列哪項是No Code/Low Code平台最關鍵的策略性優勢？",
+        "options": [
+            "主要以減少程式碼數量為目標，自然提升可擴充性",
+            "由業務人員全權處理AI決策，免除IT責任",
+            "以平台標準元件取代所有模型評估，保證輸出正確",
+            "縮短原型至驗證週期，讓領域專家快速參與"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "No Code/Low Code優勢與限制",
+        "subtopic": "優勢：敏捷開發與跨域協作",
+        "concept": "快速原型與領域參與",
+        "explanation": "No Code/Low Code加速原型開發，促使領域專家直接介入流程設計，提升敏捷性與有效溝通；不會移除IT治理也不能保證AI品質。",
+        "number": 681,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "某組織以No Code平台構建生成式AI客服，半年後遭遇費率上調及資料權限衝突，最適切的治理對策為何？",
+        "options": [
+            "讓各部門獨立維護流程分散責任",
+            "建立元件目錄、權限基線與版本管理方案",
+            "增加視覺元件掩蓋平台依賴風險",
+            "停止所有公民開發，改回手寫程式"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "No Code/Low Code優勢與限制",
+        "subtopic": "限制：平台鎖定與治理挑戰",
+        "concept": "平台依賴與治理規範",
+        "explanation": "面對平台鎖定與治理問題，企業需標準化元件權限及版本控管，並規劃退出方案以確保可持續性，其他選項皆不具治理效益。",
+        "number": 682,
+        "date": "2026-10-31"
+    },
+    {
+        "question": "若No Code/Low Code平臺應用需滿足高度客製演算法、低延遲及嚴格資料隔離，應如何評估？",
+        "options": [
+            "全面禁止平台使用，因低程式碼皆無法安全",
+            "只要支援拖放元件即滿足非功能需求",
+            "以開發速度為唯一決策標準，上線後補驗",
+            "優先評估抽象層、效能及資料邊界限制"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "No Code/Low Code優勢與限制",
+        "subtopic": "限制：非功能需求與適用性判斷",
+        "concept": "平台適用性與非功能需求",
+        "explanation": "高度客製化與嚴格性能需求需預先評估平台限制，盲目依賴拖放元件或僅以速度判斷風險大，亦不可全盤否定平台使用。",
+        "number": 683,
+        "date": "2026-10-31"
     }
 ]

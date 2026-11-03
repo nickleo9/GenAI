@@ -11609,5 +11609,175 @@
         "explanation": "高度客製化與嚴格性能需求需預先評估平台限制，盲目依賴拖放元件或僅以速度判斷風險大，亦不可全盤否定平台使用。",
         "number": 683,
         "date": "2026-10-31"
+    },
+    {
+        "question": "在企業導入生成式 AI 工具時，哪項是善用生成式 AI 工具的關鍵策略？",
+        "options": [
+            "透過提示工程設計明確任務與限制條件",
+            "忽略使用者反饋，直接大規模上線",
+            "完全依賴預設模型輸出，不進行任何調整",
+            "使用所有可用模型以增加覆蓋率"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示工程",
+        "explanation": "善用生成式 AI 工具的核心在於透過提示工程（Prompt Engineering）設計精確且具體的任務說明與限制，有效引導模型給出符合需求的結果，避免盲目使用或過度依賴預設設定。",
+        "number": 684,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "以下哪一項不屬於生成式 AI 導入評估時，必須考量的技術指標？",
+        "options": [
+            "模型準確度及穩定性",
+            "上下文處理能力與延遲時間",
+            "系統整合能力與擴展性",
+            "員工辦公室位置舒適度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "技術評估指標",
+        "explanation": "員工辦公室位置舒適度與技術評估無關，導入評估主要聚焦於模型準確度、系統整合、擴展性、延遲與上下文長度等技術參數。",
+        "number": 685,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "在生成式 AI 導入規劃階段，何者為非？",
+        "options": [
+            "合理分配資源與人員責任",
+            "進行分階段試點與擴大導入",
+            "制定 SMART 目標，具體明確且可衡量",
+            "先全面上線再評估成效指標"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "策略規劃",
+        "explanation": "先全面上線再評估成效屬於錯誤做法，正確做法是先透過試點階段測試並調整，確保效益與問題被有效管控後，再進行擴大部署。",
+        "number": 686,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "No Code / Low Code 工具在生成式 AI 應用中的最大優勢為何？",
+        "options": [
+            "擁有最高的模型訓練效率與準確度",
+            "完全不需要進行任何測試與監控",
+            "替代專業 AI 工程師全職工作",
+            "允許無需寫程式即可快速開發應用"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code / Low Code 優勢",
+        "explanation": "No Code / Low Code 工具能使非程式開發背景者也能快速且低成本地構建生成式 AI 應用，降低技術門檻，是此類工具最大的優勢。",
+        "number": 687,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "企業在評估是否導入生成式 AI 須優先考量哪項？",
+        "options": [
+            "現有業務痛點與需求是否明確",
+            "市面上最新生成式 AI 工具的數量",
+            "是否擁有最多預算進行開發",
+            "是否將導入責任全部交給 IT 部門"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "需求與痛點分析",
+        "explanation": "導入生成式 AI 需從企業自身的業務痛點與需求出發，明確定義目標與應用場景，才能有針對性地評估技術與投資。",
+        "number": 688,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "下列何者最能反映生成式 AI 工具使用時，有效控制幻覺現象(生成錯誤資訊)的方法？",
+        "options": [
+            "避免使用外部資料來源完成生成",
+            "增加提示詞字數即可避免所有錯誤",
+            "只使用單一模型做結果生成",
+            "設計提示詞時明確要求引用依據"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "幻覺控制",
+        "explanation": "透過在提示詞中要求模型引用資料依據，可以有效抑制幻覺現象，讓生成內容更加可信與符合事實，而非僅增加字數或避免外部資料。",
+        "number": 689,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "以下哪種情境最適合採用生成式 AI 代理 (AI Agent)？",
+        "options": [
+            "需要動態工具呼叫且多任務目標分解",
+            "僅需人工編輯內容的簡單文檔創作",
+            "不涉及決策的靜態資料填充工作",
+            "單一任務且固定規則的流程自動化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "AI 代理",
+        "explanation": "生成式 AI 代理適合複雜工作，能動態分解目標並呼叫多種工具協作完成任務，不適合靜態或單一規則流程。",
+        "number": 690,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "關於生成式 AI 導入的成本效益評估，下列敘述何者錯誤？",
+        "options": [
+            "計算總擁有成本需考慮維運與教育訓練費用",
+            "自建系統需評估基礎設施與人力投入",
+            "訂閱制方案無需考慮安全與合規性",
+            "投資回報率(ROI)能反映長期營運效益"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入評估",
+        "concept": "成本效益評估",
+        "explanation": "訂閱方案同樣需要評估安全與合規性，忽略這部分會導致導入風險或違規問題，故該說法錯誤。",
+        "number": 691,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "在生成式 AI 導入規劃中，何謂 SMART 目標？",
+        "options": [
+            "簡單、快速、明確、透明、可執行",
+            "特殊、模糊、反直覺、難量化、無時限",
+            "標準化、機動性強、易用、穩定、和諧",
+            "具體、可衡量、可達成、相關性強、具時限性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "目標設定",
+        "explanation": "SMART 目標為設定目標的良好指導原則，要求目標具體(Specific)、可衡量(Measurable)、可達成(Achievable)、相關(Relevant)及具時限(Time-bound)。",
+        "number": 692,
+        "date": "2026-11-03"
+    },
+    {
+        "question": "企業在生成式 AI 風險管理計劃中，何者為非？",
+        "options": [
+            "導入後持續監控模型產出品質與偏見風險",
+            "制定資安防護與使用權限管理策略",
+            "只要完成導入即無須再執行人工覆核",
+            "評估資料隱私與法規合規性措施"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "風險管理",
+        "explanation": "人工覆核在初期及重大決策階段仍非常必要，完全取消覆核存在風險。持續監控及合規措施為風險管理核心。",
+        "number": 693,
+        "date": "2026-11-03"
     }
 ]

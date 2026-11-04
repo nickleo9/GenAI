@@ -19788,5 +19788,175 @@
         "explanation": "生成式 AI 是用來產生創新內容，而資料分群與異常偵測通常是非監督式鑑別式模型的功能，故選項 D 為不正確。",
         "number": 1160,
         "date": "2026-11-02"
+    },
+    {
+        "question": "在 AI 治理概念中，以下哪一項最適切描述「人為干預（Human on loop）」的目的？",
+        "options": [
+            "A. 讓 AI 自動決策，完全不需人工干預",
+            "C. 完全封鎖人員對 AI 系統的存取權限",
+            "D. 只使用 AI 進行決策，不進行任何記錄保存",
+            "B. 由人工監督並在必要時調整 AI 決策流程"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 治理概念",
+        "concept": "Human on loop 定義",
+        "explanation": "人為干預（Human on loop）指的是在 AI 系統運作過程中加入人工監督，對 AI 的決策或行為進行審查與調整，以確保結果符合倫理、安全及合規要求，避免 AI 獨立運作遭遇不可預期風險。",
+        "number": 1161,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "下列何者最正確描述資料的「結構化資料」？",
+        "options": [
+            "B. 指存放於關聯式資料庫且欄位與型態明確的資料",
+            "C. 是以 JSON 或 XML 格式存放的半結構化資料",
+            "A. 主要指圖片、影片與語音等多媒體資料",
+            "D. 指無特定格式且不易直接機器處理的資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料基本概念與來源",
+        "concept": "結構化資料",
+        "explanation": "結構化資料通常指存放在關聯式資料庫中，資料具明確的欄位和型態，方便進行查詢和處理，相較之下，圖片、影片等多媒體則屬非結構化資料，而 JSON、XML 屬於半結構化資料。",
+        "number": 1162,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "以下哪一條描述符合資料整理與分析流程中 ETL 的意義與步驟？",
+        "options": [
+            "B. Extract 轉換資料，Transform 抽取資料，Load 載入資料庫",
+            "C. Extract 載入資料，Transform 清理資料，Load 轉換資料",
+            "D. Extract 清理資料，Transform 匯出結果，Load 建立模型",
+            "A. Extract 抽取資料，Transform 轉換格式，Load 載入目標系統"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料整理與分析流程",
+        "concept": "ETL",
+        "explanation": "ETL 代表 Extract（資料抽取）、Transform（資料轉換與清理）、Load（載入目標系統或資料庫）三個步驟，為資料整理與分析流程中常見標準作業。",
+        "number": 1163,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "企業導入 AI 系統時，為確保資料隱私與安全，下列何者為非？",
+        "options": [
+            "C. 使用加密及脫敏技術降低資料外洩風險",
+            "D. 允許所有使用者無限制存取所有資料以提升效率",
+            "B. 建立稽核機制以監控資料使用紀錄",
+            "A. 設置最小權限存取控制強化資料保護"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 治理概念",
+        "concept": "資料隱私與安全",
+        "explanation": "允許所有使用者無限制存取資料會導致機密和個人資料外洩風險，應以最小權限原則搭配加密、稽核等措施來保護資料安全。",
+        "number": 1164,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "下列與 AI 治理有關的術語中，哪一項最符合「防止 AI 模型產生不可解釋決策」的策略？",
+        "options": [
+            "B. 可解釋性 AI（Explainable AI）",
+            "A. 黑箱問題（Blackbox）",
+            "D. 強化學習（Reinforcement Learning）",
+            "C. 過擬合（Overfitting）"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 治理概念",
+        "concept": "可解釋性AI",
+        "explanation": "可解釋性 AI 是為了改善黑箱模型所帶來的決策不可解釋問題，讓使用者或監管機構能理解 AI 作出決策的原因，以增加信任與安全。",
+        "number": 1165,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "資料整理中，當發現資料集出現相同資料多次紀錄，最適當的處理方式為何？",
+        "options": [
+            "D. 將重複資料轉換為圖片格式存檔",
+            "B. 保留重複資料，因為它表示資料重要性",
+            "C. 確認重複資料的主鍵或唯一識別碼後進行合併或刪除",
+            "A. 直接全部刪除重複資料以免影響分析"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗-重複值處理",
+        "explanation": "面對重複資料，應先確認主鍵或唯一識別碼，判斷是否為真重複，根據情況決定合併或刪除，避免誤刪重要資料。",
+        "number": 1166,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "資料來源多元時，下列哪項最不屬於常見的資料收集型態？",
+        "options": [
+            "D. 隨機生成的合成資料不用於分析",
+            "B. 半結構化資料如 JSON 或 XML 格式文件",
+            "C. 非結構化資料如社交媒體上的文字與影像",
+            "A. 結構化資料如企業交易紀錄"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料基本概念與來源",
+        "concept": "資料來源",
+        "explanation": "企業分析常用的資料來源包括結構化、半結構化、非結構化資料；而隨機生成的合成資料通常不直接用作資料來源，而多用於模型訓練或測試。",
+        "number": 1167,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "資料整理中，若發現資料中存在明顯不合理值（例如生理年齡為負數），最合理的初步處理方法為何？",
+        "options": [
+            "D. 把該欄位整欄刪除以確保資料完美",
+            "A. 直接以欄位平均值替代所有此類數值",
+            "C. 將此資料視為離群值保留以免丟失資訊",
+            "B. 判定為錯誤值並先檢查資料來源與輸入過程"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料清洗-錯誤值處理",
+        "explanation": "面對不合理值，應先確認該值來源和可能的輸入錯誤，確定後才進行修正或刪除，避免誤刪或誤判。",
+        "number": 1168,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "在 AI 治理流程中，下列哪項是用來管理 AI 模型風險及合規性的有效措施？",
+        "options": [
+            "D. 忽略稽核紀錄與用戶回饋，專注研發",
+            "B. 讓 AI 系統完全自主運作，不需人員介入",
+            "A. 實施監理沙盒以測試和評估 AI 系統",
+            "C. 沒有進行資料權限控管以加速模型訓練"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 治理概念",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒提供一個受控環境讓企業測試 AI 系統的功能、風險與合規性，可在真實世界外避免造成重大負面影響。",
+        "number": 1169,
+        "date": "2026-11-04"
+    },
+    {
+        "question": "資料整理流程中，下列哪個流程最適合用來描述從資料抽取到分析前的標準順序？",
+        "options": [
+            "C. 轉換資料=>蒐集資料=>分析資料=>清理資料",
+            "A. 清理資料=>標註資料=>分析資料=>蒐集資料",
+            "D. 轉換資料=>分析資料=>蒐集資料=>清理資料",
+            "B. 蒐集資料=>清理資料=>轉換資料=>載入資料庫"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "資料整理與分析流程",
+        "concept": "資料流程",
+        "explanation": "正確的資料整理流程通常從資料蒐集開始，再執行資料清理與轉換，最後將資料載入資料庫或分析工具做後續分析。",
+        "number": 1170,
+        "date": "2026-11-04"
     }
 ]

@@ -11779,5 +11779,175 @@
         "explanation": "人工覆核在初期及重大決策階段仍非常必要，完全取消覆核存在風險。持續監控及合規措施為風險管理核心。",
         "number": 693,
         "date": "2026-11-03"
+    },
+    {
+        "question": "企業在推動生成式 AI 風險管理時，下列哪項措施最能有效防範法規變更導致模型輸出偏差？",
+        "options": [
+            "實施模型版本監控與持續人工覆核",
+            "增加生成內容的隨機性以分散風險",
+            "依賴單一離線測試確保模型穩定性",
+            "封閉使用者回饋通道維持輸出一致"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "模型漂移與監控",
+        "explanation": "生成式 AI 在實際使用中可能因法規變動或輸入情境改變產生偏差，必須建立模型版本控管及持續監測與人工覆核機制，才能及時發現與調整風險，保障產出準確性。",
+        "number": 694,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "醫療機構採用聯邦學習進行生成式 AI 訓練，主要優勢是什麼？",
+        "options": [
+            "降低模型訓練的準確率",
+            "允許各院明文共享患者數據",
+            "集中管理所有病歷資料",
+            "保護資料隱私不在本地外洩"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "隱私保護技術",
+        "explanation": "聯邦學習讓資料留在本地機構，僅共享模型參數，有效保護患者隱私，降低資料外洩風險，同時允許跨院協作提升模型性能。",
+        "number": 695,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "生成式 AI 在自動產出高風險文件如合約時，哪項治理措施最能降低風險？",
+        "options": [
+            "依據風險等級設置覆核與退回程序",
+            "不保留決策和版本紀錄",
+            "全面取消人工審查流程",
+            "單純依賴模型準確率自動簽署"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "風險分級及控制",
+        "explanation": "高風險文件須依照風險分級進行多層次覆核與權限控制，並留存決策紀錄與可回溯機制，以確保法律與營運合規與安全。",
+        "number": 696,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "以下何者最符合 No Code 與 Low Code 之間的核心差異？",
+        "options": [
+            "No Code 完全無限制，Low Code 需要專業編程",
+            "No Code 專供企業，Low Code 僅供個人使用",
+            "No Code 僅適用行動應用，Low Code 僅適用網頁開發",
+            "No Code 強調圖形配置，Low Code 可嵌入客製化程式碼"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台開發模式",
+        "explanation": "No Code 平台無需撰寫程式，以圖形化介面完成開發；Low Code 則結合視覺化工具與可自訂程式，適合需部分程式控制需求者。",
+        "number": 697,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "No Code / Low Code 平台能縮短開發週期的技術主因是？",
+        "options": [
+            "透過移除自訂需求保證一致性",
+            "將全部資料庫責任轉嫁使用者",
+            "依賴抽象元件與模板實現快速配置",
+            "直接取消需求分析流程"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "開發效率提升",
+        "explanation": "平台封裝標準元件與模板，使用者透過視覺化配置快速完成部分功能，降低手寫程式碼與開發時間，但需求分析與測試仍不可省略。",
+        "number": 698,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "企業導入 Low Code 以實現跨部門電子流程自動化時，下列哪項是最關鍵的設計考量？",
+        "options": [
+            "流程應包含完整資料模型與權限治理",
+            "確保無須任何技術背景理解",
+            "畫面顏色需符合所有團隊喜好",
+            "提供最多預設模板數量"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "流程治理",
+        "explanation": "跨部門流程自動化不僅涉及畫面介面，更需有效管理資料結構、權限控管與錯誤處理，避免成為僅有介面拼接的工具。",
+        "number": 699,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "企業希望讓業務部門快速建立客服系統，同時維持資料一致，下列哪種策略最符合低代碼治理需求？",
+        "options": [
+            "要求全部改由IT重寫系統",
+            "完全禁止業務使用開發平台",
+            "業務單位自由複製客戶資料",
+            "建立受控共享資料服務與權限分層"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "敏捷與治理平衡",
+        "explanation": "透過建立嚴謹的資料共享服務與權限分層，兼顧業務靈活開發需求與資料一致性，避免重複資料與管理複雜度提升。",
+        "number": 700,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "為何 Low Code 平台較適合複雜且需長期擴展的企業應用？",
+        "options": [
+            "可嵌入自訂程式彈性突破平台限制",
+            "一定具備比傳統開發更高效能",
+            "可完全杜絕供應商依賴風險",
+            "Low Code 部署不需測試流程"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台彈性與擴展性",
+        "explanation": "Low Code 允許自訂程式碼與複雜整合，適應標準化外的特殊業務需求與長期維運，但同時帶來程序治理及技術債管理挑戰。",
+        "number": 701,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "某部門使用 No Code 平台自建人事系統，造成資料重複且流程混亂。此現象主要反映何種挑戰？",
+        "options": [
+            "低門檻擴大 Shadow IT 風險",
+            "元件重用導致資料過度公開",
+            "視覺化設計不支持任何流程自動化",
+            "高門檻降低業務參與意願"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "治理失控風險",
+        "explanation": "No Code 平台降低技術門檻易催生未經控管的應用（Shadow IT），造成資料治理困難、資料重複及安全風險。建議建立適當的治理與審核機制。",
+        "number": 702,
+        "date": "2026-11-05"
+    },
+    {
+        "question": "企業將關鍵交易系統高度依賴單一 Low Code 供應商時，最需注意下列哪項風險？",
+        "options": [
+            "平台元件無法維護導致系統停擺",
+            "能確保無縫統一資料標準",
+            "專屬元件導致供應商鎖定風險",
+            "容易完全消除資安漏洞"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "供應商鎖定",
+        "explanation": "依賴專有平台與元件會產生更換成本高、授權與定價變動風險，形成供應商鎖定現象，影響系統長期韌性與總持有成本。",
+        "number": 703,
+        "date": "2026-11-05"
     }
 ]

@@ -19958,5 +19958,195 @@
         "explanation": "正確的資料整理流程通常從資料蒐集開始，再執行資料清理與轉換，最後將資料載入資料庫或分析工具做後續分析。",
         "number": 1170,
         "date": "2026-11-04"
+    },
+    {
+        "question": "在保護資料隱私與安全時，以下哪一種方法主要是用來確保資料在傳輸過程中不被非授權者攔截與查看？",
+        "options": [
+            "資料加密技術",
+            "模型正則化方法",
+            "數據清洗流程",
+            "特徵縮放標準化"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料隱私與安全",
+        "subtopic": "資料保護技術",
+        "concept": "資料加密",
+        "explanation": "資料加密技術是將資料轉換成無法被非授權者輕易理解的形式，確保資料在傳輸過程中保密與安全，是保護資料隱私與防範資料洩露的重要手段。",
+        "difficulty": "高級",
+        "question_type": "概念",
+        "number": 1171,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "機器學習中，監督式學習與非監督式學習的主要差異在哪裡？",
+        "options": [
+            "監督式學習不需要目標變數，非監督式學習需要目標變數",
+            "監督式學習使用標註資料進行訓練，非監督式學習則使用未標註資料",
+            "監督式學習只能用於分類，非監督式學習只能用於回歸",
+            "監督式學習只能用於圖像資料，非監督式學習只用於文字資料"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習基本原理",
+        "subtopic": "學習類型比較",
+        "concept": "監督式與非監督式學習",
+        "explanation": "監督式學習是指模型在訓練時，使用有標註的輸入輸出對資料進行學習；非監督式學習是指模型無需標註資料，依靠資料間的內在結構來學習模式。",
+        "difficulty": "高級",
+        "question_type": "比較",
+        "number": 1172,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "在一款銀行信用風險預測模型中，若希望模型同時降低偏差與變異，常見使用的技術為何？",
+        "options": [
+            "利用KNN增強資料多樣性",
+            "調整偏差變異權衡（Bias-Variance Tradeoff）",
+            "選擇正則化L1進行稀疏化",
+            "使用資料加密強化隱私"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "機器學習基本原理",
+        "subtopic": "模型優化",
+        "concept": "偏差變異權衡",
+        "explanation": "偏差變異權衡是指模型在過擬合與欠擬合之間取得平衡，以提高泛化能力，降低預測誤差，是監督式學習中核心的模型優化理念。",
+        "difficulty": "高級",
+        "question_type": "情境判斷",
+        "number": 1173,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "以下何者不屬於一種常見的機器學習模型？",
+        "options": [
+            "隨機森林(Random Forest)",
+            "強化學習策略(Q-Learning)",
+            "生成對抗網路(GAN)",
+            "支持向量資料庫(Support Vector Database)"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "常見的機器學習模型",
+        "subtopic": "模型分類",
+        "concept": "機器學習模型",
+        "explanation": "支持向量資料庫（Support Vector Database）並非機器學習模型名稱，常見機器學習模型包括隨機森林、GAN、強化學習中的Q-Learning等。",
+        "difficulty": "高級",
+        "question_type": "何者為非",
+        "number": 1174,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "處理機器學習資料時，以下哪種做法能最有效支持資料隱私保護的同時進行模型訓練？",
+        "options": [
+            "利用One-Hot編碼提升資料表示",
+            "聯邦學習 (Federated Learning)",
+            "資料完整備份",
+            "資料批量推論"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "資料隱私與安全",
+        "subtopic": "隱私保護技術",
+        "concept": "聯邦學習",
+        "explanation": "聯邦學習允許在多個分散節點上本地訓練模型，並只共享模型參數而非原始資料，有效保護資料隱私且促進跨機構合作。",
+        "difficulty": "高級",
+        "question_type": "概念",
+        "number": 1175,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "在監督式學習中，下列哪種資料特徵處理方法主要是用於將類別資料轉換成機器可接受的數值形式？",
+        "options": [
+            "資料加密",
+            "偏差變異調整",
+            "批次推論",
+            "One-Hot Encoding 編碼"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "機器學習基本原理",
+        "subtopic": "資料預處理",
+        "concept": "One-Hot Encoding",
+        "explanation": "One-Hot Encoding 是將類別型特徵轉換為二進制向量表示的一種技術，使非數值類別資料可用於監督式機器學習模型中。",
+        "difficulty": "高級",
+        "question_type": "概念",
+        "number": 1176,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "在風險評估中，何種機器學習模型最適合進行複雜特徵交互並且具有良好解釋性的預測？",
+        "options": [
+            "生成對抗網路（GAN）",
+            "變分自編碼器（VAE）",
+            "決策樹模型",
+            "支持向量機（SVM）"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "常見的機器學習模型",
+        "subtopic": "分類模型應用",
+        "concept": "決策樹模型",
+        "explanation": "決策樹具備較佳解釋性，能清楚呈現決策內容，適合風險評估中複雜特徵的分類與預測任務。",
+        "difficulty": "高級",
+        "question_type": "情境判斷",
+        "number": 1177,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "以下關於資料隱私保護的陳述，何者錯誤？",
+        "options": [
+            "資料加密能防止數據在儲存及傳輸過程中被竊取",
+            "聯邦學習能在不共享原始資料下進行模型訓練",
+            "使用角色與權限控管可以限制資料訪問",
+            "匿名化處理能保證資料完全無法回溯到個人身份"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "資料隱私與安全",
+        "subtopic": "資料保護概念",
+        "concept": "匿名化與隱私保護",
+        "explanation": "匿名化處理降低資料可識別程度，但無法保證100%無法回溯到個人身份，需要搭配其他技術及政策保障隱私。",
+        "difficulty": "高級",
+        "question_type": "何者為非",
+        "number": 1178,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "隨機森林與決策樹模型比較，以下何者正確？",
+        "options": [
+            "決策樹集成多個隨機森林提高預測準確度",
+            "隨機森林由多棵決策樹組成，可降低過擬合風險",
+            "隨機森林通常比單一決策樹更容易過擬合",
+            "決策樹模型只能用於回歸任務"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "常見的機器學習模型",
+        "subtopic": "模型比較",
+        "concept": "集成學習與過擬合",
+        "explanation": "隨機森林是多棵決策樹的集成，通常通過隨機抽樣特徵及數據，降低單一樹過擬合情況，提高泛化能力。",
+        "difficulty": "高級",
+        "question_type": "比較",
+        "number": 1179,
+        "date": "2026-11-06"
+    },
+    {
+        "question": "在面對個資保護與資料使用的法律監理時，下列何者是機器學習應用中重要的治理措施？",
+        "options": [
+            "建立監理沙盒以測試模型合法性與安全性",
+            "完全公開所有訓練資料以促進透明度",
+            "忽略資料隱私政策以加快模型上線速度",
+            "避免人工監督以降低成本"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "資料隱私與安全",
+        "subtopic": "AI治理與監理",
+        "concept": "監理沙盒",
+        "explanation": "監理沙盒提供受控環境讓企業測試AI模型的安全性與合規性，有助於兼顧創新與個資保護，是重要的治理工具。",
+        "difficulty": "高級",
+        "question_type": "情境判斷",
+        "number": 1180,
+        "date": "2026-11-06"
     }
 ]

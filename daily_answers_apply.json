@@ -12119,5 +12119,175 @@
         "explanation": "即便離線測試分數高，仍需上線後持續監控和稽核，保障模型在實際環境中安全穩定運行，防範風險。",
         "number": 713,
         "date": "2026-11-07"
+    },
+    {
+        "question": "以下哪一項不是生成式AI風險管理中資料隱私保護的重要措施？",
+        "options": [
+            "實施數據留存期間與存取審計控管",
+            "限制AI模型輸入的資料類型與數量",
+            "允許所有員工自由使用生成式AI工具",
+            "建立最小權限原則與數據分類政策"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資料隱私與安全",
+        "explanation": "為保護資料隱私，企業需限制資料輸入並實施權限控管，允許所有員工自由使用會增加資料外洩風險，故C選項錯誤。",
+        "number": 714,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "生成式AI風險管理中，為何「AI代理權限失控」被視為重要風險？",
+        "options": [
+            "因AI代理可在缺少限制下執行高風險操作",
+            "因AI代理無法學習及增加效能",
+            "因AI代理完全由人工控制",
+            "因AI代理只用於簡單的查詢系統"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "AI代理安全",
+        "explanation": "AI代理具自主執行能力，如權限管理不當，可能執行危險操作，造成企業風險，因此A選項正確。",
+        "number": 715,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "面對複雜且需要高度可擴充性的企業應用，No Code 與 Low Code 的選擇建議何者較適合？",
+        "options": [
+            "Low Code 允許加入程式碼，彈性較高",
+            "Low Code 完全不需要開發人員參與",
+            "No Code 平台能自由更改底層架構",
+            "No Code 因為不需程式碼，速度快"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台彈性與擴充",
+        "explanation": "Low Code允許開發者加程式碼實現複雜邏輯與擴充，適合高需求系統，故B選項正確。",
+        "number": 716,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "以下哪一說法正確描述No Code與Low Code的差異？",
+        "options": [
+            "Low Code允許部分程式擴充與外部系統整合",
+            "No Code必須撰寫大量程式碼",
+            "Low Code不支援拖放組件建構",
+            "No Code完全不依賴視覺化工具"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台差異",
+        "explanation": "No Code以視覺化拖放為主，不寫程式；Low Code允許自訂程式碼與複雜整合，故B正確。",
+        "number": 717,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "在生成式AI風險管理中，以下何者屬於輸出內容管控的措施？",
+        "options": [
+            "建立人工覆核與來源查證流程",
+            "完全依賴模型自行校正內容",
+            "忽略資料偏差問題",
+            "開放所有用戶自由測試模型"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "輸出內容可靠性",
+        "explanation": "人工覆核與來源查證是確保生成內容可靠且無偏見的重要管控措施，故A選項正確。",
+        "number": 718,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "使用No Code / Low Code平台時，以下何者為可能產生的主要限制？",
+        "options": [
+            "無法快速交付小型應用",
+            "擴充性有限且可能面臨供應商鎖定",
+            "技術門檻比傳統開發高",
+            "只能由專業軟體工程師操作"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "限制與風險",
+        "explanation": "No Code / Low Code平台雖簡化開發，但面臨客製化與擴充限制，且易被鎖定於特定平台，故B正確。",
+        "number": 719,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "生成式AI風險管理中，治理框架不包含下列哪一項？",
+        "options": [
+            "建立AI代理的權限與審計管控",
+            "遵循法規與常態監控機制",
+            "AI使用清冊與模型生命週期管理",
+            "完全免除人類審核的需求"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "治理機制",
+        "explanation": "治理需包含人類監督，完全免除人類審核不符合風險控管原則，故C項為非。",
+        "number": 720,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "下列哪一種情境最適合以No Code平台開發應用？",
+        "options": [
+            "需高度客製化的核心系統",
+            "進行大數據分析與機器學習模型開發",
+            "快速建立表單與內部管理工具",
+            "設計擴充性強且複雜的企業平台"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "適用場景",
+        "explanation": "No Code平台最適合用於標準化、簡單的任務，如內部表單與管理工具，故B為最佳答案。",
+        "number": 721,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "關於No Code / Low Code平台的優勢，以下敘述何者為非？",
+        "options": [
+            "可加快從需求到上線的時間",
+            "支持業務人員直接配置業務流程",
+            "降低對大型開發團隊的依賴",
+            "完全消除IT部門的必要性"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "優勢與角色轉變",
+        "explanation": "No Code/Low Code可減少IT依賴，但IT治理依然必要，故C選項錯誤。",
+        "number": 722,
+        "date": "2026-11-10"
+    },
+    {
+        "question": "生成式AI風險管理中，為防止模型生成錯誤或偏見內容，最佳做法是？",
+        "options": [
+            "只使用公開資料訓練模型，不做測試",
+            "避免涉及敏感資料進行訓練",
+            "直接自動化輸出給客戶使用",
+            "人工定期檢測模型輸出並修正偏差"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "模型偏差與內容真實性",
+        "explanation": "人工定期覆核模型輸出是減少錯誤與偏見的必要手段，故A正確。",
+        "number": 723,
+        "date": "2026-11-10"
     }
 ]

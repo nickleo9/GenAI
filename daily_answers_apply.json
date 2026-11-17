@@ -12629,5 +12629,175 @@
         "explanation": "生成式 AI 搭配 No Code / Low Code 平台，能透過自然語言輸入幫助產生自動化流程與功能，提升開發效率與彈性。",
         "number": 743,
         "date": "2026-11-14"
+    },
+    {
+        "question": "在生成式AI應用領域中，哪一項工具最適合用於快速生成社群行銷貼文及廣告概念？",
+        "options": [
+            "RAG 檢索增強生成技術",
+            "Midjourney 圖像生成工具",
+            "OpenAI API 文本生成模型",
+            "GitHub Copilot 程式碼輔助工具"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "圖像生成工具",
+        "explanation": "Midjourney 是專門用於生成高品質圖像的生成式AI工具，特別適合用來創作廣告概念與社群貼文視覺內容，而其他選項主要聚焦文本生成、程式碼輔助或知識檢索。",
+        "number": 744,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "No Code 與 Low Code 開發模式的差異為何？",
+        "options": [
+            "No Code 完全不需程式碼，Low Code 允許少量程式碼客製化",
+            "Low Code 完全不需撰寫程式碼",
+            "No Code 需要撰寫大量程式碼，Low Code 不需寫程式碼",
+            "兩者皆需大量撰寫底層程式碼"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 概念",
+        "concept": "No Code 與 Low Code 定義",
+        "explanation": "No Code 是完全透過視覺界面及拖拉設計完成應用，無需撰寫程式碼；Low Code 則是在視覺化開發基礎上允許撰寫少量程式碼以做客製化。",
+        "number": 745,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "以下哪一項不是善用生成式AI工具時應注意的Prompt設計要素？",
+        "options": [
+            "明確指定AI角色與任務",
+            "要求固定輸出格式與評估標準",
+            "不提供任何上下文與範例",
+            "提供足夠背景與使用限制"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式AI工具",
+        "concept": "Prompt設計",
+        "explanation": "高品質的Prompt通常包含角色、任務、背景、限制、輸出格式與評估標準等元素，不提供上下文與範例通常會降低結果質量。",
+        "number": 746,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "關於生成式AI導入評估，下列哪一項描述是錯誤的？",
+        "options": [
+            "需考量現有流程的時間成本與錯誤率",
+            "評估風險管理需包含資料隱私與偏見問題",
+            "決策時須考慮技術整合與使用者需求",
+            "只需檢視模型的準確率即可評估導入是否成功"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "導入評估重點",
+        "explanation": "導入評估不僅需考慮模型準確率，也必須包括風險管理、流程分析、使用者需求及技術整合等多面向，單靠準確率無法全面判斷。",
+        "number": 747,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "在應用生成式AI的多模態系統時，下列哪項能力最重要？",
+        "options": [
+            "同時處理文字、圖像與語音訊息",
+            "忽略語音與影片資料",
+            "只專注於結構化數據分析",
+            "只能處理文本資訊"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI應用領域與常見工具",
+        "concept": "多模態模型",
+        "explanation": "多模態模型能同時處理文字、圖像、語音等多種資料類型，這是其主要特點與優勢，與僅處理單一模態資訊不同。",
+        "number": 748,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "在評估生成式AI導入計畫的成本效益時，下列何者應優先考量？",
+        "options": [
+            "同時考慮模型費用、系統整合和人力維運成本",
+            "只重視訓練資料的取得成本",
+            "僅以模型使用費作為唯一成本指標",
+            "忽略教育訓練和變革管理費用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "成本效益分析",
+        "explanation": "成本效益分析需包含模型使用費、資料處理、教育訓練、系統整合與維運等所有相關費用，僅考慮部分費用會導致判斷失準。",
+        "number": 749,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "當企業使用生成式AI工具自動產出法律文件初稿時，下列做法何者最恰當？",
+        "options": [
+            "全文交由無經驗人員編輯",
+            "應由專業律師覆核與修改內容",
+            "直接發布AI生成文件，無需人工審查",
+            "只需由法律人員快速瀏覽"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式AI工具",
+        "concept": "人工覆核",
+        "explanation": "生成式AI文件可能包含錯誤或不精確資訊，法律文件尤需專業律師詳細審查及修改，確保法律合規與風險降低。",
+        "number": 750,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "哪一個不是生成式AI導入風險管理中常見的資安問題？",
+        "options": [
+            "過度依賴API產生模型成本提升",
+            "模型在回答中透露機密資料",
+            "提示注入攻擊導致模型產生不當回答",
+            "代理工具執行未授權系統操作"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "資安風險管理",
+        "explanation": "提示注入、資料外洩及工具未授權操作均為常見的安全風險，而成本提升屬於經濟層面，非資安問題。",
+        "number": 751,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "在導入生成式AI工具時，下列哪一項屬於合理的推行步驟？",
+        "options": [
+            "只購買最高版本的模型，忽略使用場景",
+            "全面取消人工覆核以提高效率",
+            "直接全面部署，等待使用者反饋",
+            "先確認目標、分析資料，再小範圍測試後擴大"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式AI導入評估",
+        "concept": "導入規劃流程",
+        "explanation": "生成式AI導入應遵循明確目標、資料分析、小規模測試再擴大等步驟，因應不同場景及風險，避免過早全面推行或取消人工審查。",
+        "number": 752,
+        "date": "2026-11-17"
+    },
+    {
+        "question": "關於在生成式AI工具使用中，下列哪項描述是正確？",
+        "options": [
+            "不需結合其他系統即可產生最終商業決策",
+            "AI生成內容一般不需標示來源或聲明",
+            "適合用文字提示清楚定義需求與限制",
+            "由AI自動判斷哪些資料是敏感資訊"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式AI工具",
+        "concept": "提示工程與資訊治理",
+        "explanation": "明確文字提示可提升AI輸出的效果與可控性，而敏感資料需用戶自行判斷與治理，且生成內容通常需標示來源與限制。",
+        "number": 753,
+        "date": "2026-11-17"
     }
 ]

@@ -12969,5 +12969,175 @@
         "explanation": "No Code／Low Code 平台無法完全替代資安與資料治理需求，仍須專業管理。",
         "number": 763,
         "date": "2026-11-19"
+    },
+    {
+        "question": "在生成式 AI 的 no-code / low-code 平台中，哪項措施最能降低模型產出的不可靠及錯誤風險？",
+        "options": [
+            "取消工作流程約束，允許模型自我修改生產邏輯",
+            "讓平台直接從基礎模型產生回應",
+            "加入文件檢索、存取管控、來源標註、評估測試和人工審核",
+            "無限制地使用所有用戶對話進行持續微調"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 的優勢與限制",
+        "concept": "可靠性風險控制",
+        "explanation": "透過檢索增強生成（RAG）提供上下文與存取限制，並結合來源標註與人工審核，能有效減少幻覺與不正確訊息產出，提升平台生成內容的可靠度。",
+        "number": 764,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "針對複雜系統中需整合多種專用安全與交易處理的應用需求，哪種平台選擇最合理？",
+        "options": [
+            "先用 no-code 原型，成功後直接無限制上線",
+            "純 no-code 平台以確保可攜性與合規性",
+            "低碼平台具擴充性、自訂程式碼和獨立監控能力",
+            "no-code 平台因發佈後流程必然確定"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 的優勢與限制",
+        "concept": "平台選擇與彈性",
+        "explanation": "低碼平台允許視覺開發加上專業程式碼擴充，適用於需高度整合和安全規範的複雜應用，提供彈性又維持開發效率。",
+        "number": 765,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "使用 no-code 生成式 AI 工具開發自動退款客服代理，下列哪項控制最能降低風險？",
+        "options": [
+            "因自然語言生成無實施風險，直接核可流程",
+            "只檢查介面視覺顯示是否正確",
+            "全部驗證由更大型語言模型一次性審查",
+            "進行威脅建模、資料最小化、提示注入測試、限權和人工核可退款"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 的優勢與限制",
+        "concept": "安全與風險管理",
+        "explanation": "AI 自動化流程必須受限權限控制與嚴格測試，確保功能正確且避免濫用，人工核可為控制重大財務行為重要環節。",
+        "number": 766,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "哪個工具組最適合行銷部門在 2025 年製作跨語言多媒體行銷素材（文字、圖片、影片、語音）？",
+        "options": [
+            "ChatGPT/Gemini（文案）、Adobe Firefly/Midjourney（圖片）、Runway（影片）、ElevenLabs（語音）",
+            "Excel Copilot、Azure Document Intelligence、SQL 優化器",
+            "AlphaFold、Harvey AI、BloombergGPT",
+            "GitHub Copilot、Cursor、Amazon Q Developer"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "多媒體生成工具",
+        "explanation": "C 組合涵蓋文字、圖像、影片與語音生成，且為各領域知名技術，符合行銷部門多樣內容產出需求。其他選項多偏向開發或特定專業領域。",
+        "number": 767,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "生成式 AI 用於公司內部問答系統時，哪種設計策略可有效防止提示注入攻擊？",
+        "options": [
+            "當檢索有命令句即移除相關文件",
+            "讓模型判斷檢索內容是否可信",
+            "系統指令與檢索內容分離，視檢索文本為不信任資料並測試注入",
+            "將檢索文本放在使用者問題之後減少影響"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "安全防護與提示注入",
+        "explanation": "提示注入風險需透過明確區隔指令與檢索資料、限制模型權限和嚴格測試防範，簡單調整文本位置或讓模型自判不可靠無法有效防護。",
+        "number": 768,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "使用生成式 AI 工具撰寫法律爭議回覆時，以下哪項是最適當的資訊處理方式？",
+        "options": [
+            "最小化且遮蔽個資，使用合規環境並人工審核",
+            "直接貼上完整郵件串由 AI 負責隱私",
+            "只替換發件人姓名，其他資料保留",
+            "請模型生成後自行刪除資料"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "資料隱私保護",
+        "explanation": "保障資料隱私需要最小化暴露、使用認證環境與人工核查，要求模型自行刪除或片面替換資訊不充分且風險高。",
+        "number": 769,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "以下何者不是生成式 AI 工具有效提示詞設計的要素？",
+        "options": [
+            "明確輸出格式與資料範圍",
+            "定義不准推論缺失資訊",
+            "要求模型自動更改基礎算法",
+            "指定任務與角色身份"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示工程",
+        "explanation": "提示詞設計需精確定義任務、角色及輸出格式以降低錯誤；模型基礎算法為黑盒，使用者無法指示其自動更改。",
+        "number": 770,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "一家醫療機構評估生成式 AI 產生約診信息，但發現偶有錯誤日期且不同語言群組錯誤率不均，最佳部署策略為何？",
+        "options": [
+            "建立基於風險評估的測試集，要求人工核可，並設監控和回滾流程",
+            "立即部署，因使用者能判斷風格辨錯",
+            "每則訊息結尾加入可能錯誤的說明",
+            "提升模型溫度以增加多樣性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "風險評估與治理",
+        "explanation": "有效管理生成式 AI 風險需多面向評估、人工審核及部署後監控，單靠使用者判別或調整溫度與警語都無法根本解決問題。",
+        "number": 771,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "下列何者最能反映生成式 AI 工具中良好的提示詞策略？",
+        "options": [
+            "具體限定任務角色、明確指示輸出細節格式",
+            "讓模型自由發揮以保證創造力",
+            "用盡可能少的字詞讓模型推測整體意圖",
+            "反覆要求模型自行糾正錯誤"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示工程",
+        "explanation": "具體且明確的提示詞能降低模型產生錯誤與歧義，提升結果精確度。過度寬鬆或自行糾正指令不易達到良好效果。",
+        "number": 772,
+        "date": "2026-11-21"
+    },
+    {
+        "question": "何者不是生成式 AI no-code / low-code 平台的限制？",
+        "options": [
+            "高度自訂功能有限，複雜需求難以實現",
+            "依賴視覺化元件，降低開發門檻",
+            "缺少底層模型微調與深度控制",
+            "可能存在供應商鎖定與遷移困難"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No code / Low code 的優勢與限制",
+        "concept": "平台侷限性",
+        "explanation": "依賴視覺化元件是 no-code / low-code 的優勢，能降低使用門檻；其他選項皆為此類平台常見限制。",
+        "number": 773,
+        "date": "2026-11-21"
     }
 ]

@@ -13139,5 +13139,175 @@
         "explanation": "依賴視覺化元件是 no-code / low-code 的優勢，能降低使用門檻；其他選項皆為此類平台常見限制。",
         "number": 773,
         "date": "2026-11-21"
+    },
+    {
+        "question": "在生成式 AI 導入規劃中，哪種做法最能有效評估 AI 導入後的整體效益？",
+        "options": [
+            "優先選擇最先進模型，忽略業務流程相容性",
+            "僅以系統反應速度提升作為評估成功的唯一指標",
+            "設計多維度指標包含品質、效率、使用者體驗與風險監控",
+            "透過一次大規模上線以快速收集使用者反饋"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入評估",
+        "explanation": "整體效益評估需同時考量品質、效率、風險等多方面指標，光靠單一指標易造成治理盲點。",
+        "number": 774,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "在生成式 AI 導入規劃中，何者為妥善規劃風險控制的最佳流程？",
+        "options": [
+            "將系統邊界全部開啟以利最終全面功能測試",
+            "直接將生成式 AI 系統推至高風險場域，以最快速度驗證",
+            "完全依賴模型調參來控制輸出風險，無需人工覆核",
+            "先在可控、低風險場域試點，逐步擴展並設置人工接管機制"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入規劃",
+        "explanation": "高風險應用需先在低風險環境試點，有人工覆核機制可避免錯誤蔓延並保障安全。",
+        "number": 775,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "企業在規劃生成式 AI 導入路線圖時，應該優先考慮哪項因素？",
+        "options": [
+            "同時啟動多個應用場景以爭取更多數據",
+            "依據應用風險分級調整審批與上線規範",
+            "只針對技術最有效的應用進行導入",
+            "盡快展示 AI 新技術功能以取得投資支持"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 導入規劃",
+        "concept": "導入規劃",
+        "explanation": "風險分級能確保治理層級與安全控管合適，是導入路線規劃的核心依據。",
+        "number": 776,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "以下哪一項不是生成式 AI 幻覺（hallucination）問題的有效風險管理措施？",
+        "options": [
+            "結合多模態資料進行多層次驗證",
+            "對高風險結果設置明確升級與拒絕條件",
+            "結合人工覆核與來源可追溯性的流程",
+            "系統提示中僅要求模型不捏造訊息"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "幻覺與可靠性",
+        "explanation": "單靠提示詞約束無法完全杜絕幻覺，必須結合流程、來源驗證及人工管控。",
+        "number": 777,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "在生成式 AI 代理工具使用中，如何降低提示詞注入（prompt injection）的安全風險最有效？",
+        "options": [
+            "系統側限制所有外部輸入均視為不可信來源",
+            "單純透過模型內建規則阻斷惡意指令",
+            "全面開放代理自由使用所有工具不加限制",
+            "信賴代理根據語義信心分數判斷輸入可信度"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "提示詞注入風險",
+        "explanation": "將外部來源標記為不可信並限制其影響是防止注入攻擊的有效技術手段。",
+        "number": 778,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "企業使用第三方生成式 AI API 時，以下哪項風險治理做法較為完善？",
+        "options": [
+            "不需紀錄提示詞與模型版本以減少資料量",
+            "只關注供應商的可用性不考慮資料保存或跨境問題",
+            "執行資料分類、去識別與明確定義資料使用權限",
+            "完全將資料責任與法遵轉嫁給供應商"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 風險管理",
+        "concept": "資料治理與法遵",
+        "explanation": "企業需要在資料進入模型前做分類及保護，並明確規範資料處理規則以降低合規風險。",
+        "number": 779,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "關於 No Code 與 Low Code，以下哪一敘述較為正確？",
+        "options": [
+            "兩者在治理與擴充上完全相同，差異僅介面",
+            "No Code 主要服務專業開發人員進行快速調試",
+            "Low Code 允許在視覺化基礎上自訂程式碼觸及更深功能",
+            "No Code 不需要任何技術知識與工程流程"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "No Code 與 Low Code 差異",
+        "explanation": "Low Code 在視覺化開發之上保留程式碼擴充能力，適合複雜或特定需求。",
+        "number": 780,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "在評估 Low Code 平台時，下列哪種思考方式最為健全？",
+        "options": [
+            "只重視開發速度與初期投資金額",
+            "將整合成本、平台鎖定、維運與退出策略全部納入評估",
+            "快速原型化完成即可忽略長期維運需求",
+            "僅根據授權成本判斷整體投入合理性"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "平台選型與成本",
+        "explanation": "總體擁有成本(TCO)包含多階段成本及策略風險，是合理評估關鍵。",
+        "number": 781,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "企業開放公民開發 No Code 應用後，遇到流程無人維護與資料無控管問題，最佳治理措施是？",
+        "options": [
+            "推動應用登錄、資料分級、責任歸屬及版本控管",
+            "全面禁止業務使用 No Code 工具以免影子 IT 扩散",
+            "允許自由建置並透過事後稽核確保安全",
+            "只要求使用者填報使用報告但不設限制"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "治理與影子 IT",
+        "explanation": "有系統的登錄與分級管理，有助監控與持續治理公民開發的風險。",
+        "number": 782,
+        "date": "2026-11-24"
+    },
+    {
+        "question": "使用具生成式 AI 機能的 Low Code 平台時，下列哪項最為合適的操作方式？",
+        "options": [
+            "依賴自然語言描述即可保證流程設計無誤",
+            "人工需測試並管控自動化流程的版本與資料連接權限",
+            "不需檢驗 AI 產生流程的資料權限與錯誤處理",
+            "AI 可自動生成流程，人員毋須了解內部邏輯"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的基本概念",
+        "concept": "生成式 AI 與 No Code 整合",
+        "explanation": "AI 產生的流程仍需人工審查與測試，特別關注資料權限與異常處理，避免風險擴大。",
+        "number": 783,
+        "date": "2026-11-24"
     }
 ]

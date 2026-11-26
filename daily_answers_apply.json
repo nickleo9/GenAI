@@ -13309,5 +13309,175 @@
         "explanation": "AI 產生的流程仍需人工審查與測試，特別關注資料權限與異常處理，避免風險擴大。",
         "number": 783,
         "date": "2026-11-24"
+    },
+    {
+        "question": "在企業決定採用 No-Code 平台進行內部申請流程自動化時，下列哪一項限制最可能成為挑戰？",
+        "options": [
+            "無法提供視覺化拖拉式介面",
+            "需投入大量專業程式設計人員參與開發",
+            "無法支持複雜的自訂邏輯與多系統整合",
+            "建置速度比傳統軟體開發慢"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "平台限制",
+        "explanation": "No-Code 平台受限於預設元件與功能，難以支持複雜演算法或跨多系統整合，這是其主要限制之一；選項 B、C、D 與 No-Code 特點不符。",
+        "number": 784,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "相較於 No-Code 平台，Low-Code 開發最大的優勢為何？",
+        "options": [
+            "適合僅用於簡易工作流程範疇",
+            "能結合視覺化元件與自訂程式碼實現更高彈性",
+            "使用者只能是專業的軟體工程師",
+            "完全不需任何程式碼編寫即可完成應用"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "開發彈性",
+        "explanation": "Low-Code 結合視覺化和程式碼可以達成更複雜的功能和整合，比 No-Code 彈性更高。A、C、D 選項誤導性明顯。",
+        "number": 785,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "當企業希望快速驗證 AI 生成文字工具在客戶服務的運用，選擇哪類工具最合適？",
+        "options": [
+            "自訂開發高彈性低延遲的專用聊天機器人",
+            "複雜的底層模型 fine-tuning",
+            "通用大型語言模型（如 ChatGPT）搭配自動化流程整合",
+            "完全手動處理不採用 AI 工具"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "應用工具選擇",
+        "explanation": "通用大型語言模型如 ChatGPT 結合自動流程可快速驗證 AI 文本生成的實務價值。B 過於複雜，C 成本高，D 不使用 AI。",
+        "number": 786,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "何者非生成式 AI 在行銷領域常見的應用工具？",
+        "options": [
+            "個人化溝通自動化平台",
+            "企業型聊天機器人提升客戶互動",
+            "GitHub Copilot 程式碼輔助工具",
+            "Jasper 文案生成工具"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "工具適用場景",
+        "explanation": "GitHub Copilot 是軟體工程輔助工具，非行銷用途；其他選項均為行銷或客服常用生成式 AI 工具。",
+        "number": 787,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "使用生成式 AI 工具時，下列哪一項做法最能降低生成結果中的“幻覺”風險？",
+        "options": [
+            "完全依賴模型自行判斷並輸出答案",
+            "結合檢索式生成（RAG）技術，自動引用可信資料",
+            "單純增加輸入提示資料數量",
+            "提高生成文字的溫度參數以產生更多變化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "生成品質管理",
+        "explanation": "RAG 技術使用外部資料庫檢索減少幻覺，提升可信度。提高溫度會增加不確定性，增加輸入數量未必有效，完全依賴模型會增加錯誤。",
+        "number": 788,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "使用低程式碼平台時，何者最重要以確保企業級應用的安全與治理？",
+        "options": [
+            "允許所有使用者自由部署應用，快速創新",
+            "只在開發初期設計安全，後續可放寬",
+            "依賴平台默認安全功能，不需額外配置",
+            "實施嚴格的權限控管、稽核軌跡及資料保護措施"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "安全治理",
+        "explanation": "企業級應用對安全與治理要求高，必須落實權限控管與稽核；A、C、D 會導致安全風險。",
+        "number": 789,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "企業導入生成式 AI 文本生成工具，哪一項做法最能提升使用效率？",
+        "options": [
+            "避免人工調整提示內容，保持自然輸入",
+            "使用最高參數設定以獲得多樣化回答",
+            "只在出現錯誤時才調整提示詞",
+            "將提示工程技巧納入流程，明確設定角色與輸出格式"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "提示工程",
+        "explanation": "提示工程能提升生成品質與一致性，設定角色和格式能保證輸出效果。B 會降低穩定性，C、D 則無法主動優化結果。",
+        "number": 790,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "下列哪一種情境最適合使用 No-Code 平台進行應用開發？",
+        "options": [
+            "需要快速建立標準化的內部資料輸入及流程自動化工具",
+            "跨多國法規複雜性高的金融應用",
+            "高頻交易系統需實時資料處理與極低延遲",
+            "具高度自訂演算法且複雜介面需求的核心應用"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "No Code / Low Code 的優勢與限制",
+        "concept": "應用適用範圍",
+        "explanation": "No-Code 適合標準化且需求明確的內部工具，對高性能、高安全或複雜邏輯不適合。其他選項多為高風險與高度定制化場景。",
+        "number": 791,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "企業希望應用生成式 AI 來自動生成廣告影像素材，下列工具中最適合的是？",
+        "options": [
+            "GitHub Copilot 代碼建議工具",
+            "Midjourney 圖像生成平台",
+            "Jasper AI 文本創作工具",
+            "Microsoft Power Apps 流程自動化"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "生成式 AI 應用領域與常見工具",
+        "concept": "圖像生成工具",
+        "explanation": "Midjourney 擅長生成圖像和創意素材，GitHub Copilot 是程式碼輔助，Jasper 以文字為主，Power Apps 偏向流程工具。",
+        "number": 792,
+        "date": "2026-11-26"
+    },
+    {
+        "question": "在生成式 AI 工具中，為何納入人工審核機制在人員決策中尤為關鍵？",
+        "options": [
+            "因為模型越大，生成結果越不需要審核",
+            "因為人工審核能完全消除所有 AI 生成錯誤",
+            "因為審核會降低生成速度但提升使用者體驗",
+            "因為人類監控可以識別模型生成的幻覺並作倫理判斷"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "生成式AI應用與規劃",
+        "subtopic": "如何善用生成式 AI 工具",
+        "concept": "Human-in-the-loop",
+        "explanation": "人工審核幫助發現模型生成的虛假內容和倫理問題，保障決策品質；A 過於絕對，C 牽涉成本不是主因，D 誤導性強。",
+        "number": 793,
+        "date": "2026-11-26"
     }
 ]

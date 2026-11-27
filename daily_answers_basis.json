@@ -21508,5 +21508,175 @@
         "explanation": "強化學習是透過與環境互動，根據獎勵或懲罰信號調整策略以達成目標的學習方法，與監督式或非監督式有所不同。",
         "number": 1260,
         "date": "2026-11-25"
+    },
+    {
+        "question": "在 AI 的定義與分類中，哪一項最準確描述生成式 AI（Generative AI）的核心功能？",
+        "options": [
+            "B. 生成新的數據樣本，如文字、圖片或音頻",
+            "C. 專注於資料的結構化與清洗處理",
+            "A. 利用已有資料辨識並分類新資料的能力",
+            "D. 透過監督學習強化模型對決策的準確性"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 的定義與分類",
+        "concept": "生成式 AI 定義",
+        "explanation": "生成式 AI 的主要功能是根據訓練資料自動生成新的數據樣本，例如文字、圖片或音頻，而非單純辨識或分類現有資料。",
+        "number": 1261,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 在基本原理上的主要差異為何？",
+        "options": [
+            "C. 鑑別式 AI 不需使用深度學習，生成式 AI 必須用深度學習",
+            "A. 鑑別式 AI 建立輸入與標籤間的映射，生成式 AI 建立資料分布模型",
+            "B. 生成式 AI 僅用於分類任務，鑑別式 AI 用於生成任務",
+            "D. 生成式 AI 無法處理非結構化資料，鑑別式 AI 可處理"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "concept": "鑑別式 AI 與生成式 AI 差異",
+        "explanation": "鑑別式 AI 主要學習輸入資料與標籤間的條件概率以進行分類或預測，而生成式 AI 則試圖建立整體資料的分布以生成新樣本。",
+        "number": 1262,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "假設一家企業希望透過 AI 來自動撰寫報告，並同時辨識報告內容是否符合規範，以下哪種應用最適合採用鑑別式與生成式 AI 的整合？",
+        "options": [
+            "D. 僅透過生成式 AI 撰寫報告，不需鑑別式 AI",
+            "A. 用生成式 AI 撰寫報告，鑑別式 AI 審查報告合規性",
+            "B. 僅使用鑑別式 AI 同時完成生成與合規判斷",
+            "C. 用鑑別式 AI 生成報告，再用生成式 AI 校對"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "整合應用實務",
+        "explanation": "生成式 AI 可自動生成報告內容，而鑑別式 AI 則用於判斷已生成內容是否符合標準及合規要求，兩者合作提高效能。",
+        "number": 1263,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "下列何者非 AI 的主要分類？",
+        "options": [
+            "D. 監督型 AI",
+            "A. 分析型 AI",
+            "C. 生成型 AI",
+            "B. 預測型 AI"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 的定義與分類",
+        "concept": "AI 分類識別",
+        "explanation": "監督型學習是機器學習的方法之一，非 AI 主分類。AI 的主要分類一般是分析型 AI、預測型 AI、生成型 AI等。",
+        "number": 1264,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "在鑑別式 AI 的基本原理中，模型的主要任務是？",
+        "options": [
+            "D. 直接生成文字或圖像內容",
+            "A. 建立資料分布模型以生成新樣本",
+            "B. 學習輸入與標籤間的條件概率以分類或預測",
+            "C. 對資料進行大量轉換與清洗"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "concept": "鑑別式 AI 定義",
+        "explanation": "鑑別式 AI 模型專注於判斷輸入資料屬於哪個類別，透過學習輸入與標籤的條件概率完成分類或預測。",
+        "number": 1265,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "以下哪個情境最適合運用生成式與鑑別式 AI 整合技術？",
+        "options": [
+            "B. 只需要分類客戶郵件是否為垃圾郵件",
+            "D. 僅需分析歷史銷售數據分布",
+            "A. 生成音樂作品，同時辨識音樂風格是否符合訂定標準",
+            "C. 只需預測未來銷售量"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "整合應用情境",
+        "explanation": "生成式 AI 可創作音樂作品，而鑑別式 AI 可評估作品是否符合風格標準，兩者結合提升藝術生成與品控能力。",
+        "number": 1266,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "在 AI 的定義與分類中，預測型 AI 的主要特色是？",
+        "options": [
+            "B. 根據歷史資料預測未來結果",
+            "C. 完全不依賴過去資料",
+            "D. 專注於資料標註與分類",
+            "A. 僅生成新資料樣本"
+        ],
+        "correct_answer_index": 0,
+        "correct_answer_letter": "A",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 的定義與分類",
+        "concept": "預測型 AI 定義",
+        "explanation": "預測型 AI 利用歷史數據建模，以預測未來事件或結果，是典型的監督式學習應用。",
+        "number": 1267,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "哪一項不符合生成式 AI 與鑑別式 AI 整合應用的典型特色？",
+        "options": [
+            "A. 依賴大量標註數據以提升生成品質",
+            "B. 生成式 AI 從無到有創造內容，鑑別式 AI 負責內容評估",
+            "D. 生成式 AI 僅作為資料預處理工具",
+            "C. 兩者互補可提高模型整體效能與穩定度"
+        ],
+        "correct_answer_index": 2,
+        "correct_answer_letter": "C",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的整合應用",
+        "concept": "整合應用特性",
+        "explanation": "生成式 AI 不僅是資料預處理工具，而是可主動生成新內容。整合應用中兩者功能互補，提升生成與辨識品質。",
+        "number": 1268,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "以下關於 AI 分類的敘述，何者錯誤？",
+        "options": [
+            "A. 分析型 AI 側重資料洞察與模式發現",
+            "C. 生成型 AI 主要用於內容創作與模擬",
+            "D. 三大類 AI 分類皆有助於實際商業應用",
+            "B. 預測型 AI 專注於模型解釋性與透明度"
+        ],
+        "correct_answer_index": 3,
+        "correct_answer_letter": "D",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "AI 的定義與分類",
+        "concept": "AI 分類特點",
+        "explanation": "預測型 AI 並不專注於模型解釋性（這屬於可解釋 AI 範疇），而是重點在未來結果的預測。其他選項敘述正確。",
+        "number": 1269,
+        "date": "2026-11-27"
+    },
+    {
+        "question": "鑑別式 AI 與生成式 AI 的基本原理中，哪個模型屬於典型的生成式 AI？",
+        "options": [
+            "A. 支持向量機（SVM）",
+            "B. 生成對抗網路（GAN）",
+            "C. 決策樹（Decision Tree）",
+            "D. 隨機森林（Random Forest）"
+        ],
+        "correct_answer_index": 1,
+        "correct_answer_letter": "B",
+        "topic": "人工智慧基礎概論",
+        "subtopic": "鑑別式 AI 與生成式 AI 的基本原理",
+        "concept": "生成式 AI 模型",
+        "explanation": "生成對抗網路（GAN）是典型生成式 AI 模型，通過生成器與判別器對抗訓練生成真實感資料。其他為鑑別式模型。",
+        "number": 1270,
+        "date": "2026-11-27"
     }
 ]
